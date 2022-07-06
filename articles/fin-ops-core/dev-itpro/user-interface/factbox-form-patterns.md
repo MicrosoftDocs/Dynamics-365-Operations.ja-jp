@@ -1,6 +1,6 @@
 ---
 title: 情報ボックスのフォーム パターン
-description: このトピックでは、FactBox フォームのパターンについて説明します。 情報ボックスはレコードに関連情報を指定するために使用されます。
+description: この記事では、FactBox のフォーム パターンに関する情報を提供します。 情報ボックスはレコードに関連情報を指定するために使用されます。
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b07e690dbb8f8d07e7306dcf902a6d88cdb9f3a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b61eb58d257c414fe9e05b3b86f822281f3f9965
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781925"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905056"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、FactBox フォームのパターンについて説明します。 情報ボックスはレコードに関連情報を指定するために使用されます。
+この記事では、FactBox のフォーム パターンに関する情報を提供します。 情報ボックスはレコードに関連情報を指定するために使用されます。
 
 ## <a name="usage"></a>用途
 

@@ -1,6 +1,6 @@
 ---
 title: システム管理ホーム ページ
-description: このトピックは、システム管理者が利用できるリソースを一覧表示します。
+description: この記事では、システム管理者が利用できるリソースを一覧表示します。
 author: sericks007
 ms.date: 11/20/2020
 ms.topic: article
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2224348c34d2797d0f9eae17bacf948e4041272d4b4e05c266784e0ccf477069
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a732088715ef5390c19a17281eb1d73a06d4b483
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733099"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885490"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。
+この記事では、財務と管理のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。
 
 ## <a name="one-version"></a>1 つのバージョン
-2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更を発表しました。 次のトピックは、最新の状態を維持するために使用できる Finance and Operations サービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。
+2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更を発表しました。 次のトピックは、最新の状態するために使用できる Finance and Operations サービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。
 
 - [1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md)
 - [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md)
@@ -79,7 +79,7 @@ Finance and Operations アプリは、ロール ベースのセキュリティ�
 
 - [ロールベース セキュリティ](role-based-security.md)
 - [セキュリティ アーキテクチャ](security-architecture.md)
-- [Finance and Operations アプリにおける暗号化処理](encryption.md)
+- [財務と運用アプリの暗号化](encryption.md)
 
 ## <a name="batch-processing"></a>バッチ処理
 多くのタスクをバッチ ジョブの一部として実行できます。 たとえば、バッチ ジョブには、レポートの印刷、管理の実行、電子ドキュメントの送信などのタスクを含めることができます。 バッチ ジョブを使用すると、通常の就業時間内におけるコンピュータまたはサーバーの処理速度の低下を回避できます。
@@ -105,7 +105,7 @@ Microsoft Office との統合により、Microsoft Office スイートを活用�
 - [Office 統合のトラブルシューティング](../office-integration/office-integration-troubleshooting.md)
 
 ## <a name="mobile"></a>携帯電話
-Finance and Operations モバイル アプリにより、組織はビジネス プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
+Finance and Operations モバイル アプリにより、組織は業務プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
 
 - [モバイル アプリのホーム ページ](../mobile-apps/Mobile-app-home-page.md)
 - [利用可能なモバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされました。
+description: この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされました。
 author: tonyafehr
 ms.date: 01/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 8bb0a2a8af334e959ea28491e4c802aa35f63401a278d9ad28d8c5e40063f1bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 030946b78017a02f7e5450b5141a7418d3ff3e29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715186"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894224"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされ、ビルド番号は 7.0.4709 です。
+この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされ、ビルド番号は 7.0.4709 です。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 プラットフォーム更新プログラム 12 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://go.microsoft.com/fwlink/?linkid=863949) を参照してください。
 
@@ -38,11 +38,11 @@ ms.locfileid: "6715186"
 
 ## <a name="development-and-build-environments-in-a-customer-lcs-implementation-project-are-monitored-and-managed-by-microsoft"></a>顧客の LCS 実装プロジェクトの開発環境とビルド環境は、Microsoft によって監視および管理されています。
 
-お客様が Finance and Operations の運用または実装を行っている顧客の場合、開発、テスト、および運用を有効にする環境のセットが提供されます。 サンドボックス (階層 2) と実稼働環境は、Microsoft によって管理されていますが、IT スタッフが開発者とビルド環境の管理を担当します。 この機能では、開発者および開発者環境およびビルド環境を含む、Microsoft サブスクリプションで実行中の Lifecycle Services (LCS) 実装プロジェクト内のすべての環境が、Microsoft によりモニターおよび管理されます。 これにより、IT スタッフは、セキュリティ パッチの適用やこれらの環境への更新など、セキュリティの監視と管理を行う必要がなくなります。 これは、オンプレミスまたは顧客またはパートナーの Microsoft Azure サブスクリプションで実行される開発環境およびビルド環境には影響しません。
+お客様が Finance and Operations の運用または実装を行っている顧客の場合、開発、テスト、および運用を有効にする環境のセットが提供されます。 サンドボックス (階層 2) と運用環境は、Microsoft によって管理されていますが、IT スタッフが開発者とビルド環境の管理を担当します。 この機能では、開発者および開発者環境およびビルド環境を含む、Microsoft サブスクリプションで実行中の Lifecycle Services (LCS) 実装プロジェクト内のすべての環境が、Microsoft によりモニターおよび管理されます。 これにより、IT スタッフは、セキュリティ パッチの適用やこれらの環境への更新など、セキュリティの監視と管理を行う必要がなくなります。 これは、オンプレミスまたは顧客またはパートナーの Microsoft Azure サブスクリプションで実行される開発環境およびビルド環境には影響しません。
 
 開発者が実行する開発およびアプリケーション管理タスクは、開発仮想マシン (VM) のローカル管理者権限を必要とせずに実行できます。 顧客は、Microsoft のサブスクリプションで実行されている開発環境およびビルド環境の VM 管理者アカウントにアクセスすることはできません。
 
-詳細については、この LCS ブログ トピック、[制限された管理者のアクセス](https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/) を参照してください。
+詳細については、この LCS ブログ記事、[制限された管理者のアクセス](https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/)を参照してください。
 
 ## <a name="enabling-sql-triggers-in-bring-your-own-database-byod"></a>「独自のデータベースを戻す」 (BYOD) で、SQL トリガーを有効にします。
 
@@ -61,7 +61,7 @@ BYOD とも呼ばれる「自分のデータベースの持ち込み」機能に
 1回限りの設定とコンフィギュレーションでは、次のことが必要になります。
 
 - Azure AD で B2B 招待サービス アプリケーションを設定します。
-- Finance and Operations で B2B 招待サービスの設定を構成します。
+- Finance and Operations で B2B 招待サービスの設定のコンフィギュレーションをします。
 
 詳細については、[企業間 (B2B) ユーザーを Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
 

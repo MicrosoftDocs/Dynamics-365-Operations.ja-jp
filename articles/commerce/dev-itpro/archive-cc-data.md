@@ -1,6 +1,6 @@
 ---
 title: クレジット カード トランザクション データのアーカイブ
-description: このトピックでは、クレジット カード トランザクションをアーカイブに保存することでデータベースの領域を解放できる、Microsoft Dynamics 365 Commerce のアーカイブ ジョブについて説明します。
+description: この記事では、クレジット カード トランザクションをアーカイブに保存することでデータベースの領域を解放できる、Microsoft Dynamics 365 Commerce のアーカイブ ジョブについて説明します。
 author: BrianShook
 ms.date: 01/28/2021
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b185939ba9761e259bddc6866b4416596fd68366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 69eac0e70c71737ac52d4655560ccaac5075571b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900462"
 ---
 # <a name="archive-credit-card-transaction-data"></a>クレジット カード トランザクション データのアーカイブ
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、クレジット カード トランザクションをアーカイブに保存することでデータベースの領域を解放できる、Microsoft Dynamics 365 Commerce のアーカイブ ジョブについて説明します。 このジョブは、コマース バージョン 10.0.17 リリース時点で使用できます。
+この記事では、クレジット カード トランザクションをアーカイブに保存することでデータベースの領域を解放できる、Microsoft Dynamics 365 Commerce のアーカイブ ジョブについて説明します。 このジョブは、コマース バージョン 10.0.17 リリース時点で使用できます。
 
-クレジット カードの認証ごとに、認証バイナリ ラージ オブジェクト ([auth BLOB](#key-terms)) がデータベースに格納されます。 Auth BLOB には、認証に関連するデータが含まれます。 時間が経過すると、これらの auth BLOB は増加し、データベースの容量を大量に得ることができます。 このトピックに説明されているジョブを使用すると、Azure Blob Storage にエクスポートしデータベースからデータを削除することで、auth BLOB データをアーカイブすることができます。
+クレジット カードの認証ごとに、認証バイナリ ラージ オブジェクト ([auth BLOB](#key-terms)) がデータベースに格納されます。 Auth BLOB には、認証に関連するデータが含まれます。 時間が経過すると、これらの auth BLOB は増加し、データベースの容量を大量に得ることができます。 この記事に説明されているジョブを使用すると、Azure Blob Storage にエクスポートしてデータベースからデータを削除することで、auth BLOB データをアーカイブすることができます。
 
 アーカイブ ジョブのパラメータは、トランザクションの日数に基づいて指定されます。 つまり、ジョブの **最小トランザクションの日数** フィールドが **365** 日に設定されている場合、たとえば 365 日以上経過しているクレジット カード認証に関するすべての XML データが、ジョブの実行時にアーカイブの対象になります。
 

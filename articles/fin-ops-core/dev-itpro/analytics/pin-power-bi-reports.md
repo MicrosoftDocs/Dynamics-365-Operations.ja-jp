@@ -1,6 +1,6 @@
 ---
 title: Power BI コンテンツのピン留め
-description: このトピックでは、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
+description: この記事では、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
 author: MilindaV2
 ms.date: 07/10/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 1b6d3f5621cfc732fc263437f10c455c06bbad4074e2517f2e149aafdb4715a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5cab3d65732ae02e2664364ac6bdec0d2e2b62eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905065"
 ---
 # <a name="pin-power-bi-content"></a>Power BI コンテンツのピン留め
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance では、データ検索に Power BI が使用されます。 このトピックでは、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
+Microsoft Dynamics 365 Finance はデータ探索に Power BI を使用します。 この記事では、ワークスペースにページ全体の Power BI レポートを配置して、ユーザーにインタラクティブなデータ探索エクスペリンスを提供する方法について説明します。
 
-このトピックは、Microsoft Power BI タイルをワークスペースにピン留めする機能に精通しているものと仮定します。 詳細については、 [Power BI 統合を通じて利用可能な機能およびサービス](power-bi-integration.md) を参照してください。 ユーザーがワークスペースを作成している開発者であり、ユーザーに Power BI をワークスペースにピン留め並べしてもらうには、Power BI コントロールを埋め込みます。
+この記事は、Microsoft Power BI タイルをワークスペースにピン留めする機能に精通しているものと仮定します。 詳細については、 [Power BI 統合を通じて利用可能な機能およびサービス](power-bi-integration.md) を参照してください。 ユーザーがワークスペースを作成している開発者であり、ユーザーに Power BI をワークスペースにピン留め並べしてもらうには、Power BI コントロールを埋め込みます。
 
 ## <a name="pin-power-bi-reports-to-workspaces"></a>Power BI レポートをワークスペースにピン留めする
 Microsoft Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) では、Power BI レポートをワークスペースに固定する機能が導入されました。 Power BI レポートは、**リンク** セクションが含まれる任意のワークスペースに追加できます。 つまり、製品に含まれた最初から用意されているワークスペースのほとんどにレポートを追加できます。 Power BI レポートおよびタイルを有効にするには、アプリケーションと動作するように Power BI を構成する必要があります。 この 1 回のみの操作は、 環境の管理者によって完了する必要があります。 手順については、「[ワークスペースの Power BI 統合のコンフィギュレーション](configure-power-bi-integration.md)」を参照してください。 アプリケーションと連携するように Power BI を構成したら、クライアントで **元帳予算および予測** ワークスペースを開きます。 ワークスペースで、**オプション** タブをクリックします。このタブには (Power BI) タイル カタログと (Power BI) レポート カタログを開くボタンが含まれています。 **レポート カタログを開く** をクリックします。 レポートの一覧を示すダイアログ ボックスが表示されます。 レポートのリストは、Power BI アカウントにあるレポートから取得されます。 ブラウザーで PowerBI.com を開くと、Power BI ダッシュボード全体で同じレポートのリストが使用されていることがわかります。 次の図のように、一部のレポートを選択し、**OK** をクリックして続行します。

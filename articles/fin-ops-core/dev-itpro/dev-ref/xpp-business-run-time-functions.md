@@ -1,6 +1,6 @@
 ---
 title: X++ ビジネス ランタイム関数
-description: このトピックでは、ビジネス ランタイム関数について説明します。
+description: この記事では、ビジネス ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/20/2017
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f06816fb261ce2eeb25b344fd6367de1d480d299
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 57235edc67ecf929d0342d3e826b28d54297c312
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867237"
 ---
 # <a name="x-business-runtime-functions"></a>X++ ビジネス ランタイム関数
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ビジネス ランタイム関数について説明します。
+この記事では、ビジネス ランタイム関数について説明します。
 
 これらの関数は財務データを入力し、式を計算します。
 

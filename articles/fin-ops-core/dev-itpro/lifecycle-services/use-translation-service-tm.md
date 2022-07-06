@@ -1,6 +1,6 @@
 ---
 title: 翻訳メモリ ファイル
-description: このトピックでは、高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
+description: この記事では、高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
 author: abmotgi
 ms.date: 10/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 9bf8e6f95bffac6c981608fdba0d5131a635fe2b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 6432b57ea906712dcfabb7f920409faf6a890a76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866338"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 
@@ -29,7 +29,7 @@ Microsoft Dynamics 365 Translation Service (DTS) は、2 か国語 XML ローカ
 
 DTS では、2 つの方法で XLIFF 翻訳メモリ (TM) を入手できます。
 
-+ **整列ツールの実行** – 前回翻訳したファイルがあり、対応するソース ファイルもある場合、整列ツールを使用して XLIFF TM を作成できます。 詳細については、このトピックで後述の [翻訳メモリを作成する](#creating-a-translation-memory) セクションを参照してください。
++ **整列ツールの実行** – 前回翻訳したファイルがあり、対応するソース ファイルもある場合、整列ツールを使用して XLIFF TM を作成できます。 詳細については、この記事で後述する[翻訳メモリを作成する](#creating-a-translation-memory)セクションを参照してください。
 + **翻訳要求を完了** - DTS 翻訳要求が完了すると、要求出力の一部として XLIFF TM が提供されます。 更新済みソース ファイルを含む新しいトランザクション要求を次に送信するときに、ファイルを使用することができます。
 
 XLIFF ファイルにはソース ファイルから抽出された一連の翻訳単位 (TU) が含まれます。 次の図は、TU の例を示します。

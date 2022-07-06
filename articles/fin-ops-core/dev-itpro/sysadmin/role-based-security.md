@@ -1,6 +1,6 @@
 ---
 title: ロールベース セキュリティ
-description: このトピックでは、ロールベースのセキュリティの要素の概要を提供します。
+description: この記事では、ロールベースのセキュリティの要素の概要を説明します。
 author: peakerbl
 ms.date: 01/27/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a83a67649038cf2fbcd9e2469351aa1116c0163022d3eb1a9d02f17ff6582ad4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7f879157f0c5edfc6771fefa578513075d2ddff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746551"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860085"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations のロールベースのセキュリティの要素の概要を提供します。 
+この記事では、財務と運用のロールベースのセキュリティの要素の概要を説明します。 
 
 ロールベース セキュリティでは、個々のユーザーではなく、セキュリティ ロールに対してのみアクセスを許可します。 ユーザーはロールに割り当てられます。 セキュリティ ロールに割り当てられているユーザーは、そのロールに関連付けられている一連の権限にアクセスできます。 任意のロールに割り当てられていないユーザーには権限がありません。 
 
-Finance and Operations アプリでは、ロールベースのセキュリティを業務の構造に合わせることができます。 ユーザーは、組織内の担当と業務プロセスへの参加に基づいて、セキュリティ ロールに割り当てられます。 管理者は、ユーザーが使用する必要があるプログラム要素へのアクセスではなく、ロールのユーザーが実行する職務権限へのアクセスを許可します。 
+Finance and Operations アプリでは、ロール ベース セキュリティが業務の構造で調整されます。 ユーザーは、組織内の担当と業務プロセスへの参加に基づいて、セキュリティ ロールに割り当てられます。 管理者は、ユーザーが使用する必要があるプログラム要素へのアクセスではなく、ロールのユーザーが実行する職務権限へのアクセスを許可します。 
 
 自動ロール割り当てのルールを設定できるため、ユーザーの責任が変更されるたびに管理者が関与する必要はありません。 セキュリティ ロールとルールが設定された後、業務管理者は、業務データに基づく日常的なユーザーのアクセスを制御できます。
 

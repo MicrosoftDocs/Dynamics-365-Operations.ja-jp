@@ -1,6 +1,6 @@
 ---
 title: Azure にカスタム ヘルプを展開
-description: このトピックでは、Microsoft Dynamics 365 ヘルプ コンテンツを Azure Web アプリに展開する方法を示す例を紹介します。
+description: この記事では、Microsoft Dynamics 365 ヘルプ コンテンツを Azure Web アプリに展開する方法を示す例を紹介します。
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 002fc05a16157dd1845931c3814f99071761dfd5cafdbcf492304fcfacd2016f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36c0b550673016e550133301ce446da65aa58502
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866581"
 ---
 # <a name="deploy-custom-help-to-azure"></a>Azure にカスタム ヘルプを展開
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コンテンツをホストする Web アプリを設定する手順と、コンテンツを製品内の **ヘルプ** ウィンドウで検出可能にするように検索サービスを設定する手順について説明します。 Microsoft Azure Web アプリを設定した後、その Web アプリを使用して、製品内の **ヘルプ** ウィンドウに接続されたコンテンツをホストします。
+この記事では、コンテンツをホストする Web アプリを設定する手順と、コンテンツを製品内の **ヘルプ** ウィンドウで検出可能にするように検索サービスを設定する手順について説明します。 Microsoft Azure Web アプリを設定した後、その Web アプリを使用して、製品内の **ヘルプ** ウィンドウに接続されたコンテンツをホストします。
 
-[Azure サブスクリプション](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing) をお持ちでない場合は、このトピックの手順を実行する前にアカウントを作成してください。 12 か月間は無料のアカウントで開始できます。 詳細については、[今すぐ Azure 無料アカウントを作成する](https://azure.microsoft.com/free/) を参照してください。
+[Azure サブスクリプション](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)をお持ちでない場合は、この記事の手順を実行する前にアカウントを作成してください。 12 か月間は無料のアカウントで開始できます。 詳細については、[今すぐ Azure 無料アカウントを作成する](https://azure.microsoft.com/free/) を参照してください。
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>概要
 
-[ヘルプ ウィンドウで使用するコンテンツの準備](preparing-content.md) トピックでは、製品内の **ヘルプ** ウィンドウで使用できるようにヘルプ コンテンツを準備する手順について説明します。 一連の HTML ファイルとそれに相当する JavaScript Object Notation (JSON) ファイルを取得したら、Web アプリと検索サービスを設定できます。
+[ヘルプ ウィンドウで使用するコンテンツの準備](preparing-content.md)の記事では、製品内の **ヘルプ** ウィンドウで使用できるようにヘルプ コンテンツを準備する手順について説明します。 一連の HTML ファイルとそれに相当する JavaScript Object Notation (JSON) ファイルを取得したら、Web アプリと検索サービスを設定できます。
 
 ### <a name="process-overview"></a>プロセスの概要
 
@@ -51,7 +51,7 @@ Azure リソースを作成するための一般的なプロセスは、次の�
 
     この例では、[Postman](https://www.postman.com/) という名前の API ツールを使用してREST API 呼び出しを行います。 言語固有のインデックス アナライザーを使用するには、言語固有のインデックスを作成する必要があります。
 
-このトピックの残りのセクションでは、Azure アカウントと有効なサブスクリプションを持っていることを前提としています。 [Azure サブスクリプション](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing) をお持ちでない場合は、始める前にアカウントを作成してください。 12 か月間は無料のアカウントで開始できます。 詳細については、[今すぐ Azure 無料アカウントを作成する](https://azure.microsoft.com/free/) を参照してください。
+この記事の残りのセクションでは、Azure アカウントと有効なサブスクリプションを持っていることを前提としています。 [Azure サブスクリプション](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing) をお持ちでない場合は、始める前にアカウントを作成してください。 12 か月間は無料のアカウントで開始できます。 詳細については、[今すぐ Azure 無料アカウントを作成する](https://azure.microsoft.com/free/) を参照してください。
 
 ## <a name="create-a-resource-group"></a><a name="resgr"></a>リソース グループを作成する
 
@@ -122,7 +122,7 @@ JSON ファイルを BLOB コンテナーにアップロードするには、い
 ### <a name="create-a-data-source"></a><a name="searchdatasource"></a>データ ソースを作成する
 
 1. Postman を開いて、新しい POST 要求を作成します。 このツールに慣れていない場合は、[Postman を使用して Azure Cognitive Search REST API の探索](/azure/search/search-get-started-postman) を参照してください。
-2. **リクエスト URL の入力** フィールドで、`https://[AzureSearchServicename].search.windows.net/datasources?api-version=2017-11-11` と入力します。 **\[AzureSearchServicename\]** を、このトピックの [検索サービスの作成](#searchservice) セクションで作成した検索サービスの名前 (例えば、**mycustomhelpsearch**) に置き換えます。
+2. **リクエスト URL の入力** フィールドで、`https://[AzureSearchServicename].search.windows.net/datasources?api-version=2017-11-11` と入力します。 **\[AzureSearchServicename\]** を、この記事の [検索サービスの作成](#searchservice)セクションで作成した検索サービスの名前 (例えば、**mycustomhelpsearch**) に置き換えます。
 3. **ヘッダー** タブで、**"Content-type"** を **application/json** に設定し、Azure Cognitive Search サービスからのキーに対して **api-key** を設定します。 キーは、検索サービスの左側にある **設定** の **アクセス キー** にあります。
 4. **認証** タブで、**タイプ** を **非認証** に設定します。
 5. **本文** タブで、次のテキストを貼り付けます。
@@ -244,7 +244,7 @@ JSON ファイルを BLOB コンテナーにアップロードするには、い
 
 ## <a name="next-steps"></a>次のステップ
 
-このトピックのすべての手順を完了すると、ヘルプ コンテンツが Azure Web アプリ にアップロードされ、インデックスが作成されます。
+この記事のすべての手順を完了すると、ヘルプ コンテンツが Azure Web アプリ にアップロードされ、インデックスが作成されます。
 
 次の手順では、コンテンツを検出できるように **ヘルプ** ウィンドウを拡張します。 このようにして、ユーザーが Dynamics 365 ソリューションの **ヘルプ** ウィンドウを開くと、製品内の **ヘルプ** ウィンドウは、ヘルプへの状況依存リンクを生成できます。 詳細については、[カスタム ヘルプ Web サイトを ヘルプ ウィンドウに接続する](connect-help-pane.md) を参照してください。
 

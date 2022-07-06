@@ -1,6 +1,6 @@
 ---
 title: SysMailerフレームワークを使用して電子メール体験を開発する
-description: このトピックでは、SysMailer フレームワークを使用して、電子メールを送信する方法について説明します。
+description: この記事では、SysMailer フレームワークを使用して、電子メールを送信する方法について説明します。
 author: ChrisGarty
 ms.date: 05/23/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: c82c919769c83d3aef793f1d1bc93e385cb130eb
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f57b5b83a3aed6e3627b86add664bd8eb61745ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866995"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 
@@ -30,7 +30,7 @@ SysMailer フレームワークは電子メール プロバイダー、メッセ
 
 ### <a name="scenarios"></a>シナリオ
 
-このトピックでは、3 つのシナリオについて説明します。
+この記事では、3 つのシナリオについて説明します。
 
 - 対話型メッセージを送信しています
 - 非対話型 (バッチ) メッセージを送信しています
@@ -193,7 +193,7 @@ public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 
 ## <a name="migration-from-microsoft-dynamics-ax-2012-to-finance-and-operations-applications"></a>Microsoft Dynamics AX 2012 から Finance and Operations アプリケーションへの移行
 
-移行には、このトピックの例に示すように **SysMailerMessageBuilder** オブジェクトを使用して メッセージを構築し、**SysMailerFactory** を使用して送信することが含まれます。
+移行には、この記事の例に示すように **SysMailerMessageBuilder** オブジェクトを使用して メッセージを構築し、**SysMailerFactory** を使用して送信することが含まれます。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

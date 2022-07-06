@@ -1,6 +1,6 @@
 ---
 title: 共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
-description: このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
+description: この記事では、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
 author: pdp1207
 ms.date: 06/17/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f9f3cc606c5ec08c44a3296ad2fc92ec7012bceb
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5a1fb00d5bd71a6b72fe88db507040f6e85377ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853808"
 ---
 # <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 
 [!include [banner](../includes/banner.md)]
 
-Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。 このトピックでは、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
+Retail Cloud POS は、ブラウザーのコンテキストで動作する Web アプリケーションです。 この記事では、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
 
 Retail Cloud POS は、Web ブラウザーのコンテキストで動作する Web アプリケーションです。 したがって、ユーザーが Web アプリケーションのコンテキストで任意のスクリプトを実行できるときに攻撃するのは脆弱です。 このような攻撃の要件の 1 つは、個人またはリモート デスクトップ接続を使用して、ユーザーがコンピューターへ物理的にアクセスすることです。 攻撃に対する脆弱性は、開発者ツールを提供するほとんどのブラウザーの、また権限の十分な制御なしで実行されるスクリプトを有効にするほとんどのブラウザーの既存の問題です。 Web アプリケーションはホスティング環境にほとんど影響力をもたないため、セキュリティの問題を軽減する方法の 1 つは多層防御を追加することです。 ブラウザーおよびオペレーティング システムの両方の制限の厳しい強いポリシーを活用して、多層防御を構築できます。
 

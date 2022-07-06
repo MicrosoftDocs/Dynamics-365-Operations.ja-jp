@@ -1,6 +1,6 @@
 ---
 title: オールインワン配置可能パッケージ
-description: このトピックでは、オールインワンの配置可能なパッケージの概念とその使用方法について説明します。
+description: この記事では、オールインワンの配置可能なパッケージの概念とその使用方法について説明します。
 author: laneswenka
 ms.date: 05/20/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a2e705c59eee44a6638e44367ea684c51072b87b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a47e4e0e7ed9953e0b8e5fe3f736eaf65ec0925f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867111"
 ---
 # <a name="all-in-one-deployable-packages"></a>オールインワン配置可能パッケージ
 
 お客様は、ソフトウェア配置可能パッケージを適用することにより、各自の環境内のソフトウェアを更新できます。 これらのパッケージは、お客様自身がカスタマイズの形で作成できます。 また、パートナーや独立系ソフトウェア ベンダー (ISV) によって提供されることもあります。 Microsoft では、これらのさまざまなパッケージを 1 つのパッケージにまとめてから、環境に適用することをお勧めします。 セルフサービス環境をお持ちのお客様にとって、このアプローチは難しい要件です。
 
-このトピックでは、オールインワン配備可能パッケージを作成および管理するためのベスト プラクティスについて説明します。
+この記事では、オールインワン配備可能パッケージを作成および管理するためのベスト プラクティスについて説明します。
 
 > [!IMPORTANT]
 > - オール イン ワン パッケージの適用は、フェーズで行われます。 オールインワン配置可能パッケージでは **ない** 配置可能パッケージに対するサポートを拡張する要求は、2020 年 10 月 31 日に終了しました。

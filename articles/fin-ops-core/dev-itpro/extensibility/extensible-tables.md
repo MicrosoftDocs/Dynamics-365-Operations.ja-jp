@@ -1,6 +1,6 @@
 ---
 title: 拡張可能なテーブルの書き込み
-description: このトピックでは、拡張可能テーブルを書き込む方法について説明します。
+description: この記事では、拡張可能テーブルを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 09/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 1f076b94a229b39ad170753a0c52a4cacd0ad345
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a8bac8880cd3bfb2bec043796eca6893c42cc654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866864"
 ---
 # <a name="write-extensible-tables"></a>拡張可能なテーブルの書き込み
 [!include [banner](../includes/banner.md)]

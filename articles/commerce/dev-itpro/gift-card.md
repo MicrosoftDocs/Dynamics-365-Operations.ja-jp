@@ -1,6 +1,6 @@
 ---
 title: 外部ギフト カードのサポート
-description: このトピックでは、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カードのサポートについて説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カードのサポートについて説明します。
 author: BrianShook
 ms.date: 04/05/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: bc4ba2296d4deeb8ffd402e4749d2c6225ecfec4
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: b25847b89aaf8f393fe1579a1c93a0e7542425c2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550023"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881344"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、コール センターや店舗での、Retail Modern point of sale (MPOS) における外部ギフトカードの設定方法について説明します。
+この記事では、コール センターや店舗での、Retail Modern 現時点管理 (MPOS) における外部ギフトカードの設定方法について説明します。
 
 Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト カードをサポートしています。 内部ギフト カードは Dynamics 365 Commerce で完全に管理されますが、外部ギフトカードはサード パーティによって管理されます。 小売業者の工程が Microsoft Dynamics で完全に実行されている場合、内部ギフト カードが最適なソリューションである場合があります。 複数の国や地域にわたる複雑な企業、および複数の販売時点管理 (POS) システムでは、多くの場合サード パーティを使用してギフト カードの残高を管理し、それらのシステムでギフト カードを使用できるようにすることが最善です。
 
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 ## <a name="external-gift-card-setup"></a>外部ギフト カードの設定
 
 > [!NOTE]
-> 一部の設定手順では、デモ データが使用されることを前提としています。 手順は、使用するデータセットによって異なる場合があります。 テスト コネクタは、サンドボックスのみを目的としています。 テスト コネクタは UAT または実稼働環境ではサポートされません。 
+> 一部の設定手順では、デモ データが使用されることを前提としています。 手順は、使用するデータセットによって異なる場合があります。 テスト コネクタは、サンドボックスのみを目的としています。 テスト コネクタは UAT または運用環境ではサポートされません。 
 
 ### <a name="card-types"></a>カード タイプ
 
@@ -55,9 +55,9 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 1. **カード タイプ** ページで、新しく作成されたギフト カードを選択し、**カード番号** を選択します。
 2. 外部ギフト カードで使用されるカード番号の範囲を指定し、**保存** を選択します。
 
-次の例では、カード番号の最初の 4 桁が **6036** の場合、このトピックの "カード タイプ" セクションで設定したギフト カードにカードがマップされます。
+次の例では、カード番号の最初の 4 桁が **6036** の場合、この記事の「カード タイプ」セクションで設定したギフト カードにカードがマップされます。
 
-| フィールド名         | Value |
+| フィールド名         | 値 |
 |--------------------|-------|
 | 開始カード番号   | 6000  |
 | 終了カード番号     | 6999  |
@@ -157,7 +157,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 12. **9** で始まる数を入力し、次に金額を指定します。
 13. 品目がカートに追加された後、現金またはカードを使用して支払うことができます。
 
-外部ギフト カードのサポートを示すためにテスト コネクタを使用する場合は、カード番号 **61234** を使用して支払を行う必要があります。 個人識別番号 (PIN) を入力する必要はありません。 テスト コネクタは、生産では **決して** 使用しないでください。
+外部ギフト カードのサポートを示すためにテスト コネクタを使用する場合は、カード番号 **61234** を使用して支払を行う必要があります。 個人識別番号 (PIN) を入力する必要はありません。 テスト コネクタは、運用では **決して** 使用しないでください。
 
 ## <a name="external-gift-cards-for-the-call-center-and-storefront"></a>コール センターおよびストアフロントの外部ギフト カード
 

@@ -1,6 +1,6 @@
 ---
 title: Azure Pipelines を使用した資産のデプロイ
-description: このトピックでは、Azure DevOps のパイプラインを使用して、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリから資産を配置する方法について説明します。
+description: この記事では、Azure DevOps のパイプラインを使用して、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリから資産を配置する方法について説明します。
 author: jorisdg
 ms.date: 04/29/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 937f2de6173f9d527f931297594ab47542222d0a
-ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
+ms.openlocfilehash: 4e3416a90b15f66c938e6dc88354ac927c951906
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867018"
 ---
 # <a name="deploy-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のデプロイ
 
@@ -28,12 +28,12 @@ Microsoft Azure DevOps の **Dynamics Lifecycle Services (LCS) 資産の配置**
 * ソフトウェア配置可能パッケージ、Commerce Cloud Scale Unit (CSU) 拡張機能パッケージ、および eコマース パッケージは、オンプレミスのローカル ビジネス データ (LBD) 環境には展開できません。
 
 > [!NOTE]
-> Commerce Cloud Scale Unit (CSU) 拡張機能または eコマース パッケージは、**Dynamics Lifecycle Services (LCS) アセット配置** を使用して、生産、UAT、またはサンドボックス環境に展開できます
+> Commerce Cloud Scale Unit (CSU) 拡張機能または eコマース パッケージは、**Dynamics Lifecycle Services (LCS) アセット配置** を使用して、運用、UAT、またはサンドボックス環境に展開できます
 
-このトピックは、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
+この記事は、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識があることを前提としています。
 
 > [!NOTE]
-> これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 財務と運用ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントにインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
+> これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントにインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
 
 ## <a name="dynamics-365-commerce-cloud-scale-unit-csu-extension-and-e-commerce-package-deployment"></a>Dynamics 365 Commerce Cloud Scale Unit (CSU) 拡張機能および eコマース パッケージの展開
 

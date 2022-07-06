@@ -1,6 +1,6 @@
 ---
 title: インド向け QR コードの生成とレシートへの印刷
-description: このトピックでは、インド向けに、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
+description: この記事では、インド向けに、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
 author: prabhatb2011
 ms.date: 01/31/2022
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 06224c265c2a1792f884874e1b39fae3cfd655a1
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7e6ec83b7615967676c255f7a8e045c8853e1035
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885417"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts-for-india"></a>インド向け QR コードの生成とレシートへの印刷
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、カスタマイズのガイドラインを示し、インド向けに、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
+この記事では、カスタマイズのガイドラインを示し、インド向けに、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
-Commerce Runtime (CRT) で QR コードを生成する機能は、Microsoft Dynamics 365 Commerce バージョン 10.0.13 で導入されました。 したがって、このトピックの情報はバージョン 10.0.13 以降でのみ有効です。
+Commerce Runtime (CRT) で QR コードを生成する機能は、Microsoft Dynamics 365 Commerce バージョン 10.0.13 で導入されました。 したがって、この記事の情報はバージョン 10.0.13 以降でのみ有効です。
 
 Commerce バージョン 10.0.17 以降では、Retail Hardware Station を使用したレシートへの QR コードの印刷がサポートされています。 10.0.16 以前のバージョンでは、QR コードは Modern POS (MPOS) からのみ印刷できます。
 

@@ -1,6 +1,6 @@
 ---
-title: 生成されるドキュメントに対するカスタム 送信先の実装
-description: このトピックでは、電子申告 (ER) 形式で生成されたドキュメントを格納する ER 送信先リストを拡張する方法について説明します。
+title: 生成されるドキュメントに対するカスタム送信先の実装
+description: この記事では、電子申告 (ER) 形式で生成されたドキュメントを格納する ER 送信先リストを拡張する方法について説明します。
 author: NickSelin
 ms.date: 03/29/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a6263fc1a06f3733ae312674f75538403fae65ba
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: da3e09c15c336301ec3b17b313afc9e96bf4cd1a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864763"
 ---
 # <a name="implement-a-custom-destination-for-generated-documents"></a>生成されるドキュメントに対するカスタム 送信先の実装
 
 [!include[banner](../includes/banner.md)]
 
-[電子申告 (ER)](general-electronic-reporting.md) フレームワークのアプリケーション プログラミング インターフェイス (API) により、ER 形式で生成されるドキュメントを格納する ER 送信先のリストを[拡張](er-apis-app10-0-19.md#er-api-extend-destination) できます。 このトピックには、カスタマイズされた ER 送信先を実装するために完了する必要のある主要なタスクに関する概要が含まれます。
+[電子申告 (ER)](general-electronic-reporting.md) フレームワークのアプリケーション プログラミング インターフェイス (API) により、ER 形式で生成されるドキュメントを格納する ER 送信先のリストを[拡張](er-apis-app10-0-19.md#er-api-extend-destination) できます。 この記事には、カスタマイズされた ER 送信先を実装するために完了する必要のある主要なタスクに関する概要が含まれます。
 
 ## <a name="prerequisites"></a>必要条件
 

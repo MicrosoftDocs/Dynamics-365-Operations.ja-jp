@@ -1,6 +1,6 @@
 ---
-title: 統合された作業者、職務、職位
-description: このトピックでは、Microsoft Dynamics 365 アプリの統合された作業者データに関する情報を提供します。
+title: 作業者、職務、および職位の統合
+description: この記事では、Microsoft Dynamics 365 アプリの統合された作業者データに関する情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 01/08/2020
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1774fd837a3b86f21813dd4c444db855d8edb97d
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c3428520f743b5cabdc0dfafdc263fc9e5c8f02c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906555"
 ---
 # <a name="integrated-worker-job-and-position"></a>作業者、職務、および職位の統合
 
@@ -43,6 +43,6 @@ HR データには、従業員と契約社員、職位、職務に関する情�
 [職位 V2](mapping-reference.md#106) | cdm_jobpositions | |
 [職位タイプ](mapping-reference.md#110) | cdm_positiontypes | |
 [職位作業者割り当て](mapping-reference.md#111) | cdm_positionworkerassignmentmaps | |
-[ワーカー](mapping-reference.md#113) | cdm_workers | Dynamics 365 Finance と Supply Chain Management では、作業者は従業員または契約社員のいずれかに分類されます。 Dataverse では、作業者をボランティアとして分類することもできます。 データが Finance と Supply Chain Management に変換されると、ボランティアは契約社員になります。 |
+[ワーカー](mapping-reference.md#113) | cdm_workers | Dynamics 365 Finance および Supply Chain Management では、作業者は従業員または契約社員のいずれかに分類されます。 Dataverse では、作業者をボランティアとして分類することもできます。 データが Finance と Supply Chain Management に変換されると、ボランティアは契約社員になります。 |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

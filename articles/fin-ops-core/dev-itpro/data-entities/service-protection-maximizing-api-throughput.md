@@ -1,6 +1,6 @@
 ---
 title: API スループットの最大化
-description: このトピックでは、サービス保護アプリケーション プログラミング インターフェイス (API) の制限に対するスロットル応答の管理と、API スループットの最大限化に役立つ戦略について説明します。
+description: この記事では、サービス保護アプリケーション プログラミング インターフェイス (API) の制限に対するスロットル応答の管理と、API スループットの最大限化に役立つ戦略について説明します。
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-16
 ms.dyn365.ops.version: Platform update 52
-ms.openlocfilehash: e23720cf67a60982df1c61257fcb0ff58033335d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 4b4412d393f455b73a02f291b2819e900019a921
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712790"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897126"
 ---
 # <a name="maximize-api-throughput"></a>API スループットの最大化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、サービス保護アプリケーション プログラミング インターフェイス (API) の制限に対するスロットル応答の管理と、API スループットの最大限化に役立つ戦略について説明します。
+この記事では、サービス保護アプリケーション プログラミング インターフェイス (API) の制限に対するスロットル応答の管理と、API スループットの最大限化に役立つ戦略について説明します。
 
 最短期間でほとんどのデータを移動するためにスループットに優先順位を付ける必要があるアプリケーションがある場合、適用できるいくつかの戦略があります。
 

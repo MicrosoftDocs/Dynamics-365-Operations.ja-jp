@@ -1,6 +1,6 @@
 ---
 title: クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
-description: このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。
+description: この記事では、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。
 author: jorisdg
 ms.date: 12/18/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2aa53368539f301216f12d89a4e7bba074596776
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 710b11b746987adcf9396fb822eb45c35a66a52e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866846"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 
@@ -67,7 +67,7 @@ info(object.doSomething(33));
 
 ## <a name="supported-versions"></a>サポートされているバージョン
 > [!IMPORTANT]
-> このトピックで説明する機能 (CoC および保護されたメソッドと変数へのアクセス) は、Platform update 9 で利用できます。 ただし、強化されているクラスは、プラットフォーム更新プログラム 9 またはそれ以降でコンパイルされる必要があります。 2017 年 8 月現在、Finance and Operations のアプリケーションの現在のリリースはすべて Platform Update 8 またはそれ以前でコンパイルされています。 したがって、基本パッケージ (Application Suite など) で定義されているメソッドをラップするには、プラットフォーム更新 9 以降でその基本パッケージを再コンパイルする必要があります。
+> この記事で説明する機能 (CoC および保護されたメソッドと変数へのアクセス) は、プラットフォーム update 9 で利用できます。 ただし、強化されているクラスは、プラットフォーム更新プログラム 9 またはそれ以降でコンパイルされる必要があります。 2017 年 8 月現在、Finance and Operations のアプリケーションの現在のリリースはすべて Platform Update 8 またはそれ以前でコンパイルされています。 したがって、基本パッケージ (Application Suite など) で定義されているメソッドをラップするには、プラットフォーム更新 9 以降でその基本パッケージを再コンパイルする必要があります。
 例: アプリケーション スイート モデルに存在するクラスを増補する独自の拡張モデルを作成し、CoC を使用している場合や保護されたメソッド/変数にアクセスする場合は、アプリケーション スイートと拡張モデルの両方を構築する必要があります。 ランタイム環境でこの機能を配置するには、両方のモデルを含む配置可能なパッケージを作成する必要があります。
 
 ## <a name="capabilities"></a>処理能力
@@ -434,7 +434,7 @@ CoC 拡張メソッドでは、次の呼び出しを条件付きで呼び出し�
 コンストラクターは拡張できません。 拡張クラスで定義される **新しい** メソッドは、拡張クラス自体のコンストラクターを定義します。 また、**新しい** メソッドはパブリックである必要があり、引数を持つことはできません。 詳細については、[コンストラクター](class-extensions.md#constructors) を参照してください。
 
 ### <a name="tooling"></a>ツール
-このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。
+この記事に記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートをまだ提供していません。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

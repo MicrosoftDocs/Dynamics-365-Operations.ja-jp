@@ -1,6 +1,6 @@
 ---
 title: 重複支払の防止
-description: このトピックでは、Modern POS で Dynamics 365 Commerce が支払いの重複を防ぐ方法について説明します。
+description: この記事では、Modern POS で Dynamics 365 Commerce が支払いの重複を防ぐ方法について説明します。
 author: BrianShook
 ms.date: 10/23/2020
 ms.topic: article
@@ -15,29 +15,29 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 67a09011d4ec824c1f1305341d7287aa9d7e1825
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: a24f8eab99d122d56697852dec5a52122a72afb5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865955"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 
 [!include [banner](includes/banner.md)]
 
-このトピックは、Dynamics 365 Commerce Modern POS の重複支払防止機能の概要を提供します。
+この記事は、Dynamics 365 Commerce Modern POS の重複支払防止機能の概要を提供します。
 
 ## <a name="overview"></a>概要
 
-このトピックでは、販売時点管理 (POS) が支払ターミナルの通信を喪失し、POS とターミナルの同期がされない状況から回復する時のユーザー エクスペリエンスを説明します。
+この記事では、販売時点管理 (POS) が支払ターミナルの通信を喪失し、POS とターミナルの同期がされない状況から回復する時のユーザー エクスペリエンスを説明します。
 
 重複支払保護機能により、Modern POS は、通信が失われても、顧客が支払ターミナルを使用して別に支払処理をし、結果として重複して支払ってしまうようなことなくシームレスに回復できます。
 
 > [!NOTE]
 > 重複支払保護機能は、支払ターミナルを使用して行われた支払に対してのみサポートされています。
 
-このトピックでは、重複支払保護機能の次の側面について説明します。
+この記事では、重複支払保護機能の次の側面について説明します。
 
 - [前提条件](#prerequisites) – Modern POS でこの機能を使用するため、一連の前提条件を設定します。
 - [シナリオの詳細](#scenario-details) – 重複支払保護機能の対象となるシナリオの詳細な説明。
@@ -46,7 +46,7 @@ ms.locfileid: "7779888"
 
 ## <a name="prerequisites"></a>必要条件
 
-- 支払コネクタおよび対応する支払ゲートウェイまたはプロセッサは、この機能をサポートする必要があります。 *支払コネクタ* は、コマース (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準支払 SDK を使用して実装されています。
+- 支払コネクタおよび対応する支払ゲートウェイまたはプロセッサは、この機能をサポートする必要があります。 *支払コネクタ* は、コマース (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 この記事で説明されているコネクタは、標準支払 SDK を使用して実装されています。
 - コネクタが対応する重複支払保護インターフェイスを実装する場合、 その機能は Modern POS で自動的に有効になります。 それ以外の場合、自動的に無効になっています。
 
 <!---

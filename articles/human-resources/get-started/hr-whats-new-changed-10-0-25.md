@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources 10.0.25 の新機能または変更された機能
-description: このトピックでは、Dynamics 365 Human Resources バージョン 10.0.25 プレビュー リリースの新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Human Resources バージョン 10.0.25 プレビュー リリースの新機能または変更された機能について説明します。
 author: twheeloc
 ms.date: 01/24/2022
 ms.topic: article
@@ -14,28 +14,28 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: df4048385ff309bcb45586d8d5059def12e8d846
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 505c54ccdedb03fc1f4495e66d1c2c5747e4c825
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845129"
 ---
 # <a name="preview-of-dynamics-365-human-resources-10025-april-2022"></a>Dynamics 365 Human Resources 10.0.25 (2022 年 4 月) のプレビュー
 
 [!include [banner](../../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources バージョン 10.0.25 の新機能または変更された機能について説明します。 このバージョンには 10.0.1149 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Human Resources バージョン 10.0.25 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.1149 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー**: 2022 年 1 月
 - **リリースの一般提供 (自己更新)**: 2022 年 3 月
 - **リリースの一般提供 (自動更新)**: 2022 年 4 月
 
-10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は Finance and Operations のインフラストラクチャに統合されます。 しかし、 Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、 [Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](../../human-resources/hr-infrastructure-merge-faq.md) を参照してください。
+10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は Finance and Operations のインフラストラクチャに統合されます。 しかし、Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、 [Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](../../human-resources/hr-infrastructure-merge-faq.md) を参照してください。
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-次の表に、このリリースに含まれる機能の一覧を示します。 このトピックが最初に公開された後に、ビルドに加えた機能を含めるために、このトピックを更新することがあります。 これらの機能を使用または無効にする場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で実行する必要があります。
+次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに加えた機能を含めるために、この記事を更新することがあります。 これらの機能を使用または無効にする場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で実行する必要があります。
 
    | 機能名 | 概要 | リリース状態 |
    |--------------|----------|----------------|

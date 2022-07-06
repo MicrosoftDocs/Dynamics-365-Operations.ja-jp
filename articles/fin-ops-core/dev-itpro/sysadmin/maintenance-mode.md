@@ -1,6 +1,6 @@
 ---
 title: メンテナンス モード
-description: このトピックでは、メンテナンス モードについて説明します。メンテナンス モードは、システム管理者がシステム機能に影響を与える可能性のあるシステム変更を行うためのシステム全体に適用される設定です。
+description: この記事では、メンテナンス モードについて説明します。メンテナンス モードは、システム管理者がシステム機能に影響を与える可能性のあるシステム変更を行うための、システム全体に適用される設定です。
 author: laneswenka
 ms.date: 05/10/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47254584b4792d9425a6160ba61d208f1056bace
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: f16a3439166b696bbfdce4339bda186ccd1fec21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343706"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909479"
 ---
 # <a name="maintenance-mode"></a>メンテナンス モード
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations のメンテナンス モードに関する情報を提供します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
+この記事では、財務と運用のメンテナンス モードについて説明します。 メンテナンス モードを有効にすると、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、有効または無効にすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード ユーザー** ロールを持つユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。 メンテナンス モードがオフのとき、**ライセンス コンフィギュレーション** ページを編集することはできません。
 
 ## <a name="turn-maintenance-mode-on-and-off-on-sandbox-and-production-environments-through-lifecycle-services"></a>Lifecycle Services を通じてサンドボックスおよび運用環境でメンテナンス モードを有効または無効にする 
 サンドボックスおよび運用環境で、Lifecycle Services (LCS) を通じて直接メンテナンス モードを有効または無効にできます。 これを行うには、次の手順を参照してください。

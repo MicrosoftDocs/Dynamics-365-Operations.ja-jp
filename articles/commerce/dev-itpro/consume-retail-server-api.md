@@ -1,6 +1,6 @@
 ---
 title: 外部アプリケーションでの Retail Server API の使用
-description: このトピックでは、外部アプリケーションで Retail Server API を使用する方法について説明します。
+description: この記事では、外部アプリケーションで Retail Server API を使用する方法について説明します。
 author: mugunthanm
 ms.date: 01/11/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 83eda2b61cb6e91ffc3d7274ab2aa29dc8ff2632
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: bbf2aaec620b7268a2d6f476bfaa6f804c46bd7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968116"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877020"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、外部アプリケーションで Retail Server API を使用する方法について説明します。 Retail Server は、外部アプリケーションが API を使用できるように、Open Data Protocol (OData) Web エンドポイントを公開します。 また、Retail Server は Commerce Runtime (CRT) ビジネス ロジックをホストし、それを OData エンドポイントとして公開します。 これらのエンドポイントは、Retail Server API と呼ばれます。
+この記事では、外部アプリケーションで Retail Server API を使用する方法について説明します。 Retail Server は、外部アプリケーションが API を使用できるように、Open Data Protocol (OData) Web エンドポイントを公開します。 また、Retail Server は Commerce Runtime (CRT) ビジネス ロジックをホストし、それを OData エンドポイントとして公開します。 これらのエンドポイントは、Retail Server API と呼ばれます。
 
 外部アプリケーションでは、HTTPS を使用して OData サービスを使用できます。 Retail Server には、API を利用するための複数のオプションがあります。
 
@@ -54,7 +54,7 @@ https://RS-URL/Commerce/$metadata
 
 外部アプリケーションの統合では、API にアクセスするために **アプリケーション** 認証フローのみを必要とします。 E コマース アプリケーションの統合には、**顧客** 認証が必要です。
 
-このトピックでは、**アプリケーション認証** フローの設定と、**アプリケーション** 認証コンテキストを使用した API へのアクセスに重点を置いて説明します。
+この記事では、**アプリケーション認証** フローの設定と、**アプリケーション** 認証コンテキストを使用した API へのアクセスに重点を置いて説明します。
 
 外部アプリケーションから API にアクセスする前に、外部アプリケーションを Azure アプリ登録に登録する必要があります。また、登録されたアプリケーションの詳細を Commerce Headquarters に追加する必要があります。
 

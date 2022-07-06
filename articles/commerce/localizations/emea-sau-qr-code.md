@@ -1,6 +1,6 @@
 ---
 title: サウジアラビア向け QR コードの生成とレシートへの印刷
-description: このトピックでは、Microsoft Dynamics 365 Commerce でサウジアラビアで使用できる QR コードを印刷するための機能の概要を説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でサウジアラビアで使用できる QR コードを印刷するための機能の概要を説明します。
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 01/28/2022
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2021-11-04
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: be6708670236b83ed2952c79be2e59d3c2e57ba2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: b22d466ee1f19b5328d329d11a0f54b1a46539b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063355"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885128"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts-for-saudi-arabia"></a>サウジアラビア向け QR コードの生成とレシートへの印刷
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でサウジアラビアで使用できる QR コードを印刷するための機能の概要を説明します。
+この記事では、Microsoft Dynamics 365 Commerce でサウジアラビアで使用できる QR コードを印刷するための機能の概要を説明します。
 
 サウジアラビアに通常の住所を持つ法人にリンクされている店舗では、ユーザーは現金払いトランザクションまたは販売注文トランザクションのレシートに QR コードを印刷できます。 QR コードには、次の情報が含まれます。
 
@@ -109,9 +109,9 @@ QR コードを生成してサウジアラビア向けのレシートにを印�
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
     ```
 
-#### <a name="production-environment"></a>実稼働環境
+#### <a name="production-environment"></a>運用環境
 
-以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。
+以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを運用環境で適用します。
 
 1. **RetailSdk\\Assets** フォルダーの下の **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** パッケージ コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。
 

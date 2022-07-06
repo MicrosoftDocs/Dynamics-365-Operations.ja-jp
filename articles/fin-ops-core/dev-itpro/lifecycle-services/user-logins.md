@@ -1,6 +1,6 @@
 ---
 title: ユーザー サインインの追跡
-description: このトピックでは、Finance and Operations アプリにサインインして使用するユーザーの監査ログを作成する方法について説明します。
+description: この記事では、財務と運用アプリにサインインして使用するユーザーの監査ログを作成する方法について説明します。
 author: angelmarshall
 ms.date: 11/02/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 14be9297515c8ced2ed188fffe75050948e82d28
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 686ce95335151aec9845c3e9030f670a5bb9a792
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866329"
 ---
 # <a name="track-user-sign-ins"></a>ユーザー サインインの追跡 
  
@@ -27,12 +27,12 @@ ms.locfileid: "7500491"
 
 多くの組織は、システムを使用したユーザーの監査証跡を管理する必要があります。 この要件は、コンプライアンス上の理由から、または不適切な使用が発生した場合にトラックバックを有効にできます。 
 
-Microsoft Dynamics AX 2012 では、**監査ログ** フォームが Microsoft Dynamics AX 環境にアクセスしたユーザーを記録していました。 Microsoft Dynamics 365 Finance and Operations アプリでは、この情報はテレメトリでキャプチャされます。 IT 管理者は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、この情報をダウンロードし、サインインしているユーザーの監査証跡を維持するためにオフライン ストレージに移動することができます。
+Microsoft Dynamics AX 2012 では、**監査ログ** フォームが Microsoft Dynamics AX 環境にアクセスしたユーザーを記録していました。 Microsoft Dynamics 365 財務と運用アプリでは、この情報はテレメトリでキャプチャされます。 IT 管理者は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、この情報をダウンロードし、サインインしているユーザーの監査証跡を維持するためにオフライン ストレージに移動することができます。
 
 システムを使用したユーザーの監査ログを生成するには、次の手順を実行します。
 
 1. LCS でサインインし、実装に関連付けられているプロジェクトを開きます。
-2. 実稼働環境に移動して、**環境の詳細** ページを開きます。
+2. 運用環境に移動して、**環境の詳細** ページを開きます。
 3. **監視** タブで、**環境の監視** リンクを選択して、監視ダッシュボードを開きます。
 4. **活動** タブで、**未加工のログの表示** を選択します。
 5. **クエリ** フィールドで、**ユーザー ログイン イベント** を選択します。 開始日が **終了日 - 7日** に設定されている期間を参照します。

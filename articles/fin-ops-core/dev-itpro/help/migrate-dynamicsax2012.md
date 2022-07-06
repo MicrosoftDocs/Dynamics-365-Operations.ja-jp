@@ -1,6 +1,6 @@
 ---
 title: Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換する
-description: このトピックでは、Microsoft Dynamics AX のコンテンツを Dynamics 365 ソリューションで再利用する方法について説明します。
+description: この記事では、Microsoft Dynamics AX のコンテンツを Dynamics 365 ソリューションで再利用する方法について説明します。
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 5e846e34bd84ec2670d149bfa37f1799f8d11bea9a23ff95ec51f157a957da81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b51c81ecdf38ebeba6a697d2c012912a0b011e01
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737833"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866587"
 ---
 # <a name="convert-dynamics-ax-custom-help-for-use-in-dynamics-365"></a>Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換する
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics AX 2012 の既存のコンテンツがある場合は、Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce で再利用できます。 ただし、まず HTML ファイルを変換して、カスタム ヘルプ環境で使用できるようにする必要があります。
+Microsoft Dynamics AX 2012 の既存のコンテンツがある場合は、Dynamics 365 Finance、Dynamics 365 Supply Chain Management、および Dynamics 365 Commerce で再利用できます。 ただし、まず HTML ファイルを変換して、カスタム ヘルプ環境で使用できるようにする必要があります。
 
 ## <a name="converting-ax-2012-content"></a>AX 2012 コンテンツの変換
 

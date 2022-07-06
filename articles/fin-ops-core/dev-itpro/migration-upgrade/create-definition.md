@@ -1,6 +1,6 @@
 ---
 title: AX 2009 の移行 － 移行グループの作成
-description: このトピックでは、Microsoft Dynamics AX 2009 から Finance and Operations アプリにアップグレードするために移行グループを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics AX 2009 から財務と運用アプリにアップグレードするために移行グループを作成する方法について説明します。
 author: kfend
 ms.date: 09/13/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: dd080004e8ca5b753e4e6250dc1cbff432e0ee6b26d0e3f142f370765a1cfde7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 244f5a26d287c33ccf74399dcb142d051d691bc9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745842"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866220"
 ---
 # <a name="ax-2009-migration--create-migration-groups"></a>AX 2009 の移行 – 移行グループの作成
 

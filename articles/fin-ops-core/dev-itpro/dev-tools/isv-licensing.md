@@ -1,6 +1,6 @@
 ---
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス
-description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
+description: この記事では、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
 author: peakerbl
 ms.date: 05/08/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5e6142a41c5a351ff958595fbad9c93b95cd919
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 82d0a13fc4b93b320d43bbae3ddc46d4aadcd0df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782028"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867048"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。 これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。
+この記事では、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。 これには、ISV のライセンス機能の長所および機能に関する情報が含まれており、ISV ソリューションのライセンスを有効にする方法、パッケージの作成方法、顧客固有のライセンスの生成方法およびテスト目的で自己署名証明書を作成する方法について説明しています。
 
 Microsoft Dynamics エコシステムには、独立系ソフトウェア ベンダー (ISV) が再パッケージ化可能な業種ソリューションをビルド、配置、販売して収益化できるようにするツールとフレームワークが用意されています。 ISV ライセンス機能には、次の利点があります。
 
@@ -153,7 +153,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 3.  ライセンスをターゲット環境にインポートします。
 
     > [!NOTE]
-    > 実稼動システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。 詳細については、このトピックの後半の "実稼働環境" セクションを参照してください。
+    > 実稼動システムでは、配置可能パッケージを使用して、Microsoft Dynamics Lifecycle Services (LCS) からこの手順を完了します。 詳細については、この記事の後半の「運用環境」セクションを参照してください。
 
     | パラメーター名                | 説明                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -192,7 +192,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
 ![保護されている ISV ソリューションと保護されていない ISV ソリューション。](./media/isv_protected_solution.png)
 
-## <a name="production-environments"></a>実稼働環境
+## <a name="production-environments"></a>運用環境
 実稼働システムに ISV ライセンスをインストールするには、LCS によって展開可能なパッケージを使用する必要があります。 コンフィギュレーション モード用テンプレート パッケージは、すべてのインストールに関して次の場所にあります: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (パッケージ フォルダーは通常次の下にあります j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
 > [!div class="mx-imgBorder"]
@@ -206,7 +206,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 ## <a name="appendix-create-self-signed-certificates-for-test-purposes"></a>付録: テスト目的での自己署名証明書の作成
 
 > [!NOTE]
-> 自己署名証明書は、開発時にのみ使用できます。 これらは、実稼働環境でサポートされていません。
+> 自己署名証明書は、開発時にのみ使用できます。 これらは、運用環境でサポートされていません。
 
 プラットフォーム更新プログラム 34 およびそれ以前のバージョン：（非推奨 - ライセンスの作成にSHA1ハッシュアルゴリズムを使用）
 

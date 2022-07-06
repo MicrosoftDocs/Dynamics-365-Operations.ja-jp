@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 288789d63b5582073ec636bdb796987cded214a9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b643b840a20c3ee20a6cdad9a8706e7415389931
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900146"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 
@@ -36,7 +36,7 @@ ms.locfileid: "7781490"
 <td><h3 id="create-recording">記録の作成</h3>
 新しい記録の作成を開始するには、このオプションを選択します。
 <h3 id="play-recording-as-guide">記録をガイドとして再生</h3>
-このオプションを選択すると、ヘルプ トピックとして表示されたり、タスク ガイドとして再生されたときのレコードの概要を確認できます。
+このオプションを選択すると、ヘルプ記事として表示されたり、タスク ガイドとして再生されたときのレコードの概要を確認できます。
 <h3 id="change-recording-text">記録の編集</h3>
 ステップで表示される記録名、説明、またはテキストを変更する必要がある場合は、このオプションを選択します。
 <h3 id="playback-recording">記録の再生</h3>

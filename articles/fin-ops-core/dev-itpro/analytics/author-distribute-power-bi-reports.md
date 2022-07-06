@@ -1,6 +1,6 @@
 ---
 title: Power BI Desktop を使用した分析レポートの作成
-description: このトピックでは、ローカルの Entity Store データベースを使用して Power BI レポートを作成するプロセスについて説明します。
+description: この記事では、ローカルの Entity Store データベースを使用して Power BI レポートを作成するプロセスについて説明します。
 author: RichdiMSFT
 ms.date: 12/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: RICHDI
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: f219650d38e3c639db7cadb82cb97867d72e6720
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 306c88e0daeeba2950aa5f37f70a2511bfc386ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903634"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -31,12 +31,12 @@ ms.locfileid: "7883480"
 ## <a name="accessing-the-local-entity-store-by-using-directquery"></a>DirectQuery を使用してローカル エンティティ ストアへのアクセス
 データ エンティティを介して公開されるオープン データ プロトコル (OData) エンドポイントを使用して、Microsoft Power BI レポートを作成することができます。 このアプローチの限界にもかかわらず、エンティティ格納はレガシ ソリューションでもエンティティ格納をサポートしています。 ただし、DirectQuery は、解析ソリューションのソース データに推奨されるメソッドになりました。 DirectQuery の利点および制限の詳細については、[Power BI Desktop で DirectQuery の使用](https://powerbi.microsoft.com/documentation/powerbi-desktop-use-directquery/)を参照してください。
 
-Power BI Desktop を使用すると、ローカルのエンティティ格納データベースに直接接続することによって、開発またはテスト環境でレポートを作成することができます。 レポートに問題がなければ、管理者は、ユーザーがそれを実稼働環境に移行する支援をすることができます。 このセクションの残りの部分では、このプロセスについて説明します。
+Power BI Desktop を使用すると、ローカルのエンティティ格納データベースに直接接続することによって、開発またはテスト環境でレポートを作成することができます。 レポートに問題がなければ、管理者は、ユーザーがそれを運用環境に移行する支援をすることができます。 このセクションの残りの部分では、このプロセスについて説明します。
 
 > [!NOTE]
 > 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自のサブスクリプションまたはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
 
-> Power BI Embedded 統合は、10.0.22 リリースの一部としてインフラストラクチャをアップグレードしました。 これはインフラストラクチャの変更であり、環境がリリース 10.0.22 にアップグレードされると自動的に行われます。 この変更により、ユーザーはワークスペース レポートの編集時に Power BI Desktop の *最新バージョン* を使用できるようになりました。
+> Power BI Embedded 統合は、10.0.22 リリースの一部としてインフラストラクチャをアップグレードしました。 これはインフラストラクチャの変更であり、環境がリリース 10.0.22 にアップグレードされると自動的に行われます。 この変更により、ユーザーはワークスペース レポートの編集時に Power BI デスクトップの *最新バージョン* を使用できるようになりました。
 
 > バージョン 10.0.21 またはそれ以前を実行している環境では、開発環境にプレインストールされた Power BI Desktop の前回のビルドを使用する必要があります。 または、*互換性がある* Power BI Desktop の Power BI Desktop  2020 年 8 月のリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)から、Power BI Desktop 2020 年 8 月リリース版をダウンロードできます。
 
@@ -83,7 +83,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
 ![Power BI Desktop レポート。](media/Power-BI-Desktop-Report.png)
 
-Power BI Desktop でも計算の作成がサポートされ、複数の集計測定のデータを組み合わせることができます。 数分で、ローカルの開発環境でデータを使用することにより分析レポートを作成することができます。 レポートに問題がなければ、それを実稼働環境に移行できます。これにより、ユーザーは、そのレポートを使用して、実稼働データにかかわることができます。
+Power BI Desktop でも計算の作成がサポートされ、複数の集計測定のデータを組み合わせることができます。 数分で、ローカルの開発環境でデータを使用することにより分析レポートを作成することができます。 レポートに問題がなければ、それを運用環境に移行できます。これにより、ユーザーは、そのレポートを使用して、運用データにかかわることができます。
 
 ## <a name="validating-reports-in-a-demo-environment"></a>デモ環境でのレポートの検証
 

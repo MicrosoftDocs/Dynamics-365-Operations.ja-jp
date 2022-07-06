@@ -1,6 +1,6 @@
 ---
 title: 独立系ソフトウェア ベンダーのライセンス ステータスの表示
-description: このトピックでは、Finance and Operations アプリで独立系ソフトウェア ベンダーのステータスを表示する方法について説明します。
+description: この記事では、財務と運用アプリで独立系ソフトウェア ベンダーのステータスを表示する方法について説明します。
 author: Peakerbl
 ms.date: 04/20/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 764e667ffef6e5a9f5405f9e469bc8b60a6b89870df52cca834f5b9814d3bebb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab498c9e9184e28d0ab49115895a00a75f25e58c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903530"
 ---
 # <a name="view-independent-software-vendor-license-status"></a>独立系ソフトウェア ベンダーのライセンス ステータスの表示
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Dynamics 365 Finance、Dynamics 365 Supply Chain Management、および Dynamics 365 Commerce などの Finance and Operations アプリの独立系ソフトウェア ベンダー (ISV) ライセンスのステータスを表示する方法について説明します。
+この記事では、Dynamics 365 Finance、Dynamics 365 Supply Chain Management、および Dynamics 365 Commerce などの財務と運用アプリの独立系ソフトウェア ベンダー (ISV) ライセンスのステータスを表示する方法について説明します。
 
-ライセンス コードとコンフィギュレーション キーは、Finance and Operations アプリの ISV ライセンス　モデルの一部です。
+ライセンス コードとコンフィギュレーション キーは、財務と運用アプリの ISV ライセンス　モデルの一部です。
 
 > [!NOTE]
-> Microsoft が提供するコンフィギュレーション キーは、Finance and Operations アプリのライセンス モデルの一部ではありません。 キーは、機能を有効または無効にするためにのみ使用されます。
+> Microsoft が提供するコンフィギュレーション キーは、財務と運用アプリのライセンス モデルの一部ではありません。 キーは、機能を有効または無効にするためにのみ使用されます。
 
 ISV のライセンス キーとコードがインストールされると、対応するコンフィギュレーション キーは、**ライセンス コンフィギュレーション** ページで使用可能になり、有効になります。
 

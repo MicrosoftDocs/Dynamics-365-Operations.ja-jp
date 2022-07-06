@@ -1,6 +1,6 @@
 ---
 title: 重複レコード データ共有でサポートされるテーブル
-description: このトピックでは、重複レコード データ共有でサポートされるテーブルについて説明します。 これは、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
+description: この記事では、重複レコード データ共有でサポートされるテーブルについて説明します。 これは、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
 author: ramasri
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 6b8f1bad1d5c38997e38be8472d99135f45a0302
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: 09fbaf06382a497da1f1395837295fd593750579
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850922"
 ---
 # <a name="tables-supported-for-duplicate-record-data-sharing"></a>重複レコード データ共有でサポートされるテーブル
-このトピックでは、重複レコード データ共有でサポートされるテーブルについて説明します。 重複レコード データ共有は、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。 重複レコード データ共有ポリシーにテーブルを追加できる可能性がありますが、次の表に一覧表示されていないテーブルは正式にサポートされていません。
+この記事では、重複レコード データ共有でサポートされるテーブルについて説明します。 重複レコード データ共有は、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。 重複レコード データ共有ポリシーにテーブルを追加できる可能性がありますが、次の表に一覧表示されていないテーブルは正式にサポートされていません。
 
 **Dynamics 365 Finance**
 

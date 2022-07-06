@@ -1,6 +1,6 @@
 ---
 title: アップグレード中の開発環境のトラブルシューティング
-description: このトピックでは、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) レベル 1 開発環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
+description: この記事では、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) レベル 1 開発環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
 author: ttreen
 ms.date: 04/26/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: d20c06dc95993c18bfdca2cc66c627a821d71453
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: 0be296b6f0dcd43ac3ef2e9e3f1871fa92de41ac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890435"
 ---
 # <a name="troubleshoot-development-environments-during-upgrade"></a>アップグレード中の開発環境のトラブルシューティング
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) レベル 1 開発環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
+この記事では、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) レベル 1 開発環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
 
 ## <a name="scenario-1-the-data-upgrade-is-running-slowly-on-the-tier-1-development-environment"></a>シナリオ 1: レベル 1 の開発環境でのデータのアップグレードの実行が遅いです。
 

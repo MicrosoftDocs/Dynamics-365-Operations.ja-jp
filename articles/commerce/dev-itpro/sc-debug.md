@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Code を使用した Store Commerce 拡張機能のデバッグ
-description: このトピックでは、Visual Studio Code を使用して Microsoft Dynamics 365 Commerce Store Commerce 拡張機能をデバッグする方法について説明します。
+description: この記事では、Visual Studio Code を使用して Microsoft Dynamics 365 Commerce Store Commerce 拡張機能をデバッグする方法について説明します。
 author: mugunthanm
 ms.date: 04/21/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 14a22c2791d7e24524d76d92b3597dc8e2b4eebb
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 85b29d24fec1abbe995902d1127616c429f4634e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908670"
 ---
 # <a name="debug-store-commerce-extensions-using-visual-studio-code"></a>Visual Studio Code を使用した Store Commerce 拡張機能のデバッグ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Visual Studio Code を使用して Microsoft Dynamics 365 Commerce Store Commerce 拡張機能をデバッグする方法について説明します。
+この記事では、Visual Studio Code を使用して Microsoft Dynamics 365 Commerce Store Commerce 拡張機能をデバッグする方法について説明します。
 
 > [!NOTE]
 > Visual Studio Code を使用して、64 ビット .NET Framework アプリのみをデバッグできます。 Store Commerce でオフラインの Commerce Runtime (CRT)/ハードウェア ステーション (HWS) コードをデバッグするには、Visual Studio 2019 以降を使用する必要があります。

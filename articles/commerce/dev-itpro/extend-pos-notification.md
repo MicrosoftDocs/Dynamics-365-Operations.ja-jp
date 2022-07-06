@@ -1,6 +1,6 @@
 ---
 title: POS でカスタム通知を表示する
-description: このトピックでは、販売時点管理 (POS) でカスタマイズした通知を追加する方法について説明します。
+description: この記事では、販売時点管理 (POS) でカスタマイズした通知を追加する方法について説明します。
 author: mugunthanm
 ms.date: 09/17/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4f3e1add67b4a59b65057fd2f8026bfa433e964f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8abc3fd8f35785e3f8afd57714a770afc6259618
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782118"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905471"
 ---
 # <a name="show-custom-notifications-in-the-pos"></a>POS でカスタム通知を表示する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) でカスタマイズした通知を追加する方法について説明します。 このトピックは、最新のバイナリ修正がある Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 および Dynamics 365 for Retail 7.3 とそれ以降のバージョンに適用されます。
+この記事では、販売時点管理 (POS) でカスタマイズした通知を追加する方法について説明します。 この記事は、最新のバイナリ修正がある Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 および Dynamics 365 for Retail 7.3 とそれ以降のバージョンに適用されます。
 
 次のシナリオで、POS 通知フレームワークを拡張できます。
 

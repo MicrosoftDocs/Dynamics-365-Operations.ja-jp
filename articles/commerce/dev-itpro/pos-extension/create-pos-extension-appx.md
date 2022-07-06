@@ -1,6 +1,6 @@
 ---
-title: Modern POS 拡張パッケージの .appx ファイルの作成
-description: このトピックでは、Microsoft Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。
+title: Modern POS 拡張機能パッケージの .appx ファイルの作成
+description: この記事では、Microsoft Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: fd6b1b28fa590a95bf64df5b13c86f03222da616
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ce4f8b6ddbec899d5abc6f24fb1774926d5a75f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883987"
 ---
-# <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a>Modern POS 拡張パッケージの .appx ファイルの作成
+# <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a>Modern POS 拡張機能パッケージの .appx ファイルの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、 Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。 これらの手順は、MPOS の拡張機能を開発する場合にのみ必要です。 MPOS 拡張機能パッケージ プロジェクトは、MPOS アプリを拡張する[MSIX Windows アプリ パッケージ](/windows/msix/overview) を生成します。
+この記事では、Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。 これらの手順は、MPOS の拡張機能を開発する場合にのみ必要です。 MPOS 拡張機能パッケージ プロジェクトは、MPOS アプリを拡張する[MSIX Windows アプリ パッケージ](/windows/msix/overview) を生成します。
 
 1. 新しい JavaScript Universal Windows Platform (UWP) アプリ プロジェクトを作成します。
 

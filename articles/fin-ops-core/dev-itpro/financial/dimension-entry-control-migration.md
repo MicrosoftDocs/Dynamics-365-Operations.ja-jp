@@ -1,6 +1,6 @@
 ---
-title: 既定の分析コード コントロールを分析コード エントリ コントロールに移行する
-description: このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。
+title: 既定の分析コード コントロールの分析コード エントリ コントロールへの移行
+description: この記事では、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。
 author: RyanCCarlson2
 ms.date: 10/26/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee05d1999f3d65bb90e2212c3a71de2e4aa850e4
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 53522c1e44d20fb859b085fedab6aca613ce9455
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734977"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866789"
 ---
 # <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールの分析コード エントリ コントロールへの移行
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。
+この記事では、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。
 
 ## <a name="simple-migration-scenario---purchtable-form"></a>簡易移行シナリオ - PurchTable フォーム
 

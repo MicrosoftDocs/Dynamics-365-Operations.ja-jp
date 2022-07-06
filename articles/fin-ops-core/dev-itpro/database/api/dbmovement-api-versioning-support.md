@@ -1,6 +1,6 @@
 ---
 title: データベース移動 API - バージョン管理とサポート
-description: このトピックでは、データベース移動アプリケーション プログラミング インターフェイス (API) のバージョン管理と重大な変更ポリシーの概要について説明します。
+description: この記事では、データベース移動アプリケーション プログラミング インターフェイス (API) のバージョン管理と重大な変更ポリシーの概要について説明します。
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: d85cb1a92f2dc9da595d0ecaa5428fafee9851bea1f30804f03f92dfa8c9dc26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35fd5967f69c07a781b1cfef8d9bc38e2bd4b5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753576"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867584"
 ---
 # <a name="versioning-and-support"></a>バージョン管理とサポート
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、データベース移動アプリケーション プログラミング インターフェイス (API) のバージョン管理と重大な変更ポリシーの概要について説明します。
+この記事では、データベース移動アプリケーション プログラミング インターフェイス (API) のバージョン管理と重大な変更ポリシーの概要について説明します。
 
 ## <a name="support-and-deprecation-information"></a>サポートおよび廃止に関する情報
 

@@ -1,6 +1,6 @@
 ---
 title: 既定の財務分析コード
-description: このトピックでは、財務分析コードがどのように生成されるか、その結合に使用される API、および元帳分析コードの作成に使用する方法について説明します。
+description: この記事では、財務分析コードがどのように生成されるか、その結合に使用される API、および元帳分析コードの作成に使用する方法について説明します。
 author: RyanCCarlson2
 ms.date: 01/09/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525a7b30a6549185c5437b0cd1fa438ff84a3fca
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 7b716391b45675d03d17249a331947dc1afc9e59
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866792"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、既定の財務分析コードについて開発者向けの説明を記載します。 ここでは、分析コードのがどのように生成されるか、その分析に使用される application programming interfaces (API)、および元帳分析コードの作成に使用する方法について説明します。 このトピックには、ユーザーインターフェイス (UI)、SQLテーブルクエリ、およびそれらのクエリの出力例が含まれています。 また、API とその使用例についても説明します。
+この記事では、既定の財務分析コードについて開発者向けの説明を記載します。 ここでは、分析コードのがどのように生成されるか、その分析に使用される application programming interfaces (API)、および元帳分析コードの作成に使用する方法について説明します。 この記事には、ユーザーインターフェイス (UI)、SQLテーブルクエリ、およびそれらのクエリの出力例が含まれています。 また、API とその使用例についても説明します。
 
-このトピックでは、デモ データの会社として **USMF** を使用します。
+この記事では、デモ データの会社として **USMF** を使用します。
 
 財務分析コードのコンセプトおよび業務プロセスに対する影響について詳細は [財務分析コード](../../../finance/general-ledger/financial-dimensions.md) を参照してください。
 

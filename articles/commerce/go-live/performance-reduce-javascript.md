@@ -1,6 +1,6 @@
 ---
 title: 使用されていないモジュールを除外して JavaScript を削減する
-description: このトピックでは、Microsoft Dynamics 365 Commerce 実装で使用される JavaScript の量を減らすことでパフォーマンスを向上させる方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce 実装で使用される JavaScript の量を減らすことでパフォーマンスを向上させる方法について説明します。
 author: mssle
 ms.date: 01/28/2022
 ms.topic: article
@@ -9,24 +9,24 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: sheaton
 ms.search.validFrom: 2021-09-20
-ms.openlocfilehash: d282d330b6992ef58f6b8dd137a86cf53b9ec76b
-ms.sourcegitcommit: b9799a58d6ec221df86788bc37c4fbd28b435e89
+ms.openlocfilehash: 9c00ad2c72683e859d9142f8f8ad170acd1cb3e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "8100786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897020"
 ---
 # <a name="reduce-javascript-by-excluding-unused-modules"></a>使用されていないモジュールを除外して JavaScript を削減する
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 実装で使用される JavaScript の量を減らすことでパフォーマンスを向上させる方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce 実装で使用される JavaScript の量を減らすことでパフォーマンスを向上させる方法について説明します。
 
 Dynamics 365 Commerce には、Commerce [モジュール ライブラリ](../starter-kit-overview.md) と呼ばれる大規模なモジュール セットが含まれています。 電子コマース サイトで使用しないモジュールがある場合は、そのモジュールを除外して JavaScript のチャンク サイズを減らすることができます。 除外したモジュールは、実電子コマース サイトには表示されません。 ページを作成すると、Commerce サイト ビルダーでもこれらの情報を使用できません。
 
 ## <a name="applies-to"></a>適用先
 
-このトピックは、次の構成に適用されます。
+この記事は、次の構成に適用されます。
 
 - **バージョン:** Commerce 10.0.16 またはそれ以降
 - **コンポーネント:** 企業 とコンシューマー (B2C) または企業間 (B2B)

@@ -1,6 +1,6 @@
 ---
 title: カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
-description: このトピックでは、製品内の [ヘルプ] ウィンドウをカスタム ヘルプ コンテンツで拡張する方法について説明します。
+description: この記事では、製品内のヘルプ ウィンドウをカスタム ヘルプ コンテンツで拡張する方法について説明します。
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 4da02d9629333d9f51833e1a52ef05e2c7fdafda62664bf59df0428233e47be7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12c5eda68b5ba6610be6763fb12d0a190f246b15
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866611"
 ---
 # <a name="connect-a-custom-help-website-to-the-help-pane"></a>カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations ソリューションのカスタム ヘルプ コンテンツを提供する場合は、**ヘルプ** ウィンドウを拡張して、コンテンツを使用することができます。 Microsoft Visual Studio の Finance and Operations 開発環境を使用して、この 1 回限りのコンフィギュレーションを完了します。 完了したら、ユーザーは、タスク ガイド、Microsoft ヘルプ コンテンツ、ヘルプ コンテンツのタブを選択できます。
+財務と運用ソリューションのカスタム ヘルプ コンテンツを提供する場合は、**ヘルプ** ウィンドウを拡張して、コンテンツを使用することができます。 Visual Studio の財務と運用開発環境を使用して、この 1 回限りのコンフィギュレーションを完了します。 完了したら、ユーザーは、タスク ガイド、Microsoft ヘルプ コンテンツ、ヘルプ コンテンツのタブを選択できます。
 
 [カスタム ヘルプ Web サイト](custom-help-overview.md#custom-help-sites) を製品内 **ヘルプ** ウィンドウに接続するプロセスには、次の手順があります:
 
@@ -32,15 +32,15 @@ Finance and Operations ソリューションのカスタム ヘルプ コンテ�
 3. 言語のフォールバックをカスタマイズします。
 
 > [!IMPORTANT]
-> 以下の手順には、Visual Studio で Finance and Operations アプリの開発ツールが必要です。 詳細については、[Visual Studio の開発ツール](../dev-tools/development-tools-overview.md) を参照してください。
+> 以下の手順には、Visual Studio で財務と運用アプリの開発ツールが必要です。 詳細については、[Visual Studio の開発ツール](../dev-tools/development-tools-overview.md) を参照してください。
 
 ## <a name="extend-the-help-pane-and-assign-the-custom-help-indexes-to-languages"></a><a name="extendhelppane"></a>[ヘルプ] ウィンドウを拡張してカスタム ヘルプ インデックスを言語に割り当てる
 
-[カスタム ヘルプ ツールキット](custom-help-toolkit.md) の **ヘルプ ウィンドウ拡張** フォルダには、Finance and Operations 開発環境で開くことができる **AzureSearchCustomHelp** ソリューションが含まれています。 このフォルダには、Visual Studio のソリューションにインポートできる **HelppaneOption.axpp** プロジェクトも含まれています。
+[カスタム ヘルプ ツールキット](custom-help-toolkit.md)の **ヘルプ ウィンドウ拡張** フォルダーには、財務と運用開発環境で開くことができる **AzureSearchCustomHelp** ソリューションが含まれています。 このフォルダには、Visual Studio のソリューションにインポートできる **HelppaneOption.axpp** プロジェクトも含まれています。
 
 ### <a name="extend-the-help-pane"></a>[ヘルプ] ウィンドウを拡張する
 
-1. Finance and Operations 開発環境で、**AzureSearchCustomHelp.sln** ソリューションを開きます。
+1. 財務と運用開発環境で、**AzureSearchCustomHelp.sln** ソリューションを開きます。
 2. **Dynamics 365** メニューで、**プロジェクトのインポート** を選択します。
 3. **ファイル名** フィールドで、**HelppaneOption.axpp** プロジェクトのパスを指定し、**OK** を選択してインポート プロセスを完了します。 参照が欠落しないように参照を更新します。
 4. **HelppaneMacro** ファイルで、次のパラメータの値を更新します:
@@ -149,7 +149,7 @@ Finance and Operations ソリューションのカスタム ヘルプ コンテ�
 [Azure にカスタム ヘルプを展開](walkthrough-help-azure.md)  
 [カスタム ヘルプ ツールキット](custom-help-toolkit.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
-[Finance and Operations アプリのヘルプ エクスペリエンスのコンフィギュレーション](../../fin-ops/get-started/help-connect.md)  
+[財務と運用アプリのヘルプ エクスペリエンスの構成](../../fin-ops/get-started/help-connect.md)  
 [ヘルプ システム](../../fin-ops/get-started/help-overview.md)
 
 

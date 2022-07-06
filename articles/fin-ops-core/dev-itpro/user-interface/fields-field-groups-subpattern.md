@@ -1,6 +1,6 @@
 ---
 title: フィールドおよびフィールド グループのサブパターン
-description: このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。
+description: この記事では、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b254e31979f0240f56b5f6e6a88247f2018d1471
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9d1d548cf522d1e198f3695244fdd40c65d866ec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905050"
 ---
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。 これは、最も一般的なデータ入力サブパターンです。 複数のフィールドまたはフィールドのグループを表示するのに動的な数の列を使用します。
+この記事では、フィールドおよびフィールド グループ フォームのサブパターンについて説明します。 これは、最も一般的なデータ入力サブパターンです。 複数のフィールドまたはフィールドのグループを表示するのに動的な数の列を使用します。
 
 ## <a name="usage"></a>用途
 

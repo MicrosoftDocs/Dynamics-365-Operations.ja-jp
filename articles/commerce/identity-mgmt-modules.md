@@ -1,6 +1,6 @@
 ---
 title: ID 管理ページとモジュール
-description: このトピックでは、Microsoft Dynamics 365 Commerce の ID 管理ページおよびモジュールについて説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の ID 管理ページおよびモジュールについて説明します。
 author: BrianShook
 ms.date: 03/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d9c67a76ba26671c80f854ac372f3aee2ae23542
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5ebbcbe3fa4c3aced4505f378e826b375e1ef359
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865948"
 ---
 # <a name="identity-management-pages-and-modules"></a>ID 管理ページとモジュール
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の ID 管理ページおよびモジュールについて説明します。
+この記事では、Microsoft Dynamics 365 Commerce の ID 管理ページおよびモジュールについて説明します。
 
 ID 管理モジュールは、eコマース サイトのユーザーが Dynamics 365 Commerce 環境に関連付けられている ID 管理システムと対話するために使用する ID 管理ページの要素を表示します。 特に、ID 管理モジュールは、サインイン、サインアップ、パスワードのリセット、およびアカウント プロフィール編集ページで使用されます。 既定では、Commerce モジュールは、ID プロバイダーとして Azure Active Directory B2C (Azure AD B2C) を使用するように構成されています。
 

@@ -1,6 +1,6 @@
 ---
 title: ビジネス プロセス モデラー ライブラリの設定
-description: このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
+description: この記事では、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 8463bd9e60d685f9a5da5881b6e1908b46e1789b28e23fbbca92d8334325a3f9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 262363c2f2a71502a7890e209f513f3d12505d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866563"
 ---
 # <a name="set-up-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
+この記事では、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 
 ## <a name="create-a-business-process-library"></a>業務プロセス ライブラリの作成
 

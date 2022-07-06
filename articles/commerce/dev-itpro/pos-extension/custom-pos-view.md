@@ -1,6 +1,6 @@
 ---
 title: POS でのカスタム ビューの作成
-description: このトピックでは、販売時点管理 (POS) でカスタマイズ ビューの作成方法について説明します。
+description: この記事では、販売時点管理 (POS) でカスタマイズ ビューの作成方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 403a9b0779e9ffc7acdb2c9ba7ef75a9b0d02730
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b5a86c1831c24240e318bbaddbc5cd91eee5787d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899190"
 ---
 # <a name="create-a-custom-view-in-pos"></a>POS でのカスタム ビューの作成
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) でカスタマイズ ビューの作成方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+この記事では、販売時点管理 (POS) でカスタマイズ ビューの作成方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
 
 POS のカスタム ビューでは、POS に新しい機能を追加できます。 このアプローチは、POS でさらに多くのシナリオをサポートするシナリオに最適に機能します。 既存の POS ワークフローを拡張する場合は、カスタム ダイアログ ボックスの方が優れた方法です。
 

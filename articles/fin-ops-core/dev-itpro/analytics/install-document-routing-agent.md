@@ -1,8 +1,8 @@
 ---
 title: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
-description: このトピックでは、Microsoft Dynamics 365 Finance の配置用にドキュメント回覧エージェントをインストールして構成する方法について説明します。
+description: この記事では、Microsoft Microsoft Dynamics  365 Finance の配置用に Document Routing Agent をインストールして構成する方法について説明します。
 author: RichdiMSFT
-ms.date: 03/21/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,32 +15,32 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 350a9af981008a31af89df4380d3fe33475a2d42
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 31c58f52af7e4db51874eb50501001e0d1df1fae
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462923"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033705"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ドキュメント回覧エージェントをインストールして構成する方法について説明します。  ドキュメント回覧エージェントは、ネットワーク印刷シナリオを有効にするのに使用できる、ダウンロード可能なアプリケーションを提供します。 クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
+この記事では、Document Routing Agent をインストールして構成する方法について説明します。  ドキュメント回覧エージェントは、ネットワーク印刷シナリオを有効にするのに使用できる、ダウンロード可能なアプリケーションを提供します。 クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
 
 ## <a name="preparing-to-install-the-document-routing-agent"></a>ドキュメント回覧エージェントのインストールを準備
 
-- Windows 8.1、Windows 10、Microsoft Windows Server 2012 R2、または Microsoft Windows Server 2016 でサポートされています。
+- Windows 8.1、Windows 10、Microsoft Windows Server 2012 R2、Microsoft Windows Server 2016、または Microsoft Windows Server 2019 でサポートされています。
 - ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
 - ドキュメント回覧エージェントをインストールする場合は、管理者ユーザーとしてログインしていることを確認します。
 - ドキュメント回覧エージェントの設定に使用する Microsoft Azure Active Directory (Azure AD) アカウントは、Azure テナントと同じドメインを共有している必要があります。
-- ドキュメント回覧エージェントには、クライアント上で NET 4.62 またはそれ以降の 32 ビットの Adobe Acrobat Reader が必要です。
+- Document Routing Agent には、クライアント上に NET 4.62 またはそれ以降、および 32 ビットまたは 64 ビットの Adobe Acrobat Reader が必要です。
 - ドキュメントの拡大縮小を防止するために、Adobe クライアントの印刷設定をコンフィギュレーションします。
 
 アプリケーションに登録されているネットワーク プリンターは、環境で定義されているすべての法人 (会社とも呼ばれます) で使用できます。 ネットワーク プリンター設定は会社固有です。 したがって、管理者はユーザーのアクティブな会社に基づいてアクセスを制限できます。 たとえば、有効な会社内のユーザーは、ドキュメント回覧エージェントによって登録されるすべてのネットワーク プリンターへアクセスできる可能性があります。 ただし、別の会社内のユーザーは、アクセスがその会社に対して明示的に有効になるまで、それらのプリンターへアクセスできません。
 
 ## <a name="key-concepts"></a>重要な概念
-このトピックは、次の作業に役立ちます。
+この記事は、次のタスクに役立ちます。
 
 - アプリケーションでネットワーク印刷のサポートに関連する主要なコンポーネントを識別します。
 - ドキュメント回覧エージェントの機能について説明します。

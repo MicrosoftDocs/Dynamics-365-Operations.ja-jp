@@ -1,6 +1,6 @@
 ---
 title: インドのキャッシュ レジスターの配置ガイドライン
-description: このトピックは、インドのローカライズ用配置ガイドです。
+description: この記事は、Commerce のインド向けローカライズ用配置ガイドです。
 author: AlexChern0v
 ms.date: 04/21/2022
 ms.topic: article
@@ -13,25 +13,24 @@ ms.search.industry: Retail
 ms.author: jiaqia
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 541b26531b1f5a28c44316be47f63cd9ee443d49
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: b50f6890e1d6c452a3a8dab2f52412c32a4c79e7
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644716"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027076"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-このトピックは、インドの Dynamics 365 Commerce アプリのローカライズで商品及びサービス税 (GST) の要件を有効にする方法を示す配置ガイドです。 インドのローカライズの詳細については、[インド向けのキャッシュ レジスターの商品及びサービス税 (GST) 統合](./apac-ind-cash-registers.md) を参照してください。
+この記事は、インドの Dynamics 365 Commerce アプリのローカライズで商品及びサービス税 (GST) の要件を有効にする方法を示す配置ガイドです。 インドのローカライズの詳細については、[インド向けのキャッシュ レジスターの商品及びサービス税 (GST) 統合](./apac-ind-cash-registers.md) を参照してください。
 
 > [!WARNING]
 > - [新たに独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、インド向けの GST 統合には使用できません。 Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retailソフトウェア開発キット (SDK) の以前のバージョンを使用する必要があります。 今後のバージョンで、コマース ローカライズの新しい独立したパッケージと拡張モデルのサポートを計画しています。
 > - 小売 SDK のダウンロードと使用方法については、 [小売 ソフトウェアの開発キット(SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-この機能は、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) で構成されます。 この機能を使用するには、CRT 拡張機能の構成を変更する必要があります。 POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 どのファイルも変更されていない場合は、Microsoft Visual Studio Online (VSO) のようなソース管理システムを利用することを推奨します。
+この機能は、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) で構成されます。 この機能を使用するには、CRT 拡張機能の構成を変更する必要があります。 POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 どのファイルも変更されていない場合は、Microsoft Visual Studio Online (VSO) のようなソース管理システムを利用することを推奨します。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -115,9 +114,9 @@ Visual C++ 再頒布可能パッケージが GST 計算を実行するマシン�
 
 詳細については、[インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合](./apac-ind-cash-registers.md) を参照してください。
 
-## <a name="production-environment"></a>実稼働環境
+## <a name="production-environment"></a>運用環境
 
-以下の手順に従い、コンポーネントを含む配置可能パッケージを作成して、パッケージを実稼働環境で適用します。
+以下の手順に従い、コンポーネントを含む配置可能パッケージを作成して、パッケージを運用環境で適用します。
 
 1. **RetailSdk\\Assets** フォルダーの下の **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。
 

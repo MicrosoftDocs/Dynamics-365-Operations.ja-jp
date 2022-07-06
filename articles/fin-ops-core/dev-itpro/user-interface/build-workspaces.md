@@ -1,6 +1,6 @@
 ---
 title: 運用ワークスペースの構築
-description: このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。
+description: この記事では、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。
 author: jasongre
 ms.date: 02/08/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85093d9665daf8ce8adb87cc0d28bc9ed6af8d02
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 610d4d7d9e5b0a0a936761382ec253d9415ac91a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871480"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。 
+この記事では、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。 
 
 ## <a name="a-workspace-is-defined-as"></a>ワークスペースは、次のように定義されています。
 

@@ -1,6 +1,6 @@
 ---
 title: Commerce Runtime (CRT) のサービス
-description: このトピックでは、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含むライブラリである Commerce Runtime (CRT) サービスについて説明します。
+description: この記事では、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含むライブラリである Commerce Runtime (CRT) サービスについて説明します。
 author: mugunthanm
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: 79d7fe0f302ad06d8cbe3d789ef222078cd9176d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9f805fa28ef8869aa00c1809698e3826c7f441ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851174"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -30,7 +30,7 @@ Commerce Runtime (CRT) は、コマース チャネルおよび価格設定機�
 
 CRT サービスは、要求/応答のグループです。 POS で作業する際はいつでも、POS は Commerce Scale Unit に要求を送り、Commerce Scale Unit は CRT を呼び出します。 CRT は要求を処理し、応答を送り返します。
 
-このトピックでは、ビジネス シナリオにカスタマイズ可能な重要な要求/応答の一部を示します。
+この記事では、ビジネス シナリオにカスタマイズ可能な重要な要求/応答の一部を示します。
 
 CRT には、次の 3 つの主要なレイヤーがあります。
 

@@ -1,6 +1,6 @@
 ---
 title: エンティティ格納と Power BI の統合
-description: このトピックでは、エンティティストアが Power BI 統合を有効にする方法について説明します。
+description: この記事では、エンティティ格納が Power BI 統合を有効にする方法について説明します。
 author: MilindaV2
 ms.date: 06/16/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: cb75c0d32fea142b1a52205cf3829fc5523687517819eb24590075ff2fe112e5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e14c24d8a4079e5e2f0945da9aa31c64771db9f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729790"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865910"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 
 [!include [banner](../includes/banner.md)]
 
-エンティティ格納は、Microsoft Dynamics 365 Finance に含まれている運用データ ストアです。 このトピックでは、エンティティストアが Power BI 統合を有効にする方法について説明します。
+エンティティ格納は、Microsoft Dynamics 365 Finance に含まれている運用データ ストアです。 この記事では、エンティティ格納が Power BI 統合を有効にする方法について説明します。
 
 エンティティ格納は、アプリケーションに含まれている運用データ ストアです。 エンティティ格納の機能は、Microsoft Dynamics AX プラットフォーム更新プログラム 1 (2016 年 5 月) リリースで導入されました。 この機能を使用すると、管理者またはパワーユーザーは、レポートおよび分析用の専用データストアで測定値を公開できます。 (集計の測定は、エンティティを使用してモデル化されたスター スキーマです)。このデータ ストアをエンティティ格納と呼びます。 レポート用に最適化されたデータベースです。 エンティティ格納では、Microsoft SQL Server に組み込まれたメモリ内の集合縦棒ストア インデックス (CCI) 機能を使用して、レポートとクエリを最適化します。 顧客は、Microsoft Power BI の DirectQuery モデルをエンティティ格納と共に使用し、大量のデータに対して大量のほぼリアルタイムの分析レポートを有効にすることができます。
 

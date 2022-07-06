@@ -1,6 +1,6 @@
 ---
 title: 構成マネージャーの設定
-description: このトピックでは、構成マネージャーの設定方法について説明します。
+description: この記事では、構成マネージャーの設定方法に関する情報について説明します。
 author: RobinARH
 ms.date: 10/16/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 41fb8062e5085c0de0da322e69b139dea1e8564f
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: b70871fe0b0dfa63e4faf1c52e8f1ab8adafe8cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866365"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 

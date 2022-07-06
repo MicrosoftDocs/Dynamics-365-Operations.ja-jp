@@ -1,6 +1,6 @@
 ---
 title: バッチ OData API
-description: このトピックでは、バッチ OData アプリケーション プログラミング インターフェイス (API) に関する情報を提供し、Open Data Protocol (OData) を使用してジョブを再スケジューリングする方法について説明します。
+description: この記事では、バッチ OData アプリケーション プログラミング インターフェイス (API) に関する情報を提供し、Open Data Protocol (OData) を使用してジョブを再スケジューリングする方法について説明します。
 author: matapg007
 ms.date: 01/10/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-10-21
-ms.openlocfilehash: afe2034a3bc8288c3aaa93c1f2b1aef7b3f77c71
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: b255360d373c9cb107c9e01d25340359a23c5aa8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908247"
 ---
 # <a name="batch-odata-api"></a>バッチ OData API
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、バッチ データ プロトコル (OData) アプリケーション プログラミング インターフェイス (API) に関する情報を提供し、OData を使用してジョブを再スケジューリングする方法について説明します。
+この記事では、バッチ Open Data Protocol (OData) を開く アプリケーション プログラミング インターフェイス (API) に関する情報を提供し、OData を使用してジョブを再スケジューリングする方法について説明します。
 
 既存の[バッチ処理](batch-processing-overview.md)機能では、エラーの解釈に基づいて、変更の有無に関わらず、一部のタイプのジョブ エラーを再試行する必要がある場合は、手動で再試行する必要があります。 顧客のアクティブな営業時間を回避するためにオフピーク時から実行される予定のジョブの場合、失敗を監視し、ジョブを再トリガーするには、24 時間のサポートまたは通常の営業時間中にユーザーが作業を再開するまでの待ち時間が必要です。
 

@@ -1,6 +1,6 @@
 ---
-title: 支払 SDK でのチップのサポート
-description: このトピックでは、支払ソフトウェア開発キット (SDK) での支払ターミナルのチップのサポートについて説明します。
+title: 支払 SDK での予想のサポート
+description: この記事では、支払ソフトウェア開発キット (SDK) での支払ターミナルのチップのサポートについて説明します。
 author: BrianShook
 ms.date: 11/18/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 219bef01b42df5b9dc577fdd45420f23b736a810
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: b1fa4453955a1fd67831ed254a0809d9defc611e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885212"
 ---
-# <a name="support-for-tipping-in-the-payments-sdk"></a>支払 SDK でのチップのサポート
+# <a name="support-for-tipping-in-the-payments-sdk"></a>支払 SDK での予想のサポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の支払ソフトウェア開発キット (SDK) が、支払ターミナルを介して入力されるチップ金額をサポートする方法について説明します。 この機能の目的は、承認の応答にチップ金額のフィールドを個別に含めることによって、支払 SDK にファーストクラスのサポートを追加することです。
+この記事では、Microsoft Dynamics 365 Commerce の支払ソフトウェア開発キット (SDK) が、支払ターミナルを介して入力されるチップ金額をサポートする方法について説明します。 この機能の目的は、承認の応答にチップ金額のフィールドを個別に含めることによって、支払 SDK にファーストクラスのサポートを追加することです。
 
 この機能は、販売時点管理 (POS) でのチップまたはチップ レポートのサポートは追加されません。 完全なチップ機能を実装するには、POS 拡張機能が必要です。
 
@@ -43,7 +43,7 @@ ms.locfileid: "7779890"
 
 この機能は、支払 SDK のレベルでのチップのサポートを追加しますが、チップ機能の他の重要な側面のサポートは含まれていません。 たとえば、この機能は、シフト終了時のチップ支払いのレポート、チップをプールする機能、または給与のチップをレポートする機能をサポートしていません。 完全なチップ サポートを有効にするには、拡張機能を介してこれらの機能を実装する必要があります。
 
-このトピックで説明されている支払ターミナル統合と SDK 参照を作成する方法の詳細については、[支払ターミナルの支払統合全体の作成](end-to-end-payment-extension.md) を参照してください。
+この記事で説明されている支払ターミナル統合と SDK 参照を作成する方法の詳細については、[支払ターミナルの支払統合全体の作成](end-to-end-payment-extension.md)を参照してください。
 
 ### <a name="prerequisites"></a>必要条件
 

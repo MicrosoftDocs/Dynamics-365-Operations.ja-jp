@@ -1,8 +1,8 @@
 ---
 title: ローカル エージェントの配置コンフィギュレーション
-description: このトピックでは、ローカル エージェントを配置する際に、環境に関連する特別なコンフィギュレーションを示すために指定できる配置コンフィギュレーションについて説明します。
+description: この記事では、ローカル エージェントを配置する際に、環境に関連する特別なコンフィギュレーションを示すために指定できる配置コンフィギュレーションについて説明します。
 author: faix
-ms.date: 10/06/2021
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -11,36 +11,42 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-08-03
-ms.openlocfilehash: 1b2da5b4879a2e6e9bc23b9a915c5729aa49a1d8
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: a6da47ffd2e8b65a452f66572276573d4fedb7af
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565531"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945821"
 ---
 # <a name="deployment-configurations-for-the-local-agent"></a>ローカル エージェントの配置コンフィギュレーション
 
-このトピックでは、ローカル エージェントを配置する際に、環境に関連する特別なコンフィギュレーションを示すために指定できる配置コンフィギュレーションについて説明します。
+この記事では、ローカル エージェントを配置する際に、環境に関連する特別なコンフィギュレーションを示すために指定できる配置コンフィギュレーションについて説明します。
 
 deploymentOptions のラベルがついた localagent-config.json ファイルにセクションがあります。 これは、ローカル エージェントをインストールする前に変更できます。
 
 ```json
-    ...
-    "deploymentOptions": {
-                "office365AdfsCompatibility": {
-                    "value": "false"
-                },
-                "sqlServerVersion": {
-                    "value": "2016"
-                },
-                "isMultiSubnetFailoverEnabled": {
-                    "value": "false"
-                },
-                "skipCRLCheck" : {
-                    "value": "false"
-                }
-            },
-    ...
+...
+"deploymentOptions": {
+    "office365AdfsCompatibility": {
+        "value": "false"
+    },
+    "sqlServerVersion": {
+        "value": "2016"
+    },
+    "isMultiSubnetFailoverEnabled": {
+        "value": "false"
+    },
+    "skipCRLCheck": {
+        "value": "false"
+    },
+    "rsatEnabled": {
+        "value": "false"
+    },
+    "rsatCertificateThumbprint": {
+        "value": ""
+    }
+},
+...
 ```
 
 ## <a name="specify-the-version-of-microsoft-sql-server"></a>Microsoft SQL Server のバージョンの指定
@@ -76,3 +82,12 @@ SQL Server クラスターを複数のサブネットに配置するように指
 > [!IMPORTANT]
 > 証明書の失効リストを無効にすると、セキュリティ チェックは実行されません。 このドキュメントを無効にするリスクは、すべてユーザーが負うものとします。 このチェックを無効にすることによるセキュリティへの影響を十分に認識している場合にのみ、この配置オプションを有効にする必要があります。
 
+## <a name="specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool と連携するように環境を構成する必要があることを指定する
+
+Regression Suite Automation Tool (RSAT) を使用すると、Finance + Operations (on-premises) のユーザー受け入れテスト (UAT) の時間と費用を大幅に削減できます。 詳細については、[Regression Suite Automation Tool (RSAT)](../perf-test/rsat/rsat-overview.md) を参照してください。
+
+この配置オプションを有効にするには、**rsatEnabled** の値を **false** から **true** に変更します。 さらに、**rsatCertificateThumbprint** を RSAT に使用する証明書の拇印に設定します。
+
+証明書を生成し配置する方法については、[Microsoft Dynamics 365 Finance + Operations (on-premises) の RSAT を有効にする](./onprem-rsat-configuration.md)を参照してください。
+
+このオプションのサポートは、バージョン 10.0.28 で導入されました。 また、このオプションを使用するには、少なくともローカル エージェント 3.1.0 が必要です。

@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations、Enterprise edition 7.3 の拡張機能の変更
-description: このトピックは、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。
+title: Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
+description: この記事は、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
 ms.date: 04/10/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: ed156ae3bcb160be08b5d0a5b032d9732da965aa
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c1a9104e64ef5ec374c7685a54b9721dd00fae7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783028"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866921"
 ---
-# <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations、Enterprise edition 7.3 の拡張機能の変更
+# <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations, Enterprise Edition 7.3 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
+この記事は、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
 
 ## <a name="soft-sealed-application-models"></a>ソフト シールされたアプリケーション モデル
 

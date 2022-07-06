@@ -1,6 +1,6 @@
 ---
 title: ルックアップのフォーム パターン
-description: このトピックでは、ルックアップ フォームのパターンについて説明します。
+description: この記事では、ルックアップのフォーム パターンに関する情報を提供します。
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 005d04bfa1062e1917f9ad33e8bda6962a656f5f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cbd9e6085319b821181edcda74f3951474a68063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781262"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882069"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ルックアップ フォームのパターンについて説明します。 標準フレームワークによって指定されたルックアップで正しいデータが提供されない場合や、データの高度な視覚化が必要な場合は、カスタム ルックアップ フォームを使用する必要があります。
+この記事では、ルックアップのフォーム パターンに関する情報を提供します。 標準フレームワークによって指定されたルックアップで正しいデータが提供されない場合や、データの高度な視覚化が必要な場合は、カスタム ルックアップ フォームを使用する必要があります。
 
 ## <a name="usage"></a>用途
 

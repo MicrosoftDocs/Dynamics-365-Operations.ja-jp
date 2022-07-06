@@ -1,6 +1,6 @@
 ---
 title: フランスのキャッシュ レジスターの配置ガイドライン
-description: このトピックでは、フランスの Microsoft Dynamics 365 Commerce のローカライズにおいて、キャッシュ レジスター機能を有効化する方法について説明します。
+description: この記事では、フランスの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 08/10/2021
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2021-4-30
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a0dbeefbc463d92d4058632a0e885438c2b9f07c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 6841b6bce5ee90f9f741bc0a0b267bdabd4c4520
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407966"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872814"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、フランスの Microsoft Dynamics 365 Commerce のローカライズにおいて、キャッシュ レジスター機能を有効化する方法について説明します。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引の登録、販売取引のデジタル署名、およびローカルの形式で X および Z レポートの印刷を行えます。 フランスのローカライズの詳細については、 [フランスのキャッシュ レジスター機能](./emea-fra-cash-registers.md) を参照してください。 フランス向け Commerce の設定方法の詳細については、[フランス向け Commerce の設定](./emea-fra-cash-registers.md#set-up-commerce-for-france)を参照してください。
+この記事では、フランスの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引の登録、販売取引のデジタル署名、およびローカルの形式で X および Z レポートの印刷を行えます。 フランスのローカライズの詳細については、 [フランスのキャッシュ レジスター機能](./emea-fra-cash-registers.md) を参照してください。 フランス向け Commerce の設定方法の詳細については、[フランス向け Commerce の設定](./emea-fra-cash-registers.md#set-up-commerce-for-france)を参照してください。
 
 > [!NOTE]
 > フランス向け Commerce キャッシュ レジスター機能のこのバージョンは、[会計統合フレームワーク](./fiscal-integration-for-retail-channel.md) に基づいています。 フランスのレガシー版デジタル署名サンプルについては、[フランスのキャッシュ レジスターの配置ガイドライン (レガシー)](./emea-fra-deployment.md) を参照してください。 レガシー版デジタル署名サンプルを使用する既存の環境でフランスの会計統合機能を有効にする方法のガイドラインについては、[フランスのレガシー Commerce 機能から移行する](./emea-fra-fi-migration.md)を参照してください。
@@ -152,9 +152,9 @@ Cloud POS 拡張コンポーネントを有効にするには、次の手順に�
 1. ソリューションをリビルドします。
 1. **実行** コマンドを使用してソリューションを実行し、Retail ソフトウェア開発キット (SDK) ハンドブックにある手順を実行します。
 
-## <a name="production-environment"></a>実稼働環境
+## <a name="production-environment"></a>運用環境
 
-Commerce コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用するには、以下の手順に従います。
+Commerce コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを運用環境で適用するには、以下の手順に従います。
 
 1. **RetailSdk\\Assets** フォルダーの下の **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** パッケージ コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。
 

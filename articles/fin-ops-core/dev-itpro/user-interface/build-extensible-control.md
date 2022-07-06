@@ -1,6 +1,6 @@
 ---
 title: 拡張可能コントロールの構築
-description: このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
+description: この記事では、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
 author: TLeforMicrosoft
 ms.date: 11/09/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 677ee25c7e08a8750a81d8283239bfbb1b294efa
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0c66139276ae82d624e07f635412322f71adbb86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783150"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881376"
 ---
-# <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
+# <a name="build-extensible-controls"></a>拡張可能コントロールの構築
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
+この記事では、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 

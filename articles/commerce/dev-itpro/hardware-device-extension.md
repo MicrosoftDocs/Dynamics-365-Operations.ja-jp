@@ -1,6 +1,6 @@
 ---
 title: POS を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成
-description: このトピックでは、販売時点管理 (POS) を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成する方法について説明します。
+description: この記事では、販売時点管理 (POS) を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成する方法について説明します。
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-ms.openlocfilehash: a53219310a9ff3f2b99a6475861a6f01ff104014
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 933c3962680b9a22238aa043c4b6e6f3199932e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782645"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881341"
 ---
 # <a name="integrate-the-pos-with-a-new-hardware-device-and-generate-the-extension-installer"></a>POS を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成する方法について説明します。 
+この記事では、販売時点管理 (POS) を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成する方法について説明します。 
 
 ## <a name="hardware-station-overview"></a>Hardware Station の概要
 
@@ -240,7 +240,7 @@ return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequ
 ## <a name="package-the-hws-extension-with-modern-pos-to-use-local-hws"></a>ローカル HWS を使用するには、HWS 拡張機能を Modern POS にパッケージ化する
 
 > [!NOTE]
-> このセクションは、バージョン 10.0.22 以降の Finance and Operations アプリで POS 独立パッケージ SDK を使用している場合に適用 できます。
+> このセクションは、バージョン 10.0.22 以降の財務と運用アプリで POS 独立パッケージ SDK を使用している場合に適用できます。
  
 ローカル HWS を使用するために HWS 拡張機能を Modern POS にパッケージ化するには、HWS 拡張機能を POS にパッケージ化する必要があります。 Modern POS JavaScript プロジェクトで、HWS プロジェクトへの参照を追加します。 次に、POS インストーラー プロジェクトを使用して拡張機能インストーラーを作成します。 詳細については、[Dynamics365Commerce.InStore/src/PosSample/ModernPos/ModernPos.jsproj GitHub リポジトリ](https://github.com/microsoft/Dynamics365Commerce.InStore) で、サンプル JavaScript プロジェクトを参照してください。
 

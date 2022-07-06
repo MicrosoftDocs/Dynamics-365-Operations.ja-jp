@@ -1,6 +1,6 @@
 ---
 title: 電子申告 (ER) コンフィギュレーションのインポート
-description: このトピックでは、Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに電子申告 (ER) の構成をインポートする方法について説明します。
+description: この記事では、Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに電子申告 (ER) の構成をインポートする方法について説明します。
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: fd28d513ee79d26192b768308ace8525ce271c0229733f1a7105a1cebb1390f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbfbfecef4259a4d460b202c70463c4ba852bcc7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892242"
 ---
 # <a name="import-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションのインポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに[電子申告 (ER) のコンフィギュレーション](general-electronic-reporting.md#Configuration) をダウンロードする方法について説明します。 また、ER リポジトリからローカル ビジネス データ (LBD) アプリケーションに ER 構成をアップロードする方法についても説明します。
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに[電子申告 (ER) のコンフィギュレーション](general-electronic-reporting.md#Configuration) をダウンロードする方法について説明します。 また、ER リポジトリからローカル ビジネス データ (LBD) アプリケーションに ER 構成をアップロードする方法についても説明します。
 
 > [!IMPORTANT]
 > ER コンフィギュレーションの記憶域リポジトリとして LCS を使用することは[廃止される](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release) 予定です。 詳細については、[Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../../../finance/localizations/rcs-lcs-repo-dep-faq.md) を参照してください。

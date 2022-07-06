@@ -1,6 +1,6 @@
 ---
 title: 集計の測定への財務分析コードの追加
-description: このトピックでは、パワー ユーザーが既製の Power BI レポートに財務分析コードを組み込む方法について説明します。
+description: この記事では、パワー ユーザーが既製の Power BI レポートに財務分析コードを組み込む方法について説明します。
 author: MilindaV2
 ms.date: 06/16/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 for Finance and Operations
-ms.openlocfilehash: 4aa0155f74183e6466e54ad54c762cb63dfb71a09f71d6e95d6ea9fa0981f96c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ef5b5e3ee1f92589f2d5e999132f6b622db1833
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884534"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 
@@ -170,7 +170,7 @@ DimensionCombination は、DimensionAttributeValueCombination ベース テー�
 
 ![ロール プレイの分析コードの例。](media/062a0d860fe1633a6616bca6e871f95e.png)
 
-LedgerActivityMeaureGroup の 2 つの分析コード参照をモデル化しました。 最初の参照、DimensionCombinationは、**LedgerDimension** フィールドを使用して結合されます。 このトピックの前のところでこのパターンを確認しました。
+LedgerActivityMeaureGroup の 2 つの分析コード参照をモデル化しました。 最初の参照、DimensionCombinationは、**LedgerDimension** フィールドを使用して結合されます。 この記事の前のところで、このパターンを確認しました。
 
 2 番目の参照、OffsetDimensionCombination は、同じ分析コードへの別の参照です。 DimensionCombination 集計分析コードを再使用し、それに新しい名前を付けました。 2 番目のケースでは、**OffsetLedgerDimension** フィールドを使用して参加できます。
 

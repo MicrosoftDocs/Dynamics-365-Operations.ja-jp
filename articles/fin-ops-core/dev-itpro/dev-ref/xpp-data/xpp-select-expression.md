@@ -1,6 +1,6 @@
 ---
 title: select ステートメントを式として記述
-description: このトピックでは、select ステートメントを式として使用する方法について説明します。
+description: この記事では、select ステートメントを式として使用する方法について説明します。
 author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer
@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 7fd7d20810fbb23bce4102a0c6a87749a82788a3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 524d6de6a8e38484efdf1a6efd5a697c8deb5883
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783234"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867192"
 ---
 # <a name="write-select-statements-as-expressions"></a>select ステートメントを式として記述
 

@@ -1,6 +1,6 @@
 ---
-title: 複数の値をテストするための SysTestRow 属性
-description: このトピックでは、SysTest 方法を使用して複数の値をテストできる SysTestRow 属性について説明します。
+title: 複数の値をテストする SysTestRow 属性
+description: この記事では、SysTest 方法を使用して複数の値をテストできる SysTestRow 属性について説明します。
 author: jorisdg
 ms.date: 01/13/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2022-01-13
-ms.openlocfilehash: fc4c7ab660f2ce4864b8b428a6866be8d84e9c46
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: e57b57c41e7afc2668d507b3783180c94a451876
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462808"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854578"
 ---
 # <a name="systestrow-attribute-for-testing-multiple-values"></a>複数の値をテストするための SysTestRow 属性
 

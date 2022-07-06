@@ -1,6 +1,6 @@
 ---
-title: 最新のプラットフォーム更新プログラムを環境へ適用
-description: このトピックでは、最新のプラットフォーム更新プログラムを Finance and Operations 環境に適用する方法について説明します。
+title: 最新のプラットフォーム更新プログラムの環境への適用
+description: この記事では、財務と運用の環境に最新のプラットフォーム更新プログラムを適用する方法について説明します。
 author: tariqbell
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: d610e6e7e7407bbbc1a847d285991e5408cf3ad9f9bea75135e413feabe72822
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afb659daa9b12f224fff889e9a6a51116c482cad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890376"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムの環境への適用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、最新のプラットフォーム リリースを Finance and Operations 環境に適用する方法について説明します。
+この記事では、財務と運用の環境に最新のプラットフォーム リリースを適用する方法について説明します。
 
 ## <a name="overview"></a>概要
 
-Finance and Operations では、プラットフォームは次のコンポーネントで構成されています:
+Finance and Operations で、プラットフォームは次のコンポーネントで構成されます。
 
 -   Application Object Server (AOS)、データ管理フレームワーク、レポートおよびビジネス インテリジェンス (BI) フレームワーク、開発ツール、および分析サービスなどのバイナリ。
 -   次のアプリケーション オブジェクト ツリー (AOT) パッケージ。
@@ -63,7 +63,7 @@ LCS で、環境ページから最新のプラットフォーム更新パッケ�
 
 プロセスの観点では、プラットフォーム更新プログラム パッケージの展開は、バイナリ修正プログラムの展開可能なパッケージに似ています。
 
--   クラウド開発、ビルド、デモ、第 2 層サンド ボックス、または実稼働環境にプラットフォーム更新パッケージを適用するには、LCS から直接更新します。
+-   クラウド開発、ビルド、デモ、第 2 層サンド ボックス、または運用環境にプラットフォーム更新パッケージを適用するには、LCS から直接更新します。
 
     [![更新プログラムの適用。](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
@@ -189,7 +189,7 @@ if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\Dynami
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Finance and Operationsで最新の更新プログラムに移行するためのプロセス](upgrade-latest-update.md)
+[最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

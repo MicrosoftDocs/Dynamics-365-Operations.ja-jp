@@ -1,6 +1,6 @@
 ---
 title: Analysis Services キューブから集計モデルへの移行
-description: ことトピックでは、どのように、メモリ内、リアルタイム集計モデルが解析に使われ、なぜ Server Analysis Services (SSAS) キューブの使用から移行したのかを説明します。
+description: この記事では、メモリ内リアルタイム集計モデルがどのように解析に使用され、なぜ Server Analysis Services (SSAS) キューブの使用から移行したのかについて説明します。
 author: MilindaV2
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5b0a2f33537c1faf0b504dc79be4a3f969a66a23ce8068afc332f065307c89e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c044adc408616a09aaeeea5250fd6c1da589ea2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866161"
 ---
 # <a name="transition-from-analysis-services-cubes-to-aggregate-models"></a>Analysis Services キューブから集計モデルへの移行
 
 [!include [banner](../includes/banner.md)]
 
-ことトピックでは、どのように、メモリ内、リアルタイム集計モデルが解析に使われ、なぜ Server Analysis Services (SSAS) キューブの使用から移行したのかを説明します。
+この記事では、メモリ内リアルタイム集計モデルがどのように解析に使用され、なぜ Server Analysis Services (SSAS) キューブの使用から移行したのかについて説明します。
 
 世界は、リアルタイムの積極的な分析に移行しています。 履歴データのレポートとトレンドは、最新の視覚化およびプロアクティブ ガイダンスにより置き換えられます。 メモリ内でのリアルタイムな集計モデルにより、分析に以前使用された分析視点が置換されます。
 
@@ -38,7 +38,7 @@ Finance and Operations のユーザー エクスペリエンスで重要な役�
 -   分析視点をモデル化しました。
 -   システムは、ビジュアルとレポートを作成するために必要な「もの」を生成しました。
 
-分析視点は、Visual Studio のアドインを使ってモデル化されるようになりました。 (Visual Studio は開発環境になっています。) 分析視点は *集計の測定* および *集計分析コード* から構成されます。 開発者は、集計の測定と集計分析コードを使用して業務質問に答えるための簡単なスキーマをモデル化することができます。 集計測定は  Finance and Operations フォームにデータ ソースとして直接バインドできるデータ エンティティ (*集計データ エンティティ* と呼ばれる) を定義することができます。 集計データ エンティティは に使用することもできます
+分析視点は、Visual Studio のアドインを使ってモデル化されるようになりました。 (Visual Studio は開発環境になっています。) 分析視点は *集計の測定* および *集計分析コード* から構成されます。 開発者は、集計の測定と集計分析コードを使用して業務質問に答えるための簡単なスキーマをモデル化することができます。 集計測定は Finance and Operations フォームにデータ ソースとして直接バインドできるデータ エンティティ (*集計データ エンティティ* と呼ばれる) を定義することができます。 集計データ エンティティは に使用することもできます
 
 -   PowerBI にデータを公開します。
 -   AXQuery オブジェクトを使用してプログラムでデータにアクセス。

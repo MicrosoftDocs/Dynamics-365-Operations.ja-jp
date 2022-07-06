@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources 10.0.26 の新機能または変更された機能
-description: このトピックでは、Dynamics 365 Human Resources バージョン 10.0.26 プレビュー リリースの新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Human Resources バージョン 10.0.26 プレビュー リリースの新機能または変更された機能について説明します。
 author: twheeloc
 ms.date: 03/17/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: c203af60b2756311dcc6634f9903b50d879fbec7
-ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
+ms.openlocfilehash: 293b7f44a249eac1ad7fe5f5bc43c3be3658e646
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "8457467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897939"
 ---
 # <a name="preview-of-dynamics-365-human-resources-10026-may-2022"></a>Dynamics 365 Human Resources 10.0.26 のプレビュー (2022 年 5 月)
 
 [!include [banner](../../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources バージョン 10.0.26 の新機能または変更された機能について説明します。 このバージョンには 10.0.1192 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Human Resources バージョン 10.0.26 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.1192 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2022 年 3 月
 - **リリースの一般提供 (自己更新):** 2022 年 4 月

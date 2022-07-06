@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントとしての警告
-description: このトピックでは、ビジネス イベントとしての警告について説明します。
+description: この記事では、ビジネス イベントとしての警告について説明します。
 author: Sunil-Garg
 ms.date: 11/12/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 25
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 4047a639156956c459bea77f8935aa29d400d23672996a0cd87446c60ff65c91
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 84f07d292f9f62714d16f3dd2329d84cec27ea6f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757261"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898638"
 ---
 # <a name="alerts-as-business-events"></a>ビジネス イベントとしての警告
 

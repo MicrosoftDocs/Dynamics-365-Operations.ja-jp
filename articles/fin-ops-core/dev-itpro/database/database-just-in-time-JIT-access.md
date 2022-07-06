@@ -1,6 +1,6 @@
 ---
 title: ジャストインタイム データベース アクセスの有効化
-description: このトピックでは、ジャストインタイム (JIT) 方式でデータベース アクセスを有効にするために必要な手順を示します。
+description: この記事では、ジャストインタイム (JIT) 方式でデータベース アクセスを有効にするために必要な手順を示します。
 author: laneswenka
 ms.date: 07/12/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 071c167a1437323d895e6263571dff598e30c86f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 2698eb4ee33d4304924068c8006ef065887d1c3f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345615"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867566"
 ---
 # <a name="enable-just-in-time-database-access"></a>ジャストインタイム データベース アクセスの有効化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ジャストインタイム (JIT) 方式を使用してデータベース アクセスを有効にするために必要な手順を示します。 さまざまなトラブルシューティング作業、予定外のクエリの実行、またはデータ アップグレードの問題解決に、データベースへのアクセスが必要な場合に役立ちます。 このプロセスは、セルフサービスおよび Microsoft が管理するサンドボックス承認テスト環境の両方に対して使用できます。 使用可能な環境のタイプの詳細については、[配置の概要](../deployment/cloud-deployment-overview.md) を参照してください。
+この記事では、ジャストインタイム (JIT) 方式を使用してデータベース アクセスを有効にするために必要な手順を示します。 さまざまなトラブルシューティング作業、予定外のクエリの実行、またはデータ アップグレードの問題解決に、データベースへのアクセスが必要な場合に役立ちます。 このプロセスは、セルフサービスおよび Microsoft が管理するサンドボックス承認テスト環境の両方に対して使用できます。 使用可能な環境のタイプの詳細については、[配置の概要](../deployment/cloud-deployment-overview.md) を参照してください。
 
 ## <a name="microsoft-managed-environments-without-rdp-access"></a>RDP へのアクセスがない Microsoft が管理する環境
 

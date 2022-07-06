@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 でプレビューされている機能について説明します。
+title: 財務と運用アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
+description: この記事では、財務と運用アプリのプラットフォーム更新プログラム 31 でプレビューされる機能について説明します。
 author: tonyafehr
 ms.date: 03/10/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: f52f5253cbd6db6b5371b78dc34e3a95bec6faaf01e8610fc36ac66113b45100
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6560beeff019803289895990cda338ea9d006326
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866674"
 ---
-# <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
+# <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>財務と運用アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能または変更された機能について説明します。 このバージョンには 7.0.5457 のビルド番号が含まれており、次のように使用できます。
+この記事では、財務と運用アプリのプラットフォーム更新プログラム 31 用の新機能または変更された機能について説明します。 このバージョンには 7.0.5457 のビルド番号が含まれており、次のように使用できます。
 
 - プレビューリリースは 2019 年 10 月です。
 - Ga (自動更新) は 2019 年 11 月です。
@@ -34,7 +34,7 @@ ms.locfileid: "6731521"
 プラットフォーム更新プログラム 31 の詳細については [追加リソース](whats-new-platform-update-31.md#additional-resources) を参照してください。
 
 ## <a name="turn-on-the-new-preview-grid-control-through-feature-management"></a>機能管理を通じて、新しい (プレビュー) グリッド コントロールをオンにする
-以前は、「&debug=reactGrid」を環境 URL に追加することによって、新しいグリッド コントロールは使用可能になりました。 プラットフォーム更新 31 では、機能管理ワークスペースを使用して、認定された環境に対して新しいグリッド コントロールを有効にすることができます。 このフライトを非運用環境で有効にする方法については、次の手順を参照してください。 認定された環境には、第 1 層 (開発/テスト) 環境と第 2 層 (サンドボックス) 環境が含まれます。 この機能は、バージョン10.0.9、プラットフォーム更新 33 まで生産中に有効にすることはできません。
+以前は、「&debug=reactGrid」を環境 URL に追加することによって、新しいグリッド コントロールは使用可能になりました。 プラットフォーム更新 31 では、機能管理ワークスペースを使用して、認定された環境に対して新しいグリッド コントロールを有効にすることができます。 このフライトを非運用環境で有効にする方法については、次の手順を参照してください。 認定された環境には、第 1 層 (開発/テスト) 環境と第 2 層 (サンドボックス) 環境が含まれます。 この機能は、バージョン10.0.9、プラットフォーム更新 33 まで運用中に有効にすることはできません。
 
 新しいグリッド コントロールに関する詳細については、[ユーザーの生産性 - 新しいグリッド](/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid) を参照してください。
 
@@ -63,7 +63,7 @@ Web サイトのホスト コントロールが追加され、開発者はサー
 
 開発者は新しい星評価コントロールを使用することもできます。 このコントロールは、1 から 5 個の星のスケール上で 4 分の 1 ずつの評価を表示します。
 
-## <a name="updated-icon-for-finance-and-operations-apps"></a>Finance and Operations アプリの更新されたアイコン
+## <a name="updated-icon-for-finance-and-operations-apps"></a>更新された Finance and Operations アプリのアイコン
 Finance and Operations アプリ用の新しいアイコンは、Dynamics 365 の最新のアイコン スタイリングに沿っていて、Web クライアントに表示されるようになりました。
 
 ## <a name="optimization-of-loading-the-data-management-workspace"></a>データ管理ワークスペース読み込みの最適化
@@ -106,14 +106,14 @@ ORDER BY 句を含めないよう明示的に指定することにより、AX �
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックでは、削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

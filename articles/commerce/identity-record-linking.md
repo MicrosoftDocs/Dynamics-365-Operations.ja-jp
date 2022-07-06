@@ -1,6 +1,6 @@
 ---
 title: ID レコードの顧客 ID への自動リンクを有効にする
-description: このトピックでは、Microsoft Dynamics 365 Commerce で ID レコードと顧客 ID への自動リンクを有効にする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で ID レコードと顧客 ID への自動リンクを有効にする方法について説明します。
 author: BrianShook
 ms.date: 07/21/2021
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 574d6d3488177a4b202ae8a139e8baa6cbb26043
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b8564e429b2f48d33468ba8f823a1150b3610af5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888250"
 ---
 # <a name="enable-automatic-linking-of-identity-records-to-customer-accounts"></a>ID レコードの顧客 ID への自動リンクを有効にする 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で ID レコードと顧客 ID への自動リンクを有効にする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で ID レコードと顧客 ID への自動リンクを有効にする方法について説明します。
 
-このトピックでは、認証済みユーザーを既存の顧客 ID レコードに自動的にリンクする、ID レコード自動リンク機能について説明します。 この機能は、企業間 (B2B) および企業と顧客間 (B2C) サイト フローで使用され、承認済顧客が Azure Active Directory (Azure AD) B2C テナントにサインアップし、作成された顧客レコードにリンクできるようにします。 B2C サイト フローでは、ID レコード自動リンク機能を使用して、Azure AD テナントに登録したユーザーを、販売時点管理 (POS)、コール センター、または Commerce 本社で以前に作成した顧客 ID レコードに自動的にリンクできます。
+この記事では、認証済みユーザーを既存の顧客 ID レコードに自動的にリンクする、ID レコード自動リンク機能について説明します。 この機能は、企業間 (B2B) および企業と顧客間 (B2C) サイト フローで使用され、承認済顧客が Azure Active Directory (Azure AD) B2C テナントにサインアップし、作成された顧客レコードにリンクできるようにします。 B2C サイト フローでは、ID レコード自動リンク機能を使用して、Azure AD テナントに登録したユーザーを、販売時点管理 (POS)、コール センター、または Commerce 本社で以前に作成した顧客 ID レコードに自動的にリンクできます。
 
 > [!WARNING] 
 > ID レコード自動リンク機能は、ID プロバイダーとして Azure AD B2C とともに使用する必要があります。 「サインアップとサインイン」 ユーザー フローでは、ローカル アカウントのサインアップ ページのレイアウトで、**電子メール アドレス** ユーザー属性の既定の設定を維持し、**検証を要求する** オプションを「はい」に設定する必要があります。 このコンフィギュレーションにより、自動リンク機能の使用時に、サインアップ フローで電子メールの検証機能を保持できます。

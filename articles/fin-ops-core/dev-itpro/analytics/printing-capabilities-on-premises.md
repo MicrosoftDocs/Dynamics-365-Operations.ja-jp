@@ -1,6 +1,6 @@
 ---
 title: オンプレミス配置でのドキュメントの生成、発行、および印刷
-description: このトピックでは、オンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。
+description: この記事では、オンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。
 author: RichdiMSFT
 ms.date: 06/16/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d51ecb0fb761d58185244bc3a2ed785455862d66
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 80a73490233821a3c149350aca87a9bf50aeac37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566149"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847238"
 ---
 # <a name="document-generation-publishing-and-printing-in-on-premises-deployments"></a>オンプレミス配置でのドキュメントの生成、発行、および印刷
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) のオンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。 アプリケーションでは、Microsoft SQL Server Reporting Services (SSRS) によるエンタープライズ ドキュメントの生成に対する、完全に統合された経験を提供します。 任意のサポートされているデバイスからは、ユーザーは、業務プロセスにリンクされている業界標準のドキュメントを生成できます。 これらのドキュメントには、請求書、小切手、梱包明細が含まれています。 ユーザーがネットワーク プリンターに安全に接続できるように、管理者は組み込みのツールを使用してサービスを構成します。
+この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) のオンプレミス展開でのドキュメントの生成、公開、印刷の機能について説明します。 アプリケーションでは、Microsoft SQL Server Reporting Services (SSRS) によるエンタープライズ ドキュメントの生成に対する、完全に統合された経験を提供します。 任意のサポートされているデバイスからは、ユーザーは、業務プロセスにリンクされている業界標準のドキュメントを生成できます。 これらのドキュメントには、請求書、小切手、梱包明細が含まれています。 ユーザーがネットワーク プリンターに安全に接続できるように、管理者は組み込みのツールを使用してサービスを構成します。
 
 Microsoft Dynamics AX 2012 SQL Reporting Services フレームワーク上で構築されたソリューションをアップグレード、または [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com) で利用可能なモダン ソリューションを活用することができます。
 

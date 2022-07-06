@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) の新機能および変更された機能
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のリリース計画、主要な発表などへのリンクを提供します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) のリリース計画、主要な発表などへのリンクを提供します。
 author: laneswenka
 ms.date: 06/30/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e75b7410aa6a3f5f6302283abfeb466b5be49405d5b8eab58f3e33d860cf50e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7ca237a9d6a49b689b7b8457e16646a53b20b69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866291"
 ---
 # <a name="whats-new-or-changed-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の新機能および変更された機能
 

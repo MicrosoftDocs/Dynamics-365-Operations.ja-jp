@@ -1,6 +1,6 @@
 ---
 title: コードの移行 - マウス ダブルクリック ロジック
-description: このトピックでは、mouseDblClick() オーバーライドが廃止され、このロジックを新しいコントロールに移動する方法について説明します。
+description: この記事では、mouseDblClick() オーバーライドが廃止され、このロジックを新しいコントロールに移動する方法について説明します。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e215f57043fb04e216dd938d5047768a59334697b5932615c7e9e941d1f937d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd1dd8252681616dc17ef89934daaa83e3e62e36
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770779"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866229"
 ---
 # <a name="code-migration---mouse-double-click-logic"></a>コードの移行 - マウス ダブルクリック ロジック
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations では、**mouseDblClick()** オーバーライドは廃止されており、このロジックを新しいコントロールに移動する必要があります。
+Finance and Operations において、**mouseDblClick()** オーバーライドは廃止され、このロジックを新しいコントロールに移動する必要があります。
 
 Microsoft Dynamics AX 2012 では、さまざまな理由で、マウスをダブルクリックするイベントが使用されていました。 たとえば、より良いユーザー エクスペリエンスを提供するのを助け、特定のシナリオを実行する代替方法を提供しました。 共通の使用パターンの例を次に示します。
 

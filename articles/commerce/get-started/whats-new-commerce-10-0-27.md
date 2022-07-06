@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce 10.0.27 (2022 年 7 月) の新機能または変更された機能
-description: このトピックでは、Dynamics 365 Commerce 10.0.27 の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Commerce 10.0.27 の新機能および変更された機能について説明します。
 author: josaw1
 ms.date: 04/29/2022
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-04-30
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 814d0910e8dc30b4ba382d6d4bec02fbd5199dcd
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 66cc6dbc4fed7282418dc5b17283830498ffd8e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871674"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10027-july-2022"></a>Dynamics 365 Commerce 10.0.27 (2022 年 7 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 10.0.27 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.1227 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Commerce 10.0.27 の新機能または変更された機能を示します。 このバージョンのビルド番号は 10.0.1227 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 4 月
 - **リリースの一般提供 (手動更新):** 2022 年 6 月
@@ -34,7 +34,7 @@ ms.locfileid: "8660395"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-次の表に、このリリースに含まれる機能の一覧を示します。 このトピックが最初に公開された後に、ビルドに加えた機能を含めるために、このトピックを更新することがあります。
+次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに加えた機能を含めるために、この記事を更新することがあります。
 
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
@@ -65,14 +65,14 @@ Commerce 固有の重大な変更を加える場合は、[Dynamics 365 Commerce 
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)トピックでは、Commerce で削除または廃止された機能について説明します。
+[Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)の記事では、Commerce で削除または廃止された機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
-description: このトピックでは、Microsoft Dynamics 365 Fraud Protection と Dynamics 365 Commerce との間で使用可能な標準統合について説明します。
+title: Dynamics 365 Commerce と Dynamics 365 Fraud Protection の統合
+description: この記事では、Microsoft Dynamics 365 Fraud Protection と Dynamics 365 Commerce との間で使用可能な標準統合について説明します。
 author: BrianShook
 ms.date: 10/19/2020
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b8c16465a6bc3e09f2f353d56c53f0a3ff81bfec
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: f95c7c2426c80c65f2d46db42fb8078b9a3b158f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898928"
 ---
-# <a name="dynamics-365-fraud-protection-integration-with-dynamics-365-commerce"></a>Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
+# <a name="dynamics-365-fraud-protection-integration-with-dynamics-365-commerce"></a>Dynamics 365 Commerce と Dynamics 365 Fraud Protection の統合
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Commerce と Dynamics 365 Fraud Protection との間で使用可能な標準統合について説明します。
+この記事では、Microsoft Dynamics 365 Commerce と Dynamics 365 Fraud Protection との間で使用可能な標準統合について説明します。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -39,7 +39,7 @@ ms.locfileid: "7779634"
 
 ## <a name="overview"></a>概要
 
-Fraud Protection は、小売業者が不正活動を防ぎ、知られていない可能性がある不正の場所を特定するのを助ける Fraud Protection ソリューションを提供するサービスです。 このトピックでは、Fraud Protection と Commerce との間で使用可能な標準統合について説明します。 これは、今後のリリースで 2 つのサービスの間で新しい統合がリリースされると、更新されます。 Commerce との標準統合ではまだサポートされていないモジュールに関する情報など、Fraud Protection に関する詳しい情報は、[Fraud Protection ランディング ページ](https://dynamics.microsoft.com/ai/fraud-protection/) をご覧ください。 また、Dynamics 365 の営業担当者から [コールバックを要請](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) し、Fraud Protection が利益性を大幅に増加し、運営経費を削減し、顧客エクスペリエンスを向上させる方法について話をすることもできます。
+Fraud Protection は、小売業者が不正活動を防ぎ、知られていない可能性がある不正の場所を特定するのを助ける Fraud Protection ソリューションを提供するサービスです。 この記事では、Fraud Protection と Commerce との間で使用可能な標準統合について説明します。 これは、今後のリリースで 2 つのサービスの間で新しい統合がリリースされると、更新されます。 Commerce との標準統合ではまだサポートされていないモジュールに関する情報など、Fraud Protection に関する詳しい情報は、[Fraud Protection ランディング ページ](https://dynamics.microsoft.com/ai/fraud-protection/) をご覧ください。 また、Dynamics 365 の営業担当者から [コールバックを要請](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) し、Fraud Protection が利益性を大幅に増加し、運営経費を削減し、顧客エクスペリエンスを向上させる方法について話をすることもできます。
 
 2020 年 10 月以降、Microsoft Dynamics 365 Commerce ライセンスには、Fraud Protection の限定された能力が含まれます。 これにより、コマース の顧客は、以下で指定されている限度まで、Fraud Protection を追加料金なしで使用できるようになります。
 

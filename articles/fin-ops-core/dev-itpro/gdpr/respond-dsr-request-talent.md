@@ -1,6 +1,6 @@
 ---
 title: 人事管理の個人データ要求への対応
-description: このトピックでは、データ コントローラとして Dynamics 365 Human Resources for Talent をデータ プロセッサとして使用して、欧州連合のGDPR (General Data Protection Regulation) に基づくデータ要求に対応する方法について説明します。
+description: この記事では、データ コントローラとして Microsoft Dynamics 365 Human Resources をデータ プロセッサとして使用して、欧州連合の一般データ保護規則 (GDPR) に基づくデータ要求に対応する方法について説明します。
 author: shielasogge
 ms.date: 01/31/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4fb765db8dd64c8e75432d4a2b1b70b5187f8dff
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: eef131aee909adcae8ed10428ea1c3ea88c7c166
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866683"
 ---
 # <a name="respond-to-requests-for-personal-data-in-human-resources"></a>人事管理の個人データ要求への対応
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 Human Resources を使用する企業と、パートナーおよび独立系ソフトウェア ベンダー (ISV) がデータ主体の権利 (DSR) 要求に適合しているとき、それらの両方の企業に役に立ちます。 欧州連合の一般データ保護規則 (GDPR) および Microsoft が提供する関連するリソースの詳細については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。
+この記事は、Microsoft Dynamics 365 Human Resources を使用する企業と、パートナーおよび独立系ソフトウェア ベンダー (ISV) がデータ主体の権利 (DSR) 要求に適合しているとき、それらの両方の企業に役に立ちます。 欧州連合の一般データ保護規則 (GDPR) および Microsoft が提供する関連するリソースの詳細については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。
 
 人事管理では、Microsoft はプロセッサとして動作します。 データ プロセッサとして、人事管理はデータ コントローラとしての GDPR 責務に適応させるプロセスと機能を提供します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "8712077"
 
 ### <a name="right-to-view"></a>表示するには右
 
-+ 担当者検索レポートを使用して、DSR 要求の対象となる個人データを検索および収集します。 このレポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) トピックを参照してください。  
++ 担当者検索レポートを使用して、DSR 要求の対象となる個人データを検索および収集します。 このレポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) 記事を参照してください。  
 + 高度な検索とフィルターを使用して、特定の個人データを検索し、Microsoft Office のエクスポート機能を使用してそのデータをエクスポートします。
 + 既存のエンティティを追加して、担当者検索レポートを拡張します。 レポートを拡張するのに役立つ情報の詳細については、[個人検索レポートを拡張](gdpr-extend-person-search-report.md) を参照してください。
 

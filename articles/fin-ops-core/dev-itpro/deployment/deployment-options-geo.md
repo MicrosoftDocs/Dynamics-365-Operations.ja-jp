@@ -1,6 +1,6 @@
 ---
 title: ローカル地域における Dynamics 365 Finance、Supply Chain Management、および Commerce
-description: このトピックでは、サポートされた Microsoft Dynamics 365 Commerce、Dynamics 365 Finance、および Dynamics 365 Supply Chain Management の地域とエンドポイントに関する情報を提供します。
+description: この記事では、サポートされた Microsoft Dynamics 365 Commerce、Dynamics 365 Finance、および Dynamics 365 Supply Chain Management の地域とエンドポイントに関する情報を提供します。
 author: Shailesh4all
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2022-04-28
-ms.openlocfilehash: 95dcd4cf72c99a66f95ef23cfeee865767957d50
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a4a491cdd575a6e774f696e06de333b9cde3c200
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867447"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-local-geographies"></a>ローカル地域における Dynamics 365 Finance、Supply Chain Management、および Commerce
 

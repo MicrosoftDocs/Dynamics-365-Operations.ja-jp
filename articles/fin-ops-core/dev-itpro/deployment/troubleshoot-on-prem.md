@@ -1,8 +1,8 @@
 ---
 title: オンプレミス配置のトラブルシューティング
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
+description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
 author: PeterRFriis
-ms.date: 04/05/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: d04522c972ed41d8c13a6db9fb83d0b69ce02784
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 99310cf62f5a0002556bfef86b24ccaf19391698
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565708"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945828"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
+この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
 
 ## <a name="access-service-fabric-explorer"></a>Service Fabric Explorer へのアクセス
 
 Service Fabric Explorer には、Web ブラウザーと既定のアドレス `https://sf.d365ffo.onprem.contoso.com:19080` を使ってアクセスできます。
 
-アドレスを確認するには、環境の適切なセットアップおよび配置トピックの「DNS ゾーンの作成と A レコードの追加」セクションで使用されていた値をメモします。
+アドレスを確認するには、環境の適切な設定および配置の記事の「DNS ゾーンの作成と A レコードの追加」セクションで使用されていた値をメモします。
 
 - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#createdns)
 - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#createdns)
@@ -132,7 +132,7 @@ Microsoft Dynamics Lifecycle Services (LCS) で環境のに対する現在の配
 
 ## <a name="a-time-out-error-occurs-when-a-service-fabric-cluster-is-created"></a>Service Fabric cluster の作成時にタイムアウト エラーが発生する
 
-該当するセットアップ トピックの "スタンドアロン Service Fabric Cluster のセットアップ" セクションおよび環境の配置トピックに記載されているように Test-D365FOConfiguration.ps1 を実行します。 エラーに注意してください。
+該当するセットアップ トピックの「スタンドアロン Service Fabric Cluster の設定」セクションおよび環境の配置トピックに記載されているように Test-D365FOConfiguration.ps1 を実行します。 エラーに注意してください。
 
 - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupsfcluster)
 - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
@@ -228,7 +228,7 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
     - ConfigTemplate.xml
     - ClusterConfig.json
 
-    テンプレートのフィールドに正しく入力する方法については、ご使用の環境に適した設定と配置のトピックを参照してください。
+    テンプレートのフィールドに正しく入力する方法については、ご使用の環境に適した設定と配置の記事を参照してください。
 
     - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md)
     - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md)
@@ -242,7 +242,7 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
 
     2. 最新のローカル エージェント コンフィギュレーション、localagent config.json をダウンロードします。
 
-6. 環境に適したセットアップと展開のトピックで次の指示に従って、再度展開します。
+6. 環境に適した設定と展開の記事で次の指示に従って、再度展開します。
 
     - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md)
     - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md)
@@ -351,7 +351,7 @@ localagent-configjson ファイルの **コンポーネント** セクション�
         </Certificate>
         ```
 
-3. LCS のローカル エージェント コンフィギュレーションで指定される同じ証明書が、環境に対する適切な設定および配置トピックの「テナント用 LCS 接続の構成」セクションで手順の完了に使用されたことを確認します。
+3. LCS のローカル エージェント コンフィギュレーションで指定される同じ証明書が、環境に対する適切な設定および配置の記事の「テナント用 LCS 接続の構成」セクションで手順の完了に使用されたことを確認します。
 
     - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#configurelcs)
     - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#configurelcs)
@@ -391,7 +391,7 @@ localagent-configjson ファイルの **コンポーネント** セクション�
     </ADServiceAccount>
     ```
 
-3. 適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックが完了したことを確認します。
+3. 適切な設定の「ファイル ストレージの設定」セクションおよび環境の配置の記事が完了したことを確認します。
 
     - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupfile)
     - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupfile)
@@ -612,7 +612,7 @@ DataEncryption 証明書を作成するのにには、次のプロパティを�
 - **Thumbprint アルゴリズム** – **sha1** を指定します。
 
 > [!WARNING]
-> 実稼働環境では、自己署名証明書を使用しないでください。 代わりに、証明書機関によって発行された証明書を使用します。
+> 運用環境では、自己署名証明書を使用しないでください。 代わりに、証明書機関によって発行された証明書を使用します。
 
 ## <a name="the-certificate-and-private-key-that-should-be-used-for-decryption-cant-be-found-0x8009200c"></a>暗号の解読に使用すべき証明書と秘密キーを見つけることができません (0x8009200C)
 
@@ -701,7 +701,7 @@ Category does not exist.
 プロバイダーを登録することで、追加のログを実行できます。 プロバイダーを登録するには、LCS 共有資産ライブラリで、資産タイプとして **モデル** を選択してから、**Microsoft Dynamics 365 Finance + Operations (on-premises)、LBDMRDeployerTroubleshooter** 資産をダウンロードします。 **プライマリ** オーケストレータ マシンにダウンロードされた ZIP ファイルをコピーし、解凍してから、次のコマンドを実行します。 (プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorer で、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。)
 
 > [!NOTE]
-> イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。 最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。 この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。
+> イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。 最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。 この共有は、適切な設定の「ファイル ストレージの設定」セクションおよび環境の配置の記事で作成されました。
 > 
 > - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupfile)
 > - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupfile)
@@ -887,6 +887,14 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 
 Psping を使用してリモート サーバーに対する接続を試みることもできます。 Psping の詳細については、[Psping](/sysinternals/downloads/psping) を参照してください。
 
+### <a name="you-encounter-authentication-errors"></a>認証エラーが発生しました
+
+ワークフロー エディターまたは Excel アドインでの認証中に問題が発生する場合、次のスクリプトを使用して、コンフィギュレーションを検証します。
+
+```powershell
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+```
+
 ### <a name="redirect-sign-in-questions-and-issues"></a>サインイン時の質問および問題をリダイレクト
 
 サインイン時に問題が発生した場合は、Service Fabric Explorer で、**Provisioning\_AdminPrincipalName** および **Provisioning\_AdminIdentityProvider** の値が有効であることを確認してください。 次に例を示します。
@@ -894,9 +902,9 @@ Psping を使用してリモート サーバーに対する接続を試みるこ
 - **プロビジョニング \_AdminPrincipalName**: `AXServiceUser@contoso.com`
 - **プロビジョニング\_AdminIdentityProvider**: `https://DC1.contoso.com/adfs`
 
-値が有効でない場合は、処理を続行できず、LCS から再配置する必要があります。
+値が有効でない場合は続行できないので、LCS の管理者ユーザー情報または AD FS 情報を更新する必要があります。
 
-Reset-DatabaseUsers.ps1 を使用した場合、変更内容を有効にする前に、Dynamics サービスを再起動する必要があります。 引き続きサインインの問題がある場合は、USERINFO テーブルで、**NETWORKDOMAIN** および **NETWORKALIAS** の値を記録してください。 次に例を示します。
+Reset-DatabaseUsers.ps1 を使用した場合、変更内容を有効にする前に、AOS サービスを再起動する必要があります。 引き続きサインインの問題がある場合は、USERINFO テーブルにある **NETWORKDOMAIN** および **NETWORKALIAS** の値を記録してください。 次に例を示します。
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
@@ -985,7 +993,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 5. **IdTokenIssuer** の値が、手順3の **フェデレーション サービス 識別子** の値、および **Provisioning_AdminIdentityProvider** の値と一致していることを確認してください。 (これは **fabric:/AXSF Details** タブに表示されています。 **Service Fabric Explorer** \> **Cluster** \> **Applications** \> **AXSFType**)
 3. Service Fabric Explorer で、 **Provisioning\_AdminPrincipalName** 値と **Provisioning\_AdminIdentityProvider** の値が有効であることを確認してください。
 
-上記の手順で問題が解決しない場合は、このトピックの 「 [AD FS](troubleshoot-on-prem.md#ad-fs) 」 を参照してください。
+上記の手順で問題が解決しない場合は、この記事の[AD FS](troubleshoot-on-prem.md#ad-fs)を参照してください。
 
 ## <a name="systemdatasqlclientsqlexception-0x80131904-and-systemcomponentmodelwin32exception-0x80004005"></a>System.Data.SqlClient.SqlException (0x80131904) および System.ComponentModel.Win32Exception (0x80004005)
 
@@ -999,7 +1007,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 
 ## <a name="keyset-doesnt-exist"></a>Keyset が存在しません
 
-キーセットが存在しないことが判明した場合は、スクリプトがすべてのコンピューターで実行されなていなかったことを意味します。 適切な設定の「VM の設定」セクション、および環境の配置トピックを確認し完了します。
+キーセットが存在しないことが判明した場合は、スクリプトがすべてのコンピューターで実行されなていなかったことを意味します。 適切な設定の「VM の設定」セクションおよび環境の配置の記事を確認し完了します。
 
 - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupvms)
 - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupvms)
@@ -1052,7 +1060,7 @@ Test-D365FOConfiguration.ps1 を実行時に 「証明書を検出できませ�
 
 ## <a name="the-client-and-server-cant-communicate-because-they-dont-have-a-common-algorithm"></a>クライアントとサーバーは共通のアルゴリズムを持たないため通信できません
 
-クライアントとサーバーが疎通できない場合は双方のアルゴリズムが異なることが原因です。作成した証明書が指定したプロバーダーを使用しているか確認をしてください。これについては"Plan and acquire your certificates" の項目で解説しています。ご利用の環境に応じた適切な設定と配置を行ってください。
+クライアントとサーバーが疎通できない場合は双方のアルゴリズムが異なることが原因です。作成した証明書が指定したプロバーダーを使用しているか確認をしてください。これについては、ご利用の環境に応じた適切な設定と配置の記事にある "Plan and acquire your certificates" のセクションで解説しています。
 
 - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#plancert)
 - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#plancert)
@@ -1099,7 +1107,7 @@ Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRe
 
 AOS ユーザーはローカル管理者グループに属しておらず、ユーザー アカウント コントロール (UAC) が正しく無効化されていないために、この問題が発生します。 問題を解決するには、次の手順に従います。
 
-1. 環境の適切な設定および配置トピックの「VMs とドメインを結合」のセクションで説明されているように、ローカル管理者として AOS ユーザーを追加します。
+1. 環境の適切な設定および配置の記事の「VMs とドメインを結合」のセクションで説明されているように、ローカル管理者として AOS ユーザーを追加します。
 
     - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#joindomain)
     - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#joindomain)
@@ -1148,9 +1156,9 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 ### <a name="package-deployment-works-in-a-one-box-environment-but-not-in-the-sandbox-environment"></a>パッケージの展開がワン ボックス環境で機能するが、サンドボックス環境で機能しない
 
-1 ボックス環境にはすべてのモジュールがインストールされている可能性があり、一方ではサンドボックス環境には実稼働環境で実行するために必要なモジュールのみがインストールされている可能性があります。 開発環境で作成されたパッケージが、サンドボックス環境ではなく、ワン ボックス環境にあるモジュールに依存する場合、パッケージはサンドボックス環境では動作しません。
+1 ボックス環境にはすべてのモジュールがインストールされている可能性があり、一方ではサンドボックス環境には運用環境で実行するために必要なモジュールのみがインストールされている可能性があります。 開発環境で作成されたパッケージが、サンドボックス環境ではなく、ワン ボックス環境にあるモジュールに依存する場合、パッケージはサンドボックス環境では動作しません。
 
-この問題を解決するには、依存関係のあるすべてのモジュールを確認し、実稼動環境で不要なアダプターまたはその他のモジュールを使用しないようにしてください。 ビルド ボックスからパッケージを取得することをお勧めします。
+この問題を解決するには、依存関係のあるすべてのモジュールを確認し、運用環境で不要なアダプターまたはその他のモジュールを使用しないようにしてください。 ビルド ボックスからパッケージを取得することをお勧めします。
 
 ## <a name="an-error-occurs-when-you-sign-in-to-on-premises-environments"></a>オンプレミス環境へのログイン時にエラーが発生
 
@@ -1167,7 +1175,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. ユーザーの環境での適切なセットアップと配置トピックの「テナントの LCS 接続のコンフィギュレーション」セクションにある手順を実行します。
+2. ユーザーの環境での適切なセットアップと配置の記事の「テナントの LCS 接続のコンフィギュレーション」セクションにある手順を実行します。
 
     - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#configurelcs)
     - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#configurelcs)
@@ -1180,7 +1188,7 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
     ```
 
-## <a name="additional-deployments-for-example-two-sandbox-deployments-or-a-sandbox-and-production-deployment"></a>追加の配置 (たとえば、2 つのサンド ボックス展開、またはサンド ボックスおよび生産の配置)
+## <a name="additional-deployments-for-example-two-sandbox-deployments-or-a-sandbox-and-production-deployment"></a>追加の配置 (たとえば、2 つのサンド ボックス展開、またはサンド ボックスおよび運用の配置)
 
 追加の環境を展開すると、次のエラーが表示されます。
 
@@ -1188,25 +1196,25 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 配備手順の次のセクションをスキップまたは変更することができます。
 
-### <a name="plan-and-acquire-your-certificates-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>証明書を計画して取得 ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#plancert) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#plancert) で記載されたものとして)
+### <a name="plan-and-acquire-your-certificates-as-documented-for-platform-update-41-and-later-or-platform-updates-12-through-40"></a>証明書を計画して取得 ([プラットフォームの更新 41 以降](setup-deploy-on-premises-pu41.md#plancert) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#plancert) で記載されたものとして)
 
 - 同一のオンプレミスのローカル エージェント証明書を使用する必要があります。
 - 同一のスター証明書を使用することができます(AOS SSL および Service Fabric)。
 - 残りの証明書は既存の環境の証明書とは異なる可能性があります。
 
-### <a name="download-setup-scripts-from-lcs-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>LCS からのセットアップ スクリプトをダウンロード ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#downloadscripts) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#downloadscripts) で記載されたものとして)
+### <a name="download-setup-scripts-from-lcs-as-documented-for-platform-update-41-and-later-or-platform-updates-12-through-40"></a>LCS からのセットアップ スクリプトをダウンロード ([プラットフォームの更新 41 以降](setup-deploy-on-premises-pu41.md#downloadscripts) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#downloadscripts) で記載されたものとして)
 
 - ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。
 
-### <a name="set-up-a-standalone-service-fabric-cluster-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>スタンドアロンの Service Fabric Cluster を設定 ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#setupsfcluster) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#setupsfcluster) に記載されたものとして)
+### <a name="set-up-a-standalone-service-fabric-cluster-as-documented-for-platform-update-41-and-later-or-platform-updates-12-through-40"></a>スタンドアロンの Service Fabric Cluster を設定 ([プラットフォームの更新 41 以降](setup-deploy-on-premises-pu41.md#setupsfcluster) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#setupsfcluster) に記載されたものとして)
 
 - ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。
 
-### <a name="configure-lcs-connectivity-for-the-tenant-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>テナントの LCS 接続のコンフィギュレーション ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#configurelcs) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#configurelcs) で記載されたものとして)
+### <a name="configure-lcs-connectivity-for-the-tenant-as-documented-for-platform-update-41-and-later-or-platform-updates-12-through-40"></a>テナントの LCS 接続のコンフィギュレーション ([プラットフォームの更新 41 以降](setup-deploy-on-premises-pu41.md#configurelcs) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#configurelcs) で記載されたものとして)
 
 - テナントに対して、このタスクを 1 回のみ実行する必要があります。
 
-### <a name="configure-ad-fs-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>AD FS のコンフィギュレーション ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#configureadfs) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#configureadfs) で記載されたものとして)
+### <a name="configure-ad-fs-as-documented-for-platform-update-41-and-later-or-platform-updates-12-through-40"></a>AD FS のコンフィギュレーション ([プラットフォームの更新 41 以降](setup-deploy-on-premises-pu41.md#configureadfs) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#configureadfs) で記載されたものとして)
 
 - [複数環境の同じ AD FS インスタンスの再使用](./onprem-reuseadfs.md) ガイドに従って AD FS を構成します。
 
@@ -1589,7 +1597,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
     ```powershell
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
     
 1. リモート処理スクリプトを使用しない場合に、生成した VM フォルダを BI ノードにコピーします。

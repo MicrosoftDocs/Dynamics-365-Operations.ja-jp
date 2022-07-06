@@ -1,6 +1,6 @@
 ---
 title: ワークフロー カテゴリの作成
-description: このトピックでは、ワークフロー カテゴリの作成方法を説明します。
+description: この記事では、ワークフロー カテゴリの作成方法を説明します。
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3b59686a84a15a1c131ee790e53970b69f8eb418
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: c639351a0df88a1f44ea435f06aa1a48c07b496b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065567"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868564"
 ---
 # <a name="create-a-workflow-category"></a>ワークフロー カテゴリの作成
 
@@ -32,7 +32,7 @@ ms.locfileid: "8065567"
 
 たとえば、顧客請求書のワークフロー タイプは、 **マスター プラン** モジュールでは使用できません。 ワークフロー タイプを **顧客** モジュールでのみ使用できるようにするには、ワークフロー カテゴリの作成時に **顧客** モジュールを選択します。
 
-このトピックでは、ワークフロー カテゴリの作成方法を説明します。
+この記事では、ワークフロー カテゴリの作成方法を説明します。
 
 ## <a name="create-a-workflow-category"></a>ワークフロー カテゴリの作成
 

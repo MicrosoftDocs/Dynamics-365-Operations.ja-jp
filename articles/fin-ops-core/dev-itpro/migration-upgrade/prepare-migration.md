@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations へのコード移行の準備
-description: このトピックでは、コード アップグレード サービスと Visual Studio ツールを使用して、Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。
+title: Finance and Operations へのコードの移行の準備
+description: この記事では、コード アップグレード サービスと Visual Studio ツールを使用して、Dynamics AX 2012 R3 から財務と運用に移行する方法について説明します。
 author: RobinARH
 ms.date: 11/10/2017
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5966416869cbc5d4d75fa2272512fe21720a5b4ad48ddff301aee71474fd04c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 553fc894e3171cc00b29c4034614714bd9f85357
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716739"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890441"
 ---
-# <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコード移行の準備
+# <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコードの移行の準備
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
+この記事では、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から財務と運用に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
-リモート デスクトップを使用して Finance and Operations 開発環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 コードをアップグレードする前に、Finance and Operations の開発、カスタマイズ、およびユーザー インターフェイスの概念の幾つかをよく理解しておくことをお勧めします。 次にいくつかの参照を挙げます。
+リモート デスクトップを使用して Finance and Operations 開発環境にアクセスし、このインスタンスの管理者としてプロビジョニングされる必要があります。 コードをアップグレードする前に、Finance and Operations の開発、カスタマイズ、およびユーザー インターフェイスの概念の幾つかをよく理解しておくことをお勧めします。 次にいくつかの参照を挙げます。
 
 -   [開発ツール](../dev-tools/developer-home-page.md)
 -   [モデルとパッケージ](../dev-tools/models.md)
@@ -40,7 +40,7 @@ ms.locfileid: "6716739"
 ## <a name="overview-of-the-code-migration-process"></a>コード移行プロセスの概要
 ### <a name="model-split"></a>分割されたモデル
 
-Finance and Operations アプリケーションは、次のいくつかのパッケージ、またはアセンブリに分割されます。 
+Finance and Operations アプリケーションは、次のいくつかのパッケージ、またはアセンブリに分割されます: 
 
 **プラットフォームパッケージ**
 

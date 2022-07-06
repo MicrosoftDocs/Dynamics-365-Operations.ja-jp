@@ -1,6 +1,6 @@
 ---
 title: Regression Suite Automation Tool (RSAT) を使用したテスト ケースの実行
-description: このトピックでは、Azure DevOps からのテスト ケースの読み込み、テストの実行、および作業内容を Azure DevOps に保存する方法について説明します。
+description: この記事では、Azure DevOps からのテスト ケースの読み込み、テストの実行、および作業内容を Azure DevOps に保存する方法について説明します。
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 576bae5aeaf6c2cdbdddbf287704bc2d81ed1ec7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 408ec0f17726f4860a2e80e77bbdb09f8f98abf3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885493"
 ---
 # <a name="use-the-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) の使用
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テストパラメータの変更、結果の実行と調査、および Azure DevOps への作業内容の保存方法について説明します。
+この記事では、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テスト パラメーターの変更、結果の実行と調査、および Azure DevOps への作業内容の保存方法について説明します。
 
 ## <a name="load-test-cases-and-create-automation-files"></a>テスト ケースの読み込みと自動化ファイルの作成
 
@@ -40,7 +40,7 @@ RSAT で、**テスト計画** タブを選択し、**読み込み** を選択�
 
 テスト ケースでは、正常に実行するために次の添付ファイルが必要です。
 
-+ **記録ファイル**: Finance and Operations タスク レコーダーによって作成された記録ファイルです。 これにより、テスト ケースのステップが定義されます。 通常は **recording.xml** という名前ですが、Azure DevOps のテスト ケースのタイトルと一致するように名前を付けることもできます。 Azure DevOps のテスト ケースに添付され、テスト ケースのローカル作業ディレクトリの **添付** フォルダーにダウンロードされます。
++ **記録ファイル**: 財務と運用タスク レコーダーによって作成された記録ファイルです。 これにより、テスト ケースのステップが定義されます。 通常は **recording.xml** という名前ですが、Azure DevOps のテスト ケースのタイトルと一致するように名前を付けることもできます。 Azure DevOps のテスト ケースに添付され、テスト ケースのローカル作業ディレクトリの **添付** フォルダーにダウンロードされます。
 + **テスト自動化ファイル** は、構成可能なテスト ケース パラメーターを含む **テスト パラメーター ファイル** (Microsoft Excel ファイル) と **テスト実行ファイル** で構成されます。これらのファイルは、テスト記録の自動実行を可能にするために RSAT によって生成されます。 ファイル名には **_Base.cs**、**_Base.xml**、および **_Base.dll** などの接尾語が使用されます。
 
 **新規** を選択すると、テスト自動化ファイルが作業ディレクトリに生成されます。 Excel テスト パラメーター ファイルが **パラメーター ファイル** の下のグリッドに表示されます。

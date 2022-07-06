@@ -1,6 +1,6 @@
 ---
 title: Commerce Scale Unit の自動更新 (クラウド)
-description: このトピックでは、Commerce Scale Unit (クラウド) の自動更新について説明します。
+description: この記事では、Commerce Scale Unit (クラウド) の自動更新について説明します。
 author: AamirAllaq
 manager: tonyafehr
 ms.date: 05/03/2022
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 1784412c92ad4f9146a2f863c2f2c87d7ba164cc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 31a8eb882ce82198feed864cd61ce509527c63b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867527"
 ---
 # <a name="auto-update-for-commerce-scale-unit-cloud"></a>Commerce Scale Unit の自動更新 (クラウド)
 [!include[banner](../includes/banner.md)]
@@ -41,7 +41,7 @@ Commerce Scale Unit の自動更新は、[1 つのバージョン](../lifecycle-
 
 ## <a name="downtime-duration-and-impact"></a>ダウンタイム期間と影響
 
-Commerce HQ および Commerce Scale Unit (クラウド) の更新プログラムは、順番に適用されます。 通常、ダウンタイム期間は 1 時間ですが、データ量や地域によって異なります。 実稼働環境でダウンタイム期間を見積もる場合、サンド ボックス UAT 環境の Commerce Scale Unit を自分で更新するか、または Commerce HQ と Lifecycle Services (LCS) の Commerce Scale Unit の両方の合計更新期間を確認することができます。
+Commerce HQ および Commerce Scale Unit (クラウド) の更新プログラムは、順番に適用されます。 通常、ダウンタイム期間は 1 時間ですが、データ量や地域によって異なります。 運用環境でダウンタイム期間を見積もる場合、サンド ボックス UAT 環境の Commerce Scale Unit を自分で更新するか、または Commerce HQ と Lifecycle Services (LCS) の Commerce Scale Unit の両方の合計更新期間を確認することができます。
 
 > [!NOTE]
 > ダウンタイム期間は、各更新プログラムおよびデータ量によって異なります。 実際のダウンタイム期間を見積もる場合、サンドボックス UAT 環境に運用環境と同じデータがあることを確認してください。 これを行うには、[データベースの更新](../database/database-refresh.md)の手順に従います。 ダウンタイム期間の見積もりを行う予定のサンドボックス UAT 環境でも同じ更新プログラムを適用する必要があります。

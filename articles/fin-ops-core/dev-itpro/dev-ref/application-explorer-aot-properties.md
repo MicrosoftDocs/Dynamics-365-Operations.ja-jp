@@ -1,6 +1,6 @@
 ---
 title: アプリケーション エクスプローラーのプロパティ
-description: このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
+description: この記事では、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
 author: RobinARH
 ms.date: 11/03/2017
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee6bbaa53637e3c8858f3b30a2d9b4d2785ee26f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6e80ef6191b4b55bf7a799e7d8edf952e36b1457
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867258"
 ---
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
+この記事では、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
 
 アプリケーション エクスプローラーの多くのノードは、それに関連付けられているプロパティを持つ要素を表します。 Microsoft Visual Studio の **プロパティ** ウィンドウで、これらのプロパティを読み取りまたは変更することができます。
 
@@ -1905,7 +1905,7 @@ public final CustBankAccount BankAccounts([CustBankAccount relatedTable])
 </tr>
 <tr class="odd">
 <td>HelpText</td>
-<td>メニュー項目のヘルプ文字列を作成します。 メニュー項目で開いたオブジェクト (フォームなど) を選択すると、ステータス バーにテキストが表示されます。 <strong>注記:</strong> メニュー項目のヘルプ トピックを書き込むには、アプリケーション エクスプローラーの<strong>アプリケーションのドキュメント/メニュー項目</strong>ノードで、メニュー項目と同じ名前のトピックを見つけます。 このトピックは、メニュー項目によって開かれたオブジェクトについて書かれたヘルプ トピックの代わりに表示されます。</td>
+<td>メニュー項目のヘルプ文字列を作成します。 メニュー項目で開いたオブジェクト (フォームなど) を選択すると、ステータス バーにテキストが表示されます。 <strong>注記:</strong> メニュー項目のヘルプ記事を書き込むには、アプリケーション エクスプローラーの<strong>アプリケーションのドキュメント/メニュー項目</strong>ノードで、メニュー項目と同じ名前の記事を見つけます。 この記事は、メニュー項目によって開かれたオブジェクトについて書かれたヘルプ記事の代わりに表示されます。</td>
 </tr>
 <tr class="even">
 <td>ImageLocation</td>

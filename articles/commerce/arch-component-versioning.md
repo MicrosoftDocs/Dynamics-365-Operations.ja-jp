@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Commerceコンポーネント バージョンの管理要件
-description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
+title: Dynamics 365 Commerce コンポーネントのバージョン管理要件
+description: この記事では、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
 author: rezaassadi
 ms.date: 05/04/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 746a1c34d54a0ff9deca21509399632cfa0459e3
-ms.sourcegitcommit: 4caec3a2be00f2e4e17c02c7f2e9597602b456b8
+ms.openlocfilehash: c1221e82fade5363d53b52cbfab37d4a55e6904a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8783382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849082"
 ---
-# <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerceコンポーネント バージョンの管理要件
+# <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerce コンポーネントのバージョン管理要件
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
+この記事では、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
 
 次の図は、Dynamics 365 Commerce コンポーネントの概要、それに対応するバージョン要件および依存関係を示しています。
 
@@ -95,14 +95,14 @@ Commerce コンポーネントは、1 つのバージョン サービスの更�
 
 ### <a name="component-selection"></a>コンポーネントの選択
 
-ニーズに合った適切なコンポーネントを選択する方法については、次のトピックを参照してください。
+ニーズに合った適切なコンポーネントを選択する方法については、次の記事を参照してください:
 
 - [ストア内トポロジの選択](./dev-itpro/retail-in-store-topology.md)
 - [Modern POS (MPOS) か Cloud POS (CPOS) かの選択](mpos-or-cpos.md)
 
 ### <a name="servicing-instructions"></a>サービスの手順
 
-このトピックで説明されている個々のコンポーネントをサービスする方法については、次のトピックを参照してください。
+この記事で説明されている個々のコンポーネントをサービスする方法については、次の記事を参照してください:
 
 - [Commerce Scale Unit のコンフィギュレーションとインストール](./dev-itpro/retail-store-scale-unit-configuration-installation.md)
 - [更新プログラムの適用および Retail Cloud Scale Unit への拡張機能](../fin-ops-core/dev-itpro/deployment/update-retail-channel.md)

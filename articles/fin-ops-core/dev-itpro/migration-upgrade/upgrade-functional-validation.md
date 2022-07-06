@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - 機能テスト パス
-description: このトピックでは、機能テスト パスを実行して、アップグレードされた Finance and Operations 環境を検証する方法について説明します。
+description: この記事では、機能テスト パスを実行して、アップグレードされた財務と運用アプリの環境を検証する方法について説明します。
 author: tariqbell
 ms.date: 01/31/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 98a9d6f1f013cff5daf1cb903791bff0e692f60db7a9a0958ba2d5ce8c512c90
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 964f1b9c1979cb97014222383e9ef2ca1158f0ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763460"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890385"
 ---
 # <a name="upgrade-from-ax-2012---functional-test-passes"></a>AX 2012 からのアップグレード - 機能テスト パス
 

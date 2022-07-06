@@ -1,6 +1,6 @@
 ---
 title: 増分支払の取得
-description: このトピックでは、Dynamics 365 Commerce での注文請求の一部として増分取得に対するすぐに使えるサポートについて説明します。
+description: この記事では、Dynamics 365 Commerce での注文請求の一部として増分取得に対する、すぐに使用できるサポートについて説明します。
 author: BrianShook
 ms.date: 3/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fb57b8bc7b478dcd05296f7b32a05b5b18da582d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 43e8c6791c1fb2a641bce46c3b3940a55380e7a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885221"
 ---
 # <a name="incremental-capture-for-order-invoicing"></a>注文請求の増分取得
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce での注文請求の一部として増分取得に対するすぐに使えるサポートについて説明します。 また、Adyen 向け Dynamics 365 Payment Connector の増分取得を有効にする方法と、支払ソフトウェア開発キット (SDK) を使用してサード パーティーの支払コネクタに増分取得を追加する方法についても説明します。
+この記事では、Dynamics 365 Commerce での注文請求の一部として増分取得に対する、すぐに使用できるサポートについて説明します。 また、Adyen 向け Dynamics 365 Payment Connector の増分取得を有効にする方法と、支払ソフトウェア開発キット (SDK) を使用してサード パーティーの支払コネクタに増分取得を追加する方法についても説明します。
 
 増分取得が有効になると、複数の請求書を使用して長期にわたって履行される注文は、複数の請求書および取得済支払の元の承認を参照します。 これは、複数の請求書を使用して注文を履行するレガシ サポートとは対照的で、注文の一部が履行され、未払残高が変更されるたびに新しい承認が取得されます。
 

@@ -1,6 +1,6 @@
 ---
 title: フェッチ環境履歴
-description: このトピックでは、LCS 環境 API 経由で Microsoft Dynamics Lifecycle Services (LCS) によって環境履歴メタデータをフェッチする方法について説明します。
+description: この記事では、LCS 環境 API 経由で Microsoft Dynamics Lifecycle Services (LCS) によって環境履歴メタデータをフェッチする方法について説明します。
 author: jorichar
 ms.date: 08/19/2021
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jorichar
 ms.search.validFrom: 2021-08-12
-ms.openlocfilehash: 11f4fbf3371e82fc2c6ed1ae5b29d8933b5e5b82
-ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
+ms.openlocfilehash: 68014d80009812e7564f2aaa571ef48dde3e0535
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7966702"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866502"
 ---
 # <a name="fetch-environment-history"></a>フェッチ環境履歴
 

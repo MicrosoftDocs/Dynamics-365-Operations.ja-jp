@@ -1,6 +1,6 @@
 ---
 title: 破壊試験
-description: このトピックでは、Finance and Operations の破壊テスト シナリオについて説明します。
+description: この記事では、財務と運用の破壊テスト シナリオについて説明します。
 author: LaneSwenka
 ms.date: 01/28/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 0a411928d19787020371d6a9637fa109dc6c810fc163ccfbb725b0a7a4007057
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c42b58cf64c36a8f90b94007650527a0982143ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751479"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867551"
 ---
 # <a name="destructive-testing"></a>破壊試験 
 

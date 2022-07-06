@@ -1,6 +1,6 @@
 ---
 title: バッチ マネージャーのセキュリティ ロール
-description: このトピックでは、バッチ ジョブの管理に使用されるバッチ管理者のセキュリティ ロールに関する情報を提供します。
+description: この記事では、バッチ ジョブの管理に使用されるバッチ マネージャーのセキュリティ ロールに関する情報を提供します。
 author: hasaid
 ms.date: 10/25/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 8dc6e83606b85b52704828ae4ef557e9b4d35cc38220f0cd104b555b3e140d30
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36cd5fc6fa987a8755010d8b0ff63a51927a4be2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895258"
 ---
 # <a name="batch-manager-security-role"></a>バッチ マネージャーのセキュリティ ロール
 

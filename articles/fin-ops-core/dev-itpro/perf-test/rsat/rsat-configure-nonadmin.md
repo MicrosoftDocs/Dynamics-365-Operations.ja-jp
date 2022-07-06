@@ -1,6 +1,6 @@
 ---
 title: 管理者以外のユーザーが Regression suite automation tool (RSAT) を使用するように構成する
-description: このトピックでは、RSAT バージョン 2.2 およびそれ以降のユーザーに特権リソースを付与する方法について説明します。
+description: この記事では、RSAT バージョン 2.2 以降のユーザーに特権リソースを付与する方法について説明します。
 author: FrankDahl
 ms.date: 03/09/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c4320c142f816551bfbf23d5b46765a83ae2a63
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ccf1ad954e45017cd9d1ee57ff73d4e36b786b69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783356"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848721"
 ---
 # <a name="configure-non-administrator-users-to-use-rsat"></a>管理者以外のユーザーが RSAT を使用するように構成する
 
@@ -24,7 +24,7 @@ ms.locfileid: "7783356"
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Regression suite automation tool (RSAT) は、実行しているコンピューターの特権リソースを使用します。 RSAT のテストを実行するには、ユーザーはコンピューターの管理者である必要があります。 このトピックでは、RSAT バージョン 2.2 および **それ以降** を使用している場合、これらの特権リソースを付与する方法について説明します。 管理者以外のユーザーは、コンピューターの管理者になることなく、RSAT テストを実行することができます。
+Regression suite automation tool (RSAT) は、実行しているコンピューターの特権リソースを使用します。 RSAT のテストを実行するには、ユーザーはコンピューターの管理者である必要があります。 この記事では、**RSAT バージョン 2.2 以降** を使用している場合に、これらの特権リソースを付与する方法について説明します。 管理者以外のユーザーは、コンピューターの管理者になることなく、RSAT テストを実行することができます。
 
 これらの指示は、管理者以外のユーザーが RSAT をインストールできるようにするものではありません。 この指示は、インストール後に RSAT の使用を有効にするだけです。 この状況には、Selenium フレームワークがインストールされているか、またはブラウザーのバージョンを更新した後に新しいブラウザーのドライバー インストールを使用している RSAT を初めて使用するときにが含まれます。 これらのインストール手順には、RSAT を管理者権限で実行していることが必要です。
 

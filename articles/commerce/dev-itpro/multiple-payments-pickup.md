@@ -1,6 +1,6 @@
 ---
-title: 店舗内での受取に使用できる複数の支払方法
-description: このトピックでは、トランザクションに対して 1 つ以上の既存の支払方法を使用できる場合の Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の機能について説明します。
+title: 店舗での受け取りに使用できる複数の支払方法
+description: この記事では、トランザクションに対して 1 つ以上の既存の支払方法を使用できる場合の Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の機能について説明します。
 author: BrianShook
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2cd8111ebfd3034ccef57bf348f7f59f6a9da2fd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: aed271f566388cc1eb2fcd4784ccc6895faf7fd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848969"
 ---
-# <a name="multiple-available-payment-methods-for-in-store-pickup"></a>店舗内での受取に使用できる複数の支払方法
+# <a name="multiple-available-payment-methods-for-in-store-pickup"></a>店舗での受け取りに使用できる複数の支払方法
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、トランザクションに対して 1 つ以上の既存の支払方法を使用できる場合の Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の機能について説明します。
+この記事では、トランザクションに対して 1 つ以上の既存の支払方法を使用できる場合の Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の機能について説明します。
 
 多くの場合、顧客が注文を作成し、承認された支払を行う場合、支払は店舗で集荷される注文に対して行います。 顧客が店舗に到着し、POS でトランザクションが行われる場合、通常の設定では、新しい支払方法を受け入れる代わりに既存の承認済支払を使用します。 Dynamics 365 Commerce は、POS ユーザーが使用可能な支払方法を識別し、トランザクションに対して適用するのに役立ちます。
 

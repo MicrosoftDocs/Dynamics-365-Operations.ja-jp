@@ -1,6 +1,6 @@
 ---
 title: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
-description: このトピックでは、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
+description: この記事では、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
 author: mugunthanm
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 375fff57532586bb6fbe1d624de004988cee8484
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 67c5442fa8ece7c830d248d9d723a14e6d5e5086
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893038"
 ---
 # <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、新しい Retail Server アプリケーション プログラミング インターフェイス (API) の作成方法、および 販売時点管理 (POS) または他のクライアントがそれを使用できるようにするための公開方法について説明します。 既存の Retail Server API の変更はサポートされていません。
+この記事では、新しい Retail Server アプリケーション プログラミング インターフェイス (API) の作成方法、および 販売時点管理 (POS) または他のクライアントがそれを使用できるようにするための公開方法について説明します。 既存の Retail Server API の変更はサポートされていません。
 
-このトピックは、Retail ソフトウェア開発キット (SDK) バージョン 10.0.11 以降に適用されます。
+この記事は、Retail ソフトウェア開発キット (SDK) バージョン 10.0.11 以降に適用されます。
 
 Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンドの Retail Server 拡張機能のサンプルがいくつか用意されているのみです。 これらのサンプルをテンプレートとして使用して、拡張機能を起動できます。 サンプル拡張機能は、**RetailSDK\\SampleExtensions\\RetailServer** フォルダーで見つけることができます。
 

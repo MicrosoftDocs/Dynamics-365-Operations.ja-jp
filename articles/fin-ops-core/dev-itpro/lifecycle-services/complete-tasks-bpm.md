@@ -1,6 +1,6 @@
 ---
 title: ビジネス プロセス モデラー (BPM) でのタスクの完了
-description: このトピックでは、業務プロセス モデル (BPM) で完了できるその他のタスクに関する情報が提供されます。
+description: この記事では、業務プロセス モデル (BPM) で完了できるその他のタスクに関する情報が提供されます。
 author: AngelMarshall
 ms.date: 06/15/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: f4692f80b16757a766f3b9d4cb2e13676d243a9b057144a163764c7dc0ec7a9e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54ccdc57ac5f734e799a36724bc5b8dbe20cd505
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866472"
 ---
 # <a name="complete-tasks-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) でのタスクの完了
 

@@ -1,6 +1,6 @@
 ---
 title: チャネル データベースの事前拡張された列
-description: このトピックでは、チャネル データベース内の事前拡張された列がどのように拡張に使用されるかについて説明します。
+description: この記事では、チャネル データベース内の事前拡張された列がどのように拡張に使用されるかについて説明します。
 author: mugunthanm
 ms.date: 06/04/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4654363ee987438ce3917880dc01a424e135740a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 93fb27566814072aeea06ca98c8858ff7a5f77e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848975"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 

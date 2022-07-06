@@ -1,6 +1,6 @@
 ---
 title: 拡張機能によって、フォームにデータ ソースを追加
-description: このトピックでは、拡張機能を使用して、既存のフォームに新しいデータ ソースを追加する方法について説明します。
+description: この記事では、拡張機能を使用して、既存のフォームに新しいデータ ソースを追加する方法について説明します。
 author: ivanv-microsoft
 ms.date: 07/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 9ccb976c778c4e1d1b6d92665a76347ab8dbdb89
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fe7b3cd08043d45daa3d2677328f49d437478447
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866981"
 ---
 # <a name="add-data-sources-to-forms-through-extension"></a>拡張機能によって、フォームにデータ ソースを追加
 

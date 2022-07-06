@@ -1,6 +1,6 @@
 ---
 title: パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
-description: このトピックでは、Microsoft Visual Studio、パフォーマンス SDK、およびタスク レコーダー パフォーマンス テスト スクリプトを使用してシングルユーザー テストを行う方法について説明します。
+description: この記事では、Microsoft Visual Studio、パフォーマンス SDK、およびタスク レコーダー パフォーマンス テスト スクリプトを使用してシングルユーザー テストを行う方法について説明します。
 author: hasaid
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6e055a90965147709fa4a9b5fb5f6336de689df7
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: df7cd2261b11796280c46d2fa2efdef703692ba5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661636"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854616"
 ---
 # <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 
 [!include [banner](../includes/banner.md)]
 
-Visual Studio および パフォーマンス ソフトウェア デベロップメント キット (SDK) を使用し、タスク レコーダーにて生成されたパフォーマンス テスト スクリプトとともシングルユーザーテストを行うには、このトピックに記載の内容を参考にしてください。
+Visual Studio および パフォーマンス ソフトウェア開発キット (SDK) を使用し、タスク レコーダーにて生成されたパフォーマンス テスト スクリプトとともシングルユーザー テストを行うには、この記事にある情報を使用してください。
 
 > [!IMPORTANT]
 > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。
@@ -34,7 +34,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 ## <a name="use-task-recorder-to-define-and-record-an-end-to-end-business-scenario"></a>タスクレコーダーを使用してエンドツーエンドの業務シナリオを定義し、記録します。
 
-シングルユーザーテストを実行する前に、業務チームと協力してエンドツーエンドのシナリオを定義した上で、タスクレコーダーを使用して各シナリオのステップを記録することを強く推奨します。 タスク記録の作成方法についての詳細は、[タスク レコーダー リソース](../user-interface/task-recorder.md)を参照してください。 テストを行うべきシナリオは、顧客の業務要件によって異なります。 このトピックでは、「販売注文の作成および確認」を行うサンプルシナリオを使用します。
+シングルユーザーテストを実行する前に、業務チームと協力してエンドツーエンドのシナリオを定義した上で、タスクレコーダーを使用して各シナリオのステップを記録することを強く推奨します。 タスク記録の作成方法についての詳細は、[タスク レコーダー リソース](../user-interface/task-recorder.md)を参照してください。 テストを行うべきシナリオは、顧客の業務要件によって異なります。 この記事では、「販売注文の作成および確認」を行うサンプルシナリオを使用します。
 
 1. 財務担当者ペルソナとしてサインインします。
 2. タスクレコーダー を有効にして、次の情報を含む販売注文の作成と確認を行います。

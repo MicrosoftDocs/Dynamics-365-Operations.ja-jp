@@ -1,6 +1,6 @@
 ---
 title: ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照
-description: このトピックでは、BPM ライブラリを作成または編集する方法と、既存のライブラリを参照する方法について説明します。
+description: この記事では、BPM ライブラリを作成または編集する方法と、既存のライブラリを参照する方法について説明します。
 author: kfend
 ms.date: 04/03/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 1d03237b8001c79cfb7dac19d1d39b2ab7abd03b347249846b92b5bc4746230b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 665776dde5d59875356d03db259cac407c7b2a39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767703"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866466"
 ---
 # <a name="create-edit-and-browse-business-process-modeler-bpm-libraries"></a>ビジネス プロセス モデラー (BPM) のライブラリを作成、編集、および参照
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリーの作成、編集、参照の方法について説明します。 グローバル ライブラリまたは企業ライブラリである BPM ライブラリを参照できることに注意することが重要です。 ただし、BPM ライブラリを編集および使用できるようにするには、そのライブラリが Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトの一部になっている必要があります。 Microsoft によって配布されるライブラリは **グローバル ライブラリ** 下に表示され、組織によって公開されているライブラリは **コーポレート ライブラリ** 下に表示されます。
+この記事では、ビジネス プロセス モデラー (BPM) ライブラリーの作成、編集、参照の方法について説明します。 グローバル ライブラリまたは企業ライブラリである BPM ライブラリを参照できることに注意することが重要です。 ただし、BPM ライブラリを編集および使用できるようにするには、そのライブラリが Microsoft Dynamics Lifecycle Services (LCS) のプロジェクトの一部になっている必要があります。 Microsoft によって配布されるライブラリは **グローバル ライブラリ** 下に表示され、組織によって公開されているライブラリは **コーポレート ライブラリ** 下に表示されます。
 
   >[!NOTE]
   >BPM ローカライズはサポートされません。 EN-US 以外の言語で新しい BPM クライアントを編集すると、変更が加えられた言語で BPM を表示したときのみ変更が表示されます。 EN-US で行われた変更を表示するには、変更が表示される前に、Visual Studio Team Server と同期する必要があります。

@@ -1,6 +1,6 @@
 ---
 title: X++ リフレクション ランタイム関数
-description: このトピックでは、リフレクション ランタイム関数について説明します。
+description: この記事では、リフレクション ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/20/2017
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 554eda70876dc20f7ba082b7896e8271f3658b49
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bb7fefb070808fefdf9fac3956a08ed0a2fab4ac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867138"
 ---
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、リフレクション ランタイム関数について説明します。
+この記事では、リフレクション ランタイム関数について説明します。
 
 ## <a name="classidget"></a>classIdGet
 

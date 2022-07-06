@@ -1,6 +1,6 @@
 ---
 title: 組織の Bing 地図の管理
-description: このトピックでは、アプリケーションの Bing マップを管理する方法について説明します。
+description: この記事では、アプリケーションの Bing 地図を管理する方法について説明します。
 author: aamirallaqaband
 ms.date: 08/17/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: aaac3229aa64f446b64bc01c5f3d31a5d51c1251
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9f6c5c57b24b4c5698efdc35517cea23f1a4bb37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861862"
 ---
 # <a name="manage-bing-maps-for-your-organization"></a>組織の Bing 地図の管理
 

@@ -1,6 +1,6 @@
 ---
 title: POS カートのビュー イベントとハンドラー
-description: このトピックでは、拡張機能がカスタム シナリオの販売時点管理 (POS) ビュー イベントとハンドラーを使用する方法について説明します。
+description: この記事では、拡張機能がカスタム シナリオの販売時点管理 (POS) ビュー イベントとハンドラーを使用する方法について説明します。
 author: mugunthanm
 ms.date: 02/13/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d118605d8a841bfc8a01e622c84c230bbf505f9e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9b8767d26e9af70f39d8e4b1f026a62f8c75d768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897240"
 ---
 # <a name="pos-cart-view-events-and-handlers"></a>POS カートのビュー イベントとハンドラー
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、拡張機能がカスタム シナリオの販売時点管理 (POS) ビュー イベントとハンドラーを使用する方法について説明します。 たとえば、POS のカート ビューは、イベントに基づいて拡張機能がカスタムの業務フローを実行できるよう、複数のイベントとハンドラーを公開します。 拡張機能では、イベントにサブスクライブし、そのイベントが発生するときに通知を受け取ることができます。
+この記事では、拡張機能がカスタム シナリオの販売時点管理 (POS) ビュー イベントとハンドラーを使用する方法について説明します。 たとえば、POS のカート ビューは、イベントに基づいて拡張機能がカスタムの業務フローを実行できるよう、複数のイベントとハンドラーを公開します。 拡張機能では、イベントにサブスクライブし、そのイベントが発生するときに通知を受け取ることができます。
 
 ## <a name="cart-view-event-handlers"></a>カート ビュー イベント ハンドラー
 

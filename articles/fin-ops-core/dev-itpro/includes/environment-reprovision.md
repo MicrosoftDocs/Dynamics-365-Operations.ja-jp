@@ -1,20 +1,22 @@
 ---
-ms.openlocfilehash: e65d6975201e7de58b2df5889bb8f32b2d72d5e8cd9566b874c813d409b74bd0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 48e3aac8234abe434aa6c5430971dd4106233d20
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716020"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942837"
 ---
 > [!IMPORTANT]
+> Commerce headquarters データベース (以前の AOS データベース) を移行する際、関連付けられている Commerce Scale Units (CSUs) は移動されません。 場合によっては、使用する機能に応じて、CSU の再配置が必要になる場合があります。 次に、データを CSU に完全に同期して、再配置を行う必要があります。 データの不一致が残っている場合は、最終的なアクションとして CSU を削除し、新しい CSU を置き換え、新しい CSU に対するデータの完全同期を実行することです。
+> 
 > 環境固有のレコードの中には、自動的なデータベース移動操作に含められないものがあり、その手順を追加する必要があります。 次のような役割があります。
-> - Commerce セルフサービス インストーラー参照
-> - Commerce Scale Unit チャネル データベースのコンフィギュレーション レコード
+> - コマース セルフサービス インストーラー参照。
+> - Commerce Scale Unit チャネル データベースのコンフィギュレーション レコード。
 
 環境間でデータベースをコピーすると、次の追加の手順を実行しない限り、移行先環境の Commerce の機能は完全には機能しません。
 
 ### <a name="initialize-commerce-scale-units"></a>Commerce Scale Unit の初期化
-データベースをサンドボックス UAT または実稼動環境に移動する場合は、データベースの移動操作が完了した後に、[Commerce Scale Unit を初期化](../deployment/Initialize-Retail-Channels.md)する必要があります。 ソース環境からの Commerce Scale Unit の関連付けは、移行先の環境にコピーされません。 
+データベースをサンドボックス UAT または運用環境に移動する場合は、データベースの移動操作が完了した後に、[Commerce Scale Unit を初期化](../deployment/Initialize-Retail-Channels.md)する必要があります。 ソース環境からの Commerce Scale Unit の関連付けは、移行先の環境にコピーされません。 
 
 ### <a name="synchronize-commerce-self-service-installers"></a>Commerce のセルフサービス インストーラーの同期
 HQ 内の Commerce セルフサービス インストーラーにアクセスできるようにするには、データベースの移動操作が完了した後に[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/synchronize-installers.md)する必要があります。
@@ -34,4 +36,4 @@ HQ 内の Commerce セルフサービス インストーラーにアクセスで
 
 ### <a name="re-activate-pos-devices"></a>POS デバイスの再アクティブ化
 
-販売時点管理 (POS) デバイスを使用する場合は、データベースをインポートした後に、POS デバイスを再度アクティブ化する必要があります。 移行先環境で以前にアクティブ化されたデバイスは、機能しなくなります。 詳細については、[販売時点管理 (POS) デバイスのライセンス認証](../../../commerce/dev-itpro/retail-device-activation.md) を参照してください。
+販売時点管理 (POS) デバイスを使用する場合は、データベースをインポートした後、POS デバイスを再度アクティブ化する必要があります。 移行先環境で以前にアクティブ化されたデバイスは、機能しなくなります。 詳細については、[販売時点管理 (POS) デバイスのライセンス認証](../../../commerce/dev-itpro/retail-device-activation.md) を参照してください。

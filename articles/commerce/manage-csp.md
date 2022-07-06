@@ -1,6 +1,6 @@
 ---
-title: Content Security Policy (CSP) の管理
-description: このトピックでは、Microsoft Dynamics 365 Commerceの コンテンツ セキュリティ ポリシー (CSP) を管理する方法について説明します。
+title: コンテンツ セキュリティ ポリシー (CSP) の管理
+description: この記事では、Microsoft Dynamics 365 Commerce のコンテンツ セキュリティ ポリシー (CSP) を管理する方法について説明します。
 author: samjarawan
 ms.date: 11/13/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03f03b60f89f7ca994d3bddc2a7b6c65a7e1228f24f514589ceea46178827d00
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a8e0eec7b0d8cde3ecf3de797860cd406a0ada3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770995"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868976"
 ---
 # <a name="manage-content-security-policy-csp"></a>コンテンツ セキュリティ ポリシー (CSP) の管理
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerceの コンテンツ セキュリティ ポリシー (CSP) を管理する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のコンテンツ セキュリティ ポリシー (CSP) を管理する方法について説明します。
 
 CSP は、特定タイプの Web 攻撃の検出と軽減に役立つ追加のセキュリティ レベルです。 これらの攻撃の目的は、データの盗用からサイトの変造やマルウェアの配布まで多岐に指定できます。 CSP は、サイトページに読み込むことができるリソースを制御するのに役立つ、広範なポリシー ディレクティブのセットを提供します。 各ディレクティブは、特定のタイプのリソースに対する制限を定義します。
 

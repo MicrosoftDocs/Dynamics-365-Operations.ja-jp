@@ -1,6 +1,6 @@
 ---
 title: 拡張機能を使用してテーブルにフィールドを追加
-description: このトピックでは、テーブル拡張機能を使用してテーブルにフィールドを追加する方法について説明します。
+description: この記事では、テーブル拡張機能を使用してテーブルにフィールドを追加する方法について説明します。
 author: ivanv-microsoft
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: bf5423c3dab0715325f257394c5997430685a3b6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 05b6c8ea16a9453d6ac1cc2fb88ead26f025a6f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866975"
 ---
 # <a name="add-fields-to-tables-through-extension"></a>拡張機能を使用してテーブルにフィールドを追加
 

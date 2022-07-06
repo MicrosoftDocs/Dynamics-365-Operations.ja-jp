@@ -1,6 +1,6 @@
 ---
 title: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
-description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
+description: この記事では、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
 ms.date: 04/21/2022
 ms.topic: article
@@ -14,28 +14,28 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1d99d36c9d9c86630dac9b78aad68906a682560a
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 76be93617c8a7f9b994b9502253a34dc19abb7ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629309"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863421"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Cloud POS の新しいテスト レコーダー ツールを使用して、ユーザー受け入れテスト (UAT) とユーザー インターフェイス (UI) テストのビジネス シナリオを記録する方法について説明します。 また、Regression Suite Automation Tool (RSAT) を使用してテストの検証を自動化する方法についても説明します。 RSAT では、Microsoft Azure DevOps のテスト スイートを使用してテスト ケースをダウンロードします。 次に、テストの実行ステータスと共に、結果が Azure DevOps に報告されます。 テスト ケースは、Azure DevOps で手動で作成するか、または Microsoft Dynamics Lifecycle Services (LCS) の ビジネス プロセス モデラー (BPM) ツール から Azure DevOps に同期してから、RSAT に同期することができます。
+この記事では、Cloud POS の新しいテスト レコーダー ツールを使用して、ユーザー受け入れテスト (UAT) とユーザー インターフェイス (UI) テストのビジネス シナリオを記録する方法について説明します。 また、Regression Suite Automation Tool (RSAT) を使用してテストの検証を自動化する方法についても説明します。 RSAT では、Microsoft Azure DevOps のテスト スイートを使用してテスト ケースをダウンロードします。 次に、テストの実行ステータスと共に、結果が Azure DevOps に報告されます。 テスト ケースは、Azure DevOps で手動で作成するか、または Microsoft Dynamics Lifecycle Services (LCS) の ビジネス プロセス モデラー (BPM) ツール から Azure DevOps に同期してから、RSAT に同期することができます。
 
-このトピックは、Dynamics 365 Retail および Dynamics 365 Finance Version 10.0.5 (2019 年 10 月) およびそれ以降に適用されます。
+この記事は、Dynamics 365 Retail および Dynamics 365 Finance Version 10.0.5 (2019 年 10 月) およびそれ以降に適用されます。
 
 > [!NOTE]
 > テスト レコーダーは、Google Chrome または Microsoft Edge Web ブラウザーの Cloud POS でのみ使用されます。
 
 ## <a name="test-recorder"></a>テスト レコーダー
 
-POS のテスト レコーダーは、UAT の時間とコストを大幅に削減するのに役立ちます。 通常、UAT は、Microsoft アプリケーションの更新が適用される前に、またはカスタム コードと構成がユーザーの POS 生産環境に適用される前に必要になります。
+POS のテスト レコーダーは、UAT の時間とコストを大幅に削減するのに役立ちます。 通常、UAT は、Microsoft アプリケーションの更新が適用される前に、またはカスタム コードと構成がユーザーの POS 運用環境に適用される前に必要になります。
 
 テスト レコーダーは、クライアントのユーザー アクションを記録でき、ドキュメント オブジェクト モデル (DOM) 内のすべてのコントロールおよびすべての要素に対する正確な忠実度を提供します。 POS で、テスト レコーダーは、発生したイベントを該当するユーザー アクションに関するすべての関連情報と共にキャプチャして、リアルタイムで保存します。 テスト レコーダーは、この情報からユーザー アクションのタイプ (ボタンのクリック、値の入力、ナビゲーションなど) と、ユーザー アクションに関連するデータ (入力データの値とタイプ、ビュー コンテキスト、レコード コンテキストなど) をキャプチャできます。 ただし、パスワード情報はキャプチャされません。 記録セッション中は、テスト レコーダーによってすべての記録された情報がメモリに保持されます。 その後、記録セッションの終了時に、必要な詳細を含む出力ファイルが生成されます。これにより、RSATを使用してユーザーが実行したときと同じようにアクションを再生できます。
 

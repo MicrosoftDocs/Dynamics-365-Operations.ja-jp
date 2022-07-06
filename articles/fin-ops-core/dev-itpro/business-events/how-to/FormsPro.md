@@ -1,6 +1,6 @@
 ---
-title: ビジネスイベントと Microsoft Forms Pro
-description: このトピックでは、製品の出荷時に調査がユーザーに送信されるシナリオについて説明します。
+title: ビジネス イベントおよび Microsoft Forms Pro
+description: この記事では、製品の出荷時に調査がユーザーに送信されるシナリオについて説明します。
 author: murrayfife
 ms.date: 08/12/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 9e4bbe6fd439065d7a828a52939ccf5e8e07a3fa767ae297146d2dc577f7e05c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: adc729f4726bf1529f554fd1e641a9c801920aed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906561"
 ---
 # <a name="business-events-and-microsoft-forms-pro"></a>ビジネス イベントおよび Microsoft Forms Pro
 
 [!include[banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Forms Pro を使用してビジネス イベントで使用できる調査を作成するシナリオを説明します。 特にここで説明するシナリオでは製品が出荷されたときに調査が顧客に送信されます。 調査情報は Forms Pro を使用して収集されます。
+この記事では、Microsoft Forms Pro を使用してビジネス イベントで使用できる調査を作成するシナリオを説明します。 特にここで説明するシナリオでは製品が出荷されたときに調査が顧客に送信されます。 調査情報は Forms Pro を使用して収集されます。
 
 ## <a name="prerequisites"></a>必要条件
 

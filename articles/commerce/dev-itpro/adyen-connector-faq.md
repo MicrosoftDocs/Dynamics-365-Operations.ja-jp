@@ -1,6 +1,6 @@
 ---
 title: Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
-description: このトピックでは、Adyen 向けの Microsoft Dynamics 365 Payment Connector に関するよく寄せられる質問への回答を提供します。
+description: この記事では、Adyen 向けの Microsoft Dynamics 365 Payment Connector に関するよく寄せられる質問への回答を提供します。
 author: rassadi
 ms.date: 03/10/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 76b175c52bc2a175332d6cb6b897d4e147c01a1d
-ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
+ms.openlocfilehash: b12b49b9009430a358c3234182a2d8d5254037a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "8403134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874947"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-faq"></a>Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Adyen 向けの Microsoft Dynamics 365 Payment Connector に関するよく寄せられる質問への回答を提供します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。 
+この記事では、Adyen 向けの Microsoft Dynamics 365 Payment Connector に関するよく寄せられる質問への回答を提供します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。 
 
 ### <a name="can-i-share-a-payment-terminal-with-multiple-hardware-stations"></a>複数のハードウェア ステーションを使用して支払端末を共有することはできますか。
 

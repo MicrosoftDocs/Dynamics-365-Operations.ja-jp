@@ -1,6 +1,6 @@
 ---
 title: セグメント化されたエントリ コントロールの移行のガイダンス
-description: このトピックは、セグメント化されたエントリ コントロールの移行プロセスについて説明します。
+description: この記事では、セグメント化されたエントリ コントロールの移行プロセスについて説明します。
 author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f06b001202a27671c47c9d4076ea18754284160e
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a82621c37b3c27e0815d9fef61643529b33f7715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866739"
 ---
-# <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
+# <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行のガイダンス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セグメント化エントリ コントロールを Microsoft Dynamics AX 2012 のパターンから Microsoft Dynamics AX の新しいパターンに移行するプロセスについて説明します。
+この記事では、セグメント化されたエントリ コントロールを Microsoft Dynamics AX 2012 のパターンから Microsoft Dynamics AX の新しいパターンに移行するプロセスについて説明します。
 
 新しい設計の目標は、コントロールの実装をカプセル化し、コントロールをサポートするクラスとやり取りするフォームを必要としないことです。 したがって、Microsoft Dynamics AX で、<em> すべてのフォームは、**セグメント化されたエントリ** コントロール インスタンスのアプリケーション プログラミング インターフェイス (API) とのみ対話する必要があります。それらは、コントローラー クラス (**LedgerDimensionAccountController** や **DimensionDynamicAccountController** など)</em> と直接対話してはなりません。 コントローラー上で以前に操作または呼び出された任意のプロパティは、コントロール上で呼び出される必要があります。 
 

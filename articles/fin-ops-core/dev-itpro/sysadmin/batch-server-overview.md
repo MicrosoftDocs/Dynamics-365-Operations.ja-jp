@@ -1,6 +1,6 @@
 ---
 title: バッチ処理とバッチ サーバー
-description: このトピックでは、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。
+description: この記事では、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。
 author: Peakerbl
 ms.date: 01/22/2020
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16d27ece5279cdae4edb0e99cfb0c920c6eb77aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bf10c720153627e3a1f0719d39090a95c4560635
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879760"
 ---
 # <a name="batch-processing-and-batch-servers"></a>バッチ処理とバッチ サーバー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。
+この記事では、バッチ処理とバッチ サーバー、およびその使用を計画する方法について説明します。
 
 バッチ フレームワークは、Application Object Server (AOS) の複数のインスタンスにわたるタスクを処理できるサーバー ベースの非同期バッチ処理環境を提供します。 
 

@@ -1,6 +1,6 @@
 ---
 title: スロットリング優先度
-description: このトピックでは、OData およびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
+description: この記事では、OData およびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 172ac9d3aa8f6be9179e4355876c622cd583e548
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 9227ddca7aafb37d2062efe2582e088013219611
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710487"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850938"
 ---
 # <a name="throttling-prioritization"></a>スロットリング優先度
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ プロトコル (OData) を開くおよびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
+この記事では、Open Data Protocol (OData) をカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
 
 サービス保護アプリケーション プログラミング インターフェイス (API) のリソース ベースの制限は、サービス保護 API のユーザー ベースの制限と連携し、リソースの過剰利用を防ぐのに役立つ保護設定として機能します。 これにより、システムの応答性を維持し、財務と運用アプリを実行する環境で一貫した可用性とパフォーマンスを実現できます。 リソース ベースの制限は、Web サーバー リソースの総消費量がサービスのパフォーマンスと可用性を低下させるレベルに達すると、サービス要求を調整します。
 

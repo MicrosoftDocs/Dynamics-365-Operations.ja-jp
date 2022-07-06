@@ -1,6 +1,6 @@
 ---
 title: CustTrans::settleTransaction を使用したトランザクションの決済
-description: このトピックでは、新しい CustTrans::settleTransaction メソッドについて説明を行い、CustTrans::settleTransact には実装されていない新機能について説明します。
+description: この記事では、新しい CustTrans::settleTransaction メソッドについて、および CustTrans::settleTransact には実装されていない新機能について説明します。
 author: RobinARH
 ms.date: 06/01/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: markskun
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: AX 10.0.4
-ms.openlocfilehash: 1866ea3f54c6f7caef555824326f2fefdb9560ed
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ecdbc0f85277869596c2c57a844727e08d9f0340
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866736"
 ---
 # <a name="settle-transactions-by-using-custtranssettletransaction"></a>CustTrans::settleTransaction を使用したトランザクションの決済
 
@@ -137,7 +137,7 @@ CustTrans::settleTransaction(
 
 ### <a name="testing"></a>テスト
 
-この機能はフライトを使用します。 このテストを行うには、非稼働環境にてフライトを有効にする必要があります。 非稼動環境でフライトをオンにする方法については、[データ管理の概要](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).を参照してください。
+この機能はフライトを使用します。 このテストを行うには、非運用環境にてフライトを有効にする必要があります。 非運用環境でフライトをオンにする方法については、[データ管理の概要](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features)を参照してください。
 
 フライトの名称は **EnableCustTransSettleTransaction** です。
 

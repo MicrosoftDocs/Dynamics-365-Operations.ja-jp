@@ -1,6 +1,6 @@
 ---
 title: 拡張機能を通じた新しい在庫分析コードの追加
-description: このトピックでは、拡張機能を通じて新しい在庫分析コードを追加する方法について説明します。
+description: この記事では、拡張機能を通じて新しい在庫分析コードを追加する方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 02/01/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: fdfeec9dfbb3f25801dedda376fe6abdec6f29c7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3397e096c3f0f99219905e6c8eb9bd1d4ca402dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866858"
 ---
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、拡張機能を使用して新しい在庫分析コードを追加する方法の概要を示します。 また、実際の実装を含むサンプル アプリケーションへのアクセス方法に関する情報も含まれます。
+この記事では、拡張機能を使用して新しい在庫分析コードを追加する方法の概要を示します。 また、実際の実装を含むサンプル アプリケーションへのアクセス方法に関する情報も含まれます。
 
 ## <a name="solution-overview"></a>ソリューションの概要
 このソリューションで重要なことは、複数のロールが、拡張機能を介して新しい在庫分析コードを追加するライフサイクルに参加することです。 次の説明では、このソリューションを簡略化して一般化していますが、現実にはロールの重複があり、時には同じ人が複数のロールを果たす場合もあります。

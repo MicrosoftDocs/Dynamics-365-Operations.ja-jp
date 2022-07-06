@@ -1,20 +1,20 @@
 ---
 title: Azure Data Lake へのエクスポートの概要
-description: このトピックでは、Finance and Operations 環境を Data Lake に接続してデータで非表示にされているインサイトのロック解除をする方法について説明します。
+description: この記事では、財務と運用環境を Data Lake に接続してデータで非表示にされているインサイトのロック解除をする方法について説明します。
 author: MilindaV2
-ms.date: 03/23/2022
+ms.date: 06/14/2022
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2021-11-30
-ms.openlocfilehash: c7010fb9a89bca75f202b481d1e9ee7b89ffaf85
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d4c6afe0ace84512fb46f2eaeef96a91fbe6ae7e
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469044"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012488"
 ---
 # <a name="export-to-azure-data-lake-overview"></a>Azure Data Lake へのエクスポートの概要
 
@@ -22,11 +22,11 @@ ms.locfileid: "8469044"
 
 ## <a name="what-is-export-to-azure-data-lake"></a>Azure Data Lake へのエクスポートとは?
 
-Azure Data Lake へのエクスポートにより、Finance and Operations 環境を Data Lake に接続してデータで非表示にされているインサイトのロックを解除することができます。
+Azure Data Lake へのエクスポートにより、財務と運用環境を Data Lake に接続してデータで非表示にされているインサイトのロックを解除することができます。
 
-Azure Data Lake へのエクスポート アドインを有効にするとき、Finance and Operations 環境を指定した Data Lake に接続します。 承認されたユーザーは、Finance and Operations 環境からその Data Lake にデータをコピーできます。 Power BI および Azure Synapse などのツールにより、Data Lake のデータに対して分析、ビジネス インテリジェンス、および機械学習のシナリオが有効になります。
+Azure Data Lake へのエクスポート アドインを有効にするとき、財務と運用環境を指定した Data Lake に接続します。 承認されたユーザーは、財務と運用環境からその Data Lake にデータをコピーできます。 Power BI および Azure Synapse などのツールにより、Data Lake のデータに対して分析、ビジネス インテリジェンス、および機械学習のシナリオが有効になります。
 
-財務と運用アプリのデータを選択すると、システムは Data Lake 内のデータの初期コピーを作成します。 その初期コピーを作成した後、変更されたデータを継続的に挿入、更新、および削除することにより、システムは Data Lake 内のデータを最新に保ちます。 サービスをエクスポートしたり管理したりする必要はなく、Finance and Operations ワークロードに負担になることはありません。
+財務と運用アプリのデータを選択すると、システムは Data Lake 内のデータの初期コピーを作成します。 その初期コピーを作成した後、変更されたデータを継続的に挿入、更新、および削除することにより、システムは Data Lake 内のデータを最新に保ちます。 サービスをエクスポートしたり管理したりする必要はなく、財務と運用ワークロードに負担になることはありません。
 
 Data Lake に保存されたデータは、[Common Data Model](https://powerplatform.microsoft.com/common-data-model/) を使用してまとめられています。 Common Data Model によって、Data Lake のデータの価値が強化されます。 例については、機械可読の JavaScript Object Notation (JSON) 形式で追加のメタデータが提供されますので、下流ツールはデータのセマンティクスを決定することができます。 追加のメタデータには、テーブル構造、説明、およびデータ型が含まれます。
 
@@ -37,30 +37,28 @@ Azure Data Lake へのエクスポートは、Microsoft が完全に管理する
 - 標準エンティティとカスタム エンティティおよびテーブルの両方を選択できます。
 - Microsoft Azure Synapse Analytics または他の多くのサード パーティ ツールを使用して、Data Lake でデータを処理することができます。
 
-ストレージ アカウントは、Finance and Operations 環境と同じ Azure リージョンにある必要があります。
+ストレージ アカウントは、財務と運用環境と同じ Azure リージョンにある必要があります。
 
-次のセクションでは、使用可能なプレビュー機能について説明します。
+サービスのインストール時に、ほぼリアルタイムのデータ変更やビジネス イベントを有効にするよう選択することもできます。
 
-> [!NOTE]
-> プレビュー機能は完成していません。 ただし、顧客が早期アクセスを使用してフィードバックを提供できるよう、プレビュー ベースで使用可能です。 プレビュー機能は、機能が限定または制限されていて、運用上の用途を目的としていないことがあり、選択された地理的な地域でのみ使用できることがあります。
->
-> プレビュー機能を有効にすることにより、[追加使用条件](../../fin-ops/get-started/public-preview-terms.md)に同意します。
-
-## <a name="enable-near-real-time-data-changes-preview"></a>ほぼリアルタイムのデータ変更を有効にする (プレビュー)
-
-このプレビュー機能を選択した場合、データは Data Lake でほぼリアルタイムで挿入、更新、および削除されます。 データが Finance and Operations 環境内で変更されると、数分以内に Data Lake 内のデータが更新されます。
-
-この機能を使用すると、選択できるテーブルの数は 350 に増加します。
+## <a name="enable-near-real-time-data-changes"></a>ほぼリアルタイムのデータ変更の有効化 
+この機能を選択した場合、データは Data Lake でほぼリアルタイムで挿入、更新、および削除されます。 データが財務と運用環境内で変更されると、数分以内に Data Lake 内のデータが更新されます。
 
 さらに、Data Lake 内の変更されたデータを使用して、下流のデータ ウェアハウスを更新することができます。 変更データ フォルダーを使用して、データに行われた変更を簡単に特定し、ほぼリアルタイムでデータ パイプラインを作成することができます。
 
 ほぼリアルタイムの変更フィードの詳細については、[Azure Data Lake の変更データ](azure-data-lake-change-feeds.md)を参照してください。
 
-## <a name="business-events-preview"></a>ビジネス イベント (プレビュー)
+## <a name="business-events"></a>ビジネス イベント 
+この機能を有効にすると、Data Lake の何か重要な問題が発生した場合に警告を発することができます。 たとえば、レイクでデータが初期化されると警告を受け取る可能性があります。 データの最初のコピーが完了すると、システムによってビジネス イベントが生成されます。 [ビジネス イベント](/powerapps/developer/data-platform/business-events) は、Dynamics 365 と Dataverse のフレームワークであり、簡単にインテリジェント アクションと自動化を作成できます。 たとえば、Power Platform に統合されているツールである [Power Automate](https://powerautomate.microsoft.com/) を使用して、自動化されたワークフローを構築し、ダウンストリームのデータ パイプラインを自動的にトリガするなどのアクションを実行できます。
 
-このプレビュー機能を有効にすると、Data Lake の何か重要な問題が発生した場合に警告を発生することができます (たとえば、データで初期化されます)。 データの最初のコピーが完了すると、システムによってビジネス イベントが生成されます。 [ビジネス イベント](/powerapps/developer/data-platform/business-events) は、Dynamics 365 と Dataverse のフレームワークであり、簡単にインテリジェント アクションと自動化を作成できます。 たとえば、Power Platform に統合されているツールである [Power Automate](https://powerautomate.microsoft.com/) を使用して、自動化されたワークフローを構築し、ダウンストリームのデータ パイプラインを自動的にトリガするなどのアクションを実行できます。
+エクスポートから Data Lake サービスによって生成されたビジネス イベントの詳細については、[エクスポートから Azure Data Lake サービスによって生成されたビジネス イベント](Azure-Data-Lake-Generates-Biz-events.md) を参照してください。
 
-Microsoft は、今後数か月の間に、サービスにさらにビジネス イベントを追加する予定です。 エクスポートから Data Lake サービスによって生成されたビジネス イベントの詳細については、[エクスポートから Azure Data Lake サービスによって生成されたビジネス イベント](Azure-Data-Lake-Generates-Biz-events.md) を参照してください。
+次のセクションでは、使用可能なプレビュー機能について説明します。
+
+> [!NOTE]
+> プレビュー機能は完成していません。 顧客が早期アクセスを使用してフィードバックを提供できるよう、プレビュー ベースで使用可能になりました。 プレビュー機能は、機能が限定または制限されていて、運用上の用途を目的としていないことがあり、選択された地理的な地域でのみ使用できることがあります。
+>
+> プレビュー機能を有効にすることにより、[追加使用条件](../../fin-ops/get-started/public-preview-terms.md)に同意します。
 
 ## <a name="enhanced-metadata-preview"></a>拡張メタデータ (プレビュー)
 
@@ -70,7 +68,7 @@ Microsoft は、今後数か月の間に、サービスにさらにビジネス 
 
 ### <a name="what-is-azure-data-lake-and-what-benefits-do-data-lakes-offer"></a>Azure Data Lake とはなんですか? Azure Data Lake にはどのようなメリットがありますか。
 
-Azure Data Lake は、Azure クラウドのテクノロジで、分析のために「ビッグ データ」の保存と操作を行い、機械学習と AI に適用することができます。 このトピックで、「Data Lake」 という場合、Azure Data Lake Storage Gen2 に基づく記憶域テクノロジーのことを指します。
+Azure Data Lake は、Azure クラウドのテクノロジで、分析のために「ビッグ データ」の保存と操作を行い、機械学習と AI に適用することができます。 この記事で、「Data Lake」 という場合、Azure Data Lake Storage Gen2 に基づく記憶域テクノロジーのことを指します。
 
 Data Lakes が提供するクラウドストレージは、リレーショナルデータベースが提供するものよりも安価です。 そのため、大量のデータをクラウドに格納できます。 このデータには、従来、業務システムとデータ ウェアハウス、およびデバイスとセンサーのデータに格納されている、デバイスからの信号などの業務データが含まれます。 さらに、Data Lakeは、大量のデータの報告、照会、変換を実現する広範なツールとプログラミング言語に対応しています。
 
@@ -80,7 +78,7 @@ Data Lakes が提供するクラウドストレージは、リレーショナル
 
 Azure Data Lake へのエクスポートは、Dynamics 365 サービスへのサブスクリプションに含まれるアドオン サービスです。
 
-自身のサブスクリプションには Data Lake Storage Gen2 が含まれているため、Data Lake にデータを読み書きする際に発生するデータ ストレージや入出力 (I/O) のコストを負担する必要があります。 また、財務と運用アプリが Data Lake にデータを書き込んだり、データを更新することにより、I/O コストが発生する場合もあります。 領域内の I/O コストを削減するために、財務と運用アプリでは Finance and Operations 環境と同じ国や地理的リージョンに Data Lake をプロビジョニングする必要があります。
+自身のサブスクリプションには Data Lake Storage Gen2 が含まれているため、Data Lake にデータを読み書きする際に発生するデータ ストレージや入出力 (I/O) のコストを負担する必要があります。 また、財務と運用アプリが Data Lake にデータを書き込んだり、データを更新することにより、I/O コストが発生する場合もあります。 領域内の I/O コストを削減するために、財務と運用アプリでは財務と運用環境と同じ国や地理的リージョンに Data Lake をプロビジョニングする必要があります。
 
 FastTrack ソリューション テンプレートは、財務と運用アプリの業務量に基づいて、ストレージのコストを見積もるツールを提供します。 詳細については、[FastTrack for Dynamics 365- CostCalculator](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CostCalculator) を参照してください。
 
@@ -90,7 +88,7 @@ FastTrack ソリューション テンプレートは、財務と運用アプリ
 
 運用レポート シナリオでは、BYOD でエクスポートされたデータ (つまり SQL データベース) はレポートを作成するために使用されます。
 
-より複雑なデータ ウェアハウス シナリオでは、BYOD は、Finance and Operations データの *スナップショット* が保持されるステージング領域として使用されます。 BYOD ステージング領域からデータ ウェアハウスにデータをコピーする下流のデータ パイプラインがある場合があります。
+より複雑なデータ ウェアハウス シナリオでは、BYOD は、財務と運用データの *スナップショット* が保持されるステージング領域として使用されます。 BYOD ステージング領域からデータ ウェアハウスにデータをコピーする下流のデータ パイプラインがある場合があります。
 
 これらのタイプのシナリオに対して現在、BYOD を使用している場合、Data Lake へのエクスポート機能に移行できます。 この場合、次のような恩恵が得られることがあります。
 
@@ -120,13 +118,13 @@ Azure Synapse Analytics サーバーレス SQL プールを使用すると、Tra
 
 初期コピーが作成された後、財務と運用アプリで変更が行われると、システムによってデータが継続的に更新されます。 レコードの挿入、更新、または削除を行う場合、Data Lake 内のデータ レコードは、それに応じて挿入、更新、または削除されます。
 
-オプションのほぼリアルタイムの変更機能 (現在プレビュー中) を使用すると、Finance and Operations 環境の変更から数分以内に Data Lake 内のデータは更新されます。 それ以外の場合は、Finance and Operations 環境内の変更から数時間以内に Data Lake 内のデータは更新されます。
+オプションのほぼリアルタイムの変更機能を使用すると、財務と運用環境の変更から数分以内に Data Lake 内のデータは更新されます。 それ以外の場合は、財務と運用環境内の変更から数時間以内に Data Lake 内のデータは更新されます。
 
-Finance and Operations 環境にある **Data Lake へのエクスポート** のページは、Data Lake 内のデータが最後に更新された時のタイム スタンプを表示します。 システムは、Data Lake 内のデータが更新された時刻を識別するのに役立つデータ フィールドも追加します。 ダウンストリーム プロセスでは、タイム スタンプを使用して、Data Lake 内で変化するデータを検出して処理できます。
+財務と運用環境にある **Data Lake へのエクスポート** のページは、Data Lake 内のデータが最後に更新された時のタイム スタンプを表示します。 システムは、Data Lake 内のデータが更新された時刻を識別するのに役立つデータ フィールドも追加します。 ダウンストリーム プロセスでは、タイム スタンプを使用して、Data Lake 内で変化するデータを検出して処理できます。
 
 ### <a name="why-dont-i-see-the-export-to-data-lake-feature-in-my-environment"></a>環境で Data Lake へのエクスポート機能が表示されないのはなぜですか?
 
-Data Lake へのエクスポート機能は、米国、カナダ、英国、ヨーロッパ、スイス、東南アジア、インド、東アジア、オーストラリア、および日本リージョンでのみ使用できます。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。 機能は最終的により多くの地域で使用可能になります。
+Data Lake へのエクスポート機能は、米国、カナダ、英国、ヨーロッパ、スイス、東南アジア、インド、東アジア、オーストラリア、ラテン アメリカ、および日本の地域で使用できます。 財務と運用環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。 機能は最終的により多くの地域で使用可能になります。
 
 Data Lake へのエクスポート機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効にするには、クラウド ベースの Tier 2 またはそれ以上のサンドボックス環境が必要です。
 

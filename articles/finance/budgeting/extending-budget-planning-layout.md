@@ -1,6 +1,6 @@
 ---
 title: 予算計画レイアウトの拡張
-description: このトピックでは、BudgetPlanLineActiveView テーブルの列数を拡張して、予算計画レイアウトの追加データに対応する方法を説明します。
+description: この記事では、BudgetPlanLineActiveView テーブルの列数を拡張して、予算計画レイアウトの追加データに対応する方法を説明します。
 author: panolte
 ms.date: 07/24/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region:
 ms.author: panolte
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: b7f0d136835cbca373526b10e12e095835fe8266
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: e43eee3f6bc8a469dba3d0e92f1a46bd25015258
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713079"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878087"
 ---
 # <a name="extend-the-budget-planning-layout"></a>予算計画レイアウトの拡張
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、BudgetPlanLineActiveView テーブルの列数を拡張して、予算計画レイアウトの追加データに対応するプロセスを説明します。 複数年にわたって情報を比較する場合、多くのシナリオを評価する場合、毎週または毎日の期間を評価する場合、このプロセスが必要になる場合があります。 このトピックは開発者が対象です。
+この記事では、BudgetPlanLineActiveView テーブルの列数を拡張して、予算計画レイアウトの追加データに対応するプロセスを説明します。 複数年にわたって情報を比較する場合、多くのシナリオを評価する場合、毎週または毎日の期間を評価する場合、このプロセスが必要になる場合があります。 この記事は開発者が対象です。
 
 - **BudgetPlanLineActiveView テーブル** – この表はピボットされた予算計画データを含みます。 初期状態では、36 の通貨列と 36 の数量列が含まれます。 この既定の構成でユーザーは予算計画レイアウトを操作し、最大 3 年間の月次計画データを表示および比較できます。
 - **BudgetPlanWorksheetEntity エンティティ** – このエンティティは BudgetPlanLineActiveView テーブルに相当し、Microsoft Excel ワークシートのデータソースとして機能します。 このエンティティの列は BudgetPlanLineActiveView テーブルの列にマップされます。 テーブルの変更は、エンティティで複製する必要があります。

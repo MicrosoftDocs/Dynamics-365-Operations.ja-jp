@@ -1,6 +1,6 @@
 ---
 title: 詳細トランザクション フォーム パターン
-description: このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用すると、ユーザーはヘッダーの表示と明細行の表示間で切り替えができます。
+description: この記事では、詳細トランザクションのフォーム パターンに関する情報を提供します。 このパターンを使用すると、ユーザーはヘッダーの表示と明細行の表示間で切り替えができます。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03e010d2cc24ecb6878eceb8a4b82a867ef1774a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 02d86f93bb0c979b7b6cd1355e94b538e8ab1a80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876528"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、詳細トランザクション フォームのパターンについて説明します。 このパターンを使用するフォームには、ユーザーが切り替えることができる2 つの詳細ビューがあります - ヘッダー ビューおよび明細行ビュー
+この記事では、詳細トランザクションのフォーム パターンに関する情報を提供します。 このパターンを使用するフォームには、ユーザーが切り替えることができる2 つの詳細ビューがあります - ヘッダー ビューおよび明細行ビュー
 
 ## <a name="usage"></a>用途
 
@@ -186,7 +186,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     - ページのヘッダー部分にあるヘッダー/明細行ボタンは、再現タブの再編成されたラジオ ボタンでした。 これらのページのアクセシビリティを向上させるために、**ヘッダー/明細行のプロキシを削除するボタン** 機能はラジオ ボタンを削除し、代わりにレコード タイトルの下にヘッダーと明細行を切り替えるネイティブ タブ コントロールを表示します。 この機能を有効にする前に、この機能がテスト資産およびタスク記録に与える影響を評価する必要があります。
 
         > [!NOTE]
-        > この機能は、Finance and Operations アプリ バージョン 10.0.23 のプラットフォーム更新プログラムが含まれています。
+        > この特徴は、財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 
 ### <a name="open-issues"></a>未処理の問題
 

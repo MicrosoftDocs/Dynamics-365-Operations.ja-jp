@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
-description: このトピックでは、セルフサービス環境で Microsoft Dynamics AX 2012 からデータ アップグレードを行う方法について説明します。
+description: この記事では、セルフサービス環境で Microsoft Dynamics AX 2012 からデータ アップグレードを行う方法について説明します。
 author: veeravendhan-s
 ms.date: 05/05/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: vesakkar
 ms.search.validFrom: 2021-06-30
-ms.openlocfilehash: 2ead3063cd61ea8c66f1364d3fc2a860185133aa
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 0d618334bf227673b821b783acf950705ed9f9c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713854"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866208"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-self-service-environments"></a>AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 
 [!include[banner](../includes/banner.md)]
 
-この Microsoft Dynamics AX 2012 データ アップグレード プロセスは、セルフ サービスの環境向けです。 このトピックのセクションを次の順序で完了します。
+この Microsoft Dynamics AX 2012 データ アップグレード プロセスは、セルフ サービスの環境向けです。 この記事のセクションを次の順序で完了します。
 
 1. **[必要条件](data-upgrade-self-service.md#prerequisites)**
 2. **[データ アップグレード プロセス](data-upgrade-self-service.md#data-upgrade-process)** – AX2012DataUpgradeToolKit.exe アプリケーションを実行し、更新プロセスを完了します。
@@ -177,7 +177,7 @@ ms.locfileid: "8713854"
     **作成済パブリッシャー:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
-    > このレプリケーション構成ステップが完了すると、バックグラウンドで実行される SQL ジョブとして実際のデータ レプリケーションが発生します。 このジョブは完了するまでに少し時間がかかります。 レプリケーションの状態を表示するには **'rs'** オプションを指定します。 **'rs'** オプションについては、このトピックの後の[アプリケーションのレポーティング セクション](data-upgrade-self-service.md#reporting-section-of-the-application) セクションで確認してください。
+    > このレプリケーション構成ステップが完了すると、バックグラウンドで実行される SQL ジョブとして実際のデータ レプリケーションが発生します。 このジョブは完了するまでに少し時間がかかります。 レプリケーションの状態を表示するには **'rs'** オプションを指定します。 **'rs'** オプションについては、この記事の後の[アプリケーションのレポーティング セクション](data-upgrade-self-service.md#reporting-section-of-the-application) セクションで確認してください。
 
 6. **レプリケーション: 他のオブジェクト (機能) に対するパブリケーションの設定**
 
@@ -208,7 +208,7 @@ ms.locfileid: "8713854"
     > [!NOTE]
     > **'dv'** オプションを使用して複製データを検証できます。 テーブルが不一致である場合は、この手順によりそのテーブル用のパブリケーションを作成できます。 レプリケーションに対して不一致のテーブルを除外する場合は、アプリを閉じ、それらのテーブルを **Data/IgnoreTables.xml** に追加します。 その後、アプリを再実行し **'dv'** オプションを使用します。
     > 
-    > **'dv'** オプションの詳細については、このトピックの後の[アプリケーションのレポート](data-upgrade-self-service.md#reporting-section-of-the-application) セクションを参照してください。
+    > **'dv'** オプションの詳細については、この記事の後の[アプリケーションのレポート](data-upgrade-self-service.md#reporting-section-of-the-application) セクションを参照してください。
  
 8. **切替: レプリケーションの設定の削除**
 
@@ -235,7 +235,7 @@ ms.locfileid: "8713854"
 
     このステップは、データ アップグレードをトリガーします。 アクションが成功した際、LCS 環境の状態を **レプリケーション完了** から **データ アップグレードの処理中** に変更します。
 
-    この時点で、データ アップグレード トリガーだけが発生します。 実際のデータ アップグレードは、セルフサービス環境で行われます。 データ アップグレードのステータスを確認するには、**'ds'** オプションを使用します。 オプションの詳細については、トピックの後半で [アプリケーションのレポーティング セクション](data-upgrade-self-service.md#reporting-section-of-the-application) セクションを参照してください。
+    この時点で、データ アップグレード トリガーだけが発生します。 実際のデータ アップグレードは、セルフサービス環境で行われます。 データ アップグレードのステータスを確認するには、**'ds'** オプションを使用します。 オプションの詳細については、記事の後半で [アプリケーションのレポーティング セクション](data-upgrade-self-service.md#reporting-section-of-the-application) セクションを参照してください。
 
     データのアップグレードに成功すると、**'ds'** オプションは **AX 2012 アップグレード トポロジ (LCS) ステータス: 配置済み** として示され、アップグレード ステップは **完了** 状態になります。
 
@@ -250,13 +250,13 @@ ms.locfileid: "8713854"
 
     この手順は、データ アップグレードのロールバックをトリガーします。 これにより、アップグレードがトリガーされる前の状態にデータがロールバックされ、LCS 環境の状態が **レプリケート済み** に設定されます。 これにより、環境が **失敗** から **レプリケート済み** に変わります。
     
-    この時点では、ロールバックをトリガーしたのみです。 ロールバックのステータスを表示するには、**'rbs'** オプションを使用します。 オプションの詳細については、このトピックで後述する[アプリケーションのレポート セクション](data-upgrade-self-service.md#reporting-section-of-the-application)を参照してください。
+    この時点では、ロールバックをトリガーしたのみです。 ロールバックのステータスを表示するには、**'rbs'** オプションを使用します。 オプションの詳細については、この記事で後述する[アプリケーションのレポート セクション](data-upgrade-self-service.md#reporting-section-of-the-application)を参照してください。
     
     ロールバックに成功した場合、**'rbs'** オプションは、**AX 2012 年のアップグレード トポロジ (LCS) ステータス: レプリケート済** と表示されます。
 
     ロールバックに失敗した場合、**'rbs'** オプションは、**AX 2012 年のアップグレード トポロジ (LCS) ステータス: 失敗** と表示されます。
 
-データ アップグレード プロセスの詳細については、[AX 2012 – データ アップグレード FAQ からアップグレード](upgrade-faq.md) を参照してください。 このトピックでは、Microsoft Dynamics AX 2012からのアップグレードの際、データ アップグレードについてよく寄せられる質問に回答します。
+データ アップグレード プロセスの詳細については、[AX 2012 – データ アップグレード FAQ からアップグレード](upgrade-faq.md) を参照してください。 この記事では、Microsoft Dynamics AX 2012からのアップグレードの際、データ アップグレードについてよく寄せられる質問に回答します。
 
 ## <a name="reporting-section-of-the-application"></a>アプリケーションのレポート セクション
 

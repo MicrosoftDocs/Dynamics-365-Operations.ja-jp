@@ -1,6 +1,6 @@
 ---
 title: 検証、既定値、およびマップされていないフィールド
-description: このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされていないフィールドを使用する方法について説明します。
+description: この記事では、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされていないフィールドを使用する方法について説明します。
 author: peakerbl
 ms.date: 10/28/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79645d6d60aef9477eb69f08635d389d55395f9a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3c995dbedd154109410d18ac2decb3630768c3f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071199"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867657"
 ---
 # <a name="validations-default-values-and-unmapped-fields"></a>検証、既定値、およびマップされていないフィールド
 
@@ -28,7 +28,7 @@ ms.locfileid: "8071199"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされないが、代わりに仮想または計算のデータが含まれるフィールド (マップされていないフィールド) を使用する方法について説明します。
+この記事では、データ エンティティの値を検証する方法、既定値を設定する方法、およびデータ ソース値にマップされないが、代わりに仮想または計算のデータが含まれるフィールド (マップされていないフィールド) を使用する方法について説明します。
 
 ## <a name="validations"></a>検証
 検証は、フィールド レベルとレコード レベルの両方でエンティティをバックアップするテーブルで定義できます。 検証は、データ エンティティ レベルで定義することもできます。

@@ -1,6 +1,6 @@
 ---
 title: ワークフロー タイプのレポート
-description: このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。
+description: この記事では、使用可能なワークフロー タイプを一覧表示するレポートを示します。
 author: ChrisGarty
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: cfd519bdcc73205415baf811e9f7fc0e1922d6a9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b90c60db654d9b0ad93ada5e21e3d51ba1c704f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909233"
 ---
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 
@@ -28,7 +28,7 @@ ms.locfileid: "8070918"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。
+この記事では、使用可能なワークフロー タイプを一覧表示するレポートを示します。
 
 ワークフローを作成するには、最初に作成するワークフローの *タイプ* を選択する必要があります。 たとえば、**購買要求明細行の確認** ワークフローを作成し、購買要求でだれが明細行品目を承認する必要があるかを定義する場合があります。 ワークフローを作成する詳細については、[ワークフローの作成の概要](create-workflow.md)を参照してください。
 

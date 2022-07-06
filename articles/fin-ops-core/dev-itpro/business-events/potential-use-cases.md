@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントのユースケース
-description: このトピックはビジネス イベントのユース ケースを一覧で示します。
+description: この記事はビジネス イベントのユース ケースを一覧で示します。
 author: Sunil-Garg
 ms.date: 10/14/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: bfb059534f22afcb757af1172c9f2d204f4b575a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: af8aa095911a5ae3641286caaef4c4eba7ab3a40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906750"
 ---
 # <a name="use-cases-for-business-events"></a>ビジネス イベントのユースケース
 

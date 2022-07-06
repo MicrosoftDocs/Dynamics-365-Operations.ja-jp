@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9bb2db920a0502ff5f8c70e0f1f519900194232c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2ffa92cc5b03a22f1a044bf664fccaa823bc0b7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061294"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908282"
 ---
 # <a name="enable-dual-write-for-existing-finance-and-operations-apps"></a>既存の財務と運用アプリの二重書き込みを有効にする
 
@@ -33,7 +33,7 @@ ms.locfileid: "8061294"
 2. [二重書き込みウィザードを使用して財務と運用アプリ環境を Dataverse にリンクします](link-your-environment.md)。
 3. [テーブル マップの有効化](enable-entity-map.md)。
 
-各部分については、個別のトピックで説明します。
+各部分については、個別の記事で説明します。
 
 ## <a name="next-steps"></a>次のステップ
 

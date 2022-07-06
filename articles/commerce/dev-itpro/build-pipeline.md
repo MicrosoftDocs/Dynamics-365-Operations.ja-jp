@@ -1,6 +1,6 @@
 ---
 title: 独立したパッケージ SDK のビルド パイプラインの設定
-description: このトピックでは、拡張コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成できるよう、Retail ソフトウェア開発キット (SDK) のビルド パイプラインを設定する方法について説明します。
+description: この記事では、拡張コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成できるよう、Retail ソフトウェア開発キット (SDK) のビルド パイプラインを設定する方法について説明します。
 author: mugunthanm
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,20 +10,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 05-17-2020
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 1e51109d1e8ca8901e4aa50aac8fb5ff0bc4b54f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1d17552bf56f02c7d2f36b6c7fcaf4ac675aeee5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869181"
 ---
 # <a name="set-up-a-build-pipeline-for-the-independent-packaging-sdk"></a>独立したパッケージ SDK のビルド パイプラインの設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、拡張コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成できるよう、Retail ソフトウェア開発キット (SDK) のビルド パイプラインを設定する方法について説明します (新しい独立系拡張モデルを使用)。
+この記事では、拡張コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成できるよう、Retail ソフトウェア開発キット (SDK) のビルド パイプラインを設定する方法について説明します (新しい独立系拡張モデルを使用)。
 
-このトピックは、Retail SDK 10.0.19 以降に適用されます。 Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) から Retail SDK の以前のバージョンを使用している場合、このトピックに記載されている手順は機能しません。 このトピックの情報は、新しい独立した拡張モデル (つまり、パブリック フィードからパッケージを消費している場合) と、独立系梱包および拡張機能モデルを使用している場合に適用されます。
+この記事は、Retail SDK 10.0.19 以降に適用されます。 Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) から Retail SDK の以前のバージョンを使用している場合、この記事に記載されている手順は機能しません。 この記事の情報は、新しい独立した拡張モデル (つまり、パブリック フィードからパッケージを消費している場合) と、独立系梱包および拡張機能モデルを使用している場合に適用されます。
 
 ## <a name="set-up-a-build-pipeline-in-azure-devops-to-generate-a-cloud-scale-unit-extension-package"></a>Azure DevOps のビルド パイプラインを設定し、Cloud Scale Unit 拡張パッケージを生成
 

@@ -1,6 +1,6 @@
 ---
 title: チャネル データベース 拡張機能
-description: このトピックでは、チャネル データベースを拡張する方法について説明します。
+description: この記事では、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
 ms.date: 12/08/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: e3ccd6edd3a7af2e2a3e204b66b52537b22e2892
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0a6b2e93341b16dd7c34291efb32b71fa9d19d29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901719"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -26,7 +26,7 @@ ms.locfileid: "7781845"
 
 チャネル データベース (チャネル DB) は、オンライン ストアまたは従来型の店舗などの 1 つまたは複数のコマース チャネルからのトランザクションおよびマスター データを保持します。 マスター データは Commerce Data Exchange (CDX) を使用して、バックオフィス (HQ) からチャネル データベースにプッシュ ダウンされます。 チャネル データベースに格納されたトランザクション データは、CDX を使用して本社に引き戻されます。
 
-このトピックでは、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 この手順は、Dynamics 365 Finance および Commerce にのみ適用されるものです。
+この記事では、さまざまなシナリオのチャネル データベースを拡張する方法について説明します。 以下の手順は、Dynamics 365 Finance および Commerce にのみ適用されます。
 
 拡張機能のさまざまなシナリオを説明する前に、チャネル DB 拡張機能の最新の機能拡張を理解することが重要です。
 

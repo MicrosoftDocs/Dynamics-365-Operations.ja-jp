@@ -1,6 +1,6 @@
 ---
 title: 使用可能な SQL Server Reporting Services (SSRS) レポート
-description: このトピックでは、使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。
+description: この記事では、使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: cd65517747f688d03561da96edc206a3e9b2e0d43db420a638ac99d8c36cc5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 121698725bc5c555663682853a53e514d3aafe40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881536"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。
+この記事では、使用できる SQL Server Reporting Services (SSRS) レポートを一覧表示するレポートを示します。
 
 レポートは、単に構造化されたデータ セットの表示として定義することができます。 これには、表形式のレイアウトで提示されたトランザクション データと集約情報の高度なグラフィカル ビューが含まれます。 この広範な定義を考慮し、アプリケーションは、複雑なビジネス要件を満たすレポートを作成するためのツールをいくつか提供しています。 これらのツールの 1 つは、SQL Server Reporting Services です。 SSRS レポートには、以下の利点があります。
 

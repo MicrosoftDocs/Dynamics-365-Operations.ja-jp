@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされました。
+description: この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされました。
 author: tonyafehr
 ms.date: 01/07/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 9dd2b75a9597c1cb6c311bce5c5a6e073489350658b9db69df43bc531bce70ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6f83c1ef37aa222c3c83a3549ed7b85cc658049
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762202"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889258"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされ、ビルド番号は 7.0.4565.16212 です。
+この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされ、ビルド番号は 7.0.4565.16212 です。
 
 > [!NOTE]
 > 現在、Dynamics 365 for Operations (オンプレミス) の名前は変更されています。 通信およびライセンス ガイド全体で参照される Dynamics 365 for Operations (オンプレミス) が表示されます。 製品を展開する際に表示される製品名は、Dynamics 365 for Finance and Operations Enterprise Edition です。 これらの名前はどちらも同じ製品を指しています。
@@ -50,7 +50,7 @@ Dynamics 365 for Finance and Operations Enterprise Edition の分析レポート
 
 ## <a name="table-browser-is-now-in-read-only-mode"></a>テーブル ブラウザーが読み取り専用モードになりました
 
-ランタイム環境 (サンドボックス Tier-2 および実稼働) でテーブル ブラウザー フォームが読み取り専用モードになりました。
+ランタイム環境 (サンドボックス Tier-2 および運用) でテーブル ブラウザー フォームが読み取り専用モードになりました。
 
 開発者が開発環境でテスト データをすばやく作成して編集できるように、テーブル ブラウザー フォームが設計されています。 これはランタイム環境でシステム管理者にも使用できました。 現在のプラットフォーム更新プログラム 8 では、システム管理者はランタイム環境で読み取り専用モードでのみテーブル ブラウザにアクセスできます。これは、システム管理者が稼働中のシステム データを誤って編集したり削除したりしたときに、人為的なエラーが発生したことを受けての対応です。
 

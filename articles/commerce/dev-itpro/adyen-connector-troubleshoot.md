@@ -1,6 +1,6 @@
 ---
 title: Adyen 向け Dynamics 365 Payment Connector のトラブルシューティング
-description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector に関連する一般的な問題に対するトラブルシューティングのガイダンスを提供します。
+description: この記事では、Adyen 向け Microsoft Dynamics 365 Payment Connector に関連する一般的な問題に対するトラブルシューティングのガイダンスを提供します。
 author: rassadi
 ms.date: 07/29/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 966cfedeacb8d96b163c13eeb1ddbed1927b037e5fa4a657e467e24ce395e49a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 570ed221fd82d43467f0f2ab3f139edf054f8f5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893041"
 ---
 # <a name="troubleshoot-dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector に関連する一般的な問題に対するトラブルシューティングのガイダンスを提供します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。
+この記事では、Adyen 向け Microsoft Dynamics 365 Payment Connector に関連する一般的な問題に対するトラブルシューティングのガイダンスを提供します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。
 
 ## <a name="pos-payment-terminals"></a>POS 支払端末
 

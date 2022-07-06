@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) のアセット ライブラリ
-description: このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
+description: この記事では、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
 author: laneswenka
 ms.date: 05/06/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1183724aad4f6ec44d6ab1e7c8834a8636d1379bc3ce1088067ed9c2666b9834
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa722c4033f939cd47eda1b0b7fced86e0edffe6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775268"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866496"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 

@@ -1,6 +1,6 @@
 ---
-title: Android および iOS での POS ハイブリッド アプリのセットアップ
-description: このトピックでは、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
+title: Android および iOS での POS Hybrid アプリの設定
+description: この記事では、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
 author: mugunthanm
 ms.date: 09/13/2021
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 95d4855f12a39ac6496a9c7ec0fcac84bb9bc6a8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 89d4bc86575ca8da2754f06ceac051f3fdf7e899
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711934"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876988"
 ---
-# <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
+# <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS Hybrid アプリの設定
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Android および iOS デバイスで Retail POS ハイブリッド アプリを構築して実行する方法を説明します。 
+この記事では、Android および iOS デバイスで Retail POS ハイブリッド アプリを構築して実行する方法を説明します。 
 
 ## <a name="overview"></a>概要
 

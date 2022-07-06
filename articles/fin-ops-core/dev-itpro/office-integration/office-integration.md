@@ -1,6 +1,6 @@
 ---
 title: オフィス統合の概要
-description: このトピックでは、Microsoft Office の統合の概念と機能について説明します。
+description: この記事では、Microsoft Office の統合の概念と機能について説明します。
 author: jasongre
 ms.date: 07/25/2019
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6005841c78d0a56be7cea5e1fb07bc6c8ac1dc6e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 21f79f5722bfa8a1d86d027d6619a1f176590bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862172"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "7983145"
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Office の統合の概念と機能について説明します。 統合はいくつかの技術に依存します。
+この記事では、Microsoft Office の統合の概念と機能について説明します。 統合はいくつかの技術に依存します。
 
 -   Microsoft Azure での作業
 -   Azure Active Directory (Azure AD) での作業

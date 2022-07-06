@@ -1,6 +1,6 @@
 ---
 title: 仮想エンティティの概要
-description: このトピックでは、財務と運用アプリの仮想エンティティに関する一般情報を提供します。
+description: この記事では、財務と運用アプリの仮想エンティティに関する一般情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 05/14/2021
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 0e9d3de8b9bb62c145454bac711cb0d806f7184d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c0dca7db69be7555f095fc57c1ba598cb1ee400e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984475"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876685"
 ---
 # <a name="virtual-entities-overview"></a>仮想エンティティの概要
 
@@ -35,7 +35,7 @@ Core Human Resources エンティティは、Finance and Operations エンティ
 
 ## <a name="architecture"></a>アーキテクチャ
 
-仮想エンティティは、財務と運用アプリ以外にも有用な Dataverse の概念です。 次の図は、仮想エンティティの Finance and Operations プロバイダーを実装する方法を示しています。 6 つの主要メソッドがプロバイダーによって実装されます。 最初の 5 つのメソッドは、**Create**、**Update**、**Delete**、**Retrieve**、**RetrieveMultiple** という標準的な CRUD 操作です。 最後のメソッドである **PerformAction** は、このトピックで後述するように OData アクションを呼び出すために使用されます。 Finance and Operations 仮想エンティティ データ プロバイダー (図では 「仮想エンティティ プラグイン」 と表示) を呼び出すと、財務と運用アプリの CDSVirtualEntityService Web API エンドポイントに対して Secure Sockets Layer (SSL)/トランスポート層セキュリティ (TLS) 1.2 セキュア Web 呼び出しが行われます。 その後、この Web サービスは、クエリを財務と運用アプリ内の関連する物理エンティティへの呼び出しに変換し、それらのエンティティで CRUD 操作または OData 操作を呼び出します。 Finance and Operations エンティティはすべての操作で直接呼び出されるため、エンティティまたはバッキング テーブルのビジネス ロジックも呼び出されます。
+仮想エンティティは、財務と運用アプリ以外にも有用な Dataverse の概念です。 次の図は、仮想エンティティの Finance and Operations プロバイダーを実装する方法を示しています。 6 つの主要メソッドがプロバイダーによって実装されます。 最初の 5 つのメソッドは、**Create**、**Update**、**Delete**、**Retrieve**、**RetrieveMultiple** という標準的な CRUD 操作です。 最後のメソッドである **PerformAction** は、この記事で後述するように OData アクションを呼び出すために使用されます。 Finance and Operations 仮想エンティティ データ プロバイダー (図では 「仮想エンティティ プラグイン」 と表示) を呼び出すと、財務と運用アプリの CDSVirtualEntityService Web API エンドポイントに対して Secure Sockets Layer (SSL)/トランスポート層セキュリティ (TLS) 1.2 セキュア Web 呼び出しが行われます。 その後、この Web サービスは、クエリを財務と運用アプリ内の関連する物理エンティティへの呼び出しに変換し、それらのエンティティで CRUD 操作または OData 操作を呼び出します。 Finance and Operations エンティティはすべての操作で直接呼び出されるため、エンティティまたはバッキング テーブルのビジネス ロジックも呼び出されます。
 
 ![財務と運用アプリの仮想エンティティのアーキテクチャ。](media/image1.png)
 

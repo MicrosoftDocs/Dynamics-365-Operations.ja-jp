@@ -1,6 +1,6 @@
 ---
 title: アプリケーション スイート レポート データ セットを展開する
-description: このトピックでは、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットを拡張する方法について説明します。
+description: この記事では、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットを拡張する方法について説明します。
 author: RichdiMSFT
 ms.date: 12/01/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ffb3a7d61d6ed94c8f6c09772cebb457b3e7bb2d0d23cabe0a228f7e8f60475e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2bbba007c9a51c1f45a6a332ba1ce80492c48ada
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905097"
 ---
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットを拡張する方法について説明します。
+この記事では、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットを拡張する方法について説明します。
 
-このトピックでは、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットの拡張について説明します。 カスタムのデリゲート ハンドラーおよびテーブル拡張機能を使用して、追加のフィールド データと計算の両方またはいずれかを含めます。 アプリケーション スイートを重層化する必要はありません。 次に、標準のアプリケーション ソリューションを置き換えてデータをユーザーに提供する、カスタムのデザインを作成します。 次の図は、このトピックで説明されている一般的なアプリケーションのカスタマイズを示しています。
+この記事では、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットの拡張について説明します。 カスタムのデリゲート ハンドラーおよびテーブル拡張機能を使用して、追加のフィールド データと計算の両方またはいずれかを含めます。 アプリケーション スイートを重層化する必要はありません。 次に、標準のアプリケーション ソリューションを置き換えてデータをユーザーに提供する、カスタムのデザインを作成します。 次の図は、この記事で説明されている一般的なアプリケーションのカスタマイズを示しています。
 
 [![extendingdatasets。](./media/extendingdatasets.png)](./media/extendingdatasets.png)
 

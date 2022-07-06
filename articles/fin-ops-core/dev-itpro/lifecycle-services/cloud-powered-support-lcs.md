@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリのサポート エクスペリエンスを管理する
-description: このトピックでは、Microsoft Dynamics Lifecycle Services のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。
+title: 財務と運用アプリのサポート エクスペリエンスの管理
+description: この記事では、Microsoft Dynamics Lifecycle Services のサポート ツールを使用して、サポート インシデントを管理する方法について説明します。
 author: kfend
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4817cc55ff1614157a5804ad084be02a96a8d196a6d04c9787f774359d29101b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a72ba08ecc79de66f33a9d1ec21bfb667a74f011
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866481"
 ---
 # <a name="manage-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する
 [!include [banner](../includes/banner.md)]
@@ -130,7 +130,7 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 ![ソフトウェア保証プラン。](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## <a name="report-production-outage"></a>稼働停止のレポート
-プロダクション環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [稼働停止をレポート](report-production-outage.md) をご確認ください。
+運用環境の品質が低下または使用不可能になった際に、Microsoft サポートに迅速に問題を効果的にエスカレーションするには、 [稼働停止をレポート](report-production-outage.md) をご確認ください。
 
 ## <a name="phone-support"></a>電話サポート
 [新しいインシデントを開く](cloud-powered-support-lcs.md#open-a-new-incident) の手順に従ってサポートに連絡することをお勧めします。 LCS で新しいインシデントを開けない場合は、[プレミア電話サポート](https://support.microsoft.com/premier/contacts) 使い☎サポートを受けることができます。

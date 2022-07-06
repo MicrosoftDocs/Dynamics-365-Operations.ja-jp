@@ -1,6 +1,6 @@
 ---
 title: X++ 言語リファレンス
-description: このトピックでは、X++ のプログラミング ガイドを提供します。
+description: この記事では、X++ のプログラミング ガイドを提供します。
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -10,12 +10,12 @@ ms.author: tfehr
 ms.custom: intro-internal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 034b1383f49293bd41c9b57f110b472b45d5e2f8
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: bfb1de78ae29f6116a475ebeda661bf194375576
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968825"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867159"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 

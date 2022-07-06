@@ -1,6 +1,6 @@
 ---
-title: ソース コードからユーザー入力パラメーターのデータ ソース値を開始する
-description: このトピックでは、ソース コードからユーザー入力パラメーター タイプのデータ ソース値を開始する方法について説明します。
+title: USER INPUT PARAMETER タイプのデータ ソース値をソース コードから開始する
+description: この記事では、ソース コードからユーザー入力パラメーター タイプのデータ ソース値を開始する方法について説明します。
 author: NickSelin
 ms.date: 04/26/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 9702e8482f68652aca828534a3eae94f9a8adc28
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6ca65bbb46b1815a202c7073c9d483291fd5c890
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897167"
 ---
 # <a name="initiate-data-source-values-of-the-user-input-parameter-type-from-source-code"></a>ソース コードからユーザー入力パラメーターのデータ ソース値を開始する
 

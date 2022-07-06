@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9c80eaf24a40ebbacc43fc031cde442f66a9cbc
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: adea6c3e3bd4b11806585c6a681d6139adc6843c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866341"
 ---
 # <a name="upload-custom-business-processes-to-business-process-modeler-bpm"></a>独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
 
@@ -27,7 +27,7 @@ ms.locfileid: "8547954"
 
 Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更新されたバージョンを使用して独自の業務プロセスに関する情報を記録できます。 記録するファイルをビジネス プロセス モデラーにアップロードすることができます。
 
-このトピックでは、タスク レコーダーの更新バージョンの場所と、記録するカスタム ビジネス プロセス ファイルをアップロードする方法について説明します。 タスク レコーダーの更新されたバージョンは修正プログラムとして使用できます。 以下のサイトから修正プログラムをダウンロードすることができます。
+この記事では、タスク レコーダーの更新バージョンの場所と、記録するカスタム ビジネス プロセス ファイルをアップロードする方法について説明します。 タスク レコーダーの更新されたバージョンは修正プログラムとして使用できます。 以下のサイトから修正プログラムをダウンロードすることができます。
 
 -   Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 Feature Pack – サポート技術情報の記事 [2863182](https://go.microsoft.com/fwlink/?LinkId=309910)
 -   Microsoft Dynamics AX 2012 R2 – サポート技術情報の記事 [2863182](https://go.microsoft.com/fwlink/?LinkId=309911)

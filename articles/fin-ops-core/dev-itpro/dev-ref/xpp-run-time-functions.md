@@ -1,6 +1,6 @@
 ---
 title: X++ ランタイム関数リソース
-description: このトピックでは、X++ のランタイム関数について説明します。
+description: この記事では、X++ のランタイム関数について説明します。
 author: RobinARH
 ms.date: 07/23/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58da9b8c74e9938827a582656b0cfddf85e3a448
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bb9029e1c2d204f3c0460416f8f8d2e78f3fbcde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783186"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867135"
 ---
 # <a name="x-runtime-function-resources"></a>X++ ランタイム関数リソース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ のランタイム関数について説明します。
+この記事では、X++ のランタイム関数について説明します。
 
 X++ 言語は、約 200 のシステム関数を提供しており、これらは、任意のクラスの一部ではなく、実行時に実行されます。 ランタイム関数は、データ型変換、算術操作などに使用されます。 いくつかの共通のランタイム関数を次に示します。
 

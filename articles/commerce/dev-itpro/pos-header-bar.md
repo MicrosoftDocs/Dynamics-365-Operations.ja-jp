@@ -1,6 +1,6 @@
 ---
 title: カスタム ボタンを POS ヘッダー バーに追加
-description: このトピックでは、POS ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。
+description: この記事では、POS ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。
 author: mugunthanm
 ms.date: 09/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2020
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 2562ecd76abe1a82818ee2fd7a15a976f06dc653
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 57986dc77e3fbbcf4bd5174dbf0e2b7203bd2f3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781482"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855755"
 ---
 # <a name="add-custom-buttons-to-the-pos-header-bar"></a>カスタム ボタンを POS ヘッダー バーに追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。 POS ヘッダー バー拡張機能は、Microsoft Dynamics 365 Commerce バージョン 10.0.14 以降でサポートされています。
+この記事では、販売時点管理 (POS) ヘッダー バーに新しいカスタム ボタンを追加する方法について説明します。 POS ヘッダー バー拡張機能は、Microsoft Dynamics 365 Commerce バージョン 10.0.14 以降でサポートされています。
 
 カスタム ヘッダー ボタンには、コントロール ユーザー インターフェイス (UI)、スタイル、およびテーマを説明するカスケード スタイル シート (CSS) コードを含む HTML ファイルが含まれている必要があります。 また、ロジックを指定する TypeScript ビュー モデル ファイルも含まれている必要があります。 ファイル ビュー モデル ファイル内のクラスは、ヘッダー ボタンのプロパティおよびイベントを継承するために、**CustomPackingItem** クラスを拡張する必要があります。 **cartChangedHandler** イベントは、カート内で何らかの変更があった場合に通知を行うために、ヘッダー ボタンで公開されています。 拡張コードは、カート イベントに基づくカスタム ロジックを実行することも、カスタム ビジネス ロジックを実行することもできます。
 

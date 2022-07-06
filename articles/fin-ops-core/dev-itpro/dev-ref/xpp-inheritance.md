@@ -1,6 +1,6 @@
 ---
 title: X++ 継承
-description: このトピックでは、X++ の継承について説明します。
+description: この記事では、X++ の継承について説明します。
 author: tonyafehr
 ms.date: 06/18/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ff9e5909dcfe6f5ec0125a5fbb2e3a73db8d23
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 93d157c501fef62bd46aef7624ecced4fd71b640
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489072"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867165"
 ---
 # <a name="x-inheritance"></a>X++ 継承
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ の継承について、サブクラスを作成する方法とメソッドを上書きする方法を含めて説明します。
+この記事では、X++ の継承について、サブクラスを作成する方法とメソッドを上書きする方法を含めて説明します。
 
 ## <a name="creating-a-subclass"></a>サブクラスを作成しています
 *サブクラス* は拡張または他のクラスから継承されるクラスです。 クラスは、他の 1 つのクラスのみ拡張することができます。 複数の継承はサポートされていません。 クラスを拡張する場合、サブクラスが親クラスの (*スーパークラス*) すべてのメソッドと変数を継承します。 サブクラスを使用すると、より特殊な目的で既存のコードを再利用できます。 したがって、設計、開発、テストの時間を節約できます。 スーパークラスの動作をカスタマイズするには、サブクラスのメソッドをオーバーライドします。 多くの場合、スーパークラスは、*基本クラス* として知られており、サブクラスは、*派生クラス* として知られています。

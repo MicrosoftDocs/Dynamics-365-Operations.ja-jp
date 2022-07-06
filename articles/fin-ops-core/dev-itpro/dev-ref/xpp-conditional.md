@@ -1,6 +1,6 @@
 ---
 title: X++ 条件付きステートメント
-description: このトピックでは、X++の条件付きステートメントについて説明します。
+description: この記事では、X++ の条件付きステートメントについて説明します。
 author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c292cfcd2e71667367eff41129431f29bece390b
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 91f8f88378a30cfc6ef771f115b2043c8787d90e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867228"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++の条件付きステートメントについて説明します。 条件付きステートメントは、**if**、**if**...**else**、**switch**、および 3 項演算子 (**?**) です。 条件付きステートメントを使用して、コードのブロックを実行するかどうかを指定します。 異なる条件文は、異なる状況において利点を提供する。
+この記事では、X++ の条件付きステートメントについて説明します。 条件付きステートメントは、**if**、**if**...**else**、**switch**、および 3 項演算子 (**?**) です。 条件付きステートメントを使用して、コードのブロックを実行するかどうかを指定します。 異なる条件文は、異なる状況において利点を提供する。
 
 ## <a name="if-and-ifelse-statements"></a>if および if...else ステートメント
 

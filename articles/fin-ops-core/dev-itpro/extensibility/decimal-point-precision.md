@@ -1,6 +1,6 @@
 ---
 title: 選択したデータ型の小数点以下の精度の拡張
-description: このトピックでは、選択したデータ型の小数点以下の精度の拡張方法について説明します。
+description: この記事では、選択したデータ型の小数点以下の精度の拡張方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 09/24/2019
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 2503bb0afb6280a648b2585af0302f1157238aa4
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 15a524e514e8883f6eea5b509a5465687c47b759
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866945"
 ---
 # <a name="extending-number-of-decimals-for-selected-data-types"></a>選択したデータ型の小数点以下桁数の拡張
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、選択したデータ型の小数点以下桁数の拡張方法について説明します。 特定のシナリオの小数点以下桁数を変更するため、Real 型の特定の拡張データ型の拡張機能を作成することができます。 小数点以下の桁数を変更するには、必要に応じて **NoOfDecimals** プロパティを変更します。
+この記事では、選択したデータ型の小数点以下桁数の拡張方法について説明します。 特定のシナリオの小数点以下桁数を変更するため、Real 型の特定の拡張データ型の拡張機能を作成することができます。 小数点以下の桁数を変更するには、必要に応じて **NoOfDecimals** プロパティを変更します。
 
 拡張データ型は階層型になっており、拡張されたデータ型から動作を継承します。 1 つの拡張データ型の小数点以下の桁数を変更すると、すべての派生した拡張データ型の小数点以下の桁数に適用されます。 つまり、**NoOfDecimalsIsExtensible** が False である拡張データ型が見つかった場合、小数点以下の桁数が広範囲に拡張される場合があるため、親拡張データ型を確認します。
 
 > [!IMPORTANT]
-> データベースの制約により、このトピックで説明する各データ型の小数点以下の精度は最大 6 桁です。
+> データベースの制約により、この記事で説明する各データ型の小数点以下の精度は最大 6 桁です。
 
-## <a name="weight"></a>太さ
+## <a name="weight"></a>重量
 
 既定では、小数点以下最大 2 桁の重量データを維持できます。
 

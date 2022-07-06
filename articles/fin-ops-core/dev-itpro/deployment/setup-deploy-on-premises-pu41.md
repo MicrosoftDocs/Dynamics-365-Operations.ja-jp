@@ -1,8 +1,8 @@
 ---
-title: オンプレミス環境の設定と配置 (Platform update 41 以降)
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
+title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
+description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 05/25/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: c4d5ca0c67fce3899415d7111dbf7aea858f8aaa
-ms.sourcegitcommit: 69999f3563cc6bc1227e34c74aeb5e57dc821b8a
+ms.openlocfilehash: 8be500e81db38cf51a1540a89e7a0795b827e71b
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804796"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945775"
 ---
-# <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
+# <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。 プラットフォーム更新プログラム 41 はバージョン 10.0.17 で利用可能です。
+この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。 プラットフォーム更新プログラム 41 はバージョン 10.0.17 で利用可能です。
 
 [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) が利用可能です。 そこでは、オンプレミス展開に関する質問またはフィードバックをすべて投稿できます。
 
@@ -120,7 +120,7 @@ VMware を使用している場合は、次の Web ページに記載されて�
 
 [オンプレミス環境のハードウェア サイジング要件](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md) で推奨されるサイジングに基づいて、インフラストラクチャと Service Fabric Cluster を計画します。 Service Fabric クラスターを計画する方法の詳細については、[Service Fabric のスタンドアロン クラスター展開の計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
 
-次のテーブルは、ハードウェア レイアウトの例を示しています。 この例は、設定を示すためにこのトピック全体で使用されています。 設定が完了すると、次の手順で指定されているマシン名と IP アドレスを、ご使用の環境のマシンの名前と IP アドレスに置き換える必要があります。
+次のテーブルは、ハードウェア レイアウトの例を示しています。 この例は、設定を示すためにこの記事全体で使用されています。 設定が完了すると、次の手順で指定されているマシン名と IP アドレスを、ご使用の環境のマシンの名前と IP アドレスに置き換える必要があります。
 
 > [!NOTE]
 > Service Fabric クラスターのプライマリ ノードには、少なくとも 3 つのノードが必要です。 この例では **OrchestratorType** を主要なノード タイプとして指定します。 3 つ以上の VM を持つノード タイプがある場合、クラスターの信頼性を高めるために、そのノードタイプをプライマリ (シード) ノード タイプにすることを検討します。 
@@ -241,9 +241,9 @@ AOS のプロダクション インストールには、公的に登録された
 
 ### <a name="step-2-plan-and-acquire-your-certificates"></a><a name="plancert"></a>手順 2、 証明書の計画と取得
 
-Service Fabric Cluster と展開されているすべてのアプリケーションを保護するには、Secure Sockets Layer (SSL) 証明書が必要です。 プロダクションとサンドボックスのワークロードについては、[DigiCert](https://www.digicert.com/ssl-certificate/)、[Comodo](https://ssl.comodo.com/)、[Symantec](https://www.websecurity.symantec.com/ssl-certificate)、[GoDaddy](https://www.godaddy.com/web-security/ssl-certificate)、または [GlobalSign](https://www.globalsign.com/en/ssl/) などの認証局から証明書を取得することをお勧めします。 ドメインが [AD CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)) で設定されている場合は、Microsoft セットアップ スクリプトを使用してテンプレートと証明書を作成できます。 証明書ごとに、プライベート キーが作成されたキーの交換を含める必要があり、個人情報交換 (.pfx) ファイルにエクスポート可能な必要があります。
+Service Fabric Cluster と展開されているすべてのアプリケーションを保護するには、Secure Sockets Layer (SSL) 証明書が必要です。 運用とサンドボックスのワークロードについては、[DigiCert](https://www.digicert.com/ssl-certificate/)、[Comodo](https://ssl.comodo.com/)、[Symantec](https://www.websecurity.symantec.com/ssl-certificate)、[GoDaddy](https://www.godaddy.com/web-security/ssl-certificate)、または [GlobalSign](https://www.globalsign.com/en/ssl/) などの認証局から証明書を取得することをお勧めします。 ドメインが [AD CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)) で設定されている場合は、Microsoft セットアップ スクリプトを使用してテンプレートと証明書を作成できます。 証明書ごとに、プライベート キーが作成されたキーの交換を含める必要があり、個人情報交換 (.pfx) ファイルにエクスポート可能な必要があります。
 
-自己署名証明書は、テスト目的でのみ使用できます。 便宜上、LCS で提供されるセットアップ スクリプトには、自己署名証明書を生成およびエクスポートするスクリプトが含まれます。 自己署名スクリプトを使用している場合は、このトピックの後の手順で作成スクリプトを実行するように指示されます。 前述の通り、これらの証明書はテスト目的でのみ使用できます。
+自己署名証明書は、テスト目的でのみ使用できます。 便宜上、LCS で提供されるセットアップ スクリプトには、自己署名証明書を生成およびエクスポートするスクリプトが含まれます。 自己署名スクリプトを使用している場合は、この記事の後の手順で作成スクリプトを実行するように指示されます。 前述の通り、これらの証明書はテスト目的でのみ使用できます。
 
 > [!IMPORTANT]
 > Microsoft は、AD CS による自動証明書の作成をサポートして、セットアップ スクリプトによる自己署名証明書の生成のサポートを終了する予定です。
@@ -293,9 +293,9 @@ DNS Name=*.d365ffo.onprem.contoso.com
 
 ### <a name="step-3-plan-your-users-and-service-accounts"></a><a name="plansvcacct"></a>手順 3、 ユーザーとサービス アカウントの計画
 
-Finance + Operations を機能させるために、いくつかのユーザー アカウントまたはサービス アカウントを作成する必要があります。 サービス アカウントの管理グループ (gMSAs)、ドメイン アカウント、および SQL アカウントの組み合わせを作成する必要があります。 次の表は、このトピックで使用されるユーザー アカウント、その目的、および名前の例を示しています。
+Finance + Operations を機能させるために、いくつかのユーザー アカウントまたはサービス アカウントを作成する必要があります。 サービス アカウントの管理グループ (gMSAs)、ドメイン アカウント、および SQL アカウントの組み合わせを作成する必要があります。 次の表は、この記事で使用されるユーザー アカウント、その目的、および名前の例を示しています。
 
-| ユーザー アカウント                                            | 種類 | 目的 | ユーザー名 |
+| ユーザー アカウント                                            | 種類 | 使用方法 | ユーザー名 |
 |---------------------------------------------------------|------|---------|-----------|
 | 財務レポート アプリケーション サービス アカウント         | gMSA | | Contoso\\svc-FRAS$ |
 | 財務レポート プロセス サービス アカウント             | gMSA | | Contoso\\svc-FRPS$ |
@@ -531,8 +531,8 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 5. 証明書を .pfx ファイルにエクスポートします。 エクスポート プロセスの一環として、次のコマンドは、証明書に正しい暗号化プロバイダが設定されているかどうかをチェックします。 
 
     ```powershell
-    # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
-    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
+    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 ### <a name="step-11-set-up-ssis"></a><a name="setupssis"></a>手順 11、 SSIS の設定
@@ -549,7 +549,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 複数の SSRS ノードを構成できます。 詳細については、[SSRS ノードの高可用性の構成](./onprem-SSRSHA.md)を参照してください。
 
-1. 開始する前に、このトピックの冒頭に記載されている[前提条件](#prerequisites)が満たされていることを確認します。
+1. 開始する前に、この記事の冒頭に記載されている[前提条件](#prerequisites) が満たされていることを確認します。
 
     > [!IMPORTANT]
     > - SSRS のインストール時にデータベース エンジンをインストールする必要があります。
@@ -613,7 +613,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 > [!NOTE]
 > - 次の手順では、複数の VM での実行が必要です。 ただし、プロセスを簡略化するために、提供されるリモート処理スクリプトを使用できます。 これらのスクリプトを使用すると、**.\\Export-Scripts.ps1** コマンドの実行に使用されるのと同じコンピューターなど、単一のコンピューターから必要なスクリプトを実行できます。 リモート処理スクリプトが利用可能な場合、Windows PowerShell セクションの **\# If Remoting** コメントの後に宣言されます。 リモート処理スクリプトを使用する場合、セクション内の残りのスクリプトを実行する必要がない可能性があります。 この場合は、セクション テキストを参照してください。
-> - リモート処理では [WinRM](/windows/win32/winrm/portal) を使用します。 場合によっては、[CredSSP](/windows/win32/secauthn/credential-security-support-provider) を有効にする必要があります。 リモート処理モジュールでは、実行ごとに CredSSP を有効または無効にします。 使用しない場合は、CredSSP を無効にすることをお勧めします。 そうしないと、資格情報の盗難リスクが伴います。 設定が完了したら、このトピック後半の[リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
+> - リモート処理では [WinRM](/windows/win32/winrm/portal) を使用します。 場合によっては、[CredSSP](/windows/win32/secauthn/credential-security-support-provider) を有効にする必要があります。 リモート処理モジュールでは、実行ごとに CredSSP を有効または無効にします。 使用しない場合は、CredSSP を無効にすることをお勧めします。 そうしないと、資格情報の盗難リスクが伴います。 設定が完了したら、この記事後半の[リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp) セクションを参照してください。
 
 1. 各 **infrastructure\\VMs\\\<VMName\>** フォルダーの内容を、対応する VM にコピーします。 (リモート処理スクリプトを使用している場合は、コンテンツが自動的に対象の VM にコピーされます。) 続いて、次のコマンドを管理者として実行します。
 
@@ -695,7 +695,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 オンプレミスのローカル エージェントは、LCS を通じて Finance + Operations の展開とサービスを調整するために使用されます。 LCS から Finance + Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書をコンフィギュレーションする必要があります。
 
-CA から取得したオンプレミス エージェントの証明書またはスクリプトを使用して生成した自己署名証明書を使用します。 オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および実稼動環境で再利用できます。
+CA から取得したオンプレミス エージェントの証明書またはスクリプトを使用して生成した自己署名証明書を使用します。 オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および運用環境で再利用できます。
 
 グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者が、ディレクトリのグローバル管理者です。
 
@@ -1071,7 +1071,7 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 
 ### <a name="step-23-connect-to-your-finance--operations-environment"></a><a name="connect"></a>手順 23、 Finance + Operations 環境への接続
 
-- Web ブラウザーで、`https://[yourD365FOdomain]/namespaces/AXSF` に移動します。そこでは **yourD365FOdomain** がこのトピック前半の [手順 1. ドメイン名と DNS ゾーンの計画](#plandomain)セクションで定義したドメイン名です。
+- Web ブラウザーで、`https://[yourD365FOdomain]/namespaces/AXSF` に移動します。そこでは **yourD365FOdomain** がこの記事前半の [手順 1. ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
 
 ## <a name="known-issues"></a>既知の問題
 

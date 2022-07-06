@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリにおける暗号化処理
-description: このトピックでは、環境の SQL Server データベースと Azure ストレージに格納されている、休眠している顧客データの保護に使用される暗号化技術について説明します。
+title: 財務と運用アプリの暗号化
+description: この記事では、環境の SQL Server データベースと Azure ストレージに格納されている、休眠している顧客データの保護に使用される暗号化技術について説明します。
 author: nedb
 ms.date: 06/15/2020
 ms.topic: article
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a771d790917542e9df2c0d81d2ec3cf39515b047
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e9788833898c6cdee50faa9578154a1cb5b2551e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850890"
 ---
-# <a name="encryption-in-finance-and-operations-apps"></a>Finance and Operations アプリにおける暗号化処理
+# <a name="encryption-in-finance-and-operations-apps"></a>財務と運用アプリの暗号化
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,7 +30,7 @@ Microsoft は、環境の SQL Server データベースと Azure ストレージ
 
 すべてのインスタンスは、[Microsoft SQL Server Transparent Data Encryption (TDE) ](/sql/relational-databases/security/encryption/transparent-data-encryption)と [Azure ストレージ暗号化](/azure/storage/common/storage-service-encryption) を使用して、ディスクに書き込まれる休眠データをリアルタイムで暗号化しています。 
 
-Finance and Operations アプリでは、サービス管理キーを使用してサーバーサイドの暗号化を使用します。 キーの発行、ローテーション、バックアップなどのキーに関する管理は、Microsoft が処理します。
+財務と運用アプリでは、サービスマネージド キーを使用したサーバー側の暗号化を使用します。 キーの発行、ローテーション、バックアップなどのキーに関する管理は、Microsoft が処理します。
 
 上記の既定の暗号化に加えて、**グローバル** X + + クラスで使用可能な暗号化APIを使用できます。 **グローバル ::editencryptedfield ()** メソッド と **global ::editencryptedfield ()** メソッドは、環境固有のデータ暗号化証明書を使用して、データの暗号化と復号化を行います。 これらの方法は、データ ストレージに使用される既定の暗号化技術を超える、追加の保護層として使用できます。
 
@@ -40,11 +40,11 @@ Finance and Operations アプリでは、サービス管理キーを使用して
 
 ### <a name="supported-tls-versions"></a>対応している TLS のバージョン
 
-Finance and Operations アプリは TLS 1.2 のみに対応しています。 TLS の古いバージョンである 1.0 と 1.1 には対応していません。
+財務と運用アプリ サポート TLS 1.2 のみ。 TLS の古いバージョンである 1.0 と 1.1 には対応していません。
 
 ### <a name="supported-cipher-suites"></a>対応している暗号スイート
 
-Finance and Operations アプリは以下の暗号スイートにのに対応しています。
+財務と運用アプリでは、以下の暗号スイートのみサポートしています。
 
 * TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256

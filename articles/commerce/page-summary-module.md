@@ -1,6 +1,6 @@
 ---
 title: ページ集計モジュール
-description: このトピックでは、ページ集計モジュールと、これを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
+description: この記事では、ページ集計モジュールと、これを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
 author: samjarawan
 ms.date: 04/09/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3f17e3d6d0992c658f18e73bf4e48b836ae57d3222d02ef91be100b73c940961
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65f36f92bbff5ff18f7821a4f52406232b4c9bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741076"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845763"
 ---
 # <a name="page-summary-modules"></a>ページ集計モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、ページ集計モジュールと、これを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
+この記事では、ページ集計モジュールと、これを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
 
 ページ集計モジュールは、検索エンジンやソーシャル共有サイトが使用できるページ集計メタ データの入力を簡略化するのに役立ちます。 このメタデータには正規化されたリンクが含まれます。
 

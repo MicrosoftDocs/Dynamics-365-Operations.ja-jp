@@ -1,6 +1,6 @@
 ---
 title: フォームの全般的なガイドライン
-description: このトピックには、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
+description: この記事には、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81ae2d0916830db63dc77273551e7595ec6f36ce
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3bf82e98b8a677a3761541f854678d3216979e92
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890370"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、フォームのパターンに関係なく、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
+この記事には、フォームのパターンに関係なく、すべてのフォームに適用されるガイドラインが含まれています。 パターン固有のガイドラインに加えて、このチェックリストを使用する必要があります。
 
 ## <a name="verification-checklist"></a>検証のチェックリスト
 

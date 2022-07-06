@@ -1,6 +1,6 @@
 ---
 title: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
-description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
+description: この記事では、顧客の追加/編集画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
 ms.date: 04/21/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6998c379bf927361d9f9a24c76e7d221a8ade85b
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 9e582e0ce1fd06cb47f39bb29c8d5fbefda55014
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850290"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、既存の [販売時点管理 (POS)] ビューを拡張する方法について説明します。 **トランザクション** 画面および **ようこそ** 画面を拡張するには、画面レイアウト デザイナーを使用します。 **顧客の追加/編集** 画面など、他のすべての POS ビューを拡張するには、Retail ソフトウェア開発キット (SDK) を使用します。 このトピックでは、Retail SDK による既存の POS ビューの拡張について説明します。
+この記事では、既存の販売時点管理 (POS) ビューを拡張する方法について説明します。 **トランザクション** 画面および **ようこそ** 画面を拡張するには、画面レイアウト デザイナーを使用します。 **顧客の追加/編集** 画面など、他のすべての POS ビューを拡張するには、Retail ソフトウェア開発キット (SDK) を使用します。 この記事では、Retail SDK による既存の POS ビューの拡張について説明します。
 
 
 

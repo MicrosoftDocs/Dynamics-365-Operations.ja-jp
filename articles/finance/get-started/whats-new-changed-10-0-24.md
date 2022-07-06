@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance 10.0.24 の新機能または変更された機能
-description: このトピックでは、Dynamics 365 Finance バージョン 10.0.24 プレビュー リリースの新機能または変更された機能について説明します。
+title: Dynamics 365 Finance 10.0.24 の新機能および変更された機能
+description: この記事では、Dynamics 365 Finance バージョン 10.0.24 プレビュー リリースの新機能または変更された機能について説明します。
 author: kfend
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e00a49550f4f3dd88dae4b6c198f448e232f76b1
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 4db8e68043f71213dfad9b16275eba0217100884
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891371"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865665"
 ---
 # <a name="preview-of-dynamics-365-finance-10024-february-2022"></a>Dynamics 365 Finance 10.0.24 (2022 年 2 月) のプレビュー
 
@@ -27,7 +27,7 @@ ms.locfileid: "7891371"
 
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.24 の新機能または変更された機能について説明します。 このバージョンには 10.0.1084 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.24 の新機能または変更された機能について説明します。 このバージョンには 10.0.1084 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー**: 2021 年 12 月
 - **リリースの一般提供 (手動更新)**: 2022 年 1 月
@@ -35,7 +35,7 @@ ms.locfileid: "7891371"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-次の表に、このリリースに含まれる機能の一覧を示します。 このトピックが最初に公開された後に、ビルドに加えた機能を含めるために、このトピックを更新することがあります。
+次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに加えた機能を含めるために、この記事を更新することがあります。
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化  |
 |----|----|----|----|
@@ -70,14 +70,14 @@ ms.locfileid: "7891371"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
-Dynamics 365 Finance 10.0.24 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.24 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md) を参照してください。 
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
+Dynamics 365 Finance 10.0.24 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.24 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md) を参照してください。 
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306) を参照してください。 このリリースでは次の問題が修正されています。
 
 ### <a name="regulatory-updates"></a>規制の更新
-Finance and Operations アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
+財務と運用アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md) を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
 
 ### <a name="dynamics-365-and-industry-clouds-2021-release-wave-2-plan"></a>Dynamics 365 および業界のクラウド: 2021年リリース ウェーブ 2 プラン
 
@@ -87,14 +87,14 @@ Finance and Operations アプリの規制の更新については、[規制の�
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Finance で削除または廃止された機能](removed-deprecated-features-finance.md) トピックでは、Dynamics 365 Finance で削除または廃止された機能について説明します。
+[Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事では、Dynamics 365 Finance の削除または非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

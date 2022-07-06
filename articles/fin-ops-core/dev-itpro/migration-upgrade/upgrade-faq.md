@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - データ アップグレード FAQ
-description: このトピックでは、Microsoft Dynamics AX 2012からのアップグレードの際、データ アップグレードについてよく寄せられる質問に回答します。
+description: この記事では、Microsoft Dynamics AX 2012からのアップグレードの際、データ アップグレードについてよく寄せられる質問に回答します。
 author: ttreen
 ms.date: 08/02/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2021-07-01
-ms.openlocfilehash: 87480f756877b59acb51cbcd1418ab85621f2836438de2c70f0d9a42f6a98526
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76a033983e7d2dd7c358da6e1d2c6ac1fe84427e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762402"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890388"
 ---
 # <a name="upgrade-from-ax-2012--data-upgrade-faq"></a>AX 2012 からのアップグレード – データ アップグレード FAQ
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012からのアップグレードの際、データ アップグレードについてよく寄せられる質問に回答します。
+この記事では、Microsoft Dynamics AX 2012からのアップグレードの際、データ アップグレードについてよく寄せられる質問に回答します。
 
 ## <a name="is-the-tier-2-azure-sql-database-sized-enough-for-upgrades-of-large-databases"></a>レベル 2 の Azure SQL データベースは、大規模なデータベースをアップグレードするのに十分なサイズですか?
 

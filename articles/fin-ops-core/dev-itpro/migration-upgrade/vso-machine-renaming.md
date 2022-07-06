@@ -1,6 +1,6 @@
 ---
 title: ローカル開発 (VHD) 環境の名前変更
-description: このトピックでは、Microsoft Azure DevOps プロジェクトにアクセスし、One Version のサービスの更新プログラムをインストールできるように、ローカル環境の名前を変更する方法について説明します。
+description: この記事では、Microsoft Azure DevOps プロジェクトにアクセスし、One Version のサービスの更新プログラムをインストールできるように、ローカル環境の名前を変更する方法について説明します。
 author: MargoC
 ms.date: 07/24/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e4cad3fed1746845c79c29d37e198036f96d61d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6709b5320e12d75d5bcdb4d327842bb8c184a79d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782717"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868776"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 
@@ -28,7 +28,7 @@ ms.locfileid: "7782717"
 ローカル開発 (VHD) 環境では、次のシナリオで名前を変更する必要があります。
 
 * **複数のコンピューター間で 1 つの Microsoft Azure DevOps プロジェクトにアクセスする:** Azure DevOps がバージョン管理のために必要です。 開発トポロジでは、複数の仮想マシン (VM) が同じコンピューター名である場合、同じ Azure DevOps プロジェクトにアクセスできません。 Azure DevOps はマシン名を ID として使用します。 Microsoft Dynamics Lifecycle Services (LCS) からダウンロードされたローカル VM で開発する場合は、問題が発生する可能性があります。
-* **1 つのバージョンのサービスの更新プログラムをインストールする:** 8.1.x などの 1 つのバージョンのサービス更新プログラムを、runbook を使用して VHD 環境にインストールする必要があります。 Runbook が正常に完了するようにするため、VHD 環境の名前を変更する必要があります。 このトピックに記載されているその他の手順を実行する必要もあります。
+* **1 つのバージョンのサービスの更新プログラムをインストールする:** 8.1.x などの 1 つのバージョンのサービス更新プログラムを、runbook を使用して VHD 環境にインストールする必要があります。 Runbook が正常に完了するようにするため、VHD 環境の名前を変更する必要があります。 この記事に記載されているその他の手順を実行する必要もあります。
 
 ## <a name="rename-the-machine"></a>コンピューターの名前を変更する
 開発を開始するか Azure DevOps に接続する前にマシンの名前を変更してリブートします。 新しい名前が Azure DevOps プロジェクトで使用されるすべてのコンピューター間で一意であることを確認します。

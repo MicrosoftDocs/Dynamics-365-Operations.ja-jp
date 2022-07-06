@@ -1,6 +1,6 @@
 ---
 title: データ管理パッケージ REST API
-description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
+description: この記事では、データ管理フレームワークのパッケージ REST API について説明します。
 author: peakerbl
 ms.date: 08/16/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: bef43036ac539ee78b25d50e3eb85016d81ce99c
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 3241474b8a80152d0d390f14910795d8e0e7b244
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404057"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860094"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API はクラウド展開とオンプレミスの展開で使用できます。 
+この記事では、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API はクラウド展開とオンプレミスの展開で使用できます。 
 
 オンプレミス サポートが追加されましたが、API 名は変更されていません。 したがって、Microsoft は、クラウド配置とオンプレミス配置の両方に対して単一の API セットを維持することができます。
 
@@ -33,15 +33,15 @@ ms.locfileid: "7404057"
 
 | 決定ポイント      | 定期統合 API | データ管理フレームワークのパッケージ API |
 |---------------------|--------------------------------------|-----------------------------|
-| スケジューリング          | Finance and Operations アプリのスケジューリング | Finance and Operations アプリ以外のスケジューリング |
-| Format              | ファイルおよびデータ パッケージ | データ パッケージのみ |
+| スケジューリング          | Finance and Operations アプリのスケジュール設定 | Finance and Operations アプリ外でのスケジュール設定 |
+| 形式              | ファイルおよびデータ パッケージ | データ パッケージのみ |
 | 変換      | データ ファイルが XML 形式の場合の Extensible Stylesheet Language Transformations (XSLT) のサポート | システム外部での変換 |
 | サポートされているプロトコル | SOAP および REST | REST |
 | サービス タイプ        | カスタム サービス | データ プロトコル (OData) アクションを開きます |
 
-定期的な統合 API がデータ管理フレームワークのパッケージ API よりも要件を満たしていることを決定した場合、[定期統合](recurring-integrations.md) を参照します。 このトピックの残りの部分では、データ管理フレームワークのパッケージ API について説明します。
+定期的な統合 API がデータ管理フレームワークのパッケージ API よりも要件を満たしていることを決定した場合、[定期統合](recurring-integrations.md) を参照します。 この記事の残りの部分では、データ管理フレームワークのパッケージ API について説明します。
 
-## <a name="authorization"></a>承認
+## <a name="authorization"></a>認証
 
 データ管理フレームワークのパッケージ API は、アクセスを認可するために OAuth 2.0 を使用します。 API は、有効な OAuth アクセス トークンを使用して呼び出す必要があります。 OAuth 2.0 および Microsoft Azure Active Directory(Azure AD) の詳細については、[OAuth 2.0 と Azure Active Directory を使用して Web アプリケーションへのアクセスを承認](/azure/active-directory/develop/active-directory-protocols-oauth-code) を参照してください。 オンプレミス配置では、Active Directory フェデレーション サービス (AD FS) が承認に使用されます。
 

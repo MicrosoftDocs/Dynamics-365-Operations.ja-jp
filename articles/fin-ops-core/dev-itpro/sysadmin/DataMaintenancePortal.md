@@ -1,6 +1,6 @@
 ---
-title: データ管理
-description: このトピックでは、環境のデータの不整合を見つけて修正する単純なスケジューリング プロセスの使用方法について説明します。
+title: データ メンテナンス
+description: この記事では、環境のデータの不整合を見つけて修正する単純なスケジューリング プロセスの使用方法について説明します。
 author: RyanCCarlson2
 ms.date: 03/02/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 05d5ea2038f3b5bd754895cc32a87979c3a7d8f38a261371a9cce89ae86ee5d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fb60ac277dc991f5bbf71c79c2a7961920ef14b2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883494"
 ---
 # <a name="data-maintenance"></a>データ管理
 

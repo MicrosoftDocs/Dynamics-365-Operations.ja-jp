@@ -1,6 +1,6 @@
 ---
 title: テーブル マッピングと列マッピングのカスタマイズ
-description: このトピックでは、テーブル マッピングと列マッピングをカスタマイズする方法について説明します。
+description: この記事では、テーブル マッピングと列マッピングをカスタマイズする方法について説明します。
 author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dab482cf9dc1c3d4b1905209215aa196a5a59563
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3617ec760e2238fddd6a24a85f32b70b93a8c7e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063276"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884775"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 

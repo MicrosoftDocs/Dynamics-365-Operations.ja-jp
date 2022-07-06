@@ -1,6 +1,6 @@
 ---
-title: 拡張イベントを Application Insights に記録する
-description: このトピックでは、Commerce runtime (CRT) 拡張機能から顧客の Application Insights にイベントを記録する方法について説明します。
+title: Application Insights への拡張イベントの記録
+description: この記事では、Commerce runtime (CRT) 拡張機能から顧客の Application Insights にイベントを記録する方法について説明します。
 author: mugunthanm
 ms.date: 09/18/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: d1db920bddd29bd109055ee2b0d9ee068eaea216
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9a5247e214cb9c8eb977ae27f18c37f6bb7571c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852023"
 ---
-# <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
+# <a name="log-extension-events-to-application-insights"></a>Application Insights への拡張イベントの記録
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Runtime (CRT) POS 拡張機能から[顧客の Application Insights](/azure/azure-monitor/app/app-insights-overview) にイベントを記録する方法について説明します。
+この記事では、Commerce Runtime (CRT) POS 拡張機能から[顧客の Application Insights](/azure/azure-monitor/app/app-insights-overview) にイベントを記録する方法について説明します。
 
 ## <a name="log-an-event-to-application-insights"></a>イベントを Application Insights に記録します
 

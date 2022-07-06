@@ -1,6 +1,6 @@
 ---
 title: Azure Pipelines でのレガシ パイプラインの更新
-description: このトピックでは、Azure Pipelines でのレガシ パイプラインを更新して、新しいバージョンの Visual Studio を使用する方法について説明します。
+description: この記事では、Azure Pipelines でのレガシ パイプラインを更新して、新しいバージョンの Visual Studio を使用する方法について説明します。
 author: jorisdg
 ms.date: 09/23/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17dab44ceefbaaec41bb078c54cdb6e94b57e44c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f44c8a6853358faee9cc9de2a7849cce020de881
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867006"
 ---
 # <a name="update-a-legacy-pipeline-in-azure-pipelines"></a>Azure Pipelines でのレガシ パイプラインの更新
 

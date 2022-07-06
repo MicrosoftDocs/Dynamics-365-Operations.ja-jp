@@ -1,6 +1,6 @@
 ---
 title: コンフィギュレーション データ テンプレート
-description: このトピックは、コンフィギュレーション データ テンプレートについて説明し、それらを作成する方法について説明します。
+description: この記事は、コンフィギュレーション データ テンプレートについて説明し、それらを作成する方法について説明します。
 author: rcarlson
 ms.date: 08/09/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 8fd0df46317942c94b1ee6ff92591050661e4df1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7591017d5c0c0d3c084fefa98f9e1876a027d20e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068780"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847206"
 ---
 # <a name="configuration-data-templates"></a>コンフィギュレーション データ テンプレート
 

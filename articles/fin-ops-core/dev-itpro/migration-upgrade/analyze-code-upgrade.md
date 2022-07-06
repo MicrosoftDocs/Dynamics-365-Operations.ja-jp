@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
-description: このトピックでは、LCS のコード アップグレード サービスを使用してコード ベースをアップグレードするために必要な作業と労力を見積もる方法を説明します。
+description: この記事では、LCS のコード アップグレード サービスを使用してコード ベースをアップグレードするために必要な作業と労力を見積もる方法を説明します。
 author: LaneSwenka
 ms.date: 01/31/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: e382895b3b7487aa16bd91c7505afa9fe56e7fe1fe21dc9080e5f02ad5666728
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d5af788518297f2be380740cf4d6c8fe2271a0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866282"
 ---
 # <a name="upgrade-from-ax-2012---estimate-effort-by-using-the-code-upgrade-service"></a>AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
 
@@ -27,7 +27,7 @@ ms.locfileid: "6724323"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のコード アップグレード サービスを使用して、Microsoft Dynamics AX 2012 から Finance and Operations にコード ベースをアップグレードするために必要な作業と労力を見積もる方法を説明します。
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) のコード アップグレード サービスを使用して、Microsoft Dynamics AX 2012 財務と運用からコード基準をアップグレードするために必要なタスクと工数を見積もる方法を説明します。
 
 コード アップグレード サービスは、AX 2012 モデル ストアのエクスポートを適切な形式に変換します。 ただし、サービスが識別してもまだ独自で解決できない問題を開発者が解決するまで、コードの新しいバージョンは完全に機能しません。
 

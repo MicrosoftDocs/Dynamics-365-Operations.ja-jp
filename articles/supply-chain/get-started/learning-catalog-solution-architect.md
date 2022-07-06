@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ea00ca22f50762117c80d9ced163d1e5e0c4f9f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ac985b99342b9232fbf1f71f343bfcaeb4cab862
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900987"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-solution-architects"></a>Dynamics 365 Supply Chain Management ソリューション アーキテクトのラーニング カタログ
 
@@ -45,7 +45,7 @@ ms.locfileid: "8675221"
 | [デモ データ パッケージ (DYN443PAL) ](https://community.dynamics.com/365/b/techtalks/posts/demo-data-packages-february-14-2018) | 最近リリースされたデモ データ パッケージに関するこの Tech Talk にご参加ください。 これを使用して、シナリオに必要なデモ データをカスタマイズし、必要なものだけを環境に読み込むことができます。 | Web カンファレンスの無料録画 | 40 分 |
 | [オンプレミス (ローカル ビジネス データ) 配置 (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dynamics 365 for Finance and Operations Enterprise Edition のオンプレミス配置オプションの概要に関するこの Tech Talk にご参加ください。 このセッションでは、オンプレミス配置のソリューション アーキテクチャ、ALM の側面、システム要件、および Life Cycle Services プロジェクトをプロビジョニングする方法について説明します。 | Web カンファレンスの無料録画 | 48 分 |
 | [コンフィギュレーションを使用したデータのインポートおよびエクスポート時間の削減 (DYN315PAL) ](https://community.dynamics.com/365/b/techtalks/posts/reduce-data-import-and-export-time-using-configurations-june-13-2017) | この Tech Talk では、Dynamics 365 for Finance and Operations、Enterprise edition の新しいコンフィギュレーション機能について説明します。 事前定義されたテンプレートを使用してコンフィギュレーションを設定する方法、コンフィギュレーション データを法人からデータ プロジェクトにコピーしてエクスポートする方法、その後別の法人にインポートする方法について説明します。 | Web カンファレンスの無料録画 | 52 分 |
-| [分析 & レポート オプション: 印刷とドキュメント回覧エージェント](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| 2 つの関連トピックについて、この Tech Talk にご参加ください。 最初に、Dynamics 365 for Finance and Operations、Enterprise Edition 向けの分析およびレポートのソリューション パターンとツールについて説明します。 次に、印刷のシナリオとドキュメント回覧エージェントについて説明します。 | Web カンファレンスの無料録画 | 45 分|
+| [分析 & レポート オプション: 印刷とドキュメント回覧エージェント](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| 2 つの関連記事について、この Tech Talk にご参加ください。 最初に、Dynamics 365 for Finance and Operations、Enterprise Edition 向けの分析およびレポートのソリューション パターンとツールについて説明します。 次に、印刷のシナリオとドキュメント回覧エージェントについて説明します。 | Web カンファレンスの無料録画 | 45 分|
 
 ## <a name="core-development-concepts"></a>コア開発の概念<a name="core-development-concepts"></a>
 
@@ -77,13 +77,13 @@ ms.locfileid: "8675221"
 
 | コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
-| [Finance and Operations: 生産のサービス、サポート、および管理 (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk では、Dynamics 365 for Finance and Operations の本番環境を効率的にサポート、保守、サービスする方法について説明します | Web カンファレンスの無料録画 | 53 分 |
+| [Finance and Operations: 生産のサービス、サポート、および管理 (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk では、Dynamics 365 for Finance and Operations の運用環境を効率的にサポート、保守、サービスする方法について説明します | Web カンファレンスの無料録画 | 53 分 |
 | [Finance and Operations: 機能の管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | 機能管理エクスペリエンスに関する技術解説。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。 | Web カンファレンスの無料録画 | 47 分 |
 | [Finance and Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Finance and Operations の継続的な更新頻度が開始されました ! この時間帯では、Microsoft が管理する継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定について議論することができます。 | Web カンファレンスの無料録画 | 61 分 |
 | [Finance And Operations: Microsoft 管理の継続的な更新プログラム: 新機能 - 2018 年 11 月 1 日 (DYN533cust)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-what-39-s-new-november-1-2018) | この 1 時間の間に、Microsoft 管理の継続的な更新頻度に対する更新について説明し、Lifecycle Services におけるユーザー エクスペリエンスを確認します。 | Web カンファレンスの無料録画 | 59 分 |
 | [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この講演では、Microsoft が管理する継続的な更新に関する最初の発表以来の新機能について説明します。 更新の頻度、プロセスに関する貴重なフィードバックへの対応を説明し、今後の Lifecycle Services のユーザー エクスペリエンスを確認します。これにより、更新を管理できるようになります。 | Web カンファレンスの無料録画 | 56 分 |
 | [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | ここでは、最新リリースを使用してシステムを最新の状態に保つための Microsoft の計画について説明します。 タイムライン、主要な更新プログラムと小さな更新プログラムの頻度、計画された手順、影響、および最適な結果を得るためにするべきことについて説明します。 | Web カンファレンスの無料録画 | 62 分 |
-| [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、実稼働環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「稼働停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
+| [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、運用環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「稼働停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
 | [パンチ アウト (DYN332PAL2)](https://community.dynamics.com/365/b/techtalks/posts/punch-out-september-21-2017) | この Tech Talk では、パンチアウト機能について説明し、購買要求シナリオを介した外部カタログの設定について扱います。 | Web カンファレンスの無料録画 | 42 分 |
 
 ## <a name="testing"></a>テスト<a name="testing"></a>
@@ -95,7 +95,7 @@ ms.locfileid: "8675221"
 | [Finance and Operations: Regression Suite Automation Tool- ライフサイクル デモのテスト (DYN647PAL)](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの 2 番目のものです。 このセッションでは、Finance and Operations から LCS の BPM ライブラリにタスク記録を作成して保存し、Azure DevOps で BPM ライブラリを同期してテスト ケースを作成し、テスト ケースをテスト スイートにグループ化し、RSAT でテスト スイートを読み込んで実行する全サイクルのデモについて扱います。 | Web カンファレンスの無料録画 | 70 分 |
 | [Finance and Operations: Dynamics 365 のパフォーマンス ベンチマーク (DYN550PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-benchmark-for-dynamics-365-1-30-19) | この Tech Talk では、Microsoft Dynamics 365 for Finance and Operations でパフォーマンス ベンチマークを準備して提供するためのアプローチについて説明します。 簡単な事例をデモンストレーションで説明する前に、プロセス、主要な概念、およびツールを紹介します。 | Web カンファレンスの無料録画 | 68 分 |
 | [Finance and Operations: Dynamics 365 のパフォーマンス キー パターンとアンチ パターン (DYN549PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-key-patterns-and-anti-patterns-for-dynamics-365-1-15-19) | この Tech Talk では、プロジェクト チームが正常に実装している効率的なパフォーマンス パターンを紹介します。 また、Microsoft Dynamics 365 for Finance and Operations 環境のパフォーマンスを大幅に低下させる可能性のあるアンチ パターンについても説明します。 | Web カンファレンスの無料録画 | 58 分 |
-| [Regression Suite Automation Tool (DYN480PAL)](https://community.dynamics.com/365/b/techtalks/posts/regression-suite-automation-tool-9-25-18) | Regression Suite Automation Tool について説明します。 Microsoft の更新プログラムを取得するとき、または Dynamics 365 for Finance and Operations 実稼働環境にカスタム コードとコンフィギュレーションを適用する前に、ユーザー受け入れテストの時間とコストを大幅に削減します。 機能パワー ユーザーが Finance and Operations タスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。 | Web カンファレンスの無料録画 | 61 分 |
+| [Regression Suite Automation Tool (DYN480PAL)](https://community.dynamics.com/365/b/techtalks/posts/regression-suite-automation-tool-9-25-18) | Regression Suite Automation Tool について説明します。 Microsoft の更新プログラムを取得するとき、または Dynamics 365 for Finance and Operations 運用環境にカスタム コードとコンフィギュレーションを適用する前に、ユーザー受け入れテストの時間とコストを大幅に削減します。 機能パワー ユーザーが Finance and Operations タスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。 | Web カンファレンスの無料録画 | 61 分 |
 | [パフォーマンス テスト アプローチ (DYN449PAL2)](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) | パフォーマンス テストにアプローチする方法については、この Tech Talk にご参加ください。 テストの基本、テストのベスト プラクティス、テストの実行およびパフォーマンスの測定に使用できるツールと技術、およびその結果を最適化のために使用する方法について学びます。 | Web カンファレンスの無料録画 | 45 分 |
 
 ## <a name="exam"></a>試験<a name="exam"></a>

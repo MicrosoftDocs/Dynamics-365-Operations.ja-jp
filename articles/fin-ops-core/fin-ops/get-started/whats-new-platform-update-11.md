@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 (2017 年 10 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 の新機能または変更された機能について説明します。 このバージョンは 2017 年 10 月にリリースされました。
+description: この記事では、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 の新機能または変更された機能について説明します。 このバージョンは 2017 年 10 月にリリースされました。
 author: tonyafehr
 ms.date: 10/09/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: e99621ddb0e35d755de928f1a566130d85e85b52540e87772a47f15f388c0bd4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3ad10a9c7ee59a6b6273bf428a35fbdccf59dc2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763372"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894227"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-11-october-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 (2017 年 10 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 の新機能または変更された機能について説明します。 このバージョンは 2017 年 10 月にリリースされ、ビルド番号は 7.0.4679.35176 です。
+この記事では、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 の新機能または変更された機能について説明します。 このバージョンは 2017 年 10 月にリリースされ、ビルド番号は 7.0.4679.35176 です。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 プラットフォーム更新プログラム 11 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047244&bugId=3869536&qc=310ad7de90642ce961cc3f51358f3b40788c975dec466891d0fcc17c13145f56) を参照してください。
 

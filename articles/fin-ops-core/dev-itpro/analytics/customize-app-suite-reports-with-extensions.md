@@ -1,6 +1,6 @@
 ---
 title: 拡張機能を使用してアプリ スイート レポートをカスタマイズする
-description: このトピックでは、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。
+description: この記事では、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: aeda39787a019c18335b79f298afce009f75f9687720c91de0a89b71ba26b825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4acf4155307484395217faf0f24685ef0fe10fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747655"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852679"
 ---
 # <a name="customize-app-suite-reports-by-using-extensions"></a>拡張機能を使用してアプリ スイート レポートをカスタマイズする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。
+この記事では、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。
 
-Finance and Operations は、カスタム ソリューションをサポートするためのツールの拡張セットを提供します。 標準アプリケーションのレポート ソリューションのカスタマイズは、純粋な拡張モデルを使用して完全にサポートをされています。 このトピックには、アプリケーション スイート コンポーネントをオーバーレイすることなく、標準のアプリケーション レポートに最も一般的なカスタマイズを追加する方法についてのガイダンスが含まれています。 アプリケーションをカスタマイズするときの、拡張ベースのアプローチを使用する主な利点を次に示します。
+Finance and Operations は、カスタム ソリューションをサポートするためのツールの拡張セットを提供します。 標準アプリケーションのレポート ソリューションのカスタマイズは、純粋な拡張モデルを使用して完全にサポートをされています。 この記事には、アプリケーション スイート コンポーネントをオーバーレイすることなく、標準のアプリケーション レポートに最も一般的なカスタマイズを追加する方法についてのガイダンスが含まれています。 アプリケーションをカスタマイズするときの、拡張ベースのアプローチを使用する主な利点を次に示します。
 
 - コードの重複を最小化して、アプリケーション ソリューションのフットプリントを低減します。
 - カスタムレポートには、レポート データ プロバイダー (RDP)、データ コントラクト、および UI ビルダー クラスのビジネス ロジックの更新などの標準ソリューションの拡張機能があります。

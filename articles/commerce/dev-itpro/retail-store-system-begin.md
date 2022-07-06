@@ -1,6 +1,6 @@
 ---
 title: Commerce Scale Unit (自己ホスト)
-description: このトピックでは、Commerce Scale Unit (自己ホスト) と、どんなときにそれを使用するかについて説明します。
+description: この記事では、Commerce Scale Unit (自己ホスト) と、どんなときにそれを使用するかについて説明します。
 author: athinesh99
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0c44a274b47d3f82188474bb65f8a9a1e8d65616
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ccb846d10f73ad5fa7f7aac1a81a2ee61e45def7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874938"
 ---
 # <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Scale Unit (自己ホスト) と、どんなときにそれを使用するかについて説明します。
+この記事では、Commerce Scale Unit (自己ホスト) と、どんなときにそれを使用するかについて説明します。
 
 ## <a name="overview"></a>概要
 
@@ -49,7 +49,7 @@ Commerce Scale Unit (自己ホスト) のセットアップを開始する前に
 
 ## <a name="get-started-with-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト) の使用を開始する
 
-開始するには、次の Commerce Scale Unit (自己ホスト) の構成に関するトピック、[Commerce Scale Unit (自己ホスト) の構成とインストール](retail-store-scale-unit-configuration-installation.md)を確認してください。
+開始するには、次の Commerce Scale Unit (自己ホスト) の構成に関する記事、[Commerce Scale Unit (自己ホスト) の構成とインストール](retail-store-scale-unit-configuration-installation.md)を確認してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -1,6 +1,6 @@
 ---
 title: モバイル ワークスペースのセキュリティを強化する
-description: このトピックでは、ワークスペースへのユーザー アクセスを制限する方法について説明します。
+description: この記事では、ワークスペースへのユーザー アクセスを制限する方法について説明します。
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: e5f32bd81faeb06e001e94844a78e8c209826c79
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: cafe4012bbd47e9d0df77f087302f2c11aba16b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876694"
 ---
 # <a name="help-secure-mobile-workspaces"></a>モバイル ワークスペースのセキュリティを強化する
 
 [!include [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、ワークスペースへのユーザー アクセスを制限する方法について説明します。
+この記事では、ワークスペースへのユーザー アクセスを制限する方法について説明します。
 
 ## <a name="assign-a-menu-item-to-workspace"></a>メニュー項目をワークスペースに割り当てる
 ワークスペースはメニュー項目に関係させることができます。 ワークスペースはメニュー項目への権限を持つユーザーにのみ表示されるため、メニュー項目へのアクセス権がないユーザーは、ワークスペースを使用できません。

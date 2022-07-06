@@ -1,6 +1,6 @@
 ---
 title: 個人検索レポート
-description: このトピックでは、Finance and Operations アプリの個人データ レポートに関する情報を提供します。
+description: この記事では、財務と運用アプリの個人データ レポートに関する情報を提供します。
 author: rschloma
 ms.date: 10/02/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 500722839c28855475685243b03e57264cee7575
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f257638510dd0a63a67f168f0072da6f1057abce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866715"
 ---
 # <a name="person-search-report"></a>個人検索レポート
 
 [!include [banner](../includes/banner.md)]
 
-個人検索レポートは、既存の Finance and Operations アプリのデータ管理フレームワークの機能を強化したものです。 データ管理フレームワークには、ユーザーと、ユーザーが Finance and Operations アプリケーションで割り当てられる可能性があるロールを定義するために使用される個人データを識別するために Microsoft が作成した、事前パッケージ化されたエンティティ セットが用意されています。 
+個人検索レポートは、Finance and Operations アプリの既存のデータ管理フレームワークの機能を強化したものです。 データ管理フレームワークには、担当者と、担当者が Finance and Operations アプリケーションで割り当てられる可能性があるロールを定義するために使用される個人データを識別するために Microsoft が作成した、事前パッケージ化されたエンティティ セットが用意されています。 
 
 > [!NOTE]
 > レポートは、Dynamics 365 Finance、Supply Chain Management、コマース、および人事管理で使用できます。 Microsoft Dynamics AX 2012 では今のところレポートは使用できません。 個人検索レポートは、バージョン 8.0 で利用可能です。 レポートはバージョン 7.3 (毎月の更新プログラム 7.3.2 経由で配信)、バージョン 7.2 (KB 4132615 経由)、およびバージョン7.1 (KB 4132441 経由 ) でも使用できます。 個人検索レポートが定期的に更新される場合があります。 このレポートを使用する前に、すべての関連する修正プログラムを取得し、適用したことを確認する必要があります。 

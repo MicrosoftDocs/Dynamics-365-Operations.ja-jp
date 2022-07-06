@@ -1,6 +1,6 @@
 ---
 title: プレビュー サブスクリプションのサインアップ
-description: このトピックでは、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。
+description: この記事では、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。
 author: RobinARH
 ms.date: 12/16/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13fdc61a1409100df855815e09dc90972c877e0e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5cac5aa038125118ca2c74d215eb71dab79bbe73
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782196"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867000"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。 サブスクリプションを作成すると、Microsoft Online Services のテストテナントと、環境を展開できる Microsoft Dynamics Lifecycle Services (LCS) プロジェクトが提供されます。 このトピックでは、Microsoft Online Services テナントに追加ユーザーを設定し、サービス管理機能の経験を積むのにも役立ちます。 学ぶスキルを次に示します。
+この記事では、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。 サブスクリプションを作成すると、Microsoft Online Services のテストテナントと、環境を展開できる Microsoft Dynamics Lifecycle Services (LCS) プロジェクトが提供されます。 この記事は、Microsoft Online Services テナントに追加ユーザーを設定し、サービス管理機能の経験を積むのにも役立ちます。 学ぶスキルを次に示します。
 
 - 新しい Microsoft オンライン テスト テナントを購読して作成します。
 - LCS プロジェクトに移動します。

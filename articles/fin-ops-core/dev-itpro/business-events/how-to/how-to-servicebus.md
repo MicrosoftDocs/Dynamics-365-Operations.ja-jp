@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントおよび Azure Service Bus
-description: このトピックでは、Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。
+description: この記事では、Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。
 author: Sunil-Garg
 ms.date: 11/04/2019
 ms.topic: article
@@ -12,17 +12,17 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: f7656634f5f870b34b01e02ed1bf052caa464fd4e8307b01561b6214a1915b71
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75bc65788b3566420413b924ea5bc41094eb2c21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723097"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873198"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。
+この記事では、Microsoft Azure Service Bus エンドポイントを構成する方法と、Service Bus からビジネス イベントを消費する方法を説明します。
 
 ## <a name="scenario-overview"></a>シナリオの概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "6723097"
 完了する必要がある手順の概要を次に示します。
 
 1. 新しい Service Bus の名前空間を作成します。
-2. 新しい Service Bus のトピックとサブスクリプションを作成します。
+2. 新しい Service Bus の記事とサブスクリプションを作成します。
 3. Service Bus キーを格納する新しい Key Vault を作成します。
 4. Key Vault にアクセスするためのアクセス許可が与えられている Azure アプリを登録します。
 5. ビジネス イベント エンドポイントをコンフィギュレーションします。
@@ -53,17 +53,17 @@ ms.locfileid: "6723097"
 
 4. すべてのパラメーターの設定が終了したら **作成** を選択します。
 
-## <a name="create-a-new-service-bus-topic-and-subscription"></a>新しい Service Bus のトピックとサブスクリプションを作成
+## <a name="create-a-new-service-bus-article-and-subscription"></a>新しい Service Bus の記事とサブスクリプションを作成する
 
-1. Azure ポータルで、作成した Service Bus を選択して新しいトピックを作成します。
+1. Azure ポータルで、作成した Service Bus を選択して新しい記事を作成します。
 
    <img alt="Service Bus Topic" src="../../media/BEF-Howto-servicebus-03.png" width="70%">
 
-2. 新しいトピックを選択して **BE-USMF** という名前の新しいサブスクリプションを作成します。
+2. 新しい記事を選択して、**BE-USMF** という名前の新しいサブスクリプションを作成します。
 
     <img alt="Service Bus subscription" src="../../media/BEF-Howto-servicebus-04.png" width="70%">
 
-3. Service Bus のブレードに戻り、イベントを送信する新しい共有アクセス ポリシーを作成します。 Service Bus のトピックにイベントを送信するには **送信** ポリシーのみが必要です。
+3. Service Bus のブレードに戻り、イベントを送信する新しい共有アクセス ポリシーを作成します。 Service Bus の記事にイベントを送信するには **送信** ポリシーのみが必要です。
 
     <img alt="Service Bus Shared access policy" src="../../media/BEF-Howto-servicebus-05.png" width="70%">
 
@@ -72,7 +72,7 @@ ms.locfileid: "6723097"
     <img alt="Service Bus connection string" src="../../media/BEF-Howto-servicebus-06.png" width="70%">
 
   > [!NOTE]
-  > 共有アクセス ポリシーは、トピック レベルではなく、名前空間レベルにある必要があります。 トピック レベルの共有アクセスポリシーを使用する場合は、ビジネス イベント用のエンドポイントをコンフィギュレーションするときに、末尾にセミコロン EntityPath = を付加した文字列を含めることはできません。
+  > 共有アクセス ポリシーは、記事レベルではなく、名前空間レベルにある必要があります。 記事レベルの共有アクセス ポリシーを使用する場合は、ビジネス イベント用のエンドポイントをコンフィギュレーションするときに、末尾にセミコロン EntityPath= を付加した文字列を含めることはできません。
 
 ## <a name="create-a-new-key-vault"></a>新しい Key Vault の作成
 
@@ -95,7 +95,7 @@ ms.locfileid: "6723097"
 
 ## <a name="register-a-new-application"></a>新しいアプリケーションの登録
 
-この手順では、新しいアプリケーションを Azure AD に登録して、Key Vault のシークレットの読み取りと取得アクセスを許可します。 Finance and Operations はこのアプリケーションを使用して、Service Bus のシークレットを取得します。
+この手順では、新しいアプリケーションを Azure AD に登録して、Key Vault のシークレットの読み取りと取得アクセスを許可します。 すると Finance and Operations はこのアプリケーションを使用して Service Bus シークレットを取得します。
 
 1. Azure ポータルで **すべてのサービス \> セキュリティ \> Azure Active Directory** を選択します。
 2. **アプリ登録 (プレビュー) \> 新しい登録** を選択し、アプリケーションの名前を入力します。
@@ -147,7 +147,7 @@ ms.locfileid: "6723097"
 
     新しい Service Bus エンドポイントを使用するビジネス イベントを有効化した後、アプリケーションはテスト メッセージを送信してコンフィギュレーションが正確であることを確認し、接続をキャッシュします。
 
-3. テスト メッセージが受信されたことを確認するには Azure ポータルで **BE-Topic** Service Bus トピックを選択して、そして以前に作成した **BE-USMF** Service Bus サブスクリプションに入ります。 サブスクリプションのメッセージ数が少なくとも **1** の値を示していることを確認します。 そうでない場合は、バッチジョブがメッセージを受信するまで待ちます。
+3. テスト メッセージが受信されたことを確認するには Azure ポータルで **BE-Topic** Service Bus 記事を選択して、以前に作成した **BE-USMF** Service Bus サブスクリプションに入ります。 サブスクリプションのメッセージ数が少なくとも **1** の値を示していることを確認します。 そうでない場合は、バッチジョブがメッセージを受信するまで待ちます。
 
     <img alt="Service Bus message count" src="../../media/BEF-Howto-servicebus-10.png" width="70%">
 
@@ -158,7 +158,7 @@ ms.locfileid: "6723097"
 4. リソース グループに新しいロジック アプリを作成します。
 5. Logic Apps リソースを作成したら、空のロジック アプリを作成するオプションを選択します。
 6. **サービス バス** を検索して選択します。
-7. **トピック サブスクリプションでメッセージを受信した場合 (オート コンプリート)** という名前のトリガーを選択します。
+7. **記事サブスクリプションでメッセージを受信した場合 (オート コンプリート)** という名前のトリガーを選択します。
 
     > [!NOTE] 
     > オート コンプリートとは、メッセージが取得された後にサブスクリプション キューから削除されることを意味します。 ピーク ロックは同時実行消費者を許可します。 メッセージを削除するには、Service Bus アプリケーション プログラミング インターフェイス (API) の **完了** コマンドを呼び出す必要があります。
@@ -173,7 +173,7 @@ ms.locfileid: "6723097"
 
     <img alt="Service bus listen policy " src="../../media/BEF-Howto-servicebus-16.png" width="70%">
 
-10. トリガー パラメーターを選択します。 作成したトピックとサブスクリプションに必ず正しい名前を使用します。
+10. トリガー パラメーターを選択します。 作成した記事とサブスクリプションに必ず正しい名前を使用します。
 
     この API はコンフィギュレーション可能な頻度で、新しいメッセージの Service Bus をポーリングします (既定は 3 分ごと)。 Logic Apps はトリガーの呼び出しとアクションの実行ごとに課金されるため、メッセージの量が少ない場合に API は不要なトリガーのコストに影響を与えます。 ただし、途中で Azure Event Grid を使用するプッシュ アーキテクチャを実装できます。 キューやサブスクリプションにメッセージがある場合、Service Bus はイベントをイベント グリッドにプッシュできます。 詳細については [Azure Service Bus からイベント グリッドへの統合の概要](/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept) を参照してください。
 

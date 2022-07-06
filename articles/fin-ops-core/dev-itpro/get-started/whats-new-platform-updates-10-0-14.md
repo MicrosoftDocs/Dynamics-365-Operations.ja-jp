@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリ (2020 年 11 月) のバージョン 10.0.14 のプラットフォーム更新プログラム
-description: このトピックでは、Finance and Operations アプリ バージョン 10.0.14 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
+title: 財務と運用アプリのバージョン 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)
+description: この記事では、財務と運用アプリのバージョン 10.0.14 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 10/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0ffd75bd7fcbf0e4e2c06b8db29e263f04c736c69fbfc0b7bbb679d889bba653
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 94f33000c9111ceaf4b0d93f63e7a39eba20caad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866656"
 ---
-# <a name="platform-updates-for-version-10014-of-finance-and-operations-apps-november-2020"></a>Finance and Operations アプリ (2020 年 11 月) のバージョン 10.0.14 のプラットフォーム更新プログラム
+# <a name="platform-updates-for-version-10014-of-finance-and-operations-apps-november-2020"></a>財務と運用アプリのバージョン 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリ バージョン 10.0.14 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.5778 で、次のスケジュールで使用できます。
+この記事では、財務と運用アプリのバージョン 10.0.14 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.5778 で、次のスケジュールで使用できます。
 
 - **プレビュー リリース:** 2020 年 9 月
 - **一般提供 (自己更新):** 2020 年 10 月
@@ -51,12 +51,12 @@ ms.locfileid: "6739457"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
 

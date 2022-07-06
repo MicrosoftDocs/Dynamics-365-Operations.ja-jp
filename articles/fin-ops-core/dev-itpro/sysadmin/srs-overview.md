@@ -1,6 +1,6 @@
 ---
 title: 会社間データ共有の概要
-description: このトピックでは、会社間でのデータ共有の概要について説明します。 これは、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
+description: この記事では、会社間でのデータ共有の概要について説明します。 これは、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
 author: ramasri
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 32bf0254a9360bd902c09214f89e89fd8602c641
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48919678f8661c714e2dea054813b8f74b7aeba7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902598"
 ---
 # <a name="cross-company-data-sharing-overview"></a>会社間データ共有の概要
 
@@ -126,7 +126,7 @@ DRS の共有ロジックは、レコードの固有キー (顧客のアカウ�
 ## <a name="master-company-sharing-preview"></a>マスター会社の共有 (プレビュー) 
 マスター会社の共有を有効にする場合は、機能管理モジュールのマスター会社データ共有機能を使用します。 
 
-共有範囲を停止または縮小することはできないので、実稼働環境で同じコンフィギュレーションを有効にする前に、マスター会社のデータ共有ポリシーを十分にテストおよび検証してください。 
+共有範囲を停止または縮小することはできないので、運用環境で同じコンフィギュレーションを有効にする前に、マスター会社のデータ共有ポリシーを十分にテストおよび検証してください。 
 
 マスター会社の共有ポリシーにテーブルが追加された場合、既定ですべての可能なフィールドが選択されます。 これには、マスター会社の共有でサポートされているすべてのテーブルのすべての外部キー フィールドが含まれます。 たとえば、仕入先テーブルが DRS を使用して既に共有されていない限り、顧客テーブルが追加された場合に仕入先テーブルが追加されます。
 

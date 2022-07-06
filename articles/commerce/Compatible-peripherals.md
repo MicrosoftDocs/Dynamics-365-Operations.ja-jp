@@ -1,6 +1,6 @@
 ---
 title: コマースの周辺機器の互換性
-description: このトピックでは、Dynamics 365 Commerce との互換性のテストが完了している周辺機器を示します。
+description: この記事では、Dynamics 365 Commerce との互換性のテストが完了している周辺機器を示します。
 author: BrianShook
 ms.date: 11/30/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02a380623bbcd96ae6dfb4739007f2466435c3db
-ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
+ms.openlocfilehash: 083105f2b010e0b274a869313cb9899b5be0406f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "7875434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854021"
 ---
 # <a name="peripheral-compatibility-for-commerce"></a>コマースの周辺機器の互換性
 
@@ -56,7 +56,7 @@ ms.locfileid: "7875434"
 
 ## <a name="device-compatibility-testing"></a>デバイス互換性テスト
 
-デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 周辺機器シミュレーターの入手、デバイスのテスト、および Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)を参照してください。 実稼働環境に送られるすべての周辺機器設定に対してテストを実行する必要があります。 互換性リストが、過去にまったく同じデバイス/POS 設定でテストされていることを示している場合でも、ユーザー受け入れテスト (UAT) の一環としてテストを行う必要があります。
+デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 周辺機器シミュレーターの入手、デバイスのテスト、および Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)を参照してください。 運用環境に送られるすべての周辺機器設定に対してテストを実行する必要があります。 互換性リストが、過去にまったく同じデバイス/POS 設定でテストされていることを示している場合でも、ユーザー受け入れテスト (UAT) の一環としてテストを行う必要があります。
 
 ## <a name="supported-devices"></a>サポート対象デバイス
 

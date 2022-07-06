@@ -1,6 +1,6 @@
 ---
 title: 画像の最適化
-description: このトピックでは、Microsoft Dynamics 365 Commerce で使用する画像を最適化して Web サイトのパフォーマンスを向上させる方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で使用する画像を最適化して Web サイトのパフォーマンスを向上させる方法について説明します。
 author: mssle
 ms.date: 01/28/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: sheaton
 ms.search.validFrom: 2021-09-20
-ms.openlocfilehash: 15b1fcdd884d8e1207ea118b8da4fb4fe1233dd9
-ms.sourcegitcommit: b9799a58d6ec221df86788bc37c4fbd28b435e89
+ms.openlocfilehash: 727cbc1d02d9839b5825d6b0a9ac6f809028e5fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "8100785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897032"
 ---
 # <a name="optimize-images"></a>画像の最適化
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、更新または移動プロセス中に Microsoft Dynamics 365 Commerce で使用する画像を最適化して Web サイトのパフォーマンスを向上させる方法について説明します。
+この記事では、更新または移動プロセス中に Microsoft Dynamics 365 Commerce で使用する画像を最適化して Web サイトのパフォーマンスを向上させる方法について説明します。
 
 ## <a name="applies-to"></a>適用先
 
-このトピックは、次の構成に適用されます。
+この記事は、次の構成に適用されます。
 
 - **バージョン:** Commerce 10.0.16 またはそれ以降
 - **コンポーネント:** 企業 とコンシューマー (B2C) または企業間 (B2B)

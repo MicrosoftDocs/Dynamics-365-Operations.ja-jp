@@ -1,6 +1,6 @@
 ---
 title: MPOS (シールド) と CPOS 拡張機能のデバッグ
-description: このトピックでは、モダン販売時点管理 (シールド) と Cloud POS 拡張機能のデバッグ方法について説明します。
+description: この記事では、モダン販売時点管理 (シールド) と Cloud POS 拡張機能のデバッグ方法について説明します。
 author: mugunthanm
 ms.date: 05/05/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 85efacd1cdd86436d227f380fc3b0a104ae93fa9
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: d0d3005df25dcb8043545e9a7ba1a400440bae2e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870568"
 ---
 # <a name="debug-mpos-sealed-and-cpos-extensions"></a>MPOS (シールド) と CPOS 拡張機能のデバッグ
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、**シールド** の Modern 販売時点管理 (MPOS) と Cloud POS 拡張機能のデバッグ方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。 
+この記事では、**シールド** の Modern 販売時点管理 (MPOS) と Cloud POS 拡張機能のデバッグ方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。 
 
  > [!NOTE]
  > Store Commerce アプリのデバッグについては、[Visual Studio Code を使用し Store Commerce 拡張機能のデバッグ](../sc-debug.md) を参照してください
@@ -94,7 +94,7 @@ ms.locfileid: "8720914"
 
 ## <a name="debug-cpos-by-using-the-microsoft-edge-developer-tools"></a>Microsoft Edge 開発者ツールを使用した CPOS のデバッグ
 
-1. このトピックで前述されている [Cloud POS 拡張機能の開発環境のコンフィギュレーション](#configure-cloud-pos) セクションの手順に従います。
+1. この記事で前述されている [Cloud POS 拡張機能の開発環境のコンフィギュレーション](#configure-cloud-pos) セクションの手順に従います。
 2. CPOS 拡張機能プロジェクトを構築します。
 3. Microsoft Edge で、CPOS Web サイトを開きます。
 4. **F12** キーを選択して、Microsoft Edge 開発者ツールを開きます。

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5f9d773cdc1aaf844bfe97f7ea396b8169950e775a8e7479d6a2ac1806e8db47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4eb4f8fcfee167cb6c8eb99a28d866bc00eea9f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867314"
 ---
 > [!IMPORTANT]
-> このトピックに記載されている一部またはすべての機能は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](../../fin-ops/get-started/public-preview-releases.md) を参照してください。
+> この記事に記載されている一部またはすべての機能は、プレビュー リリースの一部として使用可能です。 コンテンツおよび機能は、変更されることがあります。 プレビュー リリースの詳細については、[サービス更新プログラムの使用可能性](../../fin-ops/get-started/public-preview-releases.md) を参照してください。

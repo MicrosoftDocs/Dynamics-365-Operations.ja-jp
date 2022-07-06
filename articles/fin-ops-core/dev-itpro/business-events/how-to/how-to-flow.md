@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントおよび Microsoft Power Automate
-description: このトピックでは、コネクタを使い Microsoft Power Automate で使用可能なビジネス イベントに関する情報を提供します。
+description: この記事では、コネクタを使い Microsoft Power Automate で使用可能なビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 ms.date: 10/18/2021
 ms.topic: article
@@ -12,25 +12,25 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: a672a2102fbf5f015683585498fd4e90b16b3b6e
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 595e515ca3857504e10922b7f5805e62802221ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885279"
 ---
 # <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントおよび Microsoft Power Automate
 
 [!include[banner](../../includes/banner.md)]
 
-このトピックでは、Finance and Operations コネクタの **ビジネス イベントが発生した場合** トリガーを使用して、Microsoft Power Automate エンドポイントからビジネス イベントを構成および消費する方法について説明します。 
+この記事では、財務と運用コネクタの **ビジネス イベントが発生した場合** のトリガーを使用して Microsoft Power Automate エンドポイントからビジネス イベントを構成および消費する方法について説明します。 
 
-このトピックでは、以下のタスクを実行する方法について説明します:
+この記事では、以下のタスクを実行する方法について説明します:
 
 - Power Automate で、新しいフローを作成します。
 - ビジネス イベントのトリガー
 
-このトピックの手順では、Finance and Operations コネクタの使用方法を示します。 ただし、これらのデータは、Microsoft Dataverse コネクタ内にある Finance and Operations アプリケーションのビジネス イベントとデータ イベント用 Power Automate のフローを作成するプロセスにも適用できます。 Dataverse コネクタの **アクションが実行される場合** および **行が追加、変更または削除される場合** トリガーを持つ Finance and Operations アプリケーションのビジネス イベントとデータ イベントについては、[Microsoft Power Automate のビジネス イベント](../business-events-flow.md) を参照してください。
+この記事の手順では、財務と運用コネクタの使用方法を示します。 ただし、これらのデータは、Microsoft Dataverse コネクタ内にある財務と運用アプリのビジネス イベントとデータ イベント用 Power Automate のフローを作成するプロセスにも適用できます。 Dataverse コネクタの **アクションが実行される場合** および **行が追加、変更または削除される場合** トリガーを持つ財務と運用アプリのビジネス イベントとデータ イベントについては、[Microsoft Power Automate のビジネス イベント](../business-events-flow.md)を参照してください。
 
 ## <a name="create-a-new-flow-in-power-automate"></a>Power Automate で、新しいフローを作成する
 
@@ -72,7 +72,7 @@ ms.locfileid: "7674940"
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
-13.  ビジネス イベント コンテンツを使用するための最終アクションを選択します。 たとえば、電子メールで (または、テキストメッセージをチームに共有する) 支払の詳細を顧客に送信することができます。 **電子メールの送信** アクションを検索し、自分の Microsoft 365 アカウントにサインインします。
+13.  ビジネス イベント コンテンツを使用するための最終アクションを選択します。 たとえば、電子メールで (または、テキストメッセージをチームに共有する) 支払の詳細を顧客に送信することができます。 **電子メールの送信** アクションを検索し、自分の Microsoft 365 アカウントにログインします。
 
 14.  メッセージの本文および、必須項目を入力します。
 

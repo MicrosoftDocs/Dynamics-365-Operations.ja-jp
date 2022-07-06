@@ -1,6 +1,6 @@
 ---
 title: X++ でのマクロ
-description: このトピックでは、X++ でマクロを作成および使用する方法について説明します。
+description: この記事では、X++ でマクロを作成および使用する方法について説明します。
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98cb22a3a9ac75b9e9751df7e65258a3694c41bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7a41c2fbe2bd3a6d2eeb0986046568dc116bc1fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867150"
 ---
 # <a name="macros-in-x"></a>X++ でのマクロ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ でマクロを作成および使用する方法について説明します。
+この記事では、X++ でマクロを作成および使用する方法について説明します。
 
 コードをコンパイルする前に、プリコンパイラ ディレクティブが処理されます。 ディレクティブは、マクロとその値を宣言して処理します。 ディレクティブは、プリコンパイラによって削除され、X++ コンパイラがそれらを検出することはありません。 X++ コンパイラは、ディレクティブによって X++ コードに書き込まれた一連の文字だけを認識します。
 

@@ -1,6 +1,6 @@
 ---
 title: Power BI Embedded 統合
-description: このトピックでは、Power BI Embedded 統合を使用するための方法について説明します。
+description: この記事では、Power BI Embedded 統合を使用するための方法について説明します。
 author: RichdiMSFT
 ms.date: 02/09/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: cda29201061eababbc4070f444d1f6aa2e5ec9d80150ab316e9157bcb47708df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23ad0752c28198cb22be6fcaba169594010f6b7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865913"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 
 [!include [banner](../includes/banner.md)]
 
-パートナーおよび独立系ソフトウェア ベンダー (ISV) が開発した Microsoft Power BI コンテンツは、Microsoft Dynamics 365 Finance に直接埋め込むことができます。 このトピックでは、Microsoft Power BI Embedded 統合を使用するための方法について説明します。
+パートナーおよび独立系ソフトウェア ベンダー (ISV) が開発した Microsoft Power BI コンテンツは、Microsoft Dynamics 365 Finance に直接埋め込むことができます。 この記事では、Microsoft Power BI Embedded 統合を使用するための方法について説明します。
 
 ## <a name="overview"></a>概要
 アプリケーションと [Power BI](https://www.powerbi.com/) の統合により、Microsoft Power Query for Excel でサポートされている外部データ ソースへのアクセスが必要なデータ マッシュアップ シナリオが可能になります。 ユーザーは、PowerBI.com でホストされているタイルを埋め込むことにより、ワークスペースをカスタマイズできます。 ユーザーは、PowerBI.com でホストされているレポートに直接リンクを追加することもできます。 このようにして、ユーザーはアプリケーションを終了せずにレポートにアクセスし、対話できます。 パートナーと ISV が開発する Power BI コンテンツ (PBIX ファイル) は、アプリケーションに直接埋め込むことができます。 モデル ファイルに関連付けられている PBIX ファイルは、アプリケーション配置プロセスの一部として Power BI Embedded で自動的に公開されます。 また、次の機能が必要な埋め込みレポート シナリオの X++ 拡張機能を追加できます。
@@ -38,7 +38,7 @@ ms.locfileid: "6745928"
 
 ## <a name="advantages-of-power-bi-embedded"></a>Power BI Embedded のメリット
 - **アプリケーションで Power BI ワークスペースとレポートを配信します。** ユーザーが power user またはビジネス アナリストである場合は、Power BI ツールを使用して既製のレポートを調整したり、新しいレポートを作成することができます。 開発者は、ワークスペースを通じて製品の豊富なナビゲーション エクスペリエンスを提供するためにユーザーが作成したレポートを使用できます。 パートナーおよび ISV コミュニティにいる場合は、Power BI エクスペリエンスを含む豊富なワークスペースを構築し、そのワークスペースをソリューションの一部としてリリースすることができます。
-- **Power BI Embedded サービス ライセンスは、アプリケーションにまとめられます。** ユーザーが ISV またはシステム インテグレーターである場合は、Microsoft Dynamics Lifecycle Services (LCS) ソリューションの一部として、Power BI で有効化されたワークスペース (およびこれらのワークスペースにより提供されるナビゲーション エクスペリエンス) をパッケージ化できます。 顧客は、PowerBI.com サブスクリプションなしで、同じ体験をします。 ワークスペースは、単に Finance and Operations アプリケーションと動作します。
+- **Power BI Embedded サービス ライセンスは、アプリケーションにまとめられます。** ユーザーが ISV またはシステム インテグレーターである場合は、Microsoft Dynamics Lifecycle Services (LCS) ソリューションの一部として、Power BI で有効化されたワークスペース (およびこれらのワークスペースにより提供されるナビゲーション エクスペリエンス) をパッケージ化できます。 顧客は、PowerBI.com サブスクリプションなしで、同じ体験をします。 ワークスペースは、Finance and Operations アプリケーションで動作します。
 - **Power BI から詳細ページへのドリルダウンを有効にします。** ビジュアルは、アクションの開始点です。 ユーザーは、業務プロセスやページにドリルダウンして、明らかになっていない問題にすぐ対応できます。 ユーザーは、ビジュアルを使用して、データをフィルタリングして傾向を把握できます。 アクションのページには、注意が必要なデータのセットのみを反映します。
 - **メニュー項目を使用して Power BI レポートへのアクセスを保護します。** 開発者は、Power BI の基準となるワークスペースに同一の概念を拡張するために、Finance and Operations アプリで利用可能な使い慣れたプログラミングの概念を使用できます。 Power BI で駆動される概要ページを追加することにより、ワークスペースを新規作成または既存のワークスペースを拡張することができます。 開発者は、メニュー項目を Power BI レポートに関連付けて、リンクをワークスペースに含めることができます。 Finance and Operations アプリにおけるロール ベースおよびタスク ベースのセキュリティは、これらのメニュー項目を保護するために使用できます。
 - **アプリケーション コンテキストに基づくレポートのフィルター処理。** 1 つまたは複数のフィルターを Power BI レポートに渡すことにより、ナビゲーション エクスペリエンスをビルドすることができます。 たとえば、ユーザーのアクションまたはコンテキストに応じて、Power BI レポートが 1 つの事業単位または特定の製品からのデータを反映するようにフィルタ処理できます。 ユーザーはデータをフィルタリングする必要はありません。 ユーザーがトランザクション詳細ページに直接移動することができる、Finance and Operations ページへのドリルスルー リンクを定義することができます。
@@ -65,14 +65,14 @@ Power BI Embedded サービスの詳細については、「[Power BI FAQ](https
 ### <a name="how-is-currency-shown-across-multiple-companies"></a>通貨は複数の会社間でどのように表示されますか。
 通貨は、システム通貨で示されます。 システム通貨は、**システム パラメーター** ページで定義されます。
  
-### <a name="can-i-drill-from-summary-balances-back-into-finance-and-operations"></a>Finance and Operations に戻す概要残高をドリルすることはできますか?
+### <a name="can-i-drill-from-summary-balances-back-into-finance-and-operations"></a>Finance and Operations に戻す概要残高をドリルすることはできますか。
 はい、Power BI レポートの詳細を表示することができます。 ただし、Finance and Operations アプリへのドリルダウンに対するサポートは限られています。
  
 ### <a name="what-languages-are-currently-supported"></a>現在どのような言語がサポートされていますか。
 現在、英語のみがサポートされています。 ただし、Power BI チームはその他の言語のサポートを追加する予定です。
  
-### <a name="can-i-access-analytical-workspaces-and-reports-in-the-on-premises-version-of-finance-and-operations"></a>Finance and Operations のオンプレミス バージョンで分析ワークスペースおよびレポートにアクセスすることはできますか?
-いいえ、現在 Dynamics 365 Finance + Operations (オンプレミス) の分析ワークスペースおよびレポートにアクセスできません。 インテリジェンス機能のシステムは、クラウドにホストされているソリューションに依存します。
+### <a name="can-i-access-analytical-workspaces-and-reports-in-the-on-premises-version-of-finance-and-operations"></a>Finance and Operations のオンプレミス バージョンで分析ワークスペースおよびレポートにアクセスすることはできますか。
+いいえ、現在は Dynamics 365 Finance + Operations (on-premises) の分析ワークスペースおよびレポートにアクセスできません。 インテリジェンス機能のシステムは、クラウドにホストされているソリューションに依存します。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

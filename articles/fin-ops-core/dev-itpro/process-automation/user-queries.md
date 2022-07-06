@@ -1,6 +1,6 @@
 ---
 title: 構成可能なユーザーのクエリ
-description: このトピックでは、構成可能なクエリを作成し、プロセス自動化フレームワークで使用する方法について説明します。
+description: この記事では、構成可能なクエリを作成し、プロセス自動化フレームワークで使用する方法について説明します。
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 874b8352030a6bea69395e3b432fe7720e3de27c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a3cd567dd6492c2ac200c5787a17426615f80724
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735053"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864522"
 ---
 # <a name="user-configurable-queries"></a>構成可能なユーザーのクエリ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、構成可能なクエリを作成し、プロセス自動化フレームワークで使用する方法について説明します。 プロセスが **SysQueryForm** フォームによるユーザーの構成可能なクエリをサポートしていない場合は 、このタスクを省略できます。
+この記事では、構成可能なクエリを作成し、プロセス自動化フレームワークで使用する方法について説明します。 プロセスが **SysQueryForm** フォームによるユーザーの構成可能なクエリをサポートしていない場合は 、このタスクを省略できます。
 
 プロセス自動化フレームワークでは、**SysQueryForm** フォームを介したカスタム クエリのサポートが制限されています。 カスタム クエリを使用すると、ユーザーはカスタムの基準を追加して、プロセスの実行方法を制限することができます。 フレームワークには、ユーザーが指定したカスタムの基準を抽出するためのロジックと、それらの基準を格納するためのテーブルがあります。 カスタム クエリ基準は、指定された一連の発生ごとに格納され、個別に変更できます。 フレームワークには、各発生のプロセスの実行に使用されるクエリにカスタム基準を適用するための API も用意されています。
 

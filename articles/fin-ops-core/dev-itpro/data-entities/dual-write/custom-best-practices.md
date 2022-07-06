@@ -1,6 +1,6 @@
 ---
 title: 二重書き込みのカスタマイズに関するガイダンス
-description: このトピックでは、二重書き込みのカスタマイズについてのガイダンスを提供します。
+description: この記事では、二重書き込みのカスタマイズについてのガイダンスを提供します。
 author: RamaKrishnamoorthy
 ms.date: 09/15/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83a65b957244ad3bd524f2557e33ecb86013a2ae
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 4a97faa64f39fc00dcb354ab639368e713cf90f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909476"
 ---
 # <a name="customization-guidance-for-dual-write"></a>二重書き込みのカスタマイズに関するガイダンス
 
@@ -23,7 +23,7 @@ ms.locfileid: "8487597"
 
 
 
-二重書き込みでは、一部の業務プロセスに対する標準のマップが提供されます。 ただし、フィールド、マップ、または変換を追加する必要がある場合があります。 二重書き込みプラットフォームは拡張可能です。 カスタム マップを作成し、カスタム フィールドを使用して既存のマップを拡張して、財務と運用アプリと Microsoft Dataverse の間のデータを同期します。 このトピックでは、これらのカスタマイズのガイダンスとベスト プラクティスについて説明します。
+二重書き込みでは、一部の業務プロセスに対する標準のマップが提供されます。 ただし、フィールド、マップ、または変換を追加する必要がある場合があります。 二重書き込みプラットフォームは拡張可能です。 カスタム マップを作成し、カスタム フィールドを使用して既存のマップを拡張して、財務と運用アプリと Microsoft Dataverse の間のデータを同期します。 この記事では、これらのカスタマイズのガイダンスとベスト プラクティスについて説明します。
 
 マップをカスタマイズする前に、[テーブル マッピングと列マッピングのカスタマイズ](customizing-mappings.md) でタスクをよく理解する必要があります。
 

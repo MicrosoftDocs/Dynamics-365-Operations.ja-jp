@@ -1,6 +1,6 @@
 ---
 title: モバイル アプリ ページのフィールドをクリック可能にする
-description: このトピックでは、モバイル アプリ ページのフィールドをカスタマイズして、メール アドレス、電話番号、または URL として表示する方法について説明します。
+description: この記事では、モバイル アプリ ページのフィールドをカスタマイズして、メール アドレス、電話番号、または URL として表示する方法について説明します。
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 35fddb54d4a7cf32d16518d70aa0dcda6a90f9df
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: ffe6e94a97b1bbaa5b7dfdfb2df4235d2b324029
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884681"
 ---
 # <a name="make-fields-on-mobile-app-pages-clickable"></a>モバイル アプリ ページのフィールドをクリック可能にする
 

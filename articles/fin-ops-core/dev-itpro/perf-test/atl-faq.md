@@ -1,6 +1,6 @@
 ---
 title: 承認テスト ライブラリに関するよく寄せられる質問
-description: このトピックでは、承認テスト ライブラリに関するよくある質問に対する回答を示します。
+description: この記事では、承認テスト ライブラリに関するよくある質問に対する回答を示します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: a6cd5081903bdfce502d21c8eec0652bae920b1f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 12c86221228e2d3f6f914198dfe1a7bd38e01db1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856941"
 ---
 # <a name="acceptance-test-library-faq"></a>承認テスト ライブラリに関するよく寄せられる質問
 

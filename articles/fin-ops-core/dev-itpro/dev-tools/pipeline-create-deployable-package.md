@@ -1,6 +1,6 @@
 ---
 title: Azure Pipelines に配置可能なパッケージの作成
-description: このトピックでは、Microsoft Azure DevOps でビルドの自動化を実行するときに、ソフトウェア配置可能なパッケージを作成する方法について説明します。
+description: この記事では、Microsoft Azure DevOps でビルドの自動化を実行するときに、ソフトウェア配置可能なパッケージを作成する方法について説明します。
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c81b681e476967a0efd1e28ba923ef5e8c6f29
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c6609f6f7ec04d71924fd9029d686d501b76131c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781078"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867021"
 ---
 # <a name="create-deployable-packages-in-azure-pipelines"></a>Azure Pipelines に配置可能なパッケージの作成
 
 カスタマイズを環境に配置する場合は、配置可能なパッケージが Microsoft Dynamics Lifecycle Services (LCS) に必要です。 このパッケージは、ビルド プロセスまたはリリース プロセス中に Azure Pipelines を使用して作成できます。
 
-このトピックは、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を前提としています。
+この記事は、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を前提としています。
 
 > [!NOTE]
-> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
+> これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントにインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
 >
 > この Azure DevOps タスクを実行するには、エージェントで X++ コンパイラ ツールを使用できる必要があります。 このタスクをビルド バーチャル マシン (VM) エージェントで実行するか、コンパイラ ツール NuGetパッケージを使用してください。 NuGet パッケージとパイプラインへのインストール方法の詳細については、[Microsoft がホストするエージェントと Azure Pipelines を使用したビルドの自動化](hosted-build-automation.md)を参照してください。
 
@@ -53,7 +53,7 @@ YML または Classic パイプラインのビルドにタスクを追加する�
 ビルド仮想マシンのレガシー パッケージングと比較して、パッケージング タスクでは、パッケージするモジュールとその場所を指定する必要があります。 標準のパイプラインでは、コンパイル中の X ++ モジュールが Azure DevOps エージェントのバイナリ フォルダーに出力されます。 既定では、パッケージング タスクは X++ バイナリのフォルダーを検索します。 フォルダー名を検索します。 X++ アセンブリを含む `/bin/` サブフォルダーがある場合は、このフォルダー内でタスクが確認されます。
 
 > [!NOTE]
-> ソース管理リポジトリに ISV モジュールなどのサード パーティ バイナリが含まれている場合、パッケージ ステップには特にそれらのバイナリが含まれています。 このトピックの例のセクションを参照してください。
+> ソース管理リポジトリに ISV モジュールなどのサード パーティ バイナリが含まれている場合、パッケージ ステップには特にそれらのバイナリが含まれています。 この記事の例のセクションを参照してください。
 
 ## <a name="examples-of-search-patterns"></a>検索パターンの例
 

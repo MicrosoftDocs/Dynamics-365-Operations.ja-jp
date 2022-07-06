@@ -1,6 +1,6 @@
 ---
-title: 小売チャンネルのシークレットを管理
-description: このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。
+title: 小売チャネルのシークレットの管理
+description: この記事では、シークレットへのアクセスを必要とするチャネルで拡張機能を使用している際のシークレット管理方法について説明します。
 author: AamirAllaq
 ms.date: 04/21/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: ed94aa4b35d2c0b4bbc4cf514a0df254464592da
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 174660440ee7f46395d7d8772f318bb87457e5a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895446"
 ---
-# <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
+# <a name="manage-secrets-for-retail-channels"></a>小売チャネルのシークレットの管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。 拡張機能では、カスタム証明書を Commerce Scale Unit に配置したり、拇印やシークレットを web.config ファイルに追加することはできません。 シークレットを管理するための推奨される方法は、このトピックで説明したように、Azure Key Vault を使用する方法です。
+この記事では、シークレットへのアクセスを必要とするチャネルで拡張機能を使用している際のシークレット管理方法について説明します。 拡張機能では、カスタム証明書を Commerce Scale Unit に配置したり、拇印やシークレットを web.config ファイルに追加することはできません。 シークレットを管理するために推奨される方法は、この記事で説明したように、Azure Key Vault を使用する方法です。
 
 ## <a name="key-vault-setup"></a>Key Vault の設定
 

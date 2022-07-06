@@ -1,6 +1,6 @@
 ---
 title: 自動ビルドのモデル バージョンの更新
-description: このトピックでは、ビルド出力のソース パッケージと配置可能なパッケージのモデルを、それらを生成したビルドのバージョンで更新する方法について説明します。
+description: この記事では、ビルド出力のソース パッケージと配置可能なパッケージのモデルを、それらを生成したビルドのバージョンで更新する方法について説明します。
 author: jorisdg
 ms.date: 05/25/2017
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2b22f1548a7e746e5f65b55d7207c9d9b9ca267
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 75fb12d55ff614f2c930a183a7191349f4eb3433
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866986"
 ---
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 
@@ -25,7 +25,7 @@ ms.locfileid: "7782194"
 
 プラットフォーム更新プログラム 6 では、自動ビルド定義の新しいタスクが、作成したビルドのバージョンを持つビルド出力のソース パッケージと配置可能パッケージのモデルを更新します。
 
-プラットフォーム更新プログラム 6 以前に作成されたビルド定義はこのタスクを含めるために手動で更新する必要があります。 このトピックで後述する[既存のビルド定義の更新](#updating-an-existing-build-definition)を参照してください。
+プラットフォーム更新プログラム 6 以前に作成されたビルド定義はこのタスクを含めるために手動で更新する必要があります。 この記事で後述する[既存のビルド定義の更新](#updating-an-existing-build-definition)を参照してください。
 
 ## <a name="version-numbers"></a>バージョン番号 
 モデルは 1 つのパッケージにコンパイルされますが、すべてのモデルのメタデータ情報は Binary パッケージ内に保持されます。 この情報は、Microsoft Dynamics Lifecycle Services (LCS) またはクライアントから確認できます。

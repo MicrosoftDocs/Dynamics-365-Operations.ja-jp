@@ -1,6 +1,6 @@
 ---
 title: Cloud POS 拡張機能パッケージの作成
-description: このトピックでは、Cloud POS 拡張機能パッケージの作成方法について説明します。
+description: この記事では、Cloud POS 拡張機能パッケージの作成方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: cb79b1270fd6d941897423d7c3f813e237097504
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ac0705be1312e15b75fbdc7dc8a4bb7a9405c0a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876985"
 ---
 # <a name="create-a-cloud-pos-extension-package"></a>Cloud POS 拡張機能パッケージの作成
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、Cloud POS 拡張機能パッケージの作成方法について説明します。 Cloud POS 配置トポロジに基づいて、Cloud POS を Cloud スケール ユニット (CSU) または CSU – セルフ ホストに配置できます。
+この記事では、Cloud POS 拡張機能パッケージの作成方法について説明します。 Cloud POS 配置トポロジに基づいて、Cloud POS を Cloud スケール ユニット (CSU) または CSU – セルフ ホストに配置できます。
 
 ## <a name="packaging-for-csu-cloud-pos"></a>CSU Cloud POS のパッケージ
 

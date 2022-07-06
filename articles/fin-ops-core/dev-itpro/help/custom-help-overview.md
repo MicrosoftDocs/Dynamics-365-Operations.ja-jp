@@ -1,6 +1,6 @@
 ---
 title: カスタム ヘルプの概要
-description: このトピックでは、ソリューションを反映するために Microsoft ヘルプ システムを拡張し、コンテンツを [ヘルプ] ウィンドウに接続する方法について説明します。
+description: この記事では、ソリューションを反映するために Microsoft ヘルプ システムを拡張し、コンテンツをヘルプ ウィンドウに接続する方法について説明します。
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 5bbb5008750e97d0f50190e04187d26bc582e938
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: c3eee230e448280633cc656c17b965feabb607f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866605"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 
@@ -26,12 +26,12 @@ ms.locfileid: "8070160"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-財務と運用アプリは、多くの場合、組織のニーズに合わせてカスタマイズおよび拡張されます。 ソリューションが Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce に基づいている場合、ソリューション固有および顧客固有のヘルプ コンテンツを Finance and Operations クライアントの [ヘルプ ウィンドウ](../../fin-ops/get-started/help-overview.md#in-product-help) に接続できます。 このトピックでは、主要な手順と決定ポイントについて説明します。
+財務と運用アプリは、多くの場合、組織のニーズに合わせてカスタマイズおよび拡張されます。 ソリューションが Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce に基づいている場合、ソリューション固有および顧客固有のヘルプ コンテンツを財務と運用クライアントの[ヘルプ ウィンドウ](../../fin-ops/get-started/help-overview.md#in-product-help)に接続できます。 この記事では、主要な手順と決定ポイントについて説明します。
 
 > [!NOTE]
 > 財務と運用アプリのユーザーは、カスタム タスク ガイドを作成して、ソリューションの機能を説明する概念コンテンツを補うことができます。 これらの概念的な説明は、ヘルプとも呼ばれ、Microsoft、パートナー、および組織自体が提供できます。 詳細については、[ヘルプ システム](../../fin-ops/get-started/help-overview.md) を参照してください。
 
-次の図およびこのトピック一般では、*ヘルプ* という用語を使用して、ハウツー ガイドを含めるか除外するかを概念的に説明します。 *タスク ガイド* という用語は、製品内のタスク ガイドを指します。
+次の図およびこの記事一般では、*ヘルプ* という用語を使用して、ハウツー ガイドを含めるか除外するかを概念的に説明します。 *タスク ガイド* という用語は、製品内のタスク ガイドを指します。
 
 ![カスタマイズされたヘルプ ソリューションと [ヘルプ] ウィンドウです。](../../fin-ops/get-started/media/help-architecture.png)
 
@@ -68,11 +68,11 @@ Microsoft は、Microsoft Help リポジトリから HTML ファイルを生成�
 
 | 目標 | 詳細情報 |
 |-----------|------------|
-| 実際のソリューションを反映した、カスタマイズされた製品内ヘルプ エクスペリエンスをユーザーに提供したい。 | このトピックの [カスタム ヘルプ Web サイト](#custom-help-sites) セクションと、[タスク レコーダーを使用したドキュメントやトレーニングの作成](../user-interface/task-recorder-training-docs.md) を参照してください。 |
+| 実際のソリューションを反映した、カスタマイズされた製品内ヘルプ エクスペリエンスをユーザーに提供したい。 | この記事の[カスタム ヘルプ Web サイト](#custom-help-sites) セクションと、[タスク レコーダーを使用したドキュメントやトレーニングの作成](../user-interface/task-recorder-training-docs.md)を参照してください。 |
 | Microsoft Help コンテンツをソリューションに固有の Help コンテンツのベースラインとして使用したい。 | [カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール](custom-help-toolkit-HtmlFromRepoGenerator.md) を参照してください。 |
 | Microsoft Help コンテンツに寄稿したい。 | [ヘルプの拡張、カスタマイズ、および共同作業](contributor-guide.md) を参照してください。 |
 | 既存の Dynamics AX コンテンツを再利用したい。 | [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md) を参照してください。 |
-| ヘルプ コンテンツの Web サイト を設定したい。 | このトピックの [カスタム ヘルプ Web サイト](#custom-help-sites) セクションを参照してください。 |
+| ヘルプ コンテンツの Web サイト を設定したい。 | この記事の[カスタム ヘルプ Web サイト](#custom-help-sites) セクションを参照してください。 |
 | コンテンツを **ヘルプ** ウィンドウに追加したい。 | [カスタム ヘルプ Web サイトを ヘルプ ウィンドウに接続する](connect-help-pane.md) を参照してください。 |
 | テクニカル ライターは、以前のコンテンツを Markdown に変換して、Microsoft コンテンツをカスタマイズしやすくするためのガイダンスを必要としています。 | [Markdown への移行](migrate-dynamicsax2012.md#moving-to-markdown) を参照してください。 |
 
@@ -88,7 +88,7 @@ Microsoft は、Microsoft Help リポジトリから HTML ファイルを生成�
 
     状況依存ヘルプの [カスタム ヘルプ ツールキット](custom-help-toolkit.md) の一部である [AzureSearchCustomHelp](walkthrough-help-azure.md) ソリューションを使用する場合、**ヘルプ** ウィンドウは、検索サービスのインデックスに対して実行する必要があるクエリを生成します。 クエリは、ヘルプ トピックの特定のメタデータに依存します。 詳細については、[カスタム ヘルプ トピックのメタデータ要件](preparing-content.md#metadata) を参照してください。
 
-[Azure にカスタム ヘルプを展開](walkthrough-help-azure.md) トピックでは、Azure でコンテンツをホストするためのアプローチについて説明します。 製品内の **ヘルプ** ウィンドウで検索できるように、コンテンツにインデックス付けする検索サービスの設定方法に関する情報が含まれています。 [Azure サブスクリプション](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing) をお持ちでない場合は、始める前にアカウントを作成してください。 12 か月間は無料のアカウントで開始できます。 詳細については、[今すぐ Azure 無料アカウントを作成する](https://azure.microsoft.com/free/) を参照してください。
+[Azure にカスタム ヘルプを展開](walkthrough-help-azure.md)の記事では、Azure でコンテンツをホストするためのアプローチについて説明します。 製品内の **ヘルプ** ウィンドウで検索できるように、コンテンツにインデックス付けする検索サービスの設定方法に関する情報が含まれています。 [Azure サブスクリプション](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing) をお持ちでない場合は、始める前にアカウントを作成してください。 12 か月間は無料のアカウントで開始できます。 詳細については、[今すぐ Azure 無料アカウントを作成する](https://azure.microsoft.com/free/) を参照してください。
 
 ## <a name="see-also"></a>参照
 

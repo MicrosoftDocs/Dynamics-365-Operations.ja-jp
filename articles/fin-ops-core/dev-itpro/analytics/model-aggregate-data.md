@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 994678764aa390d5bd3643eca4919b17fe9ed7b520a398daf1e331119a072ce6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f44afc84d0927d288332c5e67492827875d3dd4c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737891"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906814"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 
@@ -29,7 +29,7 @@ ms.locfileid: "6737891"
 
 ## <a name="prerequisites"></a>前提条件
 
-このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、管理者としてプロビジョニングする必要があります。 詳細については、 [開発環境の配置とアクセス](../dev-tools/access-instances.md) というトピックを参照してください。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、管理者としてプロビジョニングする必要があります。 詳細については、 [開発環境の配置とアクセス](../dev-tools/access-instances.md)という記事を参照してください。
 
 ## <a name="key-concepts"></a>重要な概念
 - **集計の測定** は、以前のバージョンの **分析視点** および **キューブ** と同様に、集計データをモデル化して使用することができます。

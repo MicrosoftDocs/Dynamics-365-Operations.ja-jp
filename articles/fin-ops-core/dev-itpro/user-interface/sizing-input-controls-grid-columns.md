@@ -1,6 +1,6 @@
 ---
 title: 入力コントロールとグリッド列のサイズ
-description: このトピックでは、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。
+description: この記事では、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。
 author: jasongre
 ms.date: 12/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1faede1ba530eb3c2c3ab6d48063e17edc0a815e
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 777aa760c4b29b8c31c175a98886966879b89fbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890764"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845459"
 ---
 # <a name="input-controls-and-grid-column-sizes"></a>入力コントロールとグリッド列のサイズ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。
+この記事では、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。
 
 ## <a name="overview"></a>概要
 

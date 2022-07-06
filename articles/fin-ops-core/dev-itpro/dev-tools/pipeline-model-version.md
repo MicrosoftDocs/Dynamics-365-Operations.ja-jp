@@ -1,6 +1,6 @@
 ---
 title: Azure Pipelines で、X++ モデルのバージョン管理
-description: このトピックでは、Microsoft Azure DevOps でビルドの自動化を実行するときにバージョン X++ のモデルを自動的に作成する方法について説明します。
+description: この記事では、Microsoft Azure DevOps でビルドの自動化を実行するときにバージョン X++ のモデルを自動的に作成する方法について説明します。
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8c513df549e7140df334b0cceb7934b8feff244
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b6beb4a783b5a9f049f9232023d6659e8dc4e6a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781076"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867009"
 ---
 # <a name="x-model-versioning-in-azure-pipelines"></a>Azure Pipelines で、X++ モデルのバージョン管理
 
 ビルドの自動化時に、X++ モデル バージョンを更新して、パイプラインのビルド番号に一致またはリンクするようにすることができます。 これらの更新プログラムを使用すると、ユーザーは実行中の X++ パッケージのバージョンを容易に識別できるようになります。 また、開発者がバージョンを追跡して、ビルド パイプラインやソース コード ファイルのバージョンに戻すこともできます。
 
-このトピックは、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を前提としています。
+この記事は、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を前提としています。
 
 > [!NOTE]
-> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
+> これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントにインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
 
 ## <a name="add-the-task-to-a-pipeline"></a>パイプラインへのタスクの追加
 

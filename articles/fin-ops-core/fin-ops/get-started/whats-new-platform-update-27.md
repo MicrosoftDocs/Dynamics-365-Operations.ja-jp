@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) でプレビューされる機能について説明します。
+description: この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) でプレビューされる機能について説明します。
 author: tonyafehr
 ms.date: 10/30/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-06-30
 ms.dyn365.ops.version: Platform 27
-ms.openlocfilehash: 0e88fbd02edbbb9661b54b3938515056fb018f79ee72e4d98e81a16445df1624
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9a66f6cfce17cb49594f766a91b9908ccecf766
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859963"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-27-june-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5286 です。 プラットフォーム更新プログラム 27 の詳細については [追加リソース](whats-new-platform-update-27.md#additional-resources) を参照してください。
+この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5286 です。 プラットフォーム更新プログラム 27 の詳細については [追加リソース](whats-new-platform-update-27.md#additional-resources) を参照してください。
 
 ## <a name="feature-management"></a>機能管理
 **機能管理** エクスペリエンスは、各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 
@@ -57,14 +57,14 @@ ms.locfileid: "6728975"
 [2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

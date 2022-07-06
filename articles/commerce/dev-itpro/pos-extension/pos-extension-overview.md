@@ -1,6 +1,6 @@
 ---
 title: POS 拡張機能の概要
-description: このトピックでは、新しい独立した POS 拡張モデルおよびシールドされたソフトウェア開発キット (SDK) を使用して販売時点管理 (POS) 拡張機能を作成する方法に関する情報を提供します。
+description: この記事では、新しい独立した POS 拡張モデルおよびシールドされたソフトウェア開発キット (SDK) を使用して販売時点管理 (POS) 拡張機能を作成する方法に関する情報を提供します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: a56af14a8f4705afde130aee4034d72e3ba5dc82
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 29a410fc88b0d5e4d8c220505861ba59872d4348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890341"
 ---
 # <a name="pos-extension-overview"></a>POS 拡張機能の概要
 
@@ -34,14 +34,14 @@ ms.locfileid: "7982982"
 + **カスタム UX と API:** POS を拡張して、新しい機能や仕様をサポートするカスタム ビューおよび API を追加することができます。
 + **カスタム操作の追加:** カスタム操作を追加してカスタム機能を実行することができます。
 
-次のトピックでは、独立した POS 拡張モデルおよびシールド SDK を使用して POS 拡張機能を作成する方法について説明します。
+次の記事では、独立した POS 拡張モデルおよびシールド SDK を使用して POS 拡張機能を作成する方法について説明します。
 
 + [POS 拡張機能の使用を開始する](pos-extension-getting-started.md)
 + [POS 拡張機能パッケージ プロジェクトの作成](create-pos-extension-package.md)
 + [Modern POS 拡張パッケージの .appx ファイルの作成](create-pos-extension-appx.md)
 + [POS 拡張機能のデバッグ](debug-pos-extension.md)
 
-このトピックは、Retail SDK 10.0.18 以降に適用されます。
+この記事は、Retail SDK 10.0.18 以降に適用されます。
 
 ## <a name="supported-apps"></a>対応アプリ
 

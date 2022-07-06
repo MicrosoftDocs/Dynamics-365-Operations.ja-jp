@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) に対する GDPR データ要求
-description: このトピックでは、要求が Microsoft Lifecycle services (LCS) のデータにアクセスする必要がある場合、一般的なデータ保護規制 (GDPR) の下でのデータ要求に準拠するための情報を提供します。
+description: この記事では、要求が Microsoft Lifecycle services (LCS) のデータにアクセスする必要がある場合、一般的なデータ保護規制 (GDPR) の下でのデータ要求に準拠するための情報を提供します。
 author: tfehr
 ms.date: 05/18/2018
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dc36587dbe4724ad5b3cd774aac508ebd647198
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d418e3f35182f1f22d53b50116b634b78b697d1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783212"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866718"
 ---
 # <a name="gdpr-data-requests-for-lifecycle-services-lcs"></a>Lifecycle Services (LCS) に対する GDPR データ要求
 
 [!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>概要 
-このトピックでは、要求が Microsoft Lifecycle services (LCS) のデータにアクセスする必要がある場合、一般的なデータ保護規制 (GDPR) の下でのデータ要求に準拠するための情報を提供します。 この規制、および Microsoft がその遵守を支援するために提供するリソースについての一般情報については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。
+この記事では、要求が Microsoft Lifecycle services (LCS) のデータにアクセスする必要がある場合、一般的なデータ保護規制 (GDPR) の下でのデータ要求に準拠するための情報を提供します。 この規制、および Microsoft がその遵守を支援するために提供するリソースについての一般情報については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。
 
 ## <a name="user-management"></a>ユーザー管理 
 

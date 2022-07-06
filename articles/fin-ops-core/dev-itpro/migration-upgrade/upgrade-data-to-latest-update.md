@@ -1,6 +1,6 @@
 ---
 title: 開発環境またはデモ環境でデータをアップグレードする
-description: このトピックでは、Finance and Operations アプリケーション リリースのアップグレードについて説明します。
+description: この記事では、財務と運用アプリケーション リリースをアップグレードする方法について説明します。
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -12,28 +12,28 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: bce9bec9c7b33f19896c4e63fb8625f61e2cd0c9
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 381f533f091c5cdfced92c209c508f6cb3dad057
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890391"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> ここで説明されているプロセスは、Finance and Operations アプリの古いバージョンと最新バージョン間のデータ更新では非推奨となりました。 Dynamic AX 2012 アップグレードの詳細については、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md)を参照してください。
+> ここで説明されているプロセスは、財務と運用アプリの古いバージョンと最新バージョン間のデータ更新では非推奨となりました。 Dynamic AX 2012 のアップグレードの詳細については、[AX 2012 から財務と運用へアップグレードする](upgrade-overview-2012.md)を参照してください。
 
-このトピックでは、古いデータベースを最新の Finance and Operations のアプリケーション リリースにアップグレードする方法について説明します。
+この記事では、古いデータベースを最新の財務と運用アプリケーション リリースにアップグレードする方法について説明します。
 
-トピックでは、レベル 1 環境の Finance and Operations データベースを最新の更新プログラムにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 
+記事では、レベル 1 環境の財務と運用データベースを最新の更新プログラムにアップグレードするプロセスについて説明します。 レベル 1 環境は、開発、1 ボックス、またはデモ環境とも呼ばれます。 
 
 運用環境を含むレベル 2 以上の環境では、[最新バージョンへのセルフサービス アップグレード](self-service-upgrade.md) で説明されているセルフ サービスのアップグレード手順を実行します。
 
 > [!IMPORTANT]
-> - Finance and Operations の **プラットフォーム** を最新版に更新している場合、データベースをアップグレードする必要は **ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 このトピックは、Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) から Finance and Operations 8.0 へのアップグレードなど、Finance and Operations アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
+> - Finance and Operations の最新の **プラットフォーム** を更新している場合、データベースをアップグレードする必要は **ありません**。 プラットフォーム更新プログラムには、下位互換性のあります。 この記事は、Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) から 財務と運用 8.0 へのアップグレードなど、財務と運用アプリケーションのリリース間でのアップグレードのプロセスに対してのみ適用されます。
 > - このプロセスは、Microsoft Azure BLOB ストレージに保存されているドキュメント添付ファイルのアップグレードには適用されません。
 > - アップグレードされたすべてのカスタム コードは、データ アップグレード プロセスを実行する前に環境に適用する必要があります。
 > - バージョン 8.0 以降を使用している場合、アプリケーションのバージョンの間でデータのアップグレードは行われなくなりました。
@@ -85,7 +85,7 @@ ms.locfileid: "7778145"
 2. アップグレード対象の最新の更新プログラムが既に実行されているデモ環境または開発環境に、ソース データベース (アップグレードするデータベース) のバックアップをインポートまたは復元します。 既存のデータベースをそのままにして、新しいデータベースに **imported\_new** という名前を付けます。
 
     > [!NOTE]
-    > 以前のリリースで実行されている実稼働データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。   
+    > 以前のリリースで実行されている運用データベースのデータのアップグレードを検査する場合: 運用環境からデモまたは開発環境にデータベースをコピーするには [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。   
     > 
     > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](/azure/storage/common/storage-use-azcopy-v10) を参照してください。
 
@@ -103,7 +103,7 @@ ms.locfileid: "7778145"
 > [!NOTE]
 > 開発環境上のデータベースをアップグレードする場合は、代わりに **管理 > 適用更新** サービス機能を使用して、LCS 環境ページから直接データ アップグレード パッケージを実行できます。 これは、ユーザーが開発用 VM のローカル管理者である必要はありません。 これは LCS の[2 月](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/)リリースから利用可能です。 
 >
-> これにより、Finance and Operations のデータベース、チャネル データベースが更新され、財務諸表データベースがリセットされます。
+> これにより、財務と運用のデータベース、チャネルのデータベースが更新され、財務報告データベースがリセットされます。
 
 ## <a name="re-enable-sql-change-tracking"></a>SQL 変更履歴の再有効化
 
@@ -262,7 +262,7 @@ exec PatchRelationType  'CAMDataImportedDimensionMember'
 
 > InventDistinctProduct 索引を作成できません。製品列に重複キーが存在します。
 
-この問題は、将来のリリースで解決される既知の問題です。 この問題を回避するには、InventDistinctProduct テーブルのすべてのレコードを削除してから、現在のステップから Runbook を再開します。 InventDistinctProduct テーブル内のレコードは破棄できます。 それらは Finance and Operations が初めて開始されたとき、項目が登録されたとき、MRP が実行されたときに再生成されます。 InventDistinctProduct のすべてのレコードを削除するには、Management Studio から現在のデータベースに対して次のクエリを実行します。
+この問題は、将来のリリースで解決される既知の問題です。 この問題を回避するには、InventDistinctProduct テーブルのすべてのレコードを削除してから、現在のステップから Runbook を再開します。 InventDistinctProduct テーブル内のレコードは破棄できます。 Finance and Operations が初めて開始されたとき、項目が登録されたとき、MRP が実行されたときに再生成されます。 InventDistinctProduct のすべてのレコードを削除するには、Management Studio から現在のデータベースに対して次のクエリを実行します。
 
 ```sql
 truncate table InventDistinctProduct
@@ -399,7 +399,7 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Finance and Operationsで最新の更新プログラムに移行するためのプロセス](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+[最新の Finance and Operations 更新プログラムへの移行の処理](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: 保存されたビューを十分に活用するフォームの作成
-description: このトピックでは、保存されたビューの技術的な側面について説明します。また、保存されたビューを使用したフォームがうまく機能するよう、フォーム開発に関する考察を記載します。
+description: この記事では、保存されたビューの技術的な側面について説明します。また、保存されたビューを使用したフォームがうまく機能するよう、フォーム開発に関する考察を記載します。
 author: jasongre
 ms.date: 02/08/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: b3aa8e43499aca1ae2896c5319285f1247aecfb7
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 74422b35d3375bec28ba58752a42dab080a5cdb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462313"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902601"
 ---
 # <a name="build-forms-that-fully-utilize-saved-views"></a>保存されたビューを十分に活用するフォームの作成
 
 [!include [banner](../includes/banner.md)]
 
-保存されたビューは、財務と運用アプリケーションにおけるパーソナライズ機能の中でも重要な拡張機能です。 [保存されたビュー](../../fin-ops/get-started/saved-views.md) のトピックでは、この機能の総合的な詳細情報を提供します。ここでは、保存されているビューの技術的な要素のみでなく、ビューの影響を受ける可能性のあるフォーム開発の側面も対象とします。 
+保存されたビューは、財務と運用アプリケーションにおけるパーソナライズ機能の中でも重要な拡張機能です。 [保存されたビュー](../../fin-ops/get-started/saved-views.md)の記事では、この機能の総合的な詳細情報を提供します。ここでは、保存されているビューの技術的な要素のみでなく、ビューの影響を受ける可能性のあるフォーム開発の側面も対象とします。 
 
 ## <a name="user-perceived-pages"></a>「ユーザー視点」のページ
 従来、パーソナライゼーションには、1セットにつきモデル化されたフォームに対する 1:1 のリンクが含まれています。 多くのページでは、これはユーザーにとって理にかなっています。ユーザーが知覚するページとフォームをモデル化した方法とが合致するためです。 ただし、場合によっては 1:1のリンクとモデル化されたフォームが、パーソナライゼーションに対して直感的ではなく、わかりにくい場合があります。これはユーザーがモデル化されたフォーム間の境界に対して注意を払っていないためです。 

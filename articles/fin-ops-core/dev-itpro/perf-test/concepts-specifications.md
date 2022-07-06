@@ -1,6 +1,6 @@
 ---
 title: 詳細のクラス
-description: このトピックでは、詳細のクラスに関する情報を提供します。
+description: この記事では、詳細のクラスに関する情報を提供します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 80283214db89ef885f28cd531a2d2a8e1092ec60
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 61e0b30cb7a3b1f9f94deecbd99b3d41daee711a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862116"
 ---
 # <a name="specification-classes"></a>詳細のクラス
 

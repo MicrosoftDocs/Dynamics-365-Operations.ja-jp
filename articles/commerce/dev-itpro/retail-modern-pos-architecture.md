@@ -1,6 +1,6 @@
 ---
 title: Modern POS (MPOS) アーキテクチャ
-description: このトピックでは、POS トポロジについて説明します。
+description: この記事では、POS トポロジについて説明します。
 author: RobinARH
 ms.date: 06/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2fd0068543eaf5e0f256b4810a4367af5fbc56af
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f36db2efbb1a61ab789be78e6ffa17a9f853fd76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902781"
 ---
 # <a name="modern-pos-mpos-architecture"></a>Modern POS (MPOS) アーキテクチャ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、POS トポロジについて説明します。
+この記事では、POS トポロジについて説明します。
 
 ## <a name="modern-pos-topology"></a>Modern POS トポロジ
 

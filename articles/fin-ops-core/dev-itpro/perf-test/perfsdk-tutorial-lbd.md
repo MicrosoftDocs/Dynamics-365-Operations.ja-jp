@@ -1,6 +1,6 @@
 ---
-title: オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
-description: このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
+title: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
+description: この記事では、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
 author: hasaid
 ms.date: 03/22/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 767ba3e95aba22dc392e21fdce35b9a204a17fdd
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 0759319d02e89239b340ce42465b0c164df7db30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087642"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864528"
 ---
-# <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
+# <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
+この記事では、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
 
   > [!IMPORTANT]
   > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。 将来的には、代替ソリューションに向けた推奨案の提案に取り組んでいきます。  
@@ -165,7 +165,7 @@ ms.locfileid: "8087642"
 ### <a name="prepare-the-on-premises-environment"></a>オンプレミス環境の準備
 オンプレミス配置の各アプリケーション オブジェクト サーバー (AOS) VM で以下の手順に従います。
 
-1. このトピックの [開発環境の準備](#prepare-the-development-environment)セクションで作成した **authcert.cer** ファイルを AOS VM にコピーします。
+1. この記事の [開発環境の準備](#prepare-the-development-environment) セクションで作成した **authcert.cer** ファイルを AOS VM にコピーします。
 2. **authcert.cer** 証明書ファイルをインストールします。 証明書をインストールするときは、**ローカル コンピューター** を必ず選択します。 証明書を **信頼済ルート証明機関** ストアに置くようにしてください。
 3. **wif.config** ファイルをテキスト エディタで開きます。 ファイルのパスは、**C:\\ProgramData\\SF\\AOS1\\Fabric\\work\\Applications\\AXSFType\_App19\\AXSF.Code.1.0.20180717001108** のようになります。
 
@@ -228,7 +228,7 @@ ms.locfileid: "8087642"
 
 ### <a name="create-a-multiuser-test-from-a-single-user-test"></a>シングル ユーザー テストからマルチ ユーザー テストを作成する
 
-このトピックの前半の情報を使用してシングルユーザー テストを作成した後は、マルチユーザー テストに変換することができます。 テスト スクリプトに **MS.Dynamics.TestTools.UIHelpers.Core;** を追加して、**TestSetup** メソッドで次の行を見つけます。
+この記事の前半の情報を使用してシングルユーザー テストを作成した後は、マルチユーザー テストに変換することができます。 テスト スクリプトに **MS.Dynamics.TestTools.UIHelpers.Core;** を追加して、**TestSetup** メソッドで次の行を見つけます。
 
 ```csharp
 Client = DispatchedClient.DefaultInstance;
@@ -369,7 +369,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
 
-    スクリプトの実行後に、拇印が Windows PowerShell コンソールに表示されない場合は、証明書を見つけることはできません。 問題を解決するには、このトピックで以前に作成した .cer ファイルをコピーして、AOS マシンにインストールします。
+    スクリプトの実行後に、拇印が Windows PowerShell コンソールに表示されない場合は、証明書を見つけることはできません。 問題を解決するには、この記事で以前に作成した .cer ファイルをコピーして、AOS マシンにインストールします。
 
 - 負荷テストを実行するときにこの問題が発生した場合、セットアップ スクリプトが .pfx ファイルを正しくインストールしていない可能性があります。 CloudCtuFakeACSInstall.cmd ファイルに指定されているパスワードが証明書が作成されたときに設定されたパスワードと一致していることを確認します。
 
@@ -435,7 +435,7 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 この問題は、AOS エンドポイントが作成した証明書の拇印を検証できない場合に発生します。 3 つの原因が考えられます。
 
 - CloudEnvironment.Config ファイルで、**IsAdfs** キーの値が指定されていないか、または **False** に設定されています。 **IsAdfs** キーの値が **True** に設定されていることを確認してください。
-- 証明書が AOS マシンにインストールされていません。 問題を解決するには、このトピックで以前に作成した .cer ファイルを AOS マシンにコピーして、証明書をインストールします。
+- 証明書が AOS マシンにインストールされていません。 問題を解決するには、この記事で以前に作成した .cer ファイルを AOS マシンにコピーして、証明書をインストールします。
 - 証明書のサムプリントは、AOS マシンの wif.config ファイルに追加されませんでした。 問題を解決するには、wif.config ファイルに証明書を追加する方法について、[パフォーマンス SDK を使用してシングル ユーザー テストを実行する](#run-a-single-user-test-by-using-the-performance-sdk) の手順 8 を参照してください。 wif.config ファイルを変更した後は、Service Fabric Explorer のエクスプローラー使用してアプリケーションを再起動することを確認します。
 
 ### <a name="msdynamicstestteamfoundationwebclientinteractionservicedllconfig-is-missing-from-the-deployment-items"></a>MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config が配置項目から不足しています

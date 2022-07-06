@@ -1,6 +1,6 @@
 ---
 title: ライブ同期に関する二重書き込みの制限
-description: このトピックでは、二重書き込みを使用して財務と運用アプリと Microsoft Dataverse にデータを書き込む際の制限について説明します。
+description: この記事では、二重書き込みを使用して財務と運用アプリおよび Microsoft Dataverse にデータを書き込む際の制限について説明します。
 author: nhelgren
 ms.date: 08/31/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1a4b79b93daf21151748bf2e04f1ab3490f3c0e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8cbda65d1d155da7ad19fd684e5f42e6a87e40e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898931"
 ---
 # <a name="dual-write-limits-for-live-synchronization"></a>ライブ同期に関する二重書き込みの制限
 
@@ -116,7 +116,7 @@ while (/* loop condition */)
 | 措置 | 制限 |
 |---|---|
 | トランザクションの数 | テナントごとに 1 日あたり実行できるトランザクションの合計数は、クライアント アプリケーションがサーバー リソースに対して特別な要求を行う場合に検出するように設計されたサービス保護 API の制限によって管理されます。 詳細については、[サービス保護 API の制限](/powerapps/developer/data-platform/api-limits)を参照してください。 |
-| 1 つのトランザクションあたりのレコード数 | <p>1,000 レコード</p><p>1 つのトランザクションのレコードが 1,000 件を超える場合、そのトランザクションを複数のトランザクションに分割することを検討してください。 詳細については、このトピックの [1,000 レコードを超えるトランザクション ](#transactions-with-more-than-1000-records)を参照してください。</p> |
+| 1 つのトランザクションあたりのレコード数 | <p>1,000 レコード</p><p>1 つのトランザクションのレコードが 1,000 件を超える場合、そのトランザクションを複数のトランザクションに分割することを検討してください。 詳細については、この記事の [1,000 レコードを超えるトランザクション ](#transactions-with-more-than-1000-records) を参照してください。</p> |
 | トランザクションの制限時間 | 2 分 |
 
 ### <a name="from-dataverse-to-finance-and-operations-apps"></a>Dataverse から財務と運用アプリへ
@@ -126,7 +126,7 @@ Dataverse から財務と運用アプリにデータを書き込む場合、次�
 | 措置 | 制限 |
 |---|---|
 | トランザクションの数 | トランザクションの数は、リソースの過剰使用率を回避してシステムの応答性を維持するために設計された優先順位に基づく調整の制限の影響を受けることがあります。 詳細については、[優先順位に基づく調整](../priority-based-throttling.md)を参照してください。 |
-| 1 つのトランザクションあたりのレコード数 | <p>Dataverse のペイロード サイズの制限により、転送可能なレコードの数は制限されます。 トランザクションごとの制限は 116.85 メガバイト (MB) です。 詳細については、[エラー: コンテキストをサンドボックスに送信するときにメッセージ サイズが超過しました](/powerapps/developer/data-platform/troubleshoot-plug-in#error-message-size-exceeded-when-sending-context-to-sandbox)を参照してください。 この制限の使用は、エンティティの複雑さ、使用される列の種類、およびマップされたフィールドなどの複数の要素によって異なります。 したがって、制限を単純なレコード数として表すことはできません。</p><p>制限を超過した場合、Dataverse はトランザクション (*メッセージ* と呼ばれる) を拒否し、次のエラー コードが使用されます。</p><p>*エラー コード: -2147220970 エラー メッセージ: コンテキストをサンドボックスに送信するときにメッセージ サイズが超過しました。メッセージ サイズ: ### MB*</p><p>1 つのトランザクションのレコード サイズが 116.65 MB を超える場合、トランザクションを複数のトランザクションに分割することを検討してください。 詳細については、このトピックの [1,000 レコードを超えるトランザクション ](#transactions-with-more-than-1000-records)を参照してください。</p> |
+| 1 つのトランザクションあたりのレコード数 | <p>Dataverse のペイロード サイズの制限により、転送可能なレコードの数は制限されます。 トランザクションごとの制限は 116.85 メガバイト (MB) です。 詳細については、[エラー: コンテキストをサンドボックスに送信するときにメッセージ サイズが超過しました](/powerapps/developer/data-platform/troubleshoot-plug-in#error-message-size-exceeded-when-sending-context-to-sandbox)を参照してください。 この制限の使用は、エンティティの複雑さ、使用される列の種類、およびマップされたフィールドなどの複数の要素によって異なります。 したがって、制限を単純なレコード数として表すことはできません。</p><p>制限を超過した場合、Dataverse はトランザクション (*メッセージ* と呼ばれる) を拒否し、次のエラー コードが使用されます。</p><p>*エラー コード: -2147220970 エラー メッセージ: コンテキストをサンドボックスに送信するときにメッセージ サイズが超過しました。メッセージ サイズ: ### MB*</p><p>1 つのトランザクションのレコード サイズが 116.65 MB を超える場合、トランザクションを複数のトランザクションに分割することを検討してください。 詳細については、この記事の [1,000 レコードを超えるトランザクション ](#transactions-with-more-than-1000-records) を参照してください。</p> |
 | トランザクションのタイムアウト | 2 分 |
 
 ## <a name="transactions-with-more-than-1000-records"></a>1,000 レコードを超えるトランザクション

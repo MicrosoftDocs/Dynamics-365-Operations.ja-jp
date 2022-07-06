@@ -1,21 +1,21 @@
 ---
 title: 二重書き込みの新機能および変更された機能
-description: このトピックでは、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
+description: この記事では、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
 author: RamaKrishnamoorthy
 ms.date: 05/05/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: ramasri
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f80f02305e6fca10c80b69e1b4d7601d58508808
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 7dae574b93545f62a35bc26b03fc2d7179c0fa66
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906552"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 

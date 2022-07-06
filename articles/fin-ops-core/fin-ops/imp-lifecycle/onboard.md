@@ -1,6 +1,6 @@
 ---
 title: 実装プロジェクトの研修
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
 ms.date: 02/09/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5e3c09b33e98ed2c0bae26074b6778f7fe1d49a4
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: d9d5a929e2e1923195f9eae753ee0571b4f4f5e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105451"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890011"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Finance and Operations プロジェクトをオンボードする方法を説明します。
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用して、財務と運用プロジェクトをオンボードする方法を説明します。
 
 ## <a name="microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
@@ -38,7 +38,7 @@ ms.locfileid: "8105451"
 4. 問題のサブスクリプションが有効と表示されている場合は、LCS にサインインして実装のプロジェクト作成フローをトリガーすることにより、次のステップに進むことができます。
 5. 別のプライベートブラウザータブを開き、[Lifecycle Services](https://lcs.dynamics.com)に移動します。 現在のテナント管理者の資格情報を使用してアクセスするには、**ログイン** を選択します。
    > [!NOTE]
-   > 政府のコミュニティ クラウド (GCC) と他のローカル クラウド配置オプションでは、接続エンドポイントが異なる場合があります。 詳細については、 [Dynamics 365 Finance と Dynamics 365 Supply Chain Management の主権クラウドとローカル クラウド展開オプション](../../dev-itpro//deployment/deployment-options-geo.md) を参照してください。
+   > 政府のコミュニティ クラウド (GCC) と他のローカル クラウド配置オプションでは、接続エンドポイントが異なる場合があります。 詳細については、[Dynamics 365 Finance および Dynamics 365 Supply Chain Management の主権クラウドとローカル クラウド展開オプション](../../dev-itpro//deployment/deployment-options-geo.md)を参照してください。
 7. 実装プロジェクトのプロビジョニングを完了するために、他の表示されたメッセージを承認して確認します。
 8. テナント管理者には、プロビジョニングされた実装プロジェクトのプロジェクト所有者セキュリティ ロールが割り当てられます。  
    > [!NOTE]
@@ -71,9 +71,9 @@ LCS プロジェクト オンボードの詳細については、[LCS プロジ�
 
 LCS 実装プロジェクトに顧客やパートナー チームから主要なプロジェクト メンバー (プロジェクト マネージャーなど) を追加することをお勧めします。 各人の勤務先電子メールを必ず含めるようにしてください。 この方法で、お客様と協力して、プロジェクトのメンバーが弊社からの重要な連絡を見逃さないよう保証できます。
 
-LCSプロジェクトのマイルストーン日付は、必ず最新の状態に保つようにしてください。 このように、さまざまなプロジェクトステージでお客様と連絡をとれます。 お客様が Go-live 日 により近づいたとき、マイクロソフトは、実稼働環境を配置する前に、プロジェクトの Go-live 評価のためにお客様と連絡を取ります。
+LCSプロジェクトのマイルストーン日付は、必ず最新の状態に保つようにしてください。 このように、さまざまなプロジェクトステージでお客様と連絡をとれます。 お客様が Go-live 日 により近づいたとき、マイクロソフトは、運用環境を配置する前に、プロジェクトの Go-live 評価のためにお客様と連絡を取ります。
 
-マイルストーンの日付は、LCS 実装方法に格納されます。 詳細については、「顧客向け LCS」トピックの [方法](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) セクションを参照してください。
+マイルストーンの日付は、LCS 実装方法に格納されます。 詳細については、「顧客向け LCS」記事の[方法](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies)セクションを参照してください。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

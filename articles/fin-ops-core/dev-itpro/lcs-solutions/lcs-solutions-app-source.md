@@ -1,6 +1,6 @@
 ---
 title: AppSource でアプリを公開するための要件
-description: このトピックでは、Finance and Operations アプリ向けのソリューションの作成要件を理解するのに役立つリソースを紹介します。
+description: この記事では、財務と運用アプリ向けのソリューションの作成要件を理解するのに役立つリソースを紹介します。
 author: kfend
 ms.date: 07/31/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.custom: 197023
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 12efb314c8a6c0b92bbaa566c579a27dc95bc118
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 27e183104fb8a66650ca985a1b205b8b9e20108a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404049"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866522"
 ---
 # <a name="requirements-for-publishing-apps-on-appsource"></a>AppSource でアプリを公開するための要件
 
@@ -25,7 +25,7 @@ ms.locfileid: "7404049"
 
 Microsoft AppSource の Lifecycle Services (LCS) ソリューション パッケージは、業界および垂直方向の固有のコンテンツを使用してエンド ツー エンド ソリューションを提供するために Microsoft Azure で自動的に展開でき、パートナーによって設計および開発されるソリューションです。
 
-このトピックでは、Microsoft AppSource 向けの LCS ソリューションの作成要件を理解するのに役立つリソースを紹介します。 LCS ソリューション パッケージを作成するための要件は、次のグループに分類されます。
+この記事では、Microsoft AppSource 向けの LCS ソリューションの作成要件を理解するのに役立つリソースを紹介します。 LCS ソリューション パッケージを作成するための要件は、次のグループに分類されます。
 
 -   [アプリ検証](app-validation-lcs-solutions.md)
 -   [コードの移行](code-migration-lcs-solutions.md)

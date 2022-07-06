@@ -1,6 +1,6 @@
 ---
-title: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
-description: このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
+title: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
+description: この記事では、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fc79c17512500f8955831b6b191ca284248cfc6a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 23a65b68bc52d43e8eabdc51261e22a294eb88f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867456"
 ---
-# <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
+# <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
+この記事では、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 
 > [!IMPORTANT]
 > 現在、セルフサービス パッケージがオンプレミス環境に正しく適用されないという既知の問題があります。 そのため、インストーラーを Microsoft Dynamics Lifecycle Services (LCS) から直接プルし、必要に応じて使用することをお勧めします。 これにより、Commerce 本部はインストーラーのダウンロードに使用されなくなり、必要に応じて構成ファイルだけがダウンロードされます。

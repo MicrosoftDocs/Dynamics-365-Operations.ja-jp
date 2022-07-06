@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations で最新の更新プログラムに移行するためのプロセス
-description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
+title: 最新の Finance and Operations 更新プログラムへの移行の処理
+description: この記事では、財務と運用の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a9aad95f3f4e54decff0a1fcf00ce9bdba888117
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 3ac3aa91278e16342ff44b350009454c1d5db077
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778535"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890373"
 ---
-# <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>Finance and Operations で最新の更新プログラムに移行するためのプロセス
+# <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>最新の Finance and Operations 更新プログラムへの移行の処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations の最新のリリースに更新またはアップグレードするプロセスについて説明します。 プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。
+この記事では、財務と運用の最新のリリースに更新またはアップグレードするプロセスについて説明します。 プロセス全体とサポートされるシナリオを説明しますが、プロセスの各ステップに関する詳細な指示は提示しません。
 
-Finance and Operations の各リリースの内容の詳細については、[Finance and Operations ホーム ページの新機能と変更点](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
+Finance and Operations の各リリースの内容については、[新機能と変更点](../../fin-ops/get-started/whats-new-changed.md)を参照してください。
 
 1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md) を参照してください。
 
 > [!Note]
-> Microsoft Dynamics AX 2012 から Finance and Operations へのアップグレードを検討している方は、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md) を参照してください。
+> Microsoft Dynamics AX 2012 から Finance and Operations へのアップグレードを検討している方は、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md) をご覧ください。
 
 ## <a name="definitions"></a>定義
 
-- **アップグレード** – バージョン 8.0 より前のソース環境では、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 例としては、7.1 から 7.3 または 7.3 から 10.0.1 への移行があります。 プロセスには、無料サンド ボックス環境、コード アップグレード、およびデータ アップグレードの設定が含まれます。
-- **更新** – バージョン 8.0 以降のソース環境で、バイナリ パッケージを環境に適用し、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 このプロセスには、低いダウンタイム要件があり、データ アップグレードは含まれません。 詳細については、このトピックの後半の [再構築と更新](upgrade-latest-update.md#rebuild-and-update) セクションを参照してください。
+- **アップグレード**: バージョン 8.0 より前のソース環境では、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 例としては、7.1 から 7.3 または 7.3 から 10.0.1 への移行があります。 プロセスには、無料サンド ボックス環境、コード アップグレード、およびデータ アップグレードの設定が含まれます。
+- **更新**: バージョン 8.0 以降のソース環境で、バイナリ パッケージを環境に適用し、Finance and Operations のある公式リリースから次のリリースに移行するプロセス。 このプロセスには、低いダウンタイム要件があり、データ アップグレードは含まれません。 詳細については、この記事の後半の[再構築と更新](upgrade-latest-update.md#rebuild-and-update)セクションを参照してください。
 
 ## <a name="paths-to-one-version"></a>1 つのバージョンへのパス
 <img src="../migration-upgrade/media/OneVersion_Paths.png" width="600px" alt="Paths to One Version" />
@@ -46,7 +46,7 @@ Finance and Operations の最新バージョンを導入するには 3 つの基
 ### <a name="self-service-upgrade"></a>セルフサービス アップグレード
 *適用可能な開始バージョン: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW)、7.1 (1611)、7.2 (2017 年 7 月)、7.3。*<br/>
 *スコープ: 複雑*<br/>
-このパスには拡張機能へのコード リファクタリング、そして DevTest、サンドボックス、そして最終的には実稼働環境でのデータ アップグレードが含まれます。 
+このパスには拡張機能へのコード リファクタリング、そして DevTest、サンドボックス、そして最終的には運用環境でのデータ アップグレードが含まれます。 
 
 > [!NOTE]
 > このプロセスは非推奨となりました。

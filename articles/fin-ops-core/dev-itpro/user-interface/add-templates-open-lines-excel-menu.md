@@ -1,6 +1,6 @@
 ---
 title: '[Excel で明細行を開く] メニューへのテンプレートの追加'
-description: このトピックでは、仕訳帳のページで利用できる [Excel] メニューの [Open] 行にテンプレートを表示させる方法について説明します。
+description: この記事では、仕訳帳のページで利用できる Excel メニューの Open 行にテンプレートを表示させる方法について説明します。
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c45d848f70b07c8822b70ce55a577cf744a97c04
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2f2f2954bc3d3a104f5176a1bed1ed1f0abb52b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783004"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884435"
 ---
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕訳帳のページで利用できる [Excel] メニューの [Open] 行にテンプレートを表示させる方法について説明します。
+この記事では、仕訳帳のページで利用できる Excel メニューの Open 行にテンプレートを表示させる方法について説明します。
 
 頻繁に使用される一部のテンプレートは、仕訳帳テンプレートです。 これらの仕訳帳テンプレートの一部はプロモーションされたため、**Excel で明細行を開く** メニューに既定で表示されます。 ただし、システムに新しいテンプレートを追加する場合は、**Office で開く** メニューと **Excel で行を開く** メニューの両方で利用できるようにします。 新しいテンプレートを利用できるようにするには、次の手順に従います。
 

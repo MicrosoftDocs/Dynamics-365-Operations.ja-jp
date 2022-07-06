@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリ (2021 年 11 月) のバージョン 10.0.22 のプラットフォーム更新プログラム
-description: このトピックでは、Finance and Operations アプリ バージョン 10.0.22 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
+title: 財務と運用アプリのバージョン 10.0.22 のプラットフォーム更新プログラム (2021 年 11 月)
+description: この記事では、財務と運用アプリのバージョン 10.0.22 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 12/01/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: fc5bb858a952cace54c9753448e5a9725c7a9b55
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: f6dc1a3422f1b0ec7627750735b3cfeb1840e9b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883834"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866632"
 ---
-# <a name="platform-updates-for-version-10022-of-finance-and-operations-apps-november-2021"></a>Finance and Operations アプリ (2021 年 11 月) のバージョン 10.0.22 のプラットフォーム更新プログラム
+# <a name="platform-updates-for-version-10022-of-finance-and-operations-apps-november-2021"></a>財務と運用アプリのバージョン 10.0.22 のプラットフォーム更新プログラム (2021 年 11 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリ バージョン 10.0.22 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6164 で、次のスケジュールで使用できます。
+この記事では、財務と運用アプリのバージョン 10.0.22 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6164 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 9 月
 - **リリースの一般提供 (手動更新):** 2021 年 10 月
@@ -36,7 +36,7 @@ ms.locfileid: "7883834"
 | クライアント機能 | [新しいカラー ピッカー コントロール](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-color-picker-control) | 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | クライアント機能 | <p>**階層ビューアー コントロールへの視覚的な更新**</p><p>特に 400% ズーム シナリオでは、アクセシビリティを向上させるために HierarchyViewer コントロールに変更が加えられました。 これらの変更には、すべてのズーム レベルでのコントロールの可読性を高めるために、コントロールを再スタイルして Fluent デザイン言語で合わせることが含まれます。 | [HierarchyViewer コントロール](../user-interface/hierarchy-viewer-control.md) | 既定 |
 | バッチ処理 | <p>**バッチ OData API**</p><p>バッチ機能により、バッチ ジョブを再キューするために使用できる Open Data Protocol (OData) アプリケーション プログラミング インターフェイス (API) が公開されるようになりました。 顧客は、OData エンドポイントを使用して、ターミナル状態にあるバッチ ジョブを再キューできます。 この機能は、Microsoft Power Automate、カスタム API その他を使用することで任意の自動化と統合できます。 | [バッチ OData API](../sysadmin/batch-odata-api.md) | 既定 |
-| Microsoft Power Platform 統合 | <p>Microsoft Power Platform 統合で新しいシナリオが有効になります。 次にいくつか例を挙げます。</p><ul><li>統合の設定</li><li>二重書き込みおよび仮想エンティティの自動設定</li><li>合理化されたユーザー設定</li><li>Finance and Operations アプリ ビジネス イベントおよび Microsoft Dataverse のデータ イベント</li><li>改善された開発ツール</li><li>強化されたアドイン エクスペリエンス</li></ul> | [Power Platform 収束性により有効化された新しいシナリオ](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence) | 既定 |
+| Microsoft Power Platform 統合 | <p>Microsoft Power Platform 統合で新しいシナリオが有効になります。 次にいくつか例を挙げます。</p><ul><li>統合の設定</li><li>二重書き込みおよび仮想エンティティの自動設定</li><li>合理化されたユーザー設定</li><li>Microsoft Dataverse における財務と運用アプリのビジネス イベントとデータ イベント</li><li>改善された開発ツール</li><li>強化されたアドイン エクスペリエンス</li></ul> | [Power Platform 収束性により有効化された新しいシナリオ](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence) | 既定 |
 | Power BI |  Power BI embedded および Power BI.com 統合は、10.0.22 リリースの一部としてアップグレードされ、最新の Power BI Desktop リリースと互換性があります。 この変更により、ユーザーはワークスペース レポートの編集時に Power BI Desktop の最新バージョンを使用できるようになりました。 これはインフラストラクチャの変更であり、環境がリリース 10.0.22 にアップグレードされると自動的に行われます。    | [PowerBI.com 統合の構成](../analytics/configure-power-bi-integration.md)<br><br>[Power BI Desktop を使用した分析レポートの作成](../analytics/author-distribute-power-bi-reports.md) | 既定 |
 
 
@@ -54,11 +54,11 @@ ms.locfileid: "7883834"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。

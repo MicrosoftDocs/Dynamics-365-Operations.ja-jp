@@ -1,6 +1,6 @@
 ---
 title: Regression Suite Automation Tool ベスト プラクティス
-description: このトピックでは、Regression Suite Automation Tool (RSAT)/タスクレコーダーを使用して、クライアントの機能を記録する方法について説明します。
+description: この記事では、Regression Suite Automation Tool (RSAT)/タスク レコーダーを使用して、クライアントの機能を記録する方法について説明します。
 author: FrankDahl
 ms.date: 08/01/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b3b9e31acbd616b732266693a05f278582d1ad8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7eb67d47c86733179ee16fdee3054ab865a8e70c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866134"
 ---
 # <a name="regression-suite-automation-tool-best-practices"></a>Regression Suite Automation Tool ベスト プラクティス
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Regression Suite Automation Tool (RSAT) およびタスク レコーダーのベスト プラクティスと一般的な使用例について説明します。
+この記事では、Regression Suite Automation Tool (RSAT) およびタスク レコーダーのベスト プラクティスと一般的な使用例について説明します。
 
 ## <a name="author-test-cases-using-the-task-recorder"></a>タスク レコーダーを使用したテスト ケースの作成
 

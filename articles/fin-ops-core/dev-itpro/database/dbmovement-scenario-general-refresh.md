@@ -1,6 +1,6 @@
 ---
 title: トレーニング用の更新
-description: このトピックでは、Microsoft Dynamics 365 Finance の汎用データベースの更新シナリオについて説明します。
+description: この記事では、Microsoft Dynamics 365 Finance の汎用データベースの更新シナリオについて説明します。
 author: LaneSwenka
 ms.date: 01/28/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 0d91746971852d76d42900a3f3cb5b34784c987672b16e622988408896e24eec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c53f036905547abf1a96760d28370dc969b4d5f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762414"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867536"
 ---
 # <a name="refresh-for-training-purposes"></a>トレーニング用の更新
 
@@ -37,7 +37,7 @@ ms.locfileid: "6762414"
 
 ## <a name="prerequisites"></a>必要条件
 
-データベース更新操作を行うには、実稼働環境を配置する必要があります。または標準的な UAT 環境を 2 つ以上持つ必要があります。
+データベース更新操作を行うには、運用環境を配置する必要があります。または標準的な UAT 環境を 2 つ以上持つ必要があります。
 
 ## <a name="notify-users-about-the-pending-downtime"></a>保留中のダウンタイムについてユーザーに通知します。
 
@@ -126,7 +126,7 @@ public class Program
 * **システム管理**\>**設定**\>**電子メール**\>**パラメータを電子メールで送信:** UAT 環境内で電子メールを使用する場合は、簡易メール転送プロトコル (SMTP) の設定を入力します。
 * **システム管理**\>**照会**\>**バッチ ジョブ:** UAT 環境で実行するジョブを選択し、ステータスを **待機中** に更新します。
 
-この再設定をより迅速に完了するには、更新が完了した後に必要に応じて呼び出すことができるカスタム Web サービス エンドポイントを構築することをお勧めします。 この種類の Web サービスの例は、このトピックの将来の更新で追加されます。
+この再設定をより迅速に完了するには、更新が完了した後に必要に応じて呼び出すことができるカスタム Web サービス エンドポイントを構築することをお勧めします。 この種類の Web サービスの例は、この記事の将来の更新で追加されます。
 
 ## <a name="open-the-environment-to-users"></a>ユーザーに環境を開く
 

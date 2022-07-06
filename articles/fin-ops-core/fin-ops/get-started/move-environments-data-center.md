@@ -1,6 +1,6 @@
 ---
 title: データ センター間で環境を移動する
-description: このトピックでは、Microsoft によって管理されている環境を別の Microsoft Azure データ センターに移動する方法について説明します。
+description: この記事では、Microsoft によって管理されている環境を別の Microsoft Azure データ センターに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 ms.date: 04/29/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 6b9d0ec9390ea39c369ce117c195255cb8f1dd14
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 0e99ce267f65fe3e2c08979c8cc9f708eb85022a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660396"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871474"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -33,7 +33,7 @@ Microsoft により同じデータ センターですべての環境を維持す
 
 環境が展開されているデータ センターを Microsoft Dynamics Lifecycle Services (LCS) の **環境の管理** ページ上で確認できます。
 
-データ センターを変更するには、すべての環境を再配置する必要があります。 サンド ボックス環境 (サンド ボックスのスタンダード承認テスト環境、およびサンド ボックスの開発およびテスト環境) のプロセスは実稼動環境のプロセスとは異なります。
+データ センターを変更するには、すべての環境を再配置する必要があります。 サンド ボックス環境 (サンド ボックスのスタンダード承認テスト環境、およびサンド ボックスの開発およびテスト環境) のプロセスは運用環境のプロセスとは異なります。
 
 ## <a name="move-sandbox-environments"></a>サンドボックス環境の移動
 
@@ -46,7 +46,7 @@ Microsoft により同じデータ センターですべての環境を維持す
 - **Microsoft SQL Server に基づくレベル 1 環境データベース:** データベースのバックアップを作成します。
 - **Azure SQL データベースに基づくレベル 2 およびそれ以上の環境:** 次のオプションのいずれかを選択します。
 
-    - **オプション 1:** [データベース 移動工程のホームページ](../../dev-itpro/database/dbmovement-operations.md) のトピックに一覧表示されているプロセスを確認します。
+    - **オプション 1:** [データベース 移動工程のホームページ](../../dev-itpro/database/dbmovement-operations.md)の記事に一覧表示されているプロセスを確認します。
     - **オプション 2:** Azure サブスクリプションを持っている場合、サブスクリプションの下に Azure SQL データベースのコピーを保存してください。
     - **オプション 3:** Azure SQL データベース環境を複数持ってる場合、1 つの環境を再配置し、古い環境をデータ センターに残してから、環境間でデータベース更新の要求をします。
     - **オプション 4:** データ パッケージとしてデータを保存し、再配置が完了した後にパッケージをインポートします。
@@ -71,9 +71,9 @@ Microsoft により同じデータ センターですべての環境を維持す
 > - サンド ボックス環境では、Azure BLOB ストレージに格納されているファイルの移動はサポートされていません。
 > - コマース顧客は、移動後にコンポーネントが正常に機能するため追加の手順が必要であることに注意する必要があります。 詳細については、 [データ管理の概要](../../dev-itpro/data-entities/data-entities-data-packages.md) を参照してください。
 
-## <a name="move-production-environments"></a>実稼働環境の移動
+## <a name="move-production-environments"></a>運用環境の移動
 
-実稼働環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、実稼働環境を別のデータセンターに移動するためのサポート要求を開く必要があります。 このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。 このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。 実稼働環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409)と関連するサービス レベル契約 (SLA) のドキュメント。
+運用環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、運用環境を別のデータセンターに移動するためのサポート要求を開く必要があります。 このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。 このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。 運用環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409)と関連するサービス レベル契約 (SLA) のドキュメント。
 
 > [!NOTE]
 > [主権クラウドとローカル クラウド展開オプション](../../dev-itpro/deployment/deployment-options-geo.md)を有効にするために使用できる複数の LCS インスタンスがあります。 これらの異なる LCS インスタンス間の運用環境の移動はサポートされていません。 

@@ -1,6 +1,6 @@
 ---
 title: ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
-description: このトピックでは、新しい POS 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。
+description: この記事では、新しい POS 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。
 author: mugunthanm
 ms.date: 05/23/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 1d160a9ec1847444ac0a8094e1e2558b3aac66b8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3ff93d0a45c6423c90e9b440fbf362063c275bad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885571"
 ---
 # <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、新しい販売時点管理 (POS) 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。 このトピックは、プラットフォーム更新プログラム 8 とアプリケーション更新プログラム 4 修正プログラムがインストールされている次のアプリケーションに適用されます。
+この記事では、新しい販売時点管理 (POS) 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。 この記事は、プラットフォーム更新プログラム 8 とアプリケーション更新プログラム 4 修正プログラムがインストールされている次のアプリケーションに適用されます。
 
 - 財務
 - Dynamics 365 Commerce

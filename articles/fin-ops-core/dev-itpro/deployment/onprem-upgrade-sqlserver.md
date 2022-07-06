@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレードまたは置換
-description: このトピックでは、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。
+description: この記事では、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
@@ -11,16 +11,16 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 9f5c448a71f8fc6e908b431e8e859f28dc99d34e
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 2abff7a292c8e510ec19a4c803ea7ad9e59ea416
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867358"
 ---
 # <a name="upgrade-or-replace-the-sql-server-instance-of-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレードまたは置換
 
-このトピックでは、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。 SQL Server メジャー バージョンから別のバージョンにアップグレードしますが、[インプレース アップグレード](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method) をしない場合は、このプロセスを完了する必要があります。 インプレース アップグレードを実行する場合でも、手順の一部は適用されませんが、このトピックのガイダンスに従ってください。
+この記事では、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。 SQL Server メジャー バージョンから別のバージョンにアップグレードしますが、[インプレース アップグレード](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method) をしない場合は、このプロセスを完了する必要があります。 インプレース アップグレードを実行する場合でも、手順の一部は適用されませんが、この記事のガイダンスに従ってください。
 
 ## <a name="prerequisites-for-upgrading-the-sql-server-version"></a>SQL Server バージョンをアップグレードするための前提条件
 

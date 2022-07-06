@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
-description: このトピックでは Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 24 (2019 年 3 月) でプレビューできる機能について説明します。
+description: この記事では Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 24 (2019 年 3 月) でプレビューできる機能について説明します。
 author: tonyafehr
 ms.date: 03/14/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: 961d9218f16f01c4484234f52c34c2f9d9d542708d243a9153c7d66b3237a04c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe6ac0059e5972b61a3547704a5953acd982d9df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863206"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 24 の新機能または変更された機能について説明します。 このバージョンのビルド番号は、7.0.5179 です。 プラットフォーム更新プログラム 24 の詳細については [追加リソース](whats-new-platform-update-24.md#additional-resources) を参照してください。
+この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 24 の新機能または変更された機能について説明します。 このバージョンのビルド番号は、7.0.5179 です。 プラットフォーム更新プログラム 24 の詳細については [追加リソース](whats-new-platform-update-24.md#additional-resources) を参照してください。
 
 ## <a name="new-apis"></a>新しい API
 
@@ -38,7 +38,7 @@ ms.locfileid: "6736184"
 詳細については、[データ管理パッケージ REST API](../../dev-itpro/data-entities/data-management-api.md)を参照してください。
 
 ## <a name="clear-identification-of-preview-builds"></a>プレビュー ビルドの明確な ID
-一部のパートナー、ISV、および顧客は、Preview Early Access Program (PEAP) に参加することによって、またはサービスの公開プレビューを使用することによって、Finance and Operations の運用前ビルドにアクセスできます。 このプレビュー フェーズは、最新の機能についてのフィードバックおよびカスタマイズ検証のメカニズムとなることを意図しています。 ただし、これらの初期リリースは実稼働環境での使用を許可されていません。 Finance and Operations リリース プロセスの詳細については、[サービス更新の可用性](public-preview-releases.md) トピックを参照してください。
+一部のパートナー、ISV、および顧客は、Preview Early Access Program (PEAP) に参加することによって、またはサービスの公開プレビューを使用することによって、Finance and Operations の運用前ビルドにアクセスできます。 このプレビュー フェーズは、最新の機能についてのフィードバックおよびカスタマイズ検証のメカニズムとなることを意図しています。 ただし、これらの初期リリースは運用環境での使用を許可されていません。 財務と運用のリリース プロセスの詳細については[サービス更新の可用性](public-preview-releases.md)の記事を参照してください。
 
 **プレビュー** ステータスをユーザーに明確にするために、各運用前ビルドは 2 つの異なる方法でタグ付けされます。 
 
@@ -52,7 +52,7 @@ ms.locfileid: "6736184"
     
 
 ## <a name="updated-navigation-bar-that-aligns-with-the-office-header"></a>Office のヘッダーに対応した更新済みのナビゲーション バー
-Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応させて、Microsoft 製品全体のユーザーにとってよりまとまりのあるシェル エクスペリエンスを提供するよう取り組んでいます。 Finance and Operations のユーザーにとって、このヘッダー更新プログラムは、ナビゲーション検索をより目立つようにした、完全に再構成されたナビゲーション バーと見なされるでしょう。 特に、新しいデザインには階層リンクは含まれません。
+Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応させて、Microsoft 製品全体のユーザーにとってよりまとまりのあるシェル エクスペリエンスを提供するよう取り組んでいます。 Finance and Operations のユーザーにとって、このヘッダー更新プログラムは、ナビゲーション検索をより目立つようにした、完全に再構成されたナビゲーション バーを見なされるでしょう。 特に、新しいデザインには階層リンクは含まれません。
 
 更新されたナビゲーション バーは既定でプラットフォーム更新プログラム 24 に表示されます。 古いナビゲーションバーを使い続けたい顧客には、**クライアント パフォーマンス オプション** ページ、特に **レガシ ナビゲーション バー の有効化** 切り替えを使って一時的に行うことができます。 この切り替えはプラットフォーム更新プログラム 28 でのみ利用可能にする予定であり、その時点ですべてのお客様に最新のナビゲーション バーが表示されます。  
 
@@ -81,7 +81,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 これにより、たとえば、発注書の承認によって、仕入先組織でのフルフィルメントがすぐにトリガーされるようになります。また破損部品の受領書 1 枚で、仕入先クレーム処理をリアルタイムでトリガーすることもできます。 これらのイベントは業務プロセスのコンテキストで発生するため、*ビジネス イベント* と呼ばれ、*業務プロセスの統合* が可能になります。
 
-外部業務プロセスは、発生したときに通知を受けるために Finance and Operations の特定のビジネス イベントにサブスクライブします。 ビジネス イベントは Finance and Operations コネクタの「トリガー」としても使用できます。
+外部業務プロセスは、発生したときに通知を受けるために Finance and Operations の特定のビジネス イベントにサブスクライブします。 ビジネス イベントは Microsoft Finance and Operations コネクタの「トリガー」としても使用できます。
 
 含まれる予定の機能は次のとおりです。
 
@@ -111,14 +111,14 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 [2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 

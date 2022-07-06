@@ -1,8 +1,8 @@
 ---
 title: SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
-description: このトピックでは、Dynamics 365 Finance + Operations (on-premises) 展開用に Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
+description: この記事では、Dynamics 365 Finance + Operations (on-premises) 展開用に Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
 author: faix
-ms.date: 02/22/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0cdedfa3c904ed2719af738d54211b96080c72ab
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b7513548ec1a360b6ac97fe2b6212d655821463e
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565948"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945786"
 ---
 # <a name="configure-high-availability-for-sql-server-reporting-services-ssrs-nodes"></a>SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance + Operations (on-premises) 展開用に複数の Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
+この記事では、Dynamics 365 Finance + Operations (on-premises) 展開用に複数の Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
 
 ## <a name="high-availability-with-windows-failover-clusters"></a>Windows フェールオーバー クラスターによる高可用性
 
 このシナリオでは、Windows フェールオーバー クラスターを使用します。 したがって、すべての要求を受信する 1 つのアクティブなノードと、1 つのアイドルなパッシブ ノードが必要になります。 アクティブなノードが使用できなくなると、クラスターはこのイベントを検出し、パッシブ ノードはすべてのネットワーク トラフィックの受信を開始します。
 
-このトピックでは、Windows フェールオーバー クラスターの設定についてカバーしていません。 詳細については、[フェールオーバー クラスターを作成する](/windows-server/failover-clustering/create-failover-cluster)を参照してください。
+この記事では、Windows フェールオーバー クラスターの設定についてカバーしていません。 詳細については、[フェールオーバー クラスターを作成する](/windows-server/failover-clustering/create-failover-cluster)を参照してください。
 
 クラスターの設定後に、インストールを構成できます。 以下の例は、次の図に表示される情報に基づいています。
 
@@ -83,7 +83,7 @@ ms.locfileid: "8565948"
     > [!IMPORTANT]
     > Azure Service Fabric Cluster を既に作成している場合は、ノードがクラスターに追加されていることを確認してください。
     >
-    > Export-PfxFiles.ps1 スクリプトを再実行し、適切なマシンで Complete-Prereqs.ps1 スクリプトを再実行して、SSRS Web サーバーの証明書がすべての ReportServer ノードに配布されていることを確認します。
+    > Export-Certificates.ps1 スクリプトを再実行し、適切なマシンで Complete-Prereqs.ps1 スクリプトを再実行して、SSRS Web サーバーの証明書がすべての ReportServer ノードに配布されていることを確認します。
 
 ## <a name="high-availability-with-load-balancers"></a>ロード バランサの高可用性
 
@@ -91,7 +91,7 @@ ms.locfileid: "8565948"
 
 この構成を設定する際は、セッション アフィニティを設定する必要があることに注意してください。 選択したソリューションは、この要件を **サポートしている必要があります**。 必要なセッション アフィニティのタイプはクライアントによって異なります。 Application Object Server (AOS) ノードが要求を行う場合、ロード バランサは、その AOS ノードに対するすべての要求を同じ SSRS ノードに送信する必要があります。
 
-このトピックには、特定のソフトウェア ロード バランサまたはハードウェア ロード バランサを設定するための手順は含まれていません。
+この記事には、特定のソフトウェア ロード バランサーまたはハードウェア ロード バランサーを設定するための手順は含まれていません。
 
 このシナリオの一般的な概要は次のとおりです。
 
@@ -104,7 +104,7 @@ ms.locfileid: "8565948"
 > [!IMPORTANT]
 > Service Fabric Cluster を既に作成している場合は、追加ノードがクラスターに追加されていることを確認してください。
 >
-> Export-PfxFiles.ps1 スクリプトを再実行し、適切なマシンで Complete-Prereqs.ps1 スクリプトを再実行して、SSRS Web サーバーの証明書がすべての ReportServer ノードに配布されていることを確認します。
+> Export-Certificates.ps1 スクリプトを再実行し、適切なマシンで Complete-Prereqs.ps1 スクリプトを再実行して、SSRS Web サーバーの証明書がすべての ReportServer ノードに配布されていることを確認します。
 
 ## <a name="deployed-environments-where-the-base-deployment-is-earlier-than-platform-update-41"></a>基本配置が Platform update 41 より前の配置環境
 

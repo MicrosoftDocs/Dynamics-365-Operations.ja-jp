@@ -1,6 +1,6 @@
 ---
 title: 財務と運用アプリの Data Lake にエクスポートする
-description: このトピックでは、財務と運用アプリ環境でデータを選択して、Data Lake でデータを使用できるようにする方法について説明します。
+description: この記事では、財務と運用アプリ環境でデータを選択して、データ レイクでデータを使用できるようにする方法について説明します。
 author: MilindaV2
 ms.date: 04/28/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: 92a6b0db5e1a9a250510543b57a8f3961cd47bbe
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f9690f4aa0e3a3545379dfe4ba6cd96a4fa55084
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852583"
 ---
 # <a name="export-to-data-lake-in-finance-and-operations-apps"></a>財務と運用アプリの Data Lake にエクスポートする 
 

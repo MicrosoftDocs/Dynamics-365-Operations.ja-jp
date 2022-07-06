@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance 10.0.25 の新機能および変更された機能
-description: このトピックでは、Dynamics 365 Finance バージョン 10.0.25 プレビュー リリースの新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Finance バージョン 10.0.25 プレビュー リリースの新機能または変更された機能について説明します。
 author: kfend
 ms.date: 01/31/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 81d681091f19e6bf47db19a1f1286a37f1a1f11f
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: b0e0b01f81dc3f4bf129cdfd85f4c07a475a9030
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845243"
 ---
 # <a name="preview-of-dynamics-365-finance-10025-april-2022"></a>Dynamics 365 Finance 10.0.25 (2022 年 4 月) のプレビュー
 
@@ -27,7 +27,7 @@ ms.locfileid: "8737333"
 
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.25 の新機能または変更された機能について説明します。 このバージョンには 10.0.1149 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.25 の新機能または変更された機能について説明します。 このバージョンには 10.0.1149 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー**: 2022 年 1 月
 - **リリースの一般提供 (自己更新)**: 2022 年 3 月
@@ -35,7 +35,7 @@ ms.locfileid: "8737333"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-次の表に、このリリースに含まれる機能の一覧を示します。 このトピックが最初に公開された後に、ビルドに加えた機能を含めるために、このトピックを更新することがあります。
+次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに加えた機能を含めるために、この記事を更新することがあります。
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化  |
 |----|----|----|----|
@@ -85,14 +85,14 @@ Dynamics 365 Finance 10.0.25 には、プラットフォーム更新プログラ
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックでは、Dynamics 365 Finance の削除または非推奨の機能について説明します。
+[Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事では、Dynamics 365 Finance の削除または非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

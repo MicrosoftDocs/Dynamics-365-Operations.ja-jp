@@ -1,6 +1,6 @@
 ---
 title: 追跡しているコンテンツの変更に関連付いたユーザー ID の置換
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーで追跡しているコンテンツの変更に関連付けられたユーザー ID を置換する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーで追跡しているコンテンツの変更に関連付けられたユーザー ID を置換する方法について説明します。
 author: BrianShook
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1bc46745431278f38246258346d50aba0fbadf1bf91c13ef91491ec4221eb92d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1b72454f6daf61a3a839a16796572ee8eb4b352
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772266"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908636"
 ---
 # <a name="replace-user-ids-associated-with-tracked-content-changes"></a>追跡しているコンテンツの変更に関連付いたユーザー ID の置換
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーで追跡しているコンテンツの変更に関連付けられたユーザー ID を置換する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーで追跡しているコンテンツの変更に関連付けられたユーザー ID を置換する方法について説明します。
 
 Dynamics 365 Commerce では、サイト ビルダー オーサリング ツールは、コンテンツ管理システム (CMS) の項目に対して行われた変更を追跡します。 したがって、ドキュメントの変更履歴を表示して、チームがコンテンツで共同作業を行うときに、作業を追跡するのに役立ちます。 追跡された変更にユーザー ID を割り当てるために、システムは Azure Active Directory (Azure AD) ID 管理システムのユーザー ID を使用します。 これらのユーザー ID は、Azure AD が発行する電子メール アドレスでもあります。 Commerce システム管理者は、必要に応じてサイト ビルダーの変更追跡履歴ログのユーザー ID 参照を置き換えることができます。
 

@@ -1,6 +1,6 @@
 ---
 title: 侵入的なカスタマイズ
-description: このトピックは、侵襲性のあるカスタマイズの特性を定義します。
+description: この記事では、侵入的なカスタマイズの特性を定義します。
 author: MichaelFruergaardPontoppidan
 ms.date: 04/10/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: afd919717c4327c557c915e4a4e291fcc5d15f7b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cb572d987bff82f2c2981ab2b0326fc210d9a8de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866861"
 ---
 # <a name="intrusive-customizations"></a>侵入的なカスタマイズ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、侵襲性のあるカスタマイズの特性を定義します。 侵入的なカスタマイズは、継続的なアップグレードの費用をゼロに維持する主要な障害です。 面倒なカスタマイズには、ツールによってなくすことができる種類もありますが、それ以外の種類は引き続き作成者が拡張する必要があります。 X++ コンパイラと Microsoft Visual Studio デザイナーでは、いくつかの種類の侵入的なカスタマイズが禁止されます。 ただし、侵入的なカスタマイズのサブセットはツールよって検出できませんが、継続的なアップグレードを実行しない場合があります。 最終的には、開発者は不注意なカスタマイズを避ける責任があります。
+この記事では、侵入的なカスタマイズの特性を定義します。 侵入的なカスタマイズは、継続的なアップグレードの費用をゼロに維持する主要な障害です。 面倒なカスタマイズには、ツールによってなくすことができる種類もありますが、それ以外の種類は引き続き作成者が拡張する必要があります。 X++ コンパイラと Microsoft Visual Studio デザイナーでは、いくつかの種類の侵入的なカスタマイズが禁止されます。 ただし、侵入的なカスタマイズのサブセットはツールよって検出できませんが、継続的なアップグレードを実行しない場合があります。 最終的には、開発者は不注意なカスタマイズを避ける責任があります。
 
 次のいずれかの原則に違反しているカスタマイズは侵入的です。
 

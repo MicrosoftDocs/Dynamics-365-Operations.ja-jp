@@ -1,6 +1,6 @@
 ---
 title: 拡張可能なメソッドの書き込み
-description: このトピックでは、拡張可能メソッドを書き込む方法について説明します。
+description: この記事では、拡張可能メソッドを書き込む方法について説明します。
 author: smithanataraj
 ms.date: 09/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: b12b4c0d8cebe488253924de92b8bef6a48daf29
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 0622987ff3e5955268165baff74988422d044c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661674"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866867"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 

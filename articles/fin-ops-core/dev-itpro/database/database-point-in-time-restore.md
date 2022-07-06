@@ -1,6 +1,6 @@
 ---
 title: データベース ポイントインタイム復元 (PITR)
-description: このトピックでは、Finance and Operations のデータベースのポイントインタイム復元を実行する方法について説明します。
+description: この記事では、財務と運用のデータベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
 ms.date: 06/21/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e53f2546fe8813c54e49acf32754c8e60fae19175ce6c569fe598cfab1344f7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cadabd481c1132a4a9400deac28f24372be419bf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867557"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](/azure/sql-database/sql-database-automated-backups) を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
+Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](/azure/sql-database/sql-database-automated-backups) を、運用環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
 
 ## <a name="self-service-point-in-time-restore"></a>セルフサービスポイントインタイム復元
 [!include [pitr](../includes/dbmovement-pitr.md)]
@@ -50,7 +50,7 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス
 ## <a name="known-issues"></a>既知の問題
 
 ### <a name="breaking-the-chain-of-available-restore-points"></a>使用可能な復元ポイントのチェーンの中断
-頻繁に使用するいくつかのアクションは、以前に使用したデータベースと同じ復元ポイント履歴を持たない新しいデータベースを作成します。 このアクションには、ポイント イン タイム復元、データベースの更新、データベースのインポート、実稼働環境からサンドボックス環境へのポイント イン タイム復元などが含まれます。 さらに、データベースの更新時に環境に適用するソフトウェア展開可能なパッケージが失敗し、LCS のロールバック機能を使用する場合、ロールバック機能はデータベースのポイント イン タイム復元を実行し、その復元は新しいデータベースも作成します。 
+頻繁に使用するいくつかのアクションは、以前に使用したデータベースと同じ復元ポイント履歴を持たない新しいデータベースを作成します。 このアクションには、ポイント イン タイム復元、データベースの更新、データベースのインポート、運用環境からサンドボックス環境へのポイント イン タイム復元などが含まれます。 さらに、データベースの更新時に環境に適用するソフトウェア展開可能なパッケージが失敗し、LCS のロールバック機能を使用する場合、ロールバック機能はデータベースのポイント イン タイム復元を実行し、その復元は新しいデータベースも作成します。 
 
 新しいデータベースには、復元ポイント履歴はありませんが、その時点から新しい復元ポイントを取得し始めます。 前述のアクションのいずれかを実行した後、同じ復元日時を使用して再度実行することはできません。
 

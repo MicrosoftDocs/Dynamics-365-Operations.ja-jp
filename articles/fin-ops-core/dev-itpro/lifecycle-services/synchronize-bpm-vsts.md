@@ -1,6 +1,6 @@
 ---
 title: BPM ライブラリと Azure DevOps の同期
-description: このトピックでは、LCS の BPM ライブラリを Azure DevOps と同期させる方法について説明します。
+description: この記事では、LCS の BPM ライブラリを Azure DevOps と同期させる方法について説明します。
 author: amarshall
 ms.date: 05/13/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: ced46a910ab9ba0a834e4e252dcdbcc59cdeb71340495ce9f33d20fca843b5a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6b3e600973032ad0c2cad6179ab85c1d318b9e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866350"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 

@@ -1,6 +1,6 @@
 ---
 title: 地域の検出とリダイレクトを設定する
-description: このトピックでは、Microsoft Dynamics 365 Commerce での eコマース サイトの地域検出とリダイレクトの設定方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce での eコマース サイトの地域検出とリダイレクトの設定方法について説明します。
 author: stuharg
 ms.date: 04/06/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: ''
-ms.openlocfilehash: 230257efd30b41603e0adc18a092bc15feda4856
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: cfb71cb4afc8a8d93567aa7c0a2dd8054a7c1433
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551704"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892277"
 ---
 # <a name="set-up-geo-detection-and-redirection"></a>地域の検出とリダイレクトを設定する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce での eコマース サイトの地域検出とリダイレクトの設定方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce での eコマース サイトの地域検出とリダイレクトの設定方法について説明します。
 
 Dynamics 365 Commerce によって、特定の国や地域に適した購買やショッピング エクスペリエンスを作成できます。 たとえば、特定の国や地域の e コマース エクスペリエンスの製品、品揃え、カテゴリ、価格、フルフィルメント、などさまざまな側面を定義できます。 
 

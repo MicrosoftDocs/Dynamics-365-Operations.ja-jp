@@ -1,6 +1,6 @@
 ---
 title: ローカリゼーション機能の分類
-description: このトピックでは、規制機能と競合機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
+description: この記事では、規制機能と競合機能の違いについて説明し、その機能のタイトルにどのように機能タイプが使用されるかを示します。
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23e1f6372fe29b97a7210ec49aa7ab3518b16c2ce87dd2a264aa652d41259031
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 912ad0555ff249d5688c250c4e725da11b4efdc3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866557"
 ---
 # <a name="classification-of-localization-features"></a>ローカライズ機能の分類
 

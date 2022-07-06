@@ -1,6 +1,6 @@
 ---
 title: イベントと代表者
-description: このトピックでは、X++ のイベント用語とキーワードについて説明します。
+description: この記事では、X++ のイベント用語とキーワードについて説明します。
 author: tonyafehr
 ms.date: 08/27/2021
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abb20e55b21abd4bc23c076a9e1f3d126880d0fe
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2adcf191a1d475989ccbb5c3a1529ce08b6e23de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783192"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867171"
 ---
 # <a name="events-and-delegates"></a>イベントと代表者
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ のイベント用語とキーワードについて説明します。
+この記事では、X++ のイベント用語とキーワードについて説明します。
 
 イベント設計パターンを使用すると、コードをさらにモジュール化して再使用可能にすることができます。 *イベント* という用語は、デリゲートの使用方法を説明するメタファです。 プログラム実行中に何か重要なことが発生したときは、他のモジュールがその発生を処理することが必要な場合があります。 これらの重要な出来事は *イベント* と呼ばれています。 イベントが発生すると、プログラムは、Notifier がイベントに関する通知を送信する必要があることを、そのイベントの Notifier に指示します。 通知は、通知のサブスクライバーであるすべてのイベント ハンドラーに送信する必要があります。 プログラムがその通知機能に通知を送信するように指示するとき、そのプロセスをイベントの *発生* と呼んでいます。
 

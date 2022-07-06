@@ -1,6 +1,6 @@
 ---
 title: Application update 10.0.11 での電子申告フレームワーク API の変更
-description: このトピックでは、Microsoft Dynamics 365 Finance バージョン10.0.11 で電子申告フレームワーク の API がどのように変更されたのかについて説明します。
+description: この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.11 で電子申告フレームワーク の API がどのように変更されたのかについて説明します。
 author: NickSelin
 ms.date: 05/27/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: d520f6805ad9c92aed8c71312eeef1d8656c5188
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 437bfbf0c8dbeeb02775625ba21b9a73b7277f87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323966"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869081"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10011"></a>Application update 10.0.11 での電子申告フレームワーク API の変更
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、電子申告（ER）フレームワークのアプリケーション プログラミング インターフェース（API）が、Microsoft Dynamics 365 Finance  バージョン10.0.11でどのように変更されたかについて説明します。
+この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.11 で電子申告 (ER) フレームワークのアプリケーション プログラミング インターフェイス (API) がどのように変更されたかについて説明します。
 
 ## <a name="api-to-run-a-format-mapping-for-the-generation-of-outbound-documents"></a>送信ドキュメントの生成に対して形式マッピングを実行する API
 

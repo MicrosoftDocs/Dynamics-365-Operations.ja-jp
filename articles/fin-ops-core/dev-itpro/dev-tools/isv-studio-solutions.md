@@ -1,6 +1,6 @@
 ---
 title: ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
-description: このトピックでは、ISV Studio を使用した X++ パッケージのリンクについて説明します。
+description: この記事では、ISV Studio を使用した X++ パッケージのリンクについて説明します。
 author: jorisdg
 ms.date: 04/08/2021
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df41f59696d3eb3138af3e9ece3a88e408749fdf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ebe71e0714d60c0abc2d5aa41fcedc568b06d50b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867045"
 ---
 # <a name="link-x-modules-from-isv-packages-by-using-isv-studio"></a>ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 
-独立系ソフトウェア ベンダー (ISVs) は、[Microsoft Power Platform ISV Studio](/powerapps/developer/data-platform/isv-app-management) を使用して、X++モジュールを登録済みの製品およびソリューションにリンクできます。 リンクにより、ISV は Finance and Operations アプリでのアプリケーションの成功と使用を監視できます。
+独立系ソフトウェア ベンダー (ISVs) は、[Microsoft Power Platform ISV Studio](/powerapps/developer/data-platform/isv-app-management) を使用して、X++モジュールを登録済みの製品およびソリューションにリンクできます。 リンクにより、ISV は財務と運用アプリでのアプリケーションの成功と使用を監視できます。
 
 > [!NOTE]
 > X++ から ISV Studio へのリンクが正常に機能するには、顧客がすべての ISV モデルに正しいソリューション ID を持つ ISV パッケージを配置している必要があります。 また、顧客の環境はバージョン 10.0.16 以上である必要があります。
@@ -43,4 +43,4 @@ https://partner.microsoft.com/dashboard/commercial-marketplace/offers/<product-I
 
 :::code language="xml" source="code/descriptor.xml" highlight="19,20":::
 
-再コンパイル後、X++ バイナリには製品 ID が含まれ、Tier 2+ サンドボックスまたは実稼働環境に配置された後に ISV Studio にリンクされます。
+再コンパイル後、X++ バイナリには製品 ID が含まれ、Tier 2+ サンドボックスまたは運用環境に配置された後に ISV Studio にリンクされます。

@@ -1,6 +1,6 @@
 ---
 title: 国または地域固有の規制機能に関わる通知を送信
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Localization および Translation service を通じて警告を送信する方法について説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用して、ローカライズおよび Translation service を通じて警告を送信する方法について説明します。
 author: JaneA07
 ms.date: 12/14/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76eaacb6ad0658bf20e6e90443e7443133f6bc15
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: 57a4cd120fcf4cbf514d167bdf53b44eb01163eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866508"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 規制警告送信サービスを通じて警告を送信する方法について説明します。 このトピックは、計画およびリリースされた規制機能を、LCS 問題検索を使用して追跡する方法についても説明します。 
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 規制警告送信サービスを通じて警告を送信する方法について説明します。 この記事は、計画およびリリースされた規制機能を、LCS 問題検索を使用して追跡する方法についても説明します。 
 
 ## <a name="accessing-the-regulatory-alert-submission-service"></a>規制の警告の送信サービスへのアクセス
 

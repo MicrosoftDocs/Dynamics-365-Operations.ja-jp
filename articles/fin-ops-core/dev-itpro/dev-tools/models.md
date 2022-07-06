@@ -1,6 +1,6 @@
 ---
 title: モデルとパッケージ
-description: このトピックでは、モデルとパッケージの概念について説明します。 新しいモデルの作成方法、パラメーターの更新方法、およびモデル間の依存関係を視覚化する方法について説明します。
+description: この記事では、モデルとパッケージの概念について説明します。 新しいモデルの作成方法、パラメーターの更新方法、およびモデル間の依存関係を視覚化する方法について説明します。
 author: jorisdg
 ms.date: 02/07/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15aa348ec669ac4b6837bcd3974b7ef9360d2958
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cdf97b85100a1fc429d03b2c892a83bb3f0f3345
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867033"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
+この記事では、モデルとパッケージの概念について説明します。 また、新しいモデルを作成するために Microsoft Visual Studio の開発ツールを使用する方法、既存のモデルのパラメーターを更新する方法、およびモデル間の依存関係を表示する方法についても説明します。
 
 モデル ストアのモデルを操作するには、Microsoft Visual Studio のツールを使用します。 新しいモデルを作成、および既存のモデルのパラメータを変更することができます。
 

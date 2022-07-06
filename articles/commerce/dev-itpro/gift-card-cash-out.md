@@ -1,6 +1,6 @@
 ---
 title: 小売顧客のギフト カードの残高を清算します。
-description: このトピックでは、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カード清算機能について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カード清算機能について説明します。
 author: rapraj
 ms.date: 02/08/2019
 ms.topic: article
@@ -16,23 +16,23 @@ ms.search.industry: retail
 ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.openlocfilehash: 3689dc1188ec9997cfe281c70ef96040bb6bc1c3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 24dc506d8353addd08524eaa7516129be1176a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892290"
 ---
 # <a name="cash-out-gift-card-balance-for-a-retail-customer"></a>小売顧客のギフト カードの残高を清算します。
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックは、Dynamics 365 Retail Modern POS (MPOS) のギフト カード清算機能の概要を提供します。 
+この記事は、Dynamics 365 Retail Modern POS (MPOS) のギフト カード清算機能の概要を提供します。 
 
 清算機能の目的は、レジ担当者がギフト カードにある残額の清算を許可することです。 小売業者は顧客の要望により、ギフト カードにあるさほど多くない残高を交換する必要がよくあります。 
 
 ## <a name="prerequisites"></a>必要条件
-- 支払コネクタおよび対応する支払ゲートウェイまたはプロセッサは、機能をサポートする必要があります。 *支払コネクタ* は、Dynamics 365 Commerce (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準支払 SDK を使用して実装されています。
+- 支払コネクタおよび対応する支払ゲートウェイまたはプロセッサは、機能をサポートする必要があります。 *支払コネクタ* は、Dynamics 365 Commerce (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 この記事で説明されているコネクタは、標準支払 SDK を使用して実装されています。
 - ギフト カードが外部のギフト カードの場合は、バック オフィスと、POS の両方を外部のギフト カードにコンフィギュレーションする必要があります。 ギフト カードをコンフィギュレーションする前に、小売業者は外部のギフト カード サービス プロバイダーのアカウントが必要です。
 
 ## <a name="scenarios"></a>シナリオ

@@ -1,6 +1,6 @@
 ---
 title: SysDa クラスを使用したデータへのアクセス
-description: このトピックでは、SysDa アプリケーションプログラミングインターフェイス (API) を使用して拡張可能なクエリおよびデータアクセスステートメントを作成する方法について説明します。
+description: この記事では、SysDa アプリケーション プログラミング インターフェイス (API) を使用して拡張可能なクエリおよびデータ アクセス ステートメントを作成する方法について説明します。
 author: RobinARH
 ms.date: 08/20/2021
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0ac177befb134ff3d2ee0974ae016aa55b096d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9b282e1aff244ad34974ca8c6850da688b0a82e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867246"
 ---
 # <a name="access-data-by-using-the-sysda-classes"></a>SysDa クラスを使用したデータへのアクセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、SysDa アプリケーションプログラミングインターフェイス (API) を使用して拡張可能なクエリおよびデータアクセスステートメントを作成する方法について説明します。
+この記事では、SysDa アプリケーション プログラミング インターフェイス (API) を使用して拡張可能なクエリを作成する方法について説明します。
 
 拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。 実際、API は、X++ コンパイラが生成するコードのラッパーです。 したがって、SysDa クラスを使用しても、たとえば **QueryRun** オブジェクトなどを使用してもオーバーヘッドは発生しません。 さらに、X++ コンパイラがデータアクセス明細書に対して行うチェックは、ユーザーの責任です。 たとえば、グローバルな一意識別子 ( GUID) を整数と比較する **where** 句を作成します。 X++ コンパイラは、この句をエラーとして診断します。
 

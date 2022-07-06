@@ -1,6 +1,6 @@
 ---
 title: アプリケーション エクスプローラー
-description: このトピックでは、アプリケーション エクスプローラ、およびその中のビューとフィルター処理方法について説明します。 また、トピックはアプリケーション エクスプ ローラーで要素を操作する方法についても説明します。
+description: この記事では、アプリケーション エクスプローラー、およびその中のビューとフィルター処理方法について説明します。 また、アプリケーション エクスプ ローラーで要素を操作する方法についても説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce0bc90e5fc489c52b8bdbab76877c0d4eb7e063
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ebdbe169c07eec05aff1772ac5a92dc6d22284ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783249"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867105"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、アプリケーション エクスプローラ、およびその中のさまざまなビューとフィルター処理方法について説明します。 また、トピックはアプリケーション エクスプ ローラーで要素を操作する方法についても説明します。
+この記事では、アプリケーション エクスプローラ、およびその中のさまざまなビューとフィルター処理方法について説明します。 また、アプリケーション エクスプ ローラーで要素を操作する方法についても説明します。
 
 ## <a name="application-explorer"></a>アプリケーション エクスプローラー
 
-アプリケーション エクスプローラーは、プロジェクトに追加する要素を検索し作業するために使用するツールです。 Application  Explorer にアクセスするには、**View** メニューで **Application Explorer**.をクリックします。 Microsoft Dynamics AX 2012 の MorphX 環境内のアプリケーション エクスプローラーとアプリケーション オブジェクト ツリー (AOT) 間での重要な違いは、アプリケーション エクスプローラーを使用してモデル要素を追加、または編集しないことです。 代わりに、要素の表示、コードの表示、選択した要素への参照の検索、およびプロジェクトへの要素の追加のために使用します。 モデル要素を作成、デザイン、編集、および構築するには、Finance and Operations プロジェクトを使用する必要があります。
+アプリケーション エクスプローラーは、プロジェクトに追加する要素を検索し作業するために使用するツールです。 Application  Explorer にアクセスするには、**View** メニューで **Application Explorer**.をクリックします。 Microsoft Dynamics AX 2012 の MorphX 環境内のアプリケーション エクスプローラーとアプリケーション オブジェクト ツリー (AOT) 間での重要な違いは、アプリケーション エクスプローラーを使用してモデル要素を追加、または編集しないことです。 代わりに、要素の表示、コードの表示、選択した要素への参照の検索、およびプロジェクトへの要素の追加のために使用します。 モデル要素の作成、デザイン、編集、およびビルドを行うには、Finance and Operations プロジェクトを使用する必要があります。
 
 ### <a name="application-explorer-views"></a>アプリケーション エクスプローラー ビュー
 

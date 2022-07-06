@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 15 の新機能または変更された機能について説明します。 このバージョンは 2018 年 3 月にリリースされました。
+description: この記事では、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 15 の新機能または変更された機能について説明します。 このバージョンは 2018 年 3 月にリリースされました。
 author: tonyafehr
 ms.date: 06/08/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: 14fee04401769201c35e14201ef8fd4909907650
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f7501791a91f16274f479f3ee20e105705b0b23e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711870"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859966"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 の新機能または変更された機能について説明します。 このバージョンは 2018 年 3 月にリリースされ、ビルド番号は 7.0.4841 です。
+この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 の新機能または変更された機能について説明します。 このバージョンは 2018 年 3 月にリリースされ、ビルド番号は 7.0.4841 です。
 
 > [!NOTE]
 > このプラットフォームのリリースは累積されます。 プラットフォーム更新 13、プラットフォーム更新 14、プラットフォーム更新 15 からの新しい機能および変更された機能、およびそれ以前のすべての更新プログラムが含まれています。

@@ -1,6 +1,6 @@
 ---
 title: 製品に対する複数の小売割引の適用
-description: このトピックでは、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。
+description: この記事では、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。
 author: shajain
 ms.date: 12/31/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 0667c6ebed8ddaabf3fdb139b49c2cbcabdf7c83f609897524bedcebb8c2edb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64033f2c884f4beeeeeb70d21f1effc820c50e0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714775"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852856"
 ---
 # <a name="apply-multiple-retail-discounts-to-a-product"></a>製品に対する複数の小売割引の適用
 
@@ -29,7 +29,7 @@ ms.locfileid: "6714775"
 
 ## <a name="overview"></a>概要
 
-このトピックでは、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。 このシナリオでは、コマース 価格決定エンジンは、製品の合計割引金額を最大化するため、できるだけ多くの割引を適用します。 複数のオプションは、割引が適用される順序に影響します。 このトピック全体で、割引の適用順序と割引の排他性に設定がいつ影響を与えるかが明記されています。 次の設定は、製品に複数の割引が適用されている場合はそれがどのように処理されるかに影響します。
+この記事では、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。 このシナリオでは、コマース 価格決定エンジンは、製品の合計割引金額を最大化するため、できるだけ多くの割引を適用します。 複数のオプションは、割引が適用される順序に影響します。 この記事全体で、割引の適用順序と割引の排他性に設定がいつ影響を与えるかが明記されています。 次の設定は、製品に複数の割引が適用されている場合はそれがどのように処理されるかに影響します。
 
 - **割引の同時実行管理モデル**
 - **価格決定優先順位**

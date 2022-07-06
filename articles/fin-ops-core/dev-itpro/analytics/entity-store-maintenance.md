@@ -1,6 +1,6 @@
 ---
 title: エンティティ ストアのメンテナンス後に問題を解決
-description: このトピックでは、エンティティ ストアのメンテナンス後に完了する必要のある手順について説明します。
+description: この記事では、エンティティ ストアのメンテナンス後に完了する必要のある手順について説明します。
 author: MilindaV2
 ms.date: 04/09/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region:
 ms.author: milindav
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 98d7cdb2120e45ce14b253861a30c9f4a85477f7
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 70887a520fbc9b267fd1a3952e1099430a975cd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897170"
 ---
 # <a name="resolve-issues-after-entity-store-maintenance"></a>エンティティ ストアのメンテナンス後に問題を解決
 
@@ -29,7 +29,7 @@ ms.locfileid: "7500571"
 - アプリケーション分析ワークスペース。
 - PowerBI.com に配備されたエンティティ格納ベースのレポート。
 
-これらのコンポーネントで問題を解決するには、このトピックの手順を実行します。
+これらのコンポーネントで問題を解決するには、この記事の手順を実行します。
 
 > [!NOTE]
 > アプリケーションの通常の動作には **影響しません**。

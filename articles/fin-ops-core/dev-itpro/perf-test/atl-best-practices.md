@@ -1,6 +1,6 @@
 ---
 title: 承認テスト ライブラリのベスト プラクティス
-description: このトピックは承認テスト ライブラリのベスト プラクティスについて説明します。
+description: この記事は承認テスト ライブラリのベスト プラクティスについて説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 5d3aa2ab7f735ac2de6facfaf2c1c13d04e8a649
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2b791bf10a4044138335e69effa44048b7b6aff8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862137"
 ---
 # <a name="best-practices-for-the-acceptance-test-library"></a>承認テスト ライブラリのベスト プラクティス
 

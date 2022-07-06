@@ -1,6 +1,6 @@
 ---
 title: 初期同期に関する考慮事項
-description: このトピックでは、制約、既知の問題、およびデュアル書き込みの初期同期に関するガイダンスについて説明します。
+description: この記事では、制約、既知の問題、および二重書き込みの初期同期に関するガイダンスについて説明します。
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3377514fe9e5b67dbec191bd404fb479f0a7759d
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 77e18a9337292e435f12ee8694a040c0890ef492
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062300"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898966"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 

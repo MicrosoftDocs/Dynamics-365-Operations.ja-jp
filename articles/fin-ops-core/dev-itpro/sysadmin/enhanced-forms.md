@@ -1,6 +1,6 @@
 ---
 title: 拡張バッチ フォーム
-description: このトピックでは、拡張バッチ フォームに関する情報を提供します。
+description: この記事では、拡張バッチ フォームに関する情報を提供します。
 author: hasaid
 ms.date: 03/18/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 990cb5d5d05ec98748c793328d92fd06c138706d06bbf58e12ccb15401084724
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b200eac89863e8a30f45f06ece2d1bc67168b337
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733101"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860088"
 ---
 # <a name="enhanced-batch-forms"></a>拡張バッチ フォーム
 

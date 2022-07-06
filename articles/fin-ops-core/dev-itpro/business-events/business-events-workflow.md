@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: d90aaf4c85ec3ebc068f85686debe2813e90cc2b
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: 839cdd02252a4c96ac945bd34129d453454864c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007327"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870391"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]

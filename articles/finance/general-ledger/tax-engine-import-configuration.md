@@ -1,6 +1,6 @@
 ---
 title: 税エンジン インポート コンフィギュレーション
-description: このトピックでは、輸入税エンジンのコンフィギュレーションについて説明します。
+description: この記事では、輸入税エンジン コンフィギュレーションについて説明します。
 author: kailiang
 ms.date: 10/15/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: India
 ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 49681ad5238e2a9f92fff149b4663f6d16673dcd
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 4f24ddedcfee32e071e61ec1ea09243c4fe8966b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605144"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899799"
 ---
 # <a name="tax-engine-import-configuration"></a>税エンジン インポート コンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、輸入税エンジンのコンフィギュレーションについて説明します。
+この記事では、輸入税エンジン コンフィギュレーションについて説明します。
 
 ### <a name="create-a-lifecycle-services-lcs-configuration-repository"></a>Lifecycle Services (LCS) のコンフィギュレーション リポジトリの作成
 1. **組織管理** > **ワークスペース** > **電子申告** の順に移動します。

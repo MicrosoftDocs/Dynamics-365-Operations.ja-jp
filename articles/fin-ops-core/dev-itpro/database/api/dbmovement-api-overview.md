@@ -1,6 +1,6 @@
 ---
 title: データベース移動 API
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) データベース移動アプリケーション プログラミング インターフェイス (API) の概要について説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) データベース移動アプリケーション プログラミング インターフェイス (API) の概要について説明します。
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 0cb302a883c794b7b2faa0b4cfae906d1e7680f1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f37800bcbd9e56b323596ef04c3c76dc122ed59a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867590"
 ---
 # <a name="database-movement-api"></a>データベース移動 API
 

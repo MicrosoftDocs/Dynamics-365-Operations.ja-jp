@@ -1,6 +1,6 @@
 ---
 title: パッケージのアンインストール
-description: このトピックでは、配置可能パッケージを環境から削除する方法について説明します。
+description: この記事では、配置可能パッケージを環境から削除する方法について説明します。
 author: laneswenka
 ms.date: 09/22/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46b39c2b4f48072bd1eced44defc96c049b7408f714040586ecd2407e0518452
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b3828c6b24c153f97a5108ee2035d3f80b1d8731
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867293"
 ---
 # <a name="uninstall-a-package"></a>パッケージのアンインストール
 
@@ -45,7 +45,7 @@ ms.locfileid: "6763504"
 3. 有効な配置可能なパッケージを作成して、**package\\AOSService\\Scripts** フォルダに ModuleToRemove.txt ファイルを保存します。
 4. パッケージを Lifecycle Services アセット ライブラリにアップロードします。 アセットが検証を終了するのを待ち、ページの右側にあるアセットの詳細パネルに表示される任意の警告を確認します。
 5. 配置可能パッケージをインストールします。 配置可能パッケージをインストールする方法の詳細については、[クラウド配置に更新プログラムを適用する](apply-deployable-package-system.md)を参照してください。
-6. 実稼動環境で、この手順を実行する前に、パッケージがアンインストールされたことを確認します。
+6. 運用環境で、この手順を実行する前に、パッケージがアンインストールされたことを確認します。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

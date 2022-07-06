@@ -1,6 +1,6 @@
 ---
 title: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
-description: このトピックでは、セルフサービスを使用して、従来型の店舗にあるコンピューターに Commerce Scale Unit (自己ホスト) を構成し、インストールする方法について説明します。
+description: この記事では、セルフサービスを使用して、従来型の店舗にあるコンピューターに Commerce Scale Unit (自己ホスト) を構成し、インストールする方法について説明します。
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 43663baa7c16acb51772055ac6525d15bc5837c6
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 723935a317294cb364b025bf8d95dec5e5e91808
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869184"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce バックオフィスで Commerce Scale Unit (自己ホスト。以前は Retail Store Scale Unit と呼ばれていました) を構成し、ダウンロードして、従来型の店舗にある 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit (CSU) は、Commerce チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 このトピックは、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
+この記事では、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce Headquarters で Commerce Scale Unit (自己ホスト、以前は Retail Store Scale Unit と呼ばれていました) を構成し、ダウンロードして、従来型の店舗にある 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit (CSU) は、Commerce チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 この記事は、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
 
 > [!IMPORTANT]
 > - 基本的な設計原則は、Commerce Scale Unit (クラウド) 上で要求された方法でカスタマイズできない場合は、CSU (自己ホスト) を使用してこの方法をカスタマイズしないことです。  直接データベース アクセスはサポートされていないため、この概念を使用するカスタマイズが容易に中断される可能性があることを理解しておくことが重要です。  CSU (自己ホスト) は、主にクロス ターミナル シナリオの有効化、WAN 接続の不良に備えた待機時間またはバックアップの短縮、および複数の CSU コンポーネント間での POS 端末の負荷を分散するためのスケールアウトの提供を行います。
@@ -39,7 +39,7 @@ ms.locfileid: "8809574"
 > [!IMPORTANT]
 > 会社全体で高いレベルのセキュリティを維持するために、作成する店舗ごとに新しいアプリケーション ID (クライアント ID) とキー (シークレット) を作成することを強くお勧めします。 このステップでは、新しい Web アプリが必要です。
 
-1. アプリケーション ID (クライアント ID) とキー (シークレット) を作成する Microsoft Azure Active Directory (Azure AD) アプリ登録を生成します。 手順については、[Azure Active Directory アプリケーションを作成する](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application) を参照してください。 このトピックでは、Azure ユーザーのアクセス許可と要件を確認し、アプリ登録を生成する方法について説明します。
+1. アプリケーション ID (クライアント ID) とキー (シークレット) を作成する Microsoft Azure Active Directory (Azure AD) アプリ登録を生成します。 手順については、[Azure Active Directory アプリケーションを作成する](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application) を参照してください。 この記事では、Azure ユーザーのアクセス許可と要件を確認し、アプリ登録を生成する方法について説明します。
 
     > [!IMPORTANT]
     > Azure ではなく Active Directory Federation Services を使用するオンプレミス環境で使用する Commerce Scale Unit をインストールする場合は、オンプレミス環境の Commerce インストール ドキュメントの手順に従います。 詳細については、[オンプレミス環境での Commerce チャネル コンポーネントのインストール手順](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) を参照してください。
@@ -48,7 +48,7 @@ ms.locfileid: "8809574"
 
 ## <a name="configure-a-new-commerce-scale-unit"></a>新しい Commerce Scale Unit の構成
 
-機能する Commerce Scale Unit を作成するには、「複数のコンピューターのインストール」セクションまでこのトピックのすべてのセクションの手順を完了します。 構成とインストールを完了するには、まず Headquarters で初期構成を行う必要があります。 次に、インストールを完了する必要があります。 最後に、Commerce Scale Unit が正しく動作するよう、Headquarters に戻って構成を完了する必要があります。
+機能する Commerce Scale Unit を作成するには、「複数のコンピューターのインストール」セクションまでこの記事のすべてのセクションの手順を完了します。 構成とインストールを完了するには、まず Headquarters で初期構成を行う必要があります。 次に、インストールを完了する必要があります。 最後に、Commerce Scale Unit が正しく動作するよう、Headquarters に戻って構成を完了する必要があります。
 
 > [!IMPORTANT]
 > オンプレミス環境では、チャネル機能は Commerce Scale Unit (自己ホスト) の使用により排他的に有効になります。 概要については、Commerce Scale Unit (自己ホスト) を参照してください。 クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Commerce Scale Unit (自己ホスト) をインストールすることによってのみ、チャネル コンポーネントを使用できます。
@@ -67,7 +67,7 @@ ms.locfileid: "8809574"
 4. **チャンル データ グループ** フィールドで、**既定** オプションを選択します。 作成されている任意のオプションを選択します。
 
     > [!IMPORTANT]
-    > オンプレミス配置では、この値が前にこのトピックで説明した **既定** 値になります。
+    > オンプレミス配置では、この値が前にこの記事で説明した **既定** 値になります。
 
 5. **タイプ** フィールドで、既定値 (**チャネル データベース**) を選択したままにします。
 6. **データ同期間隔** フィールドは空白のままにすることができます。 あるいは、このフィールドで値を選択することができます。 たとえば、デモ データでは、**D60-U15** の値が 15 分の同期間隔を指定します。
@@ -208,12 +208,12 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 
     > [!IMPORTANT]
     > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、クラウド POS は Azure または AD FS アプリケーションの構成を要求しないため、**Retail クラウド POS の構成** のマークを解除することが重要です。
-    > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、使用されるクライアント ID (アプリケーション ID) およびシークレット (キー) は、[オンプレミス環境の Commerce チャネル コンポーネントのインストール手順](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) トピックの手順 6 ～ 8 で実行される構成手順で実行される PowerShell スクリプトによって生成される値になります。 (手順 6 ではクライアント ID を作成し、手順 8 ではコピーされるシークレットをリセットします)。
+    > - オンプレミス環境で使用する Commerce Scale Unit をインストールするとき、使用されるクライアント ID (アプリケーション ID) およびシークレット (キー) は、[オンプレミス環境の Commerce チャネル コンポーネントのインストール手順](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) 記事の手順 6 ～ 8 で実行される構成手順で実行される PowerShell スクリプトによって生成される値になります。 (手順 6 ではクライアント ID を作成し、手順 8 ではコピーされるシークレットをリセットします)。
 
     Web アプリを作成するとき、最初の URI と URL は特定の値である必要はありません。 作成されるアプリケーション ID (クライアント ID) とキー (シークレット) のみ重要です。
 
 9. Commerce Scale Unit のアプリケーション ID (クライアント ID) とキー (シークレット) が作成された後、Commerce でアプリケーション ID (クライアント ID) を受け入れる必要があります。 次の手順に従って、Headquarters で構成を完了します。
-10. インストールが完了すると、最終正常性ページが表示されます。 このページには、インストールが成功したかどうかが表示されます。 また、基本的な接続テストに基づいた各コンポーネントの正常性と、このトピックの場所について示します。 インストールに失敗した場合は、ページにログ ファイルの場所が表示されます。 Commerce Scale Unit の構成を完了して、すべてのコンポーネントが正しく動作するまで、この最終正常性ページを開いたままにしておくことをお勧めします (次のセクションを完了することが必要)。
+10. インストールが完了すると、最終正常性ページが表示されます。 このページには、インストールが成功したかどうかが表示されます。 また、基本的な接続テストに基づいた各コンポーネントの正常性と、この記事の場所について示します。 インストールに失敗した場合は、ページにログ ファイルの場所が表示されます。 Commerce Scale Unit の構成を完了して、すべてのコンポーネントが正しく動作するまで、この最終正常性ページを開いたままにしておくことをお勧めします (次のセクションを完了することが必要)。
 
 ### <a name="finish-the-configuration-in-headquarters"></a>Headquarters で構成を完了する
 
@@ -283,7 +283,7 @@ Commerce Scale Unit インストーラーは、まず、関連付けられてい
 
 #### <a name="installation-on-the-first-computer"></a>最初のコンピューターへのインストール
 
-最初のコンピューターで、このトピックで前述されているように、Commerce Scale Unit セルフ サービス インストーラーを実行しますが、次の変更を行います。
+最初のコンピューターで、この記事で前述されているように、Commerce Scale Unit セルフ サービス インストーラーを実行しますが、次の変更を行います。
 
 1. インストールするコンポーネントとして Commerce チャネル データベースと Async Client のみを選択します。 その後 **次へ** を選択して、インストールを続行します。
 
@@ -314,7 +314,7 @@ SQL Server および Windows ファイアウォールに関する詳細につい
 
 #### <a name="installation-on-the-second-computer"></a>2 台目のコンピューターへのインストール
 
-2 台目のコンピューターで、このトピックで前述されているように、Commerce Scale Unit セルフ サービス インストーラーを実行しますが、次の変更を行います。
+2 台目のコンピューターで、この記事で前述されているように、Commerce Scale Unit セルフサービス インストーラーを実行しますが、次の変更を行います。
 
 1. インストールするコンポーネントとして Retail Server とクラウド POS のみを選択します。 Retail Server をインストールしている場合は、Cloud POS を選択できません。 その後 **次へ** を選択して、インストールを続行します。
 2. 最初のコンピュータで、SQL Server にアクセスする権限を持つドメイン ユーザーの資格情報 (ユーザー名およびパスワード) を入力します。 その後、**次へ** を選択します。
@@ -355,7 +355,7 @@ SQL Server および Windows ファイアウォールに関する詳細につい
 
 11. コマースで、**Retail とコマース** &gt; **バックオフィスの設定** &gt; **コマース スケジューラ** &gt; **チャネル データベース** の順に移動し、これらの手順に従います。
 
-    1. このトピックの先頭に作成したチャネルのデータベースを選択します。
+    1. この記事の先頭に作成したチャネルのデータベースを選択します。
     2. アクション ウィンドウで、**完全な同期** &gt; **ジョブ 9999** を選択します。 完全な同期には数分間かかる場合があります。
     3. Commerce Scale Unit のインストーラーで、すべての機能が正常に機能していることを確認するために再テストします。
 
@@ -365,7 +365,7 @@ SQL Server および Windows ファイアウォールに関する詳細につい
 
 ### <a name="help-secure-commerce-scale-unit"></a>Commerce Scale Unit のセキュリティ強化
 
-現在のセキュリティ基準によると、実稼動環境で次のオプションを設定する必要があります。
+現在のセキュリティ基準によると、運用環境で次のオプションを設定する必要があります。
 
 - コンピューターの SSL (v2およびv3) を完全に無効にする必要があります。
 - TLS バージョン 1.2 (または、現時点で最も新しいバージョン) のみを有効にし、使用する必要があります。

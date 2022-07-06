@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 Finance バージョン 10.0.9 の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Finance バージョン 10.0.9 の新機能または変更された機能について説明します。
 author: kfend
 ms.date: 02/03/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: ff938830c0a216e443d8d9123f5c288fa170424c
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a17ae50d390ed6eb2e6b641b9fa23057ded5fdc6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724397"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894011"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1009-april-2020"></a>Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance、バージョン 10.0.9 の新機能または変更された機能について説明します。 このバージョンには 10.0.383 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Finance、バージョン 10.0.9 の新機能または変更された機能について説明します。 このバージョンには 10.0.383 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビューのリリース:** 2020 年 2 月
 - **一般提供 (自己更新):** 2020 年 3 月
@@ -83,14 +83,14 @@ Dynamics 365 財務と運用アプリの規制の更新については、[規制
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事は Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

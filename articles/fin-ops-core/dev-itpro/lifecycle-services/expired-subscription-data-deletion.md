@@ -1,6 +1,6 @@
 ---
 title: サブスクリプションの期限切れとデータ削除
-description: このトピックでは、Azure サブスクリプションの有効期限が切れた後に行われるデータの削除に関する情報を提供します。 また、期限切れの Azure サブスクリプションをクリーンアップする方法についても説明します。
+description: この記事では、Azure サブスクリプションの有効期限が切れた後に行われるデータの削除に関する情報を提供します。 また、期限切れの Azure サブスクリプションをクリーンアップする方法についても説明します。
 author: AngelMarshall
 ms.date: 08/16/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2021-08-16
-ms.openlocfilehash: 7d7421ce8308ebb4e900bbe3ed827c542bc8bcf7
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: f2ad0f35b2a39ba3f87d8cc3ba81dfb421b88fad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866454"
 ---
 # <a name="expired-subscriptions-and-data-deletion"></a>サブスクリプションの期限切れとデータ削除
 
@@ -68,6 +68,6 @@ LCS 実装プロジェクトを削除した後に、顧客所有の Azure サブ
 
 ## <a name="related-topics"></a>関連トピック
 
-[Microsoft 365 でのデータの保持、削除、破棄](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
+[Microsoft 365 でデータの保持、削除、破棄](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
 
 [サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問](../../fin-ops/get-started/subscription-overview.md)

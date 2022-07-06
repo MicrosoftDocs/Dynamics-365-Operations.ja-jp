@@ -1,6 +1,6 @@
 ---
 title: POS 拡張機能の基本
-description: このトピックでは、販売時点管理 (POS) 拡張機能の基本的な概念について説明します。
+description: この記事では、販売時点管理 (POS) 拡張機能の基本的な概念について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,24 +10,24 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 983eada88246c15888352d3beaf547a4713b19fa
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3711f40c52521c325eabd594b8e783b5a2f9d735
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783080"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885568"
 ---
 # <a name="pos-extension-basics"></a>POS 拡張機能の基本
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) 拡張機能の基本的な概念について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+この記事では、販売時点管理 (POS) 拡張機能の基本的な概念について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
 
 拡張機能の開発者は POS API ライブラリを使用してカスタマイズを作成することができます。 POS API により、POS のビジネス ロジックおよびユーザー インターフェイス (UI) レイヤーの両方をカスタマイズできます。
 
 ## <a name="terminology"></a>用語
 
-次の条件がこのトピックで使用されます。
+次の条件がこの記事で使用されます。
 
 | 相談 | 定義 | 例 |
 |---|---|---|

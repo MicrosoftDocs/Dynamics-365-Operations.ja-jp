@@ -1,6 +1,6 @@
 ---
 title: 委任
-description: このトピックでは、拡張可能コードとデリゲートを書き込む方法について説明します。
+description: この記事では、拡張可能コードとデリゲートを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 09/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: eb61b2d976358a1bf686dd5da362b85ab8f65d5a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: be2ce2f72bf7c21ddeceaf614fe8443aee6cac2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866879"
 ---
 # <a name="delegates"></a>委任
 [!include [banner](../includes/banner.md)]

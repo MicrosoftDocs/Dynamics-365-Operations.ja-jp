@@ -1,6 +1,6 @@
 ---
 title: 販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
-description: このトピックでは、画面レイアウト デザイナーを使用して POS トランザクション ページに新しいカスタム列を追加する方法について説明します。
+description: この記事では、画面レイアウト デザイナーを使用して POS トランザクション ページに新しいカスタム列を追加する方法について説明します。
 author: mugunthanm
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 18a4f8e8388c6ca03d9fd98055123eeb52e7e0a3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: acbe189919c5914d547781749ac4ea9ad5ea7d35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882219"
 ---
 # <a name="add-custom-columns-to-a-point-of-sale-pos-transaction-grid"></a>販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、画面レイアウト デザイナーを使用して POS トランザクション ページに新しいカスタム列を追加する方法について説明します。 カスタム列フィーチャーを使用して、トランザクション ページにさらに情報を追加することができます。 カスタム列は、画面レイアウト デザイナーを使用して、トランザクションのページ入庫グリッドに追加できます。 デザイナーを使用して、列の幅および配置を調整することができます。 拡張シナリオのレイアウトには、10 個のカスタム列があります。 10 のすべてを 1 つのレイアウトで使用することができます。 カスタム列は既にデザイナーのメタデータに追加されています。 レイアウトに列を追加した後、トランザクション ページで列が表示できるように配送ジョブを実行します。
+この記事では、画面レイアウト デザイナーを使用して POS トランザクション ページに新しいカスタム列を追加する方法について説明します。 カスタム列フィーチャーを使用して、トランザクション ページにさらに情報を追加することができます。 カスタム列は、画面レイアウト デザイナーを使用して、トランザクションのページ入庫グリッドに追加できます。 デザイナーを使用して、列の幅および配置を調整することができます。 拡張シナリオのレイアウトには、10 個のカスタム列があります。 10 のすべてを 1 つのレイアウトで使用することができます。 カスタム列は既にデザイナーのメタデータに追加されています。 レイアウトに列を追加した後、トランザクション ページで列が表示できるように配送ジョブを実行します。
 
 > [!NOTE]
-> このトピックでは Dynamics 365 for Finance and Operations および Microsoft Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムが適用されます。
+> この記事は Dynamics 365 for Finance and Operations、および Microsoft Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムに適用されます。
 
 ## <a name="add-a-custom-column-to-the-page"></a>ページへのカスタム列の追加
 1. Dynamics 365 Commerce へサインインします。

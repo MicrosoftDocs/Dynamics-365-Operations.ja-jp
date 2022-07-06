@@ -1,6 +1,6 @@
 ---
 title: Azure Pipelines を使用した資産のダウンロード
-description: このトピックでは、Azure Pipelines を使用して、Microsoft Dynamics Lifecycle Services (LCS) で資産をアセット ライブラリからダウンロードする方法について説明します。
+description: この記事では、Azure Pipelines を使用して、Microsoft Dynamics Lifecycle Services (LCS) で資産をアセット ライブラリからダウンロードする方法について説明します。
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8776b34f0a7c0de9d1ac07a0834388c27a33abec
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: f1af57eb9d730c9c84df0f0443ee0ad8e6f8dfcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867027"
 ---
 # <a name="download-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のダウンロード
 
 Azure DevOps の **Dynamics Lifecycle Services (LCS) 資産のダウンロード** タスクを使用して、Microsoft Dynamics Lifecycle Services (LCS) で資産をアセット ライブラリから自動的にダウンロードできます。
 
-このトピックは、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
+この記事は、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識があることを前提としています。
 
 > [!NOTE]
-> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
+> これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントにインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
 
 ## <a name="make-sure-that-msalps-is-installed"></a>MSAL.PS がインストールされていることを確認する
 

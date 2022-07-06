@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: d29cef6af04e8053f0841b0e0983438fc34f8ee2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 78d1ed117ae8b24f735830c9d538afb83550ba2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905053"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 
@@ -29,7 +29,7 @@ ms.locfileid: "7782154"
 ## <a name="introduction"></a>はじめに
 ドキュメントは新機能の説明に役立ちますが、製品の使用中にユーザーがその機能に遭遇した場合は、これらの新機能について認識を高めることも重要です。 その結果、機能のコールアウトをプラットフォームの更新プログラム 26 で使用できます。 機能のコールアウトを使用して、ユーザーに新しい機能を示して、オプションで機能の詳細を知るためのハイパーリンクをユーザーに提供することができます。 
 
-このトピックでは、機能のコールアウトの作成に使用される API について詳しく説明します。   
+この記事では、機能のコールアウトの作成に使用される API について詳しく説明します。   
 
 ![ナビゲーション ウィンドウの機能のコールアウトの変更。](./media/cli_featureCallout_noLink.png "プラットフォーム更新プログラム 22 でリリースされたナビゲーション ウィンドウの機能のコールアウトの変更")
   

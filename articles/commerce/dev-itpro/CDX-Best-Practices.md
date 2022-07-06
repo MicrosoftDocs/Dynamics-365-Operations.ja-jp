@@ -1,6 +1,6 @@
 ---
 title: Commerce Data Exchange のベスト プラクティス
-description: このトピックでは、Microsoft Dynamics 365 Commerce 環境の Commerce Data Exchange (CDX) によるデータ同期について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce 環境の Commerce Data Exchange (CDX) によるデータ同期について説明します。
 author: jashanno
 ms.date: 12/03/2021
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b145657f007be1f953bd5025d64e2962ad62e56f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9d71f6187e07562604ba72bf2ccaab2fccd4ead4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876572"
 ---
 # <a name="commerce-data-exchange-best-practices"></a>Commerce Data Exchange のベスト プラクティス
 
 [!include[banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 Commerce 環境に、データ同期、Commerce Data Exchange (CDX) に関連する機能を実装するユーザーを対象としています。 実装にあたってのベスト プラクティスのアドバイスを提供します。
+この記事は、Microsoft Dynamics 365 Commerce 環境に、データ同期 Commerce Data Exchange (CDX) に関連する機能を実装するユーザーを対象としています。 実装にあたってのベスト プラクティスのアドバイスを提供します。
 
 データの構成と同期を適切に行うことは、実装が正しく機能するために非常に重要となります。 ビジネス要件、IT インフラストラクチャ、および全体的な準備にかかわらず、データが正しく同期されていないと、環境全体が実質的に役に立たなくなります。 したがって、コマース本部から Commerce Scale Unit を経由してオフライン データベースを持つ最新の POS を使用する実店舗に至るまで、完全な実装の全体にわたってデータの設定、生成、同期、検証に必要なものを把握することが最優先事項となります。
 
-このトピックに進む前に、チャネル (店舗)、レジスターとデバイス、および Modern POS オフライン データベースの概念を理解することが重要です。 したがって、このトピックの最後にある 「デバイス管理実装ガイダンス」や「Commerce アーキテクチャの概要」などのリソースを確認することをお勧めします。
+この記事に進む前に、チャネル (店舗)、レジスターとデバイス、および Modern POS オフライン データベースの概念を理解することが重要です。 したがって、この記事の最後にある 「デバイス管理実装ガイダンス」や「Commerce アーキテクチャの概要」などのリソースを確認することをお勧めします。
 
-このトピックの主な内容は以下の表にまとめました。最初の列にはタグの似た「関連する領域」のリストが含まれており、関心のある分野に関するベストプラクティスをすばやく見つけることができます。 新しい実装については、これらのテーブルをコピーし、さまざまなベスト プラクティスが完成したときにチェックできる場所にコピーしておくと役立つ場合があります。 このようにして、本番に移る前に可実装が準備されているかどうかを能な限り確認することができます。
+この記事の主な内容は以下の表にまとめました。最初の列にはタグの似た「関連する領域」のリストが含まれており、関心のある分野に関するベストプラクティスをすばやく見つけることができます。 新しい実装については、これらのテーブルをコピーし、さまざまなベスト プラクティスが完成したときにチェックできる場所にコピーしておくと役立つ場合があります。 このようにして、本番に移る前に可実装が準備されているかどうかを能な限り確認することができます。
 
 ## <a name="recommended-configurations-with-up-to-date-maturity-information-to-denote-confidence-of-functionality"></a>推奨されるコンフィギュレーション (機能の信頼性を示す最新の満期情報を含む)
 
@@ -60,7 +60,7 @@ Commerce スケジューラの基本コンフィギュレーション データ�
 
    コマース スケジューラの基本構成データの初期化を続行するかどうかの確認を求められます。 更新のたびにこのアクションを実行することは、新しいテーブルまたは列の構成データを正しく設定する機能を管理するのに重要です。 
   
-2. **既存のコンフィギュレーションの削除** を行うパラメーターもあります。  有効に設定するよう明示的に指示されているか、またはコンフィギュレーションが失われても影響が生じない非実稼働環境で作業しているのでない限り、この設定は **いいえ** のままにします。
+2. **既存のコンフィギュレーションの削除** を行うパラメーターもあります。  有効に設定するよう明示的に指示されているか、またはコンフィギュレーションが失われても影響が生じない非運用環境で作業しているのでない限り、この設定は **いいえ** のままにします。
 
 > [!NOTE]
 > Commerce バージョン 10.0.24 リリース以降、Commerce スケジューラは Commerce 本部の更新後に自動的に実行するように設定できます。 Commerce 本部でこの機能を有効にするには、**ワークスペース \> 機能管理** に移動し、**本部の機能が更新された後に "Commerce スケジューラの初期化" を実行** する機能を有効にしてください。 
@@ -75,7 +75,7 @@ Commerce スケジューラの基本コンフィギュレーション データ�
 
 ### <a name="enable-table-and-index-compression"></a>テーブルとインデックスの圧縮の有効化
    
-このトピックを読む前に、[Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md#implementation-considerations) のオンプレミス データベース コンポーネント (CSU の一部としてオフライン データベースおよびチャンネル データベース) で使用される SQL Server の各種の推奨バージョンについて読み取る方をお勧めします。 Modern POS のオフライン データベースおよび CSU のチャンネル データベース (セルフホスト型) など、テーブル/インデックスの圧縮を、その上の施設のデータベースで有効にすることが重要です。 この機能は、SQL Server 2016 SP1 Express、SQL Server 2017 Express、SQL Server 2019 Express および以降でのみサポートされます。 まだ SQL Server Express 2014 を実行している場合は、新しいバージョンにアップグレードする必要があります。 ディスク領域を使用して、トップ テーブルのレポートを作成します (**SQL Server Management Studio > レポート > スタンダード レポート > トップ テーブルによるディスク用途**)。 その後、レポートの上部にある各テーブルおよびインデックスの圧縮を有効にできます。 基本コマンドを次に示します。
+この記事を読む前に、[Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md#implementation-considerations)のオンプレミス データベース コンポーネント (CSU の一部としてオフライン データベースおよびチャンネル データベース) で使用される SQL Server の各種の推奨バージョンについて読み取る方をお勧めします。 Modern POS のオフライン データベースおよび CSU のチャンネル データベース (セルフホスト型) など、テーブル/インデックスの圧縮を、その上の施設のデータベースで有効にすることが重要です。 この機能は、SQL Server 2016 SP1 Express、SQL Server 2017 Express、SQL Server 2019 Express および以降でのみサポートされます。 まだ SQL Server Express 2014 を実行している場合は、新しいバージョンにアップグレードする必要があります。 ディスク領域を使用して、トップ テーブルのレポートを作成します (**SQL Server Management Studio > レポート > スタンダード レポート > トップ テーブルによるディスク用途**)。 その後、レポートの上部にある各テーブルおよびインデックスの圧縮を有効にできます。 基本コマンドを次に示します。
 
 ```Console
 ALTER TABLE [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
@@ -89,7 +89,7 @@ ALTER INDEX <index2_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DAT
 sp_helpindex 'ax.INVENTDIM'
 ```
 
-上記のクエリには、選択したテーブルのすべてのインデックスが表示されます (そのリストはコマンドの次のセットで以下に示します)。 そのクエリに基づいて、最初にこのトピックで示した基本的なコマンドを使用して、テーブルと関連のすべてのコマンドを圧縮できます。
+上記のクエリには、選択したテーブルのすべてのインデックスが表示されます (そのリストはコマンドの次のセットで以下に示します)。 そのクエリに基づいて、最初にこの記事で示した基本的なコマンドを使用して、テーブルと関連のすべてのコマンドを圧縮できます。
 
 ```Console
 ALTER TABLE [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)

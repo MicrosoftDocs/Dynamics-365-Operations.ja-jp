@@ -1,6 +1,6 @@
 ---
 title: X++ 静的クラス メンバー
-description: このトピックでは、 X++ の静的クラスについて説明します。
+description: この記事では、X++ の静的クラスについて説明します。
 author: RobinARH
 ms.date: 12/02/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfd118c03db45eb7958f4b7e3c38aa2366a5c16c
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 08951bb66fc3147d6efd557b4014e68ccefb11cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489014"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867126"
 ---
 # <a name="x-static-class-members"></a>X++ 静的クラス メンバー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、 X++ の静的クラス メンバーについて説明します。 一般に、静的メソッドは次のような場合を対象とします。
+この記事では、X++ の静的クラス メンバーについて説明します。 一般に、静的メソッドは次のような場合を対象とします。
 
 -   このメソッドは、クラス内で宣言されているメンバー変数にアクセスする必要はありません。
 -   このメソッドは、クラスのインスタンス (静的でない) メソッドを呼び出す理由はありません。

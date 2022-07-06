@@ -1,6 +1,6 @@
 ---
 title: AOS ノードの削除と再インストール、または追加
-description: このトピックでは、オンプレミス環境の アプリケーション オブジェクト サーバー (AOS) ノードを削除して、障害が発生したノードの削減または交換をする方法について説明します。
+description: この記事では、オンプレミス環境の Application Object Server (AOS) ノードを削除して、障害が発生したノードの削減または交換をする方法について説明します。
 author: ttreen
 ms.date: 07/28/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: a6c80faa04dabaae262c60eaaed99c8cb56c0470
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 032faaa309d9c7f3bf23d90a7dfdfe6ea2dfedad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867376"
 ---
 # <a name="remove-and-reinstall-or-add-an-aos-node"></a>AOS ノードの削除と再インストール、または追加
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、オンプレミス環境の アプリケーション オブジェクト サーバー (AOS) ノードを削除して、障害が発生したノードの削減または交換をする方法について説明します。 また、スケール アウト パフォーマンスの新しい AOS ノードを追加する方法についても説明します。
+この記事では、オンプレミス環境の Application Object Server (AOS) ノードを削除して、障害が発生したノードの削減または交換をする方法について説明します。 また、スケール アウト パフォーマンスの新しい AOS ノードを追加する方法についても説明します。
 
 ## <a name="remove-a-node"></a>ノードの削除
 

@@ -1,6 +1,6 @@
 ---
-title: 生産データベースのコピーのデバッグ
-description: このトピックでは、Finance and Operations のデバッグや診断シナリオについて説明します。
+title: 運用データベースのコピーのデバッグ
+description: この記事では、財務と運用のデバッグおよび診断のシナリオについて説明します。
 author: LaneSwenka
 ms.date: 01/25/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 602a29d347b6b39a23c75f7bb9b3327a7052bf66de1e92815542446faba44dc4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b163ab7dfb88d9a755a51d35282f8d1f8d2c25b3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867548"
 ---
-# <a name="debug-a-copy-of-the-production-database"></a>生産データベースのコピーのデバッグ
+# <a name="debug-a-copy-of-the-production-database"></a>運用データベースのコピーのデバッグ
 
 [!include [banner](../includes/banner.md)]
 
-データベース移動操作は、データ アプリケーション ライフ サイクル管理 (DataALM) の一部として使用できる一連のセルフ サービスのアクションです。 このチュートリアルでは、生産データの最新のコピーの特定のデータとトランザクションをデバッグする方法を示します。
+データベース移動操作は、データ アプリケーション ライフ サイクル管理 (DataALM) の一部として使用できる一連のセルフ サービスのアクションです。 このチュートリアルでは、運用データの最新のコピーの特定のデータとトランザクションをデバッグする方法を示します。
 
 このチュートリアルでは、次の方法について説明します。
 
@@ -37,14 +37,14 @@ ms.locfileid: "6724331"
 
 ## <a name="prerequisites"></a>必要条件
 
-更新操作を行うには、実稼働環境を配置している必要があります。または標準的な UAT 環境を 2 つ以上持つ必要があります。 このチュートリアルを完了するには、開発者環境が配置されている必要があります。
+更新操作を行うには、運用環境を配置している必要があります。または標準的な UAT 環境を 2 つ以上持つ必要があります。 このチュートリアルを完了するには、開発者環境が配置されている必要があります。
 
 > [!IMPORTANT]
 > デバッグの場合、UAT 環境で使用できるのと同じコードとビジネス ロジックを実行する DevTest 環境を使用することを強くお勧めします。 バージョン コントロールで複数のブランチを使用する場合は、最新の UAT または生産トランザクションをデバッグするために使用される DevTest 環境を、UAT のパッケージを構築するために使用する同じブランチに接続した後、生産に使用することをお勧めします。 これにより、互換性のあるスキーマになるため、DevTest 環境と UAT データベースの間でデータベースの同期を実行する必要がありません。 これまで、このような環境は、修正プログラム/サポート環境と呼ばれてきました。通常のコード プロモーション パス外となっているためです。
 
 ## <a name="refresh-the-uat-environment"></a>UAT 環境を更新 
 
-この更新操作は、生産データベースの最新のコピーで UAT 環境を上書きします。 この手順を完了するには、[トレーニング目的での更新](dbmovement-scenario-general-refresh.md)の手順に従います。
+この更新操作は、運用データベースの最新のコピーで UAT 環境を上書きします。 この手順を完了するには、[トレーニング目的での更新](dbmovement-scenario-general-refresh.md)の手順に従います。
 
 ## <a name="enable-database-access"></a>データベース アクセスの有効化
 

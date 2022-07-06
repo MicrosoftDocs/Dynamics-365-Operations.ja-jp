@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。
+description: この記事では、財務と運用アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。
 author: tonyafehr
 ms.date: 11/08/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 3414e0cf5cbf9a8764402f96ddf4cc0aed56ba64f713063cb7d85491ac885a67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2a3102a77c1309aa3b10f1c329ba6f012359586
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856903"
 ---
 # <a name="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5407 です。 一般提供開始日は 11 月ですが、新機能は 9 月の初期リリースで使用できます。 プラットフォーム更新プログラム 30 の詳細については [追加リソース](whats-new-platform-update-30.md#additional-resources) を参照してください。
+この記事では、財務と運用アプリのプラットフォーム更新プログラム 30 用の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5407 です。 一般提供開始日は 11 月ですが、新機能は 9 月の初期リリースで使用できます。 プラットフォーム更新プログラム 30 の詳細については [追加リソース](whats-new-platform-update-30.md#additional-resources) を参照してください。
 
 ## <a name="readable-date-time-format-for-datetime-fields-in-business-event-payload"></a>ビジネス イベント ペイロードの dateTime フィールドに対する読み取り可能な日時形式
 新しいビジネス イベントがコード化されると、dateTime フィールドを有効にして、ビジネス イベント ペイロード人が判読可能な形式で値を出力することができます。 また、既存のビジネス イベントを変更して、ペイロードに読み取り可能な dateTime フィールドを含めることにより、互換性を維持することもできます。 開発者ドキュメントについては、[ビジネス イベント開発者ドキュメント](../../dev-itpro/business-events/business-events-dev-doc.md) で説明されています。
@@ -62,14 +62,14 @@ ms.locfileid: "6734600"
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: クラウドの工程とサービス
-description: このトピックでは、クラウドの工程とサービスについて説明します。
+description: この記事では、クラウドの工程とサービスについて説明します。
 author: laneswenka
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef7c95c5fb7630943b799bca2bbd524beeda854e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: fc7ad0674c076627a064f339b21cc4cacb4b8d5c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649004"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866483"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
@@ -27,13 +27,13 @@ ms.locfileid: "8649004"
 
 この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームに対して、アクションのほとんどが確実にセルフ サービスとなるようにする必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
 
-Finance and Operations アプリは、管理サービスです。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
+Finance and Operations アプリは、管理サービスです。 つまり、Microsoft は運用環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
 
 ## <a name="monitor-and-troubleshoot-the-health-of-your-environment"></a>環境の正常性の監視およびトラブルシューティング
 クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
 
 ## <a name="update-your-environment"></a>環境の更新
-Go-Live の後、実稼働環境は定期的に更新する必要があります。 Lifecycle Services (LCS) では、環境を継続的に更新するセルフ サービス エクスペリエンスが提供されます。
+Go-Live の後、運用環境は定期的に更新する必要があります。 Lifecycle Services (LCS) では、環境を継続的に更新するセルフ サービス エクスペリエンスが提供されます。
 
 ### <a name="update-types"></a>更新タイプ
 **Dynamics 365 for Finance and Operationsバージョン 8.0 (2018 年 4 月) あるいはそれ以前** に存在する顧客については、次の更新プログラムが提供されています。
@@ -57,13 +57,13 @@ Microsoft は環境のインフラストラクチャの管理について責任�
 - **顧客が開始するメンテナンス ウィンドウ** - 顧客は、パッケージ アプリケーション フローの一部として LCS を介してメンテナンス ウィンドウを選択します。 更新は、このメンテナンス ウィンドウで行われます。
 
 ### <a name="search-for-and-apply-an-update-in-lifecycle-services"></a>Lifecycle Services で更新プログラムを検索して適用
-更新は、配置可能パッケージとして環境に適用されます。 デプロイ可能なパッケージは、プロジェクトのすべての環境への更新を適用するために使用される形式です。 実稼動環境で問題が発生したときは、修正プログラムをすばやく検索して、すべての環境にそれを適用できます。
+更新は、配置可能パッケージとして環境に適用されます。 デプロイ可能なパッケージは、プロジェクトのすべての環境への更新を適用するために使用される形式です。 運用環境で問題が発生したときは、修正プログラムをすばやく検索して、すべての環境にそれを適用できます。
 
 - LCSで **更新プログラムを検索してダウンロードする** には、 [Lifecycle Services (LCS) の問題を検索する](issue-search-lcs.md) 、または [Lifecycle Services (LCS) からダウンロードした更新プログラムを使用します](../migration-upgrade/download-hotfix-lcs.md) を使用して更新プログラムを検索してください。 更新プログラムを準備する手順は更新タイプによって異なるため、更新プログラムがダウンロードされた後、次のリストを使用して準備を続行する方法を決定してください。
   - プラットフォーム更新プログラム: プラットフォーム更新プログラムは累積的かつバイナリです。 つまり、環境に直接適用できるということです。 更新プログラムがダウンロードされた後、アセット ライブラリを自動的に環境に適用させアップロードすることができます。
   - アプリケーションの修正プログラム: アプリケーションの修正プログラムはコードの変更です。 アプリケーションの修正プログラムをダウンロードした後、開発環境に適用して、配置可能なパッケージを生成する必要があります。 詳細については、 [モデルの配備可能なパッケージを作成する](../deployment/create-apply-deployable-package.md) および [開発環境でメタデータ修正をインストールする](../migration-upgrade/install-metadata-hotfix-package.md) を参照してください。
   - アプリケーションのカスタマイズ: ISV またはパートナーが作成するカスタマイズです。 これらは展開可能なパッケージで、アセット ライブラリにアップロードされ、そこから適用することができます。
-- **更新の適用** [クラウド環境に更新を適用する](../deployment/apply-deployable-package-system.md) トピック内の情報を使用して、配置可能なパッケージを適用する手順を参照してください。 更新パッケージは、アプリケーション オブジェクト サーバー (AOS) のバイナリ修正プログラムまたは開発環境で作成された展開可能パッケージです。
+- **更新の適用** [クラウド環境に更新を適用する](../deployment/apply-deployable-package-system.md)という記事内の情報を使用して、配置可能なパッケージを適用する手順を参照してください。 更新パッケージは、アプリケーション オブジェクト サーバー (AOS) のバイナリ修正プログラムまたは開発環境で作成された展開可能パッケージです。
 - **更新の検証** 更新の適用後、アプリケーションを検証する必要があります。
   - 更新プログラムが適用された問題を解決することを確認します。
   - 更新プログラムの適用によって回帰が発生していないことを確認します。

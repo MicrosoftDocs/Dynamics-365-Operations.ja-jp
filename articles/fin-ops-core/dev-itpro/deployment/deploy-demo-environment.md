@@ -1,6 +1,6 @@
 ---
 title: デモ環境の配置
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。
 author: sarvanisathish
 ms.date: 10/01/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: fefde384290d28dddadece9f1a7555ca25337e8eea3b44a76ad2885cd7d90603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1e373c2a75e892350bb6dc92a24b88a2149230a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867459"
 ---
 # <a name="deploy-a-demo-environment"></a>デモ環境の配置
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 このトピックは、以下のデモ環境の配置に適用されます。
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 この記事は、以下のデモ環境の配置に適用されます。
 
 - Dynamics 365 Finance
 - Dynamics 365 Supply Chain Management
@@ -36,7 +36,7 @@ ms.locfileid: "6746571"
 
 - Azure サブスクリプションがあり、そのサブスクリプションの共同管理者であることを確認します。
 - LCS プロジェクトへのアクセスが可能であり、環境を展開するためのアクセス許可があることを確認します。
-- [Azure Resource Managerr (ARM) オンボード プロセス を完了する](arm-onboarding.md) に記載された情報を参考に、Azure のサブスクリプションが LCS プロジェクトに接続済みであることを確認します。
+- [Azure Resource Managerr (ARM) オンボード プロセス を完了する](arm-onboarding.md) の記事情報を参考に、Azure のサブスクリプションが LCS プロジェクトに接続済みであることを確認します。
 
 ## <a name="deploy-a-demo-environment"></a>デモ環境の配置
 LCS を使用して Azure でデモ環境を配置するには、この手順を使用します。 
@@ -44,10 +44,10 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 1. LCS でプロジェクトを開き、**環境** セクションでプラス記号 (**+**) をクリックします。
 2. Azure 環境トポロジを選択し、**デモ** を選択します。
 3. トポロジを選択します。
-    - Finance and Operations では、Finance and Operations の最新の Azure Resource Manager (ARM) トポロジを選択します。
+    - Finance and Operations で、Finance and Operations 用の最新の Azure Resource Manager (ARM) トポロジを選択します。
     - コマースで、**Dynamics 365 for Commerce - デモ** を選択します。
 4. **環境の配置** ダイアログ ボックスに、環境の名前を入力します。 この名前は Azure サブスクリプションで一意である必要があります。 環境を簡単に識別できるようにするには、ユーザー名とトポロジを使用して略語を作成することを検討してください。
-5. 仮想マシン (VM) のサイズを選択します。 Finance and Operations ワークロードには、**Ev3 シリーズ サイズ** を使用する必要があります。 **Ev3** をお勧めします。 配賦に失敗した場合は、[Azure のトラブルシューティング ガイド](/azure/virtual-machines/troubleshooting/allocation-failure)を参照してください。
+5. 仮想マシン (VM) のサイズを選択します。 財務と運用のワークロードには、**Ev3 シリーズ サイズ** を使用する必要があります。 **Ev3** をお勧めします。 配賦に失敗した場合は、[Azure のトラブルシューティング ガイド](/azure/virtual-machines/troubleshooting/allocation-failure)を参照してください。
 6. **インスタンス** フィールドを 1 に設定します。
 
     > [!NOTE] 

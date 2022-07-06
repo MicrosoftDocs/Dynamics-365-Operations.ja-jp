@@ -1,6 +1,6 @@
 ---
 title: X++ データの選択と操作の概要
-description: このトピックでは、X++ データの選択と操作についてのトピックへのリンクを提供します。
+description: この記事では、X++ データの選択と操作についてのトピックへのリンクを提供します。
 author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer
@@ -10,12 +10,12 @@ ms.topic: overview
 ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 9e90139d344c3466f8fb4655be5851257e5cceaa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2799ee68bab529b4ac62075d1f6c007a2caebda1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983279"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867210"
 ---
 # <a name="x-data-selection-and-manipulation-overview"></a>X++ データの選択と操作の概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "7983279"
 
 [トランザクションの整合性](xpp-transaction.md) により、データの破損を防ぎ、スケーラビリティを向上させることができます。
 
-[セット ベースからレコード単位への操作の変換](xpp-data-perf.md) トピックでは、レコード セット ベースのステートメントおよびメソッドをより効率的に使用するための情報を提供します。
+[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)の記事では、レコード セット ベースのステートメントおよびメソッドをより効率的に使用するための情報を提供します。
 
 [SysDa クラス](../sysda.md)を使用してデータを取得および変更することもできます。 拡張可能な SysDa API では、X++ で使用できるほとんどすべてのデータアクセス可能性が提供されます。
 

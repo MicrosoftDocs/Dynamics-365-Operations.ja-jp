@@ -1,6 +1,6 @@
 ---
 title: 自分のデータベースの持ち込み (BYOD)
-description: このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
+description: この記事では、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
 author: peakerbl
 ms.date: 10/21/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: f8e3928aec8819287d960db792819bf698584391
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6bb52f75defe9644074a531ad0ce754633ec68ac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068806"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888132"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -26,7 +26,7 @@ ms.locfileid: "8068806"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、管理者がアプリケーションからのデータ エンティティを自分の Microsoft Azure SQL データベースにエクスポートする方法について説明します。 この機能は、*自分のデータベースの持ち込み* (BYOD) とも呼ばれます。 
+この記事では、管理者がアプリケーションからのデータ エンティティを自分の Microsoft Azure SQL データベースにエクスポートする方法について説明します。 この機能は、*自分のデータベースの持ち込み* (BYOD) とも呼ばれます。 
 
 BYOD 機能により、管理者は、独自のデータベースを構成し、アプリケーションで使用できる 1 つまたは複数のデータ エンティティをデータベースにエクスポートできます。 (現時点では、1,700 以上のデータ エンティティが使用可能です。) 具体的には、この機能により次のタスクを実行できます。
 
@@ -46,7 +46,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 - 他のシステムとのバッチ統合を実行する必要があります。
 
 > [!NOTE]
-> アプリケーションは、生産データベースへの T-SQL 接続を許可しません。 Finance and Operations の以前のバージョンをアップグレードする場合、データベースへの直接的な T-SQL アクセスを必要とする統合ソリューションがある場合は、BYOD は推奨するアップグレード パスになります。
+> アプリケーションは、運用データベースへの T-SQL 接続を許可しません。 Finance and Operations の以前のバージョンをアップグレードする場合、データベースへの直接的な T-SQL アクセスを必要とする統合ソリューションがある場合は、BYOD は推奨するアップグレード パスになります。
 
 エンティティ格納または BYOD のいずれかを使用できます。 使用可能な既定の業務レポートは、埋め込み Power BI とエンティティ格納を利用します。 最初の選択として、既定の業務レポートを使用することをお勧めします。 また、要件に合わせて、既成のオペレーション レポートを拡張することができます。 BYOD を必要に応じて利用する補足的なオプションと見なす必要があります。
 
@@ -54,7 +54,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 
 エンティティのエクスポート オプションをコンフィギュレーションして BYOD 機能を使用する前に、Azure ポータルを使用して SQL データベースを作成する必要があります。
 
-1 ボックス開発環境では、ローカルの Microsoft SQL Server データベースでデータベースを作成できます。 ただし、このデータベースは、開発およびテスト目的でのみ使用される必要があります。 実稼働環境については、Azure SQL データベースを作成する必要があります。
+1 ボックス開発環境では、ローカルの Microsoft SQL Server データベースでデータベースを作成できます。 ただし、このデータベースは、開発およびテスト目的でのみ使用される必要があります。 運用環境については、Azure SQL データベースを作成する必要があります。
 
 また、データベースにサインインするには、SQL ユーザー アカウントを作成する必要があります。 サーバー名、データベース名、および SQL ユーザー ID とパスワードを記述します。 この情報は、次のセクションで、エンティティのエクスポート オプションをコンフィギュレーションするときに使用します。
 
@@ -63,7 +63,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 > [!NOTE]
 > ご利用の BYOD データベースは、財務と運用アプリからアクセスできる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。 セルフ サービスの配置の詳細については、[セルフ サービスの配置に関するよく寄せられる質問](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment)を参照してください。
 > > 
-> 想定されるパフォーマンスを保護するには、正しいサービス層と計算サイズを選択する必要があります。 実行している間、Finance and Operations エクスポートに基づく負荷だけではなく、対象となるワークロードの合計を考慮することが重要です。 実稼働環境の場合、最低でも Premium サービス層の計算サイズ P2、または標準サービス層の計算サイズ S4 の使用をお勧めします。 特定の BYOD を使用する場合、サービス層が上記の最小値を超えている必要がある場合があります。 層と計算サイズの詳細については、[SQL Azure サービス層](/azure/azure-sql/database/service-tiers-dtu)および[リソースの制限の詳細](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes)を参照してください。 DTU の必要または使用率を決定するには、[ワークロードに必要な DTU を決定する](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)を参照してください
+> 想定されるパフォーマンスを保護するには、正しいサービス層と計算サイズを選択する必要があります。 実行している間、Finance and Operations エクスポートに基づく負荷だけではなく、対象となるワークロードの合計を考慮することが重要です。 運用環境の場合、最低でも Premium サービス層の計算サイズ P2、または標準サービス層の計算サイズ S4 の使用をお勧めします。 特定の BYOD を使用する場合、サービス層が上記の最小値を超えている必要がある場合があります。 層と計算サイズの詳細については、[SQL Azure サービス層](/azure/azure-sql/database/service-tiers-dtu)および[リソースの制限の詳細](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes)を参照してください。 DTU の必要または使用率を決定するには、[ワークロードに必要な DTU を決定する](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)を参照してください
 
 ## <a name="configuring-the-entity-export-option"></a>エンティティのエクスポート オプションのコンフィギュレーション
 
@@ -182,7 +182,7 @@ BYOD から読み込む分析アプリケーション データのシナリオ�
 > BYOD のために **管理 > 定期的なデータ ジョブの管理** で定期的なエクスポートを使用することはサポートされていません。 **バッチ処理でのエクスポート** オプションを使用する必要があります。
 
 ### <a name="incremental-export"></a>差分エクスポート
-データ エクスポートのエンティティを追加するとき、増分エクスポート (増分プッシュとも呼ばれます) またはフル プッシュをするかを選択できます。 作業する増分プッシュについては、このトピックで前述されているように、データベースで **変更追跡** オプションを有効にし、適切な変更追跡オプションを指定する必要があります。
+データ エクスポートのエンティティを追加するとき、増分エクスポート (増分プッシュとも呼ばれます) またはフル プッシュをするかを選択できます。 作業する増分プッシュについては、この記事で前述されているように、データベースで **変更追跡** オプションを有効にし、適切な変更追跡オプションを指定する必要があります。
 
 >[!NOTE]
 > 完全なプッシュは、エンティティからすべての既存のレコードを削除し、選択したエンティティから現在のレコードのセットを挿入します。

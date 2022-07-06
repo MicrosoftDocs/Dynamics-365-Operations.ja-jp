@@ -1,6 +1,6 @@
 ---
 title: タイプ登録
-description: このトピックでは、プロセス自動化フレームワークでタイプを登録する方法について説明します。
+description: この記事では、プロセス自動化フレームワークでタイプを登録する方法について説明します。
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7ccaa23761eb6be1ffe0f69a8b3fda5ca4156db
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a54960ae456fecf2e8099594cd08f069b695a2f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850096"
 ---
 # <a name="type-registration"></a>タイプ登録
 
@@ -49,7 +49,7 @@ ms.locfileid: "8734560"
 
 - バックグラウンド プロセスは、パラメータをサポートしていないので、**パラメータ** タブ リストを設定する必要はありません。
 - タイプ名は UI に表示されません。 この名前は、開発者が作成した **VendorInvoiceBatchPosting** などの文字列にする必要があります。 さまざまな目的に応じて型を参照するためのキーとして内部的に使用されます。 ラベルにすることは **できません**。
-- タイプ名は、**SysPlugin** パターンで頻繁に使用されます。 プロセス自動化フレームワークに実装されているインターフェイスのほとんどは、**SysPlugin** パターンに従っており、タイプ名が **ExportMetadataAttribute** によって指定されている必要があります。 このパターンでは、ほとんどの場合、フレームワークは操作しようとしているタイプに対してのみインターフェイスの実装を呼び出し、その他のタイプに対しては呼び出しません。 このトピックおよび関連するトピックのコード例は、このパターンに従います。
+- タイプ名は、**SysPlugin** パターンで頻繁に使用されます。 プロセス自動化フレームワークに実装されているインターフェイスのほとんどは、**SysPlugin** パターンに従っており、タイプ名が **ExportMetadataAttribute** によって指定されている必要があります。 このパターンでは、ほとんどの場合、フレームワークは操作しようとしているタイプに対してのみインターフェイスの実装を呼び出し、その他のタイプに対しては呼び出しません。 この記事および関連するトピックのコード例は、このパターンに従います。
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -191,7 +191,7 @@ internal final class VendPaymProposalAutomationFeature implements IFeatureMetada
 | `public ProcessScheduleTypeCompanyScope parmCompanyScope(ProcessScheduleTypeCompanyScope _companyScope = companyScope)` | この方法は、プロセスが単一の会社のプロセスであるかグローバル プロセスであるかを決定します。 単一会社のプロセスでは、シリーズの作成時にユーザーが所属する会社に応じて、バッチ内の会社コンテキストが設定されます。 スコープがグローバルである場合、会社コンテキストは無視され、すべてのジョブが **dat** に含まれます。 |
 | `public LabelId parmLabelId(LabelId _labelId = labelId)` | このメソッドが返すラベルは、ユーザーに対して表示され、タイプの表示名を表します。 たとえば、**仕入先支払提案** があります。 |
 | `public className parmProcessAutomationTaskClassName(ClassName _processAutomationTaskClassName = processAutomationTaskClassName)` | このメソッドが返すクラス名は、**ProcessAutomationTask** インターフェースを実装するクラスのクラス名です。 |
-| `public NoYes parmIsEnabled(NoYes _isEnabled = isEnabled)` | このメソッドは、登録しているタイプが既定で有効になっているかどうかを決定します。 タイプが機能管理されている場合は、機能の状態から既定値が取得されます。 有効化および無効化された機能管理イベントを必ず実装してください。 **ProcessScheduleTypeRegistration.enableOrDisableType** メソッドを使用して、適切な方法でプロセス自動化フレームワークのタイプを有効および無効にします。 このトピックでは、先ほどの例となるコードを示します。 |
+| `public NoYes parmIsEnabled(NoYes _isEnabled = isEnabled)` | このメソッドは、登録しているタイプが既定で有効になっているかどうかを決定します。 タイプが機能管理されている場合は、機能の状態から既定値が取得されます。 有効化および無効化された機能管理イベントを必ず実装してください。 **ProcessScheduleTypeRegistration.enableOrDisableType** メソッドを使用して、適切な方法でプロセス自動化フレームワークのタイプを有効および無効にします。 この記事では、先ほどの例となるコードを示します。 |
 | `public List parmParameterTabItemList(List _parameterTabList = parameterTabList)` | プロセスには、UI で多数のパラメーター ページを含めることができます。 これらのパラメーター ページには、プロセスに固有のパラメーターが含まれています。 これらは、**シリーズの作成** ウィザードおよび出来事の編集ダイアログ ボックスでフォーム パーツとして示されます。 パラメータ ページごとに、**ProcessSchedulelTypeRegistrationParameterTabItem** クラスのインスタンスは、構築されてリストに返す必要があります。 プロセスでパラメーター ページが不要な場合は、**null** を返します。 このプロセスの詳細については、[プロセス パラメーター](process-parameters.md) を参照してください。 |
 | `public static ProcessScheduleTypeRegistrationItem construct()` | このメソッドで、**ProcessScheduleTypeRegistrationItem** クラスのインスタンスを構築します。 |
 

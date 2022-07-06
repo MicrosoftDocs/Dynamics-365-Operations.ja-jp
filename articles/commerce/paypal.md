@@ -1,6 +1,6 @@
 ---
 title: PayPal 向け Dynamics 365 Payment Connector
-description: このトピックでは、PayPal 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
+description: この記事では、PayPal 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: BrianShook
 ms.date: 05/18/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e5cbe6f5c8a314ca3e0ddc3f0545cbd1b32a68ca
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: ec6e030e2638c81259a2f7e8d28e24b0253c3618
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848881"
 ---
 # <a name="dynamics-365-payment-connector-for-paypal"></a>PayPal 向け Dynamics 365 Payment Connector
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、PayPal 向け Microsoft Dynamics 365 Payment Connector (PayPal コネクタ) の概要について説明します。 これには、サポートされているフィーチャおよび機能、コネクタの設定および構成のガイド、トラブルシューティング情報、および一般的な一部の問題に関する説明の一覧が含まれています。
+この記事では、PayPal 向け Microsoft Dynamics 365 Payment Connector (PayPal コネクタ) の概要について説明します。 これには、サポートされているフィーチャおよび機能、コネクタの設定および構成のガイド、トラブルシューティング情報、および一般的な一部の問題に関する説明の一覧が含まれています。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -117,7 +117,7 @@ PayPal 支払コネクタをテストするには、最初に PayPal 開発者�
     |---|---|---|
     | 支払サービス | 構成する支払サービスの名前を入力します。 | PayPal |
     | 支払コネクタ | PayPal 支払コネクタを選択します。 | PayPal 向け Dynamics 365 Payment Connector |
-    | テスト モード | PayPal コネクタに関しては、実稼働環境とテスト環境でこのフィールドを **False** に設定する必要があります。 | False |
+    | テスト モード | PayPal コネクタに関しては、運用環境とテスト環境でこのフィールドを **False** に設定する必要があります。 | False |
     | クレジット カードの既定のプロセッサ | コール センターでは既定のプロセッサが使用されるため、この値は **No** に設定する必要があります。 | なし |
     | ゼロ トランザクションの支払プロセッサをバイパスする | この支払プロセッサが 0 (ゼロ) の量の取引でスキップする必要があるかを指定します。 | 有 |
 

@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントの概要
-description: このトピックは、外部システムが財務と運用アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
+description: この記事は、外部システムが財務と運用アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 ms.date: 04/22/2022
 ms.topic: overview
@@ -12,16 +12,17 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 18f1deb7987402bef04ee3c00a3558da0ea00136
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c819831cc86f5b2457ddd6559ade4ce4dcc5d5ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892374"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
 [!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
 
 ビジネス イベントは外部システムが財務と運用アプリケーションから通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
 
@@ -143,7 +144,7 @@ Azure Service Bus と Azure Event Grid は、受信メッセージの条件を�
 
 Azure Service Bus や Azure Event Grid に送信されるビジネス イベントは、この目的で使用できる次のフィールドを持ちます。 購読者はこの情報を使用して、必要に応じてさらに特定のトピックを購読できます。
 
--   **カテゴリ** - これはビジネス イベント カタログに表示されたビジネス イベントのカテゴリです。 複数のカテゴリから共通トピックがビジネス イベントの受信に使用されていて、購読者が関心のあるカテゴリのビジネス イベントのみを受信する必要がある場合に、これはフィルター条件として役立ちます。
+-   **カテゴリ** - これはビジネス イベント カタログに表示されたビジネス イベントのカテゴリです。 複数のカテゴリから共通記事がビジネス イベントの受信に使用されていて、購読者が関心のあるカテゴリのビジネス イベントのみを受信する必要がある場合に、これはフィルター条件として役立ちます。
 
 -   **ビジネス イベント ID** – これはビジネス イベント カタログに表示されたビジネス イベント実装のクラス名です。 これはビジネス イベント (ビジネス イベントのインスタンスではない) を一意に識別して、したがって消費者側で受信したビジネス イベントを検証し、期待されるビジネス イベントが受信および処理されていることを検証するのに役立ちます。
 

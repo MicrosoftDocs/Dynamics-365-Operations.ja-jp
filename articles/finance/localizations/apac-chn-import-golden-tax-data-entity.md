@@ -1,6 +1,6 @@
 ---
 title: 中国金税ファイルのインポート
-description: このトピックでは、中国金税ファイルを Microsoft Microsoft Dynamics 365 Finance にインポートする方法について説明します。
+description: この記事では、中国金税ファイルを Microsoft Microsoft Dynamics 365 Finance にインポートする方法について説明します。
 author: ilkond
 ms.date: 12/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: China (PRC)
 ms.author: ilyako
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 443a62e55865da9ea443eadf8f3602dec96236af
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 02619ff2e91e3549dcaa5d4afda828357675b60a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865668"
 ---
 # <a name="import-the-chinese-golden-tax-files"></a>中国金税ファイルのインポート
 
 [!include [banner](../includes/banner.md)]
   
-このトピックでは、外部請求書番号を持つファイルをプロバイダ (Aisino または BaiWang) から Dynamics 365 Finance にインポートする方法について説明します。 txt と xml ファイルを BaiWang プロバイダから、txt と txt ファイルを Aisino プロバイダからインポートできます。
+この記事では、外部請求書番号を持つファイルをプロバイダ (Aisino または BaiWang) から Dynamics 365 Finance にインポートする方法について説明します。 txt と xml ファイルを BaiWang プロバイダから、txt と txt ファイルを Aisino プロバイダからインポートできます。
 
 外部請求書番号を含むプロバイダからファイルをインポートするには、次の手順を実行します。
 

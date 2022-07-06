@@ -1,6 +1,6 @@
 ---
 title: エンティティ格納を Data Lake として使用可能にする
-description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
+description: この記事では、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
 author: MilindaV2
 ms.date: 09/23/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: 19b4bbeaf0bb16fd9a97224dfeccc30bcaf6143ee53e2c105e575b0f5d951cc0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 513419e9142bc6c2cb060281e6ab309f536fe94f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906549"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
@@ -89,7 +89,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
     - **パフォーマンス:** **標準** を選択することをお勧めします。
     - **アカウントの種類:** **StorageV2** を選択する必要があります。
 
-3. **詳細オプション** ダイアログ ボックスで、**Data Lake ストレージ Gen2** オプションが表示されます。 階層の名前空間機能で、**有効化** を選択します。 このオプションを無効にすると、Power BI データ フローなどのサービスを含む Finance and Operations アプリによって書き込まれたデータを使用することができません。 
+3. **詳細オプション** ダイアログ ボックスで、**Data Lake ストレージ Gen2** オプションが表示されます。 階層の名前空間機能で、**有効化** を選択します。 このオプションを無効にすると、Power BI データ フローなどのサービスを含む財務と運用アプリによって書き込まれたデータを使用することができません。 
 4. **確認して作成** を選択します。 配置が完了したら、新しいリソースが Azure ポータルに表示されます。
 5. リソースを選択し、**設定** \> **アクセス キー** を選択します。
 6. その後で指定する必要があるため、接続文字列値を書き留めます。
@@ -137,7 +137,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 ## <a name="work-in-entity-store-in-a-data-lake"></a>Data Lake のエンティティ格納で作業する
 
 1. **システム管理** \> **設定** \> **システム パラメーター** の順に移動します。
-2. **データ接続** タブで、このトピックの前の部分でメモした次の情報を入力します。
+2. **データ接続** タブで、この記事の前述でメモした次の情報を入力します。
 
     - **アプリケーション ID:** 前に登録した Azure AD アプリケーションのアプリケーション ID を入力します。
     - **アプリケーション シークレット:** Azure AD アプリケーションのアプリケーション キー (秘密) を入力します。

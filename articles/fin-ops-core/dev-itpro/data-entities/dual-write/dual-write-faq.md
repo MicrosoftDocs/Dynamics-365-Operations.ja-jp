@@ -1,6 +1,6 @@
 ---
 title: 二重書き込み FAQ
-description: このトピックでは、二重書き込みについてよく寄せられる質問に回答します。
+description: この記事では、二重書き込みについてよく寄せられる質問に回答します。
 author: tonyafehr
 ms.date: 05/20/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19cf01273675e4eb73ca880798643f8778f8def2
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 74b511be2852ffb0075498677e2684186a72f83e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852615"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -23,7 +23,7 @@ ms.locfileid: "8786937"
 
 
 
-このトピックでは、二重書き込みに関してよく寄せられる質問を取り上げ、必要な情報をすぐ得られるように簡単な回答を示します。
+この記事では、二重書き込みに関してよく寄せられる質問を取り上げ、必要な情報をすぐ得られるように簡単な回答を示します。
 
 ## <a name="dual-write-setup"></a>二重書き込みの設定
 
@@ -89,7 +89,7 @@ Finance and Operations のフィルターの詳細については、[クエリ�
 
 ### <a name="how-do-i-handle-a-finance-and-operations-database-transfer-from-prod-to-stage-what-is-the-effect-on-dual-write-after-the-transfer-the-systems-are-no-longer-in-sync-is-the-synchronization-done-automatically"></a>PROD から STAGE への Finance and Operations データベースの転送をどのように処理したらよいですか? 二重書き込みはどんな影響がありますか? 転送後、システムの同期は解除されますが、同期は自動的に行われますか?
 
-リンクされた各環境ペア (財務と運用アプリ環境と Dataverse 環境) は、単一の単位として処理され、それに応じて更新される必要があります。 たとえば、実稼働環境からサンドボックスを更新する場合、財務と運用アプリのサンドボックス環境と Dataverse のサンドボックス環境の両方を、それに対応する実稼働環境から更新する必要があります。 二重書き込みがターゲット環境で既に使用されている場合は、それらの環境のリンクを解除する必要があります。 ターゲット環境でデータを更新した後、次のテーブルをクリーンアップする必要があります。
+リンクされた各環境ペア (財務と運用アプリ環境と Dataverse 環境) は、単一の単位として処理され、それに応じて更新される必要があります。 たとえば、運用環境からサンドボックスを更新する場合、財務と運用アプリのサンドボックス環境と Dataverse のサンドボックス環境の両方を、それに対応する運用環境から更新する必要があります。 二重書き込みがターゲット環境で既に使用されている場合は、それらの環境のリンクを解除する必要があります。 ターゲット環境でデータを更新した後、次のテーブルをクリーンアップする必要があります。
 
 + 財務と運用アプリ テーブル: **DualWriteProjectConfiguration**、**DualWriteProjectFieldConfiguration**、および **BusinessEventsDefinition**。 
 + Dataverse テーブル: **DualwriteRuntimeConfiguration**。 

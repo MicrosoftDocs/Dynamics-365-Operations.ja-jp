@@ -1,6 +1,6 @@
 ---
-title: 段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
-description: このトピックでは、チャネル コンポーネントが Microsoft Dynamics 365 Commerce バックオフィスと連携できるように、段階的なロールアウト (N-1) コンポーネントを設定する方法について説明します。
+title: 段階的なロールアウト (N-1) のインストール、構成、切替ガイド
+description: この記事では、チャネル コンポーネントが Microsoft Dynamics 365 Commerce Headquarters と連携できるように、段階的なロールアウト (N-1) コンポーネントを設定する方法について説明します。
 author: jashanno
 ms.date: 04/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 846bd7067568154ddaf570d2e27fd52be5b5beeb
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7e7f76fcacb3c09e849bc188f5b5d2032d3464a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905439"
 ---
-# <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
+# <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) のインストール、構成、切替ガイド
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX for Retail Modern 販売時点管理 (MPOS) および Commerce Scale Unit、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Commerce バックオフィスを使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。
+この記事では、Microsoft Dynamics AX for Retail Modern 販売時点管理 (MPOS) および Commerce Scale Unit、または Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS) などの Microsoft Dynamics AX 2012 R3 チャンネル コンポーネントが、Microsoft Dynamics 365 Commerce Headquarters を使用できるように、段階的ロールアウト (N-1) のコンポーネントを設定する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -36,7 +36,7 @@ ms.locfileid: "7782982"
 
 ## <a name="overview"></a>概要
 
-このトピックのセクションでは、N-1 コンポーネントを所持する環境の設定を行う必要がある以下の手順について説明します。 これらの手順では、バック オフィスが既に配置され、AX 2012 R3 環境が現在実行中であることを前提としています。
+この記事のセクションでは、N-1 コンポーネントを所持する環境の設定を行う必要がある以下の手順について説明します。 これらの手順では、バック オフィスが既に配置され、AX 2012 R3 環境が現在実行中であることを前提としています。
 
 - **[Azure AD アカウントを設定](#set-up-azure-ad-accounts)** – このセクションでは、バックオフィスに接続するために使用する N-1 コンポーネントの Microsoft Azure Active Directory (Azure AD) アカウントの設定方法について説明します。
 - **[N-1 コンポーネントを構成する](#configure-n-1-components)** – このセクションでは、バックオフィスで N-1 コンポーネントを構成する方法について説明します。
@@ -285,7 +285,7 @@ Connector for Microsoft Dynamics AX インストーラーを実行する前に�
     3. 特定のユーザーが必要な場合は、アプリケーション プールを実行するために必要なユーザー名とパスワードを入力します。 既定では、インストーラーは自動的に使用するサービス アカウントを生成します。 この方法は、安全性が向上しお勧めしますが、データベースが別のコンピューターにある場合は使用できません。 **次へ** を選択して続行します。
     4. 使用する必要のある HTTPS ポートを確認し、コンピューターのホスト名が正しいことを確認します。 **次へ** を選択して続行します。
 
-        HTTPS ポートは、店舗システムのプロファイルに一覧表示されます。 店舗システム プロファイルにアクセスするには、**店舗詳細** ページの **店舗システム** クイック タブで、選択した店舗システムのプロファイル ID を選択します。 インストーラーは自動的にホスト名を入力します。 インストールのためにホスト名を変更する必要がある場合は、ここで変更します。 ホスト名はシステムの完全修飾ドメイン名 (FQDN) でなければなりません。また、このトピックの前半にある **Connector for Microsoft Dynamics AX** ページに入力した値と一致する必要があります。
+        HTTPS ポートは、店舗システムのプロファイルに一覧表示されます。 店舗システム プロファイルにアクセスするには、**店舗詳細** ページの **店舗システム** クイック タブで、選択した店舗システムのプロファイル ID を選択します。 インストーラーは自動的にホスト名を入力します。 インストールのためにホスト名を変更する必要がある場合は、ここで変更します。 ホスト名はシステムの完全修飾ドメイン名 (FQDN) でなければなりません。また、この記事の前半にある **Connector for Microsoft Dynamics AX** ページに入力した値と一致する必要があります。
 
     5. アプリケーション ID (クライアント ID) および Connector for Microsoft Dynamics AX  インストールと関連するシークレットを入力します。 その後、**インストール** を選択します。
 

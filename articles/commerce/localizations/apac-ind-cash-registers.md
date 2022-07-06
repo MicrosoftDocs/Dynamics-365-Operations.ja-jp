@@ -1,6 +1,6 @@
 ---
 title: インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
-description: このトピックでは、インドで使用可能なキャッシュ レジスター機能の概要を示します。 また、機能を設定するためのガイドラインを示します。
+description: この記事では、インドで使用可能なキャッシュ レジスター機能の概要を示します。 また、機能を設定するためのガイドラインを示します。
 author: EvgenyPopovMBS
 ms.date: 09/07/2021
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: a5c856e5e6971df3cba1b616577872f48e4d66e7
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: 1953e0b8de1231b2a4e7b27c87e480a78dddc98f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478711"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869145"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、関連するフィーチャのチュートリアルを提供します。 また、さまざまな種類のコマース業務取引に対する GST の影響をハイライトして、レシートが販売時点管理 (POS) で印刷される小売り取引の会計および転記を示します。
+この記事では、関連するフィーチャのチュートリアルを提供します。 また、さまざまな種類のコマース業務取引に対する GST の影響をハイライトして、レシートが販売時点管理 (POS) で印刷される小売り取引の会計および転記を示します。
 
 
 ## <a name="prerequisites"></a>必要条件

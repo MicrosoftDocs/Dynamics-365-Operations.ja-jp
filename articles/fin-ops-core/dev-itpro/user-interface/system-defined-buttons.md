@@ -1,6 +1,6 @@
 ---
 title: システム定義ボタン
-description: このトピックでは、システム定義のボタンについて説明します。
+description: この記事では、システム定義ボタンについて説明します。
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6218c9954f388c1767e6dc3b4c0b2d918d35ae45
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5acdcf7825dc57f7f7dd749c732aa6a56bd94955
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848718"
 ---
 # <a name="system-defined-buttons"></a>システム定義ボタン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、システム定義のボタンについて説明します。
+この記事では、システム定義ボタンについて説明します。
 
 ## <a name="overview"></a>概要
 

@@ -1,6 +1,6 @@
 ---
 title: グローバル アドレス帳および場所の所有者
-description: このトピックでは、場所の所有者について説明し、グローバル アドレス帳の所有者を変更する方法について説明します。
+description: この記事では、場所の所有者について説明し、グローバル アドレス帳の所有者を変更する方法について説明します。
 author: jaredha
 ms.date: 08/16/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-08-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48633c1920a5c1da0c5663cc0c542e12b7c004dc
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 03197a53399e335af402456a65ef5d4ff970754a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463547"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895213"
 ---
 # <a name="global-address-book-and-location-owners"></a>グローバル アドレス帳および場所の所有者
 

@@ -1,6 +1,6 @@
 ---
 title: 新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
-description: このトピックでは、新しい NuGet パッケージを使用するために Azure パイプラインを更新する方法について説明します。
+description: この記事では、新しい NuGet パッケージを使用するために Azure パイプラインを更新する方法について説明します。
 author: jorisdg
 ms.date: 03/04/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf1b47c56ce9b95e5731b6628627aee10e038a2e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5cfbb0f3562280538ed9e815e49047e5866e9822
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782463"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867003"
 ---
 # <a name="update-the-hosted-azure-pipeline-for-new-nuget-packages"></a>新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックは、バージョン 10.0.17 以前に設定したパイプラインに適用されます。 これは、ビルド仮想マシンを使用するレガシ ビルド パイプラインには適用されません。
+> この記事は、バージョン 10.0.17 以前に設定したパイプラインに適用されます。 これは、ビルド仮想マシンを使用するレガシ ビルド パイプラインには適用されません。
 
 [バージョン 10.0.18](../get-started/whats-new-platform-updates-10-0-18.md) のプラットフォーム更新により、新しい NuGet パッケージが導入されます。 新しいパッケージは、アプリケーション ビルド参照コードのパッケージ分割の結果です。 このため、10.0.17 以前のバージョンで作成されたパイプラインに変更を加える必要があります。
 

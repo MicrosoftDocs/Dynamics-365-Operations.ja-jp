@@ -1,6 +1,6 @@
 ---
 title: 製品およびヘルプの言語およびロケール記述子
-description: このトピックでは、Finance and Operations クライアントと、翻訳された Microsoft Help コンテンツを含む GitHub リポジトリの間の言語名をマップします。
+description: この記事では、財務と運用クライアントと、翻訳された Microsoft Help コンテンツを含む GitHub リポジトリの間の言語名をマップします。
 author: edupont04
 ms.topic: article
 ms.date: 05/11/2020
@@ -10,16 +10,16 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 0bf34a68912b7f3f2a1b9bc46f12c04372170a4443c050846dab481f2e06f211
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 072a22068dc495405ebefe3c5ab3461785d37a69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866590"
 ---
 # <a name="language-and-locale-descriptors-in-the-product-and-in-help"></a>製品およびヘルプの言語およびロケール記述子
 
-Finance and Operations アプリが使用するクライアントは、複数の言語とロケールをサポートします。 1 つ以上のロケールのカスタム ヘルプ コンテンツを製品内 **ヘルプ** ウィンドウに追加するには、次の条件が両方とも満たされていることを確認する必要があります:
+財務と運用アプリが使用するクライアントは、複数の言語とロケールをサポートします。 1 つ以上のロケールのカスタム ヘルプ コンテンツを製品内 **ヘルプ** ウィンドウに追加するには、次の条件が両方とも満たされていることを確認する必要があります:
 
 - 各 HTML ファイルの **ms.locale** プロパティの値は、コンテンツのロケールと一致します。
 
@@ -33,7 +33,7 @@ Finance and Operations アプリが使用するクライアントは、複数の
 
 ## <a name="languages-and-descriptors"></a>言語と記述子
 
-次の表は、Finance and Operations クライアントと、翻訳された Microsoft Help コンテンツを含む GitHub リポジトリ間の言語名をマップします。
+次の表は、財務と運用クライアントと、翻訳された Microsoft Help コンテンツを含む GitHub リポジトリ間の言語名をマップします。
 
 | クライアントの言語/ロケール | 言語/地域名 | GitHub リポジトリの名前 |
 |-------------------------------|----------------------|-------------------------|

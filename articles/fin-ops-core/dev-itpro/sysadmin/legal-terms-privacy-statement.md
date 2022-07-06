@@ -1,6 +1,6 @@
 ---
 title: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
-description: このトピックでは、管理者がバージョン情報ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。
+description: この記事では、管理者がバージョン情報ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。
 author: aneesmsft
 ms.date: 10/02/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-ms.openlocfilehash: 675682aafd1ed862095c49df4676f2320d9ceef9838a0a20f964e3075290a9c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75d19e9bff54dfe7e6e0f5c67fe8dfc7e391a819
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892693"
 ---
 # <a name="add-links-to-your-organizations-legal-terms-and-privacy-statement"></a>組織の法律条項およびプライバシーに関する声明へのリンクの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、管理者が Microsoft Dynamics 365 Finance、Supply Chain Management、およびコマースの<strong>バージョン情報</strong>ウィンドウで、組織の法律条項およびプライバシーに関する声明にリンクを追加する方法について説明します。
+この記事では、管理者が Microsoft Microsoft Dynamics 365 Finance、Supply Chain Management、およびコマースの<strong>バージョン情報</strong>ウィンドウで、組織の法律条項およびプライバシーに関する声明にリンクを追加する方法について説明します。
 
 組織は、多くの場合、法的およびコンプライアンス要件を満たすため、その法的な条件およびプライバシーに関する声明へのリンクをユーザーがすぐに入手して表示できるようにする必要があります。 組織の管理者は、以下の手順に従って、**バージョン情報** ウィンドウ (**設定** &gt; **バージョン情報**) で利用可能である法律条項とプライバシーに関する声明へのリンクを持つことができます。
 

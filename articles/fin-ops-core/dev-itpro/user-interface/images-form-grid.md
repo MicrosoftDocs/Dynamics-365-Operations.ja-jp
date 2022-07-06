@@ -1,6 +1,6 @@
 ---
-title: ページ上またはグリッド内の画像
-description: このトピックでは、画像をページまたはグリッドに表示する手順について説明します。
+title: ページまたはグリッドの画像
+description: この記事では、画像をページまたはグリッドに表示する手順について説明します。
 author: RobinARH
 ms.date: 07/09/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17b993459093e781ae5e4188d2587d014e67483a
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: 9b06ea5a51a8fd6c445ac4855fe53cfa69ee5a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881071"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページまたはグリッドの画像
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、画像をページまたはグリッドに表示する手順について説明します。 このトピックでは、イメージの使用方法のいくつかについての背景と、使用される API についても説明します。  
+この記事では、画像をページまたはグリッドに表示する手順について説明します。 この記事では、画像の使用方法のいくつかについての背景と、使用される API についても説明します。  
 
 > [!NOTE]
 > アクセシビリティのために、画像を使用して状態を示したり、データを表示するときには、その画像が表す値または状態を説明するツールヒント、拡張プレビュー、ラベル、またはその他のテキスト形式表記が添付されていなければなりません。 
@@ -101,7 +101,7 @@ public display container customerImage()
 | URL イメージ (次のセクションを参照) を使用するプロに加えて、AOT リソースが開発ツールでモデル化および管理されます。 | 限られた数のフレームワーク定義の画像が使用できます。 |
 
 ### <a name="design-time"></a>デザイン時間
-| 新しいリソースを作成してからイメージをアプリケーション オブジェクト ツリー (AOT) リソースに保存するだけです。 ページ上でイメージ コントロールをモデル化するときは、イメージ名ではなく、リソース名を指定します。 この方法は、通常、シンボル フォントに同等のものがないレガシ イメージ (アイコン) に使用されます。 <strong>イメージの場所:</strong> AOTResource <strong>一般的な画像:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (.jpg をリソースに追加) |
+| 新しいリソースを作成してからイメージをアプリケーション オブジェクト ツリー (AOT) リソースに保存するだけです。 ページ上でイメージ コントロールをモデル化するときは、イメージ名ではなく、リソース名を指定します。 この方法は、通常、シンボル フォントに同等のものがないレガシ イメージ (アイコン) に使用されます。 <strong>画像の場所:</strong> AOTResource <strong>一般的な画像:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (.jpg をリソースに追加) |
 
 ### <a name="run-time"></a>実行時間
 

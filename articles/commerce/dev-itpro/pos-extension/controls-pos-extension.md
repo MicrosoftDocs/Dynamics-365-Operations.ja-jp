@@ -1,6 +1,6 @@
 ---
 title: 拡張機能での POS コントロールの使用
-description: このトピックでは、拡張機能の販売時点管理 (POS) コントロールの使用方法について説明します。
+description: この記事では、拡張機能の販売時点管理 (POS) コントロールの使用方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: f28ac9eafbebca1e92f8564ef14317783519e78e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 46f2bcdb34730c8709148675cc42db27318056bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783334"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860263"
 ---
 # <a name="use-pos-controls-in-extensions"></a>拡張機能での POS コントロールの使用
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、拡張機能の販売時点管理 (POS) コントロールの使用方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+この記事では、拡張機能の販売時点管理 (POS) コントロールの使用方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
 
 **PosApi** ライブラリは、一般的な POS コントロールへのアクセスを提供することで、拡張機能のユーザー インターフェイス (UI) と他の POS の間で一貫した外観と権限を提供します。 これらのコントロールは、**PosApi/消費/コントロール** モジュールのインターフェイスとして使用できます。 これらのコントロールのインスタンスは、拡張機能コンテキストで提供された コントロール ファクトリを使用して作成できます。 UI 拡張機能クラスには、ビュー、ダイアログ ボックスおよびカスタム コントロールが含まれます。
 

@@ -1,6 +1,6 @@
 ---
 title: Azure Data Lake サービス (プレビュー) へのエクスポートによって生成されるビジネス イベント
-description: このトピックでは、財務と運用アプリの Data Lake アドインによって生成されるビジネス イベントについて説明します。
+description: この記事では、財務と運用アプリの Data Lake アドインによって生成されるビジネス イベントについて説明します。
 author: MilindaV2
 ms.date: 03/11/2022
 ms.topic: overview
@@ -11,12 +11,12 @@ ms.author: milindav
 ms.search.validFrom: ''
 ms.search.form: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2995c9a8e06e40e1cc1b16da0fcf6fe69115779d
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 2857d38905f72d1c336c85388d5a9c33e4307f34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905059"
 ---
 # <a name="business-events-generated-by-the-export-to-azure-data-lake-service-preview"></a>Azure Data Lake サービス (プレビュー) へのエクスポートによって生成されるビジネス イベント
 
@@ -83,7 +83,7 @@ Microsoft Power Automate を使用してビジネス アクションを作成す
 
     ![自動化されたクラウド フローの作成。](./media/NewAutomatedCloudFlow.png)
 
-4. カタログとして **Dynamics 365 Finance と Operations Export to Data Lake** を選び、カテゴリとして **Data Export** 選択します。
+4. カタログとして **Dynamics 365 財務と運用 Data Lake にエクスポート** を選択し、カテゴリとして **データのエクスポート** を選択します。
 5. **テーブル名** フィールドを終了し、**(none)** を設定します。 このパラメータは、Data Lake サービスへのエクスポートには適用できません。
 6. いずれかのビジネス イベントが解雇された場合、アクションを作成することもできます。 **アクション名** フィールドで、前のテーブルからビジネス イベントの 1 つを選択します。 たとえば、サービスでエラーが発生した場合にアクションを実行したいので、**エラー** を選択します。
 7. 新しい手順の追加。 Power Automate で使用できるいずれかの手順を実装できます。 この例では、メールを送信する手順を追加します。 メール メッセージを作成するときに、テーブル名などのパラメータを選択できます。

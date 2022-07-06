@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance + Operations へのアップグレード時の PreSync および PostSync アップグレード スクリプトのトラブルシューティング
-description: このトピックでは、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) へのアップグレードの一部として実行する PreSync および PostSync アップグレード スクリプトのトラブルシューティングについて説明します。
+description: この記事では、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) へのアップグレードの一部として実行する PreSync および PostSync アップグレード スクリプトのトラブルシューティングについて説明します。
 author: ttreen
 ms.date: 04/26/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: 8c11bd714bfaf00525b3d66cb1c46820555ac1df
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: 840db8baf0d212bb80161994277ecc7a21d081bf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648757"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866140"
 ---
 # <a name="troubleshoot-presync-and-postsync-upgrade-scripts-during-upgrade-to-dynamics-365-finance--operations"></a>Dynamics 365 Finance + Operations へのアップグレード時の PreSync および PostSync アップグレード スクリプトのトラブルシューティング
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) へのアップグレードの一部として実行する PreSync および PostSync アップグレード スクリプトのトラブルシューティングについて説明します。
+この記事では、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) へのアップグレードの一部として実行する PreSync および PostSync アップグレード スクリプトのトラブルシューティングについて説明します。
 
 ## <a name="scenario-1-you-receive-the-following-error-duplicate-key-was-found-for-the-object-name-dboinventdim-and-the-index-name-i_xxxsha1hashidx"></a>シナリオ 1: 次のようなエラーが発生しました: "オブジェクト名 'dbo.INVENTDIM' とインデックス名 'I_XXXSHA1HASHIDX' に重複するキーが見つかりました。"
 

@@ -1,6 +1,6 @@
 ---
 title: ビジネス プロセス モデラー (BPM) のフローチャート
-description: このトピックでは、接続フローチャートを変更し、タスク レコーダーからのフローチャートを作成してアップロードし、ビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
+description: この記事では、接続フローチャートを変更し、タスク レコーダーからのフローチャートを作成してアップロードし、ビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
 author: AngelMarshall
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: 825a65c128b2754795e5ad112c9807ebc84de5fc
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: bd589622b315868bc440c5cb29f687915eaa684a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866451"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
@@ -28,7 +28,7 @@ ms.locfileid: "8547965"
 > [!IMPORTANT]
 > ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#flowchart-diagrams-in-business-process-modeler) を参照してください。
 
-Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデラーを使用して、組織のためにビジネス プロセス フローチャートを定義および格納することができます。 このトピックでは、既定の接続フローチャートを表示する方法、接続したフローチャートを Visio ファイルの形式でエクスポートする方法、および未接続のフローチャートをアップロードして表示する方法について説明します。
+Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデラーを使用して、組織のためにビジネス プロセス フローチャートを定義および格納することができます。 この記事では、既定の接続フローチャートを表示する方法、接続したフローチャートを Visio ファイルの形式でエクスポートする方法、および未接続のフローチャートをアップロードして表示する方法について説明します。
 
 -   接続フローチャートは、タスクレコーダーに記録され、ビジネス プロセス シミュレーターにアップロードされたデータに基づいて自動的に生成されるフローチャートです。これには、タスク記録のプロセス ステップも含まれます。 
 -   接続されていないフローチャートは、Visio から直接アップロードされます。

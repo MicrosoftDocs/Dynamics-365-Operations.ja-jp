@@ -1,6 +1,6 @@
 ---
 title: 拡張機能によってモデル要素をカスタマイズする
-description: このトピックでは、フリート管理拡張モデルについて説明します。 このモデルには、フリート管理アプリケーションの機能を拡張する要素が含まれています。
+description: この記事では、フリート管理拡張モデルについて説明します。 このモデルには、フリート管理アプリケーションの機能を拡張する要素が含まれています。
 author: jorisdg
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b862fec779b8010bee28b64b606db8562453525
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 448e9f3df1eb5a44c3276efc63509906a1d7027e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782745"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866951"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
@@ -219,7 +219,7 @@ ms.locfileid: "7782745"
 
     [![FMParameters.](./media/code3_customizemodel.png)](./media/code3_customizemodel.png)
 
-    Finance and Operations アプリは、構成可能なプラグイン クラスもサポートしており、クラスに関連付けられているプラグイン メタデータは開発時は未知で、管理者がランタイム時に構成可能です。 このチュートリアルでは、その機能についてカバーしていません。
+    財務と運用アプリは、構成可能なプラグイン クラスもサポートしており、クラスに関連付けられているプラグイン メタデータは開発時は未知で、管理者がランタイム時に構成可能です。 このチュートリアルでは、その機能についてカバーしていません。
 
 ## <a name="create-additional-fleet-management-extensions"></a>追加のフリート管理拡張子を作成する
 

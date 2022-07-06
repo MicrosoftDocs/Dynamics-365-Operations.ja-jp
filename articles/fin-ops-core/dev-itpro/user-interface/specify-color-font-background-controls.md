@@ -1,6 +1,6 @@
 ---
 title: 入力、テーブル、およびグリッド コントロール用のフォントと背景
-description: このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。
+description: この記事では、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。
 author: RobinARH
 ms.date: 11/09/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 743581c098654a2f804e08bcd6729b195dd782b5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f6d25f909ac2cb2b1a43d25070fb7b82e95b45fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855572"
 ---
 # <a name="font-and-background-colors-for-input-table-and-grid-controls"></a>入力、テーブル、およびグリッド コントロール用のフォントと背景
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。
+この記事では、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。
 
 伝統的に、色はユーザーとコミュニケーションする理想的な方法と考えられてきました。 たとえば、赤色は、重要な情報へのユーザーの注意を引くためによく使用されます。 ただし、一部のユーザーは特定の色または色調を区別できず、一部のユーザーは視覚障害があります。 したがって、ユーザーに情報を伝達するために、色のみを使用することはお勧めしません。 代わりに、すべてのユーザーに情報を伝えるために、記号または追加のテキストとともに色を使用する必要があります。
 

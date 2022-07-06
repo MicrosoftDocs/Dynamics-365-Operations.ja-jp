@@ -1,6 +1,6 @@
 ---
-title: ユーザー インターフェイス開発ホーム ページ
-description: このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
+title: ユーザー インターフェイス開発のホーム ページ
+description: この記事には、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 author: RobinARH
 ms.date: 10/15/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0669bdeda1a12227e341daa9554f273cc817dd46
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3f7db19c5d51126b39ddcc39af2c8c460d76a358
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901543"
 ---
-# <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
+# <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
+この記事には、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 
 Finance and Operation アプリケーションのユーザー インターフェイスは、 Microsoft Dynamics AX 2012 のインターフェイスと大きく異なります。 Dynamics AX 2012 のクライアントは、ActiveX、WinForm、または WPF コントロールを使用する拡張機能を備えた Microsoft Win32 アプリケーションです。 X++ アプリケーション ロジックが、フォーム メソッドおよびテーブル メソッドに対してクライアントで実行され、何らかのロジックがサーバー上で発生します。 コントロールについては、X++ ロジック アプリケーション プログラミング インターフェイス (API) および現物 Win32 コントロールの両方が、クライアントで密に接続されます。 クライアントは、すべての主要なブラウザーで動作する HTML Web クライアントです。 これらのブラウザーには、Microsoft Edge、Internet Explorer 11、Chrome、および Safari が含まれます ([システム要件](../../fin-ops/get-started/system-requirements.md) を参照)。 Web クライアントへの移行により、クライアントのフォームとコントロールに以下の変更が加えられました。
 

@@ -1,6 +1,6 @@
 ---
 title: インド向けアップグレードと N-1 のサポート
-description: このトピックでは、インドでのコマース顧客向けの N-1 サポート概要を提供します。
+description: この記事では、インドでのコマース顧客向けの N-1 サポート概要を提供します。
 author: kfend
 ms.date: 10/03/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f6d52c3c7a68f87852622cd63a22edbc35abddaedce6cc08bf5e778f8c9147e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7d707c213c7322cac4f38f6f181e0c7163ed98d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855746"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インド向けアップグレードと N-1 のサポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、インドでの段階的なロールアウト (N-1) コマース コンポーネントの設定および使用に必要な手順を説明します。 N-1 のアップグレード手順およびワークフローは、基本的に一般的な Dynamics 365 Commerce 環境のものと同じです。 N-1 のインストールおよび使用の一般的な情報は、[Retail のアップグレードおよび N-1 のサポート](../dev-itpro/overview-upgrade-n-minus1.md)を参照してください。
+この記事では、インドでの段階的なロールアウト (N-1) コマース コンポーネントの設定および使用に必要な手順を説明します。 N-1 のアップグレード手順およびワークフローは、基本的に一般的な Dynamics 365 Commerce 環境のものと同じです。 N-1 のインストールおよび使用の一般的な情報は、[Retail のアップグレードおよび N-1 のサポート](../dev-itpro/overview-upgrade-n-minus1.md)を参照してください。
 
 さらに、次の手順はアップグレードのために重要です。
 

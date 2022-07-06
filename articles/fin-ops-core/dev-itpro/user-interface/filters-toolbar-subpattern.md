@@ -1,6 +1,6 @@
 ---
 title: フィルターおよびツールバーのサブパターン
-description: このトピックでは、リストやグラフをホストするパノラマ セクション内のフィルターやアクションを表示する、フィルターおよびツール バーのサブパターンに関する情報を提供します。
+description: この記事では、リストやグラフをホストするパノラマ セクション内のフィルターやアクションを表示する、フィルターおよびツール バーのサブパターンに関する情報を提供します。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c09165576a2067d6059d89eedd459639bc9e3bd9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b509fe7c29cffe31aa551219507493c731d5af3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844542"
 ---
 # <a name="filters-and-toolbar-subpatterns"></a>フィルターおよびツールバーのサブパターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、フィルターおよびツール バーのサブパターンについて説明します。 これらのワークスペース固有のサブパターンは、リストやグラフをホストする、パノラマ セクション内のフィルターやアクションを表示するために開発されました。
+この記事では、フィルターおよびツールバーのサブパターンについて説明します。 これらのワークスペース固有のサブパターンは、リストやグラフをホストする、パノラマ セクション内のフィルターやアクションを表示するために開発されました。
 
 ## <a name="usage"></a>用途
 

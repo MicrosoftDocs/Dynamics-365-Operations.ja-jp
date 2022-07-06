@@ -1,6 +1,6 @@
 ---
 title: Modern POS (MPOS) のインストール、構成、有効化
-description: このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
+description: この記事では、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 author: jashanno
 ms.date: 09/01/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45640244dc72d00e21cf08205f325f0fbae0504a
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 372fab52f0f8e1ec470a5c8857a1cef6cb932373
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910484"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 このトピックは、レガシ セルフサービス インストーラーに基づいています。 シールされたセルフサービス インストーラーの詳細については、[シールされた Commerce セルフサービス コンポーネントの一括配置](dev-itpro/Enhanced-Mass-Deployment.md) を参照してください。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
+この記事では、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 この記事は、レガシ セルフサービス インストーラーに基づいています。 シールされたセルフサービス インストーラーの詳細については、[シールされた Commerce セルフサービス コンポーネントの一括配置](dev-itpro/Enhanced-Mass-Deployment.md) を参照してください。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 
 > [!NOTE]
 > 最新の POS インストーラーには、Modern POS とオフラインの Modern POS (このインストーラーでもオフライン データベースをインストールします) の 2 つが用意されています。
@@ -49,9 +49,9 @@ ms.locfileid: "7675065"
 > [!NOTE]
 > オンプレミス環境で使用するための Modern POS をインストールする場合、Modern POS はデバイスの有効化に Azure Active Directory の資格情報を使用しません。
 
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>設定
 
-このトピックで説明されている手順を開始する前に、次の手順を実行します。
+この記事で説明されている手順を開始する前に、次の手順を実行します。
 
 - Headquarters にサインインするための資格情報があることを確認します。
 - デバイスに Modern POS をインストールするための管理者アクセス権またはルート アクセス権があることを確認します。
@@ -119,7 +119,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
     - システムの再起動が必要な場合は、インストーラーでこれに関する要件を確認できますが、通常インストールを続行できます。
     - Modern POS のサイドローディング インストールには、グループ ポリシーの変更が必要です。 この変更が必要かどうかがインストーラーによって通知され、自動的に変更されます。
 
-2. オフライン サポートを選択しましたが、有効なバージョンの SQL Server が見つからない場合、前提条件の確認中にインストーラーは失敗します。 この手順で前提条件が満たされない場合は、まずインストーラを再試行してください。 それでもインストーラーに失敗する場合は、このトピックの[トラブルシューティング](#troubleshooting)を参照します。
+2. オフライン サポートを選択しましたが、有効なバージョンの SQL Server が見つからない場合、前提条件の確認中にインストーラーは失敗します。 この手順で前提条件が満たされない場合は、まずインストーラを再試行してください。 それでもインストーラーに失敗する場合は、この記事の[トラブルシューティング](#troubleshooting) を参照します。
 3. インストーラーは Modern POS をインストールします。
 4. インストールが成功したことを示すページで、**閉じる** を選択しインストーラーを終了します。
 
@@ -145,7 +145,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 
 ## <a name="create-a-worker"></a>作業者を作成
 
-このトピックのでは、既に作業者を作成し、彼らを提供されているデモ データ内のヒューストン アドレス帳に割り当てました。 したがって、このトピックでは事前生成データを使用します。
+この記事では、既に作業者を作成し、彼らを提供されているデモ データ内のヒューストン アドレス帳に割り当てました。 したがって、この記事では事前生成データを使用します。
 
 ### <a name="create-a-worker"></a>作業者を作成
 

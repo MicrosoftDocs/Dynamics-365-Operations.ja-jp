@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) でプレビューされる機能について説明します。
+description: この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) でプレビューされる機能について説明します。
 author: tonyafehr
 ms.date: 05/16/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-XX-XX
 ms.dyn365.ops.version: Platform 26
-ms.openlocfilehash: e790407dc0f885f3644efd82903cd1802c51093461bdf4e7057444507bd4c591
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fdd40fac70807545f06b339380cac0e2cb53d0ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863207"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-26-may-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5257 です。 プラットフォーム更新プログラム 26 の詳細については [追加リソース](whats-new-platform-update-26.md#additional-resources) を参照してください。
+この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5257 です。 プラットフォーム更新プログラム 26 の詳細については [追加リソース](whats-new-platform-update-26.md#additional-resources) を参照してください。
 
 ## <a name="business-events-generally-available"></a>一般的に利用可能なビジネス イベント
 [ビジネス イベント](../../dev-itpro/business-events/home-page.md) は現在一般に利用できます。 これは、ビジネス イベントがプレビュー外であり、フライトを有効にすることなく既定で利用可能なことを意味します。 
@@ -43,7 +43,7 @@ ms.locfileid: "6737787"
 Azure Data Lake のエンティティ ストアは、プラットフォーム更新プログラム 25 のパブリック プレビューとして利用できます。 プラットフォーム更新プログラム 26 では、複数の環境で同じストレージ アカウントを使用できるようにフォルダ構造が改善されました。 また、エンティティ間の関係など追加のプロパティもモデルに含めました。 これは PowerBI.com によって導入された機能を使用して、モデルの関係を Power BI データセットに表示できます。
 
 ## <a name="feature-callouts"></a>機能のコールアウト
-Finance and Operations の新しい機能が定期的に開発されています。 ドキュメントは新機能の説明に役立ちますが、役立つ場合にはユーザーの新機能に対する認識を製品内で直接高めます。 このために、プラットフォーム更新プログラム 26 で利用できる [機能のコールアウト](../../dev-itpro/user-interface/feature-callouts.md) はユーザーに新しい機能を示して、オプションで機能の詳細を知るためのハイパーリンクをユーザーに提供することができます。  
+Finance and Operations に対して新しい機能が定期的に開発されています。 ドキュメントは新機能の説明に役立ちますが、役立つ場合にはユーザーの新機能に対する認識を製品内で直接高めます。 このために、プラットフォーム更新プログラム 26 で利用できる [機能のコールアウト](../../dev-itpro/user-interface/feature-callouts.md) はユーザーに新しい機能を示して、オプションで機能の詳細を知るためのハイパーリンクをユーザーに提供することができます。  
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 プラットフォーム更新プログラム 26 に含まれる [プラットフォーム拡張機能の 3 番目の波](/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility3) は、2019 年 4 月リリース ノートにドキュメントされています。 7 つの機能強化の詳細が説明されており、強調すべきひとつは、コマンド チェーンが他のメソッド拡張をターゲットにして拡張可能になったことです。
@@ -59,14 +59,14 @@ Finance and Operations の新しい機能が定期的に開発されています
 [2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
-description: このトピックは、スウェーデンの管理単位統合サンプルのビルドとインストールのガイドです。
+description: この記事は、スウェーデンの管理単位統合サンプルのビルドとインストールのガイドです。
 author: EvgenyPopovMBS
 ms.date: 12/20/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: fdf4a2d0b316ca3a10d60a9738afaa4ae11f7ef6
-ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
+ms.openlocfilehash: 159433117fe21f81da801fb9523030c1c891cda7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7941258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906685"
 ---
 # <a name="sample-for-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 
@@ -31,12 +31,12 @@ ms.locfileid: "7941258"
 
 このサンプルは、Retail ソフトウェア開発キット (SDK) の一部です。 小売 SDK のダウンロードと使用方法については、 [小売 ソフトウェアの開発キット(SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このサンプルは、ハードウェア ステーション、Commerce Runtime (CRT)、および 販売時点管理 (POS) で構成されます。 このサンプルを実行するには、ハードウェア ステーション、CRT、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
+このサンプルは、ハードウェア ステーション、Commerce Runtime (CRT)、および 販売時点管理 (POS) で構成されます。 このサンプルを実行するには、ハードウェア ステーション、CRT、および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
-> 使用しているコマースのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+> 使用しているコマースのバージョンによって、この記事の手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
 >
-> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
+> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 この記事は、アプリの以前の複数のバージョンに適用されるため、この記事全体で *Retail サーバー* を使用します。
 
 
 ## <a name="overview-of-integration-with-control-units"></a>コントロール ユニットとの統合の概要
@@ -254,9 +254,9 @@ Retail POS がスウェーデンのコントロール ユニットと統合さ�
 
 5. 本社で、会計登録構成と、その他の必要なパラメーターを設定します。 詳細については、[スウェーデンのキャッシュ レジスター機能](emea-swe-cash-registers.md) を参照してください。
 
-## <a name="production-environment"></a>実稼働環境
+## <a name="production-environment"></a>運用環境
 
-以下の手順に従い、実稼働環境でコマース コンポーネントを含む配置可能パッケージを作成して適用します。
+以下の手順に従い、運用環境でコマース コンポーネントを含む配置可能パッケージを作成して適用します。
 
 1. POS コンポーネントの拡張
 

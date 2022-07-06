@@ -1,6 +1,6 @@
 ---
 title: X++ 変数
-description: このトピックでは、X++の変数について説明します。
+description: この記事では、X++ の変数について説明します。
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ad26f6a440adcc0ab5ba57388722b566c05c30
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0820afee0c02034a49bc9ac13e23d9181c90f54b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867117"
 ---
 # <a name="x-variables"></a>X++ 変数
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++の変数について説明します。
+この記事では、X++ の変数について説明します。
 
 - *変数* は、特定のデータ型の情報が格納されているメモリ位置を示す識別子です。 サイズ、精度、既定値、暗黙的および明示的[変換](xpp-conversion-run-time-functions.md)関数、範囲は、変数のデータ型によって異なります。
 - 変数の *スコープ* は、項目にアクセスできるコード内の領域を定義します。

@@ -1,6 +1,6 @@
 ---
 title: コメント、使用、および印刷ステートメント
-description: このトピックでは、X++のステートメントについて説明します。
+description: この記事では、X++ のステートメントについて説明します。
 author: tonyafehr
 ms.date: 08/27/2021
 audience: Developer
@@ -10,20 +10,20 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e35c818e183067fb5d28dd6a54845e92f55ba006
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 164ca9585b0767e1bc37c526c8852f256970818c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783224"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867129"
 ---
 # <a name="comments-using-and-print-statements"></a>コメント、使用、および印刷ステートメント
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++のステートメントについて説明します。
+この記事では、X++ のステートメントについて説明します。
 
-## <a name="comments"></a>備考
+## <a name="comments"></a>コメント
 
 コードにコメントを追加することをお勧めします。 コメントは、プログラムを読みやすく、またわかりやすくします。 コメントは、プログラムをコンパイルする際には無視されます。 コメントには、**//** スタイルまたは **/\**_ スタイルを使用できます。ただし、ベスト プラクティスは、コメントおよび複数行のコメントの _*//** スタイルを使用することです。
 

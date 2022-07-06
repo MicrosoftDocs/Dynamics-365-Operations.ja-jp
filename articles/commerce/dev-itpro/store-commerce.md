@@ -1,8 +1,8 @@
 ---
 title: Store Commerce アプリ
-description: このトピックでは、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 06/10/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-01-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 54547ffc63075799a316d1f1f0cc75f517a7a213
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: bac91885e7bc47d098a179b08c63b5352da81b92
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740693"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954714"
 ---
 # <a name="store-commerce-app"></a>Store Commerce アプリ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明し、Microsoft Dynamics 365 Commerce バージョン 10.0.25 およびそれ以降に適用します。
+この記事では、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明し、Microsoft Dynamics 365 Commerce バージョン 10.0.25 およびそれ以降に適用します。
 
 Dynamics 365 Commerce Store Commerce アプリは、物理店舗に対する次世代の提供です。 Modern 販売時点管理 (MPOS) とクラウド販売時点管理 (CPOS) を 1 つのアプリケーションに統合して小売業者の配置の選択肢を提供し、パフォーマンスを向上させ、より優れたアプリケーション ライフサイクル管理 (ALM) を提供します。 同時に、拡張機能を含め、MPOS および CPOS のすべての機能が保持されます。
 
@@ -35,11 +35,12 @@ Store Commerce はローカル ハードウェア ステーションおよびオ
 
 ## <a name="benefits-of-store-commerce"></a>Store Commerce の利点
 
-- ALM が簡略化されました。
+- アプリケーション ライフサイクル管理は簡略化されました。
 - コマース ソフトウェア開発キット (SDK) を使用して MPOS または CPOS 用に開発された拡張機能または独立系ソフトウェア ベンダー (ISV) のコードは、最小限の変更で Store Commerce で再利用することができます。
+- 業界標準の開発者エクスペリエンスでは、Microsoft Visual Studio Code および GitHub が使用されます。
 - Store Commerce は、MPOSとCPOSの両方の利点を提供します。
-- パフォーマンスが向上しました。
-- POS および拡張機能のアップグレードがより簡単になりました。
+- パフォーマンスが大幅に向上します。
+- POS および拡張機能のアップグレードは、Commerce のシールド インストーラー フレームワークを通じて簡略化できます。
 - 専用のハードウェア ステーションをサポートしています。
 - オフラインでの配置をサポートしています。
 
@@ -51,7 +52,7 @@ Store Commerce アプリは Windows デバイスで実行され、[Microsoft Lif
 
 Store Commerce は、2 つのタイプの配置トポロジをサポートしています。
 
-- **アプリ内**- Modern 販売時点管理 (MPOS) などのすべてのコンポーネントがローカルに配置されます。 オフラインおよびローカルのハードウェア ステーション (HWS) がサポートされます。
+- **アプリ内**- Modern 販売時点管理 (MPOS) などのすべてのコンポーネントがローカルに配置されます。 オフライン モードおよびローカルのハードウェア ステーション (HWS) がサポートされます。
 - **ハイブリッド**- Store Commerce は、Commerce Scale Unit (CSU) に配置された Cloud POS を表示し、ローカルのハードウェア ステーションをサポートします。 ただし、オフラインではサポートされていません。
 
 ハイブリッド トポロジおよびアプリ内トポロジ用に独立したインストーラーはありません。 配置オプションは、インストール中に渡されるパラメーターによって決まります。
@@ -64,7 +65,7 @@ Store Commerce は、2 つのタイプの配置トポロジをサポートして
 
 アプリケーション コンテンツを更新するには、最新バージョンの Store Commerce インストーラを実行します。 CSU を更新するとき、アプリケーション コンテンツは更新されません。 したがって、更新は個々のレジスターで管理することができます。
 
-アプリ内モードはオフラインをサポートします。 そのため、インストール中に **--installoffline** パラメーターを渡して、オフラインのデータベースを配置します。 オフラインの間 (つまり、接続がない場合)、アプリケーションは CSU または Commerce 本部に接続することはできず、 ローカルに配置された CRT を使用します。
+アプリ内モードはオフライン モードをサポートします。 そのため、インストール中に **--installoffline** パラメーターを渡して、オフラインのデータベースを配置します。 オフライン モードの間 (つまり、接続がない場合)、アプリケーションは CSU または Commerce headquarters に接続することはできず、 ローカルに配置された CRT を使用します。
 
 > [!NOTE]
 > Store Commerce のインストール中に、ユーザーはパラメーターを渡して、ハイブリッド オプションまたはアプリ内オプションのいずれかを選択できます。 既定のオプションは、アプリ内配置です。
@@ -80,6 +81,12 @@ Store Commerce を更新するには、CSU を更新します。 その後、Sto
 ## <a name="store-commerce-and-mpos-parity"></a>Store Commerce と MPOS の機能
 
 Store Commerce には MPOS と完全に同等の機能があります。 現在、Store Commerce はデュアル ディスプレイをサポートしていません。 さまざまな POS アプリケーションおよびトポロジの詳細については [Modern POS (MPOS) かクラウド POS かの選択](../mpos-or-cpos.md)を参照してください。
+
+## <a name="hardware-parity-between-mpos-and-store-commerce"></a>MPOS と Store Commerce の間のハードウェア パリティ
+
+Store Commerce アプリは、[ポイント オブ サービス デバイス](/windows/uwp/devices-sensors/pos-get-started.md) であるユニバーサル Windows プラットフォーム (UWP) 周辺機器をサポートしません。 現在、ユニバーサル シリアル バス (USB) スキャナーや磁気ストライプ リーダーをプラグアンドプレイ モードで使用している場合は、OLE for Retail POS (OPOS) ドライバーをインストールし、ハードウェア プロファイルでこれらのデバイスを構成して、Store Commerce アプリで動作するようにする必要があります。 Store Commerce の周辺機器サポートの詳細については、[Commerce の周辺機器](../retail-peripherals-overview.md) を参照してください。
+
+MPOS から Store Commerce に移行するには、[Modern POS を Store Commerce に移行する](pos-extension/migrate-mpos-store-commerce.md) を参照してください。
 
 ## <a name="store-commerce-and-cpos-parity"></a>Store Commerce と CPOS の機能
 
@@ -122,7 +129,7 @@ Store Commerce には CPOS と完全に同等の機能があります。 さら�
 </tr>
 <tr>
 <th scope="row">ローカル ハードウェア ステーションのサポート</th>
-<td>有効</td>
+<td>はい、ただしポイント オブ サービス デバイスの UWP 周辺機器はサポートされません。 Store Commerce の周辺機器サポートの詳細については、[Commerce の周辺機器](../retail-peripherals-overview.md) を参照してください。</td>
 <td>有効</td>
 </tr>
 <tr>
@@ -138,9 +145,10 @@ Store Commerce には CPOS と完全に同等の機能があります。 さら�
 ### <a name="prerequisites"></a>必要条件
 
 - Windows 10 のバージョン 17763.0 以降、Windows 11、または Windows Server 2019
-- [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Evergreen スタンドアロン インストーラーを使用します)。
-- SQL Server Express、SQL Server Standard、または SQL Server Enterprise (オフラインの場合のみ必須)。 使用する SQL Server エディションの詳細については、[Commerce のオフライン実装およびトラブルシューティング](implementation-considerations-offline.md) を参照してください。
+- [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Evergreen スタンドアロン インストーラーを使用します)。
+- SQL Server Express、SQL Server Standard、または SQL Server Enterprise (オフライン モードの場合のみ必須)。 使用する SQL Server エディションの詳細については、[Commerce のオフライン実装およびトラブルシューティング](implementation-considerations-offline.md) を参照してください。
 - Dynamics 365 Commerce (Commerce 本部と Cloud Scale Unit)
+- .NET Framework バージョン 4.7.2 またはそれ以降。 [.NET Framework のインストール](https://dotnet.microsoft.com/download/dotnet-framework) を参照する
 
 ### <a name="device-setup-in-commerce-headquarters"></a>Commerce 本社でのデバイスの設定
 
@@ -166,7 +174,7 @@ PowerShell で **help** コマンドを使用して、すべてのパラメー�
 | installoffline | オフラインのデータベースを配置します。 |
 | sqlservername | Store Commerce がオフライン モードで使用する SQL Server のインスタンスの名前を指定します。 このパラメーターを指定しない場合、インストーラは既定のインスタンスを使用します。 |
 | skipsqlfulltextcheck | オフライン配置に必要な SQL 全文検索の検証をスキップします。 |
-| trustsqlservercertificate | SQL Server に対する接続が確立された場合は、SQL Server の証明書を信頼します。 セキュリティ リスクを回避するために、実稼働の配置にこの引数を使用しないでください。 既定では、SQL Server の証明書は信頼されません。 |
+| trustsqlservercertificate | SQL Server に対する接続が確立された場合は、SQL Server の証明書を信頼します。 セキュリティ リスクを回避するために、運用配置にこの引数を使用しないでください。 既定では、SQL Server の証明書は信頼されません。 |
 | enablewebviewdevtools | Store Commerce の開発者ツールを有効にします。 このパラメーターを指定しない場合、Windows 開発者モードが有効になっている場合にのみ開発者ツールが有効になります。 |
 | retailserverurl | Store Commerce に使用する既定の Retail Server URL を指定します。 このパラメーターを指定しない場合、ユーザーがデバイスの有効化を行うときに Retail Server URL を入力するように求められます。 |
 | useremoteappcontent | リモート アプリケーション コンテンツを使用して CSU でホストされている CPOS から Store Commerce アプリ コンテンツをダウンロードします。 既定では、Store Commerce と共に配置されたローカル アプリケーション コンテンツが使用されます。 |
@@ -187,31 +195,9 @@ PowerShell で **help** コマンドを使用して、すべてのパラメー�
 1. [POS のアクティブ化ガイド](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation)の手順に従って、Store Commerce のアクティブ化を行います。
 1. アクティブ化が完了したら、従業員アカウントを使用してアプリケーションにサインインします。
 
-### <a name="troubleshooting-setup-issues"></a> 設定の問題に関するトラブルシューティング
+### <a name="troubleshoot-setup-issues"></a>設定の問題に関するトラブルシューティング
 
-#### <a name="i-cant-activate-the-app-and-get-a-connectivity-error-message"></a>アプリを有効にできず、接続エラー メッセージが表示される
-
-有効な CPOS URL を入力すると、次の接続エラーが発生する場合があります。「接続エラーが発生したため、デバイスが Cloud POS に接続できません。 入力した Cloud POS URL にいくつかの問題がある場合があります。」 この場合、URL に誤字がないか確認するか、Cloud POS がオフラインのため到達できないかどうかを判断します。
-
-また、CSU バージョンが 10.0.25 (9.35.\*.\*) 以降であることを確認します。 Store Commerce を使用するには、CPOS バージョン 10.0.25 以降が必要です。
-
-#### <a name="installation-issues"></a>インストールの問題
-
-インストール中に、「この製品 (Modern POS) のバージョン (9.\*.\*.\*) は、レガシ インストーラーで以前にインストールされています」というエラーが表示される場合があります。 エラーを修正するには、コンピューターのすべてのユーザーの MPOS アプリをアンインストールしてからやり直す必要があります。 次の PowerShell コマンドを実行することで、すべてのユーザーの MPOS が削除されたかどうかを確認できます。
-
-```PowerShell
-Get-AppxPackage | Where-Object {$_.PackageFullName -like "Microsoft.Dynamics.*.Pos"} | Remove-AppxPackage -Allusers
-```
-
-#### <a name="i-cant-activate-the-app-due-to-an-invalid-url-or-error-state"></a>無効な URL またはエラー状態によりアプリを有効にできない
-
-入力した CPOS URL が無効で、変更したい場合、または、有効化の際にアプリがエラー状態にある場合は、アプリをリセットしてプロセスを再開できます。 Store Commerce アプリでは、有効な CPOS URL のみ保存されることに注意してください。
-
-アプリをリセットするには、次の手順に従います。
-
-1. Windowsvの **スタート** メニューで、アプリを選択したまま (あるいは右クリックして) 、それから **詳細 \>アプリの設定** を選択します。
-2. アプリ設定ページを **リセット** ボタンが見つかるまで下にスクロールします。
-3. **リセット** を選択し、表示されたらアプリのリセットを確認します。
+トラブルシューティングの情報については、[Store Commerce のセットアップおよびインストールに関するトラブルシューティング](../troubleshoot/store-commerce-setup-installation.md) を参照してください。
 
 ## <a name="customize-the-app"></a>アプリのカスタマイズ
 

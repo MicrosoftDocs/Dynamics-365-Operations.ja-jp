@@ -1,6 +1,6 @@
 ---
 title: コードの移行中にデリゲートを使用してモデル間の依存関係の解決
-description: このトピックでは、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。
+description: この記事では、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。
 author: maertenm
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76548ef506b197e1d36cb385652fbd7ca62c4d67
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 050e1a5ceabd348857cbf4db33e60451e3a0f63b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781554"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866202"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。
+この記事では、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。
 
 ## <a name="overview"></a>概要
 
@@ -56,7 +56,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 ![static delegate ハンドラー。](media/static-delegate-handler.png)
 
-デリゲートに戻り値がないため、EventHandlerResult がパラメーターとして渡され、デリゲートが返された後に必要な結果値にアクセスできるようになります。 このトピックでは、SubscribesTo を使用する静的委任ハンドラーについて説明します。 Dynamics AX 2012 からのデリゲート機能が保持されます。 [Dynamics AX 2012 で X++ デリゲートを使用する方法](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) は Dynamics AX 2012 のデリゲートの概念について、Microsoft の開発者 Marcos Calderon が MSDN に投稿した素晴らしいブログです。 これらの概念が引き続き適用されます。
+デリゲートに戻り値がないため、EventHandlerResult がパラメーターとして渡され、デリゲートが返された後に必要な結果値にアクセスできるようになります。 この記事では、SubscribesTo を使用する静的委任ハンドラーについて説明します。 Dynamics AX 2012 からのデリゲート機能が保持されます。 [Dynamics AX 2012 で X++ デリゲートを使用する方法](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) は Dynamics AX 2012 のデリゲートの概念について、Microsoft の開発者 Marcos Calderon が MSDN に投稿した素晴らしいブログです。 これらの概念が引き続き適用されます。
 
 ## <a name="example-scenarios"></a>シナリオ例
 ### <a name="overlaying-an-existing-delegate"></a>既存の委任のオーバーレイ

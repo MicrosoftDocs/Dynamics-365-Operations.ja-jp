@@ -1,6 +1,6 @@
 ---
 title: Store Commerce 拡張機能インストーラー パッケージの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce Store Commerce 拡張機能インストーラー パッケージを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce Store Commerce 拡張機能インストーラー パッケージを作成する方法について説明します。
 author: mugunthanm
 ms.date: 04/21/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 311c87560d522223e430af9c01f359399b557fa7
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 5874819ab735d64aeb021f49121a9b2839ab8cdc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629724"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893035"
 ---
 # <a name="create-a-store-commerce-extension-installer-package"></a>Store Commerce 拡張機能インストーラー パッケージの作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce Store Commerce 拡張機能インストーラー パッケージを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce Store Commerce 拡張機能インストーラー パッケージを作成する方法について説明します。
 
 > [!NOTE]
 > 完全なコード サンプルは、[Store Commerce 拡張機能サンプルの GitHub リポジトリ (リポジトリ)](https://github.com/microsoft/Dynamics365Commerce.InStore) にあります。

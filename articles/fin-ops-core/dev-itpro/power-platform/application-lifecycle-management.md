@@ -1,6 +1,6 @@
 ---
 title: 仮想エンティティを使用するソリューションのアプリケーション ライフサイクル管理
-description: このトピックでは、Finance and Operations の仮想エンティティを使用するソリューションのアプリケーション ライフサイクルについて説明します。
+description: この記事では、財務と運用の仮想エンティティを使用するソリューションのアプリケーション ライフサイクルについて説明します。
 author: Sunil-Garg
 ms.date: 07/13/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 7f620830f26c57c51edcbedc8e05452f28e0fe23
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4da6631079eebd6f2499fff061acb1a2fbb1c360
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060905"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881086"
 ---
 # <a name="application-lifecycle-management-for-solutions-that-use-virtual-entities"></a>仮想エンティティを使用するソリューションのアプリケーション ライフサイクル管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "8060905"
 > [!IMPORTANT]
 > この機能を使用するには、財務と運用アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
-Finance and Operations 仮想エンティティを使用するエンド ツー エンド ソリューションのアプリケーション ライフサイクルには、Finance and Operations および Dataverse の両方が含まれます。 詳細については、このトピックで説明します。
+Finance and Operations 仮想エンティティを使用するエンド ツー エンド ソリューションのアプリケーション ライフサイクルには、Finance and Operations および Dataverse の両方が含まれます。 この記事では、この点を詳しく説明します。
 
 ## <a name="solution-management"></a>ソリューション管理
 
@@ -45,7 +45,7 @@ MicrosoftOperationsERPVE に依存するソリューションがエクスポー�
 
 次の一覧は、Finance and Operations 仮想エンティティが機能するために必要であり、Dataverse 環境で使用可能である必要がある他のソリューションを示しています。
 
-- **MicrosoftOperationsERPCatalog** – このソリューションは、Finance and Operations インスタンスで使用可能なエンティティのカタログを提供します。 また、コンフィギュレーションの設定に使用される接続も提供されます。 詳細については、このトピックの後のセクションを参照してください。
+- **MicrosoftOperationsERPCatalog** – このソリューションは、Finance and Operations インスタンスで使用可能なエンティティのカタログを提供します。 また、コンフィギュレーションの設定に使用される接続も提供されます。 詳細については、この記事の後のセクションを参照してください。
 - **MicrosoftOperationsVESupport** – このソリューションにより、財務と運用アプリの仮想エンティティ プロバイダーが提供されます。 プロバイダーは、財務と運用アプリおよび Dataverse と通信できます。 詳細については、次のセクションを参照してください。
 - **Dynamics365Company** – このソリューションは、**PrimaryCompanyContext** メタデータ値を持つすべての Finance and Operations エンティティによって参照される会社エンティティを追加します。
 

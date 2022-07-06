@@ -1,6 +1,6 @@
 ---
 title: ウォレット支払のサポート
-description: このトピックでは、Microsoft Dynamics 365 Commerce のウォレット支払のサポートの概要を説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のウォレット支払のサポートの概要を説明します。
 author: BrianShook
 ms.date: 03/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1787f370e54a9cb7560bbbaab565f9b75d8eba25
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 5963b1d3367fcb7802133627fc088d5bad131617
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878417"
 ---
-# <a name="wallet-payment-support"></a>Wallet 支払サポート
+# <a name="wallet-payment-support"></a>ウォレット支払のサポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のウォレット支払のサポートの概要を説明します。  
+この記事では、Microsoft Dynamics 365 Commerce のウォレット支払のサポートの概要を説明します。  
 
 ## <a name="key-terms"></a>重要な用語
 

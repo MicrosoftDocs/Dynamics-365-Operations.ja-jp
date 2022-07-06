@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
+description: この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
 author: sericks007
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 52d5cda0876d6385102636cfad19cf614ec09bf45d93cd0781223afa7995d007
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a29478d98984103a3c606448e90623c698f19a68
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886535"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
+この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
 
 ## <a name="general"></a>一般
 
@@ -58,7 +58,7 @@ ms.locfileid: "6771913"
 <li>Test Essentials</li>
 <li>対応するフォーム アダプタ モデル</li>
 </ul>
-プラットフォームのロックにより、 Dynamics 365 for Operations プラットフォームのシームレスなサービスと継続的な更新への道筋を作ります。 いずれかのプラットフォームをオーバーレイすると、このリリースにアップグレードすることはできません。 メタデータおよびコードの拡張機能を使用するには、コードをリファクターする必要があります。 カスタマイズの拡張機能を使用する方法に関するチュートリアルについては、<a href="../../dev-itpro/extensibility/customize-model-elements-extensions.md">拡張機能を使用してモデル要素をカスタマイズする</a> を参照してください。 また、<a href="../../dev-itpro/extensibility/customization-overlayering-extensions.md">カスタマイズ: オーバーレイと拡張機能</a> を参照することができます。これはカスタマイズの一般的なトピックです。
+プラットフォームのロックにより、 Dynamics 365 for Operations プラットフォームのシームレスなサービスと継続的な更新への道筋を作ります。 いずれかのプラットフォームをオーバーレイすると、このリリースにアップグレードすることはできません。 メタデータおよびコードの拡張機能を使用するには、コードをリファクターする必要があります。 カスタマイズの拡張機能を使用する方法に関するチュートリアルについては、<a href="../../dev-itpro/extensibility/customize-model-elements-extensions.md">拡張機能を使用してモデル要素をカスタマイズする</a> を参照してください。 また、<a href="../../dev-itpro/extensibility/customization-overlayering-extensions.md">カスタマイズ: オーバーレイと拡張機能</a>を参照することができます。これはカスタマイズの一般的な記事です。
 <blockquote>[!NOTE] ディレクトリ モデルに関して、コードがディレクトリ モデル内の要素をオーバーレイする場合、最新の Dynamics 365 for Operations アプリケーションを実行している新しい環境を配置する必要があります。 ディレクトリ モデルのオーバーレイヤーは、プラットフォーム更新プログラム 3 の上にアプリケーションの 2016 年 2 月または 2016 年 5 月リリースを実行している環境ではサポートされていません。</blockquote>
 </td>
 </tr>
@@ -105,7 +105,7 @@ ms.locfileid: "6771913"
 </tr>
 <tr>
 <td>拡張機能を使ってヘルプをカスタマイズする</td>
-<td>Dynamics 365 for Operations ヘルプ フォームにタブを追加して、すぐに使用可能なタスク ガイドおよびトピック ソースと共に、サードパーティーのヘルプ コンテンツを表示することができます。 以前のバージョンでは、ヘルプの追加ソースで使用できるように、ユーザーの検索文字列にアクセスする唯一の方法は、フォームをオーバーレイにすることでした。 ヘルプ フォーム (SysHelpPane) にデリゲートが追加されました。ユーザーの検索語を傍受し、それらを使用してサードパーティ製システムのヘルプ コンテンツを検索できます。</td>
+<td>Dynamics 365 for Operations ヘルプ フォームにタブを追加して、すぐに使用可能なタスク ガイドおよび記事のソースと共に、サードパーティーのヘルプ コンテンツを表示することができます。 以前のバージョンでは、ヘルプの追加ソースで使用できるように、ユーザーの検索文字列にアクセスする唯一の方法は、フォームをオーバーレイにすることでした。 ヘルプ フォーム (SysHelpPane) にデリゲートが追加されました。ユーザーの検索語を傍受し、それらを使用してサードパーティ製システムのヘルプ コンテンツを検索できます。</td>
 </tr>
 <tr>
 <td>コンフィギュレーション キーのプロパティのサポートされていない変更を禁止します。</td>

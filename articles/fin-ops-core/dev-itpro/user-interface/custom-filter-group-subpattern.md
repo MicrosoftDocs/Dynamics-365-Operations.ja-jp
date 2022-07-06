@@ -1,6 +1,6 @@
 ---
 title: カスタム フィルター グループのサブパターン
-description: このトピックでは、カスタム フィルター グループのサブパターンについて説明します。
+description: この記事では、カスタム フィルター グループのサブパターンについて説明します。
 author: jasongre
 ms.date: 04/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13187ecec2f96862243a5dab1c5be09ea3bdda72
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0eb9074f78e306a72fa5d6ae63b60ced32fa53a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781290"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863243"
 ---
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 

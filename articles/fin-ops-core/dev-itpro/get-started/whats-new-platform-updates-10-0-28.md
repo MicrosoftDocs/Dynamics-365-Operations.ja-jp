@@ -1,6 +1,6 @@
 ---
 title: 財務と運用アプリのバージョン 10.0.28 (2022 年 8 月) のプラットフォーム更新プログラム
-description: このトピックでは、財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
+description: この記事では、財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-05-11
-ms.openlocfilehash: 32d3184f235cab80d31102db5b9ae3e18611b601
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: ead49b093c9f88dbe96ed71fea18082bebd629e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866614"
 ---
 # <a name="platform-updates-for-version-10028-of-finance-and-operations-apps-august-2022"></a>財務と運用アプリのバージョン 10.0.28 (2022 年 8 月) のプラットフォーム更新プログラム
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6441 で、次のスケジュールで使用できます。
+この記事では、財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6441 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
 - **リリースの一般提供 (手動更新):** 2022 年 7 月
@@ -48,11 +48,11 @@ ms.locfileid: "8811836"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。

@@ -1,6 +1,6 @@
 ---
 title: チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
-description: このトピックでは、チェコ共和国、ハンガリー、およびポーランドで POS から事前請求書の印刷を有効にするコマース コンポーネントの拡張機能を作成する方法について説明します。
+description: この記事では、チェコ共和国、ハンガリー、およびポーランドで POS から事前請求書の印刷を有効にするコマース コンポーネントの拡張機能を作成する方法について説明します。
 author: anmukh
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,23 +13,23 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3f857b5e3b1a123d7c96ec66b462cd3b1a1f43bc8c350b52b13d8ec3e7facd63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b77f9be07329bd7db58375fda8f025be498689de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858923"
 ---
 # <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、チェコ共和国、ハンガリー、およびポーランドで Dynamics 365 Commerce のローカライゼーションを有効にする方法を示します。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 これらの拡張機能は、販売時点管理 (POS) から **事前請求書** レポートを印刷できるようにします。 チェコ共和国、ハンガリー、およびポーランドのローカライズの詳細については、[東ヨーロッパのコマース向け事前請求書](./emea-eeu-advance-invoices-for-retail.md) を参照してください。
+この記事では、チェコ共和国、ハンガリー、およびポーランドで Dynamics 365 Commerce のローカライゼーションを有効にする方法を示します。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 これらの拡張機能は、販売時点管理 (POS) から **事前請求書** レポートを印刷できるようにします。 チェコ共和国、ハンガリー、およびポーランドのローカライズの詳細については、[東ヨーロッパのコマース向け事前請求書](./emea-eeu-advance-invoices-for-retail.md) を参照してください。
 
 ローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 詳細については、[Retail ソフトウェア開発キット (SDK) アーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-ローカライズは、Commerce runtime (CRT) と POS に対する拡張機能で構成されます。 このローカライズを有効にするには、CRT コンフィギュレーション ファイルを変更しおよび変更し、POS プロジェクトを構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio チーム サービスといった、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+ローカライズは、Commerce runtime (CRT) と POS に対する拡張機能で構成されます。 このローカライズを有効にするには、CRT コンフィギュレーション ファイルを変更しおよび変更し、POS プロジェクトを構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Microsoft Visual Studio チーム サービスといった、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
 ## <a name="development-environment"></a>開発環境
 
@@ -94,11 +94,11 @@ ms.locfileid: "6719918"
 
 詳細については、[東ヨーロッパにおけるコマース向け事前請求書](./emea-eeu-advance-invoices-for-retail.md) を参照してください。
 
-## <a name="production-environment"></a>実稼働環境
+## <a name="production-environment"></a>運用環境
 
-以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。
+以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを運用環境で適用します。
 
-1. **クラウド POS 拡張コンポーネント**、またはこのトピックで既に見た **Modern POS 拡張コンポーネント** セクションで手順を完了します。
+1. この記事の前半の **クラウド POS 拡張コンポーネント**、または **Modern POS 拡張コンポーネント** セクションで手順を完了します。
 2. **RetailSdk\\Assets** フォルダーの下にあるパッケージ構成ファイルに、次の変更を加えます。
 
     **Commerceruntime.ext.config** コンフィギュレーション ファイルで、**構成** セクションに次の行を追加します。

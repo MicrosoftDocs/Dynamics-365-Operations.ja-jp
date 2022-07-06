@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance と Dynamics 365 Supply Chain Management のクリーンアップ ルーチン
-description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management のクリーンアップ ルーチンの概要を提供します。
+description: この記事では、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management のクリーンアップ ルーチンの概要を提供します。
 author: dvliegen
 ms.date: 02/02/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: dvliegen
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f9507ed57cf91578986f9d5336558d802c5c0108
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 4ab79966bf74df4065f6f20bb9a668a298c8bb64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087437"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908244"
 ---
 # <a name="cleanup-routines-in-dynamics-365-finance-and-dynamics-365-supply-chain-management"></a>Dynamics 365 Finance と Dynamics 365 Supply Chain Management のクリーンアップ ルーチン
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management は、さまざまなモジュールでクリーンアップ ルーチンを使用できます。 このトピックでは、現在使用可能なルーチンの概要を示します。 この情報は、モジュール別にまとめられています。
+Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management は、さまざまなモジュールでクリーンアップ ルーチンを使用できます。 この記事では、現在使用可能なルーチンの概要を示します。 この情報は、モジュール別にまとめられています。
 
 > [!IMPORTANT]
 > これらのクリーンアップ ルーチンを実行するのは、業務に関する詳細な分析が終了し、データが不要になったことを確認した後のみにしてください。

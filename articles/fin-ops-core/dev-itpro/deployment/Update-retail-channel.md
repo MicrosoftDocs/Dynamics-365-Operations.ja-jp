@@ -1,6 +1,6 @@
 ---
 title: Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
-description: このトピックでは、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
+description: この記事では、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
 ms.date: 12/13/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 0a7f9d2726260a6cf694b58e51ad5c5959e42a88
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 48a270b1c5057539607abea54de0638927c58d1a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867495"
 ---
 # <a name="apply-updates-and-extensions-to-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション バージョン 8.1.2 以降でレベル 2 サンドボックスまたは運用環境を更新し、Commerce Scale Unit (CSU) を初期化した場合は、チャネル コンポーネントも更新する必要があります。 このトピックでは、CSU に更新と拡張を適用する方法について説明します。
+アプリケーション バージョン 8.1.2 以降でレベル 2 サンドボックスまたは運用環境を更新し、Commerce Scale Unit (CSU) を初期化した場合は、チャネル コンポーネントも更新する必要があります。 この記事では、CSU に更新と拡張を適用する方法について説明します。
 
 CSU の更新は累積的です。 つまり、適用する更新すべてに、以前のリリースされたすべての変更がが含まれます。 Dynamics 365 Commerce の拡張の配置可能パッケージを適用することも累積的なプロセスであり、拡張機能の以前に配置されたバージョンが置き換えられます。
 

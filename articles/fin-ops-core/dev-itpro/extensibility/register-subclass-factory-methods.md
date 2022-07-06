@@ -1,6 +1,6 @@
 ---
 title: ファクトリ メソッドのサブクラスを登録
-description: このトピックでは、独自のバリエーションを工場に登録する方法について説明します。
+description: この記事では、独自のバリエーションを工場に登録する方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 07/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 6799ccb51d131f4c77f34d651f39b207f150b4df
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 852cec17647bb64ec2abbf1aed8d6262f169da34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866822"
 ---
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 
@@ -27,7 +27,7 @@ ms.locfileid: "7782731"
 
 クラス継承は、他のオブジェクト指向言語と同様に、X++ の中心的概念です。 オブジェクト指向戦略パターンは、X++ ビジネス ロジック全体で使用されます。 このパターンでは、動作のバリエーションをサブクラスでカプセル化することができ、業務プロセスが抽象基本クラスまたはインターフェイスを使用します。 ファクトリ メソッドは、特定のサブクラスのインスタンスを作成することによって、使用されるバリエーションを決定します。
 
-このトピックでは、独自のバリエーションを工場に登録する方法について説明します。
+この記事では、独自のバリエーションを工場に登録する方法について説明します。
 
 X++ では、ファクトリはリフレクションを使用して、次のタスクを実行します。
 

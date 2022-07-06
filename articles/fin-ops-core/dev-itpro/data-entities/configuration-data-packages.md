@@ -1,6 +1,6 @@
 ---
 title: コンフィギュレーション データ パッケージ
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
 author: saraschi2
 ms.date: 12/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 67b356f2488a220090992d578ed7045d5a8fa1a0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 539dc1301020a6155748b98d34f51ab3fbb11f8b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065087"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885499"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065087"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!IMPORTANT]
-> このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 それ以降にリリースされたバージョンを実行している場合は、 [会社間または法人間での構成データのコピー](copy-configuration.md) のトピックを参照してください。 
+> この記事は、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 それ以降にリリースされたバージョンを実行している場合は、[会社間または法人間での構成データのコピー](copy-configuration.md)の記事を参照してください。 
 
 コンフィギュレーション データ パッケージは、Microsoft Dynamics Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。 これらのデータ パッケージは、実装の再現性を向上させ、構成を高速化させます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "8065087"
 - **サンプル データ** – スプレッドシートには、ビジネス特有のデータの例として使用できるデータが含まれています。 このデータは例としてインポートして使用できますが、個々の業務内容で変更する必要があります。
 - **データなし** – スプレッドシートにデータが含まれていません。 製品のいくつかの領域は、各業務とその業務内容に固有です。 これらの領域は組織専用に設定する必要があります。 これらのスプレッドシートは、必要に応じて組織のために見直し、更新する必要があります。
 
-パッケージデータで、エンティティ スプレッドシートに含まれるデータのタイプの詳細については、このトピックの [データ パッケージ](#data-packages-system) セクションを参照してください。 データ パッケージをインポートする前に個々のスプレッドシートを修正するか、提供されるときにデータ パッケージをインポートしてからシステムでデータを更新することができます。
+データ パッケージで、各エンティティ スプレッドシートに含まれるデータのタイプの詳細については、この記事の[データ パッケージ](#data-packages-system) セクションを参照してください。 データ パッケージをインポートする前に個々のスプレッドシートを修正するか、提供されるときにデータ パッケージをインポートしてからシステムでデータを更新することができます。
 
 ## <a name="using-configuration-data-packages"></a>コンフィギュレーション データ パッケージの使用
 LCS から構成データ パッケージにアクセスすることができます。 それらを LCS 環境に適用するか、手動でインポートすることができるようにダウンロードすることができます。

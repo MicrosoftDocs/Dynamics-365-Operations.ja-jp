@@ -1,6 +1,6 @@
 ---
 title: '[Microsoft Office で開く] メニューのカスタマイズ'
-description: このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
+description: この記事では、Office で開くメニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
 author: jasongre
 ms.date: 05/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 965337eb2c4fc4ae3c931de5ef559c1aba39e866800a2be2b7ca2336fc46fede
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 66137bd9a242374cf5088cd5c7043d082843ea49
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876691"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 
@@ -35,8 +35,8 @@ ms.locfileid: "6714565"
 
 | メニュー項目       | 説明                                                                                                                                                                                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このブックには Finance and Operations への逆参照が含まれていないため、データを更新することはできません。                                                                                               |
-| Word にエクスポート  | データは Word 文書にエクスポートされます。 このドキュメントには Finance and Operations への逆参照が含まれていないため、データを更新することはできません。                                                                                                           |
+| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このブックには、Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                               |
+| Word にエクスポート  | データは Word 文書にエクスポートされます。 このドキュメントには、Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                                           |
 | Excel で開く   | Microsoft Dynamics Office アドインを含むブックが作成されます。 ワークブックには Finance and Operations の参照が含まれており、アドインでホストされているデータ コネクタからデータをリフレッシュ、更新、公開することができます。 |
 
 ## <a name="how-menu-items-are-added-to-the-open-in-office-menu"></a>Office で開くメニューに、どのようにメニュー項目が追加されますか。

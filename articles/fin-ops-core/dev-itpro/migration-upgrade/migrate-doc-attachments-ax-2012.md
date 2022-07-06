@@ -1,6 +1,6 @@
 ---
 title: Dynamics AX 2012 からのドキュメントの添付ファイルの移行する
-description: このトピックでは、Microsoft Dynamics AX 2012 からドキュメントの添付ファイルを移行する方法について説明します。
+description: この記事では、Microsoft Dynamics AX 2012 からドキュメントの添付ファイルを移行する方法について説明します。
 author: ttreen
 ms.date: 04/26/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: c7f7bb853e40c95008fc26461bb72a9ca48c32da
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: afac3c82906090d7adbd805baa65a0b6502b192f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866152"
 ---
 # <a name="migrate-document-attachments-from-dynamics-ax-2012"></a>Dynamics AX 2012 からのドキュメントの添付ファイルの移行する
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 からドキュメントの添付ファイルを移行する方法について説明します。
+この記事では、Microsoft Dynamics AX 2012 からドキュメントの添付ファイルを移行する方法について説明します。
 
 ## <a name="background"></a>背景
 

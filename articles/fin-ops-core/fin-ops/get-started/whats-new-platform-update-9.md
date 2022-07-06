@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされました。
+description: この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 9 の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされました。
 author: tonyafehr
 ms.date: 07/27/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: f4d35a9d2e9537b0db12d6ec4fb99ea65c8eeefb6b388a9dfd6f76e2e5c97a16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5cbf0cc065a62d518fd470e895a7ed3e2fe780f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891799"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-9-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.0.4612.35162 です。
+この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 9 の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.0.4612.35162 です。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 プラットフォーム更新プログラム 9 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://go.microsoft.com/fwlink/?linkid=853624) を参照してください。
 
@@ -90,7 +90,7 @@ Print c.method1(33);
 
 ### <a name="supported-versions"></a>サポートされているバージョン
 
-このトピックで説明する機能は、Platform update 9 (CoC および保護されたメソッドと変数へのアクセス) の時点で利用できます。
+この記事で説明する機能は、プラットフォーム更新プログラム 9 (CoC および保護されたメソッドと変数へのアクセス) の時点で利用できます。
 
 ただし、この機能は強化されているクラスがプラットフォーム更新プログラム 9 でコンパイルされることを要求します。 Dynamics 365 for Finance and Operations、Enterprise Edition アプリケーションの現在のリリースはプラットフォーム更新プログラム 8 またはそれ以前でコンパイルされているため、そのパッケージに定義されているメソッドをラップするにはプラットフォーム更新プログラム 9 以降の基本パッケージ (アプリケーション スイートなど) を再コンパイルする必要があります。
 

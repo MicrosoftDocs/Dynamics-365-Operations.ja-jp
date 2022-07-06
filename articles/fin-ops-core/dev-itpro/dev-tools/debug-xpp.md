@@ -1,6 +1,6 @@
 ---
 title: Visual Studio で、デバッガーを使用して X++ コードをデバッグする
-description: このトピックでは、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。
+description: この記事では、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47a6468e03fee9088c4e1547006755c3898207cd
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: e799447fcf34cf5223fe00bcaf610f79fb1cbf82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867081"
 ---
 # <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a>Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。
+この記事では、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。
 
 X++ コードをデバッグするには、Microsoft Visual Studio でデバッガを使用します。 このプロセスは、Visual Studio で作成される他のアプリケーションで使用されるプロセスに似ています。 たとえば、コードがブレークポイントで停止するときに、アプリケーションを検証する標準のツールを使用できます。
 

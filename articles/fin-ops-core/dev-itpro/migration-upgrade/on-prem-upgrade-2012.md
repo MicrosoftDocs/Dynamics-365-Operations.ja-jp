@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
-description: このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) 10.0.X にアップグレードするプロセスについて説明します。
+description: この記事では、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) バージョン 10.0.x にアップグレードするプロセスについて説明します。
 author: faix
 ms.date: 12/16/2020
 ms.topic: article
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: df2a7ceb42d43962e28279e6b89cee2899f6f8df
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: d3ce02025ba78e40700a556a15cf6d884c101874
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866149"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) 10.0.X にアップグレードするプロセスについて説明します。 現在、Dynamics AX 2012 R2 または Dynamics AX 2012 R3 のいずれかからのアップグレードのみ、サポートされています。 
+この記事では、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) バージョン 10.0.x にアップグレードするプロセスについて説明します。 現在、Dynamics AX 2012 R2 または Dynamics AX 2012 R3 のいずれかからのアップグレードのみ、サポートされています。 
 
 > [!IMPORTANT]
-> このトピックでは、データ アップグレードを行う手順についてのみ説明します。 コード アップグレードを実行する方法の詳細については、クラウド バージョンで使用可能なアップグレード ガイドを参照してください。 コード アップグレード ツールは、Microsoft Dynamics Lifecycle Services (LCS) を介してのみ使用可能です。
+> この記事では、データ アップグレードを行うプロセスについてのみ説明します。 コード アップグレードを実行する方法の詳細については、クラウド バージョンで使用可能なアップグレード ガイドを参照してください。 コード アップグレード ツールは、Microsoft Dynamics Lifecycle Services (LCS) を介してのみ使用可能です。
 
 ## <a name="ax-2012-upgrade-to-dynamics-365-finance--operations-on-premises"></a>AX 2012 の Dynamics 365 Finance + Operations (on-premises) へのアップグレード
 
@@ -67,7 +67,7 @@ ms.locfileid: "8565935"
     ```
 
     > [!NOTE] 
-    > **\<DB-name\>** をデータベースの名前 (**AXDB** など) で置き換えます。 多くの値を編集する場合、このトピックの [付録](#appendix) を参照してください。
+    > **\<DB-name\>** をデータベースの名前 (**AXDB** など) で置き換えます。 多くの値を編集する場合、この記事の[付録](#appendix)を参照してください。
 
     スクリプトは、データベース接続のテストを実行し、入力した情報が有効であることを検証します。
 
@@ -130,7 +130,7 @@ ms.locfileid: "8565935"
     3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
 1. ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
-1. このトピックの後半にある [VHD データベースのリセット (オプション)](#resetting-the-vhd-database-optional) セクションで記述されている値を使用して **Configure-OnpremUpgrade.ps1** スクリプトを実行します。
+1. この記事の後半にある [VHD データベースのリセット (オプション)](#resetting-the-vhd-database-optional) セクションで記述されている値を使用して **Configure-OnpremUpgrade.ps1** スクリプトを実行します。
 1. [Finance + Operations データベースのコンフィギュレーション](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database) の手順に従って、Finance + Operations に対してアップグレードしたデータベースをコンフィギュレーションします。
 1. 新しい Dynamics 365 Finance + Operations (on-premises) 環境の配置。
 

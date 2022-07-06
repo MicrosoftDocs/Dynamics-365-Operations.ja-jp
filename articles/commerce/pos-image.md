@@ -1,6 +1,6 @@
 ---
 title: POS のクライアント イメージ
-description: このトピックは、小売環境で POS クライアント イメージ管理に関連する機能を実装するユーザーを対象としています。 実装の計画時に考慮すべき実装のヒントとガイダンスについて説明します。
+description: この記事は、小売環境で POS クライアント イメージ管理に関連する機能を実装するユーザーを対象としています。 実装の計画時に考慮すべき実装のヒントとガイダンスについて説明します。
 author: josaw1
 ms.date: 09/06/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: cbittner
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: e9824d75107896dbd39a0e405667915b6458c1e110287b2427661a5c95e453e5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b52f8eb7a94e9058e41c4d5590588532e2cf5a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892583"
 ---
 # <a name="client-images-in-pos"></a>POS のクライアント イメージ
 
 [!include [banner](includes/banner.md)]
 
-このトピックは、小売環境で POS (販売時点管理) クライアント イメージ管理に関連する機能を実装するユーザーを対象としています。 実装の計画時に考慮すべきヒントとガイダンスについて説明します。
+この記事は、小売環境で POS (販売時点管理) クライアント イメージ管理に関連する機能を実装するユーザーを対象としています。 実装の計画時に考慮すべきヒントとガイダンスについて説明します。
 
 このガイドは、クラウド POSと Modern POS の両方に適用されます。これにより、ストアでのユーザー エクスペリエンスを強化し、アップセル、クロスセル、顧客サービスなどの顧客中心のシナリオをサポートするために使用できるイメージ ファイル サイズの処理とイメージのタイプに関する一般情報が提供されます。 ようこそ画面イメージ、カテゴリ イメージ、および製品イメージは、使用できるイメージ タイプの一例です。
 

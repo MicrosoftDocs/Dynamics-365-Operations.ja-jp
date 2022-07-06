@@ -1,6 +1,6 @@
 ---
 title: Commerce のオフライン実装とトラブルシューティング
-description: このトピックでは、Microsoft Dynamics 365 Commerce オフライン実装に関する考慮事項とトラブルシューティングの概要を説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce オフライン実装に関する考慮事項とトラブルシューティングの概要を説明します。
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
@@ -10,24 +10,24 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: 1247a24c336b61ee65134db67a6eada1573e394e
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: e729c5e4f6438376c02ffb23e19c97a76ac97a4b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888284"
 ---
 # <a name="commerce-offline-implementation-and-troubleshooting"></a>Commerce のオフライン実装とトラブルシューティング
 
 [!include[banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 Commerce Modern POS または Store Commerce アプリケーションに関連するオフライン機能を実装するユーザーを対象としています。 このトピックでは、オフライン機能の使用に関連する機能、機能、実装のヒント、およびトラブルシューティング方法について説明します。
+この記事は、Microsoft Dynamics 365 Commerce Modern POS または Store Commerce アプリケーションに関連するオフライン機能を実装するユーザーを対象としています。 この記事では、オフライン機能の使用に関連する機能、機能、実装のヒント、およびトラブルシューティング方法について説明します。
 
 ## <a name="overview"></a>概要
 
 データの適切な構成と同期は、正しい実装とって非常に重要です。 ビジネス要件、IT インフラストラクチャ、および全体的な準備にかかわらず、データが正しく同期されていないと、環境全体が実質的に役に立たなくなります。 したがって、最優先事項は、完全な実装全体でデータをコンフィギュレーション、生成、同期、検証するために何が必要かを理解することです。 これは、Commerce Headquarters から Commerce Scale Unit を経由して、Modern POS (オフライン データベースの有無にかかわらず) やその他の店舗内コンポーネントを使用する従来型の店舗にまで及びます。 Commerce Data Exchange (CDX) は、データベース間でデータを複製および同期する Commerce の機能です。 ただし、CDX はフィルタリングも可能であるため、一般的なデータ レプリケーション機能とは異なります。 CDX は、選択のために指定されたチャネルに固有のデータのみを生成したり、オフライン データベースから特定のテーブルをフィルター処理したり、使用されなくなったデータについて、期限切れの割引など、使用されなくなったデータのために期限切れレコードをフィルター処理することで、データ セットを最小限に抑えることができます。
 
-このトピックを確認する前に、チャネル (店舗)、レジスターとデバイス、および Modern POS オフライン データベースの概念を理解することが重要です。 したがって、このトピックの最後に表示されている[デバイス管理実装ガイダンス](../implementation-considerations-devices.md) および [Commerce アーキテクチャの概要](../commerce-architecture.md) などのリソースを確認することをお勧めします。
+この記事を確認する前に、チャネル (店舗)、レジスターとデバイス、および Modern POS オフライン データベースの概念を理解することが重要です。 したがって、この記事の最後に表示されている[デバイス管理実装ガイダンス](../implementation-considerations-devices.md)および [Commerce アーキテクチャの概要](../commerce-architecture.md)などのリソースを確認することをお勧めします。
 
 
 ## <a name="important-offline-features"></a>重要なオフライン機能
@@ -53,7 +53,7 @@ ms.locfileid: "7860600"
 このセクションでは、オフラインで機能しているときに POS 使用シナリオの計画を開始するときに考慮する必要があるオフラインのさまざまな側面と構成について説明します。 ここで説明する機能は、データ管理、オフライン使用およびデータ構成に関連しています。 ここに記載されているガイダンスを読む前に、これらの概念を理解することを強くお勧めします。 追加情報を取得するために、[Commerce Data Exchange ベスト プラクティス](CDX-Best-Practices.md) を読むことをお勧めします。
 
 ### <a name="sql-server-versions-and-licenses"></a>SQL Server のバージョンとライセンス 
-SQL Server には、さまざまなバージョン (SQL Server 2017 や SQL Server 2019 など) やエディション (SQL Standard や SQL Express など) があります。 これらのバージョンの詳細な情報については、[SQL Server 2019 (15.x) のエディションとサポートされている機能](/sql/sql-server/editions-and-components-of-sql-server-version-15#Cross-BoxScaleLimits)を参照してください。 このトピックの下部にある[追加のリソース](implementation-considerations-offline.md#additional-resources) も参照してください。
+SQL Server には、さまざまなバージョン (SQL Server 2017 や SQL Server 2019 など) やエディション (SQL Standard や SQL Express など) があります。 これらのバージョンの詳細な情報については、[SQL Server 2019 (15.x) のエディションとサポートされている機能](/sql/sql-server/editions-and-components-of-sql-server-version-15#Cross-BoxScaleLimits)を参照してください。 この記事の下部にある[追加のリソース](implementation-considerations-offline.md#additional-resources)も参照してください。
 
 SQL Server のバージョンについては、現在メインストリーム サポートの期間内にあるバージョンの使用のみをお勧めします。 サポート日は、[製品とサービス ライフサイクル情報](/lifecycle/products/)という記事で製品ごとに検索できます。
 

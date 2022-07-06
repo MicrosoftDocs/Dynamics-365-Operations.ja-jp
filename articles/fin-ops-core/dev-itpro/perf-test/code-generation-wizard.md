@@ -1,6 +1,6 @@
 ---
 title: 受け入れテスト ライブラリ コード生成ウィザード
-description: ここでは、受け入れテストライブラリのコード生成ウィザードに関する情報を提供します。
+description: この記事では、受け入れテスト ライブラリのコード生成ウィザードに関する情報を提供します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 540165b7657797f869ec526b3b0016856736573e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 35ce163652366c47fa7f1ed5eddcc1676da4e901
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862134"
 ---
 # <a name="acceptance-test-library-code-generation-wizard"></a>受け入れテスト ライブラリ コード生成ウィザード
 
@@ -65,7 +65,7 @@ ms.locfileid: "7783158"
 
 ### <a name="additional-optional-steps"></a>追加オプション
 
-`AtlQuery` クラスを作成する際に、 `query` のメソッドを `AtlData` のクラスに追加することが可能です。 これによりこのトピックの最初に作成した `AtlQuery` クラスのインスタンスを返します。
+`AtlQuery` クラスを作成する際に、`query` のメソッドを `AtlData` のクラスに追加することが可能です。 これにより、この記事の最初に作成した `AtlQuery` クラスのインスタンスを返します。
 
 ## <a name="create-the-atlspec-class-by-using-the-wizard"></a>ウィザードを使用して、AtlSpecクラスを作成します。
 
@@ -79,7 +79,7 @@ ms.locfileid: "7783158"
 
 ### <a name="additional-optional-steps"></a>追加オプション
 
-`spec` のメソッドをデータクラスに追加することにより、このトピックの最初に作成した `AtlSpec` クラスのインスタンスを返します。
+`spec` のメソッドをデータ クラスに追加することにより、この記事の最初に作成した `AtlSpec` クラスのインスタンスを返します。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
-description: このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。
+description: この記事では、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。
 author: yukonpeegs
 ms.date: 10/09/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 0c58e8a5a19391000833792c9484e88a2b4f70b9347d1d14a10b21a24cf809ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b9772cbcdc415d21da4ee90f454faa1e544bee4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740239"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850925"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、管理者アクセスを許可しない仮想マシン (VM) に関するよくある質問 (FAQ) への回答を示します。 
+この記事では、管理者アクセスを許可しない仮想マシン (VM) に関するよくある質問 (FAQ) への回答を示します。 
 
 ## <a name="how-can-i-install-a-deployable-package"></a>どのように配置可能パッケージをインストールできますか。
 可能な限り、Microsoft Dynamics Lifecyle Services (LCS) を使用して、配置可能なパッケージをインストールします。 **-devinstall** オプションを使用して、展開可能なパッケージをインストールすることができます。 このオプションには手動データベース同期が必要な点に留意してください。
@@ -97,7 +97,7 @@ update USERINFO set SID = 'new_SID', NETWORKALIAS = 'new_NetworkAlias' where ID 
 ### <a name="development-environments"></a>開発環境
 LCS を使用して、クラウド開発環境にライセンス配置可能パッケージをインストールします。
 ### <a name="build-environments"></a>ビルド環境
-LCS では、AOT またはライセンス配置可能パッケージをビルド環境にインストールできません。 これを回避するには、VM にリモート接続し、「[配置可能なパッケージのコマンドラインからのインストール](../deployment/install-deployable-package.md)」で説明されているようにコマンド ラインから **-devinstall** オプションを使用してライセンス配置可能パッケージをインストールします。 このコマンド ライン インストールは、プラットフォーム更新 17 で機能します。 プラットフォーム更新プログラム 17 より古いプラットフォーム バージョンを実行しており、ビルド環境への管理者アクセス権を持っていない場合、サポート リクエストを作成し、ライセンス配置可能パッケージのインストールを Microsoft に依頼します。
+LCS では、AOT またはライセンス配置可能パッケージをビルド環境にインストールできません。 これを回避するには、VM にリモート接続し、「[配置可能なパッケージのコマンドラインからのインストール](../deployment/install-deployable-package.md)」の記事で説明されているようにコマンド ラインから **-devinstall** オプションを使用してライセンス配置可能パッケージをインストールします。 このコマンド ライン インストールは、プラットフォーム更新 17 で機能します。 プラットフォーム更新プログラム 17 より古いプラットフォーム バージョンを実行しており、ビルド環境への管理者アクセス権を持っていない場合、サポート リクエストを作成し、ライセンス配置可能パッケージのインストールを Microsoft に依頼します。
 
 ## <a name="is-licensing-visual-studio-by-entering-a-product-key-supported"></a>プロダクト キーを入力することによってライセンス Visual Studio はサポートされますか。
 Visual Studio に直接プロダクト キーを入力することはサポートされていません。 代わりに、Visual Studio サブスクリプション ライセンスを使用し、ライセンスに関連付けられている電子メール アドレス (ユーザー アカウント) で Visual Studio にサインインします。 Visual Studio ライセンスをユーザー アカウントにリンクするには、MSDN ライセンスをユーザー アカウントに割り当てるか、または https://www.visualstudio.com/subscriptions-administration を使用してユーザー アカウントにライセンスを割り当てます。

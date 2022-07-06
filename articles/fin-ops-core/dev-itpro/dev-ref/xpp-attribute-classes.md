@@ -1,6 +1,6 @@
 ---
 title: X++ 属性クラス
-description: このトピックでは、X++ での属性の使用について説明します。
+description: この記事では、X++ の属性の使用について説明します。
 author: pvillads
 ms.date: 08/27/2021
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf2c4784545ef4502dddd01848e94e171aa232a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 850e9b064f7093efa326422dc653e9dcab8115a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867240"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ での属性の使用について説明します。
+この記事では、X++ の属性の使用について説明します。
 
 属性は、**SysAttribute** クラスを拡張 (継承) する非抽象クラスです。 属性は型およびメソッドに関するメタデータを表すか、または保存します。 属性はクラス、クラス フィールド、クラス メソッド、インターフェイスまたはテーブルに関連付けることができます。
 

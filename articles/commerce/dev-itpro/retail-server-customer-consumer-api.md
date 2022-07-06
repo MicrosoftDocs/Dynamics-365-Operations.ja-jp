@@ -1,6 +1,6 @@
 ---
 title: Commerce Scale Unit の顧客およびコンシューマー API
-description: このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します
+description: この記事では、さまざまな役割で利用可能であり、さまざまなクライアントで使用できる API の概要について説明します
 author: mugunthanm
 ms.date: 06/02/2020
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13216ad85b3dbf0cabf8d7643e86477432d7cb24
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a37db2d2f9b6390c2130da40a34440fcad8bff23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782103"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893044"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、さまざまな役割で利用可能であり、さまざまなクライアントが使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
+この記事では、さまざまな役割で利用可能であり、さまざまなクライアントで使用できる API の概要について説明します 中心は、顧客フェーシング アプリケーション クライアントと e コマース クライアントについてです。
 
 - Cloud Scale Unit のビジネス データと操作は、従業員 (販売時点管理) シナリオと顧客 (オンライン ストア) シナリオの両方で、OData Web API を通じてすべての接続デバイスで使用できます。
 - 埋め込み CRT は、統一されたオムニチャネル プラットフォームを可能にします。

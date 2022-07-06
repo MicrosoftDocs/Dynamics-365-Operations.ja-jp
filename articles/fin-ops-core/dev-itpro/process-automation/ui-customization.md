@@ -1,6 +1,6 @@
 ---
 title: ユーザー インターフェイスのカスタマイズ
-description: このトピックでは、プロセス自動化フレームワークを使用して、ユーザー インターフェースをカスタマイズする方法について説明します。
+description: この記事では、プロセス自動化フレームワークを使用して、ユーザー インターフェースをカスタマイズする方法について説明します。
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a85a408702dffc4dd690001b4fa38d6d5eb5ff66
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 2232b9403695a4e7d65303e549cb9ace9a60716f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905300"
 ---
 # <a name="customize-the-user-interface"></a>ユーザー インターフェイスのカスタマイズ
 
 [!include [banner](../includes/banner.md)]
 
-プロセス自動化フレームワークは、一部のユーザー インターフェース (UI) のカスタマイズをサポートしています。 フレーム ワークがすべての既定値を提供しているので、このトピックの大部分は省略可能です。 唯一の例外は、**ProcessScheduleSeries** フォームです。 特定の製品区分に対して **ProcessScheduleSeries** フォームを表示する場合、、フレーム ワークがその製品区分に固有のデータを表示できるように、カスタマイズする必要があります。
+プロセス自動化フレームワークは、一部のユーザー インターフェース (UI) のカスタマイズをサポートしています。 フレーム ワークがすべての既定値を提供しているので、この記事の大部分は省略可能です。 唯一の例外は、**ProcessScheduleSeries** フォームです。 特定の製品区分に対して **ProcessScheduleSeries** フォームを表示する場合、、フレーム ワークがその製品区分に固有のデータを表示できるように、カスタマイズする必要があります。
 
 ## <a name="weekly-calendar-view"></a>週ごとのカレンダー表示
 
@@ -96,7 +96,7 @@ ms.locfileid: "8734939"
 |---|---|
 | `public ProcessScheduleOccurrence getOccurrenceBeingRendered()` | このメソッドは、オカレンス カードに表示されているオカレンスを返します。 |
 | `public ProcessExecutionExecutingInformation getOccurrenceExecutionInformation()` | このメソッドは、発生したオカレンスの実行情報を返します。 通常、この情報には、バッチ ジョブ、開始時刻、および終了時刻の結果が含まれます。 |
-| `public void makeCardSubHeaderInvisible()` | このメソッドによって、カードのサブヘッダーが非表示になります。 このトピックの前の図と下の内容を参照して、どの行がサブヘッダーであるかを決定してください。 |
+| `public void makeCardSubHeaderInvisible()` | このメソッドによって、カードのサブヘッダーが非表示になります。 この記事の前の図と下の内容を参照して、どの行がサブヘッダーであるかを決定してください。 |
 | `public void makeCardButtonsInvisible()` | このメソッドは、オカレンス カードの **無効化** および **編集** ボタンを非表示にするかどうかを指定します。 |
 | `public void setColumnsOnOccurrenceCardDetailGroup(int _numberOfColumns)` | この方法を使用すると、オカレンス カードの列の数をカスタマイズできます。 既定では、2 つの列があります。 |
 | `public FormButtonControl addButtonControl(FormControlName _buttonControlName)` | このメソッドを使用すると、新しいボタンをオカレンス カードに追加できます。 |

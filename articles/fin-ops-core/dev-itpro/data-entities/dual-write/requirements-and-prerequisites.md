@@ -1,6 +1,6 @@
 ---
 title: システム要件と前提条件
-description: このトピックでは、財務と運用アプリで二重書き込みを有効にする前に設定する必要があるシステム要件と前提条件について説明します。
+description: この記事では、財務と運用アプリで二重書き込みを有効にする前に設定する必要があるシステム要件と前提条件について説明します。
 author: NHelgren
 ms.date: 02/09/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8902e172b5a766c6bbd5a4c86e6cccdcb279292d
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 185f819c25b0ee71fcb36087ec6128abb0ac6b62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884983"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 

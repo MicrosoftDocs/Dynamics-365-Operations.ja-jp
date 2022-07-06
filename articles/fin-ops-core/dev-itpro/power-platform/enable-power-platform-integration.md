@@ -1,6 +1,6 @@
 ---
 title: Microsoft Power Platform 統合を有効にする
-description: このトピックでは財務と運用アプリと Dataverse を Microsoft Dynamics Lifecycle Services (LCS) に使用して Microsoft Power Platform 統合を有効にする方法について説明します。
+description: この記事では財務と運用アプリと Dataverse を Microsoft Dynamics Lifecycle Services (LCS) に使用して Microsoft Power Platform 統合を有効にする方法について説明します。
 author: jaredha
 ms.date: 05/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-13
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 510a51cc84d4a0aa2964c75159be79fb3485f937
-ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
+ms.openlocfilehash: e08c0fc365173d4a1ea339a87561077114e6c2aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8783217"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850931"
 ---
 # <a name="enable-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合を有効にする
 
@@ -39,7 +39,7 @@ Power Platform 統合では、次のタスクを完了することができま�
 
 ![Power Platform 管理センターの Power Platform 環境は、LCS の財務と運用の環境と同じ名前で作成されます。 財務と運用の URL には、財務と運用のインスタンスの URL が入力されます。](media/LinkedPowerPlatformEnvironment.png)
 
-LCS の環境に接続されている Power Platform 環境により、財務と運用アプリの顧客は Microsoft Power Platform を利用できます。 この Power Platform 環境は、削除またはリセットすることはできず、Dataverse データベースを手動で Power Platform 管理センターに追加することもできません。 Dataverse を追加して Microsoft Power Platform 統合機能を完全に有効にするには、このトピックの[既存の Power Platform 環境との統合を有効にする](#connect-to-existing-dataverse)セクションの手順に従ってください。
+LCS の環境に接続されている Power Platform 環境により、財務と運用アプリの顧客は Microsoft Power Platform を利用できます。 この Power Platform 環境は、削除またはリセットすることはできず、Dataverse データベースを手動で Power Platform 管理センターに追加することもできません。 Dataverse を追加して Microsoft Power Platform 統合機能を完全に有効にするには、この記事の[既存の Power Platform 環境との統合を有効にする](#connect-to-existing-dataverse) セクションの手順に従ってください。
 
 または、財務と運用環境に接続する Dataverse を備えた Power Platform 環境が既に組織にある場合があります。 既存の Dataverse インスタンスを再利用するには、[既存の Power Platform 環境との統合を有効にする](#connect-to-existing-dataverse)の手順に従ってください。 この場合、財務と運用環境の作成時に作成された最初の Power Platform 環境は切断され、財務と運用アプリの URL は表示されなくなります。 その時点で、初期環境を削除したり、別の目的に使用したりすることができます。
 
@@ -55,7 +55,7 @@ LCS で使用するために顧客が購入する追加のアドオン サンド
 
 ## <a name="provisioning-templates"></a>プロビジョニング テンプレート
 
-このトピックで説明するシナリオのいくつかでは、Dataverse を使用して新しい Power Platform 環境を作成します。 新しいインスタンスに必要なすべてのアプリケーションをすばやく追加できるように、それらをまとめた複数のプロビジョニング テンプレートが用意されています。 次のテーブルは、それぞれのテンプレートに関する詳細を示します。
+この記事で説明するシナリオのいくつかでは、Dataverse を使用して新しい Power Platform 環境を作成します。 新しいインスタンスに必要なすべてのアプリケーションをすばやく追加できるように、それらをまとめた複数のプロビジョニング テンプレートが用意されています。 次のテーブルは、それぞれのテンプレートに関する詳細を示します。
 
 | テンプレート名 | Description | 含まれているアプリケーション |
 |---------------|-------------|---------------|
@@ -105,7 +105,7 @@ LCS に新しい財務と運用アプリ環境を設定する際、配置ウィ�
 **Power Platform 統合** セクションを構成するには、次の手順に従います。
 
 1. **Power Platform 環境の構成** オプションを **はい** に設定します。 複数の追加設定が使用可能になります。
-2. **Power Platform テンプレート** フィールドで、テンプレートを選択します。 詳細については、このトピックの[プロビジョニング テンプレート](#provisioning-templates) セクションを参照してください。
+2. **Power Platform テンプレート** フィールドで、テンプレートを選択します。 詳細については、この記事の[プロビジョニング テンプレート](#provisioning-templates) セクションを参照してください。
 3. DevTest またはクラウド ホスト環境を配置する場合、**環境の種類** フィールドが使用可能です。 そこで、作成およびリンクされる Dataverse インスタンスのタイプを選択できます。 それ以外の場合、既定では、環境の種類はレベル 2 から 5 の承認テスト環境の場合は **サンドボックス** に、運用環境の場合は **運用** に設定されます。
 4. **同意** を選択して、統合の使用条件に同意することを示します。
 
@@ -122,7 +122,7 @@ LCS に新しい財務と運用アプリ環境を設定する際、配置ウィ�
 > Power Platform 統合は **元に戻すことはできません**。また、リンクを変更または削除することもできません。 設定の一部として、財務と運用環境を Power Platform 環境に接続します。 仮想エンティティ、ビジネス イベント、および二重書き込みなどのランタイム機能はすべて、この接続に依存します。 したがって、財務と運用環境を削除するまで削除することはできません。 この動作は、Microsoft からのサービス更新プログラムを適用するときの動作に似ています。 このアクションをやり直す唯一の方法は、環境を再配置することです。
 
 1. 財務と運用アプリ環境が LCS を介して配置された後、LCS の **環境詳細** ページが開きます。
-2. **Power Platform 統合** セクションで、**設定** を選択します。 *既存の Dataverse 組織に接続する場合は、このトピックの次のセクションを参照してください。*
+2. **Power Platform 統合** セクションで、**設定** を選択します。 *既存の Dataverse 組織に接続する場合は、この記事の次のセクションを参照してください。*
 
     ![Power Platform 統合セクションの設定ボタン。](media/powerplat_integration_step1.png) 
 
@@ -163,7 +163,7 @@ Power Platform 環境 ID を取得するには、Power Platform 管理センタ�
 
 ![ブラウザーのアドレス バーから環境 ID を取得します。](media/PPI-ExistingEnvironmentID.png)
 
-統合プロセス中に、Microsoft は **Dynamics 365 標準** のプロビジョニング テンプレートにパッケージを適用します。 他のテンプレートからパッケージを作成する必要がある場合は、手動でインストールする必要があります。 詳細については、このトピックの[プロビジョニング テンプレート](#provisioning-templates) セクションを参照してください。
+統合プロセス中に、Microsoft は **Dynamics 365 標準** のプロビジョニング テンプレートにパッケージを適用します。 他のテンプレートからパッケージを作成する必要がある場合は、手動でインストールする必要があります。 詳細については、この記事の[プロビジョニング テンプレート](#provisioning-templates) セクションを参照してください。
 
 既に Power Platform 環境または他の Dynamics 365 アプリを使用していて、そのエコシステムに財務と運用アプリを追加したい顧客には、既存の Dataverse インスタンスを利用することが最も便利です。 統合については、初期環境の新しい Dataverse データベースに対して前に説明したのと同じ設定プロセスを使用します。 設定完了後に統合を取り消す唯一の方法は、LCS の環境を削除することです。 他の環境への再リンクやリンクはサポートされていません。
 

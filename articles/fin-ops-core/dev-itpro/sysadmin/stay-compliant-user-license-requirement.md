@@ -1,6 +1,6 @@
 ---
 title: ユーザー ライセンス要件への準拠の維持
-description: このトピックでは、Finance and Operations アプリのユーザー ライセンス要件を遵守する方法に関する情報を提供します。
+description: この記事では、財務と運用アプリのユーザー ライセンス要件を遵守する方法について説明します。
 author: peakerbl
 ms.date: 10/06/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 62ed2e0c187ee18ed2ac3506cee0ca63d5c4b663
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4798b6e4229d46976e8ad2eb9754f65d2b411def
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851901"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、顧客が Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce などの Finance and Operations アプリに対するユーザー ライセンス要件を遵守する方法に関する概要を提供します。
+この記事では、顧客が Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、および Dynamics 365 Commerce  などの財務と運用アプリに対するユーザー ライセンス要件を遵守する方法に関する概要を提供します。
 
 ユーザーのライセンス要件は、それらのユーザーに割り当てられているセキュリティ ロールによって決まります。 セキュリティ ロールは、次の階層に基づいて作成されます。
 
@@ -34,11 +34,11 @@ ms.locfileid: "7594895"
 
 詳細については、[ロールベース セキュリティ](./role-based-security.md)を参照してください。
 
-ユーザーのライセンス要件は、組織またはテナント レベルで決定されます。 このトピックでは、単一の環境の要件に重点を置いて説明します。 複数の環境がある場合は、すべての要件に対して要件を分析する必要があります。
+ユーザーのライセンス要件は、組織またはテナント レベルで決定されます。 この記事では、単一の環境の要件について重点的に説明します。 複数の環境がある場合は、すべての要件に対して要件を分析する必要があります。
 
-ライセンス要件は、セキュリティで保護されたすべてのオブジェクトに割り当てられます。 ライセンス要件の例としては、**なし**、**チームメンバー**、**アクティビティ**、**操作** があります。 **操作** ライセンス要件は、ユーザーのフル ライセンスが必要であることを示しています。 一部の特権は、特定のユーザーのフル ライセンスに固有であり、ユーザーのフル ライセンスをそのユーザーに割り当てるのに *ベース* または *Attach* ライセンスが必要です。 詳細については、このトピックの後半の [ユーザー ライセンスの見積もりレポート](#user-license-estimator-report) セクションを参照してください。
+ライセンス要件は、セキュリティで保護されたすべてのオブジェクトに割り当てられます。 ライセンス要件の例としては、**なし**、**チームメンバー**、**アクティビティ**、**操作** があります。 **操作** ライセンス要件は、ユーザーのフル ライセンスが必要であることを示しています。 一部の特権は、特定のユーザーのフル ライセンスに固有であり、ユーザーのフル ライセンスをそのユーザーに割り当てるのに *ベース* または *Attach* ライセンスが必要です。 詳細については、この記事の後半の [ユーザー ライセンス見積もりレポート](#user-license-estimator-report) セクションを参照してください。
 
-このトピックの残りの部分では、実際のライセンスが予定されたライセンス要件を満たしていることを確認するために使用できる、さまざまなツールについて説明します。
+この記事の残りの部分では、実際のライセンスが予定されたライセンス要件に準拠していることを確認するために使用できる、さまざまなツールについて説明します。
 
 ## <a name="roles-for-selected-user-factbox-on-the-users-page"></a>ユーザー ページで選択したユーザー情報ボックスのロール
 
@@ -104,7 +104,7 @@ ms.locfileid: "7594895"
 
 ## <a name="additional-resources"></a>追加リソース
 
-Finance and Operations アプリの購入方法とライセンスの詳細については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
+財務と運用アプリの購入方法とライセンスの取得方法については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
 
 Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](/microsoft-365/admin/manage/assign-licenses-to-users) を参照してください。
 

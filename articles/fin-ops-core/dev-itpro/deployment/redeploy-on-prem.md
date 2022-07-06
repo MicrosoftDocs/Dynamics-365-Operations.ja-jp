@@ -1,6 +1,6 @@
 ---
 title: オンプレミス環境の再配置
-description: このトピックでは、オンプレミス環境の再展開について説明します。
+description: この記事では、オンプレミス環境の再展開について説明します。
 author: PeterRFriis
 ms.date: 10/14/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 975d64571504f52b0d9221c11c8f3ad4fea2a376
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 5c9ada6479a86268cdfa758f03f2de6e699e74a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867349"
 ---
 # <a name="redeploy-on-premises-environments"></a>オンプレミス環境の再配置
 
 [!include [banner](../includes/banner.md)]
 
-ある時点で、オンプレミス環境を再配置する必要があります。 これは、新しいプラットフォームの更新または実装の変更や問題がある場合に適用できます。 現在使用している環境を削除する前に、再配置する際に使用するコンフィギュレーション設定情報を保存する必要があります。 このトピックでは、構成設定を保存する方法と、環境を再配置する方法について説明します。 
+ある時点で、オンプレミス環境を再配置する必要があります。 これは、新しいプラットフォームの更新または実装の変更や問題がある場合に適用できます。 現在使用している環境を削除する前に、再配置する際に使用するコンフィギュレーション設定情報を保存する必要があります。 この記事では、構成設定を保存する方法と、環境を再配置する方法について説明します。 
 
 ## <a name="save-your-configuration"></a>コンフィギュレーションの保存
 更新する予定の環境を削除する前に、次の手順に従って構成を保存してください。 

@@ -1,6 +1,6 @@
 ---
 title: オンプレミス障害復旧コンフィギュレーション
-description: このトピックでは、ディザスター リカバリー用に Dynamics 365 Finance + Operations (on-premises) を構成する方法について説明します。
+description: この記事では、ディザスター リカバリー用に Dynamics 365 Finance + Operations (on-premises) を構成する方法について説明します。
 author: faix
 ms.date: 09/11/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 623347a984e87706d23a3ebdde1d835a0f40fd85
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 55701b41ab46977b7f941b6cde9da5f56161978d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867379"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミス障害復旧コンフィギュレーション
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + Operations (on-premises) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
@@ -27,13 +27,13 @@ ms.locfileid: "8566019"
 
 ### <a name="limitations-of-this-content"></a>このコンテンツの制限事項
 
-このトピックでは、以下のコンポーネントのディザスター リカバリーに関する構成の詳細については説明しません。
+この記事では、以下のコンポーネントのディザスター リカバリーに関する構成の詳細については説明しません。
   - Active Directory フェデレーション サービス (AD FS)
   - ファイルのストレージ
   - SQL Server
 
 > [!NOTE]
-> 高可用性の構成については、このトピックでは説明していません。 高可用性に必要な最小限の設定の詳細については、[オンプレミス配置に関するシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements)を参照してください。
+> 高可用性の構成については、この記事では説明していません。 高可用性に必要な最小限の設定の詳細については、[オンプレミス配置に関するシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements)を参照してください。
 
 ### <a name="recommendations"></a>推奨事項
 
@@ -41,11 +41,11 @@ ms.locfileid: "8566019"
 
 Microsoft が指定した新しい前提条件を適用していることを確認します。 また、Service Fabric Cluster を更新して、必要に応じて証明書のローテーションを実行します。
 
-このトピックを読んだ後で、チームが実施する必要のある手順を文書化してください。 その後は、予想外の問題が発生しないよう、手順を複数回実施して、発生する可能性のあるダウンタイムを最小限に抑えてください。
+この記事を読んだ後で、チームが実施する必要のある手順を文書化してください。 その後は、予想外の問題が発生しないよう、手順を複数回実施して、発生する可能性のあるダウンタイムを最小限に抑えてください。
 
 ## <a name="overview"></a>概要
 
-ディザスター リカバリーの基本構成では、別のデータセンター (セカンダリ データセンター) 内に実稼働環境の複製を配置し、そのデータセンターにデータベースを複製します。 災害イベントが発生した場合、いくつかの手動の手順を実施することで、セカンダリ データセンター内の環境をオンライン状態にすることができます。
+ディザスター リカバリーの基本構成では、別のデータセンター (セカンダリ データセンター) 内に運用環境の複製を配置し、そのデータセンターにデータベースを複製します。 災害イベントが発生した場合、いくつかの手動の手順を実施することで、セカンダリ データセンター内の環境をオンライン状態にすることができます。
 
 以下の図では、必要となる設定の詳細を示しています。
 
@@ -118,7 +118,7 @@ Lifecycle Services (LCS) では、運用環境は、**運用** と名付けた�
 
 ![配置設定におけるサムプリントの例。](media/DRArchitectureSingle.png)
 
-障害が発生した最初の時点では、ディザスター リカバリー環境は空になります。 ここで存在するのは、複製された本番データのすべてを含む、構成済みの Service Fabric Cluster と SQL Server になります。 
+障害が発生した最初の時点では、ディザスター リカバリー環境は空になります。 ここで存在するのは、複製された運用データのすべてを含む、構成済みの Service Fabric Cluster と SQL Server になります。 
 
 ディザスター リカバリー環境をオンラインにするには、LCS を使用して運用環境で現在利用可能なものをディザスター リカバリー環境へと配置する必要があります。
 
@@ -243,7 +243,7 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 
 ## <a name="using-your-disaster-recovery-environment"></a>ディザスター リカバリー環境を使用する
 
-ディザスター リカバリー環境は、通常どおり使用できます。また、更新や修正プログラムを環境に適用する必要はありません。 環境に更新プログラムを適用する必要がある場合、フェイルバックのプロセスは以下に説明するものとは異なります。 この条件下でのフェイルバックについては、このトピックでは説明しません。
+ディザスター リカバリー環境は、通常どおり使用できます。また、更新や修正プログラムを環境に適用する必要はありません。 環境に更新プログラムを適用する必要がある場合、フェイルバックのプロセスは以下に説明するものとは異なります。 この条件下でのフェイルバックについては、この記事では説明しません。
 
 ## <a name="failing-back-to-your-production-environment"></a>運用環境へのフェイルバック
 

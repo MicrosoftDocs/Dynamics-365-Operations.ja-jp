@@ -1,6 +1,6 @@
 ---
 title: C# の統合言語クエリ (LINQ) プロバイダー
-description: このトピックでは、LINQ プロバイダーについて説明します。
+description: この記事では、LINQ プロバイダーについて説明します。
 author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4550ac04252272ce7f8268642a3454863818585c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8d2d5b5242fee3a2fb78600f47ccda3a36f0c84f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867042"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、LINQ プロバイダーについて説明します。
+この記事では、LINQ プロバイダーについて説明します。
 
 LINQ (統合言語クエリ) は、さまざまな場所および形式で保存されているデータにアクセスできるクラスおよびメソッドのセットです。 LINQ フレームワークは、マネージド言語のデータにアクセスするための標準です。 LINQ は次のような異なる種類のデータ ソースからのデータへのアクセスに関する統合されて一貫した API をプログラマーに提示します。
 
@@ -48,7 +48,7 @@ C\# (または Visual Basic) の LINQ プロバイダーにアクセスするに
 - 標準、または流暢なメソッドの呼び出し構文。
 - 特殊な構文により、C\# コンパイラは LINQ メソッド呼び出しと同等として理解できるように拡張されています。 (このような構文は「構文砂糖」とも呼ばれます。)
 
-このトピックでは、簡単な特殊構文から始めて、LINQ の各構文メカニズムを検討します。
+この記事では、簡単な特殊構文から始めて、LINQ の各構文メカニズムを検討します。
 
 ## <a name="linq-by-specialized-syntax-in-c"></a>C\# の特殊な構文による LINQ
 

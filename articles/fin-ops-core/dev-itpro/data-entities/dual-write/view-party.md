@@ -1,6 +1,6 @@
 ---
 title: 関係者データを表示する
-description: このトピックでは、関係者ページを使用した関係者データの表示方法について説明します。
+description: この記事では、関係者ページを使用した関係者データの表示方法について説明します。
 author: RamaKrishnamoorthy
 ms.date: 11/23/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-16
-ms.openlocfilehash: 0c64e48122358d954e92343f562330d457d8c882
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 37ac2d2a5f006b7375ce0bb60ad6c89c07f5ce40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884717"
 ---
 # <a name="view-party-data"></a>関係者データを表示する
 

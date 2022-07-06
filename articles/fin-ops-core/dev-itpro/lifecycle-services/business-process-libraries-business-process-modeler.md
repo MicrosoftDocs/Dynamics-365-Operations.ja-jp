@@ -1,6 +1,6 @@
 ---
 title: ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
-description: このトピックでは、ビジネス プロセス ライブラリを表示する方法、コピーおよび変更する方法、ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
+description: この記事では、ビジネス プロセス ライブラリを表示する方法、コピーおよび変更する方法、ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0d7092a15802eb1cf256600d8645fc09184bcc825baba3416ac7a20d09afc9da
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 133e9887391c62cbb56aba901db9b7c5dd437433
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712550"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866487"
 ---
 # <a name="business-process-libraries-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 
@@ -27,7 +27,7 @@ ms.locfileid: "6712550"
 
 この記事では、ビジネス プロセス モデラーで標準ビジネス プロセス ライブラリを表示する方法、ビジネス プロセス ライブラリをコピーおよび変更する方法、ビジネス プロセス ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
 
-このトピックでは、標準ビジネス プロセス ライブラリを表示する方法、ビジネス プロセス ライブラリをコピーおよび変更する方法、ビジネス プロセス ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
+この記事では、標準ビジネス プロセス ライブラリを表示する方法、ビジネス プロセス ライブラリをコピーおよび変更する方法、ビジネス プロセス ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
 
 ## <a name="view-and-copy-a-standard-business-process-library"></a>標準のビジネス プロセス ライブラリの表示とコピー
 業務プロセス ライブラリ ページで標準業務プロセス ライブラリを選択することができます。 このページを開くには、Lifecycle Services にサインインしてプロジェクトを開き、[ビジネス プロセス モデラー] タイルをクリックします。

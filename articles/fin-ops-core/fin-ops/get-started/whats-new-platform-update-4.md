@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。
+description: この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。
 author: sericks007
 ms.date: 08/16/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: c85c1b885ea5d7230554864dcd5703c3c2cdc491db26ea1a88bddbc01b3783bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 438fcd05d67085615b9e8f66542649593e6dbb36
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890014"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-4-february-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。
+この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 4 の新機能または変更された機能について説明します。 このバージョンは 2017 年 2 月にリリースされ、ビルド番号は 7.0.4425.16161 です。
 
 ## <a name="overview"></a>概要
 
@@ -43,7 +43,7 @@ Microsoft Dynamics クラウド プラットフォームの継続的な更新サ
 
 ご承知の通り、クラウド プラットフォームは更新プログラム 3 の時点で [ロック](whats-new-platform-update-3.md) されています。 ロックされているプラットフォームでは、拡張機能を使用して豊富なカスタマイズを実行できるだけでなく、コストのかかるコードのアップグレードなしで更新ができるようになります。 update 4 以降、クラウド プラットフォームのが毎月の更新プログラムをリリースします。 したがって、ボタンをクリックするだけで、最新のイノベーションを使って新しい環境や既存の環境を最新の状態に保つことができます。
 
-既存の [LCS](https://lcs.dynamics.com/) 環境に最新の月次プラットフォーム更新プログラムをインストールするには、共用資産ライブラリを開き、 **ソフトウェア展開可能なパッケージ** タブを選択します。ここでは、次の図に示すように、プラットフォーム更新プログラム 4 パッケージの展開の準備ができていることが確認できます。 このパッケージをプロジェクトのアセット ライブラリにインポートしてから、更新フローを介して特定の環境に適用することができます。 詳細については、[最新のプラットフォーム更新プログラムの環境への適用](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md)のトピックを参照してください。
+既存の [LCS](https://lcs.dynamics.com/) 環境に最新の月次プラットフォーム更新プログラムをインストールするには、共用資産ライブラリを開き、 **ソフトウェア展開可能なパッケージ** タブを選択します。ここでは、次の図に示すように、プラットフォーム更新プログラム 4 パッケージの展開の準備ができていることが確認できます。 このパッケージをプロジェクトのアセット ライブラリにインポートしてから、更新フローを介して特定の環境に適用することができます。 詳細については、[最新のプラットフォーム更新プログラムの環境への適用](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md)の記事を参照してください。
 
 [![プラットフォーム更新 4 パッケージ。](./media/1111111-1024x171.png)](./media/1111111.png)
 

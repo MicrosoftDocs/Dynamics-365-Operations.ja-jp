@@ -1,6 +1,6 @@
 ---
-title: ガント管理作成ガイド
-description: このトピックでは、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。
+title: ガント コントロール開発ガイド
+description: この記事では、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。
 author: ShylaThompson
 ms.date: 11/10/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95e6f30ea0db9631f189cf60080fbb9e8704ec2f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3c7003ac5c83869e5ceb9737d4c0ff541cc612a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888125"
 ---
-# <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
+# <a name="gantt-control-development-guide"></a>ガント コントロール開発ガイド
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。 Tutorial_Gantt フォームにあるコードを調べることを強くお勧めします。 このコードは、Gantt コントロールのすべての機能を示し、データをロードしてアプリケーション プログラミング インターフェイス (API) を操作する方法を示しています。
+この記事では、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。 Tutorial_Gantt フォームにあるコードを調べることを強くお勧めします。 このコードは、Gantt コントロールのすべての機能を示し、データをロードしてアプリケーション プログラミング インターフェイス (API) を操作する方法を示しています。
 
 ## <a name="whats-new-for-gantt"></a>ガント チャートの新機能
 

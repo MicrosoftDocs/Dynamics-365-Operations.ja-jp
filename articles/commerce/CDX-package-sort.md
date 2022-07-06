@@ -1,6 +1,6 @@
 ---
 title: Commerce Data Exchange パッケージをプライマリ インデックスで並べ替える
-description: このトピックでは、Dynamics 365 Commerce 機能の概要を提供し、パッケージごとのプライマリ インデックスで Commerce Data Exchange (CDX) パッケージを並べ替えます。
+description: この記事では、Dynamics 365 Commerce 機能の概要を提供し、パッケージごとのプライマリ インデックスで Commerce Data Exchange (CDX) パッケージを並べ替えます。
 author: jashanno
 ms.date: 08/24/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: global
 ms.author: jashanno
 ms.search.validFrom: 2021-08-24
-ms.openlocfilehash: 12cd6b72339a3560436b98615b16828cbb53ab48
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: b32c4310227edd5503416a6e08ebe906c8fbf8b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844720"
 ---
 # <a name="sort-commerce-data-exchange-packages-by-primary-index"></a>Commerce Data Exchange パッケージをプライマリ インデックスで並べ替える
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce 機能の概要を提供し、パッケージごとのプライマリ インデックスで Commerce Data Exchange (CDX) パッケージを並べ替えます。 **プライマリ インデックス機能による CDX パッケージの並べ替え** 機能では、データ変換の前処理パフォーマンスを最適化します。 この機能は、Commerce Scale Unit (CSU) または Modern POS のオフライン データベースのデータ アプリケーション ロジックを変更したり、それらのコンポーネントのパフォーマンスを向上したりしない点に注意が必要です。
+この記事では、Dynamics 365 Commerce 機能の概要を提供し、パッケージごとのプライマリ インデックスで Commerce Data Exchange (CDX) パッケージを並べ替えます。 **プライマリ インデックス機能による CDX パッケージの並べ替え** 機能では、データ変換の前処理パフォーマンスを最適化します。 この機能は、Commerce Scale Unit (CSU) または Modern POS のオフライン データベースのデータ アプリケーション ロジックを変更したり、それらのコンポーネントのパフォーマンスを向上したりしない点に注意が必要です。
 
 ## <a name="prerequisites"></a>必要条件
 

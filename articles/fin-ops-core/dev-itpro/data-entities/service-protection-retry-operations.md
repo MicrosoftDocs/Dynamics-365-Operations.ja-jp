@@ -1,6 +1,6 @@
 ---
 title: 再試行操作
-description: このトピックでは、アプリケーション プログラミング インターフェイス (API) 要求がサービス保護 API の制限に達したため調整された場合に実装できる再試行操作について説明します。
+description: この記事では、アプリケーション プログラミング インターフェイス (API) 要求がサービス保護 API の制限に達したため調整された場合に実装できる再試行操作について説明します。
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-16
 ms.dyn365.ops.version: Platform update 52
-ms.openlocfilehash: 103b1cf06565f5cfcbaf7cfcff65cadf304d2813
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7c8687469b8fde0b0cada681393afcaadb8a86bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861757"
 ---
 # <a name="retry-operations"></a>再試行操作
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、アプリケーション プログラミング インターフェイス (API) 要求がサービス保護 API の制限に達したため調整された場合に実装できる再試行操作について説明します。
+この記事では、アプリケーション プログラミング インターフェイス (API) 要求がサービス保護 API の制限に達したため調整された場合に実装できる再試行操作について説明します。
 
 サービス保護 API の制限エラーが発生した場合、ユーザーからの新しい要求を処理できるまでの時間を示す値が提供されます。 Web API から 429 エラーが返された場合、応答ヘッダーには、ユーザーが要求を再送信するまでに待機する間隔 (秒) を示す[再試行](https://developer.mozilla.org/docs/Web/HTTP/Headers/Retry-After) 間隔が含まれます。
 

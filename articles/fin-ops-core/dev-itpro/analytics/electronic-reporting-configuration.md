@@ -1,6 +1,6 @@
 ---
 title: 電子申告 (ER) コンフィギュレーションの作成
-description: このトピックでは、電子レポートを使用した構成の作成に役立つバックグラウンド情報を提供します。
+description: この記事では、電子レポートを使用しての構成の作成に役立つ背景情報を提供します。
 author: nselin
 ms.date: 02/01/2022
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 092e88fe8b36bbd3c12f149344e4c25fdcc43e29
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: cfd75930db8a2f8a032d1bc1e63fd436ca6649bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087588"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876531"
 ---
 # <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションの作成
 
 [!include [banner](../includes/banner.md)]
 
-ローカライズおよび翻訳向け Microsoft Dynamics Lifecycle Services (LCS) ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは電子申告ツールの使用によって国/地域別機能またはソリューション固有機能を実装する必要があります。 このトピックでは、電子レポートを使用した構成の作成に役立つバックグラウンド情報を提供します。 このトピックは、利用可能な電子レポート ドキュメントおよび今後の電子レポート ドキュメントに代わるものではありません。ローカライズ要件の観点から見た補足的なものです。
+ローカライズおよび翻訳向け Microsoft Dynamics Lifecycle Services (LCS) ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは電子申告ツールの使用によって国/地域別機能またはソリューション固有機能を実装する必要があります。 この記事では、電子レポートを使用しての構成の作成に役立つ背景情報を提供します。 この記事は、利用可能な電子レポートドキュメントと今後の電子レポートドキュメントを置き換えるものではありませんが、ローカリゼーション要件の観点から見た補足的なものです。
 
 電子申告 (ER) は、次の 3 つの概念に基づいて、規制による電子申告と支払を作成および管理するのに役立つ、コンフィギュレーション可能なツールです。
  - コーディングの代わりになるコンフィギュレーション
- - 複数の Dynamics 365 Finance リリースのための 1 つのコンフィギュレーション
+ - 複数の Dynamics 365 Finance リリースで使用する 1 つの構成
  - 簡単または自動的にアップグレード
 
 

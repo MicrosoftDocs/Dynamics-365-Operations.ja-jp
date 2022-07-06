@@ -1,6 +1,6 @@
 ---
 title: TypeScript および小売販売時点管理 (POS) の C# プロキシ
-description: このトピックでは、コマース プロキシに関する情報と、その生成方法について説明します。
+description: この記事では、コマース プロキシに関する情報と、その生成方法について説明します。
 author: mugunthanm
 ms.date: 08/26/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: 11d286973f2c5765caa233d16c1cbdaa5d3f500c
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 41b0cefbe6528357f005d7a49d09c4f9483b1a71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661708"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889383"
 ---
 # <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>TypeScript および小売販売時点管理 (POS) の C# プロキシ
 
@@ -39,7 +39,7 @@ Commerce プロキシは、Retail Server に追加されたすべてのユーザ
 - **TypeScript プロキシ**- POS は、TypeScript プロキシを使用して Retail Server API および CRT エンティティにアクセスします。 POS が Retail Server を使用する場合は、TypeScript プロキシが必要です。 それ以外の場合、POS はオペレーションまたはワークフローのために Retail サーバーと通信することができません。
 - **C# プロキシ** - POS はオフラインのときに C# プロキシを使用します。 (POS がオフラインの場合、Retail サーバーを使用せずに CRT と直接通信します)。POS は、Dynamics 電子商取引プラットフォームにもこのプロキシを使用します。 カスタマイゼーションを POS がオフラインのときに動作させ、電子商取引クライアントを Retail Server API にアクセスするようにするには、C＃ プロキシを生成する必要があります。
 
-TypeScript プロキシを生成する手順と C# プロキシを生成する手順は異なります。 このトピックの後半では、各タイプのプロキシを生成する方法について説明します。
+TypeScript プロキシを生成する手順と C# プロキシを生成する手順は異なります。 この記事の後半では、各タイプのプロキシを生成する方法について説明します。
 
 ## <a name="generate-the-typescript-proxy-10011-or-lower-retail-server"></a>TypeScript プロキシ (10.0.11 以前) Retail Server の生成
 

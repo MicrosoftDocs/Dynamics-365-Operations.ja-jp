@@ -1,6 +1,6 @@
 ---
-title: 財務開発ホーム ページ
-description: このトピックでは、財務開発に関するトピックへのリンクを提供します。
+title: 財務開発のホーム ページ
+description: この記事では、財務開発に関するトピックへのリンクを提供します。
 author: tonyafehr
 ms.date: 09/12/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b39c2fe9e807ae81dbfaf7faca64b2f3d606a97
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ce82aa52d0a458026892f0733031d57fa3e350fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782893"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866780"
 ---
 # <a name="financials-development-home-page"></a>財務開発のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務開発に関するトピックへのリンクを提供します。
+この記事では、財務開発に関するトピックへのリンクを提供します。
 
 - 財務分析コードのフレームワーク
 

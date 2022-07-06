@@ -1,6 +1,6 @@
 ---
 title: 支払コネクタの配置
-description: このトピックでは、支払コネクタ パッケージを適切なコンポーネントに配置する方法について説明します。
+description: この記事では、支払コネクタ パッケージを適切なコンポーネントに配置する方法について説明します。
 author: aamirallaqaband
 ms.date: 05/07/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e0ea58d1cc41667e4a1d227d19b45f64f71d3114
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a3bae1849e65ae5ecf30306edbe4de21fd66d985
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783082"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903651"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 
@@ -28,11 +28,11 @@ ms.locfileid: "7783082"
 
 ## <a name="overview"></a>概要
 
-このトピックでは、IT プロフェッショナルまたは付加価値再販業者 (VAR) が支払コネクタを適切なコンポーネントに展開するプロセスについて説明します。 支払コネクタが支払プロバイダーまたは支払独立系ソフトウェア ベンダー (ISV) によって実装されてテスト済みであり、また顧客環境での検証とそれに続く実稼働配置の準備ができていると仮定します。
+この記事では、IT プロフェッショナルまたは付加価値再販業者 (VAR) が支払コネクタを適切なコンポーネントに展開するプロセスについて説明します。 支払コネクタが支払プロバイダーまたは支払独立系ソフトウェア ベンダー (ISV) によって実装されてテスト済みであり、また顧客環境での検証とそれに続く運用配置の準備ができていると仮定します。
 
-このトピックには、Retail ソフトウェア開発キット (SDK) を使用して支払コネクタをパッケージ化する方法に関する情報は含まれていません。 SDK のダウンロード方法に関する詳細は、 [Retail ソフトウエア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md) を参照してください。 支払コネクタをパッケージ化する方法のガイドラインについては、ダウンロードした SDK の Retail SDK パッケージ ドキュメントを参照してください。
+この記事には、Retail ソフトウェア開発キット (SDK) を使用して支払コネクタをパッケージ化する方法に関する情報は含まれていません。 SDK のダウンロード方法に関する詳細は、 [Retail ソフトウエア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md) を参照してください。 支払コネクタをパッケージ化する方法のガイドラインについては、ダウンロードした SDK の Retail SDK パッケージ ドキュメントを参照してください。
 
-このトピックには、支払 Web アプリケーション、支払フロントエンド プロセッサ、または支払バックエンド プロセッサの配置方法に関する情報も含まれています。それは、これらのアプリケーションが支払プロバイダーまたは支払 ISV によって管理されているためです。 Microsoft Dynamics AX 7.0 (2016 年 2 月) を使用している場合は、コマース配置可能パッケージを作成する前に KB 3183058 を適用する必要があります。
+この記事には、支払 Web アプリケーション、支払フロントエンド プロセッサ、または支払バックエンド プロセッサの配置方法に関する情報も含まれています。それは、これらのアプリケーションが支払プロバイダーまたは支払 ISV によって管理されているためです。 Microsoft Dynamics AX 7.0 (2016 年 2 月) を使用している場合は、コマース配置可能パッケージを作成する前に KB 3183058 を適用する必要があります。
 
 ## <a name="payment-packaging-folder"></a>支払パッケージ フォルダ
 
@@ -72,7 +72,7 @@ ms.locfileid: "7783082"
 5. **アップロード** をクリックします。
 6. 圧縮済みのパッケージを選択してアップロードし、**確定** をクリックします。
 
-配置可能パッケージを LCS 資産ライブラリにアップロードした後、LCS ポータルを通じて環境に配置することができます。 サンドボックス環境内の配置を検証した後は、実稼働環境を配置するサービス要求を作成できます。 詳細については、[配置可能パッケージの適用](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
+配置可能パッケージを LCS 資産ライブラリにアップロードした後、LCS ポータルを通じて環境に配置することができます。 サンドボックス環境内の配置を検証した後は、運用環境を配置するサービス要求を作成できます。 詳細については、[配置可能パッケージの適用](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
 
 #### <a name="download-and-run-installers-on-client-computers"></a>クライアント コンピューターでインストーラーをダウンロードして実行
 
@@ -80,7 +80,7 @@ ms.locfileid: "7783082"
 
 ## <a name="manual-deployment"></a>手動での配置
 
-このセクションでは、支払コネクタを手動で展開する方法について説明します。 手動による展開を使用して、開発環境でローカルにテストすることができます。 この開発環境は、クラウドホスト型でも、ダウンロード可能な仮想ハード ディスク (VHD) 上でも構いません。 これらの手順は、サンドボックスまたは実稼動環境には適用されません。
+このセクションでは、支払コネクタを手動で展開する方法について説明します。 手動による展開を使用して、開発環境でローカルにテストすることができます。 この開発環境は、クラウドホスト型でも、ダウンロード可能な仮想ハード ディスク (VHD) 上でも構いません。 これらの手順は、サンドボックスまたは運用環境には適用されません。
 
 ### <a name="put-the-payment-connector-assemblies-and-files-in-the-correct-locations"></a>支払コネクタ アセンブリとファイルを正しい場所に配置
 
@@ -105,9 +105,9 @@ ms.locfileid: "7783082"
 
 ## <a name="use-a-payment-connector-with-an-e-commerce-site"></a>電子商取引サイトで支払コネクタを使用
 
-E コマース サイトは、LCS の管理された環境では配置されていません。 パートナーと連携して、電子商取引サイトをホストする方法を決定する必要があります。 支払コネクタに支払 Web ファイルが必要とされる場合は、電子商取引にこれらの Web ファイルを配置する必要があります。 支払コネクタが、支払 Web ファイルを必要としない場合、追加の手順は必要ありません。 支払 Web ファイルを電子商取引サイトに配置する方法については、このトピックの前半にある[支払コネクタ アセンブリとファイルを正しい場所に配置する](deploy-payment-connector.md#put-the-payment-connector-assemblies-and-files-in-the-correct-locations)を参照してください。
+E コマース サイトは、LCS の管理された環境では配置されていません。 パートナーと連携して、電子商取引サイトをホストする方法を決定する必要があります。 支払コネクタに支払 Web ファイルが必要とされる場合は、電子商取引にこれらの Web ファイルを配置する必要があります。 支払コネクタが、支払 Web ファイルを必要としない場合、追加の手順は必要ありません。 支払 Web ファイルを電子商取引サイトに配置する方法については、この記事の前半にある[支払コネクタ アセンブリとファイルを正しい場所に配置する](deploy-payment-connector.md#put-the-payment-connector-assemblies-and-files-in-the-correct-locations)を参照してください。
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>追加リソース
 
 [支払コネクタと支払デバイスの実装ガイド](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 

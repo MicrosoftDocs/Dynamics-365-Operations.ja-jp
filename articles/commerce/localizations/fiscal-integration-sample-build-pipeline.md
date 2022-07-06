@@ -1,6 +1,6 @@
 ---
 title: 会計統合サンプル用のビルド パイプラインの設定
-description: このトピックでは、サンプル コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成およびリリースできるよう、Microsoft Dynamics 365 Commerce の Retail ソフトウェア開発キット (SDK) からの会計統合サンプルのビルド パイプラインとリリース パイプラインを設定する方法について説明します。
+description: この記事では、サンプル コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成およびリリースできるよう、Microsoft Dynamics 365 Commerce の Retail ソフトウェア開発キット (SDK) からの会計統合サンプルのビルド パイプラインとリリース パイプラインを設定する方法について説明します。
 author: Sergio1C
 ms.date: 12/21/2021
 ms.topic: article
@@ -9,21 +9,21 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: v-seskry
 ms.search.validFrom: ''
-ms.openlocfilehash: b85ccbed1e2def18a5a3b0dc987b73448f3d8f69
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 61386fa8eb93d5092653d174b131e190dc6a19d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884830"
 ---
 # <a name="set-up-a-build-pipeline-for-a-fiscal-integration-sample"></a>会計統合サンプル用のビルド パイプラインの設定
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の Retail ソフトウェア開発キット (SDK) からの[会計統合サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) のビルド パイプラインとリリース パイプラインを設定する方法について説明します。 これにより、 [独立したパッケージおよび拡張モデル](../dev-itpro/build-pipeline.md) を使用して、サンプルコードに対してCloud Scale Unit およびセルフサービスの配置可能パッケージを生成およびリリースできます。
+この記事では、Microsoft Dynamics 365 Commerce の Retail ソフトウェア開発キット (SDK) からの[会計統合サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) のビルド パイプラインとリリース パイプラインを設定する方法について説明します。 これにより、 [独立したパッケージおよび拡張モデル](../dev-itpro/build-pipeline.md) を使用して、サンプルコードに対してCloud Scale Unit およびセルフサービスの配置可能パッケージを生成およびリリースできます。
 
 > [!NOTE]
-> Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) から Retail SDK の以前のバージョンを使用している場合、このトピックに記載されている手順は機能しません。 LCS で開発者 VM から Retail SDK を使用している場合に会計統合サンプルを配置するために必要な手順については、対応する会計統合サンプルのドキュメントを参照してください。
+> Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) から Retail SDK の以前のバージョンを使用している場合、この記事に記載されている手順は機能しません。 LCS で開発者 VM から Retail SDK を使用している場合に会計統合サンプルを配置するために必要な手順については、対応する会計統合サンプルのドキュメントを参照してください。
 
 ## <a name="set-up-a-build-pipeline-in-azure-devops-to-generate-cloud-scale-unit-extension-packages-and-retail-self-service-packages"></a>Azure DevOps のビルド パイプラインを設定し、Cloud Scale Unit 拡張パッケージと Retail セルフサービス パッケージを生成
 

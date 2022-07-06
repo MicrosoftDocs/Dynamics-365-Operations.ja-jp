@@ -7,12 +7,12 @@ audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: f252b7cdc2ed213050071141ece0d985f4419052
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4bd9a78a39334c81b714b1a1d0f6ead63b34ea4b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884714"
 ---
 # <a name="page-type"></a>ページのタイプ
 
@@ -135,7 +135,7 @@ syncError: boolean
 
 (読み取り専用) ページの送信がエラー状態の場合、True です。
 これは通常、検証エラーのためにサーバーが送信を拒否した場合に発生します。
-ページ データ同期について詳しくは、[このトピック](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
+ページ データ同期について詳しくは、[この記事](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
 
 
 ### <a name="syncpending"></a>syncPending
@@ -143,7 +143,7 @@ syncError: boolean
 syncPending: boolean
 
 (読み取り専用) ページの送信が同期の待機中の場合、True です。
-ページ データ同期について詳しくは、[このトピック](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
+ページ データ同期について詳しくは、[この記事](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
 
 
 ### <a name="syncprocessing"></a>syncProcessing
@@ -151,7 +151,7 @@ syncPending: boolean
 syncProcessing: boolean
 
 (読み取り専用) ページ インスタンスが現在送信を同期している場合は True です。
-ページ データ同期について詳しくは、[このトピック](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
+ページ データ同期について詳しくは、[この記事](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
 
 
 ### <a name="syncuniteditable"></a>syncUnitEditable
@@ -159,10 +159,10 @@ syncProcessing: boolean
 syncUnitEditable: boolean
 
 (読み取り専用) 同期の待機中に送信が編集可能な場合、True です。
-ページ データ同期について詳しくは、[このトピック](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
+ページ データ同期について詳しくは、[この記事](../modules/view-model-ipage.md#page-data-synchronization)をご覧ください。
 
 
-### <a name="title"></a>title
+### <a name="title"></a>タイトル
 
 title: string
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 支払データの使用
-description: このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
+description: この記事では、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
 author: BrianShook
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: f8d183196540a0a1c604ae0ef86d81a767066962
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 274b4b01eb23dd602b705042486e5c2105f93744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869142"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
+この記事では、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -37,7 +37,7 @@ ms.locfileid: "7779759"
 
 ## <a name="overview"></a>概要
 
-このトピックでは、支払コネクタによって管理されているデータに関して次の領域に関する特定の詳細情報を提供します。
+この記事では、支払コネクタによって管理されているデータに関して次の領域に関する特定の詳細情報を提供します。
 
 - **[カードありシナリオで使用されるデータ](#data-used-in-card-present-scenarios)**: このセクションでは、カードありシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。
 - **[カードなしシナリオで使用されるデータ](#data-used-in-card-not-present-scenarios)**: このセクションでは、カードなしシナリオの支払コネクタに渡されるデータ フィールドの一覧および説明を示します。
@@ -79,19 +79,19 @@ ms.locfileid: "7779759"
 |---|---|
 | 金額 | 取得する金額。 |
 | 通貨 | 取得する金額の通貨。 |
-| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、このトピックで後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。 |
+| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、この記事で後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。 |
 
 #### <a name="voidpaymentterminaldevicerequest"></a>VoidPaymentTerminalDeviceRequest
 
-| フィールド | 説明 |
+| フィールド | Description |
 |---|---|
 | 金額 | 支払いが無効になる金額。 |
 | 通貨 | 支払いが無効になる通貨。 |
-| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、このトピックで後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。 |
+| paymentPropertiesXml | **AuthorizePaymentTerminalDeviceRequest** 要求または **RefundPaymentTerminalDeviceRequest** 要求によって返され、要求間のステートフル プロパティをサポートするために使用される **PaymentSdkData** オブジェクトのコンテンツ。 詳細については、この記事で後述する[支払 SDK データ](#payment-sdk-data) セクションを参照してください。 |
 
 #### <a name="refundpaymentterminaldevicerequest"></a>RefundPaymentTerminalDeviceRequest
 
-| フィールド | 説明 |
+| フィールド | Description |
 |---|---|
 | 金額 | 払い戻す金額。 |
 | 通貨 | 払い戻す金額の通貨。 |
@@ -160,22 +160,22 @@ ms.locfileid: "7779759"
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
 | TransactionData | TerminalId | トランザクションが発生した端末の一意の識別子。 |
-| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。 |
-| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。 |
+| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、この記事で後述する [L2 データ](#l2-data) セクションを参照してください。 |
+| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、この記事で後述する [L3 データ](#l3-data) セクションを参照してください。 |
 
 #### <a name="capture"></a>キャプチャ
 
-| 名前空間 | フィールド | 説明 |
+| 名前空間 | フィールド | Description |
 |---|---|---|
 | MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
-| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。 |
-| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。 |
+| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、この記事で後述する [L2 データ](#l2-data) セクションを参照してください。 |
+| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、この記事で後述する [L3 データ](#l3-data) セクションを参照してください。 |
 
 #### <a name="void"></a>無効
 
-| 名前空間 | フィールド | 説明 |
+| 名前空間 | フィールド | Description |
 |---|---|---|
 | MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
 | TransactionData | 量 | トランザクションの合計金額。 |
@@ -199,12 +199,12 @@ ms.locfileid: "7779759"
 | TransactionData | 量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
 | TransactionData | TerminalId | トランザクションが発生した端末の一意の識別子。 |
-| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、このトピックで後述する[L2 データ](#l2-data) セクションを参照してください。 |
-| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、このトピックで後述する[L3 データ](#l3-data) セクションを参照してください。 |
+| PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、この記事で後述する [L2 データ](#l2-data) セクションを参照してください。 |
+| PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、この記事で後述する [L3 データ](#l3-data) セクションを参照してください。 |
 
 #### <a name="getpaymentacceptpoint"></a>GetPaymentAcceptPoint 
 
-| 名前空間 | フィールド | 説明 |
+| 名前空間 | フィールド | Description |
 |---|---|---|
 | MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
 | PaymentCard | 氏名 | カード所有者の名前。 |
@@ -328,9 +328,9 @@ ms.locfileid: "7779759"
 | L3Data | MiscellaneousCharges\[\].ChargeType | 注文の特定の明細行品目の部分に適用される請求タイプの一覧。 |
 | L3Data | MiscellaneousCharges\[\].ChargeAmount | 注文の特定の明細行品目の部分に適用される請求金額の一覧。 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
-- **[支払端末のエンド ツー エンド支払統合の作成](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。
+- **[支払端末のエンド ツー エンド支払統合の作成](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – この記事では、カスタム支払コネクタを作成する方法について説明します。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

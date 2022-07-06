@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリのバージョン 10.0.23 (2022 年 1 月) のプラットフォーム更新プログラム
-description: このトピックでは、Finance and Operations アプリ バージョン 10.0.23 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
+title: 財務と運用アプリのバージョン 10.0.23 (2022 年 1 月) のプラットフォーム更新プログラム
+description: この記事では、財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 12/10/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-10-31
-ms.openlocfilehash: 35b763dfbca7044aaba9c63b389f1240224b6f1d
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 03eb8fb71765237ec0ddf5d3445a6c9b1c18b0f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866629"
 ---
-# <a name="platform-updates-for-version-10023-of-finance-and-operations-apps-january-2022"></a>Finance and Operations アプリのバージョン 10.0.23 (2022 年 1 月) のプラットフォーム更新プログラム
+# <a name="platform-updates-for-version-10023-of-finance-and-operations-apps-january-2022"></a>財務と運用アプリのバージョン 10.0.23 (2022 年 1 月) のプラットフォーム更新プログラム
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリ バージョン 10.0.23 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6206 で、次のスケジュールで使用できます。
+この記事では、財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6206 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 10 月
 - **リリースの一般提供 (セルフ更新)**: 2021 年 12 月
@@ -47,11 +47,11 @@ ms.locfileid: "7913504"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。

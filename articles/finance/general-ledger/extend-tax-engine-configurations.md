@@ -1,6 +1,6 @@
 ---
 title: 税エンジン コンフィギュレーションの拡張
-description: このトピックでは、税エンジンのコンフィギュレーションの拡張について説明します。
+description: この記事では、税エンジンのコンフィギュレーションの拡張について説明します。
 author: kailiang
 ms.date: 05/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: India
 ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2321431da3ee7bdad2415fa5f23b77161f8e7190
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 6e72c5e728ba9d352963db1680636e6f20756064
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865757"
 ---
 # <a name="extend-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張 
 
 [!include [banner](../includes/banner.md)]
 
-[税エンジン](tax-engine.md) (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。 このトピックでは、インドに適用される次のシナリオを使用して、税エンジン コンフィギュレーション拡張プロセスについて説明します。
+[税エンジン](tax-engine.md) (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。 この記事では、インドに適用される次のシナリオを使用して、税エンジン コンフィギュレーション拡張プロセスについて説明します。
 
 -   連邦直轄領商品およびサービス税 (UTGST) の税エンジンのコンフィギュレーションを拡張します。
 -   参照モデルを使用すると、さまざまな国/地域からの商品輸入の注文の税率の基本的な関税 (BCD) を適用できます。
@@ -32,11 +32,11 @@ ms.locfileid: "7601470"
 > [!NOTE]
 > 税エンジン機能は、インドに基本住所がある法人に対してのみ使用可能です。
 
-次の税用語がこのトピックで使用されます。
+次の税用語がこの記事で使用されます。
 
-|税用語 | 完全名|
+|税用語 | 姓名|
 |-----|-----------|
-|販売税 | 商品およびサービス税|
+|GST | 商品およびサービス税|
 |UTGST | 連邦直轄領商品及びサービス税|
 |CGST | 中央商品及びサービス税|
 |IGST | 統合商品及びサービス税 |

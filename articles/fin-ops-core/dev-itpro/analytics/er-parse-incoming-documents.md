@@ -1,6 +1,6 @@
 ---
 title: 受信したドキュメントを解析する
-description: このトピックでは、受信したドキュメントを解析できる電子申告の形式を設定する方法について説明します。
+description: この記事では、受信したドキュメントを解析できる電子申告の形式を設定する方法について説明します。
 author: nickselin
 ms.date: 11/24/2021
 ms.topic: article
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0566fbc10dd71073dec3c1f38f61fc3c7931fd20
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 089f6e1c12907df8f20030c07a5c1cc1ac99794b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909231"
 ---
 # <a name="parse-incoming-documents"></a>受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
 
-ここでは、以下3つのタスクについて説明します:
+この記事では、以下 3 つのタスクについて説明します:
 
 - [アプリケーション データを更新するために受信したドキュメントを解析する](#parse-incoming-documents-to-update-application-data)
 - [受信ドキュメントを Excel 形式で解析する](#parse-incoming-documents-in-excel-format)

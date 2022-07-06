@@ -1,6 +1,6 @@
 ---
 title: カスタマイズ分析のレポート (CAR)
-description: このトピックでは、モデルのカスタマイズ分析のレポートを生成する方法について説明し、レポートに含まれるいくつかのベスト プラクティス ルールについて説明します。
+description: この記事では、モデルのカスタマイズ分析のレポートを生成する方法について説明し、レポートに含まれるいくつかのベスト プラクティス ルールについて説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d28f4f0397c7cceb975a0ac60c4019430b9829cd
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ab637ccd753c22cf00ffa7b51ab9d2175ba64cb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867087"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、モデルのカスタマイズ分析レポートを生成する方法について説明します。 また、レポートに含まれているベスト プラクティス ルールについて説明し、これらのルールに関連付けられているエラーおよび警告を解決するための推奨事項を示します。 
+この記事では、モデルのカスタマイズ分析レポートを生成する方法について説明します。 また、レポートに含まれているベスト プラクティス ルールについて説明し、これらのルールに関連付けられているエラーおよび警告を解決するための推奨事項を示します。 
 
 ## <a name="what-is-the-customization-analysis-report"></a>カスタマイズ分析レポートとは
 

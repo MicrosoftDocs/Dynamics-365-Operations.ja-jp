@@ -1,6 +1,6 @@
 ---
 title: ビジネス ロジックで非同期コマース (CRT) API を作成する
-description: このトピックでは、非同期で実行される コマース (CRT) アプリケーション プログラミング インターフェイス (API) (つまり、要求) の作成方法について説明します。
+description: この記事では、非同期で実行される Commerce (CRT) アプリケーション プログラミング インターフェイス (API) (つまり、要求) の作成方法について説明します。
 author: mugunthanm
 ms.date: 03/16/2022
 ms.topic: article
@@ -10,21 +10,21 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 3b6880ed98214d229d8501fa30b7477fa6544485
-ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
+ms.openlocfilehash: d93095e390fd9fd4ecc42ecf8a629f6be5da6a87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8453500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865990"
 ---
 # <a name="create-asynchronous-commerce-crt-apis-in-your-business-logic"></a>ビジネス ロジックで非同期コマース (CRT) API を作成する
 
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> このトピックは、Microsoft Dynamics 365 Commerce バージョン 10.0.10 およびそれ以降に適用されます。
+> この記事は、Microsoft Dynamics 365 Commerce バージョン 10.0.10 およびそれ以降に適用されます。
 
-このトピックでは、新しい非同期フレームワークを使用して Commerce Runtime (CRT) 用の新しいビジネス ロジック (アプリケーション プログラミング インターフェイス、または API) を作成する方法について説明します。 コマース API フレームワークでは、拡張機能および標準のコマース ハンドラーの非同期プログラミング モデルがサポートされるようになりました。
+この記事では、新しい非同期フレームワークを使用して Commerce Runtime (CRT) 用の新しいビジネス ロジック (アプリケーション プログラミング インターフェイス、または API) を作成する方法について説明します。 コマース API フレームワークでは、拡張機能および標準のコマース ハンドラーの非同期プログラミング モデルがサポートされるようになりました。
 
 このフレームワーク拡張機能が追加される前は、要求が同期的にのみ実行できました。 入力/出力 (I/O) 操作、データベース クエリ、またはネットワーク要求などの長い操作により、実行スレッドがブロックされました。 非同期モデルのサポートが Commerce Runtime (CRT) に追加されたので、これらの操作の非同期バージョンを使用できます。 非同期要求は、実行スレッドをブロック解除します。
 

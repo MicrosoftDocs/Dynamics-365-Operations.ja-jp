@@ -1,6 +1,6 @@
 ---
 title: 外部およびインライン スクリプト モジュール
-description: このトピックでは、外部およびインライン スクリプト モジュールと、これらを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
+description: この記事では、外部およびインライン スクリプト モジュールと、これらを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
 author: samjarawan
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6af25bcc9e3ac5978820547fb106c9277d5367b1
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: aaea6daea6ba37fa3e36cf8b3473bd6ab03d0332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780780"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909376"
 ---
 # <a name="external-and-inline-script-modules"></a>外部およびインライン スクリプト モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、外部およびインライン スクリプト モジュールと、これらを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
+この記事では、外部およびインライン スクリプト モジュールと、これらを Microsoft Dynamics 365 Commerce のテンプレートに追加する方法について説明します。
 
 外部およびインライン スクリプト モジュールを使用して、クライアント側の JavaScript スクリプトをサイト ページに追加できます。 スクリプトは、インラインの場合、または外部ファイルから呼び出す場合があります。 外部およびインライン スクリプト モジュールは、テンプレートの **HTML Head**、**本文の開始**、または **本文の終了** に追加できます。
 

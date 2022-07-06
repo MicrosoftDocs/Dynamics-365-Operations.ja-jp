@@ -1,6 +1,6 @@
 ---
 title: 最新の更新プログラムに対してコードをコンパイルするための計画と準備
-description: このトピックでは、最新の製品更新プログラムを使用してパートナー コードをコンパイルするときに、開発者が遭遇する可能性のある潜在的な問題を取り上げます。
+description: この記事では、最新の製品更新プログラムを使用してパートナー コードをコンパイルするときに、開発者が遭遇する可能性のある潜在的な問題を取り上げます。
 author: dfroslie
 ms.date: 10/15/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dfroslie
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 31472cbb155639ce78e731c544283e28c9b3788240cef6a11351e20c54455d5b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e447a2ac6c8f4410038341bcbf994534e89f6ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760730"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866226"
 ---
 # <a name="plan-and-prepare-for-compiling-code-against-the-latest-update"></a>最新の更新プログラムに対してコードをコンパイルするための計画と準備
 

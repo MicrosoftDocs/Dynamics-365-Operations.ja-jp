@@ -1,6 +1,6 @@
 ---
 title: バージョン管理で使用されるテーブル マップの拡張
-description: このトピックでは、バージョン管理に使用できるテーブル マップを拡張する方法について説明します。
+description: この記事では、バージョン管理に使用できるテーブル マップを拡張する方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 12/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: b5e45e45d3361190d153e8dfee01ec6919c849c2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ad804ff32b91273648c67540a18097d7884f8b51
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782735"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866849"
 ---
 # <a name="extend-table-maps-that-are-used-for-versioning"></a>バージョン管理で使用されるテーブル マップの拡張
 

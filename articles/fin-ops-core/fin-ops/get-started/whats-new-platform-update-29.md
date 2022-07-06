@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能および変更された機能
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 29 の機能について説明します。
+description: この記事では、財務と運用アプリのプラットフォーム更新プログラム 29 の機能について説明します。
 author: tonyafehr
 ms.date: 10/01/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: a1469f2a970eeafbcfdc8f4da2638786a36df7e46c2ed390a7446953e9488e1d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9b509cc2d6fe0bd3f4946a916dd8a68cc42672c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895246"
 ---
 # <a name="whats-new-or-changed-in-platform-update-29-for-finance-and-operations-apps-october-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 29 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5372 です。 一般提供開始日は 10 月ですが、新機能は 8 月の初期リリースで使用できます。 プラットフォーム更新プログラム 29 の詳細については [追加リソース](whats-new-platform-update-28.md#additional-resources) を参照してください。
+この記事では、財務と運用アプリのプラットフォーム更新プログラム 29 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5372 です。 一般提供開始日は 10 月ですが、新機能は 8 月の初期リリースで使用できます。 プラットフォーム更新プログラム 29 の詳細については [追加リソース](whats-new-platform-update-28.md#additional-resources) を参照してください。
 
 
 ## <a name="feature-management"></a>機能管理
@@ -50,12 +50,12 @@ ms.locfileid: "6745052"
 セッション アイドル タイムアウトは、セッションがタイムアウトして閉じるまでにユーザーが非アクティブになれる時間の長さを表します。 プラットフォーム更新プログラム 29では、ユーザーインターフェイスに Web ブラウザー セッション タイムアウト設定が公開され、既定値が 60 分ではなく 30 分に最適化されています。 最大60分まで値を変更および設定できますが、システムに余分な負荷が発生する可能性があります。 詳細については、 [セッション アイドル タイムアウトの設定](../../dev-itpro/sysadmin/session-idle-timeout.md) を参照してください。
 
 ## <a name="visual-refresh-of-the-web-client-to-align-with-the-fluent-design-language"></a>Fluent Design言語に合わせたWeb クライアントのビジュアル更新
-Dynamics 365アプリ全体の取り組みの一環として、Web クライアントのビジュアル更新に向けて段階的に取り組んでおり、コントロールとページを Microsoft Fluent Design言語とより密接に連携させています。 プラットフォーム 更新プログラム 29 には、変更の初期セットが含まれています。 詳細については、リリース計画の [Fluent Design言語に合わせたWeb クライアントのビジュアル更新](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) トピックを参照してください。
+Dynamics 365アプリ全体の取り組みの一環として、Web クライアントのビジュアル更新に向けて段階的に取り組んでおり、コントロールとページを Microsoft Fluent Design言語とより密接に連携させています。 プラットフォーム 更新プログラム 29 には、変更の初期セットが含まれています。 詳細については、リリース計画の [Fluent Design言語に合わせたWeb クライアントのビジュアル更新](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language)の記事を参照してください。
 
 この変更の一部として、ダッシュボードのワークスペース タイルに新しいビジュアル スタイルが追加されました。 視覚的に配置されるワークスペース タイルの画像の作成に関する更新されたガイダンスについては、[ワークスペース タイル用のアイコンの作成](../../dev-itpro/user-interface/create-icons-workspace-tiles.md)を参照してください。
 
 ##  <a name="saved-views-preview"></a>保存されたビュー (プレビュー)
-保存されたビュープがプレビューで使用できるようになりました。 この機能は、個人用設定サブシステムの大幅な拡張機能であり、ユーザーは、ページごとに複数の名前を付けた個人用設定セットを持つことができます。 リストページでは、これらのビューにフィルターを含めることもできます。 ビューはセキュリティ ロールに対して公開できるので、個人用設定の管理もビューを使用することで大幅に簡単になります。 開発者環境でこの機能を有効にする方法の詳細については、 [保存されたビュー](saved-views.md) を参照してください。 また、 [保存されたビューを十分に活用するフォームの作成](../../dev-itpro/user-interface/understanding-saved-views.md) トピックも参照してください。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。 
+保存されたビュープがプレビューで使用できるようになりました。 この機能は、個人用設定サブシステムの大幅な拡張機能であり、ユーザーは、ページごとに複数の名前を付けた個人用設定セットを持つことができます。 リストページでは、これらのビューにフィルターを含めることもできます。 ビューはセキュリティ ロールに対して公開できるので、個人用設定の管理もビューを使用することで大幅に簡単になります。 開発者環境でこの機能を有効にする方法の詳細については、 [保存されたビュー](saved-views.md) を参照してください。 また、[保存されたビューを十分に活用するフォームの作成](../../dev-itpro/user-interface/understanding-saved-views.md)の記事も参照してください。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。 
 
 ## <a name="new-grid-control-preview"></a>新しいグリッド コントロール (プレビュー) 
 [新しいグリッド コントロール](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) がプレビューで使用できるようになりました。 この新しいグリッドは既存のグリッド コントロールに代わるものであり、より高速なレンダリング、よりスムーズなスクロール、グリッド内でのより簡単なナビゲーション、ドラッグ アンド ドロップによる列の並べ替えなどの機能を備えています。 新しいグリッドでは、フッターの表形式グリッドの数値列の下部に総計を表示することもできます。これは、列ヘッダーの右クリック コンテキスト メニューを使用して有効にできます。 有効にすると、すべての表形式とリストのグリッドが自動的に新しいグリッドを使用するように切り替わります。ただし、非反応拡張コントロールを含むグリッドがページにある場合は、既存のグリッドコントロールがそのページで使用されます。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。
@@ -103,14 +103,14 @@ X++ ソース コード エディターには、現在、Visual Studio の CodeL
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

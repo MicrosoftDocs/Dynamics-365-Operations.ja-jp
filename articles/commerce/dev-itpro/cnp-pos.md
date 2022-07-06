@@ -1,6 +1,6 @@
 ---
-title: ハードウェア ステーションを使用しないクレジットカードの処理
-description: このトピックでは、ハードウェア ステーションを含まない POS クライアントで "カードが存在しない" トランザクションの処理をする販売時点管理 (POS) を設定する方法について説明します。
+title: ハードウェア ステーションを使用しないクレジット カードの処理
+description: この記事では、ハードウェア ステーションを含まない POS クライアントで "カードが存在しない" トランザクションの処理をする販売時点管理 (POS) を設定する方法について説明します。
 author: BrianShook
 ms.date: 09/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 73ba5ea8a005918c3b6c293d7a60c8f5cc427c36
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 947d67c263e91a140b5f9d35617c5087bc35fcbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881347"
 ---
-# <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
+# <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジット カードの処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ハードウェア ステーションを含まない POS クライアントで "カードが存在しない" トランザクションの処理をする販売時点管理 (POS) を設定する方法について説明します。 この機能では特に、カーブサイド ピックアップなどの新しいシナリオを対象としています。
+この記事では、ハードウェア ステーションを含まない POS クライアントで "カードが存在しない" トランザクションの処理をする販売時点管理 (POS) を設定する方法について説明します。 この機能では特に、カーブサイド ピックアップなどの新しいシナリオを対象としています。
 
 この機能が有効になっている場合、クラウド POS や iOS 向けの最新の POS などのクライアントは、Commerce Scale Unit を介してクレジットカード処理の呼び出しを行うことができます。 ローカル ネットワークに配置されているスタンドアロンのハードウェア ステーションに依存する必要はありません。 したがって、すべての POS クライアントでカーブサイド ピックアップに対応することができ、必要とされる設定手順も少なく済ませられます。
 

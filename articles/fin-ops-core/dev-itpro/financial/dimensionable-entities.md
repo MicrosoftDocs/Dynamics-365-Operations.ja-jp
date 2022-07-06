@@ -1,6 +1,6 @@
 ---
 title: 財務分析コードとして使用可能なバッキング テーブルの作成
-description: このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
+description: この記事では、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
 author: RyanCCarlson2
 ms.date: 03/04/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df06aa87b1613d32d6daebe34488b305e63a3af
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4bf814cd18b71b1a0d2539eb0b373622ccfddc31
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735276"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866783"
 ---
 # <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
+この記事では、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
 
 > [!IMPORTANT]
 > 再利用できない値を持つまたは 1 対 1 の分析コード値を使用する、財務分析コードを作成しないでください。 ビューを、DimAttribute の分析コード値のソースとして使用することはできません。 これはうまくいくように見えますが、分析コードのファクト データがデータベースにインポートされるようにするため、MR が行ごとの処理にフォールバックされます。 これにより、パフォーマンスがかなり低下したり、レポートが遮断されます。 
@@ -162,7 +162,7 @@ DimensionCache::clearAllScopes();
 1. 既存の DimAttributeOM[BackingTableName] ビューの 1 つをコピーし、適切に名前を変更して、関連するすべてのラベルとヘルプ テキストを調整します。
 1. コピーしたビューで、Datasource\BackingEntity (OMOperatingUnit) \Ranges ノードを展開します。 範囲内の値プロパティを、追加された新しい OMOperatingUnitType 列挙型に変更します。
 1. プロジェクトをビルドして同期します。
-1. SQL でデータを検証するステップ２で始まるこのトピックの手順に従い、**値の使用** ルックアップで表示される分析コードを検証するステップ 5 まで続けます。
+1. SQL でデータを検証するステップ 2 で始まる記事の手順に従い、**値の使用** ルックアップで表示される分析コードを検証するステップ 5 まで続けます。
 
 **OMOperatingUnitType** は **OMOperatingUnit** テーブルによってサポートされているため、削除、更新および **renamePrimaryKey** メソッドを処理するための汎用コードがすでに存在します。 したがって、これらのメソッドを更新する必要はありません。
 

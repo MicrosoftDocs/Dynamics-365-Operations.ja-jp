@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
+description: この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
 author: tonyafehr
 ms.date: 05/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 625c7fe381b277ab214938a7a920dd337d0d98801f2030a9304b7ebc6111b07a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7311795151f86aa2641b0a5d9c437b5f76f4679b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888110"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-7-may-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
+この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
 
 ## <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 

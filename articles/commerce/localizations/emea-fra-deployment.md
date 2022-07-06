@@ -1,6 +1,6 @@
 ---
 title: フランスのキャッシュ レジスターの配置ガイドライン (レガシー)
-description: このトピックは、フランスのローカライズ用配置ガイドです。
+description: この記事は、フランスのローカライズ用配置ガイドです。
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 08/10/2021
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 105202207fd3b151f5819566f559f1f8bfc9ef4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3f5e76d49d922aac1e539cce3b057fb8039f1ad0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876560"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france-legacy"></a>フランスのキャッシュ レジスターの配置ガイドライン (レガシー)
 
@@ -28,18 +28,18 @@ ms.locfileid: "7343742"
 > [!IMPORTANT]
 > このサンプル会計統合機能は、[会計統合フレームワーク](./fiscal-integration-for-retail-channel.md)を利用しておらず、今後の更新で非推奨になります。 代わりに、[会計統合フレームワークに基づく機能](./emea-fra-fi-deployment.md)を使用する必要があります。
 
-このトピックは、Dynamics 365 Commerce のフランスでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 フランスのローカライズの詳細については、 [フランスのキャッシュ レジスター機能](./emea-fra-cash-registers.md) を参照してください。
+この記事は、フランスで Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 フランスのローカライズの詳細については、 [フランスのキャッシュ レジスター機能](./emea-fra-cash-registers.md) を参照してください。
 
 このローカライズは、小売ソフトウェア開発キット (SDK) の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このローカライズは、Commerce runtime (CRT)、Retail Servers、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
+このローカライズは、Commerce runtime (CRT)、Retail Servers、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
-> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
+> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 この記事は、アプリの以前の複数のバージョンに適用されるため、この記事全体で *Retail サーバー* を使用します。
 
 ## <a name="storing-a-certificate-for-digital-signing-in-azure-key-vault"></a>Azure Key Vault にデジタル署名用証明書を保存します。
 
-デジタル署名拡張機能は、Retail Serverが配置されているマシンのローカルの証明書のストレージにインストールされている証明書を使用します。 コンフィギュレーション ファイルの証明書の拇印を指定する必要があります (このトピックで後述する [SequentialSignatureRegisterコンポーネント](#sequentialsignatureregister-component) を参照してください)。 実装のトポロジーに応じて、証明書は [Microsoft Azure Key Vault ストレージ](/azure/key-vault/key-vault-get-started) に保存される必要があります。 フランス用ローカライズには、Azure Key Vault ストレージに保存されている証明書を使用して、署名フローを上書きし、販売取引に署名する方法を示すサンプル コードが含まれています。
+デジタル署名拡張機能は、Retail Serverが配置されているマシンのローカルの証明書のストレージにインストールされている証明書を使用します。 コンフィギュレーション ファイルの証明書の拇印を指定する必要があります (この記事で後述する [SequentialSignatureRegister コンポーネント](#sequentialsignatureregister-component) を参照してください)。 実装のトポロジーに応じて、証明書は [Microsoft Azure Key Vault ストレージ](/azure/key-vault/key-vault-get-started) に保存される必要があります。 フランス用ローカライズには、Azure Key Vault ストレージに保存されている証明書を使用して、署名フローを上書きし、販売取引に署名する方法を示すサンプル コードが含まれています。
 
 ### <a name="prerequisites"></a>必要条件
 
@@ -53,7 +53,7 @@ Azure Key Vault を操作する方法の詳細については、次を参照し�
 
 ### <a name="using-the-sample"></a>サンプルを使用してください。
 
-**DigitalSignatureKeyVaultSample** プロジェクトは、Azure Key Vault ストレージに格納されている証明書を使用するためのサンプル コードを含んでいます。 サンプルを実稼働環境で使用するには、ロジックを実装し、**CertificateSignatureServiceRequestHandler** クラスにある **HashAndSignData** メソッドで、次のパラメータを指定できるようにする必要があります。
+**DigitalSignatureKeyVaultSample** プロジェクトは、Azure Key Vault ストレージに格納されている証明書を使用するためのサンプル コードを含んでいます。 サンプルを運用環境で使用するには、ロジックを実装し、**CertificateSignatureServiceRequestHandler** クラスにある **HashAndSignData** メソッドで、次のパラメータを指定できるようにする必要があります。
 
 - **Azure Key Vault URL** - Azure Key Vault ストレージの URL。
 
@@ -82,7 +82,7 @@ Azure Key Vault を操作する方法の詳細については、次を参照し�
 
 署名のフローを上書きする場合は以下の手順を実行します。
 
-1. **DigitalSignatureKeyVaultSample** プロジェクトを構築し、**Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll** アセンブリを **bin\\ext** Retail Server フォルダーにコピーします。
+1. **DigitalSignatureKeyVaultSample** プロジェクトを構築し、、**Contoso.Commerce.Runtime.DigitalSignatureKeyVaultSample.dll** アセンブリを **bin\\ext** Retail Server folder にコピーします。
 2. **コンポジション** セクションに次の行を追加して、**commerceRuntime.ext.config** ファイルを更新します。
 
     ``` xml
@@ -90,7 +90,7 @@ Azure Key Vault を操作する方法の詳細については、次を参照し�
     ```
 
 > [!NOTE]
-> デジタル署名に使用される証明書の拇印は、証明書が Azure Key Vault ストレージに保存されている場合でも、SequentialSignatureRegister アセンブリのコンフィギュレーション ファイルで指定されている必要があります。 詳細については、このトピックの後半の [SequentialSignatureRegister コンポーネント](#sequentialsignatureregister-component) セクションを参照してください。
+> デジタル署名に使用される証明書の拇印は、証明書が Azure Key Vault ストレージに保存されている場合でも、SequentialSignatureRegister アセンブリのコンフィギュレーション ファイルで指定されている必要があります。 詳細については、この記事の後述の [SequentialSignatureRegister コンポーネント](#sequentialsignatureregister-component) セクションを参照してください。
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用
 
@@ -166,7 +166,7 @@ private const string CertificateNumber = "18/0202";
 ```
 
 > [!NOTE]
-> コマースを実装している場合は、証明書のカテゴリと番号も上書きする必要があります。 この場合、このトピックで先に見たセクション、[レシートに印刷されるアプリケーション属性を指定する](#specifying-application-attributes-that-will-be-printed-on-receipts) にある証明書のカテゴリおよびに記載されている証明書のカテゴリと番号を使用します。
+> コマースを実装している場合は、証明書のカテゴリと番号も上書きする必要があります。 この場合、この記事で先に見たセクション、[レシートに印刷されるアプリケーション属性を指定する](#specifying-application-attributes-that-will-be-printed-on-receipts) にある証明書のカテゴリおよびに記載されている証明書のカテゴリと番号を使用します。
 
 ## <a name="development-environment"></a>開発環境
 
@@ -701,11 +701,11 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
 
 詳細については、 [フランスのキャッシュ レジスター機能](./emea-fra-cash-registers.md) を参照してください。
 
-## <a name="production-environment"></a>実稼働環境
+## <a name="production-environment"></a>運用環境
 
-以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。
+以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを運用環境で適用します。
 
-1. [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、またはこのトピックで既に見た[Modern POS 拡張コンポーネント](#modern-pos-extension-components)セクションで手順を完了します。
+1. この記事の前半の [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、または [Modern POS 拡張コンポーネント](#modern-pos-extension-components) セクションで手順を完了します。
 2. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
     1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。
@@ -754,7 +754,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
         デジタル署名に Azure Key Vault ストレージに格納されている証明書を使用するには、次の行を追加します。
 
         > [!NOTE]
-        > この明細行を追加する前に、このトピックの前の方にある[Azure Key Vault にデジタル署名のための証明書を格納する](#storing-a-certificate-for-digital-signing-in-azure-key-vault) の手順を実行してください。
+        > この明細行を追加する前に、この記事の前述の [Azure Key Vault にデジタル署名のための証明書を格納する](#storing-a-certificate-for-digital-signing-in-azure-key-vault) の手順を実行してください。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
@@ -824,7 +824,7 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
         デジタル署名に Azure Key Vault ストレージに格納されている証明書を使用するには、次の行を追加します。
 
         > [!NOTE]
-        > この明細行を追加する前に、このトピックの前の方にある、[Azure Key Vaultにデジタル署名のための証明書を格納する](#storing-a-certificate-for-digital-signing-in-azure-key-vault) セクションにある手順を実行してください。
+        > この明細行を追加する前に、この記事の前述の [Azure Key Vault にデジタル署名のための証明書を格納する](#storing-a-certificate-for-digital-signing-in-azure-key-vault) の手順を実行してください。
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DataSignatureKeyVaultSample.dll" />
@@ -842,8 +842,8 @@ Modern POS に対してオフライン モードで拡張機能を有効にす�
     <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
-5. 拇印、保管場所、署名販売取引に使用されるべき証明書の保存名を指定して、証明書のコンフィギュレーションを変更します。 その後 **References** フォルダーにコンフィギュレーション ファイルをコピーします。 ファイル名は、**Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
-6. ビルド番号、カテゴリ、および必要に応じて、コンプライアンスの証明書の番号を上書きします。 詳細については、このトピックの前の方にある、[レシートに印刷されるアプリケーション属性を指定する](#specifying-application-attributes-that-will-be-printed-on-receipts) セクションにある指示を参照してください。
+5. 拇印、保管場所、署名販売取引に使用されるべき証明書の保存名を指定して、証明書のコンフィギュレーションを変更します。 その後 **References** フォルダーにコンフィギュレーション ファイルをコピーします。 ファイル名は **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
+6. ビルド番号、カテゴリ、および必要に応じて、コンプライアンスの証明書の番号を上書きします。 詳細については、この記事の前述の[レシートに印刷されるアプリケーション属性を指定する](#specifying-application-attributes-that-will-be-printed-on-receipts) セクションにある指示を参照してください。
 7. Visual Studio utility 用に、MSBuild コマンド プロンプトを起動し 、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
 8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 

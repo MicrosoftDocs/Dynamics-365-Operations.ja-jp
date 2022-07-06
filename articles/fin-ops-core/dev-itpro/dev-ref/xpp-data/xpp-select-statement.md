@@ -1,6 +1,6 @@
 ---
 title: 明細書を選択
-description: このトピックでは、X++ 言語での select ステートメントについて説明します。
+description: この記事では、X++ 言語での select ステートメントについて説明します。
 author: tonyafehr
 ms.date: 08/27/2021
 audience: Developer
@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: cace52cacbfbb42d7f5ad242197a1c4bd6306048
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0d5316777156bbf0d10c002acc6b3c87f254f893
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783232"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867189"
 ---
 # <a name="select-statement"></a>明細書を選択
 

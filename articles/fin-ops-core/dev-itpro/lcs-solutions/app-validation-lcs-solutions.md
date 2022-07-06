@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリのアプリケーションの検証
-description: このトピックでは、カスタム コードが Microsoft のガイドラインを満たしていることを確認するために使用する要件の情報を提供します。
+title: Finance and Operations アプリ用のアプリケーションを検証する
+description: この記事では、カスタム コードが Microsoft のガイドラインを満たしていることを確認するために使用する要件の情報を提供します。
 author: kfend
 ms.date: 04/13/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 805e75187b3cca9ab1dc220fca3195a5872a4c84a81111f4927c42dd089171c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9315def9c71fe6a556745c246c72965687b2a2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866566"
 ---
-# <a name="validate-applications-for-finance-and-operations-apps"></a>Finance and Operations アプリのアプリケーションの検証
+# <a name="validate-applications-for-finance-and-operations-apps"></a>Finance and Operations アプリ用のアプリケーションを検証する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、Finance and Operations アプリ環境で配送できることを確認するために使用される要件に関する情報を提供します。
+この記事では、カスタムコードが Microsoft のガイドラインを満たしていること、およびソリューション パッケージが正常にバンドルされ、財務と運用アプリ環境で配送できることを確認するために使用される要件に関する情報を提供します。
 
 Microsoft は、次の要件を検証するために特定のレビューを必要とします。
 

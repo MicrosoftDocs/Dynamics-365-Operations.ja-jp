@@ -1,6 +1,6 @@
 ---
-title: Commerce Scale Unit (CSU) Core の概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce の Commerce Scale Unit (CSU) Core の概要を説明します。
+title: Commerce Scale Unit (CSU) コアの概要
+description: この記事では、Microsoft Dynamics 365 Commerce の Commerce Scale Unit (CSU) Core の概要を説明します。
 author: mugunthanm
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: c4dc79155c7e8e25b1a3226cff6ff399d485dad3
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 9e91bc348c84c2a6697644061adcc3015215ab22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876569"
 ---
-# <a name="introduction-to-commerce-scale-unit-csu-core"></a>Commerce Scale Unit (CSU) Core の概要
+# <a name="introduction-to-commerce-scale-unit-csu-core"></a>Commerce Scale Unit (CSU) コアの概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の Commerce Scale Unit (CSU) Core の概要を説明します。
+この記事では、Microsoft Dynamics 365 Commerce の Commerce Scale Unit (CSU) Core の概要を説明します。
 
 CSU Core は、Dynamics 365 Commerce が提供する、ヘッドレス コマース エンジンをホストする次世代の高性能プラットフォームです。 CSU Core は、既存の CSU と同じ機能を提供しますが、ASP.NET Core と .NET Coreを使用するため、高度に最適化され、パフォーマンスも高くなっています。
 

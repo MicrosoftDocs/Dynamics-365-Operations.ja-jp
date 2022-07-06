@@ -1,6 +1,6 @@
 ---
 title: X++ 例外処理
-description: このトピックでは、X++の例外処理について説明します。
+description: この記事では、X++ の例外処理について説明します。
 author: RobinARH
 ms.date: 11/01/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 368e0223e8ff5621af57fc1b6302c19d644176ee
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6b39be68a0ea94c8c863de1d3c090e44c8776ce0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867168"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。
+この記事では、X++ の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。
 
 *例外* はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、`try...catch` ブロックとスローされる例外のタイプによって決まります。 例外は、**Exception** 列挙の値、または .NET の `System.Exception` クラスまたは派生クラスのインスタンスによって表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー** 列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。
 
@@ -169,7 +169,7 @@ static Exception error
 戻り値の型は、**Exception::Error** 列挙値です。 **error** メソッドは例外をスローしません。 **throw** ステートメントで使用できる列挙値を提供するだけです。 **throw** ステートメントは例外をスローします。 **エラー** メソッドのパラメーターの説明を次に示します。 最初のパラメーターのみ必要です。
 
 - **SysInfoLogStr** txt は、メッセージ テキストの **str** です。 また、**strFmt("@SYS12345", strThingName)** などのラベルの参照にもなります。
-- **URL** helpUrl は、アプリケーション エクスプローラーのヘルプ トピックの場所への参照です (**"KernDoc:\\\\\\\\Functions\\\\substr"**)。 \_sysInfoAction が提供された場合、このパラメータは無視されます。
+- **URL** helpUrl は、アプリケーション エクスプローラーのヘルプ記事の場所への参照です (**"KernDoc:\\\\\\\\Functions\\\\substr"**)。 \_sysInfoAction が提供された場合、このパラメータは無視されます。
 - **SysInfoAction** は、**SysInfoAction** クラスを拡張するクラスのインスタンスです。 **description** メソッド、**run** メソッド、**pack** メソッド、および **unpack** メソッドは、子クラスに対して推奨されるメソッドのオーバーライドです。
 
 ### <a name="globalinfo-method"></a>Global::info メソッド

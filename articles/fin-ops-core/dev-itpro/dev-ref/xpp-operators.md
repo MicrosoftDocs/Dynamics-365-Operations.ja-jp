@@ -1,6 +1,6 @@
 ---
 title: X++ 演算子
-description: このトピックでは、X++ でサポートされている演算子について説明します。
+description: この記事では、X++ でサポートされている演算子について説明します。
 author: RobinARH
 ms.date: 12/02/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1021067bd94b5f52cd24040efc734b3c5cca53b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fff465d41f97bbe10a392c919487a89f8f0ef7a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783044"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867141"
 ---
 # <a name="x-operators"></a>X++ 演算子
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ でサポートされている演算子について説明します。
+この記事では、X++ でサポートされている演算子について説明します。
 
 ## <a name="assignment-operators"></a>代入演算子
 

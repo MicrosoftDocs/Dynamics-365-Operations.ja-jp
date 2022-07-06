@@ -1,6 +1,6 @@
 ---
 title: 標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
-description: このトピックでは、Finance and Operations のデータベース エクスポート シナリオについて説明します。
+description: この記事では、財務と運用のデータベース エクスポート シナリオについて説明します。
 author: LaneSwenka
 ms.date: 03/22/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 4f9f2aef9607d94f0ef7c57d4dab4cab2fcf990b
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 28dea17ff0e2a6cfd7d09ecda458455045826194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595406"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867545"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -44,11 +44,11 @@ Microsoft Azure SQL データベース プラットフォームによる最新�
 
 ## <a name="prerequisites"></a>必要条件
 
-更新操作を行うには、実稼働環境を配置している必要があります。または標準的な UAT 環境を 2 つ以上持つ必要があります。 このチュートリアルを完了するには、開発者環境が配置されている必要があります。
+更新操作を行うには、運用環境を配置している必要があります。または標準的な UAT 環境を 2 つ以上持つ必要があります。 このチュートリアルを完了するには、開発者環境が配置されている必要があります。
 
 ## <a name="refresh-the-uat-environment"></a>UAT 環境を更新
 
-この更新操作は、生産データベースの最新のコピーで UAT 環境を上書きします。 この手順を完了するには、[トレーニング目的での更新](dbmovement-scenario-general-refresh.md)の手順に従います。
+この更新操作は、運用データベースの最新のコピーで UAT 環境を上書きします。 この手順を完了するには、[トレーニング目的での更新](dbmovement-scenario-general-refresh.md)の手順に従います。
 
 ## <a name="back-up-to-the-asset-library"></a>資産ライブラリへのバックアップ
 

@@ -1,6 +1,6 @@
 ---
 title: フォーム、製品、およびコントロールのユーザー補助機能
-description: このトピックは、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。
+description: この記事は、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。
 author: RobinARH
 ms.date: 08/13/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: dc2fc8617ff5de0b53f52c459779f7e295041840
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e5b6dbbf20e191d9676204bb30b75c64676a5a36
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864513"
 ---
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。
+この記事は、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。
 
 ユーザー補助は包括的です。つまり、障害のある人は、障害のない人と同じタスクを実行できます。 アクセス可能なコントロールまたはフォームの作成は、セキュリティで保護され、高性能、または理解しやすい基本的なものにする必要があります。
 
@@ -155,7 +155,7 @@ public display container statusImageDataMethod()
 
 #### <a name="describe-applicable-context-menu"></a>適用できるコンテキスト メニューの説明
 
-Finance and Operations アプリはコンテキスト メニューを提供します。 アプリケーション作成者が現在のコントロールまたはコンテキストに機能を提供したときに、ユーザーはその機能を公表することができます。
+財務と運用アプリではコンテキスト メニューを提供します。 アプリケーション作成者が現在のコントロールまたはコンテキストに機能を提供したときに、ユーザーはその機能を公表することができます。
 
 - *aria-haspopup* - 要素にポップアップ コンテキスト メニューまたはサブ レベルのメニューがあることを示します。
 

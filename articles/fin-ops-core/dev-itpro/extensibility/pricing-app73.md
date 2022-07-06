@@ -1,6 +1,6 @@
 ---
 title: 価格と割引の拡張性
-description: このトピックでは、価格設定機能を展開する方法を説明します。
+description: この記事では、価格設定機能を展開する方法を説明します。
 author: smithanataraj
 ms.date: 12/21/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: d951168c4b369592157e9a1308c38f372b10adff
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b97f69ccea5c853aadf193fd5d1c372ffa2c4ca0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866828"
 ---
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 

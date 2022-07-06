@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能または変更された機能について説明します。 このバージョンは 6 月にリリースされます。
+title: Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更点
+description: この記事では、 Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能および変更された機能について説明します。 このバージョンは 6 月にリリースされます。
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.3
-ms.openlocfilehash: dd5855b31a2e956875972927d1bd60d9b8c994cc924d39c8a3840bac69ef569f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36a3833172a698ec6397326d90d7ade81aa6d227
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755730"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894239"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-version-1003-june-2019"></a>Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-finance-and-operations-version-1003-june-2019"></a>Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能または変更された機能について説明します。 このバージョンは 6 月にリリースされ、ビルド番号は 10.0.107 です。 バージョン 10.0.3 の詳細については [追加リソース](whats-new-changed-10-0-3.md#additional-resources) を参照してください。
+この記事では、 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 の新機能および変更された機能について説明します。 このバージョンは 6 月にリリースされ、ビルド番号は 10.0.107 です。 バージョン 10.0.3 の詳細については [追加リソース](whats-new-changed-10-0-3.md#additional-resources) を参照してください。
 
 Retail の最新のリリースの新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.3 の新機能と変更](../../../commerce/get-started/whats-new-10-0-3.md) を参照してください。
 
@@ -49,7 +49,7 @@ Retail の最新のリリースの新機能と変更については、[Dynamics 
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-この Finance and Operations のリリースでは、拡張性をサポートするために多くの機能拡張が行われています。 たとえば、列挙体、メタデータ、メソッドに拡張性の機能拡張が行われています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 10.0.3 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-10-3.md)を参照してください。
+このFinance and Operations のリリースでは、拡張性をサポートするために多くの機能拡張が行われています。 たとえば、列挙体、メタデータ、メソッドに拡張性の機能拡張が行われています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 10.0.3 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-10-3.md)を参照してください。
 
 ## <a name="tax-engine"></a>税エンジン
 
@@ -58,15 +58,15 @@ Retail の最新のリリースの新機能と変更については、[Dynamics 
 
 ### <a name="calculate-tax-in-accounting-currency-for-importexport-order"></a>受注をインポート/エクスポートし、会計通貨の税金の計算を行う
 
-Finance and Operations の今回のリリースでは、**税設定パラメータ** ページに新しいパラメータが追加されました。これにより、インポート/エクスポートを行う注文に対して、税金を計算する通貨を選択できます。 既定では、 **トランザクション通貨** を使用して、インポート/エクスポートを行う注文に対し、計算する税金の通貨を選択できます。 既定では、 **トランザクション通貨** は元のシステム動作と同じです。 **会計通貨** を選択すると、システムが会計通貨の課税金額に基づいて税金を計算します。
+Finance and Operations の今回のリリースでは、 **税設定パラメータ** ページに新たなパラメータが追加されました。これにより、インポート/エクスポートを行う注文に対して、税金を計算する通貨を選択できます。 既定では、 **トランザクション通貨** を使用して、インポート/エクスポートを行う注文に対し、計算する税金の通貨を選択できます。 既定では、 **トランザクション通貨** は元のシステム動作と同じです。 **会計通貨** を選択すると、システムが会計通貨の課税金額に基づいて税金を計算します。
 
 ## <a name="regulatory-updates"></a>規制の更新
-Finance and Operations の規制の更新についての詳細は、[ローカライズおよび規制機能 – 規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
+Finance and Operations の規制の更新については、[ローカライズおよび規制機能 – 規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
 
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="bug-fixes"></a>バグ修正
-Finance and Operations バージョン 10.0.3 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34) を参照してください。
+Finance and Operations 10.0.3 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34)を参照してください。
 
 ### <a name="platform-update-27"></a>プラットフォーム update 27
 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 には、プラットフォーム更新プログラム 27 が含まれています。 プラットフォーム更新プログラム 27 の詳細については、 [Dynamics 365 for Finance and Operationsプラットフォーム更新プログラム 27 (2019 年 6 月) の新機能または変更された機能について](whats-new-platform-update-27.md)を参照してください。
@@ -77,14 +77,14 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 には�
 [2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

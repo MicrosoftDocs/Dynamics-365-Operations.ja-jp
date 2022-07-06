@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce 認証フロー
-description: このトピックでは、Microsoft Dynamics 365 Commerce のさまざまな認証フローの概要を示します。
+description: この記事では、Microsoft Dynamics 365 Commerce のさまざまな認証フローの概要を示します。
 author: samjarawan
 ms.date: 05/24/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 302ea2522e13687ee1a1830640b32570e15548ca
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: c8f88e4d056838e5ef17ae12db6f6cfe5153c05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804591"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877023"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のさまざまな認証フローの概要を示します。 Dynamics 365 Commerce ソリューションは現在、複数の認証シナリオとフローをサポートしていますが、Commerce Scale Unit (ヘッドレス コマース エンジンとも呼ばれる) のコア認証インフラストラクチャは、完全に [OpenID connect](https://openid.net/connect/) に基づいています。
+この記事では、Microsoft Dynamics 365 Commerce のさまざまな認証フローの概要を示します。 Dynamics 365 Commerce ソリューションは現在、複数の認証シナリオとフローをサポートしていますが、Commerce Scale Unit (ヘッドレス コマース エンジンとも呼ばれる) のコア認証インフラストラクチャは、完全に [OpenID connect](https://openid.net/connect/) に基づいています。
 
 ## <a name="authentication-methods"></a>認証方法
 

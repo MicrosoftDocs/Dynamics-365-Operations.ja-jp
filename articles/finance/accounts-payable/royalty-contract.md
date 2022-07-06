@@ -1,6 +1,6 @@
 ---
 title: ロイヤルティ契約管理
-description: このトピックでは、Microsoft Dynamics 365 Finance のロイヤルティ契約管理について説明します。
+description: この記事では、Microsoft Dynamics 365 Finance のロイヤルティ契約管理について説明します。
 author: t-benebo
 ms.date: 08/02/2018
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2123c15d882765bc245e4db3d0882ec0be1f21cc
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: dd2ff338883748bee06efd33b8ea1014957ad650
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722732"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870353"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 
@@ -26,7 +26,7 @@ ms.locfileid: "8722732"
 
 ロイヤルティ契約管理は、サード パーティの資産や知的財産権を使用する権利を行使する会社を対象としています。 会社がロイヤリティの支払の管理、追跡、実行に関連するタスクを自動化することにより、ロイヤルティ契約を効率的に管理するのに役立ちます。
 
-このトピックでは、ロイヤルティ手数料を処理するための標準的なプロセスの概要を説明します。
+この記事では、ロイヤルティ手数料を処理するための標準的なプロセスの概要を説明します。
 
 - 取り決めロイヤルティ契約の詳細を登録します。
 - 継続的な販売を通して交渉された契約を実行し、ロイヤルティ請求を生成します。
@@ -34,7 +34,7 @@ ms.locfileid: "8722732"
 
 ## <a name="audience-and-purpose"></a>対象者および目的
 
-このトピックの情報は、以下の触接を持つ、セールス マネージャー、会計マネージャー、A/P マネージャーなどの立場にいる、エンタープライズの会社での業務の意思決定者を対象としています。
+この記事の情報は、以下の触接を持つ、セールス マネージャー、会計マネージャー、A/P マネージャーなどの立場にいる、エンタープライズの会社での業務の意思決定者を対象としています。
 
 - ライセンサーとの契約の交渉
 - システムへのロイヤルティ契約条件と手数料率の記録

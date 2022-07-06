@@ -1,6 +1,6 @@
 ---
 title: PowerBI.com 統合の構成
-description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。
+description: この記事では、PowerBI.com との統合をサポートする新しい財務と運用環境を構成する方法を説明します。
 author: RichdiMSFT
 ms.date: 01/21/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: RICHDI
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec3e1f02585b6c2a0c8e16c9a66561fb79768f01
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: eab6b9bb6734e438a5a6c05a7e167b3453aa3502
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018364"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896861"
 ---
 # <a name="configure-powerbicom-integration"></a>PowerBI.com 統合の構成
 

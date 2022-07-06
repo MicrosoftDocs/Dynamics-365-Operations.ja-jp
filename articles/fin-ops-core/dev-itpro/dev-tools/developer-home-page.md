@@ -1,8 +1,8 @@
 ---
-title: ホームページの開発とカスタマイズ
-description: このトピックでは、開発に関するトピックへのリンクを提供します。
+title: ホーム ページの開発とカスタマイズ
+description: この記事では、開発に関するトピックへのリンクを提供します。
 author: RobinARH
-ms.date: 10/26/2021
+ms.date: 06/13/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d658eafe697ab4f103ed828ee0455e3dffef1deb
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: f7e3ee5c273000a98563282eaab5d495eb97cada
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547950"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958117"
 ---
-# <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
+# <a name="develop-and-customize-home-page"></a>ホーム ページの開発とカスタマイズ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、開発に関するトピックへのリンクを提供します。
+この記事では、開発に関するトピックへのリンクを提供します。
 
 ## <a name="overview"></a>概要
 
@@ -119,7 +119,6 @@ ms.locfileid: "8547950"
 
 ## <a name="code-migration"></a>コードの移行
 
-- [Visual Studio  での競合を解決する方法 (ビデオ)](https://youtu.be/4rxO0zUN2zU)
 - [コードの移行とホーム ページのアップグレード](../migration-upgrade/code-migration-home-page.md)
 
 ## <a name="move-packages-between-environments"></a>環境間でパッケージを移動する

@@ -1,6 +1,6 @@
 ---
 title: オンプレミス環境の問題を解決するためのスクリプト
-description: このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。
+description: この記事は、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。
 author: faix
 ms.date: 07/01/2021
 ms.topic: article
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 5bab83919ef421db77b457f7ad3d2b243b60c99f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 9bdd16399fd70da2a052c7add4615cdd804da196
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867364"
 ---
 # <a name="scripts-for-resolving-issues-in-on-premises-environments"></a>オンプレミス環境の問題を解決するためのスクリプト
 [!include [banner](../includes/banner.md)]
 
-このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。 通常、これらのスクリプトは配置前スクリプトまたは配置後スクリプトとして実行する必要があります。
+この記事は、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。 通常、これらのスクリプトは配置前スクリプトまたは配置後スクリプトとして実行する必要があります。
 
 オンプレミス環境における問題の解決方法の詳細については、 [オンプレミス配置のトラブルシューティング](troubleshoot-on-prem.md) を参照してください。
 
@@ -54,7 +54,7 @@ ms.locfileid: "8565646"
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     ```
 
-3. このトピックの該当する部分から、問題を修正するために必要なコードをコピーし、新しいファイルに貼り付けます。 このファイルを、 Predeployment.ps1 スクリプトが格納されているフォルダと同じフォルダに保存します。 ファイル名は、コードをコピーしたセクションのタイトルと同じである必要があります。 修正する必要があるその他の問題について、この手順を繰り返します。
+3. この記事の該当する部分から、問題を修正するために必要なコードをコピーし、新しいファイルに貼り付けます。 このファイルを、 Predeployment.ps1 スクリプトが格納されているフォルダと同じフォルダに保存します。 ファイル名は、コードをコピーしたセクションのタイトルと同じである必要があります。 修正する必要があるその他の問題について、この手順を繰り返します。
 4. Predeployment.ps1 スクリプトで、前に追加したコードで、使用するスクリプトを呼び出す行のコメントを解除します。
 
 ## <a name="tsg_sysclassrunnerps1"></a><a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance 10.0.28 (2022 年 8 月) の新機能および変更された機能
-description: このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.28 プレビュー リリースの新機能または変更された機能について説明します。
+description: この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.28 プレビュー リリースの新機能または変更された機能について説明します。
 author: kfend
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 0dab68488cfa696441ad2e4528eec461e42c1b69
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 517e6ba2b3c873585fd7d306b1c0b06c12db6fe7
+ms.sourcegitcommit: 0c23c361c9aa3918e4fc75e5eb69cd368a9f2e73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811835"
+ms.lasthandoff: 06/20/2022
+ms.locfileid: "9030276"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10028-august-2022"></a>Dynamics 365 Finance 10.0.28 (2022 年 8 月) の新機能および変更された機能
 
@@ -27,7 +27,7 @@ ms.locfileid: "8811835"
 
 [!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.28 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.1264 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.28 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.1264 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 5 月
 - **リリースの一般提供 (手動更新):** 2022 年 7 月
@@ -35,7 +35,7 @@ ms.locfileid: "8811835"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-次の表に、このリリースに含まれる機能の一覧を示します。 このトピックが最初に公開された後に、ビルドに加えた機能を含めるために、このトピックを更新することがあります。
+次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに加えた機能を含めるために、この記事を更新することがあります。
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |----|----|----|----|
@@ -46,6 +46,8 @@ ms.locfileid: "8811835"
 | 一般会計 | 試算表に主勘定カテゴリを表示するオプション | この機能を使用すると、**試算表** リスト ページで主勘定カテゴリを列として追加できます。 試算表の **表示する列** ボタンの下のメニューに **主勘定カテゴリの表示** オプションが追加されました。 | 既定 |
 | 税額の計算 | 一般仕訳帳との統合 | [財務と運用アプリとの税計算の統合](../localizations/global-tax-calcuation-service-overview.md) | パラメーター |
 | 税額の計算 | 仕入先請求仕訳帳との統合 | [財務と運用アプリとの税計算の統合](../localizations/global-tax-calcuation-service-overview.md) | パラメーター |
+| グローバリゼーション | (ER) 派生形式の親データ モデルのラベルを使用する | このモデルから派生した形式の親[電子レポート (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) データ モデルのラベルを使用することができます。 **優位 ER データ モデルのラベルへの拡張アクセス** 機能を有効にすると、その形式を別の形式から派生した場合に選択式の ER データ モデルのラベルにアクセスし、このプロセス中で代替データ モデルを選択することもできます。 詳細については、[ライフサイクル](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#lifecycle)を参照してください。 | 機能管理 |
+| グローバリゼーション | (ER) 生成された ER ドキュメントに言語を指定する | ファイルとして受信された生成済みのドキュメントに優先言語を指定することができます。 既定では、生成されたファイルの名前を生成するように設計されている式では、この言語は無視されます。 **'言語の基本設定' パラメーターを 'ファイル名' 式に適用する** 機能を有効にすると、生成されたドキュメントに対して指定した優先言語に応じ、この式を作成することができます。 詳細については、[形式](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#format)を参照してください。 | 機能管理 |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 
@@ -53,8 +55,10 @@ ms.locfileid: "8811835"
 
 | 機能領域 | 機能名 | 詳細 |
 |--------------|--------------|------------------|
-| 与信および回収  | 支払いが手動で決済されるときに回収状態を更新 | この機能拡張により、支払いが支払い仕訳帳の外部で手動で決済された場合に、回収状態が更新されます。 以前は、請求書が顧客支払仕訳帳で決済されている場合にのみ回収状態が更新されました。 支払を手動で決済すると、回収状態が適切な状態に更新されます。 |
-
+| 与信および回収 | 支払いが手動で決済されるときに回収状態を更新 | この機能拡張により、支払いが支払い仕訳帳の外部で手動で決済された場合に、回収状態が更新されます。 以前は、請求書が顧客支払仕訳帳で決済されている場合にのみ回収状態が更新されました。 支払を手動で決済すると、回収状態が適切な状態に更新されます。 |
+| グローバリゼーション | (ER) Excel テンプレートを再適用して ER 形式を変更する | ER により、更新された Excel テンプレートを ER 形式に[再適用](../../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md)することができます。 更新されたテンプレートに準拠できるように、ER 形式が更新されます。 最初は、更新したヘッダーとフッターのあるテンプレートを再適用しても、ER 形式は更新されません。 リリースされた機能の改善により、更新したヘッダーとフッターを含むテンプレートを再適用すると、ER 形式を更新することができます。 詳細については、[テンプレートの更新](../../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md#update-a-template)を参照してください。 |
+| グローバリゼーション | (ER) 構成された ER の出力先が実行時に適用できるかどうかをデザイン時にユーザーに通知する | 選択した ER 形式の [ER 送信先](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md)を構成することができます。 構成済み ER の出力先の適用性は、形式のバージョン管理と ER ユーザー パラメーターによって[異なります](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md#applicability)。 したがって、構成された ER の出力先が実行時に使用されるかどうかを設計時に予測することはできません。 リリースされた機能の改善により、ER のユーザー パラメーターと選択した形式のバージョン管理が分析され、構成された ER の出力先が実行時に適用できない場合に警告します。 この改善により、問題を修正して、構成された ER の出力先を実行時に適用できるようにする 2 つのオプションも提供されます。 |
+| グローバリゼーション | (ER) アプリケーション テーブルのレコードをフェッチする | *テーブル レコード* タイプの ER データ ソースを使用して、アプリケーション テーブル、エンティティ、ビューなどからレコードをフェッチすることができます。 既定では、指定したテーブルのすべてのフィールドは、実行時にフェッチされます。 実行パフォーマンスを改善し、メモリ消費を最適化するために、データ ソース設定を変更して、フェッチされるフィールドの数を減らすることができます。 詳細については、[I実行時にフェッチされたテーブル フィール尾の数を削減することで ER ソリューションのパフォーマンスを改善する](../../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md)をご覧ください。 |
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -78,13 +82,13 @@ Dynamics 365 Finance 10.0.28 には、プラットフォーム更新プログラ
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックでは、Dynamics 365 Finance の削除または非推奨の機能について説明します。
+[Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事では、Dynamics 365 Finance の削除または非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

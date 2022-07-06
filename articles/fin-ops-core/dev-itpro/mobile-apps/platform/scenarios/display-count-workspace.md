@@ -1,6 +1,6 @@
 ---
 title: フィールドに数を表示
-description: このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。
+description: この記事では、正確で、迅速に表示される数を計算する方法について説明します。
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: eb002661ad104f6c6a08eb78dfe653b904bfcc70
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 89c27e8f90dc9cbd0023e736e0e6124f8999da67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811625"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884690"
 ---
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 

@@ -1,6 +1,6 @@
 ---
 title: データの更新
-description: このトピックでは、X++ 言語での update および doUpdate メソッドについて説明します。
+description: この記事では、X++ 言語での更新および doUpdate メソッドについて説明します。
 author: RobinARH
 ms.date: 06/16/2020
 audience: Developer
@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 5eb01901bf783170e2bc1b73152c22386b9a6a6a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 154bd91c05b0f3b5bf91322bcb72edfe4254d972
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867180"
 ---
 # <a name="update-data"></a>データの更新
 

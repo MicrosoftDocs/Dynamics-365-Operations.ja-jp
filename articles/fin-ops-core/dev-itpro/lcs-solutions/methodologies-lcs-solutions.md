@@ -1,6 +1,6 @@
 ---
 title: ソリューションへの方法論の追加
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。
 author: kfend
 ms.date: 04/13/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: e7054856f03d138eac607fe2225145096a806e5303e6857d9bbe02f43fea9aee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9cf43a17176414d01cf5c40d362edbf8f31328c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866517"
 ---
 # <a name="add-methodologies-to-solutions"></a>ソリューションへの方法論の追加
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。
 
 ## <a name="methodology-requirements"></a>方法の要件
 

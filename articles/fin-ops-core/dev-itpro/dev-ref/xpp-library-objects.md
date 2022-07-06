@@ -1,6 +1,6 @@
 ---
 title: X++ クラス ライブラリ
-description: このトピックでは、X++ でのクラス ライブラリについて説明します。
+description: この記事では、X++ のクラス ライブラリについて説明します。
 author: RobinARH
 ms.date: 06/18/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05fed5a7b2cb87d8876654aa0c5cd4c9bedd9d39
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 76942f634daefb0344e07854cb09bf4fee2eac47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783190"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867156"
 ---
 # <a name="x-class-library"></a>X++ クラス ライブラリ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ でのクラス ライブラリについて説明します。 
+この記事では、X++ のクラス ライブラリについて説明します。 
 
 *アプリケーション クラス* および *システム クラス* の、2 種類のクラスがあります。
 

@@ -1,6 +1,6 @@
 ---
 title: X++ 変換ランタイム関数
-description: このトピックでは、変換ランタイム関数について説明します。
+description: この記事では、変換ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/26/2018
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 353bf3887a92446b01228ba4bb0e79f079357d76
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9e66680c81aac724f42e16fa4043eb3189321c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783050"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867222"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、変換ランタイム関数について説明します。
+この記事では、変換ランタイム関数について説明します。
 
 ## <a name="any2date"></a>any2Date
 

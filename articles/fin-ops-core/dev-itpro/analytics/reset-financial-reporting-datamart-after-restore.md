@@ -1,6 +1,6 @@
 ---
 title: 財務報告のデータ マートのリセット
-description: このトピックでは、Microsoft Dynamics 365 Finance の財務報告データ マートをリセットする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Finance の財務報告データ マートをリセットする方法について説明します。
 author: aprilolson
 ms.date: 04/01/2021
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 28824306934e88498b758250992e6110063515c6b4170a1aa023c5deef48cbdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3bb72a434a9edaeda312c85c0c8fc2efe5d2ebbe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883744"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、 Microsoft Dynamics 365 Finance での Financial Reporting のリセット方法を説明します。 データマートは、ユーザーの役割 と クライアント や インフラストラクチャー へのアクセス権に応じて、複数の方法でリセットすることができます。
+この記事では、Microsoft Dynamics 365 Finance の財務報告データ マートをリセットする方法について説明します。 データマートは、ユーザーの役割 と クライアント や インフラストラクチャー へのアクセス権に応じて、複数の方法でリセットすることができます。
 
 データマートのリセットは、データベース で あまり処理が行われていないときだけに留めるようにしてください。 財務諸表は、リセット プロセス中は使用できません。
 
 > [!NOTE]
 > データ マートのリセットが必要なことを確認するには、[データ マートをリセットする場合](when-to-reset-data-mart.md) を参照してください。
 
-> データマートのリセットは、レポートの構造を定義しているレポートの定義には影響しません。 しかし、レポートのエクスポートを実行してバックアップを取っておくことをお勧めします。 レポート定義をエクスポートする手順は、このトピックの後半にあるレポート定義のエクスポートとインポートという名前のセクションの最後に記載されています。
+> データマートのリセットは、レポートの構造を定義しているレポートの定義には影響しません。 しかし、レポートのエクスポートを実行してバックアップを取っておくことをお勧めします。 レポート定義をエクスポートする手順は、この記事の後半にあるレポート定義のエクスポートとインポートという名前の記事の最後に記載されています。
 
 ### <a name="reset-the-financial-reporting-data-mart-from-report-designer"></a>レポート デザイナーからの財務報告のデータ マートのリセット
 
@@ -86,7 +86,7 @@ ms.locfileid: "6777368"
 
 ### <a name="stop-services"></a>サービスの停止
 
-次の Microsoft Windows サービスでは、Finance and Operations データベースへの接続が提供されます。 したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。
+次の Microsoft Windows サービスでは、Finance and Operations のデータベースへの接続が提供されます。 したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。
 
 - ワールド ワイド Web パブリッシング サービス (すべての アプリケーション オブジェクト サーバー (AOS) \[AOS\] の コンピューター)
 - バッチ管理サービス (非プライベート AOS コンピューター上のみ)
@@ -96,9 +96,9 @@ ms.locfileid: "6777368"
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>最新の MinorVersionDataUpgrade.zip パッケージをダウンロードする
 
-最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。 データ更新パッケージの正しいバージョンを検索およびダウンロードする方法については、開発、デモ、またはサンド ボックス環境でデータを更新するトピックの [開発環境またはデモ環境でデータを更新する](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) を参照してください。
+最新の MinorVersionDataUpgrade.zip パッケージをダウンロードします。 データ更新パッケージの正しいバージョンを検索およびダウンロードする方法については、開発、デモ、またはサンド ボックス環境でデータを更新する記事の[開発環境またはデモ環境でデータを更新する](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) を参照してください。
 
-MinorVersionDataUpgrade.zip パッケージをダウンロードするためにアップグレードは必要ありません。 そのため、当該トピックの 「最新のデータ アップグレード 展開可が能なパッケージをダウンロードする」 セクションの手順に従う必要があります。 トピックのその他のすべての手順をスキップできます。
+MinorVersionDataUpgrade.zip パッケージをダウンロードするためにアップグレードは必要ありません。 そのため、当該記事の「最新のデータ アップグレード 展開可が能なパッケージをダウンロードする」セクションの手順に従う必要があります。 記事のその他のすべての手順をスキップできます。
 
 #### <a name="run-prerequisite-sql-scripts-against-the-database"></a>データベースに対して 前提となる SQL スクリプトを実行する
 
@@ -141,7 +141,7 @@ services.msc を使用して、以前に停止したサービスを再起動し�
 - バッチ管理サービス (非プライベート AOS コンピューター上のみ)
 - Management Reporter 2012 のプロセス サービス (BI コンピューターのみ)
 
-## <a name="reset-the-financial-reporting-data-mart-for-dynamics-365-finance--operations-on-premises-through-sql-server-management-studio"></a>SQL Server Management Studio を介して、 Dynamics 365 Finance と Operations (on-premises) の Financial Reporting データマート をリセットする
+## <a name="reset-the-financial-reporting-data-mart-for-dynamics-365-finance--operations-on-premises-through-sql-server-management-studio"></a>SQL Server Management Studio を介して、 Dynamics 365 Finance + Operations (on-premises) の財務報告データ マート をリセットする
 
 作業を開始する前に、すべてのユーザーがレポート デザイナーを閉じて、財務報告エリアを終了していることを確認してください。
 
@@ -664,7 +664,7 @@ END
 
 ## <a name="export-and-import-report-definitions"></a>レポートの定義を エクスポート/インポートする
 
-データ マートのリセットは、どのレポート定義にも影響しませんが、データ移動のアクティビティによってはレポート定義が失われる場合があります。 ユーザー受け入れテスト(UAT)テスト環境で新しいレポートを作成する場合は、UAT環境を本番環境のコピーで上書きするなどして、データ移動アクティビティを実行の際には十分に注意してください。 レポート定義をエクスポートすると、定義を復元する必要が生じた場合に、バックアップを作成できます。 
+データ マートのリセットは、どのレポート定義にも影響しませんが、データ移動のアクティビティによってはレポート定義が失われる場合があります。 ユーザー受け入れテスト(UAT)テスト環境で新しいレポートを作成する場合は、UAT環境を運用環境のコピーで上書きするなどして、データ移動アクティビティを実行の際には十分に注意してください。 レポート定義をエクスポートすると、定義を復元する必要が生じた場合に、バックアップを作成できます。 
 
 ### <a name="export-report-definitions"></a>レポート定義のエクスポート
 
@@ -674,7 +674,7 @@ END
 2. エクスポートする構成要素グループを選択し、**エクスポート** を選択します。
 
     > [!NOTE]
-    > Finance and Operations に関しては、1 つの構成要素グループのみがサポートされています: **既定**。
+    > Finance and Operations では、ひとつの構成要素グループのみが対応しています: **既定**。
 
 3. エクスポートするレポート定義を選択します:
 

@@ -1,6 +1,6 @@
 ---
 title: ドキュメント回覧エージェントの更新
-description: このトピックでは、ドキュメント回覧エージェントを更新する方法について説明します。
+description: この記事では、Document Routing Agent を更新する方法について説明します。
 author: RichdiMSFT
 ms.date: 05/14/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62eba60d836d672f1cef8459fa0523e4a7dc5ad561dd1ee3824ae30494f4960e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f15b767f36c4dbc42d8b8ccf5076207f5cddb76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724357"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903570"
 ---
 # <a name="update-the-document-routing-agent"></a>ドキュメント回覧エージェントの更新
 
 [!include[banner](../includes/banner.md)]
 
-印刷ジョブ キューを管理するソリューションは、顧客が大容量印刷の要件を満たすために Dynamics 365 Finance and Operations アプリを適切に拡張できるように設計されています。 印刷ジョブの管理に使用されるパブリック サービス エンドポイントは下位互換性がありますが、顧客が **すべて** の既存のドキュメント回覧エージェント (Document Routing Agent: DRA) クライアントを更新することを強くお勧めします。
+印刷ジョブ キューを管理するソリューションは、顧客が大容量印刷の要件を満たすために Dynamics 365 財務と運用アプリを適切に拡張できるように設計されています。 印刷ジョブの管理に使用されるパブリック サービス エンドポイントは下位互換性がありますが、顧客が **すべて** の既存のドキュメント回覧エージェント (Document Routing Agent: DRA) クライアントを更新することを強くお勧めします。
 
 DRA の既存のインストールを最新バージョンに更新しないと、次のような問題が発生する可能性があります:
 

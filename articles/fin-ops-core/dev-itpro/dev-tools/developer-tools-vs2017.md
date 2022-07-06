@@ -1,6 +1,6 @@
 ---
 title: Visual Studio で X++ を使用する要件
-description: このトピックでは、X++ の Visual Studio 拡張機能を実行するために必要な Visual Studio コンポーネントの一覧を示します。
+description: この記事では、X++ の Visual Studio 拡張機能を実行するために必要な Visual Studio コンポーネントの一覧を示します。
 author: jorisdg
 ms.date: 10/26/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.author: jorisde
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee2e98f4f90822889b054bb92ab3815acf6bac47
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a23ca5884e86c2ee9be5ea68c8df656289777087
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867075"
 ---
 # <a name="visual-studio-requirements-for-x"></a>Visual Studio で X++ を使用する要件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ の **Visual Studio** 拡張機能を実行するために必要な Visual Studio コンポーネントの一覧を示します。
+この記事では、X++ の **Visual Studio** 拡張機能を実行するために必要な Visual Studio コンポーネントの一覧を示します。
 
 > [!NOTE]
 > Lifecycle Services (LCS) から配置されたダウンロード可能な仮想ハード ドライブ (VHD) または仮想マシンに Visual Studio を手動でインストールすることはお勧めしません。 代わりに、新しい仮想マシンをダウンロードまたは配置することを強く推奨します。 バージョン 10.0.13 以降に配置された仮想マシンにはすべて Visual Studio とその前提条件がインストールされ、マシンの互換性とセキュリティを維持するために Visual Studio の外部に他の更新が付属しています。

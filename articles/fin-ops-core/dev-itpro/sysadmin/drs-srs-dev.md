@@ -1,6 +1,6 @@
 ---
 title: 開発者向け間データ共有
-description: このトピックでは、開発者向け会社間データ共有について説明します。 これは、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
+description: この記事では、開発者向け会社間データ共有について説明します。 これは、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
 author: ramasri
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 8526b6cbdfefc550062df4a577aa68c45ef2f772
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: bf7b07d287588d4e03029ac9b3cf6e3e92b6bedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854575"
 ---
 # <a name="cross-company-data-sharing-for-developers"></a>開発者向け間データ共有
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、開発者向け会社間データ共有について説明します。 会社間データ共有は、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
+この記事では、開発者向け会社間データ共有について説明します。 会社間データ共有は、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
 
 ## <a name="enable-a-table-for-cross-company-data-sharing"></a>会社間データ共有のテーブルを有効にする 
 

@@ -1,6 +1,6 @@
 ---
 title: Adyen 向け Dynamics 365 Payment Connector の概要
-description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
+description: この記事では、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
 ms.date: 05/06/2022
 ms.topic: overview
@@ -15,24 +15,24 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0d67e8bcec4d78b9f321c5c46eecd076cf5db1a6
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 269a26908513a3dae4d55e09c5ed99d06534858b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852026"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Adyen 向け Dynamics 365 Payment Connector の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Adyen 向けの Microsoft Dynamics 365 Payment Connector の概要と、サポートされる機能の包括的な一覧を示します。 関連トピックでは、Adyen のサインアップ、コネクタのコンフィギュレーション、よく寄せられる質問、一般的な問題に関するトラブルシューティングのガイダンスを提供します。
+この記事では、Adyen 向けの Microsoft Dynamics 365 Payment Connector の概要と、サポートされる機能の包括的な一覧を示します。 関連記事では、Adyen のサインアップ、コネクタのコンフィギュレーション、よく寄せられる質問、一般的な問題に関するトラブルシューティングのガイダンスを提供します。
 
 ## <a name="key-terms"></a>重要な用語
 
 | 相談 | 説明 |
 |---|---|
-| 支払コネクタ | Microsoft Dynamics 365 Commerce (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 このトピックで説明されているコネクタは、標準の支払ソフトウェア開発キット (SDK) を使用して実装されました。 |
+| 支払コネクタ | Microsoft Dynamics 365 Commerce (および関連コンポーネント) と支払サービスの間の通信を促進する拡張機能です。 この記事で説明されているコネクタは、標準の支払ソフトウェア開発キット (SDK) を使用して実装されました。 |
 | カードあり | Dynamics 365 販売時点管理への支払ターミナル コネクタで物理的なカードが提示および使用される支払トランザクションを参照します。 |
 | カードなし | 電子商取引またはコール センター シナリオなど、現物カードが提示されない支払トランザクションを参照します。 これらのシナリオでは、支払に関連する情報は、電子商取引 Web サイト、コール センター フロー、または販売時点管理上または支払ターミナルで手動で入力されます。 |
 

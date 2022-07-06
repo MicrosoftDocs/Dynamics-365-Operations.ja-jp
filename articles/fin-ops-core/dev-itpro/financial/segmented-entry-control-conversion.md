@@ -1,6 +1,6 @@
 ---
 title: セグメント化されたエントリ コントロールの移行
-description: このトピックでは、セグメント化されたエントリ コントロールの移行シナリオについて説明します。
+description: この記事では、セグメント化されたエントリ コントロールの移行シナリオについて説明します。
 author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cb7214724f9765551c4183e28603e5b5c08c455
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f5e94567de7ed3381a1d7bd63d01e59c8c9656c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866742"
 ---
 # <a name="migrate-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行
 

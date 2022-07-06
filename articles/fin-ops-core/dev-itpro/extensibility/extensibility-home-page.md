@@ -1,6 +1,6 @@
 ---
 title: 拡張機能のホーム ページ
-description: このトピックでは、拡張性に関するトピックへのリンクを提供します。
+description: この記事では、拡張性に関するトピックへのリンクを提供します。
 author: FrankDahl
 ms.date: 05/14/2019
 ms.topic: index-page
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 9477bab83456e27c5814fd14df4fb6b0f19eb4c5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 963d57664cea722e1a9b3cf371e3becaf6b5ea75
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866894"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -61,7 +61,7 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 
 ## <a name="how-do-i-create-extensions"></a>拡張機能の作成方法
 
-このセクションは "方法" を含みます トピックが含まれています。 このトピックのほとんどは、簡潔で要点を押さえた内容となっています。 ここには多くのトピックがあるため、特定のトピックを検索すると便利にご利用いただける場合があります。
+このセクションは "方法" を含みます トピックが含まれています。 このトピックのほとんどは、簡潔で要点を押さえた内容となっています。 ここには多くの記事があるため、特定のトピックを検索すると便利にご利用いただける場合があります。
 
 ### <a name="data-types"></a>データ型
 + [拡張機能を使用して列挙体に値を追加](add-enum-value.md)

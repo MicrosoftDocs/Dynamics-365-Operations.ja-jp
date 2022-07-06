@@ -1,6 +1,6 @@
 ---
 title: 自動化エンティティ格納更新
-description: このトピックでは自動化エンティティ格納更新を有効にする方法について説明します。
+description: この記事では自動化エンティティ格納更新を有効にする方法について説明します。
 author: MilindaV2
 ms.date: 01/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 209c2f4e209dec8352f26792be35a93bfed61fbb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: daeb3d06ed6195e17e3d2db904eb0cc54fee45e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906650"
 ---
 # <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 

@@ -1,6 +1,6 @@
 ---
 title: 開発環境の配置とアクセス
-description: このトピックでは、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者のための構成設定を見つける方法について説明します。
+description: この記事では、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者のための構成設定を見つける方法について説明します。
 author: laneswenka
 ms.date: 05/24/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: ff8f2368146511f00dfb9389f3301c97bf32c64b
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 3d21292acfd3629512e879cbac766269a0865ebd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8802851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867114"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、開発インスタンスへのアクセス、ローカル開発仮想マシン (VM) の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
+この記事では、開発インスタンスへのアクセス、ローカル開発仮想マシン (VM) の構成、および開発者と管理者にとって重要な構成設定を見つける方法について説明します。
 
 > [!NOTE]
 > - Microsoft サポートでは、レベル 1 の開発環境でのトラブルシューティングが制限される場合があります。
@@ -74,7 +74,7 @@ LCS プロジェクトにクラウドの開発環境を配置する:
 
 ### <a name="accessing-the-cloud-instance-through-remote-desktop"></a>リモート デスクトップを使用したクラウド インスタンスへのアクセス
 
-クラウド環境は、エンド ユーザーおよび開発者の両方としてアクセスできます。 開発者は、リモート デスクトップの資格情報を使用してシステムにアクセスできます。 リモート デスクトップの資格情報は、LCS プロジェクト サイトの環境ページから取得されます (このトピックの前の図を参照してください)。
+クラウド環境は、エンド ユーザーおよび開発者の両方としてアクセスできます。 開発者は、リモート デスクトップの資格情報を使用してシステムにアクセスできます。 リモート デスクトップの資格情報は、LCS プロジェクト サイトの環境ページから取得されます (この記事の前の図を参照してください)。
 
 ![制限された管理者アクセス。](media/restricted-admin.png)
 

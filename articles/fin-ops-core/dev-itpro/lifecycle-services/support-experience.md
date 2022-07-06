@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリのテクニカル サポートを設定する
-description: このトピックでは、クラウドおよびオンプレミスの展開のサポートについて説明します。
+title: 財務と運用アプリの技術サポートの設定
+description: この記事では、クラウドおよびオンプレミス配置のサポートについて説明します。
 author: kfend
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e5470d0c0399793a0ac46e6159cae53b524838998591de2ac464de8fd28d88d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b186b8c20a044672bcbed94c1dc481cc2277489f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866356"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations-apps"></a>Finance and Operations アプリのテクニカル サポートを設定する 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="prerequisites"></a>必要条件
 
-テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、Microsoft Dynamics 365 Finance and Operations アプリのいずれかのサブスクリプションを設定すると作成されます。
+テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、Microsoft Dynamics 365 財務と運用アプリのいずれかのサブスクリプションを設定すると作成されます。
 
 ## <a name="create-an-azure-devops-project"></a>Azure DevOps プロジェクトの作成
 Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、Azure DevOps を使用し、クライアントを通して送信された問題と、LCS の **サポート** タイルから手動で作成された問題を格納します。 この機能を使用するには、サポートに使用する LCS プロジェクトで Azure DevOps プロジェクトを設定する必要があります。 **サポート** タイルを使用して問題を提出する必要があるすべてのユーザーは、Azure DevOps プロジェクトにアクセスできる必要があり、LCS が Azure DevOps に自身が代わってアクセスを承認する必要があります。 ほとんどのユーザーは、LCS または Azure DevOps へのアクセス権がありません。 したがって、Azure DevOps プロジェクトでは、問題を提出するために使用できる特別なシステム アカウントを作成する必要があります。
@@ -150,7 +150,7 @@ LCS **サポート** タイルでは、問題が LCS プロジェクトに関連
 
 ### <a name="edit-issues"></a>項目を編集
 1.  **問題** グリッドで、問題のタイトルをクリックします。
-2.  このトピックの最初のセクションで設定した Azure DevOps プロジェクトへのアクセス権を持つアカウントを使用して、Azure DevOps へサインインし、**Azure DevOps プロジェクトを作成** します。 
+2.  必要に応じて、この記事の最初のセクションで設定した Azure DevOps プロジェクトへのアクセス権を持つアカウントを使用して、Azure DevOps へサインインし、**Azure DevOps プロジェクトを作成** します。 
 
     > [!NOTE]
     > Azure DevOps には、サインインが必要な場合に作業項目を編集するためのリンクが正しく機能しないという問題があります。 Azure DevOps にサインインした後に **自分自身に割り当て** クエリが表示された場合、LCS に戻って、問題グリッドで問題のタイトルをもう一度クリックします。

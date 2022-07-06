@@ -1,6 +1,6 @@
 ---
 title: 販売時点管理 (POS) API
-description: このトピックでは、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
+description: この記事では、使用可能な POS API の一覧とそれらにアクセスする方法を示します。
 author: mugunthanm
 ms.date: 11/03/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 12a96746e267004067167e2c4fab9d37e0a66100
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b85a783330b529843ef43abe230546171c74c170
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861897"
 ---
 # <a name="point-of-sale-pos-apis"></a>販売時点管理 (POS) API
 [!include [banner](../includes/banner.md)]

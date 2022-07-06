@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。 このバージョンは、2019 年 1 月にリリースされます。
+description: この記事では、 Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能および変更された機能について説明します。 このバージョンは、2019 年 1 月にリリースされます。
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 89679a0035ac843452b458c538229dd34945a971cdb4629aa02c426d47345ec5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56fb7b406649239f15a69407eff038639dbd74ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769832"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898351"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-813-january-2019"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能または変更された機能について説明します。 このバージョンは 2019 年 1 月にリリースされ、ビルド番号は 8.1.227 です。
+この記事では、 Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 の新機能および変更された機能について説明します。 このバージョンは 2019 年 1 月にリリースされ、ビルド番号は 8.1.227 です。
 
 Retail の新機能または変更された機能についての最新のリリースについては、[Dynamics 365 for Retail の新機能または変更された機能](../../../commerce/get-started/whats-new.md) を参照してください。
 
@@ -38,7 +38,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 ### <a name="bug-fixes"></a>バグ修正
 
-Finance and Operations バージョン 8.1.3 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://go.microsoft.com/fwlink/?linkid=2049362) を参照してください。
+Finance and Operations 8.1.3 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://go.microsoft.com/fwlink/?linkid=2049362)を参照してください。
 
 ### <a name="platform-update-23"></a>プラットフォーム update 23
 

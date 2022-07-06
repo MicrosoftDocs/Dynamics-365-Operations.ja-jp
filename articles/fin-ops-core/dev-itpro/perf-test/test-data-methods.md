@@ -1,6 +1,6 @@
 ---
 title: テスト データ メソッド
-description: このトピックでは、最も一般的な種類のテスト データ メソッドについて説明します。
+description: この記事では、最も一般的な種類のテスト データ メソッドに関する情報を提供します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 5c133c1538424bb9d89d089f2c5060157a8ae916
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 4435bd3e80c9c9dff5e3c7ff6cdecb9f6f58c7ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858575"
 ---
 # <a name="test-data-methods"></a>テスト データ メソッド
 
 [!include [banner](../includes/banner.md)]
 
-エンティティやヘルパー ナビゲーション オブジェクトは、テスト データを設定するテスト メソッドを公開します。 このトピックでは、最も一般的な種類のテスト データ メソッドについて説明します。
+エンティティやヘルパー ナビゲーション オブジェクトは、テスト データを設定するテスト メソッドを公開します。 この記事では、最も一般的な種類のテスト データ メソッドに関する情報を提供します。
 
 ## <a name="factory-methods"></a>ファクトリ メソッド
 
@@ -204,7 +204,7 @@ public void ensureCanCreate()
 
 #### <a name="automatic-prerequisite-setup"></a>自動前提条件設定
 
-自動前提条件設定を有効にするには、適切な `init` メソッドで `ensure` メソッドを呼び出す必要があります。 詳細については、このトピックで前述した [ファクトリ メソッド](#factory-methods) セクションを参照してください。
+自動前提条件設定を有効にするには、適切な `init` メソッドで `ensure` メソッドを呼び出す必要があります。 詳細については、この記事で前述した[ファクトリ メソッド](#factory-methods) セクションを参照してください。
 
 ## <a name="query-methods"></a>クエリ メソッド
 

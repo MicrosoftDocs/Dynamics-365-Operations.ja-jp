@@ -1,6 +1,6 @@
 ---
 title: X++ 日付ランタイム関数
-description: このトピックでは、日付ランタイム関数について説明します。
+description: この記事では、日付ランタイム関数について説明します。
 author: RobinARH
 ms.date: 11/03/2017
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3044bb39c6368f2123116d5722e3ac077173318f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 071b2d51381487cdffde60ac6379161f24587e75
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867174"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、日付ランタイム関数について説明します。
+この記事では、日付ランタイム関数について説明します。
 
 ## <a name="dayname"></a>dayName
 

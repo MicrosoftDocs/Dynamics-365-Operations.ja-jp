@@ -1,6 +1,6 @@
 ---
-title: オンプレミス配置の倉庫管理アプリを構成
-description: このトピックでは、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。
+title: オンプレミス展開の倉庫管理アプリの構成
+description: この記事では、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: dbcc190a7926162f48a2229ac1a69ada2c54acca
-ms.sourcegitcommit: dc3053625dfe24aef64399dd1d002214e7f7619f
+ms.openlocfilehash: 5ce28e20f3749d855811f0404d106f2329981dea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867290"
 ---
-# <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
+# <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス展開の倉庫管理アプリの構成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、オンプレミス配置の Dynamics 365 for Finance and Operations – Warehousing アプリの構成方法について説明します。
+この記事では、オンプレミス配置の Dynamics 365 for Finance and Operations – Warehousing アプリの構成方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 倉庫管理アプリは Android および Windows オペレーティング システムで使用できます。 オンプレミスの展開にこのアプリを使用するには、少なくともバージョン 1.1.1.0 である必要があります。 Dynamics 365 Finance + Operations (on-premises) が次のサポートされているバージョンの 1 つである必要もあります。 ハードウェアおよびソフトウェア環境で構成がサポートされているかどうかを評価するには、次の表の情報を使用します。

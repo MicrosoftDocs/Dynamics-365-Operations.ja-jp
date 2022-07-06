@@ -1,6 +1,6 @@
 ---
 title: 顧客 CDX パッケージを拡張してカスタム データを追加する
-description: このトピックでは、Microsoft Dynamics 365 Commerce の顧客の Commerce Data Exchange (CDX) パッケージにカスタム データを追加する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の顧客の Commerce Data Exchange (CDX) パッケージにカスタム データを追加する方法について説明します。
 author: mugunthanm
 ms.date: 04/21/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d21f6f342a8a1bc07ec373ef7be5486f98b963a1
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: bb6a874f7ef430058ec4081eb110ae2be1b6c1e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884623"
 ---
 # <a name="extend-the-customer-cdx-package-to-add-custom-data"></a>顧客 CDX パッケージを拡張してカスタム データを追加する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、顧客の Commerce Data Exchange (CDX) パッケージを拡張して、Microsoft Dynamics 365 Commerce にカスタム データを追加する方法について説明します。
+この記事では、顧客の Commerce Data Exchange (CDX) パッケージを拡張して、Microsoft Dynamics 365 Commerce にカスタム データを追加する方法について説明します。
 
 販売時点管理 (POS) またはクライアント アプリケーションが Commerce 顧客検索アプリケーション プログラミング インターフェイス (API) を呼び出す場合、API はチャネル データベースで顧客を検索します。 チャネル データベースで顧客が見つからず、コマースの本部でリモート検索が有効になっている場合、API はコマースの本部にリアルタイムで呼び出しを行いデータを取得します。 コマース本部で顧客データが見つかった場合は、コマース本部は顧客データ CDX パッケージを生成し、それをチャネル データベースに同期します。
 

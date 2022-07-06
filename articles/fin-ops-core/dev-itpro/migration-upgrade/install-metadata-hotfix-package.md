@@ -1,6 +1,6 @@
 ---
 title: 開発環境でのメタデータの修正プログラムのインストール
-description: このトピックでは、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。
+description: この記事では、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。
 author: RobinARH
 ms.date: 09/18/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d67deb396da48b67d80c13e98d1a12fa2b21f1f0adc64f77858c908dc5f97ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6fd66bf3d8cc3efb7281725e380522fd81d8f891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866155"
 ---
 # <a name="install-metadata-hotfixes-in-development-environments"></a>開発環境でのメタデータの修正プログラムのインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。
+この記事では、開発環境にアプリケーション メタデータの修正プログラムをインストールする方法について説明します。
 
 メタデータ修正プログラムのパッケージには、開発環境でのモデル要素 (XML ファイル) への変更 (メタデータまたは X++ ソース コード) が含まれています。 修正プログラムは、新しいモデルの要素を含めることもできます。 メタデータ修正プログラムのパッケージは、SCDP ファイルの形式です。 この記事では、メタデータ修正プログラム パッケージのインストール プロセスについて説明し、同じプロジェクトで作業している他の開発者とパッケージを共有する方法について説明します。
 
@@ -40,7 +40,7 @@ ms.locfileid: "6762408"
 ## <a name="install-the-hotfix"></a>修正プログラムのインストール
 ### <a name="before-you-begin"></a>準備
 
--   このトピックでは、あなたのパッケージ フォルダが c:\\AOSService\\PackagesLocalDirectory\\Bin にあることを前提としています。 いくつかの仮想マシン (Vm) では、c:\\Packages, i:\\AOSService\\PackagesLocalDirectory\\Bin または k:\\AOSService\\PackagesLocalDirectory\\Bin に表示されている場合があります。
+-   この記事では、あなたのパッケージ フォルダが c:\\AOSService\\PackagesLocalDirectory\\Bin にあることを前提としています。 いくつかの仮想マシン (Vm) では、c:\\Packages, i:\\AOSService\\PackagesLocalDirectory\\Bin または k:\\AOSService\\PackagesLocalDirectory\\Bin に表示されている場合があります。
 -   Microsoft Azure DevOps または別のソース管理システムを使用していない場合は、(メタデータ ストアとも呼ばれる) パッケージ フォルダーのバックアップを作成します。 Azure DevOps を使用していないときに、開発を実行することはお勧めしません。
 -   Azure DevOps または Microsoft Team Foundation Server (TFS) バージョン コントロールがない場合、現在のワークスペースの **保留中の変更** 一覧にファイルがないことを確認します。 保留中の変更がある場合は、メタデータの修正プログラムをインストールする前に、それらを送信するかまたは棚に置くことをお勧めします。
 

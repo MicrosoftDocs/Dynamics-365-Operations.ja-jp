@@ -1,6 +1,6 @@
 ---
 title: Finance + Operations (オンプレミス) の購入
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) を購入し、展開する方法を説明します。
+description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) を購入し、展開する方法を説明します。
 author: cabeln
 ms.date: 11/30/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 753c4e7918f6931012f124e01ae115cb6686b4eb
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 2c55b7e48b84952e1f563b9a188c486b3cf99978
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903524"
 ---
 # <a name="buy-finance--operations-on-premises"></a>Finance + Operations (オンプレミス) の購入
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance + Operations (on-premises) では、組織のニーズに最適な幅広いライセンスの種類を取りそろえております。 Finance + Operations (オンプレミス) のライセンス取得方法を理解するには、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544) にアクセスできるパートナーと作業してください。 組織のライセンスを購入する準備ができたら、パートナーと協力して、このトピックで説明している手順に従います。
+Microsoft Dynamics 365 Finance + Operations (on-premises) では、組織のニーズに最適な幅広いライセンスの種類を取りそろえております。 Finance + Operations (オンプレミス) のライセンス取得方法を理解するには、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544) にアクセスできるパートナーと作業してください。 組織のライセンスを購入する準備ができたら、パートナーと協力して、この記事で説明している手順に従います。
 
 > [!IMPORTANT]
 > オンプレミス環境は、Azure を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。

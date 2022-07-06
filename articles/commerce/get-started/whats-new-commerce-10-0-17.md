@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce 10.0.17 の新機能または変更された機能 (2021 年 4 月)
-description: このトピックでは、Dynamics 365 Commerce 10.0.17 の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Commerce 10.0.17 の新機能および変更された機能について説明します。
 author: josaw1
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 79d8b0c1e6979242fcdc60350db93f3163c838388912bd8a326f7b449afa2a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36c9171d2050ff6d0bfaf42f6c1dabf0a5fb7d9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900427"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10017-april-2021"></a>Dynamics 365 Commerce 10.0.17 の新機能または変更された機能 (2021 年 4 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 10.0.17 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.761 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Commerce 10.0.17 の新機能または変更された機能を示します。 このバージョンのビルド番号は 10.0.761 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 2 月
 - **リリースの一般提供 (自己更新):** 2021 年 3 月
@@ -58,9 +58,9 @@ ms.locfileid: "6738734"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Dynamics 365 Commerce 10.0.17 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.17 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) を参照してください。
+Dynamics 365 Commerce 10.0.17 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.17 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=551039&dbType=3&qc=91219e7c3fc585acb17b810c915c3cbea499403538520c40e54de43a53aea6a8) を参照してください。
@@ -73,14 +73,14 @@ Dynamics 365 Commerce 10.0.17 には、プラットフォーム更新プログ�
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)トピックでは、Commerce で削除または廃止された機能について説明します。
+[Dynamics 365 Commerce で削除または廃止された機能](removed-deprecated-features-commerce.md)の記事では、Commerce で削除または廃止された機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

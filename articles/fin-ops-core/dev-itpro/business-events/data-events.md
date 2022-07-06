@@ -1,6 +1,6 @@
 ---
 title: データ イベント
-description: このトピックでは、データ イベントの概要を説明します。
+description: この記事では、データ イベントの概要を説明します。
 author: jaredha
 ms.date: 05/03/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: ead9702008f267d9361348a84ac5e4bfa8d01137
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: aa1981f17c5cae8197e5b5cff2e39bd1335346fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884126"
 ---
 # <a name="data-events"></a>データ イベント
 [!include[banner](../includes/banner.md)]

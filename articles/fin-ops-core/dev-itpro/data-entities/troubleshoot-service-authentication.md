@@ -1,6 +1,6 @@
 ---
 title: サービス認証問題のトラブルシューティング
-description: このトピックでは、サービス認証に関する問題を解決するためのヒントをいくつか示します。
+description: この記事では、サービス認証に関する問題を解決するためのヒントをいくつか示します。
 author: nimakms
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0413f4569525f79f47c4a77d9eea5b09cdd0065
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b89a68aecf2668290cd32afe3bc0bb75d435daff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867596"
 ---
 # <a name="troubleshoot-service-authentication-issues"></a>サービス認証問題のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、サービス認証に関する問題を解決するためのヒントをいくつか示します。
+この記事では、サービス認証に関する問題を解決するためのヒントをいくつか示します。
 
-サービス認証の問題をトラブルシューティングする場合、もっともよく発生する問題の解決に役立ついくつかの基本的な共通の手順があります。 また、これらの手順では、認証メカニズムの仕組みを実際に実演します。 このトピックでは手順を説明し、これまでに生じたいくつかの一般的な問題を一覧表示しています。
+サービス認証の問題をトラブルシューティングする場合、もっともよく発生する問題の解決に役立ついくつかの基本的な共通の手順があります。 また、これらの手順では、認証メカニズムの仕組みを実際に実演します。 この記事では手順を説明し、これまでに生じたいくつかの一般的な問題を一覧表示しています。
 
 ## <a name="inspect-the-jwt"></a>JWT を検査します。
 ### <a name="capture-the-jwt-from-an-http-request"></a>HTTP 要求から JWT をキャプチャします。

@@ -1,6 +1,6 @@
 ---
 title: ローカル エージェントの配置前スクリプトおよび配置後スクリプト
-description: このトピックでは、ローカル エージェントの配置前スクリプトおよび配置後スクリプトに関する情報を提供します。
+description: この記事は、ローカル エージェントの配置前スクリプトと配置後スクリプトについて説明します。
 author: faix
 ms.date: 08/07/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: b54005e0f6f88922f2bba7621c3ea22ccf4588aa
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 73afb1f6fc8dac93e9b3145e481e5ac9ecd52703
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566191"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866386"
 ---
 # <a name="local-agent-pre-deployment-and-post-deployment-scripts"></a>ローカル エージェントの配置前スクリプトおよび配置後スクリプト
 

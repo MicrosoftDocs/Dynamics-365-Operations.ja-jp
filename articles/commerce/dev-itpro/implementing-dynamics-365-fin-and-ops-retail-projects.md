@@ -1,6 +1,6 @@
 ---
 title: コマース プロジェクトを実装する
-description: このトピックでは、Microsoft Dynamics 365 Commerce実装プロジェクトのための推奨事項について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce 実装プロジェクトのための推奨事項について説明します。
 author: andreashofmann1
 ms.date: 07/09/2018
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: c13f18f58f37c666023fb586bede4d59d152c525
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 51dac9889d2f927373534b0ac90374aba1557161
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782405"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892818"
 ---
 # <a name="implement-commerce-projects"></a>コマース プロジェクトを実装する
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、コマース プロジェクトの新しい実装者が複雑さを回避することができるように、実装プロセスの重要な側面について役立つその他のトピックへのリンクを提供します。 記載されているガイドラインは、以前の実装プロジェクト中に収集されたベスト プラクティスです。 したがって、実装者は手順で行き詰まることく、実際の機能に焦点を合わせることができます。
+この記事では、コマース プロジェクトの新しい実装者が複雑さを回避することができるように、実装プロセスの重要な側面について役立つその他の記事へのリンクを提供します。 記載されているガイドラインは、以前の実装プロジェクト中に収集されたベスト プラクティスです。 したがって、実装者は手順で行き詰まることく、実際の機能に焦点を合わせることができます。
 
-これらのトピックの情報については、[Finance and Operations の開発と管理](../../fin-ops-core/dev-itpro/index.md) および <https://dynamicsnotes.com> などのブログや他の場所のページからも見つけることができます。 それらのブログとページを個別に読むことができます。また、最初から最後までこのトピックを読んで、実装プロセス中にサブトピック内のリンクされたドキュメントを確認することもできます。
+これらの記事の情報については、[財務と運用の開発と管理](../../fin-ops-core/dev-itpro/index.md) and <https://dynamicsnotes.com>などのブログや他の場所のページからも見つけることができます。 それらのブログとページを個別に読むことができます。また、最初から最後までこの記事を読んで、実装プロセス中に記事内のリンクされたドキュメントを確認することもできます。
 
-コマース機能を含む Finance and Operations アプリの実装に焦点をあてた情報です。
+Commerce 機能を含む財務と運用アプリの実装に焦点をあてた情報です。
 
 [コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 

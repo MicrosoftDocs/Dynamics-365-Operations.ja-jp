@@ -1,6 +1,6 @@
 ---
 title: 為替レート プロバイダーの作成
-description: このトピックでは、為替レート プロバイダーの設定方法について説明します。
+description: この記事では、為替レート プロバイダーの設定方法について説明します。
 author: RyanCCarlson2
 ms.date: 03/09/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 250edf530ef66a4e93b776b3015b68dc0bcd37a1
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: c227a31118d416afc5a172b8727e8761bb4a4cf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551710"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866798"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、為替レート プロバイダーを設定するために必要なステップについて説明します。 説明のために、この記事全体で OANDA 為替レート サービスが使用されます。 この記事で説明している手順に従って、機能為替レート プロバイダーを作成します。 このコードは生産コードです。 ソースは **ExchangeRateProviderOanda** クラスで見つけることができます。 必要に応じて、このトピックからこのクラスを参照することができます。 OANDA テスト アカウントを要求し、OANDA 為替レート サービスに関する情報を受け取るには、[OANDA 為替レート API](https://developer.oanda.com/exchange-rates-api/) を参照してください。
+この記事では、為替レート プロバイダーを設定するために必要なステップについて説明します。 説明のために、この記事全体で OANDA 為替レート サービスが使用されます。 この記事で説明している手順に従って、機能為替レート プロバイダーを作成します。 このコードは生産コードです。 ソースは **ExchangeRateProviderOanda** クラスで見つけることができます。 必要に応じて、この記事からこのクラスを参照することができます。 OANDA テスト アカウントを要求し、OANDA 為替レート サービスに関する情報を受け取るには、[OANDA 為替レート API](https://developer.oanda.com/exchange-rates-api/) を参照してください。
 
 ## <a name="terminology"></a>用語
 -   **現在の通貨為替レートをインポート** – 為替レート プロバイダーから為替レートを取得してインポートするプロセス。 このプロセスは、バッチ処理をサポートするシステム操作です。

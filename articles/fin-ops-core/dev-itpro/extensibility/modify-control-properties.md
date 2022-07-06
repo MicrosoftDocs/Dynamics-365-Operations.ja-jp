@@ -1,6 +1,6 @@
 ---
 title: 拡張機能を使用して、フォーム コントロールのプロパティを変更する
-description: このトピックでは、拡張機能を使用してコントロールのプロパティを変更する方法について説明します。
+description: この記事では、拡張機能を使用してコントロールのプロパティを変更する方法について説明します。
 author: ivanv-microsoft
 ms.date: 07/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 0e7c4faad8ccd4a77ba8dce5ce102557c168319f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a7cbbb778b53125bfb1acf3d0871ad9d75971aaa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866843"
 ---
 # <a name="modify-the-properties-of-form-controls-through-extension"></a>拡張機能を使用して、フォーム コントロールのプロパティを変更する
 
@@ -28,7 +28,7 @@ ms.locfileid: "7781299"
 多くの場合、ユーザーがアプリとやりとりするには、変更が必要です。 通常、ページ上のコントロールを非表示または無効にしたり、標準ラベルをより適切なラベルに置き換えたり、ユーザーが必要とする新しいコントロールを追加したりします。 また、フォーム拡張子を作成することもできます。 
 
 > [!TIP]
-> フォーム コントロール イベント上のイベント サブスクリプションを使用して、より高い柔軟性を実現することができます。 この方法については、他のトピックで説明します。 このトピックでは、メタデータの変更に焦点を当てます。
+> フォーム コントロール イベント上のイベント サブスクリプションを使用して、より高い柔軟性を実現することができます。 この方法については、他のトピックで説明します。 この記事では、メタデータの変更に焦点を当てます。
 
 ## <a name="example"></a>例
 

@@ -1,8 +1,8 @@
 ---
 title: Cloud Scale Unit 拡張機能パッケージの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) の拡張機能パッケージの作成方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) の拡張機能パッケージの作成方法について説明します。
 author: mugunthanm
-ms.date: 04/21/2022
+ms.date: 06/01/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -10,18 +10,19 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 4bd357ace02640721401970a43625c30200b2276
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: b678ba35a089dc72d1bf1f97bf19d29365929da6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876566"
 ---
 # <a name="create-a-cloud-scale-unit-extension-package"></a>Cloud Scale Unit 拡張機能パッケージの作成
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) の拡張機能パッケージの作成方法について説明します。 
+この記事では、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) の拡張機能パッケージの作成方法について説明します。 
 
 CSU 拡張機能パッケージには、次のコンポーネントの拡張機能コードが含まれます。
 
@@ -37,9 +38,17 @@ CSU パッケージを作成するには、次のいずれかのオプション�
 ### <a name="option-1-download-the-sample-scale-unit-packaging-project-from-github"></a>オプション 1: GitHub からスケール ユニット パッケージ プロジェクトのサンプルをダウンロードする
 
 1. [Dynamics365 Commerce ScaleUnit サンプル](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)からスケール ユニット パッケージ プロジェクトを複製またはダウンロードします。 ソフトウェア開発キット/アプリケーション リリースのバージョンに適切なリリース ブランチ バージョンを選択します。 プロジェクトを複製する方法の詳細については、[GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](retail-sdk/sdk-github.md)を参照してください。
-1. CRT 拡張、Retail Server、チャネル データベース、および CPOS 拡張機能プロジェクトをプロジェクト参照としてスケール ユニット パッケージ プロジェクトに追加します。
-1. CRT または Retail Server の拡張機能が、実行にいずれかのアセンブリに依存する場合は、それらのアセンブリをプロジェクト参照として拡張機能プロジェクトに含めます。 パッケージの **ext** フォルダーにこれらのアセンブリは含まれます。 ランタイム エラーが発生する可能性があるため、依存アセンブリを **CommerceRuntime.Ext.config** ファイルには追加しないでください。
-1. スケール ユニット プロジェクトを構築します。 プロジェクトは、プロジェクト ビン出力フォルダーに **CloudScaleUnitExtensionPackage.zip** 出力パッケージを生成します。 その後、**CloudScaleUnitExtensionPackage.zip** パッケージを Microsoft Lifecycle Services (LCS) にアップロードし、CSU に配置できます。 Visual Studio NuGet パッケージ マネージャーで、使用している SDK/ アプリケーションのバージョンに適した **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet バージョンを選択します。
+1. CRT 拡張、Retail Server、チャネル データベース、支払、および CPOS 拡張機能プロジェクトをプロジェクト参照としてスケール ユニット パッケージ プロジェクトに追加します。
+1. CRT、Retail Server、または支払の拡張機能が、実行するいずれかのアセンブリまたはパッケージに依存する場合は、それらのアセンブリをプロジェクト参照として拡張機能プロジェクトに含めます。 パッケージの **ext** フォルダーにこれらのアセンブリは含まれます。 ランタイム エラーが発生する可能性があるため、依存アセンブリを **CommerceRuntime.Ext.config** ファイルには追加しないでください。
+1. コンフィギュレーションまたは設定値を **CommerceRuntime.Ext.config** ファイルに含める必要がある場合は、次の例に示すように、スケール ユニットのパッケージング プロジェクト ファイルを編集し、**CommerceRuntimeExtensionSettings** プロパティを追加します。
+
+    ```XML
+    <CommerceRuntimeExtensionSettings Include="ext.YourKeyName">
+        <Value>samplevalue</Value>
+    </CommerceRuntimeExtensionSettings>
+    ```
+
+1. スケール ユニット プロジェクトを構築します。 プロジェクトは、プロジェクト ビン出力フォルダーに **CloudScaleUnitExtensionPackage.zip** 出力パッケージを生成します。 **CloudScaleUnitExtensionPackage.zip** パッケージを Microsoft Dynamics Lifecycle Services (LCS) にアップロードし、CSU に配置できます。 Visual Studio NuGet パッケージ マネージャーで、使用している SDK/ アプリケーションのバージョンに適した **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet バージョンを選択します。
 
 ### <a name="option-2-create-a-new-scale-unit-packaging-project"></a>オプション 2: 新しいスケール ユニット パッケージ プロジェクトを作成する
 
@@ -54,8 +63,16 @@ CSU パッケージを作成するには、次のいずれかのオプション�
         </packageSources>
     ```
 
-1. CRT 拡張、Retail Server、チャネル データベース、および CPOS 拡張機能プロジェクトをプロジェクト参照としてスケール ユニット パッケージ プロジェクトに追加します。
-1. CRT または Retail Server の拡張機能が、実行にいずれかのアセンブリに依存する場合は、それらのアセンブリをプロジェクト参照として拡張機能プロジェクトに含めます。 パッケージの **ext** フォルダーにこれらのアセンブリは含まれます。 ランタイム エラーが発生する可能性があるため、依存アセンブリを **CommerceRuntime.Ext.config** ファイルには追加しないでください。
+1. CRT 拡張、Retail Server、チャネル データベース、支払、および CPOS 拡張機能プロジェクトをプロジェクト参照として CSU パッケージ プロジェクトに追加します。
+1. CRT、Retail Server、または支払の拡張機能が、実行するいずれかのアセンブリに依存する場合は、それらのアセンブリをプロジェクト参照として拡張機能プロジェクトに含めます。 パッケージの **ext** フォルダーにこれらのアセンブリは含まれます。 ランタイム エラーが発生する可能性があるため、依存アセンブリを **CommerceRuntime.Ext.config** ファイルには追加しないでください。
+2. コンフィギュレーションまたは設定値を **CommerceRuntime.Ext.config** ファイルに含める必要がある場合は、次の例に示すように、CSU パッケージング プロジェクト ファイルを編集し、**CommerceRuntimeExtensionSettings** プロパティを追加します。
+ 
+    ```XML
+    <CommerceRuntimeExtensionSettings Include="ext.YourKeyName">
+        <Value>samplevalue</Value>
+    </CommerceRuntimeExtensionSettings>
+    ```
+
 1. スケール ユニット プロジェクトを構築します。 プロジェクトは、プロジェクト ビン出力フォルダーに **CloudScaleUnitExtensionPackage.zip** 出力パッケージを生成します。 その後、**CloudScaleUnitExtensionPackage.zip** パッケージを LCS にアップロードし、CSU に配置できます。
 
 CRT 拡張コンフィギュレーション ファイル (**Web.Config**) は、スケール ユニット パッケージ プロジェクトによって生成されます。 拡張コンフィギュレーション ファイルを手動で作成する必要はありません。

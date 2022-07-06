@@ -1,6 +1,6 @@
 ---
 title: オンプレミス環境でのネットワーク プリンター デバイスのインストール
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。
 author: RichdiMSFT
 ms.date: 04/07/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c21c12c0f49dbd93ca756666283912532b373db7
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 1ac4cce3eebb425bdc3706d05839115c2649ea58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847357"
 ---
 # <a name="install-network-printer-devices-in-on-premises-environments"></a>オンプレミス環境でのネットワーク プリンター デバイスのインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の「[印刷およびドキュメント サービス](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831468(v=ws.11))」機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
+この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。 オンプレミス アプリケーションでのネットワーク印刷は、Microsoft Windows Server 2016 の「[印刷およびドキュメント サービス](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831468(v=ws.11))」機能でサポートされます。 この機能を使用すると、プリンター管理に関連するタスクを集中管理できます。 印刷およびドキュメント サービスをインストールして構成するには、Application Object Server (AOS) のプライマリー インスタンスをホストするサーバーへの管理アクセス権が必要です。
 
 ネットワーク印刷サービスの構成には、次の 2 つの役割があります。
 

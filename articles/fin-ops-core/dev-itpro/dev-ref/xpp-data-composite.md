@@ -1,6 +1,6 @@
 ---
 title: X++ 複合データ型
-description: このトピックでは、X++ の複合データ型について説明します。
+description: この記事では、X++ の複合データ型について説明します。
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83732c4b6688155023acbaedfb4b334e2681d0b6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 86f94b2dd6bf73a8b8869dcfd16f60b6249a66fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783384"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867213"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ の複合データ型について説明します。 X++ の複合データ型は、配列、コンテナー、データ型としてのクラス、データ型としてのデリゲート、データ型としてのテーブルです。
+この記事では、X++ の複合データ型について説明します。 X++ の複合データ型は、配列、コンテナー、データ型としてのクラス、データ型としてのデリゲート、データ型としてのテーブルです。
 
 ## <a name="array"></a>配列
 
@@ -244,7 +244,7 @@ static void UseQuery()
 
 クラスはソース コードに入れ子にできます。 入れ子になったクラスはフォーム内 (**FormRun** を拡張するクラスなど) でのみ使用でき、コントロール、データ ソースまたはデータ フィールドを表すために使用します。 属性の修飾で接尾語に **属性** がある場合、属性の修飾などのクラスまたはメソッドで、属性名の接尾語を省略できます。 したがって、X++ は **\[MyFavoriteAttribute\]** を必要とするのではなく、**\[MyFavorite\]** を許可します。 また、属性はデリゲートとメソッドのハンドラーに現在適用され、ハンドラーをこれらのターゲットにマップします。
 
-AX 2012 およびそれ以前のバージョンでは、クライアントまたはサーバーのいずれかで実行するメソッドを指定することができました。 ただし、Finance and Operations のアプリケーションでは、コンパイルされたすべての X++ コードがサーバーの .NET 共通の中間言語 (CIL) として実行されます。 クライアント サイトまたはブラウザーで評価されるコードはなくなりました。 したがって、**client** キーワードと **server** キーワードは無視されるようになりました。 これらのキーワードが使用される場合コンパイル エラーは発生しませんが、新しいコードを使用することはできません。
+AX 2012 およびそれ以前のバージョンでは、クライアントまたはサーバーのいずれかで実行するメソッドを指定することができました。 ただし、Finance and Operations アプリケーションでは、コンパイルされたすべての X++ コードがサーバーの .NET 共通中間言語 (CIL) として実行されます。 クライアント サイトまたはブラウザーで評価されるコードはなくなりました。 したがって、**client** キーワードと **server** キーワードは無視されるようになりました。 これらのキーワードが使用される場合コンパイル エラーは発生しませんが、新しいコードを使用することはできません。
 
 ### <a name="private-and-protected-member-variables"></a>プライベートおよび保護されたメンバー変数
 

@@ -1,6 +1,6 @@
 ---
 title: サポートされるフォント
-description: Finance and Operations アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、270 以上の標準のビジネス対応フォントへのアクセスが含まれます。
+description: 財務と運用アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、270 を超える標準のビジネス対応フォントへのアクセスが含まれます。
 author: RichdiMSFT
 ms.date: 04/13/2021
 ms.topic: article
@@ -12,78 +12,78 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4f8c28851c8978f02efd13ff935cdcfefce1f791e5752fd075e0d620028c976
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc657dd288f9e5bf74372e60f36468c98cbee267
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883671"
 ---
 # <a name="supported-fonts"></a>サポートされるフォント
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、何百もの標準のビジネス対応フォントへのアクセスが含まれます。 
+財務と運用アプリには、クラウドでホストされるサービスによって表示されるドキュメントに使用できる、何百もの標準のビジネス対応フォントへのアクセスが含まれます。 
 
 このポートフォリオは、サービスが新しい地域や業界に拡大するにつれて増え続けます。 このサービスは、顧客環境でのカスタム フォントのインストールはサポートされていません。
 
-次の一覧は、Finance and Operations アプリで SQL Server Reporting Services (SSRS) サービスを使用して生成されたドキュメントに使用できるフォント ファミリーのポートフォリオをキャプチャします。
+次の一覧は、財務と運用アプリで SQL Server Reporting Services (SSRS) サービスを使用して生成されたドキュメントに使用できるフォント ファミリーのポートフォリオをキャプチャします。
 
 ## <a name="supported-fonts-for-application-version-83-with-platform-update-32-or-later"></a>アプリケーション バージョン 8.3 およびプラットフォーム更新プログラム 32 またはそれ以降でサポートされるフォント
 
-| フォント ファミリ              | 配賦元              |
+| フォント ファミリ              | ソース              |
 |--------------------------|-----------------------------|
 | 代理店 FB                | オフィス フォント                 |
 | アルジェリアン                 | オフィス フォント                 |
-| Arial                    | Finance and Operations フォント |
-| Arial ブラック              | Finance and Operations フォント |
-| Arial ナロー             | Finance and Operations フォント |
+| Arial                    | 財務と運用フォント |
+| Arial ブラック              | 財務と運用フォント |
+| Arial ナロー             | 財務と運用フォント |
 | Arial 丸め MT 太字    | オフィス フォント                 |
 | バスカービル オールド フェイス     | オフィス フォント                 |
 | バウハウス 93               | オフィス フォント                 |
-| BC C128 HD ミディアム        | Finance and Operations フォント |
-| BC C128 HD ナロー        | Finance and Operations フォント |
-| BC C128 HD ワイド          | Finance and Operations フォント |
-| BC C128 ミディアム           | Finance and Operations フォント |
-| BC C128 ナロー           | Finance and Operations フォント |
-| BC C128 ワイド             | Finance and Operations フォント |
-| BC C39 2 to 1 HD ミディアム  | Finance and Operations フォント |
-| BC C39 2 to 1 HD ナロー  | Finance and Operations フォント |
-| BC C39 2 to 1 HD ワイド    | Finance and Operations フォント |
-| BC C39 2 to 1 ミディアム     | Finance and Operations フォント |
-| BC C39 2 to 1 ナロー     | Finance and Operations フォント |
-| BC C39 2 to 1 ワイド       | Finance and Operations フォント |
-| BC C39 3 to 1 HD ミディアム  | Finance and Operations フォント |
-| BC C39 3 to 1 HD ナロー  | Finance and Operations フォント |
-| BC C39 3 to 1 HD ワイド    | Finance and Operations フォント |
-| BC C39 3 to 1 ミディアム     | Finance and Operations フォント |
-| BC C39 3 to 1 ナロー     | Finance and Operations フォント |
-| BC C39 3 to 1 ワイド       | Finance and Operations フォント |
-| BC CBar 2 to 1 HD ミディアム | Finance and Operations フォント |
-| BC CBar 2 to 1 HD ナロー | Finance and Operations フォント |
-| BC CBar 2 to 1 HD ワイド   | Finance and Operations フォント |
-| BC CBar 2 to 1 ミディアム    | Finance and Operations フォント |
-| BC CBar 2 to 1 ナロー    | Finance and Operations フォント |
-| BC CBar 2 to 1 ワイド      | Finance and Operations フォント |
-| BC CBar 3 to 1 HD ミディアム | Finance and Operations フォント |
-| BC CBar 3 to 1 HD ナロー | Finance and Operations フォント |
-| BC CBar 3 to 1 HD ワイド   | Finance and Operations フォント |
-| BC CBar 3 to 1 ミディアム    | Finance and Operations フォント |
-| BC CBar 3 to 1 ナロー    | Finance and Operations フォント |
-| BC CBar 3 to 1 ワイド      | Finance and Operations フォント |
-| BC I25 HD ミディアム         | Finance and Operations フォント |
-| BC I25 HD ナロー         | Finance and Operations フォント |
-| BC I25 HD ワイド           | Finance and Operations フォント |
-| BC I25 ミディアム            | Finance and Operations フォント |
-| BC I25 ナロー            | Finance and Operations フォント |
-| BC I25 ワイド              | Finance and Operations フォント |
-| BC ポストネット               | Finance and Operations フォント |
-| BC UPC HD ミディアム         | Finance and Operations フォント |
-| BC UPC HD ナロー         | Finance and Operations フォント |
-| BC UPC HD ワイド           | Finance and Operations フォント |
-| BC UPC ミディアム            | Finance and Operations フォント |
-| BC UPC ナロー            | Finance and Operations フォント |
-| BC UPC ワイド              | Finance and Operations フォント |
+| BC C128 HD ミディアム        | 財務と運用フォント |
+| BC C128 HD ナロー        | 財務と運用フォント |
+| BC C128 HD ワイド          | 財務と運用フォント |
+| BC C128 ミディアム           | 財務と運用フォント |
+| BC C128 ナロー           | 財務と運用フォント |
+| BC C128 ワイド             | 財務と運用フォント |
+| BC C39 2 to 1 HD ミディアム  | 財務と運用フォント |
+| BC C39 2 to 1 HD ナロー  | 財務と運用フォント |
+| BC C39 2 to 1 HD ワイド    | 財務と運用フォント |
+| BC C39 2 to 1 ミディアム     | 財務と運用フォント |
+| BC C39 2 to 1 ナロー     | 財務と運用フォント |
+| BC C39 2 to 1 ワイド       | 財務と運用フォント |
+| BC C39 3 to 1 HD ミディアム  | 財務と運用フォント |
+| BC C39 3 to 1 HD ナロー  | 財務と運用フォント |
+| BC C39 3 to 1 HD ワイド    | 財務と運用フォント |
+| BC C39 3 to 1 ミディアム     | 財務と運用フォント |
+| BC C39 3 to 1 ナロー     | 財務と運用フォント |
+| BC C39 3 to 1 ワイド       | 財務と運用フォント |
+| BC CBar 2 to 1 HD ミディアム | 財務と運用フォント |
+| BC CBar 2 to 1 HD ナロー | 財務と運用フォント |
+| BC CBar 2 to 1 HD ワイド   | 財務と運用フォント |
+| BC CBar 2 to 1 ミディアム    | 財務と運用フォント |
+| BC CBar 2 to 1 ナロー    | 財務と運用フォント |
+| BC CBar 2 to 1 ワイド      | 財務と運用フォント |
+| BC CBar 3 to 1 HD ミディアム | 財務と運用フォント |
+| BC CBar 3 to 1 HD ナロー | 財務と運用フォント |
+| BC CBar 3 to 1 HD ワイド   | 財務と運用フォント |
+| BC CBar 3 to 1 ミディアム    | 財務と運用フォント |
+| BC CBar 3 to 1 ナロー    | 財務と運用フォント |
+| BC CBar 3 to 1 ワイド      | 財務と運用フォント |
+| BC I25 HD ミディアム         | 財務と運用フォント |
+| BC I25 HD ナロー         | 財務と運用フォント |
+| BC I25 HD ワイド           | 財務と運用フォント |
+| BC I25 ミディアム            | 財務と運用フォント |
+| BC I25 ナロー            | 財務と運用フォント |
+| BC I25 ワイド              | 財務と運用フォント |
+| BC ポストネット               | 財務と運用フォント |
+| BC UPC HD ミディアム         | 財務と運用フォント |
+| BC UPC HD ナロー         | 財務と運用フォント |
+| BC UPC HD ワイド           | 財務と運用フォント |
+| BC UPC ミディアム            | 財務と運用フォント |
+| BC UPC ナロー            | 財務と運用フォント |
+| BC UPC ワイド              | 財務と運用フォント |
 | ベル MT                  | オフィス フォント                 |
 | ベルリン サンズ FB           | オフィス フォント                 |
 | ベルリン サンズ FB デミ      | オフィス フォント                 |
@@ -99,15 +99,15 @@ Finance and Operations アプリには、クラウドでホストされるサー
 | ブラッドリー ハンド ITC         | オフィス フォント                 |
 | ブリタニック太字           | オフィス フォント                 |
 | ブロードウェイ                 | オフィス フォント                 |
-| ブラッシュ スクリプト MT          | オフィス フォント                 |
+| ブラシ スクリプト MT          | オフィス フォント                 |
 | バクストン スケッチ            | オフィス フォント                 |
-| カリブリ                  | Finance and Operations フォント |
-| カリブリ ライト            | Finance and Operations フォント |
+| Calibri                  | 財務と運用フォント |
+| カリブリ ライト            | 財務と運用フォント |
 | カリフォルニアン FB           | オフィス フォント                 |
 | カリスト MT               | オフィス フォント                 |
-| カンブリア                  | Finance and Operations フォント |
-| カンブリア マス             | Finance and Operations フォント |
-| カンダラ                  | Finance and Operations フォント |
+| カンブリア                  | 財務と運用フォント |
+| カンブリア マス             | 財務と運用フォント |
+| カンダラ                  | 財務と運用フォント |
 | カステラー                | オフィス フォント                 |
 | セントール                  | オフィス フォント                 |
 | センチュリー                  | オフィス フォント                 |
@@ -115,19 +115,19 @@ Finance and Operations アプリには、クラウドでホストされるサー
 | センチュリー スクールブック       | オフィス フォント                 |
 | チラー                  | オフィス フォント                 |
 | コロンナ MT               | オフィス フォント                 |
-| コミック サンズ MS            | Finance and Operations フォント |
-| コンソラス                 | Finance and Operations フォント |
-| コンスタンシア               | Finance and Operations フォント |
+| コミック サンズ MS            | 財務と運用フォント |
+| コンソラス                 | 財務と運用フォント |
+| コンスタンシア               | 財務と運用フォント |
 | クーパー ブラック             | オフィス フォント                 |
 | コパープレート ゴシック太字  | オフィス フォント                 |
 | コパープレート ゴシック ライト | オフィス フォント                 |
-| コーベル                   | Finance and Operations フォント |
-| クーリエ ニュー              | Finance and Operations フォント |
+| コーベル                   | 財務と運用フォント |
+| クーリエ ニュー              | 財務と運用フォント |
 | カールズ MT                 | オフィス フォント                 |
 | デンシエン                 | オフィス フォント                 |
-| ドトゥム                    | Finance and Operations フォント |
-| ドトゥムチェ                 | Finance and Operations フォント |
-| エブリマ                   | Finance and Operations フォント |
+| ドトゥム                    | 財務と運用フォント |
+| ドトゥムチェ                 | 財務と運用フォント |
+| エブリマ                   | 財務と運用フォント |
 | エドワーディアン スクリプト ITC     | オフィス フォント                 |
 | エレファント                 | オフィス フォント                 |
 | エングレイバーズ MT             | オフィス フォント                 |
@@ -142,14 +142,14 @@ Finance and Operations アプリには、クラウドでホストされるサー
 | フランクリン ゴシック デミ     | オフィス フォント                 |
 | フランクリン ゴシック デミ コン | オフィス フォント                 |
 | フランクリン ゴシック ヘビー    | オフィス フォント                 |
-| フランクリン ゴシック ミディアム   | Finance and Operations フォント |
+| フランクリン ゴシック ミディアム   | 財務と運用フォント |
 | フランクリン ゴシック ミディアム C | オフィス フォント                 |
 | フリースタイル スクリプト         | オフィス フォント                 |
 | フレンチ スクリプト MT         | オフィス フォント                 |
-| ガブリオラ                 | Finance and Operations フォント |
-| ガドゥギ                   | Finance and Operations フォント |
+| ガブリオラ                 | 財務と運用フォント |
+| ガドゥギ                   | 財務と運用フォント |
 | ガラモンド                 | オフィス フォント                 |
-| ジョージア                  | Finance and Operations フォント |
+| ジョージア                  | 財務と運用フォント |
 | ジジ                     | オフィス フォント                 |
 | ジル サンズ MT             | オフィス フォント                 |
 | ジル サンズ MT 縮小   | オフィス フォント                 |
@@ -159,91 +159,91 @@ Finance and Operations アプリには、クラウドでホストされるサー
 | グロスター MT エキストラ コンド | オフィス フォント                 |
 | ゴーディー オールド スタイル          | オフィス フォント                 |
 | ゴーディー スタウト              | オフィス フォント                 |
-| グリム                    | Finance and Operations フォント |
-| グリムチェ                 | Finance and Operations フォント |
+| グリム                    | 財務と運用フォント |
+| グリムチェ                 | 財務と運用フォント |
 | ヘッテンシュヴァイラー         | オフィス フォント                 |
 | ハーロウ ソリッド イタリック      | オフィス フォント                 |
 | ハリントン               | オフィス フォント                 |
 | ハイ タワー テキスト          | オフィス フォント                 |
-| IDAutomationMICR         | Finance and Operations フォント |
-| 影響                   | Finance and Operations フォント |
+| IDAutomationMICR         | 財務と運用フォント |
+| 影響                   | 財務と運用フォント |
 | インプリント MT シャドー        | オフィス フォント                 |
 | インフォーマル ローマ字           | オフィス フォント                 |
-| ジャバニーズ テキスト            | Finance and Operations フォント |
+| ジャバニーズ テキスト            | 財務と運用フォント |
 | ジョーカーマン                 | オフィス フォント                 |
 | ジュース ITC                | オフィス フォント                 |
 | クリステン ITC              | オフィス フォント                 |
 | クンストラー スクリプト          | オフィス フォント                 |
 | リーラワディー               | オフィス フォント                 |
-| リーラワディー UI            | Finance and Operations フォント |
-| リーラワディー UI セミライト  | Finance and Operations フォント |
+| リーラワディー UI            | 財務と運用フォント |
+| リーラワディー UI セミライト  | 財務と運用フォント |
 | ルシーダ ブライト            | オフィス フォント                 |
 | ルシーダ カリグラフィー       | オフィス フォント                 |
-| ルシーダ コンソール           | Finance and Operations フォント |
+| ルシーダ コンソール           | 財務と運用フォント |
 | ルシーダ ファックス               | オフィス フォント                 |
 | ルシーダ手書き       | オフィス フォント                 |
 | ルシーダ サン              | オフィス フォント                 |
 | ルシーダ サンズ タイプライター   | オフィス フォント                 |
-| ルシーダ サン ユニコード      | Finance and Operations フォント |
+| ルシーダ サン ユニコード      | 財務と運用フォント |
 | マグネット                  | オフィス フォント                 |
 | マイアンドラ GD              | オフィス フォント                 |
-| マルガン ゴシック            | Finance and Operations フォント |
-| マルガン ゴシック セミライト  | Finance and Operations フォント |
-| マーレット                  | Finance and Operations フォント |
+| マルガン ゴシック            | 財務と運用フォント |
+| マルガン ゴシック セミライト  | 財務と運用フォント |
+| マーレット                  | 財務と運用フォント |
 | マチュラ MT スクリプト キャピタル | オフィス フォント                 |
-| MICR E13B 2.1            | Finance and Operations フォント |
-| Microsoft ヒマラヤ       | Finance and Operations フォント |
-| Microsoft ジェンヘイ       | Finance and Operations フォント |
-| Microsoft ジェンヘイ ライト | Finance and Operations フォント |
-| Microsoft ジェンヘイ UI    | Finance and Operations フォント |
+| MICR E13B 2.1            | 財務と運用フォント |
+| Microsoft ヒマラヤ       | 財務と運用フォント |
+| Microsoft ジェンヘイ       | 財務と運用フォント |
+| Microsoft ジェンヘイ ライト | 財務と運用フォント |
+| Microsoft ジェンヘイ UI    | 財務と運用フォント |
 | Microsoft ジェンヘイ UI リー | オフィス フォント                 |
 | Microsoft MHei           | オフィス フォント                 |
 | Microsoft ネオゴシック      | オフィス フォント                 |
-| Microsoft ニュー タイ ルー    | Finance and Operations フォント |
-| Microsoft PhagsPa        | Finance and Operations フォント |
-| Microsoft Sans Serif     | Finance and Operations フォント |
-| Microsoft タイ レー         | Finance and Operations フォント |
+| Microsoft ニュー タイ ルー    | 財務と運用フォント |
+| Microsoft PhagsPa        | 財務と運用フォント |
+| Microsoft Sans Serif     | 財務と運用フォント |
+| Microsoft タイ レー         | 財務と運用フォント |
 | Microsoft ウイグル         | オフィス フォント                 |
-| Microsoft ヤヘイ          | Finance and Operations フォント |
-| Microsoft ヤヘイ ライト    | Finance and Operations フォント |
-| Microsoft ヤヘイ UI       | Finance and Operations フォント |
-| Microsoft ヤヘイ UI ライト | Finance and Operations フォント |
-| Microsoft イー バイティ       | Finance and Operations フォント |
-| MingLiU                  | Finance and Operations フォント |
-| MingLiU-ExtB             | Finance and Operations フォント |
-| MingLiU_HKSCS            | Finance and Operations フォント |
-| MingLiU_HKSCS-ExtB       | Finance and Operations フォント |
+| Microsoft ヤヘイ          | 財務と運用フォント |
+| Microsoft ヤヘイ ライト    | 財務と運用フォント |
+| Microsoft ヤヘイ UI       | 財務と運用フォント |
+| Microsoft ヤヘイ UI ライト | 財務と運用フォント |
+| Microsoft イー バイティ       | 財務と運用フォント |
+| MingLiU                  | 財務と運用フォント |
+| MingLiU-ExtB             | 財務と運用フォント |
+| MingLiU_HKSCS            | 財務と運用フォント |
+| MingLiU_HKSCS-ExtB       | 財務と運用フォント |
 | ミストラル                  | オフィス フォント                 |
 | モダン ナンバー 20            | オフィス フォント                 |
-| モンゴリアン バイチ          | Finance and Operations フォント |
+| モンゴリアン バイチ          | 財務と運用フォント |
 | モノタイプ コルシバ         | オフィス フォント                 |
-| MS ゴシック                | Finance and Operations フォント |
+| MS ゴシック                | 財務と運用フォント |
 | MS アウトルック               | オフィス フォント                 |
-| MS PGothic               | Finance and Operations フォント |
+| MS PGothic               | 財務と運用フォント |
 | MS リファレンス サンズ セリフ  | オフィス フォント                 |
 | MS リファレンス スペシャリティ   | オフィス フォント                 |
-| MS UI ゴシック             | Finance and Operations フォント |
+| MS UI ゴシック             | 財務と運用フォント |
 | MT エキストラ                 | オフィス フォント                 |
-| MV ボリ                  | Finance and Operations フォント |
-| ミャンマー テキスト             | Finance and Operations フォント |
+| MV ボリ                  | 財務と運用フォント |
+| ミャンマー テキスト             | 財務と運用フォント |
 | ナイアガラ刻印         | オフィス フォント                 |
 | ナイアガラ ソリッド            | オフィス フォント                 |
-| ニルマラ UI               | Finance and Operations フォント |
-| ニルマラ UI セミライト     | Finance and Operations フォント |
-| NSimSun                  | Finance and Operations フォント |
+| ニルマラ UI               | 財務と運用フォント |
+| ニルマラ UI セミライト     | 財務と運用フォント |
+| NSimSun                  | 財務と運用フォント |
 | OCR A 拡張           | オフィス フォント                 |
-| OCRB                     | Finance and Operations フォント |
+| OCRB                     | 財務と運用フォント |
 | 古英語テキスト MT      | オフィス フォント                 |
 | オニキス                     | オフィス フォント                 |
 | パレス スクリプト MT         | オフィス フォント                 |
-| パラティーノ リノタイプ        | Finance and Operations フォント |
+| パラティーノ リノタイプ        | 財務と運用フォント |
 | パピルス                  | オフィス フォント                 |
 | パーチメント                | オフィス フォント                 |
 | ペルペトゥア                 | オフィス フォント                 |
 | ペルペトゥア タイトリング MT      | オフィス フォント                 |
 | プレイビル                 | オフィス フォント                 |
-| PMingLiU                 | Finance and Operations フォント |
-| PMingLiU-ExtB            | Finance and Operations フォント |
+| PMingLiU                 | 財務と運用フォント |
+| PMingLiU-ExtB            | 財務と運用フォント |
 | プア リチャード             | オフィス フォント                 |
 | プリシュティナ                 | オフィス フォント                 |
 | レイジ イタリック              | オフィス フォント                 |
@@ -253,59 +253,59 @@ Finance and Operations アプリには、クラウドでホストされるサー
 | ロックウェル エクストラ太字      | オフィス フォント                 |
 | スクリプト MT 太字           | オフィス フォント                 |
 | セゴエ マーカー             | オフィス フォント                 |
-| セゴエ MDL2 アセッツ        | Finance and Operations フォント |
-| セゴエ プリント              | Finance and Operations フォント |
-| セゴエ スクリプト             | Finance and Operations フォント |
-| Segoe UI                 | Finance and Operations フォント |
-| Segoe UI ブラック           | Finance and Operations フォント |
-| Segoe UI 絵文字           | Finance and Operations フォント |
-| Segoe UI ヒストリック        | Finance and Operations フォント |
-| Segoe UI Light           | Finance and Operations フォント |
-| Segoe UI やや太字        | Finance and Operations フォント |
-| Segoe UI Semilight       | Finance and Operations フォント |
-| Segoe UI シンボル          | Finance and Operations フォント |
+| セゴエ MDL2 アセッツ        | 財務と運用フォント |
+| セゴエ プリント              | 財務と運用フォント |
+| セゴエ スクリプト             | 財務と運用フォント |
+| Segoe UI                 | 財務と運用フォント |
+| Segoe UI ブラック           | 財務と運用フォント |
+| Segoe UI 絵文字           | 財務と運用フォント |
+| Segoe UI ヒストリック        | 財務と運用フォント |
+| Segoe UI Light           | 財務と運用フォント |
+| Segoe UI やや太字        | 財務と運用フォント |
+| Segoe UI Semilight       | 財務と運用フォント |
+| Segoe UI シンボル          | 財務と運用フォント |
 | セゴエ WP                 | オフィス フォント                 |
 | セゴエ WP ブラック           | オフィス フォント                 |
 | セゴエ WP ライト           | オフィス フォント                 |
 | セゴエ WP やや太字        | オフィス フォント                 |
 | セゴエ WP セミライト       | オフィス フォント                 |
 | ショーカード ゴシック          | オフィス フォント                 |
-| SimSun                   | Finance and Operations フォント |
-| SimSun-ExtB              | Finance and Operations フォント |
-| シトカ バナー             | Finance and Operations フォント |
-| シトカ ディスプレイ            | Finance and Operations フォント |
-| シトカ見出し            | Finance and Operations フォント |
-| シトカ スモール              | Finance and Operations フォント |
-| シトカ小見出し         | Finance and Operations フォント |
-| シトカ テキスト               | Finance and Operations フォント |
+| SimSun                   | 財務と運用フォント |
+| SimSun-ExtB              | 財務と運用フォント |
+| シトカ バナー             | 財務と運用フォント |
+| シトカ ディスプレイ            | 財務と運用フォント |
+| シトカ見出し            | 財務と運用フォント |
+| シトカ スモール              | 財務と運用フォント |
+| シトカ小見出し         | 財務と運用フォント |
+| シトカ テキスト               | 財務と運用フォント |
 | SketchFlow プリント         | オフィス フォント                 |
 | スナップ ITC                 | オフィス フォント                 |
 | ステンシル                  | オフィス フォント                 |
-| シルフェン                  | Finance and Operations フォント |
-| 記号                   | Finance and Operations フォント |
-| Tahoma                   | Finance and Operations フォント |
+| シルフェン                  | 財務と運用フォント |
+| 記号                   | 財務と運用フォント |
+| Tahoma                   | 財務と運用フォント |
 | テンパス サンズ ITC          | オフィス フォント                 |
-| タイムズ ニュー ローマ字          | Finance and Operations フォント |
-| トレビュシェット MS             | Finance and Operations フォント |
+| タイムズ ニュー ローマ字          | 財務と運用フォント |
+| トレビュシェット MS             | 財務と運用フォント |
 | Tw Cen MT                | オフィス フォント                 |
 | Tw Cen MT 縮小      | オフィス フォント                 |
 | Tw Cen MT 縮小エキストラ | オフィス フォント                 |
-| ヴェルダナ                  | Finance and Operations フォント |
+| ヴェルダナ                  | 財務と運用フォント |
 | バイナー ハンド ITC           | オフィス フォント                 |
 | ヴィヴァルディ                  | オフィス フォント                 |
 | ウラジミール スクリプト          | オフィス フォント                 |
-| ウェブディングス                 | Finance and Operations フォント |
+| ウェブディングス                 | 財務と運用フォント |
 | ワイド ラテン               | オフィス フォント                 |
-| ウィングディングス                | Finance and Operations フォント |
+| ウィングディングス                | 財務と運用フォント |
 | ウィングディングス 2              | オフィス フォント                 |
 | ウィングディングス 3              | オフィス フォント                 |
-| 游ゴシック                | Finance and Operations フォント |
-| 游ゴシック ライト          | Finance and Operations フォント |
-| 游ゴシック ミディアム         | Finance and Operations フォント |
-| 游ゴシック UI             | Finance and Operations フォント |
-| 游ゴシック UI ライト       | Finance and Operations フォント |
-| 游ゴシック UI やや太字    | Finance and Operations フォント |
-| 游ゴシック UI セミライト   | Finance and Operations フォント |
+| 游ゴシック                | 財務と運用フォント |
+| 游ゴシック ライト          | 財務と運用フォント |
+| 游ゴシック ミディアム         | 財務と運用フォント |
+| 游ゴシック UI             | 財務と運用フォント |
+| 游ゴシック UI ライト       | 財務と運用フォント |
+| 游ゴシック UI やや太字    | 財務と運用フォント |
+| 游ゴシック UI セミライト   | 財務と運用フォント |
 
 ## <a name="supported-fonts-for-application-version-80-with-platform-update-23"></a>アプリケーション バージョン 8.0 およびプラットフォーム更新プログラム 23 でサポートされるフォント
 

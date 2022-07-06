@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントおよび Azure Event Grid
-description: このトピックでは、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
+description: この記事では、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
 author: Sunil-Garg
 ms.date: 10/30/2019
 ms.topic: article
@@ -12,17 +12,17 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 2bce712fcd1e6910190d76c95f149609524848c5daf2b9331fc4f039e6f9f562
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85f58bc3b0f17f0917ba7ba983bbf62f168e84a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723125"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889267"
 ---
 # <a name="business-events-and-azure-event-grid"></a>ビジネス イベントおよび Azure Event Grid
 [!include[banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
+この記事では、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
 
 ## <a name="scenario-overview"></a>シナリオの概要
 
@@ -35,20 +35,20 @@ ms.locfileid: "6723125"
 
 完了する必要がある手順の概要を次に示します。
 
-1. 新しいイベント グリッド トピックを作成します。
-2. イベント グリッド トピックのキーを格納する新しいキー コンテナーを作成します。
+1. 新しいイベント グリッド記事を作成します。
+2. イベント グリッド記事のキーを格納する新しいキー コンテナーを作成します。
 3. Key Vault にアクセスするためのアクセス許可が与えられている Azure アプリを登録します。
 4. エンドポイントのパラメーターをコンフィギュレーションします。
 5. ビジネス イベントを消費します。
 
-## <a name="procedure-1-create-a-new-event-grid-topic"></a>手順 1: 新しいイベント グリッド トピックを作成します。
+## <a name="procedure-1-create-a-new-event-grid-article"></a>手順 1: 新しいイベント グリッド記事を作成する
 
 1. Azure ポータルにサインインします。
 2. **すべてのサービス \> 統合 \> イベント グリッド トピック** を選択します。
-3. **追加** を選択して新しいイベント グリッド トピックを作成します。 パラメーターを設定してから **作成** を選択します。 ラボのコンテナーとして新しいリソース グループを作成するか、または既存のリソース グループを使用できます。
+3. **追加** を選択して新しいイベント グリッド記事を作成します。 パラメーターを設定してから **作成** を選択します。 ラボのコンテナーとして新しいリソース グループを作成するか、または既存のリソース グループを使用できます。
 4. 配置が完了したら、新しいイベント グリッドを選択します。 プロパティ ブレードで **概要** を選択し、**トピック エンドポイント** 値をメモしておきます。 後に、この値を使用します。
 
-    <img alt="Event grid topic" src="../../media/BEF-Howto-EventGrid-03.png" width="70%">
+    <img alt="Event grid article" src="../../media/BEF-Howto-EventGrid-03.png" width="70%">
 
 5. プロパティ ブレードに戻って **アクセス キー** を選択して **キー 1** の値をコピーします。 次の手順でキー コンテナーを構成するときに、この値が必要になります。
 
@@ -122,11 +122,11 @@ ms.locfileid: "6723125"
 
 1. ビジネス イベント カタログを選択し、**自由書式の請求書が転記されました** ビジネス イベントを探します
 2. 次に USMF 会社のビジネス イベントを有効化します。 一度有効になると、テスト メッセージは送信され、構成を検証し、接続をキャッシュします。
-3. テスト メッセージが受信されたことを確認するには、Azure ポータルでイベント グリッド トピックを選択して **メトリック** を選択します。 **公開されたイベント** メトリックと **一致しないイベント** メトリックの両方が少なくとも **1** の値を示していることを確認します。 そうでない場合は、バッチ ジョブがメッセージを受信するまで待ちます。
+3. テスト メッセージが受信されたことを確認するには、Azure ポータルでイベント グリッド記事を選択して **メトリックス** を選択します。 **公開されたイベント** メトリックと **一致しないイベント** メトリックの両方が少なくとも **1** の値を示していることを確認します。 そうでない場合は、バッチ ジョブがメッセージを受信するまで待ちます。
 
     <img alt="Event grid metrics" src="../../media/BEF-Howto-EventGrid-08.png" width="70%">
 
-    両方のメトリックの値が少なくとも **1** の場合、イベント グリッド トピックをサブスクライブする新しいロジック アプリを作成します。
+    両方のメトリックの値が少なくとも **1** の場合、イベント グリッド記事をサブスクライブする新しいロジック アプリを作成します。
 
 4. **すべてのサービス \> 統合 \> Logic Apps** を順に選択します。
 5. リソース グループに新しいロジック アプリを作成します。
@@ -138,7 +138,7 @@ ms.locfileid: "6723125"
 
     <img alt="Event grid trigger" src="../../media/BEF-Howto-EventGrid-11.png" width="50%">
 
-8. サブスクリプションを選択し、リソース タイプとして **Microsoft.EventGrid.Topics** を選択し、手順 1 で作成したイベント グリッド トピックの名前を選択します。
+8. サブスクリプションを選択し、リソース タイプとして **Microsoft.EventGrid.Topics** を選択し、手順 1 で作成したイベント グリッド記事の名前を選択します。
 
     <img alt="Event grid trigger parameters" src="../../media/BEF-Howto-EventGrid-12.png" width="50%">
 

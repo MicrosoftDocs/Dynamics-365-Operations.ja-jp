@@ -1,8 +1,8 @@
 ---
 title: データ管理の概要
-description: このトピックでは、Finance and Operations のデータの管理に関する情報を提供します。
+description: この記事では、財務と運用のデータの管理に関する情報を提供します。
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 06/20/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 316ae9974517f78b85bfe2e2d2ca69fa2c0f7ddf
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 11f1b78ce1d7f75d1e45d2a1d34761c7c4aa79b6
+ms.sourcegitcommit: 0c23c361c9aa3918e4fc75e5eb69cd368a9f2e73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065726"
+ms.lasthandoff: 06/20/2022
+ms.locfileid: "9030275"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "8065726"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、データ管理フレームワークを使用して、Finance and Operations のデータ エンティティおよびデータ エンティティ パッケージを管理する方法について説明します。
+この記事では、データ管理フレームワークを使用して、財務と運用のデータ エンティティおよびデータ エンティティ パッケージを管理する方法について説明します。
 
 データ管理フレームワークは、以下の概念で構成されています。
 
@@ -275,12 +275,12 @@ ms.locfileid: "8065726"
 | DMFDisableDoubleByteCharacterExport     | コード ページ 932 設定を使用するようにフォーマットがコンフィギュレーションされているときにデータをエクスポートできるように、修正が行われました。 2 バイト エクスポートに関連して問題が発生した場合、該当する場合は、このフライトを無効にしてブロック解除することによって、この修正を止めることができます。 |
 | DisablePendingRecordFromJobStatus     | インポート ジョブの最終ステータスの評価時に保留中のレコードを確実に考慮するように、修正が行われました。 実装がステータス評価ロジックに依存し、この変更が実装の重大な変更として見なされる場合、この新しいロジックをこのフライトを使用して無効にすることができます。  |
 | DMFDisableEnumFieldDefaultValueMapping     | データ パッケージの生成時に、列挙フィールドに対する高度なマッピングで設定されている既定値がデータ パッケージ マニフェスト ファイルに正常に保存されるように、修正を行いました。 このような高度なマッピングが使用されている場合、これによりデータ パッケージを統合のテンプレートとして使用できます。 この修正はこのフライトによって保護されており、以前の動作がまだ必要な場合 (データ パッケージ マニフェストで常に値を 0 に設定) は無効にできます。  |
-| DMFXsltEnableScript     | このフライトは、Platform update 34 および 非実稼働環境にのみ適用されます。 XSLT でのスクリプト作成を防止するために、Platform update 34 で修正が行われました。 ただし、これにより、スクリプトに依存する機能の一部が無効になりました。 その結果、このフライトでは、予防措置としてすべての実稼働環境で Microsoft によって有効にされています。 非実稼働環境では、スクリプトに関連する XSLT 障害が発生した場合に、お客様がこれを追加する必要があります。 Platform update 35 以降、Platform update 34 の変更を元に戻すコード変更が行われたため、このフライトは Platform update 35 以降適用されません。 このフライトを Platform update 34 で有効にした場合でも、Platform update 35 にアップグレードしても、Platform update 34 からこのフライトがオンになっていることで悪影響が生じることはありません。 |
+| DMFXsltEnableScript     | このフライトは、Platform update 34 および非運用環境にのみ適用されます。 XSLT でのスクリプト作成を防止するために、Platform update 34 で修正が行われました。 ただし、これにより、スクリプトに依存する機能の一部が無効になりました。 その結果、このフライトでは、予防措置としてすべての運用環境で Microsoft によって有効にされています。 非運用環境では、スクリプトに関連する XSLT 障害が発生した場合に、お客様がこれを追加する必要があります。 Platform update 35 以降、Platform update 34 の変更を元に戻すコード変更が行われたため、このフライトは Platform update 35 以降適用されません。 このフライトを Platform update 34 で有効にした場合でも、Platform update 35 にアップグレードしても、Platform update 34 からこのフライトがオンになっていることで悪影響が生じることはありません。 |
 | DMFExecuteSSISInProc     | このフライトは、既定でオフです。 これは、SQL Server Integration Services (SSIS) をプロセス外で実行して、DIXF ジョブの実行時に SSIS のメモリ使用率を最適化するために行われたコード修正に関連しています。 ただし、この変更により、DIXF データ プロジェクト名にアポストロフィ (') が含まれている場合、ジョブがエラーで失敗するというシナリオで回帰が発生しました。 この問題が発生した場合は、データ プロジェクト名の (') を削除するとエラーを解決できます。 ただし、何らかの理由で名前を変更できない場合は、このフライトを有効にして、このエラーを解決できます。 このフライトを有効にすると、以前と同様に SSIS が進行中で実行され、DIXF ジョブの実行時にメモリ消費が増加する可能性があります。  |
 
-次の手順では、非運用環境でフライトを有効にします。 次の SQL コマンドを実行します。
+次の手順では、ティア 1 環境でフライトを有効にします。 次の SQL コマンドを実行します。
 
-実稼働環境でフライトを有効にするには、サポート案件を Microsoft に記録する必要があります。
+運用環境またはサンドボックス環境でフライトを有効にするには、サポート案件を Microsoft に記録する必要があります。
 
 - この SQL ステートメントを実行した後、各 AOS 上の web.config ファイル内に、以下が設定されていることを確認します。
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"

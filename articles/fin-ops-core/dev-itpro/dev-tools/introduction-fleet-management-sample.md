@@ -1,6 +1,6 @@
 ---
 title: フリート管理のサンプル アプリケーション
-description: このトピックは、フリート管理のサンプル アプリケーションについての概要です。
+description: この記事は、フリート管理のサンプル アプリケーションについての概要です。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3742974e5dd2727fe05659318fdca07c2b31535e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3791acb6ffd0f6d87651eebd89f86b925ae9ddc7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781082"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867057"
 ---
 # <a name="fleet-management-sample-application"></a>フリート管理のサンプル アプリケーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、フリート管理のサンプル アプリケーションについての概要です。
+この記事は、フリート管理のサンプル アプリケーションについての概要です。
 
 フリート管理サンプル アプリケーションは、開発および基板機能を示すために用意されています。 フリート管理は、ISV が車のレンタル機関用に作成するかもしれないソリューションを表します。 フリート管理データには、レンタルに使用できる車両、レンタルしてこれらの車両を戻すことができる顧客が含まれます。 従業員は、車両でメンテナンス ワークフローを実行することもできます。
 

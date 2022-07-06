@@ -1,6 +1,6 @@
 ---
-title: 予測値を検証する
-description: このトピックでは、Regression Suite Automation を使用して予測値を検証する方法を示します。
+title: 予測値の検証
+description: この記事では、見込み値の検証に、Regression suite automation を使用する方法について説明します。
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a43b63089a593693f39e7bdac2f83c1d481b4d9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 4d4289bb194be72b5f85a666f5d3197261cc8280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854619"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 
@@ -47,7 +47,7 @@ RSAT がテスト ケースの Excel パラメーター ファイルを生成す
 + コントロールが有効か無効かを検証します。
 + コントロールが編集可能か読み取り専用かを検証します。
 
-この検証を活用するには、10.0.13 (またはそれ以降) および RSAT 2.0 (またはそれ以降) で実行されている Finance and Operationsアプリを使用する必要があります。 詳細については、[検証](../../user-interface/task-recorder.md#validate)を参照してください。
+この検証を活用するには、10.0.13 (またはそれ以降) および RSAT 2.0 (またはそれ以降) で実行されている財務と運用アプリを使用する必要があります。 詳細については、[検証](../../user-interface/task-recorder.md#validate)を参照してください。
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

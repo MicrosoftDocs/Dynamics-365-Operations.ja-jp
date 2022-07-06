@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Retail バージョン 10.0.6 の新機能および変更された機能
-description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
+description: この記事では、Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
 ms.date: 10/09/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: b7b64abca71e8ddf519997b6d8f962be9e70849fa5874ddb5fde609d75b3680a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca7e05d022c6859eb8b3e630f5cc7ed3db0c8eca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741770"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876970"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-retail-version-1006"></a>Dynamics 365 Retail バージョン 10.0.6 の新機能および変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Retail 10.0.6 の新機能または変更された機能について説明します。 
+この記事では、Microsoft Dynamics 365 Retail 10.0.6 の新機能および変更された機能について説明します。 
 
-Finance and Operations アプリケーションの機能については、[Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6) を参照してください。
+Finance and Operations アプリケーションの機能については、[Finance and Operations バージョン 10.0.6 (November 2019 年 11 月) の新機能および変更された機能](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6) を参照してください。
 
 ## <a name="new-inventory-availability-apis-for-e-commerce-use"></a>E コマース用の新しい引当可能在庫数 API
 4 つの新しい API が利用可能になり、E コマースまたはサード パーティのソリューションに、要求された品目と倉庫に対する手持在庫の見積を提供します。  これらの API は、現在市場にある既存の GetProductAvailabilities および GetAvailableInventoryNearby API と置き換えることを目的としています。   これらの新しい API では、パフォーマンスを向上させるための計算ロジックとキャッシングが向上します。  新しい API の名前は次のとおりです。

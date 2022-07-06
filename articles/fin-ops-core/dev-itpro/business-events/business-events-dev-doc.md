@@ -1,8 +1,8 @@
 ---
 title: ビジネス イベント開発者ドキュメント
-description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
+description: この記事では、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 author: jaredha
-ms.date: 02/09/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,28 +12,28 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: ef2ff64873787fcb69aa3f786c439c6db32df59e
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 4044365b4a6b02d3542b98bb0af2fb4cf57d8d90
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384349"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012468"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
+この記事では、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 
 ## <a name="what-is-a-business-event-and-what-isnt-a-business-event"></a>何がビジネス イベントで、何がビジネス イベントではないか。
 
-ビジネス イベントが役立つユース ケースについて考慮するたびに、この疑問が生じます。 仕入先の作成はビジネス イベントですか。 発注書の確認はビジネス イベントですか。 テーブル レベルでイベントをキャプチャする場合、それはビジネス イベントですか。 また、ビジネス イベントはビジネス プロセス内のビジネス ロジック レベルでのみキャプチャする必要がありますか。 これらの質問は無効であるだけでなく、統合のソリューションを計画および構築する時に考察するキー トピックです。 次のガイドラインは、この思考過程および決定作業を支援するのに役立ちます。
+ビジネス イベントが役立つユース ケースについて考慮するたびに、この疑問が生じます。 仕入先の作成はビジネス イベントですか。 発注書の確認はビジネス イベントですか。 テーブル レベルでイベントをキャプチャする場合、それはビジネス イベントですか。 また、ビジネス イベントはビジネス プロセス内のビジネス ロジック レベルでのみキャプチャする必要がありますか。 これらの質問は無効であるだけでなく、統合のソリューションを計画および構築する時に考察する主要な記事です。 次のガイドラインは、この思考過程および決定作業を支援するのに役立ちます。
 
 ## <a name="intent"></a>目的
 
 ビジネス イベントのキャプチャの背後にある目的を明確に把握している必要があります。 つまり、ビジネス イベントをキャプチャする理由、および受信者が使用する方法です。
 
-ビジネス イベントをキャプチャして、財務と運用アプリで発生するビジネス イベントに応じて Dynamics 365 Finance および運用アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネスイベントの良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
+ビジネス イベントをキャプチャして、Dynamics 365 財務と運用アプリで発生するビジネス イベントに応じて財務と運用アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネス イベントの良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
 
 データを受信者に転送し、効果的にデータ エクスポート シナリオを実現することを目的としている場合、ビジネス イベントに対する良いユースケースはありません。 実際、データ転送シナリオのビジネス イベントの使用は、ビジネス イベント フレームワークの誤用になります。 このようなシナリオでは、データ管理で既に使用可能であるデータ エクスポート メカニズムを使用し続ける必要があります。
 
@@ -131,7 +131,7 @@ ms.locfileid: "8384349"
 5. **buildContract** メソッドを実装します。 このステップには **EventContract** スタブが必要であることに注意してください。
 
     ```xpp
-    [Wrappable(true), Replaceable(true)]
+    [Wrappable(false), Replaceable(false)]
     public BusinessEventsContract buildContract()
     {
         return
@@ -139,7 +139,7 @@ ms.locfileid: "8384349"
     }
     ```
 
-    拡張機能のために、**buildContract** メソッドには **Wrappable(true)** および **Replaceable(true)** 属性がある必要があります。 **buildContract** メソッドは会社のためにビジネス イベントが有効にされる時にのみ呼び出されます。
+    **buildContract** メソッドは会社のためにビジネス イベントが有効にされる時にのみ呼び出されます。
 
 これは、「転記された販売注文請求書」ビジネス イベントの完全な実装です。
 
@@ -176,7 +176,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     private void new()
     {
     }
-    [Wrappable(true), Replaceable(true)]
+    [Wrappable(false), Replaceable(false)]
     public BusinessEventsContract buildContract()
     {
         return SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour);
@@ -213,10 +213,10 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     private LegalEntityDataAreaId legalEntity;
     ```
 
-3. プライベート初期化メソッドを実装します。
+3. 保護された初期化メソッドを実装します。
 
     ```xpp
-    private void initialize(CustInvoiceJour _custInvoiceJour)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
         invoiceId = _custInvoiceJour.InvoiceId;
@@ -229,7 +229,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     }
     ```
 
-    **初期化** メソッドは、静的コンストラクター メソッドを介して提供されるデータに基づき、ビジネス イベント契約クラスのプライベート状態を設定します。
+    **初期化** メソッドは、静的コンストラクター メソッドを介して提供されるデータに基づき、ビジネス イベント契約クラスのプライベート状態を設定します。 [コマンド チェーン (CoC)](../extensibility/method-wrapping-coc.md) クラス拡張子を使用して契約クラスを拡張できるよう、保護する必要があります。
 
 4. 静的コンストラクター メソッドを実装します。
 
@@ -243,7 +243,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     }
     ```
 
-    静的コンストラクター メソッドはプライベート **初期化** メソッドを呼び出して、プライベート クラス状態を初期化します。
+    静的コンストラクター メソッドは **初期化** メソッドを呼び出して、プライベート クラス状態を初期化します。
 
 5. 契約状態にアクセスするための **parm** メソッドを実装します。
 
@@ -298,7 +298,7 @@ BusinessEventsContract
         contract.initialize(_custInvoiceJour);
         return contract;
     }
-    private void initialize(CustInvoiceJour _custInvoiceJour)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
         invoiceId = _custInvoiceJour.InvoiceId;
@@ -368,7 +368,7 @@ BusinessEventsContract
 
 ## <a name="sending-a-business-event"></a>ビジネス イベントの送信
 
-適切なポイントでビジネス イベントを送信するようにアプリケーション コードを変更する必要があります。 多くの場合、フレームワークの共通ポイントを使用することができます。 **SourceDocument** を拡張するドキュメントには、ビジネス イベントを作成および送信するための共通ポイントがあります。 詳細については、このトピックの後半の [ソース ドキュメント フレームワークのサポート](#source-document-framework-support) セクションを参照してください。
+適切なポイントでビジネス イベントを送信するようにアプリケーション コードを変更する必要があります。 多くの場合、フレームワークの共通ポイントを使用することができます。 **SourceDocument** を拡張するドキュメントには、ビジネス イベントを作成および送信するための共通ポイントがあります。 詳細については、この記事の後半の[ソース ドキュメント フレームワークのサポート](#source-document-framework-support) セクションを参照してください。
 
 また、他のフレームワークもビジネス イベントを送信するための共通ポイントを提供します。 たとえば、アプリケーション オブジェクト ツリー (AOT) 内の **CustVendVoucher** クラス階層には、顧客または仕入先の伝票の転記に関連付けられたビジネス イベンの送信に使用される、**転記** メソッドがあります。 基本クラス実装の上書きでは、ビジネス イベントを送信するためのロジックの特化を提供します。 例については、AOT の **CustVoucher.createBusinessEvent** または **VendVoucher.createBusinessEvent** を参照してください。
 
@@ -405,77 +405,37 @@ if (BusinessEventsConfigurationReader::isBusinessEventEnabled(classStr(Collectio
 
 この例では、**CustFreeTextInvoicePostedBusinessEventContract** を拡張して顧客の分類を含める方法を示します。 この顧客分類は業界に基づくカスタム分類です。
 
-#### <a name="step-1-create-an-extended-business-event-contract"></a>ステップ 1: 拡張されたビジネス イベント契約の作成
+#### <a name="step-1-create-an-extension-class-for-the-business-event-contract"></a>ステップ 1: ビジネス イベント契約の拡張クラスを作成する
 
-標準的なビジネス イベント契約、およびペイロードに含める必要がある追加情報で構成される契約を作成します。
+ペイロードに含める必要がある情報を追加するため、拡張している契約クラスの拡張クラスを作成します。
 
 ```xpp
-[DataContract]
-public class CustFreeTextInvoicePostedBusinessEventExtendedContract
-extends BusinessEventsContract
+[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
+internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Extension
 {
-    // standard contract
-    private CustFreeTextInvoicePostedBusinessEventContract
-    custFreeTextInvoicePostedBusinessEventContract;
-    // contract extensions
+    // contract extension state
     private str customerClassification;
 }
 ```
 
-#### <a name="step-2-create-an-initialize-method"></a>ステップ 2: 初期化メソッドの作成
+#### <a name="step-2-extend-the-initialize-method-through-chain-of-command"></a>手順 2: コマンド チェーンを使用して初期化メソッドを拡張する
 
-プライベート契約の値を初期化する **初期化** メソッドを作成します。
+プライベート契約の値を初期化する **初期化** メソッドのコマンド チェーン拡張機能を作成します。
 
 ```xpp
-private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-_custFreeTextInvoicePostedBusinessEventContract)
+protected void initialize(CustInvoiceJour _custInvoiceJour)
 {
-    custFreeTextInvoicePostedBusinessEventContract =
-    _custFreeTextInvoicePostedBusinessEventContract;
+    next initialize(_custInvoiceJour);
+    
+    customerClassification = 'StandardCustomer';
 }
 ```
-
-#### <a name="step-3-create-a-static-newfrom-method"></a>ステップ 3: 静的 newFrom メソッドの作成
-
-標準契約を引数として取得し **初期化** メソッドを呼び出す、静的 **newFrom** メソッドを作成します。
+#### <a name="step-3-add-parm-methods-for-additional-fields-that-you-want-to-add-to-the-payload"></a>手順 3: ペイロードに追加する追加フィールドの parm メソッドを追加する
 
 ```xpp
-public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-_custFreeTextInvoicePostedBusinessEventContract)
-{
-    var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-    contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-    return contract;
-}
-```
-
-#### <a name="step-4-map-parm-methods"></a>ステップ 4: parm メソッドのマッピング
-
-**parm** メソッドを標準データ コントラクトからコピーして、クラスの標準契約インスタンス内で値を取得およびセットするように各メソッドを修正します。
-
-```xpp
-[DataMember('InvoiceAccount')]
-public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
-= custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-{
-    return
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-}
-[DataMember('InvoiceId')]
-public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-{
-    return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-}
-```
-
-#### <a name="step-5-add-parm-methods-for-additional-payload-data"></a>ステップ 5: 追加ペイロード データのために parm メソッドを追加する
-
-```xpp
-[DataMember('CustomerClassification')]
-public CustomerClassification parmCustomerClassification(CustomerClassification
-_customerClassification = customerClassification)
+// contract extension data members
+[DataMember('MyModelCustomerClassification')]
+public str parmMyModelCustomerClassification(str _customerClassification = customerClassification)
 {
     customerClassification = _customerClassification;
     return customerClassification;
@@ -484,118 +444,27 @@ _customerClassification = customerClassification)
 
 これは拡張ビジネス契約の完全な実装です。
 
+クラスを作成するには、[拡張機能の名前付けガイドライン](../extensibility/naming-guidelines-extensions.md)に従って、新しく追加したフィールドとの衝突を避けるようにします。
+
 ```xpp
-[DataContract]
-public class CustFreeTextInvoicePostedBusinessEventExtendedContract
-extends BusinessEventsContract
+[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
+internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Extension
 {
-    // standard contract
-    private CustFreeTextInvoicePostedBusinessEventContract
-    custFreeTextInvoicePostedBusinessEventContract;
-    // contract extensions
+    // contract extension private state
     private str customerClassification;
-    public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-    newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
-        var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-        contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-        return contract;
+        next initialize(_custInvoiceJour);
+
+        customerClassification = 'StandardCustomer';
     }
-    private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
-    {
-        custFreeTextInvoicePostedBusinessEventContract =
-        _custFreeTextInvoicePostedBusinessEventContract;
-    }
-    private void new()
-    {
-    }
-    [DataMember('InvoiceAccount')]
-    public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
-    = custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-    }
-    [DataMember('InvoiceId')]
-    public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-    {
-        return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-    }
-    [DataMember('InvoiceDate')]
-    public TransDate parmInvoiceDate(TransDate _invoiceDate =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate(_invoiceDate);
-    }
-    [DataMember('InvoiceDueDate')]
-    public DueDate parmInvoiceDueDate(DueDate _invoiceDueDate =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate(_invoiceDueDate);
-    }
-    [DataMember('InvoiceAmountInAccountingCurrency')]
-    public AmountMST parmInvoiceAmount(AmountMST _invoiceAmount =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount(_invoiceAmount);
-    }
-    [DataMember('InvoiceTaxAmount')]
-    public TaxAmount parmInvoiceTaxAmount(TaxAmount _invoiceTaxAmount =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount(_invoiceTaxAmount);
-    }
-    [DataMember('LegalEntity')]
-    public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId _legalEntity
-    = custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity(_legalEntity);
-    }
-    // contract extensions
-    [DataMember('CustomerClassification')]
-    public CustomerClassification parmCustomerClassification(CustomerClassification
-    _customerClassification = customerClassification)
+
+    // contract extension data members
+    [DataMember('MyModelCustomerClassification')]
+    public str parmMyModelCustomerClassification(str _customerClassification = customerClassification)
     {
         customerClassification = _customerClassification;
         return customerClassification;
-    }
-}
-```
-
-#### <a name="step-6-extend-the-business-event-class-to-wrap-the-buildcontract-and-getextendedbusinesseventscontractname-methods"></a>手順 6: ビジネス イベント クラスを拡張して buildContract と getExtendedBusinessEventsContractName メソッドを折り返す
-
-ビジネス イベント標準ビジネス イベント契約をロードしてペイロード拡張機能を投入する **next** を呼び出す、**buildContract** の実装を指定します。 
-
-新しい拡張契約クラスの名前を返す、**getExtendedBusinessEventsContractName** 実装を指定します。 これにより、新しい契約名とフィールドがビジネス イベント カタログの UI に表示されます。
-
-これは完全なクラスです。
-
-```xpp
-[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
-public final class CustFreeTextInvoicePostedBusinessEvent_Extension
-{
-    public BusinessEventsContract buildContract()
-    {
-        var businessEventContract =
-        CustFreeTextInvoicePostedBusinessEventExtendedContract::newFromCustFreeTextInvoicePostedBusinessEventContract(next
-        buildContract());
-        businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
-        return businessEventContract;
-    }
-    
-    public BusinessEventsContractEDT getExtendedBusinessEventsContractName()
-    {
-        next getExtendedBusinessEventsContractName();
-
-        return classStr(CustFreeTextInvoicePostedBusinessEventExtendedContract);
     }
 }
 ```

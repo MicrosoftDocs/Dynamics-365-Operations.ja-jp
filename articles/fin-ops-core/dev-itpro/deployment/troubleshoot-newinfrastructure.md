@@ -1,6 +1,6 @@
 ---
 title: セルフサービス配置で配置された環境のトラブルシューティング
-description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の問題をトラブルシューティングおよび診断する方法について説明します。
+description: この記事では、セルフ サービス配置エクスペリエンスを使用して配置された環境の問題をトラブルシューティングおよび診断する方法について説明します。
 author: laneswenka
 ms.date: 12/18/2018
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: f4aca8e202911897f1272d409ff1da0a54ba18a4a4f95337df87c9ee8af3e772
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a539086439be821df17da9bd20e30007ebef5cf4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765084"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867299"
 ---
 # <a name="troubleshoot-environments-deployed-through-self-service-deployment"></a>セルフサービス配置で配置された環境のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このトピックでは、[セルフ サービス配置](infrastructure-stack.md)エクスペリエンスを使用して配置された環境の問題をトラブルシューティングする方法について説明します。 ユーザーが問題を報告したとき、トラブルシューティングのために Lifecycle Services (LCS) にあるさまざまなツールを使用できます。 豊富なテレメトリ データは、問題が報告されたときにユーザーや他のユーザーが実行していた操作を示すストーリー ボード ビューを構築するのに役立ちます。
+この記事では、[セルフ サービス配置](infrastructure-stack.md)エクスペリエンスを使用して配置された環境の問題をトラブルシューティングする方法について説明します。 ユーザーが問題を報告したとき、トラブルシューティングのために Lifecycle Services (LCS) にあるさまざまなツールを使用できます。 豊富なテレメトリ データは、問題が報告されたときにユーザーや他のユーザーが実行していた操作を示すストーリー ボード ビューを構築するのに役立ちます。
 
 **環境監視** ダッシュボードを開くには、以下の手順に従います。
 

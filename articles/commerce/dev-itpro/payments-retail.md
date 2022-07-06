@@ -1,6 +1,6 @@
 ---
-title: 支払の FAQ
-description: このトピックでは、Dynamics 365 Commerce で使用できる支払いオプションについて説明します。
+title: 支払いに関するよくあるご質問
+description: この記事では、Dynamics 365 Commerce で使用できる支払いオプションについて説明します。
 author: athinesh99
 ms.date: 10/14/2021
 ms.topic: article
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b24c7e3aba75f928df35bcb7c5effa51fe5a83b6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f2a1cdbee801f7d0d1ab4b8b2fcb27e7cc130f2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783342"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852801"
 ---
-# <a name="payments-faq"></a>支払に関してよく寄せられる質問
+# <a name="payments-faq"></a>支払いに関するよくあるご質問
 
 [!include [banner](../../includes/banner.md)]
 
@@ -69,7 +69,7 @@ Adyen コネクタに関して、設定に関する問題の場合は Adyenコ�
 
 いいえ、トランザクションの間、POS ではキャッシュ バック操作またはキャッシュ アウト操作はサポートされません。 ただし、拡張機能によるカスタマイズは、ギフトカードの「キャッシュ アウト」操作と同様のキャッシュ リターンおよび支払い操作を使用して達成できます。 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 - [支払端末のエンド・ツー・エンド支払統合を作成する](end-to-end-payment-extension.md)
 - [支払コネクタの配置](deploy-payment-connector.md)

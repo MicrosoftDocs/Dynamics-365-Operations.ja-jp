@@ -1,6 +1,6 @@
 ---
 title: サード パーティ ユーティリティを使用したテスト サービス
-description: このトピックでは、サービスをテストするサード パーティのユーティリティを設定する方法について説明します。
+description: この記事では、サービスをテストするサード パーティのユーティリティを設定する方法について説明します。
 author: peakerbl
 ms.date: 12/05/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c2f7899b328ed6164c0868c91f4713d0c8a002e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: df44c7272e32133e0377b1a0928f6a4b3f992b1c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876525"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
@@ -34,7 +34,7 @@ ms.locfileid: "8070048"
 - 既知の要求へのサービスの応答をテストします。
 - 他のエンドポイントに例外がどのように表示されるかを決定します。
 
-頻繁に使用される多くのツールを使用でき、これらのアクションを実行するのに役立ちます。 このトピックでは、どんなツールも推奨しません。 頻繁に使用されるいくつかのソフトウェア ユーティリティの使用例を示していますが、原則は他の同様のツールに広く適用されるべきです。
+頻繁に使用される多くのツールを使用でき、これらのアクションを実行するのに役立ちます。 この記事では、どんなツールも推奨しません。 頻繁に使用されるいくつかのソフトウェア ユーティリティの使用例を示していますが、原則は他の同様のツールに広く適用されるべきです。
 
 ## <a name="prerequisites"></a>前提条件
 

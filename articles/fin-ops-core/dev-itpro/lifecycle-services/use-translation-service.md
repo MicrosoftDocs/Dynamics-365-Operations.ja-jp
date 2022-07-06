@@ -1,6 +1,6 @@
 ---
-title: ユーザー インターフェイス ファイルを翻訳します
-description: このトピックでは、Microsoft Dynamics 365 製品における UI Translation service の使用方法について説明します。
+title: ユーザー インターフェイス ファイルの翻訳
+description: この記事では、Microsoft Dynamics 365 製品における UI Translation service の使用方法について説明します。
 author: abmotgi
 ms.date: 10/24/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: abmotgi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 713ee9d25ad201c4b500364da32611d2d7b11c8f
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: b81de7035d55c3f3c26ebeeeefa4982371935044
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866332"
 ---
-# <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
+# <a name="translate-user-interface-files"></a>ユーザー インターフェイス ファイルの翻訳
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 製品またはソリューションのユーザー インターフェイス (UI) ファイルを変換する方法について説明します。
+この記事では、Microsoft Dynamics 製品またはソリューションのユーザー インターフェイス (UI) ファイルを変換する方法について説明します。
 
 Microsoft Dynamics 365 Translation Service (DTS) に関する詳細については、[Dynamics 365 - Translation Service の概要](translation-service-overview.md) を参照してください。 ドキュメント ファイルを翻訳する方法については、[ドキュメント ファイルの翻訳](use-translation-service-ua.md) を参照してください。
 

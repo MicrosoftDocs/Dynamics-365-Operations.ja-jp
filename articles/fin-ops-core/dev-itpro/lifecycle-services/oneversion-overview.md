@@ -1,6 +1,6 @@
 ---
-title: 1 つのバージョンのサービス更新の概要
-description: このトピックでは、1 つのバージョンの一部として Microsoft によって開始されたサービスの更新を管理するための体験を構成する、さまざまな手順の概要を説明します。
+title: One Version のサービス更新の概要
+description: この記事では、1 つのバージョンの一部として Microsoft によって開始されたサービスの更新を管理するための体験を構成する、さまざまな手順の概要を説明します。
 author: angelmarshall
 ms.date: 05/21/2019
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 951c06f6af58edffadea8c1b7777ace3bf2e6a99
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c077667b6cd7e67ced5ab477018c399b021fe898
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866398"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -25,9 +25,9 @@ ms.locfileid: "7983656"
 
 次の一連のトピックでは Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) 以降 のサービス更新に関連する情報を提供しています。 これはクラウド リリースにのみ適用されます。
 
-- [サービス更新の可用性](../../fin-ops/get-started/public-preview-releases.md) – このトピックはリリース頻度およびリリース プロセスに関する情報を提供します。
-- [ソフトウェアのライフサイクル ポリシーおよびクラウド リリース](../migration-upgrade/versions-update-policy.md) – このトピックはサービスの更新、可用性、およびサービス終了についての情報を提供します。
-- [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md) – このトピックは更新プロセス、ツール、計画、および小売サービスの更新に関する質問に回答します。
+- [サービス更新の可用性](../../fin-ops/get-started/public-preview-releases.md) – この記事はリリース頻度およびリリース プロセスに関する情報を提供します。
+- [ソフトウェアのライフサイクル ポリシーおよびクラウド リリース](../migration-upgrade/versions-update-policy.md) – この記事はサービスの更新、可用性、およびサービス終了についての情報を提供します。
+- [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md) – この記事は、更新プロセス、ツール、計画、および小売サービスの更新に関する質問に回答します。
 
 サービス更新の経験は 4 つの異なるステップから構成されています: 
 
@@ -36,15 +36,15 @@ ms.locfileid: "7983656"
 3. 更新
 4. 検証
 
-このトピックの残りでは各ステップについて説明し、関連トピックへのリンクを示します。
+この記事の残りの部分では各ステップについて説明し、関連トピックへのリンクを示します。
 
 ## <a name="configure"></a>構成
 
-顧客はビジネスの制約に基づいて保守時間枠を選択できます。 Microsoft Dynamics Lifecycle Services (LCS) で、次の図に示すように **プロジェクト設定** ページの **設定の更新** タブで **実稼働環境の更新頻度** にあるフィールドを使用します。 今後の計画を立てるには次回の更新のカレンダーを利用できます。
+顧客はビジネスの制約に基づいて保守時間枠を選択できます。 Microsoft Dynamics Lifecycle Services (LCS) で、次の図に示すように **プロジェクト設定** ページの **設定の更新** タブで **運用環境の更新頻度** にあるフィールドを使用します。 今後の計画を立てるには次回の更新のカレンダーを利用できます。
 
 [![プロジェクト設定ページの更新設定タブ。](./media/UpdateSettings-ConfigureUpdates.JPG)](./media/UpdateSettings-ConfigureUpdates.JPG)
 
-ユーザーは新機能をオプトインして有効にする必要があります。 すべての更新プログラムは最初にユーザー受け入れテスト (UAT) 環境に適用され、それから実稼働環境に適用されます。 したがって、顧客が必要な検証を行う時間があります。 顧客は更新される環境を選択できます。 最大で 3 か月まで更新プログラムを一時停止することもできます。
+ユーザーは新機能をオプトインして有効にする必要があります。 すべての更新プログラムは最初にユーザー受け入れテスト (UAT) 環境に適用され、それから運用環境に適用されます。 したがって、顧客が必要な検証を行う時間があります。 顧客は更新される環境を選択できます。 最大で 3 か月まで更新プログラムを一時停止することもできます。
 
 ## <a name="notice"></a>通知
 

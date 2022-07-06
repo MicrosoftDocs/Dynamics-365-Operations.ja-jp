@@ -1,6 +1,6 @@
 ---
-title: パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
-description: このトピックでは、パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザーのテスト中に発生する一般的な問題のトラブルシューティングについて説明します。
+title: パフォーマンス SDK を利用したテストに関するトラブルシューティング ガイド
+description: この記事では、パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザーのテスト中に発生する一般的な問題のトラブルシューティングについて説明します。
 author: hasaid
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4177a4988360a27f2fcee9670376c18d47ab1d7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 926a4928c331bb2d07bdcb5c8d32f628ed1e4678
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783156"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903538"
 ---
 # <a name="troubleshooting-guide-for-testing-with-the-performance-sdk"></a>パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
 
@@ -35,7 +35,7 @@ ms.locfileid: "7783156"
 
 ### <a name="solution"></a>ソリューション
 
-[パフォーマンス SDK を使用したマルチユーザー テスト](perfsdk-multi-user-testing.md) を参照してください。 リンク先セクションでは、このタイプのテストにおいて正しい証明書を作成する方法について説明しています。 証明書のサムプリントを wif.config ファイルに追加する方法についても説明します。
+[パフォーマンス SDK を使用したマルチユーザー テスト](perfsdk-multi-user-testing.md) を参照してください。 その記事では、このタイプのテストの正しい証明書を作成する方法について説明します。 証明書のサムプリントを wif.config ファイルに追加する方法についても説明します。
 
 ## <a name="zoom-factor"></a>拡大率
 
@@ -125,7 +125,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 - CloudEnvironment.config ファイルにて **SelfMintingAdminUser** として指定されているユーザーは、 `https://sts.windows-ppe.net/` または `https://sts.windows.net/` 以外のプロバイダーを持っています。 場合によっては、管理者ユーザーの **プロバイダ** フィールドに会社固有のドメインを含めます。
 
-- Finance and Operations アプリが 21Vianet に配置されている場合、**NetworkDomain="https://sts.chinacloudapi.cn/"** を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定したことを確認してください。
+- 財務と運用アプリが 21Vianet に配置されている場合、**NetworkDomain="https://sts.chinacloudapi.cn/"** を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定したことを確認してください。
 
 この問題を回避するには、任意の名前と電子メール アドレスを持つユーザーを作成します。 **システム管理者** ロールを新しいユーザーに割り当てます。 ユーザーを実在の Microsoft Azure Active Directory (Azure AD) ユーザーにリンクする必要はありません。 CloudEnvironment.config ファイルで、この新しい管理者ユーザーを **SelfMintingAdminUser** として指定します。
 
@@ -149,7 +149,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
     [![CloudEnvironment.Config ファイル。](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
 
-- Finance and Operations アプリが 21Vianet に展開されている場合は、開発環境とパフォーマンス テスト環境が 10.0.11 以上のプラットフォーム更新にあることを確認してください。
+- 財務と運用アプリが 21Vianet に展開されている場合は、開発環境とパフォーマンス テスト環境が 10.0.11 以上のプラットフォーム更新にあることを確認してください。
 
 ## <a name="at-least-one-security-token-in-the-message-could-not-be-validated"></a>メッセージ内の少なくとも 1 つのセキュリティ トークンを検証できませんでした
 

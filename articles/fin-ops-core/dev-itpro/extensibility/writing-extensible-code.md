@@ -1,6 +1,6 @@
 ---
 title: 拡張可能なコードの書き込み
-description: このトピックでは、拡張可能コードを書き込む方法について説明します。
+description: この記事では、拡張可能コードを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 09/18/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: ebdf6dd9e31a1a5781d20f891de18e1b37e44f2a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d06f62c592003a8752436e763e2ac90a43c303d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866810"
 ---
 # <a name="write-extensible-code"></a>拡張可能なコードの書き込み
 
@@ -39,7 +39,7 @@ X++ およびメタデータ モデルは、ビジネス ソリューション�
 + **拡張担当者が適切に行動することを信頼**: すべての責任者は、長続きする優れた顧客向けソリューションを作成するという同じ目標を共有します。 拡張ポイントを作成するときは、コントロールを引き渡し、他のユーザーと責任を共有します。 拡張担当者は慎重であり、意図した拡張ポイントを使用しているとみなします。
 
 ## <a name="proven-principles"></a>実績のある原則
-既に使用している優れたエンジニアリングの手法がすべて適用されます。 学習したことすべても適用されます。 新しい原則を習得したり、古い手法を忘れる必要はありません。 このトピックでは、何十年もの間求められ、教えられ続けてきた、ソフトウェア作成者が守るべき 3 つの原則だけ強調します。 これらの原則により、コードが読み取り、管理、テスト、確認、リファクタリングしやすくなるだけでなく、コードを簡単に拡張できるようにもなります。 これらの原則を適用して推奨します。
+既に使用している優れたエンジニアリングの手法がすべて適用されます。 学習したことすべても適用されます。 新しい原則を習得したり、古い手法を忘れる必要はありません。 この記事では、何十年もの間求められ、教えられ続けてきた、ソフトウェア作成者が守るべき 3 つの原則だけ強調します。 これらの原則により、コードが読み取り、管理、テスト、確認、リファクタリングしやすくなるだけでなく、コードを簡単に拡張できるようにもなります。 これらの原則を適用して推奨します。
 
 ### <a name="extend-code-by-using-the-solid-principles"></a>SOLID を使用してコードを拡張する
 SOLID は、コードを簡単に拡張できるようにするために使用できる 5 つの原則の頭字語です。

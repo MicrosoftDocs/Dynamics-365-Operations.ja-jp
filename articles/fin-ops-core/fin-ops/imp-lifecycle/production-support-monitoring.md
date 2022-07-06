@@ -1,6 +1,6 @@
 ---
 title: 運用サポートと監視
-description: このトピックでは、プロジェクトのライフサイクルに関連するサポートのタイプと、環境を監視するためのベスト プラクティスについて説明します。
+description: この記事では、プロジェクトのライフサイクルに関連するサポートのタイプと、環境を監視するためのベスト プラクティスについて説明します。
 author: PedroTubal
 ms.date: 10/12/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: v-petbal
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2ee99afcca1f8cb437d30bbcfb7c498fe8bd9128
-ms.sourcegitcommit: 60ade60f72fd0fa0683f7a3eaf93439d10cf3373
+ms.openlocfilehash: 3cfc0bb7c43d431bd4b5c8b11dbbc367d7f061f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7655373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896655"
 ---
 # <a name="production-support-and-monitoring"></a>運用サポートと監視
 
 [!include[banner](../includes/banner.md)]
 
-プロジェクトの実装中および Go-Live 後に適切な経験をするために、利用できるさまざまなタイプのサービスと、すべてのシナリオに対して正しいサポートを受ける方法を理解することが重要です。 このトピックでは、各タイプのサポートを手配する方法について説明し、および使用可能ないくつかのツールについて説明します。
+プロジェクトの実装中および Go-Live 後に適切な経験をするために、利用できるさまざまなタイプのサービスと、すべてのシナリオに対して正しいサポートを受ける方法を理解することが重要です。 この記事では、各タイプのサポートを手配する方法について説明し、使用可能ないくつかのツールについて説明します。
 
 Microsoft のツールおよびサポートは、インフラストラクチャとアプリケーションのサポートを提供することにより、環境の安定性および有効性に役立ちます。 ただし、このサポートは、実装されているシステムとその環境をパートナーおよびクライアントが正しく開発、テスト、構成、管理、および監視している場合にのみ有効です。
 

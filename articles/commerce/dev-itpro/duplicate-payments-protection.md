@@ -1,6 +1,6 @@
 ---
 title: 支払コネクタの重複支払保護の有効化
-description: このトピックでは、指定された支払コネクタで重複支払保護を有効にする方法について説明します。
+description: この記事では、指定された支払コネクタで重複支払保護を有効にする方法について説明します。
 author: Reza-Assadi
 ms.date: 03/16/2020
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0de9856ccebc6cf6953dca2007c329917176e8ed
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6bffb0f45d13e8717d11b354fffd9f2ba11b97eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868988"
 ---
 # <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、支払ターミナルとの統合を管理する支払コネクタの重複支払保護機能を有効にする方法について説明します。 *支払コネクタ* は支払ターミナルをPOSに統合するために書き込まれた拡張ライブラリです。
+この記事では、支払ターミナルとの統合を管理する支払コネクタの重複支払保護機能を有効にする方法について説明します。 *支払コネクタ* は支払ターミナルをPOSに統合するために書き込まれた拡張ライブラリです。
 
 ## <a name="overview"></a>概要
 
-- [必読](#required-reading) - 支払コネクタに重複支払保護機能の実装を開始する前に必ず読むべきトピックの一覧。 
+- [必読](#required-reading) - 支払コネクタに重複支払保護機能の実装を開始する前に必ず読むべき記事の一覧。 
 - [前提条件](#prerequisites) - 支払コネクタの実装に重複支払保護を有効にする前提条件の一覧。
 - [重複支払保護フローを理解する](#understanding-duplicate-payment-protection-flows) - 重複支払保護が POS で呼び出される時のさまざまなフローについて説明します。
 - [重複支払要求の実装](#implement-duplicate-payment-requests) - 重複支払保護機能をサポートするために実装する必要があるさまざまな支払に関連する要求について説明します。
 
 ## <a name="required-reading"></a>読む必要があります
-特定の支払コネクタで重複支払保護を有効にする前に、次のトピックを必ずお読みください。
+指定された支払コネクタで重複支払保護を有効にする前に次の記事を必ず読むようにしてください。
 
-- [支払端末のエンド・ツー・エンド支払統合を作成する](end-to-end-payment-extension.md) - 重複支払保護機能は、このトピックで説明されている支払端末の支払統合に基づいています。
+- [支払端末のエンド・ツー・エンド支払統合を作成する](end-to-end-payment-extension.md) - 重複支払保護機能は、この記事で説明されている支払端末の支払統合に基づいています。
 
 ## <a name="prerequisites"></a>必要条件
 支払コネクタの実装で重複支払保護を有効にする前に、次の前提条件が満たされる必要があります。
@@ -177,7 +177,7 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceRequest(string l
 | 変数 | 説明 |
 |---|---|
 | lockToken | 支払端末が最初の取引のためにロックされたときに生成される一意のトークン値。 |
-| transactionReferenceData | プロパティ バッグは、支払取引を一意に識別するために使用されるさまざまなプロパティを含みます。 詳細については、このトピック [PaymentTransactionReferenceData](#paymenttransactionreferencedata) セクションを参照してください。 |
+| transactionReferenceData | プロパティ バッグは、支払取引を一意に識別するために使用されるさまざまなプロパティを含みます。 詳細については、この記事の [PaymentTransactionReferenceData](#paymenttransactionreferencedata) セクションを参照してください。 |
 
 #### <a name="response-signature"></a>署名への応答
 ``` csharp
@@ -185,7 +185,7 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 ```
 
 #### <a name="response-variables"></a>変数への応答
-| 変数 | 説明 |
+| 変数 | Description |
 |---|---|
 | paymentInfo | 復元された支払取引。 これは、**承認** または **返金** のような、ほかの支払要求などで返される支払応答と同じです。 |
                                                                                                                                                                                                                                                                                                             

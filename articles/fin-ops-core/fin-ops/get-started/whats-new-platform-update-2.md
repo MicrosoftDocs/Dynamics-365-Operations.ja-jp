@@ -1,6 +1,6 @@
 ---
 title: Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
-description: このトピックでは、Microsoft Dynamics AX プラットフォーム更新プログラム 2 の新機能または変更された機能について説明します。 このバージョンは 2016 年 8 月にリリースされ、ビルド番号は 7.0.4230.16130 です。
+description: この記事では、Microsoft Dynamics AX プラットフォーム更新プログラム 2 の新機能または変更された機能について説明します。 このバージョンは 2016 年 8 月にリリースされ、ビルド番号は 7.0.4230.16130 です。
 author: sericks007
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: b5b97e3495449ce013fd6025cc42c52ad5561aafde0cdf8bd9edb38b017c116c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c3201d34ac079c3f68a1510b2644cad053c9499
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715182"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908212"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016"></a>Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX プラットフォーム更新プログラム 2 の新機能または変更された機能について説明します。 このバージョンは 2016 年 8 月にリリースされ、ビルド番号は 7.0.4230.16130 です。
+この記事では、Microsoft Dynamics AX プラットフォーム更新プログラム 2 の新機能または変更された機能について説明します。 このバージョンは 2016 年 8 月にリリースされ、ビルド番号は 7.0.4230.16130 です。
 
 ## <a name="deployment"></a>配置
 
@@ -66,7 +66,7 @@ ms.locfileid: "6715182"
 
 | 何ができますか。 | これは、なぜ重要ですか。 |
 |------------------|------------------------|
-| テスト用の実稼働環境データベースの複製を作成します。 | 実稼働環境からのデータベースのコピーを使用して、階層 2 サンドボックス環境を更新するよう Microsoft に要求を送信することができます。 |
+| テスト用の運用環境データベースの複製を作成します。 | 運用環境からのデータベースのコピーを使用して、階層 2 サンドボックス環境を更新するよう Microsoft に要求を送信することができます。 |
 | リアルタイムで Microsoft Azure SQL データベースのクエリの実行を監視します。 | ブロックされたクエリおよびブロックしているクエリを表示することにより、SQL の問題をリアルタイムでトラブルシューティングすることができます。 また、現在これらをロックしているテーブルの、集計済みロック情報を表示することもできます。 |
 
 ## <a name="user-interface"></a>ユーザー インターフェイス

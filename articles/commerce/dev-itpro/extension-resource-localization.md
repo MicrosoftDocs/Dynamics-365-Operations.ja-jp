@@ -1,6 +1,6 @@
 ---
-title: コマース拡張リソースおよびラベル ファイルのローカライズ
-description: このトピックでは、POS UI ラベル、POS メッセージ、入庫ラベル、および Commerce Scale Unit または CRT のエラー メッセージを変更する方法について説明します。
+title: Commerce 拡張リソースおよびラベル ファイルのローカライズ
+description: この記事では、POS UI ラベル、POS メッセージ、入庫ラベル、および Commerce Scale Unit または CRT のエラー メッセージを変更する方法について説明します。
 author: mugunthanm
 ms.date: 01/06/2020
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 4c0c2c61c27c3704dc200cd0701f951fa53eb800
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c89832e2b2b66a7723c0b21d457223ed076b8cff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892638"
 ---
-# <a name="localize-commerce-extension-resources-and-label-files"></a>コマース拡張リソースおよびラベル ファイルのローカライズ
+# <a name="localize-commerce-extension-resources-and-label-files"></a>Commerce 拡張リソースおよびラベル ファイルのローカライズ
 
 [!include[banner](../includes/banner.md)]
 
 
-このトピックでは、販売時点管理 (POS) ユーザー インターフェイス (UI)、POS メッセージ (エラー、警告、および情報)、入庫ラベル、および Commerce Scale Unit または Commerce Runtime のサービス (CRT) のエラー メッセージの点にラベルを変更する方法について説明します。 カスタム エラー メッセージを同じ方法で追加することもできます。 ただし、新しい POS 拡張ラベルの場合は、POS 拡張のローカライズ フレームワークを使用します。
+この記事では、販売時点管理 (POS) ユーザー インターフェイス (UI)、POS メッセージ (エラー、警告、および情報)、入庫ラベル、および Commerce Scale Unit または Commerce Runtime のサービス (CRT) のエラー メッセージの点にラベルを変更する方法について説明します。 カスタム エラー メッセージを同じ方法で追加することもできます。 ただし、新しい POS 拡張ラベルの場合は、POS 拡張のローカライズ フレームワークを使用します。
 
 ## <a name="pos-labels-and-messages-error-warning-and-information"></a>POS ラベルおよびメッセージ (エラー、警告、および情報)
 

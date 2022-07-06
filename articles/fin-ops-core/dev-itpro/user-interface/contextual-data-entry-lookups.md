@@ -1,6 +1,6 @@
 ---
 title: ルックアップのコンテキスト データ入力
-description: このトピックでは、コンテキスト データ入力の仕組みについて説明し、ルックアップにこの動作が必要な開発者向けの実装の詳細とヒントを提供します。
+description: この記事では、コンテキスト データ入力の仕組みについて説明し、ルックアップにこの動作が必要な開発者向けの実装の詳細とヒントを提供します。
 author: jasongre
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b5782f58fad04fd3565d56769e662b9636cfb40
-ms.sourcegitcommit: 46d8ed81901796262805c2963eea4c58589d2f35
+ms.openlocfilehash: f6950261f10bbb02e412c39d19fe12b7f2c7e784
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392087"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895255"
 ---
 # <a name="contextual-data-entry-for-lookups"></a>ルックアップのコンテキスト データ入力
 

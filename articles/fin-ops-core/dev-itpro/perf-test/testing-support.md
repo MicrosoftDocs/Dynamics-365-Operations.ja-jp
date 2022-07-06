@@ -1,6 +1,6 @@
 ---
-title: Visual Studio のプロジェクトのテスト
-description: このトピックでは、Visual Studio でテストするためのオプションについて説明します。
+title: Visual Studio でのプロジェクトのテスト
+description: この記事では、Visual Studio のテスト用オプションについて説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20cc753838c3037aea0f94f99e6533e0c5ebe5c3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ddc26e90281e89e58602800811b2c127ad6b4848
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781941"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864525"
 ---
-# <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
+# <a name="test-projects-in-visual-studio"></a>Visual Studio でのプロジェクトのテスト
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Visual Studio でテストするためのオプションについて説明します。
+この記事では、Visual Studio のテスト用オプションについて説明します。
 
 カスタム単体テスト アダプターは、Visual Studio で利用可能です。 このアダプタを使用すると、テスト作成者は Visual Studio の標準の **Test Explorer** ウィンドウを使用して、X++ テストのスケジュールを立て、テスト結果を分析できます。 開発者は **SysTestAdaptor** を使用してテストを作成できます。 タスク レコーダーの記録からテスト コードを生成することもできます。 これらのテスト ケースは、検証のためにシステムを構築するために追加することができます。 
 

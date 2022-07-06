@@ -1,6 +1,6 @@
 ---
 title: 日付の有効期間
-description: このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。
+description: この記事では、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。
 author: peakerbl
 ms.date: 12/04/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9621337206ad7e52e2bb86ad00bbc5d1c844db6c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5be511e81fc192cb7f306612b3d7d09dcb3cffb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781088"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867084"
 ---
 # <a name="date-effectivity"></a>日付の有効期間
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。 また、日付の有効性が読み取りおよび書き込みアクティビティに適用される方法についても説明します。
+この記事では、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。 また、日付の有効性が読み取りおよび書き込みアクティビティに適用される方法についても説明します。
 
 データ エンティティを含む日付有効機能のデザイン パターンはさまざまです。 パターンは、次の 2 つの主要なカテゴリに分類されます。
 

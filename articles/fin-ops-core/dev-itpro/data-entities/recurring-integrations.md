@@ -1,6 +1,6 @@
 ---
 title: 定期統合
-description: このトピックでは、データ移行のプロセスや、エンタープライズ システムの内外への移動など、定期的な統合について説明します。
+description: この記事では、データ移行のプロセスや、エンタープライズ システムの内外への移動など、定期的な統合について説明します。
 author: peakerbl
 ms.date: 10/07/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2b74a82dec8bed68490726a37fc1c3ddd1f500a
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 83f8865fda372de0dd998ecc8d443fb51ba0ae84
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612344"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958118"
 ---
 # <a name="recurring-integrations"></a>定期統合
 
@@ -41,7 +41,7 @@ ms.locfileid: "7612344"
 REST API の統合は、その他の サービス エンドポイント と同じ OAuth 2.0 認証モデルを使用しています。 統合クライアント アプリケーションがこのエンドポイントを使用する前に、Microsoft Azure Active Directory (Azure AD) にアプリケーション ID を作成し、アプリケーションに適切なアクセス許可を付与する必要があります。 定期的なジョブを作成して有効にするとき、その定期的なジョブとやり取りする Azure AD アプリケーション ID を入力するように求められます。 したがって、アプリケーション ID をメモしておいてください。
 
 > [!NOTE]
-> この機能は、オンプレミス バージョンの Dynamics 365 Finance + Operations (オンプレミス) ではサポートされていません。
+> この機能は Dynamics 365 Finance + Operations (on-premises) でサポートされていません。
 
 ## <a name="set-up-a-data-project-and-recurring-data-jobs"></a>データ プロジェクトと定期的なデータ ジョブを設定
 ### <a name="create-a-data-project"></a>データ プロジェクトの作成
@@ -78,6 +78,8 @@ REST API の統合は、その他の サービス エンドポイント と同�
     > 現在のところ、監視の繰り返しは、定期的なデータ ジョブのキューでのみ負荷監視を有効にします。 このサービスを使用してサポートされる追加のポリシーはありません。 この機能を使用すると、積荷需要が必要な場合に処理の繰り返しを微調整することができます。
 
 7. **OK** を選択し、確認メッセージ ボックスで **はい** を選択します。
+
+詳細については、[財務と運用でデータ パッケージを処理および消費する](../lcs-solutions/process-data-packages-lcs-solutions.md) を参照してください。
 
 ## <a name="manage-recurring-data-jobs"></a>定期的なデータ ジョブの管理
 1. **システム管理** ワークスペース (**システム管理** モジュールではない) で、**データ管理 IT** ワークスペースを選択します。

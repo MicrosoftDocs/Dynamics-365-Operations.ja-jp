@@ -1,6 +1,6 @@
 ---
-title: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
-description: このトピックでは、コマース チャネル拡張機能を以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。
+title: 小売チャネル拡張機能を最新の Retail SDK にアップグレード
+description: この記事では、コマース チャネル拡張機能を以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。
 author: mugunthanm
 ms.date: 11/21/2018
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: d95994f7fbc5855a2f49fcc40f52026609202c79
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e585447aa99ca3f1317a09ceadafd2dcca17ac8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885461"
 ---
-# <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
+# <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>小売チャネル拡張機能を最新の Retail SDK にアップグレード
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。 プロセス全体とサポートされるシナリオの情報が含まれていますが、このトピックではプロセスの各ステップに関する詳細な指示は提示しません。 このトピックは、Dynamics 365 Commerce および Dynamics 365 Finance に適用されます。
+この記事では、以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。 プロセス全体とサポートされるシナリオの情報が含まれていますが、この記事ではプロセスの各ステップに関する詳細な指示は提示しません。 この記事は、Dynamics 365 Commerce と Dynamics 365 Finance に適用されます。
 
 
 以下のセクションは新しい Retail SDK に拡張機能を手動で移動する方法を説明しますが、Azure DevOps または Git などのソース管理システムを使用してこれを行うことができます。
 
 ## <a name="update-the-retail-sdk"></a>Retail SDK の更新
-新しい環境を配置する場合、新しい Retail SDK は仮想マシン (VM) のサービス ボリュームまたはダウンロード可能な VHD の C ドライブにあります。 Lifecycle Services (LCS) からの新しいバイナリ修正プログラムを適用して Retail SDK を更新すると、既存の Retail SDK フォルダ内に新しい **更新プログラム** フォルダーが作成され、更新された新しい SDK のコピーが {{Guid.RetailSDKUpdate.Date}} という名前で更新プログラム フォルダー内に作成されます。 このフォルダーをコピーする際、パスまたはファイル名が長すぎるという内容のエラー メッセージが表示されることがあるため、フォルダーの名前を短くすることをお勧めします。
+新しい環境を配置する場合、新しい Retail SDK は仮想マシン (VM) のサービス ボリュームまたはダウンロード可能な VHD の C ドライブにあります。 Lifecycle Services (LCS) からの新しいバイナリ修正プログラムを適用して Retail SDK を更新すると、既存の RetailSDK フォルダ内に新しい **更新プログラム** フォルダーが作成され、更新された新しい SDK のコピーが {{Guid.RetailSDKUpdate.Date}} という名前で更新プログラム フォルダー内に作成されます。 このフォルダーをコピーする際、パスまたはファイル名が長すぎるという内容のエラー メッセージが表示されることがあるため、フォルダーの名前を短くすることをお勧めします。
 
 ### <a name="retail-sdk-components"></a>Retail SDK のコンポーネント
 
@@ -149,7 +149,7 @@ SDK アップグレード プロセスは、バージョンによって異なり
 ## <a name="upgrade-the-channel-extension-from-72-to-a-higher-version"></a>7.2 からそれ以上のバージョンにチャネル拡張機能をアップグレードする
 前のセクション **7.3 からそれ以上のバージョンにチャネル拡張機能をアップグレードする** で説明した手順はコマース プロキシを除くすべてのコンポーネントでも同じです。 RS 拡張機能を持つ CRT があり、**customization.settings** ファイルに基づいて TypeScript セッションが自動生成された場合、7.2 では、プロキシ プロジェクトでインライン変更を完了している必要があります。
 
-プロキシを 7.3 にアップグレードするには、[Typescript および小売販売時点管理 (POS) の C# プロキシ](typescript-proxy-retail-pos.md)のトピックの手順を完了した後、Retail SDK フォルダーにプロキシを移動し、構成ファイル **RetailProxy.MPOSOffline.ext.config** を更新します。
+プロキシを 7.3 にアップグレードするには、[Typescript および小売販売時点管理 (POS) の C# プロキシ](typescript-proxy-retail-pos.md) の記事の手順を完了した後、Retail SDK フォルダーにプロキシを移動し、構成ファイル **RetailProxy.MPOSOffline.ext.config** を更新します。
 
 ## <a name="upgrade-the-channel-extension-from-71-to-a-higher-version"></a>7.1 からそれ以上のバージョンにチャネル拡張機能をアップグレードする
 7.1 では、POS およびプロキシ カスタマイズ インラインのほとんどを完了している必要があります。 それ以上のアプリケーション リリースにアップグレードするは、すべてのインライン変更を拡張機能に移動する必要があります。 バイナリ修正プログラムのアップグレードの場合、新しい Retail SDK とのコード マージを実行し、パッケージを再生成する必要があります。
@@ -158,7 +158,7 @@ SDK アップグレード プロセスは、バージョンによって異なり
 7.0 では、カスタマイズ インラインのほとんどを完了している必要があります。 それ以上のアプリケーション リリースにアップグレードするは、すべてのインライン変更を拡張機能に移動する必要があります。 バイナリ修正プログラムのアップグレードの場合、新しい Retail SDK とのコード マージを実行し、パッケージを再生成する必要があります。
 
 ## <a name="generate-a-deployable-package-for-validation"></a>検証用の配置可能パッケージを生成する
-トピック [配置可能なパッケージの作成](retail-sdk/retail-sdk-packaging.md) の手順を完了し、検証用の配置可能パッケージを生成します。
+[配置可能なパッケージの作成](retail-sdk/retail-sdk-packaging.md) の記事の手順を完了し、検証用の配置可能パッケージを生成します。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

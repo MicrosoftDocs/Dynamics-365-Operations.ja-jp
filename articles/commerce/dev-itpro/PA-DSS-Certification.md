@@ -1,6 +1,6 @@
 ---
 title: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
-description: このトピックでは、PA-DSS 認証の過去、現在、および保留中の一覧について説明します。
+description: この記事では、PA-DSS 認証の過去、現在、および保留中の一覧について説明します。
 author: BrianShook
 ms.date: 10/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 17e21084e54ef2488997f093db2ec04b23e26f4f
-ms.sourcegitcommit: b4d9f42c26f6dabdffee687671b254c901c54f1f
+ms.openlocfilehash: f4e81e6ae227f45539dd3f9936188d444664f21d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7646756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880098"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 
@@ -28,7 +28,7 @@ ms.locfileid: "7646756"
 > [!IMPORTANT]
 > Microsoft Dynamics 365 のバージョンが実装されておらず、Microsoft がまだ DSS 証明を完了していない場合、小売業者の Payment Card Industry (PCI) 監査と認定に潜在的な影響がある可能性があります。 具体的には、支払アプリケーションが証明時のテストのスコープとなる可能性があるため、関連付けられていたバージョンの PA-DSS 証明書が完成するまで、PCI 認定がより難しくなり、関与が大きくなる可能性があります。
 
-このトピックでは、Microsoft Dynamics 365 の PA-DSS 認証の過去および現在の一覧について説明します。 現在の認定資格を表示するには、「[PCI PA-DSS 認定支払アプリケーション](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications)」を参照してください。
+この記事では、Microsoft Dynamics 365 の PA-DSS 認証の過去および現在の一覧について説明します。 現在の認定資格を表示するには、「[PCI PA-DSS 認定支払アプリケーション](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications)」を参照してください。
 
 ## <a name="current-certification"></a>現在の証明
 PA-DSS 実装ガイドは、次のテーブルの **バージョン** 列にリングされています。

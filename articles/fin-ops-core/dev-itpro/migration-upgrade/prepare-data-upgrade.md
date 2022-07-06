@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
-description: このトピックでは、Finance and Operations へのデータ アップグレードに関連付けられている、Microsoft Dynamics AX 2012 チェックリストの各タスクについて説明します。
+description: この記事では、財務と運用へのデータ アップグレードに関連付けられている Microsoft Dynamics AX 2012 チェックリストの各タスクについて説明します。
 author: jorisdg
 ms.date: 02/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 097ba5879d7210702332f0d56dea22782ce534ab70d11ad23314ad6297587759
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43863c091a7794371d5b8b8e24fdbae28c25abff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866137"
 ---
 # <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "6736248"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、Finance and Operations へのデータ アップグレードに関連付けられている、Microsoft Dynamics AX 2012 チェックリストの各タスクについて説明します。
+この記事では、財務と運用へのデータ アップグレードに関連付けられている Microsoft Dynamics AX 2012 チェックリストの各タスクについて説明します。
 
 ## <a name="installation"></a>インストール
 アップグレード前のチェックリストを使用して、アップグレード手順に必要なデータを入力します。 
@@ -37,11 +37,11 @@ ms.locfileid: "6736248"
 
 ## <a name="prepare-model-metadata"></a>モデル メタデータの準備
 
-データ アップグレード中に、既存の AX 2012 環境と更新された Finance and Operations 環境との間で要素 ID を維持することが 1 つの目標です。 この目標を達成するには、AX 2012 環境の要素 ID のコピーを Finance and Operations 環境に移動する必要があります。 AX 2012 は、ModelElement という名前のテーブルに要素の ID を格納します。 このテーブルは、AX 2012 ビジネス データ データベースとは別のデータベースであるモデル データベースに含まれています。 Finance and Operations にアップグレード中に、Microsoft Azure に AX 2012 データベースをコピーする必要があります。 このプロセスには時間がかかる場合があります。 
+データ アップグレード中に、既存の AX 2012 環境とアップグレードされた Finance and Operations との間で要素 IDs を維持することが 1 つの目標です。 この目標を達成するには、AX 2012 環境の要素 ID のコピーを Finance and Operations 環境に移動する必要があります。 AX 2012 は、ModelElement という名前のテーブルに要素の ID を格納します。 このテーブルは、AX 2012 ビジネス データ データベースとは別のデータベースであるモデル データベースに含まれています。 Finance and Operations にアップグレード中に、Microsoft Azure に AX 2012 データベースをコピーする必要があります。 このプロセスには時間がかかる場合があります。 
 
 model データベース全体を Azure SQL データベースにコピーしないようにするには、次の手順を使用して ModelElement テーブルをビジネス データ データベースに複製します。 後ほど、データのアップグレード実行中に、データベースの同期プロセスがこのレプリケートされたテーブルから必要な情報を取得し、アップグレードされた Finance and Operations 環境で要素 ID が管理されていることを確認します。
 
-1. Finance and Operations データ アップグレードのチェックリストで、**セキュリティ モデル メタデータを準備する** をクリックします。
+1. Finance and Operations のデータ アップグレード チェックリストで、**モデル メタデータの準備** をクリックします。
 2. メッセージが表示されたら、**はい** をクリックします。
 3. コピー処理が完了するまで待ちます。
 
@@ -49,9 +49,9 @@ model データベース全体を Azure SQL データベースにコピーしな
 
 ## <a name="prepare-security-role-metadata"></a>セキュリティ ロール メタデータの準備
 
-データ アップグレード中のもう 1 つの目標は、セキュリティ ロールの割り当てを維持することです。 このタスクは、前の「モデル メタデータの準備」タスクに似ています。 AX 2012 モデル データベースに格納されているセキュリティ ロールの情報は、アップグレード後も情報が Finance and Operations 環境に残るように、AX 2012 ビジネス データ データベースにコピーする必要があります。 データ アップグレード中に、同じセキュリティ ロールはアップグレードされた Finance and Operations 環境に復元されます。
+データ アップグレード中のもう 1 つの目標は、セキュリティ ロールの割り当てを維持することです。 このタスクは、前の「モデル メタデータの準備」タスクに似ています。 AX 2012 モデル データベースに格納されているセキュリティ ロールの情報は、アップグレード後も情報が Finance and Operations 環境に残るように、AX 2012 ビジネス データ データベースにコピーする必要があります。 データ アップグレード中に、同じセキュリティ ロールは更新された Finance and Operations の環境に戻されます。
 
-1. Finance and Operations データ アップグレードのチェックリストで、**セキュリティ ロール メタデータを準備する** をクリックします。
+1. Finance and Operations のデータ アップグレード チェックリストで、**セキュリティ ロール メタデータの準備** をクリックします。
 1. メッセージが表示されたら、**はい** をクリックします。
 1. コピー処理が完了するまで待ちます。
 
@@ -59,7 +59,7 @@ model データベース全体を Azure SQL データベースにコピーしな
 
 ## <a name="set-up-user-mapping"></a>ユーザー マッピングの設定
 
-AX 2012 では、ユーザーはオンプレミスの Active Directory サーバーで認証されます。 ただし、Finance and Operations では、ユーザーが Azure Active Directory (Azure AD) に対して認証されます。 このタスクは、既存の AX 2012 ユーザーを同等 Azure AD にマップするフォームを提供します。 AX 2012 ユーザーは、Finance and Operations にアクセスできるようになります。
+AX 2012 では、ユーザーはオンプレミスの Active Directory サーバーで認証されます。 ただし、Finance and Operations では、ユーザーは、Azure Active Directory (Azure AD) に対して認証されます。 このタスクは、既存の AX 2012 ユーザーを同等 Azure AD にマップするフォームを提供します。 AX 2012 ユーザーは、Finance and Operations にアクセスできるようになります。
 
 1. Finance and Operations のデータ アップグレード チェックリストで、**ユーザー マッピングの設定** をクリックします。
 2. **ユーザー情報電子メール マッピング** フォームが表示されます。 グリッドに記入するには、次のいずれかのステップを実行します。

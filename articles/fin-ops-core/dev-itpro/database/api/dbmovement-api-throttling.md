@@ -1,6 +1,6 @@
 ---
 title: データベース移動操作 - 調整
-description: このトピックでは、データベース移動アプリケーション プログラミング インターフェイス (API) の調整の概要について説明します。
+description: この記事では、データベース移動アプリケーション プログラミング インターフェイス (API) の調整の概要について説明します。
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 0c1cf2ebaf7f7f62473a9cc4c2a360c52239a00c8887671f7059e3bdcf1ce9f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fdc082d495ccab1a6b9ccb2442828abec6986d94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867587"
 ---
 # <a name="throttling"></a>調整
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、データベース移動アプリケーション プログラミング インターフェイス (API) の調整の概要について説明します。
+この記事では、データベース移動アプリケーション プログラミング インターフェイス (API) の調整の概要について説明します。
 
 ## <a name="rate-limits"></a>レート制限
 

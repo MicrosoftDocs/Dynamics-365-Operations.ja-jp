@@ -1,6 +1,6 @@
 ---
 title: 承認テスト ライブラリの作成者
-description: このトピックでは承認テスト ライブラリの作成者に関する情報を提供します。
+description: この記事では承認テスト ライブラリの作成者に関する情報を提供します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 8a5f22d4e6a567b822d25765d4f59280bf31c44e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8252306fd812c50c488afb2de3f637bcb6741292
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862128"
 ---
 # <a name="creators-in-the-acceptance-test-library"></a>承認テスト ライブラリの作成者
 

@@ -1,6 +1,6 @@
 ---
-title: コードを変更して、ユーザーが名前付き送信先を構成して使用できるようにする
-description: このトピックでは、電子申告 (ER) API を使用して、ユーザーが名前付き ER 送信先を構成および使用する方法について説明します。
+title: コードを変更して、ユーザーが名前付き送信先を構成して使用可能にする
+description: この記事では、電子申告 (ER) API を使用して、ユーザーが名前付き ER 送信先を構成および使用する方法について説明します。
 author: NickSelin
 ms.date: 08/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: af83a70bc8ef1e4d25ffdc48f1697d65597ef3c8
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 5002b13fe52d092cdefc97425a628f4f051df491
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869084"
 ---
 # <a name="change-code-to-enable-users-to-configure-and-use-named-er-destinations"></a>コードを変更して、ユーザーが名前付き送信先を構成して使用できるようにする
 
@@ -210,7 +210,7 @@ public static void runFreeTextInvoiceReport(NonSSRSPrintMgmtAdapterReportExecute
 
 名前付きの送信先を設定し、提供された名前付き送信先を ER フレームワークに使用させるには、最初に [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace)ワークスペースで、**印刷管理品目ごとの ER 送信先設定を許可する** 機能を有効にする必要があります。
 
-ER フレームワークを使用して Finance で生成できるすべてのタイプのビジネス ドキュメントの名前付き ER の送信先が有効になります。 詳細については、**コンフィギュレーション可能なビジネス ドキュメント – レポートの印刷管理設定を介した特定の送信先** 機能を参照してください。Dynamics 365 および業界のクラウド リリース プラン [2021 リリース ウェーブ 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance) にある Dynamics 365 Finance アプリケーションの「グローバリゼーション」 セクションにあります。
+ER フレームワークを使用して Finance で生成できるすべてのタイプのビジネス ドキュメントの名前付き ER の送信先が有効になります。 詳細については、[2021 リリース ウェーブ 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance) 用 Dynamics 365 と業界クラウド リリース プランで、「Dynamics 365 Finance」 アプリケーション用「グローバリゼーション」にて **コンフィギュレーション可能なビジネス ドキュメント – レポートの印刷管理設定を介した特定の送信先** 機能を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

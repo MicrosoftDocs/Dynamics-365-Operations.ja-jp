@@ -1,6 +1,6 @@
 ---
 title: セキュリティ ポリシーを作成する
-description: このトピックでは、顧客グループの範囲に基づいて、顧客および顧客グループへのアクセスを保護する単純なセキュリティ ポリシーを作成する方法について説明します。
+description: この記事では、顧客グループの範囲に基づいて、顧客および顧客グループへのアクセスを保護する単純なセキュリティ ポリシーを作成する方法について説明します。
 author: Peakerbl
 ms.date: 07/14/2020
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: aa7c4301151a013158f9fe61b95c2daec2b4e5b8708cf1ea7179f014722cb98b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21860124b0f02d5e6751943bdabcc8d22beb228b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898626"
 ---
 # <a name="create-a-security-policy"></a>セキュリティ ポリシーを作成する
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、顧客グループの範囲に基づいて、顧客および顧客グループへのアクセスを保護する単純なセキュリティ ポリシーを作成する方法について説明します。
+この記事では、顧客グループの範囲に基づいて、顧客および顧客グループへのアクセスを保護する単純なセキュリティ ポリシーを作成する方法について説明します。
 
 ## <a name="add-a-new-query"></a>新しいクエリの追加
 

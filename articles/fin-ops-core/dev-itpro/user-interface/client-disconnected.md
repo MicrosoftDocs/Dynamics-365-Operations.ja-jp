@@ -1,6 +1,6 @@
 ---
 title: クライアント インターネット接続
-description: このトピックは、オンプレミス配置で、クライアント マシンがインターネットにアクセスできない場合に何が起きるかについて説明します。
+description: この記事は、オンプレミス配置で、クライアント マシンがインターネットにアクセスできない場合に何が起きるかについて説明します。
 author: jasongre
 ms.date: 05/05/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: bba5c1df0b21e9a25dbc56d8d66fba441b85db2b
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: a626ed316d3074b602fedf5535863976bc2da55b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897129"
 ---
 # <a name="client-internet-connectivity"></a>クライアント インターネット接続
 

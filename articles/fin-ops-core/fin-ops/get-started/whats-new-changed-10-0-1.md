@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.1 の新機能または変更された機能について説明します。 このバージョンは 4 月にリリースされます。
+description: この記事では、 Dynamics 365 for Finance and Operations バージョン 10.0.1 の新機能および変更された機能について説明します。 このバージョンは 4 月にリリースされます。
 author: tonyafehr
 ms.date: 10/02/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: e77807ac7daabdd72decfeb4b297b054d2dcb16a632e0790e7868978f45c5021
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7142d1bf1fe1f812522e280811791564ae585ecf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755732"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894245"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1001-april-2019"></a>Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 の新機能または変更された機能について説明します。 このバージョンは 4 月にリリースされ、ビルド番号は 10.0.51 です。 バージョン 10.0.1 の詳細については [追加リソース](whats-new-changed-10-0-1.md#additional-resources) を参照してください。
+この記事では、 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 の新機能および変更された機能について説明します。 このバージョンは 4 月にリリースされ、ビルド番号は 10.0.51 です。 バージョン 10.0.1 の詳細については [追加リソース](whats-new-changed-10-0-1.md#additional-resources) を参照してください。
 
 Retail の最新のリリースの新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.1 の新機能と変更](../../../commerce/get-started/whats-new-10-0-1.md) を参照してください。
 
@@ -72,12 +72,12 @@ Finance and Operations の規制の更新については、[規制の更新](../
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-この Finance and Operations のリリースでは、拡張性をサポートするために多くの機能拡張が行われています。 たとえば、列挙体、メタデータ、メソッドに拡張性の機能拡張が行われています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 10.0.1 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-10-1.md)を参照してください。
+このFinance and Operations のリリースでは、拡張性をサポートするために多くの機能拡張が行われています。 たとえば、列挙体、メタデータ、メソッドに拡張性の機能拡張が行われています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 10.0.1 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-10-1.md)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="bug-fixes"></a>バグ修正
-Finance and Operations バージョン 10.0.1 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78) を参照してください。
+Finance and Operations 10.0.1 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78)を参照してください。
 
 ### <a name="platform-update-25"></a>プラットフォーム update 25
 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 には、プラットフォーム更新プログラム 25 が含まれています。 プラットフォーム更新プログラム 25 の詳細については、 [プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能についてDynamics 365 for Finance and Operations](whats-new-platform-25.md)を参照してください。
@@ -88,14 +88,14 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 には�
 [2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 

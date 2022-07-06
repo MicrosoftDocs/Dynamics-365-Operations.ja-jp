@@ -1,6 +1,6 @@
 ---
 title: ビジネス イベントおよび Azure Service Bus Queue
-description: このトピックでは、Microsoft Azure Service Bus Queue エンドポイントの構成方法を説明します。
+description: この記事では、Microsoft Azure Service Bus Queue エンドポイントの構成方法を説明します。
 author: jaredha
 ms.date: 11/08/2021
 ms.topic: article
@@ -12,17 +12,17 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-11-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 6345158ef5f0711f7179c6ff9ddd67ee01c9d54b
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: c3b1706a0e4b2c105e3e2d2dc10510f8e189895c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873201"
 ---
 # <a name="business-events-and-azure-service-bus-queue"></a>ビジネス イベントおよび Azure Service Bus Queue
 [!include[banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Azure Service Bus Queue エンドポイントの構成方法を説明します。
+この記事では、Microsoft Azure Service Bus Queue エンドポイントの構成方法を説明します。
 
 ## <a name="create-an-azure-service-bus-queue-endpoint"></a>Azure Service Bus キュー エンドポイントの作成
 

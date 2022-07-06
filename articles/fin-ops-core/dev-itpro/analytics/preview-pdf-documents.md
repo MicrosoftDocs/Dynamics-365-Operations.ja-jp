@@ -1,6 +1,6 @@
 ---
-title: PDF ビューアを使用して PDF ドキュメントをプレビューする
-description: このトピックでは、ビジネスドキュメントを表示するにあたり、埋め込みPDFプレビューオプションを使用する方法について説明します。
+title: PDF ビューアを使用した PDF ドキュメントのプレビュー
+description: この記事では、ビジネス ドキュメントを表示するにあたり、埋め込み PDF プレビュー オプションを使用する方法について説明します。
 author: RichdiMSFT
 ms.date: 07/22/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 3ae38daaf5fb01f6c600b548edc7797e60e7f4a4a0bbadaa87306e9df5244ac5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1900ced37393d6f70ada99d5c7aa34736a680bb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741694"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909543"
 ---
 # <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用した PDF ドキュメントのプレビュー
 

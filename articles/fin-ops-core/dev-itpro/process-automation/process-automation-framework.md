@@ -1,6 +1,6 @@
 ---
 title: プロセスの自動化のフレームワークの開発
-description: このトピックでは、プロセス自動化フレームワークを使用する開発の概要について説明します。
+description: この記事では、プロセス自動化フレームワークを使用する開発の概要について説明します。
 author: RyanCCarlson2
 ms.date: 05/09/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a714000aa265412b00d51267fd7547b41776fb42
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 3ed9996de5cdf3006511aee80c3f5ddc2c0351f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876682"
 ---
 # <a name="process-automation-framework-development"></a>プロセスの自動化のフレームワークの開発
 
@@ -45,7 +45,7 @@ ms.locfileid: "8735065"
 | 呼び出し             | 呼び出しは、毎分実施される重要なシステムのバッチ プロセスで、プロセス自動化フレームワークのさまざまなサブシステムを起動します。 スケジュールを参照して、実行する準備ができているプロセスを判別し、フレームワークのランタイム側を起動して、プロセスが確実に実行されるようにします。 |
 | スケジュール済プロセス  | スケジュール済プロセスとは、ユーザーによってユーザー インターフェイス (UI) でスケジュールされたプロセスのことです。 これらのプロセスの発生は、カレンダー表示できます。 |
 | バックグラウンド プロセス | バックグラウンド プロセスは、*ポーリング プロセス* とも呼ばれます。 これはユーザーの入力を必要とせずに頻繁に実行されるプロセスで、バックグラウンド プロセスを実行します。 一般会計への補助元帳の転送はひとつの例です。 |
-| 種類               | このトピックおよび関連トピックでは、[タイプ登録](type-registration.md)で説明したように、*タイプ* という用語は **ProcessScheduleType** を指します。 |
+| 種類               | この記事および関連トピックでは、[タイプ登録](type-registration.md) で説明したように、*タイプ* という用語は **ProcessScheduleType** を指します。 |
 | シリーズ             | 登録済タイプのすべてのプロセスには、シリーズが必要です。 スケジュール済プロセスのシリーズは、ユーザーによって UI の中に作成されます。 バックグラウンド プロセスのためのシリーズは、シリーズの登録を通じて作成されます。 詳細については、[シリーズ登録](series-registration.md)を参照してください。 |
 | 日時      | すべてのフレームワークの日付は協定世界時 (UTC) で保存されますが、ユーザーの優先タイムゾーンに表示されます。 |
 

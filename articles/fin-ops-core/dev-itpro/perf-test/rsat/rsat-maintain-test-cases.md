@@ -1,6 +1,6 @@
 ---
 title: Regression Suite Automation Tool (RSAT) でのテスト ケースの管理
-description: このトピックでは、Regression suite automation tool (RSAT) でテスト ケースと添付ファイルを管理する方法について説明します。
+description: この記事では、Regression suite automation tool (RSAT) でテスト ケースと添付ファイルを管理する方法について説明します。
 author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ceb099f6fcf0e7729b03c102414e4eec74f3301
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 247e0a5d94bbb7b6a21e8a5844c3067c9c81ab9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850934"
 ---
 # <a name="maintain-test-cases-in-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) でのテスト ケースの管理
 
@@ -47,7 +47,7 @@ Regression suite automation tool (RSAT) のバージョン 2.2 以降を使用�
 **テスト ケース情報** ダイアログ ボックスに、テスト ケースに関する以下の情報が表示されます。
 
 + ダイアログ ボックスの上部にテスト スイートのテスト ケースに割り当てられている名前が表示されており、変更できます。
-+ 記録の名前は、テスト ケース名の下に表示されます。 この名前は、 Finance and Operations アプリのタスク レコーダーで、または販売時点管理 (POS) クライアントを使用して記録された場合に使用された記録 XML ファイルから取得されます。
++ 記録の名前は、テスト ケース名の下に表示されます。 この名前は、財務と運用アプリのタスク レコーダーで、または販売時点管理 (POS) クライアントを使用して記録された場合に使用された記録 XML ファイルから取得されます。
 + **添付ファイル** グリッドには、テスト ケースで使用できる添付ファイルの一覧が表示されます。 この一覧は、添付ファイルのサブフォルダーの下の **ディレクトリ** アクションを使用して検索することもできます。
 
 ## <a name="create-a-test-case-that-has-attachments"></a>添付ファイルがあるテスト ケースの作成

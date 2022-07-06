@@ -1,6 +1,6 @@
 ---
 title: AX 2009 の移行 － データ移行ツールのインストール
-description: このトピックでは、Microsoft Dynamics AX 2009 からデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
+description: この記事では、Microsoft Dynamics AX 2009 からデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
 author: kfend
 ms.date: 09/13/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 2de55922a17058aae8f2bcc9e4774affc45a66d2eb22dca8b01e979b99aca476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04037e97d661eadf35a465c603c69be0c445174b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775256"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866158"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2009 から Finance and Operations にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。 
+この記事では、Microsoft Dynamics AX 2009 から財務と運用にデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。 
 
 > [!IMPORTANT]
 > 現時点で、DMT はプライベート プレビューです。 関心をお持ちの場合、[プレビュー プログラム](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB)にサインアップすることができます。 DMT の公開リリース日は設定されていません。 

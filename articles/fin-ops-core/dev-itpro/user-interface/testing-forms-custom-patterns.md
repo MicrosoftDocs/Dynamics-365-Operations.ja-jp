@@ -1,6 +1,6 @@
 ---
 title: カスタム パターンを使用したテスト フォーム
-description: このトピックでは、カスタム パターンを使用してフォームをテストする方法について説明します。
+description: この記事では、カスタム パターンを使用してフォームをテストする方法について説明します。
 author: jasongre
 ms.date: 07/08/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9773c16a7fa8670bc2dc448aea4ef0021a73909b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9289bf401c78e96ab39aec94b4c914dd6bb9bc20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870356"
 ---
 # <a name="test-forms-that-use-custom-patterns"></a>カスタム パターンを使用したテスト フォーム
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、カスタム パターンを使用してフォームをテストする方法について説明します。
+この記事では、カスタム パターンを使用してフォームをテストする方法について説明します。
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
 フォーム パターンに従うことによって、さまざまなメリットが得られます。 たとえば、フォームのパターンは正しくレイアウト プロパティを設定して、フォームが応答しやすいように配置されます。 ただし、フォーム パターンの補充が欠落している場合 (たとえば、現在多くの拡張コントロールのサポートがない場合)、またはフォームまたはコンテナーに任意のパターンに適合しない固有の要件/用途がある場合、開発者はカスタムにパターンを設定できます。 開発者は、正しい、応答フォーム レイアウトを作成する責任を負います。
 

@@ -1,6 +1,6 @@
 ---
 title: Regression Suite Automation Tool のトラブルシューティング
-description: このトピックでは、Regression Suite Automation Tool (RSAT) のトラブルシューティング方法について説明します。
+description: この記事には、Regression Suite Automation Tool (RSAT) のトラブルシューティング方法に関する情報が含まれています。
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92bd5d1ce39e8ab8fc646ededb4f39d6ab2553fc
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 753d51f9f0def688962f24ab88347e1f95196f2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781977"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858607"
 ---
 # <a name="troubleshoot-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Regression Suite Automation Tool (RSAT) のトラブルシューティング方法について説明します。
+この記事には、Regression Suite Automation Tool (RSAT) のトラブルシューティング方法に関する情報が含まれています。
 
 ## <a name="playback-logs"></a>再生ログ
 
@@ -98,7 +98,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))  
 
 ![エラー メッセージ列挙ボックス。](media/cannot-enumerate.png)
 
-このエラーを解決するには、RSAT の設定ダイアログ ボックスで指定されている **管理ユーザー名** を確認します。 **管理者ユーザー名** は、RSAT が接続している Finance and Operations テスト環境でのシステム管理者ロールに属しているユーザーの電子メール アドレスである必要があります。 また、ユーザー アカウント (電子メール アドレス) は、テスト環境と同じテナントに属している必要があります。 たとえば、テスト環境のテナントが **contoso.com** 場合、管理ユーザーは **\@constoso.com** で終了する必要があります。
+このエラーを解決するには、RSAT の設定ダイアログ ボックスで指定されている **管理ユーザー名** を確認します。 **管理者ユーザー名** は、RSAT が接続している財務と運用テスト環境でのシステム管理者ロールに属しているユーザーの電子メール アドレスである必要があります。 また、ユーザー アカウント (電子メール アドレス) は、テスト環境と同じテナントに属している必要があります。 たとえば、テスト環境のテナントが **contoso.com** 場合、管理ユーザーは **\@constoso.com** で終了する必要があります。
 
 ### <a name="unsecured-fault-exception"></a>セキュリティ保護されていな障害の例外
 
@@ -111,7 +111,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))  
 
 通常このエラーは、RSAT が認証に使用している証明書を信頼するようにテスト環境が構成されていない場合に発生します。 (証明書は、RSAT の設定で指定された拇印によって識別されます。) たとえば、テスト環境の AOS 仮想マシンの wif.config ファイルに拇印が欠落している場合があります。 標準承認テスト環境 (Tier 2 以上) に対して実行している場合は、すべての AOS 仮想マシン上で認証拇印を構成していない場合があります。 すべての AOS マシン上の **wif.config** にサムプリントを適切に追加してください。 詳細については、[接続を信頼するようにテスト環境を構成する](rsat-install-configure.md#configure-the-test-environment-to-trust-the-connection) を参照してください。
 
-このエラーは、RSAT がインストールされているクライアント コンピューターと Finance and Operations 環境との間で UTC 時間に不一致がある場合にも発生します。 これはまれなケースであり、管理者が UTC 時間を正しく構成していない場合にのみ発生します。 クライアント コンピューターと Finance and Operations 環境は異なるタイム ゾーンに設定できますが、認証メカニズムはこの比較に依存しているため、両方の環境の UTC 時間は一致している必要があります。
+このエラーは、RSAT がインストールされているクライアント コンピューターと財務と運用環境との間で UTC 時間に不一致がある場合にも発生します。 これはまれなケースであり、管理者が UTC 時間を正しく構成していない場合にのみ発生します。 クライアント コンピューターおよび財務と運用環境は異なるタイム ゾーンに設定できますが、認証メカニズムはこの比較に依存しているため、両方の環境の UTC 時間は一致している必要があります。
 
 ## <a name="google-chrome-browser"></a>Google Chrome ブラウザー
 

@@ -1,8 +1,8 @@
 ---
 title: データベースのエクスポート
-description: このトピックでは、Finance and Operations のデータベースをエクスポートする方法について説明します。
+description: この記事では、財務と運用のデータベースをエクスポートする方法について説明します。
 author: LaneSwenka
-ms.date: 02/18/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 35efffc9770be6752fef3b0b287494081c46e00f
-ms.sourcegitcommit: 3b0eead55f6d7a61cc269d44cd63fe69218c4c22
+ms.openlocfilehash: 9fe50e37def0592aa85081093f1b6c9c5d34291f
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325132"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945740"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -83,6 +83,23 @@ GO
 * [メンテナンス モード](../sysadmin/maintenance-mode.md) 設定は、ソースで有効になっていた場合でも無効になります。
 * 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
+### <a name="commerce-related-data-elements-that-arent-exported"></a>エクスポートされていないコマース関連のデータ要素
+
+* エキスポートされていないテーブルは、次のとおりです:
+  * RetailCDXDownloadSession
+  * RetailCDXDownloadSessionDataStore
+  * RetailCDXDownloadSummaryCache
+  * RetailCDXUploadSession
+  * RetailCDXUploadPathHistory
+  * RetailCDXUploadSummaryCache
+  * RetailCDXDataSyncRowVersion
+* Commerce Scale Unit への全ての参照は、**RetailConnDatabaseProfile** テーブルから削除されます。
+* Commerce Scale Unit への全ての参照は、**RetailScaleUnit** テーブルから削除されます。
+* Commerce Scale Unit へのすべての参照は、**RetailChannelProfile** テーブルおよびテーブルのすべての子から削除されます。
+* すべての環境固有値は、**RetailSharedParamaters** テーブルから削除されます。
+* すべての環境固有値は、**RetailHardwareProfile** テーブルから削除されます。
+* すべての環境固有値は、**CreditCardAccountSetup** テーブルから削除されます。
+* すべての環境固有値は、**RetailSelfServicePackageInfo** テーブルおよびテーブルのすべての子から削除されます。
 
 ### <a name="known-issues"></a>既知の問題
 

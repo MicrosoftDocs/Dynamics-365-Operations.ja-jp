@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.0 の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。
+description: この記事では、 Dynamics 365 for Finance and Operations バージョン 8.0 の新機能および変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a89b63c30519fcce25a0a0f0875da8183028d7dc
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 761695917ef96e0849b4a716daef792f0fd8efba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061450"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864508"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 
@@ -28,7 +28,7 @@ ms.locfileid: "8061450"
 
 
 
-このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
+この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
 ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
 
@@ -115,7 +115,7 @@ Dynamics 365 for Finance and Operations では、Finance and Operations と Dyna
 
 ### <a name="telemetry-based-kb-recommendation"></a>テレメトリに基づく KB の推奨事項
 
-実稼働環境からのテレメトリは、テナントに適用されるアプリケーション修正プログラムを識別するために使用できます。
+運用環境からのテレメトリは、テナントに適用されるアプリケーション修正プログラムを識別するために使用できます。
 
 ### <a name="kb-recommendations-when-entering-a-support-case"></a>サポート案件を入力する際の KB の推奨事項
 
@@ -123,7 +123,7 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="report-production-outage"></a>稼働停止のレポート
 
-実稼動環境のサービスが低下または使用不可能になった場合、Microsoft サポートに問題をエスカレートを迅速かつ有効なチャンネルを提供します。
+運用環境のサービスが低下または使用不可能になった場合、Microsoft サポートに問題をエスカレートを迅速かつ有効なチャンネルを提供します。
 
 ## <a name="supply-chain-management"></a>サプライ チェーン マネジメント
 

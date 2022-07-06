@@ -1,6 +1,6 @@
 ---
 title: 要求または応答シナリオの EventHandlerResult クラス
-description: このトピックでは、デリゲート メソッドで EventHandlerResult クラスを使用する方法について説明します。
+description: この記事では、デリゲート メソッドで EventHandlerResult クラスを使用する方法について説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f582d64aeffb7bc986548bdac05f01fda1874acc
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 732214ed52d11b6736b0f1e761a7627c95199a8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781769"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867066"
 ---
 # <a name="eventhandlerresult-classes-in-request-or-response-scenarios"></a>要求または応答シナリオの EventHandlerResult クラス
 
@@ -24,7 +24,7 @@ ms.locfileid: "7781769"
 
 デリゲート メソッドとデリゲート ハンドラー メソッドは、デリゲート呼び出しロジックがサブスクライバに応答を要求する要求/応答シナリオをサポートするために宣言することができます。 このシナリオをサポートするために、**EventHandlerResult** クラスがパラメーターとして渡されることが最も多く、デリゲート ハンドラー メソッドがクラスの result メソッドの 1 つを使用して結果を提供します。 ただし、**EventHandlerResult** クラスは単一の結果のみを含むため、複数のサブスクライバが個々の結果を提供する場合は、最後の回答者が獲得し、前のサブスクライバからの結果が上書きされます。
 
-このトピックで説明されている機能が導入される前 (プラットフォーム更新プログラム 5) は、最大でも単一のサブスクライバーが結果を提供し、複数のサブスクライバーが存在すると結果が失われないことを保証するメカニズムはありませんでした。
+この記事で説明されている機能が導入される前 (プラットフォーム更新プログラム 5) は、最大でも単一のサブスクライバーが結果を提供し、複数のサブスクライバーが存在すると結果が失われないことを保証するメカニズムはありませんでした。
 
 ## <a name="ensuring-at-most-one-response"></a>最大で 1 つの応答を確認
 

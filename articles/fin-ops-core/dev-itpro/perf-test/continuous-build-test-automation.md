@@ -1,6 +1,6 @@
 ---
 title: 継続的なビルドおよびテストの自動化環境の配置と使用
-description: このトピックでは、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。
+description: この記事では、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。
 author: RobinARH
 ms.date: 01/21/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4c3355dc23c628292e6c369b08040d3c7894f64
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f8a9d56e879e5f5d46353379c5384714e69c7ea0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856947"
 ---
 # <a name="deploy-and-use-a-continuous-build-and-test-automation-environment"></a>継続的なビルドおよびテストの自動化環境の配置と使用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは継続的なビルドとテストの自動化をサポートする環境を配置して使用する方法を説明します。
+この記事では継続的なビルドとテストの自動化をサポートする環境を配置して使用する方法を説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -41,7 +41,7 @@ Microsoft Dynamics Lifecycle Services (LCS) で Azure DevOps サブスクリプ�
 
 + LCS は Azure で開発およびビルド / テスト環境を作成します。 ビルド / テスト環境を作成するためには、LCS は Azure DevOps プロジェクトのソース コードがどこにあるか特定できる必要があります。
 + 開発者は開発者 VM のソース コードで作業し、その作業は Azure DevOps プロジェクトに同期されます。
-+ ビルド プロセスによって、コードが Azure DevOps からビルド / テスト VM に同期され、配置可能なパッケージが作成され、サンドボックスおよび実稼動環境に適用できるようになります。 ソース コードは、開発 VM からビルド / テスト VM への直接フローを持ちません。 これらは Azure DevOps を通して同期されます。
++ ビルド プロセスによって、コードが Azure DevOps からビルド / テスト VM に同期され、配置可能なパッケージが作成され、サンドボックスおよび運用環境に適用できるようになります。 ソース コードは、開発 VM からビルド / テスト VM への直接フローを持ちません。 これらは Azure DevOps を通して同期されます。
 
 カスタム テスト コードの記述またはビルド インフラストラクチャと統合するための自動テスト コードを生成する方法の詳細は、[テストと検証](testing-validation.md) を参照してください。
 
@@ -89,7 +89,7 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
 
 ### <a name="deploy-a-build-environment"></a>ビルド環境の展開
 
-「[開発環境の展開およびアクセス](../dev-tools/access-instances.md)」のトピックでは、開発環境の展開方法が説明されています。 同様のフローを使用して、ビルド環境を配置します。 展開またはコンフィギュレーション ウィザードを実行する際に、**トポロジを選択してください** というメッセージが表示されたら、**ビルドおよびテスト** トポロジを選択してから **DevTest** を選択します。
+「[開発環境の展開およびアクセス](../dev-tools/access-instances.md)」の記事では、開発環境の展開方法が説明されています。 同様のフローを使用して、ビルド環境を配置します。 展開またはコンフィギュレーション ウィザードを実行する際に、**トポロジを選択してください** というメッセージが表示されたら、**ビルドおよびテスト** トポロジを選択してから **DevTest** を選択します。
 
 展開ウィザードの一部として、ビルド エージェント名およびビルド エージェント プールを構成できます。
 

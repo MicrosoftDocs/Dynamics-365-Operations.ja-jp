@@ -1,6 +1,6 @@
 ---
 title: 環境メタデータをフェッチする
-description: このトピックでは、LCS 環境 API 経由で Microsoft Dynamics Lifecycle Services (LCS) によって環境メタデータをフェッチする方法について説明します。
+description: この記事では、LCS 環境 API 経由で Microsoft Dynamics Lifecycle Services (LCS) によって環境履歴メタデータをフェッチする方法について説明します。
 author: jorichar
 ms.date: 08/19/2021
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jorichar
 ms.search.validFrom: 2021-08-32
-ms.openlocfilehash: ab9f7a193c6f5e49c2394ef615b788c1cdb422f1
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: ed25c67d22e701debc7575d7b1dc0d454c62df24
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866499"
 ---
 # <a name="fetch-environment-metadata"></a>環境メタデータをフェッチする
 
@@ -95,7 +95,7 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
 | EnvironmentName | 環境名。 |
 | プロジェクト ID | 環境を含む LCS プロジェクトの ID。 |
 | EnvironmentInfrastructure | 環境のインフラストラクチャ タイプ (**SelfService** または **MicrosoftManaged** など)。 |
-| EnvironmentType | 環境タイプ (**実稼働** または **サンドボックス** など)。 |
+| EnvironmentType | 環境タイプ (**運用** または **サンドボックス** など)。 |
 | EnvironmentGroup | 環境グループ (**基本** または **DiasterRecovery** など)。 |
 | EnvironmentProduct | この環境で実行されている製品。 |
 | EnvironmentEndpointBaseUrl | 環境のベース URL。 |

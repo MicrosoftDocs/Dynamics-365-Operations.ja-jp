@@ -1,6 +1,6 @@
 ---
 title: データ エンティティの概要
-description: このトピックでは、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドについて説明します。
+description: この記事では、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドについて説明します。
 author: peakerbl
 ms.date: 04/20/2020
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f40e4283f58060bfd7a3f11a9f1a74566c1b0fc8
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 02b95c18e5fd0e76cb96ea9a125f067160e887fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8312018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848727"
 ---
 # <a name="data-entities-overview"></a>データ エンティティの概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "8312018"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックは、データ エンティティを定義し、その概要について説明します。 これには、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドに関する情報が含まれています。
+この記事は、データ エンティティを定義し、その概要について説明します。 これには、データ エンティティの機能、サポートされるシナリオ、およびそれらに使用されるカテゴリ、作成するメソッドに関する情報が含まれています。
 
 ## <a name="overview"></a>概要
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance + Operations セルフサービス環境へのアップグレードのトラブルシューティング
-description: このトピックでは、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) セルフサービス環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
+description: この記事では、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) セルフサービス環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
 author: ttreen
 ms.date: 04/26/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: f378826245e758454cdf47a518c8e11ead94d1cd
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: 5cbc66798972334bbcfd540de45298ef9737b8d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648752"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890432"
 ---
 # <a name="troubleshoot-upgrades-to-dynamics-365-finance--operations-self-service-environments"></a>Dynamics 365 Finance + Operations セルフサービス環境へのアップグレードのトラブルシューティング
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) セルフサービス環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
+この記事では、Microsoft Dynamics AX 2012 から Dynamics 365 Finance + Operations (on-premises) セルフサービス環境へのアップグレードに関するトラブルシューティング ガイドを提供します。
 
 ## <a name="scenario-1-the-migration-app-prompts-you-to-enter-project-id-and-environment-id-values"></a>シナリオ 1: 移行アプリでプロジェクト ID と環境 ID を入力するよう求めるメッセージが表示されます。
 

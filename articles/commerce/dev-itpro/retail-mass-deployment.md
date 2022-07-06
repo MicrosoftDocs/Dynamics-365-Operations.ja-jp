@@ -1,6 +1,6 @@
 ---
 title: レガシ セルフサービス コンポーネントの一括配置
-description: このトピックでは、セルフ サービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
+description: この記事では、セルフサービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。
 author: jashanno
 ms.date: 08/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 8104cac4d3f606b94983c81b65aa88f5bb794a17
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7805c106fabb228473660bde95257174e4bc3eea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878555"
 ---
 # <a name="mass-deployment-of-legacy-self-service-components"></a>レガシ セルフサービス コンポーネントの一括配置
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、レガシ セルフサービス インストーラーに対応しています。 レガシ セルフサービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。 このトピックは、機能が開発され、より多くの機能が利用可能になると更新されます。 現在、サイレント サービス更新の機能のみが利用可能です。 
+この記事は、レガシ セルフサービス インストーラーに対応しています。 レガシ セルフサービスを使用してサイレント サービスの更新と初期展開を行う方法について説明します。 また、特別な配置のいくつかの側面についても説明します。 この記事は、機能が開発され、より多くの機能が利用可能になると更新されます。 現在、サイレント サービス更新の機能のみが利用可能です。 
 
 ## <a name="delimiters-for-mass-deployment"></a>一括配置の区切り記号
 
@@ -47,7 +47,7 @@ ms.locfileid: "7782110"
 
 ### <a name="before-you-begin"></a>準備
 
-サイレント サービスが現在インストールされているすべてのコンポーネントを維持していることに注意してください。 任意のコンフィギュレーションがまだ必要な場合は、このトピックの手順を開始する前に実行します。
+サイレント サービスが現在インストールされているすべてのコンポーネントを維持していることに注意してください。 任意のコンフィギュレーションがまだ必要な場合は、この記事の手順を開始する前に実行します。
 
 ### <a name="examples-of-commands-for-silent-servicing"></a>サイレント サービスのコマンド例
 
@@ -76,7 +76,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 ### <a name="before-you-begin"></a>準備
 
-この機能を使用するには、バージョン 7.3 以降が必要です。 本社でのすべての店舗、レジスター、およびデバイスのコンフィギュレーション、およびその他のコンフィギュレーションが既に完了したとみなされます。 任意のコンフィギュレーションがまだ必要な場合は、このトピックの手順を実行する前に実行します。
+この機能を使用するには、バージョン 7.3 以降が必要です。 本社でのすべての店舗、レジスター、およびデバイスのコンフィギュレーション、およびその他のコンフィギュレーションが既に完了したとみなされます。 任意のコンフィギュレーションがまだ必要な場合は、この記事の手順に従う前に完了します。
 
 ### <a name="examples-of-commands-for-silent-mass-deployment"></a>サイレント マス展開のコマンド例
 

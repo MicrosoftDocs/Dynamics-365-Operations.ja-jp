@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Translation Service Visual Studio 拡張機能 (プライベート プレビュー)
-description: このトピックでは、Visual Studio 用の Microsoft Dynamics 365 Translation Service (DTS) 拡張機能を Visual Studio ワークフローに統合する方法について説明します。
+description: この記事では、Visual Studio 用の Microsoft Dynamics 365 Translation Service (DTS) 拡張機能を Visual Studio ワークフローに統合する方法について説明します。
 author: abmotgi
 ms.date: 12/13/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.search.region: Global
 ms.author: abmotgi
 ms.search.validFrom: 2021-12-13
-ms.openlocfilehash: abd3b927500de7ed1527b9750245258040764d67
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 8762db540168b5986a40948f139a0f09f8dc20be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7928541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866460"
 ---
 # <a name="dynamics-365-translation-service-visual-studio-extension-private-preview"></a>Dynamics 365 Translation Service Visual Studio 拡張機能 (プライベート プレビュー)
 
@@ -24,7 +24,7 @@ ms.locfileid: "7928541"
 
 Visual Studio 用の Microsoft Dynamics 365 Translation Service (DTS) 拡張機能を使用すると、開発者は Visual Studio 統合開発環境 (IDE) から直接 DTS でアクションを実行できます。 たとえば、ユーザー インターフェイス (UI) ファイルを翻訳し、翻訳を再生成できます。 サポートされている機能の詳細については、[Dynamics 365 Translation Service の概要](translation-service-overview.md)を参照してください。
 
-DTS Visual Studio 拡張機能を使用するには、Microsoft Dynamics Lifecycle Services (LCS) へのアクセス許可が必要です。 また、この拡張機能は、主に Visual Studio の Finance and Operations アプリの開発ワークフローをサポートすることを目的としています。 詳細については、[Finance and Operations アプリの開発と管理](/dynamics365/fin-ops-core/dev-itpro/)を参照してください。
+DTS Visual Studio 拡張機能を使用するには、Microsoft Dynamics Lifecycle Services (LCS) へのアクセス許可が必要です。 また、この拡張機能は、主に Visual Studio の 財務と運用アプリの開発ワークフローをサポートすることを目的としています。 詳細については、[財務と運用アプリの開発と管理](/dynamics365/fin-ops-core/dev-itpro/) を参照してください。
 
 > [!NOTE]
 > DTS Visual Studio の拡張機能は、プライベート プレビューとしてのみ使用できます。 DTS は現在米国でのみ展開されているため、データは地域の境界外で処理および保管されることがあります。

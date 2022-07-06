@@ -1,6 +1,6 @@
 ---
 title: メソッドを拡張可能にする属性
-description: このトピックでは、メソッドを拡張可能にする属性について説明します。
+description: この記事では、メソッドを拡張可能にする属性について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/11/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: dff03369b25c0853fdb38ffad39726f15427b97e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1ad3ca907371f9f1c91941c3ec94defcc7fafd82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782741"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866936"
 ---
 # <a name="attributes-that-make-methods-extensible"></a>メソッドを拡張可能にする属性
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、メソッドの拡張性機能を制御するために使用できるさまざまな属性について説明します。
+この記事では、メソッドの拡張性機能を制御するために使用できるさまざまな属性について説明します。
 
 次の表は、メソッドの拡張性およびアクセシビリティの既定のサポートの概要を提供します。 さらに、メソッド シグネチャの変更に関するガイダンスも提供します。
 

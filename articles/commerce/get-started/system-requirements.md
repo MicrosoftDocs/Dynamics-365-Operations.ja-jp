@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Commerce のクラウド配置のシステム要件
-description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
+description: この記事では、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
-ms.date: 05/05/2022
+ms.date: 06/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,18 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6666f41d052ce12b9de90e9580965769b48c3757
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: af7db5657330f577b638ceece5402c0120d5cf5c
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713630"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027269"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、現在のバージョンの Dynamics 365 Commerce のクラウド配置のシステム要件を一覧表示します。 このステップが適切な場合は、コマースをインストールする前に、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証する必要があります。
+この記事では、現在のバージョンの Dynamics 365 Commerce のクラウド配置のシステム要件を一覧表示します。 このステップが適切な場合は、コマースをインストールする前に、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証する必要があります。
 
 ## <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 
@@ -67,7 +66,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="net-framework-requirements"></a>.NET Framework 要件
 
-コマースでは、ドキュメント回覧エージェントなどのすべての ClickOnce アプリケーション用として Microsoft .NET Framework バージョン 4.7.1 以降が必要です。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。 コマース クライアント コンポーネント (シールド インストーラーまたはレガシ インストーラー) については、使用可能な .NET Framework の最新バージョンを常に使用することをお勧めします。
+コマースでは、Document Routing Agent などの Call ClickOnce アプリケーション用として Microsoft .NET Framework バージョン 4.7.2 以降が必要です。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。 コマース クライアント コンポーネント (シールド インストーラーまたはレガシ インストーラー) については、使用可能な .NET Framework の最新バージョンを常に使用することをお勧めします。
 
 ## <a name="supported-microsoft-office-applications"></a>サポートされる Microsoft Office アプリケーション
 
@@ -78,7 +77,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="system-requirements-for-commerce-client-components"></a>コマース クライアント コンポーネントのシステム要件
 
-実稼働に移行する前に適切なパフォーマンス テストを実行することが重要です。 次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。 目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。 実装の初期段階と最終テストの前に再度、適切なパフォーマンス テストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
+運用に移行する前に適切なパフォーマンス テストを実行することが重要です。 次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。 目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。 実装の初期段階と最終テストの前に再度、適切なパフォーマンス テストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
 
 セルフサービス コンポーネントが SQL データベースを使用する場合は、[SQL Server のバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) を確認することを強くお勧めします。 現在メインストリーム サポートの期間内にある SQL Server のバージョンの使用をお勧めします。 [製品とサービス ライフサイクル情報](/lifecycle/products/) という記事でサポート日を製品ごとに検索できます。 セルフサービス コンポーネント用の SQL データベースには、SQL Server 2017 以降が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。 レガシ セルフサービス インストーラーは、Service Pack 2 以降の SQL Server 2016 もサポートしています。
 
@@ -87,7 +86,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 > [!NOTE]
 > レガシ Commerce Scale Unit (自己ホスト) のセルフサービス コンポーネントでは、Azure Service to Service 認証が使用されます。 生成された Azure Web アプリケーション キー (旧 *シークレット*) とサーバー証明書の両方の有効期限を管理することが重要です。 既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) 後に期限切れになります。
 >
-> サポートされている .NET Framework のバージョンが更新されました。 レガシ セルフサービス クライアント側コンポーネントを使用するには、.NET Framework version 4.7.1 以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。 シールド インストーラーの場合は、常に .NET Framework の最新バージョンをターゲット コンピューターにインストールすることをお勧めします。
+> サポートされている .NET Framework のバージョンが更新されました。 セルフサービス クライアント側のコンポーネント (Commerce Scale Unit - Self hosted、Store Commerce、Modern POS、Hardware Station など) には、.NET Framework Version 4.7.2 またはそれ以降をインストールする必要があります。 インストール手順については、[開発者の .NET Framework のインストール](/dotnet/framework/install/guide-for-developers) を参照してください。 シールド インストーラーの場合は、常に .NET Framework の最新バージョンをターゲット コンピューターにインストールすることをお勧めします。
 
 ### <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
@@ -151,7 +150,7 @@ Commerce セルフサービス コンポーネントを正しく使用するに�
 
 #### <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 
-Commerce Scale Unit (自己ホスト) の最小システム要件は、通常テスト シナリオにある機能に必要な必要最低限を記載しています。 ここで説明されている要件は、現実的な実稼働環境を表すのではありません。 適切なパフォーマンス テストを行い、使用されるハードウェア ステーション、Modern POS、クラウド POS、および Commerce Scale Unit (自己ホスト) コンポーネントまたはコンピューターにアクセスして使用するサードパーティ コンポーネントの需要を満たすコンピューター ハードウェアを検証する必要があります。 さらに、SQL Server の標準ライセンス バージョン以上 (例えば、Enterprise 版) を使用して、プロセッサと RAM の全機能を活用することを強くお勧めします。
+Commerce Scale Unit (自己ホスト) の最小システム要件は、通常テスト シナリオにある機能に必要な必要最低限を記載しています。 ここで説明されている要件は、現実的な運用環境を表すのではありません。 適切なパフォーマンス テストを行い、使用されるハードウェア ステーション、Modern POS、クラウド POS、および Commerce Scale Unit (自己ホスト) コンポーネントまたはコンピューターにアクセスして使用するサードパーティ コンポーネントの需要を満たすコンピューター ハードウェアを検証する必要があります。 さらに、SQL Server の標準ライセンス バージョン以上 (例えば、Enterprise 版) を使用して、プロセッサと RAM の全機能を活用することを強くお勧めします。
 
 追加要件を次に示します。
 

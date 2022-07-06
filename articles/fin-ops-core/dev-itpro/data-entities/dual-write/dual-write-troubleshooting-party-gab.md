@@ -1,6 +1,6 @@
 ---
 title: 当事者およびグローバル アドレス帳のトラブルシューティング
-description: このトピックでは、二重書き込みの当事者の機能およびグローバル アドレス帳の機能に関する問題の修正に役立つトラブルシューティング情報を提供します。
+description: この記事では、二重書き込みの当事者の機能およびグローバル アドレス帳の機能に関する問題の修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 07/30/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 991bb07f0af5e49a7c094a7b7a8b1ae2abf27bcf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d2136952ba6e4eeb938fc24a4be426a5b4b52e49
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892878"
 ---
 # <a name="party-and-global-address-book-troubleshooting"></a>当事者およびグローバル アドレス帳のトラブルシューティング
 
@@ -23,7 +23,7 @@ ms.locfileid: "8061589"
 
 
 
-このトピックでは、二重書き込みの当事者の機能およびグローバル アドレス帳の機能に関する問題の修正に役立つトラブルシューティング情報を提供します。
+この記事では、二重書き込みの当事者の機能およびグローバル アドレス帳の機能に関する問題の修正に役立つトラブルシューティング情報を提供します。
 
 ## <a name="verify-these-prerequisites"></a>これらの前提条件の確認
 
@@ -107,7 +107,7 @@ Dataverse の **msdyn_company** テーブルで定義された複数のキーが
 
 *当事者のタイプを「DirOrdirization」から「DirPerson」に更新することはできません。代わりに、既存の当事者を削除し、その後、新しいタイプの挿入を実行する必要があります。*
 
-この問題は、ユーザーが 1 つの財務と運用アプリを異なる Dataverse 組織に接続しようとする場合、または既存の Dataverse 組織をリセットしようとする場合、非実稼働環境で発生します。 この問題は、Dataverse の **msdyn_party** テーブルにある当事者 ID の番号順序が原因です。 次の一連のイベントによってエラーが発生します。
+この問題は、ユーザーが 1 つの財務と運用アプリを異なる Dataverse 組織に接続しようとする場合、または既存の Dataverse 組織をリセットしようとする場合、非運用環境で発生します。 この問題は、Dataverse の **msdyn_party** テーブルにある当事者 ID の番号順序が原因です。 次の一連のイベントによってエラーが発生します。
 
 1. Dataverse にアカウントが作成されます。 Dataverse では、当事者 ID が **Party-001** で当事者タイプが **組織** の新しい当事者が作成されます。 
 2. 新しいアカウントが財務と運用アプリに送信されます。
@@ -123,6 +123,6 @@ Dataverse の **msdyn_company** テーブルで定義された複数のキーが
 
 **個人** と **組織** タイプの当事者のみをフィルタ処理するため、財務と運用アプリで **DirPartyCDSEntity** エンティティに範囲が追加されています。 その結果、**CDS 関係者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先 V3 (msdyn_partyelectronicaddresses)** で最初の同期を実行するとき、**当事者** 番号が Dataverse に見つからないなどのエラーが表示される場合があります。
 
-すべてのタイプの関係者が Dataverse に正常に同期するために、財務と運用アプリ エンティティで当事者タイプの範囲を削除しています。 今後の更新については、このトピックに戻って確認してください。 
+すべてのタイプの関係者が Dataverse に正常に同期するために、財務と運用アプリ エンティティで当事者タイプの範囲を削除しています。 今後の更新については、この記事に戻って確認してください。 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

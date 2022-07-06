@@ -1,6 +1,6 @@
 ---
 title: タスク レコーダー リソース
-description: このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
+description: この記事では、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 author: jasongre
 ms.date: 09/11/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71a3e6ad8d45b6ed550a023cca5001af0195d7cb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a0699331f4fdc5599c3c435c55669f6a24721d67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065086"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910368"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -25,7 +25,7 @@ ms.locfileid: "8065086"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
+この記事では、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -383,7 +383,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 1.  <https://github.com/Microsoft/FMLab> で、GitHub から拡張機能を含む **FMLabTaskRecorderScreenshot** フォルダをダウンロードします。
 2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 \<hostname\> を環境のベース URL に置き換えます。
 
-    ```xpp
+    ```json
     ...
     "content_scripts": [
         {
@@ -393,8 +393,8 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
         ...
     ```
 
-3.  **21Vianet 配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 **.com** を **.cn** に置き換えます
-    ```xpp
+3.  **[中国の 21Vianet](../deployment/china-local-deployment.md) 配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 **.com** を **.cn** に置き換えます
+    ```json
     ...
     "content_scripts": [
         {
@@ -403,15 +403,35 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
         }
         ...
     ```
-4.  最新の Microsoft Edge ブラウザーまたは Google Chrome を開きます。
-5.  Microsoft Edge で **設定とその他 &gt; 拡張機能** (または Google Chrome で **Google Chrome のカスタマイズと制御 &gt; その他のツール &gt; 拡張機能**) を選択します。
-6.  **開発者モード** を選択します。
-7.  **展開された拡張子の読み込み** をクリックします。
-8.  パス **FMLab-master \> FMLab \> TaskRecorderScreenshot** を使用してタスク レコーダー拡張子を含むフォルダーを参照してから、**フォルダーの選択** を選択します。
-9.  拡張機能が有効になるように、**有効** が選択されていることを確認します。
-10.  ブラウザーを再起動します。
+4.  **[米国政府機関向けコミュニティ クラウド (GCC)](../deployment/us-gcc-deployment.md) 配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 **dynamics.com** を **microsoftdynamics.us** に置き換える
+    ```json
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.microsoftdynamics.us/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+4.  **複数の配置:** matches 句に文字列値を追加し、コンマで区切ります。
+    ```json
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.dynamics.com/*", "https://*.microsoftdynamics.us/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+6.  最新の Microsoft Edge ブラウザーまたは Google Chrome を開きます。
+7.  Microsoft Edge で **設定とその他 &gt; 拡張機能** (または Google Chrome で **Google Chrome のカスタマイズと制御 &gt; その他のツール &gt; 拡張機能**) を選択します。
+8.  **開発者モード** を選択します。
+9.  **展開された拡張子の読み込み** をクリックします。
+10.  パス **FMLab-master \> FMLab \> TaskRecorderScreenshot** を使用してタスク レコーダー拡張子を含むフォルダーを参照してから、**フォルダーの選択** を選択します。
+11.  拡張機能が有効になるように、**有効** が選択されていることを確認します。
+12.  ブラウザーを再起動します。
 
-タスク レコーダーは、クライアントが実行しているタブのスクリーンショットを撮影します。 これらのスクリーンショットは、記録が再生されてから 1 週間利用できます。 (Platform update 16 より前のプラットフォーム バージョンを実行している場合、スクリーンショットは 15 分間しか使用できません。) スクリーンショットが期限切れになっている場合は、再度タスク記録を再生して再生成できます。
+タスク レコーダーは、クライアントが実行しているタブのスクリーンショットを撮影します。 必要に応じて、タスク記録をもう一度再生して、スクリーンショットを再生成できます。
 
 タスク レコーダーは、他のタブまたはユーザーのデスクトップからスクリーンショットを取得 **しない** 点に注意してください。
 

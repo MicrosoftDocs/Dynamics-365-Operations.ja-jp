@@ -1,6 +1,6 @@
 ---
 title: ビジネス ドキュメントのカスタム デザインを作成する
-description: このトピックでは、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する方法について説明します。
+description: この記事では、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する方法について説明します。
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: db7b50f0c98c92916707b9bf344c6e9f5bd98e453a148710ab5f471b1c9d3ab8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 614d26fff6ce53cd29c056237a794c19ed1a3dfb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892245"
 ---
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する方法について説明します。
+この記事では、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する方法について説明します。
 
-Microsoft Dynamics 365 Finance には、カスタム レポート ソリューションをサポートするためのツールの拡張セットが含まれています。 このトピックでは、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する手順について説明します。 カスタム レポート デザインをアプリケーション ドキュメントのインスタンスに関連付けるには、このトピックで後述する手順に従います。 完了したら、ユーザーは印刷管理設定を構成して、 該当するときはいつでも、カスタムのデザインを選択できます。 次の図は、一般的なアプリケーションのカスタマイズを示しています。
+Microsoft Dynamics 365 Finance には、カスタム ソリューションをサポートするためのツールの拡張セットが含まれています。 この記事では、純粋な拡張モデルを使用して、既存のアプリケーション ビジネス ドキュメントのカスタム レポート デザインを作成する手順について説明します。 カスタム レポート デザインをアプリケーション ドキュメントのインスタンスに関連付けるには、この記事で後述する手順に従います。 完了したら、ユーザーは印刷管理設定を構成して、 該当するときはいつでも、カスタムのデザインを選択できます。 次の図は、一般的なアプリケーションのカスタマイズを示しています。
 
 [![extendingprintmgt。](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)
 

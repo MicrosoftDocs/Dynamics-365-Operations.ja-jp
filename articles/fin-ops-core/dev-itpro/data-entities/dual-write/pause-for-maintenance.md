@@ -1,6 +1,6 @@
 ---
 title: メンテナンス時に二重書き込みを一時停止する
-description: このトピックでは、テーブル マップを一時停止する方法について説明します。
+description: この記事では、テーブル マップを一時停止する方法について説明します。
 author: nhelgren
 ms.date: 02/09/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56aa76798f8b3d66448d6192d5b03b5d7823181a
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 9f3f50af5d158e573369dcbd82e3952285474aa2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554579"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892149"
 ---
 # <a name="pause-dual-write-for-maintenance"></a>メンテナンス時に二重書き込みを一時停止する
 

@@ -1,6 +1,6 @@
 ---
 title: 右から左へ読み書きする言語のサポートと双方向のテキスト
-description: このトピックでは、双方向テキストの問題とその処理方法について説明します。
+description: この記事では、双方向テキストの問題とその処理方法について説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5512285b97d0c2cc7d49454c4ecada74e0b186f6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c39dbf8e77c9820c02c902ea8cb1602c788283bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783000"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884432"
 ---
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 
 [!include [banner](../includes/banner.md)]
 
-右から左 (RTL) の言語サポートの領域では、同じ文字列での RTL テキストと左から右 (LTR) のテキストの組み合わせを考慮します。 このトピックでは、双方向テキストの問題とその処理方法について説明します。
+右から左 (RTL) の言語サポートの領域では、同じ文字列での RTL テキストと左から右 (LTR) のテキストの組み合わせを考慮します。 この記事では、双方向テキストの問題とその処理方法について説明します。
 
 ## <a name="a-great-example-of-right-to-left-language-support-microsoft-word"></a>右から左言語サポートの優れた例: Microsoft Word
 
@@ -36,9 +36,9 @@ Word を正しく理解し、適切なエクスペリンスを提供するには
 数十億のトランザクションと数十億の文字を記録する場合がある財務プログラムで文字の方向を追跡することにより、各文字のコンテキストの情報を格納する場合、重要な取引および空間のオーバーヘッドを作成します。 したがって、この動作は特別な条件の場合のみ考慮されます。
 
 ## <a name="bidirectional-text"></a>双方向のテキスト
-どちらも RTL 言語であるアラビア語とヘブライ語をサポートするために、RTL リーダーが自然な読み方でフォームとやりとりできるように、各フォームのコントロールには RTL の向きがあります。 ほとんどの場合、コントロールの RTL の向き(右から左)は予想通りに作動し、RTL ユーザーに期待するエクスペリエンスを提供します。 Finance and Operations アプリと最新のブラウザーは RTL の向きに対応しており、Finance and Operations アプリはその機能に準拠しています。 ただし、場合によっては、拡張可能なコントロール (カスタム コントロール) には、要素の方向を正しく位置付ける特別なコードが必要です。 
+どちらも RTL 言語であるアラビア語とヘブライ語をサポートするために、RTL リーダーが自然な読み方でフォームとやりとりできるように、各フォームのコントロールには RTL の向きがあります。 ほとんどの場合、コントロールの RTL の向き(右から左)は予想通りに作動し、RTL ユーザーに期待するエクスペリエンスを提供します。 Finance and Operations アプリおよび最新のブラウザは RTL 方向をサポートし、Finance and Operations アプリはその機能に準拠しています。 ただし、場合によっては、拡張可能なコントロール (カスタム コントロール) には、要素の方向を正しく位置付ける特別なコードが必要です。 
 
-この記事の参照ポイントは、標準のテキスト エントリ (Microsoft Dynamics AX 2012 の勘定科目名、説明、ユーザー名など) で主に使用される Win32 CEdit コントロールです。 HTML 入力コントロールの動作は、CEdit コントロールの機能に似ています。 したがって、Finance and Operations には同じ動作が適用されます。 
+この記事の参照ポイントは、標準のテキスト エントリ (Microsoft Dynamics AX 2012 の勘定科目名、説明、ユーザー名など) で主に使用される Win32 CEdit コントロールです。 HTML 入力コントロールの動作は、CEdit コントロールの機能に似ています。 したがって、Finance and Operations にも同じ動作が適用されます。 
 
 CEdit コントロールは、Unicode 標準によって定義されている双方向テキスト管理のためのルールによって制御される Win32 コントロールです。 コントロールが同じ文字列内の RTL テキスト (アラビア語やヘブライ語など) と LTR テキストの両方をホストする場合に双方向のテキストは発生します。 
 

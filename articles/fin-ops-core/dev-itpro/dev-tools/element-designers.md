@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9dac34d159ade50fe28fa6e753e599dc0e3fada
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b85842b6fd1bf6198b6fb1454652dcf49b3e3571
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867069"
 ---
 # <a name="element-designers"></a>要素デザイナー
 

@@ -1,6 +1,6 @@
 ---
 title: POS でのカスタム ヘッドレス Commerce API およびエンティティの使用
-description: このトピックでは、販売時点管理 (POS) のカスタム ヘッドレス Commerce API およびエンティティを消費するようにプロキシを使用する方法について説明します。
+description: この記事では、販売時点管理 (POS) のカスタム ヘッドレス Commerce API およびエンティティを消費するようにプロキシを使用する方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 42454ddf607dc1f365603ec2ce296d6dfdbb71e0
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 55cfd7b6f85113cdbf7ff7810a877814dcc76743
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783336"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876563"
 ---
 # <a name="consume-custom-headless-commerce-apis-and-entities-in-pos"></a>POS でのカスタム ヘッドレス Commerce API およびエンティティの使用
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) のカスタム ヘッドレス Commerce API およびエンティティを消費するようにプロキシを使用する方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+この記事では、販売時点管理 (POS) のカスタム ヘッドレス Commerce API およびエンティティを消費するようにプロキシを使用する方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
 
 1. Commerce Runtime (CRT) 拡張機能プロジェクトは **Microsoft.Dynamics.Commerce.Sdk.Runtime** NuGet パッケージを参照し、POS 拡張機能プロジェクトが **Microsoft.Dynamics.Commerce.Sdk.Pos** NuGet パッケージを参照することを確認する必要があります。
 2. POS 拡張機能プロジェクトから、API を定義する CRT プロジェクトへの参照を追加します。

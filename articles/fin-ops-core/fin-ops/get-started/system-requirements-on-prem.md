@@ -1,6 +1,6 @@
 ---
 title: オンプレミス配置のシステム要件
-description: このトピックでは、オンプレミス配置のシステム要件を一覧表示します。
+description: この記事では、オンプレミス配置のシステム要件を一覧表示します。
 author: PeterRFriis
 ms.date: 02/08/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 733529157f34e779ca4e985796567a84c720e4fc
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 95728677b4938e232a54a8740c13aa9064b9709a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876519"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (on-premises) 配置のシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認します。
+この記事では、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (on-premises) 配置のシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認します。
 
 > [!IMPORTANT]
 > Dynamics 365 Finance + Operations (on-premises) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
@@ -52,7 +52,7 @@ AOS および Microsoft SQL Server データベースが異なるデータセン
 一般に、Finance + Operations は、ブラウザーからサーバーへのラウンド トリップを減らすために最適化されます。 ブラウザー クライアントからデータセンターへのラウンド トリップの数は各ユーザーの操作ごとに 0 または 1 であり、全伝送データは圧縮されます。
 
 > [!WARNING]
-> ユーザー数に帯域幅要件の最小値を掛けて、クライアントの場所からの帯域幅要件を計算しないでください。 特定の場所の同時使用は非常に計算が困難です。 特定のケースでのパフォーマンスの最良の指標として、非実稼働環境に対する実時間シミュレーションを使用することをお勧めします。
+> ユーザー数に帯域幅要件の最小値を掛けて、クライアントの場所からの帯域幅要件を計算しないでください。 特定の場所の同時使用は非常に計算が困難です。 特定のケースでのパフォーマンスの最良の指標として、非運用環境に対する実時間シミュレーションを使用することをお勧めします。
 
 ### <a name="lan-environments"></a>LAN 環境
 
@@ -139,7 +139,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 
 | トポロジ   | 役割 (ノード タイプ)              | 推奨されるプロセッサ コア | 推奨メモリ (GB) |
 |------------|-------------------------------|-----------------------------|-------------------------|
-| 生産 | AOS,データ管理、バッチ   | 8                           | 24                      |
+| 運用 | AOS,データ管理、バッチ   | 8                           | 24                      |
 |            | Management Reporter           | 4                           | 16                      |
 |            | SQL Server Reporting Services | 4                           | 16                      |
 |            | オーケストレータ                  | 4                           | 16                      |
@@ -150,11 +150,11 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 |            | オーケストレータ                  | 4                           | 16                      |
 |            | SQL Server                    | 8                           | 32                      |
 
-**生産およびサンド ボックス配置用の最小サイズ設定の見積**
+**運用およびサンド ボックス配置用の最小サイズ設定の見積**
 
 | トポロジ                                        | 役割                          | インスタンスの数 |
 |-------------------------------------------------|-------------------------------|---------------------|
-| 生産                                      | AOS (データ管理、バッチ)  | 3                   |
+| 運用                                      | AOS (データ管理、バッチ)  | 3                   |
 |                                                 | Management Reporter           | 2                   |
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | オーケストレータ\*\*              | 3                   |
@@ -164,7 +164,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 |                                                 | SQL Server Reporting Services | 1                   |
 |                                                 | オーケストレータ                  | 3                   |
 |                                                 | SQL Server                    | 1                   |
-| *生産とサンドボックス集計の概要ー* |                               | *19*                |
+| *運用とサンドボックス集計の概要ー* |                               | *19*                |
 
 \*この表の数字は、プレビュー顧客によって検証されており、顧客からのフィードバックに基づいて調整されるかもしれません。
 
@@ -220,7 +220,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 </tbody>
 </table>
 
-\*SQL Server サイズは、ワークロードに大きく依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更要件](hardware-sizing-on-premises-environments.md) を参照してください。 サンド ボックスと生産環境の 個別 SQL Server 機械を使用する必要があります。 ただし、すべてのサンド ボックス環境で、SQL Server を共有できます。
+\*SQL Server サイズは、ワークロードに大きく依存します。 詳細については、[オンプレミス環境のハードウェアのサイズ変更要件](hardware-sizing-on-premises-environments.md) を参照してください。 サンド ボックスと運用環境の 個別 SQL Server 機械を使用する必要があります。 ただし、すべてのサンド ボックス環境で、SQL Server を共有できます。
 
 ## <a name="storage"></a>保管
 
@@ -261,7 +261,7 @@ SQL Server のハードウェア要件については、[SQL Server インスト
 
 - 64 ビット バージョンの SQL Server のみがサポートされています。
 - サーバーおよびデータベースの照合順序では、**SQL\_Latin1\_General\_CP1\_CI\_AS** のみ有効です。 SQL Server データベースの照合順序を選択する方法の詳細については、「[SQL Server に関するドキュメント](/sql/sql-server/sql-server-technical-documentation)」を参照してください。
-- 実稼動環境では、使用している SQL Server のバージョンの最新の累積的な更新プログラム (CU) をインストールすることをお勧めします。
+- 運用環境では、使用している SQL Server のバージョンの最新の累積的な更新プログラム (CU) をインストールすることをお勧めします。
 
 ### <a name="software-requirements-for-application-object-server-aos"></a>Application Object Server (AOS) のソフトウェア要件
 

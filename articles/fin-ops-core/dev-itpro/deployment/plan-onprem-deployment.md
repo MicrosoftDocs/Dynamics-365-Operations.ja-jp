@@ -1,6 +1,6 @@
 ---
 title: オンプレミス配置の計画および準備
-description: このトピックは、オンプレミス展開の計画と準備に役立ちます。
+description: この記事は、オンプレミス展開の計画と準備に役立ちます。
 author: PeterRFriis
 ms.date: 01/26/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: e349da20c3153d5371c75e206c55179f4043555c
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 3156292bdad6f38701f4a3e41783ef20c77681f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867355"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -28,7 +28,7 @@ ms.locfileid: "8565949"
 
 Dynamics 365 Finance + Operations (on-premises) は、顧客データ センターでビジネス プロセスの実行をサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。
 
-このトピックは、オンプレミス展開の計画と準備に役立ちます。
+この記事は、オンプレミス展開の計画と準備に役立ちます。
 
 > [!IMPORTANT]
 > Dynamics 365 Finance + Operations (on-premises) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
@@ -69,10 +69,10 @@ LCS の詳細については、 [Lifecycle Services のリソース](../lifecycl
 - Active Directory を実行している 1 台のコンピューター
 - SQL Server を実行している 1 台のコンピューター (データベース エンジン)
 
-### <a name="production-environment"></a>実稼働環境
-実働環境は、ユーザーや顧客がアクセスできる実際の展開です。 実稼働環境を展開するには、 [オンプレミス環境の設定と配置のホーム ページ](setup-deploy-on-premises-environments.md) を参照してください。
+### <a name="production-environment"></a>運用環境
+運用環境は、ユーザーや顧客がアクセスできる実際の展開です。 運用環境を展開するには、 [オンプレミス環境の設定と配置のホーム ページ](setup-deploy-on-premises-environments.md) を参照してください。
 
-少なくとも、オンプレミスの実稼動環境には次のものが必要です。
+少なくとも、オンプレミスの運用環境には次のものが必要です。
 - 環境オーケストレータを実行している 3 台のコンピューター
 - Application Object Server (AOS) を実行している 3 台のコンピューター
 - Management Reporter (MR) を実行している 1 台のコンピューター
@@ -83,7 +83,7 @@ LCS の詳細については、 [Lifecycle Services のリソース](../lifecycl
 ## <a name="service-fabric"></a>Service Fabric
 オンプレミス配置では、 Azure Service Fabric スタンドアロンクラスターが使用されます。 Service Fabric は、企業規模の大規模なアプリケーションを構築および管理するための次世代の Microsoft ミドルウェア プラットフォームです。 Service Fabric スタンドアロン クラスターは、Windows Server を実行しているどのコンピューターにも展開することができます。
 
-オンプレミス配置には、各サンドボックス環境のスタンドアロン クラスターと各実稼働環境のスタンドアロン クラスターがあります。 両方のタイプのクラスターに、次のロールまたはノード タイプが配置されます。
+オンプレミス配置には、各サンドボックス環境のスタンドアロン クラスターと各運用環境のスタンドアロン クラスターがあります。 両方のタイプのクラスターに、次のロールまたはノード タイプが配置されます。
 - Application Object Servers (AOS) – アプリケーション機能をクライアント、バッチ、およびインポート/エクスポートのシナリオで実行する機能を提供します。
 - Management Reporter (MR) – 財務レポートの機能を提供します。
 - SQL Server Reporting Services (SSRS): ドキュメント レポート機能を提供します。
@@ -136,7 +136,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 - **サード パーティのソリューション** 1 – これらのソリューションは、ISV のように、拡張と同じ意味合いと推奨事項を持っています。
 
 ## <a name="sizing-your-environment"></a>環境のサイズ変更
-サイジング要件を決定するには、処理する必要のあるトランザクションのピーク量を知る必要があります。 Management Reporter や SSRS などのほとんどの補助システムは、ミッション クリティカルではありません。 結果として、このトピックは主に AOS と SQL Server に焦点を当てています。
+サイジング要件を決定するには、処理する必要のあるトランザクションのピーク量を知る必要があります。 Management Reporter や SSRS などのほとんどの補助システムは、ミッション クリティカルではありません。 結果として、この記事は主に AOS と SQL Server に焦点を当てています。
 
 一般に、計算層はスケールアウトされ、N + 1 形式で設定する必要があります。つまり、3 つの AOS を推定する場合は、4 つ目の AOS を追加します。 データベース層は、常に常時使用可能な設定で設定する必要があります。
 
@@ -227,7 +227,7 @@ Finance + Operations のオンプレミス配置オプションは、オンプ�
 
 ## <a name="next-steps"></a>次のステップ
 
-このトピックに記載されている計画活動を完了した後、 [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) の [研修](on-premises-deployment-landing-page.md#onboard) セクションにリストされている手順を開始することができます。
+この記事に記載されている計画活動を完了した後、 [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) の [オンボード](on-premises-deployment-landing-page.md#onboard) セクションにリストされている手順を開始することができます。
 
 計画、展開、メンテナンス、およびトラブルシューティングの詳細については、実装を通じて [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) を参照してください。
 

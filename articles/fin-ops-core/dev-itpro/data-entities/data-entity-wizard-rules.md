@@ -1,6 +1,6 @@
 ---
 title: データ エンティティ ウィザード ルール
-description: このトピックでは、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
+description: この記事では、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
 author: peakerbl
 ms.date: 10/26/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8110df13caed0184a9ab4ada04565a8e7b5b93ac
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e3453fdd12808340baf40527fbf8b2287ad8bfd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065722"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898635"
 ---
 # <a name="data-entity-wizard-rules"></a>データ エンティティ ウィザード ルール
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065722"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
+この記事では、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
 
 ## <a name="natural-key-expansion-of-surrogate-foreign-keys"></a>代理外部キーのナチュラル キー拡張
 

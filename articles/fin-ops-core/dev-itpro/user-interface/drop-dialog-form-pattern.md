@@ -1,6 +1,6 @@
 ---
 title: ダイアログ削除のフォーム パターン
-description: このトピックでは、ドロップ ダイアログ フォームのパターンについて説明します。 このパターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。
+description: この記事では、ドロップ ダイアログのフォーム パターンに関する情報を提供します。 このパターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。
 author: jasongre
 ms.date: 10/08/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d23378e4e7e084ec207fa8528ac76b444c06ec6d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 87fe64983dfe9279c1bebebb6a8e78dd479ae4b2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850035"
 ---
 # <a name="drop-dialog-form-pattern"></a>ダイアログ削除のフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ドロップ ダイアログ フォームのパターンについて説明します。 このパターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。 
+この記事では、ドロップ ダイアログのフォーム パターンに関する情報を提供します。 このパターンは、フィールド数が 7 以下の場合にアクションを開始するために使用されます。 
 
 ## <a name="usage"></a>用途
 

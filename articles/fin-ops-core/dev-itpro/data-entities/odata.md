@@ -1,6 +1,6 @@
 ---
 title: データ プロトコル (OData) を開く
-description: このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
+description: この記事では、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 author: peakerbl
 ms.date: 06/19/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11847571395403790b779a968797e139239d79fe
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f0494444af78fb27d8c36384b156671699cd2c8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982789"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850937"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
+この記事では、Open Data Protocol (OData) に関する情報を提供し、OData V4 を使用して更新可能なビューを公開する方法について説明します。
 
 ## <a name="what-is-odata"></a>OData とは
 OData は、データを作成および消費するための標準プロトコルです。 OData の目的は、作成、読み取り、更新、削除 (CRUD) 操作のための Representational State Transfer (REST) に基づくプロトコルを提供することです。 OData は、さまざまなプログラムからの情報にアクセスするために、HTTP および JavaScript Object Notation (JSON) などの Web テクノロジーを適用します。 OData には次のメリットがあります。

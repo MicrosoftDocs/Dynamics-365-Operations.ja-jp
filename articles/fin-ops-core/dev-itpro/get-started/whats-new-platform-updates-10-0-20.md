@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)
-description: このトピックでは、Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
+title: 財務と運用アプリのバージョン 10.0.20 (2021 年 8 月) のプラットフォーム更新プログラム
+description: この記事では、財務と運用アプリのバージョン 10.0.20 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 10/27/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: aa06e9f25865824707cf8d5a49ba61d92965d55f
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: f8609548358708b3969de580b3a03bf0366fafb9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866638"
 ---
-# <a name="platform-updates-for-version-10020-of-finance-and-operations-apps-august-2021"></a>Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)
+# <a name="platform-updates-for-version-10020-of-finance-and-operations-apps-august-2021"></a>財務と運用アプリのバージョン 10.0.20 (2021 年 8 月) のプラットフォーム更新プログラム
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6060 で、次のスケジュールで使用できます。
+この記事では、財務と運用アプリのバージョン 10.0.20 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6060 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
 - **リリースの一般提供 (手動更新):** 2021 年 7 月
@@ -48,9 +48,9 @@ ms.locfileid: "7713787"
 
 | 機能領域 | 新規または更新されたトピック |
 |--------------|-----------------------|
-| Power Platform 統合 | [Finance and Operations アプリと Microsoft Power Platform の統合](../power-platform/overview.md)<br>[仮想エンティティの概要](../power-platform/virtual-entities-overview.md)<br>[アドインの概要](../power-platform/add-ins-overview.md)<br>[二重書き込みの新機能および変更された機能](../data-entities/dual-write/whats-new-dual-write.md)<br>[Lifecycle Services からの二重書き込みの設定](../data-entities/dual-write/lcs-setup.md)<br>[ユーザー指定のチームの所有者](../data-entities/dual-write/user-specified-team-owner.md)<br>[既存 Finance and Operations アプリの二重書き込みを有効化](../data-entities/dual-write/enable-dual-write.md)<br>[二重書き込みウィザードを使用して環境をリンクする](../data-entities/dual-write/link-your-environment.md) |
+| Power Platform 統合 | [Microsoft Power Platform と財務と運用アプリの統合](../power-platform/overview.md)<br>[仮想エンティティの概要](../power-platform/virtual-entities-overview.md)<br>[アドインの概要](../power-platform/add-ins-overview.md)<br>[二重書き込みの新機能および変更された機能](../data-entities/dual-write/whats-new-dual-write.md)<br>[Lifecycle Services からの二重書き込みの設定](../data-entities/dual-write/lcs-setup.md)<br>[ユーザー指定のチームの所有者](../data-entities/dual-write/user-specified-team-owner.md)<br>[既存の財務と運用アプリの二重書き込みを有効にする](../data-entities/dual-write/enable-dual-write.md)<br>[二重書き込みウィザードを使用して環境をリンクする](../data-entities/dual-write/link-your-environment.md) |
 | Office 統合 | [Microsoft Office で開くメニューのカスタマイズ](../office-integration/customize-open-office-menu.md) |
-|  データベース| [サンドボックス環境への生産データベースのポイントインタイム復元](../database/database-pitr-prod-sandbox.md)<br>[データベース ポイントインタイム復元 (PITR)](../database/database-point-in-time-restore.md)<br>[データベースの更新](../database/database-refresh.md)<br>[ゴールデン コンフィギュレーション プロモーション](../database/dbmovement-scenario-goldenconfig.md) |
+|  データベース| [サンドボックス環境への運用データベースのポイントインタイム復元](../database/database-pitr-prod-sandbox.md)<br>[データベース ポイントインタイム復元 (PITR)](../database/database-point-in-time-restore.md)<br>[データベースの更新](../database/database-refresh.md)<br>[ゴールデン コンフィギュレーション プロモーション](../database/dbmovement-scenario-goldenconfig.md) |
 | ユーザーの生産性| [カスタム フィールドの作成と操作](../../fin-ops/get-started/user-defined-fields.md)<br>[保存されているビュー](../../fin-ops/get-started/saved-views.md)<br>[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) |
 | セルフサービス配置   | [セルフサービス環境の計画メンテナンスに関する FAQ](../deployment/plannedmaintenance-selfservice.md)  |
 | オンプレミス配置| [オンプレミス環境の設定と配置 (Platform update 41 以降)](../deployment/setup-deploy-on-premises-pu41.md) |
@@ -73,11 +73,11 @@ ms.locfileid: "7713787"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。

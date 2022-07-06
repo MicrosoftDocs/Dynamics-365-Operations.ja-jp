@@ -1,6 +1,6 @@
 ---
 title: 環境管理者の更新
-description: 'このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の財務と運用アプリ環境で環境管理者を変更する方法について説明します。 '
+description: 'この記事では、Microsoft Dynamics Lifecycle Services (LCS) の財務と運用アプリ環境で環境管理者を変更する方法について説明します。 '
 author: laneswenka
 ms.date: 05/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-03-05
-ms.openlocfilehash: 5aaa8f4c1f6bf244c0de837ec3d163f442882d28
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: 0879d871d0854898a8b2b2d0133f1dc56d008abe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866347"
 ---
 # <a name="update-the-environment-administrator"></a>環境管理者の更新
 

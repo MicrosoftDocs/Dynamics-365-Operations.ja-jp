@@ -1,6 +1,6 @@
 ---
 title: Adyen 向け Dynamics 365 Payment Connector の設定
-description: このトピックでは、Adyen にサインアップし、Adyen 向け Microsoft Dynamics 365 Payment Connector を設定する方法について説明します。
+description: この記事では、Adyen にサインアップし、Adyen 向け Microsoft Dynamics 365 Payment Connector を設定する方法について説明します。
 author: rassadi
 ms.date: 01/27/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 37f379b7a0564c346c8503e40d4a7c016ef94452
-ms.sourcegitcommit: eb236eec9eacb507433206fccce585b25980bedd
+ms.openlocfilehash: 7ef26961210adb580137397dee7e3d1bb989a6be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8045509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893047"
 ---
 # <a name="set-up-dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Adyen にサインアップし、Adyen 向け Microsoft Dynamics 365 Payment Connector を設定する方法について説明します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。
+この記事では、Adyen にサインアップし、Adyen 向け Microsoft Dynamics 365 Payment Connector を設定する方法について説明します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。
 
 ## <a name="sign-up-with-adyen"></a>Adyen でサインアップ
 
@@ -56,7 +56,7 @@ Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使
     |---|---|---|
     | 支払サービス | 構成する支払サービスの名前を入力します。 | Adyen Payment Service |
     | 支払コネクタ | 新しいクレジット カードの支払に使用する支払コネクタを選択します。 | Adyen 向け Dynamics 365 Payment Connector |
-    | テスト モード | Adyen コネクタに関しては、実稼働環境とテスト環境でこのフィールドを **false** に設定する必要があります。 | false |
+    | テスト モード | Adyen コネクタに関しては、運用環境とテスト環境でこのフィールドを **false** に設定する必要があります。 | false |
     | クレジット カードの既定のプロセッサ | この支払プロセッサが新しいクレジット カードで使用される既定のプロセッサであるかを指定します。 | 有 |
     | ゼロ トランザクションの支払プロセッサをバイパスする | この支払プロセッサが 0 (ゼロ) の量の取引でスキップする必要があるかを指定します。 | 有 |
 
@@ -95,12 +95,12 @@ Adyen 向け Dynamics 365 Payment Connector を使用するには、Adyen を使
 > [!NOTE]
 > 次の手順では、Adyen 支払端末へのアクセス権を保持していると仮定します。
 
-Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/point-of-sale)ページに移動し、指示に従って Adyen 支払端末をオンボードします。 Adyen 固有のアプリのダウンロードを指示するステップをスキップします。 オンボード プロセス中、各支払端末のための以下の情報を書き留めてください。 この情報は、このトピックの後半の[支払端末の IP アドレスおよび EFT POS 登録番号の構成](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number)セクションで必要です。
+Adyen Web サイトの[販売時点管理](https://docs.adyen.com/developers/point-of-sale)ページに移動し、指示に従って Adyen 支払端末をオンボードします。 Adyen 固有のアプリのダウンロードを指示するステップをスキップします。 オンボード プロセス中、各支払端末のための以下の情報を書き留めてください。 この情報は、この記事の後半の[支払端末の IP アドレスおよび EFT POS 登録番号の構成](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number)セクションで必要です。
 
 - 支払端末の IP アドレス
 - POIID (POIID はデバイスのシリアル番号およびモデル番号で構成されます。 これはデバイスを一意に識別するために使用されます。)
 
-支払端末のオンボード後、[Adyen の顧客領域](https://ca-test.adyen.com/ca/ca/login.shtml)にサインインして、構成対称の端末に移動し、各支払端末のための以下の情報を書き留めてください。 この情報は、トピックの後半の[ローカル ネットワーク通信の EFT サービス](#eft-service-for-local-network-communication) セクションで必要になります。
+支払端末のオンボード後、[Adyen の顧客領域](https://ca-test.adyen.com/ca/ca/login.shtml)にサインインして、構成対称の端末に移動し、各支払端末のための以下の情報を書き留めてください。 この情報は、記事の後半の[ローカル ネットワーク通信の EFT サービス](#eft-service-for-local-network-communication) セクションで必要になります。
 
 - キー識別子
 - キー パスフレーズ
@@ -225,7 +225,7 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 
 ### <a name="configure-the-connector-for-call-center-payments"></a>コール センター支払用のコネクタの構成
 
-コール センターの支払のために Adyen 向け Dynamics 365 Payment Connector を構成するには、このトピックの前半の[新しいクレジット カードのプロセッサの設定](#set-up-a-processor-for-new-credit-cards)セクションの指示に従います。
+コール センターの支払のために Adyen 向け Dynamics 365 Payment Connector を構成するには、この記事の前半の[新しいクレジット カードのプロセッサの設定](#set-up-a-processor-for-new-credit-cards)セクションの指示に従います。
 
 ### <a name="configure-additional-information-for-the-connector"></a>コネクタの追加情報を構成する
 

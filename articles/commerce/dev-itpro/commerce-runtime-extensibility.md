@@ -1,8 +1,8 @@
 ---
-title: Commerce runtime (CRT) の拡張機能
-description: このトピックでは、Commerce Runtime (CRT) と Retail サーバーを拡張するさまざまな方法について説明します。
+title: Commerce Runtime (CRT) の拡張機能
+description: この記事では、Commerce Runtime (CRT) と Retail Server を拡張するさまざまな方法について説明します。
 author: mugunthanm
-ms.date: 04/27/2022
+ms.date: 06/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8ffa9599a472cd945b99ba1a5fb128bc87305f94
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 6651a2f64bd0d67d96c679eb17b8f54ae3030df2
+ms.sourcegitcommit: 19ac134c6d6cb997871b010e25d43ba07bcc140d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649006"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023346"
 ---
-# <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
+# <a name="commerce-runtime-crt-extensibility"></a>Commerce Runtime (CRT) の拡張機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Runtime (CRT) を拡張するさまざまな方法について説明します。 ここでは、拡張プロパティの概念について説明し、CRT エンティティに加えて拡張プロパティに永続性を持たせる方法、および持たせないようにする方法を説明します。
+この記事では、Commerce Runtime (CRT) を拡張するさまざまな方法について説明します。 ここでは、拡張プロパティの概念について説明し、CRT エンティティに加えて拡張プロパティに永続性を持たせる方法、および持たせないようにする方法を説明します。
 
 CRT にはコア ビジネス ロジックが含まれています。 ビジネス ロジックを追加または変更するには、CRT をカスタマイズする必要があります。 C# を使用して、すべての CRT コードが開発され、コンパイルされてクラス ライブラリとしてリリースされます (.NET アセンブリ)。 販売時点管理 (POS) はシン クライアントです。 すべてのビジネス ロジックは、CRT で行われます。 POS は、任意のビジネス ロジックを実行する CRT を呼び出し、CRT は情報を処理して POS に送り返されます。
 
@@ -115,7 +115,7 @@ POS から CRT に拡張機能のプロパティを送信して、カスタム �
 > [!NOTE]
 > 属性もまたサポートされます (コンフィギュレーション駆動型の開発)。 拡張プロパティの場合は、カスタム テーブルを作成し、データを格納する必要があります。 ただし、属性はコンフィギュレーション駆動型であり、テーブル フィールドを作成する場合は必須ではありません。 したがって、読み取りおよび更新操作にコードは必要ありません。
 
-属性についての詳細は、次のトピックを参照してください。
+属性についての詳細は、次の記事を参照してください:
 
 + [注文属性](order-attributes.md)
 + [顧客属性](customer-attributes.md)
@@ -132,7 +132,7 @@ Commerce Data Exchange - リアル タイム サービスを拡張する方法�
 
 ## <a name="exception-handling"></a>例外処理
 
-拡張子コードに `try...catch` ステートメントを追加して例外を処理し、それを Application Insights に記録するかクライアント アプリケーションに反映することができます。 エラー メッセージをクライアントに反映する場合は、CRT または Retail Server から集計された例外を返したりしません。 代わりに、個々のタスク レベルで例外を受け取り、再実行します。 詳細については、以下のトピックを参照してください:
+拡張子コードに `try...catch` ステートメントを追加して例外を処理し、それを Application Insights に記録するかクライアント アプリケーションに反映することができます。 エラー メッセージをクライアントに反映する場合は、CRT または Retail Server から集計された例外を返したりしません。 代わりに、個々のタスク レベルで例外を受け取り、再実行します。 詳細については、以下の記事を参照してください。
 
 + [例外処理 (タスク並列ライブラリ)](/dotnet/standard/parallel-programming/exception-handling-task-parallel-library)。
 + [拡張イベントを Application Insights に記録する](commerce-application-insights.md)
@@ -212,7 +212,9 @@ POS から CRT をデバッグするには、POS が Retail Server に接続さ�
 作業のシリアル化については、新しい要求タイプは **\[DataContract\]** および **\[DataMember\]** 属性を実装する必要があります。
 
 > [!NOTE]
-> 拡張機能コードに対して、要求の実行時に ConfigureAwait (いいえ) を使用することをお勧めします。
+> - 拡張機能コードに対して、要求の実行時に **ConfigureAwait(false)** を使用することをお勧めします。
+> - CRT データベース拡張機能での Microsoft 分散トランザクション コーディネーター (MSDTC) の使用はサポートされていません。
+> - 既存の CRT 要求および応答を TransactionScope でラッピングすると、同じトランザクション内で複数のデータベース接続が開かれているため、データベースの例外が発生する可能性があるため、避けてください。 また、パフォーマンスを改善するには、読み取りシナリオに TransactionScope を使用しないようにしてください。
 
 
 ### <a name="request-class"></a>クラスのリクエスト
@@ -354,7 +356,7 @@ public sealed class GetStoreHoursDataResponse : Response
             }
     ```
 
-3. このトピックで先に説明されたように、 CRT 拡張子を登録します。
+3. この記事で先に説明されたように、 CRT 拡張子を登録します。
 
 前のサンプル コードに、**UpdateStoreDayHoursDataRequest** と **UpdateStoreDayHoursDataResponse** の実装がありません。 完全なサンプル コードは、Retail SDK の **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.StoreHoursSample** フォルダーで使用可能です。
 
@@ -511,8 +513,7 @@ public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncReques
     {
         ThrowIf.Null(request, "request");
 
-        using (var databaseContext = new DatabaseContext(request.RequestContext))
-        using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+       using (var databaseContext = new DatabaseContext(request.RequestContext))
         {
             // Execute original functionality to save the customer.
             var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
@@ -525,8 +526,6 @@ public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncReques
                 parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
                 await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
             }
-
-            transactionScope.Complete();
 
             return response;
         }
@@ -553,7 +552,6 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
     NullResponse response;
 
     using (var databaseContext = new DatabaseContext(request.RequestContext))
-    using (var transactionScope = CreateReadCommittedTransactionScope(TransactionScopeAsyncFlowOption.Enabled))
     {
         // Execute original logic.
         var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
@@ -565,7 +563,6 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
             response = await SaveSalesTransactionExtAsync(request).ConfigureAwait(false);
         }
 
-        transactionScope.Complete();
     }
 
     return response;
@@ -674,7 +671,7 @@ public class StoreDayHours : CommerceEntity
 }
 ```
 
-サービスで新しいエンティティを使用する場合、プロセスは簡単です。 このトピックで前述されているように、**IRequestHandler** から派生した新しいサービスを作成します。 次に、新しいエンティティを使用するか返すかのいずれかを実行します。 次の例は、データベースからエンティティを読み取り、それを応答の一部として返す方法を示しています。
+サービスで新しいエンティティを使用する場合、プロセスは簡単です。 この記事で前述されているように、**IRequestHandler** から派生した新しいサービスを作成します。 次に、新しいエンティティを使用するか返すかのいずれかを実行します。 次の例は、データベースからエンティティを読み取り、それを応答の一部として返す方法を示しています。
 
 ```C#
 private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
@@ -898,7 +895,6 @@ namespace Contoso
                 ThrowIf.Null(request, "request");
 
                 using (var databaseContext = new DatabaseContext(request.RequestContext))
-                using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
                 {
                     // Execute original functionality to save the customer.
                     var requestHandler = new Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer.CustomerSqlServerDataService();
@@ -912,8 +908,6 @@ namespace Contoso
                         parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
                         await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
                     }
-
-                    transactionScope.Complete();
 
                     return response;
                 }

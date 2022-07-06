@@ -1,6 +1,6 @@
 ---
 title: 特定のデータ エクスポート プロジェクトの実行制限
-description: このトピックでは、旧サービス環境での特定データ エクスポート プロジェクトの実行制限に関する情報を提供します。
+description: この記事では、旧サービス環境での特定データ エクスポート プロジェクトの実行制限に関する情報を提供します。
 author: peakerbl
 ms.date: 05/12/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2022-05-12
-ms.openlocfilehash: 0918f53a996f866b9d6bf80b3eb724d988735b0d
-ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
+ms.openlocfilehash: 5a27276e898e0dd314aae5f4dd485fc444f093e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8747844"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864519"
 ---
 # <a name="execution-restrictions-for-specific-data-export-projects"></a>特定のデータ エクスポート プロジェクトの実行制限
 
@@ -31,4 +31,4 @@ ms.locfileid: "8747844"
 
 サポート済みバージョンの詳細については、[サービス更新プログラムの使用の可能性](../../fin-ops/get-started/public-preview-releases.md) を参照してください。
 
-このトピックには、後からさらに情報を追加する予定です。
+この記事には、後で情報がさらに追加される予定です。

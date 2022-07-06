@@ -1,6 +1,6 @@
 ---
 title: ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
-description: このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
+description: この記事では、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
 author: akviklis
 ms.date: 03/04/2022
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3bfa337a3d0589cb470262300191b7a4074685d4
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 53188acb31938b9b38ee7522cfef0965b59ef6d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905297"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
+この記事では、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
 
 ブラジル向け Dynamics 365 Commerce ローカライズには、次の Commerce コンポーネントが含まれます: Commerce Runtime (CRT)、Retail Server、および販売時点管理 (POS)。 これらの拡張機能を使用すると、電子会計書類の登録が延期される場合、ブラジル固有の税金の計算、小売販売用の電子会計ドキュメントの生成、カスタムフィールドを持つ DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) および CF-e-SAT (Cupom Fiscal Eletrônico - Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) の会計レシートの印刷、ブラジル固有の顧客情報の管理、オフライン代替モードでの販売の発行が可能になります。 ブラジル向け Commerce ローカライズの詳細については、[ブラジルのローカライズ スコープ](../../finance/localizations/latam-bra-scope.md) および[ブラジル向け Commerce ローカライズ](latam-bra-commerce-localization.md) を参照してください。
 
-このトピックで説明する拡張機能は、会計統合のフレームワークに基づいて開発されました。 会計統合機能の詳細については、[Commerce チャネルの会計統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。 [電子申告 (ER) は ](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting)、電子会計ドキュメントの電子化の形式を実装するために使用されます。
+この記事で説明する拡張機能は、会計統合のフレームワークに基づいて開発されました。 会計統合機能の詳細については、[Commerce チャネルの会計統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。 [電子申告 (ER) は ](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting)、電子会計ドキュメントの電子化の形式を実装するために使用されます。
 
 ## <a name="enable-brazil-specific-commerce-functionality"></a>ブラジル固有の Commerce 機能の有効化
 
@@ -87,8 +87,8 @@ Commerce 本社に会計施設および NF-e (Nota Fiscal Eletrônica) の連邦
     > [!NOTE]
     > **会計施設** ページで構成された証明書は、オフライン代替モードで POS で発行され、Commerce 本社を通じて承認のために送信される NFC-e (Nota Fiscal de Consumidor Eletrônica) ドキュメントに使用されます。 会計ドキュメントをオフライン代替モードで署名できるようにするには、POS のオフライン証明書ストレージに証明書をインストールする必要があります。 詳細については、[オフライン代替モードでの商品の現金店頭払い売上の作成](latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode) および[代替モードで発行された NFC-e の登録の延期](latam-bra-nfce-contingency-mode.md) を参照してください。
 
-1. **NF-E WEB SERVICE** の、**環境** フィールドで、**テスト** または **生産** を選択します。
-1. **NFC-E WEB SERVICE** の、**環境** フィールドで、**テスト** または **生産** を選択します。
+1. **NF-E WEB SERVICE** の、**環境** フィールドで、**テスト** または **運用** を選択します。
+1. **NFC-E WEB SERVICE** の、**環境** フィールドで、**テスト** または **運用** を選択します。
 1. NF-e および NFC-e 機能のバージョンを指定します。
 1. **NF-E WEB SERVICE** の、**所轄官庁** フィールドで、**NF-e 連邦パラメーター \> Web サービス \> 所轄官庁** で使用される値を入力します。
 1. **NFC-E WEB SERVICE** の、**所轄官庁** フィールドで、**NF-e 連邦パラメーター \> Web サービス \> 所轄官庁** で使用される値を入力します。

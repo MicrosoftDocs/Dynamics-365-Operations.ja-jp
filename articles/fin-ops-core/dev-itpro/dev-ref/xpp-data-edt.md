@@ -1,6 +1,6 @@
 ---
 title: X++ 拡張データ型
-description: このトピックでは、X++の拡張データ型について説明します。
+description: この記事では、X++ の拡張データ型について説明します。
 author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44dd0aa4247f194f75930af9b6fb3fc84e5d814d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7528d58cd8d8ab038291bd58ba90b28949242aa2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867207"
 ---
 # <a name="x-extended-data-types"></a>X++ 拡張データ型
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++の拡張データ型について説明します。 
+この記事では、X++ の拡張データ型について説明します。 
 
 *拡張データ型* は **ブール**、**int**、**int64**、**実数**、**str**、および **日付** プリミティブ データ型、および **コンテナー** 複合型に基づくユーザー定義型です。 EDT はプリミティブ データ型または補助名および追加のプロパティを持つコンテナーです。 たとえば、文字列を基準にして、**名前** という新しい EDT を作成することができます。 新しい EDT は、開発環境の変数とフィールド宣言で使用することができます。 
 

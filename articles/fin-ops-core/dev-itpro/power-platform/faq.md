@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations 仮想エンティティに関するよくあるご質問
-description: このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問の一覧を示します。
+description: この記事では、財務と運用の仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: Sunil-Garg
 ms.date: 01/05/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 247c8df100cfe9788199d09109242c3b0631b912
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: b43202b842575a966cf867209e461b002850647d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464893"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873131"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよくあるご質問
 
@@ -28,7 +28,7 @@ ms.locfileid: "8464893"
 > [!IMPORTANT]
 > この機能を使用するには、財務と運用アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
-このトピックは、Finance and Operations 仮想エンティティに関してよく寄せられる質問を集めたものです。 
+この記事は、財務と運用の仮想エンティティに関してよく寄せられる質問を集めたものです。 
 
 ### <a name="do-tier-1-finance-and-operations-environments-or-demo-topologies-work"></a>Tier 1 Finance and Operations 環境、またはトポロジのデモは機能しますか?
 

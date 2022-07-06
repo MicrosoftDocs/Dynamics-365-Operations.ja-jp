@@ -1,6 +1,6 @@
 ---
 title: クラウド配置のシステム要件
-description: このトピックは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。
+description: この記事では、現在のバージョンの財務と運用アプリのシステム要件を一覧表示します。
 author: sericks007
 ms.date: 02/08/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f994bf5f8e017dc17b767bdb969da78b07c8e8d4
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 0162a90c2d65b896e5ce761a9db327c1fbe6af8e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462743"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905047"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、現在のバージョンの Finance and Operations アプリのシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認する必要があります。
+この記事では、現在のバージョンの財務と運用アプリのシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認する必要があります。
 
 ## <a name="supported-web-browsers"></a>サポートされている Web ブラウザー
 

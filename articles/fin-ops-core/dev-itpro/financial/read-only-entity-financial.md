@@ -1,6 +1,6 @@
 ---
 title: 財務分析コードを公開する読み取り専用エンティティの作成
-description: このトピックでは、登録済のトランザクションのエンティティを作成する方法について説明します。
+description: この記事では、登録済のトランザクションのエンティティを作成する方法について説明します。
 author: RyanCCarlson2
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: ec41c9b10c7576687e726a7c2d3930db7e0bd518
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: e92a4dfd3908407271dce3778f66db45a6965167
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866745"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]
@@ -28,10 +28,10 @@ ms.locfileid: "8734979"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-このトピックでは、登録されている登録済のトランザクションのエンティティを作成する方法について説明します。 
+この記事では、登録されている登録済のトランザクションのエンティティを作成する方法について説明します。 
 
 > [!NOTE] 
-> このトピックは、ソリューション アーキテクチャ チームの Per Baarsoe Jorgensen から得たものです。 顧客と作業時に発生した実際のシナリオを説明します。 
+> この記事は、ソリューション アーキテクチャ チームの Per Baarsoe Jorgensen から得たものです。 顧客と作業時に発生した実際のシナリオを説明します。 
 
 配分を使用して適用された財務分析コードと共にすべての仕入先請求明細行のトランザクションを公開しなければならないシナリオを考えてみましょう。 サード パーティのツールによる簡単な消費が不可欠なので、このシナリオ用のエンティティを作成します。 結果として、エンティティは他の関連するエンティティと結合する必要はなく、単独で値を提供できるべきです。
 

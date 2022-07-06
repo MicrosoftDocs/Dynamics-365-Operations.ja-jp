@@ -1,6 +1,6 @@
 ---
 title: バッチジョブ履歴のクリーンアップ
-description: このトピックでは、バッチ ジョブ履歴をクリーンアップする方法について情報を提供します。
+description: この記事では、バッチ ジョブ履歴をクリーンアップする方法について情報を提供します。
 author: Peakerbl
 ms.date: 03/12/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 6324dd6adde5a65a10c61a1eb6beb7f6961ffa108ee63484e269457282fb8df3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb98e66f87e38493c251109c141f4b8cd190ec0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847145"
 ---
 # <a name="clean-up-the-batch-job-history"></a>バッチジョブ履歴のクリーンアップ
 

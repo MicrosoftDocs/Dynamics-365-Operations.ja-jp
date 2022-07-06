@@ -1,6 +1,6 @@
 ---
 title: 住所の設定
-description: このトピックでは、グローバル アドレス帳の住所形式を設定する方法について説明します。
+description: この記事では、グローバル アドレス帳の住所形式を設定する方法について説明します。
 author: jaredha
 ms.date: 09/23/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-09-23
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32c51d9540bfdf6a6730f73bc6864805c9b25638
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 99e4d8a1ec5d8cb35dcc9de8d9f15acf4ff3111c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559690"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864471"
 ---
 # <a name="address-setup"></a>住所の設定
 

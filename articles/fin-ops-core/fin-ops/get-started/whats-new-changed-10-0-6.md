@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能と変更点
-description: このトピックでは、Finance and Operations アプリ バージョン 10.0.6 の新機能または変更された機能について説明します。 このバージョンは 10 月にリリースされます。
+title: Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能および変更された機能
+description: この記事では、財務と運用アプリ バージョン 10.0.6 の新機能または変更された機能について説明します。 このバージョンは 10 月にリリースされます。
 author: tonyafehr
 ms.date: 10/01/2019
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 0f4b30fd84472a4a1dff915d8b2148134e4071846966fd3ec47283adfcfb150b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23c819a7a5c4a0e2e3289b346c6eb5772d5ac962
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894233"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1006-november-2019"></a>Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能と変更点
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1006-november-2019"></a>Finance and Operations アプリ バージョン 10.0.6 (2019 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、バージョン 10.0.6 の、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management を含む Finance and Operations アプリの新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.234 です。 一般提供開始日は 11 月ですが、新機能は 10 月の初期リリースで使用できます。 バージョン 10.0.6 の詳細については [追加リソース](whats-new-changed-10-0-6.md#additional-resources) を参照してください。
+この記事では、バージョン 10.0.6 の Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management を含む財務と運用アプリの新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.234 です。 一般提供開始日は 11 月ですが、新機能は 10 月の初期リリースで使用できます。 バージョン 10.0.6 の詳細については [追加リソース](whats-new-changed-10-0-6.md#additional-resources) を参照してください。
 
 最新のリリースの Microsoft Dynamics 365 Retail の新機能と変更については、[Dynamics 365 Retail バージョン 10.0.6 の新機能と変更](../../../commerce/get-started/whats-new-10-0-6.md) を参照してください。
 
@@ -56,7 +56,7 @@ ms.locfileid: "6767094"
 バージョン 10.0.6 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7) を参照してください。
 
 ### <a name="platform-update-30"></a>プラットフォーム update 30
-バージョン 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プログラム 30 についての詳細は、[Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能と変更点](whats-new-platform-update-30.md)を参照してください。
+バージョン 10.0.6 には、プラットフォーム更新プログラム 30 が含まれています。 プラットフォーム更新プロフラム 30 についての詳細は、 [Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能や変更 を参照してください](whats-new-platform-update-30.md)。
 
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
@@ -64,14 +64,14 @@ ms.locfileid: "6767094"
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

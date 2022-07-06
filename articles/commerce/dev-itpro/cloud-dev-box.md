@@ -1,6 +1,6 @@
 ---
 title: 管理者のアクセス権を使用しないクラウド ホスト環境での開発
-description: このトピックでは、クラウドでホストされている開発マシンで作業しているコマース開発者向けのコンフィギュレーション手順について説明します。
+description: この記事では、クラウドでホストされている開発マシンで作業している Commerce 開発者向けのコンフィギュレーション手順について説明します。
 author: mugunthanm
 ms.date: 07/28/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: db0f780d32215e04e80ae634b1cc3a451088b8c1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 488457ca486a64c5ef54350b9ed65c5d0a586572
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783086"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860278"
 ---
 # <a name="development-in-cloud-hosted-environments-without-admin-access"></a>管理者のアクセス権を使用しないクラウド ホスト環境での開発
 

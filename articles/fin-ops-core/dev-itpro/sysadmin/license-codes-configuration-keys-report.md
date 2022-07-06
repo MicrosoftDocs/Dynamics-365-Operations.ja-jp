@@ -1,6 +1,6 @@
 ---
 title: ライセンス コードとコンフィギュレーション キーのレポート
-description: このトピックでは、Finance and Operations で使用できるライセンス コードとコンフィギュレーション キーを一覧表示するレポートを示します。
+description: この記事では、財務と運用で使用できるライセンス コードと構成キーを一覧表示するレポートを示します。
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 801828c42ef1c2170688c7a4e451d626890122e210046644b3f2569e84dfe443
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 251e74774b79e51ead6acd1e5152ec9bf1cd1504
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902604"
 ---
 # <a name="license-codes-and-configuration-keys-report"></a>ライセンス コードとコンフィギュレーション キーのレポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations で使用できるライセンス コードとコンフィギュレーション キーを一覧表示するレポートを示します。
+この記事では、財務と運用で使用できるライセンス コードと構成キーを一覧表示するレポートを示します。
 
-Finance and Operations を購入したときには、すべての機能が含まれています。 既定では、使用しない一部の機能が有効になっている場合があります。 管理者は、ライセンス コードやコンフィギュレーション キーを無効にすることで、必要としない機能を無効にする必要があります。
+Finance and Operations を購入したときは、すべての機能が含まれています。 既定では、使用しない一部の機能が有効になっている場合があります。 管理者は、ライセンス コードやコンフィギュレーション キーを無効にすることで、必要としない機能を無効にする必要があります。
 
 ライセンス コードまたはコンフィギュレーション キーを無効にすると、関連するモジュールまたは機能がユーザー インターフェイスから削除されます。 モジュールなどの大規模な機能のセットは、ライセンス コードによって制御されます。 次に、多くのライセンス コードは、より詳細なレベルで機能を有効または無効にできるコンフィギュレーション キーを有効にします。
 

@@ -1,6 +1,6 @@
 ---
-title: 変更の分割
-description: このトピックでは、分割変更について説明します。
+title: 重大な変更
+description: この記事では、重大な変更に関する情報を提供します。
 author: smithanataraj
 ms.date: 09/09/2018
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 4ab73456989b2ab55e64ae4c7b2bc9014fbd4295
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d3c3ddba8c6e60da685a33869b6d0298c4572c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782751"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866960"
 ---
-# <a name="breaking-changes"></a>変更の分割
+# <a name="breaking-changes"></a>重大な変更
 
 [!include [banner](../includes/banner.md)]
 
 ソリューションを拡張可能にすると、後で拡張ポイントを壊さずに済むことにもなります。 分割変更は、コードのユーザーを分割できる任意の変更です。
 
-このトピックでは、コードを分割できる変更のタイプを一覧表示します。 
+この記事では、コードを分割できる変更のタイプを一覧表示します。 
 
 > [!IMPORTANT]
 > このリストは、包括的ではありません。 ここに登録されていない他のタイプの変更が分割変更となることもあります。

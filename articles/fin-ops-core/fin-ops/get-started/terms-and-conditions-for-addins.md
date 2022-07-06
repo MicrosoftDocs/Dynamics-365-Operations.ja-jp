@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dynamics 365 Supply Chain Management へのアドイン関する使用条件
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management へのアドイン関する使用条件を示します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management へのアドイン関する使用条件を示します。
 author: ChristianRytt
 ms.date: 04/20/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c6dc851d6c454870e70771f096914c605003b92e8ebeffd682d4836c0877537e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39969e302876b85cf296c5789e5342f3970c763a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878263"
 ---
 # <a name="terms-and-conditions-for-add-ins-to-microsoft-dynamics-365-supply-chain-management"></a>Microsoft Dynamics 365 Supply Chain Management へのアドイン関する使用条件
 

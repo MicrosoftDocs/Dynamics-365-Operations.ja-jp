@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
-description: このトピックでは、企業間のトランザクション機能を実装する方法について説明します。
+description: この記事では、企業間のトランザクション機能を実装する方法について説明します。
 author: sarvanisathish
 ms.date: 04/09/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b735309f8b352ad862fd2169b4dd38b8b488efb4bc80a6a094758941f9a8e4d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf00e999b30c3530bf071ce3e1dff97094ee1362
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896658"
 ---
 # <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 
@@ -34,7 +34,7 @@ ms.locfileid: "6768387"
 
 1回限りの設定とコンフィギュレーションでは、次のことが必要になります。 
 1. Azure AD で B2B 招待サービス アプリケーションを設定します。
-2. Finance and Operations で B2B 招待サービスの設定を構成します。
+2. Finance and Operations で B2B 招待サービスの設定のコンフィギュレーションをします。
 
 ### <a name="set-up-a-b2b-invitation-service-application-in-azure-ad"></a>Azure AD での B2B 招待サービス アプリケーションの設定
 Azure AD テナントのテナント管理者は、以下の手順を完了する必要があります。
@@ -85,7 +85,7 @@ Azure AD テナントのテナント管理者は、以下の手順を完了す�
 
 ### <a name="configure-the-b2b-invitation-service-settings"></a>B2B 招待サービスの設定を構成
 
-1. Finance and Operations に管理者としてサインインします。
+1. Finance and Operations の管理者としてログインします。
 
 2. **B2B 招待状のコンフィギュレーション** ページに移動して、**編集** をクリックします。
 

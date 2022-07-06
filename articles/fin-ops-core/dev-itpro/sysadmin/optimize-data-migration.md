@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリのデータ移行の最適化
-description: このトピックでは、Finance and Operations アプリのデータ移行を最適化するために使用できる手順とアクションの概要を示します。
+title: 財務と運用アプリのデータ移行の最適化
+description: この記事では、財務と運用アプリのデータ移行を最適化するために使用できる手順とアクションの概要を示します。
 author: skaue-ms
 ms.date: 10/20/2021
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ea49cda1f037b1675134be907767d61c82745538
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: fc00869e42d37486219a5d315d3c642b897054e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675247"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897123"
 ---
-# <a name="optimize-data-migration-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータ移行の最適化
+# <a name="optimize-data-migration-for-finance-and-operations-apps"></a>財務と運用アプリのデータ移行の最適化
 
 [!include [banner](../includes/banner.md)]
 
 データ移行は、ほとんどすべての実装で重要な成功要因です。 一部の顧客の主な関心事項は、特に大量のデータと小さな切替ウィンドウがある場合の、データ移行の速度です。 [データ移行フレームワーク](../data-entities/data-entities-data-packages.md) は、業務要件や操作の一部としてデータを移動するためにも使用されます。
 
-このトピックの情報は、データ移行のパフォーマンスを最適化するために使用できる一連のステップとアクションを表します。
+この記事の情報は、データ移行のパフォーマンスを最適化するために使用できる一連のステップとアクションを表します。
 
 > [!NOTE]
 > レベル 1 環境でのテスト結果を、レベル 2 以上のサンドボックス環境のパフォーマンスと比較または推定しないでください。

@@ -1,6 +1,6 @@
 ---
 title: オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
-description: このトピックでは、環境をコンフィギュレーションして、バッチのみおよび対話型のみの AOS ノードを配置できるようにする方法について説明します。
+description: この記事では、環境をコンフィギュレーションして、バッチのみおよび対話型のみの AOS ノードを配置できるようにする方法について説明します。
 author: faix
 ms.date: 07/08/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 30397762783b167706a83b2347825c45e3210e71
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: dc9c9f972cffb6af72292652f8203771efa93dcb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867385"
 ---
 # <a name="configure-batch-only-and-interactive-only-aos-nodes-in-on-premises-deployments"></a>オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
 
@@ -27,7 +27,7 @@ ms.locfileid: "8565648"
 > [!IMPORTANT]
 > この機能は、アプリケーション更新 10.0.12 (プラットフォーム更新 36) 以降でサポートされます。
 
-このトピックでは、環境をコンフィギュレーションして、バッチのみおよび対話型のみの Application Object Server (AOS) ノードを配置できるようにする方法について説明します。
+この記事では、環境をコンフィギュレーションして、バッチのみおよび対話型のみの Application Object Server (AOS) ノードを配置できるようにする方法について説明します。
 
 この機能を使用できるようにするために、Microsoft は 2 つの新しい Microsoft Azure Service Fabric ノード タイプを導入しました。 バッチ専用 AOS ノードの場合、新しいノード タイプは **BatchOnlyAOSNodeType** です。 対話型のみの AOS ノードの場合、新しいノード タイプは **InteractiveOnlyAOSNodeType** です。
 

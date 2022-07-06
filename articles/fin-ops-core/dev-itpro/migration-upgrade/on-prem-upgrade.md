@@ -1,6 +1,6 @@
 ---
 title: オンプレミス環境のインプレース アップグレード プロセス
-description: このトピックでは、 バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細なプロセスを説明します。
+description: この記事では、バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細なプロセスを説明します。
 author: laneswenka
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: 69230caa1330c203c334f6e745776480de57ec3c
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 33779c12381339916f545e13bcb17fba72155412
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866146"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務と運用バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細プロセスを説明します。  
+この記事では、財務と運用バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細プロセスを説明します。  
 
 > [!NOTE]
-> 実稼働環境のアップグレードを実行する前に、サンドボックス環境のアップグレードを実行してください。
+> 運用環境のアップグレードを実行する前に、サンドボックス環境のアップグレードを実行してください。
 
 ## <a name="on-premises-upgrade-from-version-7x-to-100x"></a>バージョン7. x から10.0. x へのオンプレミスのアップグレード
 
@@ -81,7 +81,7 @@ ms.locfileid: "8565516"
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > (たとえば、AXDB などの) 適切な値に `<DB-Name>` を置き換えます。 値をさらに編集する場合は、このトピックの付録を参照します。
+    > (たとえば、AXDB などの) 適切な値に `<DB-Name>` を置き換えます。 値をさらに編集する場合は、この記事の付録を参照してください。
 
     スクリプトは、データベース接続のテストを実行し、入力した情報が有効であることを確認します。
 
@@ -103,7 +103,7 @@ ms.locfileid: "8565516"
 
 9.  アップグレード プロセスが正常に完了したら、新たにアップグレードしたデータベースをバックアップします。 ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 
-10. 実稼働環境用から (たとえば、AXDBupgraded など) 別の名前を使用して環境に、データベースを復元します。
+10. 運用環境用から (たとえば、AXDBupgraded など) 別の名前を使用して環境に、データベースを復元します。
 
 11. オンプレミス AOS、BI、および MR サーバーを開始するか、または Service Fabric ポータルからサービスを開始します。
 

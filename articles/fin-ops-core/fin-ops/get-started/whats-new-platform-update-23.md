@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
-ms.openlocfilehash: c6f617a92ec4712bb3f8ceb52dbbbbd6c04da4904bacf2e978e6fcf49cce8f9e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b79eb9cea282e405a5f75e114ce30a0b163dfd3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889261"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 の新機能または変更された機能について説明します。 このバージョンは、7.0.5126 のビルド番号を持ちます。
+この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 の新機能または変更された機能について説明します。 このバージョンは、7.0.5126 のビルド番号を持ちます。
 
 ### <a name="dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノート
 

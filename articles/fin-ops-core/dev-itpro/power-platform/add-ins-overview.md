@@ -1,6 +1,6 @@
 ---
 title: アドインの概要
-description: このトピックでは、財務と運用アプリの機能を拡張するために使用できるアドインに関する情報を提供します。
+description: この記事では、財務と運用アプリの機能を拡張するために使用できるアドインに関する情報を提供します。
 author: ankugo
 ms.date: 02/11/2022
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 59de6c63daa023cd9dee655e716483feccf69ef4
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 0c2826a84a4dc61c8a59b70cb7ab0002175ac79b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873134"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 

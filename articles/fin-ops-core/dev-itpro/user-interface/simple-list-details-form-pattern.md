@@ -1,6 +1,6 @@
 ---
 title: 簡易リストおよび簡易詳細のフォーム パターン
-description: このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
+description: この記事では、簡易リストと詳細フォームのパターンについて説明します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f80cf640e0ffc0ad3797451dba2cfe16298a7a9f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b4d338bb37d4ff31d9219a5ce68058108fe1309f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845462"
 ---
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、簡易リストと詳細フォームのパターンについての情報を提供します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
+この記事では、簡易リストと詳細フォームのパターンについて説明します。 このパターンは、中程度の複雑さのエンティティのデータを維持するために使用されます。
 
 ## <a name="usage"></a>用途
 

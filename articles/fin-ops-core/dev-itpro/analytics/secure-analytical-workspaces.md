@@ -1,6 +1,6 @@
 ---
 title: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
-description: このトピックでは、Power BI Embedded を使用して提供されるレポートとデータ セットの両方へのアクセスを保護するための推奨方法について説明します。
+description: この記事では、Power BI Embedded を使用して提供されるレポートとデータ セットの両方へのアクセスを保護するための推奨方法について説明します。
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea9957810d306e3c76d20cab0ede630334d1f102d11fea9121bd55530b4e156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a8ee1f369d9fc1e2d851321311874d1f8851ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883706"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 
@@ -28,8 +28,8 @@ ms.locfileid: "6721916"
 > [!NOTE]
 > この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) (バージョン7.2) 以降のリリースでサポートされています。
 
-## <a name="introduction"></a>はじめに
-このトピックでは、Microsoft Power BI Embedded を使用して提供される、分析ワークスペースとレポートのセキュリティ保護を支援するアプリケーション開発者向けにウォークスルーを提供します。 ビューアーのアクセス権に基づいてレポートおよびデータ セット両方へのアクセスを保護するための推奨方法について説明します。 このトピックに記載されている手法を使用することにより、ユーザーからレポートを非表示にし、有効な会社のコンテキストに基づいて、特定のユーザーに適したデータ セットを表示するためにレポートをフィルター処理することができます。
+## <a name="introduction"></a>概要
+この記事では、Microsoft Power BI Embedded を使用して提供される、分析ワークスペースとレポートのセキュリティ保護を支援するアプリケーション開発者向けの手順を提供します。 ビューアーのアクセス権に基づいてレポートおよびデータ セット両方へのアクセスを保護するための推奨方法について説明します。 この記事に記載されている手法を使用することにより、ユーザーからレポートを非表示にし、有効な会社のコンテキストに基づいて、特定のユーザーに適したデータ セットを表示するためにレポートをフィルター処理することができます。
 
 ## <a name="prerequisites"></a>必要条件
 + プラットフォーム更新プログラム 8 以降を実行する開発環境へのアクセス

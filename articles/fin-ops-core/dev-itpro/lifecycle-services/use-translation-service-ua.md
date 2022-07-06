@@ -1,6 +1,6 @@
 ---
 title: ドキュメント ファイルを翻訳します
-description: このトピックでは、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。
+description: この記事では、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。
 author: abmotgi
 ms.date: 10/25/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 7adcd2294a107c6864fca51b4d6be9353c68d071
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: abd7b807bf5dfb3839dec21e2212ffd6a289e21b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700023"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866335"
 ---
-# <a name="translate-documentation-files"></a>ドキュメント ファイルの翻訳
+# <a name="translate-documentation-files"></a>ドキュメント ファイルを翻訳します
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。
+この記事では、Microsoft Dynamics 製品またはソリューションのドキュメント ファイルを翻訳する方法について説明します。
 
 ## <a name="create-a-translation-request"></a>翻訳要求を作成する
 1. Microsoft Dynamics Lifecycle Services (LCS) で、DTS ダッシュボードの **追加** を選択して新しい翻訳要求を作成します。

@@ -1,6 +1,6 @@
 ---
 title: 入れ子になった簡易リストおよび簡易詳細のサブパターン
-description: このトピックでは、子エンティティまたは子エンティティに関する情報を表示するために使用される入れ子になった簡易リストおよび詳細 (NSL+D) サブパターンに関する情報を提供します。
+description: この記事では、セカンダリ エンティティまたは子エンティティに関する情報を表示するために使用される入れ子になった簡易リストおよび詳細 (NSL+D) サブパターンに関する情報を提供します。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dff8d34e89dc291b88d0c386b62a12b3ab4d9ab
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1d68ab5e33320151e548d5855d7ed70b38c81ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781628"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863240"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ネストされた簡易リストと詳細 (NSL+D) サブパターンについての情報を提供します。 このサブパターンは、子エンティティが別のフォーム タイプ内に存在するとき、セカンダリ エンティティ、すなわち、その子エンティティに関する情報を表示するために使用されます。
+この記事では、ネストされた簡易リストと詳細 (NSL + D) サブパターンについての情報を提供します。 このサブパターンは、子エンティティが別のフォーム タイプ内に存在するとき、セカンダリ エンティティ、すなわち、その子エンティティに関する情報を表示するために使用されます。
 
 ## <a name="usage"></a>用途
 

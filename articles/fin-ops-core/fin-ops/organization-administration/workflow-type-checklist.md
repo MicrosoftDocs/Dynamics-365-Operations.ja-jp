@@ -1,6 +1,6 @@
 ---
-title: ワークフロー タイプ チェックリスト
-description: このトピックでは、新しいワークフロー タイプを作成するために必要な手順について説明します。
+title: ワークフロー タイプのチェックリスト
+description: この記事では、新しいワークフロー タイプを作成するために必要な手順について説明します。
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 389f80e432605db3a67977bb5f3e11ccf01998ce
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 850f6edbae386a4ef6e635b144479316d4e33885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902590"
 ---
-# <a name="workflow-type-checklist"></a>ワークフロー タイプ チェックリスト
+# <a name="workflow-type-checklist"></a>ワークフロー タイプのチェックリスト
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、新しいワークフロー タイプを作成するために必要な手順について説明します。 ワークフロー タイプは、 ワークフローの構成を作成するために使用されます。
+この記事では、新しいワークフロー タイプを作成するために必要な手順について説明します。 ワークフロー タイプは、 ワークフローの構成を作成するために使用されます。
 
 ## <a name="workflow-type-checklist"></a>ワークフロー タイプのチェックリスト
 

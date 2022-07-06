@@ -1,8 +1,8 @@
 ---
 title: SysSetupConfigAttribute 属性
-description: このトピックでは、SysSetup インターフェイスを実装するクラスで SysSetupConfigAttribute 属性を使用する方法について説明します。
+description: この記事では、SysSetup インターフェイスを実装するクラスで SysSetupConfigAttribute 属性を使用する方法について説明します。
 author: tonyafehr
-ms.date: 10/26/2021
+ms.date: 06/03/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: najaidee
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: e850007a1bfa6a246509541090f28480ccd9c848
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a9dd1b48881bd91f5047cb894d8765236888e837
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782761"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954557"
 ---
 # <a name="syssetupconfigattribute-attribute"></a>SysSetupConfigAttribute 属性
 
@@ -23,7 +23,7 @@ ms.locfileid: "7782761"
 
 属性は、メタデータまたは申告情報を、アセンブリ、タイプ、メソッド、プロパティなどのコードに関連付ける強力な方法を提供します。 属性がプログラム エンティティに関連付けられた後、実行時にリフレクションを使用してクエリを実行できます。
 
-このトピックでは、[Finance and Operations アプリのバージョン 10.0.23](../get-started/whats-new-platform-updates-10-0-23.md) のプラットフォーム更新プログラムで導入された新しい `SysSetupConfigAttribute` 属性を、`SysSetup` インターフェイスを実装する X++ クラスで使用する方法について説明します。
+この記事では、[財務と運用アプリのバージョン 10.0.23](../get-started/whats-new-platform-updates-10-0-23.md) のプラットフォーム更新プログラムで導入された新しい `SysSetupConfigAttribute` 属性を、`SysSetup` インターフェイスを実装する X++ クラスに導入する方法について説明します。
 
 ## <a name="usage"></a>用途
 
@@ -48,5 +48,45 @@ class DemoClass implements SysSetup
 
 > [!NOTE]
 > X++ クラスに **SysSetupConfigAttribute** 属性が存在しない場合は、既定値が適用されます。 `ContinueOnError` は **true** で、`Timeout` は **120** 秒です。
+
+
+## <a name="syssetupscript-asynchronous-implementation"></a>SysSetupScript: 非同期の実装
+
+非同期モードで SysSetup スクリプトを実行するには、スクリプトをバッチ ジョブとして実行する必要があります。 これにより、スクリプトを並列で独立して実行することで、パフォーマンスが向上し、不必要な依存関係を削除できます。 これを達成するため、拡張および消費できる SysSetupWrapper および SysSetupAsync クラスを使用します。 これにより、必要に応じて DbSync を実行できます。
+
+## <a name="considerations-when-enabling-asynchronous-mode"></a>非同期モードを有効にする場合の考慮事項
+非同期モードを有効にする場合、次のことを考慮します。 
+
+ - バッチこのモードではタイムアウトは発生しませんが、優先順位の高いジョブとして範囲が設定されたバッチ ジョブの境界で処理されます。
+ - クラスが非同期モードを実装している場合、SyssetupTable 属性のすべてが考慮されるわけではありません。 現在、すべてのスクリプトが個別に機能しています。
+ - 非同期として新しいスクリプトを記述する場合、これらのバッチ ジョブは将来、中断または再開される可能性があるので、一時停止または失敗の時点から復旧できるより少ないワークロードを使用してください。
+ - loaddata() は ttsbegin; ..., ttscommit; ブロック内では実行されないので、これは実装で処理される必要があります。
+
+```xpp
+class DemoClass extends SysSetupAsync implements SysSetup
+{
+    // Class code here.
+}
+```
+## <a name="versioning-syssetup-classes"></a>SysSetup クラスのバージョン管理
+
+SysSetup クラスのバージョンを作成して実行できるのは 1 回だけであり、すべての DBSync の実行では実行されません。 たとえば、バージョンに変更がある場合は常に、DBSync が X++ クラスを実行します。
+
+バージョン 10.0.27 では、バージョン管理機能は SysSetup クラスで使用できます。
+
+### <a name="how-does-versioning-work-for-syssetup-classes"></a>SysSetup クラスのバージョン管理はどのように行われますか?
+
+**バージョン** タイプの `_version` パラメーターが `SysSetupConfigAttribute` 属性に追加されます。 **1.0**、**2.1**、**4.5**、および **10.4** のような \[メジャー\].\[マイナー\] 形式の値を受け入れます。
+
+DBSync によって `_version` パラメーターの値が読み取られ、バージョンに変更がある場合は常にスクリプトが実行されます。 このパラメーターはオプションです。 既定値は **1.0** です。 したがって、SysSetup にオンボードされた X++ クラスに  `_version` パラメーターが設定されていない場合、X++ クラスの実行時の既定のバージョン値は **1.0** になります。
+
+> [!NOTE]
+> バージョン番号が再度更新されていない限り、バージョンが設定されたクラス (既定値) は 1 回だけ正常に実行されます。 たとえば、バージョン値が **1.0** のスクリプトは、すべての DBSync 要求で再実行しない場合があります。
+
+バージョン値 **0.0** は、各 DBSync の実行での X++ クラス の実行専用です。 したがって、各 DBSync 操作で X++ クラスを実行するには、`SysSetupConfigAttribute` 属性が **0.0** の `_version` パラメーターを設定する必要があります。
+
+### <a name="onboarding-the-x-class-to-syssetup"></a>SysSetup への X++ クラスのオンボード
+
+SysSetup クラスは、`SysSetupConfigAttribute` 属性内で `_version` パラメーターの使用を開始する必要があります。 それ以外の場合は、X++ クラスの実行時に既定の動作が使用されます。 つまり、バージョン値は **1.0**、クラスはバージョンごとに 1 回だけ実行されます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

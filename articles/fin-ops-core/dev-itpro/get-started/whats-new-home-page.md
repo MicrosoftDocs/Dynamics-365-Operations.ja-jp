@@ -1,8 +1,8 @@
 ---
-title: Platform update における新機能および変更された機能
-description: このトピックでは、財務と運用アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
+title: プラットフォーム更新プログラムの新機能および変更された機能
+description: この記事では、財務と運用アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
 author: sericks007
-ms.date: 05/23/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14b6951c014e60c0b7394028a978b8e763e919e2
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 9045f3ac17a8c74e1ef59f0c01b5ab4fde34e54f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866680"
 ---
 # <a name="whats-new-or-changed-in-platform-updates"></a>プラットフォーム更新プログラムの新機能および変更された機能
 
@@ -29,7 +29,7 @@ ms.locfileid: "8811104"
 
 | **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細はこちら**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| プラットフォーム更新プログラム 10.0.28 | 7.0.XXXX | 2022 年 8 月    | [財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-28.md)  |
+| プラットフォーム更新プログラム 10.0.28 | 7.0.6441 | 2022 年 8 月    | [財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-28.md)  |
 | プラットフォーム更新プログラム 10.0.27 | 7.0.6395 | 2022 年 7 月    | [財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-27.md)  |
 | プラットフォーム更新プログラム 10.0.26 | 7.0.6354 | 2022 年 5 月    | [財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-26.md)  |
 | プラットフォーム更新プログラム 10.0.25 | 7.0.6316 | 2022 年 4 月    | [財務と運用アプリのバージョン 10.0.25 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-25.md)  |

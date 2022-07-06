@@ -1,6 +1,6 @@
 ---
 title: テスト ケースのチェーンへの変数のコピー
-description: このトピックでは、 Regression Suite Automation Tool を使用してテスト ケースを連鎖させる方法 (テストが他のテストに値を渡す機能) について説明します。
+description: この記事では、 Regression Suite Automation Tool を使用してテスト ケースを連鎖させる方法 (テストが他のテストに値を渡す機能) について説明します。
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b535aa93b6e7bd59ae012d7a380c60438c61f5f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0f6b967801016b893d97608b633ff6bbe3ab7932
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845465"
 ---
 # <a name="copy-variables-to-chain-test-cases"></a>テスト ケースのチェーンへの変数のコピー
 

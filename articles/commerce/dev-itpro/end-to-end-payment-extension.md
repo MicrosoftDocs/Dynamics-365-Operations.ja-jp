@@ -1,6 +1,6 @@
 ---
-title: 支払端末のエンド・ツー・エンド支払統合を作成する
-description: このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成する方法について説明します。
+title: 支払ターミナルのエンドツーエンド支払統合の作成
+description: この記事では、支払端末のエンド・ツー・エンド支払統合を作成する方法について説明します。
 author: Reza-Assadi
 ms.date: 07/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ca70b610fc0a6d0d5a1eaa23cd167bd93d00e4fd
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7935f5f4411dc1f852b6d2b9fd25262fa4db77ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865987"
 ---
-# <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払端末のエンド・ツー・エンド支払統合を作成する
+# <a name="create-an-end-to-end-payment-integration-for-a-payment-terminal"></a>支払ターミナルのエンドツーエンド支払統合の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、支払ゲートウェイと直接通信できる支払端末向けに Microsoft Dynamics 365 Retail Modern POS とクラウド POS (POS) の支払統合を記述する方法について説明します。
+この記事では、支払ゲートウェイと直接通信できる支払端末向けに Microsoft Dynamics 365 Retail Modern POS とクラウド POS (POS) の支払統合を記述する方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -39,7 +39,7 @@ ms.locfileid: "7782411"
 
 ![支払コネクタ統合の概要。](media/PAYMENTS/PAYMENT-TERMINAL/Overview.jpg)
 
-このトピックでは、支払端末のエンド・ツー・エンド支払統合を作成するために必要な以下の手順について説明します。
+この記事では、支払端末のエンド・ツー・エンド支払統合を作成するために必要な以下の手順について説明します。
 
 - **[支払コネクタの記述](#write-a-payment-connector):** 支払コネクタは POS と支払ターミナルの間の主要な統合ポイントです。 このステップのセクションでは、支払要求 (たとえば、承認、払い戻し、無効化要求) を支払端末に中継できる、新しい支払コネクタを実装し、設定する方法について説明します。 
 - **[支払プロセッサの記述](#write-a-payment-processor):** 支払プロセッサは、支払の統合の一部として使用される商社プロパティを定義するために使用します。 このステップのセクションでは、新しい支払プロセッサを実装する方法について説明します。 これには、実装する必要があるインターフェイスおよび従う必要があるパターンに関する情報が含まれています。
@@ -79,7 +79,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 }
 ```
 
-**HandlerName** 文字列は、クライアントを通して特定の POS で使用される支払コネクタを構成するために使用されます (このトピックの後半の情報を参照してください)。
+**HandlerName** 文字列は、クライアントを通して特定の POS で使用される支払コネクタを構成するために使用されます (この記事の後半の情報を参照してください)。
 
 #### <a name="implement-supported-payment-requests"></a>サポートされている支払要求の実装
 支払関連フローを処理するには、支払コネクタが処理できる、サポートされている要求タイプを定義する必要があります。 また、**実行** メソッドは、コネクタが指定されたメソッドをサポートする各要求をルーティングするために実装する必要があります。 次の例は、サポートされている要求のタイプの完全な一覧と、特定の要求 (すなわち、承認要求) の例を示しています。
@@ -301,7 +301,7 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 
 | 名前空間 | 氏名 | 説明 | サンプル値 |
 |---|---|---|---|
-| コネクタ | ConnectorName | このトピックの後半にある「支払プロセッサの記述」セクションで説明している、トランザクションに使用される **IPaymentProcessor** インターフェイスの名前です。 |
+| コネクタ | ConnectorName | この記事の後半にある「支払プロセッサの記述」セクションで説明している、トランザクションに使用される **IPaymentProcessor** インターフェイスの名前です。 |
 | AuthorizationResponse | プロパティ | 承認応答のリスト。 | 次の表を参照してください。 |
 
 **PaymentSdkData** プロパティの **プロパティ** フィールドには、次のフィールドを含める必要があります。

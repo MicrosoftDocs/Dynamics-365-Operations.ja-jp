@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance + Operations (on-premises) での認証
-description: このトピックでは、認証プロセスの仕組みに関する背景情報を提供して、問題が生じる場合に解決できるようにします。
+title: Dynamics 365 Finance + Operations (on-premises) 環境での認証
+description: この記事では、認証プロセスの仕組みに関する背景情報を提供して、問題が生じる場合に解決できるようにします。
 author: faix
 ms.date: 11/18/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 651f89ae12909f445ea2940d676c6215bf5c4528
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 78f927b381d9dd8c6b52d73660584cd2ea70a0c3
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566057"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027354"
 ---
-# <a name="authentication-in-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) での認証
+# <a name="authentication-in-dynamics-365-finance--operations-on-premises-environments"></a>Dynamics 365 Finance + Operations (on-premises) 環境での認証
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance + Operations (on-premises) の認証について説明します。 このトピックでは、プロセスが機能する方法に関する背景情報も提供して、認証に関する問題が発生する場合に解決できるようにします。
+この記事では、Dynamics 365 Finance + Operations (on-premises) での認証について説明します。 この記事では、プロセスが機能する方法に関する背景情報も提供して、認証に関する問題が発生する場合に解決できるようにします。
 
 ## <a name="the-url-for-active-directory-federation-services-ad-fs"></a>フェデレーション サービス (AD FS) の URL
 
@@ -94,7 +94,7 @@ AOS 構成ファイルの値が正しくない場合、通常は環境を配置�
 アプリケーション URL にアクセスするときに 500 エラーが発生するのは、AD FS に対して無効な URL がある可能性があることを示しています。 これは、AOS の起動時にその URL を使用して AD FS サーバーから情報を取得するためです。 URL が正確でないかまたはアクセスできない場合、AOS を起動することはできません。
 
 ## <a name="ad-fs"></a>AD FS
-認証プロセスの 2 番目の部分は、AD FS 自体です。 AD FS サーバーで、AD FS Management を開き ((**コントロール パネル > システムとセキュリティ > 管理ツール**)、**アプリケーション グループ** に移動すると、**Microsoft Dynamics 365 for Operations オンプレミス** と呼ばれるグループが表示されます。 このグループ内では、Dynamics 365 アプリケーションの AD FS の設定が格納されます。
+認証プロセスの 2 番目の部分は、AD FS 自体です。 AD FS サーバーで、AD FS Management を開き (**コントロール パネル > システムとセキュリティ > 管理ツール**)、**アプリケーション グループ** に移動すると、**Microsoft Dynamics 365 for Operations オンプレミス** と呼ばれるグループが表示されます。 このグループ内では、Dynamics 365 アプリケーションの AD FS の設定が格納されます。
 
 ![AD FS 申請グループの設定。](media/ADFS.png)
 

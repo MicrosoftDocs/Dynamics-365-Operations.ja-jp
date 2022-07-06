@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る
-description: このトピックでは環境へのサービス更新プログラムについて通知を受けるさまざまな方法について説明します。
+description: この記事では環境へのサービス更新プログラムについて通知を受けるさまざまな方法について説明します。
 author: angelmarshall
 ms.date: 07/02/2019
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: fad9276e32e2720aa434e06b121b03ea060b946bae98e5ce759d4f1d5fb00d96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4124f4fe893260b877458d945ed7880e77f2f89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866404"
 ---
 # <a name="get-notified-about-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは Microsoft からのサービス更新プログラムについて最新の状態に保つ方法を説明します。
+この記事では、Microsoft からのサービス更新プログラムを最新の状態に保つ方法について説明します。
 
-Microsoft はサービス更新プログラムを使用して、構成されたサンドボックスおよび実稼働環境を最新のリリース バージョンに更新します。 Microsoft はお客様の環境に対する今後の更新プログラムについて、電子メールおよび Microsoft Dynamics Lifecycle Services (LCS) の通知でお知らせします。
+Microsoft はサービス更新プログラムを使用して、構成されたサンドボックスおよび運用環境を最新のリリース バージョンに更新します。 Microsoft はお客様の環境に対する今後の更新プログラムについて、電子メールおよび Microsoft Dynamics Lifecycle Services (LCS) の通知でお知らせします。
 
 受け取る通知の種類を次に示します:
 
@@ -39,7 +39,7 @@ Microsoft はサービス更新プログラムを使用して、構成された�
 - **更新の 1 時間前に送信される通知:** ダウンタイム時間枠の開始 1 時間前にアプリケーションのユーザーは通知を受け取ります。 この通知は、環境が更新で停止されるためユーザーに作業を保存するよう求めます。
 - **更新が完了したときに送信される通知:** Microsoft が構成された環境の更新を完了すると、更新の結果について電子メールで通知されます。 更新が正常に適用されたかに関わらず、この電子メールは常に送信されます。 プロジェクト所有者、環境マネージャー、および環境の追加の関係者としてリストされているユーザーに送信されます。 Microsoft が何らかの理由で更新プログラムを開始できない場合、電子メールは更新プログラムが開始されなかった理由の説明を含みます。
 
-通知を受け取った後で、何らかの理由により更新を続行できない場合は、一時停止することができます。 構成されたサンドボックス環境および実稼働環境への更新を一時停止する方法の詳細は、[Lifecycle Services (LCS) によるサービスの更新の一時停止](pause-service-updates.md) を参照してください。
+通知を受け取った後で、何らかの理由により更新を続行できない場合は、一時停止することができます。 構成されたサンドボックス環境および運用環境への更新を一時停止する方法の詳細は、[Lifecycle Services (LCS) によるサービスの更新の一時停止](pause-service-updates.md) を参照してください。
 
 1 つのバージョンおよび Microsoft が管理するサービスの更新の詳細は、[1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md) を参照してください。
 

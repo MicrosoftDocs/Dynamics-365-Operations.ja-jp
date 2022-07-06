@@ -1,6 +1,6 @@
 ---
 title: オンライン ストア カタログの公開
-description: このトピックには、Commerce モジュールからオンライン ストアにカタログを公開する方法を理解するための概念に関する情報が含まれています。
+description: この記事には、Commerce モジュールからオンライン ストアにカタログを公開する方法を理解するための概念に関する情報が含まれています。
 author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.10
-ms.openlocfilehash: 0121c58c80af70fc02f016be5b96a44df04adf9e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e977f9a2e1b9031c75c803ff05e964bc4743cbb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781805"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845880"
 ---
 # <a name="publish-an-online-store-catalog"></a>オンライン ストア カタログの公開
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、Commerce モジュールからオンライン ストアにカタログを公開する方法を理解するための概念に関する情報が含まれています。
+この記事には、Commerce モジュールからオンライン ストアにカタログを公開する方法を理解するための概念に関する情報が含まれています。
 
 ## <a name="publish-an-online-store-catalog"></a>オンライン ストア カタログの公開
 

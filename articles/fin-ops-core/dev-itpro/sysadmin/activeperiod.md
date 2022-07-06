@@ -1,6 +1,6 @@
 ---
-title: 有効なバッチ期間
-description: このトピックでは、有効なバッチ期間のセットアップおよび作業に関する情報を説明します。
+title: アクティブなバッチ期間
+description: この記事では、有効なバッチ期間のセットアップおよび作業に関する情報を説明します。
 author: hasaid
 ms.date: 10/25/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 1ea305178f2725fa55716b60e3daccf7ac7e44d531087c4b713e0da85131077b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9b3422587e62170a1546d43b4d0938e078acbb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740237"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895261"
 ---
 # <a name="active-batch-periods"></a>有効なバッチ期間
 

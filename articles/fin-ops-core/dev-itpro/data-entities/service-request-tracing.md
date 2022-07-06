@@ -1,6 +1,6 @@
 ---
 title: サービス要求の追跡
-description: このトピックでは、財務と運用サービスを通じて要求を追跡し、トラブルシューティングに役立てるため、ヘッダーに含めるべきクライアント要求 ID に関する情報を提供します。
+description: この記事では、財務と運用サービスを通じて要求を追跡し、トラブルシューティングに役立てるため、ヘッダーに含めるべきクライアント要求 ID について説明します。
 author: jaredha
 ms.date: 04/07/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-07
-ms.openlocfilehash: d68ea28af67383ed8024c0340124a5d6f3c524ef
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 8ae8bb7dbaccc39b3091277f9b46e8f3a214829d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614202"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898629"
 ---
 # <a name="service-request-tracing"></a>サービス要求の追跡
 

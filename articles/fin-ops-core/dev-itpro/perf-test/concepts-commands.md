@@ -1,6 +1,6 @@
 ---
 title: 承認テスト ライブラリのコマンド
-description: このトピックでは承認テスト ライブラリとコマンドの使用法に関する情報を提供します。
+description: この記事では承認テスト ライブラリとコマンドの使用法に関する情報を提供します。
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: ce8e8490eddce6f9b36083f92c548818338e9dc3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f5e92c3bc2d5052fe9c3e6cdb3463507b09411cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862131"
 ---
 # <a name="acceptance-test-library-commands"></a>承認テスト ライブラリのコマンド
 

@@ -1,6 +1,6 @@
 ---
 title: 詳細マスター フォーム パターン
-description: このトピックでは、詳細マスター フォームのパターンについて説明します。 詳細フォームは、データ入力の基本方法です。
+description: この記事では、詳細マスターのフォーム パターンに関する情報を提供します。 詳細フォームは、データ入力の基本方法です。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d03a785458bf29bf2b6197d48f806a922f2094e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 89ce15119230c45f2c9ff09cb2dc2668ba0b98ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906517"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、詳細マスター フォームのパターンについて説明します。 詳細フォームは、データ入力の基本方法です。
+この記事では、詳細マスターのフォーム パターンに関する情報を提供します。 詳細フォームは、データ入力の基本方法です。
 
 ## <a name="usage"></a>用途
 

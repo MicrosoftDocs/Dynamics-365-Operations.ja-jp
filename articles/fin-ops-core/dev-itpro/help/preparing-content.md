@@ -1,6 +1,6 @@
 ---
 title: ヘルプ ウィンドウで使用するコンテンツの準備
-description: このトピックでは、[ヘルプ] ウィンドウで使用できるようにコンテンツを準備する方法について説明します。
+description: この記事では、ヘルプ ウィンドウで使用できるようにコンテンツを準備する方法について説明します。
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 58bcb3da7c9518fe0bd3d01a1d0b969115badb3ab447192356af74fe16df2e45
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30b6443cba8c19561497ed8c33420ed91974015f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866584"
 ---
 # <a name="prepare-content-for-use-with-the-help-pane"></a>ヘルプ ウィンドウで使用するコンテンツの準備
 
@@ -39,7 +39,7 @@ AX 2012 の既存のコンテンツがある場合は、Finance、Supply Chain M
 
 ## <a name="creating-new-help-content"></a>新しいヘルプ コンテンツの作成
 
-[カスタム ヘルプ ツールキット](custom-help-toolkit.md) の一部として提供されている [AzureSearchCustomHelp](walkthrough-help-azure.md) ソリューションを使用して、コンテンツを **ヘルプ** ウィンドウに接続します。 **ヘルプ** ウィンドウは、検索サービスのインデックスに対して実行されるクエリを生成します。 **AzureSearchCustomHelp** ソリューションの状況依存ヘルプと全文検索では、各トピックに特定のメタデータが含まれる必要があります。
+[カスタム ヘルプ ツールキット](custom-help-toolkit.md) の一部として提供されている [AzureSearchCustomHelp](walkthrough-help-azure.md) ソリューションを使用して、コンテンツを **ヘルプ** ウィンドウに接続します。 **ヘルプ** ウィンドウは、検索サービスのインデックスに対して実行されるクエリを生成します。 **AzureSearchCustomHelp** ソリューションの状況依存ヘルプと全文検索では、各記事に特定のメタデータが含まれる必要があります。
 
 ### <a name="metadata-requirements-for-custom-help-topics"></a><a name="metadata"></a>カスタム ヘルプ トピックのメタデータ要件
 
@@ -50,14 +50,14 @@ AX 2012 の既存のコンテンツがある場合は、Finance、Supply Chain M
 | タイトル | この値は、**ヘルプ** ウィンドウからの全文検索に使用されます。 |
 | 説明 | この値は、**ヘルプ** ウィンドウからの全文検索に使用されます。 |
 | ms.search.form | この値には、ページのアプリケーション オブジェクト ツリー (AOT) の名が含まれ、**ヘルプ** ウィンドウからの状況依存検索に使用されます。 |
-| ms.locale | 値は、トピックの言語を示します。 **ヘルプ** ウィンドウがコンテンツを検索するときに、現在のブラウザー ロケールに対してマップされます。 ターゲットのカスタム ヘルプ Web サイトに対して、言語のフォールバックを設定できます。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。 |
-| ms.search.scope | 値は、ヘルプ トピックが表示されるクライアントを決定します。 1 つ以上の値を指定できます。 値には 、**Core**、**Operations**、**Retail**、および **Human Resources** が含まれます。 |
+| ms.locale | 値は、記事の言語を示します。 **ヘルプ** ウィンドウがコンテンツを検索するときに、現在のブラウザー ロケールに対してマップされます。 ターゲットのカスタム ヘルプ Web サイトに対して、言語のフォールバックを設定できます。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。 |
+| ms.search.scope | 値は、ヘルプ記事が表示されるクライアントを決定します。 1 つ以上の値を指定できます。 値には 、**Core**、**Operations**、**Retail**、および **Human Resources** が含まれます。 |
 
-次の表では、**ms.search.scope** プロパティに指定できる値について説明しています。 1 つ以上の値を指定できます。 値は、ヘルプ トピックが表示されるクライアントを決定します。
+次の表では、**ms.search.scope** プロパティに指定できる値について説明しています。 1 つ以上の値を指定できます。 値は、ヘルプ記事が表示されるクライアントを決定します。
 
-| 先頭値 | 説明 |
+| 値 | Description |
 |-------|-------------|
-| 基本 | この値が存在する場合、トピックは **ヘルプ** ウィンドウに表示されます。 それ以外の場合、トピックは **ヘルプ** ウィンドウに表示されません。 この値は、サポートされているすべての Dynamics 365 ソリューションのすべてのユーザーに対して、常に **ヘルプ** ウィンドウで使用可能でなければならない Microsoft コンテンツの一部に設定されます。 |
+| コア | この値が存在する場合、記事は **ヘルプ** ウィンドウに表示されます。 それ以外の場合、記事は **ヘルプ** ウィンドウに表示されません。 この値は、サポートされているすべての Dynamics 365 ソリューションのすべてのユーザーに対して、常に **ヘルプ** ウィンドウで使用可能でなければならない Microsoft コンテンツの一部に設定されます。 |
 | 運用 | この値は、Finance または Supply Chain Management に基づくソリューションに適用されます。 |
 | Retail | この値は、Commerce に基づくソリューションに適用されます。 |
 | Human Resources | この値は、Dynamics 365 Human Resources に基づくソリューションに適用されます。 |
@@ -88,7 +88,7 @@ AX 2012 の既存のコンテンツがある場合は、Finance、Supply Chain M
 [カスタム ヘルプの概要](custom-help-overview.md)  
 [カスタム ヘルプ ツールキット](custom-help-toolkit.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
-[Finance and Operations アプリのヘルプ エクスペリエンスのコンフィギュレーション](../../fin-ops/get-started/help-connect.md)  
+[財務と運用アプリのヘルプ エクスペリエンスの構成](../../fin-ops/get-started/help-connect.md)  
 [ヘルプ システム](../../fin-ops/get-started/help-overview.md)
 
 

@@ -1,6 +1,6 @@
 ---
 title: アプリケーション拡張機能ロードマップ
-description: このトピックでは、コードをオーバーレイ ベースから拡張ベースに変換するための要件とスケジュールについて説明します。
+description: この記事では、コードをオーバーレイ ベースから拡張ベースに変換するための要件とスケジュールについて説明します。
 author: FrankDahl
 ms.date: 07/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: d74bd8a3c40b2fd446869c7e867577a83a1b0c63
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0f4871daeed50c6028bc0259f1806f0d516ba630
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866885"
 ---
 # <a name="application-extensibility-roadmap"></a>アプリケーション拡張機能ロードマップ
 

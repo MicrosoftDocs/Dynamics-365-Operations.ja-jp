@@ -1,6 +1,6 @@
 ---
 title: EventHandlerResult を使用して応答
-description: このトピックでは、IEventHandlerResult インターフェイスを実装する任意の型パラメーターを持つイベントをサブスクライブする方法について説明します。
+description: この記事では、IEventHandlerResult インターフェイスを実装する任意の型パラメーターを持つイベントをサブスクライブする方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: dc02b00555465b34f22faf1fa693b5a0f5fb7360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3a4fb6a54aa2b2f4c475d0ee0e81baa4e59a5520
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782729"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866819"
 ---
 # <a name="respond-by-using-eventhandlerresult"></a>EventHandlerResult を使用して応答
 

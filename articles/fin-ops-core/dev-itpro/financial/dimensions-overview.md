@@ -1,6 +1,6 @@
 ---
 title: Excel テンプレートへの分析コードの追加
-description: このトピックでは、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。
+description: この記事では、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。
 author: RyanCCarlson2
 ms.date: 03/16/2022
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5192157c7f1d664937191d31cbe55e3ef3010b0a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6bb662cd47c3c3e9366bf5fd7a2f602aa28ed046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866786"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。
+この記事では、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。
 
 インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。 これは、すべての顧客が持つ唯一の分析コード です。 Microsoft Excel テンプレートに分析コードを追加するには、次の手順を実行する必要があります。
 
@@ -36,7 +36,7 @@ ms.locfileid: "8734415"
 3. [Excel で財務分析コード値の検索機能](add-dimensions-excel-templates.md) を追加します。
 3.  テンプレートを公開します。
 
-このトピックでは、DimensionCombinationEntity を変更して Excel の列で分析コードを有効にする方法を示します。 同じ手順を使用して DimensionSet エンティティを変更できます。 
+この記事では、DimensionCombinationEntity を変更して Excel の列で分析コードを有効にする方法を示します。 同じ手順を使用して DimensionSet エンティティを変更できます。 
 
 > [!NOTE]
 > この情報は、リリースごとに変更されることがあります。 したがって、頻繁に最新の情報を確認してください。

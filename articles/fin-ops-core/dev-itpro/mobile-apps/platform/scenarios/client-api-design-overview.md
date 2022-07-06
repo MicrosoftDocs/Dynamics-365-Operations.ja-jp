@@ -1,6 +1,6 @@
 ---
 title: クライアント側の設計 API
-description: このトピックでは、クライアント側での設計のための API の概要と、それらの使用に関する推奨事項について説明します。
+description: この記事では、クライアント側での設計のための API の概要と、それらの使用に関する推奨事項について説明します。
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 2675726413cc66386ba3317db014c7ad29d53796
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: bc851f765a26a880b311b7f76c4fbd8b21dd59bf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884693"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 
 [!include [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、クライアント側での設計のためのプリケーション プログラミング インターフェイス (API) の概要と、それらの使用に関する推奨事項について説明します。
+この記事では、クライアント側での設計のためのプリケーション プログラミング インターフェイス (API) の概要と、それらの使用に関する推奨事項について説明します。
 
 ## <a name="terminology"></a>用語
 次のリストには、クライアント側の設計 API に適用される用語がいくつか含まれています。

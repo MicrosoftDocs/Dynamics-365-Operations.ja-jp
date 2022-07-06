@@ -1,6 +1,6 @@
 ---
 title: セルフサービス配置の FAQ
-description: このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。
+description: この記事では、セルフサービス配置に関してよくある質問に対する回答を示します。
 author: rashmansur
 ms.date: 11/30/2021
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 248436c970452b0dad5bff3e16fc28d80d4170b7
-ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
+ms.openlocfilehash: 58ef1c6e1a7f4dd340bec4188cd7bbf46f75daee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "7875436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867444"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このトピックでは、[セルフサービス配置](infrastructure-stack.md)に関してよくある質問に対する回答を示します。 シナリオがここにない場合は、[既知の問題](known-issues-new-deployment-experience.md)を参照してください。  
+この記事では、[セルフサービス配置](infrastructure-stack.md) に関してよくある質問に対する回答を示します。 シナリオがここにない場合は、[既知の問題](known-issues-new-deployment-experience.md)を参照してください。  
 
 ## <a name="why-do-i-see-only-application-version-811-and-platform-update-21-and-above-when-i-try-to-deploy-my-sandbox-environment-using-self-service-deployment"></a>セルフサービス配置を使用してサンドボックス環境を配置しようとすると、アプリケーション バージョン 8.1.1 とプラットフォーム更新 21 以上しか表示されないのはなぜですか? 
 
@@ -84,13 +84,13 @@ LCS を通じて環境で実行されるセルフサービス操作に関連す�
 ### <a name="configure-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool を構成する
 マイクロソフトは、リモート デスクトップを使用しなくても wif.config ファイルの証明書サムネイルを更新できるようにするツールを作成中です。 このツールは、2019 年 2 月にリリースされる予定です。 それより前に Regression Suite Automation Tool を使用する必要がある場合は、サポート リクエストを記録してください。
 
-## <a name="i-must-perform-one-of-the-critical-actions-that-are-listed-earlier-in-this-topic-but-the-self-service-feature-isnt-yet-available-how-do-i-get-help"></a>このトピックの前方に一覧表示されている重大なアクションのいずれかを実行する必要がありますが、セルフサービス機能はまだ使用できます。 ヘルプを表示する方法を教えてください。
+## <a name="i-must-perform-one-of-the-critical-actions-that-are-listed-earlier-in-this-article-but-the-self-service-feature-isnt-yet-available-how-do-i-get-help"></a>この記事の前方に一覧表示されている重大なアクションのいずれかを実行する必要がありますが、セルフサービス機能はまだ使用できます。 ヘルプを表示する方法を教えてください。
 
 サポート チケットを記録すると、Microsoft が環境でのアクションの実行をお手伝いします。
 
-## <a name="i-dont-have-remote-desktop-access-to-my-sandbox-environment-and-the-critical-action-that-i-must-perform-isnt-listed-in-this-topic-how-do-i-get-help"></a>サンドボックス環境にリモート デスクトップ アクセスがなく、実行する必要がある重要なアクションがこのトピックに挙げられていません。 ヘルプを表示する方法を教えてください。
+## <a name="i-dont-have-remote-desktop-access-to-my-sandbox-environment-and-the-critical-action-that-i-must-perform-isnt-listed-in-this-article-how-do-i-get-help"></a>サンドボックス環境にリモート デスクトップ アクセスがなく、実行する必要がある重要なアクションがこの記事に挙げられていません。 ヘルプを表示する方法を教えてください。
 
-重要なアクションのこのトピックの前方に掲載されていない場合、このトピックにコメントを追加するかドキュメンテーション バグを記録すると、Microsoft が要求に対応します。
+重要なアクションのこの記事の前方に掲載されていない場合、記事にコメントを追加するかドキュメンテーション バグを記録すると、Microsoft が要求に対応します。
 
 ## <a name="what-regions-are-supported-on-self-service-in-north-america"></a>セルフサービスがサポートされている北米の地域はどこですか?
 現時点では、北米では次の地域のみサポートしています。
@@ -117,7 +117,7 @@ LCS を通じて環境で実行されるセルフサービス操作に関連す�
 
 - すべてのセルフサービス移行では、環境がホストされる地域の発信 IP アドレスを変更しています。 新しい発信 IP アドレスを使用できるので、今後のセルフサービス移行の前に追加する必要があります。 IP アドレスの詳細については、「[Microsoft が管理する環境では、外部コンポーネントが明示的な発信 IP セーフ リストに依存しています。セルフサービス導入への移行後に、サービスに影響がないことを確認するにはどうすればよいですか?](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment)」を参照してください。
 - 待機時間が原因で発生する統合やその他の依存関係があり、地域の変更による影響について質問がある場合は、[Microsoft サポート](../lifecycle-services/lcs-support.md) にお問い合わせください。
-- 米国中部は、セルフサービス移行のオプションではなくなりました。 顧客が二重書き込み機能、仮想エンティティ、または Dataverse に依存する Finance and Operations アプリケーションのアドインを利用する予定の場合、Dataverse は米国中部ではサポートされていないことに注意してください。 当面、米国中部で Dataverse をサポートする計画はありません。 サポートされている地域の機能を引き続き使用するために、お使いの環境を中部米国ではなく東部米国または西部米国に移行する計画です。
+- 米国中部は、セルフサービス移行のオプションではなくなりました。 顧客が二重書き込み機能、仮想エンティティ、または Dataverse に依存する財務と運用アプリのアドインを利用する予定の場合、Dataverse は米国中部ではサポートされていないことに注意してください。 当面、米国中部で Dataverse をサポートする計画はありません。 サポートされている地域の機能を引き続き使用するために、お使いの環境を中部米国ではなく東部米国または西部米国に移行する計画です。
 - 一部の環境でセルフサービス機能を使用しているプロジェクトが米国中部にあり、その他の環境では中北部、中南部、中西部にある場合でも、移行の一環として残りの IaaS 環境を米国東部または西部に移動できます。 Service Fabric 上および米国中部にすでに存在する環境については、Microsoft サポートに問い合わせて、必要に応じて米国東部/西部への移動を依頼してください。
 -   現在のリージョンのすべての Azure リソースを確認し、移行の一環として今後の変更に備えて、新しいリージョンと同じ場所に配置する必要があるかどうかを評価してください。
 - 地域間の移行に関連するデータ移動について質問がある場合は、[異なるインフラストラクチャ (Microsoft による管理対セルフ サービス) 上にあるソースおよびターゲット](../database/database-pitr-prod-sandbox.md#the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service) を参照してください。

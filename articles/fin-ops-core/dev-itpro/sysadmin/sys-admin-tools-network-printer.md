@@ -1,6 +1,6 @@
 ---
 title: 法人間でのネットワーク プリンターへのアクセスの管理
-description: このトピックでは、システム管理ユーティリティを使用してネットワーク プリンターを設定する方法に関する情報が提供されます。
+description: この記事では、システム管理ユーティリティを使用してネットワーク プリンターを設定する方法について説明します。
 author: RichdiMSFT
 ms.date: 12/11/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc092a9d4be4a6cb8d01c6064c5d3306e9fc332efb1058444ae487d442f1d59a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3e04e22891ebb89da34f94640ccbc05a08aaed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759199"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898415"
 ---
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 

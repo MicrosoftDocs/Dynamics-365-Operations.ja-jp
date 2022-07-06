@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations バージョン 10.0.2 の拡張機能の変更
-description: これのトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 に実装された拡張機能を一覧します。
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 に実装された拡張機能を一覧します。
 author: FrankDahl
 ms.date: 05/10/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-10
 ms.dyn365.ops.version: App 10.0
-ms.openlocfilehash: b1829498cec0c0a78289438b919e0a4bbaa634cf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0763c7e756cecb6be9d6d9ebaa46c1b14af4d832
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866930"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-1002"></a>Dynamics 365 for Finance and Operations バージョン 10.0.2 の拡張機能の変更
 
 [!include [banner](../includes/banner.md)]
 
-これのトピックでは、 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 にて実装された拡張機能を記載しています。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
+この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 にて実装された拡張機能を記載しています。 拡張性をサポートする変更のスケジュールの詳細については、「[アプリケーション機能拡張計画](extensibility-roadmap.md)」を参照してください。
 
 ## <a name="enumerations-made-extensible"></a>拡張可能になった列挙
 

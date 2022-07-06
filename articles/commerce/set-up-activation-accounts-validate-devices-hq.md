@@ -1,6 +1,6 @@
 ---
 title: アクティベーション アカウントの管理とデバイスの検証
-description: このトピックでは、作業者が Modern POS デバイスまたはクラウド POS デバイスを有効にするためにコマース アクティベーション アカウント を IT Pro で設定する方法について説明します。
+description: この記事では、作業者が Modern POS デバイスまたはクラウド POS デバイスを有効にするためにコマース アクティベーション アカウントを IT Pro で設定する方法について説明します。
 author: athinesh99
 ms.date: 07/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cfb51c926790bf89221fd41dabb3279591a852b59118feb04c47ba73573a85a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1e25045c7b48d3028f0f5777abd2bc8bf048e5c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769357"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853727"
 ---
 # <a name="manage-activation-accounts-and-validate-devices"></a>アクティベーション アカウントの管理とデバイスの検証
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、作業者が Modern POS デバイスまたはクラウド POS デバイスを有効にするためにコマース アクティベーション アカウント を IT Pro で設定する方法について説明します。
+この記事では、作業者が Modern POS デバイスまたはクラウド POS デバイスを有効にするためにコマース アクティベーション アカウントを IT Pro で設定する方法について説明します。
 
 ## <a name="setting-up-a-device-activation-account-for-a-single-worker"></a>1 人の作業者のデバイス有効化アカウントの設定
 

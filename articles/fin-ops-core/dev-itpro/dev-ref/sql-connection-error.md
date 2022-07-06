@@ -1,6 +1,6 @@
 ---
 title: X++ の SQL 接続エラー例外
-description: このトピックでは、X++ での SQL 接続エラー例外のタイプについて説明します。
+description: この記事では、X++ での SQL 接続エラー例外のタイプについて説明します。
 author: yiqju
 ms.date: 09/27/2018
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
-ms.openlocfilehash: 0afb79505f4fee421d4d9e604f98dcf28716f4b1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6f0a9a50073364c837185aed84ffa2b69376fc19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867249"
 ---
 # <a name="sql-connection-error-x-exception"></a>X++ の SQL 接続エラー例外
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ での SQL 接続エラー例外のタイプについて説明します。
+この記事では、X++ での SQL 接続エラー例外のタイプについて説明します。
 
 ## <a name="transientsqlconnectionerror-x-exception"></a>TransientSqlConnectionError X++ 例外
 X++ SQL クエリの実行中、サーバー側で一時的な SQL 接続エラーが発生すると、TransientSqlConnectionError X++ 例外が発生します。 アプリケーションの要件に応じて、アプリケーションは例外をキャッチして処理する必要があります。

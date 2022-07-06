@@ -1,6 +1,6 @@
 ---
 title: エンティティ モデリング
-description: このトピックでは、Finance and Operations エンティティの仮想エンティティを使用したリレーショナル モデリングの概念について説明します。
+description: この記事では、財務と運用エンティティの仮想エンティティを使用したリレーショナル モデリングの概念について説明します。
 author: Sunil-Garg
 ms.date: 07/21/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4eb281f0abc5450cada8eabfb2dcc920776487d2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 86646334bde528a4d33577aa347d44a9bdfd3b35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062073"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870359"
 ---
 # <a name="entity-modeling"></a>エンティティ モデリング
 
@@ -30,7 +30,7 @@ ms.locfileid: "8062073"
 
 > Finance and Operations 仮想エンティティの Dataverse メタデータで公開されるパブリック エンティティ名は、Finance and Operations エンティティの物理名を使用します。 これは、財務と運用アプリの OData メタデータによって公開されるエンティティのパブリック名とは異なる場合があります。
 
-アプリを作成するには、アプリで使用されているエンティティの間でリレーショナル モデリングを実行する機能が必要です。 仮想エンティティのコンテキストでは、Dataverse の仮想エンティティとネイティブ エンティティが連携して、目的のユーザー エクスペリエンスを実現する必要があります。 このトピックでは、Finance and Operations の仮想エンティティを使用して実装できるリレーショナル モデリングの概念について説明します。
+アプリを作成するには、アプリで使用されているエンティティの間でリレーショナル モデリングを実行する機能が必要です。 仮想エンティティのコンテキストでは、Dataverse の仮想エンティティとネイティブ エンティティが連携して、目的のユーザー エクスペリエンスを実現する必要があります。 この記事では、財務と運用の仮想エンティティを使用して実装できるリレーショナル モデリングの概念について説明します。
 
 ## <a name="generating-virtual-entities"></a>仮想エンティティの生成
 
@@ -61,7 +61,7 @@ Finance and Operations の *real* および *long* データ型のフィール�
 | Dataverse のほうがスケールが大きくなります。        | 該当なし |
 | Finance and Operations のほうがスケールは大きくなります。     | Dataverse は、1,000 億を超えている場合でも、Finance and Operations 値を示しています。 ただし、精度は低下します。 たとえば、987,654,100,000,000,000 は Dataverse では "987,654,099,999,999,900" として表示されます。 このフィールドの値が Dataverse で編集されている場合、Dataverse 検証では、Finance and Operations に送信される前に、値が最大値を超えていますというエラーがスローされます。 |
 
-Finance and Operations の次のデータ型は、Dataverse ではサポートされていません。 Finance and Operations エンティティのこれらのデータ型のフィールドは、Dataverse の対応する仮想エンティティでは使用できません。 これらのデータ型のフィールドを Open Data Protocol (OData) アクションのパラメーターとして使用した場合は、それらのアクションを対応する仮想エンティティで使用することはできません。 OData アクションの詳細については、このトピックで後述する [OData アクション](#odata-actions)のセクションを参照してください。
+Finance and Operations の次のデータ型は、Dataverse ではサポートされていません。 Finance and Operations エンティティのこれらのデータ型のフィールドは、Dataverse の対応する仮想エンティティでは使用できません。 これらのデータ型のフィールドを Open Data Protocol (OData) アクションのパラメーターとして使用した場合は、それらのアクションを対応する仮想エンティティで使用することはできません。 OData アクションの詳細については、この記事で後述する [OData アクション](#odata-actions) セクションを参照してください。
 
 - AnyType
 - BLOB
@@ -126,7 +126,7 @@ Dataverse で Finance and Operations 仮想エンティティの一部を生成�
 
 ### <a name="virtual-tabletovirtual-table-relationships"></a>仮想テーブル - 仮想テーブル リレーションシップ
 
-2 つの Finance and Operations 仮想エンティティ間のリレーションシップは、Finance and Operations エンティティの関連メタデータによって駆動されます。 前に説明したように、これらのリレーションは、仮想エンティティが生成されたときに Dataverse でリレーションシップとして生成されます。 Dataverse のネイティブ エンティティの動作と同様に、これらのリレーションシップは GUID を使用して Finance and Operations のエンティティの固有レコードを識別します。 意味的には、Finance and Operations 仮想エンティティの GUID は、ネイティブ Dataverse テーブル上で GUID と同じように動作します。 Finance and Operations 仮想エンティティでの GUID の実装については、このトピックで前述した[エンティティ キー/主キー](entity-modeling.md#entity-keyprimary-key) セクションを参照してください。
+2 つの Finance and Operations 仮想エンティティ間のリレーションシップは、Finance and Operations エンティティの関連メタデータによって駆動されます。 前に説明したように、これらのリレーションは、仮想エンティティが生成されたときに Dataverse でリレーションシップとして生成されます。 Dataverse のネイティブ エンティティの動作と同様に、これらのリレーションシップは GUID を使用して Finance and Operations のエンティティの固有レコードを識別します。 意味的には、Finance and Operations 仮想エンティティの GUID は、ネイティブ Dataverse テーブル上で GUID と同じように動作します。 財務と運用の仮想エンティティでの GUID の実装については、この記事で前述した[エンティティ キー/主キー](entity-modeling.md#entity-keyprimary-key) セクションを参照してください。
 
 前の例では、関連するエンティティの GUID はエンティティ B のエンティティ キーであり、Finance and Operation でレコードを識別するクエリを作成するために使用されます。 エンティティ A とエンティティ B のリレーションが使用されます。
 

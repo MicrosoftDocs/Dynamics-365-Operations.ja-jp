@@ -1,8 +1,8 @@
 ---
 title: ローカル エージェントの更新
-description: このトピックでは、ローカル エージェントを更新する方法について説明します。
+description: この記事では、ローカル エージェントを更新する方法について説明します。
 author: faix
-ms.date: 02/22/2022
+ms.date: 06/08/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,24 +15,25 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2343af4bc5e7ce7f9b01f0732b6304183148d124
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: ac99b5da33723605aab150815e02e4184ffeff33
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566182"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945776"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2021 年 11 月にリリースされたバージョン 3.0.0 です。
+この記事では、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2022 年 6 月にリリースされたバージョン 3.1.0 です。
 
 > [!IMPORTANT]
 > 準備フェーズが完了した場合でも、サービス操作中にローカル エージェントを更新しないでください。 
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
+| 3.1.0               | このバージョンにより、新しい展開オプションが追加されます。 |
 | 3.0.0               | このバージョンには、Edge Scale Unit アプリケーション ライフサイクル管理のサポートが含まれています。 |
 | 2.7.2               | このバージョンには、古いアプリケーション バージョンを配置するための修正が含まれています。 | 
 | 2.7.1               | このバージョンでは、新しい展開オプションが導入され、展開オプションによるバグが修正されます。 |
@@ -50,6 +51,10 @@ ms.locfileid: "8566182"
 | 1.1.0               | このバージョンでは、正常に展開するために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になり、複数モデルのパッケージ展開が可能になり、プラットフォーム更新プログラム 8 および 11 が展開されます。 | 
 | 1.0.0               | このバージョンでは、展開が失敗した場合のために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になります。 |
 | Null                | この初期バージョンでは、Platform update 8 が導入されています。 |
+
+## <a name="whats-new-in-local-agent-310"></a>ローカル エージェント 3.1.0 の新機能
+
+- ローカル エージェント 3.1.0 により、新しい展開オプションが導入され、[環境が Regression Suite Automation Tool (RSAT) で機能するよう構成する必要があると指定する](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool)ことができます。
 
 ## <a name="whats-new-in-local-agent-300"></a>ローカル エージェント 3.0.0 の新機能
 
@@ -102,7 +107,7 @@ ms.locfileid: "8566182"
 - このリリースでは、監視エージェントを削除して LBDTelemetry という新しいサービスを導入し、これを ETWManifests のインストールの際に使用します。
 
 > [!IMPORTANT]
-> このリリースでは、LCS から新しいローカル エージェント構成ファイルをダウンロードする必要があります。 問題が発生した場合は、[オンプレミス配置のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md) を参照してください。 
+> このリリースでは、LCS から新しいローカル エージェント構成ファイルをダウンロードする必要があります。 問題が発生した場合は、[オンプレミス配置のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md)の記事を参照してください。 
 
 ## <a name="whats-new-in-local-agent-210"></a>ローカル エージェント 2.1.0 の新機能
 - ローカル エージェント 2.1.0 では、**環境の準備** および **環境の更新** が 2 つの異なる手順および明示的アクションである 2 フェーズのサービスを有効にします。 事前準備を行い、ユーザーが準備中に環境を使用できるようにし、実際の更新環境アクションが発生する際にダウンタイムを通知することで、オンプレミス環境に更新プログラムを適用する場合に顧客が取る必要があるダウンタイムの合計が削減されます。

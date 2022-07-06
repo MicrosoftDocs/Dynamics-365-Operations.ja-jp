@@ -1,6 +1,6 @@
 ---
 title: 互換性チェック ツール
-description: このトピックでは、メタデータの互換性を破る変更を検索して報告する互換性チェックツールについて説明します。
+description: この記事では、メタデータの互換性を破る変更を検索して報告する互換性チェック ツールについて説明します。
 author: smithanataraj
 ms.date: 03/26/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: b35fb873f872bfe3a0469e43ae9f94c0ef53c52c
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 1eb825123ea9881fc3dbfbbaa5b1c900c62e6457
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661678"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866954"
 ---
 # <a name="compatibility-checker-tool"></a>互換性チェック ツール
 
@@ -33,10 +33,10 @@ ms.locfileid: "8661678"
 
 このツールでは、現在のバージョンのメタデータとベースライン バージョンのメタデータが比較されます。 Microsoft が破損を判断してツールに追加したメタデータの変更を検出して報告します。
 
-ツールが検出する互換性を破る変更のリストについては、このトピックで後述する[ツールが検出する互換性を破る変更のリスト](#list-of-breaking-changes-detected-by-the-tool)のセクションを参照してください。
+ツールが検出する互換性を破る変更のリストについては、この記事で後述する[ツールが検出する互換性を破る変更のリスト](#list-of-breaking-changes-detected-by-the-tool) セクションを参照してください。
 
 > [!NOTE]
-> + このトピックの一覧には、ツールが検出できる互換性に影響するすべての変更が含まれているわけではありません。
+> + この記事の一覧には、ツールが検出できる互換性に影響するすべての変更が含まれているわけではありません。
 > + このツールでは、互換性に影響するすべての変更を検出できるわけではありません。
 
 ## <a name="what-the-tool-doesnt-detect"></a>ツールで検出されないもの

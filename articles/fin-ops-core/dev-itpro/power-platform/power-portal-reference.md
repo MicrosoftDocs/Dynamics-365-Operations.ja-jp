@@ -1,6 +1,6 @@
 ---
 title: Power Apps ポータルと Finance and Operations
-description: このトピックでは、Finance and Operations で Power Apps ポータルを使用する方法について説明します。
+description: この記事では、財務と運用で Power Apps ポータルを使用する方法について説明します。
 author: Sunil-Garg
 ms.date: 07/13/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a9520911536af6181124855f13b2358a79406d65
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a5ed51938085a795367b030f0df31f1e2c65b8e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863246"
 ---
 # <a name="power-apps-portals-with-finance-and-operations"></a>Power Apps ポータルと Finance and Operations
 
@@ -28,7 +28,7 @@ ms.locfileid: "8060903"
 > [!IMPORTANT]
 > この機能を使用するには、財務と運用アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
-Power Apps ポータルでは、Dataverse の仮想エンティティとして使用できる Finance and Operations エンティティに対して、作成、更新、および削除 (CRUD) 操作を行うことができます。 このトピックでは、財務と運用アプリの Power Apps ポータルに実装されているシナリオについて説明します。
+Power Apps ポータルでは、Dataverse の仮想エンティティとして使用できる Finance and Operations エンティティに対して、作成、更新、および削除 (CRUD) 操作を行うことができます。 この記事では、財務と運用アプリの Power Apps ポータルに実装されているシナリオについて説明します。
 
 ## <a name="anonymous-access-from-power-apps-portals"></a>Power Apps ポータルからの匿名アクセス
 

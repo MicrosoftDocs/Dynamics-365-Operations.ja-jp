@@ -1,6 +1,6 @@
 ---
 title: 税エンジンの適用性
-description: このトピックでは、税エンジンの適用性について説明します。
+description: この記事では、税エンジンの適用性について説明します。
 author: EricWangChen
 ms.date: 10/07/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: India
 ms.author: wangchen
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 222da2e70e22cf390caecc39f92d2b58684dab34
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 44e27fc9c7f89df1190cdc50d2f8c94dadc3143b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874478"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
 [!include [banner](../includes/banner.md)]
 
-[税エンジン](tax-engine.md) (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。 このトピックでは GTE が税金の適用性を処理する方法を理解するのに役立つ税エンジン構成について説明します。
+[税エンジン](tax-engine.md) (GTE とも呼ばれます) では、法的要件および業務要件に基づいて、税の適用、計算、転記、および決済を決定する税ルールを設定できます。 この記事では GTE が税の適用性を処理する方法を理解するのに役立つ税エンジン構成について説明します。
 
 > [!NOTE]
 > 税エンジン機能は、インドに基本住所がある法人に対してのみ使用可能です。

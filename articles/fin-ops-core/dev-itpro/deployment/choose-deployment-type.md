@@ -1,6 +1,6 @@
 ---
 title: 配置オプション
-description: Finance and Operations アプリは、クラウドまたはオンプレミスで実行することができます。 このトピックでは、各種の展開オプションについて説明します。
+description: Finance and Operations アプリは、クラウドまたはオンプレミスで実行することができます。 この記事では、各種の展開オプションについて説明します。
 author: kfend
 ms.date: 11/30/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 2e151e38be302d3e5ce29309d9f452248aae2e11
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 6b88397272a138f5081945f858f6a0a0d7203d21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867468"
 ---
 # <a name="deployment-options"></a>配置オプション
 
 [!include [banner](../includes/banner.md)]
 
-クラウドまたはオンプレミスの Finance and Operations アプリをデプロイすることができます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。 
+Finance and Operations アプリをクラウドまたはオンプレミスで展開することができます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。 
 > [!IMPORTANT]
 > オンプレミス配置は、Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
@@ -35,7 +35,7 @@ ms.locfileid: "7874536"
 
 
 ## <a name="why-cloud"></a>クラウドを使用する理由
-クラウド展開では、Microsoft が完全に管理するデータ センターだけでなく、必要に応じて簡単にスケールアップまたはスケールダウンできるクラウド サービスを提供します。 Finance and Operations アプリ の実装に費やされる時間を大幅に短縮し、必要なカスタマイズを減らし、IT ハードウェアやインフラストラクチャのコストを削減できます。 
+クラウド展開では、Microsoft が完全に管理するデータ センターだけでなく、必要に応じて簡単にスケールアップまたはスケールダウンできるクラウド サービスを提供します。 Finance and Operations アプリの実装に費やされる時間を大幅に短縮し、必要なカスタマイズを減らし、IT ハードウェアやインフラストラクチャのコストを削減できます。 
 
 クラウド展開には、インテリジェンス、インフラストラクチャ、コンピューティング、およびデータベース サービスのクラウドベースのシステムを組み合わせた高可用性、障害復旧、サンドボックス環境、アプリケーション ライフサイクル管理が含まれます。 必要に応じて、クラウドでのデータ フェールオーバー、自動配置と継続的な更新、および柔軟な処理能力を使用できます。 クラウド配置では、データの集計、財務報告およびインテリジェンスも提供されます。
 

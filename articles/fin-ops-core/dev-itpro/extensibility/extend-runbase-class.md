@@ -1,6 +1,6 @@
 ---
 title: RunBase クラスの拡張
-description: このトピックには、RunBase クラスを拡張できる方法を示した例が徹底的に含まれています。
+description: この記事には、RunBase クラスを拡張できる方法を示した例が徹底的に含まれています。
 author: MichaelFruergaardPontoppidan
 ms.date: 02/28/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 2197b321462f045a040fab8242393a5b10eeeb5d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5a539dc50ddb4a062e4ebd757c0654e07005c4d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782743"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866939"
 ---
 # <a name="extend-the-runbase-class"></a>RunBase クラスの拡張
 
 [!include [banner](../includes/banner.md)]
 
-アプリケーション スイートの機能を拡張するとき、**RunBase** クラスを拡張するクラスに遭遇します。 このトピックでは、**RunBase** クラスをエンド・ツー・エンドで拡張する方法を示します。
+アプリケーション スイートの機能を拡張するとき、**RunBase** クラスを拡張するクラスに遭遇します。 この記事では、**RunBase** クラスをエンド・ツー・エンドで拡張する方法を示します。
 
 たとえば、SysUserLogCleanup クラスを拡張します。 すぐに使えるこのクラスは、SysUserLog テーブルからレコードを削除できます。 ただし、削除する前に、これらのレコードを別のテーブルにアーカイブします。
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更点
-description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 ms.date: 05/26/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-ms.openlocfilehash: dc64fac0f3cb3fc0cd0374bf897281728051c16ab13ea56f94ca726458341209
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df64e45faf9135adf0363652d9c0f2f4678bffc6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888113"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-25-april-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5222 です。 プラットフォーム更新プログラム 25 の詳細については [追加リソース](whats-new-platform-25.md#additional-resources) を参照してください。
+この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 25 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5222 です。 プラットフォーム更新プログラム 25 の詳細については [追加リソース](whats-new-platform-25.md#additional-resources) を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 プラットフォーム更新プログラム 25 に含まれる [プラットフォーム拡張機能の 2 番目の波](/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility2) は、2019 年 4 月リリース ノートにドキュメントされています。 そこには 14 の機能強化が詳述されており、強調する点の 1 つは InternalUseOnlyAttribute メソッドのコマンド チェーンが、警告だけで許可されることです。
@@ -83,14 +83,14 @@ Azure Blob Storage はビジネス イベントのエンド ポイントとし�
 [2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
+[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

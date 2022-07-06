@@ -1,6 +1,6 @@
 ---
 title: 拡張可能クラスの書き込み
-description: このトピックでは、拡張可能クラスを書き込む方法について説明します。
+description: この記事では、拡張可能クラスを書き込む方法について説明します。
 author: smithanataraj
 ms.date: 09/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: fb0a3411dacb3804bde38ad5b9850c54fdd232e1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 74a5a18024b8824957f08f90e8c8aa72a30410f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782182"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866882"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 

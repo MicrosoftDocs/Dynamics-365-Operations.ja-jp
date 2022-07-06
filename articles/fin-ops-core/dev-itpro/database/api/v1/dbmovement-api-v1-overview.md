@@ -1,6 +1,6 @@
 ---
 title: データベース移動 API - 参照 - v1 - 概要
-description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
+description: この記事では、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
 ms.date: 09/30/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 7271625c166f093991a8f5e92b38cbd042e97739
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f6128325d996c4b252d29d48b2bb852d970e6128
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867578"
 ---
 # <a name="api-v1-reference-overview"></a>API v1 参照の概要
 

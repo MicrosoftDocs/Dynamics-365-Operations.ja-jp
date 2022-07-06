@@ -1,6 +1,6 @@
 ---
 title: 番号順序スコープの拡張
-description: このトピックでは、開発者が番号シーケンスのスコープを拡張する方法について説明します。
+description: この記事では、開発者が番号シーケンスのスコープを拡張する方法について説明します。
 author: RobinARH
 ms.date: 04/14/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: lgou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59f92cfd8bc23e85a8ed06c64cd09eb649485a66
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ed02657f79e96fedc3e4769c0fe08c80c11aa47b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866942"
 ---
 # <a name="extend-the-scope-of-number-sequences"></a>番号順序スコープの拡張
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、数値シーケンスのスコープを拡張する方法を示します。
+この記事では、数値シーケンスのスコープを拡張する方法を示します。
 
 数字シーケンスの範囲は、数字シーケンスを使用する組織を定義します。 範囲は、**共有**、**会社**、**法人**、または **作業単位** のいずれかにすることができます。 **会社** と **法人** スコープを会計カレンダー期間と組み合わせて、より具体的な番号順序を作成することができます。 新しい番号順序の範囲は、拡張機能を通じて追加できます。  
 

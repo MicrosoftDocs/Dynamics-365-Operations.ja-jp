@@ -1,6 +1,6 @@
 ---
 title: データベースのインポート
-description: このトピックでは、Finance and Operations アプリのデータベースをインポートする方法について説明します。
+description: この記事では、財務と運用アプリのデータベースをインポートする方法について説明します。
 author: LaneSwenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 2872411d8f21dba954d8e7770da9d9d748a4d7e8
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 882131d622221a6391cfcbe2dd9ad07794f5ab10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778245"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867530"
 ---
 # <a name="import-a-database"></a>データベースのインポート
 

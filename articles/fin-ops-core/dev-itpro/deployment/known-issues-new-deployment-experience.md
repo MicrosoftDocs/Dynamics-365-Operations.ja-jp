@@ -1,6 +1,6 @@
 ---
 title: セルフサービス配置に関する既知の問題
-description: このトピックでは、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。
+description: この記事では、セルフ サービス配置を使用する場合に発生する可能性がある既知の問題を一覧表示します。
 author: rashmansur
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fef14c9115655653d8d8d87a69c263d8d443aeb8f07b878efc6cfa33557f493e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 933c110ad68b31856ba2a41d64afbf91bdc6bac1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867432"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このトピックでは、[セルフ サービス配置](infrastructure-stack.md)の既知の問題について説明します。
+この記事では、[セルフ サービス配置](infrastructure-stack.md)の既知の問題について説明します。
 
 ## <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
 
@@ -37,7 +37,7 @@ ms.locfileid: "6741640"
 ### <a name="known-issues-in-this-release"></a>このリリースの既知の問題
 既知の問題は、将来のリリースで解決されるバグです。 2 週間おきに LCS の新しいリリースがあります。
 
-## <a name="finance-and-operations-apps"></a>Finance and Operations アプリ 
+## <a name="finance-and-operations-apps"></a>財務と運用アプリ 
 
 > [!NOTE]
 > Dynamics 365 Commerce は、10.0.10 リリースを使用した最新の配置エクスペリエンスに実装されています。 詳細については、[セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成](../../../commerce/dev-itpro/payment-connector-package.md)を参照してください。
@@ -46,7 +46,7 @@ ms.locfileid: "6741640"
 次の機能は、セルフ サービス配置では実装されません。
 
 - **カスタム フォント** - カスタム フォントはサポートされていません。 詳細については、[Dynamics 365 アプリケーションのドキュメント レポート サービス](../analytics/reporting-experience-iias-environments.md)を参照してください。
-- **セルフサービスのユーザー インターフェイス (UI) コンポーネントに関連したカスタマイズ** - Finance and Operations アプリで標準の Financial Reporting または SQL Server Reporting Services (SSRS) を使用しないカスタマイズは、多くの場合、AOS が実行されているオペレーティング システムの UI コンポーネントに依存します。 依存関係の例としては、Windows フォント、Internet Explorer などの Web ブラウザー、またはカスタム PDF レンダリングなどがあります。 ホスト オペレーティング システムに、フォント インフラストラクチャ、Web ブラウザー、または一般的な UI コンポーネントのサポートが含まれることを保証するものではありません。 セルフサービス インフラストラクチャに移行すると、ホスト オペレーティング システムが変更されます。 このような依存関係があり他にご質問がある場合は、Microsoft サポートに問い合わせてください。
+- **セルフサービスのユーザー インターフェイス (UI) コンポーネントに関連したカスタマイズ** - 財務と運用アプリで標準の Financial Reporting または SQL Server Reporting Services (SSRS) を使用しないカスタマイズは、多くの場合、AOS が実行されているオペレーティング システムの UI コンポーネントに依存します。 依存関係の例としては、Windows フォント、Internet Explorer などの Web ブラウザー、またはカスタム PDF レンダリングなどがあります。 ホスト オペレーティング システムに、フォント インフラストラクチャ、Web ブラウザー、または一般的な UI コンポーネントのサポートが含まれることを保証するものではありません。 セルフサービス インフラストラクチャに移行すると、ホスト オペレーティング システムが変更されます。 このような依存関係があり他にご質問がある場合は、Microsoft サポートに問い合わせてください。
 
 ### <a name="features-no-longer-supported"></a>サポートされなくなった機能
 次の機能は、セルフ サービス配置ではサポートされなくなりました。
@@ -56,7 +56,7 @@ FTP に依存するカスタマイズは、セルフサービスの配置では�
 
 - Application Object Server (AOS) からの送信要求すべてが静的 IP アドレス上にあることを保証するものではありません。 
 
-- 2021 年 6 月まで、特定の AOS セッション中のすべての発信要求が同じ IP アドレスに設定されます。 これは、FTP などの一部のプロセスに影響を与える可能性があります。 Power Apps を使用してファイルを引き出し、Finance and Operations アプリに API 呼び出しを実行して、データ統合フレームワークを使用してファイルをインポートすることにより、FTP の使用を除去することをお勧めします。 詳細については、[データ エンティティ統合の概要](../data-entities/integration-overview.md) を参照してください。 特定の例には以下が含まれます。
+- 2021 年 6 月まで、特定の AOS セッション中のすべての発信要求が同じ IP アドレスに設定されます。 これは、FTP などの一部のプロセスに影響を与える可能性があります。 Power Apps を使用してファイルを引き出し、財務と運用アプリに API 呼び出しを実行して、データ統合フレームワークを使用してファイルをインポートすることにより、FTP の使用を除去することをお勧めします。 詳細については、[データ エンティティ統合の概要](../data-entities/integration-overview.md) を参照してください。 特定の例には以下が含まれます。
 
   - ([Azure Logic App での SFTP ファイルの監視、作成、および管理で説明されているように](/azure/connectors/connectors-create-api-sftp))、ネイティブの SFTP コネクタを使用します。そのために、オン プレミス サービスを呼び出すためにファイアウォールでいくつかのポートを開いておく必要があります。 Logic Apps の場合、IP のリストは、全体の[地域の許可リスト ](/azure/logic-apps/logic-apps-limits-and-config#outbound)および [Power Automate での制限と構成](/power-automate/limits-and-config#logic-apps)よりもはるかに短いことを考慮してください。
 

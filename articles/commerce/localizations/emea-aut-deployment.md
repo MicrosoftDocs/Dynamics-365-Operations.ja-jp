@@ -1,6 +1,6 @@
 ---
 title: オーストラリアのキャッシュ レジスターの配置ガイドライン
-description: このトピックは、オーストリアのローカライズ用配置ガイドです。
+description: この記事は、オーストリアのローカライズ用配置ガイドです。
 author: AlexChern0v
 ms.date: 01/31/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d09b6bbe06d032b2313687072849ae96de653d8d
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: c24e2a85a3f4d4910fc129d4fe961d1078f88235
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902778"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
 [!include[banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 Commerce のオーストラリアでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷し、追加の監査イベントを登録し、EFSTA システムと Electronical 会計登録ソフトウェアとの統合サンプルを含めることができます。 オーストリアのローカライズの詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md) を参照してください。
+この記事は、オーストラリアで Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷し、追加の監査イベントを登録し、EFSTA システムと Electronical 会計登録ソフトウェアとの統合サンプルを含めることができます。 オーストリアのローカライズの詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md) を参照してください。
 
 統合サンプルは、会計統合フレームワークに基づいて作成されました。 会計統合機能の詳細については、 [コマース チャネルの財政統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。これらのサンプルは、市販ソフトウェア開発キット (SDK)の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このローカライズは、Commerce runtime (CRT)、ハードウェア ステーション、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+このローカライズは、Commerce runtime (CRT)、ハードウェア ステーション、および POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
 ## <a name="development-environment"></a>開発環境
 
@@ -102,7 +102,7 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 1. **HardwareStation.Extension.EFRSample** プロジェクトを探して、構築します。
 2. **Extension.EFRSample\\bin\\Debug** フォルダーで、以下のファイルを探します。
 
-    - The **Contoso.Commerce.HardwareStation.EFRSample.dll** アセンブリ
+    - **Contoso.Commerce.HardwareStation.EFRSample.dll** アセンブリ
     - **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** アセンブリ
 
 3. アセンブリ ファイルをハードウェア ステーション拡張機能フォルダーにコピーします。
@@ -191,11 +191,11 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 詳細については、[オーストリアの会計登録サービス統合サンプル](./emea-aut-fi-sample.md)を参照してください。
 
-## <a name="production-environment"></a>実稼働環境
+## <a name="production-environment"></a>運用環境
 
-以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを実稼働環境で適用します。
+以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを運用環境で適用します。
 
-1. [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、またはこのトピックで既に見た[Modern POS 拡張コンポーネント](#modern-pos-extension-components)セクションで手順を完了します。
+1. この記事の前半の [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、または [Modern POS 拡張コンポーネント](#modern-pos-extension-components) セクションで手順を完了します。
 2. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
     1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。

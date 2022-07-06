@@ -1,6 +1,6 @@
 ---
 title: AOS 起動時に OData メタデータ キャッシュを作成する
-description: このトピックでは、AOS 起動時に OData メタデータ キャッシュを作成する方法に関する情報を提供します。
+description: この記事では、AOS 起動時に OData メタデータ キャッシュを作成する方法に関する情報を提供します。
 author: hasaid
 ms.date: 03/25/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: e136d28cf61c49a6f036b96ad7d751476b72a2a2772bbcdc66d48a8e3a51fb2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59589a1b0b45feb88418692f4d89782658ea31c2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872697"
 ---
 # <a name="build-odata-metadata-cache-when-the-aos-starts"></a>AOS 起動時に OData メタデータ キャッシュを作成する
 

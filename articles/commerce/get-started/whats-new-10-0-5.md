@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Retail バージョン 10.0.5 の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Retail の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 for Retail の新機能および変更された機能について説明します。
 author: josaw1
 ms.date: 09/16/2019
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-08-02
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2dc8ea943d1e1eb8f905336bda22c11eb75cf8c10118bb68f321441862f90360
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75165ec239e5534ceffef10069a490706a7d2587
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876973"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1005"></a>Dynamics 365 for Retail バージョン 10.0.5 の新機能および変更された機能
 
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Retail 10.0.5 の新機能または変更された機能について説明します。 
+この記事では、Dynamics 365 Retail 10.0.5 の新機能および変更された機能について説明します。 
 
 
 Microsoft Dynamics 365 for Finance and Operations の機能については、[Finance and Operations バージョン 10.0.5 (2019 年 10 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5) を参照してください。
 
-## <a name="test-recorder-and-regression-suite-automation-tool-for-retail-cloud-pos"></a>Retail Cloud POS 用のレコーダーおよび Regression Auite Automation Tool のテスト
+## <a name="test-recorder-and-regression-suite-automation-tool-for-retail-cloud-pos"></a>Retail Cloud POS 用のレコーダーおよRegression Suite Automation Tool のテスト
   
 ### <a name="test-recorder"></a>テスト レコーダー
-テストレコーダーは、ユーザー受け入れテストの時間と費用を大幅に削減するために POS に追加された新機能です。 通常、ユーザー受け入れテストは Microsoft アプリケーションの更新をおこなうか、カスタム コードと構成を自分の Retail POS 生産環境に適用することが求められます。 テストレコーダーでは、POS のすべてのコントロールおよび配布された注文管理 (DOM) 要素の正確な再現性をもって、クライアントにユーザーのアクションを記録できます。 テストレコーダーは、イベントが発生した時を取得し、該当するユーザー アクションに関するすべての関連情報をリアルタイムで保存します。 テスト レコーダーは、この情報からユーザー アクションのタイプ (ボタンのクリック、値の入力、ナビゲーションなど) と、ユーザー アクションに関連するデータ (入力データの値とタイプ、フォーム コンテキスト、レコード コンテキストなど) をキャプチャできます。 (パスワード情報は記録されません)。 テストレコーダーは、録画中にメモリ内のすべてのレコーダー情報を保持し、記録の最後に出力ファイルを生成します。 この出力ファイルには、ユーザーが実行した正確なアクションを使用して、後で RSAT ツールを使用して再生するのに役立てるために十分な詳細な情報が含まれます。
+テストレコーダーは、ユーザー受け入れテストの時間と費用を大幅に削減するために POS に追加された新機能です。 通常、ユーザー受け入れテストは Microsoft アプリケーションの更新をおこなうか、カスタム コードと構成を自分の Retail POS 運用環境に適用することが求められます。 テストレコーダーでは、POS のすべてのコントロールおよび配布された注文管理 (DOM) 要素の正確な再現性をもって、クライアントにユーザーのアクションを記録できます。 テストレコーダーは、イベントが発生した時を取得し、該当するユーザー アクションに関するすべての関連情報をリアルタイムで保存します。 テスト レコーダーは、この情報からユーザー アクションのタイプ (ボタンのクリック、値の入力、ナビゲーションなど) と、ユーザー アクションに関連するデータ (入力データの値とタイプ、フォーム コンテキスト、レコード コンテキストなど) をキャプチャできます。 (パスワード情報は記録されません)。 テストレコーダーは、録画中にメモリ内のすべてのレコーダー情報を保持し、記録の最後に出力ファイルを生成します。 この出力ファイルには、ユーザーが実行した正確なアクションを使用して、後で RSAT ツールを使用して再生するのに役立てるために十分な詳細な情報が含まれます。
 
 > [!NOTE]
 > テスト レコーダーは、Chrome ブラウザーを使用て Cloud POS のみでサポートされ、他のブラウザーやデバイスタイプのサポートは後で追加されます。

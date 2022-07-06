@@ -1,6 +1,6 @@
 ---
 title: サービス エンドポイント 概要
-description: このトピックでは、使用できるサービス エンドポイントについて説明します。
+description: この記事では、使用できるサービス エンドポイントについて説明します。
 author: peakerbl
 ms.date: 06/22/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa4ab63934190e544e65bae30a7b2958a8047810
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b187a0947b64ae510e8d0da22f646c01462d0347
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986081"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861754"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance で使用できるサービス エンドポイントについて説明します。 また、Microsoft Dynamics AX 2012 で使用できるエンドポイントと比較します。
+この記事では、Microsoft Dynamics 365 Finance で使用できるサービス エンドポイントについて説明します。 また、Microsoft Dynamics AX 2012 で使用できるエンドポイントと比較します。
 
 ## <a name="list-of-services"></a>サービスのリスト
 次のテーブルでは、すべてのサービス エンドポイントを一覧表示し、アプリケーション、および AX 2012 で使用可能なエンドポイントを比較しています。
@@ -36,11 +36,11 @@ ms.locfileid: "7986081"
 | SOAP ベースのクエリ サービス    | 有     | いいえ – OData に置き換えられます         |
 | OData クエリ サービス         | 有     | いいえ – OData に置き換えられます         |
 | SOAP ベース カスタム サービス   | 有     | 有                            |
-| JSON ベース カスタム サービス   | 無      | 有                            |
-| OData サービス               | 無      | 有                            |
-| REST メタデータ サービス       | 無      | 有                            |
+| JSON ベース カスタム サービス   | 無効      | 有効                            |
+| OData サービス               | 無効      | 有効                            |
+| REST メタデータ サービス       | 無効      | 有効                            |
 
-このトピックは、サービスと、REST メタデータ サービスの認証について説明します。 次のリンクでは、以下のための詳細なドキュメントを提供します。
+この記事では、サービスの認証と、REST メタデータ サービスについて説明します。 次のリンクでは、以下のための詳細なドキュメントを提供します。
 
 - [カスタム サービスの開発](custom-services.md)
 - [データ プロトコル (OData) を開く](odata.md)

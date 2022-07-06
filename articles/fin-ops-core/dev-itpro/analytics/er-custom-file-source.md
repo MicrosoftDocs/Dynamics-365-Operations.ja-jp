@@ -1,6 +1,6 @@
 ---
 title: 受信したドキュメントのカスタム ER ソースを実装する
-description: このトピックでは、電子申告 (ER) ソースのリストを拡張して、データ インポート用の受信ドキュメントにアクセスする方法について説明します。
+description: この記事では、電子申告 (ER) ソースのリストを拡張して、データ インポート用の受信ドキュメントにアクセスする方法について説明します。
 author: NickSelin
 ms.date: 10/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a0205ca5ffa71c3bb914a2dda6e5d9677a424aea
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: bbb385067860b6a6af0531b2f5bd738f53207da1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324022"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877171"
 ---
 # <a name="implement-a-custom-er-source-of-inbound-documents"></a>受信したドキュメントのカスタム ER ソースを実装する
 
@@ -28,7 +28,7 @@ ms.locfileid: "8324022"
 
 ER フレームワークのアプリケーション・プログラミング・インターフェース (API) では、ER フォーマットでデータ インポート用に [解析](er-parse-incoming-documents.md) される受信ドキュメントにアクセスするための ER ソースのリストを [拡張](er-apis-app10-0-23.md#er-api-extend-file-source) できるようになりました。 したがって、ER の構成を使用して、カスタム ソースに保存されているドキュメントからデータのインポートを実行できます。
 
-このトピックには、受信ドキュメントのカスタム ER ソースを実装して、使用を開始するために完了する必要のある主要なタスクの概要が含まれています。 これらのタスクを完了するには、[SharePoint からのデータ インポートの構成](er-configure-data-import-sharepoint.md)で説明されている仕入先トランザクションのインポートと同じ例を使用します。 これらのタスクのステップは、Microsoft Dynamics 365 Finance の **USMF** 会社で完了することができます。
+この記事には、受信ドキュメントのカスタム ER ソースを実装して、使用を開始するために完了する必要のある主要なタスクの概要が含まれています。 これらのタスクを完了するには、[SharePoint からのデータ インポートの構成](er-configure-data-import-sharepoint.md)で説明されている仕入先トランザクションのインポートと同じ例を使用します。 これらのタスクのステップは、Microsoft Dynamics 365 Finance の **USMF** 会社で完了することができます。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -48,7 +48,7 @@ ER フレームワークのアプリケーション・プログラミング・�
 
 ### <a name="import-an-er-format-configuration"></a>ER 形式の構成をインポートする
 
-追加のタスクは、[SharePoint からのデータ インポートをコンフィジュレ―ションする](er-configure-data-import-sharepoint.md)で説明されている ER の構成を使用します。 このトピックのタスク ガイドをまだ再生していない場合は、次のファイルをダウンロードしてください。
+追加のタスクは、[SharePoint からのデータ インポートをコンフィジュレ―ションする](er-configure-data-import-sharepoint.md)で説明されている ER の構成を使用します。 この記事のタスク ガイドをまだ再生していない場合は、次のファイルをダウンロードしてください。
 
 | コンテンツの説明 | ファイル |
 |---------------------|------|

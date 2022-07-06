@@ -1,6 +1,6 @@
 ---
 title: パラメーター ファイルのアップグレード
-description: このトピックでは、Regression suite automation tool (RSAT) で使用されるパラメーター ファイルをアップグレードする方法について説明します。
+description: この記事では、Regression suite automation tool (RSAT) で使用されるパラメーター ファイルをアップグレードする方法について説明します。
 author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2fd316c611a5604e47a37fcc2c05b1676d05e12
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e9a0b36b36983a9430e5de0039901eef359a7472
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854584"
 ---
 # <a name="upgrade-parameter-files"></a>パラメーター ファイルのアップグレード
 

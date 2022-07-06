@@ -1,6 +1,6 @@
 ---
 title: アップグレード、更新プログラム、および修正プログラムのリソース
-description: このトピックでは、Finance and Operations 環境およびデータに対する修正プログラムのアップグレード、更新、および適用に関する情報の参照先を示します。
+description: この記事では、財務と運用の環境およびデータに対する修正プログラムのアップグレード、更新、および適用に関する情報の参照先を示します。
 author: margoc
 ms.date: 07/23/2019
 ms.topic: index-page
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f6d369e8488b1c53211f3d9fa9393f11ff8b900f30cbc8bd65da99043060510
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72a38d54d9ce91e25d14078f714b3ec5b2b4b293
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890379"
 ---
-# <a name="upgrades-updates-and-hotfixes-resources"></a>アップグレード、更新プログラム、修正プログラム
+# <a name="upgrades-updates-and-hotfixes-resources"></a>アップグレード、更新プログラム、および修正プログラムのリソース
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,9 +32,9 @@ ms.locfileid: "6765784"
 
 開始するには、次のトピックを確認します。
 
-- [AX 2012 から Finance and Operations へ更新](upgrade-overview-2012.md)
+- [AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md)
 
-- [Finance and Operations へのコード移行の準備](prepare-migration.md)
+- [Finance and Operations へのコードの移行の準備](prepare-migration.md)
 
 ## <a name="migration-from-microsoft-dynamics-ax-2009-to-finance-and-operations"></a>Microsoft Dynamics AX 2009 から Finance and Operations への移行
 この技術解説ビデオでは、AX 2009 から Finance and Operations への移行の概要を説明しています: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4)。
@@ -46,7 +46,7 @@ ms.locfileid: "6765784"
 ### <a name="cloud"></a>クラウド
 Finance and Operations のクラウド バージョンをアップグレードする場合は、次のトピックを確認してください。
 
-- [Finance and Operationsで最新の更新プログラムに移行するためのプロセス](upgrade-latest-update.md)
+- [最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
 
 - [最新のプラットフォーム更新プログラムの環境への適用](upgrade-latest-platform-update.md)
 
@@ -54,7 +54,7 @@ Finance and Operations のクラウド バージョンをアップグレード�
 
 
 ### <a name="on-premises"></a>オンプレミス
-Finance and Operations のオンプレミス バージョンに更新プログラムを適用する場合は、次のトピックを確認してください。
+財務と運用のオンプレミス バージョンに更新プログラムを適用する場合は、次の記事を確認してください。
 
 - [オンプレミス配置への更新プログラムの適用](../deployment/apply-updates-on-premises.md)
 - [オンプレミス環境の再配置](../deployment/redeploy-on-prem.md)
@@ -71,7 +71,7 @@ Finance and Operations のオンプレミス バージョンに更新プログ�
 
  詳細については、以下を参照してください。 
 - [データベースの更新](../database/database-refresh.md)
-- [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md) 
+- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md) 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

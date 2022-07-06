@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 5 (2017 年 3 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 5 の新機能または変更された機能について説明します。 このバージョンは 2017 年 3 月にリリースされ、ビルド番号は 7.0.4475.16165 です。
+description: この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 5 の新機能または変更された機能について説明します。 このバージョンは 2017 年 3 月にリリースされ、ビルド番号は 7.0.4475.16165 です。
 author: tonyafehr
 ms.date: 04/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.dyn365.ops.version: Platform update 5
 ms.search.validFrom: 2017-03-31
-ms.openlocfilehash: 1019ecf9fb37e00b803466c37514a097e8337b81b98e87ff1211c4d1aa3e5840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7ba5afcb47c95ca9f370abeef76247974d46ee0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864507"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-5-march-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 5 (2017 年 3 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 5 の新機能または変更された機能について説明します。 このバージョンは 2017 年 3 月にリリースされ、ビルド番号は 7.0.4475.16165 です。
+この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 5 の新機能または変更された機能について説明します。 このバージョンは 2017 年 3 月にリリースされ、ビルド番号は 7.0.4475.16165 です。
 
 ## <a name="development-and-customization"></a>開発とカスタマイズ
 

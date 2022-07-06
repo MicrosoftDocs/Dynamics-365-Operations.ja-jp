@@ -1,6 +1,6 @@
 ---
 title: インターフェイスとして使用されるテーブル マップの拡張
-description: このトピックでは、インターフェイスとして使用されるテーブル マップを拡張する方法について説明します。
+description: この記事では、インターフェイスとして使用されるテーブル マップを拡張する方法について説明します。
 author: MichaelFruergaardPontoppidan
 ms.date: 12/10/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 69c1f0bd4969c6a28a89917c3c0a25add0ba1152
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0af7658e4fa454381bfc80f3a1345018f1b6eb6e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866852"
 ---
 # <a name="extend-table-maps-that-are-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
 

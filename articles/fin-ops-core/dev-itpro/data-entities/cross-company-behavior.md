@@ -1,6 +1,6 @@
 ---
 title: データ エンティティの会社間動作
-description: このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。
+description: この記事では、データ エンティティと企業間コンセプトとの関係について説明します。
 author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6adde89632ffd5b469eade05cc416620b76757fa
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 42f44f8f0be09ed7f4f5959ee306c3ba6ee1e9a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881443"
 ---
 # <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 
@@ -28,7 +28,7 @@ ms.locfileid: "8070077"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。 データエンティティのこの側面を理解するには、テーブルとビューが企業間の概念をどのように適用するのかを理解する必要があります。 したがって、このトピックでは、テーブルとビューの概要を説明し、データ エンティティの関連性について説明します。
+この記事では、データ エンティティと企業間コンセプトとの関係について説明します。 データエンティティのこの側面を理解するには、テーブルとビューが企業間の概念をどのように適用するのかを理解する必要があります。 したがって、この記事では、テーブルとビューの概要を説明し、データ エンティティの関連性について説明します。
 
 ## <a name="review-of-tables-and-views-for-cross-company"></a>会社間のテーブルとビューの確認
 

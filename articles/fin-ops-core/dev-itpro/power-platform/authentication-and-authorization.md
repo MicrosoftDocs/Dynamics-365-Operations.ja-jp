@@ -1,6 +1,6 @@
 ---
 title: 認証と承認
-description: このトピックでは、財務と運用アプリおよび Microsoft Power Platform 間のユーザー同期およびアクセス許可の認証および承認モデルについて説明します。
+description: この記事では、財務と運用アプリおよび Microsoft Power Platform 間のユーザー同期およびアクセス許可の認証および承認モデルについて説明します。
 author: jaredha
 ms.date: 10/18/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-14
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: c3c84788e3a2de8ef97448a0739cc8f64c6bee77
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7bae2c8d1c2255fd0891cac34331019dafbf5ffc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881083"
 ---
 # <a name="authentication-and-authorization"></a>認証と承認
 
@@ -35,8 +35,8 @@ ms.locfileid: "8060988"
 Microsoft Power Platform 環境で財務と運用アプリ ユーザーの作成を自動化する 3 つの方法があります。
 
 - 新しい Microsoft Power Platform 環境が、財務と運用アプリ環境にリンクされたリンク環境として作成されると、Microsoft 365 管理センターで作成され、**Dynamics 365 Finance** ライセンスが割り当てられたすべてのアクティブ ユーザーは、新しい Microsoft Power Platform 環境のユーザーとして自動的に追加されます。 リンクされた環境の作成方法の詳細については、[Microsoft Power Platform 統合の有効化](./enable-power-platform-integration.md) を参照してください。
-- Microsoft 365 管理センターに新しいユーザーが作成され、**Dynamics 365 Finance** ライセンスが割り当てられると、新しいユーザーが財務と運用アプリ環境にリンクされる Microsoft Power Platform 環境のユーザーとして自動的に作成されます。 Microsoft Power Platform で新しいユーザーを作成するプロセスには、1 時間ほどかかる場合があります。
-- **Dynamics 365 Finance** ライセンスが割り当てられているユーザーがユーザー同期が行われる前に Microsoft Power Platform 環境にサインインするために割り当てられる場合、Microsoft Power Platform 環境に最初にアクセスするときにユーザー レコードが作成されます。
+- Microsoft 365  管理センターに新しいユーザーが作成され、**Dynamics 365 Finance** ライセンスが割り当てられると、新しいユーザーが財務と運用アプリ環境にリンクされる Microsoft Power Platform 環境のユーザーとして自動的に作成されます。 Microsoft Power Platform で新しいユーザーを作成するプロセスには、1 時間ほどかかる場合があります。
+- **Dynamics 365 Finance** ライセンスが割り当てられているユーザーが、ユーザー同期が行われる前に Microsoft Power Platform 環境にサインインするために割り当てられる場合、Microsoft Power Platform 環境に最初にアクセスするときにユーザー レコードが作成されます。
 
 リンクされた Microsoft Power Platform 環境に財務と運用アプリ ユーザーを自動的に作成できます。 ただし、[Dataverse データベースを持つ環境にユーザーを追加する](/power-platform/admin/add-users-to-environment#add-users-to-an-environment-that-has-a-dataverse-database)の手順に従って、財務と運用アプリ ユーザーを直接 Microsoft Power Platform に追加することもできます。
 
@@ -52,7 +52,7 @@ Dataverse 仮想エンティティのインタラクションと財務と運用�
 
 ### <a name="security-roles-in-microsoft-power-platform"></a>Microsoft Power Platform でのセキュリティ ロール
 
-**Dynamics 365 Finance** ライセンスを持つユーザーが、ユーザーとして Microsoft Power Platform に自動的に作成されると、**Finance and Operations 基本ユーザー** のセキュリティ ロールと **環境メーカー** のセキュリティ ロールの両方が自動的に Microsoft Power Platform ユーザーに割り当てられます。
+**Dynamics 365 Finance** ライセンスを持つユーザーが、ユーザーとして Microsoft Power Platform に自動的に作成されると、**財務と運用基本ユーザー** セキュリティ ロールと **環境メーカー** セキュリティ ロールの両方が自動的に Microsoft Power Platform ユーザーに割り当てられます。
 
 - **Finance and Operations 基本ユーザー** – このセキュリティ ロールを使用すると、ユーザーは仮想エンティティやビジネス イベントにアクセスして更新できます。 Dataverse 環境で仮想エンティティまたはビジネス イベントが有効化されると、仮想エンティティまたはビジネス イベントの権限がセキュリティ ロールに自動的に付与されます。
 - **環境メーカー**- このセキュリティ ロールを使用すると、ユーザーは Power Apps でアプリを作成し、Power Automate でフローします。

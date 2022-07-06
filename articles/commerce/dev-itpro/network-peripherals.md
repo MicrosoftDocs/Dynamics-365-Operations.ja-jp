@@ -1,6 +1,6 @@
 ---
 title: ネットワーク周辺機器のサポート
-description: このトピックでは、店舗でサポートされているネットワーク周辺機器の概要について説明します。
+description: この記事では、店舗でサポートされているネットワーク周辺機器の概要について説明します。
 author: BrianShook
 ms.date: 05/26/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2ce0b4c2b4c75f6e25b2b97007a53365753bd4cc
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 13f78aab798de5aaeed579265c503cd207a16bf4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885458"
 ---
 # <a name="support-for-network-peripherals"></a>ネットワーク周辺機器のサポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、店舗におけるネットワーク周辺機器のサポートおよび設定について説明します。
+この記事では、店舗におけるネットワーク周辺機器のサポートおよび設定について説明します。
 
 ## <a name="key-terms"></a>重要な用語
 

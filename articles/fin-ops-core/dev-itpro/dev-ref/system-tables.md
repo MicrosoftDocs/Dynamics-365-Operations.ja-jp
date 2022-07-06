@@ -1,6 +1,6 @@
 ---
 title: システム テーブル
-description: このトピックでは、システム テーブルについて説明します。
+description: この記事では、システム テーブルについて説明します。
 author: RobinARH
 ms.date: 11/06/2017
 audience: Developer
@@ -9,21 +9,21 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0920725f35adcca979c26402e33e3e094dac4e3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8ee0c1fdb3bcfcfd8e1a36e64a9922f98b739fcd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782049"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867243"
 ---
 # <a name="system-tables"></a>システム テーブル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、システム クラスで使用できるドキュメントが含まれています。 
+この記事には、システム クラスで使用できるドキュメントが含まれています。 
 
 > [!NOTE]
-> このトピックは、システム テーブル メンバーの完全な一覧ではありません。 テーブルとそのメンバーの完全な一覧は、アプリケーション エクスプローラーで確認できます。
+> この記事は、システム テーブル メンバーの完全な一覧ではありません。 テーブルとそのメンバーの完全な一覧は、アプリケーション エクスプローラーで確認できます。
 
 ## <a name="common"></a>共通
 

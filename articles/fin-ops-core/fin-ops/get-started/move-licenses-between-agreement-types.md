@@ -1,6 +1,6 @@
 ---
 title: 契約タイプ間でライセンスを移動する
-description: このトピックでは、契約タイプの間のライセンスを移動する方法について説明します。
+description: この記事では、契約タイプの間のライセンスを移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 ms.date: 01/26/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: a8bc8ccb159f606e7065dc063accf5bc495af4cf
-ms.sourcegitcommit: 378c9340176956862687ae8d55c636486e3105d3
+ms.openlocfilehash: 6f0c978263ce0f6f5f0de75d5c5e03f731cc118f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "8044516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901540"
 ---
 # <a name="move-licenses-between-agreement-types"></a>契約タイプ間でライセンスを移動する
 
 [!include [banner](../includes/banner.md)]
 
-場合によっては、もともと Microsoft クラウド サービス プロバイダー (CSP) 契約を通じてサブスクリプションを購入した顧客は、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトが作成された後に、Microsoft との Microsoft ボリューム ライセンス契約に変更することを決定します。 顧客は、本番稼働でプロジェクトが稼動した後でもこの変更を実行できます。
+場合によっては、もともと Microsoft クラウド サービス プロバイダー (CSP) 契約を通じてサブスクリプションを購入した顧客は、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクトが作成された後に、Microsoft との Microsoft ボリューム ライセンス契約に変更することを決定します。 顧客は、運用でプロジェクトが稼動した後でもこの変更を実行できます。
 
 ごくまれに、もともと Microsoft とのボリューム ライセンス契約を通してサブスクリプションを購入した顧客は CSP 契約への変更することを決めます。 この場合、ボリューム ライセンス契約の更新日に合わせて変更する必要があります。
 
@@ -34,7 +34,7 @@ ms.locfileid: "8044516"
 
 サブスクリプションには 2 つの標準環境が付属しています。 
 
-- **実稼働** 環境 
+- **運用** 環境 
 - A **レベル 2 スタンダード承認テスト** 環境
 
 これらの環境は、契約タイプ間のサブスクリプションの移動の影響を受けません。 影響は、顧客が追加 **アドオン環境** を持っている場合にのみ、LCS で表示されます。 この場合、パートナーまたは顧客による、アドオン環境に関連付けられている明示的なアクションは必要ありません。 ただし、CSP 契約とボリューム ライセンス契約の両方の有効期間内または猶予期間内に、アドオン環境の追加の適用が LCS に表示されます。 これらはライセンス契約の期限が切れた後すぐに表示されなくなるので、単に無視することができます。 ライセンス契約に違反するので、これらの追加のスロットを配置する必要は **ありません**。

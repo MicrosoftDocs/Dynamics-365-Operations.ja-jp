@@ -1,6 +1,6 @@
 ---
 title: 注文のフルフィルメント中の梱包明細の拡張ポイント
-description: このトピックでは、カスタマイズを使用して、顧客注文の処理中に梱包明細に拡張ポイントを追加する方法を示します。
+description: この記事では、カスタマイズを使用して、顧客注文の処理中に梱包明細に拡張ポイントを追加する方法を示します。
 author: mugunthanm
 ms.date: 03/29/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 7b798683a864b78a1a7c7fef0720afc111606576
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: af3e415d532dc512626b3b0a40ff044328562330
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781907"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903648"
 ---
 # <a name="extension-points-for-packing-slips-during-order-fulfillment"></a>注文のフルフィルメント中の梱包明細の拡張ポイント
 

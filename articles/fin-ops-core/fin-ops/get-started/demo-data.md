@@ -1,6 +1,6 @@
 ---
 title: デモ データの概要
-description: このトピックでは、デモ データの概要を示します。
+description: この記事では、デモ データの概要を示します。
 author: sericks007
 ms.date: 09/20/2019
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f74af401a1da79f5bdb218108e1fa0d23bacd85
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bb2e6531ed925c15abadf93b6f12a16b8d4dda28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848715"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、使用可能なデモ データの概要を示します。
+この記事では、使用可能なデモ データの概要を示します。
 
 デモ データは、実装サポートとデモの目的でリリースされる基本データ セットです。 現在のデモ データセットは、次の業種をサポートしています。
 

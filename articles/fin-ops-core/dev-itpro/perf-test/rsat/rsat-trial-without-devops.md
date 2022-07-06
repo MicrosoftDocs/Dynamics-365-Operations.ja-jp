@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps を使用しない試用版モード
-description: このトピックでは、Microsoft Azure DevOps を使用しない試用版モードでの Regression Suite Automation Tool (RSAT) の使用方法について説明します。
+description: この記事では、Microsoft Azure DevOps を使用しない試用版モードでの Regression Suite Automation Tool (RSAT) の使用方法について説明します。
 author: FrankDahl
 ms.date: 03/18/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af80b2860bef1401500eda09145af7a888b9b4dc
-ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
+ms.openlocfilehash: 6d42484454dd4aedab780449b9746259b1297941
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8493458"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854622"
 ---
 # <a name="trial-mode-without-azure-devops"></a>Azure DevOps を使用しない試用版モード
 
@@ -32,7 +32,7 @@ RSAT を初めて使用する組織は、Azure DevOps にサブスクライブ�
 
 試用版モードの RSAT は、以前のバージョンで知られている標準モードの RSAT に基づいています。 実際、バイナリ アプリケーションは同じですが、新しい試用版モードで実行される場合は名前が異なります。 試用版モードは、Azure DevOps の実行を必要としない簡略化されたアプリケーションを作成するために、標準モードで使用できる機能の縮小版と考えることができます。
 
-試用版モデルの RSAT は、いくつかの点で制限されています。 詳細については、このトピックで後述する [RSAT を標準モードではなく試用版モードで実行した場合の違い](#differences) セクションを参照してください。
+試用版モデルの RSAT は、いくつかの点で制限されています。 詳細については、この記事で後述する [RSAT を標準モードではなく試用版モードで実行した場合の違い](#differences) セクションを参照してください。
 
 インストール プロセス中に、使用可能などの RSAT モードを選択します。 両方のモードがインストールされ、デスクトップにそれぞれ独自のショートカットが設定されます。 両方のモードも同じマシンにインストールでき、それらを交換して使用できるようにします。
 

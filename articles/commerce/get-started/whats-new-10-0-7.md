@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Retail バージョン 10.0.7 の機能をプレビューする
-description: このトピックでは、Dynamics 365 Retail の新機能と変更点について説明します。
+description: この記事では、Dynamics 365 Retail の新機能および変更された機能について説明します。
 author: josaw1
 ms.date: 01/09/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: ddd318c32fd0899af9b531660d806e901f2c68b0856a9e478d4ef020627447ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 17e2f2aaf5e1adf16ae40410815755104a9af979
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763853"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876967"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail-version-1007"></a>Dynamics 365 Retail バージョン 10.0.7 の新機能と変更点
 
 [!include [banner](../../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Retail 10.0.7 の新機能または変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Retail 10.0.7 の新機能および変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
 
 - プレビューリリースは 2019 年 10 月です。
 - Ga (自動更新) は 2019 年 11 月です。
@@ -64,14 +64,14 @@ Microsoft Dynamics 365 Retail 10.0.7 には、プラットフォーム更新プ�
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックは Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) の記事は Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: 演算子の優先順位
-description: このトピックでは、演算子の優先順位について説明します。
+description: この記事では、演算子の優先順位について説明します。
 author: pvillads
 ms.date: 07/01/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b1d48fc2aad4d7ead64c5d1b1ddb0a1b530f437
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0c7177c1c3bbf26ccf86a68a92b077fdc78309d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867144"
 ---
 # <a name="operator-precedence"></a>演算子の優先順位
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、演算子の優先順位について説明します。
+この記事では、演算子の優先順位について説明します。
 
 複合式を評価する順番は重要です。 オペレーションを実行する順序をコンパイラに明示的に伝えていない場合、順序は演算子の優先順位に基づいています。 かっこ `( )` を使用すると、式の評価方法を明示的に X++ コンパイラに指示することができます。
 

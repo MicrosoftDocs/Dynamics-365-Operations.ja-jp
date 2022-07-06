@@ -1,6 +1,6 @@
 ---
-title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
-description: このトピックでは、Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 12 から 40 を計画、設定、展開する方法について説明します。
+title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 ～ 40)
+description: この記事では、Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 12 から 40 を計画、設定、展開する方法について説明します。
 author: PeterRFriis
 ms.date: 11/30/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 74dc6b7b7a63672ea14cacc0c4af1b48609caa7e
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0610cde28076cded72701a097de34d18cc8c30d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565710"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867308"
 ---
-# <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
+# <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 ～ 40)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 12-40 を計画、設定、展開する方法について説明します。
+この記事では、Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 12-40 を計画、設定、展開する方法について説明します。
 
 [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) が利用可能です。 オンプレミス展開に関する質問またはフィードバックをそこに投稿することができます。
 
-このトピックの内容に関する質問やフィードバックがある場合は、このページ下の **コメント** セクションに転記してください。
+この記事の内容に関する質問やフィードバックがある場合は、このページ下の **コメント** セクションに転記してください。
 
 ## <a name="finance--operations-components"></a>Finance + Operations のコンポーネント
 
@@ -108,7 +108,7 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 
 [オンプレミス環境のハードウェア サイジング要件](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md) で推奨されるサイジングに基づいて、インフラストラクチャと Service Fabric Cluster を計画します。 Service Fabric クラスターを計画する方法の詳細については、[Service Fabric のスタンドアロン クラスター展開の計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
 
-次のテーブルは、ハードウェア レイアウトの例を示しています。 この例は、設定を説明するためにこのトピック全体で使用されています。 次の手順で指定されているマシン名と IP アドレスを、ご使用の環境のマシンの名前と IP アドレスに置き換える必要があります。
+次のテーブルは、ハードウェア レイアウトの例を示しています。 この例は、設定を説明するためにこの記事全体で使用されています。 次の手順で指定されているマシン名と IP アドレスを、ご使用の環境のマシンの名前と IP アドレスに置き換える必要があります。
 
 > [!NOTE]
 > Service Fabric クラスターのプライマリ ノードには、少なくとも 3 つのノードが必要です。 この例では **OrchestratorType** を主要なノード タイプとして指定します。
@@ -204,7 +204,7 @@ AOS のプロダクション インストールには、公的に登録された
 
 ### <a name="2-plan-and-acquire-your-certificates"></a><a name="plancert"></a> 2. 証明書の計画と取得
 
-Service Fabric クラスターと展開されているすべてのアプリケーションを保護するには、Secure Sockets Layer (SSL) 証明書が必要です。 プロダクションとサンドボックスのワークロードについては、[DigiCert](https://www.digicert.com/ssl-certificate/)、[Comodo](https://ssl.comodo.com/)、[Symantec](https://www.websecurity.symantec.com/ssl-certificate)、[GoDaddy](https://www.godaddy.com/web-security/ssl-certificate)、または [GlobalSign](https://www.globalsign.com/en/ssl/) などの認証局から証明書を取得することをお勧めします。 ドメインが [Active Directory 証明書サービス](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)) (AD CS) で設定されている場合は、AD CS を介して証明書を作成します。 証明書ごとに、プライベート キーが作成されたキーの交換を含める必要があり、個人情報交換 (.pfx) ファイルにエクスポート可能な必要があります。
+Service Fabric クラスターと展開されているすべてのアプリケーションを保護するには、Secure Sockets Layer (SSL) 証明書が必要です。 運用とサンドボックスのワークロードについては、[DigiCert](https://www.digicert.com/ssl-certificate/)、[Comodo](https://ssl.comodo.com/)、[Symantec](https://www.websecurity.symantec.com/ssl-certificate)、[GoDaddy](https://www.godaddy.com/web-security/ssl-certificate)、または [GlobalSign](https://www.globalsign.com/en/ssl/) などの認証局から証明書を取得することをお勧めします。 ドメインが [Active Directory 証明書サービス](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)) (AD CS) で設定されている場合は、AD CS を介して証明書を作成します。 証明書ごとに、プライベート キーが作成されたキーの交換を含める必要があり、個人情報交換 (.pfx) ファイルにエクスポート可能な必要があります。
 
 自己署名証明書は、テスト目的でのみ使用できます。 便宜上、LCS で提供されるセットアップ スクリプトには、自己署名証明書を生成およびエクスポートするスクリプトが含まれます。 自己署名スクリプトを使用している場合は、後の手順で作成スクリプトを実行するように指示されます。 先に述べたように、これらの証明書はテスト目的でのみ使用できます。
 
@@ -251,9 +251,9 @@ DNS Name=*.d365ffo.onprem.contoso.com
 
 ### <a name="3-plan-your-users-and-service-accounts"></a><a name="plansvcacct"></a> 3. ユーザーとサービス アカウントの計画
 
-Finance + Operations を機能させるために、いくつかのユーザー アカウントまたはサービス アカウントを作成する必要があります。 サービス アカウントの管理グループ (gMSAs)、ドメイン アカウント、および SQL アカウントの組み合わせを作成する必要があります。 次の表は、このトピックで使用されるユーザー アカウント、その目的、および名前の例を示しています。
+Finance + Operations を機能させるために、いくつかのユーザー アカウントまたはサービス アカウントを作成する必要があります。 サービス アカウントの管理グループ (gMSAs)、ドメイン アカウント、および SQL アカウントの組み合わせを作成する必要があります。 次の表は、この記事で使用されるユーザー アカウント、その目的、および名前の例を示しています。
 
-| ユーザー アカウント                                            | 種類           | 目的 | ユーザー名 |
+| ユーザー アカウント                                            | 種類           | 使用方法 | ユーザー名 |
 |---------------------------------------------------------|----------------|---------|-----------|
 | 財務レポート アプリケーション サービス アカウント         | gMSA           |         | Contoso\\svc-FRAS$ |
 | 財務レポート プロセス サービス アカウント             | gMSA           |         | Contoso\\svc-FRPS$ |
@@ -517,7 +517,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 2. ZIP ファイルを Service Fabric クラスター内のいずれかのノードにコピーし、解凍します。 **インフラストラクチャ** フォルダーが、このフォルダーにアクセスすることを確認します。
 
-3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric Cluster の ClusterConfig.json ファイルを生成します。
+3. **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行して Service Fabric の ClusterConfig.json ファイルを生成します。
 
     ```powershell
    .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
@@ -559,7 +559,7 @@ Finance + Operations の展開とサービスは、オンプレミスのロー�
 
 証明機関から取得したオンプレミス エージェントの証明書またはスクリプトを使用して生成した自己署名証明書を使用します。
 
-オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および実稼動環境で再利用できます。
+オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および運用環境で再利用できます。
 
 グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者が、ディレクトリのグローバル管理者です。
 
@@ -884,7 +884,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 ### <a name="17-set-up-ssrs"></a><a name="setupssrs"></a> 17. SSRS の設定
 
-1. 開始する前に、このトピックの冒頭に記載されている前提条件がインストールされていることを確認してください。
+1. 開始する前に、この記事の冒頭に記載されている前提条件がインストールされていることを確認してください。
 2. [オンプレミス配置の SQL Server Reporting Services のコンフィギュレーション](../analytics/configure-ssrs-on-premises.md) の手順に従います。
     > [!IMPORTANT]
     > SSRS のインストール時にデータベース エンジンをインストールする必要があります。
@@ -1032,12 +1032,12 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 
     ![再構成ボタンが使用可能になります。](./media/Failed.png)
 
-    再構成の方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) のトピックを参照してください。 次の図は、正常な配置を示します。
+    再構成の方法の詳細については、[環境を再構成して、新しいプラットフォームまたはトポロジを採用する](../lifecycle-services/reconfigure-environment.md) の記事を参照してください。 次の図は、正常な配置を示します。
 
     ![環境が正常に配置されました。](./media/Deployed.png)
 
 ### <a name="22-connect-to-your-finance--operations-environment"></a><a name="connect"></a> 22. Finance + Operations 環境への接続
-ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこでは yourD365FOdomain がこのトピックの[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
+ブラウザーで、https://[yourD365FOdomain]/namespaces/AXSF に移動し、そこで yourD365FOdomain がこの記事の[ドメイン名と DNS ゾーンの計画](#plandomain) セクションで定義したドメイン名です。
 
 ## <a name="additional-resources"></a>追加リソース
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)

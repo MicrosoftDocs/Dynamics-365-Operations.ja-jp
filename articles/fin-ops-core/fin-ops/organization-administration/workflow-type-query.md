@@ -1,6 +1,6 @@
 ---
 title: ワークフロー タイプのクエリの作成
-description: このトピックでは、ワークフロー タイプのクエリを作成する方法について説明します。
+description: この記事では、ワークフロー タイプのクエリを作成する方法について説明します。
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: feb615638b1f303efb7cac709e3a70db322fd988
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 4d27af969ba2b261862fde81b81f6b0085c62b24
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069235"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871469"
 ---
 # <a name="create-a-query-for-a-workflow-type"></a>ワークフロー タイプのクエリの作成 
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069235"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-ワークフロー タイプを作成する前に、ワークフロー ドキュメントのテーブル フィールドにアクセスするクエリを作成する必要があります。 このトピックでは、ワークフロー タイプのクエリを作成する方法について説明します。
+ワークフロー タイプを作成する前に、ワークフロー ドキュメントのテーブル フィールドにアクセスするクエリを作成する必要があります。 この記事では、ワークフロー タイプのクエリを作成する方法について説明します。
 
 ## <a name="create-a-query-for-a-workflow-type"></a>ワークフロー タイプのクエリの作成
 

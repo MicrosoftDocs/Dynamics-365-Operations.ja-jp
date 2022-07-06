@@ -1,6 +1,6 @@
 ---
 title: X++ プリミティブ データ型
-description: このトピックでは、X++のプリミティブ データ型について説明します。
+description: この記事では、X++ のプリミティブ データ型について説明します。
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c6723009c76b9703499c66088fbb0206f887204
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 7e19def87ff67df65691bc65b5b70ad87abbf038
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487818"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867204"
 ---
 # <a name="x-primitive-data-types"></a>X++ プリミティブ データ型
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++のプリミティブ データ型について説明します。 X++ のプリミティブ データ型は、**anytype**、**boolean**、**date**、**enum**、**guid**、**int**、**int64**、**real**、**str**、**timeOfDay**、および **utcdatetime** です。
+この記事では、X++ のプリミティブ データ型について説明します。 X++ のプリミティブ データ型は、**anytype**、**boolean**、**date**、**enum**、**guid**、**int**、**int64**、**real**、**str**、**timeOfDay**、および **utcdatetime** です。
 
 ## <a name="anytype"></a>anytype
 

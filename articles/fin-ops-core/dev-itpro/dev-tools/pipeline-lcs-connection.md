@@ -1,6 +1,6 @@
 ---
 title: Azure Pipelines で LCS 接続を作成する
-description: このトピックでは、Azure DevOps から Microsoft Dynamics Lifecycle Services (LCS) への接続を設定する方法について説明します。
+description: この記事では、Azure DevOps から Microsoft Dynamics Lifecycle Services (LCS) への接続を設定する方法について説明します。
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a26c1eed4b6840d650061f31e79abe729efaa69
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 886fd86fabb967158b468121d8548d5013c1baa0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782938"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867012"
 ---
 # <a name="create-an-lcs-connection-in-azure-pipelines"></a>Azure Pipelines で LCS 接続を作成する
 
-Microsoft Azure DevOps の [Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) 拡張機能には、Microsoft Dynamics Lifecycle Services (LCS) でアクションを実行できるパイプライン タスクがいくつか用意されています。 たとえば、資産のアップロード、資産のダウンロード、および環境のサービスを行うことができます。 LCS を正常に機能させるには、Azure DevOps で新しいサービス接続を設定する必要があります。 このサービス接続は、LCS に接続するために必要な認証の詳細を提供します。 Azure DevOps のサービス接続の詳細については、[サービス接続](/azure/devops/pipelines/library/service-endpoints) を参照してください。
+Microsoft Azure DevOps 用 [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) 拡張機能には、Microsoft Dynamics Lifecycle Services (LCS) でアクションを実行できるパイプライン タスクがいくつか用意されています。 たとえば、資産のアップロード、資産のダウンロード、および環境のサービスを行うことができます。 LCS を正常に機能させるには、Azure DevOps で新しいサービス接続を設定する必要があります。 このサービス接続は、LCS に接続するために必要な認証の詳細を提供します。 Azure DevOps のサービス接続の詳細については、[サービス接続](/azure/devops/pipelines/library/service-endpoints) を参照してください。
 
-このトピックは、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
+この記事は、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識があることを前提としています。
 
 > [!NOTE]
-> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
+> これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントにインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
 
 ## <a name="prerequisites"></a>必要条件
 

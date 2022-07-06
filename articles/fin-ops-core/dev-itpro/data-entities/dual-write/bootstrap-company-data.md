@@ -1,6 +1,6 @@
 ---
 title: 会社データの初期化
-description: このトピックでは、デュアル書き込み接続を有効にする前に、会社情報を使用してデータを初期化する方法について説明します。
+description: この記事では、デュアル書き込み接続を有効にする前に、会社情報を使用してデータを初期化する方法について説明します。
 author: RamaKrishnamoorthy
 ms.date: 12/01/2020
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9680f16eec4ce663e66ffb4044c8f7c6f4224a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 227bd10ab9f3e39b5b0a6de3062612b7edf85932
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851907"
 ---
 # <a name="initialize-company-data"></a>会社データの初期化
 
@@ -27,7 +27,7 @@ ms.locfileid: "8060957"
 
 ビジネス データを持つ既存の Microsoft Dataverse インスタンスまたは財務と運用アプリ インスタンスを所有している場合、それに対して二重書き込み接続を有効にすることをお勧めします。 この場合は、二重書き込みを有効にする前に、会社情報を使用して Dataverse データまたは財務と運用アプリ データを初期化する必要があります。 この初期化プロセスは、*bootstrapping* と呼ばれる場合があります。
 
-このトピックには、デュアル書き込み用 Dataverse のデータを初期化するために、[Azure Data Factory](/azure/data-factory/introduction) の使い方をを説明するサンプル シナリオが含まれます。 すべてのテーブル、エラー処理のシナリオ、またはルックアップについては説明しません。 照会としてこのトピックとテンプレートを使用し、独自の Azure Data Factory パイプラインを設定して、データを Dataverse にインポートまたは  Dataverse に更新します。
+この記事には、デュアル書き込み用 Dataverse のデータを初期化するために、[Azure Data Factory](/azure/data-factory/introduction) の使い方をを説明するサンプル シナリオが含まれます。 すべてのテーブル、エラー処理のシナリオ、またはルックアップについては説明しません。 照会としてこの記事とテンプレートを使用し、独自の Azure Data Factory パイプラインを設定して、データを Dataverse にインポートまたは  Dataverse に更新します。
 
 ## <a name="high-level-scenario"></a>高レベルのシナリオ
 

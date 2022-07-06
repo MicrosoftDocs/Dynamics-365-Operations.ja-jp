@@ -1,6 +1,6 @@
 ---
-title: 購入プロモーションでギフトを構成する
-description: このトピックでは、Microsoft Dynamics 365 Commerce で「ギフトと購入」プロモーションを構成する方法について説明します 。
+title: 購買プロモーションを使用したギフトのコンフィギュレーション
+description: この記事では、Microsoft Dynamics 365 Commerce で「ギフトと購入」プロモーションを構成する方法について説明します。
 author: shalabh
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 04e2af67d14240142890edfcd2e4f6ea07e84050
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: ecd1ea70b6c614fbee3e8c244a7b20199f2a781c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897023"
 ---
-# <a name="configure-gift-with-purchase-promotions"></a>購入プロモーションでギフトを構成する
+# <a name="configure-gift-with-purchase-promotions"></a>購買プロモーションを使用したギフトのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で「ギフトと購入」プロモーションを構成する方法について説明します 。
+この記事では、Microsoft Dynamics 365 Commerce で「ギフトと購入」プロモーションを構成する方法について説明します。
 
 「ギフトと購入」のプロモーションを実行することは、小売業者の間で一般的な方法です。 目標は、追加品目に対する無料または割引の特典を提供することにより、顧客が製品を定価で購入するように説得することです。 これらのプロモーションは、移動の遅い製品の販売に役立ち、(正しく実行されている場合)、全体的なカスタマー エクスペリエンスの向上にも役立ちます。 Dynamics 365 Commerce バージョン 10.0.19 リリース移行、小売業者「しきい値割引」機能を使用して、これらのプロモーション を構成できます。
 

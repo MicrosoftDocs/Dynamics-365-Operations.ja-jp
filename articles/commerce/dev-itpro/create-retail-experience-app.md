@@ -1,6 +1,6 @@
 ---
-title: Retail Experience アプリにブランディングを作成し適用する
-description: このトピックでは、ブランディングを Retail Experience アプリに適用して Google Play と Apple App Store にリリースする方法について説明します。
+title: ブランドの作成と Retail Experience アプリへの適用
+description: この記事では、ブランディングを Retail Experience アプリに適用して Google Play と Apple App Store にリリースする方法について説明します。
 author: josaw1
 ms.date: 06/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7791781be22a20eed344e1a4f25b582875f95088
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c9bc5c4ce81ad132c8ab88029c9f56126f8766d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895449"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 
 [!include [banner](../includes/banner.md)]
  
-ブランディングを Retail Experience アプリに適用して、Google Play と Apple App Store にリリースすることができます。 このトピックでは、アプリを作成して接続し、ブランディングを適用する方法について説明します。
+ブランディングを Retail Experience アプリに適用して、Google Play と Apple App Store にリリースすることができます。 この記事では、アプリを作成して接続し、ブランディングを適用する方法について説明します。
 
 ## <a name="development-tools"></a>開発ツール
 Retail Experience アプリは、Android および iOS スマートフォン プラットフォームをサポートします。 アプリは、Xamarin.Forms を使用して構築され、開発用コンピューターには Xamarin をインストールする必要があります。 iOS アプリをビルドするには、Xamarin がインストールされている Mac が必要です。 Microsoft Windows を実行しているコンピューターで Android および iOS の両方に対して開発を行うことができますが、Mac を使用して iOS プラットフォームのビルドを完了する必要があります。 Mac が共有チーム リソースである場合、ビルド処理のためだけ Mac を使用する場合があります。 開発に使用するすべてのコンピューターに、Retail ソフトウェアの開発キット (SDK) をインストールする必要があります。

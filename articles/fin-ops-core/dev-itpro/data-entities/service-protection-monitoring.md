@@ -1,6 +1,6 @@
 ---
 title: API スロットリングの監視
-description: このトピックでは、サービスの保護制限に達する場合にアプリケーション プログラミング インターフェイス (API) の監視に使用できるツールに関する情報を提供します。
+description: この記事では、サービスの保護制限に達する場合にアプリケーション プログラミング インターフェイス (API) の監視に使用できるツールについて説明します。
 author: jaredha
 ms.date: 05/04/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-16
 ms.dyn365.ops.version: Platform update 52
-ms.openlocfilehash: 4967938d65457e3b3d427f203129a551e7895327
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 40bc4b6d781f1195553622dd5e6d7fb0d40f9a8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712789"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861760"
 ---
 # <a name="monitor-api-throttling"></a>API スロットリングの監視
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、サービスの保護制限に達する場合にアプリケーション プログラミング インターフェイス (API) の監視に使用できるツールに関する情報を提供します。
+この記事では、サービスの保護制限に達する場合にアプリケーション プログラミング インターフェイス (API) の監視に使用できるツールについて説明します。
 
 スロットリング機能を含むオンボード エクスペリエンスを成功させるには、Open Data Protocol (OData) およびカスタム サービス統合パターンも監視できる必要があります。 財務と運用アプリの管理者センターである Microsoft Dynamics Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](../lifecycle-services/monitoring-diagnostics.md)を参照してください。
 

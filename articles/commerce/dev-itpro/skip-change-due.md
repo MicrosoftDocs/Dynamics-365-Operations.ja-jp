@@ -1,6 +1,6 @@
 ---
 title: POS の「お釣りの支払い」ダイアログ ボックスをスキップする
-description: このトピックでは、トランザクションが完全に支払われていてお釣りが必要ない場合に、販売時点管理 (POS) で「お釣りの支払い」ダイアログ ボックスをスキップする方法について説明します。
+description: この記事では、トランザクションが完全に支払われていてお釣りが必要ない場合に、販売時点管理 (POS) で「お釣りの支払い」ダイアログ ボックスをスキップする方法について説明します。
 author: BrianShook
 ms.date: 10/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9fcdbce63440060f467186ca12ac566788c58a7a
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 202019f701a3fc6d7b16416246450d593dac9a9a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864907"
 ---
 # <a name="skip-change-due-dialog-box-in-pos"></a>POS の「お釣りの支払い」ダイアログ ボックスをスキップする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、トランザクションが完全に支払われていてお釣りを支払う必要がない場合に、販売時点管理 (POS) で **お釣りの支払い** ダイアログ ボックスをスキップする方法について説明します。
+この記事では、トランザクションが完全に支払われていてお釣りを支払う必要がない場合に、販売時点管理 (POS) で **お釣りの支払い** ダイアログ ボックスをスキップする方法について説明します。
 
 POS での支払いでは、クレジットの使用率が高まっているため、ほとんどのトランザクションで顧客にお釣りを支払う必要がなくなっています。 Dynamics 365 Commerce では、実際に顧客に対してお釣りを支払う必要がない限り、**お釣りの支払い** ダイアログをスキップするように POS を構成できます。 **お釣りの支払い** ダイアログ ボックスは、ギフト レシートのレシート形式が、**必要時** に印刷するように構成されている場合にも表示されます。 ギフト レシートが **必要時** に印刷するように構成されている場合 は、ギフト レシートを印刷するためのオプションが **お釣りの支払い** ダイアログ ボックスに含まれ、**お釣りの支払いをスキップ** の構成が上書きされます。
 

@@ -1,6 +1,6 @@
 ---
 title: 分割されたモデル
-description: このトピックでは、スタックの 3 つの主要モデル、つまりアプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートへの分割について説明します。
+description: この記事では、スタックを 3 つの主要モデル (アプリケーション プラットフォーム、アプリケーション基準、アプリケーション スイート) に分割する方法について説明します。
 author: maertenm
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d58c00cea0853c47a00aa329041448f8d0e94c6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 54cc3522a8026b924719a23b7667b47d9b00a0f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867036"
 ---
 # <a name="model-split"></a>分割されたモデル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、スタックの 3 つの主要モデル、つまりアプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートへの分割について説明します。
+この記事では、スタックを 3 つの主要モデル (アプリケーション プラットフォーム、アプリケーション基準、アプリケーション スイート) に分割する方法について説明します。
 
 ## <a name="overview"></a>概要
 
-モジュール コードを開発することは、モデル分割の原動力です。 複数のモデルにスタックを分割すると、コンパイル時間の短縮、実稼動環境でのパートナー IP の適切な区別など、多くの利点が提供されます。 メイン モデルは、**アプリケーション プラットフォーム**、**アプリケーション基盤**、**アプリケーション スイート** の 3 つがあります。 
+モジュール コードを開発することは、モデル分割の原動力です。 複数のモデルにスタックを分割すると、コンパイル時間の短縮、運用環境でのパートナー IP の適切な区別など、多くの利点が提供されます。 メイン モデルは、**アプリケーション プラットフォーム**、**アプリケーション基盤**、**アプリケーション スイート** の 3 つがあります。 
 
 [![First\_ModelSplit.](./media/first_modelsplit.png)](./media/first_modelsplit.png) 
 

@@ -1,8 +1,8 @@
 ---
 title: 証明書のローテーション
-description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
+description: この記事では、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
-ms.date: 04/07/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -13,25 +13,24 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 3fd32c932f9d5d44279c4919802b03b43f3a8657
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: d83edd8051e71bbe2415da1a20f98548164a4976
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565533"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954556"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
 [!include[banner](../includes/banner.md)]
 
-Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明書は、有効期限が近づくにつれて、ローテーションする必要がある場合があります。 このトピックでは、既存の証明書を置換する方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
+Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明書は、有効期限が近づくにつれて、ローテーションする必要がある場合があります。 この記事では、既存の証明書を置換する方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 
 > [!WARNING]
 > 証明書の有効期限が切れる前に、証明書ローテーションのプロセスを正しく開始する必要があります。 これはデータ暗号化の証明書にとって非常に重要です。暗号化されたフィールドのデータが失われる可能性があるためです。 詳細については、[証明書ローテーション後](#aftercertrotation)を参照してください。 
 > 
 > 古い証明書は、証明書ローテーションプロセスが完了するまでそのままにしておく必要があり、事前に削除すると回転プロセスが失敗します。
-
-> [!WARNING]
+>
 > この証明書ローテーション プロセスは、7.0.x および 7.1. x を実行する Service Fabric クラスターでは行わないでください。 
 >
 > 証明書ローテーションをする前に Service Fabric Cluster を 7.2.x 以降にアップグレードします。
@@ -50,12 +49,15 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     - スキーマ バージョンを変更されていない場合は、**InfrastructureOld** フォルダーから **ConfigTemplate.xml** ファイルを **インフラストラクチャ** フォルダーにコピーします。
     - スキーマ バージョンが変更されている場合は、以下の手順に従います。
 
+        1. **インフラストラクチャ** フォルダーで、**ConfigTemplate.xml** ファイルを **EmptyConfigTemplate.xml** に名前変更します
         1. **InfrastructureOld** フォルダーから **ConfigTemplate.xml** ファイルを **インフラストラクチャ** フォルダーにコピーします。
-        2. 次のコマンドを実行します。
-        
+        1. 次のコマンドを実行します。
+
             ```powershell
-            .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\ConfigTemplate.xml
+            .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplate.xml -NewConfigTemplate .\EmptyConfigTemplate.xml
             ```
+
+        1. **ConfigTemplate.xml** ファイルが更新されました。 ファイルを確認し、必要な追加情報をすべて入力する必要があります。
 
         > [!NOTE]
         > コンフィギュレーション ファイルのスキーマの変更を導入する新しいバージョンのスクリプト (バージョン 2.14.0 以降) は、コンフィギュレーション ファイルを新しいスキーマに移行するロジックが含みます。
@@ -74,6 +76,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
     > [!NOTE]
     > AD CS スクリプトは、ドメイン コントローラー、またはリモート サーバー管理ツールがインストールされている Windows Server コンピューターで実行する必要があります。
+    >
     > AD CS 機能は、インフラストラクチャ スクリプトのリリースが 2.7.0 以降である場合にのみ使用できます。 
 
     または、自己署名証明書を引き続き使用する場合は、次のコマンドを実行します。
@@ -84,25 +87,25 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     ```
 
     > [!WARNING]
-    > 自己署名証明書は、実稼働環境では使用しないでください。 公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
+    > 自己署名証明書は、運用環境では使用しないでください。 公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
 
     証明書を生成したら、次のコマンドを実行します。
 
     ```powershell
-    # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
-    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
+    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 1. [VM の設定](setup-deploy-on-premises-pu41.md#setupvms)に進みます。 このプロセスに必要な具体的な手順は次のとおりです。
 
     1. 各 VM で実行する必要があるスクリプトをエクスポートします。
-    
+
         ```powershell
         # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-    2. 各 `infrastructure\VMs<VMName>` フォルダーのコンテンツを対応する VM にコピーし (リモート処理スクリプトが使用されている場合は、コンテンツをターゲット VM に自動的にコピーする)、存在する場合は次のスクリプトを実行します。 これらの手順を管理者として実行します。
+    2. 各 `infrastructure\VMs<VMName>` フォルダーのコンテンツを対応する VM にコピーし (リモート処理スクリプトが使用されている場合は、コンテンツをターゲット VM に自動的にコピーする)、次のスクリプトを実行します。 この手順を管理者として実行します。
 
         ```powershell
         # If remoting, only execute
@@ -111,17 +114,17 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
         .\Configure-PreReqs.ps1
         ```
 
-    3. 次のスクリプトが存在する場合は、実行します。 これらの手順を管理者として実行します。
+    3. 次のスクリプトを実行して、すべての前提条件が完了していることを確認します。 この手順を管理者として実行します。
 
         ```powershell
         # If remoting, only execute
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
         .\Complete-PreReqs.ps1
-        ```       
+        ```
 
     4. 次のスクリプトを実行して VM のセットアップを検証します。
-    
+
         ```powershell
         # If remoting, only execute
         # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -136,121 +139,87 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
 ## <a name="activate-new-certificates-within-service-fabric-cluster"></a>Service Fabric cluster 内での新しい証明書のアクティブ化
 
-### <a name="service-fabric-with-certificates-that-arent-expired"></a><a name="sfcertrotationnotexpired"></a>期限切れになっていない証明書を含む Service Fabric
+証明書のローテーション プロセスを容易にするために、Microsoft は Service Fabric スタンドアロン クラスター コンフィギュレーションでは、拇印の代わりに証明書の共通名 (件名) を使用することを強くお勧めします。 既存のクラスターがあり、拇印の使用から証明書の共通名の使用に移行する場合は、この記事の後半の[付録 B](#appendix-b) の手順に従ってください。
 
-1. 編集用に **Clusterconfig.json** ファイルを検索します。 このファイルが見つからない場合は、手順 2 と 3 に従ってください。それ以外の場合は手順 4 に進みます。
-2. 次のコマンドを実行して Service Fabric Cluster に接続します。
+### <a name="service-fabric-cluster-with-certificate-common-names"></a><a name=""></a>証明書共通名がある Service Fabric cluster
+
+#### <a name="service-fabric-with-certificates-that-arent-expired"></a>期限切れになっていない証明書を含む Service Fabric
+
+これ以上のアクションは必要ありません。 Service Fabric により新しい証明書が自動的に検出されます。 
+
+証明書の共通名を変更した場合は、Service Fabric Cluster コンフィギュレーションをアップグレードする必要があります。
+
+1. 更新されたクラスター コンフィギュレーション ファイルを生成するには、次のスクリプトを実行します。
 
     ```powershell
-    #Connect to the Service Fabric Cluster from a node within the cluster
-    Connect-ServiceFabricCluster 
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames
     ```
 
-3. 次のコマンドを実行して、構成ファイルを C:\\Temp\\ClusterConfig.json に保存します。 （C:\\Temp のパスが存在することを確認してください）
+    > [!NOTE]
+    > 発行者も変更した場合は、代わりに次のコマンドを使用します。
+    >
+    > ```powershell
+    > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateCommonNames -UpdateIssuers
+    > ```
 
-    ```powershell
-    Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
-    ```
+1. この記事の後半の[付録 A](#appendix-a) にある情報を使用して、更新されたコンフィギュレーションを Service Fabric Cluster に適用します。
 
-4. 編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。 セカンダリ サムプリントが定義されている場合は、続行する前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。
+#### <a name="service-fabric-with-certificates-that-are-expired"></a>期限が切れた証明書を含む Service Fabric
 
-    ```json
-    "security": {
-        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
-        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-        "ClusterCredentialType":  "X509",
-        "ServerCredentialType":  "X509",
-        "CertificateInformation":  {
-            "ClusterCertificate":  {
-                                       "X509StoreName":  "My",
-                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                   },
-            "ServerCertificate":   {
-                                        "X509StoreName":  "My",
-                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                   },
-            "ClientCertificateThumbprints":  [
-                                       {
-                                            "CertificateThumbprint": "*Old client thumbprint*",
-                                            "IsAdmin":  true
-                                       }
-                                             ]
-                                   }
-                },
-    ```
+新しい証明書をすべてのノードにプロビジョニングし終えてから 10 分経過してもクラスターを利用できない場合は、Service Fabric サービスが開始されていないノードの再起動を検討してください。
 
-5. ファイルのそのセクションを、次のコードと置換します。
+証明書の共通名 (件名) を変更すると、Service Fabric Cluster は起動しません。 以前の共通名がある新しい証明書を生成できない場合は、クラスターをクリーンアップして再作成する必要があります。
 
-    ```json
-    "security":  {
-        "metadata":  "The Credential type X509 indicates this cluster is secured using X509 Certificates. 
-        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-        "ClusterCredentialType":  "X509",
-        "ServerCredentialType":  "X509",
-        "CertificateInformation":  {
-            "ClusterCertificate":  {
-                                       "X509StoreName":  "My",
-                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
-                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
-                                   },
-            "ServerCertificate":   {
-                                        "X509StoreName":  "My",
-                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
-                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
-                                   },
-            "ClientCertificateThumbprints":  [
-                                       {
-                                            "CertificateThumbprint": "*Old client thumbprint*",
-                                            "IsAdmin":  false
-                                       },
-                                       {
-                                            "CertificateThumbprint": "*New client thumbprint*",
-                                            "IsAdmin":  true
-                                       }
-                                             ]
-                                   }
-                },
-    ```
+#### <a name="service-fabric-with-restricted-certificate-issuers"></a>証明書の発行者が制限されている Service Fabric
 
-6. 新しいサムプリントと古いサムプリント値を編集します。 
+クラスター コンフィギュレーションに対して次のセクションが定義されている場合、許可される証明書の発行者は制限されます。 
 
-7. 2.0.0 などの clusterConfigurationVersion を新しいバージョンに変更します。
-
-    ```json
+```json
+"ClusterCertificateIssuerStores": [
     {
-    "name": "Dynamics365Operations",
-    "clusterConfigurationVersion": "2.0.0",
-    "apiVersion": "10-2017",
-    ```
+        "IssuerCommonName": "sample-ca",
+        "X509StoreNames": "Root"
+    }
+],
+"ServerCertificateIssuerStores": [
+    {
+        "IssuerCommonName": "sample-ca",
+        "X509StoreNames": "Root"
+    }
+],
+"ClientCertificateIssuerStores": [
+    {
+        "IssuerCommonName": "sample-ca",
+        "X509StoreNames": "Root"
+    }
+],
+```
 
-8. Clusterconfig.json ファイルを保存します。
+この場合、新しい証明書の発行者がこれらのコンフィギュレーションで定義されている発行者と異なる場合は、新しい発行者を追加するためにクラスター コンフィギュレーションのアップグレードを確認する必要があります。
 
-9. 次の PowerShell コマンドを実行します。
+発行者の一覧を更新する必要がある場合は、既存の証明書がまだ有効な間に更新する必要があります。
+
+1. 更新されたクラスター コンフィギュレーション ファイルを生成するには、次のスクリプトを実行します。
 
     ```powershell
-    # Connect to the Service Fabric Cluster
-    Connect-ServiceFabricCluster
-
-    # Get path of ClusterConfig.json for following command
-    # Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell, otherwise you will receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
-    Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
-
-    # If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
-    Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
-    
-    # To monitor the status of the upgrade, run the following and note UpgradeState and UpgradeReplicaSetCheckTimeout
-    Get-ServiceFabricClusterUpgrade
-    
-    # While monitoring the status of the upgrade, if UpgradeReplicaSetCheckTimeout was reset to the default (example 49710.06:28:15), run the following command again
-    Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
-    
-    # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateIssuers
     ```
 
-    > [!NOTE] 
-    > 「2 つの異なる証明書から 2 つの異なる証明書へのアップグレードは許可されていません」というエラー メッセージが表示される場合があります。 このメッセージは、以前の証明書ローテーション プロセスで古い Service Fabric 証明書をクリーンアップしなかったことを示しています。 そのような場合、このトピックの後半にある[古い Service Fabric 証明書のクリーンアップ](certificate-rotation-on-prem.md#cleanupoldsfcerts) セクションを参照し、このセクションの手順を繰り返します。  
+1. この記事の後半の[付録 A](#appendix-a) にある情報を使用して、更新されたコンフィギュレーションを Service Fabric Cluster に適用します。
 
-### <a name="service-fabric-with-or-without-expired-certificates-cluster-not-accessible"></a>期限が切れた証明書 (クラスターにアクセスできない)を含むまたは含まないサービスファブリック
+### <a name="service-fabric-cluster-defined-with-certificate-thumbprints"></a><a name=""></a>証明書の拇印で定義された Service Fabric Cluster
+
+#### <a name="service-fabric-with-certificates-that-arent-expired"></a><a name="sfcertrotationnotexpired"></a>期限切れになっていない証明書を含む Service Fabric
+
+1. Service Fabric Cluster に属するノードから次のスクリプトを実行して、更新されたクラスター コンフィギュレーション ファイルを生成します。
+
+    ```powershell
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateThumbprints
+    ```
+
+1. この記事の後半の[付録 A](#appendix-a) にある情報を使用して、更新されたコンフィギュレーションを Service Fabric Cluster に適用します。
+
+#### <a name="service-fabric-with-or-without-expired-certificates-cluster-not-accessible"></a>期限が切れた証明書 (クラスターにアクセスできない)を含むまたは含まないサービスファブリック
 
 [オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy)の手順に従って、このプロセスを続行します。
 
@@ -300,7 +269,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     - テナント サービス プリンシパル証明書の拇印
 
     > [!IMPORTANT]
-    > LCSで新しいコネクタを作成 **しない** でください。 既存のコネクタのコンフィギュレーションを更新し、設定を再度ダウンロードします。
+    > LCSで新しいコネクタを作成 **しない** でください。 既存のコネクタのコンフィギュレーションを更新し、設定ファイルを再度ダウンロードします。
 
 ## <a name="update-your-current-deployment-configuration"></a>現在の配置コンフィギュレーションを更新する
 
@@ -349,6 +318,9 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
 新しい **axdataencipherment** 証明書を生成した場合は、**Credentials.json** ファイルを再暗号化する必要があります。
 
+> [!NOTE]
+> Application Object Server (AOS) ノードからスクリプトを実行するよう確認してください。
+
 ```powershell
 .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Rotate
 ```
@@ -368,9 +340,6 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     ```powershell
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
-
-> [!NOTE]
-> Application Object Server (AOS) ノードからスクリプトを実行するよう確認してください。
 
 ## <a name="update-deployment-settings-in-lcs"></a>LCS の展開設定の更新
 
@@ -419,59 +388,83 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
 この手順は、証明書のローテーションが成功した後、または次の証明書のローテーションの前に完了する必要があります。
 
-1. クラスター構成から古い/セカンダリのサムプリントを削除します。 これらを削除した後、適切なセクションは次の例のようになります。
+1. 更新されたクラスター コンフィギュレーション ファイルを生成するには、次のスクリプトを実行します。
 
-    ```json
-    "security": {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates.
-        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-        "ClusterCredentialType":  "X509",
-        "ServerCredentialType":  "X509",
-        "CertificateInformation":  {
-            "ClusterCertificate":  {
-                                       "X509StoreName":  "My",
-                                        "Thumbprint": "server thumbprint(Star/SF)"
-                                   },
-            "ServerCertificate":   {
-                                        "X509StoreName":  "My",
-                                        "Thumbprint": "server thumbprint(Star/SF)"
-                                   },
-            "ClientCertificateThumbprints":  [
-                                       {
-                                            "CertificateThumbprint": "client thumbprint",
-                                            "IsAdmin":  true
-                                       }
-                                             ]
-                                   }
-                },
+    ```powershell
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -RemoveOldThumbprints
     ```
 
-1. このトピックの前半の [期限切れになっていない証明書を含む Service Fabric](#sfcertrotationnotexpired) セクションの手順 4 から 6 を実行します。 
+2. この記事の後半の[付録 A](#appendix-a) にある情報を使用して、更新されたコンフィギュレーションを Service Fabric Cluster に適用します。
 
 ## <a name="after-certificate-rotation"></a><a name="aftercertrotation"></a>証明書ローテーション後
 
 ### <a name="data-encryption-certificate"></a>データの暗号化証明書
 
-この証明書は、データベースに格納されているデータを暗号化するために使用されます。 既定では、この証明書を使用して暗号化される特定のフィールドがあります。これらのフィールドは、[暗号化されたフィールドの値を文書化](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields) で確認できます。 ただし、この API を使用して、ユーザーが暗号化すべきと判断した他のフィールドを暗号化することができます。 
+この証明書は、データベースに格納されているデータを暗号化するために使用されます。 既定では、特定のフィールドは、この証明書を使用して暗号化されます。 [暗号化されたフィールドの値を文書化する](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields)でこれらのフィールドを確認できます。 ただし、必要に応じて、API を使用して他のフィールドを暗号化できます。 
 
-プラットフォーム更新 33 以降では、「暗号化されたデータ ローテーション システム ジョブ」という名前のバッチ ジョブが、新しくローテーションした証明書を使用してデータを再暗号化します。 このバッチ ジョブは、データをクロールし、新しい証明書を使用してすべての暗号化データを再暗号化します。 これは、すべてのデータが再度暗号化されるまで、1 日に 2 時間実行されます。 バッチ ジョブを有効にするには、フライトとコンフィギュレーション キーを有効にする必要があります。 業務データベース (AXDB など) に対して次のコマンドを実行します。
+プラットフォーム更新プログラム 33 以降では、**暗号化されたデータ ローテーション システム ジョブ** というバッチ ジョブが、新しくローテーションした証明書を使用してデータを再暗号化します。 このバッチ ジョブは、データをクロールし、新しい証明書を使用してすべての暗号化データを再暗号化します。 ジョブは、すべてのデータが再度暗号化されるまで、毎日 2 時間実行されます。 バッチ ジョブを有効にするには、フライトとコンフィギュレーション キーを有効にする必要があります。 業務データベース (AXDB など) に対して次のコマンドを実行します。
 
 ```sql
 IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
-  UPDATE SYSFLIGHTING SET [ENABLED] = 1 WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'
+    UPDATE SYSFLIGHTING SET [ENABLED] = 1 WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'
 ELSE
-  INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
+    INSERT INTO SYSFLIGHTING ([FLIGHTNAME],[ENABLED],[FLIGHTSERVICEID]) VALUES ('EnableEncryptedDataCrawlerRotationTask', 1, 0)
  
 IF (EXISTS(SELECT * FROM SECURITYCONFIG WHERE [KEY_] = 'EnableEncryptedDataRotation'))
-  UPDATE SECURITYCONFIG SET [VALUE] = 'True' WHERE [KEY_] = 'EnableEncryptedDataRotation'
+    UPDATE SECURITYCONFIG SET [VALUE] = 'True' WHERE [KEY_] = 'EnableEncryptedDataRotation'
 ELSE
-  INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
+    INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-上記のコマンドを実行した後、Service Fabric Explorer から AOS ノードを再起動します。 AOS によって新しいコンフィギュレーションが検出され、業務時間外にバッチ ジョブが実行されるようにスケジュールされます。 バッチ ジョブを作成した後、ユーザー インターフェイスからスケジュールを変更することができます。
+コマンドを実行した後、Service Fabric Explorer から AOS ノードを再起動します。 AOS によって新しいコンフィギュレーションが検出され、業務時間外にバッチ ジョブが実行されるようスケジュールされます。 バッチ ジョブを作成した後、ユーザー インターフェイスからスケジュールを変更することができます。
 
 > [!WARNING]
-> 暗号化されたデータがすべて再暗号化され、期限が切れるまでは、古いデータ暗号化証明書が削除されなうようにしてください。 そうしないと、これによってデータが失われる可能性があります。
+> 暗号化されたデータがすべて再暗号化され、期限が切れるまでは、古いデータ暗号化証明書が削除されないようにしてください。 そうしない場合、データが失われる可能性があります。
 
+## <a name="appendix-a"></a><a name="appendix-a"></a>付録 A
+
+更新された Service Fabric Cluster コンフィギュレーションを生成した後に、次の PowerShell コマンドを実行して、Service Fabric Cluster へのアップグレードを適用します。
+
+```powershell
+# Connect to the Service Fabric Cluster
+Connect-ServiceFabricCluster
+
+# Get path of ClusterConfig.json for following command
+# Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell. Otherwise, you will receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
+Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
+
+# If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
+Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
+
+# To monitor the status of the upgrade, run the following and note UpgradeState and UpgradeReplicaSetCheckTimeout
+Get-ServiceFabricClusterUpgrade
+
+# While monitoring the status of the upgrade, if UpgradeReplicaSetCheckTimeout was reset to the default (example 49710.06:28:15), run the following command again
+Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
+
+# When UpgradeState shows RollingForwardCompleted, the upgrade is finished
+```
+
+> [!NOTE] 
+> 「2 つの異なる証明書から 2 つの異なる証明書へのアップグレードは許可されていません」というエラー メッセージが表示される場合があります。 このメッセージは、以前の証明書ローテーション プロセス中に古い Service Fabric 証明書をクリーンアップしなかったことを示しています。 そのような場合、この記事の前半にある[古い Service Fabric 証明書のクリーンアップ](certificate-rotation-on-prem.md#cleanupoldsfcerts) セクションを参照し、このセクションの手順を繰り返します。
+
+## <a name="appendix-b"></a><a name="appendix-b"></a>付録 B
+
+Service Fabric クラスター コンフィギュレーションを記述するのに、拇印ではなく証明書の共通名を使用すると、コンピューターで新しい証明書が利用可能になった時点で Service Fabric Cluster は自動的に切り替わるので、将来の証明書ローテーション操作を容易にします。 Service Fabric はどの証明書も受け入れるわけではありませんが、提供される証明書は Service Fabric Cluster で定義された件名と一致している必要があります。 また、証明書の発行者は、コンフィギュレーションでも指定されている発行者と一致する必要があります。 Service Fabric で共通名を使用する方法の詳細については、[共通名ベース証明書検証の申告](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations)を参照してください。 スタンドアロン Service Fabric クラスターをセキュリティ保護する方法の詳細については、[X.509 証明書を使用して Windows スタンドアロン クラスターを保護する](/azure/service-fabric/service-fabric-windows-cluster-x509-security)を参照してください
+
+1. 更新されたクラスター コンフィギュレーション ファイルを生成するには、次のスクリプトを実行します。
+
+    ```powershell
+    .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames
+    ```
+
+    > [!NOTE]
+    > 場合によっては、顧客は Service Fabric Cluster コンフィギュレーションで証明書の発行者を制限しない選択をします。 これは推奨されていませんが、次のコマンドを使用してこれを達成できます。
+    >
+    > ```powershell
+    > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -DoNotRestrictCertificateIssuers
+    > ```
+
+1. 上の[付録 A](#appendix-a) にある情報を使用して、更新されたコンフィギュレーションを Service Fabric Cluster に適用します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

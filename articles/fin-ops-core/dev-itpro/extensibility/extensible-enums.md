@@ -1,6 +1,6 @@
 ---
 title: 拡張可能列挙の書き込み
-description: このトピックでは、拡張可能列挙を書き込む方法について説明します。
+description: この記事では、拡張可能列挙を書き込む方法について説明します。
 author: smithanataraj
 ms.date: 09/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 93c7db1318fdf0f4e981fc138d7ae9cc960f8a4a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1c7e901c4743d425a10ba526964308d752ac9e99
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866873"
 ---
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 

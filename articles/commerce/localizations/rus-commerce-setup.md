@@ -1,6 +1,6 @@
 ---
 title: ロシア向け Dynamics 365 Commerce ローカライズの設定
-description: このトピックでは、ロシア向け Microsoft Dynamics 365 Commerce ローカライズの設定方法を説明します。
+description: この記事では、ロシア向け Microsoft Dynamics 365 Commerce ローカライズの設定方法が説明されます。
 author: akviklis
 ms.date: 09/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: 07/01/2021
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46605fdd0e9475a886fa560f9540382710f9b089
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 0026c71dda6275530e70d558132d6425b72571ac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407779"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856944"
 ---
 # <a name="set-up-the-dynamics-365-commerce-localization-for-russia"></a>ロシア向け Dynamics 365 Commerce ローカライズの設定
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、ロシア向け Microsoft Dynamics 365 Commerce ローカライズの設定方法を説明します。
+この記事では、ロシア向け Microsoft Dynamics 365 Commerce ローカライズの設定方法が説明されます。
 
 ロシア向け Dynamics 365 Commerce ローカライズには、販売時点管理 (POS) コンポーネントの拡張機能が含まれます。 この拡張機能を使用すると、小売顧客向けの簡略化されたロシア語の住所形式を使用できます。
 

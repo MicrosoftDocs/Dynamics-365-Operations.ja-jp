@@ -1,6 +1,6 @@
 ---
 title: カスタム ヘルプ ツールキット
-description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットのコンポーネントについて説明します。
+description: この記事では、財務と運用アプリのカスタム ヘルプ ツールキットのコンポーネントについて説明します。
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 3d2189d90e2fade50e5b4a6b03b3ed7aa5c3fdfbad9719a4cbe36a834226de5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c1693151e3f43502419af44c64d5f0c8e68ea5c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739455"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866593"
 ---
 # <a name="custom-help-toolkit"></a>カスタム ヘルプ ツールキット
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft は、カスタマイズされた Finance and Operations ソリューションの状況依存ヘルプを準備するのに役立つスクリプトとツールを含む GitHub リポジトリ を公開しました。 この状況依存ヘルプには、製品内の **ヘルプ** ウィンドウからアクセスできます。
+Microsoft は、カスタマイズされた財務と運用ソリューションの状況依存ヘルプを準備するのに役立つスクリプトとツールを含む GitHub リポジトリを公開しました。 この状況依存ヘルプには、製品内の **ヘルプ** ウィンドウからアクセスできます。
 
 ## <a name="tools-in-the-toolkit"></a>ツールキットのツール
 

@@ -1,6 +1,6 @@
 ---
 title: ヘルプ (ビデオを含む) の拡張、カスタマイズ、および共同作業
-description: このトピックでは、Finance and Operations アプリの GitHub リポジトリ とマークダウン ファイルを使用するためのヒントと秘訣を示します。
+description: この記事では、財務と運用アプリの GitHub リポジトリとマークダウン ファイルを使用するためのヒントと秘訣を示します。
 author: edupont04
 ms.topic: article
 audience: IT Pro
@@ -10,24 +10,24 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ms.date: 05/11/2020
 ms.author: edupont
-ms.openlocfilehash: 8d9aa7e4824c0629b36bb3c270c3a38f8aad5cae
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 105c9d938272a0481e5687b2f0a99799db83f301
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866608"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 
-Finance and Operations アプリ向け Microsoft Help のソース ファイルは、GitHub の公開リポジトリで入手できます。 ソリューション プロバイダーは、特定のソリューションのコンテンツを簡単に拡張およびカスタマイズできます。 このトピックでは、GitHub リポジトリとマークダウン ファイルの使用方法について説明します。
+財務と運用アプリ向け Microsoft Help のソース ファイルは、GitHub の公開リポジトリで入手できます。 ソリューション プロバイダーは、特定のソリューションのコンテンツを簡単に拡張およびカスタマイズできます。 この記事では、GitHub リポジトリとマークダウン ファイルの使用方法について説明します。
 
 GitHub リポジトリでマークダウン ファイルを作成する方法については、[ドキュメント寄稿者ガイド](/contribute/) を参照してください。 カスタム ヘルプを配置する方法については、[カスタム ヘルプの概要](custom-help-overview.md) を参照してください。
 
 ## <a name="contribute-to-the-content"></a>コンテンツに寄稿する
 
-GitHub の利点の 1 つは、Microsoft チームが [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) リポジトリで提供するコア コンテンツに寄稿できることです。 たとえば、他のユーザーに役立つと思われる新しいトピックがある場合や、既存のトピックに修正がある場合などです。 Dynamics-365-Unified-Operations-public リポジトリに寄稿する場合は、リポジトリから Dynamics-365-Unified-Operations-public リポジトリへ *プル要求* を作成できます。 次に、Microsoft チームが要求を確認し、必要に応じて変更を反映します。
+GitHub の利点の 1 つは、Microsoft チームが [MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) リポジトリで提供するコア コンテンツに寄稿できることです。 たとえば、他のユーザーに役立つと思われる新しい記事がある場合や、既存の記事に修正がある場合などです。 Dynamics-365-Unified-Operations-public リポジトリに寄稿する場合は、リポジトリから Dynamics-365-Unified-Operations-public リポジトリへ *プル要求* を作成できます。 次に、Microsoft チームが要求を確認し、必要に応じて変更を反映します。
 
-また、既存のドキュメントを寄稿し、編集することもできます。 開始するには、トピックの **編集** ボタン (鉛筆記号) を選択します。 次のビデオでは、Microsoft ドキュメントに寄稿する方法を示します。
+また、既存のドキュメントを寄稿し、編集することもできます。 開始するには、記事の **編集** ボタン (鉛筆記号) を選択します。 次のビデオでは、Microsoft ドキュメントに寄稿する方法を示します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -44,7 +44,7 @@ Microsoft がコンテンツの更新を公開すると、対応する GitHub �
 > 2021 年 4 月、パブリック ソース リポジトリの既定のブランチの名前が *ライブ* から *メイン* に変更されました。 *ライブ* ブランチに依存するスクリプトがある場合は、代わりに *メイン* に依存して更新してください。 言語固有のリポジトリの既定のブランチの名前は後で変更されます。
 
 > [!TIP]
-> Microsoftのコンテンツをそのまま取得するだけであれば、GitHub について精通している必要はありません。 詳細については、このトピックの [GitHub アカウントなしでコンテンツを取得する](#get-the-content-without-a-github-account) を参照してください。 ただし、Microsoft のコンテンツを拡張またはカスタマイズする場合は、GitHub で Microsoft に参加することをお勧めします。
+> Microsoftのコンテンツをそのまま取得するだけであれば、GitHub について精通している必要はありません。 詳細については、この記事の [GitHub アカウントなしでコンテンツを取得する](#get-the-content-without-a-github-account)を参照してください。 ただし、Microsoft のコンテンツを拡張またはカスタマイズする場合は、GitHub で Microsoft に参加することをお勧めします。
 
 <!--For guidance about what the Microsoft-provided content is all about, see [User Assistance Model](../user-assistance.md).-->
 

@@ -1,6 +1,6 @@
 ---
 title: Excel テンプレートに財務分析コードの値の検索を追加
-description: このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
+description: この記事では、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
 author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0a12d00a7787f79514224bc6e56ba097c7e0a1a6
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 56c931872f53e9164ef9e9add8cf6c4f8f8de692
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866801"
 ---
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
+この記事では、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
 
-インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。 これは、すべての顧客が持つ唯一の分析コード です。 Microsoft Excel テンプレートに分析コードを追加するには、 [Excel テンプレートへの分析コードの追加](dimensions-overview.md) トピックの手順を完了する必要があります。 分析コードを追加した後、分析コード値の一覧を検索する機能が必要な場合このトピックの手順を完了します。 
+インストール後に Microsoft Excel テンプレートに存在する唯一の値は MainAccount です。 これは、すべての顧客が持つ唯一の分析コード です。 Microsoft Excel テンプレートに分析コードを追加するには、[Excel テンプレートへの分析コードの追加](dimensions-overview.md)の記事の手順を完了する必要があります。 分析コードを追加した後、分析コード値の一覧を検索する機能が必要な場合この記事の手順を完了します。 
 
 > [!NOTE]
 > この情報は、リリースごとに変更される可能性がありますので、定期的に最新の情報を確認してください。

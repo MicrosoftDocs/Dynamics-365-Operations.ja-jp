@@ -1,6 +1,6 @@
 ---
 title: 拡張機能を使用して、テーブルのプロパティを変更する
-description: このトピックでは、拡張機能を使用してテーブルのプロパティを変更する方法について説明します。
+description: この記事では、拡張機能を使用してテーブルのプロパティを変更する方法について説明します。
 author: ivanv-microsoft
 ms.date: 08/20/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 81d81e09305faf3ba69176394830dafd159499bd
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ee558aad75f44d2c4b7d82ac8665cc84aae414fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866834"
 ---
 # <a name="modify-table-properties-through-extension"></a>拡張機能を使用して、テーブルのプロパティを変更する
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations バージョン 10.0 の拡張機能の変更
-description: これのトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0 に実装された拡張機能を一覧します。
+description: この記事では、Dynamics 365 for Finance and Operations バージョン 10.0 に実装された拡張機能を一覧します。
 author: FrankDahl
 ms.date: 03/05/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-02-11
 ms.dyn365.ops.version: App 10.0
-ms.openlocfilehash: 6867e687a386269342d8b7980ed97257c3fe71c6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6979dbe25065f40999d845686658f1449cdda841
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866924"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-100"></a>Dynamics 365 for Finance and Operations バージョン 10.0 の拡張機能の変更
 

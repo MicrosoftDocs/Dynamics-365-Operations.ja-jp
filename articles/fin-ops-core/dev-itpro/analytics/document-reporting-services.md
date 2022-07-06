@@ -1,6 +1,6 @@
 ---
 title: ドキュメント レポート サービス
-description: このトピックでは、サービス管理が簡略化され、開発者の生産性が向上し、強化されたレポート表示を提供するレポート ソリューションについて説明します。
+description: この記事では、サービス管理が簡略化され、開発者の生産性が向上し、強化されたレポート表示を提供するレポート ソリューションについて説明します。
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 917a7da63085f5266d9796d7b2bc689bc37b909c1414c144c84e34a0adee824c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb766d3ab7d3566a91451c25c3504ff4a015a797
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890229"
 ---
 # <a name="document-reporting-services"></a>ドキュメント レポート サービス
 

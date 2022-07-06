@@ -1,6 +1,6 @@
 ---
 title: 拡張可能なコントロールのプログラミング リファレンス
-description: このトピックでは、拡張可能なコントロール プログラミングの参考資料を提供します。
+description: この記事では、拡張可能なコントロール プログラミングの参考資料を提供します。
 author: TLeforMicrosoft
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ec44fcd6a7002e588f93872e2861abc8d2db750
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1dce12a9bf8d0b6e91dbb19c0793acb54d4064b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783126"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905062"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、拡張可能なコントロール プログラミングの参考資料を提供します。
+この記事では、拡張可能なコントロール プログラミングの参考資料を提供します。
 
 このドキュメントでは、拡張可能なコントロールを作成するための API、HTML、および JavaScript のサポートについて説明します。
 

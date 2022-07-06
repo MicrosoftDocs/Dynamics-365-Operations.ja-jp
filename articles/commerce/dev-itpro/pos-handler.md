@@ -1,6 +1,6 @@
 ---
 title: POS 要求ハンドラーのオーバーライド
-description: このトピックでは、POS 要求ハンドラーをオーバーライドする方法について説明します。
+description: この記事では、POS 要求ハンドラーを上書きする方法について説明します。
 author: mugunthanm
 ms.date: 07/13/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: f0571a967e0dff3e8d356ada8970d940c7546aec
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fcc59eb249c7decd943d7ab686ece69a2075d2fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781715"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876991"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、POS 要求ハンドラーをオーバーライドする方法について説明します。 POS ビジネス ロジックをオーバーライドするための拡張パターンを導入しました。 コア POS ビジネス フローにビジネス ロジックを変更/追加するシナリオがある場合、このパターンに従うことができます。
+この記事では、POS 要求ハンドラーを上書きする方法について説明します。 POS ビジネス ロジックをオーバーライドするための拡張パターンを導入しました。 コア POS ビジネス フローにビジネス ロジックを変更/追加するシナリオがある場合、このパターンに従うことができます。
 
 たとえば、シリアル品目を販売する場合、スキャン後、POS にはその品目のシリアル番号を入力するダイアログ ボックスが表示されます。 コードを使用してシリアル番号を入力することでシリアル番号プロセスを自動化する場合、このシリアル番号要求ハンドラーをオーバーライドしてカスタム ビジネス ロジックを使用できます。 POS のビジネス ロジックのほとんどは、要求ハンドラーで実装されます。ただし、関連する要求ハンドラーをオーバーライドして、ビジネス フローに従って応答を返すことができます。
 

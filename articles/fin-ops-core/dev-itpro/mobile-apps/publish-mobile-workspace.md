@@ -1,6 +1,6 @@
 ---
 title: モバイル ワークスペースの公開
-description: このトピックでは、システム管理者がモバイル ワークスペースを公開するために従わなければならない手順について説明します。
+description: この記事では、システム管理者がモバイル ワークスペースを公開するために従わなければならない手順について説明します。
 author: sericks007
 ms.date: 05/26/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 62ab838a3da0c084c3d5db4bba4ba6f0d27fe982
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 1e03dcb30b50b055636a85fe6afb2a5a6702e6cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811758"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876688"
 ---
 # <a name="publish-mobile-workspaces"></a>モバイル ワークスペースの公開
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、システム管理者がモバイル ワークスペースを公開するために従わなければならない手順について説明します。 モバイル ワークスペースを公開して、ユーザーがモバイル アプリでアクセスできるようにする必要があります。 
+この記事では、システム管理者がモバイル ワークスペースを公開するために従わなければならない手順について説明します。 モバイル ワークスペースを公開して、ユーザーがモバイル アプリでアクセスできるようにする必要があります。 
 
 ## <a name="publish-a-mobile-workspace"></a>モバイル ワークスペースの公開
 

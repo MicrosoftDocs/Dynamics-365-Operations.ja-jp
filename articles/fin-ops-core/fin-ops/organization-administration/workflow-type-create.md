@@ -1,6 +1,6 @@
 ---
 title: ワークフロー タイプの作成
-description: このトピックでは、ワークフロー タイプを作成する方法について説明します。
+description: この記事では、ワークフロー タイプを作成する方法について説明します。
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: baf8aa2034c2ff9d70e2a05ef9216ed7ba32041d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5e7074155250f6556647d354002a0aa341347080
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865818"
 ---
 # <a name="create-a-workflow-type"></a>ワークフロー タイプの作成
 
@@ -28,7 +28,7 @@ ms.locfileid: "8067918"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-ドキュメント のワークフロー サポートを追加するには、ワークフロー タイプを作成する必要があります。 ワークフロー タイプを作成すると、ドキュメントのワークフロー コンフィギュレーションを作成するために使用できます。 このトピックでは、ワークフロー タイプを作成する手順へのリンクを提供します。
+ドキュメント のワークフロー サポートを追加するには、ワークフロー タイプを作成する必要があります。 ワークフロー タイプを作成すると、ドキュメントのワークフロー コンフィギュレーションを作成するために使用できます。 この記事では、ワークフロー タイプを作成する手順へのリンクを提供します。
 
 ワークフロータイプを作成して、次の要素を定義します:
 

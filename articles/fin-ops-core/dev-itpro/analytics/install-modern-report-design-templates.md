@@ -1,6 +1,6 @@
 ---
 title: 現代レポートのデザイン テンプレートのインストール
-description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。
+description: この記事では、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。
 author: RichdiMSFT
 ms.date: 10/18/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 737309761d869fa4144594ca5004fa12db5e3cd8
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 1da31d2e433cf138871c989a5ddf112962ff7829
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908459"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。 これらのサンプルを使用すると、ヘッダーとフッターに柔軟なブランドのあるグラフィックの豊富なビジネス ドキュメントを作成することができます。
+この記事では、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。 これらのサンプルを使用すると、ヘッダーとフッターに柔軟なブランドのあるグラフィックの豊富なビジネス ドキュメントを作成することができます。
 
 ## <a name="introduction"></a>はじめに
 
@@ -105,7 +105,7 @@ Application Suite Modern Designs モデルは、Application Suite モデルの�
 
 ## <a name="update-print-management-settings"></a>印刷管理の設定を更新
 
-この時点で、アプリケーションから最新のレポート デザインにアクセスできるようになります。 実稼働環境に配置する前に、現代レポートのデザイン テンプレートに関するテスト検証を行うことを確認します。 テスト検証を行うには、アプリケーション ビジネス プロセスの最新のレポート デザインをアクティブにする必要があります。
+この時点で、アプリケーションから最新のレポート デザインにアクセスできるようになります。 運用環境に配置する前に、現代レポートのデザイン テンプレートに関するテスト検証を行うことを確認します。 テスト検証を行うには、アプリケーション ビジネス プロセスの最新のレポート デザインをアクティブにする必要があります。
 
 最新のレポート デザイン ソリューションを既定のレポート デザインとして選択することにより、顧客の販売注文の印刷管理設定を更新するには、これらの手順に従います。
 

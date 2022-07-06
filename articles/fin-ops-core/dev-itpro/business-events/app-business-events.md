@@ -1,6 +1,6 @@
 ---
 title: アプリケーション ビジネス イベント
-description: このトピックでは、アプリケーション ビジネス イベントを一覧します。
+description: この記事では、アプリケーション ビジネス イベントを一覧します。
 author: Sunil-Garg
 ms.date: 09/23/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: ab99ffc00814a859325145dcdddbfb4c208ee5a4c32338c336a3358e202fbbd5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3b050298bbfc1063ed1bd8c6e23262024ae5809
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902610"
 ---
 # <a name="application-business-events"></a>アプリケーション ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、アプリケーション ビジネス イベントを一覧します。
+この記事では、アプリケーション ビジネス イベントを一覧します。
 
 ## <a name="procure-to-pay"></a>仕入れから支払
 

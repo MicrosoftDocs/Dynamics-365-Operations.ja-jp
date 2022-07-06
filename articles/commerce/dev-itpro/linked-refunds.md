@@ -1,6 +1,6 @@
 ---
 title: 以前に承認および確認済みのトランザクションのリンクされた払戻
-description: このトピックでは、リンクされた払戻を有効にして使用する方法を説明します。
+description: この記事では、リンクされた払戻を有効にして使用する方法を説明します。
 author: josaw1
 ms.date: 06/30/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 8341e2c0dc36b329ad02deb6d3d228011f4a9eaf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: aaf690cbf2649a7d3076fea24fd03b2ce96f3596
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848972"
 ---
 # <a name="linked-refunds-of-previously-approved-and-confirmed-transactions"></a>以前に承認および確認済みのトランザクションのリンクされた払戻
 
@@ -27,7 +27,7 @@ ms.locfileid: "7781719"
 
 返品は小売企業にとって重要な業務です。 販売に対する返品を受け入れて顧客への支払いを払い戻す機能により、小売企業は顧客のニーズに対応して問題を解決できます。
 
-このトピックでは、リンクされた払戻を構成および使用する方法に関する情報を提供します。 リンクされた払戻は、以前に承認および確認されたトランザクションの払戻です。 払戻は、トランザクションの全額払戻、または部分払戻のいずれかで、元の承認の全額を超えることはできません。 リンクされた払戻の機能は Microsoft Dynamics 365 Retail バージョン 10.0.1 で利用できます。
+この記事では、リンクされた払戻を構成および使用する方法に関する情報を提供します。 リンクされた払戻は、以前に承認および確認されたトランザクションの払戻です。 払戻は、トランザクションの全額払戻、または部分払戻のいずれかで、元の承認の全額を超えることはできません。 リンクされた払戻の機能は Microsoft Dynamics 365 Retail バージョン 10.0.1 で利用できます。
 
 Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業はカードへの払い戻しを処理できますが、レジ担当者はこれらの払戻を手動で指定する必要があります。 レジ担当者は顧客がその支払い方法を提供した場合にのみ、元の支払い方法への払戻を処理できます。 したがって、新しいカードの詳細を提供することにより、顧客は返品プロセスを使用してあるカードから別のカードに残高を移動できるため、不正なカード残高の移動を行うことができます。
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 
 ### <a name="additional-setup"></a>追加の設定
 
-標準の Adyen コネクタ実装を使用していない顧客は、クレジットカードのトークン化をサポートするコネクタを設定する必要があります。 このトピックで説明されるすべてのシナリオは、コマースで提供される標準の支払ソフトウェア開発キット (SDK) を使用して実装できます。 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) では、こちらで説明されるすべてのシナリオの直ぐに使える実装を提供します。
+標準の Adyen コネクタ実装を使用していない顧客は、クレジットカードのトークン化をサポートするコネクタを設定する必要があります。 この記事で説明されるすべてのシナリオは、Commerce で提供される標準の支払ソフトウェア開発キット (SDK) を使用して実装できます。 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) では、こちらで説明されるすべてのシナリオの直ぐに使える実装を提供します。
 
 ## <a name="turn-on-the-linked-refunds-functionality"></a>リンクされた払戻の機能を有効にする
 
@@ -101,7 +101,7 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 
 全額払戻が成功したら、レジ担当者はトランザクションを完了して構成済としてレシートを印刷できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 - [支払に関するよく寄せられる質問](payments-retail.md)
 - [Adyen 向け Dynamics 365 Payment Connector](adyen-connector.md?tabs=8-1-3)

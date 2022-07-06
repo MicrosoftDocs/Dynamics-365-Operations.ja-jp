@@ -1,6 +1,6 @@
 ---
 title: Dynamics Symbol フォント
-description: このトピックでは、各リリースで使用できるシンボルの一覧へのリンクを提供します。
+description: この記事では、各リリースで使用できるシンボルの一覧へのリンクを提供します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: bensm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bda1a76160d3442f0665c3e1bb2181c931719143
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 81a6cabae23d26a5d48ccd246afa0d707280b6af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895252"
 ---
 # <a name="dynamics-symbol-font"></a>Dynamics Symbol フォント
 

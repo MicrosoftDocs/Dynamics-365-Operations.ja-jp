@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance の新機能および変更された機能
-description: このトピックでは、Dynamics 365 Finance の各リリースにおける新しい機能と変更された機能について説明するトピックを示す
+description: この記事では、Dynamics 365 Finance の各リリースにおける新しい機能と変更された機能について説明するトピックを示します
 author: kfend
 ms.date: 01/31/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e214cdf25070bd38dd391233c1eeaee4ded14409
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 48a2fd808bad4132efde557b811e612fc5d91a6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879580"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance"></a>Dynamics 365 Finance の新機能および変更された機能 
 

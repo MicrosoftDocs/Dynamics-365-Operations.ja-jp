@@ -1,8 +1,8 @@
 ---
 title: プロジェクトの研修
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクト オンボード ウィザードについて説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) のプロジェクト オンボード ウィザードについて説明します。
 author: vetrivicky
-ms.date: 11/30/2020
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3842dcb938f46e5f3beec91851093dcaf53e5d426c04c17182be17e80f3c32ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b5bf08771f9c41eec75c07d9314138c824a49aa
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749638"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033704"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 
@@ -31,10 +31,10 @@ Microsoft では、お客様から提供された情報を必要としていま�
 プロジェクトのオンボードにアクセスするには、LCS にログインし、メイン メニューで **プロジェクト オンボード** を選択します。
 
 > [!NOTE]
-> プロジェクトのオンボードは、実装プロジェクトで使用できます。また、Microsoft が管理する環境を配置する前に完了する必要があります。 実装プロジェクトに関する詳細情報については、[Finance and Operations アプリの顧客に向けた Lifecycle Services (LCS)](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps) を参照してください。
+> プロジェクトのオンボードは、実装プロジェクトで使用できます。また、Microsoft が管理する環境を配置する前に完了する必要があります。 実装プロジェクトの詳細については、[財務と運用アプリの顧客用の Lifecycle Services (LCS)](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps) を参照してください。
 
 
-このオンボード プロセスの詳細については、[実装プロジェクトのオンボード](../../fin-ops/imp-lifecycle/onboard.md#lcs-implementation-project-workspace)を参照してください。また、[Finance and Operations: Dynamics 365 へのオンボード](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk もご覧ください。
+このオンボード プロセスの詳細については、[実装プロジェクトのオンボード](../../fin-ops/imp-lifecycle/onboard.md#lcs-implementation-project-workspace) を参照してください。また、[財務と運用: Dynamics 365 へのオンボード](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk もご覧ください。
 
 
 ## <a name="onboarding-steps"></a>オンボード ステップ
@@ -77,6 +77,9 @@ Microsoft では、お客様から提供された情報を必要としていま�
 
 - LC と Azure DevOps を接続し、アプリケーション ライフサイクルを維持します。
 - Azure DevOps アカウントのルート URL と、Azure DevOps から取得した個人用アクセス トークンを入力します。 Azure DevOps アカウントは顧客に所属している必要があります。
+
+> [!NOTE]
+> LCS では、Azure DevOps のルート URL をレガシー形式で入力する必要があります。 レガシ形式は `https://ACCOUNT.visualstudio.com` で、`https://contoso.visualstudio.com` がその一例です。
 
 ## <a name="configure-azure-devops"></a>Azure DevOps のコンフィギュレーション
 

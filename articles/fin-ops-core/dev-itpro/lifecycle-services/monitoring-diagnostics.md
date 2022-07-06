@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services (LCS) の監視および診断ツール
-description: このトピックでは、環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services が提供するツールについて説明します。
+description: この記事では、環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services が提供するツールについて説明します。
 author: angelmarshall
 ms.date: 05/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8cdeab12b2ed15d059626da807c47d48087a75f9
-ms.sourcegitcommit: 00b39900d3cbdbc9ca1ab3145265007f5dc98a3f
+ms.openlocfilehash: 252bc1c31d6b269d1f00fa8c3d4a6d4dbc708451
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8806333"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866410"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、管理する Finance and Operations 環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。
+この記事では、管理する財務と運用環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services (LCS) が提供するさまざまなツールについて説明します。
 
 クラウド サービスへのオンボード エクスペリエンスを成功させるには、環境の状態を常に把握しておく必要があります。 発生するすべての正常性の問題をトラブルシューティングできることも必要です。 管理センターである Microsoft Dynamics Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。
 
@@ -52,7 +52,7 @@ LCS の監視および診断ポータルの基礎となるテレメトリ デー
 
 ## <a name="responsibilities"></a>職責
 
-Finance and Operations などの管理されたクラウド サービスについては、Microsoft は常に実稼動環境の正常性をアクティブに監視する責任があります。 顧客の環境が問題によって影響を受ける場合、Microsoft サービス エンジニア リング チームにすぐに警告が通知されます。 チームは問題の調査を開始し、解決策を見つけるために協力します。 ただし、非実稼働環境の状態を事前または反応的に監視およびトラブルシューティングする責任はお客様にあります。
+Finance and Operations などの管理されたクラウド サービスについては、Microsoft は常に運用環境の正常性をアクティブに監視する責任があります。 顧客の環境が問題によって影響を受ける場合、Microsoft サービス エンジニア リング チームにすぐに警告が通知されます。 チームは問題の調査を開始し、解決策を見つけるために協力します。 ただし、非運用環境の状態を事前または反応的に監視およびトラブルシューティングする責任はお客様にあります。
 
 ## <a name="access-the-monitoring-and-diagnostics-portal"></a>監視および診断ポータルへのアクセス
 

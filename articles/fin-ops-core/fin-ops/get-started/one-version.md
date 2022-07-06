@@ -1,8 +1,8 @@
 ---
 title: 1 つのバージョンのサービス更新に関するよく寄せられる質問
-description: このトピックでは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールについて明確に説明します。
+description: この記事では、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールについて明確に説明します。
 author: laneswenka
-ms.date: 05/03/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5f5b65dc05e0269fd7af9b0eb95dc35fc62d595e
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 5f4aee554605361eabf65c17671833a62ae68c45
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770127"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012487"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
 [!include[banner](../includes/banner.md)]
 
-このよく寄せられる質問は、変更の準備のために使用できるサービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。 必要に応じて、このトピックに追加情報を追加し続けします。
+このよく寄せられる質問は、変更の準備のために使用できるサービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。 必要に応じて、この記事に追加情報を追加し続けます。
 
 1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../../dev-itpro/lifecycle-services/oneversion-overview.md)を参照してください。
 
@@ -105,9 +105,9 @@ Microsoft は、すべての顧客に同じサービス更新プロブラムを�
 
 ### <a name="how-do-i-update-to-the-latest-version"></a>最新バージョンに更新する方法を教えてください。
 
-ユーザーは、LCS の環境の詳細ページでタイルを使用して最新バージョンに更新できます。 Microsoft により更新プログラムがリリースされたら、タイルに更新プログラムが表示されます。 ユーザーは、サンドボックスと製造環境で更新エクスペリエンスを経由して独自に更新プログラムを適用することができます。 
+ユーザーは、LCS の環境の詳細ページでタイルを使用して最新バージョンに更新できます。 Microsoft により更新プログラムがリリースされたら、タイルに更新プログラムが表示されます。 ユーザーは、サンドボックスと運用環境で更新エクスペリエンスを経由して独自に更新プログラムを適用することができます。 
 
-### <a name="how-do-i-update-the-production-environment-to-the-same-version-after-microsoft-updates-the-sandbox-environment"></a>Microsoft がサンドボックス環境を更新した後で、実稼働環境を同じバージョンに更新する方法を教えてください。
+### <a name="how-do-i-update-the-production-environment-to-the-same-version-after-microsoft-updates-the-sandbox-environment"></a>Microsoft がサンドボックス環境を更新した後で、運用環境を同じバージョンに更新する方法を教えてください。
 
 Microsoft がサンドボックス環境を更新すると、更新に使用されるパッケージはプロジェクトの資産ライブラリに保存されます。 パッケージ名の先頭には "サービスの更新" という語が付いています。 そのパッケージはすでにサンドボックス環境に適用済みのため、このをリリース候補としてマークできます。 その後で運用環境に移動し、他の更新プログラムを適用するのと同様にパッケージを適用するようスケジュールすることができます。
 
@@ -144,7 +144,7 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 サポートされているバージョンにサービス更新を適用すると、この機能は影響を受ける環境で使用できます。
 
 > [!NOTE]
-> このトピックでは、バージョンについて次のように記載されています。
+> この記事では、バージョンについて次のように記載されています。
 >
 > - バージョン N は最新バージョン (たとえば、10.0.25)
 > - バージョン N-1 は N よりも 1 つ古いバージョン (たとえば、10.0.24)
@@ -154,27 +154,33 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 ### <a name="how-do-the-automatic-updates-affect-my-microsoft-managed-additional-sandbox-environments-in-my-lcs-implementation-project"></a>自動更新によって、LCS 実装プロジェクトで Microsoft が管理する追加のオブジェクト環境はどのような影響を受けますか? 
 
-追加のすべてのサンドボックス環境は、実稼働環境と同じ更新ウィンドウ内に更新され、生産更新に使用されているのと同じリリース バージョンに更新されます。 この更新は、N-3 ライフサイクル ポリシーでサポートされている追加のサンドボックス環境にも適用されます。 
+追加のすべてのサンドボックス環境は、運用環境と同じ更新ウィンドウ内に更新され、生産更新に使用されているのと同じリリース バージョンに更新されます。 この更新は、N-3 ライフサイクル ポリシーでサポートされている追加のサンドボックス環境にも適用されます。 
 
-### <a name="what-if-one-additional-sandbox-environment-is-on-n-1-and-another-is-on-n-4-the-default-sandbox-environment-and-the-production-environment-are-on-less-than-version-n"></a>追加のサンドボックス環境の 1 つが N-1 で、他の環境が N-4 の場合 (既定のサンドボックス環境と実稼働環境がバージョン N より前の場合) はどうなりますか? 
+### <a name="what-if-one-additional-sandbox-environment-is-on-n-1-and-another-is-on-n-4-the-default-sandbox-environment-and-the-production-environment-are-on-less-than-version-n"></a>追加のサンドボックス環境の 1 つが N-1 で、他の環境が N-4 の場合 (既定のサンドボックス環境と運用環境がバージョン N より前の場合) はどうなりますか? 
 
 すべての環境がバージョン N に更新されます。 
 
-### <a name="what-if-the-default-sandbox-environment-is-manually-updated-before-the-default-sandbox-environment-email-is-sent"></a>既定のサンドボックス環境の電子メールが送られる前に、既定のサンドボックス環境が手動で更新される場合はどうなりますか? 
+### <a name="what-if-the-default-sandbox-environment-is-manually-updated-to-the-exact-same-version-as-the-automatic-update-version"></a>既定のサンドボックス環境が自動更新バージョンとまったく同じバージョンに手動で更新された場合はどうなりますか? 
 
-既定のサンドボックス環境、実稼働環境の自動更新および追加のすべてのサンドボックス環境はキャンセルされます。
+運用環境の自動更新はキャンセルされ、追加のすべてのサンドボックス環境は現在の N バージョンに更新されます。  
+ 
+既定のサンドボックス環境の更新はキャンセルされます。 
 
-### <a name="what-if-the-default-sandbox-environment-is-manually-updated-after-the-default-sandbox-email-is-sent"></a>既定のサンドボックス環境の電子メールが送られた後に、既定のサンドボックス環境が手動で更新される場合はどうなりますか? 
+### <a name="what-if-the-default-sandbox-environment-is-manually-updated-to-a-newer-version-than-the-automatic-update-version"></a>既定のサンドボックス環境が自動更新バージョンよりも新しいバージョンに手動で更新された場合はどうなりますか?
 
-既定のサンドボックス環境、実稼働環境の自動更新および追加のすべてのサンドボックス環境はキャンセルされます。 
+既定のサンドボックス環境、運用環境の自動更新および追加のすべてのサンドボックス環境はキャンセルされます。 
 
-### <a name="what-if-the-production-environment-is-manually-updated-before-the-production-environment-email-is-sent"></a>実稼働環境の電子メールが送られる前に、実稼働環境が手動で更新される場合はどうなりますか? 
+### <a name="what-if-the-default-sandbox-environment-is-manually-updated-to-an-older-version-than-the-automatic-update-version"></a>既定のサンドボックス環境が自動更新バージョンよりも古いバージョンに手動で更新された場合はどうなりますか? 
+ 
+既定のサンドボックス環境、運用環境、および追加のすべてのサンドボックス環境は、現在の N バージョンに更新されます。
 
-実稼働環境の自動更新、追加のすべてのサンドボックス環境はキャンセルされます。 
+### <a name="what-if-the-production-environment-is-manually-updated-before-the-production-environment-email-is-sent"></a>運用環境の電子メールが送られる前に、運用環境が手動で更新される場合はどうなりますか? 
 
-### <a name="what-if-the-production-environment-is-manually-updated-after-the-production-environment-email-is-sent"></a>実稼働環境の電子メールが送られた後に、実稼働環境が手動で更新される場合はどうなりますか? 
+運用環境の自動更新、追加のすべてのサンドボックス環境はキャンセルされます。 
 
-実稼働環境の自動更新はキャンセルされますが、追加のすべてのサンドボックス環境はバージョン N に更新されます。
+### <a name="what-if-the-production-environment-is-manually-updated-after-the-production-environment-email-is-sent"></a>運用環境の電子メールが送られた後に、運用環境が手動で更新される場合はどうなりますか? 
+
+運用環境の自動更新はキャンセルされますが、追加のすべてのサンドボックス環境はバージョン N に更新されます。
 
 ### <a name="what-if-i-find-an-issue-during-the-sandbox-update"></a>サンドボックスの更新中に問題が発生した場合はどうなりますか?
 
@@ -192,7 +198,7 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 サービス更新プログラムが Microsoft によって適用された後、更新プログラムが成功したかどうか、または適用できなかったかどうかの通知を受け取ります。 更新プログラムを適用できないいくつかの理由があります。
 
-- **保留中のパッケージ サインオフ**- パッケージがサインオフで保留中の場合、Microsoft はサービスの更新を実稼働環境に適用しません。
+- **保留中のパッケージ サインオフ**- パッケージがサインオフで保留中の場合、Microsoft はサービスの更新を運用環境に適用しません。
 - **配置エラー** - 配置エラーが発生した場合、環境は元の状態にロールバックされます。
  
 ### <a name="if-there-is-a-failure-can-i-reschedule-the-update-to-be-automatically-applied"></a>失敗した場合、更新プログラムが自動的に適用されるように再スケジュールできますか?
@@ -249,7 +255,7 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 ### <a name="how-can-i-log-an-extensibility-request"></a>拡張機能の要求を記録するにはどうすればよいですか?
 
-拡張機能の要求は、LCS に記録することができます。 詳細は、[機能拡張要求](../../dev-itpro/extensibility/extensibility-requests.md)トピックにあります。 使用可能な拡張機能の使用とログに関しては以下のタイムラインに注意してください。
+拡張機能の要求は、LCS に記録することができます。 詳細については、[拡張性の要求](../../dev-itpro/extensibility/extensibility-requests.md)の記事を参照してください。 使用可能な拡張機能の使用とログに関しては以下のタイムラインに注意してください。
 
 | 日付         | 拡張機能の要求 |
 |--------------|------------------------|

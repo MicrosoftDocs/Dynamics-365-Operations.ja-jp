@@ -1,6 +1,6 @@
 ---
 title: X++ 文字列ランタイム関数
-description: このトピックでは、文字列ランタイム関数について説明します。
+description: この記事では、文字列ランタイム関数について説明します。
 author: RobinARH
 ms.date: 08/15/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77caa4b4ac04c6cd65c8cf834ee7b520607df150
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9cbe2f781c50b4d52d2c639104b1b2d777e6e8f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867123"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、文字列ランタイム関数について説明します。
+この記事では、文字列ランタイム関数について説明します。
 
 ## <a name="match"></a>照合
 

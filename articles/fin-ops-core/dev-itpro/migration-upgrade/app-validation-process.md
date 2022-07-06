@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - アップグレード後のタスク
-description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に実行する必要があるタスクについて説明します。
+description: この記事では、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に実行する必要があるタスクについて説明します。
 author: LaneSwenka
 ms.date: 11/12/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2f681d028fa7bcc0edd10bc930d70bee280d5a09cd33c527d95e19c05f35940b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 712744201dc3197ac0e06a2bc0b6bd8efb3eb7da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719806"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866279"
 ---
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 
@@ -27,7 +27,7 @@ ms.locfileid: "6719806"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Dynamics 365 Finance や Dynamics 365 Supply Chain Management などの Finance and Operations アプリで実行する必要があるタスクについて説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
+この記事では、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に、Dynamics 365 Finance や Dynamics 365 Supply Chain Management などの財務と運用アプリで実行する必要がある作業について説明します。 Microsoft Dynamics Lifecycle Services (LCS) で使用可能なプロセス データ パッケージ (PDP) には、次のメニュー項目へのリンクが含まれています。 この PDP は、**データ検証チェックリスト** ワークスペースに入力します。 **データ検証チェックリスト** ワークスペースでは、ユーザーがプロジェクトを追跡し、それを実行するために必要なタスクを監視できます。
 
 ## <a name="document-management"></a>ドキュメント管理
 

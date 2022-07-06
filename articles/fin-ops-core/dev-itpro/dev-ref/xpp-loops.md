@@ -1,6 +1,6 @@
 ---
 title: X++ ループ ステートメント
-description: このトピックでは、X++のループ ステートメントについて説明します。
+description: この記事では、X++ のループ ステートメントについて説明します。
 author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3aca0a703f6db45d97d152e9efdd51dd8b0d5fee
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: b1c17c1473d35c0973b11de22fb9b9eb60acef05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489074"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867153"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++のループ ステートメントについて説明します。 
+この記事では、X++ のループ ステートメントについて説明します。 
 
 ループ ステートメントは、**for**、**while**、**do**、**while** の 3 つがあります。 ループでは、ループに設定された条件が **false** になるまで、そのステートメントを繰り返します。 loop ステートメント内では、**break** および **continue** ステートメントを使用することができます。
 

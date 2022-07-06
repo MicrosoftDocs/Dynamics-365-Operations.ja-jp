@@ -1,6 +1,6 @@
 ---
 title: 二重書き込みホーム ページ
-description: このトピックでは、二重書き込みに関する情報へのリンクについて説明します。
+description: この記事では、二重書き込みに関する情報へのリンクについて説明します。
 author: tonyafehr
 ms.date: 11/24/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 126b0b4d354be14f14dce9788b084d0422d03228
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: b7a697ca48001b697207d739a02ca569156d16c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885044"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 

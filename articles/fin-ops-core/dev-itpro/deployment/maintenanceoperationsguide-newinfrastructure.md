@@ -1,6 +1,6 @@
 ---
 title: 配置の保守操作
-description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。
+description: この記事では、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。
 author: laneswenka
 ms.date: 03/16/2022
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: c90c88fc35e36904b97fa5eb60bf6bfef4f6475a
-ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
+ms.openlocfilehash: bf5e24500bddc0ec16f7d8d1efb4383e353a1a61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8453498"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867397"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このトピックでは、[セルフサービス配置](infrastructure-stack.md) エクスペリエンスを使用して、配置された環境の保守操作を実行する方法について説明します。
+この記事では、[セルフサービス配置](infrastructure-stack.md)エクスペリエンスを使用して、配置された環境の保守操作を実行する方法について説明します。
 
 ## <a name="restart-services"></a>サービスをリセット
 

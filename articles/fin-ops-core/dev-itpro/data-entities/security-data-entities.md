@@ -1,6 +1,6 @@
 ---
 title: セキュリティとデータ エンティティ
-description: このトピックでは、データ エンティティのセキュリティについて説明します。
+description: この記事では、データ エンティティのセキュリティについて説明します。
 author: peakerbl
 ms.date: 03/11/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3eeab83eaaa487cf036bb7d2f7d67ef388e63b9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e82cedde886c8e2a4b44a8cba3d962e6100d6087
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071072"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898632"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 
@@ -78,7 +78,7 @@ ms.locfileid: "8071072"
 </li>
 </ul>
 </td>
-<td>新しい権限を持つ関連データの管理業務を拡張します。 詳細については、このトピックで後述する「データ管理ロール」セクションを参照してください。</td>
+<td>新しい権限を持つ関連データの管理業務を拡張します。 詳細については、この記事で後述する「データ管理者ロール」セクションを参照してください。</td>
 </tr>
 <tr>
 <td>データ エンティティは、OData を介した一般的な統合を目的としています。</td>
@@ -98,7 +98,7 @@ ms.locfileid: "8071072"
 </li>
 </ul>
 </td>
-<td>統合シナリオの新しい職務を作成し、関連する新しい特権をこれらの職務にマッピングします。 詳細については、このトピックで後述する「職務名のガイドライン」セクションを参照してください。</td>
+<td>統合シナリオの新しい職務を作成し、関連する新しい特権をこれらの職務にマッピングします。 詳細については、この記事で後述する「職務名のガイドライン」セクションを参照してください。</td>
 </tr>
 <tr>
 <td>データ エンティティは、Microsoft Office との統合を目的としています。</td>
@@ -219,7 +219,7 @@ ms.locfileid: "8071072"
 - DataManagementApplicationTransactionEntitiesMaintain
 - DataManagementApplicationTransactionEntitiesView
 
-**データ管理** ワークスペースで使用できるデータ エンティティを作成するとき、データ エンティティで指定される **エンティティ カテゴリ** プロパティに基づいて、新しいセキュリティ権限を持つこれらの職務を拡張する必要があります。 (新しいセキュリティ権限を使用して職務を拡張する方法については、このトピックの前半の「特権/職務マッピング」セクションを参照してください。)また、職務を使用して、特定のデータ管理シナリオ用の新しいロールを作成することもできます。
+**データ管理** ワークスペースで使用できるデータ エンティティを作成するとき、データ エンティティで指定される **エンティティ カテゴリ** プロパティに基づいて、新しいセキュリティ権限を持つこれらの職務を拡張する必要があります。 (新しいセキュリティ権限を使用して職務を拡張する方法については、この記事の前半の「特権/職務マッピング」セクションを参照してください)。また、職務を使用して、特定のデータ管理シナリオ用の新しいロールを作成することもできます。
 
 ## <a name="modeling-new-entry-point-security-in-the-application-explorer"></a>アプリケーション エクスプローラーでの新しいエントリ ポイント セキュリティのモデリング
 セキュリティのモデリングのパターンは、エントリ ポイントに対する権限を持つセキュリティのモデリングのパターンと似ています。 セキュリティをモデル化するには、次の手順を実行します。

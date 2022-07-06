@@ -1,6 +1,6 @@
 ---
 title: カスタム ヘルプ ツールキット - HtmlFromRepoGenerator ツール
-description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットに含まれている HtmlFromRepoGenerator ツールについて説明し ます。
+description: この記事では、財務と運用アプリ用のカスタム ヘルプ ツールキットに含まれている HtmlFromRepoGenerator ツールについて説明し ます。
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 84c37d86e42fcc324544a8f0739a82f5b3b996fd
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 75871a612bf852cd5d3725640ea571bc4e6a8e10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866599"
 ---
 # <a name="custom-help-toolkit-the-htmlfromrepogenerator-tool"></a>カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール
 
@@ -30,13 +30,13 @@ ms.locfileid: "7595411"
 - Microsoft ドキュメント リポジトリをクローンします。
 - Microsoft リポジトリのクローンから開発者および管理者のコンテンツを削除します。
 - クローンに既に存在しないファイルへのリンクを更新します。
-- Finance and Operations クライアントでサポートされている言語オプションと一致するように **ms.locale** プロパティの値を更新します。
+- 財務と運用クライアントでサポートされている言語オプションと一致するように **ms.locale** プロパティの値を更新します。
 
     クライアントが使用する言語記述子は、対応する GitHub リポジトリで使用されている言語記述子と異なります。 ローカライズされたカスタム ヘルプを呼び出す前に、ソース コンテンツの言語記述子を変更して、クライアントの言語と一致させる必要があります。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。
 
 - コンテンツの公開に使用できる HTML ファイルを生成します。
 
-    HTML ファイルは **d365F-O** サブフォルダーに生成されます。 ファイルは、ツールの一部であるスタイル シートとテンプレートに基づいて生成されます。 詳細については、このトピックの [生成された HTML ファイルのスタイル変更](#modifying-the-styling-of-the-generated-html-files) を参照してください 。
+    HTML ファイルは **d365F-O** サブフォルダーに生成されます。 ファイルは、ツールの一部であるスタイル シートとテンプレートに基づいて生成されます。 詳細については、この記事の[生成された HTML ファイルのスタイル変更](#modifying-the-styling-of-the-generated-html-files)を参照してください 。
 
 - ローカライズされた Microsoft リポジトリと en-US リポジトリを比較して、相違点を特定し、それに応じてリンクを更新します。
 
@@ -70,7 +70,7 @@ HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> 
 |-----------|-------------|
 | EnRepo | en-US リポジトリの URL を指定します。 以前に複製されたリポジトリに対してツールを実行する場合、このパラメータはオプションです。 英語 (米国) 用の Microsoft ドキュメント リポジトリの URL は、`https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public` です。 |
 | EnOut | en-US リポジトリが存在するフォルダ、または複製するフォルダを指定します。 以前に複製されたリポジトリに対してツールを実行する場合、このフォルダが存在していない必要があります。 |
-| Lng | 生成された HTML ファイルの **ms.locale** メタデータに使用する言語の値を指定します。 この値は、Finance and Operations クライアントの言語設定で指定されている値と一致する必要があります。 このパラメーターが設定されていない場合、ツールは **en-US** を使用します。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。 |
+| Lng | 生成された HTML ファイルの **ms.locale** メタデータに使用する言語の値を指定します。 この値は、財務と運用クライアントの言語設定で指定されている値と一致する必要があります。 このパラメーターが設定されていない場合、ツールは **en-US** を使用します。 詳細については、[製品およびヘルプの言語およびロケール記述子](language-locale.md) を参照してください。 |
 | Rtl | 言語が右から左 (RTL) の書式設定を使用する場合、このパラメータを含めます。 RTL 言語の例としては、アラビア語とヘブライ語があります。 |
 
 ## <a name="examples"></a>例

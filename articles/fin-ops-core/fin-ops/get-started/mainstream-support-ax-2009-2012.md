@@ -1,8 +1,8 @@
 ---
 title: Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
-description: このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了に関する詳細情報を提供します。
+description: この記事では、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了に関する詳細情報を提供します。
 author: sericks007
-ms.date: 05/03/2022
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c2efef453a47906eef812f55a4323311eccbb986
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 35d9b7adf8ada05a9ee399701718b7e903c43958
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713247"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958123"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-dynamics-ax-2012-r2-and-dynamics-ax-2012-r3"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
 
@@ -25,7 +25,7 @@ ms.locfileid: "8713247"
 
 Dynamics AX 2009 Service Pack 1 (SP1)、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートは、2018 年 10 月 9 日に終了します。 セキュリティ修正プログラムは、2022 年 4 月 12 日に終了した延長サポート期間の終わりまで、これら 3 つのバージョンに対して提供されました。 詳細については、[Microsoft ライフサイクル ポリシー](/lifecycle/products/?terms=Dynamics%20AX)を参照してください。
 
-Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日で終了します。  その日以降、2023 年 1 月 10 日まで続く延長サポート期間の終わりまで、セキュリティ修正プログラムのみ提供され続けます。  詳細については、[Microsoft ライフサイクル ポリシー](/lifecycle/products/?terms=Dynamics%20AX)を参照してください。
+Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日で終了します。  2023 年 1 月 10 日まで続く延長サポート期間の終わりまで、セキュリティ修正プログラムのみ提供されます。  詳細については、[Microsoft ライフサイクル ポリシー](/lifecycle/products/?terms=Dynamics%20AX)を参照してください。
 
 Dynamics 365 Finance、Supply Chain Management、Commerce、および Project Operations などの財務と運用アプリを最新バージョンのにアップグレードすることをお勧めします。
 

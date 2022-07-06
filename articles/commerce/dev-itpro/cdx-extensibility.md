@@ -1,6 +1,6 @@
 ---
 title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
-description: このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
+description: この記事では、Commerce 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
 ms.date: 12/08/2020
 ms.topic: article
@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: b9a13d936de6cf867821d849abf18f5090abf625
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c7bffe008809b8e8be70ff7ff0332e649f739381
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781849"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883990"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 8 または Microsoft Dynamics 365 Retail プラットフォーム更新プログラム 8 で追加された新しい拡張ポイントを使用します。
+この記事では、Commerce 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 8 または Microsoft Dynamics 365 Retail プラットフォーム更新プログラム 8 で追加された新しい拡張ポイントを使用します。
 
 CDX は、コマース バックオフィス (HQ) と、オンライン ストアまたは従来型の店舗などのチャネルの間でデータを転送するシステムです。 HQ とチャネル データベース間のデータ転送は、スケジューラ ジョブによって制御されます。 各スケジューラ ジョブには、スケジューラ サブジョブの一覧が含まれています。 スケジューラ サブジョブには、ソース テーブルと出力先テーブルの名前と、それらのテーブルの転送フィールド マッピングが含まれています。 HQ とチャネル データベース間のデータ同期をコンフィグレーションするには、2 つの方法があります。
 
 + CDX のコンフィギュレーション ユーザー インターフェイス (UI) を使用して、すべてのカスタム ジョブとサブジョブをコンフィギュレーションします。
 + プッシュおよびプルの両方のカスタム ジョブとサブジョブをサポートするために用意されている拡張ポイントを使用して、コマース初期化クラスを拡張します。
 
-コマース初期化クラスを使用する利点は、さまざまな環境 (開発、テスト、および実稼働) でカスタム ジョブを構成する必要がないことです。 代わりに、**Retail と Commerce > バックオフィスの設定 > コマース スケジューラ > コマース スケジューラの初期化** から **コマース スケジューラの初期化** ダイアログ ボックスを使用して、CDX 初期化を実行できます。 データの同期のためのカスタム ジョブに関する情報は CDX で自動的に作成されます。
+コマース初期化クラスを使用する利点は、さまざまな環境 (開発、テスト、および運用) でカスタム ジョブを構成する必要がないことです。 代わりに、**Retail と Commerce > バックオフィスの設定 > コマース スケジューラ > コマース スケジューラの初期化** から **コマース スケジューラの初期化** ダイアログ ボックスを使用して、CDX 初期化を実行できます。 データの同期のためのカスタム ジョブに関する情報は CDX で自動的に作成されます。
 
 HQ とチャネル データベース間のデータ転送には、さまざまなシナリオがあります。
 

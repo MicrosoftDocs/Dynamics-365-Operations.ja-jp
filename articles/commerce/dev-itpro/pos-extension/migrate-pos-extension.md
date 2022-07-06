@@ -1,6 +1,6 @@
 ---
 title: 独立したパッケージ モデルへの POS 拡張機能の移行
-description: このトピックでは、販売時点管理 (POS) 拡張機能を独立したパッケージ モデルに移行する方法について説明します。
+description: この記事では、販売時点管理 (POS) 拡張機能を独立したパッケージ モデルに移行する方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,22 +10,22 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 03ff45352652518c92f1014e6a50bd87b9dd8d80
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f06ab9c3394e19bd530f86c8fd1d9dc7b94933fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781905"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885452"
 ---
 # <a name="migrate-a-pos-extension-to-the-independent-packaging-model"></a>独立したパッケージ モデルへの POS 拡張機能の移行
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックは、Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+この記事は、Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
 
 Retail SDK の独立したパッケージ モデルは、Microsoft Dynamics 365 Commerce 拡張機能の開発のための更新および改善された開発者エクスペリエンスを提供します。 独立したパッケージ モデルは、Retail SDK と開発中の拡張機能との間に、より大きな分離を生じさせます。 Retail SDK は、一連の NuGet パッケージで構成されています。 これらのパッケージには、コマース開発を可能にするコンポーネントが含まれています。 独立したパッケージ モデルの変更範囲により、必要な変更がいくつかあります。 独立したパッケージ モデルを使用するようにカスタマイズを変更するには、標準のバージョン更新よりも少し手間のかかるコード移行が必要です。
 
-このトピックでは、独立したパッケージ モデルの利点と変更について説明します。 また、既存の販売時点管理 (POS) 拡張機能を独立したパッケージ モデルに変換するための高レベルの一連の手順も示します。
+この記事では、独立したパッケージ モデルの利点と変更点について説明します。 また、既存の販売時点管理 (POS) 拡張機能を独立したパッケージ モデルに変換するための高レベルの一連の手順も示します。
 
 ## <a name="benefits-of-the-independent-packaging-model-in-the-retail-sdk"></a>Retail SDK の独立したパッケージ モデルの利点
 
@@ -96,7 +96,7 @@ Modern POS が独立したパッケージ モデルをサポートするため�
     3. **PosUISdk** をもう一度グローバル検索して、POS UI SDK コントロールの全ての使用が置き換えられたことを確認します。
 
 5. **Knockout.js を使用する場合にのみ必要:** **Knockout.js** へのすべての参照を更新して、POS で使用されるグローバル インスタンスの代わりに、拡張機能パッケージに含まれるライブラリのコピーを使用するようにします。 詳細については、[POS 拡張機能での Knockout.js の使用](knockout-pos-extension.md)を参照してください。
-6. **ExtensionViewControllerBase** へのすべての参照を、**CustomViewControllerBase** に変換します。 詳細については、このトピックで前述の[カスタム ビュー作成時の変更](#custom-view)セクションを参照してください。
+6. **ExtensionViewControllerBase** へのすべての参照を、**CustomViewControllerBase** に変換します。 詳細については、この記事で前述の[カスタム ビュー作成時の変更](#custom-view)セクションを参照してください。
 7. POS 拡張機能プロジェクトをビルドし、正常にビルドされたことを確認します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

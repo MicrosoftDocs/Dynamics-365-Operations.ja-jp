@@ -1,6 +1,6 @@
 ---
 title: Azure Resource Manager (ARM) のオンボード プロセスの実施
-description: このトピックでは、コネクタの Azure Resource Manager オンボード プロセスを実施する方法について説明します。
+description: この記事では、コネクタの Azure Resource Manager オンボード プロセスを実施する方法について説明します。
 author: saurabhsurana
 ms.date: 03/15/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sasurana
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 07265d61a113ddfc014e074fe01536adab1944db
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 95b3b862109cc5cf7ff3adb96a4dda47830a841e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867480"
 ---
 # <a name="complete-the-azure-resource-manager-onboarding-process"></a>Azure Resource Manager (ARM) のオンボード プロセスの実施
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コネクタの Microsoft Azure Resource Manager オンボード プロセスを実施する方法について説明します。 
+この記事では、コネクタの Microsoft Azure Resource Manager オンボード プロセスを実施する方法について説明します。 
 
 Azure Resource Manager トポロジを配置するには、コネクタのオンボード プロセスを実施する必要があります。 オンボード プロセスを開始するには、次の項目が必要です。
 
@@ -119,7 +119,7 @@ Azure コネクタを有効にし、必要に応じて LCS ユーザーを追加
 
 管理証明書を使用して作成された Azure コネクタには有効期限があります。 有効期限が過ぎると、証明書は無効になります。 したがって、Azure コネクタを使用したり、LCS からそのコネクタを介して展開された任意のリソースを管理したりすることはできません。 コネクタを更新して有効期限をリセットするには、[Azure コネクタを有効にし LCS ユーザーを追加する](./arm-onboarding.md#enable-the-azure-connector-and-add-an-lcs-user)の手順に従い、コネクタを編集することをお勧めします。  これにより、新しいダウンロード用の証明書が生成され、有効期限がリセットされます。
 
-有効期限は、管理証明書を使用するコネクタに対してのみ表示されます。 LCS ユーザーを介してコネクタを作成した場合は、このトピックで前述したように、有効期限は表示されません。 代わりに、LCS ユーザーがサブスクリプションにアクセスできる限り、Azure コネクタは有効です。
+有効期限は、管理証明書を使用するコネクタに対してのみ表示されます。 LCS ユーザーを介してコネクタを作成した場合は、この記事で前述したように、有効期限は表示されません。 代わりに、LCS ユーザーがサブスクリプションにアクセスできる限り、Azure コネクタは有効です。
 
 ## <a name="known-limitations"></a>既知の制限
 

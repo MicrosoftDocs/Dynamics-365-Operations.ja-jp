@@ -1,6 +1,6 @@
 ---
 title: コード エディター機能
-description: このトピックでは、Visual Studio のコードエディターについて説明します。
+description: この記事では、Visual Studio のコード エディターについて説明します。
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39df422be0941760e80da81adf6e6ceaddc4ad44
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f85b0f9ab835e601c161116219a9deb459e91892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867096"
 ---
 # <a name="code-editor-features"></a>コード エディター機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Visual Studio のコードエディターについて説明します。
+この記事では、Visual Studio のコード エディターについて説明します。
 
 ## <a name="code-editor"></a>コード エディター
 

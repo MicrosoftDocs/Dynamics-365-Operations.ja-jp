@@ -1,6 +1,6 @@
 ---
 title: Azure Data Lake 内に格納されたデータとメタデータ
-description: このトピックでは、データとメタデータを Microsoft Azure Data Lake に格納する方法について説明します。
+description: この記事では、データとメタデータを Microsoft Azure Data Lake に格納する方法について説明します。
 author: MilindaV2
 ms.date: 03/16/2022
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2021-11-30
-ms.openlocfilehash: 623b7c99270a1fde022ef53c9822f7b964c599ba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: fd71ad070f6e008def813e5a1e42aa0c52ae4062
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898969"
 ---
 # <a name="data-and-metadata-stored-in-azure-data-lake"></a>Azure Data Lake 内に格納されたデータとメタデータ
 
@@ -71,7 +71,7 @@ Dynamics 365 Finance や Dynamics 365 Supply Chain Management などの Dynamics
 
 ### <a name="changes-introduced-by-the-enhanced-metadata-preview-feature"></a>拡張メタデータ (プレビュー) 機能よって導入された変更
 
-現在、Data Lake へのエクスポート機能を使用している場合は、Data Lake のフォルダー構造とメタデータが表示されます。 アドインを再インストールして拡張メタデータ (プレビュー) 機能を有効にすると、いくつかの変更が表示される場合があります。 これらの変更については、このトピックの後半で、詳しく説明します。
+現在、Data Lake へのエクスポート機能を使用している場合は、Data Lake のフォルダー構造とメタデータが表示されます。 アドインを再インストールして拡張メタデータ (プレビュー) 機能を有効にすると、いくつかの変更が表示される場合があります。 これらの変更については、この記事の後半で、詳しく説明します。
 
 - 以前にカスタム フォルダーに保存されたデータは、サブジェクト領域から構成されるフォルダー構造に移動される場合があります。 これらのサブジェクト領域は、Dynamics 365 で定義されたメタデータに基づいています。 メタデータ ファイルを使用してデータの移動や検索を行う場合は、適切なフォルダー構造を使用できます。 ただし、消費元のツールでフォルダー構造をハードコーディングした場合は、これらのツールを更新する必要があります。
 - 場合によっては、カスタム フォルダーの下のフォルダー構造が、メタデータ ファイルと共に残ることがあります。 このフォルダーにデータ ファイルはありません。

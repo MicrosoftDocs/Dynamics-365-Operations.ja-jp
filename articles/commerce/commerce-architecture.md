@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce アーキテクチャの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。
+description: この記事では、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 764ff370aef055d5405b2852bb742b60a91ad324
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: babe60e0001e83a2de1a3c804fb7a315a0da403d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887181"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "8062839"
 
 
 
-このトピックでは、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。 
+この記事では、Microsoft Dynamics 365 Commerce エコシステム内すべてのコンポーネントの概要を示します。これには、Dynamics 365 製品スイートへの統合ポイントなどが含まれます。 
 
 次の図は、Dynamics 365 Commerce コンポーネントの概要を示します。
 
@@ -44,7 +44,7 @@ Commerce Scale Unit は、ヘッドレス コマース エンジンをホスト�
 
 ### <a name="interconnected-business-processes"></a>相互接続された業務プロセス
 
-Dynamics 365 Commerce、 Dynamics 365 Supply Chain Management、 Dynamics 365 Finance のような様々な Dynamics 365 業務アプリケーションの間で共有されているプラットフォームは、ユーザーがすぐに恩恵を受けることができる相互に接続された一連の業務プロセスを提供しています。 これらのアプリケーションのバックオフィス機能はすべて、同じウェブ エクスペリエンスとデータストア上に構築されています。 そのため、組織内の様々な機能にまたがる業務プロセスのシームレスフローが発生しますが、アプリケーションやサービス間のカスタム統合は必要ありません。 ヘッドレス コマース エンジンとバックオフィスの統合により、バックオフィスとコマース チャネルで相互に接続された業務プロセスの適用範囲がさらに広がります。
+Dynamics 365 Commerce、Dynamics 365 Supply Chain Management、Dynamics 365 Finance のような様々な Dynamics 365 業務アプリケーションの間で共有されているプラットフォームは、ユーザーがすぐに恩恵を受けることができる相互に接続された一連の業務プロセスを提供しています。 これらのアプリケーションのバックオフィス機能はすべて、同じウェブ エクスペリエンスとデータストア上に構築されています。 そのため、組織内の様々な機能にまたがる業務プロセスのシームレスフローが発生しますが、アプリケーションやサービス間のカスタム統合は必要ありません。 ヘッドレス コマース エンジンとバックオフィスの統合により、バックオフィスとコマース チャネルで相互に接続された業務プロセスの適用範囲がさらに広がります。
 
 ### <a name="unified-data"></a>統合されたデータ
 
@@ -96,7 +96,7 @@ Commerce Scale Unit を介して公開されるヘッドレス コマース エ�
 
 #### <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-[Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/)には、グローバルな財務を自動的に管理する機能が用意されています。 Dynamics 365 Finance は、Dynamics 365 Commerce アプリケーションを利用している顧客に対し、店舗や e コマースの財務諸表を他の業務と並行して管理する統合されたエクスペリエンスを提供しています。 詳細については、[Dynamics 365 Finance のヘルプ リソース](../finance/index.md) を参照してください。
+[Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/) には、グローバルな財務を自動的に管理する機能が用意されています。 Dynamics 365 Commerce アプリケーションを利用している顧客に対し、Dynamics 365 Finance は、店舗や e コマースの財務諸表を他の業務と並行して管理する統合されたエクスペリエンスを提供しています。 詳細については、[Dynamics 365 Finance のヘルプ リソース](../finance/index.md)を参照してください。
 
 #### <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources
 

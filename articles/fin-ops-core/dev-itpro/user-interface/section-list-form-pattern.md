@@ -1,6 +1,6 @@
 ---
-title: フォーム パターン セクション リストのフォーム パターン
-description: このトピックでは、フォーム パート セクション リストのフォーム パターンに関する情報を提供します。これは、ワークスペース内にフィルタ処理されたリストを表示するために開発されました。
+title: フォーム パート セクション リストのフォーム パターン
+description: この記事では、フォーム パート セクション リストのフォーム パターンに関する情報を提供します。これは、ワークスペース内にフィルター処理されたリストを表示するために開発されました。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95bf2c9e38901354030ab896a4cbdeb1f8cdcb10
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 473cbd55214ce336ba459d32592adef3fe4460cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861751"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パターン セクション リストのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
+この記事では、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
 
 ## <a name="usage"></a>用途
 
@@ -43,7 +43,7 @@ ms.locfileid: "7781254"
 
 [![フォーム パターン セクション リスト -- ダブル のフォーム パターンのワイヤーフレーム。](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
-## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations 用のパターンの変更
+## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
 これらのパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
 
 ## <a name="model"></a>モデル

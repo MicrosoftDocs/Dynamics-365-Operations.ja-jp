@@ -1,6 +1,6 @@
 ---
 title: POS 拡張機能パッケージ プロジェクトの作成
-description: このトピックでは、販売時点管理 (POS) 拡張機能パッケージ プロジェクトの作成方法について説明します。
+description: この記事では、販売時点管理 (POS) 拡張機能パッケージ プロジェクトの作成方法について説明します。
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: d5daf52835602602245a07d6624da5f7e251b48e
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 12ae4170a970bf30d34efb8cc0b6d0633a171532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913551"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869178"
 ---
 # <a name="create-a-pos-extension-package-project"></a>POS 拡張機能パッケージ プロジェクトの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) 拡張機能パッケージ プロジェクトの作成方法について説明します。 POS 拡張機能パッケージ プロジェクトは、一連の拡張機能で、組み合わせると、Microsoft Visual Studio を使用するカスタム エンド ツー エンド POS シナリオが有効になります。 POS 拡張機能 パッケージ プロジェクトは、Modern POS (MPOS) と Cloud POS (CPOS) の両方の拡張機能シナリオに適用されます。
+この記事では、販売時点管理 (POS) 拡張機能パッケージ プロジェクトの作成方法について説明します。 POS 拡張機能パッケージ プロジェクトは、一連の拡張機能で、組み合わせると、Microsoft Visual Studio を使用するカスタム エンド ツー エンド POS シナリオが有効になります。 POS 拡張機能 パッケージ プロジェクトは、Modern POS (MPOS) と Cloud POS (CPOS) の両方の拡張機能シナリオに適用されます。
 
 1. Visual Studio で、.NET Standard 2.0 で 新しい .NET Standard クラス ライブラリ プロジェクトを作成し、**POS.Extensions** と名前を付けます。
 2. プロジェクトと一緒に作成されたクラス ファイルを削除します。

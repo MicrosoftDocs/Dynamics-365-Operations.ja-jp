@@ -1,6 +1,6 @@
 ---
-title: Office 統合のトラブルシューティング (タスク ガイド)
-description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
+title: Office 統合のトラブルシューティング
+description: この記事では、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報についての回答を示します。
 author: jasongre
 ms.date: 04/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1843245143bb35f59dc865a5426508caec4337a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: fdda4c02bb97c2816107671b744a2c4ba5d134d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862175"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
@@ -32,7 +32,7 @@ ms.locfileid: "8565602"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
+この記事では、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報についての回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -50,7 +50,7 @@ Microsoft Excel アドインと Microsoft Word アドインは、Office Web/Java
 
 ### <a name="what-version-of-office-is-required-for-the-excel-add-in-to-support-ad-fs"></a>Excel アドインが AD FS をサポートするために必要な Office のバージョンとは
 
-詳細については、このトピックで後述する「問題のトラブルシューティング」セクションを参照してください。
+詳細については、この記事で後述する「問題のトラブルシューティング」 セクションを参照してください。
 
 ### <a name="how-can-i-force-an-update-of-office"></a>どのように Office の更新を強制できますか。
 

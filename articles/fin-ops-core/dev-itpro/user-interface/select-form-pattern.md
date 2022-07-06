@@ -1,6 +1,6 @@
 ---
 title: 移行後のフォームのフォーム パターン
-description: このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。
+description: この記事では、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c659a1f368ce59e6b0390e276ab2a3bd882e86be
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8a93f3f30387ffcff49d22f18c561d3d67328f82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856938"
 ---
 # <a name="form-patterns-for-migrated-forms"></a>移行後のフォームのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。 
+この記事では、移行するフォームに最適なフォーム パターンを選択するのに役立つ情報を提供します。 
 
 ## <a name="introduction"></a>はじめに
 

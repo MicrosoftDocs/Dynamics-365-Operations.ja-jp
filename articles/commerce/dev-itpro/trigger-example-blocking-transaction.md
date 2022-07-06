@@ -1,6 +1,6 @@
 ---
-title: トリガーを使用してトランザクションをブロックする
-description: このトピックでは、トリガーを使用して請求書またはクレジット取引をブロックする方法を示します。
+title: トリガーの使用によるトランザクションのブロック
+description: この記事では、トリガーを使用して請求書またはクレジット取引をブロックする方法を示します。
 author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bc119696e65c3158f96a7ff24d5e356af4031412
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: da6317a32f89c06687b6431406d7812c2e04c347
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885215"
 ---
-# <a name="block-transactions-by-using-triggers"></a>トリガーを使用してトランザクションをブロックする
+# <a name="block-transactions-by-using-triggers"></a>トリガーの使用によるトランザクションのブロック
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、トリガーを使用して請求書またはクレジット取引をブロックする方法を示します。
+この記事では、トリガーを使用して請求書またはクレジット取引をブロックする方法を示します。
 
-このトピックでは、請求書またはクレジット取引をブロックする方法を示します。
+この記事では、請求書またはクレジット取引をブロックする方法を示します。
 
 1.  Visual Studio を管理者としてオープンします。 新しい Visual C\# クラス ライブラリ (ポータブル) プロジェクトを作成し、CRTTriggerExtension という名前を付けます。 選択内容によってこのプロジェクトが Visual Studio 2010 と互換性がなくなるというメッセージが表示される場合、**OK** をクリックします。
 2.  ソリューション エクスプローラーで、既定の class1.cs を GetCustomersServiceRequestTrigger.cs に名前を変更します。

@@ -1,6 +1,6 @@
 ---
 title: 電子商取引のメンテナンス モードの有効化とアクティブ化
-description: このトピックでは、Microsoft Dynamics 365 Commerce において eコマースのメンテナンス モードを有効化およびアクティブ化し、オプションのカスタム メンテナンス モード ページを構築する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce において eコマースのメンテナンス モードを有効化およびアクティブ化し、オプションのカスタム メンテナンス モード ページを構築する方法について説明します。
 author: samjarawan
 ms.date: 03/08/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ec995cfbf19eb5e39fccfa4ee4d23cfc0e92c256
-ms.sourcegitcommit: 293df12697166556b1da0c9a34d2d8679dc8c0a9
+ms.openlocfilehash: ea87b2cc62b78488a6da29f80e653eb1494121ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8397928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897089"
 ---
 # <a name="enable-and-activate-e-commerce-maintenance-mode"></a>電子商取引のメンテナンス モードの有効化とアクティブ化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce において eコマースのメンテナンス モードを有効化およびアクティブ化し、オプションのカスタム メンテナンス モード ページを構築する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce において eコマースのメンテナンス モードを有効化およびアクティブ化し、オプションのカスタム メンテナンス モード ページを構築する方法について説明します。
 
 メンテナンス モードは、通常、サイト開発などのためにサイトを一時的に停止する必要がある場合に、eコマース サイト全体へのアクセスをブロックするために使用されます。 メンテナンス モードが有効な場合、既定の静的メンテナンス モード ページが表示されます。 カスタム メンテナンス モード ページを作成することもできます。
 

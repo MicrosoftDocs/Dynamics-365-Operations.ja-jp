@@ -1,6 +1,6 @@
 ---
-title: Dynamics AX 2012 環境でテーブルを圧縮する
-description: このトピックでは、Microsoft Dynamics AX 2012 環境でテーブルを圧縮する方法について説明します。
+title: Dynamics AX 2012 環境のテーブルを圧縮する
+description: この記事では、Microsoft Dynamics AX 2012 環境でテーブルを圧縮する方法について説明します。
 author: ttreen
 ms.date: 05/23/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: 78dac5b34461998dff886b2613a7a1e18ec36ac7
-ms.sourcegitcommit: 771465b63c9d919f043316a54b8e2b9b2e0605cc
+ms.openlocfilehash: e7aa8352ba28e9e1b2d2da3fa57cc7b443ed93f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8794525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866223"
 ---
 # <a name="compress-tables-in-microsoft-dynamics-ax-2012-environments"></a>Microsoft Dynamics AX 2012 環境でテーブルを圧縮する
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 環境でテーブルを圧縮する方法について説明します。
+この記事では、Microsoft Dynamics AX 2012 環境でテーブルを圧縮する方法について説明します。
 
 ## <a name="background"></a>背景
 

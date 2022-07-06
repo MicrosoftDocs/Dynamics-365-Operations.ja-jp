@@ -1,6 +1,6 @@
 ---
 title: アプリケーション チェッカー
-description: このトピックでは、Application チェッカー ツールについて説明します。
+description: この記事では、アプリケーション チェッカー ツールについて説明します。
 author: AndreasHassing
 ms.date: 09/22/2020
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: a4df03f8905c9ddc7fc37b147b828de609687a95
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 01a47254b87ab36a3c8766bbfc45756752826ce6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867108"
 ---
 # <a name="application-checker"></a>アプリケーション チェッカー
 

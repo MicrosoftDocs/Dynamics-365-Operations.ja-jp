@@ -1,6 +1,6 @@
 ---
 title: アプリケーション コネクタ
-description: このトピックでは、Microsoft Power Automate およびロジック アプリのアプリケーション コネクタに関する情報を提供します。
+description: この記事では、Microsoft Power Automate および Logic Appsのアプリケーション コネクタに関する情報を提供します。
 author: peakerbl
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 352415974cb6f5260e935e7432b9c353a43dfc92
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 49e4944e393f43b81c1097d1e68a572845067105
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890075"
 ---
 # <a name="application-connector"></a>アプリケーション コネクタ
 
 [!include[banner](../includes/banner.md)]
 
-アプリケーション コネクタを使用して Microsoft Power Automate、Power Apps、データ インテグレーター、および Logic Apps を Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
+アプリケーション コネクタを使用して Microsoft Power Automate、Power Apps、データ インテグレーター、およびロジック アプリを Finance and Operations と統合できます。 外部アプリケーションは、有効なトリガーとアクションを使用することで、それらと統合することできます。
 
 > [!IMPORTANT]
-> アプリケーション の コネクタ は Dynamics 365 Finance + Operations (オンプレミス) インスタンス との統合には使用できません。
+> アプリケーション の コネクタ は Dynamics 365 Finance + Operations (on-premises) インスタンスとの統合には使用できません。
 
 ## <a name="prerequisites"></a>必要条件
 先に進む前に、コネクタについて理解するための前提条件として、次のトピックをお読みください。

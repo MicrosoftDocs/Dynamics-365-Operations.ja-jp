@@ -1,6 +1,6 @@
 ---
 title: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
-description: このトピックでは、トレース パーサーを使用してトレースを操作し、展開におけるパフォーマンスを分析する方法について説明します。
+description: この記事では、トレース パーサーを使用してトレースを操作し、展開におけるパフォーマンスを分析する方法について説明します。
 author: tfehr
 ms.date: 10/19/2017
 ms.topic: article
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e8d8da328bd3ff1829932e4188ceeef8ebf2f10
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: e93ebdbc90dd2381daa6fdc05395545cb83884e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087384"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884678"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、トレース パーサーを使用してトレースを操作し、展開におけるパフォーマンスを分析する方法について説明します。 Trace Parser を使用すると、さまざまな種類のエラーを見つけて診断することができます。 また、ツールを使用して X++ メソッドの実行、および実行コール ツリーを視覚化することができます。
+この記事では、トレース パーサーを使用してトレースを操作し、展開におけるパフォーマンスを分析する方法について説明します。 Trace Parser を使用すると、さまざまな種類のエラーを見つけて診断することができます。 また、ツールを使用して X++ メソッドの実行、および実行コール ツリーを視覚化することができます。
 
 > [!NOTE]
 > Trace parser には Microsoft Dynamics AX 2012 と類似する機能があります。 詳細については、 [Dynamics Ax Performance チーム ブログ](/archive/blogs/axperf/) を参照してください。

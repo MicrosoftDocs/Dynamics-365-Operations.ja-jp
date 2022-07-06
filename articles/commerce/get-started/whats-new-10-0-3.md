@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
-description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
+description: この記事では、Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
 ms.date: 06/14/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 9bc5375227bacad807f6851fac2e61f0fc23de5a0616d463efa935a2b7421328
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5263fda23b0d9eab2cbc80098f897b02cd63f197
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876976"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1003"></a>Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Retail の新機能または変更された機能について説明します。 
+この記事では、Dynamics 365 Retail の新機能および変更された機能について説明します。 
 
-Microsoft Dynamics 365 for Finance and Operations の機能については、[Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3)を参照してください。
 
 ## <a name="new-calculation-logic-for-autocharges-in-call-center-for-mixed-delivery-mode-sales-lines"></a>混載配送モードの販売明細行の、コール センターにおける自動請求のための新しい計算ロジック
 

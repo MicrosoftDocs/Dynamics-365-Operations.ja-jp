@@ -1,6 +1,6 @@
 ---
 title: オンプレミス診断
-description: このトピックでは、Dynamics 365 Finance + Operations (on-premises) 配置の診断データを公開するための情報を提供します。
+description: この記事では、Dynamics 365 Finance + Operations (on-premises) 配置の診断データを公開するための情報を提供します。
 author: PeterRFriis
 ms.date: 04/05/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: 7e91253a1b81d7df065bb9db01dbd85cbd4f9571
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: a838841aa3a92a24651e5035422fabcb88791d63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867394"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
@@ -28,7 +28,7 @@ ms.locfileid: "8565952"
 
 Microsoft Dynamics 365 は、最新式の Azure Diagnostic Tool を使用して、クラウド ベースの顧客の機能を提供する Azure Services の正常性およびパフォーマンスを監視します。 Finance + Operations (オンプレミス) で実装し、オンプレミス ソリューションの正常性とパフォーマンスを監視できるようにするには、いくつかのサード パーティ製品が利用可能です。 
 
-このトピックでは、Elastic Stack の設定とコンフィギュレーション、サード パーティ製品、およびオンプレミス ソリューションの診断モニタリングを提供できる多くの選択肢の 1 つについて説明します。
+この記事では、Elastic スタックの設定とコンフィギュレーション、サード パーティ製品、およびオンプレミス ソリューションの診断モニタリングを提供できる多くの選択肢の 1 つについて説明します。
 
 診断ソリューションを検討する際、次の実装の基礎を検討してください。
 
@@ -62,9 +62,9 @@ Finance + Operations (オンプレミス) の配置と実行を診断するた�
 > [!NOTE]
 > 既定では、Elastic Stack クラスター内の通信は HTTPS 経由で送信され **ない** ようになっています。 リスクを考慮し、それらのリスクの軽減策を準備または実装していない限り、Elastic スタックを設定しないでください。 X-Pack の[支払済バージョン](https://www.elastic.co/subscriptions) は、Elastic Stack のコミュニケーションを暗号化するために使用されます。 設定の詳細については、[クラスタでの TLS の設定](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html)を参照してください。 オープン ソース [Elasticsearch プラグイン](https://github.com/floragunncom/search-guard-ssl) もあります。 ドキュメントによると、Microsoft はこのプラグインをテストしていませんが、HTTPS を有効にすることができます。
 
-Elastic スタックを展開する場合、このトピックで説明されている手順を実行するなら異なる経験になるかもしれません。 テストでは、Microsoft は、Elastic Stack コンポーネントのバージョン 6.2.3 と、Microsoft Dynamics 365 for Finance and Operations 7.3 およびプラットフォーム更新プログラム 12 を使用しました。
+Elastic スタックを展開する場合、この記事で説明されている手順を実行するなら異なる経験になるかもしれません。 テストでは、Microsoft は、Elastic Stack コンポーネントのバージョン 6.2.3 と、Microsoft Dynamics 365 for Finance and Operations 7.3 およびプラットフォーム更新プログラム 12 を使用しました。
 
-このトピックでは、Elastic スタック がオンプレミス配置のために動作するために必要な設定、およびコンフィギュレーションの手順を Microsoft がどのように処理したかについて説明します。 Finance + Operations (オンプレミス) に関連していないガイダンスについては、Elastic.co のドキュメントを参照してください。
+この記事では、オンプレミス配置の動作のために Elastic スタックが必要な設定およびコンフィギュレーションの手順を、Microsoft がどのように処理したかについて説明します。 Finance + Operations (オンプレミス) に関連していないガイダンスについては、Elastic.co のドキュメントを参照してください。
 
 ## <a name="install-and-configure-the-elastic-stack"></a>Elastic スタックのインストールと構成
 Winlogbeat を除くすべての Elastic スタックのホストされているコンポーネントはすべて Java 上で動作します。 テスト シナリオでは、Microsoft は最初に Elasticsearch、Logstash、または Kibana (つまり、すべてのオーケストレータ ノード) を実行する各ノードに、Java ランタイム環境 (JRE) 8 (64 ビット) の最新バージョンをダウンロードしてインストールしました。 [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html) から Java 8 を取得することができます。
@@ -89,7 +89,7 @@ Winlogbeat を除くすべての Elastic スタックのホストされている
 | AOS #1...*n*    |               |          |        | x          |
 
 > [!IMPORTANT]
-> Microsoft は、テスト目的で、ELK インストールのために オーケストレータ機械を使用しました。 オーケストレーション サービスから重要なリソースを奪う可能性があるため、実稼動環境または重要なサンドボックス環境で ELK のインストールにオーケストレータ マシンを使用しないでください。 代わりに、別のマシンを使用して ELK サービスをホストします。
+> Microsoft は、テスト目的で、ELK インストールのために オーケストレータ機械を使用しました。 オーケストレーション サービスから重要なリソースを奪う可能性があるため、運用環境または重要なサンドボックス環境で ELK のインストールにオーケストレータ マシンを使用しないでください。 代わりに、別のマシンを使用して ELK サービスをホストします。
 
 ### <a name="elasticsearch"></a>Elasticsearch
 Elasticsearch のインストールは、非常に簡単です。 テストでは、Microsoft が、「[Microsoft Windows インストーラー (MSI) ファイル](https://www.elastic.co/downloads/elasticsearch)」をオーケストレータ #1 および オーケストレータ #2 ノードにダウンロードしました。 インストーラの既定の設定のほとんどはそのままにしておくことができます。 このセクションでは、Microsoft が変更した設定について説明します。
@@ -106,7 +106,7 @@ Kibana と Elasticsearch の使用量に応じて、メモリ増設を検討し�
 
 発見可能性に関しては、**ネットワークの設定** で、Microsoft は、各ノードの **ネットワーク ホスト** 値をノードの IP アドレスに設定し、すべての Elasticsearch ノードの IP アドレスを、各ノードの **Unicast Hosts** リストに追加します。 たとえば、IP アドレスが 10.0.0.12 のオーケストレータ #1 の場合、Microsoft は **Network host** の値を **10.0.0.12** に設定し、次の IP アドレスを **Unicast Hosts** リストに追加しました。10.0.0.12 および 10.0.0.13 (10.0.0.13 はオーケストレータ #2)
 
-**Elasticsearch 6.3 以降のバージョンをインストールする場合、この段落は無視できます。** 今または後で、X-Pack をインストールすることができます。 設定および X-Pack をインストールする必要があるかどうかに関する詳細については、このトピックの「X-Pack」を参照してください。 ここでは、X-Pack がどういうものか理解していない限り、インストールしないでください。
+**Elasticsearch 6.3 以降のバージョンをインストールする場合、この段落は無視できます。** 今または後で、X-Pack をインストールすることができます。 設定および X-Pack をインストールする必要があるかどうかに関する詳細については、この記事の "X-Pack" セクションを参照してください。 ここでは、X-Pack がどういうものか理解していない限り、インストールしないでください。
 
 > [!IMPORTANT]
 > ファイアウォールの HTTP ポート (既定では、ポート 9200) と、ノード通信ポート (既定では、ポート 9300) を開きます。
@@ -156,7 +156,7 @@ Microsoft は Winlogbeat を C:\\ELK\\Winlogbeat の 各 Application Object Serv
 
 設定のためコンフィギュレーションを行うには、すべての Logstash ノードを指すように **output.logstash.hosts** フィールドを変更する必要があります。 Winlogbeat は、負荷分散を処理します。
 
-Winlogbeat が Orchestrator ノード上で実行されている場合、**Tags** フィールドは **AOS** から  **ORCH** もしくはそれに類する値に変更できます。 Microsoft は **fields.env** フィールドを使用して、配置環境 (サンド ボックス、サンド ボックス -n、または生産) を設定します。 このようにして、複数の環境およびノード タイプからのデータが照会されると、より明確な分離が行われます。
+Winlogbeat が Orchestrator ノード上で実行されている場合、**Tags** フィールドは **AOS** から  **ORCH** もしくはそれに類する値に変更できます。 Microsoft は **fields.env** フィールドを使用して、配置環境 (サンド ボックス、サンド ボックス -n、または運用) を設定します。 このようにして、複数の環境およびノード タイプからのデータが照会されると、より明確な分離が行われます。
 
 Winlogbeat には、サービス インストーラーが含まれています。 Microsoft は、このインストーラーを使用して、各ノード上のサービスとして Winlogbeat を設定しました。 Windows ロゴキーと R キーを同時に押して、ツールの実行を開始し、次のコマンドを実行します。
 

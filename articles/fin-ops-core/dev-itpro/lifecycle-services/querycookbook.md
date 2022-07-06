@@ -1,6 +1,6 @@
 ---
 title: クックブックの照会
-description: このトピックでは、SQL インサイト タブのクエリについて、またパフォーマンスの問題のトラブルシューティングを行うときにそれらを使う方法について説明します。
+description: この記事では、SQL インサイト タブのクエリについて、またパフォーマンスの問題のトラブルシューティングを行うときにそれらを使う方法について説明します。
 author: meeramahabala
 ms.date: 11/09/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af3276511f1d1fc7147861dee51ab96d38f155db
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 00f9b305d764089baab52a22a6e82dce194acbd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866380"
 ---
 # <a name="query-cookbook"></a>クックブックの照会 
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Lifecycle Services (LCS) の **環境の監視** ページにある **SQL インサイト** タブの下の各クエリの詳細と、パフォーマンスの問題のトラブルシューティングを行うときにそれらを使う方法を示します。 この機能の詳細については、[Lifecycle Services (LCS) でツールを使用したパフォーマンスのトラブルシューティング](performancetroubleshooting.md)を参照してください。
+この記事では、Lifecycle Services (LCS) の **環境の監視** ページにある **SQL インサイト** タブの下の各クエリの詳細と、パフォーマンスの問題のトラブルシューティングを行うときにそれらを使う方法を示します。 この機能の詳細については、[Lifecycle Services (LCS) でツールを使用したパフォーマンスのトラブルシューティング](performancetroubleshooting.md)を参照してください。
 
 ## <a name="current-blocking"></a>現在のブロック
 
@@ -95,7 +95,7 @@ SPID が非常に多くのリソースを消費して、他のプロセスの工
 | Name | 削除済 | 摘要 |
 |-------------------------|-------------------------|-------------------------|
 | インデックスの作成 | あり | 適用できなくなりました。</br><br>**理由**</br><ul></br><li>これはバックグラウンド のプラットフォーム プロセスで処理されるため、手動のインデックス作成は不要になりました。</li></br></ul></br>**詳細**</br><ul></br><li>必要に応じてシステムの背景プロセスが処理します。</li></br></ul> |
-| インデックスの削除 | あり | 適用できなくなりました。 </br><br>**理由**</br><ul></br><li>Finance and Operations ワークロードは定期的に発生するため、データ管理および管理サービス (DAMS) には含まれません。</li></br></ul></br>**詳細**</br><ul></br><li>必要に応じてシステムが自動的に調整を行います。</li></br></ul> |
+| インデックスの削除 | あり | 適用できなくなりました。 </br><br>**理由**</br><ul></br><li>財務と運用ワークロードは定期的に発生するため、データ管理および管理サービス (DAMS) には含まれません。</li></br></ul></br>**詳細**</br><ul></br><li>必要に応じてシステムが自動的に調整を行います。</li></br></ul> |
 | インデックスの再構築 | あり | 適用できなくなりました。</br><br>**理由**</br><ul></br><li>これはバックグラウンド のプラットフォーム プロセスで処理されるため、手動のインデックス作成は不要になりました。</li></br></ul></br>**詳細**</br><ul></br><li>必要に応じてシステムの背景プロセスが処理します。</li></br></ul> |
 | 統計の更新 | あり | 適用できなくなりました。</br><br>**理由**</br><ul></br><li>プラットフォーム背景プロセスでは、インデックスと統計管理が処理されます。</li></br></ul></br>**詳細**</br><ul></br><li>プラットフォームは、インデックスと統計管理を担当します。</li></br></ul> |
 | クエリ ヒントの最適化 | あり | 適用できなくなりました。</br><br>**理由**</br><ul></br><li>プラットフォームではクエリ ヒントの最適化が処理されるため、顧客は手動で調整を行う必要がありません。</li></br></ul></br>**詳細**</br><ul></br><li>プラットフォームでは、正確なヒントが自動的に検出され、最適化が必要なクエリに適用されます。</li></br></ul> |

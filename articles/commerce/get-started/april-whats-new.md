@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Retail (2019 年 4 月) の新機能や変更された機能
-description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
+title: Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
+description: この記事では、Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
 ms.date: 03/05/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 44db0a36a78c9069c7009557dc2cd562864fb0776b29ddddfead77ad1eb376f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cecef44edc490e7a9dfbf2ed821470288679614e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858955"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail (2019 年 4 月) の新機能や変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Retail の新機能または変更された機能について説明します。 
+この記事では、Microsoft Dynamics 365 Retail の新機能および変更された機能について説明します。 
 
 Finance and Operations の機能については、[Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能または変更された機能](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10) を参照してください。
 

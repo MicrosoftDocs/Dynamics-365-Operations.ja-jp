@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dataverse 仮想エンティティを有効化する
-description: このトピックでは、Microsoft Dataverse で財務と運用アプリの仮想エンティティを有効にする方法について説明します。
+description: この記事では、Microsoft Dataverse で財務と運用アプリの仮想エンティティを有効にする方法について説明します。
 author: jaredha
 ms.date: 05/12/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-14
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: bdc42311c146ffdecafc9008c9c3a25df4b25ae7
-ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
+ms.openlocfilehash: 0920d752509bde990eb68d095b3102c38808def1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8747595"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850928"
 ---
 # <a name="enable-microsoft-dataverse-virtual-entities"></a>Microsoft Dataverse 仮想エンティティを有効化する
 

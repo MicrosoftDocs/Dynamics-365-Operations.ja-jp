@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能または変更された機能について説明します。
 author: tonyafehr
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 22
-ms.openlocfilehash: 35e4e19c0e88dccdd227cd71be79fbf21ebcb1c3c9987405370179cfa4e181b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21d9e628b2f81906544e2edfff8f8ddc9a3368ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908206"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-22-december-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 の新機能または変更された機能について説明します。 このバージョンは、7.0.5095 のビルド番号を持ちます。
+この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 の新機能または変更された機能について説明します。 このバージョンは、7.0.5095 のビルド番号を持ちます。
 
 ### <a name="dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノート
 
@@ -44,15 +44,15 @@ ms.locfileid: "6714511"
 
 ## <a name="export-up-to-1-million-rows-to-excel"></a>最大 100 万行を Excel にエクスポート
 
-Excel へのエクスポート機能は、Finance and Operations のグリッドから最大 100 万行をエクスポートできるように構成されました。以前の 10,000 行の制限から大幅に上昇しました。 既定では、エクスポート制限は 50,000 行に設定されていますが、クライアント パフォーマンス オプション ページからシステム管理者が 100 万行までエクスポート制限を調整できます。
+Excel へのエクスポート機能は、Finance and Operations のグリッドから最大 100 万行をエクスポートできるように構成できるようになりました。以前の 10,000 行の制限から大幅に上昇しました。 既定では、エクスポート制限は 50,000 行に設定されていますが、クライアント パフォーマンス オプション ページからシステム管理者が 100 万行までエクスポート制限を調整できます。
 
 ## <a name="improved-usability-of-the-navigation-pane"></a>ナビゲーション ウィンドウの使いやすさの向上
 
-ナビゲーション ウィンドウは、お気に入り、最近開いたページ、ワークスペース、特にメイン メニューへのアクセスを提供する Finance and Operations で使用頻度の高いナビゲーション メカニズムです。 その使用率の高さのため、使い勝手を向上させるために、いくつかの方法でナビゲーション ウィンドウが強化されました。 これらの変更は、プラットフォーム Update 22 以降で使用できます。 詳細については、[ナビゲーション ウィンドウの使いやすさが向上](/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane)を参照してください。
+ナビゲーション ウィンドウは、お気に入り、最近開いたページや、ークスペース、特にメイン メニューへのアクセスを提供する Finance and Operations で使用頻度の高いナビゲーション メカニズムです。 その使用率の高さのため、使い勝手を向上させるために、いくつかの方法でナビゲーション ウィンドウが強化されました。 これらの変更は、プラットフォーム Update 22 以降で使用できます。 詳細については、[ナビゲーション ウィンドウの使いやすさが向上](/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane)を参照してください。
 
 ## <a name="restyled-personalization-toolbar"></a>個人用設定ツールバーの再編成
 
-個人用設定ツールバーがプラットフォーム更新プログラム 22 で再編成され、ユーザーが Finance and Operations でエクスペリエンスを簡単にカスタマイズできるようになりました。 次の変更が加えられました。
+個人用設定ツールバーがプラットフォーム更新 22 で再編成され、ユーザーが Finance and Operations でエクスペリエンスを簡単にカスタマイズできるようになりました。 次の変更が加えられました。
 
 - 各個人用設定ツールの名前がアイコンと共に表示されるようになったため、ユーザーが使おうと思っているツールをすばやく認識できます。
 - 現在のツールを使用する方法についての説明も表示され、目的の個人用設定を行う方法を理解するのに役立ちます。

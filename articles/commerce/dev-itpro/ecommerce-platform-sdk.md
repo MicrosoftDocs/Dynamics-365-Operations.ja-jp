@@ -1,6 +1,6 @@
 ---
 title: E コマース プラットフォーム ソフトウェア開発キット (SDK)
-description: このトピックでは、電子商取引プラットフォーム SDK について説明します。
+description: この記事では、電子商取引プラットフォーム SDK について説明します。
 author: mugunthanm
 ms.date: 07/09/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4cddb6b4e5a4b9ac2083eb7f2e8fd0a3c489c5f3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a7f09b6931af2bf46901177eb711a4820867d3d2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782413"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897211"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、電子商取引プラットフォーム SDK について説明します。 E コマース プラットフォーム ソフトウェア開発キット (SDK) は、次のコンポーネントで構成されています。
+この記事では、電子商取引プラットフォーム SDK について説明します。 E コマース プラットフォーム ソフトウェア開発キット (SDK) は、次のコンポーネントで構成されています。
 
 -   フレームワーク
 -   コントロール

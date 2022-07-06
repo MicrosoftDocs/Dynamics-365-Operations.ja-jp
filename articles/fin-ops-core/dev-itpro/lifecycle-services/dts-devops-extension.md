@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: joshsantana
 ms.search.validFrom: 2021-11-19
-ms.openlocfilehash: 88e285d4933549759ed45bc898114f8c6c30c565
-ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
+ms.openlocfilehash: e12cd174be33c2d75d92d5ea0460d5999fdb155b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "8603042"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866463"
 ---
 # <a name="dynamics-365-translation-service-azure-devops-extension-public-preview"></a>Dynamics 365 Translation Service Azure DevOps 拡張機能 (パブリック プレビュー)
 
@@ -22,9 +22,9 @@ ms.locfileid: "8603042"
 
 Azure DevOps の Microsoft Dynamics 365 Translation Service (DTS) 拡張機能では、DTS のアクションを実行できるよういくつかのパイプライン タスクが用意されています。 たとえば、ユーザー インターフェイス (UI) ファイルの変換、変換要求の再生成、および変換メモリ (TM) ファイルの作成を行うことができます。
 
-DTS パイプライン タスクの使用を開始するには、組織に拡張機能をインストールし、Translation Service に接続する必要があります。 詳細については、このトピックで後述する[拡張機能の設定](#setting-up-the-extension) セクションを参照してください。
+DTS パイプライン タスクの使用を開始するには、組織に拡張機能をインストールし、Translation Service に接続する必要があります。 詳細については、この記事で後述する[拡張機能の設定](#setting-up-the-extension) セクションを参照してください。
 
-このトピックは、[Azure Pipelines](/azure/devops/pipelines/create-first-pipeline) の実用的な知識を持っていることを前提としています。
+この記事は、[Azure Pipelines](/azure/devops/pipelines/create-first-pipeline) の実用的な知識を持っていることを前提としています。
 
 ## <a name="running-a-task"></a>タスクの実行
 
@@ -48,7 +48,7 @@ DTS パイプライン タスクの使用を開始するには、組織に拡張
 
 ![Azure Pipelines UI での新しい変換タスクの定義。](media/dts-ado-pipeline-sample.PNG)
 
-既定では、要求の出力は Build.ArtifactStagingDirectory ステージング フォルダに準備されます。 変換出力をダウンロードする方法については、[Azure Pipelines でコンポーネントの発行とダウンロード](/azure/devops/pipelines/artifacts/pipeline-artifacts) を参照してください。 変換出力をリポジトリにプッシュし返す場合は、[変換出力をリポジトリにコミット](#commit-translation-output-to-your-repository) を参照してください。
+既定では、要求の出力は Build.ArtifactStagingDirectory ステージング フォルダに準備されます。 変換出力をダウンロードする方法については、[Azure Pipelines でコンポーネントの発行とダウンロード](/azure/devops/pipelines/artifacts/pipeline-artifacts) を参照してください。 変換出力をリポジトリにプッシュし返す場合は、この記事の後述の[変換出力をリポジトリにコミット](#commit-translation-output-to-your-repository) セクションを参照してください。
 
 ## <a name="overview-of-task-inputs"></a>タスク インプットの概要
 
@@ -58,8 +58,8 @@ DTS パイプライン タスクの使用を開始するには、組織に拡張
 
 | 入力 | 必須 | Description |
 |-------|----------|-------------|
-| Dynamics Lifecycle Services のサービス コネクション | あり | LCS による認証で使用される Microsoft Dynamics Lifecycle Services (LCS) のサービス コネクション。 詳細については、トピックの後述の[サービス コネクションを作成](#create-a-service-connection) セクションを参照してください。 |
-| 要求名 | あり | 要求名を入力します。 |
+| Dynamics Lifecycle Services のサービス コネクション | あり | LCS による認証で使用される Microsoft Dynamics Lifecycle Services (LCS) のサービス コネクション。 詳細については、記事の後述の[サービス コネクションを作成](#create-a-service-connection) セクションを参照してください。 |
+| 要求名 | 有効 | 要求名を入力します。 |
 | 製品名 | あり | 製品名を選択します。 |
 | 製品バージョン | あり | 製品バージョンを選択します。 |
 | ソース言語 | あり | 変換される言語。 |
@@ -78,8 +78,8 @@ DTS パイプライン タスクの使用を開始するには、組織に拡張
 
 | 入力 | 必須 | Description |
 |-------|----------|-------------|
-| Dynamics Lifecycle Services のサービス コネクション | あり | LCS 認証に使用される資格情報。 詳細については、トピックの後述の[サービス コネクションを作成](#create-a-service-connection) セクションを参照してください。 |
-| 製品名 | あり | リソース ファイルを変換する製品。 |
+| Dynamics Lifecycle Services のサービス コネクション | あり | LCS 認証に使用される資格情報。 詳細については、記事の後述の[サービス コネクションを作成](#create-a-service-connection) セクションを参照してください。 |
+| 製品名 | 有効 | リソース ファイルを変換する製品。 |
 | 製品バージョン | あり | 製品バージョンを選択します。 |
 | ソース言語 | あり | 変換される言語。 |
 | ターゲット言語 | あり | 変換する言語。 |
@@ -93,8 +93,8 @@ DTS パイプライン タスクの使用を開始するには、組織に拡張
 
 | 入力 | 必須 | Description |
 |-------|----------|-------------|
-| Dynamics Lifecycle Services のサービス コネクション | あり | LCS 認証に使用される資格情報。 詳細については、トピックの後述の[サービス コネクションを作成](#create-a-service-connection) セクションを参照してください。 |
-| ファイルの再生成 | あり | 編集した TM ファイルのパス。 |
+| Dynamics Lifecycle Services のサービス コネクション | あり | LCS 認証に使用される資格情報。 詳細については、記事の後述の[サービス コネクションを作成](#create-a-service-connection) セクションを参照してください。 |
+| ファイルの再生成 | 有効 | 編集した TM ファイルのパス。 |
 | DTS 変換 ID | あり | <p>元のトランザクションの ID。</p><p>[変換タスク](#dts-translation-task) から再生成している場合、変換 ID はタスク出力にあります。</p> |
 | 出力パス | あり | 変換出力を保存するパス。 このパスはパイプラインを基準にしています。 詳細については、[Azure Pipelines のコンポーネント](/azure/devops/pipelines/artifacts/build-artifacts) を参照してください。 |
 
@@ -152,7 +152,7 @@ DTSで認証するために LCS サービス接続を作成するには、まず
 | Lifecycle Services API エンドポイント | 有効 | LCS API エンドポイント。  既定値は [https://lcsapi.lcs.dynamics.com] です。 すべての処理済みデータを欧州連合 (EU) 内で取得する必要がある場合は、https://lcsapi.eu.lcs.dynamics.com を使用します。
 | ユーザー名 | 有効 | <p>DTS を使用して要求を送信するユーザー。</p><p><strong>注:</strong> MFA は無効にする必要があります。</p> |
 | パスワード | あり | ユーザーのパスワード。 |
-| クライアント ID | あり | 登録済アプリのクライアント ID。 詳細については、このトピックの前述の[アプリの登録](#register-an-application) セクションを参照してください。 |
+| クライアント ID | あり | 登録済アプリのクライアント ID。 詳細については、この記事の前述の[アプリの登録](#register-an-application) セクションを参照してください。 |
 
 
 1. Azure DevOps プリジェクトの左メニューの下部で、**プロジェクトの設定** を選択します。
@@ -168,7 +168,7 @@ DTSで認証するために LCS サービス接続を作成するには、まず
 
 1. **組織の設定\> 一般 \> プロジェクト** に移動します。
 2. プロジェクト設定ページで、正しいプロジェクトを選択し編集します。
-3. **プロジェクト設定** ウィンドウの **Repos** で、**リポジトリ** を選択します。 次に、このトピックで使用しているリポジトリを選択します。
+3. **プロジェクト設定** ウィンドウの **Repos** で、**リポジトリ** を選択します。 次に、この記事で使用しているリポジトリを選択します。
 4. **セキュリティ** タブを選択し、セキュリティ設定を編集します。
 5. **Project Collection Build Service** ユーザーを検索します。
 6. 実行したい Git コマンドに必要なアクセス許可を付与します。 通常、次のアクセス許可が必要です。

@@ -1,6 +1,6 @@
 ---
 title: セクション グラフのフォーム パターン
-description: このトピックでは、セクション グラフのフォーム パターンに関する情報を提供します。
+description: この記事では、セクション グラフのフォーム パターンに関する情報を提供します。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d8a832fb74a1bcb3a41a04b301e5fcbacc3a995
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7404380df623e501cf344b9c70104c84d9b4980a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901546"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セクション グラフのフォーム パターンに関する情報を提供します。 このパターンは主に、作業ワークスペース パターンと組み合わせて使用されます。特に、チャート コントロールを含むフォームに使用されます。
+この記事では、セクション グラフのフォーム パターンに関する情報を提供します。 このパターンは主に、作業ワークスペース パターンと組み合わせて使用されます。特に、チャート コントロールを含むフォームに使用されます。
 
 ## <a name="usage"></a>用途
 
@@ -34,7 +34,7 @@ ms.locfileid: "7783120"
 ## <a name="wireframe"></a>ワイヤーフレーム
 [![セクション グラフのフォーム パターンのワイヤーフレーム。](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
-## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations 用のパターンの変更
+## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
 
 ## <a name="model"></a>モデル

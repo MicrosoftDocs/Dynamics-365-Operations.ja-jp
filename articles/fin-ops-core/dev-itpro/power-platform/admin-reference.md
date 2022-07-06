@@ -1,8 +1,8 @@
 ---
 title: Dataverse 仮想エンティティの構成
-description: このトピックでは、Microsoft Dataverse で財務と運用アプリの仮想エンティティを構成する方法について説明します。
+description: この記事では、Microsoft Dataverse で財務と運用アプリの仮想エンティティを構成する方法について説明します。
 author: Sunil-Garg
-ms.date: 12/10/2021
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4d0cfae1597231e9b0b73999e616ba76b8e4240d
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c4b8eb0bff587c2a06b8540e0dcf0f4e120c2f78
+ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061454"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "8960209"
 ---
 # <a name="configure-dataverse-virtual-entities"></a>Dataverse 仮想エンティティの構成
 
@@ -25,12 +25,12 @@ ms.locfileid: "8061454"
 
 
 
-このトピックでは、Microsoft Dataverse で財務と運用アプリの仮想エンティティを構成する方法について説明します。
+この記事では、Microsoft Dataverse で財務と運用アプリの仮想エンティティを構成する方法について説明します。
 
 > [!IMPORTANT]
-> このトピックに含まれる構成手順が必要となるのは、Microsoft Power Platform 統合が有効になって **いない** 財務と運用アプリ環境に対してのみです。 Microsoft Power Platform 統合が有効になっている財務と運用アプリ環境のために、統合を有効にするプロセスの一部としてこのトピックで説明した仮想エンティティ構成が自動的に実行されます。 
+> この記事に含まれる構成手順が必要となるのは、Microsoft Power Platform 統合が有効になって **いない** 財務と運用アプリ環境に対してのみです。 Microsoft Power Platform 統合が有効になっている財務と運用アプリ環境のために、統合を有効にするプロセスの一部としてこの記事で説明した仮想エンティティ構成が自動的に実行されます。 
 > 
-> Dataverse 仮想エンティティがを手動で構成された場合、Microsoft Power Platform 統合を有効にする前にこのトピックのガイダンスに従うと、Microsoft Power Platform 統合が有効にされた後、手動構成はリンクされた Power Platform 環境を使用しません。 仮想エンティティは、Microsoft Power Platform 統合によって提供される自動構成を使用して Dataverse 環境に接続します。 ただし、財務と運用アプリ環境を Microsoft Power Platform 統合が有効になっていない追加の Power Platform 環境に接続するには、仮想エンティティの手動構成が使用されます。
+> Dataverse 仮想エンティティがを手動で構成された場合、Microsoft Power Platform 統合を有効にする前にこの記事のガイダンスに従うと、Microsoft Power Platform 統合が有効にされた後、手動構成はリンクされた Power Platform 環境を使用しません。 仮想エンティティは、Microsoft Power Platform 統合によって提供される自動構成を使用して Dataverse 環境に接続します。 ただし、財務と運用アプリ環境を Microsoft Power Platform 統合が有効になっていない追加の Power Platform 環境に接続するには、仮想エンティティの手動構成が使用されます。
 > 
 > 財務と運用アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Microsoft Power Platform 統合の有効化](enable-power-platform-integration.md)を参照してください。
 
@@ -56,6 +56,9 @@ ms.locfileid: "8061454"
 ## <a name="authentication-and-authorization"></a>認証と承認
 
 ソリューションを Dataverse 環境にインポートした後は、両方の環境を相互に接続するように設定する必要があります。 Dataverse は、Azure Active Directory (Azure AD) アプリケーションに基づいて、サービス間 (S2S) 認証を使用して財務と運用アプリを呼び出します。 環境この新しい Azure AD アプリケーションは、Dataverse 環境の単一のインスタンスを表します。 Dataverse と財務と運用アプリ環境の組み合わせが複数存在する場合は、組み合わせごとに独立した Azure AD アプリケーションを作成して、財務と運用アプリと Microsoft Power Platform 環境の正しい組み合わせの間で確実に接続が確立されるようにする必要があります。 
+
+> [!NOTE]
+> 仮想エンティティは、テナント全体でサポートされていません。 Microsoft Power Platform 環境は、財務と運用アプリ環境と同じ Azure AD テナントにある必要があります。
 
 ### <a name="register-the-app-in-the-azure-portal"></a>Azure ポータルでアプリを登録する
 

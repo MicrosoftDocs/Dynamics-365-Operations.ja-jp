@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations 配置用コマース支払パッケージの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
+title: 財務と運用の展開のための Commerce 支払パッケージの作成
+description: この記事では、Microsoft Dynamics 365 Commerce の財務と運用の展開に支払コネクタをパッケージ化する方法について説明します。
 author: mugunthanm
 ms.date: 12/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 74f8599b1ec1133ceac4b866fa92b76c7d1e06b5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 22b77e4a4b8a19a37c709641b3833c0545ea9aa7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781815"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860269"
 ---
-# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
+# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>財務と運用の展開のための Commerce 支払パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の財務と運用の展開に支払コネクタをパッケージ化する方法について説明します。
 
 10.0.10 より前のリリースでは、コマース ソフトウェア開発キット (SDK) を使用して支払コネクタ パッケージを作成します。 (以前は Commerce SDK は Retail SDK と呼ばれていました。) 10.0.10 リリース以降では、Visual Studio のみを使用して Application Object Server (AOS) 支払コネクタ パッケージを作成できます。 この方法を使用して作成したパッケージは、[オールイン ワンパッケージ](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md) を使用して、以前の展開とセルフサービス配置の両方に展開できます。
 

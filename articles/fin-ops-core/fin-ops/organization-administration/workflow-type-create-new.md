@@ -1,6 +1,6 @@
 ---
 title: 新しいワークフロー タイプの作成
-description: このトピックでは、アプリケーション エクスプローラーでワークフロー タイプを作成する方法について説明します。
+description: この記事では、アプリケーション エクスプローラーでワークフロー タイプを作成する方法について説明します。
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: a78e4220a65be24e82f9fac1372e30f0dd5ab7a5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2d6c08718e73517808a3a1cd55c69ba147e4296f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883462"
 ---
 # <a name="create-a-new-workflow-type"></a>新しいワークフロー タイプの作成
 
@@ -28,7 +28,7 @@ ms.locfileid: "8067920"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-ワークフロー プロセスをワークフロー ドキュメントで使用できるようにするには、ワークフロー コンフィギュレーション ユーザーインター フェイス (UI) で使用されるワークフロー タイプを作成する必要があります。 このトピックでは、アプリケーション エクスプローラーでワークフロー タイプを作成する方法について説明します。
+ワークフロー プロセスをワークフロー ドキュメントで使用できるようにするには、ワークフロー コンフィギュレーション ユーザーインター フェイス (UI) で使用されるワークフロー タイプを作成する必要があります。 この記事では、アプリケーション エクスプローラーでワークフロー タイプを作成する方法について説明します。
 
 ワークフロー タイプでは、次の情報を定義します:
 

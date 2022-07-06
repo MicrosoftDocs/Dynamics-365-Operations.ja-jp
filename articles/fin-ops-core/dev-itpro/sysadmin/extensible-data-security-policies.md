@@ -1,6 +1,6 @@
 ---
 title: 拡張可能なデータ セキュリティ ポリシー
-description: このトピックでは、 財務と運用アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。
+description: この記事では、財務と運用アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。
 author: Peakerbl
 ms.date: 03/29/2022
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 534ea5bd5526edcd65d9805275b81efda0797f6f
-ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
+ms.openlocfilehash: 8139161ee1552599cd109ec111501c41e7060430
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8492906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881077"
 ---
 # <a name="extensible-data-security-policies"></a>拡張可能なデータ セキュリティ ポリシー 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、 財務と運用アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。 XDS を使用すると、開発者は、セキュリティ ポリシーに基づいてテーブル レコードへのアクセスを制限することにより、ロールベースのセキュリティを補うことができます。 ポリシー内のクエリにはフィルターが適用されます。また、そのフィルターの条件を満たすレコードだけが、制限されたテーブルからアクセスできるようになります。
+この記事では、財務と運用アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。 XDS を使用すると、開発者は、セキュリティ ポリシーに基づいてテーブル レコードへのアクセスを制限することにより、ロールベースのセキュリティを補うことができます。 ポリシー内のクエリにはフィルターが適用されます。また、そのフィルターの条件を満たすレコードだけが、制限されたテーブルからアクセスできるようになります。
 
 ## <a name="data-security-policy-components"></a>データ セキュリティ ポリシー コンポーネント
 

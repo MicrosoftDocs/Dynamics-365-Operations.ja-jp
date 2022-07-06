@@ -1,6 +1,6 @@
 ---
 title: 税エンジンの統合
-description: このトピックでは、税エンジンの統合について説明します。
+description: この記事では、税エンジンの統合について説明します。
 author: kailiang
 ms.date: 12/15/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: India
 ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 324bac132e0fb8880793cb150c6f3732346ad195
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 239bae5595c962e4f9d29adf03c7efe7e14c4fe6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601479"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903116"
 ---
 # <a name="tax-engine-integration"></a>税エンジンの統合
 
 [!include [banner](../includes/banner.md)]
 
-[税エンジン](tax-engine.md) (GTE とも呼ばれます) を Dynamics 365 Finance と統合するには、税計算のために税エンジンとやり取りする X++ コードを実装する必要があります。それは結果を消費して、伝票および税トランザクションの税金の表示、計算、および転記を行います。 (税計算では、税調整を含める、または除外することができます。) 
+[税エンジン](tax-engine.md) ( GTE とも呼ばれる) を Dynamics 365 Finance と統合するには、税計算のために税エンジンとやり取りする X++ コードを実装する必要があります。それは結果を消費して、伝票および税トランザクションの税金の表示、計算、および転記を行います。 (税計算では、税調整を含める、または除外することができます。) 
 
 > [!NOTE]
 > 税エンジン機能は、インドに基本住所がある法人に対してのみ使用可能です。
@@ -202,7 +202,7 @@ Finance からのトランザクション情報は、税エンジンに送信す
 
 #### <a name="transaction-integration"></a>トランザクションの統合
 
-トランザクションの統合は個別でのみ発生します。 各トランザクションおよびシナリオに対して、税 ビジネス サービスは税計算、税の仮定、および税転記に対して適切な方法で呼び出す必要があります。 例については、このトピックで後述する [Finance 統合の例 – 発注請求書](#example-finance-integration--purchase-order-invoice) セクションを参照してください。
+トランザクションの統合は個別でのみ発生します。 各トランザクションおよびシナリオに対して、税 ビジネス サービスは税計算、税の仮定、および税転記に対して適切な方法で呼び出す必要があります。 例については、この記事で後述する [Finance 統合の例 - 発注請求書](#example-finance-integration--purchase-order-invoice) セクションを参照してください。
 
 #### <a name="accounting-integration"></a>会計の統合
 

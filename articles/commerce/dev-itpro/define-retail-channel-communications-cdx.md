@@ -1,6 +1,6 @@
 ---
-title: Commerce Data Exchange とコマース チャネルのコミュニケーション
-description: このトピックでは、Commerce Data Exchange とその要素の概要を示します。
+title: Commerce Data Exchange とコマース チャネルの通信
+description: この記事では、Commerce Data Exchange とそのコンポーネントの概要を提供します。
 author: athinesh99
 ms.date: 11/14/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a99b25c80edcfcb472587849b1666b30f2173f74
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c8b0a19255f2096120fcab23c714f5c474f60a95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783084"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902787"
 ---
-# <a name="commerce-data-exchange-and-commerce-channel-communications"></a>Commerce Data Exchange とコマース チャネルのコミュニケーション
+# <a name="commerce-data-exchange-and-commerce-channel-communications"></a>Commerce Data Exchange とコマース チャネルの通信
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce Data Exchange とその要素の概要を示します。 ここでは、Microsoft Dynamics 365 Commerce バックオフィスとチャネルとの間でのデータの転送で各コンポーネントが果たす役割について説明します。
+この記事では、Commerce Data Exchange とそのコンポーネントの概要を提供します。 ここでは、Microsoft Dynamics 365 Commerce バックオフィスとチャネルとの間でのデータの転送で各コンポーネントが果たす役割について説明します。
 
 Commerce Data Exchange は、オンライン ストアまたは従来型の店舗などの、バックオフィスとチャネル間でデータを転送するシステムです。 チャネルのデータを格納するデータベースは、コマース データベースとは別にあります。 チャネルのデータベースは、トランザクションに必要なデータのみ格納します。 マスター データがバックオフィスでコンフィギュレーションされ、チャネルに配分されます。 トランザクション データは販売時点管理 (POS) システムまたはオンライン店舗で作成され、バックオフィスにアップロードされます。 データ配送は非同期です。 つまり、データを収集してソースでパッケージングするプロセスは、データを取得して適用するプロセスとは別に行われます。 価格および在庫検索などのシナリオの場合、データはリアルタイムに取得する必要があります。 これらのシナリオをサポートするために、Commerce Data Exchange には、バックオフィスとチャネル間のリアルタイム通信を可能にするサービスが含まれます。 
 

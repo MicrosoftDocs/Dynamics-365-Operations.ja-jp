@@ -1,6 +1,6 @@
 ---
 title: データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする
-description: このトピックでは、データ管理フレームワークを使用して、カスタマイズしたセキュリティ コンフィギュレーションを環境間でエクスポートおよびインポートする方法について説明します。
+description: この記事では、データ管理フレームワークを使用して、カスタマイズしたセキュリティ コンフィギュレーションを環境間でエクスポートおよびインポートする方法について説明します。
 author: tonyafehr
 ms.date: 07/17/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 937c95bd9998537c3f6653350b6861b12fba6a8c8adafb3ad0d267d03601b89f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b39efc4ce59c0cc1e6827b0c8529bf11b90a71e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902607"
 ---
 # <a name="import-or-export-a-customized-security-configuration-by-using-data-management"></a>データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする 
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、 [データ管理フレームワーク](../data-entities/data-entities-data-packages.md) を使用して、カスタマイズしたセキュリティ コンフィギュレーションを環境間でエクスポートおよびインポートする方法について説明します。 この機能は、たとえば、カスタマイズしたセキュリティ コンフィギュレーションをテスト環境から運用環境に移動する必要がある場合などに使用できます。
+この記事では、 [データ管理フレームワーク](../data-entities/data-entities-data-packages.md)を使用して、カスタマイズしたセキュリティ コンフィギュレーションを環境間でエクスポートおよびインポートする方法について説明します。 この機能は、たとえば、カスタマイズしたセキュリティ コンフィギュレーションをテスト環境から運用環境に移動する必要がある場合などに使用できます。
 
 次のエンティティには、セキュリティ コンフィギュレーションを使用して追加または変更された、カスタマイズされたロールベースのセキュリティ (権限、職務権限、およびロール) を保持します。
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce の新機能および変更された機能
-description: このトピックでは、Dynamics 365 Commerce の各リリースにおける新しい機能と変更された機能について説明するトピックを示します。
+description: この記事では、Dynamics 365 Commerce の各リリースにおける新しい機能と変更された機能について説明する記事を示します。
 author: josaw1
 ms.date: 04/18/2022
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e0d27197e6d0e605ba160d3f4c856799956a74a9
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: da15188647c017a42fe94db8ba23cf57953b4ccf
+ms.sourcegitcommit: 27200618e78c75873c3257af0eceb09ffbdd0168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614165"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9020836"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の新機能および変更された機能 
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="releases-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のリリース
-Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューにリリースされました。 コマースの各リリースでの新機能や変更事項を確認するには、次のトピックを参照してください。
+Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューにリリースされました。 コマースの各リリースでの新機能や変更事項を確認するには、次の記事を参照してください。
 
 | バージョン | ビルド番号 | 自動更新の可用性 | 詳細 |
 |---------|--------------|--------------|-------------|
-| 10.0.26 | 10.0.119 | 2022 年 5 月 | [Dynamics 365 Commerce バージョン 10.0.26 の新機能と変更点](whats-new-commerce-10-0-26.md) |
+| 10.0.26 | 10.0.1192 | 2022 年 5 月 | [Dynamics 365 Commerce バージョン 10.0.26 の新機能と変更点](whats-new-commerce-10-0-26.md) |
 | 10.0.25 | 10.0.1149 | 2022 年 4 月 | [Dynamics 365 Commerce バージョン 10.0.25 の新機能と変更点](whats-new-commerce-10-0-25.md) |
 | 10.0.24 |   10.0.1084     | 2022 年 2 月 | [Dynamics 365 Commerce バージョン 10.0.24 の新機能および変更された機能](whats-new-commerce-10-0-24.md) |
 | 10.0.23 |   10.0.1037     | 2022 年 1 月 | [Dynamics 365 Commerce バージョン 10.0.23 の新機能および変更された機能](whats-new-commerce-10-0-23.md) |
@@ -52,10 +52,10 @@ Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューに�
 
 
 ## <a name="releases-before-february-2020"></a>2020 年 2 月より前のリリース
-2020 年 2 月より前のリリースの新機能または変更事項を確認するには、次のトピックを参照してください。
+2020 年 2 月より前のリリースの新機能または変更事項を確認するには、次の記事を参照してください。
 
 
- **リリース**                                                           | **バージョン** | **ビルド番号** | **適用の対象** | **詳細**                                                                                                                                                                                                           |
+ **リリース**                                                           | **バージョン** | **ビルド番号** | **適用の対象** | **詳細はこちら**                                                                                                                                                                                                           |
 |-----------------------------------------------------------------------|-------------|------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft Dynamics 365 Retail | 10.0.7  | 10.0.283   | 2020 年 1 月 | [Dynamics 365 Retail バージョン 10.0.7 の新機能および変更された機能](whats-new-10-0-7.md) |
 | Microsoft Dynamics 365 Retail | 10.0.6 |   10.0.234   | 2019 年 11 月  | [Dynamics 365 Retail バージョン 10.0.6 の新機能と変更点](whats-new-10-0-6.md) |

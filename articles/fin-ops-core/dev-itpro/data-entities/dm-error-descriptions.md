@@ -1,6 +1,6 @@
 ---
 title: データ管理エラーの説明
-description: このトピックでは、データ管理で発生する可能性があるエラー メッセージについて説明します。
+description: この記事では、データ管理で発生する可能性があるエラー メッセージについて説明します。
 author: peakerbl
 ms.date: 01/08/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 13a8f6fc85f9e65f6fd0956f8c258e6f50231a57
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e1849e79b70d75f68668d4e53517f2fab3362a42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070075"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850099"
 ---
 # <a name="data-management-error-descriptions"></a>データ管理エラーの説明
 
@@ -28,9 +28,9 @@ ms.locfileid: "8070075"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、特定のエラーが表示されるときのシナリオを示します。 これらのシナリオは、エラーとシナリオの完全な一覧ではありませんが、このリストは継続的に更新されるため、最新情報をチェックしてください。 特定のエラーが扱われるべきかどうかに関するこのページのフィードバックをお送りください。
+この記事では、特定のエラーが表示されるときのシナリオを示します。 これらのシナリオは、エラーとシナリオの完全な一覧ではありませんが、このリストは継続的に更新されるため、最新情報をチェックしてください。 特定のエラーが扱われるべきかどうかに関するこのページのフィードバックをお送りください。
 
-このトピックでは、データ管理で発生する可能性があるエラー メッセージについて説明します。
+この記事では、データ管理で発生する可能性があるエラー メッセージについて説明します。
 
 ## <a name="import-to-target-failed-due-to-an-update-conflict-as-more-than-one-process-is-trying-to-update-the-same-record-at-the-same-time"></a>複数のプロセスとしての更新競合のために失敗したターゲットへのインポートが、同じレコードを同時に更新しようとしている
 

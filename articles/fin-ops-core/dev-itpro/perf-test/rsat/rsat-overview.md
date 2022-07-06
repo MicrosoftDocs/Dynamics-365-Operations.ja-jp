@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cc2922002e40cfa0b1e1887c8f3e5fb642b82a5
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 0ae8e62ad44d9c01a5d0c8696a2f9e2728f34b5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547832"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851904"
 ---
 # <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
-Regression Suite Automation Tool (RSAT) を使用すると、財務と運用アプリのユーザー受け入れテスト (UAT) の時間と費用を大幅に縮小できます。 通常、UAT は Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよび構成を実稼働環境に適用する前に必要です。 RSAT により、機能パワー ユーザーはタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくてもタスク記録を一連の自動テストに変換できます。 タスク レコーダーの詳細については、 [タスク レコーダー のリソース](../../user-interface/task-recorder.md) を参照してください。
+Regression Suite Automation Tool (RSAT) を使用すると、財務と運用アプリのユーザー受け入れテスト (UAT) の時間と費用を大幅に縮小できます。 通常、UAT は Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよび構成を運用環境に適用する前に必要です。 RSAT により、機能パワー ユーザーはタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくてもタスク記録を一連の自動テストに変換できます。 タスク レコーダーの詳細については、 [タスク レコーダー のリソース](../../user-interface/task-recorder.md) を参照してください。
 
 RSATは、テストの実行、報告、および調査のために Microsoft Azure DevOps と完全に統合されています。 テスト パラメーターは、テスト ステップから切り離され、Microsoft Excel ファイルに保存されます。
 
-このトピックに加えて、以下のトピックで RSAT の使用について説明します。
+この記事に加えて、以下のトピックで RSAT の使用について説明します。
 
 + [Regression Suite Automation Tool (RSAT) のインストールと構成](rsat-install-configure.md)
 + [Regression Suite Automation Tool (RSAT) テスト ケースの実行](rsat-run.md)

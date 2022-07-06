@@ -1,6 +1,6 @@
 ---
 title: 米国政府の Lifecycle Services プロジェクトに対する Azure Resource Manager オンボード プロセスの実行
-description: このトピックでは、コネクタの Microsoft Azure Resource Manager オンボード プロセスを実施する方法について説明します。 このトピックは、Azure US government に適用されます。
+description: この記事では、コネクタの Microsoft Azure Resource Manager オンボード プロセスを実施する方法について説明します。 この記事は、Azure US government に適用されます。
 author: saurabhsurana
 ms.date: 08/12/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sasurana
 ms.search.validFrom: 2021-07-31
-ms.openlocfilehash: b7552633ddb3a2b046e68d2227304e8e0b6621d8
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: da38b52470c8cac5a3a8f33756606560f05b1803
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867483"
 ---
 # <a name="complete-the-azure-resource-manager-onboarding-process-for-us-government-lifecycle-services-projects"></a>米国政府の Lifecycle Services プロジェクトに対する Azure Resource Manager オンボード プロセスの実行
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コネクタの Microsoft Azure Resource Manager オンボード プロセスを実施する方法について説明します。
+この記事では、コネクタの Microsoft Azure Resource Manager オンボード プロセスを実施する方法について説明します。
 
 Azure Resource Manager トポロジをデプロイするには、コネクタに対して Resource Manager オンボード プロセスを実行する必要があります。 オンボード プロセスを開始するには、次の項目が必要です。
 

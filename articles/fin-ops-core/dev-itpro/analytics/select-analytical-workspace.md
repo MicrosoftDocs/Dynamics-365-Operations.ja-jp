@@ -1,6 +1,6 @@
 ---
 title: Power BI からの分析ワークスペースの選択 (ビデオを含む)
-description: このトピックでは、Power BI でホストされているレポートを選択してアプリケーション ワークスペースで使用する方法について説明します。
+description: この記事では、Power BI でホストされているレポートを選択してアプリケーション ワークスペースで使用する方法について説明します。
 author: RichdiMSFT
 ms.date: 07/09/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 89668c3b0123f5810f8877e8752d5fedd3cd009b
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 59cd73dbc3e085109da1335429813fdb01c89dfb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883703"
 ---
 # <a name="select-analytical-workspaces-from-power-bi"></a>Power BI から分析ワークスペースを選択する
 
@@ -27,10 +27,10 @@ ms.locfileid: "7937647"
 
 アプリケーション スイートにバンドルされている分析ワークスペースは、ユーザーにビジネス データに関する適切な洞察を提供します。 ただし、場合によっては、標準レポートを組織のユーザー専用に設計されたカスタムレポートに置き換えることが必要になることがあります。
 
-PowerBI.comが提供するワールドクラスのツールを使用すると、外部ソースからのデータを使用するマッシュアップ ビューを含む分析レポートを生成できます。 Finance and Operations のプラットフォーム更新プログラム 26 で、パワー ユーザーは標準埋め込みレポートを PowerBI.com でホストされているレポートと置き換えることができます。
+PowerBI.comが提供するワールドクラスのツールを使用すると、外部ソースからのデータを使用するマッシュアップ ビューを含む分析レポートを生成できます。 Finance and Operations のプラットフォーム更新プログラム 26 では、パワー ユーザーは標準埋め込みレポートを PowerBI.com でホストされているレポートと置き換えることができます。
 
 > [!IMPORTANT]
-> このトピックで説明する機能は、個人用設定ではありません。 分析ワークスペースのカスタマイズは、有効な法人のすべてのユーザーに適用されます。
+> この記事で説明する機能は、個人用設定ではありません。 分析ワークスペースのカスタマイズは、有効な法人のすべてのユーザーに適用されます。
 
 ### <a name="motivations-for-embedding-powerbicom-reports"></a>PowerBI.comレポートの埋め込みの動機
 

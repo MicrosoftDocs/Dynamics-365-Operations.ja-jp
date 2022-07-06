@@ -1,6 +1,6 @@
 ---
 title: パフォーマンス SDK によるマルチユーザー テストを実行する
-description: このトピックでは、Microsoft Visual Studio、パフォーマンス ソフトウェア開発キット (SDK)、およびタスク レコーダー テスト スクリプトを使用してマルチユーザー テストを実行する方法について説明します。
+description: この記事では、Microsoft Visual Studio、パフォーマンス ソフトウェア開発キット (SDK)、およびタスク レコーダー テスト スクリプトを使用してマルチユーザー テストを実行する方法について説明します。
 author: kennysaelen
 ms.date: 06/04/2020
 ms.topic: article
@@ -10,25 +10,25 @@ ms.search.region: Global
 ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 58bcca8ab8918aa3d86cd76585fdef8c11c7302b
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 92845844cc890c0f7ca3be35157e96a05dfc55e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862113"
 ---
 # <a name="run-multi-user-testing-by-using-the-performance-sdk"></a>パフォーマンス SDK によるマルチユーザー テストを実行する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Visual Studio、パフォーマンス ソフトウェア開発キット (SDK)、およびタスク レコーダー テスト スクリプトを使用してマルチユーザー テストを実行する方法について説明します。
+この記事では、Microsoft Visual Studio、パフォーマンス ソフトウェア開発キット (SDK)、およびタスク レコーダー テスト スクリプトを使用してマルチユーザー テストを実行する方法について説明します。
 
 > [!IMPORTANT]
 > Visual Studio 2019 は Web パフォーマンスと負荷テスト機能を含む Visual Studio の最新バージョンです。 Visual Studio および、オンプレミスでの負荷テストに向けたテスト コントローラー/テスト エージェントをご利用の場合、 Visual Studio 2019 が最新のバージョンになります。 そのサポート サイクルが終了するまで継続して使用することができます。 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの手順を完了する前に、次の前提条件が満たされていることを確認してください:
+この記事の手順を完了する前に、次の前提条件が満たされていることを確認してください:
 
 - 開発環境には **Visual Studio Enterprise Edition** があります。 負荷テストを作成するには、Enterprise Edition が必要です。 Microsoft Dynamics Lifecycle Services (LCS) を通じてクラウド ホスト環境として開発ボックスを配置する場合は、配置する適切な Visual Studio バージョンを選択してください 。
 - Visual Studio Web パフォーマンスおよび負荷テスト ツールは、[負荷テストコ ンポーネントのインストール](/visualstudio/test/quickstart-create-a-load-test-project#install-the-load-testing-component) の説明に従ってインストールされます。

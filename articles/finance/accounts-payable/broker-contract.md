@@ -1,6 +1,6 @@
 ---
 title: ブローカー契約管理
-description: このトピックでは、構成する管理タスクを自動化することによるブローカー契約管理について説明します。
+description: この記事では、構成する管理タスクを自動化することによるブローカー契約管理について説明します。
 author: t-benebo
 ms.date: 08/17/2018
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 339e2b8f634fa9bde4d9f0c25887559b53e3a3c5
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 775136fc036818ab04194a3d5737756866548e45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723239"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879757"
 ---
 # <a name="broker-contract-management"></a>ブローカー契約管理
 
@@ -26,7 +26,7 @@ ms.locfileid: "8723239"
 
 ブローカー契約管理により、企業は、ブローカーに支払う手数料の管理、追跡、支払に関連するタスクを自動化することにより、仲介契約を効率的に管理できます。
 
-ここでは、ブローカー手数料を処理するための標準的なプロセスの概要を説明します。
+この記事では、ブローカー手数料を処理するための標準的なプロセスの概要を説明します:
 
 - 取り決めブローカー契約の詳細を登録する
 - 継続的な販売を通して交渉された契約を実行し、ブローカー請求を生成する
@@ -35,7 +35,7 @@ ms.locfileid: "8723239"
 
 ## <a name="audience-and-purpose"></a>対象者および目的
 
-このトピックの情報は、以下の触接を持つ、セールス マネージャー、会計マネージャー、A/P マネージャーなどの立場にいる、エンタープライズの会社での業務の意思決定者を対象としています。
+この記事の情報は、以下の触接を持つ、セールス マネージャー、会計マネージャー、A/P マネージャーなどの立場にいる、エンタープライズの会社での業務の意思決定者を対象としています。
 
 - ブローカーとの契約を交渉する
 - ブローカー請求を処理し、手数料の支払を行うスタッフの管理

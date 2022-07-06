@@ -1,6 +1,6 @@
 ---
 title: 二重書き込み環境のリンク解除および再リンク
-description: このトピックでは、リンクの解除、キー テーブルのクリア、および二重書き込み環境の再リンクの方法について説明します。
+description: この記事では、リンクの解除、キー テーブルのクリア、および二重書き込み環境の再リンクの方法について説明します。
 author: RamaKrishnamoorthy
 ms.date: 04/07/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0c8ae12d7b3b7e89f03f9d1be55814fa6c39474e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d5f39815d31e27d93dac6e3e925fedc5f449817
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884980"
 ---
 # <a name="unlink-and-relink-dual-write-environments"></a>二重書き込み環境のリンク解除および再リンク
 
@@ -23,13 +23,13 @@ ms.locfileid: "8062585"
 
 
 
-環境間の二重書き込み接続のリンクを解除および再リンクする場合は、キー テーブルからデータを削除する必要があります。 この要件は、バックアップや復元などの活動中の、サンドボックス、製品、およびユーザー承認テスト (UAT) 環境に適用されます。 このトピックでは、リンクの解除、キー テーブルでのデータの削除、および二重書き込み環境の再リンクの方法について説明します。
+環境間の二重書き込み接続のリンクを解除および再リンクする場合は、キー テーブルからデータを削除する必要があります。 この要件は、バックアップや復元などの活動中の、サンドボックス、運用、およびユーザー承認テスト (UAT) 環境に適用されます。 この記事では、リンクの解除、キー テーブル内のデータの削除、二重書き込み環境の再リンクの方法について説明します。
 
 マッピングは Dataverse に格納されるので、リンクを解除および再リンクした場合マッピングは保存されます。
 
 ## <a name="scenario-dual-write-is-enabled-between-production-environments"></a>シナリオ: 運用環境間で二重書き込みを有効にする
 
-このシナリオでは、Finance and Operations と Dataverse の間で二重書き込みを有効にします。 Finance and Operations 運用環境 (ソース) をバックアップし、それを Finance and Operations UAT 環境 (出力先) に復元するとします。 復元したら、Finance and Operations UAT 環境で次の手順に従ってください。
+このシナリオでは、Finance and Operations と Dataverse 運用環境の間で二重書き込みを有効にします。 Finance and Operations 運用環境 (ソース) をバックアップし、それを Finance and Operations UAT 環境 (出力先) に復元するとします。 復元したら、Finance and Operations UAT 環境で次の手順に従ってください。
 
 1. すべてのテーブル マップを停止します。
 2. Finance and Operations UAT 環境が Dataverse 運用環境を指すように、二重書き込み接続を解除します。

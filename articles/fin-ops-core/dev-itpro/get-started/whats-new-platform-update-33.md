@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能について説明します。
+title: 財務と運用アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
+description: この記事では、財務と運用アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能について一覧表示します。
 author: sericks007
 ms.date: 03/11/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 19034dd116c344fc9f4e77fee14366454c65006ef59c628b7457ee963e0969e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2c40285244b8ece594971d0c56ff9d480000972
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866668"
 ---
-# <a name="whats-new-or-changed-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>財務と運用アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5559 で、次のスケジュールで使用できます。
+この記事では、財務と運用アプリのプラットフォーム更新プログラム 33 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 7.0.5559 で、次のスケジュールで使用できます。
 
 - **プレビューのリリース:** 2020 年 2 月
 - **一般提供 (自己更新):** 2020 年 3 月
@@ -59,8 +59,8 @@ ms.locfileid: "6717530"
 ### <a name="new-task-recorder-capabilities-resizable-task-recorder-pane"></a>新しいタスク レコーダー機能: サイズ変更可能なタスク レコーダー ウィンドウ 
 この機能の説明を読むには、リリース計画の [RSAT の新しいタスク レコーダー機能](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat)を参照してください。
 
-### <a name="preview-branding-changes-for-updated-finance-and-operations-licensing"></a>(プレビュー) 更新された Finance and Operations ライセンスのブランドの変更
-この機能の説明については、リリース計画の [Finance and Operations ライセンス](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing)を参照してください。
+### <a name="preview-branding-changes-for-updated-finance-and-operations-licensing"></a>(プレビュー) 更新された財務と運用のライセンスのブランドの変更
+この機能の説明については、リリース計画の[財務と運用のライセンス](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing)を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -76,12 +76,12 @@ ms.locfileid: "6717530"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または Finance and Operations アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
 

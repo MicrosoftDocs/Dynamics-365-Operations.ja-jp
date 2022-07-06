@@ -1,6 +1,6 @@
 ---
 title: 財務諸表での利益剰余金計算
-description: このトピックでは、財務諸表 **利益剰余金計算** の拡張機能の使用方法について説明します。 この拡張機能は、為替換算を使用する組織に影響します。
+description: この記事では、財務報告の **利益剰余金計算** の拡張機能の使用方法について説明します。 この拡張機能は、為替換算を使用する組織に影響します。
 author: jinniew
 ms.date: 09/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
-ms.openlocfilehash: 71e9c5663f226417e0ecc71a55d60050c0de98b1
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 59ed987c24742fe7b6b808f8daf09c944dc435c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901377"
 ---
 # <a name="retained-earnings-calculation-in-financial-reporting"></a>財務諸表での利益剰余金計算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務諸表 **利益剰余金計算** の拡張機能の使用方法について説明します。 この拡張機能は、為替換算を使用する組織に影響します。
+この記事では、財務報告の **利益剰余金計算** の拡張機能の使用方法について説明します。 この拡張機能は、為替換算を使用する組織に影響します。
 
 > [!NOTE]
 > 拡張機能のオン/オフを切り替えるには、サポート チケットを記録してください。

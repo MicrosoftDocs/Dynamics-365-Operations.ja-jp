@@ -1,6 +1,6 @@
 ---
 title: インド向け e コマース サイト用の商品及びサービス税 (GST) 統合
-description: このトピックでは、インドで使用可能な Microsoft Dynamics 365 Commerce e コマース 機能の概要を示します。 また、機能を設定するためのガイドラインを示します。
+description: この記事では、インドで使用可能な Microsoft Dynamics 365 Commerce e コマース 機能の概要を示します。 また、機能を設定するためのガイドラインを示します。
 author: EvgenyPopovMBS
 ms.date: 12/07/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2021-12-10
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7289b9a48ec3c4716d380e556a2e8786f8688695
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: 78465b4daaf664e2b618b744686b7eeac00b7426
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892786"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-e-commerce-sites-for-india"></a>インド向け e コマース サイト用の商品及びサービス税 (GST) 統合
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、インドで使用可能な Microsoft Dynamics 365 Commerce e コマース 機能の概要を示します。 また、機能を設定するためのガイドラインを示します。 
+この記事では、インドで使用可能な Microsoft Dynamics 365 Commerce e コマース 機能の概要を示します。 また、機能を設定するためのガイドラインを示します。 
 
 Dynamics 365 Commerce で使用可能な e コマースの機能に関する詳細については、[e コマース サイトの概要](../online-store-overview.md)を参照してください。 Commerce で商品及びサービス税 (GST) がサポートされる方法の詳細については、[インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合](apac-ind-cash-registers.md)を参照してください。
 
@@ -40,7 +40,7 @@ Dynamics 365 Commerce で使用可能な e コマースの機能に関する詳�
 
 e コマース注文の GST 計算は、e コマース サイトの **チェックアウト** ページで指定できる顧客の請求先住所に基づいています。 既定では、注文の出荷先住所が請求先住所として使用されます。 ただし、顧客の他の住所の一覧で請求先住所を選択したり、新しい住所を追加することもできます。
 
-請求書情報に基づく e コマース注文に対する GST 計算を有効にするには、**インドの請求先住所** モジュールをチェックアウト ページに追加する必要があります。 コマース本部の **機能管理** ワークスペースで、**(インド) e コマースの請求先住所に基づいて GST を計算する** 機能を有効にする必要があります。 詳細については、このトピックで後述する[インド向けの e コマースの設定](#setting-up-e-commerce-for-india)セクションを参照してください。
+請求書情報に基づく e コマース注文に対する GST 計算を有効にするには、**インドの請求先住所** モジュールをチェックアウト ページに追加する必要があります。 コマース本部の **機能管理** ワークスペースで、**(インド) e コマースの請求先住所に基づいて GST を計算する** 機能を有効にする必要があります。 詳細については、この記事で後述する[インド向けの e コマースの設定](#setting-up-e-commerce-for-india)セクションを参照してください。
 
 ### <a name="gst-calculation-for-shipping-charges"></a>出荷費用に対する GST の計算
 

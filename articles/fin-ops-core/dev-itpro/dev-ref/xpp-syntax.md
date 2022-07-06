@@ -1,6 +1,6 @@
 ---
 title: X++ 構文
-description: このトピックには、X++ の構文リファレンスが含まれています。
+description: この記事には、X++ の構文リファレンスが含まれています。
 author: RobinARH
 ms.date: 07/22/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3faecba0333b984a324bb9d45f87a638eeacdccf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2bb62533b35a96cf85251ef5cf2a055318f40e56
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867120"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、X++ の構文リファレンスが含まれています。 
+この記事には、X++ の構文リファレンスが含まれています。 
 
 ## <a name="x-keywords"></a>X++ キーワード
 
@@ -816,7 +816,7 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この
 たとえば、自転車のために購入するアクセサリがサドル、飲料水ボトル ホルダー、ベル、およびクラクションから成る場合、ベルまたはクラクションのいずれか、および 0 個、1 個、または複数の飲料水ボトル ホルダー、さらにちょうど 1 つのサドルを持つことができ、この場合以下のように表されます: 自転車\_アクセサリ = サドル \[ベル | クラクション\] {飲料水\_ボトル\_ホルダー} この文法は次の選択を定義します。`saddle`  `saddle bell`  `saddle horn` サドル 飲料水\_ボトル\_ホルダー サドル ベル 飲料水\_ボトル\_ホルダー サドル ベル飲料水\_ボトル\_ホルダー飲料水\_ボトル\_ホルダーなど。
 
 ## <a name="x-grammar"></a>X++ 文法
-このトピックでは、X++ 言語の正式な文法を示します。
+この記事では、X++ 言語の正式な文法を示します。
 
 ### <a name="how-to-interpret-the-formal-bnf-grammar"></a>正式な BNF 文法を解釈する方法
 
@@ -1338,7 +1338,7 @@ X++ の文法の BNF で、ターミナルのほとんどに名前の接尾語�
  
 
 ## <a name="x-language-syntax-is-stricter-in-microsoft-dynamics-ax-2012"></a>X++ 言語の構文は Microsoft Dynamics AX 2012 では厳密です
-Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバージョンの製品より厳しくなっています。 このトピックでは、構文の変更について説明します。
+Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバージョンの製品より厳しくなっています。 この記事では、構文の変更について説明します。
 
 ### <a name="table-of-x-syntax-changes"></a>X++ 構文変更のテーブル
 

@@ -1,6 +1,6 @@
 ---
-title: フィルター処理のオプション
-description: このトピックでは、利用可能なフィルター処理オプションについて説明します。
+title: フィルター処理オプション
+description: この記事では、利用可能なフィルター処理オプションについて説明します。
 author: jasongre
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2ab8bb04878ad6d456939df33b95417e6c8bb1c
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 776fc0f03bb9ed36115b9be5bca1bf8add2848a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392950"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881074"
 ---
-# <a name="filtering-options"></a>フィルター処理のオプション
+# <a name="filtering-options"></a>フィルター処理オプション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、利用可能なフィルター処理オプションについて説明します。
+この記事では、利用可能なフィルター処理オプションについて説明します。
 
 ## <a name="introduction"></a>はじめに
 

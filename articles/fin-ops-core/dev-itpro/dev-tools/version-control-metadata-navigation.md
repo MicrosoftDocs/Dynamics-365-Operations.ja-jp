@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51e75682a7037713b1db0eba1ad7b4d82592a9bd
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 16c066b120c19a047c61e07ac185bca4b71c84a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866989"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 
@@ -31,12 +31,12 @@ ms.locfileid: "7782461"
 
 ### <a name="sign-up-to-azure-devops-create-an-account-and-create-a-new-project"></a>Azure DevOps への登録、アカウントの作成、および新しいプロジェクトの作成
 
-<https://www.visualstudio.com/> に移動して Azure DevOps にサインアップします。 **サインアップ** をクリックします。 Azure DevOps アカウントを既に持っている場合は、このトピックの後半の「Azure DevOps プロジェクトの作成」セクションに移動します。
+<https://www.visualstudio.com/> に移動して Azure DevOps にサインアップします。 **サインアップ** をクリックします。 Azure DevOps アカウントを既に持っている場合は、この記事の後半の「Azure DevOps プロジェクトの作成」セクションに移動します。
 
 1. Microsoft アカウントでサインインします。
 
     > [!NOTE]
-    > 組織のアカウント (Microsoft 365 ドメイン) を使用することもできます。
+    > 組織のアカウント (Microsoft 365 ドメイン) を使用することも可能です。
 
 2. Azure DevOps 組織を作成し、アカウントの URL を選択します。 Visual Studio でソース管理を設定するときに、開発用コンピューターから接続する URL を使用します。 次の図は、アカウント URL の例です。
 
@@ -49,7 +49,7 @@ ms.locfileid: "7782461"
 
 ### <a name="create-a-azure-devops-team-project"></a>Azure DevOps チーム プロジェクトの作成
 
-Azure DevOps 組織を既に持っている場合は、Internet Explorer を使用してアカウントに移動します。 このトピックでは、説明のために URL の例として **.visualstudio.com** を使用します。
+Azure DevOps 組織を既に持っている場合は、Internet Explorer を使用してアカウントに移動します。 この記事では、説明のための URL の例として **.visualstudio.com** を使用します。
 
 1. <https://www.visualstudio.com/> に移動します。
 2. **最近使用したプロジェクトとチーム** で **新規** をクリックして新しいプロジェクトを作成します。

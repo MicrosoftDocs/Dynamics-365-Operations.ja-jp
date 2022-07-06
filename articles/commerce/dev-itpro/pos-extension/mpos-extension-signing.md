@@ -1,6 +1,6 @@
 ---
 title: Modern POS (MSIX) 拡張機能パッケージへのコード署名
-description: このトピックでは、Modern POS (MSIX) 拡張パッケージにコード署名する方法について説明します。
+description: この記事では、Modern POS (MSIX) 拡張機能パッケージにコード署名する方法について説明します。
 author: mugunthanm
 ms.date: 10/21/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 890a41673ed4f7f38eea5b37ed86a09fd444e82c
-ms.sourcegitcommit: 293df12697166556b1da0c9a34d2d8679dc8c0a9
+ms.openlocfilehash: 87476d5b140a424f36cc5899e2409515ffe5151e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8397605"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882213"
 ---
 # <a name="code-signing-a-modern-pos-msix-extension-package"></a>Modern POS (MSIX) 拡張機能パッケージへのコード署名
 
 [!include [banner](../../../includes/banner.md)]
 
-このトピックでは、Modern POS (MSIX) 拡張パッケージにコード署名する方法について説明します。 このトピックは、Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+この記事では、Modern POS (MSIX) 拡張機能パッケージにコード署名する方法について説明します。 この記事は、Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
 
 Modern POS 拡張機能の .appx ファイルはすべて、コード署名証明書によって署名する必要があります。 運用には信頼できる機関の証明書を使用することをお勧めします。 ユニバーサル Windows プラットフォーム (UWP) アプリの署名の詳細については、[パーッケージの署名用の証明書を作成する](/windows/uwp/packaging/create-certificate-package-signing)を参照してください。
 
@@ -37,7 +37,7 @@ Modern Pos JavaScript プロジェクト ファイルにコード署名証明書
 
 ビルド自動化中に、セキュリティで保護された場所やタスクから証明書をダウンロードして、含めることもできます。
 
-ユニバーサル Windows プラットフォーム アプリ パッケージのコード署名の詳細については、次のトピックを参照してください。
+ユニバーサル Windows アプリ パッケージのコード署名の詳細については、次の記事を参照してください。
 
 + [ビルド ソリューションのビルド タスクの構成](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-the-build-solution-build-task)
 + [パーッケージの署名用の証明書を作成する](/windows/msix/package/create-certificate-package-signing)

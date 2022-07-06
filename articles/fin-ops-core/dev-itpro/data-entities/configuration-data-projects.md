@@ -1,6 +1,6 @@
 ---
 title: コンフィギュレーション データ プロジェクト
-description: このトピックでは、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートについて説明します。
+description: この記事では、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートについて説明します。
 author: rcarlson
 ms.date: 09/29/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: f864a9c63a2dcdf3b59ce0412552a7fd0aca167c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0b77df3f6fbcdc083feedf47e35ca3c73c1c8571
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068748"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873195"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 
@@ -47,7 +47,7 @@ ms.locfileid: "8068748"
 3. エクスポート用のコンフィギュレーション データ プロジェクトを作成して実行します。
 4. インポート用のコンフィギュレーション データ プロジェクトを作成して実行します。
 
-このトピックの残りの部分では、**データ管理** ワークスペースについて説明し、データ構成プロジェクト用にシステムを設定する方法について説明します。
+この記事の残りの部分では、**データ管理** ワークスペースについて説明し、データ構成プロジェクト用にシステムを設定する方法について説明します。
 
 コンフィギュレーション テンプレートを設定する場合は、[コンフィギュレーション データ テンプレート](configuration-data-templates.md)を参照します。 構成データ プロジェクトの作および成実行の準備ができている場合は、 [会社間または法人間での構成データのコピー](copy-configuration.md) を参照してください。
 

@@ -1,6 +1,6 @@
 ---
 title: 診断とトラブルシューティングの Commerce コンポーネント イベント
-description: このトピックでは、Commerce 固有のコンポーネントからイベントを検索する場所について説明します。
+description: この記事では、コマース固有のコンポーネントからイベントを検索する場所について説明します。
 author: aamirallaqaband
 ms.date: 03/22/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f259fb23ddc1dd09f8f7ee70f0255793b1eeb63
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 5c790d2efb7ad843fd181151bde1b5af77af723b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894544"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Commerce 固有のコンポーネントからイベントを検索する場所について説明します。 診断とトラブルシューティングを有効にするには、Retail Modern POS などのセルフホスト型のコンポーネントを含むすべての Commerce コンポーネントと Commerce Scale Unit や e コマース モジュールなどのクラウド ホスト型コンポーネントは、それらのイベントにイベント ビューアー (または Retail Cloud F12 などのブラウザー開発ツール コンソール) にローカルでログします。 イベントは、Microsoft Dynamics Lifecycle Services (LCS) ログ検索エクスペリエンスにも記録されます。
+この記事では、コマース固有のコンポーネントからイベントを検索する場所について説明します。 診断とトラブルシューティングを有効にするには、Retail Modern POS などのセルフホスト型のコンポーネントを含むすべての Commerce コンポーネントと Commerce Scale Unit や e コマース モジュールなどのクラウド ホスト型コンポーネントは、それらのイベントにイベント ビューアー (または Retail Cloud F12 などのブラウザー開発ツール コンソール) にローカルでログします。 イベントは、Microsoft Dynamics Lifecycle Services (LCS) ログ検索エクスペリエンスにも記録されます。
 
 ## <a name="viewing-events-in-event-viewer"></a>イベント ビューアーでのイベントの表示
 
@@ -35,9 +35,9 @@ ms.locfileid: "8533699"
 - 開発者トポロジまたはイベント ビューアーへのアクセスを提供するダウンロード可能な仮想ハードディスク (VHD) での開発。
 - 会議室パイロットを実行していて、そのコンピューターのイベント ビューアにアクセスできるときのクライアント コンポーネント。
 
-ただし、ほとんどの場合、特にコンピューターのイベント ビューアーへのアクセスがない場合、LCS でログ検索を使用できます。 E コマース モジュールに対しては、イベントは現在のところ、ブラウザ開発者ツール (F12キーなど) でのみ使用できます。 ログ検索については、このトピックの後半で説明します。 このセクションは、次のコンポーネントに適用されます。
+ただし、ほとんどの場合、特にコンピューターのイベント ビューアーへのアクセスがない場合、LCS でログ検索を使用できます。 E コマース モジュールに対しては、イベントは現在のところ、ブラウザ開発者ツール (F12キーなど) でのみ使用できます。 ログ検索については、この記事の後半で説明します。 このセクションは、次のコンポーネントに適用されます。
 
-- Commerce Scale Unit
+- コマース スケール ユニット
 - Retail Modern POS
 - Retail ハードウェア ステーション
 

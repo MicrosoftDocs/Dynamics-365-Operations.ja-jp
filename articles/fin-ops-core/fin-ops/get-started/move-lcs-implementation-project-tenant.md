@@ -1,6 +1,6 @@
 ---
 title: LCS 実装プロジェクトを別の Azure AD テナントに移動する
-description: このトピックでは、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
+description: この記事では、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
 ms.date: 11/30/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: b3a8da64206caa9f2625c883d52e8528a91e758e3cd8b5f42f889a175ca11fa9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60dedc4d83e3acde330f9da9383e1635bbfcd035
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768381"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882066"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -141,7 +141,7 @@ Web サービスへの呼び出しが、環境の **ホーム** テナントか�
     - ソース LCS 環境およびプロジェクトの割り当てを解除して削除する日付を確認します。
     
 4. Dynamics 365 FO Go-Live チームは 2 営業日以内にご回答します。さらに、FastTrack ソリューション アーキテクトは、運用配置に対するプロジェクトの準備の評価において、協力して作業します。
-5. テナント移動評価が正常に完了すると、FastTrack ソリューション アーキテクトが配置用に生産要求を承認します。
+5. テナント移動評価が正常に完了すると、FastTrack ソリューション アーキテクトが配置用に運用要求を承認します。
 6. 新しい LCS プロジェクトに対して運用配置要求を作成します。
 
     - 古い運用環境で使用されているので、新しい運用環境に対して同じ名前を選択することはできません。 新しい URL が生成されるように、新しい環境名を選択する必要があります。

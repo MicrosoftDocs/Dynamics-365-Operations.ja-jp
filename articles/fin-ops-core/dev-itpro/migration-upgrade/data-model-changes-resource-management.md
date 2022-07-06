@@ -1,6 +1,6 @@
 ---
 title: プロジェクト リソースのスケジューリング データ モデル
-description: このトピックでは、プロジェクト リソースのスケジューリング データ モデルについて説明します。
+description: この記事では、プロジェクト リソースのスケジューリング データ モデルについて説明します。
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 918666b480d212e6a36da1199161ae2efad9f493
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 21b42055f9da0090136f73980e1ab377966c1f2e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866211"
 ---
 # <a name="project-resource-scheduling-data-model"></a>プロジェクト リソースのスケジューリング データ モデル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、プロジェクト リソースのスケジューリング データ モデルについて説明します。
+この記事では、プロジェクト リソースのスケジューリング データ モデルについて説明します。
 
 ## <a name="physical-data-model-for-project-resource-scheduling"></a>プロジェクト リソースのスケジューリングの物理データ モデル
 

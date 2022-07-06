@@ -1,6 +1,6 @@
 ---
 title: ローカル開発環境の設定
-description: このトピックでは、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) および販売時点管理 (POS) 機能のローカル開発環境の設定方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) および販売時点管理 (POS) 機能のローカル開発環境の設定方法について説明します。
 author: mugunthanm
 ms.date: 09/16/2021
 ms.topic: article
@@ -10,21 +10,21 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2021
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 91a332fd6de94d6fec3c59cab77646360e905923
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 861800f9d5c69c7153c3874e0d331281e894e540
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864913"
 ---
 # <a name="set-up-a-local-development-environment"></a>ローカル開発環境の設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) および販売時点管理 (POS) 機能のローカル開発環境の設定方法について説明します。 Dynamics 365 Commerce アプリケーション バージョン 10.0.22 以降に適用されます。
+この記事では、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) および販売時点管理 (POS) 機能のローカル開発環境の設定方法について説明します。 Dynamics 365 Commerce アプリケーション バージョン 10.0.22 以降に適用されます。
 
 > [!IMPORTANT]
-> このトピックで説明されている環境設定は、拡張機能開発にのみ使用できます。 テスト、ユーザー受け入れテスト (UAT)、または稼働には使用できません。
+> この記事で説明されている環境設定は、拡張機能開発にのみ使用できます。 テスト、ユーザー受け入れテスト (UAT)、または運用には使用できません。
 
 ## <a name="supported-development-environment-types"></a>サポートされる開発環境タイプ
 
@@ -56,7 +56,7 @@ Commerce は、クラウドベース環境とローカル環境の両方をサ�
 
 **デメリット:**
 
-- Cloud POS (CPOS)、Async Client、HTTPS は存在せず、RTS 呼び出しがないため、このバージョンは実際の実稼働環境で使用されるトポロジとは一致しません。
+- Cloud POS (CPOS)、Async Client、HTTPS は存在せず、RTS 呼び出しがないため、このバージョンは実際の運用環境で使用されるトポロジとは一致しません。
 - リアルタイム操作を完全にテストすることはできません。 阻止されるためです。
 
 ## <a name="local-iis-hosted-csu"></a>ローカルの IIS ホスト CSU

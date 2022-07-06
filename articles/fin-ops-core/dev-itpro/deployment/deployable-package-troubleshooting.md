@@ -1,6 +1,6 @@
 ---
 title: パッケージ アプリケーションの問題のトラブルシューティング
-description: トピックでは、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ情報を提供します。
+description: 記事では、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ情報を提供します。
 author: laneswenka
 ms.date: 01/21/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 0f932c192aac3ecf76e0b9ddb249ea28a6ad5a98
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: 6cb3aa0d225969d2c6e8c6982a1ca601d4ea5992
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018362"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867453"
 ---
 # <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ詳細情報を提供します。 配置可能パッケージの適用方法についての詳細情報は、 [クラウド環境に更新を適する](apply-deployable-package-system.md) を参照してください。
+この記事では、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ詳細情報を提供します。 配置可能パッケージの適用方法についての詳細情報は、 [クラウド環境に更新を適する](apply-deployable-package-system.md) を参照してください。
 
 ## <a name="general-troubleshooting-and-diagnostics"></a>一般的なトラブルシューティングと診断
 パッケージが正常に適用されていない場合は、2 つのオプションがあります。

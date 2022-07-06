@@ -1,6 +1,6 @@
 ---
 title: 財務と運用アプリのバージョン 10.0.26 (2022 年 5 月) のプラットフォーム更新プログラム
-description: このトピックでは、財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
+description: この記事では、財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-03-04
-ms.openlocfilehash: 876feb97ae8776b8f195455bd95a1b8b4f7c823b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 290d39d6806c54d67271341b594ec2a0cdbc153c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866620"
 ---
 # <a name="platform-updates-for-version-10026-of-finance-and-operations-apps-may-2022"></a>財務と運用アプリのバージョン 10.0.26 (2022 年 5 月) のプラットフォーム更新プログラム
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6354 で、次のスケジュールで使用できます。
+この記事では、財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6354 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 3 月
 - **リリースの一般提供 (自己更新):** 2022 年 4 月
@@ -47,11 +47,11 @@ ms.locfileid: "8644656"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックでは、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
+製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。

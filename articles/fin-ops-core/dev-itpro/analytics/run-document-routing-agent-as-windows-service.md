@@ -1,6 +1,6 @@
 ---
 title: ドキュメント回覧エージェントを Windows サービスとして実行する
-description: このトピックでは、ドキュメント回覧エージェントによって使用される実行モードの選択に役立つ情報を提供します。
+description: この記事では、Document Routing Agent によって使用される実行モードの選択に役立つ情報を提供します。
 author: RichdiMSFT
 ms.date: 02/11/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 1bd5646650ca1159392637be46da2167590c86d98ac4f4becc6c131cf4fe466b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e308933b8ba834efeb6d72e50ae3faaf49c4a88
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883709"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 
@@ -27,7 +27,7 @@ ms.locfileid: "6716797"
 
 ドキュメント回覧エージェントには、実行モードを選択できるオプションが含まれています。 このプロセスは、デスクトップ アプリケーションまたは Microsoft Windows サービスのいずれかとして実行できます。 アプリケーションは、Windows サービスとして実行されるとき、コンピューターの再起動後に自動的に起動することができます。 また、特定のユーザー アカウントのセキュリティ コンテキストで実行するように構成することもできます。 この機能拡張により、顧客はネットワーク プリント サーバーなどのセキュリティで保護されたドメイン リソースでドキュメント ルート指定エージェントをホストできます。
 
-このトピックでは、正しく実行モードを選択するのに役立つ重要な情報を提供します。
+この記事では、正しい実行モードを選択するのに役立つ重要な情報を提供します。
 
 ## <a name="service-applications"></a>サービス アプリケーション
 アプリケーションはユーザーがデスクトップ上で連携するプログラムです。 サービスは、バックグラウンドで実行され、アクティブなウィンドウを持たないプロセスです。 ドキュメント回覧エージェントは現在、両方の実行モードをサポートしています。 他方ではなくそのモードを選択する理由、およびサービスとしてのプロセスの実行に関連するステップを理解しておくことが重要です。 Windows サービスの詳細については、[Windows サービス アプリケーションの概要](/dotnet/framework/windows-services/introduction-to-windows-service-applications) を参照してください。 バックグラウンド サービスとしてドキュメント回覧エージェントを実行する主な利点を次に示します。
@@ -41,7 +41,7 @@ ms.locfileid: "6716797"
 ## <a name="documents-that-require-custom-margins"></a>カスタム マージンを要求するドキュメント
 ドキュメント回覧エージェントが Windows サービスとして実行されるときは、ユーザー設定の余白を必要とする小切手などのドキュメント レポートをネットワーク プリンターに直接印刷することはできません。 代わりに、このドキュメント回覧エージェントは自動的にこれらのドキュメントをターゲット フォルダーに転送します。 アプリケーションの **設定** ダイアログ ボックスにある新しいコンフィギュレーション プロパティで、カスタム マージンを必要とするドキュメント レポートの対象となる場所を定義できます。
 
-ドキュメント回覧エージェントは、デスクトップ アプリケーションとして実行されるときは、Adobe Reader の活用する続行して、Finance and Operations で選択されている共有プリンター デバイスにドキュメントをスプールします。 カスタムの余白を設定したドキュメントを印刷する必要があるシナリオを処理するには、ドキュメント ルーティング エージェントを複数の場所にインストールすることをお勧めします。 デスクトップ アプリケーション モードで実行されるドキュメント ルーティング エージェントでのみ、これらのドキュメントを処理するプリンターをインストールします。 または、実行後のプロセスを使用してターゲット ディレクトリ内のファイルを取得し適切な方法でそれらを指示します。
+Document Routing Agent は、デスクトップ アプリケーションとして実行されるときは、Adobe Reader の活用を続行して、財務と運用で選択されている共有プリンター デバイスにドキュメントをスプールします。 カスタムの余白を設定したドキュメントを印刷する必要があるシナリオを処理するには、ドキュメント ルーティング エージェントを複数の場所にインストールすることをお勧めします。 デスクトップ アプリケーション モードで実行されるドキュメント ルーティング エージェントでのみ、これらのドキュメントを処理するプリンターをインストールします。 または、実行後のプロセスを使用してターゲット ディレクトリ内のファイルを取得し適切な方法でそれらを指示します。
 
 ## <a name="install-the-latest-build"></a>最新ビルドのインストール
 1. 現在のドキュメント回覧エージェント構成ファイルのコピーを保存します。 このファイルは、C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config にあります。このパスでは、&lt;UserID&gt;は、ドキュメント ルーティング エージェントがインストールされた Active Directory Domain Services (AD DS) のユーザー名です。
@@ -53,7 +53,7 @@ ms.locfileid: "6716797"
 
 4. 手順 1 では、構成ファイルをコピーし、次のディレクトリに貼り付けます。c:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing。 このステップにより、ドキュメント回覧エージェント アプリケーションの新しいバージョンに以前のすべての構成設定が使用されていることを保証できます。
 5. ドキュメント回覧エージェントを実行します。
-6. Microsoft Azure Active Directory ( Azure AD) または Finance and Operations アプリの資格情報を使用してサインインします。
+6. Microsoft Azure Active Directory (Azure AD) または財務と運用アプリの資格情報を使用してログインします。
 7. 適切なメニュー項目をクリックして、設定およびプリンターを表示して確認します。
 
 次のセクションでは、Windows サービスの実行モードを選択するための詳細な手順を説明します。

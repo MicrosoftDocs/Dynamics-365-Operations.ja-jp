@@ -1,6 +1,6 @@
 ---
 title: 店頭会計の支払を強化
-description: このトピックでは、Microsoft Dynamics 365 Commerce での店舗チェックアウトの強化された強力な顧客認証 (SCA) サポートの概要を提供します。
+description: この記事では、Microsoft Dynamics 365 Commerce での店舗チェックアウトの強化された強力な顧客認証 (SCA) サポートの概要を提供します。
 author: BrianShook
 ms.date: 6/09/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f993a065636732977051a9c45581ca06d2f2281a
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: df92cf2bb978a7440b1801b8b7373e4efdf4a62c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407422"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865984"
 ---
 # <a name="enhanced-payments-in-storefront-checkout"></a>店頭会計の支払を強化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce での店舗チェックアウトの強化された強力な顧客認証 (SCA) サポートの概要を提供します。
+この記事では、Microsoft Dynamics 365 Commerce での店舗チェックアウトの強化された強力な顧客認証 (SCA) サポートの概要を提供します。
 
 ## <a name="key-terms"></a>重要な用語
 

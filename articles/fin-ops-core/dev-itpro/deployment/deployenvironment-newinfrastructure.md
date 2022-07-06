@@ -1,6 +1,6 @@
 ---
 title: 新しい環境の配置
-description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
+description: この記事では、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
 author: rashmansur
 ms.date: 06/23/2021
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 1de1a25f691b9269c32c309af5a7eece43c2d80d0023cc28f33ae7b0a765fadd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93f3ae489930be41d95e6032462e53fa3ff48a54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867450"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-このトピックでは、[セルフサービス配置](infrastructure-stack.md)エクスペリエンスを使用してサンドボックス (レベル 2 以上) および運用環境のプロセスの手順を詳しく説明します。 このような環境を配置する次の手順を参照してください。
+この記事では、[セルフサービス配置](infrastructure-stack.md) エクスペリエンスを使用してサンドボックス (レベル 2 以上) および運用環境のプロセスの手順を詳しく説明します。 このような環境を配置する次の手順を参照してください。
 
 1. プロジェクト ダッシュボード ページで **構成** を選択します。
 2. 配置する環境の **アプリケーション** および **プラットフォーム** バージョンを選択します。 
@@ -39,7 +39,7 @@ ms.locfileid: "6754991"
 10. 構成を検証した後、**送信** をクリックして配置をトリガーします。
 11. チャネルの使用を計画する場合は、[Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) も必要です。
 
-環境の展開はすぐに開始され、サンドボックス環境の場合は **30 分から 1 時間**、実稼働環境の場合は **1-2 時間** かかる可能性があります。 
+環境の展開はすぐに開始され、サンドボックス環境の場合は **30 分から 1 時間**、運用環境の場合は **1-2 時間** かかる可能性があります。 
 
 配置の進行状況を常時監視するには、**環境の詳細** ページを表示できます。 環境の状態は、**配置中** または **配置済み/失敗** のいずれかに変更されます。
 

@@ -1,6 +1,6 @@
 ---
 title: AX 2009 の移行 - パッケージ テンプレートの作成
-description: このトピックでは、Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行するために使用できるパッケージ テンプレートを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics AX 2009 から財務と運用へデータを移行するために使用できるパッケージ テンプレートを作成する方法について説明します。
 author: kfend
 ms.date: 09/12/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: b4f7d3ee446cad0167d9c48cf935fffd166e4598a6411942b117e8f2769b7e93
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0d36369a7414a4cf59ebcb09a1cf725ad5e39c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745840"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866217"
 ---
 # <a name="ax-2009-migration--create-package-templates"></a>AX 2009 の移行 － パッケージ テンプレートの作成
 

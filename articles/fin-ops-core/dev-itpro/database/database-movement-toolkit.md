@@ -1,6 +1,6 @@
 ---
 title: データベース移動ツールキット
-description: このトピックでは、データベース移動ツールキットをダウンロードして使用する方法について説明します。
+description: この記事では、データベース移動ツールキットをダウンロードして使用する方法について説明します。
 author: laneswenka
 ms.date: 12/02/2020
 ms.topic: overview
@@ -12,16 +12,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 93e468211c9decb995955ca1ca252b1bbb1ef03d
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 44401d53b49888f4f52834860ab3762b7c9980af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867563"
 ---
 # <a name="database-movement-toolkit"></a>データベース移動ツールキット
 
-データベース移動ツールキットは、Microsoft Dynamics Lifecycle Services (LCS) にホストされる ZIP ファイルです。 このツールキットをダウンロードできます。 開発環境とサンドボックス環境との間でのデータ移動に関するカスタマー エクスペリエンスを高める一連のスクリプトが含まれています。 このトピックでは、ツールキットのコンポーネント、ダウンロード方法、および最近の変更点について説明します。
+データベース移動ツールキットは、Microsoft Dynamics Lifecycle Services (LCS) にホストされる ZIP ファイルです。 このツールキットをダウンロードできます。 開発環境とサンドボックス環境との間でのデータ移動に関するカスタマー エクスペリエンスを高める一連のスクリプトが含まれています。 この記事では、ツールキットのコンポーネント、ダウンロード方法、および最近の変更点について説明します。
 
 ## <a name="download-the-latest-version"></a>最新バージョンのダウンロード
 

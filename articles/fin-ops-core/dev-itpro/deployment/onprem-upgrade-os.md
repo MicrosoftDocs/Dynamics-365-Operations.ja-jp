@@ -1,24 +1,24 @@
 ---
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境での Windows Server のアップグレード
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) 環境が使用している  Windows Server バージョンをアップグレードする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) 環境が使用している  Windows Server バージョンをアップグレードする方法について説明します。
 author: faix
-ms.date: 04/05/2022
+ms.date: 06/07/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 07de28289541ad210ae3b0fce3a6d82fc6f92836
-ms.sourcegitcommit: d88b27e9e0d2e9e54e27118002a6404691d302fd
+ms.openlocfilehash: b4bb534357b38f22e03d2c33eeb38220cb3c1fe2
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "8559316"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945774"
 ---
 # <a name="upgrade-windows-server-in-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) 環境での Windows Server のアップグレード
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) 環境で Windows Server バージョンをアップグレードする方法について説明します。
+この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) 環境で Windows Server バージョンをアップグレードする方法について説明します。
 
 ## <a name="prerequisites-for-upgrading-windows-server"></a>Windows Server をアップグレードするための前提条件
 
@@ -29,7 +29,9 @@ ms.locfileid: "8559316"
 
 ## <a name="upgrade-active-directory-federation-services"></a>Active Directory フェデレーション サービスのアップグレード
 
-### <a name="upgrade-a-single-ad-fs-instance"></a>単一の AD FS インスタンスのアップグレード
+### <a name="upgrade-paths"></a>アップグレード パス
+
+#### <a name="upgrade-a-single-ad-fs-instance"></a>単一の AD FS インスタンスのアップグレード
 
 1. ユーザーは発生時に Finance + Operations (on-premises) へサインインできないので、この操作を完了するために十分なダウンタイムをスケジュールします。
 1. Active Directory フェデレーション サービス (AD FS) サーバーを開き、次のコマンドを実行します。
@@ -53,13 +55,13 @@ ms.locfileid: "8559316"
     .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -ClientId <"Value of Active Directory->Client ID for AOS application group"> -FinancialReportingClientId <"Client ID for Financial Reporting application group">
     ```
 
-### <a name="upgrade-an-ad-fs-farm"></a>AD FS ファームのアップグレード
+#### <a name="upgrade-an-ad-fs-farm"></a>AD FS ファームのアップグレード
 
 Windows 内部データベース (WID) を使用している場合は、[WID データベースを使用した Windows Server 2016 でのAD FS へのアップグレード](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server) の手順に従います。
 
 SQL Server データベースを使用している場合は、[SQL Server を使用した Windows Server 2016 での AD FS へのアップグレード](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-sql) の手順に従います。
 
-### <a name="create-a-new-ad-fs-farminstance-and-replace-your-old-ad-fs-farminstance"></a>新しい AD FS のファーム/インスタンスを作成し、古い AD FS のファーム/インスタンスを置き換える
+#### <a name="create-a-new-ad-fs-farminstance-and-replace-your-old-ad-fs-farminstance"></a>新しい AD FS のファーム/インスタンスを作成し、古い AD FS のファーム/インスタンスを置き換える
 
 1. 新しい AD FS フェデレーション ファーム/インスタンスを作成します。 AD/FS の配置方法の詳細については、[Windows Server AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
 1. [AD FSのコンフィギュレーション](./setup-deploy-on-premises-pu41.md#configureadfs) の手順に従って、AD FS を構成します。 ただし、**Publish-ADFSApplicationGroup.ps1** スクリプトを実行しないでください。
@@ -80,6 +82,14 @@ SQL Server データベースを使用している場合は、[SQL Server を使
     新しいファーム/インスタンスを Finance + Operations (On-premises) で使用する準備が整いました。
 
 1. 新しいファーム/インスタンス エンドポイントが古いファーム/インスタンス エンドポイントと異なる場合は、 、**設定の更新** オプションを選択し、**ADFS OpenID メタデータ エンドポイント** フィールドを新しい値に設定して、Microsoft Dynamics Lifecycle Services (LCS) のエンドポイントを更新してください。
+
+### <a name="post-upgrade-actions"></a>アップグレード後のアクション
+
+Office アドインによる認証を正しくサポートするには、Windows Server 2019 以降の AD FS で、クロス オリジン リソース共有 (CORS) ヘッダーを設定する必要があります。 この情報は、[AD FS のコンフィギュレーション](./setup-deploy-on-premises-pu41.md#configureadfs)で参照できます。 コンフィギュレーションが欠落していないか確信が持てない場合は、次のスクリプトを実行します。
+
+```powershell
+.\Test-ADFSConfiguration.ps1 -ConfigurationJsonFilePath "\\Fileserver\agent\wp\EN10\StandaloneSetup-746342\config.json"
+```
 
 ## <a name="upgrade-a-node-in-your-service-fabric-cluster"></a>Service Fabric Cluster でのノードのアップグレード
 
