@@ -1,32 +1,32 @@
 ---
 title: 新しい輸送管理エンジンの作成
-description: この記事では、Dynamics 365 Supply Chain Management で新しい輸送管理エンジンを作成する方法について説明します。
-author: Weijiesa
+description: このトピックでは、Dynamics 365 Supply Chain Management で新しい輸送管理エンジンを作成する方法について説明します。
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEngineParameters
-audience: Application User, Developer, IT Pro
+audience: Developer
 ms.reviewer: kamaybac
 ms.custom: 51661
 ms.assetid: 0473acef-755e-4b42-acf5-5e5aa902dc0e
 ms.search.region: Global
-ms.author: weijiesa
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 745353af4517c88c3fc0ed94fde777e40f0d4f2a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857260"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574943"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>新しい輸送管理エンジンの作成
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Dynamics 365 Supply Chain Management で新しい輸送管理エンジンを作成する方法について説明します。 
+このトピックでは、Dynamics 365 Supply Chain Management で新しい輸送管理エンジンを作成する方法について説明します。 
 
 輸送管理 (TMS) エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。 Supply Chain Management は、レート、輸送時間、および輸送中に越えるゾーンの数などのさまざまなパラメーターを計算する複数の異なるエンジン タイプを提供します。 この記事では、Microsoft Visual Studio 開発環境と Supply Chain Management 開発ツールを使用して新しい TMS エンジンを作成して展開する方法と、次に Operations でエンジンを設定する方法について説明します。 エンジンに関する詳細については、[輸送管理エンジン](transportation-management-engines.md) を参照してください。
 
@@ -115,7 +115,7 @@ ms.locfileid: "8857260"
 
 ## <a name="deploy-the-tms-engine-as-a-package"></a>TMS エンジンをパッケージとして配置する
 
-サードパーティの TMS エンジンを配置する 1 つの方法は、配置パッケージを介することです。 実稼働環境では、この方法をお勧めします。 開発環境では、次のセクション「Supply Chain Management で TMS エンジンを設定する」で説明するように手動でアセンブリをコピーできます。 エンジンをパッケージとして展開するには、次の手順を実行します。
+サードパーティの TMS エンジンを配置する 1 つの方法は、配置パッケージを介することです。 運用環境では、この方法をお勧めします。 開発環境では、次のセクション「Supply Chain Management で TMS エンジンを設定する」で説明するように手動でアセンブリをコピーできます。 エンジンをパッケージとして展開するには、次の手順を実行します。
 
 1. **Dynamics 365** &gt; **配置** メニューで、<strong>配置パッケージの作成</strong> をクリックします。
 2. **配置パッケージの作成** ダイアログ ボックスで、TMSEngines モデルを選択し、パッケージ ファイルを格納する場所のパスを入力します。 
@@ -130,7 +130,7 @@ ms.locfileid: "8857260"
 
 1. 「新しい TMS エンジンの作成」の説明に従って、新しいエンジンを作成します。
 2. ソリューションを構築します。
-3. 結果のアセンブリを Supply Chain Management サーバーのバイナリの場所、\[AOSWebRoot\]bin にコピーします。 **注記:** このステップは、開発環境にのみ関連します。 実稼働環境では、配置パッケージを介して配置する必要があります。 手順については、前のセクションの「パッケージとして TMS エンジンを配置する」を参照してください。
+3. 結果のアセンブリを Supply Chain Management サーバーのバイナリの場所、\[AOSWebRoot\]bin にコピーします。 **注記:** このステップは、開発環境にのみ関連します。 運用環境では、配置パッケージを介して配置する必要があります。 手順については、前のセクションの「パッケージとして TMS エンジンを配置する」を参照してください。
 4. Supply Chain Management では、**レート エンジン** ページで新しい評価エンジンを作成します。 エンジンは、実装したエンジン クラス ライブラリとエンジン クラスを作成して生成されたエンジン アセンブリを指す必要があります。 
 
    [![レート エンジン ページで新規評価エンジンの作成。](./media/081.png)](./media/081.png)
