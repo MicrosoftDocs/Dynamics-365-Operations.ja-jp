@@ -32,7 +32,7 @@ ms.locfileid: "8853106"
 
 この記事では、Dynamics 365 Human Resources 実装プロジェクトの Go-Live についてよく寄せられる質問を一覧表示します。 
 
-## <a name="when-can-i-configure-and-request-my-production-environment"></a>実稼働環境をいつ構成および要求できますか ? 
+## <a name="when-can-i-configure-and-request-my-production-environment"></a>運用環境をいつ構成および要求できますか ? 
 
 一般に、次の基準を満たすことによって、運用環境が展開されます :
 
@@ -49,7 +49,7 @@ ms.locfileid: "8853106"
 
 ## <a name="what-is-a-go-live-assessment"></a>運用運用に関する評価について  
 
-Go-live 評価/レビューは、 [Microsoft FastTrack プログラム](/dynamics365/fasttrack/)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、実稼働環境で準備を開始する前に、すべての実装プロジェクトで必須です。 
+Go-live 評価/レビューは、 [Microsoft FastTrack プログラム](/dynamics365/fasttrack/)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、運用環境で準備を開始する前に、すべての実装プロジェクトで必須です。 
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>当社のサンドボックス環境は、米国中部のデータセンターに配置されています。 運用環境を米国西部のデータセンターに展開したいと考えています。 運用環境の構成で、データ センターに米国西部を選択できますか？ 
 
@@ -69,7 +69,7 @@ Azureリソースや Dynamics 365 Human Resources 環境に直接アクセスす
 
 - Dataverse の統合を使用して、選択したエンティティを Dataverse データベースに同期することができます。 詳細については、[Dataverse の表](hr-developer-entities.md)を参照してください。 
 
-## <a name="how-often-is-my-production-database-backed-up"></a>どのくらいの頻度で生産データベースがバックアップされますか。 
+## <a name="how-often-is-my-production-database-backed-up"></a>どのくらいの頻度で運用データベースがバックアップされますか。 
 
 データベースは、以下の頻度で自動バックアップで保護されます :
 
@@ -83,7 +83,7 @@ Azureリソースや Dynamics 365 Human Resources 環境に直接アクセスす
 
 詳細については、 [SQL Database の自動バックアップについて](/azure/azure-sql/database/automated-backups-overview?tabs=single-database) を参照してください。 
 
-## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>生産データベースのバックアップのコピーを要求できますか。 
+## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>運用データベースのバックアップのコピーを要求できますか。 
 
 No. ただし、運用環境をサンドボックス環境にコピーするデータベースの更新サービス リクエストを送信することはできます。 Azure SQL データベースを独自の Azure テナントに展開し、BYOD 機能を使用して運用環境からデータを同期させることができます。 詳細については、[独自のデータベースを導入する (byod)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md)を参照してください。 
 

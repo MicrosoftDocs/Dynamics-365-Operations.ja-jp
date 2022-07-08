@@ -31,7 +31,7 @@ Dynamics 365 Supply Chain Management の **資産管理** モジュールを Mic
 
 - [Dynamics 365 Supply Chain Management の設定](../../fin-ops-core/fin-ops/index.md) バージョン 10.0.9 またはそれ以降。
 - [Supply Chain Management アプリに対してデュアル書き込みを有効化します](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md)。
-- **MRGuidesFeature** 機能の [フライトを有効](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) にします。 （実稼働環境の場合は、最初にサポート チケットを送信して、テナントを flighting グループに追加する必要があります。）
+- **MRGuidesFeature** 機能の [フライトを有効](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) にします。 （運用環境の場合は、最初にサポート チケットを送信して、テナントを flighting グループに追加する必要があります。）
 - **ライセンスの構成** ページで、[次の構成キーを有効にします](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference)：
 
     - 資産管理 \> 資産管理の Mixed Reality

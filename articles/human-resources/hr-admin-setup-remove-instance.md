@@ -1,6 +1,6 @@
 ---
 title: インスタンスの削除
-description: この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
+description: この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または運用環境の削除について説明します。
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -38,7 +38,7 @@ ms.locfileid: "8859636"
 
 既存のテスト ドライブ環境が削除されます。 削除すると、新しいテスト ドライブ環境にサイン アップが可能です。 
 
-## <a name="remove-a-production-environment"></a>実稼動環境の削除
+## <a name="remove-a-production-environment"></a>運用環境の削除
 
 この記事では、人事管理をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 
 

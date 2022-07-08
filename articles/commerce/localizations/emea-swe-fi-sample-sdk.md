@@ -135,9 +135,9 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 3. ソリューションをリビルドします。
 4. **実行** コマンドを使用してソリューションを実行し、Retail SDK ハンドブックにあるで手順を実行します。
 
-## <a name="production-environment"></a>実稼働環境
+## <a name="production-environment"></a>運用環境
 
-前述の手順で、制御ユニット統合サンプルの構成要素である拡張機能を有効化しました。 さらに、この手順に従って、Commerce コンポーネントを含む配置可能パッケージを作成し、それらのパッケージを実稼働環境に適用する必要があります。
+前述の手順で、制御ユニット統合サンプルの構成要素である拡張機能を有効化しました。 さらに、この手順に従って、Commerce コンポーネントを含む配置可能パッケージを作成し、それらのパッケージを運用環境に適用する必要があります。
 
 1. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
@@ -257,7 +257,7 @@ CRT 拡張機能は **Runtime.Extensions.DocumentProvider.CleanCashSample** で�
 1. POS とハードウェア ステーションのコンポーネントを更新し、以前のサンプルの一部である拡張機能を無効にし、現在のサンプルの拡張機能を有効にします。
 
     > [!NOTE]
-    > 環境の種類に応じて、この記事の [開発環境での移行](#migration-in-a-development-environment) または [本番環境での移行](#migration-in-a-production-environment) セクションのいずれかで、移行プロセスに関する技術的な詳細を確認することができます。
+    > 環境の種類に応じて、この記事の [開発環境での移行](#migration-in-a-development-environment) または [運用環境での移行](#migration-in-a-production-environment) セクションのいずれかで、移行プロセスに関する技術的な詳細を確認することができます。
 
 ### <a name="migration-in-a-development-environment"></a>開発環境での移行
 

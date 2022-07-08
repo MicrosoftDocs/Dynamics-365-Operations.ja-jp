@@ -41,7 +41,7 @@ ms.locfileid: "8871191"
 
 | コンテンツ  | 説明  | 書式設定  | 期間    |
 |----------|--------------|---------|-----------|
-| [Lifecycle Services を使用して、財務と運用アプリの実装を設計、計画する](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) は、顧客とそのパートナーが、財務と運用アプリのプロジェクトを販売前から実装フェーズ、そして最終的に実稼働環境 (クラウドまたはオンプレミス) まで管理するために使用するコラボレーション ワークスペースです。 プロジェクトの管理に役立つチェックリストとツールが用意されており、実装や定期的に更新されるサービスに役立つ事前ビルドの方法も含まれています。 | 無料の自習型オンライン学習パス | 2 時間 |
+| [Lifecycle Services を使用して、財務と運用アプリの実装を設計、計画する](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) は、顧客とそのパートナーが、財務と運用アプリのプロジェクトを販売前から実装フェーズ、そして最終的に運用環境 (クラウドまたはオンプレミス) まで管理するために使用するコラボレーション ワークスペースです。 プロジェクトの管理に役立つチェックリストとツールが用意されており、実装や定期的に更新されるサービスに役立つ事前ビルドの方法も含まれています。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [財務と運用アプリでの組織の構成](/learn/paths/configure-your-organization-finance-ops/) | 財務と運用アプリを使用する機能コンサルタントは、顧客向けに組織を設定する方法を理解しておく必要があります。 この学習パスでは、その他のタスクの中でも特に、法人の設定、セキュリティ設定の実装、ユーザー向けのユーザー インターフェイスのパーソナライズ、モバイル アプリの設計と構築、および共通の統合の実装の方法を示します。 | 無料の自習型オンライン学習パス | 12 時間 |
 | [データを移行して、財務と運用アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントとして、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して財務と運用アプリの運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
 | [Finance and Operation での分析とレポートに関する作業](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | ビジネス リーダーは、基礎となる財務データや運用データを正確に把握しているなら、会社で重要な決定を下すことができます。 データの可視性がなければ、ビジネス リーダーは、ほとんど不可能な作業を迫られることになります。 財務と運用アプリで分析とレポートを使用すれば、そうした重要な意思決定を行うために必要な分析情報を、セキュリティ権限に応じてすべてのビジネス ユーザーに提供できます。 | 無料の自習型オンライン学習パス | 1.5 時間 |
@@ -59,7 +59,7 @@ ms.locfileid: "8871191"
 
 ## <a name="migration-and-upgrade"></a>移行およびアップグレード<a name="migration-and-upgrade"></a>
 
-| コンテンツ | Description  | 形式 | Length    |
+| コンテンツ | 説明  | 形式 | 期間    |
 |---------|--------------|--------|-----------|
 | [Dynamics AX 2012 を財務と運用アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションを財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Finance and Operations: 7.x から 8 以降へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求のシナリオと、必要に応じてそれらを上げる方法についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
@@ -76,7 +76,7 @@ ms.locfileid: "8871191"
 | [Finance And Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Finance and Operations の継続的な更新頻度が開始されました ! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Web カンファレンスの無料録画 | 61 分 |
 | [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この 1 時間の間に、Microsoft 管理の継続的な更新に関する最初の発表以来の新機能について説明します。 更新の頻度、プロセスに関する貴重なフィードバックへの対応を説明し、今後の Lifecycle Services のユーザー エクスペリエンスを確認します。これにより、更新を管理できるようになります。 | Web カンファレンスの無料録画 | 56 分 |
 | [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | ここでは、最新リリースを使用してシステムを最新の状態に保つための Microsoft の計画について説明します。 タイムライン、主要な更新プログラムと小さな更新プログラムの頻度、計画された手順、影響、および最適な結果を得るためにするべきことについて説明します。 | Web カンファレンスの無料録画 | 62 分 |
-| [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、実稼働環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「稼働停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
+| [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、運用環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「稼働停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
 
 ## <a name="testing"></a>テスト<a name="testing"></a>
 

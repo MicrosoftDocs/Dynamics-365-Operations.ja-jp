@@ -212,7 +212,7 @@ POS レシートの形式で使用される言語テキストやカスタム フ
         HardwareStation.CleanCash.Installer.exe install --verbosity 0
         ```
 
-#### <a name="production-environment"></a>実稼働環境
+#### <a name="production-environment"></a>運用環境
 
 [会計統合サンプルのビルド パイプラインを設定する](fiscal-integration-sample-build-pipeline.md) の手順に従って、会計統合サンプルの Cloud Scale Unit とセルフサービスの展開可能なパッケージを生成し、リリースします。 **CleanCash build-pipeline.yml** テンプレートの YAML ファイルは、[Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリの **パイプライン\\YAML_Files** フォルダにあります。
 

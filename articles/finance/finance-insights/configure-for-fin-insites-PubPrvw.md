@@ -40,7 +40,7 @@ Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finan
 
 1. Microsoft Dynamics Lifecycle Services (LCS) で、 Finance 環境を作成、または更新します。 この環境では、財務と運用アプリのバージョン 10.0.20 以降が必要です。
 2. この環境は、サンドボックスの高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
-3. サンドボックス環境で Finance insights を構成している場合は、予測を機能させるには、本番データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの過去のデータが十分に含まれていません。 
+3. サンドボックス環境で Finance insights を構成している場合は、予測を機能させるには、運用データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの過去のデータが十分に含まれていません。 
 
 ## <a name="configure-dataverse"></a>Dataverse のコンフィギュレーション
 

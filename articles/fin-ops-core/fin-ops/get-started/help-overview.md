@@ -107,7 +107,7 @@ Microsoft は、2017年12月の Dynamics 365 for Finance and Operations のリ�
 ![タスク ガイドの手順書。](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
-> タスク ガイドの再生時には、実際のデータを入力します。 実稼働環境である場合、データは現在使用している会社で入力されます。
+> タスク ガイドの再生時には、実際のデータを入力します。 運用環境である場合、データは現在使用している会社で入力されます。
 
 タスク レコーダーを使用して、独自のカスタム タスク ガイドを作成することができます。 詳細については、[タスク レコーダーを使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md) を参照してください。
 
@@ -172,7 +172,7 @@ On the **System parameters** page, follow these steps:
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | このサイトでは、Dynamics 365 のすべての製品ドキュメントをホスト、またはリンクしています。 |
 | [Microsoft Learn](/learn/) | このサイトは、無償で提供されている Microsoft eラーニング サイトです。 |
-| [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | このサイトでは、顧客やパートナーがプリ セールスから導入、運用までのプロジェクトを管理できるクラウド ベースの共同ワークスペースを提供しています。 このサイトは、実装におけるすべてのフェーズに活用できます。 |
+| [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | このサイトでは、顧客やパートナーがプリ セールスから導入、運用までのプロジェクトを管理できるクラウド ベースの共同ワークスペースを提供しています。 このサイトは、実装におけるすべてのフェーズに活用できます。 |
 | [サポート ブログ](https://aka.ms/AXSupportBlog) | サポート チームが投稿するコツやヒントを参照できます。 |
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | 古いリリースのコンテンツをホストします。 |
 | [Dynamics コミュニティ](https://community.dynamics.com/) | ブログ、フォーラム、ビデオをホストします。 |

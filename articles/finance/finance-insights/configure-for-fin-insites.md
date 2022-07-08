@@ -41,7 +41,7 @@ Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finan
     > [!NOTE]
     > この環境は、高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
 
-2. サンドボックス環境で Finance insights を構成している場合は、予測を機能させる前に、本番データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの十分な過去のデータが含まれていません。 
+2. サンドボックス環境で Finance insights を構成している場合は、予測を機能させる前に、運用データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの十分な過去のデータが含まれていません。 
 
 ## <a name="configure-your-azure-ad-tenant"></a>Azure AD テナントの構成
 

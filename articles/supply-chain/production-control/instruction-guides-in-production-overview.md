@@ -390,7 +390,7 @@ BOM に関連付けられているガイドには、BOM から材料を準備お
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>ガイドを選択するためのロジックを解決する
 
-次の生産データにガイドを追加できます。
+次の運用データにガイドを追加できます。
 
 - [リソース](#resources)
 - [リソース グループ](#resource-groups)

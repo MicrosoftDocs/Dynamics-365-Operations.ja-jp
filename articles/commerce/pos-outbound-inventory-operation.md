@@ -71,7 +71,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 またはそれ以降で
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>前提条件: 入庫操作を POS 画面レイアウトに追加する
 
-組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
+組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を運用環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
 
 ## <a name="overview"></a>概要
 

@@ -1,40 +1,35 @@
 ---
-title: ノルウェーのキャッシュ レジスタの配置ガイドライン
-description: このトピックは、ノルウェーのローカライズ用配置ガイドです。
-author: AlexChern0v
-ms.date: 10/06/2020
+title: ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
+description: この記事は、ノルウェーで Microsoft Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。
+author: EvgenyPopovMBS
+ms.date: 12/20/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Norway
-ms.search.industry: Retail
-ms.author: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 865ea7588bc518898bdf9ab0eff4e588e49b05a2
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594706"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894465"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
+# <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 Commerce のノルウェーでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
+この記事は、ノルウェーで Microsoft Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
 
 このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 SDK に関する詳細については、[Retail ソフトウエア開発キット (SDK) アーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
+このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
 
 > [!NOTE]
-> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
-
-> [!NOTE]
-> 使用しているコマースのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 この記事は、アプリの以前の複数のバージョンに適用されるため、この記事全体で *Retail サーバー* を使用します。
+>
+> 使用しているコマースのバージョンによって、この記事の手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用
 
@@ -1251,13 +1246,13 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
 
 ### <a name="set-up-required-parameters-in-headquarters"></a>バックオフィスで要求されるパラメーターを設定します
 
-詳細については、[ノルウェイのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
+詳細については、 [ノルウェイのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
 
 ## <a name="production-environment"></a>運用環境
 
 以下の手順に従い、コマース コンポーネントを含む配置可能パッケージを作成して、それらのパッケージを運用環境で適用します。
 
-1. [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、またはこのトピックで既に見た[Modern POS 拡張コンポーネント](#modern-pos-extension-components)セクションで手順を完了します。
+1. この記事の前半の [クラウド POS 拡張コンポーネント](#cloud-pos-extension-components)、または [Modern POS 拡張コンポーネント](#modern-pos-extension-components) セクションで手順を完了します。
 2. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
     1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。
