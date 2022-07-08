@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a416dbea0bab8f6a506ae5cfbfc4feeae8edfe29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 495f3dbf9bab9d550ebdbb7dda52aca80d5ea635
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882724"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017119"
 ---
 # <a name="asset-view"></a>資産の表示
 
@@ -30,7 +30,7 @@ ms.locfileid: "8882724"
 
 この記事では、資産管理の資産表示について説明します。 **資産表示** ページには、ツリー ビューに有効な資産と機能的な場所が表示されます。 したがって、機能的な場所への資産関係の概要を簡単に取得できます。 さらに、機能的な場所、資産、および関連する部品表 (BOMs) に関する詳細情報を表示できます。 また、資産に関連する有効なメンテナンス要求とワーク オーダーの概要をすばやく取得することもできます。
 
-1. **資産管理** \> **共通** \> **資産** \> **資産表示** を選択します。
+1. **資産管理** \> **資産** \> **資産表示** を選択します。
 2. ページに表示されるビューを変更するには、**表示** フィールドで新しい値を選択します。
 
     > [!NOTE]

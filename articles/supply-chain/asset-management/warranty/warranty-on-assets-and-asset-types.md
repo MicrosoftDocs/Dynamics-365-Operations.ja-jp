@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa4fe7af46996e8de76ea61d5395327e7617e736
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e63161aa32ecbc99baace9bb0cc649aedc600ed
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906127"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015995"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>資産および資産タイプに対する保証
 
@@ -39,7 +39,7 @@ ms.locfileid: "8906127"
 
 ## <a name="set-up-a-warranty-on-an-asset"></a>資産に対する保証の設定
 
-1. **資産管理** \> **共通** \> **資産** \> **全資産** を選択します。
+1. **資産管理** \> **資産** \> **すべての資産** を選択します。
 2. 資産を選択し、**編集** を選択します。
 3. **仕入先** クイック タブ、**仕入先保証** セクションの **保証** フィールドで、保証契約を選択します。
 4. **保証開始日** と **保証終了日** フィールドで、開始日と終了日を選択します。

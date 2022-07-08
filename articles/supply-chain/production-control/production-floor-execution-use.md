@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860670"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022526"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>作業者が生産現場の実行インターフェイスを使用する方法
 
@@ -263,9 +263,6 @@ ms.locfileid: "8860670"
 
 ## <a name="view-the-my-day-dialog"></a>「マイ デイ」ダイアログの表示
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 **マイ デイ** ダイアログでは、作業者に登録と残高の概要を表示します。 ダイアログは、次の 3 つのセクションに分かれています。
 
 - メイン セクションには、選択した日付に現在の作業者が行った登録が一覧表示されます。 現在の日付の登録を表示して開き、作業者が他の日を表示できる日付ピッカーを提供します。
@@ -275,9 +272,6 @@ ms.locfileid: "8860670"
 管理者は、[生産現場の実行インターフェイスを設計](production-floor-execution-tabs.md) で説明されているように、関連する各タブのツールバーで **マイ デイ** ボタンを配置することで、この機能をインターフェイスに追加できます。
 
 ## <a name="working-in-teams"></a>チームの作業
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 複数の作業者が同じ生産ジョブに割り当てられている場合、彼らはチームを形成することができます。 チームは、1 人の作業員をパイロットとして推薦することができます。 残りの作業員は自動的にそのパイロットのアシスタントになります。 それによって編成されたチームでは、パイロットのみがジョブの状態を登録する必要があります。 時間レコードは、すべてのチーム メンバーに適用されます。
 

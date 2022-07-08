@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4424ebbf64ccdcb9bffc840520952ac915606209
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890947"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015496"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>製品コンフィギュレーション モデルの計算についてよく寄せられる質問
 
@@ -73,7 +73,7 @@ ms.locfileid: "8890947"
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>ターゲット属性を非表示または読み取り専用に設定する方法
 属性を非表示または読み取り専用に設定するには、次の手順に従います。
 
-1.  **製品情報管理** &gt; **共通** &gt; **製品コンフィギュレーション モデル** をクリックします。
+1.  **製品情報管理** &gt; **製品** &gt; **製品構成モデル** をクリックします。
 2.  製品コンフィギュレーション モデルを選択し、[アクション ペイン] で、**編集** をクリックします。
 3.  **制約ベースの製品コンフィギュレーション モデルの詳細** ページで、ターゲット属性として使用する属性を選択します。
 4.  **属性** クイック タブで、**非表示** または **読み取り専用** を選択します。
@@ -96,7 +96,7 @@ ms.locfileid: "8890947"
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>自分のプロダクト モデルの検証に成功しても、エラー メッセージが出力される理由は
 計算は検証に含まれていません。 計算エラーを探すには、製品コンフィギュレーション モデルをテストする必要があります。 製品コンフィギュレーション モデルをテストするには、次の手順に従います。
 
-1.  **製品情報管理** &gt; **共通** &gt; **製品コンフィギュレーション モデル** をクリックします。
+1.  **製品情報管理** &gt; **製品** &gt; **製品構成モデル** をクリックします。
 2.  製品コンフィギュレーション モデルを選択し、[アクション ペイン] で、**実行** グループ内の **テスト** をクリックします。
 
 

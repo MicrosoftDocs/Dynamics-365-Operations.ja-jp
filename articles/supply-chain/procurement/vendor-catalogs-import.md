@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 19fa26eeb8ea3c0944be199c57eaf4a2d7e76034
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 923715893b9f1c4b87d7bbb67e200f8cb8f92e6b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851626"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015558"
 ---
 # <a name="import-vendor-catalogs"></a>仕入先カタログのインポート
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 クライアントから、仕入先より送信された
 
 4. ワークフローをカタログ インポート用にコンフィギュレーションします。 CMR ファイル テンプレートを作成し、これを仕入先と共有します。
 
-5. **調達** \> **共通** \> **カタログ** \> **仕入先カタログ** を選択して、仕入先のカタログを作成します。 仕入先から受け取るカタログ保守要求 (CMR) ファイルがこのカタログでグループ化されます。 
+5. **調達** \> **カタログ** \> **仕入先カタログ** を選択して、仕入先のカタログを作成します。 仕入先から受け取るカタログ保守要求 (CMR) ファイルがこのカタログでグループ化されます。
 
 6. CMR ファイルをアップロードします。
 

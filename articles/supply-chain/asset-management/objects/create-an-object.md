@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860931"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016307"
 ---
 # <a name="create-an-asset"></a>資産の作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860931"
 
 この記事では、資産管理で資産を作成する方法について説明します。
 
-1. **資産管理** > **共通** > **資産** > **全資産** または **有効な資産** をクリックします。
+1. **資産管理** > **資産** > **全資産** または **有効な資産** をクリックします。
 2. **新規** ボタンをクリックします。
 3. **資産の作成** ダイアログ ボックスで、**資産** (資産 ID) と資産名に関するデータを挿入します。 **有効** フィールドで、資産の日時を選択します。 その日付から、資産を機能の場所にインストールしたり、資産構造内の資産を移動および置換することが可能になります。
 4. **資産タイプ** フィールドで、資産の資産タイプ (必須項目) を選択します。 必要に応じて、資産の **資産メーカー** および **資産モデル** を選択します。 1 つの製品のみが設定されている場合、その製品は **資産メーカー** フィールドで自動的に選択されます。 **資産メーカー** および **資産モデル** フィールドで使用できる選択は、[資産メーカーおよびモデル](../setup-for-objects/product-and-model.md)の設定によって異なります。

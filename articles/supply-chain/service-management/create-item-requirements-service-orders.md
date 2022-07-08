@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c2c90ff76121b436d0fec532268cd3383de0eab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f21cda0abb334432d22cc7e0ccfdab724253d91e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888415"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016952"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>サービス注文の在庫品目要求の作成
 
@@ -34,14 +34,14 @@ ms.locfileid: "8888415"
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>サービス注文の在庫品目要求の作成
 
-1. **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** に移動します。
+1. **サービス管理** \> **サービス注文** \> **サービス注文** に移動します。
 1. 在庫品目要求を作成するサービス注文を選択します。
 1. **アクション ウィンドウ** の **出荷** タブで、**在庫品目要求** を選択します。
 1. **在庫品目要求** フォームで、必要な品目の情報を入力します。 フォームのそれぞれのフィールドについては、[在庫品目要求 (フォーム)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)) を参照してください。
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>サービス契約の在庫品目要求の作成
 
-1. **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** に移動します。
+1. **サービス管理** \> **サービス契約** \> **サービス契約** に移動します。
 1. 在庫品目要求を作成するサービス契約を開きます。
 1. **明細** クイック タブで、**追加** を選択して明細行を新規作成します。
 1. **トランザクション タイプ** フィールドで、**品目** を選択します。

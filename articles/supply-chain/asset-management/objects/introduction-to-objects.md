@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874191"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016017"
 ---
 # <a name="introduction-to-assets"></a>資産の概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "8874191"
 
 ## <a name="all-assets"></a>全資産
 
-**資産管理** \> **共通** \> **資産** \> **全資産** を選択します。 **全資産** リストページには、全資産とそれに関連する情報の一部が表示されます。 有効な資産のみを表示するには、**有効な資産** を選択します。 メンテナンス作業者として関係する機能的な場所に導入される資産のみを表示するには、**個人用の有効な資産** を選択します。 (この関係は **作業者** ページで設定されます。 詳細については、[メンテナンス作業者および作業者グループ](../setup-for-objects/workers-and-worker-groups.md) を参照してください。)
+**資産管理** \> **資産** \> **すべての資産** を選択します。 **全資産** リストページには、全資産とそれに関連する情報の一部が表示されます。 有効な資産のみを表示するには、**有効な資産** を選択します。 メンテナンス作業者として関係する機能的な場所に導入される資産のみを表示するには、**個人用の有効な資産** を選択します。 (この関係は **作業者** ページで設定されます。 詳細については、[メンテナンス作業者および作業者グループ](../setup-for-objects/workers-and-worker-groups.md) を参照してください。)
 
 **全資産** グリッド ビューで、**資産** 列でリンクを選択して、選択したレコードの詳細を表示します。 レコードを編集するには、**編集** ボタンを選択します。 詳細ビューには、資産に関連する詳細情報が表示されます。 右側の **関連情報** ウィンドウには、その他の資産関連情報が含まれています。 ウィンドウを展開して、選択した資産の関連情報を表示します。
 

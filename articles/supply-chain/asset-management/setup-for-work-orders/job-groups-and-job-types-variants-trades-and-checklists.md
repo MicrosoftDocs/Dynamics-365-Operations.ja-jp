@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d4385fdd3e94d48a65baf195efa1d687fbf95c3
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887605"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016771"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>管理ジョブ タイプ、カテゴリ、バリエーション、取引、チェックリスト
 
@@ -243,7 +243,7 @@ ms.locfileid: "8887605"
 
 必要なメンテナンス作業タイプの既定の組み合わせを作成した後、**すべての資産** ページを使用して、特定の資産に関連する現在のメンテナンス作業タイプの既定の概要を取得できます。 概要には、資産に対して選択された資産タイプで使用できるすべてのメンテナンス作業タイプの既定の組み合わせが表示されます。 これらの組み合わせには、メンテナンス作業タイプのバリエーション、およびメンテナンス作業取引のバリエーションがある組み合わせが含まれます。
 
-1. **資産管理** \> **共通** \> **資産** \> **全資産** または **有効な資産** を選択します。
+1. **資産管理** \> **資産** \> **すべての資産** または **有効な資産** を選択します。
 2. リストで資産を選択すると、のメンテナンス作業タイプの組み合わせの概要が表示されます。
 3. アクション ウィンドウの、**一般** タブの、**関連情報** グループで、**メンテナンス作業タイプ** を選択します。
 

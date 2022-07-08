@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c1d236918eddf3203a544a6b047f8ccac777971
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677089"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017247"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>返品原価価格と返品のロット ID        
 
@@ -38,7 +38,7 @@ ms.locfileid: "8677089"
 
 品目を返品注文に追加する場合、既定では、その品目は現在の原価価格で在庫に戻されます。 別の返品原価価格を指定するには、次の手順に従います。
 
-1.  **販売とマーケティング** \> **共通** \> **返品注文** \> **すべての返品注文** の順にクリックします。
+1.  **販売とマーケティング** \> **返品注文** \> **すべての返品注文** の順にクリックします。
 
 2.  **アクション ウィンドウ** の **新規** グループで、**返品注文** をクリックします。
 
@@ -54,7 +54,7 @@ ms.locfileid: "8677089"
 
 これは、返品明細行の作成に使用する推奨される方法です。 顧客に製品を販売した時点の製品の原価を使用するには、返品注文を作成し、返品する販売明細行を指定します。
 
-1.  **販売とマーケティング** \> **共通** \> **返品注文** \> **すべての返品注文** の順にクリックします。
+1.  **販売とマーケティング** \> **返品注文** \> **すべての返品注文** の順にクリックします。
 
 2.  **アクション ウィンドウ** の **新規** グループで、**返品注文** をクリックします。
 

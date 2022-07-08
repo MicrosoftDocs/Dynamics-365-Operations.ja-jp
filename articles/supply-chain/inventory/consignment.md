@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0087abebccca107a094a40d3e2d5a5de330532af
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872039"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014912"
 ---
 # <a name="set-up-consignment"></a>委託販売の設定
 
@@ -84,7 +84,7 @@ USMF は追加の定期的なプロセスを実行します:
 - **委託販売在庫から受領された製品** - 所有権変更プロセス中に更新された商品の領収書がある品目および数量に関する情報を表示します。
 - **手持委託販売在庫** - 配送予定の委託販売品目、およびすでに顧客サイトで現物を利用できる品目に関する情報を表示します。
 
-仕入先コラボレーションを使用する仕入先の設定については、[仕入先ポータルのユーザー セキュリティ](../procurement/configure-security-vendor-portal-users.md) を参照してください。
+仕入先コラボレーションを使用する仕入先の設定については、[仕入先ポータルのコラボレーション ユーザー](../procurement/manage-vendor-collaboration-users.md) を参照してください。
 
 ## <a name="inventory-owners"></a>在庫所有者
 

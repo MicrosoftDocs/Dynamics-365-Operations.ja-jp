@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4d9424b5678a6f37d46203e5d4e359b020fda7a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890657"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016973"
 ---
 # <a name="create-service-object-relations"></a>サービス対象関係の作成 
 
@@ -33,7 +33,7 @@ ms.locfileid: "8890657"
 
 次の手順で、サービス契約に対してサービス対象の関係を作成します。
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** をクリックします。
 
 2.  **サービス契約** 一覧で、既存のサービス契約を選択するか、**新規** をクリックして新しいサービス契約を作成します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "8890657"
 
 次の手順で、サービス注文に対してサービス対象の関係を作成します。
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。
+1.  **サービス管理** \> **サービス注文** \> **サービス注文** の順にクリックします。
 
 2.  **サービス注文** 一覧で既存のサービス注文を選択するか、新しいサービス注文を作成します。
 

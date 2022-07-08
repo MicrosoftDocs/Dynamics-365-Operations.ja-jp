@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890831"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023763"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890831"
 仕入先コラボレーション インターフェイスは、発注書、請求書、委託販売在庫に関する限られた情報を外部仕入先ユーザーに公開します。 このインターフェイスから、仕入先も見積依頼 (RFQ) に返信でき、会社の基本情報を表示および編集できます。
 
 この記事では、Dynamics 365 Supply Chain Management で仕入先コラボレーションを設定する方法について説明します。 また、新しい仕入先コラボレーション ユーザーをプロビジョニングするワークフローの設定方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。
-
-> [!NOTE]
-> 仕入先コラボレーションのセキュリティ ロールの設定に関する情報は、Finance and Operations の現在のバージョンにのみ適用されます。 Microsoft Dynamics AX 7.0 (2016 年 2 月) および Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) で、**仕入先ポータル** モジュールを使用して仕入先との共同作業を行います。 Microsoft Dynamics AX で仕入先ポータルのユーザーのアクセス許可の詳細については、[仕入先ポータルのユーザー セキュリティ](configure-security-vendor-portal-users.md) を参照してください。
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>仕入先コラボレーション セキュリティ ロールの設定
 
@@ -138,13 +135,7 @@ Supply Chain Management で提供されている **仕入先見込顧客 (外部
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>特定仕入先の仕入先コラボレーションの有効化
 
-仕入先コラボレーションを使用するユーザー アカウントを作成する前に、仕入先コラボレーションを使用するための仕入先を設定する必要があります。 **仕入先** ページの **一般** タブで、**コラボレーションの有効化** フィールドを設定します。  次のオプションを使用できます。
-
-- **有効 (発注書は自動で確認されます)** - 仕入先が変更を要求せずに受理した場合、発注書は自動的に確認されます。
-- **有効 (発注書は自動確認されません)** - 仕入先が受理した後、組織によって手動で発注書を確認する必要があります。
-
-> [!NOTE]
-> 社内の調達担当者は、このタスクも完了できます。
+仕入先コラボレーションを使用するユーザー アカウントを作成する前に、仕入先コラボレーションを使用するための仕入先を設定する必要があります。 これを行う方法についての詳細は、[外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md) を参照してください。
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>新しい仕入先の共同作業ユーザーのプロビジョニングのトラブルシューティング
 

@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce 評価環境のオプション機能のコンフィギュレーション
-description: この記事では、Microsoft Dynamics 365 Commerce の評価環境のオプション機能を構成する方法について説明します。
+title: Dynamics 365 Commerce サンドボックス環境のオプション機能のコンフィギュレーション
+description: この記事では、Microsoft Dynamics 365 Commerce のサンドボックス環境のオプション機能を構成する方法について説明します。
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 201628eb0c3e81d5fee0df9e53d93f5b1839adfb
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861917"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013241"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のオプション機能のコンフィギュレーション
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-sandbox-environment"></a>Dynamics 365 Commerce サンドボックス環境のオプション機能のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 Commerce の評価環境のオプション機能を構成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のサンドボックス環境のオプション機能を構成する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
-トランザクション電子メール機能を評価する場合、次の前提条件を満たす必要があります。
+トランザクション電子メール機能をデモする場合、次の前提条件を満たす必要があります。
 
-- 評価環境をプロビジョニングする Microsoft Azure のサブスクリプションから使用できるメールサーバー (シンプル メール トランスファー プロトコル \[SMTP\] サーバー) が使用可能です。
+- サンドボックス環境をプロビジョニングする Microsoft Azure サブスクリプションから使用できる電子メール サーバー (Simple Mail Transfer Protocol \[SMTP\] サーバー) が使用可能です。
 - サーバーの完全修飾ドメイン名 (FQDN)/IP アドレス、SMTP ポート番号、および認証の詳細が利用可能です。
 
 ## <a name="configure-the-image-back-end"></a>画像バックエンドのコンフィギュレーション
@@ -39,10 +39,10 @@ ms.locfileid: "8861917"
 ### <a name="find-your-media-base-url"></a>メディア ベース URL の検索
 
 > [!NOTE]
-> この手順を完了する前に、[コマースでサイトを設定する](cpe-post-provisioning.md#set-up-your-site-in-commerce) の手順を完了する必要があります。
+> この手順を完了する前に、[コマースでサイトを設定する](cpe-post-provisioning.md#set-up-your-e-commerce-sites) の手順を完了する必要があります。
 
 1. プロビジョニングの実行時に eコマースを初期化した際に作成した URL を使用して、コマース サイトの管理ツールにサイン インします ([eコマースの初期化](provisioning-guide.md#initialize-e-commerce) を参照してください)。
-1. **Fabrikam** サイトを開きます。
+1. 使用する **Fabrikam**、**Adventure Works**、または **Adventure Works のビジネス** サイトを開きます。
 1. 左側のメニューで、**メディア ライブラリ** を選択します。
 1. 1 つの画像資産を選択します。
 1. 右側のプロパティ インスペクターで、**公開 URL** プロパティを検索します。 値は URL です。 次に例を示します。
@@ -98,9 +98,9 @@ ms.locfileid: "8861917"
 
 ## <a name="customize-email-templates"></a>電子メール テンプレートのカスタマイズ
 
-電子メール テンプレートをカスタマイズして、異なる画像を使用するようにできます。 またはテンプレートのリンクを更新して、評価環境に移動することも可能です。 この手順では、既定のテンプレートをダウンロードし、システムのテンプレートを更新する方法について説明します。
+電子メール テンプレートをカスタマイズして、異なる画像を使用するようにできます。 またはテンプレートのリンクを更新して、サンドボックス環境に移動することもできます。 この手順では、既定のテンプレートをダウンロードし、システムのテンプレートを更新する方法について説明します。
 
-1. Web ブラウザーで、[Microsoft Dynamics 365 Commerce 評価版既定の電子メール アドレス テンプレート ZIP ファイル](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip)をローカル コンピューターにダウンロードします。 このファイルには、次の HTML ドキュメントが含まれます。
+1. Web ブラウザーで、[Microsoft Dynamics 365 Commerce デモ版の既定の電子メール アドレス テンプレート ZIP ファイル](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip)をローカル コンピューターにダウンロードします。 このファイルには、次の HTML ドキュメントが含まれます。
 
     - 注文確認モジュール テンプレート
     - ギフト カード テンプレートの発行
@@ -167,15 +167,11 @@ ms.locfileid: "8861917"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Dynamics 365 Commerce 評価環境の概要](cpe-overview.md)
+[Dynamics 365 Commerce サンドボックス環境のプロビジョニング](provisioning-guide.md)
 
-[Dynamics 365 Commerce 評価環境をプロビジョニングする](provisioning-guide.md)
+[Dynamics 365 Commerce サンドボックス環境の構成](cpe-post-provisioning.md)
 
-[Dynamics 365 Commerce の評価環境を構成する](cpe-post-provisioning.md)
-
-[Dynamics 365 Commerce 評価環境で BOPIS を構成する](cpe-bopis.md)
-
-[Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
+[Dynamics 365 Commerce サンドボックス環境での BOPIS の構成](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

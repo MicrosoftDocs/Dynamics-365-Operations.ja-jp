@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a94b366dc725db3af01c156ae517a241213f7d52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882840"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016046"
 ---
 # <a name="introduction-to-functional-locations"></a>機能的な場所の概要
 
@@ -57,9 +57,9 @@ ms.locfileid: "8882840"
 
 機能的な場所の階層を作成したら、その上に資産を導入します。 詳細については、[機能的な場所に資産を導入する](../functional-locations/install-objects-on-functional-locations.md) を参照してください。
 
-## <a name="all-functional-locations"></a>すべての機能的な場所
+## <a name="all-functional-locations"></a>すべての機能の場所
 
-**資産管理**\>**共通**\>**機能的な場所**\>**すべての機能的な場所** を選択し、**すべての機能的な場所** リスト ページを開きます。 このページには、すべての機能的な場所と、それぞれに関連する情報の一部が表示されます。 有効な機能的な場所のみを表示するには、**有効な機能的な場所** を選択します。 作業者として関係する機能的な場所のみを表示するには、**個人用の有効な機能的な場所** を選択します。 (この関係は **作業者** ページで設定されます。 詳細については、[メンテナンス作業者および作業者グループ](../setup-for-objects/workers-and-worker-groups.md) を参照してください。)
+**資産管理** \> **機能的な場所** \> **すべての機能的な場所** を選択し、**すべての機能的な場所** リスト ページを開きます。 このページには、すべての機能的な場所と、それぞれに関連する情報の一部が表示されます。 有効な機能的な場所のみを表示するには、**有効な機能的な場所** を選択します。 作業者として関係する機能的な場所のみを表示するには、**個人用の有効な機能的な場所** を選択します。 (この関係は **作業者** ページで設定されます。 詳細については、[メンテナンス作業者および作業者グループ](../setup-for-objects/workers-and-worker-groups.md) を参照してください。)
 
 **すべての機能的な場所** リスト ページで、**機能的な場所** 列でリンクを選択して、選択したレコードの詳細を表示します。 機能的な場所を編集するには、**編集** ボタンを選択します。 詳細ビューには、場所に関連する詳細情報が表示されます。 また、右側には **関連情報** ウィンドウが含まれています。 このウィンドウには、機能的な場所の階層が表示されます。 **関連情報** ウィンドウを展開および折りたたむことができます。
 

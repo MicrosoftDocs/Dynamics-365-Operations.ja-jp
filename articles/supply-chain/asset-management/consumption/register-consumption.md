@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886047"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015088"
 ---
 # <a name="register-consumption"></a>消費の登録
 
@@ -35,7 +35,7 @@ ms.locfileid: "8886047"
 >[!NOTE]
 >ワーク オーダーのライフサイクル状態での仕訳帳の自動転記を設定することができます。 詳細については、[ワーク オーダーのライフサイクル状態](../setup-for-work-orders/work-order-lifecycle-states.md)を参照してください。
 
-1. **資産管理** > **共通** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** の順にクリックします。
+1. **資産管理** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** をクリックします。
 
 2. 作業指示書を選択し、**仕訳帳** をクリックします。
 
@@ -61,7 +61,7 @@ ms.locfileid: "8886047"
 
 ワーク オーダーに複数のワーク オーダー ジョブが含まれている場合は、**時間分割** 機能を使用して作業時間を登録することができます。つまり、1 時間の登録明細行を各ワーク オーダー ジョブに均等に配分することができます。
 
-1. **資産管理** > **共通** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** の順にクリックします。
+1. **資産管理** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** をクリックします。
 
 2. ワーク オーダーを選択し、**仕訳帳** をクリックします。
 

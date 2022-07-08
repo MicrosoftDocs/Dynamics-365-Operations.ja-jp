@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3a9ee0a96e6a9097608b4c7cd1f65085e95b8ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30c672286c16a4353556a507019960edb93f8b1b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897722"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016597"
 ---
 # <a name="manual-update-of-asset-counters"></a>資産カウンターの手動更新
 
@@ -34,7 +34,7 @@ ms.locfileid: "8897722"
 
 **全資産** ページで、資産の測定値に基づき、資産に対する時間または数量のカウンター登録を作成します。
 
-1. **資産管理** >  **共通** >  **資産** > **全資産** の順に選択します。
+1. **資産管理** > **資産** > **すべての資産** の順に選択します。
 
 2. 資産を選択してから、アクション ペインの、**資産** タブの、**予防的** グループで、**カウンター** を選択します。 **資産カウンター** ページに、選択した資産に対して行われた以前のカウンター登録のすべてのリストが表示されます。
 

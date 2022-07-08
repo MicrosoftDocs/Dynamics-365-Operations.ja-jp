@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.openlocfilehash: 10ea650b7c5c0cad7e1a3d7556c073aecef06036
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 56a2d1d2bcafdcdd9d88c132986e8ef485bf6b24
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887117"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027231"
 ---
 # <a name="commerce-posting-parameters"></a>Commerce 転記パラメーター
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 この記事では、Microsoft Dynamics 365 Commerce での財務トランザクションおよび現物トランザクションの転記に固有のパラメータについて説明します。 コマース転記パラメーターは、コマース本部の **小売とコマース \> 本社の設定 \> パラメーター \> コマース パラメーター \> 転記** にあります。
 

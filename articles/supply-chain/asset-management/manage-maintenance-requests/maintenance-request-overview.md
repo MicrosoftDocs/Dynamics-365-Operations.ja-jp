@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d6f7861d5c242d512c4ac984e9e9f1d0890c5dc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 488b6505aba246aa3a6ea69436514a274403bf49
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848081"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015641"
 ---
 # <a name="maintenance-requests"></a>メンテナンス要求
 
@@ -37,7 +37,7 @@ ms.locfileid: "8848081"
 
 ## <a name="view-maintenance-requests"></a>メンテナンス要求の表示
 
-メンテナンス要求を表示するには、**資産管理**\>**共通**\>**メンテンナンス要求**\>**すべてのメンテナンス要求**、**有効なメンテナンス要求**、または **個人用の機能的な場所のメンテナンス要求** を選択します。 各リスト ページには、メンテナンス要求に関連する情報の一部が表示されます。
+メンテナンス要求を表示するには、**資産管理** \> **メンテナンス要求** \> **すべてのメンテナンス要求**、**有効なメンテナンス要求**、または **自分の機能的な場所メンテナンス要求** を選択します。 各リスト ページには、メンテナンス要求に関連する情報の一部が表示されます。
 
 ![メンテナンス要求の表示。](media/01-manage-maintenance-requests.png)
 

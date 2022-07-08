@@ -1,8 +1,8 @@
 ---
 title: ビデオ
-description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
+description: このページでは、YouTube および他のサイトで使用可能な Finance and Operations アプリに関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
 author: sericks007
-ms.date: 09/15/2021
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487994"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958141"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -34,7 +34,7 @@ ms.locfileid: "7487994"
 
 ### <a name="data-integration"></a>データ統合
 
-- [Dynamics 365 for Field Service と Finance and Operations アプリ間で作業指示を同期させる](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Dynamics 365 for Field Service と Finance and Operations アプリ間のワーク オーダーの同期](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>データ管理
 
@@ -42,7 +42,6 @@ ms.locfileid: "7487994"
 
 ### <a name="development"></a>開発
 
-- [Visual Studio での競合を解決する方法](https://youtu.be/4rxO0zUN2zU)
 - [最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [開発の分岐およびビルドの設定](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [開発マシンの設定](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -51,8 +50,8 @@ ms.locfileid: "7487994"
 ### <a name="intelligence"></a>インテリジェンス
 
 - [分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ)
-- [Finance and Operations アプリで PowerBI.com レポートを埋め込む方法](https://youtu.be/gGWuNJDoi-M)
-- [ご利用のデータベース (BYOD) を Finance and Operations アプリで活用する](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Finance and Operations アプリで PowerBI.com レポートを組み込む方法](https://youtu.be/gGWuNJDoi-M)
+- [Finance and Operations アプリに自分のデータベース (BYOD) の持ち込み](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Dynamics 365 で原価管理 Power BI コンテンツを使用する方法](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -63,13 +62,13 @@ ms.locfileid: "7487994"
 - [環境の配置](https://www.youtube.com/watch?v=FUROjGuhQEA&t=68s)
 - [Lifecycle Services の使用を開始する](https://www.youtube.com/watch?v=qLBjKAPaqN4&t=24s)
 - [サンド ボックス環境への配置コード](https://www.youtube.com/watch?v=5azLeOO078k)
-- [実稼動環境への配置コード](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
+- [運用環境への配置コード](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
 - [Lifecycle Services の実装プロジェクト](https://www.youtube.com/watch?v=V1vVOgcTuw4&t=18s)
 - [コード アップグレードおよびツール プロセスの管理](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
 - [Lifecycle Services で業務プロセス ライブラリの管理](https://www.youtube.com/watch?v=S5msxj-2-x0)
 - [Lifecycle Services での方法](https://www.youtube.com/watch?v=YRMJ15DvgZ8)
-- [実稼動環境の要求](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
-- [実稼動環境でデータの更新](https://www.youtube.com/watch?v=VCd5SgkYPTw)
+- [運用環境の要求](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
+- [運用環境でデータの更新](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [プラットフォーム更新プログラム 3 以降の新しいプラットフォーム リリースを取得する](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [テレメトリーを使用して Dynamics Lifecycle Services のキー パフォーマンス カウンターを監視する](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
@@ -81,7 +80,7 @@ ms.locfileid: "7487994"
 - [Regression Suite Automation Tool (RSAT) 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg)
 
 
-## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Finance に関するビデオ
+## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Finance のビデオ
 
 ### <a name="business-document-management"></a>ビジネス ドキュメントの管理
 - [ビジネス ドキュメントの管理を使用して新しいビジネス ドキュメントを作成する](https://www.youtube.com/watch?v=gAIYl-mM_pw)

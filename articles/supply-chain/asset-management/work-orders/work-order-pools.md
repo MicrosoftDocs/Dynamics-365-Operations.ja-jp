@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6fc97c8a65afe24bfe730e6d13eb178ddcafc2d9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc9eaf82c2f3336f8c3400fcd3f1165ed4fa56d8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849564"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014972"
 ---
 # <a name="work-order-pools"></a>作業指示書プール
 
@@ -44,7 +44,7 @@ ms.locfileid: "8849564"
 
 **すべてのワーク オーダー プール** または **有効なワーク オーダー プール** リスト ページでは、ワーク オーダー プールの概要を取得し、新しいプールを作成できます。
 
-1. **資産管理** > **共通** > **ワーク オーダー プール** > **すべてのワーク オーダー プール** または **有効なワーク オーダー プール** の順に選択します。
+1. **資産管理共通** >  **ワーク オーダー プール** > **すべてのワーク オーダー プール** または **有効なワーク オーダー プール** の順に選択します。
 
 2. **新規** を選択します。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857898"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015001"
 ---
 # <a name="add-fault-to-work-order"></a>作業指示書へのエラーの追加
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857898"
 
 エラー デザイナーで設定されたエラーを作業指示書に追加できます。 1 つ以上のエラー レコードを、作業指示書で選択された資産に使用される資産タイプに接続する必要があります。 設定の詳細については、[エラー管理](../setup-for-work-orders/fault-management.md) を参照してください。
 
-1. **資産管理** > **共通** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** の順に選択します。
+1. **資産管理** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** の順に選択します。
 
 2. エラー登録を行う作業指示書を選択し、アクション ウィンドウの **作業指示書** タブの、**資産** グループで **資産エラー** を選択します。
 
@@ -64,7 +64,7 @@ ms.locfileid: "8857898"
 
 **すべての資産** リスト ページから、すべてのエラー登録を表示する資産エラー レポートおよびエラー統計のグラフィカルな概要を印刷できます。
 
-1. **資産管理** >  **共通** >  **資産** > **全資産** の順に選択します。
+1. **資産管理** > **資産** > **すべての資産** の順に選択します。
 
 2. エラー レポートを印刷する資産を選択します。
 

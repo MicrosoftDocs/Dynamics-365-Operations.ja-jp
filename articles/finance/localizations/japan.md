@@ -1,23 +1,23 @@
 ---
 title: 日本の概要
 description: この記事では、日本固有の機能の概要を示します。
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 06/09/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 69f45539a8be6d84f07bf3ffb8ebb07deb44577c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83af8ada60a25bd537ab18d5a77abcc3d7c7e19e
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880616"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954464"
 ---
 # <a name="japan-overview"></a>日本の概要
 
@@ -114,7 +114,10 @@ ms.locfileid: "8880616"
 -  [損金の照会](tasks/inquiry-deductible-expenses.md)
 -  [累進的源泉徴収税](apac-jpn-progressive-withholding-tax-calculation.md)
 -  [複数の転記階層の損金算入額のマスター データの設定](tasks/set-up-master-data-inclusion.md)
--  [日本の消費税レポートの設定](tasks/setup-japan-consumption-tax-report.md)
+
+ ### <a name="consumprtion-tax-report"></a>消費税申告
+ -  [消費税申告](apac-jpn-consumption-tax-report.md)   
+ -  [タスク: 日本の消費税レポートの設定](tasks/setup-japan-consumption-tax-report.md)
 
 ## <a name="system-administration"></a>システム管理
 -  [郵便番号のインポート](apac-jpn-import-postal-codes.md) 

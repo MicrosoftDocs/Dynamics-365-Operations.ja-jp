@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b189835528e2e1b6d746c767fb53f365fa194b46
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18e2323f0346e522e04a3d1e36d98846a66bea1e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865037"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015691"
 ---
 # <a name="delete-a-service-bom"></a>サービス BOM の削除
 
 [!include [banner](../includes/banner.md)]
 
-1. **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** に移動します。 サービス部品表 (BOM) を削除するサービス契約を選択します。
+1. **サービス管理** \> **サービス契約** \> **サービス契約** に移動します。 サービス部品表 (BOM) を削除するサービス契約を選択します。
 1. **アクション ウィンドウ** で、**サービス対象** を選択します。
 1. **サービス対象** フォームで、サービス BOM を削除するサービス対象を選択します。 **機能** を選択し、**サービス BOM の削除** を選択します。
 1. **はい** を選択します。

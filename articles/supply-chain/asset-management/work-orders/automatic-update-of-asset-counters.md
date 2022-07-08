@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ea84259eb8f12becdcf008ed9222a44b2626a0d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856254"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016220"
 ---
 # <a name="automatic-update-of-asset-counters"></a>資産カウンターの自動更新
 
@@ -53,7 +53,7 @@ ms.locfileid: "8856254"
 
 5. **OK** を選択します。 
 
-資産カウンターの自動更新が終了すると、**資産カウンター** ページの資産に関連するカウンターの登録を表示できます。 **資産管理** > **共通** > **資産** > **全資産** の順に選択して、資産を選択してからアクション ウィンドウの **資産** タブの、**予防的** グループで、**カウンター** を選択します。
+資産カウンターの自動更新が終了すると、**資産カウンター** ページの資産に関連するカウンターの登録を表示できます。 **資産管理** > **資産** > **すべての資産** の順に選択して、資産を選択してからアクション ウィンドウの **資産** タブの、**予防的** グループで、**カウンター** を選択します。
 
 **資産の集計値** ページでは、すべての資産のすべてのカウンター タイプで行われた最新の登録の概要を取得できます。 **資産管理** > **照会** > **資産** > **資産の集計値** の順に選択します。 このページは **資産カウンター** ページに似ていますが、登録を追加または編集することはできません。 概要のみに対するものです。
 

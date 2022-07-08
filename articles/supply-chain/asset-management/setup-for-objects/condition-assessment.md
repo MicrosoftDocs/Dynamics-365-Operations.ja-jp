@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c43424a0955d7a046186e8a4120c050990df6060
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872097"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015059"
 ---
 # <a name="condition-assessment"></a>条件評価
 
@@ -47,7 +47,7 @@ ms.locfileid: "8872097"
 
 ## <a name="create-condition-assessment-registration-on-an-asset"></a>資産に対する条件評価登録の作成
 
-1. **資産管理**  >  **共通**  >  **資産**  >  **全資産** を選択します。
+1. **資産管理** > **資産** > **すべての資産** の順に選択します。
 2. そのリストで、条件評価登録を作成する対象の資産を選択します。
 3. **一般** タブで、**条件評価** をクリックします。
 4. **新規** をクリックして、新しい登録を作成します。
@@ -62,7 +62,7 @@ ms.locfileid: "8872097"
 資産の条件評価登録を行った後、条件評価レポートを印刷できます。
 
 >[!NOTE]
->また、作業指示書に条件評価を登録することもできます (**資産管理** > **共通** > **作業指示書** > **すべての作業指示書** > **条件評価** ボタン)。
+>また、作業指示書に条件評価を登録することもできます (**資産管理** > **作業指示書** > **すべての作業指示書** > **条件評価** ボタン)。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

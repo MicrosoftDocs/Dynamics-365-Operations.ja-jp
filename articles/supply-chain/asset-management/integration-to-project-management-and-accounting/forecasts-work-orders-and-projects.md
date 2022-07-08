@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880454"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016800"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>予測、作業指示書、およびプロジェクト
 
@@ -60,7 +60,7 @@ ms.locfileid: "8880454"
 
 ![図 1。](media/01-integration-to-pma.png)
 
-作業指示書ジョブのプロジェクト ID、および関連する活動番号の目的は、**プロジェクト管理および会計** モジュールで、作業指示書ジョブに関連する原価と、そのジョブで選択された資産を追跡することです。 (プロジェクト ID および活動番号を表示するには、**資産管理** > **共通** > **作業指示書** > **すべての作業指示書** を選択してから、作業指示書を選択します。 **行の詳細** クイック タブでは、**プロジェクト ID** フィールドにプロジェクト ID が表示され、**活動番号** フィールドには活動番号が表示されます。) 資産管理の原価管理の詳細については [原価および日付の管理](../controlling-and-reporting/cost-and-date-control.md) を参照してください。
+作業指示書ジョブのプロジェクト ID、および関連する活動番号の目的は、**プロジェクト管理および会計** モジュールで、作業指示書ジョブに関連する原価と、そのジョブで選択された資産を追跡することです。 (プロジェクト ID および活動番号を表示するには、**資産管理** > **作業指示書** > **すべての作業指示書** を選択してから、作業指示書を選択します。 **行の詳細** クイック タブでは、**プロジェクト ID** フィールドにプロジェクト ID が表示され、**活動番号** フィールドには活動番号が表示されます。) 資産管理の原価管理の詳細については [原価および日付の管理](../controlling-and-reporting/cost-and-date-control.md) を参照してください。
 
 下の図では、作業指示書プロジェクトおよび関連するプロジェクト活動の概要をグラフィカルに表示しています。
 

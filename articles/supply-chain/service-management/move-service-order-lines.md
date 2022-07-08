@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52f9fd00841a2df06db85108a0fdcc1a8134a1c6
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8d3599e13573ab7a9883f79b17e0eb267025483
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677145"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015233"
 ---
 # <a name="move-service-order-lines"></a>サービス注文明細行の移動 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。
+1.  **サービス管理** \> **サービス注文** \> **サービス注文** の順にクリックします。
 
 2.  別のサービス注文に移動する明細行が含まれているサービス注文をダブルクリックします。
 

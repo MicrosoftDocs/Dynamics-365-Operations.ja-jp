@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.27 のプレビュー (2022 年 7 月)
+title: Dynamics 365 Supply Chain Management 10.0.27 (2022 年 7 月) の新機能または変更された機能
 description: この記事では、Microsoft Dynamics 365 Supply Chain Management 10.0.27 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 04/22/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a91f2cdae0fed75f07d6cae86d24aeedfca80e94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844499"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022624"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Dynamics 365 Supply Chain Management 10.0.27 のプレビュー (2022 年 7 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Dynamics 365 Supply Chain Management 10.0.27 (2022 年 7 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-この記事では、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.27 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1227 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.27 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1227 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 4 月
 - **リリースの一般提供 (手動更新):** 2022 年 6 月
@@ -90,6 +89,6 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.27 には、Platform updates
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

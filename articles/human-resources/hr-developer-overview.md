@@ -1,6 +1,6 @@
 ---
 title: 開発の概要
-description: この開発者ガイドでは、API とカスタム フィールドの参照資料を提供します。 また、他のアプリケーションとの統合についても説明します。
+description: この記事では、API とカスタム フィールドの参照資料を提供します。 また、他のアプリケーションとの統合についても説明します。
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 095afc2693c60ae907b47158af0621d6436bdb0f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 81c4a2a55639f6c302d45d9913246b2d227d74e9
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688151"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033688"
 ---
 # <a name="development-overview"></a>開発の概要
 
@@ -27,9 +27,7 @@ ms.locfileid: "8688151"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
-
-この開発者ガイドでは、API とカスタム フィールドの参照資料を提供します。 また、他のアプリケーションとの統合についても説明します。
+この記事では、API とカスタム フィールドの参照資料を提供します。 また、他のアプリケーションとの統合についても説明します。
 
 - [概要](hr-developer-overview.md)
 
@@ -61,7 +59,7 @@ ms.locfileid: "8688151"
 
 - [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)
 - [管理者ガイド](hr-admin-overview.md)
-- [ユーザー ガイド](hr-hrpro-overview.md)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

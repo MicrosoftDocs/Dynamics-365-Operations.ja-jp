@@ -2,7 +2,7 @@
 title: 財務諸表の概要
 description: この記事では、Microsoft Dynamics 365 Finance で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。
 author: aprilolson
-ms.date: 03/31/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b09adc738ac36625436e5cc3197e79603fff9b8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853412"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033663"
 ---
 # <a name="get-started-with-financial-reporting"></a>財務諸表の使用を開始する 
 
@@ -30,14 +30,17 @@ ms.locfileid: "8853412"
 
 この記事では、財務報告にアクセスする場所、財務報告機能の使用方法について説明します。 これには、用意された既定の財務諸表の説明も含まれています。
 
-## <a name="accessing-financial-reporting"></a>財務報告へのアクセス
+## <a name="enable-financial-reporting"></a>Financial Reporting を有効にする
+組織の財務報告サービスを使用するには、Lifecycle Services (LCS) 管理者が組織の LCS ポータルでこのサービスを有効にする必要があります。 Financial Reporting が環境に対して提供されていない場合は、LCS 管理者に問い合わせてサービスを有効にしてください。 
+
+## <a name="accessing-financial-reporting"></a>Financial Reporting へのアクセス
 
 **財務諸表** メニューは以下の場所にあります:
 
-- **総勘定元帳** &gt; **照会およびレポート**
-- **予算作成** &gt; **照会およびレポート** &gt; **基本予算作成**
-- **予算作成** &gt; **照会およびレポート** &gt; **予算計画**
-- **予算作成** &gt; **照会およびレポート** &gt; **予算管理**
+- **一般会計** > **紹介およびレポート**
+- **予算作成** > **照会およびレポート** > **基本予算作成**
+- **予算作成** > **照会およびレポート** > **予算計画**
+- **予算作成** > **照会およびレポート** > **予算管理**
 - 連結
 
 法人の財務諸表を作成、生成するには、その法人に次の情報を設定する必要があります。

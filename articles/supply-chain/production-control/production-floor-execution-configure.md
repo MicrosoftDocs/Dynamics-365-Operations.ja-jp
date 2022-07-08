@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899414"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022567"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -113,9 +113,6 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 
 ### <a name="enable-the-my-day-dialog"></a>「マイ デイ」 ダイアログを有効にする
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 **マイ デイ** ダイアログには、毎日の登録の概要と、有給時間、有給残業時間、欠勤、および有給欠勤に関する作業者の現在の残高が表示されます。
 
 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
@@ -124,9 +121,6 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 
 ### <a name="enable-teams"></a>チームを有効にする
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 複数の作業者が同じ生産ジョブに割り当てられている場合、彼らはチームを形成することができます。 チームは、1 人の作業員をパイロットとして推薦することができます。 残りの作業員は自動的にそのパイロットのアシスタントになります。 それによって編成されたチームでは、パイロットのみがジョブの状態を登録する必要があります。 時間レコードは、すべてのチーム メンバーに適用されます。
 
 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
@@ -134,9 +128,6 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 - *生産現場の実行インターフェイスの生産チーム*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスの追加構成を有効にする
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 この機能は、**生産現場の実行の構成** ページに次の機能の設定を追加します。
 

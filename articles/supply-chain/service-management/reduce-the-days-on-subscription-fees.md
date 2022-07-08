@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fe5726203ffc7fef12c02196f511bc4c3c9be2a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 370722d5c2f66e316d7c37f711cdd086bc53f6a8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674844"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014825"
 ---
 # <a name="reduce-the-days-on-subscription-fees"></a>サブスクリプション手数料の日数の引き下げ 
 
@@ -31,7 +31,7 @@ ms.locfileid: "8674844"
 
 ## <a name="reduce-the-days-on-a-subscription-fee"></a>サブスクリプション手数料の日数の下方修正
 
-1.  **サービス管理** \> **共通** \> **サービス サブスクリプション** \> **すべてのサービス サブスクリプション** の順にクリックします。 サービス サブスクリプションを選択し、アクション ウィンドウで、**サブスクリプション手数料** をクリックします
+1.  **サービス管理** \> **サービス サブスクリプション** \> **すべてのサービス サブスクリプション** をクリックします。 サービス サブスクリプションを選択し、アクション ウィンドウで、**サブスクリプション手数料** をクリックします
 
 2.  **サブスクリプション タイプ** フィールドで、**下方修正日数** を選択します。
 

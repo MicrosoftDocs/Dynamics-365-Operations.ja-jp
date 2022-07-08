@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 665c705e3ffb617fc159a1223cb3f776878d5cd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882782"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016249"
 ---
 # <a name="asset-boms"></a>資産 BOM
 
@@ -57,7 +57,7 @@ ms.locfileid: "8882782"
 
 ワーク オーダーに品目の消費を転記した後、**資産 BOM** ページで登録された品目の消費を表示できます。
 
-1. **資産管理** \> **共通** \> **資産** \> **有効な資産** を選択します。 一覧で資産を選択し、**資産 BOM** を選択します。
+1. **資産管理** \> **資産** \> **有効な資産** を選択します。 一覧で資産を選択し、**資産 BOM** を選択します。
 
     > [!NOTE]
     > すべての資産の全品目の消費登録を表示するには、**資産管理** \> **照会** \> **資産** \> **資産 BOM** を選択します。

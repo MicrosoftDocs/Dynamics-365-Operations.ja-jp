@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862311"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014766"
 ---
 # <a name="set-up-cluster-picking"></a>クラスター ピッキングの設定
 
@@ -74,9 +74,14 @@ ms.locfileid: "8862311"
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>クラスタ ピッキングの品目の検証の設定
 
-1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます、**倉庫管理** \> **倉庫管理** \> **設定** \>  **モバイル デバイス** \> **モバイル デバイスのメニュー項目** に移動します。
+1. **Warehouse management** > **設定** > **モバイル デバイス** > **モバイル デバイス メニュー品目** の順に移動します。
+1. 一覧ウィンドウで、設定するしたメニュー品目を選択します。
+1. アクション ウィンドウで、**作業確認の設定** に移動します。
+1. 次のアクションのひとつを実行します。
+    - 設定する **作業タイプ** の行が既に存在する場合は、その行を選択し、アクション ウィンドウで **編集** を選択します。
+    - 適切な行が存在しない場合は、アクション ウィンドウで **新規** を選択し、**作業タイプ** を適切なタイプに設定します。
+1. 新規または選択 した行 の **製品の確認** チェック ボックスをオンにします。 これにより、作業者はモバイル デバイスを使って各在庫を確認できるようになります。
 
-1. モバイル デバイス メニュー品目から、**作業確認の設定** を開きます。 **製品確認** オプションでは、スャンしたときにモバイル デバイスから各在庫を確認できます。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

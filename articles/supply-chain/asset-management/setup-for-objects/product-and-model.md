@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95d0998bbacef7a4350d0fd0a58259ec35759d28
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b00cb62926f3a482ec655235b6e2f5880edbcd04
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868104"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016278"
 ---
 # <a name="asset-manufacturers-and-models"></a>資産メーカーとモデル
 
@@ -53,7 +53,7 @@ ms.locfileid: "8868104"
 
 ## <a name="select-a-manufacturer-and-model-on-an-object"></a>オブジェクトのメーカーとモデルを選択
 
-1. **資産管理** \> **共通** \> **資産** \> **全資産** を選択します。
+1. **資産管理** \> **_資産_* \> **すべての資産** を選択します。
 2. **資産** 列で、資産のリンクを選択します。 **詳細** ページが表示されます。
 3. **編集** を選択します。
 4. **一般** クイック タブで、**メーカー** および **モデル** フィールドの値を選択します。

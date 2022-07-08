@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6e9454baa33e37fe62db2b7bd39ff00891ff855
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5be880a6d178743f4a2d3339609604d993f7e5d5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905027"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016423"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) の新機能および変更された機能
 
@@ -818,7 +818,7 @@ ms.locfileid: "8905027"
 | 棚卸仕訳帳を使用して仕入先所有の在庫を調整します。 | システム手持在庫を実際の現物在庫に同期化させることが重要です。 数量の調整および棚卸仕訳帳プロセスなどの棚卸プロセスを使用して、仕入先所有の在庫は調整できます。 |
 | Dynamics 365 for Operations の委託サポートの詳細を表示します。 | 委託販売プロセスのサポートに関する詳細については、[委託販売](../../../supply-chain/inventory/consignment.md)、[委託販売の設定](/d365F-O/fin-ops-core/fin-ops/get-started/consignment)、[委託販売補充注文の作成 (タスク ガイド)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md)、そして [生産の需要に基づく委託販売在庫の所有権の変更 (タスク ガイド)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md) を参照して下さい。 |
 
-### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>仕入先の共同作業 (以前は仕入先ポータルと呼ばれていた)
+### <a name="vendor-collaboration"></a>仕入先コラボレーション
 
 | 実行可能事項 | これが重要である理由 |
 |-----------------|-----------------------|

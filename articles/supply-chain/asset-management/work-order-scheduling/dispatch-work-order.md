@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6b2349d04386a88237ec1cb650890718d41aa5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f78e8642715b0c3fd3d01e8072645ccd9c58d685
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864001"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016858"
 ---
 # <a name="dispatch-work-order"></a>作業指示の派遣
 
@@ -30,7 +30,7 @@ ms.locfileid: "8864001"
 
 **派遣** 機能を使用して、1 つの作業指示または作業指示ジョブを 1 人の作業者にスケジュールできます。
 
-1. **資産管理** > **共通** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** の順にクリックします。
+1. **資産管理** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** をクリックします。
 
 2. 一覧で作業指示を選択します。
 

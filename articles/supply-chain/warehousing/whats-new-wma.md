@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945726"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954666"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20250"></a>Version 2.0.25.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- パフォーマンスの向上。
+- 安定性が向上しました。
+- **照会** ページ でサブヘッダーの長いテキストをサポートする改良が行されました。
+- 1 回のタップまたはクリックでフローをすぐにキャンセルする機能が紹介されています (**その他のアクション** で使用できる唯一のアクションが **キャンセル** の場合)。
+- **接続の編集** ページとカスタム ページの入力コントロールの間でフォーカスが失われる問題を修正します。
+- ボタンが応答しなくなると、スクロール ビューに含まれるときに選択したまま表示される場合がある問題を修正します。
+- メイン ページで間違ったレイアウトを使用する場合がある問題を修正します。
 
 ## <a name="version-20240"></a>Version 2.0.24.0
 

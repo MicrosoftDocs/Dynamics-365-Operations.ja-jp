@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 750776412ce9d87389a635ef108a34cffe12b68b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870814"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015815"
 ---
 # <a name="asset-management-parameters"></a>資産管理パラメーター
 
@@ -37,7 +37,7 @@ ms.locfileid: "8870814"
 
 - **既定の機能的な場所** は、標準の機能的な場所であり、新しい資産の作成時に、資産に自動的に選択されます。  
 - **標準カレンダー** フィールドで、資産にリソースが選択されていない場合に資産 KPI の計算に使用するカレンダーを選択します。  
-- **表示** フィールドで、**資産表示** (**資産管理** > **共通** > **資産** > **資産表示**) を開くときに表示される標準ビューを選択します。
+- **表示** フィールドで、**資産表示** (**資産管理** > **資産** > **資産表示**) を開くときに表示される標準ビューを選択します。
 - **既定の要求タイプ** は標準のメンテナンス要求タイプで、新しい要求を作成するときに自動的に選択されます。  
 - ジョブ タイプの予測は、**予測プロジェクト** フィールドで選択したプロジェクトに保存されます。 ジョブ タイプごとに、予測プロジェクトに新しい活動が自動的に作成されます。 ジョブ タイプの予測は、予測プロジェクトに保存されます。  
 - **モデル** フィールドで、ジョブ タイプとワーク オーダーに使用される予測モデルを選択します。

@@ -11,16 +11,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-02
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 998a30786b3f457b24b6e3c755b2c00967adbd4b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c03109baaa341b25af70840b791ddf04f692fb1a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879166"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016568"
 ---
 # <a name="post-to-charge-account-accounting-principle"></a>掛売勘定の会計原則に転記
 
-*掛売勘定に転記* の会計原則を使用すると、物理的な転記と財務上の転記、購入品目の間接原価、または発注書の請求の間で生じる単価の違いを考慮し、簡単に調整できます。 
+*掛売勘定に転記* の会計原則を使用すると、物理的な転記と財務上の転記、購入品目の間接原価、または発注書の請求の間で生じる単価の違いを考慮し、簡単に調整できます。
 
 **原価コード** ページ (**買掛金勘定 \> 請求設定 \> 請求コード**) にある買掛金勘定の原価コードに対する 2 つの構成が原因で、発注書が在庫資産の評価に影響を与える可能性があります。
 

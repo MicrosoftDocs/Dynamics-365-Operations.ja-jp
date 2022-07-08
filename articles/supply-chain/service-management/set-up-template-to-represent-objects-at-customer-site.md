@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c91fc2478ce4799fd51140a1416df0b674c1bce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 02e15375eb4757e84627206c4617edc7bf51ebf2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673413"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016887"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>顧客のサイトのオブジェクトを表すためのテンプレートの設定 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8673413"
 
 顧客サイトのオブジェクトを表すテンプレートを設定するには、この手順を使用します。
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** をクリックします。
 
 2.  サービス契約をダブルクリックするか、**サービス契約** をクリックして新しいサービス契約を作成します。
 

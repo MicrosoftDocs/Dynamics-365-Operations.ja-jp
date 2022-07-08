@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ec7e300f60f76aaa467238d7a2c2a199fdeafeed
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e25d1c108e5cc90fcedc7e8f7e4bbc14052719f1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857927"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015959"
 ---
 # <a name="schedule-work-order-on-specific-date-and-time"></a>特定の日時のワーク オーダーのスケジュール設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857927"
 
 ワーク オーダーを特定の日 *および* 時間にスケジュール設定する必要がある場合は、資産管理の標準スケジューリング プロセスを上書きして、特定のスケジュールを作成できます。
 
-1. **資産管理** > **共通** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** の順にクリックします。
+1. **資産管理** > **作業指示書** > **すべての作業指示書** または **有効な作業指示書** をクリックします。
 
 2. ワーク オーダーの一覧で、**ワーク オーダー** 列のワーク オーダー ID をクリックします。
 

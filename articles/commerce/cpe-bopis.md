@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce 評価環境での BOPIS のコンフィギュレーション
-description: この記事では、プロビジョニング後の Microsoft Dynamics 365 Commerce 評価環境におけるオンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
+title: Dynamics 365 Commerce サンドボックス環境での BOPIS の構成
+description: この記事では、プロビジョニング後の Microsoft Dynamics 365 Commerce サンドボックス環境におけるオンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
 author: BrianShook
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16cea7beb6ca05b5e96a9713b1217b414e27d56e
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861969"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013178"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境での BOPIS のコンフィギュレーション
+# <a name="configure-bopis-in-a-dynamics-365-commerce-sandbox-environment"></a>Dynamics 365 Commerce サンドボックス環境での BOPIS の構成
 
 [!include [banner](includes/banner.md)]
 
-この記事では、プロビジョニング後の Microsoft Dynamics 365 Commerce 評価環境におけるオンライン購入、店頭受取 (BOPIS) の構成方法について説明します。
+この記事では、プロビジョニング後の Microsoft Dynamics 365 Commerce サンドボックス環境におけるオンライン購入、店頭受取 (BOPIS) の構成方法について説明します。
 
 ## <a name="prerequisite"></a>前提条件
 
-この記事に記載の手順は、Commerce の評価環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce の評価環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce の評価環境を構成する](./cpe-post-provisioning.md) を参照してください。
+この記事に記載の手順は、Commerce のサンドボックス環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce のサンドボックス環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce サンドボックス環境を構成する](./cpe-post-provisioning.md) 参照してください。
 
 Commerce 環境のプロビジョニングとエンドツーエンドの構成完了後に、この記事を使用して BOPIS のシナリオを有効化することができます。
 
@@ -67,7 +67,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 5. 認証ダイアログ ボックスが表示されます。 既に作業者 **000713-Andrew Collette** に関連付けられている電子メール アドレスを使用するアカウントを選択します。
 
     > [!NOTE]
-    > 作業者に ID が関連付けられていない場合、有効化は失敗します。 この場合は、記事 [Dynamics 365 Commerce 評価環境の構成](cpe-post-provisioning.md#associate-a-worker-with-your-identity) の「作業者と ID の関連付け」 に記載の手順に従ってください。
+    > 作業者に ID が関連付けられていない場合、有効化は失敗します。 この場合は、記事 [Dynamics 365 Commerce サンドボックス環境の構成](cpe-post-provisioning.md#associate-a-worker-with-your-identity) の「作業者と ID の関連付け」 に記載の手順に従ってください。
     
 6. 組織によるデバイス管理を許可するかどうかを確認するメッセージが表示された場合は、**このアプリのみ** を選択します。
 7. 有効化が完了したら、**開始する** を選択します。
@@ -140,13 +140,9 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Dynamics 365 Commerce 評価環境の概要](cpe-overview.md)
+[Dynamics 365 Commerce サンドボックス環境のプロビジョニング](provisioning-guide.md)
 
-[Dynamics 365 Commerce 評価環境をプロビジョニングする](provisioning-guide.md)
-
-[Dynamics 365 Commerce 評価環境のオプション機能を構成する](cpe-optional-features.md)
-
-[Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
+[Dynamics 365 Commerce サンドボックス環境のオプション機能の構成](cpe-optional-features.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

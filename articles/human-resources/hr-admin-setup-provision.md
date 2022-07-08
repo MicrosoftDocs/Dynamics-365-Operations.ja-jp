@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858246"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015349"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -47,7 +47,7 @@ ms.locfileid: "8858246"
 
 試用版環境では、人事管理環境へのアクセス権がまだないユーザーの人事管理機能を評価できます。 試用環境をプロビジョニングする際に、認証されたユーザーが既に 1 つ以上の既存の人事管理環境へのアクセス権がある場合、ユーザーは既存の環境または環境のリストにリダイレクトされます。
 
-試用環境は実稼動環境として使用するものではありません。 30 日間のトライアル期間に限定されています。 試用期限が切れると、環境とその中にあるすべてのデータが削除されて、復元できないことに注意してください。 環境をサンドボックスや運用環境に変換することはできません。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
+試用環境は運用環境として使用するものではありません。 30 日間のトライアル期間に限定されています。 試用期限が切れると、環境とその中にあるすべてのデータが削除されて、復元できないことに注意してください。 環境をサンドボックスや運用環境に変換することはできません。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
 
 Human Resources 試用環境を作成すると、テナントに Power Apps 試用環境も作成され、Human Resources 環境にリンクされます。 「TestDrive」という名前の Power Apps 環境には、Human Resources 環境と同じ試用期間があります。
 
@@ -103,7 +103,7 @@ LCS プロジェクトを作成した後は、環境に Human Resources をプ�
     > Human Resources インスタンス タイプは、一度設定した後で変更することはできません。 続行する前に、正しいインスタンス タイプが選択されていることを確認します。</br></br>
     > Human Resources のインスタンス タイプは、Power Apps 管理センターで設定された Microsoft Power Apps 環境のインスタンス タイプとは異なります。
     
-3. Human Resources 試用環境で使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む** オプションをオンにします。 デモ データは長期的なデモまたはトレーニング環境に有用ですが、稼動環境で使用するものではありません。 初期展開時にこのオプションを選択する必要があります。 既存の配置を後で更新することはできません。
+3. Human Resources 試用環境で使用される同じデモ データ セットを環境に含める場合は、**デモ データを含む** オプションをオンにします。 デモ データは長期的なデモまたはトレーニング環境に有用ですが、運用環境で使用するものではありません。 初期展開時にこのオプションを選択する必要があります。 既存の配置を後で更新することはできません。
 
 4. Human Resources は、Microsoft Power Apps の環境に常にプロビジョニングされていて、これにより Power Apps の統合および拡張機能が有効になります。 続行する前に、この記事の「Power Apps 環境の選択」セクションを参照してください。 まだ Power Apps 環境を持っていない場合は、LCS で環境の管理を選択するか、または Power Apps 管理センターに移動します。 次に、以下の手順に従って、[Power Apps 環境を作成します](/powerapps/administrator/create-environment)。
 
@@ -116,7 +116,7 @@ LCS プロジェクトを作成した後は、環境に Human Resources をプ�
 7. 新しい環境を使用するために **Human Resources にログオンする** を選択します。
 
     > [!NOTE]
-    > 最終要件をまだサインオフしていない場合、プロジェクトに Human Resources のテスト インスタンスを配置することができます。 サインオフするまで、ソリューションをテストするためにこのインスタンスを使用することができます。 テストのために新しい環境を使用する場合は、実稼動環境を作成するためにこの手順を繰り返す必要があります。
+    > 最終要件をまだサインオフしていない場合、プロジェクトに Human Resources のテスト インスタンスを配置することができます。 サインオフするまで、ソリューションをテストするためにこのインスタンスを使用することができます。 テストのために新しい環境を使用する場合は、運用環境を作成するためにこの手順を繰り返す必要があります。
 
 ## <a name="select-a-power-apps-environment"></a>Power Apps 環境の選択
 
@@ -134,7 +134,7 @@ Human Resources を配置する Power Apps 環境を決定する際には、次�
 
 5. 次の Power Apps 環境は Human Resources には使用できません。 これらは、LCS 内の選択リストからフィルタ処理されます：
  
-    - **既定の Power Apps 環境** - 各テナントは既定の Power Apps 環境で自動的にプロビジョニングされますが、Human Resources での使用については推奨しません。 すべてのテナント ユーザーが Power Apps 環境にアクセスでき、テストや Power Apps、Power Automate 統合の際に、本番データの意図しない破損につながる可能性があります。
+    - **既定の Power Apps 環境** - 各テナントは既定の Power Apps 環境で自動的にプロビジョニングされますが、Human Resources での使用については推奨しません。 すべてのテナント ユーザーが Power Apps 環境にアクセスでき、テストや Power Apps、Power Automate 統合の際に、運用データの意図しない破損につながる可能性があります。
    
     - **評価版環境** - これらの環境には、有効期限が設定されています。 有効期限が切れると、環境とその中に含まれる Human Resources インスタンスが自動的に削除されます。
    
@@ -143,7 +143,9 @@ Human Resources を配置する Power Apps 環境を決定する際には、次�
 6. 人事データを Power Apps 環境に統合するデュアル書き込み機能は、その環境で **Dynamics 365 アプリを有効にする** オプションが選択されている場合にのみ使用できます。 デュアル書き込みの詳細については、[デュアル書き込みのホームページ](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)を参照してください。
 
     > [!NOTE]
-    > **Dynamics 365アプリケーションを有効にする** オプションは、Power Apps 環境の作成時に選択する必要があります。 プロビジョニング時にこのオプションが選択されていない場合、デュアル書き込みを使用して Dynamics 365 Human Resources 環境と Power Apps 環境の間でデータを統合したり、Dynamics 365 Sales や Field Service などのDynamics 365 アプリを環境にインストールしたりすることができません。 このオプションは、元に戻すことはできません。 詳細については、Power Platform のドキュメント サイト、 [新しい環境を構築する際の重要な注意点](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment)を参照してください。
+    > **Dynamics 365アプリケーションを有効にする** オプションは、Power Apps 環境の作成時に選択する必要があります。 プロビジョニング時にこのオプションが選択されていない場合、デュアル書き込みを使用して Dynamics 365 Human Resources 環境と Power Apps 環境の間でデータを統合したり、Dynamics 365 Sales や Field Service などのDynamics 365 アプリを環境にインストールしたりすることができません。 このオプションは、元に戻すことはできません。 
+    > -  Human Resources は、Human Resources を配置した後にリンクされた Dataverse インスタンスの変更はサポートしません。 </br></br>
+    > 詳細については、Power Platform のドキュメント サイト、 [新しい環境を構築する際の重要な注意点](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment)を参照してください。  
 
 7. 使用する正しい環境の決定後、プロビジョニング プロセスを続行できます。 
 

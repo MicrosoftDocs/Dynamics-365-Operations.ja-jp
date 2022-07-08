@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7a69cbca6e6f32812ea00a63751c931a8477991
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
+ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469257"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "8960195"
 ---
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
@@ -91,19 +91,13 @@ Supply Chain Management を使用してベースラインの予測を視覚化�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[需要予測の設定](demand-forecasting-setup.md)
-
-[統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
-
-[ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
-
-[調整された需要予測の承認](authorize-adjusted-forecast.md)
-
-[予測精度の監視](monitor-forecast-accuracy.md)
-
-[需要予測を計算するときに、トランザクション履歴データから異常値を削除](remove-historical-outliers-calculating-demand-forecast.md)
-
-[Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
+- [需要予測の設定](demand-forecasting-setup.md)
+- [統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
+- [ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
+- [調整された需要予測の承認](authorize-adjusted-forecast.md)
+- [予測精度の監視](monitor-forecast-accuracy.md)
+- [需要予測を計算するときに、トランザクション履歴データから異常値を削除](remove-historical-outliers-calculating-demand-forecast.md)
+- [ビデオ: 需要予測機能の拡張](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+- [ウェビナー: Azure Machine Learning を使った需要予測シリーズ](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

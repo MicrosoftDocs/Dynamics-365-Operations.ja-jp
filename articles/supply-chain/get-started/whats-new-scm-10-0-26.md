@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850760"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954526"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Management 10.0.26 (2022 年 5 月) の新機能および変更された機能
 
@@ -61,7 +61,6 @@ ms.locfileid: "8850760"
 | 機能領域 | 新規または更新された記事 |
 |---|---|
 | 原価管理 | 更新された例と図が、次の各記事に追加されました。<ul><li>[現物価格とマーキングを使用した FIFO](../cost-management/fifo-physical-value-marking.md)</li><li>[現物価格とマーキングを使用した LIFO](../cost-management/lifo-physical-value-marking.md)</li><li>[現物価格とマーキングを使用した LIFO 日付](../cost-management/lifo-date-physical-value-marking.md)</li><li>[移動平均原価価格](../cost-management/running-average-cost-price.md)</li><li>[現物価格とマーキングを使用した加重平均](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
-| 調達 | [発注書明細行データの不一致](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -88,6 +87,6 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.26 には、Platform updates
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 1fa2ec6e21026552a4f14a67188db0720d3feae5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850789"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954499"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management 10.0.25 (2022 年 4 月) の新機能および変更された機能
 
@@ -155,7 +155,7 @@ ms.locfileid: "8850789"
 | 倉庫管理 | [手動在庫移動操作の遅延処理](../warehousing/deferred-processing-manual-inventory-movement.md) | 必須 |
 | 倉庫管理 | ウェーブ積荷構築テンプレートの要件を満たしていない積荷を作成することは許可されません | 必須 |
 | 倉庫管理 | [拡張ライセンス プレート ラベルのレイアウト](../warehousing/document-routing-layout-for-license-plates.md) | 必須 |
-| 倉庫管理 | [複数 SKU の場所ディレクティブのすべてのアクションを評価する](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | 必須 |
+| 倉庫管理 | [複数 SKU の場所ディレクティブのすべてのアクションを評価する](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | 必須 |
 | 倉庫管理 | [すべての積荷] ページおよび [積荷詳細] ページの [合計値] フィールドを非表示にします | 必須 |
 | 倉庫管理 | ライセンス プレート ラベルのビルド コンフィギュレーション | 必須 |
 | 倉庫管理 | 管理者または類似の信頼されたユーザーの積荷明細行の手動修正 | 必須 |
@@ -206,6 +206,6 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.25 には、Platform updates
 
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
-コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

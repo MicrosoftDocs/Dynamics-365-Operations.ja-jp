@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671677"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017206"
 ---
 # <a name="set-up-a-preferred-technician"></a>優先技術者の設定 
 
@@ -31,13 +31,13 @@ ms.locfileid: "8671677"
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>派遣チームへの従業員の割り当て
 
-1.  **人事管理** \> **共通** \> **作業者** \> **作業者** の順にクリックします。 作業者の詳細ページを開くには、作業者をダブルクリックします。 **アクション ウィンドウ** で、**設定**\>**派遣チーム** をクリックして、**出荷作業者** フォームを開きます。
+1.  **人事管理** \> **作業者** \> **作業者** をクリックします。 作業者の詳細ページを開くには、作業者をダブルクリックします。 **アクション ウィンドウ** で、**設定**\>**派遣チーム** をクリックして、**出荷作業者** フォームを開きます。
 
 2.  **派遣チーム** フィールドで、作業者を割り当てるチームを選択します。
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>サービス合意への優先技術者の割り当て
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。 詳細フォームを開くには、サービス合意をダブルクリックします。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** をクリックします。 詳細フォームを開くには、サービス合意をダブルクリックします。
 
 2.  **一般** タブで、**優先技術者** フィールドを選択し、適切な派遣チームのメンバをサービス合意の優先技術者として割り当てます。
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80980d83248612037999c665b6058c4d0bbf6a7c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 51ea26a0f6519d26f5207a7b6c8afbcdfa358be9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678237"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015262"
 ---
 # <a name="create-service-task-relations"></a>サービス作業関係の作成    
 
@@ -30,7 +30,7 @@ ms.locfileid: "8678237"
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>サービス合意との関係の作成
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** に移動します。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** に移動します。
 
 2.  既存のサービス合意を選択するか、新しいサービス合意を作成します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "8678237"
 
 ## <a name="create-a-relation-with-a-service-order"></a>サービス注文との関係の作成
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** に移動します。
+1.  **サービス管理** \> **サービス注文** \> **サービス注文** に移動します。
 
 2.  既存のサービス注文を選択するか、新しいサービス注文を作成します。
 

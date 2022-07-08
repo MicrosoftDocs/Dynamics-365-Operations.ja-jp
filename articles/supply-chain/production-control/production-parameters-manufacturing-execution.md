@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873669"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016162"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>製造実行の生産パラメーター
 
@@ -63,7 +63,7 @@ ms.locfileid: "8873669"
 
 各ステージでは、**自動 BOM 消費** フィールドを使用して、製造オーダーの品目をピッキングするための 3 つの方法のいずれかを選択できます。
 
-- **部品消費ルール** – このオプションは、**生産** モジュールの BOM で定義されたオプションと組み合わせて使用されます。 **生産管理** &gt; **共通** &gt; **製造オーダー** &gt; **すべての製造オーダー** の順にクリックします。 **すべての製造オーダー** ページで、一覧で [製造オーダー] を選択し、次に [アクション ペイン] で、**BOM** をクリックします。 **BOM** ページにある **設定** タブの **部品消費ルール** フィールドで、次のオプションのいずれかを選択します:
+- **部品消費ルール** – このオプションは、**生産** モジュールの BOM で定義されたオプションと組み合わせて使用されます。 **製造管理** &gt; **製造オーダー** &gt; **すべての製造オーダー** をクリックします。 **すべての製造オーダー** ページで、一覧で [製造オーダー] を選択し、次に [アクション ペイン] で、**BOM** をクリックします。 **BOM** ページにある **設定** タブの **部品消費ルール** フィールドで、次のオプションのいずれかを選択します:
 
   - **開始**
   - **完了**

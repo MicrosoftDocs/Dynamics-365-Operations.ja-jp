@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ccd14493aac6484dc54ccf51ae159a071c8697a5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893703"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015612"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>発注書に基づいた資産の作成
 
@@ -45,7 +45,7 @@ ms.locfileid: "8893703"
 
 ## <a name="create-assets-from-pending-assets"></a>保留中の資産から資産を作成する
 
-1. **資産管理** > **共通** > **資産** > **保留中の資産** の順にクリックします。
+1. **資産管理** > **資産**  > **保留中の資産** の順にクリックします。
 2. **資産品目** で選択した品目に基づいて、発注書の更新された一覧が表示されます。
 3. 発注書の状態をフィルター処理して、資産を作成するライフサイクル状態を選択できます。 たとえば、製品入庫が発注書に転記されている場合にのみ資産を作成できます。
 4. 品目に関する詳細情報を表示するには、発注書明細行の **参照番号** リンクを選択します。

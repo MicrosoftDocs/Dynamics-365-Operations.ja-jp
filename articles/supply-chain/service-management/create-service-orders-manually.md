@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678265"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014854"
 ---
 # <a name="create-service-orders-manually"></a>サービス注文の手動作成    
 
@@ -34,7 +34,7 @@ ms.locfileid: "8678265"
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>サービス契約から手動でサービス注文を作成する
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** を選択します。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** を選択します。
 
 2.  サービス合意を選択するか、新しいサービス合意を作成します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "8678265"
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>サービス注文フォームに手動でサービス注文を作成する
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** を選択します。
+1.  **サービス管理** \> **サービス注文** \> **サービス注文** を選択します。
 
 2.  **新規** を選択して、新しいサービス注文を作成します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "8678265"
 
 ## <a name="create-a-service-order-from-a-project"></a>プロジェクトからサービス注文を作成する
 
-1.  **プロジェクト管理および会計** \> **共通** \> **プロジェクト** \> **すべてのプロジェクト** に移動します。
+1.  **プロジェクト管理および会計** \> **プロジェクト** \> **すべてのプロジェクト** の順に移動します。
 
 2.  **アクション ウィンドウ** の **プロジェクト** フォームで、**管理** タブ \> を選択し、**サービス** \> **サービス注文** の順に選択します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "8678265"
 
 **販売注文に基づいて新しいサービス注文を作成** ウィザードを使用して、**販売注文** フォームからサービス注文フォームを作成できます。
 
-1.  **販売とマーケティング** \> **共通** \> **販売注文** \> **すべての販売注文** に移動します。
+1.  **販売とマーケティング** \> **販売注文** \> **すべての販売注文** の順に移動します。
 
 2.  関連する販売注文を開きます。
 

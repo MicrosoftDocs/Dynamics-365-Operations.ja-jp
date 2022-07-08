@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 723eae906260d152a8729f91c75cd9860eca84c5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4f2b4213574a2d84089ab20ab1a584e1ab894ad9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669491"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016365"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>対象関係でのテンプレート BOM の管理 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8669491"
 
 ## <a name="attach-a-template-bom-to-a-service-object"></a>テンプレート BOM のサービス対象への関連付け
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** をクリックします。
 
 2.  テンプレート BOM を対象のリレーションに関連付けるサービス契約をダブルクリックします。
 
@@ -43,7 +43,7 @@ ms.locfileid: "8669491"
 
 ## <a name="delete-a-service-bom-from-a-service-object"></a>サービス BOM のサービス対象からの削除
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** をクリックします。
 
 2.  サービス BOM を対象のリレーションから削除するサービス契約をダブルクリックします。
 
@@ -55,7 +55,7 @@ ms.locfileid: "8669491"
 
 ## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a>サービス BOM 履歴のサービス合意間での移動
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
+1.  **サービス管理** \> **サービス契約** \> **サービス契約** をクリックします。
 
 2.  サービス BOM の移動元のサービス契約をダブルクリックします。
 
