@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbf77b57f7a107918c3b8a03290e208ed1c4803b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879079"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066060"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
@@ -56,24 +56,24 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 
 ## <a name="videos"></a>ビデオ
 
-この短いビデオでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) に追加された新しいサプライ チェーン マネジメント機能を要約しています。
+この短いビデオでは、Microsoft Dynamics 365 Finance バージョン 8.0 (2018 年 4 月) に追加された新しいサプライ チェーン マネジメント機能を要約しています。
 
-- [Field Service と Finance and Operations の間の作業指示書の同期](https://youtu.be/hAB4TDVMjxU)
+- [Field Service と、財務と運用の間の作業指示書の同期](https://youtu.be/hAB4TDVMjxU)
 
-これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (2017 年 12 月) に追加された新しいサプライ チェーン マネジメント機能の概要をご紹介します。
+これらの短いビデオでは、Microsoft Dynamics 365 Finance, Enterprise edition 7.3 (2017 年 12 月) に追加された新しいサプライ チェーン マネジメント機能の概要をご紹介します。
 
 - [最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration (倉庫テンプレートを使用したコンフィギュレーションのコピー)](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017 年 7 月) に追加された新しい Supply Chain Management 機能を要約しています。
+これらの短いビデオでは、Microsoft Dynamics 365 Finance, Enterprise Edition (2017 年 7 月) に追加された新しいサプライ チェーン マネジメント機能を要約しています。
 
-- [Get started with Cost accounting (原価会計の使用を開始する)](https://youtu.be/1pUDtJQZ8FU)
+- [原価会計の使用を開始する](https://youtu.be/1pUDtJQZ8FU)
 - [Cost control mobile workspace (原価管理モバイル ワークスペース)](https://youtu.be/imsuTg8rUVk)
 - [Use Excel for cost analysis (コスト分析に Excel を使用する)](https://youtu.be/-HKHYdClvx8)
 - [Approve purchase orders on a mobile device (モバイル デバイスで発注書を承認する)](https://youtu.be/gZ-gOlJe7H8)
 - [生産オーダーとバッチ オーダーのガント チャートを利用した視覚的なスケジューリング](https://youtu.be/BtbuShkGj4I)
 
-次の技術会議の記録は、以前のバージョンの Finance and Operations のサプライ チェーン マネジメント機能について説明しています。 この機能は、Dynamics 365 Supply Chain Management の一部になりました。同じ概念が引き続き適用されており、手順は現在のバージョンでも同様です。
+次の技術会議の記録は、以前のバージョンの財務と運用のサプライ チェーン マネジメント機能について説明しています。 この機能は、Dynamics 365 Supply Chain Management の一部になりました。同じ概念が引き続き適用されており、手順は現在のバージョンでも同様です。
 
 - **原価管理:**
   - [Overview of Cost management (原価管理の概要)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -106,3 +106,4 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

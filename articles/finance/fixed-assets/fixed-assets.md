@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d50af9deb5309a31b886441780fe6b40b8b152ae
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880819"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065339"
 ---
 # <a name="fixed-assets-home-page"></a>固定資産ホーム ページ
 
@@ -44,9 +44,9 @@ ms.locfileid: "8880819"
 
 #### <a name="blogs"></a>ブログ
 
-意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) と [Microsoft Dynamics 365 財務と運用 - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) を参照してください。
 
-[Microsoft Dynamics 運用パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための一元化したリソースを Microsoft Dynamics パートナー向けに提供しています。
+[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための一元化したリソースを Microsoft Dynamics パートナー向けに提供しています。
 
 #### <a name="task-guides"></a>タスク ガイド
 タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
@@ -63,3 +63,4 @@ ms.locfileid: "8880819"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

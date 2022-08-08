@@ -7,21 +7,21 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom:
-- "27681"
-- intro-internal
-ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27681"
+- intro-internal
+ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.openlocfilehash: 119292dccc2f2d7131f0fa39aa35a8253b948d40
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906636"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206478"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Power BI ホーム ページを使用したレポートと分析
 
@@ -29,10 +29,10 @@ ms.locfileid: "8906636"
 
 この記事では、使用可能なビジネス インテリジェンス (BI) とレポート ツールの詳細を学ぶためのリソースを紹介します。
 
-## <a name="get-started"></a>使用開始
+## <a name="get-started"></a>開始する
 - [情報へのアクセスとレポート](information-access-reporting.md)
 - [技術解説: レポート オプション](https://www.youtube.com/watch?v=NzZONjKs5xA) (ビデオ)
-- [Finance and Operations: Power BI Analytics & Reporting Services ブログ](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (ブログ)
+- [財務と運用: Power BI Analytics & Reporting Services ブログ](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (ブログ)
 
 ## <a name="analytical-workspaces"></a>分析ワークスペース
 ワークスペースでは、Microsoft Power BI でサポートされている強力なインフォグラフィックやビジュアルを利用できます。 これらのインフォグラフィックおよびビジュアルの中には、サード パーティが提供しているさまざまなコントロールもあります。 そのため、ワークスペースでは、きわめて視覚的で対話性の高い環境がユーザーに提供されます。

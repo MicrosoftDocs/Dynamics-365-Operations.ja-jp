@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: abfba49c1b5e410cdc47db9965ffee26fbaebb9e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866540"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067685"
 ---
 # <a name="globalization-resources"></a>グローバリゼーション リソース
 
@@ -62,8 +62,8 @@ ms.locfileid: "8866540"
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365 リリース計画
 [Dynamics 365 リリース プラン](/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations アプリの新機能
-[Finance and Operations ホーム ページの新機能および変更された機能](../../fin-ops/get-started/whats-new-changed.md) では、Finance and Operations アプリのリリースに含まれる機能を紹介しています。
+#### <a name="finance-and-operations-apps-whats-new"></a>財務と運用アプリの新機能
+[財務と運用ホーム ページの新機能および変更された機能](../../fin-ops/get-started/whats-new-changed.md) では、財務と運用アプリのリリースに含まれる機能を紹介しています。
 
 ### <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) ツールを使用すると、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成できます。 ER では、これらの形式をライフ サイクル中に管理できます。 詳細については、次のいずれかのトピックを参照してください。
@@ -133,3 +133,4 @@ ms.locfileid: "8866540"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

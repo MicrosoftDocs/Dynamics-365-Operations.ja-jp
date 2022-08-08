@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef08d7880a0695527cbfb4ba4e11aae05aec7fc8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711857"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065368"
 ---
 # <a name="accounts-receivable-home-page"></a>売掛金勘定ホーム ページ
 
@@ -83,9 +83,9 @@ ms.locfileid: "8711857"
 
 #### <a name="blogs"></a>ブログ
 
-売掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+売掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) と [Microsoft Dynamics 365 財務と運用 - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
-[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog)では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための一元化したリソースを Microsoft Dynamics パートナー向けに提供しています。
 
 #### <a name="task-guides"></a>タスク ガイド
 アプリケーションには、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
@@ -103,3 +103,4 @@ ms.locfileid: "8711857"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

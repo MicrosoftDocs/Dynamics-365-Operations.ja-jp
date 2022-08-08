@@ -1,7 +1,7 @@
 ---
 title: 現金および銀行管理ホーム ページ
 description: 現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。
-author: kfend
+author: angelad116
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: kfend
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e49c9f514e79552dda2e7a6e10c7d84fa2560c2e
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710728"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151972"
 ---
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 
@@ -89,9 +89,9 @@ ms.locfileid: "8710728"
 
 #### <a name="blogs"></a>ブログ
 
-意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) と [Microsoft Dynamics 365 財務と運用 - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) を参照してください。
 
-[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog)では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための一元化したリソースを Microsoft Dynamics パートナー向けに提供しています。
 
 #### <a name="task-guides"></a>タスク ガイド
 Finance には、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
@@ -102,3 +102,4 @@ Finance には、タスク ガイドとして使用できる追加のヘルプ�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

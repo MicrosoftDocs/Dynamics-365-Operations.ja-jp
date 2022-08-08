@@ -58,22 +58,32 @@
                       href: hr-whats-new-2021-01-28.md
                     - name: 2021 年 1 月 21 日
                       href: hr-whats-new-2021-01-21.md
-        - name: 概要
+                - name: 削除済みまたは非推奨の機能
+                  items:
+                    - name: 削除済みまたは非推奨の機能に関するホーム ページ
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                    - name: Dynamics 365 Human Resources の削除済みまたは非推奨の機能
+                      href: get-started/removed-deprecated-features-hr.md
+        - name: 開始する
           items:
-            - name: 概要
+            - name: 開始する
               href: hr-admin-overview.md
             - name: システム要件
               href: hr-admin-system-requirements.md
             - name: インスタンスの設定と管理
               items:
-                - name: Human Resources のプロビジョニング
-                  href: hr-admin-setup-provision.md
-                - name: インスタンスのコピー
-                  href: hr-admin-setup-copy-instance.md
-                - name: インスタンスの削除
-                  href: hr-admin-setup-remove-instance.md
-                - name: 更新プロセス
-                  href: hr-admin-setup-update-process.md
+                - name: 財務および運用インフラストラクチャに Human Resources をプロビジョニングする
+                  href: hr-admin-setup-provision-fo.md
+                - name: スタンドアロン インフラストラクチャに Human Resources をプロビジョニングする
+                  items:
+                    - name: Human Resources のプロビジョニング
+                      href: hr-admin-setup-provision.md
+                    - name: インスタンスのコピー
+                      href: hr-admin-setup-copy-instance.md
+                    - name: インスタンスの削除
+                      href: hr-admin-setup-remove-instance.md
+                    - name: 更新プロセス
+                      href: hr-admin-setup-update-process.md
             - name: データ統合の設定
               items:
                 - name: データ統合テクノロジの選択
@@ -99,91 +109,91 @@
                 - name: Office との統合
                   items:
                     - name: Office 統合のチュートリアル
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?context=/dynamics365/context/human-resources
                     - name: Excel でのエンティティ データの更新
-                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?context=/dynamics365/context/human-resources
                     - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?context=/dynamics365/context/human-resources
                     - name: Office 統合のトラブルシューティング
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/human-resources
                 - name: データ管理のコンフィギュレーション
                   items:
                     - name: データ管理フレームワークの概要
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?context=/dynamics365/context/human-resources
                     - name: データ エンティティ
                       items:
                         - name: データ エンティティの概要
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?context=/dynamics365/context/human-resources
                         - name: コンフィギュレーション データ プロジェクト
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?context=/dynamics365/context/human-resources
                     - name: 会社間または法人間のコンフィギュレーション データのコピー
                       items:
                         - name: コンフィギュレーション データのコピーの概要
-                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?context=/dynamics365/context/human-resources
                         - name: コンフィギュレーション データ パッケージ
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                         - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                         - name: コンフィギュレーション データ テンプレート
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?context=/dynamics365/context/human-resources
                         - name: エンティティの変更の追跡
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?context=/dynamics365/context/human-resources
                         - name: 標準データ エンティティに関する情報の検索
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?context=/dynamics365/context/human-resources
                         - name: 複数のワークシート付きデータ テンプレート
-                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?context=/dynamics365/context/human-resources
                         - name: エンティティの変更追跡の有効化
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?context=/dynamics365/context/human-resources
                         - name: コンフィギュレーション キーおよびデータ エンティティ
-                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?context=/dynamics365/context/human-resources
                         - name: コンフィギュレーション データ パッケージ
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                     - name: データ インポート/エクスポート ジョブ
                       items:
                         - name: データ インポート/エクスポート ジョブの概要
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?context=/dynamics365/context/human-resources
                         - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
-                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?context=/dynamics365/context/human-resources
                     - name: データ エンティティの開発
                       items:
                         - name: データ エンティティに関する設計原則とベスト プラクティス
-                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?context=/dynamics365/context/human-resources
                         - name: 新しいデータ エンティティの作成
-                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?context=/dynamics365/context/human-resources
                         - name: データ エンティティのプロパティ
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?context=/dynamics365/context/human-resources
                         - name: 計算列と仮想フィールドの作成
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?context=/dynamics365/context/human-resources
                         - name: 会社間動作
-                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?context=/dynamics365/context/human-resources
                         - name: 国/地域コードの処理
-                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?context=/dynamics365/context/human-resources
                         - name: 継承パターン
-                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?context=/dynamics365/context/human-resources
                         - name: データ エンティティ ウィザード ルール
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?context=/dynamics365/context/human-resources
                         - name: メタデータのプロパティ
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?context=/dynamics365/context/human-resources
                         - name: 検証、既定値、およびマップされていないフィールド
-                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?context=/dynamics365/context/human-resources
                         - name: セキュリティとデータ エンティティ
-                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?context=/dynamics365/context/human-resources
                         - name: サード パーティ サービス テスト ユーティリティの使用
-                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?context=/dynamics365/context/human-resources
                         - name: 財務分析コードを公開する読み取り専用エンティティの作成
-                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?context=/dynamics365/context/human-resources
                     - name: 自分のデータベースの持ち込み
-                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?context=/dynamics365/context/human-resources
                     - name: BYOD バッチ ジョブの最適化
                       href: hr-admin-integration-byod-batch-jobs.md
                     - name: 自動化エンティティ格納更新
-                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?context=/dynamics365/context/human-resources
                     - name: データ タスクの自動化
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/human-resources
                     - name: データ検証チェックリスト ワークスペース
-                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?context=/dynamics365/context/human-resources
                     - name: データ管理エラーの説明
-                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?context=/dynamics365/context/human-resources
                     - name: 機能の管理
                       href: hr-admin-manage-features.md
                     - name: データベース ログの構成と管理
@@ -228,12 +238,14 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
                 - name: Lifecycle Services の理解
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
-                - name: Go-Live の準備
+                - name: Go Live の準備
                   href: hr-admin-go-live-prepare.md
                 - name: Go-Live に関するよくあるご質問
                   href: hr-admin-go-live-faq.md
-                - name: Human Resources インフラストラクチャの統合に関するよくあるご質問
+                - name: Human Resources インフラストラクチャのマージに関するよくあるご質問
                   href: hr-infrastructure-merge-faq.md
+                - name: Human Resources の顧客移行に関するよくあるご質問
+                  href: customer-migration.md
                 - name: ドキュメント リソース
                   items:
                     - name: ヘルプ システム
@@ -490,7 +502,7 @@
               href: hr-personnel-maintain-employee-injury-illness-information.md
             - name: 採用
               items:
-                - name: 概要
+                - name: 開始する
                   href: ../human-resources/hr-recruit-overview.md
                 - name: 採用プロジェクト
                   items:
@@ -522,7 +534,7 @@
           href: hr-task-mgmt.md
         - name: 休暇
           items:
-            - name: 概要
+            - name: 開始する
               href: hr-leave-and-absence-overview.md
             - name: 休暇と欠勤パラメーターの構成
               href: hr-leave-and-absence-parameters.md
@@ -796,7 +808,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
     - name: Human Resources の開発
       items:
-        - name: 概要
+        - name: 開始する
           href: hr-developer-overview.md
         - name: Power Apps と Power Automate を使用した拡張
           href: hr-developer-power-apps.md
@@ -854,7 +866,7 @@
                       href: hr-developer-api-myleaverequests-submit.md
         - name: ATS 統合 API
           items:
-            - name: 概要
+            - name: 開始する
               href: hr-admin-integration-ats-api-introduction.md
             - name: ATS 統合のサーバー間認証
               href: hr-admin-integration-ats-api-s2s-auth.md
@@ -942,7 +954,7 @@
                   href: hr-admin-integration-ats-api-skill-level-type.md
         - name: 給与統合 API
           items:
-            - name: 概要
+            - name: 開始する
               href: hr-admin-integration-payroll-api-introduction.md
             - name: 給与エンティティの生成および確認
               href: hr-admin-integration-payroll-api-generate-review-entities.md

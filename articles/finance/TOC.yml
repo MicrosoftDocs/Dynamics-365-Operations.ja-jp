@@ -7,7 +7,7 @@
         - name: 新機能および変更された機能
           items:
             - name: 財務と運用アプリの新機能または変更された機能
-              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
             - name: Finance の新機能および変更された機能
               items:
                 - name: Finance の新機能および変更された機能に関するホーム ページ
@@ -16,94 +16,92 @@
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (7 月)
                   href: get-started/whats-new-changed-10-0-27.md
-                - name: Finance 10.0.26 (5 月)
-                  href: get-started/whats-new-changed-10-0-26.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?context=/dynamics365/context/finance
                 - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
                   href: get-started/removed-deprecated-features-finance.md
                 - name: 以前のリリースの削除済みまたは非推奨の機能
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?context=/dynamics365/context/finance
             - name: 延期された AX 2012 の機能
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/finance
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
-        - name: 概要
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/finance
+        - name: 開始する
           items:
             - name: サービスの説明
-              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/finance
             - name: 購入する前に
-              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/finance
             - name: プレビュー サブスクリプションのサインアップ
-              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?context=/dynamics365/context/finance
             - name: 1 つのバージョンのサービス更新
               items:
                 - name: 1 つのバージョンのサービス更新の概要
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/finance
                 - name: 1 つのバージョンのサービス更新に関するよくあるご質問
-                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?context=/dynamics365/context/finance
                 - name: Dynamics 365 Commerce を含む更新およびカスタム コードのライフサイクルの管理
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?context=/dynamics365/context/finance
                 - name: ソフトウェアのライフサイクル ポリシー - クラウド
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?context=/dynamics365/context/finance
                 - name: ソフトウェアのライフサイクル ポリシー - オンプレミス
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?context=/dynamics365/context/finance
                 - name: サービス更新の可用性
-                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?context=/dynamics365/context/finance
                 - name: クラウド環境への更新プログラムの適用
-                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/finance
                 - name: オンプレミス展開への更新プログラムの適用
-                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?context=/dynamics365/context/finance
                 - name: サービスの更新の構成
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/finance
                 - name: サービス提供前およびサービス提供後
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?context=/dynamics365/context/finance
                 - name: サービス更新の一時停止
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
                 - name: サービス更新に関する通知を受け取る
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
                 - name: データ タスクの自動化
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
                 - name: 1 つのバージョンを使用した ISV ソリューションの提供
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/finance
                 - name: ユーザー受け入れテストの作成と自動化
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/finance
             - name: デモ環境の配置
-              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?context=/dynamics365/context/finance
             - name: 展開に関する考慮事項
               items:
                 - name: 展開オプション
-                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?context=/dynamics365/context/finance
                 - name: クラウドとオンプレミスの機能比較
-                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?context=/dynamics365/context/finance
                 - name: クラウド配置
-                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?context=/dynamics365/context/finance
                 - name: クラウド配置のシステム要件
-                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?context=/dynamics365/context/finance
                 - name: オンプレミス配置
-                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?context=/dynamics365/context/finance
                 - name: オンプレミス配置のシステム要件
-                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?context=/dynamics365/context/finance
                 - name: Finance + Operations (on-premises) の購入
-                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?context=/dynamics365/context/finance
             - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
-                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?context=/dynamics365/context/finance
                 - name: ヘルプ システムへの接続
-                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?context=/dynamics365/context/finance
                 - name: カスタム ヘルプの概要
-                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/finance
                 - name: フィールドの説明の表示およびエクスポート
-                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?context=/dynamics365/context/finance
                 - name: タスク レコーダー
-                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?context=/dynamics365/context/finance
                 - name: タスク レコーダーを使用したドキュメントやトレーニングの作成
-                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/finance
                 - name: ビデオ
-                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/finance
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
@@ -127,77 +125,77 @@
             - name: ユーザー インターフェイスの操作
               items:
                 - name: ユーザー インターフェイスの要素
-                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?context=/dynamics365/context/finance
                 - name: ユーザー補助機能
-                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?context=/dynamics365/context/finance
                 - name: 機能管理の概要
-                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?context=/dynamics365/context/finance
                 - name: クライアントに関するよくあるご質問
-                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?context=/dynamics365/context/finance
                 - name: アクション検索
-                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?context=/dynamics365/context/finance
                 - name: 高度なフィルター処理とクエリ構文
-                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?context=/dynamics365/context/finance
                 - name: ワークスペースのコンフィギュレーションとフィルター処理
-                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?context=/dynamics365/context/finance
                 - name: '[新しいウィンドウで開く] 機能を使用してページを並べて表示する'
-                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?context=/dynamics365/context/finance
                 - name: キーボード ショートカット
-                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?context=/dynamics365/context/finance
                 - name: 法人のバナーまたはロゴ画像の変更
-                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?context=/dynamics365/context/finance
                 - name: ナビゲーション検索
-                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?context=/dynamics365/context/finance
                 - name: ユーザー エクスペリエンスのパーソナライズ
-                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?context=/dynamics365/context/finance
                 - name: 保存されているビュー
-                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?context=/dynamics365/context/finance
                 - name: グリッド機能
-                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?context=/dynamics365/context/finance
                 - name: カスタム フィールドの作成と操作
-                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?context=/dynamics365/context/finance
                 - name: Power Apps からキャンバス アプリを埋め込む
-                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?context=/dynamics365/context/finance
                 - name: サード パーティのアプリの埋め込み
-                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?context=/dynamics365/context/finance
                 - name: ルックアップを使用した情報の検索
-                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?context=/dynamics365/context/finance
                 - name: セッションの日付変更
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?context=/dynamics365/context/finance
                 - name: ユーザーの優先タイム ゾーンの設定
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?context=/dynamics365/context/finance
                 - name: Lifecycle Services の理解
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?context=/dynamics365/context/finance
             - name: 実装ライフサイクル管理
               items:
                 - name: 実装ライフサイクル管理ホーム ページ
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?context=/dynamics365/context/finance
                 - name: 財務と運用アプリのアーキテクチャ
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?context=/dynamics365/context/finance
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
-                - name: 実装プロジェクトの研修
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
+                - name: 実装プロジェクトのオンボード
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/finance
                 - name: 環境計画
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
-                - name: Go-Live の準備
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/finance
+                - name: Go Live の準備
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/finance
                 - name: Go-Live に関するよくあるご質問
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?context=/dynamics365/context/finance
                 - name: サービス要求の送信
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/finance
                 - name: サブスクリプション、LCS プロジェクト、Azure AD テナントに関するよくあるご質問
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/finance
                 - name: データ センター間で環境を移動する
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/finance
                 - name: 契約タイプ間でライセンスを移動する
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/finance
                 - name: LCS 実装プロジェクトを別の Azure AD テナントに移動する
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/finance
                 - name: LCS 実装プロジェクトをオンプレミスからクラウドに移動する
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/finance
                 - name: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび運用環境
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/finance
         - name: 買掛金勘定
           items:
             - name: 買掛金勘定ホーム ページ
@@ -364,14 +362,6 @@
               href: accounts-receivable/customer-workflow.md
             - name: 定期請求書の設定と処理
               href: accounts-receivable/set-up-process-recurring-invoices.md
-            - name: 自由書式の請求書の勘定配賦と補助元帳仕訳
-              href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
-            - name: 売掛金勘定の転記
-              href: general-ledger/accts-recvble-posting.md
-            - name: 顧客転記プロファイル
-              href: accounts-receivable/customer-posting-profiles.md
-            - name: 諸費用コードの作成
-              href: accounts-receivable/create-charges-codes.md
             - name: 単一ユーロ支払地域 (SEPA) 口座引落の概要
               href: accounts-receivable/sepa-direct-debit-overview.md
             - name: SEPA 口座引落の委託の設定
@@ -530,6 +520,8 @@
                   href: accounts-receivable/cm-customer-credit-groups.md
                 - name: 与信限度額の調整
                   href: accounts-receivable/cm-credit-limit-adjustments.md
+                - name: 与信限度額のシナリオ
+                  href: accounts-receivable/Credit-limit-scenarios.md
                 - name: 販売注文の与信保留
                   href: accounts-receivable/cm-sales-order-credit-holds.md
                 - name: 定期与信管理タスク
@@ -761,9 +753,9 @@
             - name: 原価管理ワークスペース パラメーターのコンフィギュレーション
               href: cost-accounting/tasks/configure-cost-control-workspace-parameters.md
             - name: Microsoft Power BI におけるアクセス リストのセキュリティと RLS について
-              href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?context=/dynamics365/context/finance
             - name: Microsoft Power BI レポートへのコンテンツ パックの使用
-              href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?context=/dynamics365/context/finance
             - name: モバイル アプリケーションでの原価管理ワークスペースの使用
               href: cost-accounting/cost-controlling-mobile-workspace.md
         - name: 電子メッセージ
@@ -1070,6 +1062,30 @@
                       href: asset-leasing/set-up-lease-posting-accts.md
                     - name: 固定資産の転記
                       href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
+                    - name: 在庫転記プロファイル
+                      items:
+                        - name: 在庫転記プロファイル
+                          href: general-ledger/inventory-posting-profiles.md
+                        - name: 販売注文の転記
+                          href: general-ledger/sales-order-posting.md
+                        - name: 発注書の転記
+                          href: general-ledger/purchase-order-posting.md
+                        - name: 在庫の転記
+                          href: general-ledger/inventory-posting.md
+                        - name: 生産の転記
+                          href: general-ledger/production-posting.md
+                        - name: 標準原価差額の転記
+                          href: general-ledger/standard-cost-variance-posting.md
+                        - name: 間接原価の転記
+                          href: general-ledger/indirect-cost-posting.md
+                    - name: 陸揚原価の転記
+                      items:
+                        - name: 原価計算パラメーター値の設定
+                          href: ../supply-chain/landed-cost/costing-parameters-setup.md
+                    - name: 転記の定義の概要
+                      href: general-ledger/posting-definitions.md
+                    - name: 生産管理の転記
+                      href: general-ledger/production-posting.md
                 - name: 配賦ルール
                   items:
                     - name: 元帳配賦ルール
@@ -1122,6 +1138,10 @@
                   href: general-ledger/view-journal-entries-transactions.md
                 - name: トランザクションの詳細レポートを使用した試算表
                   href: public-sector/general-ledger-public-sector-trial-balance.md
+                - name: 主勘定別の一般会計明細書
+                  href: general-ledger/general-ledger-statement-by-main-account.md
+                - name: 税の標準監査ファイル (SAF-T) の電子申告
+                  href: general-ledger/standard-audit-file.md
             - name: 期末決算
               items:
                 - name: 期末に一般会計を決算
@@ -1211,9 +1231,9 @@
             - name: 財務諸表の使用を開始する
               href: general-ledger/financial-reporting-getting-started.md
             - name: 財務諸表の概要
-              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?context=/dynamics365/context/finance
             - name: 財務諸表コンポーネント
-              href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?context=/dynamics365/context/finance
             - name: 財務諸表の表示とデザイン
               href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: 財務諸表の通貨機能
@@ -1223,7 +1243,7 @@
             - name: 貸借対照表の財務諸表
               href: general-ledger/balance-sheet-financial-reports.md
             - name: 財務諸表の生成
-              href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?context=/dynamics365/context/finance
             - name: 損益計算書の財務諸表
               href: general-ledger/income-statement-financial-report.md
             - name: 試算表の財務諸表
@@ -1231,29 +1251,29 @@
             - name: 財務諸表の表示
               href: general-ledger/view-financial-reports.md
             - name: レポート デザイナー インターフェイス
-              href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?context=/dynamics365/context/finance
             - name: 財務諸表のキーボード ショートカット
               href: general-ledger/financial-reporting-keyboard-shortcuts.md
             - name: 財務諸表デザイナーでのユーザーの基本設定
-              href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?context=/dynamics365/context/finance
             - name: 形式の詳細オプション
-              href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?context=/dynamics365/context/finance
             - name: レポート デザイナーのレポートのコンポーネントを整理
-              href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?context=/dynamics365/context/finance
             - name: レポート定義
-              href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?context=/dynamics365/context/finance
             - name: 行定義
-              href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?context=/dynamics365/context/finance
             - name: 列定義
-              href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?context=/dynamics365/context/finance
             - name: 財務諸表のレポート ツリー定義
-              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?context=/dynamics365/context/finance
             - name: 行定義セルの変更
-              href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?context=/dynamics365/context/finance
             - name: 財務報告のデータ マートのリセット
-              href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?context=/dynamics365/context/finance
             - name: データ マートをリセットするタイミング
-              href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?context=/dynamics365/context/finance
             - name: 財務諸表に関するよくあるご質問
               href: general-ledger/financial-reporting-faq.md
         - name: Finance Insights
@@ -1423,133 +1443,133 @@
         - name: グローバリゼーション
           items:
             - name: グローバリゼーション リソース
-              href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
             - name: グローバリゼーション サービス
               items:
                 - name: グローバリゼーション サービスの概要
-                  href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
+                  href: localizations/globalization-services-overview.md?context=/dynamics365/context/finance
                 - name: Regulatory Configuration Service (RCS)
                   items:
                     - name: Regulatory Configuration Service (RCS) の概要
-                      href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/rcs-overview.md?context=/dynamics365/context/finance
                     - name: Regulatory Configuration Service (RCS) - グローバリゼーション機能
-                      href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/rcs-globalization-feature.md?context=/dynamics365/context/finance
                     - name: Regulatory Configuration Service (RCS) で ER 構成を作成し、グローバル リポジトリにアップロードする
-                      href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/rcs-global-repo-upload.md?context=/dynamics365/context/finance
                     - name: Regulatory Configuration Service (RCS) - RCS 環境の削除
                       href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service (RCS) – Lifecycle Services ストレージの廃止
-                      href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/finance
                     - name: Finance に ER 構成をダウンロードする
                       items:
                         - name: RCS からコンフィギュレーションをダウンロードする
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/finance
                         - name: コンフィギュレーションを RCS からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/finance
                     - name: グローバル リポジトリ (GR)
                       items:
                         - name: コンフィギュレーションを GR からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/finance
                         - name: ER コンフィギュレーションの更新バージョンのインポート
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/finance
                         - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/finance
                         - name: GR へコンフィギュレーションをアップロードする
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                          href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/finance
                         - name: GR でコンフィギュレーションを共有する
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
                         - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
-                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
                 - name: 電子請求
                   items:
                     - name: 電子請求の概要
-                      href: localizations/e-invoicing-service-overview.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/e-invoicing-service-overview.md?context=/dynamics365/context/finance
                     - name: 電子請求管理および統合コンポーネント
-                      href: localizations/e-invoicing-administration-integration-components.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
                     - name: 電子請求の設定
                       items:
                         - name: 電子請求の設定
-                          href: localizations/e-invoicing-set-up-overview.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
                         - name: 電子請求のサインアップおよびインストール
                           items:
                             - name: 電子請求のサインアップおよびインストールの概要
-                              href: localizations/e-invoicing-sign-up-install.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-sign-up-install.md?context=/dynamics365/context/finance
                             - name: Lifecycle Services でのマイクロサービス向けアドインのインストール
-                              href: localizations/e-invoicing-install-add-in-microservices-lcs.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/finance
                             - name: Regulatory Configuration Services (RCS) の設定
-                              href: localizations/e-invoicing-set-up-rcs.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-set-up-rcs.md?context=/dynamics365/context/finance
                             - name: Power Platform プラグイン管理リファレンス
-                              href: localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/finance
                         - name: Azure リソースの設定
                           items:
                             - name: 電子請求用 Azure リソースの設定
-                              href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
                             - name: Azure portal での Azure Key Vault の作成
-                              href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
                             - name: Azure portal での Azure ストレージ アカウントの作成
                               href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
                             - name: SharePoint 接続の構成
-                              href: localizations/e-invoicing-create-sharepoint-connection.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
                         - name: 環境の設定
                           items:
                             - name: サービス環境および接続されているアプリケーションの構成
-                              href: localizations/e-invoicing-configure-service-environments-connected-applications.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-configure-service-environments-connected-applications.md?context=/dynamics365/context/finance
                             - name: サービス環境
-                              href: localizations/e-invoicing-service-environments.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-service-environments.md?context=/dynamics365/context/finance
                             - name: 顧客の証明書とシークレット
-                              href: localizations/e-invoicing-customer-certificates-secrets.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-customer-certificates-secrets.md?context=/dynamics365/context/finance
                             - name: 接続されているアプリケーション
-                              href: localizations/e-invoicing-connected-applications.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-connected-applications.md?context=/dynamics365/context/finance
                     - name: グローバリゼーション機能の使用
                       items:
                         - name: グローバリゼーション機能の使用の概要
-                          href: localizations/e-invoicing-working-globalization-features.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-working-globalization-features.md?context=/dynamics365/context/finance
                         - name: グローバル リポジトリからの機能のインポート
-                          href: localizations/e-invoicing-import-feature-global-repository.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/finance
                         - name: 新しいグローバリゼーション機能の作成
-                          href: localizations/e-invoicing-create-new-globalization-feature.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/finance
                         - name: 構成の使用
                           href: localizations/e-invoicing-work-configurations.md
                         - name: 機能の設定の使用
-                          href: localizations/e-invoicing-feature-setup.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-feature-setup.md?context=/dynamics365/context/finance
                         - name: グローバリゼーション機能の完了、公開、展開
-                          href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/finance
                         - name: 他の組織との共有
-                          href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-share-other-organizations.md?context=/dynamics365/context/finance
                         - name: 使用状況管理ダッシュボード
-                          href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-usage-management-dashboard.md?context=/dynamics365/context/finance
                         - name: 受信した電子ドキュメントの処理
                           items:
                             - name: 受信した電子ドキュメントの処理
                               href: localizations/e-invoicing-process-incoming-electronic-documents.md
                             - name: メール チャネルの構成
-                              href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-configure-email.md?context=/dynamics365/context/finance
                             - name: SharePoint チャネルの構成
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                     - name: Finance および Supply Chain Management での電子請求の設定と使用
                       items:
                         - name: 電子請求との統合のアクティブ化と設定
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/finance
                         - name: 電子請求パラメーターの設定
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance
                         - name: 電子請求の使用
                           items:
                             - name: 電子請求への電子ドキュメントの送信
-                              href: localizations/e-invoicing-submit-electronic-documents.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
                             - name: 電子ドキュメント送信ログの使用
-                              href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-submission-log.md?context=/dynamics365/context/finance
                             - name: 電子ドキュメント受信ログの使用
-                              href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
                     - name: 国固有のシナリオ
                       items:
                         - name: 電子請求機能の可用性
-                          href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
                         - name: ブラジル用電子請求の使用を開始する
-                          href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
                         - name: エジプト用電子請求の使用を開始する
-                          href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
                         - name: メキシコ用電子請求の使用を開始する
-                          href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
                         - name: サウジアラビア用電子請求の使用を開始する
                           href: localizations/e-invoicing-sa-get-started.md
                         - name: イタリアの FatturaPA と SDI の直接統合の設定
@@ -1557,15 +1577,15 @@
                         - name: 電子請求サービスを使用して仕入先請求書をインポートする
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                     - name: 電子請求に関するよくあるご質問
-                      href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: 税計算
                   items:
                     - name: 税計算の概要
-                      href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/global-tax-calcuation-service-overview.md?context=/dynamics365/context/finance
                     - name: 設定
                       items:
                         - name: 税計算の使用を開始する
-                          href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/global-get-started-with-tax-calculation-service.md?context=/dynamics365/context/finance
                         - name: 税コードの設定
                           href: localizations/set-up-tax-codes.md
                         - name: 税グループの設定
@@ -1575,7 +1595,7 @@
                         - name: 税計算のインポートとエクスポート
                           href: localizations/tax-calculation-import-export-feature.md
                         - name: マスター データ検索用の環境の設定
-                          href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/finance
                         - name: 税務計算サービスから Finance への、税金の設定の同期
                           href: localizations/global-master-data-sync-tax-calculation-service-finance.md
                     - name: 決定
@@ -1583,13 +1603,13 @@
                         - name: 税額計算のデータ モデル
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: 消費税の適用と消費税グループの決定ロジック
-                          href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/global-sales-tax-group-determination.md?context=/dynamics365/context/finance
                         - name: 現金割引の計算設定で税務署パラメーターを使用する
-                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?context=/dynamics365/context/finance
                     - name: 計算
                       items:
                         - name: 価格に税金が含まれる場合の価格上の税金の計算が有効
-                          href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/global-exclude-from-tax-base-amount-calculation.md?context=/dynamics365/context/finance
                         - name: 税計算の丸めルール
                           href: localizations/tax-calculation-rounding-rules.md
                     - name: 複数の VAT 登録
@@ -1649,15 +1669,15 @@
                     - name: 移動オーダーに対する税計算の有効化
                       items:
                         - name: 移動オーダーに対する税金機能のサポート
-                          href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/tasks/Tax-feature-support-for-transfer-order.md?context=/dynamics365/context/finance
                         - name: 移動オーダー ドキュメントに税情報を印刷する
-                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?context=/dynamics365/context/finance
                     - name: 拡張機能
                       items:
                         - name: 税コンフィギュレーションへのデータ フィールドの追加
-                          href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/finance
                         - name: 拡張機能を使用した税統合へのデータ フィールドの追加
-                          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?context=/dynamics365/context/finance
                         - name: マスター データ検索に使用する税構成のカスタマイズ
                           href: localizations/customize-tax-configurations-master-data-lookup.md
                     - name: トラブルシューティング
@@ -1673,7 +1693,7 @@
                         - name: 税計算サービスでデバッグ モードを有効化する
                           href: localizations/tcs-troubleshooting-enable-debug-mode.md
                     - name: 税計算に関するよくあるご質問
-                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/global-tax-calcuation-service-faq.md?context=/dynamics365/context/finance
             - name: 税
               items:
                 - name: 消費税
@@ -1716,6 +1736,10 @@
                       href: general-ledger/dual-currency-for-tax.md
                     - name: 元帳トランザクション別消費税詳細 (レポート)
                       href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+                    - name: 主勘定別の一般会計明細書と消費税詳細レポート
+                      href: general-ledger/general-ledger-statement-by-main-account.md
+                    - name: 税の標準監査ファイル (SAF-T) の電子申告
+                      href: general-ledger/standard-audit-file.md
                     - name: 消費税精算期間の設定
                       href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
                     - name: 転記された消費税トランザクションの表示
@@ -2042,7 +2066,7 @@
               items:
                 - name: 中国の概要
                   href: localizations/china.md
-                - name: 中国の 21Vianet で運用されている Finance and Operations
+                - name: 中国で 21Vianet が運用する財務と運用
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: 中国の伝票タイプに対する勘定グループの選択
                   href: localizations/apac-chn-account-groups-selection.md
@@ -2441,7 +2465,7 @@
                 - name: 仕訳リスト レポート
                   href: localizations/emea-deu-journal-list-report.md
                 - name: 電子税申告の設定
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?context=/dynamics365/context/finance
                 - name: 販売から生成されるクレジット メモの個別ラベルの印刷
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU 販売リスト
@@ -2541,7 +2565,7 @@
                             - name: コンフィギュレーションのインポート
                               href: general-ledger/tax-engine-import-configuration.md
                             - name: 高度なフォーミュラ デザイナー
-                              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/finance
                             - name: 税エンジンの適用性
                               href: general-ledger/tax-engine-applicability.md
                             - name: 税コンポーネントの作成
@@ -3386,6 +3410,8 @@
                       href: localizations/emea-petty-cash.md
                     - name: 現金 - ローカル基本フォームおよび統合レポート
                       href: localizations/rus-local-primary-forms-and-unified-reports.md
+                    - name: クライアント-銀行のインターフェイスと調整手順
+                      href: localizations/rus-client-bank-export.md
                 - name: VAT
                   items:
                     - name: 仮受 VAT のローカルの特定の転記
@@ -3606,8 +3632,10 @@
               items:
                 - name: シンガポールの概要
                   href: localizations/singapore.md
-                - name: GST-05 レポートの生成
+                - name: GST-05 レポートを生成します
                   href: localizations/apac-sgp-generate-gst-05-report.md
+                - name: シンガポールの IRAS 監査ファイル (IAF)
+                  href: localizations/apac-sgp-iras-audit-file.md
             - name: スペイン
               items:
                 - name: スペインの概要
@@ -3757,834 +3785,834 @@
         - name: レポートと Power BI の統合
           items:
             - name: Power BI でのレポートと分析
-              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?context=/dynamics365/context/finance
             - name: 情報へのアクセスとレポート
-              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?context=/dynamics365/context/finance
             - name: Power BI.com でのパーソナル化オプション
               items:
                 - name: Power BI.com の統合によって使用できる機能
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?context=/dynamics365/context/finance
                 - name: Power BI.com コンテンツのピン留め
-                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?context=/dynamics365/context/finance
                 - name: Power BI.com からの分析ワークスペースの選択
             - name: Power BI でのパーソナル化オプション
               items:
                 - name: Power BI の統合によって使用できる機能
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?context=/dynamics365/context/finance
                 - name: Power BI コンテンツのピン留め
-                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?context=/dynamics365/context/finance
                 - name: Power BI から分析ワークスペースを選択する
-                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?context=/dynamics365/context/finance
             - name: Power BI コンテンツ
               items:
                 - name: Power BI コンテンツのホーム ページ
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?context=/dynamics365/context/finance
                 - name: 実績対予算
-                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?context=/dynamics365/context/finance
                 - name: 給付金
-                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?context=/dynamics365/context/finance
                 - name: 現金の概要 Power BI コンテンツ
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
                 - name: CFO 概要
-                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?context=/dynamics365/context/finance
                 - name: 報酬
-                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?context=/dynamics365/context/finance
                 - name: 報酬と給付金
-                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?context=/dynamics365/context/finance
                 - name: 原価会計分析
                   items:
                     - name: 原価会計分析 Power BI コンテンツ
-                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?context=/dynamics365/context/finance
                     - name: 原価会計分析の Power BI コンテンツのセキュリティ設定
-                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?context=/dynamics365/context/finance
                 - name: 与信および回収管理
                   href: accounts-receivable/credit-collections-power-bi.md
                 - name: 従業員のコンピテンシーと開発
-                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?context=/dynamics365/context/finance
                 - name: 従業員の能力開発
-                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?context=/dynamics365/context/finance
                 - name: 経費管理 Power BI コンテンツ
-                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?context=/dynamics365/context/finance
                 - name: 財務パフォーマンス
-                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?context=/dynamics365/context/finance
                 - name: 財務分析
-                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?context=/dynamics365/context/finance
                 - name: 固定資産管理
                   href: fixed-assets/Fixed-asset-management-workspace.md
                 - name: ラーニング
-                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?context=/dynamics365/context/finance
                 - name: 組織トレーニング
-                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?context=/dynamics365/context/finance
                 - name: プラクティス マネージャー
-                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?context=/dynamics365/context/finance
                 - name: 購買と支出の分析
-                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?context=/dynamics365/context/finance
                 - name: 採用
-                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?context=/dynamics365/context/finance
                 - name: 販売と売上性のパフォーマンス
-                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?context=/dynamics365/context/finance
                 - name: サブスクリプション請求管理の Power BI コンテンツ
                   href: accounts-receivable/sub-bill-power-bi.md
                 - name: 仕入先支払
                   href: accounts-payable/Vendor-payments-workspace.md
                 - name: 要員指標
-                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?context=/dynamics365/context/finance
             - name: 分析ワークスペース
               items:
                 - name: 分析ワークスペース (Power BI Embedded を使用)
-                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?context=/dynamics365/context/finance
                 - name: Power BI Embedded 統合
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?context=/dynamics365/context/finance
                 - name: 分析ワークスペースで埋め込みレポートをカスタマイズする
-                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?context=/dynamics365/context/finance
             - name: ドキュメントのレポートおよび印刷
               items:
                 - name: ドキュメント レポート サービスの概要
-                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?context=/dynamics365/context/finance
                 - name: サポートされるフォント
-                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?context=/dynamics365/context/finance
                 - name: オンプレミスの配置の SSRS のコンフィギュレーション
-                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?context=/dynamics365/context/finance
                 - name: IaaS 環境での既定のレポート エクスペリエンス
-                  href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?context=/dynamics365/context/finance
                 - name: ドキュメント レポートのプレビュー オプション
                   href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
                 - name: 印刷中
                   items:
                     - name: ドキュメントの印刷の概要
-                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?context=/dynamics365/context/finance
                     - name: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
-                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?context=/dynamics365/context/finance
                     - name: ドキュメント回覧エージェントのアップグレード
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/finance/toc.json
                     - name: オンプレミス環境でのネットワーク プリンター デバイスのインストール
-                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?context=/dynamics365/context/finance
                     - name: オンプレミス配置でのドキュメントの生成、発行、印刷
-                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?context=/dynamics365/context/finance
                     - name: ドキュメント回覧エージェントを Windows サービスとして実行する
-                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?context=/dynamics365/context/finance
                 - name: 利用可能な SQL Server Reporting Services のレポート
-                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?context=/dynamics365/context/finance
                 - name: レポートのデザイン テンプレートをインストールする
-                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?context=/dynamics365/context/finance
             - name: パワー ユーザー管理ツール
               items:
                 - name: エンティティ格納と Power BI の統合
-                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?context=/dynamics365/context/finance
                 - name: エンティティ格納のメンテナンス後に問題を解決する
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
                 - name: Power BI 統合のコンフィギュレーション
-                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?context=/dynamics365/context/finance
                 - name: 自分のデータベースの持ち込み
-                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?context=/dynamics365/context/finance
                 - name: PDF ビューアを使用した PDF ドキュメントのプレビュー
-                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?context=/dynamics365/context/finance
             - name: ソリューションの作成および拡張のための開発者ツール
               items:
                 - name: 分析、集計の測定、および KPI モデリング
-                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?context=/dynamics365/context/finance
                 - name: 集計データのモデリング
-                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?context=/dynamics365/context/finance
                 - name: 集計の測定への財務分析コードの追加
-                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?context=/dynamics365/context/finance
                 - name: Power BI Desktop を使用した分析レポートの作成
-                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?context=/dynamics365/context/finance
                 - name: Power BI Embedded を使用したワークスペースへの分析の追加
-                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?context=/dynamics365/context/finance
                 - name: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
-                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?context=/dynamics365/context/finance
                 - name: レポート ソリューションの作成
-                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?context=/dynamics365/context/finance
                 - name: 拡張機能を使用してアプリケーション スイート レポートをカスタマイズする
-                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?context=/dynamics365/context/finance
                 - name: アプリケーション スイート レポート データ セットを展開する
-                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?context=/dynamics365/context/finance
                 - name: レポートのメニュー項目を拡張してユーザー ナビゲーションをリダイレクトする
-                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?context=/dynamics365/context/finance
                 - name: ビジネス ドキュメントのカスタム デザインを作成する
-                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/finance
                 - name: 実行時間の長いレポートのタイムアウトを回避する
-                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance
         - name: 電子申告
           items:
             - name: 電子申告の概要
-              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?context=/dynamics365/context/finance
             - name: 電子申告コンポーネント
-              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?context=/dynamics365/context/finance
             - name: 構成
               items:
                 - name: 構成の作成
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?context=/dynamics365/context/finance
                 - name: 他のコンポーネントに対する電子申告構成の依存関係を定義する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?context=/dynamics365/context/finance
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
                     - name: ドメイン固有のデータ モデルを設計する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?context=/dynamics365/context/finance
                     - name: アプリケーション固有のメタデータを準備する
                       items:
                         - name: RCS で使用する電子申告のアプリケーション メタデータを準備する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?context=/dynamics365/context/finance
                         - name: ER コンフィギュレーションを使用して RCS のアプリケーション メタデータにアクセスする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?context=/dynamics365/context/finance
                         - name: 接続されているアプリケーションを使用して RCS のアプリケーション メタデータにアクセスする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?context=/dynamics365/context/finance
                         - name: モデル マッピングを定義し、データ ソースを選択する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?context=/dynamics365/context/finance
                         - name: 選択したデータ ソースにデータ モデルをマップする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?context=/dynamics365/context/finance
                         - name: 形式コンフィギュレーションを作成する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?context=/dynamics365/context/finance
                         - name: 作成された形式のコンポーネントをデータ モデル要素にマッピングする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?context=/dynamics365/context/finance
                     - name: 準備された ER ソリューションをターゲット アプリケーションでテストする
                       items:
                         - name: コンフィギュレーションを RCS からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/finance
                         - name: 形式コンフィギュレーションを使用して支払の電子ドキュメントを生成する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/finance
                     - name: 形式の新しい基準バージョンを採用してその形式をアップグレードする
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/finance
             - name: ER のフォーミュラ デザイナー
               items:
                 - name: フォーミュラ デザイナー
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/finance
                 - name: 高度なフォーミュラ デザイナー
-                  href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/finance
             - name: フォーミュラの言語と機能
               items:
                 - name: フォーミュラ言語
-                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/finance
                 - name: ER フォーミュラのサポートされるデータ型
                   items:
                     - name: プリミティブ データ型
-                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?context=/dynamics365/context/finance
                     - name: 複合データ型
-                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?context=/dynamics365/context/finance
                 - name: 関数
                   items:
                     - name: コンテナー
                       items:
                         - name: コンテナー関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?context=/dynamics365/context/finance
                         - name: Base64StringToContainer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/finance
                     - name: 日時
                       items:
                         - name: 日時の関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?context=/dynamics365/context/finance
                         - name: AddDays
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?context=/dynamics365/context/finance
                         - name: ChangeTimeZone
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?context=/dynamics365/context/finance
                         - name: DateFormat
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?context=/dynamics365/context/finance
                         - name: DateTimeFormat
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?context=/dynamics365/context/finance
                         - name: DateTimeValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/finance
                         - name: DateToDateTime
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/finance
                         - name: DateValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/finance
                         - name: DayOfYear
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?context=/dynamics365/context/finance
                         - name: Days
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?context=/dynamics365/context/finance
                         - name: Now
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?context=/dynamics365/context/finance
                         - name: NullDate
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?context=/dynamics365/context/finance
                         - name: NullDateTime
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?context=/dynamics365/context/finance
                         - name: SessionNow
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?context=/dynamics365/context/finance
                         - name: SessionToday
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?context=/dynamics365/context/finance
                         - name: Today
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?context=/dynamics365/context/finance
                         - name: WeekNum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?context=/dynamics365/context/finance
                     - name: List
                       items:
                         - name: リスト関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?context=/dynamics365/context/finance
                         - name: AllItems
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?context=/dynamics365/context/finance
                         - name: AllItemsQuery
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?context=/dynamics365/context/finance
                         - name: Count
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?context=/dynamics365/context/finance
                         - name: EmptyList
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?context=/dynamics365/context/finance
                         - name: Enumerate
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?context=/dynamics365/context/finance
                         - name: Filter
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?context=/dynamics365/context/finance
                         - name: First
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?context=/dynamics365/context/finance
                         - name: FirstOrNull
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?context=/dynamics365/context/finance
                         - name: Index
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?context=/dynamics365/context/finance
                         - name: IsEmpty
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?context=/dynamics365/context/finance
                         - name: List
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/finance
                         - name: ListDistinct
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?context=/dynamics365/context/finance
                         - name: ListJoin
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?context=/dynamics365/context/finance
                         - name: ListOfFields
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/finance
                         - name: ListOfFirstItem
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
                         - name: OrderBy
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
                         - name: Reverse
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
                         - name: Split
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/finance
                         - name: SplitList
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/finance
                         - name: SplitListByLimit
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?context=/dynamics365/context/finance
                         - name: StringJoin
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/finance
                         - name: Where
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?context=/dynamics365/context/finance
                     - name: 論理
                       items:
                         - name: 論理関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?context=/dynamics365/context/finance
                         - name: And
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?context=/dynamics365/context/finance
                         - name: Case
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?context=/dynamics365/context/finance
                         - name: Contains
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?context=/dynamics365/context/finance
                         - name: EndsWith
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?context=/dynamics365/context/finance
                         - name: If
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?context=/dynamics365/context/finance
                         - name: Not
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?context=/dynamics365/context/finance
                         - name: Or
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?context=/dynamics365/context/finance
                         - name: StartsWith
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?context=/dynamics365/context/finance
                         - name: ValueIn
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?context=/dynamics365/context/finance
                         - name: ValueInLarge
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?context=/dynamics365/context/finance
                     - name: 算術
                       items:
                         - name: 算術関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?context=/dynamics365/context/finance
                         - name: Abs
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?context=/dynamics365/context/finance
                         - name: Power
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?context=/dynamics365/context/finance
                         - name: Round
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?context=/dynamics365/context/finance
                         - name: RoundDown
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?context=/dynamics365/context/finance
                         - name: RoundUp
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?context=/dynamics365/context/finance
                     - name: レコード
                       items:
                         - name: レコード関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?context=/dynamics365/context/finance
                         - name: EmptyRecord
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?context=/dynamics365/context/finance
                         - name: NullContainer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?context=/dynamics365/context/finance
                     - name: テキスト
                       items:
                         - name: テキスト関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?context=/dynamics365/context/finance
                         - name: Char
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/finance
                         - name: 連結
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?context=/dynamics365/context/finance
                         - name: 形式
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?context=/dynamics365/context/finance
                         - name: GetEnumValueByName
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?context=/dynamics365/context/finance
                         - name: GetLabelText
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?context=/dynamics365/context/finance
                         - name: GuidValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/finance
                         - name: JsonValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?context=/dynamics365/context/finance
                         - name: Left
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?context=/dynamics365/context/finance
                         - name: Len
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?context=/dynamics365/context/finance
                         - name: Lower
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?context=/dynamics365/context/finance
                         - name: Mid
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?context=/dynamics365/context/finance
                         - name: NewGUID
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?context=/dynamics365/context/finance
                         - name: NumberFormat
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/finance
                         - name: NumeralsToText
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?context=/dynamics365/context/finance
                         - name: PadLeft
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?context=/dynamics365/context/finance
                         - name: QrCode
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/finance
                         - name: Replace
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?context=/dynamics365/context/finance
                         - name: Right
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?context=/dynamics365/context/finance
                         - name: Text
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/finance
                         - name: Translate
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?context=/dynamics365/context/finance
                         - name: Trim
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?context=/dynamics365/context/finance
                         - name: Upper
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?context=/dynamics365/context/finance
                     - name: データ収集
                       items:
                         - name: データ収集関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?context=/dynamics365/context/finance
                         - name: CollectedList
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?context=/dynamics365/context/finance
                         - name: CountIF
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?context=/dynamics365/context/finance
                         - name: CountIFs
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?context=/dynamics365/context/finance
                         - name: FormatElementName
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?context=/dynamics365/context/finance
                         - name: SumIF
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?context=/dynamics365/context/finance
                         - name: SumIFs
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?context=/dynamics365/context/finance
                     - name: その他
                       items:
                         - name: その他 (ビジネス ドメインの特定の) 関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?context=/dynamics365/context/finance
                         - name: CH_Bank_Mod_10
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?context=/dynamics365/context/finance
                         - name: CN_GBT_AdditionalDimensionID
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?context=/dynamics365/context/finance
                         - name: ConvertCurrency
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?context=/dynamics365/context/finance
                         - name: CurCredRef
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?context=/dynamics365/context/finance
                         - name: FA_Balance
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?context=/dynamics365/context/finance
                         - name: FA_Sum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?context=/dynamics365/context/finance
                         - name: GetCurrentCompany
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?context=/dynamics365/context/finance
                         - name: ISOCredRef
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?context=/dynamics365/context/finance
                         - name: IsValidCharacterISO7064
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?context=/dynamics365/context/finance
                         - name: Mod_97
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?context=/dynamics365/context/finance
                         - name: NumSeqValue
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?context=/dynamics365/context/finance
                         - name: RoundAmount
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?context=/dynamics365/context/finance
                         - name: TableName2ID
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/finance
                     - name: 型変換
                       items:
                         - name: 型変換関数
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?context=/dynamics365/context/finance
                         - name: '型: Int64Value'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?context=/dynamics365/context/finance
                         - name: '型: IntValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?context=/dynamics365/context/finance
                         - name: '型: NumberValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?context=/dynamics365/context/finance
                         - name: '型: Value'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?context=/dynamics365/context/finance
                         - name: 'コンテナー: Base64StringToContainer'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/finance
                         - name: '日時: DateTimeValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?context=/dynamics365/context/finance
                         - name: '日時: DateToDateTime'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?context=/dynamics365/context/finance
                         - name: '日時: DateValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?context=/dynamics365/context/finance
                         - name: 'リスト: List'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?context=/dynamics365/context/finance
                         - name: 'リスト: ListOfFields'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?context=/dynamics365/context/finance
                         - name: 'リスト: Split'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/finance
                         - name: 'リスト: StringJoin'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?context=/dynamics365/context/finance
                         - name: 'テキスト: Char'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?context=/dynamics365/context/finance
                         - name: 'テキスト: GuidValue'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?context=/dynamics365/context/finance
                         - name: 'テキスト: NumberFormat'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?context=/dynamics365/context/finance
                         - name: 'テキスト: QrCode'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?context=/dynamics365/context/finance
                         - name: 'テキスト: Text'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/finance
             - name: さまざまな形式で送信ドキュメントを生成するための電子申告形式を設計する
               items:
                 - name: OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?context=/dynamics365/context/finance
                 - name: 送信ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
                   items:
                     - name: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/finance
                     - name: Excel テンプレートを再適用して電子申告形式を変更する
-                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/finance
                     - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
                       items:
                         - name: Excel レポートに列を動的に追加するための形式を設計する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?context=/dynamics365/context/finance
                         - name: Excel レポートに列を動的に追加するための形式を実行する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?context=/dynamics365/context/finance
                     - name: Excel で生成したドキュメントをページ割付する ER 形式を設計する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/finance
                     - name: 同じ Excel ページに行をまとめる ER 形式を設計する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?context=/dynamics365/context/finance
                 - name: Word 形式のレポートを生成するための構成を設計する
                   items:
                     - name: Word 形式のレポートを生成するための新しい ER 構成を設計する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?context=/dynamics365/context/finance
                     - name: Excel テンプレートで ER コンフィギュレーションを再利用して Word 形式のレポートを生成する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?context=/dynamics365/context/finance
                     - name: 生成されるレポートの Word コンテンツ コントロールを非表示にする
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?context=/dynamics365/context/finance
                 - name: PDF テンプレートを入力するためのコンフィギュレーションを設計する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?context=/dynamics365/context/finance
                 - name: 画像や図形を埋め込む
                   items:
                     - name: 生成するドキュメントに画像や図形を埋め込む
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?context=/dynamics365/context/finance
                     - name: 画像や図形の埋め込み例
                       items:
                         - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを設計する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?context=/dynamics365/context/finance
                         - name: 画像が埋め込まれた Office 形式でレポートを生成するためのコンフィギュレーションを確認する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?context=/dynamics365/context/finance
                         - name: 画像が埋め込まれた Office 形式でレポートを生成する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?context=/dynamics365/context/finance
                     - name: ER 形式をデザインして、ページのヘッダーまたはフッターに画像が埋め込まれた Excel でレポートを生成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?context=/dynamics365/context/finance
                 - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?context=/dynamics365/context/finance
                 - name: 生成されたファイルの BOM 文字を非表示にする
-                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?context=/dynamics365/context/finance
             - name: ER を使用してアプリケーション データを更新する
               items:
                 - name: 電子ドキュメントを生成してアプリケーション データを更新する
-                  href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?context=/dynamics365/context/finance
                 - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションをインポートする
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?context=/dynamics365/context/finance
                 - name: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションを設計する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?context=/dynamics365/context/finance
                 - name: アプリケーション データを含むドキュメントを生成するためのモデルとマッピングを変更する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?context=/dynamics365/context/finance
                 - name: アプリケーション データを含むドキュメントを生成するための形式を変更する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?context=/dynamics365/context/finance
                 - name: アプリケーション データを含むドキュメントを生成する
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?context=/dynamics365/context/finance
             - name: ER ソリューションを使用して受信ファイルからデータをインポートする
               items:
                 - name: 異なる形式で着信ドキュメントを解析する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?context=/dynamics365/context/finance
                 - name: 手動で選択したファイルからのデータのインポートを構成する
                   items:
                     - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?context=/dynamics365/context/finance
                     - name: 手動で選択したファイルからバッチ モードでデータをインポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?context=/dynamics365/context/finance
                 - name: SharePoint にあるファイルからバッチ モードのデータ インポートを構成する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?context=/dynamics365/context/finance
                 - name: XML 形式のファイルをインポートする
                   items:
                     - name: オプションの属性を使用して XML 形式でファイルをインポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?context=/dynamics365/context/finance
                     - name: オプションの属性を含む XML 形式のファイルをインポートするための電子申告形式を構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?context=/dynamics365/context/finance
             - name: コンフィギュレーション ライフサイクル
               items:
                 - name: コンフィギュレーション ライフサイクルの管理
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?context=/dynamics365/context/finance
                 - name: Lifecycle Services (LCS)
                   items:
                     - name: LCS へコンフィギュレーションをアップロードする
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?context=/dynamics365/context/finance
                     - name: LCS からコンフィギュレーションをインポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?context=/dynamics365/context/finance
                     - name: LCS からコンフィギュレーションをダウンロードする
-                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?context=/dynamics365/context/finance
                     - name: コンフィギュレーション (LBD) のインポート
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/finance
                 - name: Regulatory Configuration Service (RCS)
                   items:
                     - name: Regulatory Configuration Service (RCS) の概要
-                      href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
+                      href: localizations/rcs-overview.md?context=/dynamics365/context/finance
                     - name: Finance に ER 構成をダウンロードする
                       items:
                         - name: RCS からコンフィギュレーションをダウンロードする
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/finance
                         - name: コンフィギュレーションを RCS からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/finance
                     - name: グローバル リポジトリ (GR)
                       items:
                         - name: コンフィギュレーションを GR からインポートする
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/finance
                         - name: ER コンフィギュレーションの更新バージョンのインポート
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/finance
                         - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/finance
                         - name: GR へコンフィギュレーションをアップロードする
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                          href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/finance
                         - name: GR でコンフィギュレーションを共有する
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
                         - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
-                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
             - name: クイック スタート ガイド
               items:
                 - name: カスタム電子ドキュメントを生成するための電子申告形式の調整
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?context=/dynamics365/context/finance
                 - name: カスタム レポートを印刷するための新しい電子申告ソリューションの設計
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?context=/dynamics365/context/finance
                 - name: カスタム電子ドキュメントを生成するための電子申告ソリューションの調整
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?context=/dynamics365/context/finance
             - name: チュートリアル
               items:
                 - name: データ ソースの使用方法を確認する
                   items:
                     - name: 結合を使用して複数のテーブルからデータを取得する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/finance
                     - name: 生 XML を使用してコンテンツを追加する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?context=/dynamics365/context/finance
                     - name: 計算フィールドのデータ ソースのパラメーター化された呼び出しをサポートする
                       items:
                         - name: ユーザー エクスペリエンスとユーザビリティ メンテナンスの向上
-                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?context=/dynamics365/context/finance
                         - name: データ アクセスのパフォーマンスの向上
-                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?context=/dynamics365/context/finance
                     - name: 会社間 ER データ ソース
-                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?context=/dynamics365/context/finance
                     - name: 財務分析コードの詳細データ ソースを使用する
                       items:
                         - name: データ モデルのデザイン
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?context=/dynamics365/context/finance
                         - name: モデルをマッピングして財務分析コードを使用する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?context=/dynamics365/context/finance
                         - name: レポートをデザインする
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?context=/dynamics365/context/finance
                         - name: レポートを実行する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?context=/dynamics365/context/finance
                     - name: GROUPBY データソースを使用してレコードをグループ化し、棚卸と集計を実行する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?context=/dynamics365/context/finance
                     - name: 生成された出力をデータ ソースとして使用して、棚卸および集計を実行する
                       items:
                         - name: 形式の作成
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?context=/dynamics365/context/finance
                         - name: 棚卸および集計を行うための形式を構成する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?context=/dynamics365/context/finance
                         - name: 棚卸および集計の出力を生成する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?context=/dynamics365/context/finance
                         - name: 棚卸および集計を行うための形式を実行する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?context=/dynamics365/context/finance
                     - name: ドキュメント関係を使用して、ドキュメント管理ファイルへアクセスする
                       items:
                         - name: データ モデルの準備
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?context=/dynamics365/context/finance
                         - name: ドキュメント管理ファイルを使用するためのデータ モデルを拡張する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?context=/dynamics365/context/finance
                         - name: 形式の作成
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?context=/dynamics365/context/finance
                         - name: ドキュメント管理ファイルを使用するための形式を実行する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?context=/dynamics365/context/finance
                         - name: ドキュメント管理ファイルを使用するための形式を変更して実行する
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?context=/dynamics365/context/finance
                     - name: バーコードを使用してバーコード イメージを生成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/finance
                     - name: ER アプリケーション固有のパラメータを使用する検索データ ソースを構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/finance
                     - name: ER 形式でデータ収集データ ソースを使用する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/finance
                     - name: USER INPUT PARAMETER データ ソースを使用して、生成するレポートのパラメータを指定します
-                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/finance
                     - name: データ ソースのデバッグ
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?context=/dynamics365/context/finance
                 - name: データ モデルの構成
                   items:
                     - name: ER データ モデルのパラメータ化された呼び出しをサポートする
-                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/finance
                 - name: モデル マッピングを構成する
                   items:
                     - name: 国のコンテキストに依存する ER モデル マッピングを構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/finance
                     - name: 個別の ER コンフィギュレーションで ER モデル マッピングを管理する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/finance
                     - name: 単一のモデル ルートへの複数の派生マッピングの管理
-                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?context=/dynamics365/context/finance
                 - name: 形式のコンフィギュレーション
                   items:
                     - name: 形式を作成するときにモデル定義を選択する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?context=/dynamics365/context/finance
                     - name: 法人ごとに指定されたパラメーターを使用するよう電子申告形式を構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?context=/dynamics365/context/finance
                     - name: 法人ごとの電子申告形式のパラメーターの設定
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?context=/dynamics365/context/finance
                     - name: 電子申告形式要素の実行を遅延する
                       items:
                         - name: シーケンス要素の実行を延期する
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?context=/dynamics365/context/finance
                         - name: XML 要素の実行を延期する
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?context=/dynamics365/context/finance
                     - name: 多言語レポートのデザイン
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?context=/dynamics365/context/finance
                     - name: 大量の発信ドキュメントの圧縮
-                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?context=/dynamics365/context/finance
                 - name: コンフィギュレーションされた ER コンポーネントの調査
-                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?context=/dynamics365/context/finance
                 - name: データ バインディングの相対パス
-                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?context=/dynamics365/context/finance
                 - name: アプリケーション クラスのメソッドを呼び出す式の設計
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?context=/dynamics365/context/finance
             - name: Finance での ER ソリューションの使用
               items:
                 - name: フレームワークのコンフィギュレーション
                   items:
                     - name: 電子申告フレームワークのコンフィギュレーション
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?context=/dynamics365/context/finance
                     - name: 電子申告テンプレートのバックアップと復元
                       items:
                         - name: ER テンプレートのバックアップ ストレージ
-                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?context=/dynamics365/context/finance
                         - name: ER 移行クリーンアップ
-                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?context=/dynamics365/context/finance
                     - name: コンフィギュレーション プロバイダーを作成し、有効としてマークする
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?context=/dynamics365/context/finance
                 - name: 行先
                   items:
                     - name: 行先の概要
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?context=/dynamics365/context/finance
                     - name: 行先タイプ
                       items:
                         - name: アーカイブ先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?context=/dynamics365/context/finance
                         - name: 電子メール送信先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?context=/dynamics365/context/finance
                         - name: ファイル出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?context=/dynamics365/context/finance
                         - name: Power BI 出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?context=/dynamics365/context/finance
                         - name: プリンター出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?context=/dynamics365/context/finance
                         - name: 画面出力先
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?context=/dynamics365/context/finance
                     - name: 送信先を構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?context=/dynamics365/context/finance
                     - name: アクションに依存する送信先を構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?context=/dynamics365/context/finance
                     - name: 印刷管理レコード固有の送信先を構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?context=/dynamics365/context/finance
                     - name: 新しい ER ソリューションを設計して ZPL ラベルを印刷する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?context=/dynamics365/context/finance
                 - name: ER 形式への参照を設定する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?context=/dynamics365/context/finance
                 - name: 生成されたレポートの自動検証
                   items:
                     - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?context=/dynamics365/context/finance
                     - name: 生成された ER レポートの結果を追跡し、ベースライン値と比較するための改善
-                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?context=/dynamics365/context/finance
                     - name: 電子申告によるテストの自動化
-                      href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?context=/dynamics365/context/finance
                 - name: ER コンフィギュレーションを使用して業務プロセスを自動化する
                   items:
                     - name: Power BI にデータをプルするよう電子申告を構成する
-                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?context=/dynamics365/context/finance
                     - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?context=/dynamics365/context/finance
                 - name: 効率的な電子申告ソリューションをデザインする
                   items:
                     - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
-                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?context=/dynamics365/context/finance
                     - name: ER コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
-                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?context=/dynamics365/context/finance
                     - name: 実行時にフェッチするテーブル フィールドの件数を減らす
-                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?context=/dynamics365/context/finance
                 - name: ビジネス ドキュメントの管理 (BDM)
                   items:
                     - name: BDM 概要
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?context=/dynamics365/context/finance
                     - name: BDM の新しいドキュメント ユーザー インターフェイス
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?context=/dynamics365/context/finance
                     - name: BDM のビジネス ドキュメント テンプレートの編集
                       items:
                         - name: Microsoft Excel のビジネス ドキュメント テンプレートに新しいフィールドを追加する
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?context=/dynamics365/context/finance
                         - name: ビジネス ドキュメント テンプレートの構造の更新
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?context=/dynamics365/context/finance
             - name: 電子申告フレームワーク API
               items:
                 - name: 組み込み関数の一覧を展開する
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?context=/dynamics365/context/finance
                 - name: API の変更
                   items:
                     - name: Application update 7.3
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?context=/dynamics365/context/finance
                     - name: アプリケーション更新プログラム 10.0.11
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?context=/dynamics365/context/finance
                     - name: アプリケーション更新プログラム 10.0.17
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?context=/dynamics365/context/finance
                     - name: アプリケーション更新プログラム 10.0.19
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?context=/dynamics365/context/finance
                     - name: アプリケーション更新プログラム 10.0.21
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?context=/dynamics365/context/finance
                     - name: アプリケーション更新プログラム 10.0.23
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?context=/dynamics365/context/finance
                     - name: アプリケーション更新プログラム 10.0.25
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?context=/dynamics365/context/finance
                 - name: 生成したドキュメントに対してカスタム保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?context=/dynamics365/context/finance
                     - name: 電子申告の送信先の作成をカスタム送信先ファクトリに委任する
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?context=/dynamics365/context/finance
                     - name: 生成されるドキュメントに対するカスタム送信先の実装
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?context=/dynamics365/context/finance
                 - name: USER INPUT PARAMETER タイプのデータ ソース値をソース コードから開始する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?context=/dynamics365/context/finance
                 - name: コードを変更して、ユーザーが名前付き送信先を構成して使用可能にする
-                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?context=/dynamics365/context/finance
                 - name: 受信したドキュメントのカスタム ER ソースを実装する
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?context=/dynamics365/context/finance
         - name: モバイル アプリ
           items:
             - name: モバイル アプリのホーム ページ
-              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/finance
             - name: モバイル ワークスペース
               items:
                 - name: 利用可能なモバイル ワークスペース
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/finance
                 - name: 資産管理
                   href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
                 - name: 会社のディレクトリ
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: 原価管理
-                  href: cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: 経費管理
                   href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: 手持在庫
-                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: 請求書の承認
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: 自分のチーム
-                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: Project モバイル アプリケーションの概要
                   href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: プロジェクト時間の入力
@@ -4592,173 +4620,173 @@
                 - name: Project Timesheet
                   href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: 発注書の承認
-                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: 販売注文
-                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?context=/dynamics365/context/finance
                 - name: 仕入先コラボレーション
-                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?context=/dynamics365/context/finance
             - name: モバイル ワークスペースの公開
-              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Office 統合
           items:
             - name: Office 統合の概要
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?context=/dynamics365/context/finance
             - name: Office 統合のチュートリアル
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?context=/dynamics365/context/finance
             - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
-              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?context=/dynamics365/context/finance
             - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?context=/dynamics365/context/finance
             - name: '[Excel で明細行を開く] メニューへのテンプレートの追加'
-              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?context=/dynamics365/context/finance
             - name: '[Microsoft Office で開く] メニューのカスタマイズ'
-              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?context=/dynamics365/context/finance
             - name: メールの構成と送信
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/finance
             - name: 電子メール体験を向上させる
-              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?context=/dynamics365/context/finance
             - name: Office 統合のトラブルシューティング
-              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/finance
         - name: 組織管理
           items:
             - name: 組織管理ホーム ページ
-              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?context=/dynamics365/context/finance
             - name: 番号順序
               items:
                 - name: 番号順序の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?context=/dynamics365/context/finance
                 - name: 番号順序を個別に設定する
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?context=/dynamics365/context/finance
                 - name: ウィザードを使用した番号順序の設定
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?context=/dynamics365/context/finance
             - name: 組織と組織階層
               items:
                 - name: 組織と組織階層の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?context=/dynamics365/context/finance
                 - name: 組織階層の計画
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?context=/dynamics365/context/finance
                 - name: 組織階層の作成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?context=/dynamics365/context/finance
                 - name: 法人の作成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?context=/dynamics365/context/finance
                 - name: 作業単位の作成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?context=/dynamics365/context/finance
             - name: グローバル アドレス帳
               items:
                 - name: グローバル アドレス帳の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?context=/dynamics365/context/finance
                 - name: グローバル アドレス帳およびその他のアドレス帳の計画
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?context=/dynamics365/context/finance
                 - name: グローバル アドレス帳の構成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?context=/dynamics365/context/finance
                 - name: 住所の設定
-                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?context=/dynamics365/context/finance
                 - name: アドレス帳に関するよくあるご質問
-                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?context=/dynamics365/context/finance
                 - name: アドレス帳の構成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?context=/dynamics365/context/finance
             - name: ワークフロー システム
               items:
                 - name: ワークフロー システムの概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?context=/dynamics365/context/finance
                 - name: ワークフロー システムのアーキテクチャ
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?context=/dynamics365/context/finance
                 - name: ワークフロー要素
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?context=/dynamics365/context/finance
                 - name: ワークフロー アクション
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?context=/dynamics365/context/finance
                 - name: ワークフローの作成
                   items:
                     - name: ワークフローの作成の概要
-                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?context=/dynamics365/context/finance
                     - name: ワークフロー プロパティのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?context=/dynamics365/context/finance
                     - name: 手動タスクのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?context=/dynamics365/context/finance
                     - name: 自動化タスクのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?context=/dynamics365/context/finance
                     - name: 承認プロセスのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?context=/dynamics365/context/finance
                     - name: 承認ステップのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?context=/dynamics365/context/finance
                     - name: 支出確認者のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?context=/dynamics365/context/finance
                     - name: 手動決定のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?context=/dynamics365/context/finance
                     - name: 条件付き意思決定のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?context=/dynamics365/context/finance
                     - name: 並列活動のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?context=/dynamics365/context/finance
                     - name: 並列分岐のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?context=/dynamics365/context/finance
                     - name: 品目ワークフローのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?context=/dynamics365/context/finance
                 - name: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/finance
                 - name: ワークフローの作業項目をデリゲート
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/finance
                 - name: ワークフロー履歴の表示
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/finance
                 - name: ユーザーにワークフローに関連する電子メールを送信するシステムのコンフィギュレーション
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/finance
                 - name: ワークフロー タイプ
                   items:
                     - name: ワークフロー タイプの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?context=/dynamics365/context/finance
                     - name: ワークフロー タイプのチェックリスト
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?context=/dynamics365/context/finance
                     - name: ワークフローカテゴリの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?context=/dynamics365/context/finance
                     - name: ワークフロー タイプのクエリの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?context=/dynamics365/context/finance
                     - name: 新しいワークフロー タイプの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?context=/dynamics365/context/finance
                     - name: ワークフロー ドキュメント クラスの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?context=/dynamics365/context/finance
                     - name: SubmitToWorkflow クラスの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?context=/dynamics365/context/finance
                     - name: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?context=/dynamics365/context/finance
                 - name: ワークフロー タイプのレポート
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?context=/dynamics365/context/finance
                 - name: ワークフローに関するよくあるご質問
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?context=/dynamics365/context/finance
             - name: 警告
               items:
                 - name: 警告の概要
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?context=/dynamics365/context/finance
                 - name: 警告ルールの作成
-                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?context=/dynamics365/context/finance
                 - name: 警告のバッチ処理
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?context=/dynamics365/context/finance
                 - name: 電子メールによるクライアント警告通知
-                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?context=/dynamics365/context/finance
             - name: 電子署名
               items:
                 - name: 電子署名の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?context=/dynamics365/context/finance
                 - name: 電子署名の設定
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?context=/dynamics365/context/finance
             - name: ケース管理
               items:
                 - name: ケース管理の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?context=/dynamics365/context/finance
                 - name: ケース セキュリティ、プロセス、およびカテゴリの計画
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?context=/dynamics365/context/finance
             - name: レコード テンプレート
               items:
                 - name: レコード テンプレートの概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?context=/dynamics365/context/finance
                 - name: レコード テンプレートの作成
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?context=/dynamics365/context/finance
                 - name: レコード テンプレートを使用した新しいレコードの作成
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?context=/dynamics365/context/finance
             - name: ドキュメント管理の構成
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?context=/dynamics365/context/finance
             - name: メールの構成と送信
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/finance
             - name: 日時データとタイム ゾーン
-              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/finance
         - name: 米国の給与
           items:
             - name: 米国の給与の概要
@@ -4875,7 +4903,7 @@
               items:
                 - name: 為替レート プロバイダーの作成
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
+                - name: 財務と運用バージョン 8.0 を使用した為替レート プロバイダーの作成
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'CustTrans::settleTransaction を使用したトランザクションの決済'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
