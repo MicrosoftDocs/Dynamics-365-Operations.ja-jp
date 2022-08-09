@@ -1,6 +1,6 @@
 ---
-title: Visual Studio の Finance and Operations プロジェクト タイプ
-description: Finance and Operations プロジェクト タイプは開発ツールの一部です。
+title: Visual Studio の財務と運用のプロジェクト タイプ
+description: 財務と運用プロジェクト タイプは、開発ツールの一部です。
 author: RobinARH
 ms.date: 09/12/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b54855f70e431bae88c52be3a60940f5e69fe059
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bd30c339369e345154a723f26037af306d20c81a
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782025"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103902"
 ---
-# <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
+# <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の財務と運用のプロジェクト タイプ
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations プロジェクト タイプは開発ツールの一部です。 このプロジェクト タイプは、Visual Studio の他のプロジェクトに似ています。 これにより、モデルに使用する要素を整理して管理することができます。 たとえば、プロジェクトには、要素をグループ化するのを助けるフォルダーがあります。 Visual Studio ソリューションは、複数のプロジェクトを含めることができます。 プロジェクトには重要な制約が 1 つあります。これは、1 つのモデルからの要素のみを含むことができます。 異なるモデルの要素を処理する必要がある場合、Visual Studio ソリューションで複数のプロジェクトを使用する必要があります。
+財務と運用プロジェクト タイプは、開発ツールの一部です。 このプロジェクト タイプは、Visual Studio の他のプロジェクトに似ています。 これにより、モデルに使用する要素を整理して管理することができます。 たとえば、プロジェクトには、要素をグループ化するのを助けるフォルダーがあります。 Visual Studio ソリューションは、複数のプロジェクトを含めることができます。 プロジェクトには重要な制約が 1 つあります。これは、1 つのモデルからの要素のみを含むことができます。 異なるモデルの要素を処理する必要がある場合、Visual Studio ソリューションで複数のプロジェクトを使用する必要があります。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
@@ -32,7 +32,7 @@ Finance and Operations プロジェクト タイプは開発ツールの一部�
 1. **ファイル** メニューで、**新規** をポイントし、**プロジェクト** をクリックします。
 2. テンプレート タイプの一覧で、**インストール済み** のノードを展開します。
 3. **テンプレート** ノードを展開します。
-4. **Finance and Operations** カテゴリを選択します。
+4. **財務と運用** カテゴリを選択します。
 5. **業務プロジェクト** テンプレートを選択します。
 6. 新規プロジェクトの名前および場所を入力します。
 7. 新しいソリューションを作成するのか、現在のソリューションにプロジェクトを追加するのかを指定します。

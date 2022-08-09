@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 595e515ca3857504e10922b7f5805e62802221ed
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d09ad930bcce2450207499b425d023d3fc0d639
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885279"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111836"
 ---
 # <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントおよび Microsoft Power Automate
 
@@ -30,7 +30,7 @@ ms.locfileid: "8885279"
 - Power Automate で、新しいフローを作成します。
 - ビジネス イベントのトリガー
 
-この記事の手順では、財務と運用コネクタの使用方法を示します。 ただし、これらのデータは、Microsoft Dataverse コネクタ内にある財務と運用アプリのビジネス イベントとデータ イベント用 Power Automate のフローを作成するプロセスにも適用できます。 Dataverse コネクタの **アクションが実行される場合** および **行が追加、変更または削除される場合** トリガーを持つ財務と運用アプリのビジネス イベントとデータ イベントについては、[Microsoft Power Automate のビジネス イベント](../business-events-flow.md)を参照してください。
+この記事の手順では、財務と運用コネクタの使用方法を示します。 ただし、これらのデータは、Microsoft Dataverse コネクタ内にある財務と運用アプリのビジネス イベントとデータ イベント用 Power Automate のフローを作成するプロセスにも適用できます。 Dataverse コネクタの **アクションが実行される場合** および **行が追加、変更または削除される場合** というトリガーを持つ財務と運用アプリのビジネス イベントとデータ イベントについては、[Microsoft Power Automate のビジネス イベント](../business-events-flow.md) を参照してください。
 
 ## <a name="create-a-new-flow-in-power-automate"></a>Power Automate で、新しいフローを作成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "8885279"
 
 3.  **空白から新規 \> を作成する** 選択します。
 
-4.  **Dynamics 365 for Finance and Operations** を検索して、コネクタを選択します。
+4.  **Dynamics 365 Finance** を検索して、コネクタを選択します。
      
 5.  **ビジネス イベントが発生した場合** という名称のトリガーを確認できます。 このトリガーを選択します。
 
@@ -108,3 +108,4 @@ Power Automate では、アプリケーションを自動的にコンフィギ�
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f257638510dd0a63a67f168f0072da6f1057abce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f050a78716a55a4ee8e7e676a26109ab533c2f6d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866715"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065428"
 ---
 # <a name="person-search-report"></a>個人検索レポート
 
 [!include [banner](../includes/banner.md)]
 
-個人検索レポートは、Finance and Operations アプリの既存のデータ管理フレームワークの機能を強化したものです。 データ管理フレームワークには、担当者と、担当者が Finance and Operations アプリケーションで割り当てられる可能性があるロールを定義するために使用される個人データを識別するために Microsoft が作成した、事前パッケージ化されたエンティティ セットが用意されています。 
+個人検索レポートは、財務と運用アプリの既存のデータ管理フレームワークの機能を強化したものです。 データ管理フレームワークには、ユーザーと、ユーザーが財務と運用アプリケーションで割り当てられる可能性があるロールを定義するために使用される個人データを識別するために Microsoft が作成した、事前パッケージ化されたエンティティ セットが用意されています。 
 
 > [!NOTE]
 > レポートは、Dynamics 365 Finance、Supply Chain Management、コマース、および人事管理で使用できます。 Microsoft Dynamics AX 2012 では今のところレポートは使用できません。 個人検索レポートは、バージョン 8.0 で利用可能です。 レポートはバージョン 7.3 (毎月の更新プログラム 7.3.2 経由で配信)、バージョン 7.2 (KB 4132615 経由)、およびバージョン7.1 (KB 4132441 経由 ) でも使用できます。 個人検索レポートが定期的に更新される場合があります。 このレポートを使用する前に、すべての関連する修正プログラムを取得し、適用したことを確認する必要があります。 
 
 グローバル アドレス帳を使用すると、データ モデルで関係者として説明されている人物のインスタンスを作成することができます。 
 
-Finance and Operations データに、連絡先、顧客、ユーザー、作業者、またはその他の担当者を追加するとき、通常、その担当者のアドレス帳エントリの作成から開始します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID、および場合によりその他の ロール ID を持ちます。
+財務と運用データに、連絡先、顧客、ユーザー、作業者、またはその他の担当者を追加するとき、通常、その担当者のアドレス帳エントリの作成から開始します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID、および場合によりその他の ロール ID を持ちます。
 
 ![アドレス帳の構造。](../../fin-ops/organization-administration/media/address-book-structure.png)
 

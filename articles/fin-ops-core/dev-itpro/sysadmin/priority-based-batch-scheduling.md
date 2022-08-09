@@ -2,7 +2,7 @@
 title: 優先順位に基づくバッチスケジューリング
 description: この記事では、優先順位に基づくバッチ スケジューリングの機能について説明します。
 author: matapg007
-ms.date: 06/17/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
-ms.openlocfilehash: 4a7caa25f7c7a55e463f20c6ffd1f1d5deb8d5cc
-ms.sourcegitcommit: 6400508decf04aa83ef9bb56689aa6cc1bea5fd0
+ms.openlocfilehash: d1e3359875d55f5ce33d01ef833e016b2a15257f
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "9027632"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206150"
 ---
 # <a name="priority-based-batch-scheduling"></a>優先順位に基づくバッチスケジューリング 
 
@@ -158,6 +158,19 @@ ms.locfileid: "9027632"
 - 予約されたキューを **予約容量** の優先度で使用すると、バッチ ジョブ専用のリソースがあるというエクスペリエンスが得られます。 不要な場合は、バッチ ジョブを **予約容量** の優先度に割り当てないでください。
 - 優先順位は、ランク タスクを相互にスタックするためには使用されません。 代わりに、優先順位によって、タスクが実行のために選択される確率が決まります。
 - パフォーマンスの低下を防ぐために、サーバー間でスレッドの数を同じに保つことをお勧めします。
+- SQL Server の一時的なエラーによる問題を防ぐため、バッチ タスクに BatchRetryable インターフェイスを実装することをお勧めします。 詳細については、[SQL Server の一時的なエラーが発生した場合にバッチ ジョブ タスクを再試行する](retryable-batch.md#retry-the-batch-job-task-when-transient-sql-server-errors-occur)を参照してください。
+- バッチ タスクは、本質的にべき等である必要があります。 実行回数に関係なく、同じ結果を達成する必要があり、再試行数が 0 よりも大きい数でタスクを設定する必要があります。 これにより、ジョブの実行中に発生する可能性があるどんな一時的なエラーからでもシステムを復旧できます。 詳細については、[SQL Server の一時的なエラーが発生した場合にバッチ ジョブ タスクを再試行する](retryable-batch.md#retry-the-batch-job-task-when-transient-sql-server-errors-occur)を参照してください。
+- ワークロードが大きい場合は、ワークロードやタスクを小さく分割して、10 分以下で実行および完了できるようお勧めします。
+- バッチ タスク内の SQL Server トランザクションは、他のバッチ ジョブやユーザー活動のパフォーマンスに影響を与える SQL Server ブロックを引き起こさないように、できる限り短い期間である必要があります。
+- 優先順位ベースのバッチ スケジューリングを活用するために複数のバッチ グループを設定し、バッチグループ レベルで異なる優先順位を使用することをお勧めします。
+- 開発コンピューターに接続して UAT でバッチをデバッグする場合は、次のスクリプトを実行してバッチ サーバーのリセットを無効にし、開発コンピューターですべてのバッチが実行されていることを確認する必要があります。 
+
+    ```
+    UPDATE ssc
+    SET ssc.enablebatch = 0
+    FROM dbo.sysserverconfig ssc
+    WHERE ssc.serverid = '<servername Tier2 batch server>'   
+    ```
 
 ## <a name="automatic-batch-group-migration-for-batch-jobs"></a>バッチジョブをバッチグループへ自動移行する
 

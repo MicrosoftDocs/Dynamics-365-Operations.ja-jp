@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a306917c2887518f67efe29001dda8d825b8afb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: c072ad3c88cb49ddd34dca753d458961d9b2d661
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462485"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108631"
 ---
 # <a name="open-in-excel-experiences-faq"></a>Excel エクスペリエンスで開くに関する FAQ
 
@@ -329,7 +329,7 @@ Excel データ コネクタでリレーションシップ ルックアップを
 ## <a name="how-can-i-enable-users-to-create-new-header-records-as-well-as-lines-in-a-workbook"></a>ブック内の明細行と共に新しいヘッダー レコードを作成するユーザーをどのように有効にできますか。
 ヘッダー レコードと関連行の作成を有効にするには、ヘッダー データソースを「フィールド」のセットとして追加し、行データ ソースを関連テーブルとして追加する必要があります。 このパターンは、仕訳入力などの文書データ入力シナリオでうまく機能します。
 
-ヘッダー レコードと関連行の詳細については、「[Dynamics 365 for Finance and Operations でヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI)」ビデオをご覧ください。
+ヘッダー レコードと関連行の詳細については、短いビデオ [Dynamics 365 Finance でヘッダーと明細行パターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI)をご覧ください。
 
 ヘッダーの作成を有効にするヘッダー フィールドと行テーブルを含むブックを設計するには、次の手順を実行します。
 1. Excel アドインで、**デザイン** をクリックしてデザイナーを開きます。 **フィールドを追加** を選択してヘッダー データ ソースを追加します。
@@ -399,7 +399,7 @@ Excel データ コネクタでリレーションシップ ルックアップを
 
 この問題は、ユーザーが **Excel で開く** ボタンから Excel テンプレートを選択し、`Record for Id {guid} not found` というエラーが表示される場合に発生します。
 
-カスタム Excel テンプレートが見つからない場合、エラーが発生します。 このエラーを引き起こす 1 つのシナリオは、環境間に財務と運用データベースを動かし、Excel テンプレートをコピーしないというものです。  
+カスタム Excel テンプレートが見つからない場合、エラーが発生します。 このエラーを引き起こす 1 つのシナリオは、環境間に財務と運用データベースを動かし、Excel テンプレートをコピーしないことです。  
 
 この問題を解決するために、**ドキュメント テンプレート** ページ (**一般 > 一般 > Office 統合 > ドキュメント テンプレート**) からテンプレート用のデータベース エントリを削除します。 
 
@@ -438,3 +438,4 @@ Excel データ コネクタでリレーションシップ ルックアップを
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

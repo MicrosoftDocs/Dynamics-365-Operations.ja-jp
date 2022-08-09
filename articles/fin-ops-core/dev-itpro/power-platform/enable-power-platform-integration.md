@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-13
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: e08c0fc365173d4a1ea339a87561077114e6c2aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ac7870a071bbe5eb80db9dbb3e6263f7c6d6e1f
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850931"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108367"
 ---
 # <a name="enable-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合を有効にする
 
@@ -94,11 +94,11 @@ LCS で使用するために顧客が購入する追加のアドオン サンド
 ## <a name="enable-integration-during-environment-deployment"></a><a name="enable-during-deploy"></a> 環境の配置中に統合を有効にする
 
 > [!IMPORTANT]
-> Power Platform 統合を有効にすると、前に説明した初期 Power Platform 環境に、新しい Dataverse データベースが追加されます。 組織に、財務と運用環境に接続する Dataverse インスタンスが既にある場合は、LCS での環境作成中に Power Platform 統合を **有効にしません**。 財務と運用環境の配置が完了すると、**設定** ボタンを使用して既存の Power Platform 環境に接続できるようになります。
+> Power Platform 統合を有効にすると、前に説明した初期 Power Platform 環境に、新しい Dataverse データベースが追加されます。 組織に、財務と運用環境に接続する Dataverse インスタンスが既にある場合は、LCS での環境作成中に Power Platform 統合を **有効にしません**。 財務と運用環境の展開が完了すると、**設定** ボタンを使用して既存の Power Platform 環境に接続できるようになります。
 >
 > Power Platform 統合は **元に戻すことはできません**。また、リンクを変更または削除することもできません。 設定の一部として、財務と運用環境を Power Platform 環境に接続します。 仮想エンティティ、ビジネス イベント、および二重書き込みなどのランタイム機能はすべて、この接続に依存します。 したがって、財務と運用環境を削除するまで削除することはできません。 この動作は、Microsoft からのサービス更新プログラムを適用するときの動作に似ています。 このアクションをやり直す唯一の方法は、環境を再配置することです。
 
-LCS に新しい財務と運用アプリ環境を設定する際、配置ウィザードには値を設定することができる複数のセクションがあります。 それらセクションの 1 つが **Power Platform 統合** という名前です 。
+LCS に新しい財務と運用アプリ環境を設定する際、展開ウィザードには値を設定することができる複数のセクションがあります。 それらセクションの 1 つが **Power Platform 統合** という名前です 。
 
 ![配置ウィザードの Power Platform 統合セクション。](media/powerplat_integration_step0.png)
 
@@ -116,7 +116,7 @@ LCS に新しい財務と運用アプリ環境を設定する際、配置ウィ�
 
 ## <a name="enable-integration-after-environment-deployment"></a><a name="enable-after-deploy"></a> 環境の配置後に統合を有効にする
 
-多くの場合、財務と運用アプリを配置した後に Power Platform 統合を有効にすることもできます。 たとえば、最初に財務と運用アプリを使用して、新しい Dataverse インスタンスを使用したい場合や、次のセクションで説明するように、既存の Dataverse インスタンスに接続することを選択した場合です。
+多くの場合、財務と運用アプリを配置した後に Power Platform 統合を有効にすることもできます。 たとえば、最初に財務と運用アプリを使用して、新しい Dataverse インスタンスを使用する場合や、次のセクションで説明するように、既存の Dataverse インスタンスに接続することを選択した場合です。
 
 > [!IMPORTANT]
 > Power Platform 統合は **元に戻すことはできません**。また、リンクを変更または削除することもできません。 設定の一部として、財務と運用環境を Power Platform 環境に接続します。 仮想エンティティ、ビジネス イベント、および二重書き込みなどのランタイム機能はすべて、この接続に依存します。 したがって、財務と運用環境を削除するまで削除することはできません。 この動作は、Microsoft からのサービス更新プログラムを適用するときの動作に似ています。 このアクションをやり直す唯一の方法は、環境を再配置することです。
@@ -171,8 +171,8 @@ Power Platform 環境 ID を取得するには、Power Platform 管理センタ�
 
 既存の Power Platform 環境を接続する場合は、次の検証に合格する必要があります。 それ以外の場合、要求は続行できません。
 
-1. Dataverse を Power Platform 環境に配置する場合は、**D365 アプリを有効にする** オプションを有効にする必要があります。 このタイプの Dataverse 配置は、財務と運用アプリへの接続を含め、Dynamics 365 アプリをサポートする唯一のタイプです。
-2. Power Platform 環境は、財務と運用環境と同じ地域にある必要があります。 たとえば、LCS では **West US 2** などの Azure リージョンが表示される場合があります。 Microsoft Power Platform では、この環境は **北米** に配置する必要があります。 パフォーマンスとデータ所在地の理由から、この要件が設定されています。
+1. Dataverse を Power Platform 環境に配置する場合は、**D365 アプリを有効にする** オプションを有効にする必要があります。 このタイプの Dataverse 展開は、財務と運用アプリへの接続を含め、Dynamics 365 アプリをサポートする唯一のタイプです。
+2. Power Platform 環境は、財務と運用アプリと同じ地域にある必要があります。 たとえば、LCS では **West US 2** などの Azure リージョンが表示される場合があります。 Microsoft Power Platform では、この環境は **北米** に配置する必要があります。 パフォーマンスとデータ所在地の理由から、この要件が設定されています。
 3. Power Platform 統合設定を実行している LCS のユーザーは、Dataverse 環境の管理者である必要があります。また、該当する Finance、Supply Chain Management、または Commerce ライセンスが割り当てられている必要があります。
 
 ### <a name="environments-that-already-use-dual-write-virtual-tables-business-events-or-add-ins-before-power-platform-integration-is-enabled"></a>Power Platform 統合を有効にする前に、二重書き込み、仮想テーブル、ビジネス イベント、またはアドインを既に使用している環境
@@ -184,7 +184,7 @@ Microsoft Power Platform 統合が自動的に有効になったことを、LCS 
 > [!NOTE]
 > 単一の Microsoft Power Platform 環境にすでに接続されており、ビジネス イベント機能をすでに使用している財務と運用アプリ環境に対しては Microsoft Power Platform 統合は自動的に有効になります。 ただし、これらの環境では、リリース 10.0.22 以降の新しいビジネス イベントおよびデータ イベント機能を使用できなくなります。 これらの環境で既に使用されているビジネス イベントのエンドポイントは、バージョン 10.0.23 の Dataverse プラットフォームに移行されます。 その時点で、新しいビジネス イベントとデータ イベントの機能が環境で利用可能になります。 それまでは、ビジネス イベントは現在の環境で構成されている通りに引き続き機能します。
 > 
-> これらの環境で移行が完了するまで遅延される新しいビジネス イベントおよびデータ イベント機能の詳細については、2021 年リリースのシステム インストール 2 プランの [Dataverse の Finance and Operations ビジネス イベント](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-business-events-in-dataverse)と [Dataverse の Finance and Operations CUD イベント](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-cud-events-in-dataverse)を参照してください。 
+> これらの環境で移行が完了するまで遅延される新しいビジネス イベントおよびデータ イベント機能の詳細については、2021 年リリース サイクル 2 プランの [Dataverse の財務と運用ビジネス イベント](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-business-events-in-dataverse)および [Dataverse の財務と運用 CUD イベント](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-cud-events-in-dataverse)を参照してください。 
 
 
 ## <a name="troubleshooting-the-setup"></a>設定のトラブルシューティング
@@ -229,13 +229,13 @@ Microsoft Power Platform 統合が自動的に有効になったことを、LCS 
 Azure AD アプリケーションを Azure ポータルで作成した後、Microsoft Power Platform アプリケーション ユーザーとして追加する必要があります。 
 
 1. Power Platform 管理センターで、[アプリケーション ユーザーの作成](/power-platform/admin/manage-application-users#create-an-application-user)の手順に従ってアプリケーション ユーザーを作成します。
-2. アプリケーション ユーザーに追加するセキュリティ ロールを選択するステップで、**Finance and Operations 統合ユーザー** を選択します。
+2. アプリケーション ユーザーに追加するセキュリティ ロールを選択するステップで、**財務と運用の統合ユーザー** を選択します。
 
 ### <a name="grant-app-permissions-in-finance-and-operations-apps"></a>財務と運用アプリでアプリのアクセス許可を付与する
 
 Dataverse は、財務と運用アプリを呼び出すために作成した Azure AD アプリケーションを使用します。 したがって、アプリケーションは財務と運用アプリによって信頼され、適切な権限を持つユーザー アカウントに関連付けられている必要があります。
 
-1. 財務と運用アプリで、**システム管理 \> セットアップ \> Azure Active Directory アプリケーション** に移動します。
+1. 財務と運用アプリで、**システム管理 \> 設定 \> Azure Active Directory アプリケーション** に移動します。
 2. **新規** を選択してグリッドに行を追加し、次の情報を入力します。
 
     - **クライアント ID** – 既に作成した Azure AD アプリケーションの **アプリケーション (クライアント) ID** の値を入力します。
@@ -247,8 +247,8 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
 
 ### <a name="configure-finance-and-operations-apps-to-use-the-azure-ad-application-to-connect-to-dataverse"></a>財務と運用アプリを構成して、Dataverse に接続するための Azure AD アプリケーションを使用する 
 
-1. リモート デスクトップ プロトコル (RDP) を使用して、Finance and Operations 環境にサインインします。
-2. 次の Windows PowerShell スクリプトをコピーし、Finance and Operations 環境の仮想マシン (VM) に .ps1 ファイルとして保存します。
+1. リモート デスクトップ プロトコル (RDP) を使用して、財務と運用の環境にサインインします。
+2. 次の Windows PowerShell スクリプトをコピーし、財務と運用環境の仮想マシン (VM) に .ps1 ファイルとして保存します。
 
     ```powershell
     param(
@@ -526,7 +526,7 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
 
 ```RetrieveFinanceAndOperationsIntegrationDetails``` API は、Power Platform 環境の Power Platform 統合のステータスを検証するために使用できます。 Power Platform 環境が Power Platform 統合を介して財務と運用アプリ環境にリンクされている場合、API は財務と運用アプリ環境の AAD テナントと環境の詳細を返します。
 
-API をトラブルシューティングに使用して、Power Platform 統合が環境で有効になっていることを確認できます。 また、プラグイン、クライアント フォーム、または Power Platform 環境にリンクされた財務と運用アプリ環境を認識する必要があるその他のアプリケーションのコーディングに API を使用することをお勧めします。
+API をトラブルシューティングに使用して、Power Platform 統合が環境で有効になっていることを確認できます。 また、プラグイン、クライアント フォーム、または Power Platform 環境にリンクされた財務と運用アプリ環境を認識する必要があるその他のアプリケーションのコーディングに API を使用することもお勧めします。
 
 **申請**
 ```http
@@ -557,3 +557,4 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 | 0x80048d0b | Dataverse インスタンスは財務と運用と統合されていません。 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

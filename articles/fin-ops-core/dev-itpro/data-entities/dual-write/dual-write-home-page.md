@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7a697ca48001b697207d739a02ca569156d16c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cdea53ac1eb9d133f50635a819eb162ee8a247d0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885044"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112134"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -126,3 +126,4 @@ ms.locfileid: "8885044"
 + [テーブル マップの正常性チェックのエラー コード](table-map-health-check.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

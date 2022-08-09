@@ -1,23 +1,23 @@
 ---
 title: ビジネス イベントおよび Azure Event Grid
 description: この記事では、Microsoft Azure イベント グリッド エンドポイントを構成する方法と、イベント グリッドからビジネス イベントを消費する方法について説明します。
-author: Sunil-Garg
-ms.date: 10/30/2019
+author: jaredha
+ms.date: 07/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 85f58bc3b0f17f0917ba7ba983bbf62f168e84a3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 46025dece124414ba19d13ba0e67cd1c483fa1bd
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889267"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129484"
 ---
 # <a name="business-events-and-azure-event-grid"></a>ビジネス イベントおよび Azure Event Grid
 [!include[banner](../../includes/banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "8889267"
 
     <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
-4. **BE-Key Vault \> シークレット \> 生成/インポート** を選択します。 シークレットの名前を入力し、先に保存したイベント グリッド接続文字列を貼り付けます。
+4. **BE-Key Vault \> シークレット \> 生成/インポート** を選択します。 シークレットの名前を入力し、先に保存した **キー 1** 値を貼り付けます。
 
     <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 
@@ -144,7 +144,7 @@ ms.locfileid: "8889267"
 
 9. **新規ステップ** を選択して新しいアクションを追加します。
 10. **JSON の解析** データ処理を検索します。 このステップは、データ コントラクトの指定されたスキーマを使用してメッセージを解析するために必要です。
-11. **Json 解析** アクションの **コンテンツ** フィールドをクリックします。 表示されるウィンドウには前のトリガーからのオプションが表示されます。 Finance and Operations で送信されるペイロードを含むイベント グリッド メッセージの **データ オブジェクト** フィールドを選択する必要があります。
+11. **Json 解析** アクションの **コンテンツ** フィールドをクリックします。 表示されるウィンドウには前のトリガーからのオプションが表示されます。 財務と運用で送信されるペイロードを含むイベント グリッド メッセージの **データ オブジェクト** フィールドを選択する必要があります。
 
     <img alt="Logic appas parse JSON " src="../../media/BEF-Howto-EventGrid-14.png" width="50%">
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 686ce95335151aec9845c3e9030f670a5bb9a792
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3f81b104f57b902529f9cecf9b909ef58f594b08
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866329"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103574"
 ---
 # <a name="track-user-sign-ins"></a>ユーザー サインインの追跡 
  
@@ -44,3 +44,4 @@ Microsoft Dynamics AX 2012 では、**監査ログ** フォームが Microsoft D
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

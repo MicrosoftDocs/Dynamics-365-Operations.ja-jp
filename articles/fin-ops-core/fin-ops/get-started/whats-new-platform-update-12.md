@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
-description: この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされました。
+title: Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 12 新機能および変更された機能 (2017 年 11 月)
+description: この記事では、Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされました。
 author: tonyafehr
 ms.date: 01/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 030946b78017a02f7e5450b5141a7418d3ff3e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 132e5ec1e5696aa2173245791ebeb864e2cca344
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894224"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124850"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 12 新機能および変更された機能 (2017 年 11 月)
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされ、ビルド番号は 7.0.4709 です。
+この記事では、Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされ、ビルド番号は 7.0.4709 です。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 プラットフォーム更新プログラム 12 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://go.microsoft.com/fwlink/?linkid=863949) を参照してください。
 
@@ -46,7 +46,7 @@ ms.locfileid: "8894224"
 
 ## <a name="enabling-sql-triggers-in-bring-your-own-database-byod"></a>「独自のデータベースを戻す」 (BYOD) で、SQL トリガーを有効にします。
 
-BYOD とも呼ばれる「自分のデータベースの持ち込み」機能により Dynamics 365 for Finance and Operations から 独自の SQL Azure データベースに段階的にデータ エンティティをエクスポートできます。 現時点で、出力先データベースに SQL データベース トリガーがある場合、BYOD プロセスは効率的なバルク データ転送を有効にするためにトリガーをバイパスします。
+BYOD とも呼ばれる「自分のデータベースの持ち込み」機能により、Dynamics 365 財務と運用から 独自の SQL Azure データベースに段階的にデータ エンティティをエクスポートできます。 現時点で、出力先データベースに SQL データベース トリガーがある場合、BYOD プロセスは効率的なバルク データ転送を有効にするためにトリガーをバイパスします。
 
 エクスポートされたデータまたは BYOD のために、独自のデータベースで SQL データベース トリガーを使用できるようになりました。 これにより、下流のプロセスが BYOD プロセスと容易に統合できるようになります。
 
@@ -61,7 +61,7 @@ BYOD とも呼ばれる「自分のデータベースの持ち込み」機能に
 1回限りの設定とコンフィギュレーションでは、次のことが必要になります。
 
 - Azure AD で B2B 招待サービス アプリケーションを設定します。
-- Finance and Operations で B2B 招待サービスの設定のコンフィギュレーションをします。
+- 財務と運用で B2B 招待サービスの設定のコンフィギュレーションを行います。
 
 詳細については、[企業間 (B2B) ユーザーを Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
 

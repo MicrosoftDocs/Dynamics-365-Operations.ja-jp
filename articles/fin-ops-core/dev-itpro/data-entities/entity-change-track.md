@@ -1,6 +1,6 @@
 ---
 title: エンティティへの変更追跡の有効化
-description: Finance and Operations からのデータの差分エクスポートを有効にする追跡の変更を使用します。
+description: 財務と運用からのデータの増分エクスポートを有効にする追跡の変更を使用します。
 author: Milindav2
 ms.date: 09/17/2020
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc5533dd3e9d8f35dc71d68aee108399b6b81eb1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 353645eec8773f74d5c7de2e621886671840e2b3
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071226"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108527"
 ---
-# <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
+# <a name="enable-change-tracking-for-entities"></a>エンティティへの変更追跡の有効化
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-変更追跡は、データ管理を使用して財務と運用アプリからのデータの差分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 
+変更追跡は、データ管理を使用して財務と運用アプリからのデータの増分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 
 
 変更追跡は、自分のデータベース (BYOD) シナリオと非 BYOD シナリオの両方に対して有効にできます。 これには、Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。
 
@@ -97,3 +97,4 @@ public static Query defaultCTQuery()
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

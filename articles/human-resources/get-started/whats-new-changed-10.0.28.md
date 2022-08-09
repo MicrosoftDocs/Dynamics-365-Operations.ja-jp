@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: eb284c09443ab9690400d48174118d70841b1fb2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ec233a26147739a0d6e11f1ba4afb99a0bf34e2e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853120"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067410"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-10028-august-2022"></a>Dynamics 365 Human Resources 10.0.28 (2022 年 8 月) の新機能または変更された機能
 
@@ -55,3 +55,4 @@ Dynamics 365 Finance 10.0.28 には、プラットフォーム更新プログラ
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

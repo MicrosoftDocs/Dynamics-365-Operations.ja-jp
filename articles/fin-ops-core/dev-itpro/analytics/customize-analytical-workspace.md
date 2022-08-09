@@ -6,21 +6,22 @@ ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PowerBIConfiguration
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 27661
-ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fbb40641e55d21de3123e1b28f21bba3f869137
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27661"
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.form: PowerBIConfiguration
+ms.openlocfilehash: f2587dc4c5ba3e12365c692fcc3580643d16eb71
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862239"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206268"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 
@@ -104,7 +105,8 @@ Power BI サービスでは、ホストされたコンテンツへのアクセ�
 
 1. **リンク** というタイトルのセクションを含むアプリケーション ワークスペースを開きます。 たとえば 「銀行管理」 です。
 2. **オプション** を選択し、左上にある **レポート カタログを開く** を選択します。
-3. ダイアログボックスの手順に従って、**Power BI に承認** を行い、現在のユーザーの財務と運用アプリにアクセスします。
+3. ダイアログ ボックスの手順に従って、**Power BI に承認** を行い、現在のユーザーの財務と運用アプリにアクセスします。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

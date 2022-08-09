@@ -1,6 +1,6 @@
 ---
 title: 一般データ保護規則の概要
-description: この記事は、財務と運用のユーザー ログの機能に関する情報を提供します。
+description: この記事は、財務と運用のユーザー ログ機能に関する情報を提供します。
 author: ToddLefor
 ms.date: 07/23/2019
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a8cdeba90507957d7049f642228c7f08bb02dc2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6d8d0d56573bac5793fa271307a365c55f02804
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866730"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069395"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -55,7 +55,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 + **C1** - C1 は Microsoft の直接顧客 (エンタープライズ クラウドの IT 管理者) です。
 + **C2** - C2 は C1 の顧客です。
 
-財務と運用アプリでは、Microsoft はプロセッサとして機能します。 データ プロセッサとして、 Finance and Operations はデータ コントローラとして GDPR 責務に適応するのに役立つプロセスと機能を提供します。
+財務と運用アプリでは、Microsoft はプロセッサとして機能します。 データ プロセッサとして、財務と運用はデータ コントローラーとして GDPR 責務に適応するのに役立つプロセスと機能を提供します。
 
 次の図は、顧客からアプリケーション データベースへのデータの流れ、およびお客様と Microsoft がそのプロセスで果たすロールを示しています。 それぞれのアプリケーションで、コントローラーはテナント管理者、Microsoft はプロセッサです。 このシナリオでは、データを保管、取得、並べ替えなどを行うことでデータを処理するプロセッサ (Microsoft) にデータが送信されます。
 
@@ -137,7 +137,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 </td>
 <td>
 <ul>
-<li>Finance and Operations を使用して、データを特定し、要求を満たします。 </li>
+<li>財務と運用を使用して、データを特定し、要求を満たします。 </li>
 <li>カスタマイズを記述します。</li>
 <li>サード パーティに共有コントローラー DSR を求めます。</li>
 <li>Microsoft にアクティビティ データを求めます。</li> 
@@ -199,7 +199,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 
 \*個人データと見なされるデータの中には、直接変更することができないものもあります。 このデータは通常、財務法 (税法など)、詐欺防止 (セキュリティ監査証跡)、または業界認定への準拠のために「現状のまま」保たれる金融取引やその他の業務データの一部です 。
 
-\** GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの変更を許可していません。他の法律や認証のコンプライアンスに必要なビジネス データの変更のための機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
+\** GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、財務と運用は特定のビジネスまたはトランザクション データの変更を許可していません。他の法律や認証のコンプライアンスに必要なビジネス データの変更のための機能を提供しておらず一切保証もしません。 財務と運用は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
 
 
 ### <a name="right-to-be-forgotten"></a>消去するには右\*
@@ -210,7 +210,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 + 製品が直接アクションを有効にする場合、個人データを匿名にします。
 + 個人データを消去または変更するカスタマイズを作成します。
 
-\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスのために必要なビジネス データの削除機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
+\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、財務と運用は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスのために必要なビジネス データの削除機能を提供しておらず一切保証もしません。 財務と運用は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
 
 ### <a name="right-to-port"></a>移植するには右
 
@@ -233,7 +233,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 
 + たとえば、マーケティング キャンペーンから顧客を削除します。
 
-\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの制限された処理を許可していません。他の法律や認証のコンプライアンスに必要なビジネス データの処理の制限に関する機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
+\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、財務と運用は特定のビジネスまたはトランザクション データの制限された処理を許可していません。他の法律や認証のコンプライアンスに必要なビジネス データの処理の制限に関する機能を提供しておらず一切保証もしません。 財務と運用は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
 
 
 ## <a name="controller-considerations"></a>コントローラーの考慮事項
@@ -244,15 +244,15 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 
 + **データの在庫およびタグ付け** - Microsoft は、開発者と顧客が使用できるタグ付けインフラストラクチャを実現しました。 メタデータに定義されている各データ フィールドには、コントローラーが個人データの定義に適合すると判断したデータを識別するために選択した値または用語を、確認または変更できる推奨値を持つ分類プロパティが含まれています。
 + **データ フロー ダイアグラム** - Microsoft は、顧客の運用環境におけるシステム間のデータのフローを識別するデータ フロー ダイアグラムを公開します。
-+ **個人検索レポート** – Finance and Operations には、要求者の個人情報のコピーの要求をサポートする情報を収集するために使用できる個人検索レポートが含まれています。 
++ **個人検索レポート** - 財務と運用には、要求者の個人情報のコピーの要求をサポートする情報を収集するために使用できる個人検索レポートが含まれています。 
 
 ## <a name="activity-and-diagnostic-information"></a>活動と診断情報
 
 コントローラーは、[Microsoft Enterprise Privacy Portal](https://www.microsoft.com/trustcenter/privacy) を使用してテレメトリ データに関する DSR 要求を行うことができます。 収集する一部のテレメトリ データは、システムで生成されるログです。 追加情報または支援なしでは、ユーザーの ID は匿名です。
 
-## <a name="representation-of-a-person-in-finance-and-operations"></a>Finance and Operations のユーザーの表示
+## <a name="representation-of-a-person-in-finance-and-operations"></a>財務と運用のユーザーの表示
 
-Finance and Operations には共通の [グローバル アドレス帳](../../fin-ops/organization-administration/overview-global-address-book.md) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
+財務と運用には共通の [グローバル アドレス帳](../../fin-ops/organization-administration/overview-global-address-book.md) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
 
 ![グローバル アドレス帳のデータ モデル。](../media/gdpr-address-data-model.jpg)
 
@@ -297,7 +297,7 @@ Finance and Operations には共通の [グローバル アドレス帳](../../f
 + マスター レコードに関連付けられているトランザクションのデータがある場合は削除できません。
 + 同様に、転記済または完了済みのトランザクションは削除できません。
 
-### <a name="reasons-why-finance-and-operations-might-not-support-modifying-or-deleting-data-out-of-the-box"></a>Finance and Operations がそのままではデータの変更と削除をサポートしない理由
+### <a name="reasons-why-finance-and-operations-might-not-support-modifying-or-deleting-data-out-of-the-box"></a>財務と運用がそのままではデータの変更と削除をサポートしない理由
 
 次のテーブルは、データの変更が制限される理由を示しています。
 
@@ -380,3 +380,4 @@ GDPR は、未成年者に保護者の同意がない場合、システムがそ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

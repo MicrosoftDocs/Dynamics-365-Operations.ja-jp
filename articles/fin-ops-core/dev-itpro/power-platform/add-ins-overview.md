@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0c2826a84a4dc61c8a59b70cb7ab0002175ac79b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b6dff0739e1d8deb2fd96018bdffe410aa78dc99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873134"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108790"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 
 [!include[banner](../includes/banner.md)]
 
-アドインを使用すると、財務と運用アプリの機能を拡張できます。 すべてのアドインは、Microsoft Dynamics Lifecycle Services (LCS) のサンドボックスおよび運用環境の環境詳細ページを介してインストールされ、管理されます。 アーキテクチャおよび機能のロック解除方法については、[財務と運用アプリとの Microsoft Power Platform 統合](overview.md)を参照してください。
+アドインを使用すると、財務と運用アプリの機能を拡張できます。 すべてのアドインは、Microsoft Dynamics Lifecycle Services (LCS) のサンドボックスおよび運用環境の環境詳細ページを介してインストールされ、管理されます。 アーキテクチャおよび機能のロック解除方法については、[財務と運用アプリとの Microsoft Power Platform 統合](overview.md) を参照してください。
 
 ## <a name="what-add-ins-are-available"></a>どのアドインで使用できますか?
 
@@ -50,3 +50,4 @@ IoT インテリジェンスは、Supply Chain Management のアドインです�
 Finance Insights には構成可能なソリューションが用意されており、会社のキャッシュ フローを的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能では、インテリジェントな機械学習テンプレートを使用して、ビューローからの消費者レポート情報などのサード パーティからのデータを含む提供されたデータを使用してモデルを構築します。 これらのインテリジェントな機能は、意思決定に役立ち、現在および予想されるビジネス上の課題に効果的に対応するための行動を支援します。 詳細については、[Finance insights ホーム ページ](../../../finance/finance-insights/finance-insights-home-page.md) を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

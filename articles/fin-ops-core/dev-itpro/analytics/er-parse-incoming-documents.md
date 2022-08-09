@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 089f6e1c12907df8f20030c07a5c1cc1ac99794b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0df803a0904cc2900c282a656ae5faa807ccb1aa
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909231"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108423"
 ---
 # <a name="parse-incoming-documents"></a>受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
@@ -126,9 +126,10 @@ Microsoft Excel のブック (XLSX 形式のファイル) でデータを表す�
 
 タスク ガイドを再生していない場合は、上記のタスク ガイドを完了するために必要な次のファイルをダウンロードしてください。現在の財務と運用アプリケーションの **外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成**。
 
-| 肩書き                  | ファイル名                                                       |
+| タイトル                  | ファイル名                                                       |
 |------------------------|-----------------------------------------------------------------|
 | ER モデル構成 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

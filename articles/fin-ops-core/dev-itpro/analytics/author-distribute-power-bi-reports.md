@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: RICHDI
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 306c88e0daeeba2950aa5f37f70a2511bfc386ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e45ace6d3cc3516332f2abadd22fcbffcf01958d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903634"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109164"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -38,7 +38,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
 > Power BI Embedded 統合は、10.0.22 リリースの一部としてインフラストラクチャをアップグレードしました。 これはインフラストラクチャの変更であり、環境がリリース 10.0.22 にアップグレードされると自動的に行われます。 この変更により、ユーザーはワークスペース レポートの編集時に Power BI デスクトップの *最新バージョン* を使用できるようになりました。
 
-> バージョン 10.0.21 またはそれ以前を実行している環境では、開発環境にプレインストールされた Power BI Desktop の前回のビルドを使用する必要があります。 または、*互換性がある* Power BI Desktop の Power BI Desktop  2020 年 8 月のリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)から、Power BI Desktop 2020 年 8 月リリース版をダウンロードできます。
+> バージョン 10.0.21 またはそれ以前を実行している環境では、開発環境にプレインストールされた Power BI Desktop の前回のビルドを使用する必要があります。 または、*互換性がある* Power BI Desktop の Power BI Desktop 2020 年 8 月のリリースを使用し、プレビュー機能をオフにして、財務と運用アプリの分析レポートを作成できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)から、Power BI Desktop 2020 年 8 月リリース版をダウンロードできます。
 
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
 この例では、ローカルのエンティティ ストアでコマース 分析ソリューションが消費する集計モデルをステージングします。 アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 
@@ -91,3 +91,4 @@ Power BI Desktop でも計算の作成がサポートされ、複数の集計測
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

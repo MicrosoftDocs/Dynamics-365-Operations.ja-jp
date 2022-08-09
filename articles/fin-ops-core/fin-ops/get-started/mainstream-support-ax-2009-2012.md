@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 35d9b7adf8ada05a9ee399701718b7e903c43958
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: 4e089fcd6157eb7f04eb45bd5a4322c1de3d5107
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958123"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124446"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-dynamics-ax-2012-r2-and-dynamics-ax-2012-r3"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
 
@@ -30,7 +30,7 @@ Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 �
 Dynamics 365 Finance、Supply Chain Management、Commerce、および Project Operations などの財務と運用アプリを最新バージョンのにアップグレードすることをお勧めします。
 
 - Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な「[移行ツール](../../dev-itpro/migration-upgrade/upgrade-home-page.md)」を使用してください。
-- Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、利用可能な更新プログラムを使い、Dynamics AX 2012 R3 で Finance and Operations アプリを更新する必要があります。 アップグレードに関する追加情報は、[AX 2012 から財務と運用アプリへのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)を参照してください。
+- Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、利用可能な更新プログラムを使い、Dynamics AX 2012 R3 で財務と運用アプリを更新する必要があります。 アップグレードに関する追加情報は、[AX 2012 から財務と運用アプリへのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -90,3 +90,4 @@ LCS 警告プロジェクトには、識別または報告された法律上の�
 構成はグローバル リポジトリで利用可能です。 詳細については、[ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](../../dev-itpro/analytics/er-download-configurations-global-repo.md)を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

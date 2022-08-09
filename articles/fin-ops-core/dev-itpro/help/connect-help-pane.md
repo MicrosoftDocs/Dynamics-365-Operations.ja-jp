@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 12c5eda68b5ba6610be6763fb12d0a190f246b15
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2939157ddfb6a8b19089cbe68ba4a96fcb1b70a1
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866611"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065772"
 ---
 # <a name="connect-a-custom-help-website-to-the-help-pane"></a>カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 
 [!include [banner](../includes/banner.md)]
 
-財務と運用ソリューションのカスタム ヘルプ コンテンツを提供する場合は、**ヘルプ** ウィンドウを拡張して、コンテンツを使用することができます。 Visual Studio の財務と運用開発環境を使用して、この 1 回限りのコンフィギュレーションを完了します。 完了したら、ユーザーは、タスク ガイド、Microsoft ヘルプ コンテンツ、ヘルプ コンテンツのタブを選択できます。
+財務と運用ソリューションのカスタム ヘルプ コンテンツを提供する場合は、**ヘルプ** ウィンドウを拡張して、コンテンツを使用することができます。 Microsoft Visual Studio の財務と運用開発環境を使用して、この 1 回限りのコンフィギュレーションを完了します。 完了したら、ユーザーは、タスク ガイド、Microsoft ヘルプ コンテンツ、ヘルプ コンテンツのタブを選択できます。
 
 [カスタム ヘルプ Web サイト](custom-help-overview.md#custom-help-sites) を製品内 **ヘルプ** ウィンドウに接続するプロセスには、次の手順があります:
 

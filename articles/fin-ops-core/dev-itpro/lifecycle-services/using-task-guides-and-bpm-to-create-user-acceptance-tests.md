@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: f58cd62c73e7bf96276c732c0b849e610f817c7e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 11227e654783d6b741342aba72778aace50ff5d8
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866326"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103622"
 ---
 # <a name="create-and-automate-user-acceptance-tests"></a>ユーザー受け入れテストの作成と自動化
 
@@ -158,7 +158,7 @@ Azure DevOps はテストだけでなく、結果の管理と軽減策のため�
 
 ### <a name="run-automated-test-cases"></a>自動テスト ケースを実行
 
-Finance and Operations のプラットフォームは、タスク記録に基づいてテスト ケースを作成し、Azure DevOps を使用してそれらのテスト ケースの自動実行を管理するためのツールを開発者を提供します。 
+財務と運用のプラットフォームは、タスク記録に基づいてテスト ケースを作成し、Azure DevOps を使用してそれらのテスト ケースの自動実行を管理するためのツールを開発者を提供します。 
 
 開発者は、**ビルドおよびテスト** 環境のビルドおよびテスト自動化機能を使用できます。 詳細については、[継続的な配信ホーム ページ](../dev-tools/continuous-delivery-home-page.md) を参照してください。
 
@@ -171,3 +171,4 @@ Azure DevOps のテストおよびテスト管理の詳細については、[Azu
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

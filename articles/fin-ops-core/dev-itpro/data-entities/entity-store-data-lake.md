@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: 513419e9142bc6c2cb060281e6ab309f536fe94f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad71c91a5740c35e5b366ca18506d8705d6cc69d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906549"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109416"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 

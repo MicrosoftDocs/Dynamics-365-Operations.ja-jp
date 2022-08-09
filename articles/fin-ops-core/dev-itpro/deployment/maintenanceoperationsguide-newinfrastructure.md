@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: bf5e24500bddc0ec16f7d8d1efb4383e353a1a61
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b0aa90ac1e04b841fff3d660ee95a64fcbe2bf8f
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867397"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103634"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 
@@ -40,7 +40,7 @@ ms.locfileid: "8867397"
 
 ## <a name="maintenance-mode"></a>メンテナンス モード
 
-Finance and Operations アプリには、[メンテナンス モード](../sysadmin/maintenance-mode.md) という名前のシステム全体に適用される設定が含まれています。 メンテナンス モードでは、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、オンまたはオフにすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード** ユーザー ロールが割り当てられたユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。
+財務と運用アプリには、[メンテナンス モード](../sysadmin/maintenance-mode.md)という名前のシステム全体に適用される設定が含まれています。 メンテナンス モードでは、システム機能に影響を与える可能性のあるシステム変更を、システム管理者が安全に実行する方法が提供されます。 たとえば、コンフィギュレーション キーは、オンまたはオフにすることができます。 メンテナンス モードがオンのとき、システム管理者および **メンテナンス モード** ユーザー ロールが割り当てられたユーザーのみがシステムにサインインすることができます。 既定では、メンテナンス モードがオフになっています。
 
 メンテナンス モードのオン/オフを切り替えるには、以下の手順に従います。
 
@@ -60,3 +60,4 @@ Finance and Operations アプリには、[メンテナンス モード](../sysad
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

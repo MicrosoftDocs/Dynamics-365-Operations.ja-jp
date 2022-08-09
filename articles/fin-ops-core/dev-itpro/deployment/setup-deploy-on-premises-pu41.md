@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 06/07/2022
+ms.date: 07/06/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 8be500e81db38cf51a1540a89e7a0795b827e71b
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 1642deb06f559b8b1e850208013b3faf569fd406
+ms.sourcegitcommit: ec57cbd25008dc76d5752001b12e69f7bb947522
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945775"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121433"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 
@@ -745,7 +745,7 @@ Finance + Operations 向けに SQL Server を構成するために CA から SSL
 # If Remoting, execute
 #.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com"
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com.pfx"
 ```
 
 次のコマンドを実行することで、すべてが正しく構成されていることを確認できます。
@@ -754,7 +754,7 @@ Finance + Operations 向けに SQL Server を構成するために CA から SSL
 # If Remoting, execute
 #.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Test
 
-.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com" -Test
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com.pfx" -Test
 ```
 
 #### <a name="manually-configure-the-certificate-for-an-always-on-sql-availability-group-or-instance"></a>常時稼働の SQL 可用性グループまたはインスタンスの証明書を手動で構成する
@@ -1106,6 +1106,7 @@ Service Fabric Cluster のすべてのコンピューターで **新しい資格
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
+- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
 - [財務と運用アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続](../user-interface/client-disconnected.md)
+

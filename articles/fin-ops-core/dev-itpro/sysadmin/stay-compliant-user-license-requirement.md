@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 4798b6e4229d46976e8ad2eb9754f65d2b411def
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1cd0ff1aa5ef1d802461535e0ca89086bdd0baef
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851901"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108543"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、顧客が Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、および Dynamics 365 Commerce  などの財務と運用アプリに対するユーザー ライセンス要件を遵守する方法に関する概要を提供します。
+この記事では、顧客が Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、および Dynamics 365 Commerce などの財務と運用アプリに対するユーザー ライセンス要件を遵守する方法に関する概要を提供します。
 
 ユーザーのライセンス要件は、それらのユーザーに割り当てられているセキュリティ ロールによって決まります。 セキュリティ ロールは、次の階層に基づいて作成されます。
 
@@ -104,7 +104,7 @@ ms.locfileid: "8851901"
 
 ## <a name="additional-resources"></a>追加リソース
 
-財務と運用アプリの購入方法とライセンスの取得方法については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
+財務と運用アプリの購入方法とライセンスの取得方法については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409)を参照してください。
 
 Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](/microsoft-365/admin/manage/assign-licenses-to-users) を参照してください。
 

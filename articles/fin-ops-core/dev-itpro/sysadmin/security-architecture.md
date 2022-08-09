@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c19fc7e4c7ccaa58e6494523e598bccf7b65d3ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4dc0bd1f30964a0d58caa413d9e89e1a142ea328
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884948"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108547"
 ---
 # <a name="security-architecture"></a>セキュリティ アークテクチャ
 [!include [banner](../includes/banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "8884948"
 ## <a name="authentication"></a>認証
 既定では、ユーザー権利を持つ認証済みユーザーのみが接続を確立できます。 
 
-Microsoft Azure Active Directory (AAD) は主要な ID プロバイダーです。 システムにアクセスするには、ユーザーは Finance and Operations インスタンスにプロビジョニングされ、認可されたテナントに有効な AAD アカウントが必要です。
+Microsoft Azure Active Directory (AAD) は主要な ID プロバイダーです。 システムにアクセスするには、ユーザーは財務と運用のインスタンスにプロビジョニングされ、認可されたテナントに有効な AAD アカウントが必要です。
 
-## <a name="authorization"></a>承認
-承認は Finance and Operations アプリケーションへのアクセスをコントロールします。 セキュリティ アクセス許可は、プログラムの個々の要素へのアクセスを制御するために使用されます: メニュー、メニュー項目、アクションおよびコマンド ボタン、レポート、サービス操作、Web URL のメニュー項目、Web コントロール、および Finance and Operations クライアントのフィールド。 
+## <a name="authorization"></a>認証
+承認は、財務と運用アプリケーションへのアクセスをコントロールします。 セキュリティ アクセス許可は、プログラムの個々の要素へのアクセスを制御するために使用されます: メニュー、メニュー項目、アクションおよびコマンド ボタン、レポート、サービス操作、Web URL のメニュー項目、Web コントロール、および財務と運用のクライアントのフィールド。 
 
 個別のセキュリティ アクセス許可は特権に、特権は職務に組み込まれています。 管理者は、セキュリティ ロールに職務権限と権限を割り当てることにより、これらのセキュリティ ロールへのアクセス許可をプログラムに付与します。 
 

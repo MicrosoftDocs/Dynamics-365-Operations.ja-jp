@@ -1,6 +1,6 @@
 ---
 title: AX 2012 からのアップグレード - 機能テスト パス
-description: この記事では、機能テスト パスを実行して、アップグレードされた財務と運用アプリの環境を検証する方法について説明します。
+description: この記事では、機能テスト パスを実行して、アップグレードされた財務と運用の環境を検証する方法について説明します。
 author: tariqbell
 ms.date: 01/31/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 964f1b9c1979cb97014222383e9ef2ca1158f0ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbfd88036180ef1fe99ab949d73c05d31458b17a
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890385"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124908"
 ---
 # <a name="upgrade-from-ax-2012---functional-test-passes"></a>AX 2012 からのアップグレード - 機能テスト パス
 
@@ -25,7 +25,7 @@ ms.locfileid: "8890385"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-データのアップグレードが完了した後、すべての業務プロセスの完全な機能テスト パスを完了しておくことをお勧めします。 完全な機能テスト パスでは、Finance and Operations を使用して実行されるすべての業務プロセスの広範な再テストを実行します。 テストには、Microsoft Dynamics AX 2012 から引き継がれたプロセスと Finance and Operations の機能を使用する新しいプロセスの両方を含める必要があります。
+データのアップグレードが完了した後、すべての業務プロセスの完全な機能テスト パスを完了しておくことをお勧めします。 完全な機能テスト パスでは、財務と運用を使用して実行されるすべての業務プロセスの広範な再テストを実行します。 テストには、Microsoft Dynamics AX 2012 から引き継がれたプロセスと財務と運用の機能を使用する新しいプロセスの両方を含める必要があります。
 
 コードの品質によっては、バグ修正と再テストのために機能テスト パスを何回か繰り返さなければならない可能性があります。 バグが修正された後、関係するすべてのプロセスを再テストするために注意し、変更によって下流または上流プロセスが影響を受けないようにします。
 

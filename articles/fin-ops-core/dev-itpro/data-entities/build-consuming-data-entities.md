@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a32a2b7dda222f534d7a0048ac10eb411a871383
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: a3bc365f31c2afdd0f2bf4a39072d6eeeec10768
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371468"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109534"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -81,7 +81,7 @@ FMLabCustomerEntity
 
 ### <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
-1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト** の順にクリックしてから、**Finance and Operations のプロジェクト** を選択します。
+1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト** の順にクリックしてから、**財務と運用のプロジェクト** を選択します。
 2. プロジェクトを右クリックして **プロパティ** をクリックし、プロジェクトがフリート管理モデルであることを確認します。 設定されていない場合、**モデル** プロパティを **フリート管理** に設定します。
 
 ### <a name="add-a-new-data-entity-to-your-project"></a>プロジェクトへの新しいデータ エンティティの追加
@@ -439,3 +439,4 @@ Cannot create a row of size xxx which is greater than the allowable maximum row 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

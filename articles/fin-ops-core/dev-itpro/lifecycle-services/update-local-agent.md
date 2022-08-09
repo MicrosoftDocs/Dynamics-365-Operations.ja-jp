@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ac99b5da33723605aab150815e02e4184ffeff33
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 1e131cb9e5e390f803329e063bb41ae615128bc9
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945776"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103886"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -123,7 +123,7 @@ ms.locfileid: "8945776"
 ## <a name="download-the-latest-local-agent-and-configuration-from-lcs"></a>LCS から最新のローカル エージェントおよびコンフィギュレーションをダウンロード
 
 > [!NOTE]
-> 現在の配置では、ローカル エージェントの以前のバージョンを要求する場合は、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリからそれをダウンロードします。 ローカル エージェント バージョン v1.1.0 をダウンロードするには、**共用資産ライブラリ - >モデル** に移動し、Dynamics 365 for Finance and Operations オンプレミス - ローカル エージェント v1.1.0** をクリックします。
+> 現在の配置では、ローカル エージェントの以前のバージョンを要求する場合は、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリからそれをダウンロードします。 ローカル エージェント バージョン 1.1.0 をダウンロードするには、**共用資産ライブラリ -> モデル** に移動し、Dynamics 365 財務と運用 (オンプレミス) - ローカル エージェント v1.1.0** をクリックします。
 >
 > プラットフォーム更新プログラム 12 の展開および更新プログラム フローの完成には、バージョン 2.0.0 かそれ以降のバージョンが必要です。
 
@@ -164,3 +164,4 @@ ms.locfileid: "8945776"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

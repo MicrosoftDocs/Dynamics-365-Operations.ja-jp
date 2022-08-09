@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2022-03-29
-ms.openlocfilehash: a95ff5c878ab9d9b27f7ada94747f73e5b116b73
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 551db9bbf3c197ff508750da6981cbfebd26990a
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934735"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103685"
 ---
 # <a name="integrate-rsat-with-azure-devops-pipelines"></a>Azure DevOps パイプラインと RSAT を統合する
 
@@ -218,3 +218,4 @@ RSAT コマンドの詳細については、[Regression suite automation tool (R
 既定では、コンソール アプリは、RSAT ユーザー インターフェイスを通してユーザー アカウントによって構成された設定を使用します。 別の設定ファイルを指定するには、次の例に示すように、`settings` パラメーターを使用します。
 
 `.\Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Users\rob\Documents\RSAT\SettingFiles\Canaryenv.settings" playbacksuite "Acceptance Test Suite 1"`
+

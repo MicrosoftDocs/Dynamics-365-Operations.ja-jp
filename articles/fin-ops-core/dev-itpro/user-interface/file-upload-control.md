@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c4c272ffcf98c07ee51dff568fb8a6c9900e66b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0e1d8032ec15f6b25d08e0aa3005a07d1b4c1c24
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905041"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114284"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 
@@ -68,7 +68,7 @@ ms.locfileid: "8905041"
 ファイルをシステムにアップロードする前に、ウイルスや悪質なコードをスキャンすることをお勧めします。 したがって、バージョン10.0.12 以降では、ユーザーが選択したファイル スキャン ソフトウェアをファイル アップロード プロセスに統合できるように、拡張ポイントを使用できます。 添付ファイルのスキャンにも、同様の拡張ポイントが使用可能です。 これらの拡張ポイントの詳細については、[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) を参照してください。 
 
 > [!IMPORTANT]
-> 初期状態では、財務と運用アプリはファイルのウイルスや悪意のあるコードをスキャンせず、ファイルをスキャンするための特定のソフトウェアはお勧めしません。 代わりに、お客様は、独自のファイル スキャン ソフトウェアを選択し、ファイルのスキャンにソフトウェアまたはサービスを使用できるように適切なコードをデリゲート ハンドラーに追加する必要があります。
+> 初期状態では、財務と運用アプリはファイルのウイルスや悪意のあるコードをスキャンせず、ファイルをスキャンするための特定のソフトウェアはお勧めしていません。 代わりに、お客様は、独自のファイル スキャン ソフトウェアを選択し、ファイルのスキャンにソフトウェアまたはサービスを使用できるように適切なコードをデリゲート ハンドラーに追加する必要があります。
 
 特に、**FileUploadResultBase** クラスは **delegateScanStream()** デリゲートを公開します。 このデリゲートは、**アップロード戦略クラス** が特殊化されているファイル アップロード シナリオに適用されます。 スキャン サービスによってファイルが悪質であると判断された場合、アップロード プロセスは失敗します。    
 

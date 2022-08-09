@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 75bc65788b3566420413b924ea5bc41094eb2c21
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e890a9356ef5805f93b7ec32d0f40e0a3f547ec
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873198"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111094"
 ---
 # <a name="business-events-and-azure-service-bus"></a>ビジネス イベントおよび Azure Service Bus
 [!include[banner](../../includes/banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "8873198"
 
 ## <a name="register-a-new-application"></a>新しいアプリケーションの登録
 
-この手順では、新しいアプリケーションを Azure AD に登録して、Key Vault のシークレットの読み取りと取得アクセスを許可します。 すると Finance and Operations はこのアプリケーションを使用して Service Bus シークレットを取得します。
+この手順では、新しいアプリケーションを Azure AD に登録して、Key Vault のシークレットの読み取りと取得アクセスを許可します。 次に財務と運用はこのアプリケーションを使用してサービス バス シークレットを取得します。
 
 1. Azure ポータルで **すべてのサービス \> セキュリティ \> Azure Active Directory** を選択します。
 2. **アプリ登録 (プレビュー) \> 新しい登録** を選択し、アプリケーションの名前を入力します。

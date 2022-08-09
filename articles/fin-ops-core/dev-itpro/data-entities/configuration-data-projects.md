@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 0b77df3f6fbcdc083feedf47e35ca3c73c1c8571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 56c594cfb3a253118888a7c00cc9f626be575dfd
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873195"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109522"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 
@@ -37,7 +37,7 @@ ms.locfileid: "8873195"
 コンフィグレーション データ テンプレートは、データ プロジェクトで使用できる各モジュール領域のエンティティの事前定義リストです。 **データ管理** ワークスペース内の **テンプレート** ページを使用することにより、これらのテンプレートを作成、表示、および修正することができます。
 
 > [!IMPORTANT]
-> 既定のコンフィギュレーション テンプレートは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 2017 年 7 月更新プログラムで配信されました。 コンフィギュレーション データ プロジェクト機能は、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 7 でが利用可能です。 現在の製品リリースで、自分自身のテンプレートを作成および使用することができます。
+> 既定のコンフィギュレーション テンプレートは、Microsoft Dynamics 365 Finance、Enterprise Edition 2017 年 7 月更新プログラムで配信されました。 コンフィギュレーション データ プロジェクト機能は、Microsoft Dynamics 365 for Operations プラットフォーム更新プログラム 7 でが利用可能です。 現在の製品リリースで、自分自身のテンプレートを作成および使用することができます。
 
 ## <a name="process-for-working-with-configuration-data-projects"></a>コンフィギュレーション データ プロジェクトを操作するためのプロセス
 コンフィギュレーション データ プロジェクトの使用を開始するときは、このプロセスに従うことをお勧めします。
@@ -91,3 +91,4 @@ ms.locfileid: "8873195"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

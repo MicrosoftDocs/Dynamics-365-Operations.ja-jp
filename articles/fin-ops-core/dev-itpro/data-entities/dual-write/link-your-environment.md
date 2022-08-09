@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f49a2512b06a8ddc5a2ec3c3b9aa412307398db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 81eb740aa8100dfbef0f6710432c722d014f9cb6
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861766"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112036"
 ---
 # <a name="use-the-dual-write-wizard-to-link-your-environments"></a>二重書き込みウィザードを使用して環境をリンクする
 
@@ -23,13 +23,13 @@ ms.locfileid: "8861766"
 
 
 
-1. Dataverse 環境にリンクする財務と運用アプリ環境にサイン インします。
+1. Dataverse 環境にリンクする財務と運用アプリ環境にサインインします。
 2. **ワークスペース \> データ管理** に移動して、**デュアル書き込み** のタイルを選択します。
 
     ![二重書き込みタイル。](media/navigate-to-data-management.png)
 
 > [!NOTE]
-> 財務と運用アプリにアクセスできず、環境に変更を加える必要がある場合は、[データ統合管理者ポータル](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftip.dataintegrator.trafficmanager.net%2FdualWrite%3Faxenv%3Ddxxxxxxxxx.cloudax.dynamics.com&data=04%7C01%7Csushmu%40microsoft.com%7C63cee32877c141d7c55108d96c9d49ba%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637660245076784515%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=71dmOTyAgXpSHrwx4OVahwoFJLclbIsAW2DIVwZFUhk%3D&reserved=0) へのリンクを使用して、管理ページに直接移動することもできます。
+> 財務と運用アプリにアクセスできず、環境に変更を加える必要がある場合は、[データ統合管理者ポータル](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftip.dataintegrator.trafficmanager.net%2FdualWrite%3Faxenv%3Ddxxxxxxxxx.cloudax.dynamics.com&data=04%7C01%7Csushmu%40microsoft.com%7C63cee32877c141d7c55108d96c9d49ba%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637660245076784515%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=71dmOTyAgXpSHrwx4OVahwoFJLclbIsAW2DIVwZFUhk%3D&reserved=0)へのリンクを使用して、管理ページに直接移動することもできます。
 > 
 3. **環境への新しいリンク** を選択して、**Dataverse へのリンク設定** ウィザードを開きます。
 4. **環境の選択** ページには、サインインしたユーザーが環境管理者であるすべての Dataverse 環境が一覧表示されます。リンク先の Dataverse 環境を選択し、**次へ** を選択します。
@@ -55,7 +55,7 @@ ms.locfileid: "8861766"
 
 7. 二重書き込みアプリケーション オーケストレーション ソリューションを適用します。
 
-    財務と運用アプリの **二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたばかりのテーブル マップを適用します。 ソリューションを適用すると、既定のテーブル マップが公開されていることが確認できます。
+    財務と運用アプリの、**二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたばかりのテーブル マップを適用します。 ソリューションを適用すると、既定のテーブル マップが公開されていることが確認できます。
 
      ![テーブル マップを適用します。](media/apply-entity-maps.png)
 
@@ -70,3 +70,4 @@ Microsoft が公開した二重書き込みテーブル マップ ソリュー�
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

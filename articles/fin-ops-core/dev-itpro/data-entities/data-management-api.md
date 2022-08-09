@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: 3241474b8a80152d0d390f14910795d8e0e7b244
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eeb67e8026f07d32e0d93546ac6c1d832dd2c4e0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860094"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109176"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -33,7 +33,7 @@ ms.locfileid: "8860094"
 
 | 決定ポイント      | 定期統合 API | データ管理フレームワークのパッケージ API |
 |---------------------|--------------------------------------|-----------------------------|
-| スケジューリング          | Finance and Operations アプリのスケジュール設定 | Finance and Operations アプリ外でのスケジュール設定 |
+| スケジューリング          | 財務と運用アプリのスケジューリング | 財務と運用アプリ外でのスケジューリング |
 | 形式              | ファイルおよびデータ パッケージ | データ パッケージのみ |
 | 変換      | データ ファイルが XML 形式の場合の Extensible Stylesheet Language Transformations (XSLT) のサポート | システム外部での変換 |
 | サポートされているプロトコル | SOAP および REST | REST |
@@ -267,7 +267,7 @@ HTTP/1.1 200 OK
 
 | パラメーター                | 説明 |
 |--------------------------|-------------|
-| string packageUrl        | Finance and Operations アプリに関連付けられている Blob Storage 内のデータ パッケージの URL。 |
+| string packageUrl        | 財務と運用アプリに関連付けられている Blob Storage 内のデータ パッケージの URL。 |
 | string definitionGroupId | インポート用のデータ プロジェクトの名前。 |
 | string executionId       | ジョブに使用する ID。 これは、UI ではジョブ ID と呼ばれます。 空の ID が割り当てられている場合は、新しい実行 ID が作成されます。 |
 | bool execute             | このパラメーターを **True** に設定して対象の手順を実行します。 それ以外の場合、**False** に設定します。 |
@@ -454,3 +454,4 @@ BODY
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: f779ea6716d626ec5078dd1901b4b449028d5f91
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3d6e8c808165dab239ce6587de60198f20d44596
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852580"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109408"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 
 [!include [banner](../includes/banner.md)]
 
-以前のリリースでは、デモ データはデータベースとして提供されました。 Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3では、デモ データのサブセットは、データ パッケージとしてリリースされています。 これらのパッケージは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリで使用できます。 パッケージは、空の環境に読み込むことができるように設計されています。
+以前のリリースでは、デモ データはデータベースとして提供されました。 Microsoft Dynamics 365 Finance Enterprise edition 7.3では、デモ データのサブセットは、データ パッケージとしてリリースされています。 これらのパッケージは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリで使用できます。 パッケージは、空の環境に読み込むことができるように設計されています。
 
 デモ データを配信するため、データベースの代わりにデータ パッケージを使用する利点を次に示します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "8852580"
 
 デモ データ パッケージは LCS を通じてリリースされ、リリースに特有のものとなります。 さらにデモ シナリオを追加してパッケージを調整するため、特定のパッケージの内容が変わることに注意してください。 さらに多くのモジュール エリアと業界特有のシナリオを追加して、追加のパッケージもリリースされる予定です。
 
-パッケージ名には、リリース ID が含まれます。 たとえば、Finance and Operations 7.3 に対して、**デモ データ-7.3 -** は、前述の名前付け規則を使用するパッケージ名に先行します。 たとえば、Finance and Operations 7.3 の HQUS 法人に対する Financials パッケージの正式名称は、**デモ データ-7.3-200-Financials-HQUS.zip** になります
+パッケージ名には、リリース ID が含まれます。 たとえば、財務と運用 7.3 に対して、**デモ データ -7.3-** は、前述の名前付け規則を使用するパッケージ名に先行します。 たとえば、財務と運用 7.3 の HQUS 法人に対する Financials パッケージの正式名称は、**デモ データ -7.3-200-Financials-HQUS.zip** になります。
 
 ## <a name="before-you-load-the-packages"></a>パッケージを読み込む前に
 
@@ -243,3 +243,4 @@ ms.locfileid: "8852580"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

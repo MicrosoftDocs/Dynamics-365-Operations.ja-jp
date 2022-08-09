@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 58ef1c6e1a7f4dd340bec4188cd7bbf46f75daee
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d23d179c5bc60e70ee7ea6958df7b2484475fc05
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867444"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103550"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
@@ -178,3 +178,4 @@ AOS への受信 IP アドレスが動的になります。 これにより、�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

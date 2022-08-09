@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6609f6f7ec04d71924fd9029d686d501b76131c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2de9e17002ffb96d609d6addcea41a746f7ab320
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867021"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103202"
 ---
 # <a name="create-deployable-packages-in-azure-pipelines"></a>Azure Pipelines に配置可能なパッケージの作成
 

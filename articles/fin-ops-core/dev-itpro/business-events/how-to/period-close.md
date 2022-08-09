@@ -1,7 +1,7 @@
 ---
 title: 財務期間終了のビジネス イベント
 description: この記事では、財務期間終了の業務プロセスでビジネス イベントを使用して、情報を取得し、内部コントロールを提供する方法について説明します。
-author: suhasrao1985
+author: Sunil-Garg
 ms.date: 10/11/2019
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 26
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 9a2345d7c69efdb970abc0456d7638aa41481682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b95a40b41eed67a970268f094733bf374eca673
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909482"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129480"
 ---
 # <a name="business-events-in-financial-period-close"></a>財務期間終了のビジネス イベント
 [!include [banner](../../includes/banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a26ef26a8c21df7626d7412d7b8e67ced0eeda0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37cadf844dbee10b0c432386ea7189fb2bcd0321
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891860"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111512"
 ---
 # <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "8891860"
 ## <a name="install-the-dual-write-table-maps-solution"></a><a id="install-table-maps"></a> 二重書き込みテーブル マップ ソリューションのインストール
 
 1. Power Apps の左ウィンドウで、**Solutions** を選択します。
-2. **AppSource を開く** を選択し、**Finance and Operations パッケージ用 Dataverse アドイン** という名前のソリューションを検索します。
+2. **AppSource を開く** を選択し、**財務と運用パッケージ用 Dataverse アドイン** という名前のソリューションを検索します。
 3. プロンプトに従ってソリューションをインポートします。
 4. 財務と運用アプリの **二重書き込み** ページで、**ソリューションの適用** を選択し、ダウンロードしてインストールしたテーブル マップを適用します。 ソリューションを適用すると、既定のテーブル マップが公開されていることを確認できます。
 
@@ -64,7 +64,7 @@ Microsoft が公開した二重書き込みテーブル マップ ソリュー�
 
 1. 二重書き込みコア ソリューションをインポートします。
 
-    1. 新しい二重書き込み環境 (財務と運用アプリ環境および Dataverse 環境)を作成します。
+    1. 新しい二重書き込み環境 (財務と運用アプリ環境および Dataverse 環境) を作成します。
     2. この記事前半の[二重書き込みコア ソリューションのインストール](#install-the-dual-write-core-solution) セクションの手順に従って、AppSource の二重書き込みコア ソリューションを Power Apps にインストールします。
     3. 二重書き込みコア ソリューションが Power Apps の **ソリューション** の下に一覧表示されていることを確認します。
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3617ec760e2238fddd6a24a85f32b70b93a8c7e6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 40ed6d492a3a148b49b8b9478c841b008b74df46
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884775"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111914"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
@@ -32,7 +32,7 @@ ms.locfileid: "8884775"
     > [!NOTE]
     > テーブル マッピングを変更する前に、停止する (実行しない) 必要があります。 そうしないと、変更は保存されません。
 
-2. **テーブル マッピング** タブで、財務と運用アプリまたは Dataverse から新しい列またはカスタム列を選択して、フィールドをカスタマイズできます。
+2. **テーブル マッピング** タブで、財務と運用アプリまたは Dataverse から新しい列またはカスタム列を選択して、列をカスタマイズできます。
 
     ![列のカスタマイズ。](media/customize-a-field.png)
 
@@ -117,3 +117,4 @@ Microsoft は引き続き新しいテーブルを追加していますが、標�
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

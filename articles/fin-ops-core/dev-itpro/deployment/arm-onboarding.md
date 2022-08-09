@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sasurana
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 95b3b862109cc5cf7ff3adb96a4dda47830a841e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fd10848e39a519c3c4642da9f0bf874853a3b19e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867480"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103642"
 ---
 # <a name="complete-the-azure-resource-manager-onboarding-process"></a>Azure Resource Manager (ARM) のオンボード プロセスの実施
 
@@ -130,3 +130,4 @@ LCS で Azure コネクタを設定または管理する際には、いくつか
 - 管理証明書は、リージョンに関係なく、同じ Azure サブスクリプション ID に対して同じプロジェクトで再利用することはできません。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

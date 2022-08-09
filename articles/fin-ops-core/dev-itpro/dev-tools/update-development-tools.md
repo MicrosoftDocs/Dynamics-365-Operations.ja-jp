@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0ef8f49175de81610f664a6a19d825de0722396
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 671d52d41b38ea0146c34dbd20a7169ca538e5b7
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866992"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103730"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 
@@ -28,20 +28,20 @@ ms.locfileid: "8866992"
 このチュートリアルを使用して、Visual Studio 開発ツールを新しいバージョンに更新します。 既存の Visual Studio 開発ツールをアンインストールして、新しい拡張機能をインストールする方法を説明します。 新しい拡張機能は、インストール可能な VSIX ファイルの形式です。 このファイルは、Dynamics Lifecycle Services (LCS) のサイトで使用可能なバイナリ修正プログラムの一部です。 VSIX ファイルは、バイナリ修正プログラム パッケージの **DevToolsService\\Scripts** フォルダーにあります。 
 
 > [!NOTE]
-> Finance and Operations プラットフォームをプラットフォーム更新プログラム 4 以降にアップグレードする場合は、この記事の手順に従う必要はありません。 プラットフォームのアップグレード プロセスの一部である自動のステップです。
+> 財務と運用のプラットフォームをプラットフォーム更新プログラム 4 以降にアップグレードする場合、この記事の手順に従う必要はありません。 プラットフォームのアップグレード プロセスの一部である自動のステップです。
 
 ## <a name="uninstall-the-existing-visual-studio-extension"></a>既存の Visual Studio 拡張機能をアンインストールする
 開発ツールの新しいバージョンをインストールするには、最初に既存のバージョンをアンインストールする必要があります。 インストールされている開発ツールのバージョンを確認します。 インストールしていない場合は、このセクションを省略できます。
 
 ### <a name="verify-your-current-version-of-the-visual-studio-extension"></a>Visual Studio 拡張機能の現在のバージョンを確認します。
 
-1.  Visual Studio の **ヘルプ&gt; About Microsoft Visual Studio** ダイアログを開いて、**Finance and Operations 開発者ツール** を表示します。
+1.  Visual Studio の **ヘルプ&gt; Microsoft Visual Studio について** ダイアログを開いて、**財務と運用開発者ツール** を表示します。
 2.  選択して **OK** をクリックします。
 
 ### <a name="uninstall-the-extension"></a>拡張機能をアンインストールする
 
 1.  Visual Studio の **ツール&gt;拡張子と更新** ダイアログを開きます。
-2.  **Finance and Operations Visual Studio ツール** を選択し、**アンインストール** をクリックします。
+2.  **財務と運用 Visual Studio ツール** を選択し、**アンインストール** をクリックします。
 3.  拡張機能がアンインストールされると、Visual Studio を終了します。
 
 ## <a name="install-a-new-version-of-the-extension"></a>拡張機能の新しいバージョンのインストール

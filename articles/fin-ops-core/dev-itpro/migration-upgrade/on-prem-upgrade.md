@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: 33779c12381339916f545e13bcb17fba72155412
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a2115d004502c30fdde9975ec7ed4dc8a5b533c
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866146"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124678"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、財務と運用バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細プロセスを説明します。  
+この記事では、Finance + Operations (on-premises) のバージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細プロセスを説明します。  
 
 > [!NOTE]
 > 運用環境のアップグレードを実行する前に、サンドボックス環境のアップグレードを実行してください。
@@ -32,7 +32,7 @@ ms.locfileid: "8866146"
 ## <a name="on-premises-upgrade-from-version-7x-to-100x"></a>バージョン7. x から10.0. x へのオンプレミスのアップグレード
 
 > [!NOTE]
-> このアップグレード プロセスは完了に時間がかかり、データ アップグレード中はずっと Finance and Operations が使用できなくなります。
+> このアップグレード プロセスは完了に時間がかかり、データ アップグレード中はずっと Finance + Operations が使用できなくなります。
 
 7.x から 10.0.x にアップグレードするにあたって、現在対応している可能性のある 2 つのパスがあります。
 
@@ -113,11 +113,11 @@ ms.locfileid: "8866146"
 
     a.  LCS では、共有資産ライブラリに移動します。
 
-    b.  **資産タイプを選択** 配下で、**モデル** を選択し、Dynamics 365 for Finance and Operations オンプレミスのバージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
+    b.  **資産タイプの選択** で、**モデル** を選択し、Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
 
     c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
      
-    d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
+    d.  データベースを構成する必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
 
     e.  LCS にて、新たな環境を設定し、バージョン 10.0.x (再展開) を展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
@@ -196,7 +196,7 @@ ms.locfileid: "8866146"
 
     a.  LCS では、共有資産ライブラリに移動します。
 
-    b.  **資産タイプを選択** 配下で、**モデル** を選択し、Dynamics 365 for Finance and Operations オンプレミスのバージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
+    b.  **資産タイプの選択** で、**モデル** を選択し、Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
 
     c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 
@@ -240,7 +240,7 @@ DatabaseServer または DatabaseUser のような追加のパラメーターを
 
 -   **-DatabaseName** - アップグレードするデータベースの名前です。
 
--   **-DatabaseServer** - Finance and Operations (オンプレミス) データベースが含まれているデータベース サーバー。
+-   **-DatabaseServer** - Finance + Operations (on-premises) データベースが含まれているデータベース サーバー。
 
 -   **-DatabaseUser** - SQL 認証のユーザー名です。
 
@@ -399,3 +399,4 @@ else{
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

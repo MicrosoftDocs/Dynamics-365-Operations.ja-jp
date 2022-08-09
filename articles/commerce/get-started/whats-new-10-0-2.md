@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 321952d9f5f410393ca2e0f133492dd0a504ab41
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4bff6434b5adf60d7c94c00ebea0f3256fa9a03d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876979"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070238"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-for-retail-version-1002"></a>Dynamics 365 for Retail バージョン 10.0.2 の新機能と変更点
 
@@ -29,7 +29,7 @@ ms.locfileid: "8876979"
 この記事では、Microsoft Dynamics 365 for Retail の新機能および変更された機能について説明します。 
 
 
-Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2)を参照してください。
+Microsoft Dynamics 365 Finance の機能については [財務と運用バージョン 10.0.2 の新機能と変更点(2019 年 5 月)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2) を参照してください。
 
 
 ## <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>チェコ共和国向け会計登録サービス統合サンプル

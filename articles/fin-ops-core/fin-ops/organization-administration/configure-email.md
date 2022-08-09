@@ -2,7 +2,7 @@
 title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: jasongre
-ms.date: 06/17/2022
+ms.date: 07/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff03cd8031710354fa77cb9c2cde867432dfcf6d
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 0c2f66ef275518ca76000bf6e3cd15e14a713ec3
+ms.sourcegitcommit: 1d8b0af5ea5f42916267e311e677d91bad8ad164
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027073"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9146940"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -78,6 +78,7 @@ ms.locfileid: "9027073"
 </tbody>
 </table>  
   
+
 #### <a name="authentication"></a>認証
 
 <table>
@@ -179,7 +180,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 9. **回収** &gt; **顧客残高** &gt; **コレクション** の順にクリックし、**コレクション** ページを開きます。
 10. **連絡** &gt; **電子メール** &gt; **連絡先に対する明細書** の順にクリックします。
 11. ダイアログ ボックスで既定値を承諾する場合は、**OK** をクリックします。
-12. メール オプションを使用するように求められたら、**Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントの使用** を選択し、**OK** をクリックします。
+12. メール オプションを使用するように求められたら、**Microsoft Dynamics 365 Finance 電子メール クライアントの使用** を選択し、**OK** をクリックします。
 13. テスト メッセージを受信するには、**宛先アドレス** をメール アドレスに変更します。
 
     SMTP 設定で指定されたアカウントが、電子メール アカウントの **Send As** および **Send On Behalf Of** であることを確認します。 これを確実にするための最も簡単な方法は、電子メール アカウントを SMTP 設定で使用することです。
@@ -274,7 +275,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 <table>
   <tr>
-    <th>電子メール設定を検証し、テスト電子メールを送信します。</th>
+    <th id="verify-email-settings">電子メール設定を検証し、テスト電子メールを送信します。</th>
     <td>
       <ol>
         <li><b>システム管理 &gt; 設定 &gt; 電子メール &gt; 電子メール パラメーター</b>の順に移動します。</li>
@@ -286,7 +287,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
     </td>
   </tr>
   <tr>
-    <th>電子メールのバッチ処理が実行されていることを検証します。</th>
+    <th id="verify-email-batch-process">電子メールのバッチ処理が実行されていることを検証します。</th>
     <td>
       <ol>
         <li><b>システム管理 &gt; 定期処理のタスク &gt; 電子メールの処理 &gt; バッチ</b>の順に移動します。</li>
@@ -300,19 +301,19 @@ SysEmail フレームワークを介して有効になっている電子メー�
     </td>
   </tr>
   <tr>
-    <th>バッチ電子メールの状態を確認します。</th>
+    <th id="review-status">バッチ電子メールの状態を確認します。</th>
     <td>
       <ol>
         <li><b>システム管理 &gt; 定期処理のタスク &gt; 電子メールの処理 &gt; バッチ電子メール送信状</b>の順に移動します。</li>
         <li>電子メールが正しいアカウントから送信されていることを確認します。
           <p>アカウントが正しくない場合、必要に応じてユーザー オプション、システム テンプレート、組織テンプレートなどの設定を調整する必要があります。</p>
         </li>
-        <li>すべての電子メール ユーザー アカウントに、構成された SMTP アカウントに対して<b>送信者</b>アクセス許可が付与されていることを確認します (この記事の後半にある<a href="#saveas_permissions">すべての電子メール アカウントに適切な送信者アクセス許可があることを確認する</a>を参照してください)。</li>
+        <li>すべての電子メール ユーザー アカウントに、構成された SMTP アカウントに対して<b>送信者</b>アクセス許可が付与されていることを確認します (この記事の後半にある<a href="#sendas_permissions">すべての電子メール アカウントに適切な送信者アクセス許可があることを確認する</a>を参照してください)。</li>
       </ol>
     </td>
   </tr>
   <tr>
-    <th>電子メール履歴ページで任意のエラーを確認します。</th>
+    <th id="review-errors">電子メール履歴ページで任意のエラーを確認します。</th>
     <td>
       <ol>        
         <li><b>システム管理 &gt; 設定 &gt; 電子メール &gt; 電子メール履歴</b>の順に移動します。
@@ -323,18 +324,18 @@ SysEmail フレームワークを介して有効になっている電子メー�
     </td>
   </tr>
   <tr>
-    <th id="saveas_permissions">すべての電子メール アカウントに適切な送信アクセス許可があることを確認します。</th>
+    <th id="sendas_permissions">すべての電子メール アカウントに適切な送信アクセス許可があることを確認します。</th>
     <td>Microsoft 365 管理センターで、電子メールの送信に使用されるすべてのユーザー メール アカウントに、構成された SMTP アカウントに対する <b>Send As</b> と <b>Send On Behalf Of</b> アクセス許可があることを確認します。 詳細については、<a href="/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user">Microsoft 365 の別のユーザーにメールボックスのアクセス許可を与える</a>を参照してください。</td>
   </tr>
   <tr>
-    <th>ユーザー メールボックスを確認します。</th>
+    <th id="verify-user-mailboxes">ユーザー メールボックスを確認します。</th>
     <td>影響を受ける (またはすべての) ユーザー メールボックスにサインインして、それらが有効であり、サインインを使用してアクセスできることを確認します。</td>
   </tr>
 </table>
- 
+
  ### <a name="specific-exchange-email-issues"></a>特定の交換メールの問題
 
--  **Exchange 経由で電子メールが送信されると、"(401) 承認されていません"、または "(403) 許可されていません" というエラーが発生します**
+-  **<span id="unauthorized-forbidden-error">Exchange 経由で電子メールが送信されると、"(401) 承認されていません"、または "(403) 許可されていません" というエラーが発生します</span>**
 
     <table>
       <tr>
@@ -354,7 +355,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
--  **Exchange 経由で電子メールが送信されると、"(404) 見つかりません" というエラーが発生します**
+-  **<span id="404-not-found">Exchange 経由で電子メールが送信されると、"(404) 見つかりません" というエラーが発生します</span>**
 
     <table>
       <tr>
@@ -378,7 +379,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 電子メールが SMTP を介して送信されたときに引き続き問題が発生する場合は、以下の特定のエラーのいずれかが発生している可能性があります。 そうでない場合は、[SMTPer.net](https://www.smtper.net/) などのツールに SMTP アカウント情報を入力して、SMTP サーバーとアカウントが有効で正しく機能していることを確認します。
 
--  **SMTP メールの送信に失敗し、"単一ラベル ドメインの受信者アドレスは受け付けられません" と表示されます**
+-  **<span id="single-label-domain-not-accepted-error">SMTP メールの送信に失敗し、"単一ラベル ドメインの受信者アドレスは受け付けられません" と表示されます</span>**
 
     <table>
       <tr>
@@ -391,7 +392,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
--  **SMTP メールの送信に失敗し、"メールボックスがいっぱいです" と表示されます**
+-  **<span id="mailbox-full-error">SMTP メールの送信に失敗し、"メールボックスがいっぱいです" と表示されます</span>**
 
     <table>
       <tr>
@@ -404,7 +405,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
--  **SMTP メールの送信に失敗し、"要求が認証に成功する基準を満たさなかったため認証に失敗しました" と表示されます**
+-  **<span id="authentication-unsuccessful-error">SMTP メールの送信に失敗し、"要求が認証に成功する基準を満たさなかったため認証に失敗しました" と表示されます</span>**
 
     <table>
       <tr>
@@ -417,7 +418,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
--  **SMTP メールの送信に失敗し、"メールボックスの SmtpClientAuthentication が無効なため認証に失敗しました" と表示されます**
+-  **<span id="smtpclientauthentication-disabled-error">SMTP メールの送信に失敗し、"メールボックスの SmtpClientAuthentication が無効なため認証に失敗しました" と表示されます</span>**
 
     <table>
       <tr>
@@ -430,7 +431,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
-- **SMTP メールの送信に失敗し、"SMTP サーバーが認証をサポートしていない場合は、SMTP ユーザー名とパスワードをクリアしてください" と表示されます**
+- **<span id="smtp-emails-fail-to-send-with-if-your-smtp-server-doesnt-support-authentication-please-clear-the-smtp-user-name-and-password">SMTP メールの送信に失敗し、"SMTP サーバーが認証をサポートしていない場合は、SMTP ユーザー名とパスワードをクリアしてください" と表示されます</span>**
 
     <table>
       <tr>
@@ -443,7 +444,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
-- **SMTP メールの送信に失敗し、"5.7.57 SMTP" エラー、またはユーザーが認証されていないか、認証が必要というメッセージが表示されます**
+-  **<span id="smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required">SMTP メールの送信に失敗し、"5.7.57 SMTP" エラー、またはユーザーが認証されていないか、認証が必要というメッセージが表示されます</span>**
 
     <table>
       <tr>
@@ -456,7 +457,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
-- **SMTP メールの送信に失敗し、"Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: 暗号化エラーが例外で発生しました" と表示されます**
+- **<span id="smtp-emails-fail-to-send-with-microsoftdynamicsaxxppsecuritycryptoencryptionexception-encryption-error-occurred-with-exception">SMTP メールの送信に失敗し、"Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: 暗号化エラーが例外で発生しました" と表示されます</span>**
 
     <table>
       <tr>
@@ -469,7 +470,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
     </table>
 
--  **SMTP メールの送信に失敗し、"クライアントにはこの送信者として送信するアクセス許可がありません" と表示されます**
+-  **<span id="smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender">SMTP メールの送信に失敗し、"クライアントにはこの送信者として送信するアクセス許可がありません" と表示されます</span>**
 
     <table>
       <tr>
@@ -478,7 +479,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
       </tr>
       <tr>
         <th>固定</th>
-        <td>電子メール アカウントに適切な<b>送信者</b>アクセス許可があることを確認します。 詳細については、この記事の前半にある<a href="#saveas_permissions">すべての電子メール アカウントに適切な送信者アクセス許可があることを確認する</a>を参照してください。
+        <td>電子メール アカウントに適切な<b>送信者</b>アクセス許可があることを確認します。 詳細については、この記事の前半にある<a href="#sendas_permissions">すべての電子メール アカウントに適切な送信者アクセス許可があることを確認する</a>を参照してください。
       </tr>
     </table>
 
@@ -503,3 +504,4 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

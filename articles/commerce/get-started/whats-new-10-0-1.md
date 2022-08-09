@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 672001f8e7cdb29d659674df2387a60417ec50f6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f07633b477f21e62b23fae33857cd6d346a2f5b5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876982"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069976"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1001"></a>Dynamics 365 for Retail バージョン 10.0.1 の新機能および変更された機能
 
@@ -27,9 +27,9 @@ ms.locfileid: "8876982"
 
 この記事では、Dynamics 365 Retail の新機能および変更された機能について説明します。 
 
-Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1)を参照してください。
+Microsoft Dynamics 365 Finance の機能については [財務と運用 バージョン 10.0.1 の新機能と変更点(2019 年 4 月)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1) を参照してください。
 
-## <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
+## <a name="view-pos-extension-package-information"></a>POS 拡張機能パッケージ情報の表示
 
 この機能は、コア POS の一部として含まれる拡張パッケージを一覧表示するとともに、ステータス情報やその他の詳細を表示できます。
 

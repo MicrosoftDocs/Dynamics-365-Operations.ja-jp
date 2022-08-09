@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 185f819c25b0ee71fcb36087ec6128abb0ac6b62
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 496339a5d7129147758f6a20af0a82356ac3bb18
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884983"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111678"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -55,13 +55,13 @@ ms.locfileid: "8884983"
 
 1. プラットフォーム更新プログラムとアプリのバージョンを検証します。
 
-    財務と運用アプリ環境で、プラットフォーム アップデート 33 (アプリ バージョン 10.0.9) 以降が実行されていることを確認します。
+    財務と運用アプリ環境で、プラットフォーム更新プログラム 33 (アプリ バージョン 10.0.9) 以降が実行されていることを確認します。
 
     **関連する正常性チェックの結果:**
 
     *アプリのバージョンが最新です*
 
-    *二重書き込みは、Platform Update PU 33 (アプリ バージョン 10.0.9) 以上の財務と運用アプリ環境でサポートされています*
+    *二重書き込みは、プラットフォーム更新プログラム PU 33 (アプリ バージョン 10.0.9) 以上の財務と運用アプリ環境でサポートされています*
 
 2. 二重書き込みコア ソリューションをインストールします。
 
@@ -96,7 +96,7 @@ ms.locfileid: "8884983"
     *Dataverse は財務と運用アプリに接続可能*<br>
     *二重書き込みを有効にする前に、相互に接続するアプリへのアクセスを許可する必要があります<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 のアプリ ユーザーが存在します<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b のアプリ ユーザーが存在します*
 
-4. Dataverse に接続できるように、財務と運用アプリのアクセスを許可します。 アプリケーション ID およびセキュリティ ロールに関する次の情報を使用して、[アプリケーション ユーザーの作成](/power-platform/admin/manage-application-users#create-an-application-user)の手順に従います。
+4. 財務と運用アプリに接続できるように Dataverse アクセスを許可します。 アプリケーション ID およびセキュリティ ロールに関する次の情報を使用して、[アプリケーション ユーザーの作成](/power-platform/admin/manage-application-users#create-an-application-user)の手順に従います。
 
     + **アプリケーション**: これらのアプリケーションにユーザーを追加します:
 
@@ -185,7 +185,7 @@ ms.locfileid: "8884983"
 
     2. **受け入れる** を選択します。
 
-        **承認** を選択することで、テナントにアプリケーション ID **33976c19-1db5-4c02-810e-c243db79efde** を持つアプリのインストールに同意したことになります。 Dataverse は、財務と運用アプリと通信するためにこのアプリが必用です。
+        **承認** を選択することで、テナントにアプリケーション ID **33976c19-1db5-4c02-810e-c243db79efde** を持つアプリのインストールに同意したことになります。 Dataverse には、財務と運用アプリと通信するためにこのアプリが必要です。
 
     
     **関連する正常性チェックの結果:**<br>
@@ -197,3 +197,4 @@ ms.locfileid: "8884983"
 [二重書き込みウィザードを使用して環境をリンクする](link-your-environment.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

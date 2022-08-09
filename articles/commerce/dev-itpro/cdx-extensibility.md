@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: c7bffe008809b8e8be70ff7ff0332e649f739381
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 31ccf552991c4f805d6e22fe70194ebd1e455aa0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883990"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069046"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、Commerce 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 8 または Microsoft Dynamics 365 Retail プラットフォーム更新プログラム 8 で追加された新しい拡張ポイントを使用します。
+この記事では、Commerce 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。 この拡張機能では、Microsoft Dynamics 365 Finance プラットフォーム更新プログラム 8 Microsoft Dynamics 365 Retail プラットフォーム更新プログラム 8 で追加された新しい拡張ポイントを使用します。
 
 CDX は、コマース バックオフィス (HQ) と、オンライン ストアまたは従来型の店舗などのチャネルの間でデータを転送するシステムです。 HQ とチャネル データベース間のデータ転送は、スケジューラ ジョブによって制御されます。 各スケジューラ ジョブには、スケジューラ サブジョブの一覧が含まれています。 スケジューラ サブジョブには、ソース テーブルと出力先テーブルの名前と、それらのテーブルの転送フィールド マッピングが含まれています。 HQ とチャネル データベース間のデータ同期をコンフィグレーションするには、2 つの方法があります。
 

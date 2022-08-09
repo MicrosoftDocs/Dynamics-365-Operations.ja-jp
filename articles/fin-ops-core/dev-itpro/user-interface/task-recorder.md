@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0699331f4fdc5599c3c435c55669f6a24721d67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9d9c45fa2c4c1c6060741eb1295a9af5a07759e0
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910368"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114323"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -50,7 +50,7 @@ ms.locfileid: "8910368"
 タスク レコーダーはすべての財務と運用アプリに含まれており、ユーザーが初めてクライアントを開いた直後に業務プロセスの記録を開始できます。
 
 > [!IMPORTANT]
-> **タスク ガイド** タブは、現在のところ、コマースおよび人事管理では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 人事管理でのはじめにの経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 Commerce および Human Resources の両方に関する [財務と運用アプリ ドキュメント](../../fin-ops/index.md) で手順を追ったヘルプも利用できます。
+> **タスク ガイド** タブは、現在のところ、コマースおよび人事管理では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 人事管理でのはじめにの経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 Commerce および Human Resources の両方に関する[財務と運用アプリケーション ドキュメント](../../fin-ops/index.md)で手順を追ったヘルプも利用できます。
 
 ## <a name="start-a-new-recording"></a>新しい記録を開始する
 次のステップでは、タスク レコーダーを使用して新しい記録を開始する方法を示します。
@@ -441,7 +441,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 
 ### <a name="import-a-recorded-test"></a>記録されたテストのインポート
 
-1.  Finance and Operations 開発ツールを使い、Visual Studio を開きます。
+1.  財務と運用の開発ツールを使い、Visual Studio を開きます。
 2.  **Dynamics 365 &gt; アドイン &gt; タスク記録のインポート** に移動します。
 3.  **タスクの記録をインポート** メニューで、**参照** ボタンを使用して以前にダウンロードした記録ファイルを検索します。
 4.  必要に応じて、生成されたテスト コードをスタートアップ プロジェクトに追加することを選択します。 これには、プロジェクトを含むソリューションがスタートアップ プロジェクトとして設定されている必要があります。 これにより、生成された X++ テストがプロジェクトと同じモデルになります。
@@ -487,3 +487,4 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

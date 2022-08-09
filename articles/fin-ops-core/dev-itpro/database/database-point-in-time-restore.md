@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cadabd481c1132a4a9400deac28f24372be419bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ac6f7d2ddac138d13c492b094efdf2b258ce696c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867557"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103750"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
@@ -59,3 +59,4 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

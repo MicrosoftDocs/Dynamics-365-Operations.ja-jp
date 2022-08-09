@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1f5b31292e20d19b82b09dceb46e396b85c02c8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: de4d6f974c6a7a9858cd47d02c7597ce79f7470d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881411"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108643"
 ---
 # <a name="custom-service-development"></a>カスタム サービスの開発
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations 用にカスタム サービスを開発できます。 開発者が 1 つのサービス グループに属するカスタム サービスを書き込むと、そのサービス グループは次の 2 つのエンドポイントに常に配置されます。
+財務と運用向けにカスタム サービスを開発できます。 開発者が 1 つのサービス グループに属するカスタム サービスを書き込むと、そのサービス グループは次の 2 つのエンドポイントに常に配置されます。
 
 - SOAP エンドポイント
 - JSON エンドポイント
@@ -68,3 +68,4 @@ JSON サービスを使用するためのコード例は、[Microsoft Dynamics A
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

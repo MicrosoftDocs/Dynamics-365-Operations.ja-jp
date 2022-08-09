@@ -5,23 +5,24 @@ author: MilindaV
 ms.date: 05/27/2021
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
-ms.search.form: EntityStoreOnPrem
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 27661
-ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c772cc8e409dfedd5b3b6f363823b6b5f63a564
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27661"
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.form: EntityStoreOnPrem
+ms.service: ''
+ms.openlocfilehash: 803c9add79d7a78e1feb315fa6d43cdebc7f95db
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892210"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206637"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 
@@ -29,7 +30,7 @@ ms.locfileid: "8892210"
 
 クラウド版では、Microsoft Power BI との緊密な統合を可能にするいくつかの機能が用意されています。 いくつかの機能は、オンプレミスの配置用にはまだ実装されていません。 ただし、オンプレミス配置でのエンティティ格納を利用することで、PowerBI.com を使ってデータのレポートや分析ができるようになっています。 
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) 以降にて動作する、オンプレミス配置で使用できる分析機能について概説します。
+この記事では、Microsoft Dynamics 365 Finance プラットフォーム更新プログラム 26 (2019 年 5 月) 以降にて動作する、オンプレミスの展開で使用できる分析機能について概説します。
 
 | 特性/機能                                                           | クラウド     | オンプレミス (プラットフォーム更新プログラム 26 またはそれ以降) |
 |------------------------------------------------------------------------------|-----------|-------------------------------------------|
@@ -135,3 +136,4 @@ ms.locfileid: "8892210"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

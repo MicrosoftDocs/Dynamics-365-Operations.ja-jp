@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: b0d36369a7414a4cf59ebcb09a1cf725ad5e39c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5691fa91818205072028d39fd9802cf8bfae52c
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866217"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124674"
 ---
 # <a name="ax-2009-migration--create-package-templates"></a>AX 2009 の移行 － パッケージ テンプレートの作成
 

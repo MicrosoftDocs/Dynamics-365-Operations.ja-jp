@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 66137bd9a242374cf5088cd5c7043d082843ea49
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8cf16b7dab9cda1579047d4e8b24878f79ec32d2
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876691"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109016"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
 
@@ -35,9 +35,9 @@ ms.locfileid: "8876691"
 
 | メニュー項目       | 説明                                                                                                                                                                                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このブックには、Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                               |
-| Word にエクスポート  | データは Word 文書にエクスポートされます。 このドキュメントには、Finance and Operations の参照が含まれていないため、データを更新することはできません。                                                                                                           |
-| Excel で開く   | Microsoft Dynamics Office アドインを含むブックが作成されます。 ワークブックには Finance and Operations の参照が含まれており、アドインでホストされているデータ コネクタからデータをリフレッシュ、更新、公開することができます。 |
+| Excel にエクスポート | データは Excel ワークブックにエクスポートされます。 このブックには、財務と運用の参照が含まれていないため、データを更新することはできません。                                                                                               |
+| Word にエクスポート  | データは Word 文書にエクスポートされます。 このドキュメントには、財務と運用の参照が含まれていないため、データを更新することはできません。                                                                                                           |
+| Excel で開く   | Microsoft Dynamics Office アドインを含むブックが作成されます。 ワークブックには、財務と運用の参照が含まれており、アドインでホストされたデータ コネクタからデータをリフレッシュ、更新、公開することができます。 |
 
 ## <a name="how-menu-items-are-added-to-the-open-in-office-menu"></a>Office で開くメニューに、どのようにメニュー項目が追加されますか。
 エクスポート オプションは、次の方法で **Office で開く** メニューに追加されます。
@@ -298,3 +298,4 @@ public class MyEntity extends common
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

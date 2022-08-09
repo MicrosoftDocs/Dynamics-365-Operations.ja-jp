@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5a81344f0bb7ca0022d10a2988dca4ca55c70e3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bf61958cd3fa69107de126c85f0ede48fa9ed70b
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781921"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114343"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 
@@ -30,7 +30,7 @@ HierarchyViewer コントロールを使用して、人、製品、または組�
 ![HierarchyViewer コントロールのツリー構造を示す図。](./media/hierarchyViewer_refresh.png)
 
 > [!NOTE]
-> このビジュアルは、[Finance and Operations のバージョン 10.0.22 のプラットフォーム更新プログラム](../get-started/whats-new-platform-updates-10-0-22.md) から使用可能です。
+> [財務と運用のバージョン 10.0.22 用のプラットフォーム更新プログラム](../get-started/whats-new-platform-updates-10-0-22.md) からこのビジュアルが使用可能です。
 
 HierarchyViewer コントロールは、常に 4 つのレベルの情報を表示します。 現在のノードはツリーの現在のフォーカスであり、必ずしもルート ノードである必要はありません。 現在のノードは、現在のビューで最大の物理ノードで表され、左側に色付きバーが表示されます。 現在のノードの上には、ルート ノードから現在のノードまで小さい親ノードの軌跡があります。 現在のノードの下には子ノードのレベルがあり、このレベルでは無数のノードが存在する可能性があります。 既定では、各ページで一度に 3 つの子ノードが表示されますが、**子供の数** プロパティを調整することで変更できます。 **次へ** および **前に** リンク ボタンを使用すると、ユーザーは子レベルで他のノードにページングできます。 最後に、各子ノードに対して表示される孫ノードのレベルがあります。 各子には、無数の孫ノードがあります。また、各子ノードに対して一度に表示される孫の数は、**孫の数** プロパティによって制御されます。 ユーザーは、**次へ** および **前へ** 矢印ボタンを使用して、孫レベルでメンバを通じてページ を上または下に移動できます。 ノードの対話型の表示にはビジネス ロジックは必要ありません。
 
@@ -103,3 +103,4 @@ protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _co
 ノードのビジュアルを変更することはできません。 このデザインは、一貫したビジュアルおよびユーザー操作を示します。 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

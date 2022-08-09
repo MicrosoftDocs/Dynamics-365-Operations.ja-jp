@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 3156292bdad6f38701f4a3e41783ef20c77681f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a81f38f082485aa8ece764819e2cb4b6c7fa0e6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867355"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103445"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -37,7 +37,7 @@ Dynamics 365 Finance + Operations (on-premises) は、顧客データ センタ�
 クラウド展開とオンプレミス展開の機能は異なります。 これらの違いは、計画に影響します。 違いについては、次のトピックで説明します。
 - [配置オプション](choose-deployment-type.md)
 - [クラウドとオンプレミスの機能比較](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [Finance and Operations の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
+- [財務と運用の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
 
 ## <a name="how-lcs-is-used-with-on-premises-deployments"></a>オンプレミス配置で LCS を使用する方法
 Microsoft Dynamics Lifecycle Services (LCS) は、アプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 顧客とパートナーは LCS を使用して、クラウドとオンプレミスの両方の導入を管理します。 以下のタスクに対して LCS を使用することができます。
@@ -233,3 +233,4 @@ Finance + Operations のオンプレミス配置オプションは、オンプ�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

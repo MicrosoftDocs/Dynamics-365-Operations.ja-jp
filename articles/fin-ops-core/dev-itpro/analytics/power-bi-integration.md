@@ -6,21 +6,22 @@ ms.date: 07/09/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PowerBIConfiguration
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 31001
-ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe3ed3191b79acccb07577f340283d8c3b8f8599
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "31001"
+ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
+ms.search.form: PowerBIConfiguration
+ms.openlocfilehash: ff87abe3ecb590844ae510bc028ab0244da5ffca
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910371"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206112"
 ---
 # <a name="features-available-through-the-power-bi-integration"></a>Power BI の統合によって使用できる機能
 

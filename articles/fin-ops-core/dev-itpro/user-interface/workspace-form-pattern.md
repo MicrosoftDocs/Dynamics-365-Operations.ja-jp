@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47a88df810b42615b603e183ede04a6397fd5674
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a1f4f7d65b9349bda366b57d7f2b1de977753184
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895249"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114276"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 
@@ -46,7 +46,7 @@ ms.locfileid: "8895249"
 
 [![運用ワークスペースのワイヤーフレーム。](./media/verticalOperationalWorkspace.png)](./media/verticalOperationalWorkspace.png)
 
-## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
+## <a name="pattern-changes-for-finance-and-operations-apps"></a>財務と運用アプリのパターンの変更
 Microsoft Dynamics AX 2012 ロール センターは、アクティビティに特化した複数のワークスペースで置き換えられました。
 
 ## <a name="model"></a>モデル
@@ -202,3 +202,4 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 8c70dc94eefcd7940b1171601bf360c145be6014
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 200ddb071ee894918a2db80c86aa604c0f08c6d3
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871512"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109058"
 ---
 # <a name="preconfigured-system-accounts"></a>コンフィギュレーション済みのシステム アカウント
 
 [!include [banner](../includes/banner.md)]
 
-構成済みのシステム アカウントは、Microsoft が Finance and Operations サービスを管理および運用し、特定の機能をユーザーに提供できるように、配置された環境に含まれます。 次のテーブルは、アカウントの目的とユース ケースを含む、各アカウントに関する情報を示しています。  
+構成済みのシステム アカウントは、Microsoft が財務と運用サービスを管理および運用し、特定の機能をユーザーに提供できるように、配置された環境に含まれます。 次のテーブルは、アカウントの目的とユース ケースを含む、各アカウントに関する情報を示しています。  
 
 > [!IMPORTANT] 
 > システム アカウントを削除しないでください。 これらの勘定を削除すると、Microsoft が提供する主要な機能が中断されます。
@@ -42,3 +42,4 @@ ms.locfileid: "8871512"
 | SysHealthServiceUser または Axping (展開された製品バージョンによって異なる) | 環境の可用性と状態を監視し、必要に応じて警告を提供します。 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

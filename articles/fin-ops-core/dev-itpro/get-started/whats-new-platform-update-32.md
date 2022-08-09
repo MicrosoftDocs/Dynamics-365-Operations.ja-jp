@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
-ms.openlocfilehash: b9f120cb741999994163fb7af62cafd22cfc78c2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 47f99510f68e755bf003cb772c4ad00a0a313363
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866671"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066891"
 ---
 # <a name="whats-new-or-changed-in-platform-update-32-for-finance-and-operations-apps-february-2020"></a>財務と運用アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能
 
@@ -39,9 +39,9 @@ ms.locfileid: "8866671"
 
 詳細情報については、[データ管理エクスポートのファイル サイズ制限が削除されました](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed)を参照してください。
 
-### <a name="finance-and-operations-aos-kernel-improvements"></a>Finance and Operations AOS (カーネル) の改善
+### <a name="finance-and-operations-aos-kernel-improvements"></a>財務と運用 AOS (カーネル) の改善
 
-この機能の詳細については、[Finance and Operations AOS (カーネル) の改善](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/finance-and-operations-aos-kernel-improvements)を参照してください。
+この機能の詳細については、[財務と運用 AOS (カーネル) の改善](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/finance-and-operations-aos-kernel-improvements) を参照してください。
 
 ### <a name="continued-stabilization-of-saved-views"></a>保存されたビューの継続的な安定化
 
@@ -81,7 +81,7 @@ ms.locfileid: "8866671"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

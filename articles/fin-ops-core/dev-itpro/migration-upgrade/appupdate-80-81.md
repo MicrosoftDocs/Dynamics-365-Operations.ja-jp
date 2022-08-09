@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 78d5298e55f3749ab85084ad5c60f89a07ddaef7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e340b56f15538ceb8fc7b9a51bde631280b240e3
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866276"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123514"
 ---
 # <a name="update-environments-from-version-80-to-100x"></a>バージョン 8.0 から 10.0.X への環境の更新
 

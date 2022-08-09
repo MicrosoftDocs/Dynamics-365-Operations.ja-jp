@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: ff18035c971f314fad3f6bdc6f0351274660da60
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf3116466e45cbc2be41226de24ade4e4377c32a
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867486"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103546"
 ---
 # <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス展開への更新プログラムの適用
 
@@ -42,7 +42,7 @@ ms.locfileid: "8867486"
 オンプレミス環境の展開後にオンプレミス環境に更新を適用するには、環境の **環境の詳細** ページにある **管理** で **更新プログラムを適用** を選択します。
 
 > [!NOTE]
-> Finance and Operations 用プラットフォーム更新プログラム 12 以降の環境でのみ、展開後に更新プログラムを適用することができます。 環境には、LCS で使用可能なローカル エージェントの最新バージョンも必要です。 詳細については、「[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md)」を参照してください。 プラットフォーム更新プログラム 12 よりも古いプラットフォームのバージョンを使用している場合は、すでに展開されている環境を再構成して、カスタマイズを更新したり、最新のプラットフォーム リリースに更新したりすることができます。 環境を再配置する方法の詳細については、 [オンプレミス環境の再配置](redeploy-on-prem.md) を参照してください。
+> 財務と運用のプラットフォーム更新プログラム 12 以降の環境でのみ、展開後に更新プログラムを適用することができます。 環境には、LCS で使用可能なローカル エージェントの最新バージョンも必要です。 詳細については、「[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md)」を参照してください。 プラットフォーム更新プログラム 12 よりも古いプラットフォームのバージョンを使用している場合は、すでに展開されている環境を再構成して、カスタマイズを更新したり、最新のプラットフォーム リリースに更新したりすることができます。 環境を再配置する方法の詳細については、 [オンプレミス環境の再配置](redeploy-on-prem.md) を参照してください。
 
 ## <a name="apply-application-or-binary-updates-through-lcs"></a>アプリケーションまたは LCS を通じてバイナリ更新プログラムを適用します
 次の手順を使用すると、X++、すべてのバイナリ、またはプラットフォーム バイナリの更新プログラムを適用できます。 
@@ -128,3 +128,4 @@ ms.locfileid: "8867486"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

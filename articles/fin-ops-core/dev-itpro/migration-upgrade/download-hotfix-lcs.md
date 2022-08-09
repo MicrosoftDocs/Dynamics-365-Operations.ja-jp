@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29229c0bac83c2244252003dae942caa920d7207
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c4777384e3fe6d5045d7402f17b5f7e0ad28ff62
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866167"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124838"
 ---
 # <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 
@@ -51,7 +51,7 @@ ms.locfileid: "8866167"
 
 
 
-### <a name="finance-and-operations-apps"></a>Finance and Operations アプリ
+### <a name="finance-and-operations-apps"></a>財務と運用アプリ
 - **アプリケーション の バージョン 8.1 および それ以降のバージョン (ワン バージョン)** - バージョン 8.1 および それ以降のバージョン は ワン バージョン のサービス更新が含まれています。 これはアプリケーション と プラットフォーム のすべてのアップデートを組み合わせた累積的なバイナリ アップデートとなります。 今回のリリースから、細かい X++ 更新プログラムはなくなります。  
 
      環境のバージョンと [サービス更新の可用性](../../fin-ops/get-started/public-preview-releases.md) に基づいて、環境で利用できる更新プログラムを選択するオプションがあります。 各更新オプションは、バージョン番号とビルド番号に関連付けられています。  

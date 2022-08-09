@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-03-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 68da5621dee7e1bd26c8f8bb481abe2439a3bb64
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 126fa08f60995a75e8b267607038a9b856311ab6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866368"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103626"
 ---
 # <a name="restart-environment-services"></a>環境サービスの再開
 
@@ -25,7 +25,7 @@ ms.locfileid: "8866368"
 
 Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使用すると、**セルフサービス** タイプの階層 2、階層 3、階層 4、または階層 5 の標準承認テスト (サンドボックス) 環境に関連付けられた個々のサービスを再開することができます。 この機能を使用すると、次のサービスを再起動することができます。
 
-- **財務と運用アプリ サービス**- これには、X++ランタイムとバッチ機能が含まれます。
+- **財務と運用アプリ サービス** - これには、X++ランタイムとバッチ機能が含まれます。
 - **データ管理サービス**- これは、データインポート/エクスポートサービスとも呼ばれます。
 - **財務報告サービス**- 財務諸表を生成するために使用されます。 
 
@@ -48,3 +48,4 @@ Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使
     
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

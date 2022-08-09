@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-31
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: a2a8254b916bbf807087ead2956caff3b721c783
-ms.sourcegitcommit: 27200618e78c75873c3257af0eceb09ffbdd0168
+ms.openlocfilehash: 34b08debdfe82fbe4cfaa6c7f3be3d454493945a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9020837"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070226"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10026-may-2022"></a>Dynamics 365 Commerce 10.0.26 (2022 年 5 月) の新機能および変更された機能
 
@@ -49,7 +49,7 @@ ms.locfileid: "9020837"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Dynamics 365 Commerce 10.0.26 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.26 (2022 年 5 月) のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md)を参照してください。
+Dynamics 365 Commerce 10.0.26 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラム (2022 年 5 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864) を参照してください。
@@ -75,3 +75,4 @@ Commerce 固有の重大な変更を加える場合は、[Dynamics 365 Commerce 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

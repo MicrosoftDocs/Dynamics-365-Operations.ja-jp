@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b0e0b01f81dc3f4bf129cdfd85f4c07a475a9030
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 737c9f3528499db40f6bee41c729c236ce698054
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845243"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068085"
 ---
 # <a name="preview-of-dynamics-365-finance-10025-april-2022"></a>Dynamics 365 Finance 10.0.25 (2022 年 4 月) のプレビュー
 
@@ -96,3 +96,4 @@ Dynamics 365 Finance 10.0.25 には、プラットフォーム更新プログラ
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

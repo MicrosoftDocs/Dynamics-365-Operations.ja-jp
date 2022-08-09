@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74b511be2852ffb0075498677e2684186a72f83e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4c58a002d4611d22bd30cdc0d64414f3cf6e65a5
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852615"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111504"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -27,7 +27,7 @@ ms.locfileid: "8852615"
 
 ## <a name="dual-write-setup"></a>二重書き込みの設定
 
-### <a name="do-you-plan-to-enable-dual-write-to-use-dataverse-as-a-hub-between-multiple-finance-and-operations-environments-if-dataverse-is-used-as-a-hub-data-can-be-synced-between-two-or-more-finance-and-operations-environments"></a>Dataverse を、複数の Finance and Operations 環境間でハブとして使用できるように二重書き込みを有効にする予定はありますか? Dataverse をハブとして使用すれば、2 つ以上の Finance and Operations 環境間でデータを同期することができます。
+### <a name="do-you-plan-to-enable-dual-write-to-use-dataverse-as-a-hub-between-multiple-finance-and-operations-environments-if-dataverse-is-used-as-a-hub-data-can-be-synced-between-two-or-more-finance-and-operations-environments"></a>Dataverse を、複数の財務と運用環境間でハブとして使用できるように二重書き込みを有効にする予定はありますか? Dataverse をハブとして使用すれば、2 つ以上の財務と運用環境間でデータを同期することができます。
 
 レコードの扱いに関する現在のプランでは、二重書き込みを単一の財務と運用環境と、単一の Dataverse 環境との間の 1 対 1 (1:1) のマッピングに制限しています。
 
@@ -37,11 +37,11 @@ ms.locfileid: "8852615"
 
 ### <a name="do-application-users-require-any-special-permissions-to-enable-or-configure-dual-write"></a>アプリケーション ユーザーは、二重書き込みを有効にしたり構成したりするために特別なアクセス許可を必要としていますか?
 
-Finance and Operations 環境に対して 2 つ の Azure Active Directory (Azure AD) アプリケーションが設定され、Dataverse 環境で 2 つのアプリケーション ユーザーが設定されている必要があります。 これらのアプリケーション ユーザーには、適切なアプリケーション ID を含める必要があります。 正常に接続されるようにするため、アプリケーションに、セキュリティ ロールを使用して関連するテーブル アクセス許可を付与する必要があります。 詳細については、[要件を確認してアクセスを許可する](requirements-and-prerequisites.md#verify-requirements-and-grant-access) を参照してください。
+財務と運用環境に対して 2 つ の Azure Active Directory (Azure AD) アプリケーションが設定され、Dataverse 環境で 2 人のアプリケーション ユーザーが設定されている必要があります。 これらのアプリケーション ユーザーには、適切なアプリケーション ID を含める必要があります。 正常に接続されるようにするため、アプリケーションに、セキュリティ ロールを使用して関連するテーブル アクセス許可を付与する必要があります。 詳細については、[要件を確認してアクセスを許可する](requirements-and-prerequisites.md#verify-requirements-and-grant-access) を参照してください。
 
 ### <a name="do-end-users-require-any-special-permissions-to-enable-or-configure-dual-write"></a>エンド ユーザーは、二重書き込みを有効にしたり構成したりするために特別なアクセス許可を必要としていますか?
 
-二重書き込みマッピングの構成を行っているエンド ユーザーは、Dataverse および Finance and Operations 環境の両方でシステム管理者セキュリティ ロールが割り当てられている必要があります。
+二重書き込みマッピングの構成を行っているエンド ユーザーは、Dataverse および財務と運用環境の両方でシステム管理者セキュリティ ロールが割り当てられている必要があります。
 
 すべてのユーザーおよび環境が単一テナントに属し、ユーザーが必要なセキュリティおよびライセンスの割り当てを所有している限り、複数のユーザーが二重書き込みマッピングにアクセスできます。
 
@@ -65,7 +65,7 @@ Dataverse 環境がリンクされているなら、リーガル テーブル �
 
 二重書き込みでは、統合キーを使用して、固有の組み合わせを表す 1 つ以上のテーブル列の値を使用して、行を一意に識別します。 たとえば、統合キーを使用して勘定行を識別するには、勘定番号列を使用できます。 別の方法として、勘定番号列を、変更すべきではない値を持つ他の列と共に使用することもできます。 詳細については、[Power Apps ポータルを使用した代替キーの定義](/powerapps/maker/common-data-service/define-alternate-keys-portal) を参照してください。
 
-キーが Finance and Operations 環境と Dataverse 環境との間で一致していることは重要です。 そうでない場合、初期同期フェーズで問題が発生する可能性があります。
+キーが財務と運用環境と Dataverse 環境との間で一致していることは重要です。 そうでない場合、初期同期フェーズで問題が発生する可能性があります。
 
 ### <a name="how-do-i-move-table-maps-between-environments-is-version-control-supported-for-table-maps"></a>環境間でテーブル マップを移動するにはどうすればよいですか? テーブル マップではバージョン管理がサポートされていますか?
 
@@ -77,7 +77,7 @@ Dataverse 環境がリンクされているなら、リーガル テーブル �
 
 Dataverse での詳細な例については、[結果のフィルター](/powerapps/developer/common-data-service/webapi/query-data-web-api#filter-results) を参照してください。 二重書き込みソースフィルターでは、ネストしたルックアップはサポートされません。 テーブル列に対して直接、[標準のフィルタ演算子](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators)のみがサポートされています。
 
-Finance and Operations のフィルターの詳細については、[クエリ範囲での式の使用](/dynamicsax-2012/developer/using-expressions-in-query-ranges)、および[高度なフィルター処理とクエリ構文](../../../fin-ops/get-started/advanced-filtering-query-options.md)を参照してください。
+財務と運用のフィルターの詳細については、[クエリ範囲での式の使用](/dynamicsax-2012/developer/using-expressions-in-query-ranges)、および[高度なフィルター処理とクエリ構文](../../../fin-ops/get-started/advanced-filtering-query-options.md)を参照してください。
 
 ### <a name="dual-write-live-synchronization-introduces-tight-coupling-across-applications-what-happens-if-one-side-fails-will-the-other-side-fail-too"></a>二重書き込みライブ同期では、アプリケーション間に緊密な結合が導入されます。 1 つの側に障害が発生した場合はどうなりますか? 他方の側でも障害が発生するでしょうか?
 
@@ -87,7 +87,7 @@ Finance and Operations のフィルターの詳細については、[クエリ�
 
 統合は、変更の順序を完全に反映します。 この例では、Customer Engagement アプリのデータは、**NameA** から **NameB** に、次いで、**NameC** に変更されます。
 
-### <a name="how-do-i-handle-a-finance-and-operations-database-transfer-from-prod-to-stage-what-is-the-effect-on-dual-write-after-the-transfer-the-systems-are-no-longer-in-sync-is-the-synchronization-done-automatically"></a>PROD から STAGE への Finance and Operations データベースの転送をどのように処理したらよいですか? 二重書き込みはどんな影響がありますか? 転送後、システムの同期は解除されますが、同期は自動的に行われますか?
+### <a name="how-do-i-handle-a-finance-and-operations-database-transfer-from-prod-to-stage-what-is-the-effect-on-dual-write-after-the-transfer-the-systems-are-no-longer-in-sync-is-the-synchronization-done-automatically"></a>PROD から STAGE への財務と運用データベースの転送をどのように処理したらよいですか? 二重書き込みはどんな影響がありますか? 転送後、システムの同期は解除されますが、同期は自動的に行われますか?
 
 リンクされた各環境ペア (財務と運用アプリ環境と Dataverse 環境) は、単一の単位として処理され、それに応じて更新される必要があります。 たとえば、運用環境からサンドボックスを更新する場合、財務と運用アプリのサンドボックス環境と Dataverse のサンドボックス環境の両方を、それに対応する運用環境から更新する必要があります。 二重書き込みがターゲット環境で既に使用されている場合は、それらの環境のリンクを解除する必要があります。 ターゲット環境でデータを更新した後、次のテーブルをクリーンアップする必要があります。
 
@@ -104,17 +104,17 @@ Prospect to Cash を二重書き込みに移行する方法の詳細について
 + 高度なクエリ機能がないため、テーブルを変更
 + 会社のストライピングなどの新しい概念に適合するためのデータ移行
 
-### <a name="on-finance-and-operations-data-tables-can-i-develop-unbounded-columns-that-flow-to-dataverse-by-using-dual-write"></a>Finance and Operations データ テーブルでは、二重書き込みを使用して Dataverse にフローするバインドされない列を開発することはできますか?
+### <a name="on-finance-and-operations-data-tables-can-i-develop-unbounded-columns-that-flow-to-dataverse-by-using-dual-write"></a>財務と運用データ テーブルでは、二重書き込みを使用して Dataverse にフローするバインドされない列を開発することはできますか?
 
 はい。 [計算列と仮想列](../data-entity-computed-columns-virtual-fields.md)の両方を使用できます。 ただし、読み取りと書き込みに必要な追加のX++ ロジックを使用して、パフォーマンスのオーバーヘッドを監視する必要があります。 同じトランザクション内でのラウンド トリップは許可されません。 したがって、X++ を使用して追加の値を変換または計算するために仮想列を使用することは避け、それが同じトランザクション内の Dataverse に戻ることを予期してください。
 
-### <a name="when-i-use-the-dataverse-offline-app-what-happens-if-i-cant-sync-the-data-after-reconnection-does-this-situation-cause-an-inconsistent-state-between-the-dataverse-environment-and-the-finance-and-operations-environment"></a>Dataverse オフライン アプリを使用して、再接続後にデータを同期できない場合はどうなりますか? この状況により、Dataverse 環境と Finance and Operations 環境との間で状態が矛盾することになりますか?
+### <a name="when-i-use-the-dataverse-offline-app-what-happens-if-i-cant-sync-the-data-after-reconnection-does-this-situation-cause-an-inconsistent-state-between-the-dataverse-environment-and-the-finance-and-operations-environment"></a>Dataverse オフライン アプリを使用して、再接続後にデータを同期できない場合はどうなりますか? この状況により、Dataverse 環境と財務と運用環境との間で状態が矛盾することになりますか?
 
-[電話用 Dynamics 365 アプリ](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)、または [Field Service Mobile アプリ](/dynamics365/field-service/field-service-mobile-overview) をオフライン モードで使用すると、Dataverse データをオフラインで操作できます。 両方のアプリで、データはオフラインで保存され、お客様の裁量で、サーバーとの同期を行うことができます。 オフライン データとサーバーの同期中にエラーが発生し、他の環境が失敗しているために更新ができない場合、データ同期は失敗し、Dataverse は更新されません。 統合が一時停止したときに、同期を再度実行して、サーバーに更新データを保存することができます。 これらの変更はステージングされ、マッピングが再度実行されるときに Finance and Operations 環境に同期されます。 詳細については、[Power Apps Mobile でモデル駆動型アプリおよびキャンバス アプリを実行する](/powerapps/mobile/run-powerapps-on-mobile)を参照してください。
+[電話用 Dynamics 365 アプリ](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)、または [Field Service Mobile アプリ](/dynamics365/field-service/field-service-mobile-overview) をオフライン モードで使用すると、Dataverse データをオフラインで操作できます。 両方のアプリで、データはオフラインで保存され、お客様の裁量で、サーバーとの同期を行うことができます。 オフライン データとサーバーの同期中にエラーが発生し、他の環境が失敗しているために更新ができない場合、データ同期は失敗し、Dataverse は更新されません。 統合が一時停止したときに、同期を再度実行して、サーバーに更新データを保存することができます。 これらの変更はステージングされ、マッピングが再度実行されるときに財務と運用環境に同期されます。 詳細については、[Power Apps Mobile でモデル駆動型アプリおよびキャンバス アプリを実行する](/powerapps/mobile/run-powerapps-on-mobile)を参照してください。
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 
-### <a name="how-are-number-sequences-handled-for-example-the-customer-account-number-is-automatically-generated-in-finance-and-operations-apps-but-its-added-manually-in-customer-engagement-apps"></a>番号順序はどのように処理されますか? たとえば、顧客アカウント番号は財務と運用アプリで自動的に生成されますが、Customer Engagement アプリでは手動で追加されています。
+### <a name="how-are-number-sequences-handled-for-example-the-customer-account-number-is-automatically-generated-in-finance-and-operations-apps-but-its-added-manually-in-customer-engagement-apps"></a>番号順序はどのように処理されますか? たとえば、顧客 ID 番号は財務と運用アプリで自動的に生成されますが、Customer Engagement アプリでは手動で追加されています。
 
 財務と運用アプリと Customer Engagement アプリの番号順序は関連付けられていません。 複数のマスター テーブルが含まれるシナリオでは、別々の番号順序の形式を設計するか、各アプリケーションの範囲を定める必要があります。 次にいくつか例を挙げます。
 
@@ -135,7 +135,7 @@ Dataverse の会社固有のカスタム テーブルを作成するには、カ
 
 ### <a name="can-i-merge-records-in-customer-engagement-apps-while-using-dual-write"></a>二重書き込み使用中に Customer Engagement アプリのレコードをマージできますか?
 
-いいえ、財務と運用アプリではレコードのマージを許可しません。 このため、テーブルに二重書き込みマッピングが存在する場合、Customer Engagement アプリのマージ機能は実行されません。
+いいえ、財務と運用アプリはレコードのマージを許可しません。 このため、テーブルに二重書き込みマッピングが存在する場合、Customer Engagement アプリのマージ機能は実行されません。
 
 ### <a name="is-there-a-document-about-best-practices-for-table-usage-should-i-use-customers-v2-customers-v3-or-customer-details-what-is-the-difference-between-these-tables-and-what-is-the-use-case-for-each"></a>テーブルの使用方法に関するベスト プラクティスについてのドキュメントがありますか? 顧客 V2、顧客 V3、または顧客の詳細を使用する必要がありますか? これらのテーブルの違いは何ですか、またそれぞれのユース ケースはどのようなものですか?
 
@@ -143,3 +143,4 @@ Dataverse の会社固有のカスタム テーブルを作成するには、カ
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

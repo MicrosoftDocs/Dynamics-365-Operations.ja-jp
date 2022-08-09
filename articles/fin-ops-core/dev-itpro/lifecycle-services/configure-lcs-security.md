@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25ee5e398cf658ce4e84666c22f02e7015262c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 912087cd1988ad9527b9b543ee3770f13d808ce0
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866478"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103668"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -49,7 +49,7 @@ LCS には次の 3 種類の組織ロールがあります。
 さらに、管理者は[複数の LCS プロジェクトを作成](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#create-multiple-lcs-projects) の手順に従い、追加の LCS 実装プロジェクトを作成できます。
 
 ### <a name="organization-contributor"></a>組織の共同作成者
-共同作成者は Azure AD テナントからの他のユーザーですが、管理者機能を持たないユーザーです。 共同作成者はプロジェクトを作成できます。 また、サイン インするテナントの最初のユーザーである場合、および該当する財務と運用アプリのライセンスを購入した後に最初に実装プロジェクトを作成することもできます。
+共同作成者は Azure AD テナントからの他のユーザーですが、管理者機能を持たないユーザーです。 共同作成者はプロジェクトを作成できます。 また、サインインするテナントの最初のユーザーであり、該当する財務と運用アプリのライセンスを購入した後、最初の実装プロジェクトを作成することもできます。
 
 ### <a name="delegated-admin"></a>代理管理者
 ユーザーが Microsoft パートナー テナントからで、顧客組織と確立された関係を持つ場合を除いて、委任された管理者ロールは管理者ロールと同じです。 委任された管理者は顧客の代わりにサイン インし、必要な操作を実行して必要なサポートを提供できます。
@@ -123,3 +123,4 @@ LCS には次の 3 種類の組織ロールがあります。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7e3ee5c273000a98563282eaab5d495eb97cada
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: 58f0d61847b1d649c12d61404873286ab71edab3
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958117"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103711"
 ---
 # <a name="develop-and-customize-home-page"></a>ホーム ページの開発とカスタマイズ
 
@@ -26,7 +26,7 @@ ms.locfileid: "8958117"
 
 ## <a name="overview"></a>概要
 
-財務と運用アプリは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体のエンタープライズ リソース プランニング (ERP) アプリケーション スイートを有効にします。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
+財務と運用アプリは、エンタープライズ リソース プランニング (ERP) アプリケーション スイート全体を、パブリック クラウドとプライベート クラウドの両方、およびオンプレミスのクラウド ベースのソリューションとして有効にします。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
 
 - 実行環境から切り離された開発ツール。 オンライン データベースではなく、ローカルの XML ベースのファイルに対して作成します。
 - Microsoft Visual Studio が開発環境です。 Visual Studio 環境は、円滑で慣れ親しんだエクスペリエンスを提供するようにカスタマイズされています。
@@ -67,7 +67,7 @@ ms.locfileid: "8958117"
 
 - [Visual Studioの開発ツール](development-tools-overview.md)
 - [アプリケーション エクスプローラー](application-explorer.md)
-- [Visual Studioの Finance and Operations の プロジェクト タイプ](projects.md)
+- [Visual Studio の財務と運用プロジェクト タイプ](projects.md)
 - [要素デザイナー](element-designers.md)
 - [要素の使用方法を決定するためのコマンド](element-usage.md)
 - [モデルとパッケージ](models.md)
@@ -185,3 +185,4 @@ ms.locfileid: "8958117"
 [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

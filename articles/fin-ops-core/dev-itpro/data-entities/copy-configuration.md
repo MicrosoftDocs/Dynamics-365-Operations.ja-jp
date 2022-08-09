@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 899073c3c99f965e92ecd04fafb1a7f4f180dd87
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f941a5933c0b6aaf5e62e80db73c24e5362db3e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885560"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108647"
 ---
 # <a name="copy-configuration-data-between-companies-or-legal-entities-overview"></a>企業または法人エンティティ間で行う設定データのコピーの概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "8885560"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Finance and Operations 用の構成データをコピーするには、次の 2 つのオプションがあります。
+財務と運用の構成データをコピーするには、次の 2 つのオプションがあります。
 
 - インスタンス間でデータを移動するには、最初にある会社からデータをエクスポートしてから、別の会社にインポートする必要があります。
 - データを同一インスタンス内のある法人から別の法人に移動するには、**法人にコピー** 機能を使用します。
@@ -243,7 +243,7 @@ Finance and Operations 用の構成データをコピーするには、次の 2 
     - **作成** - 法人 ID、法人の名前、および法人が属する地域を入力します。 **法人を作成する** を選択します。 法人が作成され、宛先の法人のリストに追加されます。
 
     > [!NOTE]
-    > 宛先の法人を作成する機能は、Finance and Operations 7.2.3 で利用可能です。
+    > 宛先の法人を作成する機能は、財務と運用 7.2.3 で利用可能です。
 
 7. 出力先の法人を追加した後、番号の順序をコピーする場合 **はい** を選択します。 番号順序コードと番号順序参照をコピーするために必要なエンティティがプロジェクトに追加されます。 これらのエンティティの実行単位、レベル、および順序番号は、既定のシステム テンプレートと共有テンプレートの数値に設定されます。 既定のテンプレートを使用していない場合は、エンティティ順序を調整しリストの最初にくるようにします。
 8. 番号順序に対して **はい** を選択した場合は、これらの番号シーケンスを最小値にリセットするかどうかを指定するには、**はい** または **いいえ** を選択します。
@@ -346,3 +346,4 @@ Finance and Operations 用の構成データをコピーするには、次の 2 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
 title: アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
-description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations アプリケーションのエンティティ格納に移行します。
+description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、財務と運用アプリケーションのエンティティ格納に移行します。
 author: MilindaV2
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 962d6b125f10565bc1526eb987a019cc1dfe5405a85c8311bb5ada6fb9cd34b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c24c970f860880a13f3fd8eb01ed9076a4db0c42
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762406"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124314"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
 [!include [banner](../includes/banner.md)]
 
-このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、Finance and Operations アプリケーションのエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
+このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、財務と運用アプリケーションのエンティティ格納に移行します。 例として、Dynamics AX 2012 R3 に含まれていた販売キューブを使用します。
 
 エンティティ格納は、次の図に示すように、ほぼリアルタイムの Microsoft Power BI 統合シナリオをサポートします。 エンティティ格納と Power BI 統合の概要については、「[エンティティ格納と Power BI の統合](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update)」を参照してください。 [![Power BI アーキテクチャ ダイアグラム。](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
@@ -173,7 +173,7 @@ Microsoft Dynamics Lifecycle Services (LCS) は、開発者から運用環境に
 
 ### <a name="configure-an-lcs-project"></a>LCS プロジェクトをコンフィギュレーションする
 
-まだ実行していない場合は、環境と LCS プロジェクトを関連付けることで、Finance and Operations アプリがプロジェクト内の資産を消費できるようにします。
+まだ実行していない場合は、環境と LCS プロジェクトを関連付けることで、財務と運用アプリがプロジェクト内の資産を消費できるようにします。
 
 1.  Power BI レポートの配置に使用するインスタンスからクライアントを起動します。 これは通常、データ セットのレポートを表示するテストまたは本番のインスタンスであり、レポート開発者として作業したものとは異なります。
 2.  **システム管理**&gt;**設定**&gt;**システム パラメーター** を開きます。 **ヘルプ** タブを選択します。**Lifecycle Services のヘルプ構成** ボックスの一覧を使って、PBIX ファイルをアップロードした LCS プロジェクトを選択します。 **保存** をクリックします。

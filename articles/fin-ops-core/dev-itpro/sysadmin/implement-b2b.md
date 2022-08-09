@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: bf00e999b30c3530bf071ce3e1dff97094ee1362
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c2dc7b4c5c15478e31f33eb5f2f4c8f129c99e0a
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896658"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108824"
 ---
 # <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 
@@ -34,7 +34,7 @@ ms.locfileid: "8896658"
 
 1回限りの設定とコンフィギュレーションでは、次のことが必要になります。 
 1. Azure AD で B2B 招待サービス アプリケーションを設定します。
-2. Finance and Operations で B2B 招待サービスの設定のコンフィギュレーションをします。
+2. 財務と運用で B2B 招待サービスの設定のコンフィギュレーションを行います。
 
 ### <a name="set-up-a-b2b-invitation-service-application-in-azure-ad"></a>Azure AD での B2B 招待サービス アプリケーションの設定
 Azure AD テナントのテナント管理者は、以下の手順を完了する必要があります。
@@ -50,7 +50,7 @@ Azure AD テナントのテナント管理者は、以下の手順を完了す�
 5. 以下の情報を入力し、**作成** をクリックします。
     1. **名前** フィールドに、アプリケーションの名前を入力します。 例: **B2B 管理者アプリケーション**。
     2. **アプリケーション タイプ** フィールドで、**Web アプリ/API** を選択します。
-    3. **サインオン URL** フィールドに、Finance and Operations の URL を入力します。
+    3. **サインオン URL** フィールドに、財務と運用の URL を入力します。
   
 6. **アプリの登録** タブをクリックし、新しく作成したアプリケーションをクリックし、**アプリケーション ID** をコピーして保存します。 これは後で必要になります。
 
@@ -85,7 +85,7 @@ Azure AD テナントのテナント管理者は、以下の手順を完了す�
 
 ### <a name="configure-the-b2b-invitation-service-settings"></a>B2B 招待サービスの設定を構成
 
-1. Finance and Operations の管理者としてログインします。
+1. 財務と運用に管理者としてログインします。
 
 2. **B2B 招待状のコンフィギュレーション** ページに移動して、**編集** をクリックします。
 

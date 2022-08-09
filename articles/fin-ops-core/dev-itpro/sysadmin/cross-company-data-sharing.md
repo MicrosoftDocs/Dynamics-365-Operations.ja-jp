@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 9b736e02e1680dc5f09923c34cc727220394dc95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 73453db1eaa46e833b61594fcfae8eb0a3d1fa62
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886570"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108836"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、企業間のデータ共有について説明します。 会社間共有は、Finance and Operations 配置において、参照およびグループ データを会社間で共有するためのメカニズムです。 この機能は、Microsoft Dynamics AX 2012 の仮想会社機能に似ています。
+この記事では、企業間のデータ共有について説明します。 会社間共有は、財務と運用の展開において、参照およびグループ データを会社間で共有するためのメカニズムです。 この機能は、Microsoft Dynamics AX 2012 の仮想会社機能に似ています。
 
 ## <a name="what-is-this-feature-and-how-does-it-work"></a>これはどういう機能で、どのように動作しますか ?
 
@@ -172,3 +172,4 @@ Microsoft データ パッケージの複数のエンティティに、エンテ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

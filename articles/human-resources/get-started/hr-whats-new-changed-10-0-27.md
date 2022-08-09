@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fe42424c2703f8016f12a0e8b2fadf08a9239546
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 90b161e6632ed813384d77b66dcd44e969fc9160
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904263"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068732"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-10027-july-2022"></a>Dynamics 365 Human Resources 10.0.27 (2022 年 7 月) の新機能または変更された機能
 
@@ -110,3 +110,11 @@ Dynamics 365 Finance 10.0.27 には、プラットフォーム更新プログラ
 ### <a name="bug-fixes"></a>バグ修正
 
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=673217) を参照してください。
+
+## <a name="lcs-updates"></a>LCS 更新プログラム
+
+| 機能名 | 概要 | リリース状態 |
+|----|----|----|
+| 財務と運用 LCS プロジェクトを使用した Dynamics 365 Human Resources の配置 | Dynamics 365 Human Resourcesの必要な最低限のライセンスを購入した場合は、LCS の製品として **実装** プロジェクト タイプの使用と **財務と運用** の選択により新しい LCS プロジェクトと環境を配置できます。 詳細については、[財務と運用インフラストラクチャでの人事管理のプロビジョニング](hr-admin-setup-provision-fo.md) を参照してください。 | 2022 年 6 月 |
+| 人事管理 LCS プロジェクトへの運用環境の配置の防止 | 既存の人事管理 LCS プロジェクトがある場合、このプロジェクトに運用環境は配置できなくなりました。 代わりに、新しい財務と運用 LCS プロジェクトを作成し、標準プロセスに従って運用環境を配置する必要があります。 | 2022 年 6 月 |
+

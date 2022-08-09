@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 1a4c351069f06ae2a79ca81a9e710145ee89ebde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3082e7b6613b923780906d82e34118a17c76ebfe
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884708"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103255"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 
@@ -82,3 +82,4 @@ ms.locfileid: "8884708"
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

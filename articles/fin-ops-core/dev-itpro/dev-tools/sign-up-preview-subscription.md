@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cac5aa038125118ca2c74d215eb71dab79bbe73
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 449c08fdb368b08e4376b427111145c12fd5e303
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867000"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103676"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
@@ -43,7 +43,7 @@ ms.locfileid: "8867000"
     > [!IMPORTANT]
     > このリリースでは、Microsoft 365 や Microsoft Dynamics CRM Online など、他のオンライン サービスに関連付けられている既存の資格情報を使用しないでください。
 
-- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Finance and Operations アプリケーション、Microsoft Dynamics 365 Commerce、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、Information Source および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して引き続き必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
+- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、財務と運用アプリケーション、Microsoft Dynamics 365 Commerce、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、Information Source および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して引き続き必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
 - **Microsoft 365 管理センター** – Microsoft 365 管理センターは、Microsoft 365 が管理者に提供するサブスクリプション管理ポータルです。 Microsoft 365 管理センターは、ユーザーおよびサブスクリプションの管理機能を提供するために使用されます。
 - **環境** - 必要に応じて、仮想マシン (VM) の単一インスタンスをいくつでも配置できます。 これらのインスタンスを *環境* と呼び出ます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "8867000"
 > [!IMPORTANT]
 > 組織内で 1 人 (テナント管理者) だけ、このタスクを実行する必要があります。 このリリースをサブスクライブしていない場合は、組織がサインアップし、ユーザーの資格情報を受信するまで待機します。 その後、手順を続行します。
 
-1. Finance and Operations アプリケーションおよび Retail は、既存の Microsoft Dynamics 365 のチャネル パートナーおよび Business Ready 拡張プラン (BREP) サービス プランに現在登録されている顧客にのみ使用できます。 サブスクライブするには、[PartnerSource ビジネス センター](https://businesscenter.mbs.microsoft.com/#contentdetail/Microsoft_Dynamics_AX_Public_Preview)にアクセスしてください。
+1. 財務と運用アプリケーションおよび Retail は、既存の Microsoft Dynamics 365 のチャネル パートナーおよび Business Ready 拡張プラン (BREP) サービス プランに現在登録されている顧客にのみ使用できます。 サブスクライブするには、[PartnerSource ビジネス センター](https://businesscenter.mbs.microsoft.com/#contentdetail/Microsoft_Dynamics_AX_Public_Preview)にアクセスしてください。
 2. **アカウント設定** ページの、**国または地域** フィールドで、国または地域の選択をします。
 3. 最後のステップに到達するまで、サインアップを完了するウィザードおよびプロンプトに従います。
 
@@ -165,3 +165,4 @@ LCS は、オンライン管理アクティビティを実行するための出�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

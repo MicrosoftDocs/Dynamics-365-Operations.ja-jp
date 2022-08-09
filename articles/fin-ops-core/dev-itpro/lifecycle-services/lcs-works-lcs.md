@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27ec6860563719b1a87a76550c9bde09548d0404
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a2729188ef1ecae79e73df2b6f040b3d855f5b07
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866416"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103722"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-customers"></a>財務と運用アプリの顧客用の Lifecycle Services (LCS)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8866416"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-この記事は、現在のバージョンの Finance and Operations アプリにサインアップしているお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。 
+この記事は、現在のバージョンの財務と運用アプリにサインアップしているお客様を対象としています。 顧客と連携して Lifecycle Services (LCS) プロジェクトのライフサイクルを進めることができるようにするパートナーにとっても、この情報は便利です。 
 
 ## <a name="lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps"></a>財務と運用アプリの現在のバージョンの LCS ワークスペース
 
@@ -82,3 +82,4 @@ ms.locfileid: "8866416"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

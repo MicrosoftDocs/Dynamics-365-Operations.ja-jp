@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: c3eee230e448280633cc656c17b965feabb607f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a1e2b263faea230c1a967d328843a813c9ec350b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866605"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065402"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "8866605"
 
 - Microsoft ドキュメント リポジトリ
 
-    カスタム ヘルプ ツールキットの [HTMLFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) ツールを使用して、任意の Finance and Operations リポジトリからコンテンツを複製し、対応する HTML ファイルを生成できます。 これらのファイルは、ソリューションに固有のコンテンツで更新できます。
+    カスタム ヘルプ ツールキットの [HTMLFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) ツールを使用して、任意の財務と運用リポジトリからコンテンツを複製し、対応する HTML ファイルを生成できます。 これらのファイルは、ソリューションに固有のコンテンツで更新できます。
 
 - 既存のカスタマイズされた Dynamics AX コンテンツ
 

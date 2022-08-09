@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 13edc313dd291cff76983cfcc2d3270d8ea272db
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184e469d7e98752a569153058a9ffa5a4b5589f4
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688894"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123430"
 ---
 # <a name="microsoft-preview-software-license-terms"></a>MICROSOFT プレビュー ソフトウェア ライセンス条件
 

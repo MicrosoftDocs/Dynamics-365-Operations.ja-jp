@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9047857d51489339eee5d7d0cd8c758ff6966af3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: c9e42cf213b00ec303241125ce15837d1f098aa4
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069362"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108623"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -437,7 +437,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 9.  **回収** &gt; **顧客残高** &gt; **コレクション** の順に選択し、**コレクション** ページを開きます。
 10. **連絡** &gt; **電子メール** &gt; **連絡先に対する明細書** の順に選択します。
 11. ダイアログ ボックスで既定値を承諾する場合は、**OK** を選択します。
-12. メール オプションを使用するように求められたら、**Microsoft Dynamics 365 for Finance and Operations 電子メール クライアントの使用** を選択し、**OK** をクリックします。
+12. メール オプションを使用するように求められたら、**Microsoft Dynamics 365 Finance 電子メール クライアントの使用** を選択し、**OK** をクリックします。
 13. テスト メッセージを受信するには、宛先アドレスをメール アドレスに変更します。
 14. メッセージの件名および本文を入力します。
 15. **送信** を選択します。 メッセージは 1 〜 5 分で配信する必要があります。 メッセージが **電子メール パラメーター** ページに設定されている電子メール アカウントから送信されることに注意してください。 そのメール アカウントに **メールの送信** ダイアログ ボックスで使用されている送信元アドレスの「送信者」(または「このメールボックスからメールを送信」) のアクセス許可が与えられている場合、そのアドレスからのメッセージが表示されます。
@@ -460,3 +460,4 @@ SysEmail フレームワークを介して有効になっている電子メー�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

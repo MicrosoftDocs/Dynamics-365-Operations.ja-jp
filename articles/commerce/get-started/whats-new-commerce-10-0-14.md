@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0097ea82801c4a592d39780b1efe5ac155f4ac18
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b2d0adf28ef5f5b8731e48dca3b364c25d54bdeb
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908639"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069945"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10014-november-2020"></a>Dynamics 365 Commerce 10.0.14 (2020 年 11 月) の新機能と変更された機能
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: be0a4544535af657add3b0db338dc9bbd7921444
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ff9fb7f6b3c907fe28079fcf5e8b1449b707ff7
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866294"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103570"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
@@ -29,7 +29,7 @@ ms.locfileid: "8866294"
 
 活動ダイアグラムには 2 つの種類があります。
 
-- **タスク記録** – Finance and Operations のタスク記録に関連する業務プロセスには、自動的に生成される活動ダイアグラムおよびプロセスの手順が含まれます。
+- **タスク記録** – 財務と運用のタスク記録に関連する業務プロセスには、自動的に生成される活動ダイアグラムおよびプロセスの手順が含まれます。
 - **Microsoft Visio** – Visio ファイルを手動でアップロードすることによって、業務プロセスを Visio 図に関連付けることができます。
 
 

@@ -7,23 +7,23 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1900ced37393d6f70ada99d5c7aa34736a680bb1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1dcab1f32da69faca69f3a2d23c797b71618a3da
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909543"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205874"
 ---
 # <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用した PDF ドキュメントのプレビュー
 
 [!include[banner](../includes/banner.md)]
 
-埋め込み PDF プレビュー オプションを利用することにより、ビジネス ドキュメントの作成にまつわるアプリケーション エクスペリエンスを合理化することができます。 Finance and Operations アプリケーションは、本サービスによって作成されたビジネスドキュメントをプレビューするにあたって最新のエクスペリエンスをお届けします。 組み込みのツールバーを使用することで、ドキュメントの閲覧やダウンロード、またはローカルに接続されている機器での印刷ができます。
+埋め込み PDF プレビュー オプションを利用することにより、ビジネス ドキュメントの作成にまつわるアプリケーション エクスペリエンスを合理化することができます。 財務と運用アプリケーションは、本サービスによって作成されたビジネスドキュメントをプレビューするにあたって最新のエクスペリエンスをお届けします。 組み込みのツールバーを使用することで、ドキュメントの閲覧やダウンロード、またはローカルに接続されている機器での印刷ができます。
 
 埋め込みのビューアーを使うと、画面条の表示内容と印刷された内容に整合性を持たせることができます。 加えて、従来の操作と比較してレポートの表示時間が大幅に短縮されます。 Preview オプションは対応するすべての機器での使用が可能であり、サードパーティ製のソフトウェアを追加する必要はありません。 組み込みのビューア ツールバー オプションを使用すると、ドキュメントのダウンロードおよび閲覧が簡単になります。
 

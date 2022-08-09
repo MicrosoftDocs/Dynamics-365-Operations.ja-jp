@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 613ebeaa48769347679e90eb58f062ade8932737
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5bbd527a219c67af89f3ec38b9c6d0ed393ad261
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898418"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109180"
 ---
 # <a name="consume-external-web-services"></a>外部 Web サービスの消費
 
@@ -61,3 +61,4 @@ ms.locfileid: "8898418"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

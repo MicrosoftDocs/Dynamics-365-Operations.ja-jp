@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b186b8c20a044672bcbed94c1dc481cc2277489f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6997c6ae023cc6d2a74d75d7f1334e4c7c26d6cd
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866356"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103387"
 ---
-# <a name="set-up-technical-support-for-finance-and-operations-apps"></a>Finance and Operations アプリのテクニカル サポートを設定する 
+# <a name="set-up-technical-support-for-finance-and-operations-apps"></a>財務と運用アプリの技術サポートの設定 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="prerequisites"></a>必要条件
@@ -176,7 +176,7 @@ Microsoft に問題を送信するためには、LCS ユーザーに有効な Mi
 > [!NOTE]
 > このセクションの情報は、オンプレミスの配置には適用されません。 
 
-アプリケーションを Lifecycle Services から配置するとき、構成は必要ありません。それは、サポート ツールが、配置された Finance and Operations の供給元の同じ LCS プロジェクトに問題を自動的に保存するためです。 サポートされている LCS プロジェクトを確認するには、**システム管理** > **設定** > **システム パラメーター** に移動し、**ヘルプ** > **サポートの連絡先** をクリックします。 
+アプリケーションを Lifecycle Services から配置するとき、構成は必要ありません。それは、サポート ツールが、配置された財務と運用の供給元である同じ LCS プロジェクトに問題を自動的に保存するためです。 サポートされている LCS プロジェクトを確認するには、**システム管理** > **設定** > **システム パラメーター** に移動し、**ヘルプ** > **サポートの連絡先** をクリックします。 
 
 ## <a name="prevent-users-from-creating-issues-from-the-client"></a>ユーザーが、クライアントからの問題を作成できなようにする
 既定では、システム ユーザー ロールに *SysLCSCPSIssueEntry* という権限が割り当てられています。 この権限は、[ヘルプ] メニューの **サポート チームに連絡** メニュー項目へのアクセスを制御します。 ユーザーがクライアントからの問題を作成して送信できないようにするには、システム ユーザー ロールからこの権限を削除します。

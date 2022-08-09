@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9788833898c6cdee50faa9578154a1cb5b2551e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13f1b4bd7db0a383580ac49d34f213ef2bd8b46d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850890"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108832"
 ---
 # <a name="encryption-in-finance-and-operations-apps"></a>財務と運用アプリの暗号化
 
@@ -40,7 +40,7 @@ Microsoft は、環境の SQL Server データベースと Azure ストレージ
 
 ### <a name="supported-tls-versions"></a>対応している TLS のバージョン
 
-財務と運用アプリ サポート TLS 1.2 のみ。 TLS の古いバージョンである 1.0 と 1.1 には対応していません。
+財務と運用アプリは、TLS 1.2 のみをサポートします。 TLS の古いバージョンである 1.0 と 1.1 には対応していません。
 
 ### <a name="supported-cipher-suites"></a>対応している暗号スイート
 

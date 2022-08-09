@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 265844
-ms.assetid: a0011a12-a1eb-46bd-8d28-e532fec14e09
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 5cab3d65732ae02e2664364ac6bdec0d2e2b62eb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "265844"
+ms.assetid: a0011a12-a1eb-46bd-8d28-e532fec14e09
+ms.openlocfilehash: 8b3a32ed7f6fbfeaaa896e99a8ea21f832582280
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905065"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206603"
 ---
 # <a name="pin-power-bi-content"></a>Power BI コンテンツのピン留め
 

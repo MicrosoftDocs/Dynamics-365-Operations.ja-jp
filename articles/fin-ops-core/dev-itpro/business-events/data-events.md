@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: aa1981f17c5cae8197e5b5cff2e39bd1335346fb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 526ef2ceb935049b26085b2de6525a33d324e298
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884126"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068302"
 ---
 # <a name="data-events"></a>データ イベント
 [!include[banner](../includes/banner.md)]
@@ -67,7 +67,7 @@ Open Data Protocol (OData) が有効になっている財務と運用アプリ�
 
 現在、データ イベント機能は、環境のすべてのエンティティ間で、5 分間あたり 5,000 イベント、最大 1 時間あたり 50,000 イベントのバースト率をサポートしています。 負荷がこれらのしきい値を超えたイベントにより、環境処理のパフォーマンスが低下する可能性があります。 イベントを明示的に調整する制限はありません。また、サポートされるしきい値を超えたイベントはすべて送信されますが、環境のパフォーマンスが低下する可能性があります。 
 
-更新操作のデータ イベントは、Finance and Operations の作成および削除操作のデータ イベントよりも、本質的に処理のコストがかかります。 有効なデータ イベントが更新操作に対するものである場合、サポートされるしきい値を超えると環境のパフォーマンスがすぐに低下することがあります。
+更新操作のデータ イベントは、財務と運用の作成および削除操作のデータ イベントよりも、本質的に処理のコストがかかります。 有効なデータ イベントが更新操作に対するものである場合、サポートされるしきい値を超えると環境のパフォーマンスがすぐに低下することがあります。
 
 ## <a name="limitations"></a>制限
 
@@ -76,5 +76,6 @@ Open Data Protocol (OData) が有効になっている財務と運用アプリ�
 仮想フィールドの詳細については、[計算列およびデータ エンティティの仮想フィールド](../data-entities/data-entity-computed-columns-virtual-fields.md) を参照してください。
 
 [!include[banner](../includes/banner.md)]
+
 
 

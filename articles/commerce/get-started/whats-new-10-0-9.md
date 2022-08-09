@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: d2b636b2237b6cf932b94943c618c3c0de5a767d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b82fd54623459db596a923b9c2dfaec31bb9e14
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877235"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065444"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-1009-april-2020"></a>Dynamics 365 Commerce 10.0.9 の新機能と変更点 (2020 年 4 月)
 
@@ -61,7 +61,7 @@ Microsoft Dynamics 365 Commerce 10.0.9 には、プラットフォーム更新�
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[削除済みまたは推奨されない機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md)の記事では、削除済みまたは非推奨の財務と運用アプリの機能について説明します。
+[削除済みまたは推奨されない機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) の記事では、削除済みまたは非推奨の財務と運用アプリの機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

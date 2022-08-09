@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
-description: この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能または変更された機能について説明します。 このバージョンは 2017 年 12 月にリリースされました。
+title: Dynamics 365 財務と運用、Enterprise edition 7.3 の新機能および変更された機能
+description: この記事では、Microsoft Dynamics 365 財務と運用、Enterprise edition 7.3 の新機能または変更された機能について説明します。 このバージョンは 2017 年 12 月にリリースされました。
 author: tonyafehr
 ms.date: 10/02/2019
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8e86e9852b81ef3a2d4fb5a9114ad75d9246769d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ab03f91522d7791379572bb6a9a6dbda319386d
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889264"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123414"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 財務と運用、Enterprise edition 7.3 の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能または変更された機能について説明します。 このバージョンは 2017 年 12 月にリリースされ、ビルド番号は 7.3.11971.56116 です。
+この記事では、Microsoft Dynamics 365 財務と運用、Enterprise edition 7.3 の新機能または変更された機能について説明します。 このバージョンは 2017 年 12 月にリリースされ、ビルド番号は 7.3.11971.56116 です。
 
 最新の製品リリースの新機能および変更点の詳細については、[新機能または変更点](whats-new-changed.md) および [Dynamics 365 for Retail の新機能または変更点](../../../commerce/get-started/whats-new.md) を参照してください。
 
@@ -43,11 +43,11 @@ ms.locfileid: "8889264"
 
 データ パッケージは、既存のデモ会社と類似しているが同一ではなく、時間とともに変化する可能性があります。 パッケージは非常に小さく、デモ データを環境にインポートする前に、デモ データをすばやくダウンロードして変更することができます。 今後も複数の会社とモジュール機能の追加のデモ データを引き続き追加します。
 
-## <a name="dynamics-365-for-project-service-automation-to-dynamics-365-for-finance-and-operations-integration--phase-1-private-preview"></a>Dynamics 365 for Project Service Automation から Dynamics 365 for Finance and Operations への統合 – フェーズ 1 (プライベート プレビュー)
+## <a name="dynamics-365-for-project-service-automation-to-dynamics-365-finance-and-operations-integration--phase-1-private-preview"></a>Dynamics 365 for Project Service Automation から Dynamics 365 財務と運用の統合 - フェーズ1 (プライベート プレビュー)
 
-Dynamics 365 for Project Service Automation から Dynamics 365 for Finance and Operations への統合の最初のフェーズは、プライベート プレビューで利用できるようになりました。
+Dynamics 365 for Project Service Automation から Dynamics 365 財務と運用への統合の最初のフェーズは、プライベート プレビューで使用できるようになりました。
 
-Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Dataverse 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合 機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約ラインの流れを有効にします。 Dataverse データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](/powerapps/administrator/data-integrator) を参照してください。
+Project Service Automation から財務と運用の統合ソリューションは、データの統合機能を使用して、Dataverse 経由で Microsoft Dynamics 365 財務と運用および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合 機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約ラインの流れを有効にします。 Dataverse データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](/powerapps/administrator/data-integrator) を参照してください。
 
 このソリューションは、次の領域で直接同期を提供します。
 
@@ -58,9 +58,9 @@ Project Service Automation から Finance and Operations の統合ソリュー�
 
 プライベート プレビューに参加するように組織を推薦するには、アンケートに [https://aka.ms/psafinandopsintpreview](https://aka.ms/psafinandopsintpreview) を記入してください。
 
-## <a name="enhanced-integration-of-prospect-to-cash-between-dynamics-365-for-sales-and-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Sales と Dynamics 365 for Finance and Operations 間での見込顧客の現金化の拡張統合
+## <a name="enhanced-integration-of-prospect-to-cash-between-dynamics-365-for-sales-and-dynamics-365-finance-and-operations"></a>Dynamics 365 for Sales と Dynamics 365 財務と運用間での見込顧客の現金化の拡張統合
 
-Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 間の見込顧客の現金化統合の拡張は、以下のプロセスで直接同期を有効にします:
+Dynamics 365 for Sales と Dynamics 365 財務と運用、Enterprise edition 7.3 の間の見込顧客の現金化統合の拡張により、次のプロセスでの直接同期が可能になります。
 
 - Sales でアカウントを管理し、顧客として Finance and Operations に同期させます。
 - Sales の連絡先を管理し、顧客または顧客向けの連絡先として Finance and Operations に同期させます。
@@ -98,7 +98,7 @@ Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise 
 
 Power BI を使用した新しい視覚化を使用する一連の既定のレポートは、財務報告に使用できます。 新しい財務レポートは、Finance and Operations に組み込まれ、シームレスなレポート作成エクスペリエンスを提供し、サポート ドキュメントにドリルダウンすることができます。 制限付き補助元帳データは、元帳と補助元帳の分析を向上させるために使用できます。 試算表、貸借対照表、損益などの既定のレポートはすぐに出荷されますが、最初は Finance and Operations を使用した編集は許可されません。 編集は、Power BI デスクトップを使用して行う必要があります。 レポート デザイナーを使用した既存の財務諸表は引き続き使用可能で、完全にサポートされています。
 
-Power BI を使用した財務報告についての追加情報を表示するには、次のビデオをご覧ください: [Dynamics 365 for Finance and Operations でのレポート](https://youtu.be/9m5ys9UmaVg) します。
+Power BI を使用した財務諸表についての追加情報を表示するには、次のビデオをご覧ください: [Dynamics 365 財務と運用のレポート](https://youtu.be/9m5ys9UmaVg)。
 
 ## <a name="fixed-asset-roll-forward-report"></a>固定資産ロール フォワード レポート
 

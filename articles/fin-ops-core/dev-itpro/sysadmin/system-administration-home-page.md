@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a732088715ef5390c19a17281eb1d73a06d4b483
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1dbee8514ff315cf6abbec1692b9883c571af25
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885490"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109172"
 ---
 # <a name="system-administration-home-page"></a>システム管理ホーム ページ
 
@@ -31,7 +31,7 @@ ms.locfileid: "8885490"
 この記事では、財務と管理のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。
 
 ## <a name="one-version"></a>1 つのバージョン
-2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更を発表しました。 次のトピックは、最新の状態するために使用できる Finance and Operations サービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。
+2018 年 7 月、一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更を発表しました。 次のトピックは、最新の状態するために使用できる財務と運用のサービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。
 
 - [1 つのバージョンのサービス更新の概要](../lifecycle-services/oneversion-overview.md)
 - [1 つのバージョンのサービス更新に関するよく寄せられる質問](../../fin-ops/get-started/one-version.md)
@@ -42,7 +42,7 @@ ms.locfileid: "8885490"
 - [Lifecycle Services (LCS) でサービス更新プログラムに関する通知を受け取る](../lifecycle-services/notifications-service-updates.md)
 
 ## <a name="implementation-management-with-lifecycle-services"></a>Lifecycle Services を使用した実装管理
-Microsoft Dynamics Lifecycle Services (LCS) は、Finance and Operations 実装のライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。
+Microsoft Dynamics Lifecycle Services (LCS) は、財務と運用の実装のライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。
 
 実装のライフサイクルは、複数回、反復展開しながら、販売前から分析、設計と開発、テスト、配置、運用までのさまざまな段階に及んでいます。 管理されたクラウドまたはオンプレミスなど、プロジェクトおよび選択された配置モデルの範囲と複雑さに基づいて、数か月から数年にわたって継続できます。 
 
@@ -104,8 +104,8 @@ Microsoft Office との統合により、Microsoft Office スイートを活用�
 - [電子メールのコンフィギュレーションと送信](../../fin-ops/organization-administration/configure-email.md)
 - [Office 統合のトラブルシューティング](../office-integration/office-integration-troubleshooting.md)
 
-## <a name="mobile"></a>携帯電話
-Finance and Operations モバイル アプリにより、組織は業務プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
+## <a name="mobile"></a>モバイル
+財務と運用モバイル アプリにより、組織は業務プロセスをモバイル デバイスで使用できるようになります。 組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにサイン インしてすぐにモバイル デバイスからビジネス プロセスへ実行を開始できます。
 
 - [モバイル アプリのホーム ページ](../mobile-apps/Mobile-app-home-page.md)
 - [利用可能なモバイル ワークスペース](../mobile-apps/mobile-workspaces-released.md)

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8139161ee1552599cd109ec111501c41e7060430
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 85575058e9124cf9f434cbb7e80f72e17c08c68a
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881077"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108828"
 ---
 # <a name="extensible-data-security-policies"></a>拡張可能なデータ セキュリティ ポリシー 
 [!include [banner](../includes/banner.md)]
@@ -72,3 +72,4 @@ XDS は財務分析コードには対応しておらず、財務分析コード 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-10-21
-ms.openlocfilehash: b255360d373c9cb107c9e01d25340359a23c5aa8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fad2a6daf0c650b4c8e2f450ffbfa6c75681a2b7
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908247"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108481"
 ---
 # <a name="batch-odata-api"></a>バッチ OData API
 
@@ -53,7 +53,7 @@ Power Automate を使用して、失敗したバッチ ジョブの再キュー�
 
     ![カスタム ロジックを追加します。](./media/condition.png)
 
-5. 条件が true と評価された場合は、財務と運用アプリで操作を選択し、**アクションの実行** を選択してバッチ OData アクションをトリガーしてジョブを実行に戻し、アクションを追加します。
+5. 条件が true と評価された場合は、財務と運用アプリで操作を選択します。**アクションの実行** を選択してバッチ OData アクションをトリガーしてジョブを実行に戻し、アクションを追加します。
 
     1. 財務と運用アプリ インスタンスを入力します。
     2. **BatchJobs-SetBatchJobToWaiting** アクションを選択します。
@@ -104,3 +104,4 @@ Power Automate を使用して、失敗したバッチ ジョブの再キュー�
     - **BatchJobId**- 入力バッチ ジョブの ID。
     - **ExceptionDetails**- 実行中に発生した例外に関する詳細。
     - **ReponseMessage**- 成功メッセージ。
+

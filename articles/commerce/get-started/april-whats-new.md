@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: cecef44edc490e7a9dfbf2ed821470288679614e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c364a866bb481fbb11c637d2f4a0ea50b438a388
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858955"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067504"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8858955"
 
 この記事では、Microsoft Dynamics 365 Retail の新機能および変更された機能について説明します。 
 
-Finance and Operations の機能については、[Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能または変更された機能](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10) を参照してください。
+財務と運用の機能については、[財務と運用 10.0 (2019 年 4 月) の新機能または変更された機能](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10) を参照してください。
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>レシートのない返品の支払方法の制限
 

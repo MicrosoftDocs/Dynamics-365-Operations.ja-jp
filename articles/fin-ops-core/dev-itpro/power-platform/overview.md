@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 13949121c30afc069153e4dca6227e9439741a49
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 40febd3f39cd88b969866f1dc4aa2b6dc6ae56e3
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863249"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108898"
 ---
 # <a name="microsoft-power-platform-integration-with-finance-and-operations-apps"></a>Microsoft Power Platform と財務と運用アプリの統合
 
@@ -25,11 +25,11 @@ ms.locfileid: "8863249"
 
 
 
-Microsoft Power Platform は、Power Platform 管理者センターを介した Dynamics 365 アプリケーションの一連の機能を提供します。 今日、財務と運用アプリは Power Platform 管理者センターで管理されていません。 ただし、時間の経過とともに、Microsoft Dynamics Lifecycle Services (LCS) から管理センターに移行される管理機能がますます増えています。 暫定的に、顧客は、LCS の Microsoft Power Platform 統合機能を介して、二重書き込み機能、仮想エンティティ、アドインなどの機能のロックを解除できるようになります。
+Microsoft Power Platform は、Power Platform 管理者センターを介した Dynamics 365 アプリケーションの一連の機能を提供します。 現在、財務と運用アプリは Power Platform 管理センターでは管理されていません。 ただし、時間の経過とともに、Microsoft Dynamics Lifecycle Services (LCS) から管理センターに移行される管理機能がますます増えています。 暫定的に、顧客は、LCS の Microsoft Power Platform 統合機能を介して、二重書き込み機能、仮想エンティティ、アドインなどの機能のロックを解除できるようになります。
 
 ## <a name="environment-lifecycle-considerations"></a>環境ライフサイクルの考慮次項
 
-既定では、LCS によって管理されるすべての財務と運用アプリの環境は、リンクされた Power Platform 環境を Dataverse なしで受け取ります。 リレーションシップは一対一です。 時間の経過とともに、財務および運用アプリはこの場所に移行されます。 Power Platform 管理センターの環境詳細ページにある財務と運用アプリの URL を参照して、環境を LCS の環境にリンクするかどうかを決定できます。
+既定では、LCS によって管理されるすべての財務と運用アプリの環境は、リンクされた Power Platform 環境を Dataverse なしで受け取ります。 リレーションシップは一対一です。 時間の経過とともに、財務と運用アプリはこの場所に移行されます。 Power Platform 管理センターの環境詳細ページにある財務と運用アプリの URL を参照して、環境を LCS の環境にリンクするかどうかを決定できます。
 
 :::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="リンクされた Power Platform 環境":::
 
@@ -53,13 +53,13 @@ Microsoft Power Platform、Dataverse、二重書き込み、および財務と�
 
 仮想エンティティ、二重書き込み、ビジネス イベントおよびデータ イベントを組み合わせて、財務と運用アプリと Dataverse プラットフォームの収束性に対する共有データ レイヤーを構成します。 これらは、一緒に仕様することを目的とした補完的なテクノロジです。 
 
-**仮想エンティティ** により、Microsoft Power Platform または Dataverse ネイティブ アプリから Finance and Operations データへのアクセスが必要になるシナリオが有効になります。 そのデータをクエリしてフォームをバインドし、一般的には、財務と運用アプリの全機能に対して Microsoft Power Platform の完全な機能を使用することができます。 システム間でデータはコピーされません。 代わりに、Microsoft Power Platform テクノロジが既にバインドすることができる標準の仮想エンティティ インフラストラクチャを通して直接アクセスします。 詳細については、[仮想エンティティの概要](virtual-entities-overview.md)を参照してください。 
+**仮想エンティティ** により、Microsoft Power Platform または Dataverse ネイティブ アプリから財務と運用データへのアクセスが必要になるシナリオが有効になります。 そのデータをクエリしてフォームをバインドし、一般的には、財務と運用アプリの全機能に対して Microsoft Power Platform の完全な機能を使用することができます。 システム間でデータはコピーされません。 代わりに、Microsoft Power Platform テクノロジが既にバインドすることができる標準の仮想エンティティ インフラストラクチャを通して直接アクセスします。 詳細については、[仮想エンティティの概要](virtual-entities-overview.md)を参照してください。 
 
 **ビジネス イベント** により、Microsoft Power Platform を使用して財務と運用アプリで発生するイベントに応答できます。 これらのイベントは、ビジネス ロジックを使用してアプリケーションでプロセスを実行するときに発生します。 ビジネス イベントは、財務と運用アプリを含む任意のアプリから発生させることができ、Microsoft Power Platform ビジネス ロジックによって処理することができます。 多くの場合、この処理には、ネイティブ エンティティまたは仮想エンティティを通じた追加データのクエリや操作が含まれます。 
 
 **データ イベント** はビジネス イベントと同様で、イベントが発生した場合に外部アプリケーションが財務と運用アプリから通知を受信できます。 データ イベントは、アプリケーション データのレコードに変更がある場合に発生します。 外部システムは、データ内で作成、更新、または削除 (CUD) の操作が行われると、通知に反応できます。
 
-シナリオのサブセットについては、財務と運用アプリとネイティブの Dataverse エンティティの間でデータを物理的にコピーする必要があります。 これらのシナリオは、 ネイティブの Dataverse アプリと財務と運用アプリの両方でバインドされた大量のロジックを持つ重複するエンティティを対象としているので、データを各タイプのアプリのローカル データベースに配置する必要があります。 これらのエンティティの数は比較的少ないがが、アカウント/顧客、会社、製品、および販売注文などの最も重要なエンティティの一部が含まれます。 これらのシナリオでは、**二重書き込み** により、ほぼリアルタイムの同期コピーが可能になります。 この機能により、既存のアプリはローカル データに対する操作を設計通りに継続することができ、また対応する重複エンティティが同期されていることを確認することができます。詳細については、[二重書き込みのホームページ](../data-entities/dual-write/dual-write-home-page.md)を参照してください。 
+シナリオのサブセットについては、財務と運用アプリとネイティブの Dataverse エンティティの間でデータを物理的にコピーする必要があります。 これらのシナリオは、ネイティブの Dataverse アプリと財務と運用アプリの両方でバインドされた大量のロジックを持つ重複するエンティティを対象としているので、データを各タイプのアプリのローカル データベースに配置する必要があります。 これらのエンティティの数は比較的少ないがが、アカウント/顧客、会社、製品、および販売注文などの最も重要なエンティティの一部が含まれます。 これらのシナリオでは、**二重書き込み** により、ほぼリアルタイムの同期コピーが可能になります。 この機能により、既存のアプリはローカル データに対する操作を設計通りに継続することができ、また対応する重複エンティティが同期されていることを確認することができます。詳細については、[二重書き込みのホームページ](../data-entities/dual-write/dual-write-home-page.md)を参照してください。 
 
 仮想エンティティ、二重書き込み、ビジネス イベントおよびデータ イベントを組み合わせて、財務と運用アプリとネイティブの Dataverse アプリ間の境界をまたぐアプリと業務プロセスをビルドすることができます。 ほとんどのアプリと業務プロセスでは、これら共有データ レイヤーの 3 つの部分の組み合わせかすべてのいずれかが使用されます。 同様に、拡張機能およびカスタマイズにおいて、データベース間でコピーされるデータ量を可能な限り減少させる必要があり、これらのツールを使用する際に、最も有利なユーザー エクスペリエンス用に最適化する必要もあります。 
 
@@ -71,7 +71,7 @@ Microsoft Power Platform、Dataverse、二重書き込み、および財務と�
 
 二重書き込みを使用する一般的なシナリオを次に示します。
 
-### <a name="customer-service-representatives-can-facilitate-a-change-of-address-for-finance-and-operations-customers"></a>顧客サービス担当者が Finance and Operations の住所変更を容易にできるようにする
+### <a name="customer-service-representatives-can-facilitate-a-change-of-address-for-finance-and-operations-customers"></a>顧客サービス担当者が財務と運用顧客の住所変更を容易にする
 
 顧客が移転し、請求先住所と送付先住所の情報を変更したいとします。 この顧客は、顧客サービス担当者に連絡して、住所の変更を依頼します。 顧客サービス担当者が電話を受け、顧客の請求先住所と送付先住所を変更します。
 
@@ -115,3 +115,4 @@ Microsoft Power Platform、Dataverse、二重書き込み、および財務と�
 8. 顧客は、与信限度額の引き上げに関する電子メールを受け取ります。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

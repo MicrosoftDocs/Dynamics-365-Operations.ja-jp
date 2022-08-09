@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: 0759319d02e89239b340ce42465b0c164df7db30
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ca37b3268e122969d826bb68d60e4d61ef596e09
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864528"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108391"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
 
@@ -201,7 +201,7 @@ ms.locfileid: "8864528"
 
 7. Service Fabric Explorer では、AOS ノードのための **コード** パッケージを検索し、省略記号ボタン (**...**) を選択し、アプリケーションを再起動させるため **再起動** を選択します。
 
-    ![Service Fabric Explorer から Finance and Operations を再起動します。](./media/ServiceFabricExplorerRestart.png)
+    ![Service Fabric Explorer から財務と運用を再起動します。](./media/ServiceFabricExplorerRestart.png)
 
 ### <a name="run-the-single-user-test"></a>単一ユーザー テストを実行
 
@@ -541,3 +541,4 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb04ce690e3f2035c7d52f6695fe78b914a60e33
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a690d95e1f79ec074b4445c832a5aa9ccc829b3b
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892696"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111879"
 ---
 # <a name="user-specified-team-owner"></a>ユーザー指定のチームの所有者
 
@@ -43,3 +43,4 @@ ms.locfileid: "8892696"
 :::image type="content" source="media/owning-team-2.png" alt-text="既定およびユーザー指定のチームとの初期同期。":::
   
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

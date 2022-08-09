@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 293b7f44a249eac1ad7fe5f5bc43c3be3658e646
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea860e6142e478de3f64f91f49554289eb27cdd4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897939"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068832"
 ---
 # <a name="preview-of-dynamics-365-human-resources-10026-may-2022"></a>Dynamics 365 Human Resources 10.0.26 のプレビュー (2022 年 5 月)
 
@@ -58,3 +58,4 @@ Dynamics 365 Finance 10.0.26 には、プラットフォーム更新プログラ
 ### <a name="bug-fixes"></a>バグ修正
 
 この更新プログラムに含まれるバグの修正については、Microsoft Dynamics の Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864) を参照してください。
+

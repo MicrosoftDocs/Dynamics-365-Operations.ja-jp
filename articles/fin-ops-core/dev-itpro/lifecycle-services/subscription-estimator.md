@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 6c9230c6699cd0ef2d3dfc9ea98460491d6b9fbd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c54a28d2798205ced15f7760ecfb8fec48f4cff0
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866359"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103578"
 ---
 # <a name="subscription-estimator-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のサブスクリプション試算
 
@@ -51,7 +51,7 @@ ms.locfileid: "8866359"
 
     [![サブスクリプション見積ツールで有効なサブスクリプション見積。](./media/SubscriptionEstimatorWithEdit.jpg)](./media/SubscriptionEstimatorWithEdit.jpg)
 
-3. **見積を編集** ダイアログ ボックスで、Finance and Operations ライセンスの各タイプのライセンス カウントを入力します。 既定では、各サブスクリプション見積が作成された際、購入した全てのライセンスの全カウントは割り当てられます。 顧客は、ライセンスの総数を超えるライセンスを 1 つの見積に割り当てることはできません。 また、割り当てられた番号を Dynamics 365 ライセンス ポリシーで必要な最小数よりも小さい値に減らす必要があります。
+3. **見積を編集** ダイアログ ボックスで、財務と運用のライセンスのタイプごとのライセンス数を入力します。 既定では、各サブスクリプション見積が作成された際、購入した全てのライセンスの全カウントは割り当てられます。 顧客は、ライセンスの総数を超えるライセンスを 1 つの見積に割り当てることはできません。 また、割り当てられた番号を Dynamics 365 ライセンス ポリシーで必要な最小数よりも小さい値に減らす必要があります。
 
     [![サブスクリプション見積ツールで有効なダイアログ ボックスを編集。](./media/SubscriptionEstimatorEditDialog.jpg)](./media/SubscriptionEstimatorEditDialog.jpg)
 
@@ -95,3 +95,4 @@ ms.locfileid: "8866359"
 [サブスクリプション、LCS プロジェクト、および Azure Active Directory テナントに関するよく寄せられる質問](../../fin-ops/get-started/subscription-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: RICHDI
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab6b9bb6734e438a5a6c05a7e167b3453aa3502
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bc6eb18ff46a6230ee7621232f6f17b01f5a5e3e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896861"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108890"
 ---
 # <a name="configure-powerbicom-integration"></a>PowerBI.com 統合の構成
 
@@ -104,9 +104,9 @@ ms.locfileid: "8896861"
     > [!IMPORTANT]
     > 続行する前に、必ず **アプリケーション (クライアント) ID** と **シークレットの値** の値をキャプチャしてください。
 
-## <a name="specify-power-bi-settings-in-finance-and-operations"></a>Finance and Operations での Power BI の設定の指定
+## <a name="specify-power-bi-settings-in-finance-and-operations"></a>財務と運用での Power BI の設定の指定
 
-1. Finance and Operations クライアントで、**PowerBI.com 設定** ページを開きます。
+1. 財務と運用クライアントで、**PowerBI.com 設定** ページを開きます。
 
     ![PowerBI.com コンフィギュレーション ページ](./media/D365-PBI-Configuration.png)
 
@@ -155,3 +155,4 @@ ms.locfileid: "8896861"
 | 問題が発生しました。 認証プロセスが成功しませんでした。 システム管理者に連絡してください。  | これはサービス キーの期限が切れている場合に発生する可能性があります。 前の手順 3 から始めて、上記の登録プロセスを実行することをお勧めします。 完了したら、**AX クライアント \> システム管理 \> 設定 \> PowerBI.com 統合** で PowerBI.com の設定の更新を確認してください。 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

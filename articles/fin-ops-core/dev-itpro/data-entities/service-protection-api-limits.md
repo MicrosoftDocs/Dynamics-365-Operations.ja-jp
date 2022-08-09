@@ -2,19 +2,19 @@
 title: サービス保護 API 制限
 description: この記事では、財務と運用アプリ サービスのサービス保護アプリケーション プログラミング インターフェイス (API) の制限について説明します。
 author: jaredha
-ms.date: 06/02/2022
+ms.date: 07/06/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-21
-ms.openlocfilehash: f08584d56a1193e85cb076488d8cf1dcad2bb374
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0102b46a86cf4e666c234c2f13c48cd682c1f5bc
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909473"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135523"
 ---
 # <a name="service-protection-api-limits"></a>サービス保護 API 制限
 
@@ -23,7 +23,7 @@ ms.locfileid: "8909473"
 この記事では、財務と運用アプリ サービスのサービス保護アプリケーション プログラミング インターフェイス (API) の制限について説明します。
 
 > [!IMPORTANT]
-> リソース ベースのサービス保護 API 制限は、バージョン 10.0.19 から財務と運用アプリ環境で有効になります。 この記事で説明するユーザー ベースのサービス保護 API 制限は、バージョン 10.0.28 の環境で有効になる予定です。 バージョン 10.0.29 の、Dynamics 365 2022 リリース ウェーブ 2 では、API 制限がすべての環境で既定で有効になりますが、オプションで無効にすることもできます。 バージョン 10.0.32 の、Dynamics 365 2023 リリース ウェーブ 1 では、ユーザー ベースの API 制限は必須になり、API 制限を無効にするオプションは提供されなくなります。 詳細については、[財務と運用アプリのサービス保護 API 制限の準備](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/preparing-for-finance-and-operations-service-protection-api-limits-may-17-18-2022) TechTalk を参照してください。
+> リソース ベースのサービス保護 API 制限は、バージョン 10.0.19 から財務と運用アプリ環境で有効になります。 この記事で説明するユーザー ベースのサービス保護 API の制限は、バージョン 10.0.29 の、Dynamics 365 2022 リリース サイクル 2 環境で有効になる予定です。 バージョン 10.0.30 では、API 制限がすべての環境で既定で有効になりますが、オプションで無効にすることもできます。 バージョン 10.0.33 では、ユーザー ベースの API 制限は必須になり、API 制限を無効にするオプションは提供されなくなります。 詳細については、[財務と運用のサービス保護 API 制限の準備](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/preparing-for-finance-and-operations-service-protection-api-limits-may-17-18-2022) TechTalk を参照してください。
 
 財務と運用アプリ サービスの可用性とパフォーマンスを一貫させるため、Microsoft はサービス API の使用方法に制限を適用します。 これらの制限は、クライアント アプリケーションがサーバー リソースに対して特別な要求を行う場合に、サービスを保護するためのものです。 突発的に発生する受信 API トラフィックが多かったり、サーバーに対して同時に実行時間の長い要求を行った場合、サーバー リソースが消耗し、サービスの停止、またはその可用性やパフォーマンスに影響を与える可能性があります。
 
@@ -54,7 +54,7 @@ ms.locfileid: "8909473"
 
 ## <a name="enforcement-of-the-service-protection-api-limits"></a>サービス保護 API 制限の実施
 
-財務と運用アプリのサービス保護 API 制限には 2 種類あります: ユーザー ベースとリソース ベースの制限。 ユーザー ベースの制限は、個々のユーザーまたは統合がシステムのパフォーマンスと可用性を低下させるのを防ぐのに役立ちます。 リソース ベースの制限は、高い環境リソース稼働率のしきい値を適用することにより、環境を保護するのに役立ちます。 高いしきい値に達すると、サービス要求は制限されます。 
+財務と運用アプリのサービス保護 API 制限には、ユーザー ベースとリソース ベースの制限の 2 種類あります。 ユーザー ベースの制限は、個々のユーザーまたは統合がシステムのパフォーマンスと可用性を低下させるのを防ぐのに役立ちます。 リソース ベースの制限は、高い環境リソース稼働率のしきい値を適用することにより、環境を保護するのに役立ちます。 高いしきい値に達すると、サービス要求は制限されます。 
 
 > [!IMPORTANT]
 > サービス保護 API 制限は変更される可能性があり、環境間で異なる場合があります。 数値は既定値を表し、環境で想定される値の目安になるよう提供されています。 これらの制限は、構成可能ではなく、法人に固有のものではありません。
@@ -150,7 +150,10 @@ ms.locfileid: "8909473"
 - [財務と運用アプリの Power Platform 仮想テーブル](../power-platform/virtual-entities-overview.md)
 - [財務と運用アプリ コネクタ](fin-ops-connector.md)
 
+仮想テーブルに対する控除は、[Microsoft Power Platform と財務と運用アプリの統合](../power-platform/overview.md)が有効になっている場合にのみ適用されます。 サービス保護 API 制限は、財務と運用アプリ環境で統合が有効になっていない場合に、仮想テーブルに適用されます。 統合が有効な場合、仮想エンティティ プラグインによって呼び出された財務と運用アプリ API エンドポイントにのみ控除が適用されます。 財務と運用アプリ サービスは、要求を調整しません。 ただし、要求が Microsoft Dataverse API を介して行われた場合、[Dataverse サービス保護 API 制限](/power-apps/developer/data-platform/api-limits.md)が引き続き要求に適用される場合があります。
+
 現在、これらのサービスは制限の対象外となっていますが、サービス保護制限の実装を優先しています。 任意の変更に先立って通知がなされ、これらのサービスで適用除外が解除されるとドキュメントが更新されます。
 
 > [!NOTE]
 > サービス保護制限が適用されると、これらのサービスには再試行ロジックを使用するハンドラーが実装されます。 ただし、これらのサービスを使用するスロットルに対しても、クライアント側の処理をお勧めします。 再試行ロジックを使用する 429 ハンドラーの実装を検討してください。
+

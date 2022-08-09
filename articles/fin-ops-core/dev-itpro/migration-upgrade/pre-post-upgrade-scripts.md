@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: 840db8baf0d212bb80161994277ecc7a21d081bf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 01a51864a9f66823d810b0a7948dc92aa972cd8a
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866140"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124458"
 ---
 # <a name="troubleshoot-presync-and-postsync-upgrade-scripts-during-upgrade-to-dynamics-365-finance--operations"></a>Dynamics 365 Finance + Operations へのアップグレード時の PreSync および PostSync アップグレード スクリプトのトラブルシューティング
 
@@ -126,7 +126,7 @@ where assetid not in (select assetid from assettable)
 { ClassName: "ReleaseUpdateDB10\_CaseManagement"、MethodName: "updateCaseCategoryTypeMajor"、会社: "DAT", DataParition: "initial", ErrorCount: "1"、ErrorMessage: " ロール別ケース カテゴリ セキュリティ (CaseCategoryRole) のレコードを編集できません。 カテゴリ タイプ: なし。  
 レコードが既に存在します。 バッチ タスクが失敗しました: ロール別ケース カテゴリ セキュリティ (CaseCategoryRole) のレコードを編集できません。 カテゴリ タイプ: なし。  
 レコードが既に存在します。" }  
-_停止された DBSync モニタリング。Microsot.Dynamics.Ax.Xpp.ErrorException: セッションの作成に失敗しました; ユーザーに Microsoft Dynamics 365 for Finance and Operations にログオンするための適切な権限があることを確認してください。_
+_停止された DBSync モニタリング。Microsot.Dynamics.Ax.Xpp.ErrorException: セッションの作成に失敗しました; ユーザーに Microsoft Dynamics 365 Finance にログオンするための適切な権限があることを確認してください。_
 
 **原因**
 
@@ -173,3 +173,4 @@ SQL データベースによってエラーが出されました。"
 1. そのテーブルでトリガーをレビューし、カスタム トリガーがあるかどうかを確認します。 Dynamics 365 で作成されるほとんどの標準トリガーには、**SysDbLog**、**SysEvenCud**、または **AIF** などの接頭語が付けられます。
 1. 問題の原因と思われるカスタムトリガーをスクリプト化するには、各トリガーを選択したまま (または右クリック) にしてから、**トリガーのスクリプト名 \> 作成先 \> 新規クエリ編集ウィンドウ** の順に選択します。
 1. スクリプトの完了後、**編集 \> 検索** に移動して、エラー メッセージで参照されるフィールドがスクリプトに存在するかどうかを特定します。 トリガー内で一致が見つかった場合は、トリガーを無効またはドロップする必要があります。
+

@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
-ms.custom: 266594
-ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 2bbba007c9a51c1f45a6a332ba1ce80492c48ada
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "266594"
+ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
+ms.openlocfilehash: 1b7f75a54a6100d55924499a9a341d5fea03d4a4
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905097"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206777"
 ---
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 

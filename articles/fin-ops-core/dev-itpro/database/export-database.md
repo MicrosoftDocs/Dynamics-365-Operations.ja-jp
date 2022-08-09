@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 9fe50e37def0592aa85081093f1b6c9c5d34291f
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: 5b1fae058f804804b186cb9ed73774bb389103e0
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945740"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103500"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -113,3 +113,4 @@ GO
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

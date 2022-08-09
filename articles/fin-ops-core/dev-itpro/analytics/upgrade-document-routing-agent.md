@@ -2,22 +2,22 @@
 title: ドキュメント回覧エージェントの更新
 description: この記事では、Document Routing Agent を更新する方法について説明します。
 author: RichdiMSFT
-ms.date: 05/14/2020
+ms.date: 07/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f15b767f36c4dbc42d8b8ccf5076207f5cddb76
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6b91ac00881b09ffbce15319bac091cc2c1cd409
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903570"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206641"
 ---
 # <a name="update-the-document-routing-agent"></a>ドキュメント回覧エージェントの更新
 
@@ -42,7 +42,7 @@ DRA を Microsoft Windows サービスとして引き続き実行するには、
 ![マネージャー スナップイン。](media/Services_dialog.png)
 
 ## <a name="uninstall-an-existing-document-routing-agent"></a>既存のドキュメント回覧エージェントのアンインストール
-**プログラムと機能** を開き、**Microsoft Dynamics 365 for Finance and Operations: ドキュメント回覧** を検索し、削除します。
+**プログラムと機能** を開き、**Microsoft Dynamics 365 Finance: ドキュメント回覧** を検索し、削除します。
 
 ![プログラム ウィンドウをアンインストールまたは変更します。](media/Programs_and_Features_dialog.png)
 
@@ -56,5 +56,12 @@ DRA を Microsoft Windows サービスとして引き続き実行するには、
 > [!NOTE]
 > アップグレード後に DRA クライアントを開いて、ネットワーク ユーザーの資格情報を更新してください。
 
+## <a name="best-practices"></a>ベスト プラクティス
+Document Routing Agent に固有のサポート チームを作成する場合、Document Routing Agent コンピューターから問題が発生した時点のイベントを含むイベント ログをエクスポートすることを検討します。 
+
+既定のイベント ログ サイズは1 MB だけであるため、パフォーマンスの問題などの問題が断続的な場合は、イベント ログ サイズを増やすことを検討してください。 イベント ログをエクスポートするまでしばらく待機します。
+
+- \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Operational
+- \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Admin
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

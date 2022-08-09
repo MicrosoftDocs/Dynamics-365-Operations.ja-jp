@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 00f9b305d764089baab52a22a6e82dce194acbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d13407571f7e405ef705c24d4e66304d01cc4c0
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866380"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103347"
 ---
 # <a name="query-cookbook"></a>クックブックの照会 
 
@@ -114,3 +114,4 @@ The following live views have been removed from the **Live views** tab of **SQL 
 | Common metrics (DTU) | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Current DTU has been removed from queries.</li></br></ul></br>**Details**</br><ul></br><li>See **Current DTU** under **Queries** above.</li></br></ul> |
 | Currently executing statements | No | Remains available in LCS. |
 | Blocking statements | No | Remains available in LCS. | -->
+

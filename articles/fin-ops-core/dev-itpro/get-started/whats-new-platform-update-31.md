@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Platform update 31
-ms.openlocfilehash: 6560beeff019803289895990cda338ea9d006326
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5354bb7239f246128d826bc6eb99b30eb2a680d8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069898"
 ---
 # <a name="whats-new-and-changed-in-platform-update-31-for-finance-and-operations-apps-january-2020"></a>財務と運用アプリのプラットフォーム更新プログラム 31 (2020 年 1 月) の新機能および変更された機能
 
@@ -46,7 +46,7 @@ ms.locfileid: "8866674"
 
 2.    IIS をリセットして、静的なフライティング キャッシュをフラッシュします。
 
-3.    Finance and Operations アプリの **機能管理** ワークスペースに移動します。 
+3.    財務と運用アプリの **機能管理** ワークスペースに移動します。 
 
 4.    機能のリストから **新しいグリッド コントロール** 機能を選択し、詳細ウィンドウの **直ちに有効化** を選択します。
 
@@ -59,12 +59,12 @@ ms.locfileid: "8866674"
 保存されたビュー機能は、プラットフォーム更新プログラム 31 により進化し続けます。 このリリースには、ビューおよび個人用設定の管理用の管理者の個人用設定ページのオーバーホール、ビューの一括インポート/エクスポート機能、および特定の法人のユーザーにビューを公開する機能が含まれています。 保存されたビューに関する詳細については、[保存されたビュー](../../fin-ops/get-started/saved-views.md) を参照してください。  
 
 ## <a name="new-controls-available-for-developers"></a>開発者が使用可能な新しいコントロール
-Web サイトのホスト コントロールが追加され、開発者はサードパーティのアプリを iFrames 内で Finance and Operations に直接埋め込むことができるようになりました。 これは、特定の権限を持つユーザーが個人用設定を介してアプリを埋め込むことができるようにするための最初のステップで、埋め込み PowerApps の既存のシナリオに似ています。
+Web サイトのホスト コントロールが追加され、開発者はサードパーティのアプリを iFrames 内で財務と運用に直接埋め込むことができるようになりました。 これは、特定の権限を持つユーザーが個人用設定を介してアプリを埋め込むことができるようにするための最初のステップで、埋め込み PowerApps の既存のシナリオに似ています。
 
 開発者は新しい星評価コントロールを使用することもできます。 このコントロールは、1 から 5 個の星のスケール上で 4 分の 1 ずつの評価を表示します。
 
-## <a name="updated-icon-for-finance-and-operations-apps"></a>更新された Finance and Operations アプリのアイコン
-Finance and Operations アプリ用の新しいアイコンは、Dynamics 365 の最新のアイコン スタイリングに沿っていて、Web クライアントに表示されるようになりました。
+## <a name="updated-icon-for-finance-and-operations-apps"></a>更新された財務と運用アプリのアイコン
+財務と運用アプリ用の新しいアイコンは、Dynamics 365 の最新のアイコン スタイリングに沿っていて、Web クライアントに表示されるようになりました。
 
 ## <a name="optimization-of-loading-the-data-management-workspace"></a>データ管理ワークスペース読み込みの最適化
 特定の条件下では、データ管理ワークスペースの読み込みに時間がかかります。 ワークスペースの読み込みにかかる時間を減らすために、新しい最適化が実施されています。 この変更は、フライト DMFWorkspaceLoadPerformance を介して有効化できます。

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce82aa52d0a458026892f0733031d57fa3e350fa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5035aa23d85b1b3f6c0fd05f7210fa4a1abaac62
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866780"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067500"
 ---
 # <a name="financials-development-home-page"></a>財務開発のホーム ページ
 
@@ -53,7 +53,7 @@ ms.locfileid: "8866780"
 - 通貨の為替レート プロバイダー
 
     + [為替レート プロバイダーの作成](../financial/create-exchange-rate-providers.md)
-    + [Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成](../financial/create-exchange-rate-8.md)
+    + [財務と運用バージョン 8.0 での為替レート プロバイダーの作成](../financial/create-exchange-rate-8.md)
 
 - プロセスの自動化のフレームワーク
 

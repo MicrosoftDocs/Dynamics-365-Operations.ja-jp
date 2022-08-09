@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 269a26908513a3dae4d55e09c5ed99d06534858b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: baad2dedf57ef5032b40ffb4179c73a59af6369f
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852026"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9150954"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Adyen 向け Dynamics 365 Payment Connector の概要
 
@@ -43,18 +43,12 @@ ms.locfileid: "8852026"
 ### <a name="supported-versions"></a>サポートされているバージョン
 
 #### <a name="microsoft-dynamics-365-supported-versions"></a>Microsoft Dynamics 365 のサポートされているバージョン
-ファーストパーティーの独創的な Adyen 向け Dynamics 365 Payment Connector は Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) またはそれ以降、および Microsoft Dynamics 365 Retail バージョン 8.1.3 またはそれ以降でサポートされます。 ただし、サード パーティは Microsoft Dynamics 365 の初期バージョンのために他の Adyen 用支払コネクタを開発することができます。
+ファーストパーティーの独創的な Adyen 向け Dynamics 365 の支払コネクタは、Microsoft Dynamics 365 Finance バージョン 8.1.3 (2019 年 1 月) またはそれ以降、および Microsoft Dynamics 365 Retail バージョン 8.1.3 またはそれ以降でサポートされます。 ただし、サード パーティは Microsoft Dynamics 365 の初期バージョンのために他の Adyen 用支払コネクタを開発することができます。
 
 #### <a name="supported-adyen-firmware-versions"></a>サポートされている Adyen ファームウェア バージョン
 次の表は、Microsoft Dynamics 365 Retail POS の各バージョンでサポートされている最小および最大の Adyen ファームウェア バージョンを示しています。
 
 ---
-
-# <a name="10022"></a>[10.0.22](#tab/10-0-22)
-### <a name="dynamics-365-retail-pos-version-10022"></a>Dynamics 365 Retail POS バージョン 10.0.22
-| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
-| --- | --- |
-| adyen_v1_65p8 | adyen_v1_67p10 |
 
 # <a name="10023"></a>[10.0.23](#tab/10-0-23)
 ### <a name="dynamics-365-retail-pos-version-10023"></a>Dynamics 365 Retail POS バージョン 10.0.23
@@ -85,6 +79,12 @@ ms.locfileid: "8852026"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_73p6 | adyen_v1_75p13 |
+
+# <a name="10028"></a>[10.0.28](#tab/10-0-28)
+### <a name="dynamics-365-retail-pos-version-10028"></a>Dynamics 365 Retail POS バージョン 10.0.28
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p22 |
 
 ---
 
@@ -189,10 +189,12 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | アイスランド | ✔ |
 | アイルランド | ✔ |
 | イタリア | ✔ |
+| 日本 | 将来のリリース |
 | ラトビア | ✔ |
 | リトアニア | ✔ |
 | マレーシア | ✔ |
 | オランダ | ✔ |
+| ニュージーランド | ✔ |
 | ノルウェー | ✔ |
 | ポーランド | ✔ |
 | シンガポール | ✔ |
@@ -296,6 +298,8 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](../pos-multi-hws.md) | ✔<br>(10.0.12 以降) | |
 | [Adyen コネクタによる SDK レベルのチップ サポート](tipping.md) | ✔<br>(10.0.14 以降) | |
 | [注文請求の増分取得](incremental-capture.md) |  | ✔<br>(10.0.18 以降) |
+| [ウォレット支払い](./wallets.md) |  | ✔<br>(10.0.20 以降) |
+| [Adyen による Google Pay](google-pay-adyen.md) |  | ✔<br>(10.0.27 以降) |
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -312,3 +316,4 @@ Adyen 向け Dynamics 365 Payment Connector のサインアップおよび構成
 [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a1040011e47347bbeb528b9c251ddc5a03a5eb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f794d268db1b0c4192e1c286bef839ea3d635376
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871477"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114335"
 ---
 # <a name="messaging-system-for-finance-and-operations-apps"></a>財務と運用アプリのメッセージング システム
 
@@ -27,7 +27,7 @@ ms.locfileid: "8871477"
 
 この記事では、財務と運用アプリの豊富で強力なメッセージング システムについて説明します。
 
-このエクスペリエンスを改善するために、財務と運用アプリ用に新しいメッセージング システムが作成されました。 以前のバージョンと比較すると、財務と運用アプリのメッセージング システムには次の機能が含まれています。
+このエクスペリエンスを改善するために、財務と運用アプリ用に新しいメッセージング システムが作成されました。 以前のバージョンと比較すると、財務と運用アプリのメッセージング システムには次の機能が含まれています:
 
 + コンテキストのあるメッセージの関連性が強化されました (フォームとグローバル)。
 + 中断のレベル (なし、軽微、および中断) を強化しました。

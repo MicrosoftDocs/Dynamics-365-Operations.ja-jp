@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sriknair
 ms.search.validFrom: 2021-07-31
-ms.openlocfilehash: c093a54518171180dbe9b4bd51b7cb37ddee56de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 47b12fbfeabe08c884e292f3b7de31a86a001740
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903533"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108477"
 ---
 # <a name="business-continuity-and-disaster-recovery"></a>事業の継続性と障害復旧
 
@@ -22,7 +22,7 @@ ms.locfileid: "8903533"
 
 Microsoft Azure の地域の広範囲で稼働停止が発生した場合、Microsoft は、Dynamics 365 のサービスとしてのソフトウェア (SaaS) アプリケーションの運用インスタンスに対して、事業の継続性と障害復旧を提供します。
 
-適切なライセンスを購入した顧客は、財務と運用アプリの運用インスタンスを配置することができます。 詳細については、[クラウド配置の概要](../deployment/cloud-deployment-overview.md)を参照してください。
+適切なライセンスを購入した顧客は、財務と運用アプリの実稼働インスタンスを配置することができます。 詳細については、[クラウド配置の概要](../deployment/cloud-deployment-overview.md)を参照してください。
 
 運用環境では、配置時にセカンダリ地域に異なるストレージ サービスの複製 (Azure SQL Database およびファイル ストレージ) が作成されます。 これらの複製は、*geo-secondaries* と呼ばれます。
 
@@ -65,3 +65,4 @@ Azure リージョン全体に影響する自然災害など、地域の広範�
 | フェールオーバーが発生した場合、該当するサービスは限定モードで機能します。 フェールオーバー モードでは、更新のメンテナンスは、トリガーできません。 | 顧客は、フェールオーバー モードでパッケージの配置、またはその他の定期的なメンテナンス要求を要求できません。 |
 | データセンターが運用可能になると、Microsoft はプライマリの Azure 地域の運用インスタンスにフェール バックします。 通常の運用が再開されます。 顧客に通知が発行されます。 このウィンドウ内で短い中断や切断が発生することがありますが、顧客は完全なダウンタイムを取る必要はありません。 | なし |
 | なし | 顧客は、Microsoft がサービスの一部として提供していないリソースについて障害復旧を計画する必要があります。 これには、独立して実行されるリソースと、Azure の顧客サブスクリプションでホストされているリソースが含まれます。 |
+

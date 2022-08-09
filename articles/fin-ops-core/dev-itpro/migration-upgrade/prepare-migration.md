@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations へのコードの移行の準備
+title: 財務と運用へのコードの移行の準備
 description: この記事では、コード アップグレード サービスと Visual Studio ツールを使用して、Dynamics AX 2012 R3 から財務と運用に移行する方法について説明します。
 author: RobinARH
 ms.date: 11/10/2017
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 553fc894e3171cc00b29c4034614714bd9f85357
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df9cebe731fc6798b6671e6d031e59a7494aa81a
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890441"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124478"
 ---
-# <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコードの移行の準備
+# <a name="prepare-to-migrate-code-to-finance-and-operations"></a>財務と運用へのコードの移行の準備
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から財務と運用に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
+この記事では、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から財務と運用に移行する方法について説明します。 これらの手順のほとんどは、財務と運用の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
-リモート デスクトップを使用して Finance and Operations 開発環境にアクセスし、このインスタンスの管理者としてプロビジョニングされる必要があります。 コードをアップグレードする前に、Finance and Operations の開発、カスタマイズ、およびユーザー インターフェイスの概念の幾つかをよく理解しておくことをお勧めします。 次にいくつかの参照を挙げます。
+リモート デスクトップを使用して財務と運用開発環境にアクセスし、このインスタンスの管理者としてプロビジョニングされる必要があります。 コードをアップグレードする前に、Finance and Operations の開発、カスタマイズ、およびユーザー インターフェイスの概念の幾つかをよく理解しておくことをお勧めします。 次にいくつかの参照を挙げます。
 
 -   [開発ツール](../dev-tools/developer-home-page.md)
 -   [モデルとパッケージ](../dev-tools/models.md)
@@ -40,7 +40,7 @@ ms.locfileid: "8890441"
 ## <a name="overview-of-the-code-migration-process"></a>コード移行プロセスの概要
 ### <a name="model-split"></a>分割されたモデル
 
-Finance and Operations アプリケーションは、次のいくつかのパッケージ、またはアセンブリに分割されます: 
+財務と運用アプリは、次のいくつかのパッケージ、またはアセンブリに分割されます: 
 
 **プラットフォームパッケージ**
 
@@ -110,10 +110,10 @@ LCS コード アップグレード サービス構成のコードをアップ�
 移行を完了するには、すべての移行固有のベスト プラクティス ルールを修正する必要があります。 エラーは警告としてエラー リストに表示されます。 エラー一覧には、コンパイラの警告やベスト プラクティスのエラーが表示されます。 ベスト プラクティスのエラーには接頭語として **BP** のテキストが付けられます。 たとえば、**BPErrorFormControlPatternUnspecified**。
 
 ## <a name="debugging"></a>デバッグ
-既定では、Finance and Operations は作業中のファイルのデバッグ環境を最適化します。 結果として、プロジェクトに含まれていないファイル (F11) にステップ インすると、 PDB が読み込まれず、コードをデバッグできなくなります。 この問題を回避するには、<strong>Dynamics 365 **&gt;**オプション</strong>&gt;<strong>デバッグ</strong> をクリックしてプロジェクトのデバッグ設定を変更します。 <strong>ソリューション内の項目に対してのみシンボルを読み込む</strong> チェックボックスが選択されていないことを確認します。 このオプションは、デバッガの速度を大幅に向上させるため、既定で選択されています。 Intellitrace をオフにしたい場合、別のデバッグ設定をします。 Intellitrace はアプリケーションの完全な実行履歴を収集します。 デバッグ時に IDE で多くのノイズが作成されます。 Intellitrace をオフにするには、<strong>オプション</strong>&gt;<strong>IntelliTrace</strong>&gt;<strong>IntelliTrace を有効にする</strong> をクリックしてチェック ボックスをオフにし、<strong>OK</strong> をクリックします。 Intellitrace は Visual Studio の Enterprise 版でのみ使用できることに注意してください。  
+既定では、財務と運用は作業中のファイルのデバッグ環境を最適化します。 結果として、プロジェクトに含まれていないファイル (F11) にステップ インすると、 PDB が読み込まれず、コードをデバッグできなくなります。 この問題を回避するには、<strong>Dynamics 365 **&gt;**オプション</strong>&gt;<strong>デバッグ</strong> をクリックしてプロジェクトのデバッグ設定を変更します。 <strong>ソリューション内の項目に対してのみシンボルを読み込む</strong> チェックボックスが選択されていないことを確認します。 このオプションは、デバッガの速度を大幅に向上させるため、既定で選択されています。 Intellitrace をオフにしたい場合、別のデバッグ設定をします。 Intellitrace はアプリケーションの完全な実行履歴を収集します。 デバッグ時に IDE で多くのノイズが作成されます。 Intellitrace をオフにするには、<strong>オプション</strong>&gt;<strong>IntelliTrace</strong>&gt;<strong>IntelliTrace を有効にする</strong> をクリックしてチェック ボックスをオフにし、<strong>OK</strong> をクリックします。 Intellitrace は Visual Studio の Enterprise 版でのみ使用できることに注意してください。  
 
 ## <a name="address-code-migration-tasks"></a>アドレス コード移行タスク
-メタデータを Finance and Operations に移行するとき、複数の自動アップグレード スクリプトが実行されます。 開発者が手動で移行タスクを完了する必要がある場合、行う内容とベスト プラクティス (BP) が追加されました。
+メタデータを財務と運用アプリに移行するとき、複数の自動アップグレード スクリプトが実行されます。 開発者が手動で移行タスクを完了する必要がある場合、行う内容とベスト プラクティス (BP) が追加されました。
 
 -   TO DO には `/* TODO: (Code Upgrade)` の接頭語が付いており、コード移行の一部として修正する必要があります。
 -   BP 移行固有のルールはコード移行の一環として修正される必要があります。
@@ -144,7 +144,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 
 ### <a name="code-upgrade-rule---action-pane"></a>コード アップグレード ルール - アクション ウィンドウ
 
-Finance and Operations では、次の主要なアクションはシステム定義ボタンとして提供されます。
+財務と運用アプリでは、次の主要なアクションはシステム定義ボタンとして提供されます:
 
 -   新規
 -   消去
@@ -285,7 +285,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 13. **Ctrl+F5** キーを押してフォームを表示します。 **確約** タブの **削除** および **編集** ボタンが削除されたことを確認します。
 
 ## <a name="resolve-casting-exceptions"></a>キャスト例外を解決
-Finance and Operations では、X++ は完全に中間言語 (IL) ベースであるため、解釈された Dynamics AX 2012 よりも厳密なランタイム タイプ動作を行います。 この厳しいランタイム タイプの動作により、移行された Dynamics AX 2012 R3 メタデータの例外を生成できます。 移行中にこれらの例外が発生することがあります。 キャスト例外は、ダウンキャスト、タイム オブジェクトを設計するためのキャスト ランタイム、サイド キャストなど、さまざまな実行時シナリオで発生させることができます。 以下のセクションで、フォーム CosJournalName が実行時にコントロールを生成し、強い型付けのために .NET 例外を発生させる型の不一致がある例について説明します。
+財務と運用アプリでは、X++ は完全に中間言語 (IL) ベースであるため、解釈された Dynamics AX 2012 よりも厳密なランタイム タイプ動作を行います。 この厳しいランタイム タイプの動作により、移行された Dynamics AX 2012 R3 メタデータの例外を生成できます。 移行中にこれらの例外が発生することがあります。 キャスト例外は、ダウンキャスト、タイム オブジェクトを設計するためのキャスト ランタイム、サイド キャストなど、さまざまな実行時シナリオで発生させることができます。 以下のセクションで、フォーム CosJournalName が実行時にコントロールを生成し、強い型付けのために .NET 例外を発生させる型の不一致がある例について説明します。
 
 ### <a name="example-side-casting-exception"></a>例: サイドキャストの例外
 

@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
-ms.custom: 266574
-ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 614d26fff6ce53cd29c056237a794c19ed1a3dfb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "266574"
+ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
+ms.openlocfilehash: b7223c15f33a61ff2f71eff36352a4294df3797c
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892245"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205920"
 ---
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 

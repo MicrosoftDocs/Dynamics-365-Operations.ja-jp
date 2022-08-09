@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 78f927b381d9dd8c6b52d73660584cd2ea70a0c3
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 96e12e738be6f0fc07dc988fe2d919980e8d23dd
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027354"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103217"
 ---
 # <a name="authentication-in-dynamics-365-finance--operations-on-premises-environments"></a>Dynamics 365 Finance + Operations (on-premises) 環境での認証
 
@@ -106,3 +106,4 @@ AD FS 申請グループの設定に誤りがある場合、イベント ログ�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

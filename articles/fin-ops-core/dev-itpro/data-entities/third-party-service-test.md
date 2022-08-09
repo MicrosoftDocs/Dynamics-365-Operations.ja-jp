@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df44c7272e32133e0377b1a0928f6a4b3f992b1c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a3f1ded15e497b2214780215f7616f414965ce14
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876525"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108639"
 ---
 # <a name="test-services-by-using-third-party-utilities"></a>サード パーティ ユーティリティを使用したテスト サービス
 
@@ -38,7 +38,7 @@ ms.locfileid: "8876525"
 
 ## <a name="prerequisites"></a>前提条件
 
-外部アプリケーションを使用してサービスをテストする前に、Microsoft Azure、および Finance and Operations にアプリケーションを登録する必要があります。
+外部アプリケーションを使用してサービスをテストする前に、Microsoft Azure、および財務と運用にアプリケーションを登録する必要があります。
 
 詳細については、以下を参照してください。
 
@@ -95,7 +95,7 @@ Postman (<https://www.getpostman.com/postman>) は、アプリケーション �
 14. OData サービスを介して、目的のデータ エンティティに対して作成、読み取り、更新、または削除 (CRUD) 操作を実行する要求を作成します。 必要に応じて URL を作成します。 詳細については、[データ プロトコル (OData) を開く](odata.md) を参照してください。 前に示したように、環境に格納されている変数を使用して、要求をパラメーター化することが便利であることがわかる場合があります。 次の GET クエリの例では、**Customer Account** パラメーターが使用されています。 クエリは、環境変数で指定された顧客アカウントの名前とアドレスの詳細を返します。 特殊文字は、URL に正しくエンコードされる必要があることに注意してください。
 
     ```Console
-    https://[Finance and Operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
+    https://[finance and operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
     ```
 
 15. 以前に取得され、**bearerToken** 環境変数に格納された認証トークンを参照する認証ヘッダーを追加します。 トークンは、ヘッダーの先頭に **Bearer** を付ける必要があります。
@@ -123,9 +123,9 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
 2. プロジェクトの情報を記入してください:
 
     - **プロジェクト名** フィールドに、プロジェクトの名前を入力します。
-    - **初期 WSDL** フィールドに、サービス アドレスを入力し、接尾語 **?wsdl** を追加します。 (サービスの住所は \[Finance and Operations インスタンスのベース URL\]/soap/services/ \[サービス グループ名\] の形式である必要があります。) 詳細については、[サービスのホーム ページ](services-home-page.md) を参照してください。
+    - **初期 WSDL** フィールドに、サービス アドレスを入力し、接尾語 **?wsdl** を追加します。 (サービスの住所は \[財務と運用インスタンスのベース URL\]/soap/services/\[サービス グループ名\] の形式である必要があります。) 詳細については、[サービスのホーム ページ](services-home-page.md)を参照してください。
 
-        たとえば、URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl` でユーザー セッション サービスについて問い合わせます。
+        たとえば、URL `https://[finance and operations base URL]/soap/services/UserSessionService?wsdl` でユーザー セッション サービスについて問い合わせます。
 
     - **すべての工程でサンプル依頼を作成しますか?** チェック ボックスをオンにします。
 
@@ -161,3 +161,4 @@ SoapUI (<https://www.soapui.org/>) は、API の開発とテストが関係す�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-14
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0920d752509bde990eb68d095b3102c38808def1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c34924c1b4c1ed404a9abed17e73364171ea5897
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850928"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108379"
 ---
 # <a name="enable-microsoft-dataverse-virtual-entities"></a>Microsoft Dataverse 仮想エンティティを有効化する
 
@@ -25,7 +25,7 @@ ms.locfileid: "8850928"
 
 
 
-財務と運用アプリで利用可能な多くのエンティティは、Open Data Protocol (OData) が有効になっているため、既定ではエンティティを Microsoft Dataverse の仮想エンティティとして利用することはできません。 Dataverse の財務と運用アプリ仮想エンティティの構成が完了すると、Dataverse 環境で仮想エンティティを有効にできます。 管理者は、どのエンティティを仮想エンティティとして公開し、Dataverse で使用できるようにするかを決定できます。
+財務と運用アプリで利用可能な多くのエンティティは、データ プロトコル (OData) が有効になっているため、既定ではエンティティを Microsoft Dataverse の仮想エンティティとして利用することはできません。 Dataverse の財務と運用アプリ仮想エンティティの構成が完了すると、Dataverse 環境で仮想エンティティを有効にできます。 管理者は、どのエンティティを仮想エンティティとして公開し、Dataverse で使用できるようにするかを決定できます。
 
 > [!NOTE]
 > Dataverse での財務と運用アプリの仮想エンティティの構成は、仮想エンティティを有効にするための前提条件です。 この構成は、Microsoft Power Platform 環境にリンクされている財務と運用アプリ環境に対して自動的に行われます。 リンクされていない環境の場合、仮想エンティティを有効にする前に手動で構成を完了する必要があります。 Dataverse で財務と運用アプリの仮想エンティティを構成するためのステップ バイ ステップの手順については、[Dataverse 仮想エンティティを構成する](admin-reference.md)を参照して下さい。
@@ -73,3 +73,4 @@ ms.locfileid: "8850928"
 ソリューションをエクスポートすると、**MicrosoftOperationsERPVE** ソリューションで生成された仮想エンティティへのハード依存関係が含められます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

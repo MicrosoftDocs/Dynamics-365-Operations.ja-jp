@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448e9f3df1eb5a44c3276efc63509906a1d7027e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9f66a1d1c22777871c7c64fc04f6bbc3836c84ca
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866951"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103480"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 
@@ -219,7 +219,7 @@ ms.locfileid: "8866951"
 
     [![FMParameters.](./media/code3_customizemodel.png)](./media/code3_customizemodel.png)
 
-    財務と運用アプリは、構成可能なプラグイン クラスもサポートしており、クラスに関連付けられているプラグイン メタデータは開発時は未知で、管理者がランタイム時に構成可能です。 このチュートリアルでは、その機能についてカバーしていません。
+    財務と運用アプリは、構成可能なプラグイン クラスもサポートしており、クラスに関連付けられているプラグイン メタデータは開発時には未知で、管理者がランタイム時に構成可能です。 このチュートリアルでは、その機能についてカバーしていません。
 
 ## <a name="create-additional-fleet-management-extensions"></a>追加のフリート管理拡張子を作成する
 

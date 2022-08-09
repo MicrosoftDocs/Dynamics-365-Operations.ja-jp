@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 92845844cc890c0f7ca3be35157e96a05dfc55e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc755eb5ffd0deaadb25961b07fe1d1abace7124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862113"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109514"
 ---
 # <a name="run-multi-user-testing-by-using-the-performance-sdk"></a>パフォーマンス SDK によるマルチユーザー テストを実行する
 
@@ -203,3 +203,4 @@ ms.locfileid: "8862113"
 パフォーマンス SDK を使用するシングル ユーザーまたはマルチ ユーザーのテストの詳細については、[パフォーマンス SDK によるシングルユーザーまたはマルチユーザーのテストに関するトラブルシューティングガイド](troubleshoot-perf-sdk-user-testing.md) を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

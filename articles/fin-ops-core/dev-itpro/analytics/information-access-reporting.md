@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 266104
-ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 4df7735759d69d7d0ec7e73da39ecfe3b52f75c9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "266104"
+ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
+ms.openlocfilehash: 754f070afaec75ce35914967e6eadc7342a7624a
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876732"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205580"
 ---
 # <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 

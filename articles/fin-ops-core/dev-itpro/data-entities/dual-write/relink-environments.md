@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2d5f39815d31e27d93dac6e3e925fedc5f449817
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e313f20c87c6ba62d74cdd36e1c0990deafaa68c
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884980"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111410"
 ---
 # <a name="unlink-and-relink-dual-write-environments"></a>二重書き込み環境のリンク解除および再リンク
 
@@ -29,33 +29,33 @@ ms.locfileid: "8884980"
 
 ## <a name="scenario-dual-write-is-enabled-between-production-environments"></a>シナリオ: 運用環境間で二重書き込みを有効にする
 
-このシナリオでは、Finance and Operations と Dataverse 運用環境の間で二重書き込みを有効にします。 Finance and Operations 運用環境 (ソース) をバックアップし、それを Finance and Operations UAT 環境 (出力先) に復元するとします。 復元したら、Finance and Operations UAT 環境で次の手順に従ってください。
+このシナリオでは、財務と運用と Dataverse 運用環境の間で二重書き込みを有効にします。 財務と運用運用環境 (ソース) をバックアップし、それを財務と運用 UAT 環境 (出力先) に復元するとします。 復元したら、財務と運用 UAT 環境で次の手順に従ってください:
 
 1. すべてのテーブル マップを停止します。
-2. Finance and Operations UAT 環境が Dataverse 運用環境を指すように、二重書き込み接続を解除します。
+2. 財務と運用 UAT 環境が Dataverse 運用環境を指すように、二重書き込み接続を解除します。
 3. キー テーブルからデータを削除します。
 
     - **DualWriteProjectConfiguration**
     - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
-4. Finance and Operations UAT 環境に対して、Dataverse UAT 環境を再リンクすることが必要な場合があります。 
+4. 財務と運用 UAT 環境に対して、Dataverse UAT 環境を再リンクすることが必要な場合があります。 
 5. マッピングを有効にします。
 
 Dataverse でバックアップおよび復元のプロセスが実行されている場合は、次の手順に従います。
 
-1. Finance and Operations UAT 環境にログインします。
+1. 財務と運用 UAT 環境にサインインします。
 2. すべてのテーブル マップを停止します。
-3. Dataverse UAT 環境が、Finance and Operations 運用環境を指すように、二重書き込み接続を解除します。
+3. Dataverse UAT 環境が、財務と運用の運用環境を指すように、二重書き込み接続を解除します。
 4. Dataverse の **二重書き込みランタイムのコンフィギュレーション** テーブルからデータを削除します。
-5. Finance and Operations UAT 環境に対して、Dataverse UAT 環境を再リンクすることが必要な場合があります。
+5. 財務と運用 UAT 環境に対して、Dataverse UAT 環境を再リンクすることが必要な場合があります。
 6. マッピングを有効にします。
 
 ## <a name="scenario-reset-or-change-linking"></a>シナリオ: リンクのリセットまたは変更
 
 二重書き込みに関連付けられている既存のサンドボックス Dataverse インスタンスをリセットする場合、または別の Dataverse インスタンスにリンクを変更する場合は、次の手順に従います。
 
-1. 財務と運用アプリにログインします。
+1. 財務と運用アプリにサインインします。
 2. すべてのエンティティ マップを停止します。
 3. 財務と運用アプリと Dataverse の間の二重書き込み接続のリンクを解除します。
 5. Dataverse 環境をリセットします。
@@ -82,3 +82,4 @@ Dataverse でバックアップおよび復元のプロセスが実行されて�
 5. **削除** アイコンを選択します。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

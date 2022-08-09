@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a19e369ed0224f2d60a1a7fc3a01c17c8998c50
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 1b1ddde8008c5473eb28605e99e2de3c59d03ca6
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735126"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066164"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
@@ -99,7 +99,7 @@ Replace this based on the migration guidance. */
 DimensionEntryControl.reactivate();
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 reactivate メソッドは、分析コード エントリ コントロールを現在の設定でリフレッシュします。 このメソッドは、会社または表示された分析コード リストが変更された場合にのみ、コントロールを更新します。 この呼び出しは、これらのどちらも以前に変更されていない場合に削除できます。 それ以外の場合は、呼び出しはそのままにします。 reactivate() の直前で parmCompany() が呼び出され、それが reactivate() より前に呼び出された唯一の DEC API であり、そのメソッドがデータソースの active() 中に呼び出された場合、最適化を手動で行うことでパフォーマンスを向上させ、コードの取り込みを削減することができます。
 
 1.  データ ソースのアクティブ プロセス中に、parmCompany() および reactivate() 呼び出しを削除します。
@@ -124,7 +124,7 @@ DimensionEntryControl.setEditability(true, 0);
 ```
 
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 特定の編集可能なディメンション セットが必要な場合は、この呼び出しを次のように置き換えます。
 
 ```xpp
@@ -144,7 +144,7 @@ no custom implementation */
 // dimensionDefaultingController.pageActivated();
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このコールを、分析コード エントリ コントロールの親コントロールの pageActivated メソッドまたは Form Init メソッド内で実行する場合、削除することができます。 上記の場所以外のメソッド呼び出しの意図は明確ではありません。 呼び出しを削除して、コントロールをテストします。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -155,7 +155,7 @@ Replace this based on the migration guidance. */
 DimensionEntryControl.deleted();
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 データ ソースの削除メソッド内にはない deleted() の呼び出しのために、TODO が残されます。 これらの呼び出しは、データソースの削除メソッド内にのみ存在すると予想され、置換はありません。 呼び出しを削除して、コントロールをテストしてみてください。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -166,7 +166,7 @@ Replace this based on the migration guidance. */
 // dimensionDefaultingController.writing();
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 分析コード エントリ コントロール フレームワークは、値を保存します。 呼び出しを削除して、コントロールをテストします。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -177,7 +177,7 @@ Replace this based on the migration guidance. */
 dimensionDefaultingController::findBackingEntityInstance();
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 エンティティを検索するには、getEntityInstance メソッドを DimensionAttributeValue から呼び出す必要があります。 この呼び出しを次のようなものに置き換えます。
 
 ```xpp
@@ -198,7 +198,7 @@ Replace this based on the migration guidance. */
 DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 ここに 1 つのパラメーターがある場合のみ updateValues() メソッドが呼び出されるため、呼び出しは allowEdit() の呼び出しに置き換えることができます。
 
 ```xpp
@@ -215,7 +215,7 @@ DimensionEntryControlHeader.updateValues(
     NoYesUnchanged::No, true);
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 この場合、updateValues() の呼び出しには 2 つのパラメーターがあるので、コントロールの編集機能を変更するには allowEdit() の呼び出しと置き換え、コントロールの値をクリアするには loadAttributeValueSet() の呼び出しと置き換える必要があります。
 
 ```xpp
@@ -236,7 +236,7 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);
 public int active(){int ret;ret = super();return ret;}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -245,7 +245,7 @@ public int active(){int ret;ret = super();return ret;}
 public void delete(){super();}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -254,7 +254,7 @@ public void delete(){super();}
 public void deleted(){super();}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -263,7 +263,7 @@ public void deleted(){super();}
 public void deleting(){super();}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -272,7 +272,7 @@ public void deleting(){super();}
 public boolean validateDelete(){boolean ret;ret = super();return ret;}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -281,7 +281,7 @@ public boolean validateDelete(){boolean ret;ret = super();return ret;}
 public void write(){super();}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -290,7 +290,7 @@ public void write(){super();}
 public void writing(){super();}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -299,7 +299,7 @@ public void writing(){super();}
 public void written(){super();}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -308,7 +308,7 @@ public void written(){super();}
 public boolean validateWrite(){boolean ret;ret = super();return ret;}
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 このメソッドはデータソースにあります。 カスタム ロジックがない場合に削除することができます。
 
 ### <a name="dynamics-ax-2012"></a>Dynamics AX 2012
@@ -323,7 +323,7 @@ public void pageActivated()
 }
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 この方法は分析コード エントリ コントロールを保持する TabPage またはグループになります。 カスタム ロジックがない場合は、メソッドを削除することができます。
 
 ## <a name="compile-errors"></a>コンパイル エラー
@@ -354,7 +354,7 @@ parmDimensionDefaultingControllerHeader(
 }
 ```
 
-### <a name="finance-and-operations"></a>Finance and Operations
+### <a name="finance-and-operations"></a>財務と運用
 
 <strong>フォームで (PurchTable)。</strong>
 
@@ -390,3 +390,4 @@ parmDimensionEntryControlHeader(
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

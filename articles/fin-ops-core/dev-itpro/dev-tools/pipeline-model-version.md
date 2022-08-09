@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6beb4a783b5a9f049f9232023d6659e8dc4e6a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0e193920f34fcafd2e814055de0d0a586a5ea2c9
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867009"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103198"
 ---
 # <a name="x-model-versioning-in-azure-pipelines"></a>Azure Pipelines で、X++ モデルのバージョン管理
 

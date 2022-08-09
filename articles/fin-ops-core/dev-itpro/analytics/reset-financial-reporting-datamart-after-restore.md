@@ -6,20 +6,21 @@ ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReports
 audience: IT Pro, Developer
-ms.reviewer: kfend
-ms.custom: 261824
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3bb72a434a9edaeda312c85c0c8fc2efe5d2ebbe
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "261824"
+ms.search.form: FinancialReports
+ms.openlocfilehash: 12456866256bdbd56aace43294b472a16b208650
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883744"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206256"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
@@ -86,7 +87,7 @@ ms.locfileid: "8883744"
 
 ### <a name="stop-services"></a>サービスの停止
 
-次の Microsoft Windows サービスでは、Finance and Operations のデータベースへの接続が提供されます。 したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。
+次の Microsoft Windows サービスでは、財務と運用のデータベースへの接続が提供されます。 したがって、Microsoft Remote Desktop を使用して環境内のすべてのコンピュータに接続し、services.msc を使用してこれらのサービスを停止する必要があります。
 
 - ワールド ワイド Web パブリッシング サービス (すべての アプリケーション オブジェクト サーバー (AOS) \[AOS\] の コンピューター)
 - バッチ管理サービス (非プライベート AOS コンピューター上のみ)
@@ -674,7 +675,7 @@ END
 2. エクスポートする構成要素グループを選択し、**エクスポート** を選択します。
 
     > [!NOTE]
-    > Finance and Operations では、ひとつの構成要素グループのみが対応しています: **既定**。
+    > 財務と運用では、1 つの構成要素グループのみが対応しています: **既定**。
 
 3. エクスポートするレポート定義を選択します:
 
@@ -706,3 +707,4 @@ END
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

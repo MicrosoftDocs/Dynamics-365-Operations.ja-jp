@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bbf2aaec620b7268a2d6f476bfaa6f804c46bd7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6ebade6b9988f4badc9297a9e6744168a2086755
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877020"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070269"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 
@@ -100,7 +100,7 @@ https://RS-URL/Commerce/$metadata
 5. **追加** を選択します。
 6. シークレットの値は、クライアント アプリケーション コードで使用できるように必ず書き留めてください。 
 
-## <a name="register-the-app-in-the-finance-and-operations-app-so-that-retail-server-trusts-it"></a>Retail Server から信頼されるようにするため、財務と運用アプリで、対象アプリを登録する
+## <a name="register-the-app-in-the-finance-and-operations-app-so-that-retail-server-trusts-it"></a>Retail Server から信頼されるために、財務と運用アプリで対象アプリを登録する
 
 1. Commerce Headquarters で、**Retail と Commerce** &gt; **本社の設定** &gt; **パラメーター** &gt; **Commerce 共有パラメーター** の順に移動します。
 2. **ID プロバイダー** クイック タブで、`Azure Active Directory` タイプのプロバイダーを選択します。 選択に基づいて、**依存する関係者** クイック タブの値が設定されます。
@@ -271,3 +271,4 @@ API にアクセスするには、最初に認証トークンを生成します�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 5263fda23b0d9eab2cbc80098f897b02cd63f197
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db5408b78933aa42fc348f9ba16326b025667c88
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876976"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069430"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1003"></a>Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
 
@@ -27,7 +27,7 @@ ms.locfileid: "8876976"
 
 この記事では、Dynamics 365 Retail の新機能および変更された機能について説明します。 
 
-Microsoft Dynamics 365 for Finance and Operations の機能については [Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3)を参照してください。
+Microsoft Dynamics 365 Finance の機能については [財務と運用バージョン 10.0.3 の新機能と変更点(2019 年 6 月)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3) を参照してください。
 
 ## <a name="new-calculation-logic-for-autocharges-in-call-center-for-mixed-delivery-mode-sales-lines"></a>混載配送モードの販売明細行の、コール センターにおける自動請求のための新しい計算ロジック
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2021
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 861800f9d5c69c7153c3874e0d331281e894e540
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3b8df31f52ea90483355659e4642b71632b0e555
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864913"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069008"
 ---
 # <a name="set-up-a-local-development-environment"></a>ローカル開発環境の設定
 
@@ -236,3 +236,4 @@ Visual Studio Code の **ターミナル** メニューで **タスクの実行*
 + [Retail 利益団体](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=1585934)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

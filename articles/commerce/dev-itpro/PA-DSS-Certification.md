@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f4e81e6ae227f45539dd3f9936188d444664f21d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e72ae03179c1eb46ad770c3bf506d1c3b7492534
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880098"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067256"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 
@@ -42,9 +42,9 @@ PA-DSS 実装ガイドは、次のテーブルの **バージョン** 列にリ�
 
 | リリース | バージョン  | 
 | ----------------------|-------- | 
-| Microsoft Dynamics 365 for Finance and Operations | 10.0  |
+| Microsoft Dynamics 365 Finance | 10.0  |
 | Microsoft Dynamics 365 for Retail | 2017 年 7 月 (7.2)  |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 2017 年 7 月 (7.2) |
+| Microsoft Dynamics 365 Finance、Enterprise Edition | 2017 年 7 月 (7.2) |
 | Microsoft Dynamics 365 for Operations | 1611 (7.1)  |
 | Microsoft Dynamics AX | 7.0     |
 | Microsoft Dynamics AX | 2012 R3 |
@@ -58,3 +58,4 @@ PA-DSS 実装ガイドは、次のテーブルの **バージョン** 列にリ�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

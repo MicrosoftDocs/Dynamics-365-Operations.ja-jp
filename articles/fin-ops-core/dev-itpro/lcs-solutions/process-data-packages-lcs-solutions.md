@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 財務と運用アプリ ソリューションのデータ パッケージの処理と使用
+title: 財務と運用アプリのデータ パッケージの処理と使用
 description: この記事では、ソリューションの処理およびデータ パッケージを消費する方法について説明します。
 author: kfend
 ms.date: 02/28/2019
@@ -12,18 +12,18 @@ ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 640ffc191c2ab4d947330ef1967bdf5dfbd410a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed7615354be0453b9252e068d47de86dabd16095
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866514"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065399"
 ---
-# <a name="process-and-consume-data-packages-in-dynamics-365-finance-and-operations-apps-solution"></a>Dynamics 365 財務と運用アプリ ソリューションのデータ パッケージの処理と使用
+# <a name="process-and-consume-data-packages-in-finance-and-operations-apps"></a>財務と運用アプリのデータ パッケージの処理と使用 
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 財務と運用アプリのデータ パッケージは、1 つまたは複数のデータ エンティティで構成されます。 標準的なデータ パッケージは、特定のタスク、プロセス、または機能のエンティティ グループで構成されています。 たとえば、総勘定元帳の設定に必要なデータ エンティティは、1 つのデータ パッケージの一部である可能性があります。 データ パッケージの形式は、パッケージ マニフェスト、パッケージ ヘッダー、および含まれているデータ エンティティの追加ファイルを含む圧縮ファイルです。
+財務と運用アプリのデータ パッケージは、1 つまたは複数のデータ エンティティで構成されます。 標準的なデータ パッケージは、特定のタスク、プロセス、または機能のエンティティ グループで構成されています。 たとえば、総勘定元帳の設定に必要なデータ エンティティは、1 つのデータ パッケージの一部である可能性があります。 データ パッケージの形式は、パッケージ マニフェスト、パッケージ ヘッダー、および含まれているデータ エンティティの追加ファイルを含む圧縮ファイルです。
 
 データ パッケージを作成する前に、何を含める必要があるかを計画します。 この方法で、正しいエンティティ、エンティティの順序、およびフィールドが含まれていることを保証します。 データ パッケージを作成するには、アプリケーションの **データ管理** ワークスペースを使用します。 データ パッケージを作成するには、これらの手順に従います。
 

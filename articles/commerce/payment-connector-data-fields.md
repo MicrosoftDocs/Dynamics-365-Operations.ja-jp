@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: 274b4b01eb23dd602b705042486e5c2105f93744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88c4a01f219d3a20df591b4700fcc5cf2975728b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869142"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068313"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
@@ -52,7 +52,7 @@ ms.locfileid: "8869142"
 
 | フィールド | 説明 |
 |---|---|
-| merchantInformation | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
+| merchantInformation | 財務と運用クライアントの **POS ハードウェア プロファイル** ページで定義されている商社情報。 |
 | invoiceNumber | POS が販売トランザクションを追跡するために生成する一意の請求書番号。 |
 
 #### <a name="updatelineitemspaymentterminaldevicerequest"></a>UpdateLineItemsPaymentTerminalDeviceRequest
@@ -146,7 +146,7 @@ ms.locfileid: "8869142"
 
 | 名前空間 | フィールド | 説明 |
 |---|---|---|
-| MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
+| MerchantAccount | MerchantId | 財務と運用クライアントの **POS ハードウェア プロファイル** ページで定義されている商社情報。 |
 | PaymentCard | Last4Digits | 支払に使用するカードの末尾 4 桁。 | 
 | PaymentCard | UniqueCardId | 支払に使用するカードのランダムな一意識別子。 |
 | PaymentCard | ExpirationYear | 支払に使用するカードの有効期限年。 |
@@ -167,8 +167,8 @@ ms.locfileid: "8869142"
 
 | 名前空間 | フィールド | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
-| TransactionData | 量 | トランザクションの合計金額。 |
+| MerchantAccount | MerchantId | 財務と運用クライアントの **POS ハードウェア プロファイル** ページで定義されている商社情報。 |
+| TransactionData | 数量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
 | PurchaseLevelData | L2Data | "レベル 2" データの一覧。 詳細については、この記事で後述する [L2 データ](#l2-data) セクションを参照してください。 |
 | PurchaseLevelData | L3Data | "レベル 3" データの一覧。 詳細については、この記事で後述する [L3 データ](#l3-data) セクションを参照してください。 |
@@ -177,15 +177,15 @@ ms.locfileid: "8869142"
 
 | 名前空間 | フィールド | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
-| TransactionData | 量 | トランザクションの合計金額。 |
+| MerchantAccount | MerchantId | 財務と運用クライアントの **POS ハードウェア プロファイル** ページで定義されている商社情報。 |
+| TransactionData | 数量 | トランザクションの合計金額。 |
 | TransactionData | CurrencyCode | トランザクションの通貨コード。 |
 
 #### <a name="refund"></a>払戻
 
 | 名前空間 | フィールド | 説明 |
 |---|---|---|
-| MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
+| MerchantAccount | MerchantId | 財務と運用クライアントの **POS ハードウェア プロファイル** ページで定義されている商社情報。 |
 | PaymentCard | Last4Digits | 支払に使用するカードの末尾 4 桁。 | 
 | PaymentCard | UniqueCardId | 支払に使用するカードのランダムな一意識別子。 |
 | PaymentCard | ExpirationYear | 支払に使用するカードの有効期限年。 |
@@ -206,8 +206,8 @@ ms.locfileid: "8869142"
 
 | 名前空間 | フィールド | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | Finance and Operations クライアントの **POS hardware profile** ページで定義されている商社情報。 |
-| PaymentCard | 氏名 | カード所有者の名前。 |
+| MerchantAccount | MerchantId | 財務と運用クライアントの **POS ハードウェア プロファイル** ページで定義されている商社情報。 |
+| PaymentCard | Name | カード所有者の名前。 |
 | PaymentCard | StreetAddress | 支払に使用されるカードに関連付けられている請求先住所の番地。 |
 | PaymentCard | 市町村 | 支払に使用されるカードに関連付けられている請求先住所の市町村。 |
 | PaymentCard | 行政単位 (区画) | 支払に使用されるカードに関連付けられている請求先住所の都道府県。 |

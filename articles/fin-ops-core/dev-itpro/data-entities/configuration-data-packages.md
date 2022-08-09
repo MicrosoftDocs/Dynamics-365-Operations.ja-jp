@@ -1,24 +1,24 @@
 ---
 title: コンフィギュレーション データ パッケージ
-description: この記事では、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
-author: saraschi2
+description: この記事では、Microsoft Dynamics 365 Finance の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
+author: rcarlson
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: ''
 ms.search.region: Global
-ms.author: saraschi
+ms.author: rcarlson
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 539dc1301020a6155748b98d34f51ab3fbb11f8b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.openlocfilehash: 588dd60f5a17c7ea5b49f038f65301ac27336740
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885499"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206709"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
@@ -28,7 +28,7 @@ ms.locfileid: "8885499"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!IMPORTANT]
-> この記事は、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 それ以降にリリースされたバージョンを実行している場合は、[会社間または法人間での構成データのコピー](copy-configuration.md)の記事を参照してください。 
+> この記事は、Microsoft Dynamics 365 Finance の 2017 年 7 月リリースにのみ適用されます。 それ以降にリリースされたバージョンを実行している場合は、[会社間または法人間での構成データのコピー](copy-configuration.md)の記事を参照してください。 
 
 コンフィギュレーション データ パッケージは、Microsoft Dynamics Lifecycle Services (LCS) からプロセス データ パッケージとして入手できます。 これらのデータ パッケージは、実装の再現性を向上させ、構成を高速化させます。
 

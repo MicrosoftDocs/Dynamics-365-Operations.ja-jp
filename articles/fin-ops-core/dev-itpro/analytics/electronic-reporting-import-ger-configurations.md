@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: cbfbfecef4259a4d460b202c70463c4ba852bcc7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5f5731a2c61f54bf76d6b7d44b92302fc8f80e9c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892242"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108519"
 ---
 # <a name="import-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションのインポート
 
@@ -63,7 +63,7 @@ ms.locfileid: "8892242"
     > すべての ER コンフィギュレーションはダウンロードのため ZIP ファイルに入れられます。
 
 8. ファイルを開いて、すべての ER コンフィギュレーションを選択し、**ファイル システム** タイプのリポジトリの作業ディレクトリにコピーします。
-9. **ER リポジトリ** ページの、**Dynamics 365 for Finance and Operations** タブで、**開く** をクリックして、選択されたリポジトリの ER コンフィギュレーションの一覧を表示します。
+9. **ER リポジトリ** ページの **Dynamics 365 Finance** タブで、**開く** をクリックして、選択されたリポジトリの ER コンフィギュレーションの一覧を表示します。
 10. 左ウィンドウの **コンフィギュレーション** ツリーで、ER コンフィギュレーションを選択します。
 11. **バージョン** クイック タブで、ER コンフィギュレーションの必要なバージョンを選択します。
 12. **インポート** をクリックして、このリポジトリから現在のインスタンスに選択したバージョンをダウンロードします。
@@ -82,3 +82,4 @@ ms.locfileid: "8892242"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

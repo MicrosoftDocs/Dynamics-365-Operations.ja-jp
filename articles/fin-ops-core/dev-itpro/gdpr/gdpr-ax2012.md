@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ryanc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 125846ab7612ef1fcf0fc67cadb8bf86022d8a4a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cb603897bafbb547820f7025007d9c4b535defac
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866727"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067496"
 ---
 # <a name="respond-to-requests-for-personal-data-in-ax-2012"></a>AX 2012 の個人データ要求への対応
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、Microsoft Dynamics AX 2012 を使用する企業、実装パートナー、および独立系ソフトウェア ベンダー (ISV) が、EUデータ保護規則 (GDPR) の下にある個人データに関する、データ主体からの要求に準拠するのに役立つでしょう。 GDPR および Microsoft が提供する関連するリソースの詳細については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。 「Finance and Operations のための GDPR ガイド」は、Finance and Operations アプリのために書かれたものですが、GDPR の下でのデータ主体の権利は Dynamics AX 2012 を使用している組織にも適用されます。 「Finance and Operations のための GDPR ガイド」に記載されている手順は、個人データの要求に応答する組織により使用され、Dynamics AX 2012 を使用する組織にも適していますが、Dynamics AX 2012 では **人物検索レポート** は利用できません。 この記事では、Dynamics AX 2012 に固有の追加項目を一覧表示します。 
+この記事は、Microsoft Dynamics AX 2012 を使用する企業、実装パートナー、および独立系ソフトウェア ベンダー (ISV) が、EUデータ保護規則 (GDPR) の下にある個人データに関する、データ主体からの要求に準拠するのに役立つでしょう。 GDPR および Microsoft が提供する関連するリソースの詳細については、[一般データ保護規則の概要](./gdpr-guide.md) を参照してください。 「財務と運用のための GDPR ガイド」は、財務と運用アプリのために書かれたものですが、GDPR の下でのデータ主体の権利は Dynamics AX 2012 を使用している組織にも適用されます。 「財務と運用のための GDPR ガイド」に記載されている手順は、個人データの要求に応答する組織により使用され、Dynamics AX 2012 を使用する組織にも適していますが、Dynamics AX 2012 では **個人検索** レポートは利用できません。 この記事では、Dynamics AX 2012 に固有の追加項目を一覧表示します。 
 
 ## <a name="applicable-product-updates-for-dynamics-ax-2012"></a>Dynamics AX 2012 の適用可能製品更新プログラム
 

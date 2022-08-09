@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.custom: 203494
-ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 121698725bc5c555663682853a53e514d3aafe40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "203494"
+ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
+ms.openlocfilehash: 25ae66744865263a8812141d6a55b131cd6ff07a
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881536"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206272"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 

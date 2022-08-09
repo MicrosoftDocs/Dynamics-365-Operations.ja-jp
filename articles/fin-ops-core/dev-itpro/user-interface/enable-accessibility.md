@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e5b6dbbf20e191d9676204bb30b75c64676a5a36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab16e0dd468205da084d4282e32a07c47b8fed67
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864513"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114331"
 ---
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 

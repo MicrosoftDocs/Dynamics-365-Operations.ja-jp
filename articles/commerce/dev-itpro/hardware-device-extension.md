@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-ms.openlocfilehash: 933c3962680b9a22238aa043c4b6e6f3199932e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f26ca31fd2d479a03a3f0229521205d3fad0cf7e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881341"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066563"
 ---
 # <a name="integrate-the-pos-with-a-new-hardware-device-and-generate-the-extension-installer"></a>POS を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成
 
@@ -277,3 +277,4 @@ Dynamics 365 Commerce 10.0.18 以降では、シールド インストーラー�
 11. 拡張機能ハードウェア ステーションのシナリオを検証します。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc7ad0674c076627a064f339b21cc4cacb4b8d5c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b99fb15e7cf364728a5d205fcebd89fcb1b0b07c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866483"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103469"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
@@ -27,10 +27,10 @@ ms.locfileid: "8866483"
 
 この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームに対して、アクションのほとんどが確実にセルフ サービスとなるようにする必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
 
-Finance and Operations アプリは、管理サービスです。 つまり、Microsoft は運用環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
+財務と運用アプリは管理サービスです。 つまり、Microsoft は運用環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
 
 ## <a name="monitor-and-troubleshoot-the-health-of-your-environment"></a>環境の正常性の監視およびトラブルシューティング
-クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
+クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 財務と運用の管理センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
 
 ## <a name="update-your-environment"></a>環境の更新
 Go-Live の後、運用環境は定期的に更新する必要があります。 Lifecycle Services (LCS) では、環境を継続的に更新するセルフ サービス エクスペリエンスが提供されます。
@@ -79,7 +79,7 @@ Microsoft は、オンライン モードでインデックス作成を行いサ
 後処理のステップでエラーが発生した場合、LCS ダッシュボートに **事後サービスに失敗しました** と表示されます。 環境はユーザーが通常の活動を実行できるよう引き続きアクセス可能ですが、関連するパッケージ変更のパフォーマンスが低下する可能性があります。 24 時間以内に問題が解決されない場合は、Microsoft サポートに問い合わせてください。 
 
 ## <a name="upgrade-your-environment"></a>環境のアップグレード
-最新バージョンにアップグレードする方法の詳細については、 [Finance and Operations の最新版への移行概要](../migration-upgrade/upgrade-latest-update.md) および [新機能と変更された機能](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
+最新バージョンにアップグレードする方法の詳細については、[財務と運用の最新版への移行概要](../migration-upgrade/upgrade-latest-update.md)および[財務と運用ホームページの新機能および変更された機能](../../fin-ops/get-started/whats-new-changed.md)を参照してください。
 
 ## <a name="environment-data-management"></a>環境データ管理
 これらは、ある環境から別の環境にデータベースをコピーする機能や、データベースを以前の状態に復元する機能など、データベースを管理するためのオプションです。 詳細については、[データベース移動操作ホーム ページ](../database/dbmovement-operations.md) を参照してください。
@@ -91,3 +91,4 @@ Microsoft は、オンライン モードでインデックス作成を行いサ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

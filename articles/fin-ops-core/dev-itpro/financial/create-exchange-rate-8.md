@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
-description: この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定する方法について説明します。
+title: 財務と運用バージョン 8.0 での為替レート プロバイダーの作成
+description: この記事では、Microsoft Dynamics 365 Finance バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定する方法について説明します。
 author: RyanCCarlson2
 ms.date: 09/25/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 33ca42db50fb47475ff394678b82c6928dc2001c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35c411f7d2a658f249e8ef69e1faff2ded08daf0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866795"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066168"
 ---
-# <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
+# <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>財務と運用バージョン 8.0 での為替レート プロバイダーの作成
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定するために必要なステップについて説明します。 説明のために、この記事全体で OANDA 為替レート サービスが使用されます。
+この記事では、Microsoft Dynamics 365 Finance バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定するために必要なステップについて説明します。 説明のために、この記事全体で OANDA 為替レート サービスが使用されます。
 
 この記事で説明している手順に従って、機能為替レート プロバイダーを作成できます。 このコードは生産コードです。 ソースは **ExchangeRateProviderOanda** クラスで見つけることができます。 必要に応じて、この記事からこのクラスを参照することができます。
 
@@ -477,3 +477,4 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
 title: 財務と運用の更新とカスタム コード ライフサイクルの管理
-description: この記事では、財務と運用の更新とカスタム コード のライフサイクルを管理する方法について説明します。
+description: この記事では、財務と運用の更新とカスタム コードのライフサイクルを管理する方法について説明します。
 author: rbadawy
 ms.date: 11/08/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: c26b357cb8158b151aab3b2891dbc696ad7f08dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1ee3ac972c9042d220bfd4175e242712ae22b199
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890429"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124276"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>財務と運用の更新とカスタム コード ライフサイクルの管理
 
@@ -96,7 +96,7 @@ ms.locfileid: "8890429"
 
 ## <a name="environments"></a><a id="environments"></a>環境
 
-このセクションでは、この記事のアプリケーション ライフサイクル管理 (ALM) シナリオが依存する財務と運用環境のコレクションについて説明します。 この構成は、カスタム コード (拡張機能) に依存する実装がある組織では一般的です。 このカスタム コードには、独立系ソフトウェア ベンダー (ISV) によって提供されるカスタマイズが含まれています。
+このセクションでは、この記事のアプリケーション ライフサイクル管理 (ALM) シナリオが依存する財務と運用の環境のコレクションについて説明します。 この構成は、カスタム コード (拡張機能) に依存する実装がある組織では一般的です。 このカスタム コードには、独立系ソフトウェア ベンダー (ISV) によって提供されるカスタマイズが含まれています。
 
 ### <a name="environments-that-run-your-current-release"></a><a id="current-environments"></a>現在のリリースを実行する環境
 
@@ -146,7 +146,7 @@ ms.locfileid: "8890429"
 
 段階的なアプローチを使用することで、サービス更新が行われるときに効率を最大化するのに役立ちます。 各フェーズは、実装の 1 つのコンポーネントを更新します。
 
-1. **フェーズ 1** – 財務と運用環境を更新します。
+1. **フェーズ 1** – 財務と運用の環境を更新します。
 
     現在のバージョンの Commerce Scale Unit (CSU) および Point of Sale (POS) は、新しい財務と運用の更新プログラムで正常に機能します。 たとえば、CSU のバージョン 10.0.7 は、財務と運用アプリのバージョン 10.0.11 と互換性があります。
 
@@ -432,3 +432,4 @@ UAT または製品環境で重大なバグが見つかった場合は、リリ�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

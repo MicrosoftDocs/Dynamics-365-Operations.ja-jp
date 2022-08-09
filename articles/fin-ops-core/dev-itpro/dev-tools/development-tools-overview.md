@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4455c30dcb76bf85f9c5c71fd18a856ca2df3066
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b5c6387b8fd21f10fee6df4cc7bbb8fe03381128
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986524"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103922"
 ---
 # <a name="development-tools-in-visual-studio"></a>Visual Studio の開発ツール
 
@@ -36,7 +36,7 @@ Visual Studio で、モデル ストアはアプリケーション エクスプ�
 ![アプリケーション エクスプローラー。](media/1_devotoolsconcept.png)
 
 ### <a name="the-project-template"></a>プロジェクト テンプレート
-単純なアプリケーションであっても、そのモデルには多数の要素を含めることができます。 モデルに使用する要素を整理および管理するために、**業務プロジェクト** テンプレートが Visual Studio に追加されました。 このプロジェクトを使用して、モデル要素の設計、作成、およびをテストをします。 1 つの Visual Studio ソリューション内に複数のプロジェクトがあることが一般的です。 次の図は、Visual Studio ソリューションの 3 つのプロジェクトを示しています。 詳細については、[Visual Studio の Finance and Operations プロジェクト タイプ](projects.md) を参照してください。
+単純なアプリケーションであっても、そのモデルには多数の要素を含めることができます。 モデルに使用する要素を整理および管理するために、**業務プロジェクト** テンプレートが Visual Studio に追加されました。 このプロジェクトを使用して、モデル要素の設計、作成、およびをテストをします。 1 つの Visual Studio ソリューション内に複数のプロジェクトがあることが一般的です。 次の図は、Visual Studio ソリューションの 3 つのプロジェクトを示しています。 詳細については、[Visual Studio の財務と運用プロジェクト タイプ](projects.md) を参照してください。
 
 ![ソリューション エクスプローラー。](media/2_devotoolsconcept.png)
 
@@ -54,3 +54,4 @@ X++ コードは、Visual Studio 用のコード エディターに書き込ま�
 このツールは **Dynamics 365** メニューを Visual Studio に追加します。 開発プロセス中に使用するいくつかのツールは、ここで入手できます。 たとえば、モデルを管理するツールは、メニューからアクセスします。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

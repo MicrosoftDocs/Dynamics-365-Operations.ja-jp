@@ -2,19 +2,19 @@
 title: セルフサービス環境のメンテナンスに関する FAQ
 description: この記事では、セルフサービス環境における Microsoft の計画されたメンテナンスに関するよくある質問に対する回答を示します。
 author: matapg007
-ms.date: 06/17/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-05-13
-ms.openlocfilehash: a3aaf017538f3ad6ef3761ea1dc1fed4a315997f
-ms.sourcegitcommit: 6400508decf04aa83ef9bb56689aa6cc1bea5fd0
+ms.openlocfilehash: e77eef6e28e4a73a2f52fc47cb9984d987e4bd32
+ms.sourcegitcommit: 45bb77244a31fa174adf85d1b54e9700109ca0c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "9027691"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9198365"
 ---
 # <a name="maintenance-in-self-service-environments-faq"></a>セルフサービス環境のメンテナンスに関する FAQ
 テクノロジの性質の変化、新しいセキュリティの脅威の継続的な出現、またコンプライアンス要件のため、環境は、すべての重要なセキュリティと品質に関する更新プログラムで更新する必要があります。 Microsoft は、環境が配置されている地理上の地域の遅い時間帯に、オペレーティング システムのパッチ適用、セキュリティ修正プログラムの配置、品質更新プログラムの配置など、すべてのメンテナンス活動を実行するためのフレームワークを構築しました。 アプリケーションのダウンタイムを最小限に抑えるために、アップグレードはバッチで行われます。 したがって、ほとんどの容量は常にオンラインであり、一度にアップグレードされるのはサブセットのみです。 この方法により、完全なダウンタイムではなく、サービスが低下する短い期間を含むサービスが可能になります。
@@ -64,8 +64,8 @@ Microsoft が実行する予定された共通のメンテナンス活動の一�
 > 
 > すべてのメンテナンス活動 (オペレーティング システムのパッチ適用、セキュリティ修正プログラム、および品質更新プログラム) は、ほぼゼロのダウンタイム エクスペリエンスを提供するために、遅い時間帯に実行されます。 
 
-## <a name="can-operating-system-updates-be-applied-in-zero-downtime"></a>オペレーティング システムの更新プログラムがゼロ ダウンタイムで適用できないのはなぜですか?
-はい、2021 年 5 月に Microsoft はダウンタイムがほぼゼロのインフラストラクチャ メンテナンスを開始しました。
+## <a name="can-operating-system-updates-be-applied-in-near-zero-downtime"></a>オペレーティング システムの更新プログラムがほぼゼロ ダウンタイムで適用できないのはなぜですか?
+はい。 Microsoft では、オペレーティング システムの更新に対して、ダウンタイムがほぼゼロのインフラストラクチャ メンテナンスが 2021 年 5 月から提供されています。
 
 ## <a name="what-does-near-zero-downtime-maintenance-mean"></a>ダウンタイムがほぼゼロのメンテナンスとはなにか?
 顧客は、メンテナンス活動中もシステムの操作を継続することができます。 このウィンドウ内で短い中断や切断が発生することがありますが、完全なダウンタイムを取る必要はありません。

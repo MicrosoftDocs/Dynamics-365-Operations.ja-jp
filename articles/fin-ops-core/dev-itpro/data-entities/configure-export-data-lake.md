@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: f291c0eae79d0a87cee2b5e22980569952443c3e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac1884efbbfd57e3d3b5dffb2f44fb18fcd5581
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868814"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108871"
 ---
 # <a name="install-export-to-azure-data-lake-add-in"></a>Azure Data Lake アドインにエクスポート機能をインストールする
 
@@ -30,7 +30,7 @@ ms.locfileid: "8868814"
 >
 > **Data Lake へのエクスポート** 機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。 ただし、レベル 1 (開発者) 環境では、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md)を使用して機能のプロトタイプを作成できます。 これらのツールを使用すると、機能によってエクスポートされたのと同じ形式で、レベル 1 またはサンドボックス環境のデータを Data Lake にエクスポートすることができます。 
 
-財務と運用環境で、**Data Lake へのエクスポート** 機能を使用する前に、管理者は **Data Lake へのエクスポート** アドインをインストールし、環境を Data Lake に接続する必要があります。 **Data Lake へのエクスポート** アドインを、LCS を介して環境にインストールする必要があります。 この操作を実行するには、LCS 管理者に連絡する必要があります。
+財務と運用環境で **Data Lake にエクスポート** 機能を使用する前に、管理者は **Data Lake にエクスポート** アドインをインストールし、環境を Data Lake に接続する必要があります。 **Data Lake へのエクスポート** アドインを、LCS を介して環境にインストールする必要があります。 この操作を実行するには、LCS 管理者に連絡する必要があります。
 
 **Data Lake へのエクスポート** アドインには、Data Lake の接続情報が必要です。 したがって、まだストレージ アカウントを作成していない場合は、インストールする前にそれを (Azure Data Lake) 作成する必要があります。 必要な Azure リソースを作成するには、自分に代わって Azure リソースを作成できる管理者に連絡する必要があるかもしれません。 
 
@@ -38,7 +38,7 @@ ms.locfileid: "8868814"
 
 ## <a name="create-service-principal-for-microsoft-dynamics-erp-microservices"></a><a name="createServicePrincipal"></a> Microsoft Dynamics ERP Microservices のサービス プリンシパルの作成
 
-**Azure Data Lake へのエクスポート** 機能は、財務と運用アプリ データを Azure Data Lake へエクスポートし、データを最新の状態に維持するマイクロサービスを使用して構築されています。 マイクロサービスは、Azure サービス プリンシパル、**Microsoft Dynamics ERP Microservices** を使用して、Azure リソースに安全に接続します。 Data Lake にエクスポートする機能を構成する前に、**Microsoft Dynamics ERP マイクロサービス** サービス プリンシパルを Azure Active Directory (Azure AD) に追加します。 この手順により Azure AD を有効にしてマイクロサービスを認証できます。 
+**Azure Data Lake にエクスポート** 機能は、財務と運用アプリ データを Azure Data Lake へエクスポートし、データを最新の状態に維持するマイクロサービスを使用して構築されています。 マイクロサービスは、Azure サービス プリンシパル、**Microsoft Dynamics ERP Microservices** を使用して、Azure リソースに安全に接続します。 Data Lake にエクスポートする機能を構成する前に、**Microsoft Dynamics ERP マイクロサービス** サービス プリンシパルを Azure Active Directory (Azure AD) に追加します。 この手順により Azure AD を有効にしてマイクロサービスを認証できます。 
 
 > [!NOTE]
 > これらの手順を実行するには、**Azure Active Directory グローバル管理者** の権限が必要です。
@@ -152,7 +152,7 @@ Data Lake ストレージ アカウントは、財務と運用アプリのデー
 
 ## <a name="create-a-key-vault"></a><a name="createkeyvault"></a> キー コンテナーの作成
 
-キー コンテナーは、ストレージ アカウント名などの詳細情報を財務と運用アプリに共有する安全な手段です 。 キー コンテナーとシークレットを作成するには、次の手順を完了してください。 Data Lake へのエクスポート機能を使用するために、キー コンテナーを作成することをお勧めします。 複数のサービスへのアクセスを提供するために、同一のキー コンテナーを使用することはお勧めしません。
+キー コンテナーは、ストレージ アカウント名などの詳細情報を財務と運用アプリに共有する安全な手段です。 キー コンテナーとシークレットを作成するには、次の手順を完了してください。 Data Lake へのエクスポート機能を使用するために、キー コンテナーを作成することをお勧めします。 複数のサービスへのアクセスを提供するために、同一のキー コンテナーを使用することはお勧めしません。
 
 1. Azure portalで、**新しいリソースの作成** を選択し、**キー コンテナー** を検索して選択し ます。
 2. **キー コンテナーの作成** ダイアログ ボックスの **場所** フィールドで、環境があるデータ センターを選択します。
@@ -222,7 +222,7 @@ LCS から Power Platform 統合を設定するには、[アドインの概要](
 
 ## <a name="install-the-export-to-data-lake-add-in-in-lcs"></a><a name="installaddin"></a>LCS の Data Lake アドインへにエクスポート機能をインストールする 
 
-財務と運用アプリからデータ レイクにデータをエクスポートするには、LCS の **Data Lake エクスポートする** アドインをインストールする必要があります。 このタスクを完了するには、使用する環境の LCS 環境管理者である必要があります。
+財務と運用アプリから Data Lake にデータをエクスポートするには、LCS に **Data Lake にエクスポートする** アドインをインストールする必要があります。 このタスクを完了するには、使用する環境の LCS 環境管理者である必要があります。
 
 これを開始する前に、次の情報を確認する必要があります。 作業の開始前に、情報を手元に保管しておいてください。
 
@@ -261,3 +261,4 @@ LCS から Power Platform 統合を設定するには、[アドインの概要](
 | **TenantIdUserError**: 環境の Azure テナント ID の検索に失敗しました。 | [Azure Data Lake へのエクスポートのコンフィギュレーション - アドインのインストール](#installaddin) に記載の手順に従って、正しい Azure テナント ID が指定されていることを確認します。 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

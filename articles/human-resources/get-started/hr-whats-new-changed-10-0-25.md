@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 505c54ccdedb03fc1f4495e66d1c2c5747e4c825
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 236b1adaa29ccf515405a7808dbf7e3b4552a49b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845129"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065168"
 ---
 # <a name="preview-of-dynamics-365-human-resources-10025-april-2022"></a>Dynamics 365 Human Resources 10.0.25 (2022 年 4 月) のプレビュー
 
@@ -31,7 +31,7 @@ ms.locfileid: "8845129"
 - **リリースの一般提供 (自己更新)**: 2022 年 3 月
 - **リリースの一般提供 (自動更新)**: 2022 年 4 月
 
-10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は Finance and Operations のインフラストラクチャに統合されます。 しかし、Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、 [Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](../../human-resources/hr-infrastructure-merge-faq.md) を参照してください。
+10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は財務と運用のインフラストラクチャに統合されます。 しかし、Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、 [Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](../../human-resources/hr-infrastructure-merge-faq.md) を参照してください。
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -79,4 +79,5 @@ ms.locfileid: "8845129"
 |カードにチェックリストの情報を追加するには、**人事管理** ワークスペースを更新する必要があります| **人事管理** ワークスペースで、次の情報を示すために従業員カードを更新する必要があります。 <br> チェックリストが適用されません <br>   未払いタスク <br>  期限切れタスク |この情報を表示するには、**タスク管理** ワークスペースに移動します|
 |エラー '**人事管理** ワークスペースの親ノードが業務プロセスで失敗しました'| ユーザーが **業務プロセス** ワークスペースでその場でタスクを作成し、**期日** フィルターを変更すると、ユーザーはエラーを受け取ります。| その場で新しいタスクを作成した後、ページを更新します。|
 |圧縮されたビジュアル サイズを使用する場合、カスタム コントロールが正しく表示されません。|**ユーザー オプション** で、ユーザーが **標準** サイズではなく、**圧縮された** ビジュアル サイズを選択した場合、一部のカスタム コントロールが正しく表示されない場合があります。| **ユーザー オプション-ビジュアル タブ** で **標準サイズ** を表示するように選択します。 |
+
 

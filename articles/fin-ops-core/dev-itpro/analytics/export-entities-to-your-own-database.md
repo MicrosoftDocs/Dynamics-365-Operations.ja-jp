@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 6bb52f75defe9644074a531ad0ce754633ec68ac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 054f5bd700893a8daa3fb602d0c3a516c0ccbb73
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888132"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109362"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -46,7 +46,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 - 他のシステムとのバッチ統合を実行する必要があります。
 
 > [!NOTE]
-> アプリケーションは、運用データベースへの T-SQL 接続を許可しません。 Finance and Operations の以前のバージョンをアップグレードする場合、データベースへの直接的な T-SQL アクセスを必要とする統合ソリューションがある場合は、BYOD は推奨するアップグレード パスになります。
+> アプリケーションは、運用データベースへの T-SQL 接続を許可しません。 財務と運用の以前のバージョンをアップグレードする場合、データベースへの直接的な T-SQL アクセスを必要とする統合ソリューションがある場合は、BYOD は推奨するアップグレード パスになります。
 
 エンティティ格納または BYOD のいずれかを使用できます。 使用可能な既定の業務レポートは、埋め込み Power BI とエンティティ格納を利用します。 最初の選択として、既定の業務レポートを使用することをお勧めします。 また、要件に合わせて、既成のオペレーション レポートを拡張することができます。 BYOD を必要に応じて利用する補足的なオプションと見なす必要があります。
 
@@ -63,7 +63,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 > [!NOTE]
 > ご利用の BYOD データベースは、財務と運用アプリからアクセスできる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。 セルフ サービスの配置の詳細については、[セルフ サービスの配置に関するよく寄せられる質問](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment)を参照してください。
 > > 
-> 想定されるパフォーマンスを保護するには、正しいサービス層と計算サイズを選択する必要があります。 実行している間、Finance and Operations エクスポートに基づく負荷だけではなく、対象となるワークロードの合計を考慮することが重要です。 運用環境の場合、最低でも Premium サービス層の計算サイズ P2、または標準サービス層の計算サイズ S4 の使用をお勧めします。 特定の BYOD を使用する場合、サービス層が上記の最小値を超えている必要がある場合があります。 層と計算サイズの詳細については、[SQL Azure サービス層](/azure/azure-sql/database/service-tiers-dtu)および[リソースの制限の詳細](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes)を参照してください。 DTU の必要または使用率を決定するには、[ワークロードに必要な DTU を決定する](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)を参照してください
+> 想定されるパフォーマンスを保護するには、正しいサービス層と計算サイズを選択する必要があります。 実行している間、財務と運用エクスポートに基づく負荷だけではなく、対象となるワークロードの合計を考慮することが重要です。 運用環境の場合、最低でも Premium サービス層の計算サイズ P2、または標準サービス層の計算サイズ S4 の使用をお勧めします。 特定の BYOD を使用する場合、サービス層が上記の最小値を超えている必要がある場合があります。 層と計算サイズの詳細については、[SQL Azure サービス層](/azure/azure-sql/database/service-tiers-dtu)および[リソースの制限の詳細](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes)を参照してください。 DTU の必要または使用率を決定するには、[ワークロードに必要な DTU を決定する](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)を参照してください
 
 ## <a name="configuring-the-entity-export-option"></a>エンティティのエクスポート オプションのコンフィギュレーション
 
@@ -240,3 +240,4 @@ OLE DB Destination failed the pre-execute phase and returned error code 0xC02020
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

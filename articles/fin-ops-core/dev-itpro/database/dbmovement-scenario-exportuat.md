@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 28dea17ff0e2a6cfd7d09ecda458455045826194
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 66e61771280118ac45a1784f73ad5908e8f277b5
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867545"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103375"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -281,3 +281,4 @@ Microsoft SQL Server Management Studio インストーラーをダウンロー�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

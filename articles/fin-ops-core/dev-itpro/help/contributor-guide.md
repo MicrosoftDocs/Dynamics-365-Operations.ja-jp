@@ -10,12 +10,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ms.date: 05/11/2020
 ms.author: edupont
-ms.openlocfilehash: 105c9d938272a0481e5687b2f0a99799db83f301
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f9cbc39344b1302417d6364cafad82c5484e8a41
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866608"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066879"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 
@@ -102,3 +102,4 @@ Microsoft リポジトリは公開されているため、コンテンツを入�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

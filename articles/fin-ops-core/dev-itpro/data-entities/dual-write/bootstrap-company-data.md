@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 227bd10ab9f3e39b5b0a6de3062612b7edf85932
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f955b83022d1a3581aeee8df8aa47e99a0b6f26
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851907"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111508"
 ---
 # <a name="initialize-company-data"></a>会社データの初期化
 
@@ -35,7 +35,7 @@ ms.locfileid: "8851907"
 
 - 最初の書き込みを使用して、財務と運用アプリから Dataverse へ、**会社**、**顧客グループ** および **支払条件** などの照会と依存テーブルをコピーします。
 - データ管理フレームワークを使用して、コンマ区切り値 (CSV) 形式で財務と運用アプリからデータをエクスポートします。 たとえば、財務と運用アプリの **DataAreaId** フィールドを使用して、各会社から顧客をエクスポートするように、データ管理でエクスポート プロジェクトを設定します。 このプロセスは、1 回の手動プロセスです。
-- Azure Blob Storage を使用し、ルックアップと変換用の CSV ファイルを格納します。 Finance and Operations 顧客の CSV ファイルを Azure Blob Storage にアップロードします。
+- Azure Blob Storage を使用し、ルックアップと変換用の CSV ファイルを格納します。 財務と運用の顧客の CSV ファイルを Azure Blob Storage にアップロードします。
 - Azure Data Factory を使用し、Dataverse のデータを初期化します。
 
 次の図はワークフローを示します。
@@ -46,7 +46,7 @@ ms.locfileid: "8851907"
 
 - ソース データは財務と運用アプリにあります。
 - アカウントが Dataverse に存在し、財務と運用アプリに存在しない場合は、このフローの一部として初期化されません。 Dataverse に保存されているデータの量に基づいて、DIXF または [初期同期](initial-sync-guidance.md) 機能を使用します。
-- Customer Engagement アプリのすべてのアカウント レコードには、Finance and Operations ナチュラル キーと一致するナチュラル キー (アカウント番号) が設定されています (**CustomerAccount**)。 
+- Customer Engagement アプリのすべてのアカウント レコードには、財務と運用ナチュラル キーと一致するナチュラル キー (アカウント番号) が設定されています (**CustomerAccount**)。 
 - 行には、アプリ全体での 1 対 1 (1:1) マッピングがあります。
 
 > [!NOTE]
@@ -101,7 +101,7 @@ Azure ストレージ アカウントを持っていない場合は、[Azure ス
 
 1. 財務と運用アプリで、データ管理フレームワークを使用して CSV 形式でデータをエクスポートします。 詳細については、 [データ管理の概要](../data-entities-data-packages.md) を参照してください。 このテンプレートでは、顧客データが **CustCustomerV3Entity** テーブルからエクスポートされます。 **CustCustomerV3Entity** を設定し、**FullPripriyAdtomer** フィールド マップをマッピングから削除します。 **DataAreaId** フィールドを CSV ファイルに追加します。 エクスポートしたファイル名を **01-CustomersV3Export-Customers V3.csv** にして、**ce-data** と名前をつけた Azure ストレージ アカウントにアップロードします。
 
-    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations 顧客ファイル。":::
+    :::image type="content" source="media/boot-customer-file.png" alt-text="財務と運用の顧客ファイル。":::
 
 2. [サンプル顧客ファイル](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv) をダウンロードします。
 
@@ -109,3 +109,4 @@ Azure ストレージ アカウントを持っていない場合は、[Azure ス
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

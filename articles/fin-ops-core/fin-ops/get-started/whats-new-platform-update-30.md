@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
+title: 財務と運用アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 description: この記事では、財務と運用アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。
 author: tonyafehr
 ms.date: 11/08/2019
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: b2a3102a77c1309aa3b10f1c329ba6f012359586
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8eee97a4c75266fab0706544f5c38647f1c0268
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856903"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103130"
 ---
-# <a name="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>財務と運用アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,12 +62,12 @@ ms.locfileid: "8856903"
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、削除済みまたは非推奨の機能について説明します。
+[財務と運用の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) の記事では、削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) の記事に発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

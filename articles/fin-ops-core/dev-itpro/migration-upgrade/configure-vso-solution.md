@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fc37513d31da4a0b9a2a427cb39763fb664e7a1
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: a6eb4b3ac9bcb883f54a4103634b60a5c4413389
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964669"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124466"
 ---
 # <a name="configure-the-azure-devops-mapping-during-code-migration"></a>コード移行中の Azure DevOps マッピングのコンフィギュレーション
 
@@ -49,7 +49,8 @@ LCS コードのアップグレード サービスでは、Azure DevOps にア�
 
 [![vstsmapping。](./media/vstsmapping.png)](./media/vstsmapping.png) 
 
-これらのフォルダーをマップした後、ローカル ボックスにコードを同期させることができます。 **メタデータ** を右クリックし、**最新バージョンを取得** を選択します。 同様に、プロジェクト フォルダーを同期します。 メタデータ フォルダーを同期した後、**Finance and Operations** &gt; **モデル管理** &gt; **モデルの更新** から Visual Studio でモデルを更新します。 [![VSRefreshModels。](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) これで、プロジェクトの立ち上げ、競合の解決、コードの移行の構築、テスト、および実行を行う準備が整いました。
+これらのフォルダーをマップした後、ローカル ボックスにコードを同期させることができます。 **メタデータ** を右クリックし、**最新バージョンを取得** を選択します。 同様に、プロジェクト フォルダーを同期します。 メタデータ フォルダーを同期した後、**財務と運用** &gt; **モデル管理** &gt; **モデルの更新** から Visual Studio でモデルを更新します。 [![VSRefreshModels。](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) これで、プロジェクトの立ち上げ、競合の解決、コードの移行の構築、テスト、および実行を行う準備が整いました。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 4044365b4a6b02d3542b98bb0af2fb4cf57d8d90
-ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
+ms.openlocfilehash: 8591b2ef6bdac437f7437a492ca3028aec91b6e8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9012468"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067796"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -33,7 +33,7 @@ ms.locfileid: "9012468"
 
 ビジネス イベントのキャプチャの背後にある目的を明確に把握している必要があります。 つまり、ビジネス イベントをキャプチャする理由、および受信者が使用する方法です。
 
-ビジネス イベントをキャプチャして、Dynamics 365 財務と運用アプリで発生するビジネス イベントに応じて財務と運用アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネス イベントの良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
+ビジネス イベントをキャプチャして、財務と運用アプリで発生するビジネス イベントに応じて財務と運用アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネス イベントの良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
 
 データを受信者に転送し、効果的にデータ エクスポート シナリオを実現することを目的としている場合、ビジネス イベントに対する良いユースケースはありません。 実際、データ転送シナリオのビジネス イベントの使用は、ビジネス イベント フレームワークの誤用になります。 このようなシナリオでは、データ管理で既に使用可能であるデータ エクスポート メカニズムを使用し続ける必要があります。
 
@@ -674,3 +674,4 @@ public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._test
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

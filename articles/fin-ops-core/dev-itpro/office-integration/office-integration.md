@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21f79f5722bfa8a1d86d027d6619a1f176590bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5cd5d5651c734d73d57290ceef37d9e67220738
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862172"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108619"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 
@@ -42,7 +42,7 @@ Microsoft Excel は、データを変更してすばやく分析することが�
 
 [![Excel データ コネクタ アプリのスクリーンショット。](./media/1_office.png)](./media/1_office.png)
 
-### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャ 対 Finance and Operations アーキテクチャ
+### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャ対財務と運用アーキテクチャ
 
 バージョン間にはいくつかの違いがあります。 両方で、Excel で実行する軽量のアドインを構築し、アプリケーションに接続するサービスを使用します。
 
@@ -50,7 +50,7 @@ Microsoft Excel は、データを変更してすばやく分析することが�
 
 Excel &gt; VSTO (.NET) Add-in &gt; Windows Communication foundation (WCF) &gt; AOS &gt; AX Services and Tables &gt; AX クエリ エンジン &gt; Database の Active Directory (AD) &gt; AIF SOAP サービスによる認証
 
-#### <a name="finance-and-operations"></a>Finance and Operations
+#### <a name="finance-and-operations"></a>財務と運用
 
 Excel &gt; Office Web Add-in (JS + HTML) &gt; JavaScript OData API (Olingo) &gt; AOS &gt; AX Entities &gt; AX LINQ プロバイダー &gt; AX Database の Azure Active Directory (AAD) &gt; AX OData サービスによる認証
 

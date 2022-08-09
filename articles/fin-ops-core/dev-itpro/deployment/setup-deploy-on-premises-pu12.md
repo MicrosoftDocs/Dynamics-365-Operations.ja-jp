@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 0610cde28076cded72701a097de34d18cc8c30d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bd1fd30bdf48f40338b2e24afef16e874598366d
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867308"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103449"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 ～ 40)
 
@@ -1045,8 +1045,8 @@ URL に正常にアクセスすると、AD FS コンフィギュレーション�
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
-- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
+- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
+- [財務と運用アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続](../user-interface/client-disconnected.md)
 
 ## <a name="known-issues"></a>既知の問題
@@ -1077,3 +1077,4 @@ Service Fabric Cluster のすべてのマシンでコンピューター ポリ�
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

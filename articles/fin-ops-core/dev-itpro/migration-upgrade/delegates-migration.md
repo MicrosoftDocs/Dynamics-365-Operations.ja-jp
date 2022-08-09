@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 050e1a5ceabd348857cbf4db33e60451e3a0f63b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd32f1ce6c2f40f411a2767717ce0f0ab769b57a
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866202"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123672"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
@@ -29,7 +29,7 @@ ms.locfileid: "8866202"
 
 ## <a name="overview"></a>概要
 
-Finance and Operations は、各モデルが個別のパッケージにある、複数のモデルに分割されます。 主要な 3 つのモデルは、アプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートです。 モデル分割を使用して、階層が作成されました。ここで上位のモデルは依存関係を持つことができ、下位のモデル内の要素にアクセスできますが、上位のモデルにはアクセスできません。 たとえば、この設定では、アプリケーション スイートはその要素、アプリケーション基盤の要素およびアプリケーション プラットフォームの要素にフル アクセスできます。 アプリケーション基準は、独自の要素とアプリケーション プラットフォームの要素にアクセスできます。 最後に、アプリケーション プラットフォームは独自の要素にのみアクセスできます。 モデルとパッケージについては、 [モデル と パッケージ](../dev-tools/models.md) を参照してください。
+財務と運用は、各モデルが個別のパッケージにある、複数のモデルに分割されます。 主要な 3 つのモデルは、アプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートです。 モデル分割を使用して、階層が作成されました。ここで上位のモデルは依存関係を持つことができ、下位のモデル内の要素にアクセスできますが、上位のモデルにはアクセスできません。 たとえば、この設定では、アプリケーション スイートはその要素、アプリケーション基盤の要素およびアプリケーション プラットフォームの要素にフル アクセスできます。 アプリケーション基準は、独自の要素とアプリケーション プラットフォームの要素にアクセスできます。 最後に、アプリケーション プラットフォームは独自の要素にのみアクセスできます。 モデルとパッケージについては、 [モデル と パッケージ](../dev-tools/models.md) を参照してください。
 
 [![Del1。](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -69,7 +69,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 [![5.](./media/51.png)](./media/51.png) 
 
-ただし、Finance and Operations のセクションでは、Dynamics AX 2012 コード スニペットのいずれかと同じようには表示されません。 
+ただし、財務と運用のセクションでは、Dynamics AX 2012 コード スニペットのいずれかと同じようには表示されません。 
 
 [![6.](./media/61.png)](./media/61.png) 
 

@@ -1,6 +1,6 @@
 ---
 title: 実装ライフサイクル管理ホーム ページ
-description: これらのトピックでは、Finance and Operations プロジェクトの実装ライフサイクルに関連するプログラム、ツール、プロセスについて説明します。
+description: これらのトピックでは、財務と運用プロジェクトの実装ライフサイクルに関連する使用可能なプログラム、ツール、プロセスについて説明します。
 author: ClaudiaBetz-Haubold
 ms.date: 01/04/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 50744ce1c36c9402119b9a4214f18f0e23435d6f3f26a2a8dbcf5406fb99620f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c9d3ade1d3b73a113e401e2e4df29cb107eb50f
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757183"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109400"
 ---
 # <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-これらのトピックでは、Finance and Operations プロジェクトの実装ライフサイクルに関連するプログラム、ツール、プロセスについて説明します。
+これらのトピックでは、財務と運用プロジェクトの実装ライフサイクルに関連する使用可能なプログラム、ツール、プロセスについて説明します。
 
 ## <a name="programs"></a>プログラム
 
@@ -34,7 +34,7 @@ ms.locfileid: "6757183"
 
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)
 
-[Finance and Operations アプリ顧客用 Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+[財務と運用アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## <a name="processes"></a>プロセス
 

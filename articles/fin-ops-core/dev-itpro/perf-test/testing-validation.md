@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a67b19cfb9e742a167433a2a32db49bdcdbcac9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 063c45bda9dff228943158de518b69c14b14b5d0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781939"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108371"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 
@@ -46,7 +46,7 @@ ms.locfileid: "7781939"
 1.  Visual Studio を管理者としてオープンします。
 1.  **ファイル** メニューで、**開く** &gt; **プロジェクト/ソリューション** をクリックし、デスクトップ フォルダーから **FleetManagement** **ソリューション** を選択します。 ソリューション ファイルがコンピュータにない場合は、作成手順が「[チュートリアル: AOT のフリート管理モデルからフリート管理ソリューションを作成する](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)」に記載されています。
 1.  **ソリューション エクスプローラー** で、**フリート管理** ソリューションを右クリックして **追加** をポイントしてから **新規プロジェクト** をクリックします。
-1.  作成するプロジェクトタイプとして **Finance and Operations** を選択します。
+1.  作成するプロジェクト タイプとして **財務と運用** を選択します。
 1.  この新しいプロジェクトに *FleetManagementUnitTestSample* と名前を付け、デスクトップの FleetManagement フォルダー (C:\Users\Public\Desktop\FleetManagement) を場所として指定してから、**OK** をクリックします。 
 1.  **ソリューション エクスプローラー** で、新規プロジェクトを右クリックしてから **プロパティ** をクリックします。
 1.  **Model** プロパティを **FleetManagementUnitTests** に設定し、**OK** をクリックします。 

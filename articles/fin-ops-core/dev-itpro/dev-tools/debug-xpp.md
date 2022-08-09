@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e799447fcf34cf5223fe00bcaf610f79fb1cbf82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb00778ce5bc54ed964a6ff3033869ef8df8d598
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867081"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103434"
 ---
 # <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a>Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 
@@ -49,7 +49,7 @@ X++ コードをデバッグするには、次の手順を実行します。
 
    [![ホバー。](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
 
-   Finance and Operations アプリケーションに固有の、もう 1 つのツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示** メニューで、**情報ログ** をクリックします。
+   財務と運用アプリケーションに固有の、もう 1 つのツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示** メニューで、**情報ログ** をクリックします。
 
    [![情報ログ。](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
 
@@ -131,3 +131,4 @@ class PVsClass
 **即時** ウィンドウは、式とステートメントに入力できるデバッカー機能で、任意の時点で評価できます。 この機能は、X++ stack に実装されません。 ただし、まだ即時ウィンドウから利益を得ることができます。 スニペットは、X++ ではなく、C\# で表示する必用があります。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

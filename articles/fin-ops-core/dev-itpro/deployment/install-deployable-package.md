@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db3cab7d3343b0318fe850c38fb1f1a1efae1510
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05207535c81fd76546c1b6907b3d2dc0a7fa3a8e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867429"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103111"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインから展開可能パッケージをインストールする
 

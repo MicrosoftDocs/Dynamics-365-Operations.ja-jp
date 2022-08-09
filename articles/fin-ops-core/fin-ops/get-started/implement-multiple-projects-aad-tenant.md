@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 57dffc9c1b3509b87802f05dceef650ad09bfa16
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 95baaeedf6f303ef5555bf0374c7c615212257a5
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889270"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125006"
 ---
 # <a name="multiple-lcs-projects-and-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 
@@ -76,8 +76,9 @@ ms.locfileid: "8889270"
 
 ## <a name="online-deployments-in-china-sovereign-cloud"></a>中国の主権クラウドにおけるオンラインの展開
 
-中国の導入/ロールアウトが実装に含まれる場合、[財務と運用アプリ - 中国で 21Vianet が運用](../../dev-itpro/deployment/china-local-deployment.md)を参照してください。 この配置は、中国の規制要件に準拠するように設計されています。 サービスには、21Vianet によって運用および処理される異なるテナント (Azure Active Directory) を持つクラウド サービスの物理的に分離されたインスタンスが含まれます。
+中国の展開/ロールアウトが実装に含まれる場合、[財務と運用アプリ - 中国で 21Vianet が運用](../../dev-itpro/deployment/china-local-deployment.md) を参照してください。 この配置は、中国の規制要件に準拠するように設計されています。 サービスには、21Vianet によって運用および処理される異なるテナント (Azure Active Directory) を持つクラウド サービスの物理的に分離されたインスタンスが含まれます。
 
 この場合、別のテナント (Azure Active Directory) を持つ複数のクラウドの単一組織です。 前述の複数の LCS プロジェクトまたは運用環境におけるメリットとデメリットは引き続き適用されます。 ただし、ライセンス要件と要求手順は異なります。 プロセス支援が必要な場合は、Microsoft Account Executive または実装パートナーと協力します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

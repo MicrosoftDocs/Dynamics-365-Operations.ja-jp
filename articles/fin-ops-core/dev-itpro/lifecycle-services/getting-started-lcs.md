@@ -1,5 +1,5 @@
 ---
-title: Lifecycle Services (LCS) for Finance and Operations アプリのパートナー
+title: 財務と運用アプリのパートナー用 Lifecycle Services (LCS)
 description: この記事では、パートナーが Microsoft Dynamics Lifecycle Services (LCS) をどのように使い始めることができるかについて説明します。
 author: angelmarshall
 ms.date: 06/20/2017
@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1eddb675fbfbb3f9428b187be3d58db20c3a6a4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: af909015ba5f5bfa3e41844f68669a6d5335c9d3
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689174"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103894"
 ---
-# <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>Lifecycle Services (LCS) for Finance and Operations アプリのパートナー
+# <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>財務と運用アプリのパートナー用 Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、パートナーが Microsoft Dynamics Lifecycle Services (LCS) をどのように使い始めることができるかについて説明します。 
 
-Finance and Operations パートナーとして、 [プレビュー サブスクリプションのサインアップ](../dev-tools/sign-up-preview-subscription.md) にある手順に従って、現在のバージョンにアクセスすることができます。
+財務と運用のパートナーとして、[プレビュー サブスクリプションのサインアップ](../dev-tools/sign-up-preview-subscription.md) にある手順に従って、現在のバージョンにアクセスすることができます。
 
 ### <a name="projects-for-partners-in-lcs"></a>LCS におけるパートナーのプロジェクト
 
 現在のバージョンのパートナーとしてサインアップした後、2 種類のプロジェクトを作成できます。
 
 -   見込みプリセールス
--   移行、ソリューションの作成、Dynamics 365 財務と運用アプリについて学ぶ
+-   ソリューションを移行および作成し、Dynamics 365 財務と運用アプリについて学ぶ
 
 #### <a name="prospective-presales-project"></a>見込みプリセールス プロジェクト
 
@@ -49,8 +49,9 @@ Microsoft Dynamics AX 2012 プロジェクト ワークスペースを作成し�
 
 ### <a name="projects-for-customers-in-lcs"></a>LCS における顧客のプロジェクト
 
-LCS に登録する各顧客に対して、実装プロジェクト ワークスペースは、登録プロセス中に自動的に作成されます。 パートナーとして、実装プロジェクトを作成することはできません。 実装プロジェクト ワークスペースの詳細については、 [財務と運用アプリの顧客用の Lifecycle Services (LCS)](lcs-works-lcs.md) を参照してください。 プロジェクト ワークスペース内のサービスは、同じように動作します。 ただし、実装プロジェクトおよびその他のプロジェクト タイプの重要な相違点は、Microsoft によって管理されている Finance and Operations の現在のバージョンをコンフィギュレーションする機能です。
+LCS に登録する各顧客に対して、実装プロジェクト ワークスペースは、登録プロセス中に自動的に作成されます。 パートナーとして、実装プロジェクトを作成することはできません。 実装プロジェクト ワークスペースの詳細については、[財務と運用アプリの顧客用の Lifecycle Services (LCS)](lcs-works-lcs.md) を参照してください。 プロジェクト ワークスペース内のサービスは、同じように動作します。 ただし、実装プロジェクトおよびその他のプロジェクト タイプの重要な相違点は、Microsoft によって管理されている財務と運用の現在のバージョンをコンフィギュレーションする機能です。
 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

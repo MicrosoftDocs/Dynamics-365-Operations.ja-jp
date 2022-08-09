@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
-description: この記事では、 Dynamics 365 for Finance and Operations バージョン 8.1 の新機能および変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。
+title: Dynamics 365 財務と運用バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
+description: この記事では、Dynamics 365 財務と運用バージョン 8.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1
-ms.openlocfilehash: d2e9f82768fb10018f040d232e12b3734b88f480
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b12c2b88ced3cfd6961ed52235e2a76cfe52267c
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898348"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124670"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-81-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-version-81-october-2018"></a>Dynamics 365 財務と運用バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.136 です。
+この記事では、Microsoft Dynamics 365 財務と運用バージョン 8.1 (2018 年 10 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.136 です。
 
 Retail の新機能または変更された機能についての最新のリリースについては、[Dynamics 365 for Retail の新機能または変更された機能](../../../commerce/get-started/whats-new.md) を参照してください。
 
@@ -84,7 +84,7 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-Finance and Operations の今回のリリースでは、コマンド チェーン、委任、またはメンバーへのアクセスを提供することにより拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 さらに、列挙、メタデータ、および SQL 操作に拡張が加えられました。 詳細については、[Dynamics 365 for Finance and Operations バージョン 8.1 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-81.md)を参照してください。
+Finance and Operations の今回のリリースでは、コマンド チェーン、委任、またはメンバーへのアクセスを提供することにより拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 さらに、列挙、メタデータ、および SQL 操作に拡張が加えられました。 詳細については、[Dynamics 365 Finance バージョン 8.1 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-81.md) を参照してください
 
 ## <a name="phantom-items"></a>ファントム品目
 
@@ -94,7 +94,7 @@ Finance and Operations の今回のリリースでは、コマンド チェー�
 
 ## <a name="russian-localization"></a>ロシア語のローカライズ
 
-Dynamics 365 for Finance and Operations では、ロシアの必須規制要件がサポートされるようになりました (オンプレミス展開のみ)。 ロシア語ローカライズのこのリリースは、以下の機能領域が対象となっています: 買掛金勘定、売掛金勘定、前貸しホルダー、銀行および現金、クライアント銀行インターフェイスのエクスポート部分、固定資産、総勘定元帳と G/L 報告、財務報告書の電子報告、在庫、アドレス/FIAS、現金の移動、商品の移動、経費の評価、遅延経費、為替差異、仕掛品分野における VAT および利益税登録。
+Dynamics 365 財務と運用では、ロシアの必須規制要件がサポートされるようになりました (オンプレミスの展開のみ)。 ロシア語ローカライズのこのリリースは、以下の機能領域が対象となっています: 買掛金勘定、売掛金勘定、前貸しホルダー、銀行および現金、クライアント銀行インターフェイスのエクスポート部分、固定資産、総勘定元帳と G/L 報告、財務報告書の電子報告、在庫、アドレス/FIAS、現金の移動、商品の移動、経費の評価、遅延経費、為替差異、仕掛品分野における VAT および利益税登録。
 
 詳細については、[ロシア](../../../finance/localizations/russia.md)を参照してください。
 
@@ -104,10 +104,11 @@ Finance and Operations の標準売上税機能は、アラブ首長国連邦の
 
 - VAT 報告で必要な追加のフィールドで、法人コンフィギュレーションが拡張されました。
 - GCC 領土内の課税対象の国内工程を正しく記録するため、アラブ首長国連邦 (ARE 国コンテキスト) で VAT 逆請求機能が有効になりました。
-- 追加の列および VAT 集計情報によって、追加の販売、請求書、および貸方票の印刷レイアウトが追加されました。
-- アラブ首長国連邦の販売の請求書および貸方票は、ユーザー インターフェイスの新しい ar-AE アラビア語を含む 2 つの言語で印刷されるようになりました。
+- 追加の列および VAT 集計情報によって、追加の販売、請求書、および訂正票の印刷レイアウトが追加されました。
+- アラブ首長国連邦の販売の請求書および訂正票は、ユーザー インターフェイスの新しい ar-AE アラビア語を含む 2 つの言語で印刷されるようになりました。
 - VAT 還付申告レポートは、e-TAX FTA ポータルへのアップロードに対応する電子ファイル形式で印刷されます。
 - 標準監査ファイル機能がアラブ首長国連邦のローカル機能と共有されました。 これは、bht 連邦税所轄官庁 FTA VAT 監査ファイル - (FAF) に必要であり、コンマ区切りファイル形式にエクスポートできます。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2022-04-28
-ms.openlocfilehash: a4a491cdd575a6e774f696e06de333b9cde3c200
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 73fd2af074f6e554451714f844f5ee71e24c66a1
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867447"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103538"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-local-geographies"></a>ローカル地域における Dynamics 365 Finance、Supply Chain Management、および Commerce
 
@@ -60,3 +60,4 @@ Microsoft は、地域をまたがって業務上使用できるサービス間�
 例外の詳細や地域サービスに関する質問については、[Microsoft Dynamics 365 サポート](https://dynamics.microsoft.com/support/) に問い合わせください。
 
 国およびワークロードごとの製品の可用性については、[Dynamics 365 および Power Platform の可用性](https://dynamics.microsoft.com/availability-reports/) を参照してください。
+

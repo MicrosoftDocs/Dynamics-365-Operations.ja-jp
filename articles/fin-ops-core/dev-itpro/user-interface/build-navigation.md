@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cafcae613e2cfe477fee080a6528f7057abf938c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cbcd28b23cc8559e10884dfd04f52a2ecc7227d1
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783148"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114351"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 
@@ -44,7 +44,7 @@ ms.locfileid: "7783148"
 フリート管理チュートリアル プロジェクトを既にインポートした場合は、次のセクションに進みます。
 
 1.  フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
-2.  Visual Studio の **Finance and Operations** メニューで、**プロジェクトのインポート** をクリックします。
+2.  Visual Studio の **財務と運用** メニューで、**プロジェクトのインポート** をクリックします。
 3.  **プロジェクトのインポート** ウィンドウで、**ファイル名** テキスト ボックスの隣にある、省略記号ボタンをクリックします。
 4.  **インポートするファイルの選択** ウィンドウで、**C:\FMLab** を参照して **FMTutorialDataModel.axpp** をクリックしてから **開く** をクリックします。
 5.  プロジェクト ファイルの場所テキスト ボックスに、**C:\FMLab** と入力します。

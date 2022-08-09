@@ -1,5 +1,5 @@
 ---
-title: 財務と運用アプリのバージョン 10.0.25 (2022 年 4 月) のプラットフォーム更新プログラム
+title: 財務と運用アプリのバージョン 10.0.25 のプラットフォーム更新プログラム (2022 年 4 月)
 description: この記事では、財務と運用アプリのバージョン 10.0.25 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
 ms.date: 02/09/2022
@@ -9,14 +9,14 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-01-31
-ms.openlocfilehash: aae90fe5f27412ce1a0eb763febf0502d84fe8a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c072a37daf05911ec8cc4f59bab77f048bbfc6ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866623"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066148"
 ---
-# <a name="platform-updates-for-version-10025-of-finance-and-operations-apps-april-2022"></a>財務と運用アプリのバージョン 10.0.25 (2022 年 4 月) のプラットフォーム更新プログラム
+# <a name="platform-updates-for-version-10025-of-finance-and-operations-apps-april-2022"></a>財務と運用アプリのバージョン 10.0.25 のプラットフォーム更新プログラム (2022 年 4 月)
 
 [!include [banner](../includes/banner.md)]
 
@@ -60,7 +60,7 @@ ms.locfileid: "8866623"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
@@ -68,3 +68,4 @@ ms.locfileid: "8866623"
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事に廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
+

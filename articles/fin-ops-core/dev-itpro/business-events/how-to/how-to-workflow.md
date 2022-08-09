@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 3e6089b464d01bb5a98dceb53ba7942c1334ea57
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2328233cac434ee0f30cf35a5bd67c671bfc0881
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909485"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111516"
 ---
 # <a name="business-events-and-workflow-approvals"></a>ビジネス イベントおよびワークフローの承認
 [!include [banner](../../includes/banner.md)]
 
 この記事では Microsoft Power Automate を使用して購買要求を承認するワークフロー ビジネス イベントを構成して使用する方法を説明します。
 
-この記事を完了するには、プラットフォーム アップデート 26 以降で Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.2 (2019 年 5 月) を実行する必要があります。
+この記事を完了するには、プラットフォーム更新プログラム 26 以降で Microsoft Dynamics 365 Finance バージョン 10.0.2 (2019 年 5 月) を実行する必要があります。
 
 ## <a name="scenario-overview"></a>シナリオの概要
 
@@ -44,7 +44,7 @@ ms.locfileid: "8909485"
 1. Power Automate ポータルにサインインします。
 2. フロー リソースを作成する権限がある既存の環境を選択します。 **(既定)** 環境はすべての会社が利用できます。
 3. **空白から新規 \> を作成する** 選択します。
-4. **Dynamics 365 for Finance and Operations** を検索して、コネクタを選択します。
+4. **Dynamics 365 Finance** を検索して、コネクタを選択します。
 5. 新しいトリガーが作成されます。 このトリガーの名前は **ビジネス イベントの発生時** です。 それを選択します。
 6. 次の特性を持つ環境インスタンスを選択します。 
 
@@ -84,7 +84,7 @@ ms.locfileid: "8909485"
 
     <img alt="Microsoft Power Automate approval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
 
-16. 次に、承認ステップの結果を使用してワークフローの承認を完了する必要があります。 さらに **はい** コンテナに新しい **Finance and Operations 実行アクション** ステップを追加し、**WorkflowWorkitem-complete** アクションと **WorkflowWorkitemInstanceID** パラメーターを選択します。 次に、承認出力から残りのパラメーターを入力します。 最低限の承認結果がある結果セクションと、承認者の応答があるコメント セクション。 承認ステップは複数の承認者をサポートできるため、応答出力は配列です。 したがって、コメント セクションの入力として出力 **応答** を選択すると、すぐに以下に示すように Power Automate はアクションを **それぞれに適用** コンテナに自動的に埋め込みます。
+16. 次に、承認ステップの結果を使用してワークフローの承認を完了する必要があります。 さらに **はい** コンテナに新しい **財務と運営実行アクション** ステップを追加し、**WorkflowWorkitem-complete** アクションと **WorkflowWorkitemInstanceID** パラメーターを選択します。 次に、承認出力から残りのパラメーターを入力します。 最低限の承認結果がある結果セクションと、承認者の応答があるコメント セクション。 承認ステップは複数の承認者をサポートできるため、応答出力は配列です。 したがって、コメント セクションの入力として出力 **応答** を選択すると、すぐに以下に示すように Power Automate はアクションを **それぞれに適用** コンテナに自動的に埋め込みます。
 
     <img alt="workitem complete action" src="../../media/BEF-Howto-workflow-13.png" width="70%">
 

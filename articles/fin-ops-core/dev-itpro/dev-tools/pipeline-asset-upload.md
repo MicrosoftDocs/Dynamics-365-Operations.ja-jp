@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fef19369917a10449ba9c9e92b20e956c3052b30
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6ffdf80396944204a3a7f3098df680be4238a299
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867024"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103476"
 ---
 # <a name="upload-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のアップロード
 
@@ -49,3 +49,4 @@ YML または Classic パイプラインのビルドにタスクを追加する�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

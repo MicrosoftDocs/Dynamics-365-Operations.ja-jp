@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b5bf08771f9c41eec75c07d9314138c824a49aa
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.openlocfilehash: f7c9c20435b3143174293f377815c40beb39cf0e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033704"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103890"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 
@@ -34,7 +34,7 @@ Microsoft では、お客様から提供された情報を必要としていま�
 > プロジェクトのオンボードは、実装プロジェクトで使用できます。また、Microsoft が管理する環境を配置する前に完了する必要があります。 実装プロジェクトの詳細については、[財務と運用アプリの顧客用の Lifecycle Services (LCS)](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps) を参照してください。
 
 
-このオンボード プロセスの詳細については、[実装プロジェクトのオンボード](../../fin-ops/imp-lifecycle/onboard.md#lcs-implementation-project-workspace) を参照してください。また、[財務と運用: Dynamics 365 へのオンボード](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk もご覧ください。
+このオンボード プロセスの詳細については、[実装プロジェクトのオンボード](../../fin-ops/imp-lifecycle/onboard.md#lcs-implementation-project-workspace)を参照してください。また、[財務と運用: Dynamics 365 へのオンボード](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk もご覧ください。
 
 
 ## <a name="onboarding-steps"></a>オンボード ステップ
@@ -109,3 +109,4 @@ Microsoft では、お客様から提供された情報を必要としていま�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

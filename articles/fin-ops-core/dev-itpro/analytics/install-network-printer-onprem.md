@@ -1,26 +1,26 @@
 ---
 title: オンプレミス環境でのネットワーク プリンター デバイスのインストール
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) のオンプレミス展開を既存のネットワーク プリンタ デバイスに接続する方法について説明します。
-author: RichdiMSFT
+author: faix
 ms.date: 04/07/2022
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
-ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: ''
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1ac4cce3eebb425bdc3706d05839115c2649ea58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.search.form: SysCorpNetPrinterList
+ms.service: ''
+ms.openlocfilehash: cf195d15c23ee6b66d1877caf449468b316cdc74
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847357"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206523"
 ---
 # <a name="install-network-printer-devices-in-on-premises-environments"></a>オンプレミス環境でのネットワーク プリンター デバイスのインストール
 

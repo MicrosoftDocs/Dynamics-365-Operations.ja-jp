@@ -6,21 +6,22 @@ ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 265974
-ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e14c24d8a4079e5e2f0945da9aa31c64771db9f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "265974"
+ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
+ms.search.form: BIMeasurementDeployManagementEntityStore
+ms.openlocfilehash: c705bc2772f9fc2ac97b326754b9bba445b4d316
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865910"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206595"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 

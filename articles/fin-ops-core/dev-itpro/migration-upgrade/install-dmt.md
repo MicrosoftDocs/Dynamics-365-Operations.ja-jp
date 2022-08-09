@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 04037e97d661eadf35a465c603c69be0c445174b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2dbb75f7acd2b8674c8ae89fe49379ae60ccc2ac
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866158"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124470"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 
@@ -94,7 +94,7 @@ ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検
 3. **設定** で、**接続の構成** を選択し、次のフィールドに適切な情報を入力します。
 
     - **DIXF サービス ホスト**: DIXF サービスのインストールのホスト名を入力します。
-    - **テナント URL** – アプリケーション テナントの URL を入力します。 テナントが不明な場合は、Finance and Operations アプリケーションの web.config ファイルを参照してください。
+    - **テナント URL** – アプリケーション テナントの URL を入力します。 テナントが不明な場合は、財務と運用アプリケーションの web.config ファイルを参照してください。
 
     > [!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成するときは、2 つのオプションから選択できます。 **Web API** と **ネイティブ**。 このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。
 

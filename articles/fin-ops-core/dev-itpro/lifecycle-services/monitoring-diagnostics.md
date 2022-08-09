@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 252bc1c31d6b269d1f00fa8c3d4a6d4dbc708451
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9698a7c5ae1c909fca44e7bb98d7fa5db41f6dfa
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866410"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103898"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
@@ -52,7 +52,7 @@ LCS の監視および診断ポータルの基礎となるテレメトリ デー
 
 ## <a name="responsibilities"></a>職責
 
-Finance and Operations などの管理されたクラウド サービスについては、Microsoft は常に運用環境の正常性をアクティブに監視する責任があります。 顧客の環境が問題によって影響を受ける場合、Microsoft サービス エンジニア リング チームにすぐに警告が通知されます。 チームは問題の調査を開始し、解決策を見つけるために協力します。 ただし、非運用環境の状態を事前または反応的に監視およびトラブルシューティングする責任はお客様にあります。
+財務と運用などの管理されたクラウド サービスについては、Microsoft は常に運用環境の正常性をアクティブに監視する責任があります。 顧客の環境が問題によって影響を受ける場合、Microsoft サービス エンジニア リング チームにすぐに警告が通知されます。 チームは問題の調査を開始し、解決策を見つけるために協力します。 ただし、非運用環境の状態を事前または反応的に監視およびトラブルシューティングする責任はお客様にあります。
 
 ## <a name="access-the-monitoring-and-diagnostics-portal"></a>監視および診断ポータルへのアクセス
 
@@ -155,3 +155,4 @@ Azure Data Explorer を生の情報ログで使用する方法の詳細につい
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

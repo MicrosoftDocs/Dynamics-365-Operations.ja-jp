@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 1b9772cbcdc415d21da4ee90f454faa1e544bee4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3925956cbd5d8a90dfe3a27881947a77e45d224f
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850925"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108375"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -31,8 +31,8 @@ ms.locfileid: "8850925"
 
 配置可能パッケージをインストールする方法の詳細については、 [コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md)を参照してください。
 
-## <a name="is-the-finance-and-operations-website-accessible-when-visual-studio-isnt-running"></a>Visual Studio が実行されていないときに Finance and Operations の Web サイトはアクセス可能ですか。
-はい、Microsoft Visual Studio が実行されていない時に Finance and Operations Web サイトにアクセスできます。 Microsoft Internet Information Services (IIS) Express は、ユーザーとして実行する .exe ファイルです。 ただし、Visual Studio を終了すると、XPPC エージェントが終了する前に通常の IIS (IIS Express ではなく) が起動します。 この動作により、サインアウトした場合やマシンを再起動した場合でも、Application Object Server (AOS) インスタンスと Web サイトにリモートでアクセスできるようになります。 多くのユーザーがこのような開発者用マシンをテスト用マシンとして使用してていること、また彼らが常に AOS インスタンスが実行されていることを期待していることを認識しています。 ただし、IIS Express は、この動作をサポートしていません。
+## <a name="is-the-finance-and-operations-website-accessible-when-visual-studio-isnt-running"></a>Visual Studio が実行されていないときに財務と運用の Web サイトはアクセス可能ですか。
+はい、Microsoft Visual Studio が実行されていない時に財務と運用 Web サイトにアクセスできます。 Microsoft Internet Information Services (IIS) Express は、ユーザーとして実行する .exe ファイルです。 ただし、Visual Studio を終了すると、XPPC エージェントが終了する前に通常の IIS (IIS Express ではなく) が起動します。 この動作により、サインアウトした場合やマシンを再起動した場合でも、Application Object Server (AOS) インスタンスと Web サイトにリモートでアクセスできるようになります。 多くのユーザーがこのような開発者用マシンをテスト用マシンとして使用してていること、また彼らが常に AOS インスタンスが実行されていることを期待していることを認識しています。 ただし、IIS Express は、この動作をサポートしていません。
 
 ## <a name="what-about-the-other-services"></a>他のサービスはどうなのですか ?
 Microsoft SQL Server、SQL Server Reporting Services (SSRS)、SQL Server Integration Services (SSIS)、SQL Server Analysis Services (SSAS)、Batch、Financial reporting (旧 Management Reporter)、および IIS などの Microsoft Windows サービスを再起動することができます。 (IIS の場合は、iisreset.exe を使用できないため、World Wide Web 発行サービスを再起動する必要があります。)
@@ -52,7 +52,7 @@ IIS Express を使用する必要があります。 詳細については、次�
 ## <a name="what-are-the-instructions-for-using-iis-express"></a>IIS Express の使用方法は ?
 IIS Express が起動されると、通知領域 (時計の近くにある) にアイコンが表示されます。 IIS Express アイコンを右クリックすると、実行中のすべてのサイトが一覧表示されます。 そのメニューから IIS Express を停止することができます。 Visual Studio でのいくつかのアクションによって IIS Express が起動しますが、**Dynamics 365** メニューで **IIS Express の再起動** を選択することで、Visual Studio から明示的に IIS Express を起動することもできます。
 
-IIS Express および Finance and Operations Visual Studio プロジェクトでデバッグが正常に機能することを確実にするため、次のインターネット オプションの設定をお勧めします:
+IIS Express および財務と運用 Visual Studio プロジェクトでデバッグが正常に機能することを確実にするため、次のインターネット オプションの設定をお勧めします:
 
 - **コントロール パネル** > **インターネット オプション** > **セキュリティ** タブ >**インターネット** に移動し、**保護モードの有効化** チェック ボックスをオンにします。
 - **コントロール パネル** > **インターネット オプション** > **セキュリティ** タブ >**制限付きサイト** に移動し、**保護モードの有効化** チェック ボックスをオンにします。

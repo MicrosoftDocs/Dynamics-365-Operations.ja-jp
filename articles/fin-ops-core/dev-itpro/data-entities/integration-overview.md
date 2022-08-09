@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05add2a6107724d6080ea94e55e664a3f687fba2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b5c1072bfc86dfc6a5dba62d3e7d9ce19b0be159
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848730"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108411"
 ---
 # <a name="integration-between-finance-and-operations-apps-and-third-party-services"></a>財務と運用アプリと、サード パーティ サービス間の統合
 
@@ -101,7 +101,7 @@ OData 統合を使用する典型的なシナリオを次に示します。
 
 ### <a name="create-and-update-product-information"></a>製品情報の作成および更新
 
-あるメーカーでは、その製品をオンプレミスでホストされているサード パーティ製アプリケーションを使用して、定義および構成します。 この製造元は、生産情報をオンプレミス アプリケーションから Finance and Operations に移行する必要があります。 製品が定義されるとき、またはオンプレミス アプリケーションで変更されるとき、ユーザーは、同じ変更をリアルタイムに確認できます。
+あるメーカーでは、その製品をオンプレミスでホストされているサード パーティ製アプリケーションを使用して、定義および構成します。 この製造元は、運用情報をオンプレミス アプリケーションから財務と運用に移行する必要があります。 製品が定義されるとき、またはオンプレミス アプリケーションで変更されるとき、ユーザーは、同じ変更をリアルタイムに確認できます。
 
 | 意思決定                    | 情報              |
 |-----------------------------|--------------------------|
@@ -113,16 +113,16 @@ OData 統合を使用する典型的なシナリオを次に示します。
 
 #### <a name="recommended-solution"></a>推奨される解決策
 
-このシナリオは、OData サービス エンドポイントを使用して、Finance and Operations で製品情報を作成および更新することによって最適に実装されます。
+このシナリオは、OData サービス エンドポイントを使用して、財務と運用で製品情報を作成および更新することによって最適に実装されます。
 
-Finance and Operations:
+財務と運用で:
 
 - 統合に必要なすべてのエンティティを決定します。
 - OData サービス エンドポイントが同じエンティティのセットに対して使用可能であることを確認します。
 
 サード パーティ製アプリケーション:
 
-- 製品情報がサード パーティ製アプリケーションで作成または変更されるときは、同じ変更を加えるために Finance and Operations への OData 呼び出しが行われます。
+- 製品情報がサード パーティ製アプリケーションで作成または変更されるときは、同じ変更を加えるために財務と運用への OData 呼び出しが行われます。
 
 ### <a name="read-the-status-of-customer-orders"></a>客注文のステータスを読み取る
 
@@ -138,14 +138,14 @@ Finance and Operations:
 
 このシナリオは、OData サービス エンドポイントを使用して、注文ステータス情報を読み取ることによって最適に実装されます。
 
-Finance and Operations:
+財務と運用で:
 
 - 注文のステータス情報を読むために必要なエンティティを決定します。
 - OData サービス エンドポイントがエンティティに対して使用可能であることを確認します。
 
 顧客のポータル サイトで、次の操作を行います。
 
-- 顧客は注文のステータスをチェックするとき、対応する注文を読み取ってそのステータスを取得するために、Finance and Operations にリアルタイムの OData 呼び出しを行います。
+- 顧客は注文のステータスをチェックするとき、対応する注文を読み取ってそのステータスを取得するために、財務と運用にリアルタイムの OData 呼び出しを行います。
 
 ### <a name="approve-boms"></a>BOM の承認
 
@@ -161,7 +161,7 @@ Finance and Operations:
 
 このシナリオは、OData アクションを使用して実装できます。
 
-Finance and Operations:
+財務と運用で:
 
 - 統合に必要なエンティティを決定する
 - OData サービス エンドポイントがエンティティに対して使用可能であることを確認します。
@@ -192,7 +192,7 @@ PLM ソリューション:
 
 このシナリオは、カスタム サービスを使用して実装できます。
 
-Finance and Operations:
+財務と運用で:
 
 - 特定のアイテムの現物手持在庫を計算するカスタム サービスを作成します。
 
@@ -223,7 +223,7 @@ Finance and Operations:
 
 このシナリオは、バッチ データ API を使用すると最もよく実装されます。
 
-Finance and Operations:
+財務と運用で:
 
 - 統合に必要なすべてのエンティティを決定します。
 - エンティティに対してデータ管理が有効であることを確認します。
@@ -234,7 +234,7 @@ Finance and Operations:
 
 ### <a name="export-large-volumes-of-purchase-orders"></a>大量の発注書をエクスポート
 
-会社は、Finance and Operations で大量の発注書を生成し、オンプレミス在庫管理システムを使用して製品を入庫します。 発注書は、Finance and Operations からオンプレミス インベントリ システムに移動する必要があります。
+会社は、財務と運用で大量の発注書を生成し、オンプレミス在庫管理システムを使用して製品を入庫します。 発注書は、財務と運用からオンプレミス インベントリ システムに移動する必要があります。
 
 | 意思決定                    | 情報               |
 |-----------------------------|---------------------------|
@@ -246,7 +246,7 @@ Finance and Operations:
 
 このシナリオは、バッチ データ API を使用すると最もよく実装されます。
 
-Finance and Operations:
+財務と運用で:
 
 - 統合に必要なすべてのエンティティを決定します。
 - エンティティに対してデータ管理が有効であることを確認します。
@@ -254,7 +254,7 @@ Finance and Operations:
 
 オンプレミス在庫システム:
 
-- REST バッチ データ API を使用して、Finance and Operations からファイルをエクスポートし、在庫システムにインポートします。
+- REST バッチ データ API を使用して、財務と運用からファイルをエクスポートし、在庫システムにインポートします。
 
 ## <a name="typical-scenarios-and-patterns-that-call-external-web-services"></a>外部の Web サービスを呼び出す一般的なシナリオとパターン
 
@@ -271,3 +271,4 @@ Finance and Operations:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

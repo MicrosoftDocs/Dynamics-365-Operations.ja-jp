@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdda4c02bb97c2816107671b744a2c4ba5d134d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ada463e63275dc803ba5a444a8cf93ca4d41dbbb
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862175"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108627"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
@@ -158,7 +158,7 @@ Skype 統合は、パブリック クラウドの環境で利用できます。 
 
 -  **登録データが初期化されない**: アドインに再度サインインしても問題が解決されなかった場合、別の潜在的な原因は、環境でアドイン データがまだ初期化されていないことです。 これを確認するために、管理者は **Office アプリ パラメーター** ページに移動できます。 そのページの各 **アプリ パラメータ**、**登録アプレット**、および **登録リソース** タブについて、各タブにデータが入力されていることを確認します。いずれかのタブに空のグリッドがある場合は、そのタブで適切な **初期化** ボタンを選択します。 
 
--  **OData の問題**: 前の 2 つの修正を試みても問題が解決しない場合、この問題の最終的な原因は、アドインが Finance and Operations と通信する OData サービスが、登録データをアドインに返すことができないことである可能性があります。 そのデータがない場合、アドインは、アプレットの読み込みに失敗します。 この段階で、失敗したセッションの Excel アドインの **アプリケーション相関関係 ID** からの情報を Microsoft サポートに連絡する必要があります。 このフィールドは **オプション** で見つけることができます。
+-  **OData の問題**: 前の 2 つの修正を試みても問題が解決しない場合、この問題の最終的な原因は、アドインが財務と運用と通信する OData サービスが、登録データをアドインに返すことができないことである可能性があります。 そのデータがない場合、アドインは、アプレットの読み込みに失敗します。 この段階で、失敗したセッションの Excel アドインの **アプリケーション相関関係 ID** からの情報を Microsoft サポートに連絡する必要があります。 このフィールドは **オプション** で見つけることができます。
 
 ### <a name="issue-during-sign-in-to-the-excel-add-in-users-receive-an-error-message-saying-they-cannot-access-the-application-2bc50526-cdc3-4e36-a970-c284c34cbd6e-in-that-tenant"></a>問題: Excel アドインへのサインイン中、ユーザーに「テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e にアクセスできません」というエラー メッセージが表示される
 
@@ -269,3 +269,4 @@ VPN に関する一般的な解決策を次に示します。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

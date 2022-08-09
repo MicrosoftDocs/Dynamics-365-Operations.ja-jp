@@ -11,12 +11,12 @@ ms.author: milindav
 ms.search.validFrom: ''
 ms.search.form: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2857d38905f72d1c336c85388d5a9c33e4307f34
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4352f6a09d1d5f6cbcff32b8b04b8b4dbd89edbe
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905059"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109530"
 ---
 # <a name="business-events-generated-by-the-export-to-azure-data-lake-service-preview"></a>Azure Data Lake サービス (プレビュー) へのエクスポートによって生成されるビジネス イベント
 
@@ -95,3 +95,4 @@ Microsoft Power Automate を使用してビジネス アクションを作成す
 ## <a name="any-questions-feedback"></a>ご質問、フィードバックはありますか?
 
 この機能と他の機能についても積極的に取り組んでいます。 製品チームや他の顧客やパートナーに連絡して質問を行いますか? 製品チームに直接フィードバックを提供しますか? その場合、[プレビュー Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) に参加できます。 毎週の「営業時間」のオンライン ミーティングに参加し、Yammerオンライン フォーラムを使用して連絡を取り合い、質問することができます。
+

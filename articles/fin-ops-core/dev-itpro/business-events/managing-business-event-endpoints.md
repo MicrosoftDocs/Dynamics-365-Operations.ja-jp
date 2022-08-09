@@ -1,8 +1,8 @@
 ---
 title: ビジネス イベント エンドポイントの管理
-description: この記事では、財務と運用アプリのビジネス イベント用エンドポイントの管理法方法について説明します。
+description: この記事では、財務と運用アプリのビジネス イベント用エンドポイントの管理方法について説明します。
 author: jaredha
-ms.date: 11/09/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-11-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1ffe7015061cf814f2144745ef1673cb43201227
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 69aa947ad3a31be3187436e051e42f4a7f700dba
+ms.sourcegitcommit: bba5ef41aeda7c0ef5a24bf38638126a8a62f23b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850943"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080652"
 ---
 # <a name="manage-business-event-endpoints"></a>ビジネス イベント エンドポイントの管理
 [!include[banner](../includes/banner.md)]
@@ -49,7 +49,7 @@ Microsoft Azure ベースのエンドポイントは、顧客の Azure サブス
 Microsoft Power Platform 統合が有効になった後、財務と運用アプリ ビジネス イベントとデータ イベントを Dataverse から登録できます。 サブスクリプションでは次の機能が有効です。
 
 - Dataverse の複数のアプリケーションからのイベントにまたがる一貫した動作
-- 財務と運用アプリからコンスタントに消費するための Dataverse ソリューション向けアプリケーション ライフサイクル管理 (ALM)
+- 財務と運用アプリから一貫して消費するイベントヘの Dataverse ソリューション向けアプリケーション ライフサイクル管理 (ALM)
 - Dataverse の財務と運用アプリ イベント上におけるプラグインとソフトウェア開発キット (SDK) 手順の登録
 
 Microsoft Power Platform 統合が財務と運用アプリ環境に対して有効になると、ビジネス イベント用に作成されるエンドポイントは、Dataverse でサポートされたエンドポイント タイプのリンクされた Microsoft Power Platform 環境に同期されます。 その後、エンドポイントは Microsoft Power Platform で使用できます。 エンドポイントを同期すると、財務と運用アプリから送信されたビジネス イベントは Dataverse からエンドポイントにプロキシされます。
@@ -72,7 +72,7 @@ Microsoft Power Platform 統合が財務と運用アプリ環境に対して有�
 
 ### <a name="viewing-or-creating-mapped-endpoints-in-dataverse"></a>Dataverse でマップされたエンドポイントの表示または作成
 
-財務と運用アプリに新しいエンドポイントをが追加されると、そのエンドポイントは Dataverse に同期されます。 **ServiceEndpoint** テーブルの Dataverse で使用できるようになります。 また、**ServiceEndpoint** テーブルの Dataverse にエンドポイントを直接作成できます。 サービス エンドポイントを財務と運用アプリ イベントに登録して作成する場合、自動的に財務と運用アプリが利用できるようになり、**ビジネス イベント** ページの **エンドポイント** タブに表示されます。 この動作は、マップされているエンドポイントの次のタイプに適用できます。
+財務と運用アプリに新しいエンドポイントが追加されると、そのエンドポイントは Dataverse に同期されます。 **ServiceEndpoint** テーブルの Dataverse で使用できるようになります。 また、**ServiceEndpoint** テーブルの Dataverse にエンドポイントを直接作成できます。 サービス エンドポイントを財務と運用アプリ イベントに登録して作成する場合、自動的に財務と運用アプリが利用できるようになり、**ビジネス イベント** ページの **エンドポイント** タブに表示されます。 この動作は、マップされているエンドポイントの次のタイプに適用できます。
 
 - Azure Service Bus キュー
 - Azure Service Bus トピック
@@ -81,11 +81,14 @@ Microsoft Power Platform 統合が財務と運用アプリ環境に対して有�
 
 **ServiceEndpoint** テーブルの詳細については、[ServiceEndpoint テーブル/エンティティの参照](/powerapps/developer/data-platform/reference/entities/serviceendpoint) を確認してください。
 
+> [!NOTE]
+> エンドポイントを Dataverse でマップする場合、Dataverse IP アドレスを、ビジネス イベントおよびデータ イベントに対するファイアウォール ポリシーの許可リストに追加する必要があります。 ファイアウォール ポリシーに必要な IP アドレスの詳細情報については、[必要な IP アドレス](/power-platform/admin/online-requirements#ip-addresses-required)を参照してください。
+
 ### <a name="microsoft-power-automate-endpoints"></a>Microsoft Power Automate エンドポイント
 
 **Microsoft Power Automate** エンドポイント タイプは、財務と運用アプリに直接設定することはできません。 このエンドポイント タイプは、Power Automate のフローから直接作成および送信されるサブスクリプションに使用されます。 
 
-Power Automate で財務と運用アプリ ビジネス イベントまたはデータ イベントに登録する際は、エンドポイントは **ビジネス イベント** ページの **エンドポイント** タブで作成されます。 Power Automate のビジネス イベントとデータ イベントの登録方法については、[Microsoft Power Automate のビジネス イベント](business-events-flow.md) を参照してください。
+Power Automate で財務と運用アプリ ビジネス イベントまたはデータ イベントに登録する際は、エンドポイントは財務と運用アプリの **ビジネス イベント** ページの **エンドポイント** タブで作成されます。 Power Automate のビジネス イベントとデータ イベントの登録方法については、[Microsoft Power Automate のビジネス イベント](business-events-flow.md) を参照してください。
 
 ### <a name="microsoft-dataverse-endpoints"></a>Microsoft Dataverse エンドポイント
 
@@ -93,7 +96,7 @@ Power Automate で財務と運用アプリ ビジネス イベントまたはデ
 
 ![財務と運用アプリのビジネス イベント ページにある Dataverse タイプのエンドポイント。](../media/businessevents_DataverseEndpoint.png)
 
-ビジネス イベント登録自体は、登録に応じて、財務と運用アプリの **ビジネス イベント** ページにある **ビジネス イベント カタログ** タブまたは **データ イベント カタログ** タブのどちらかにも表示されます。 これにより、財務と運用アプリ ユーザーは、ビジネス イベントかデータ イベントのどちらが Dataverse に登録されているプラグインまたは SDK 手順を所持してるか確認できます。 また、財務と運用アプリでイベントを有効にした理由も確認できます。
+ビジネス イベント登録自体は、登録に応じて、財務と運用アプリの **ビジネス イベント** ページにある **ビジネス イベント カタログ** タブまたは **データ イベント カタログ** タブのどちらかにも表示されます。 これにより、財務と運用アプリ ユーザーは、ビジネス イベントかデータ イベントのどちらが Dataverse に登録されているプラグインまたは SDK 手順を所持しているか確認できます。 また、財務と運用アプリでイベントを有効にした理由も確認できます。
 
 財務と運用アプリ イベントは、Visual Studio 用 Power Platform Tools 拡張機能などの Dataverse ツールセットのツールを使用して、Dataverse に直接登録できます。 この拡張機能の詳細については、[Power Platform Tools のインストール](/powerapps/developer/data-platform/tools/devtools-install)を参照してください。 これらの登録は、財務と運用アプリの **ビジネス イベント** ページにある **ビジネス イベント カタログ** タブに表示されます。
 
@@ -102,3 +105,4 @@ Power Automate で財務と運用アプリ ビジネス イベントまたはデ
 サービス エンドポイントの作成後、使用されている場合は、Dataverse はサービス エンドポイントを削除できません。 この制限は、財務と運用アプリ イベントで使用されるサービス エンドポイントにも適用されます。 これらのエンドポイントのいずれかを削除しようとするとエラーが発生し、削除が防止されます。 
 
 Dataverse の財務と運用アプリ ビジネス イベントの登録方法については、[イベントを Dataverse に登録する](how-to/how-to-dataverse-events.md)を参照してください。
+

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd1dd8252681616dc17ef89934daaa83e3e62e36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d29e34bb1f97d8feb107abb6e5096143b3d6eac5
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866229"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124054"
 ---
 # <a name="code-migration---mouse-double-click-logic"></a>コードの移行 - マウス ダブルクリック ロジック
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations において、**mouseDblClick()** オーバーライドは廃止され、このロジックを新しいコントロールに移動する必要があります。
+財務と運用において、**mouseDblClick()** オーバーライドは廃止され、このロジックを新しいコントロールに移動する必要があります。
 
 Microsoft Dynamics AX 2012 では、さまざまな理由で、マウスをダブルクリックするイベントが使用されていました。 たとえば、より良いユーザー エクスペリエンスを提供するのを助け、特定のシナリオを実行する代替方法を提供しました。 共通の使用パターンの例を次に示します。
 

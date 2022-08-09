@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: af1150bc4e3e16707a4a3c766450f590fdeb99ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14741023b9c49612472f875e7604be350e6953c1
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884711"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103119"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームの使用を開始する
 
@@ -36,7 +36,7 @@ ms.locfileid: "8884711"
 
 1.  [フリート管理プロジェクトを含むファイルをダウンロードする](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp ファイル)。
 2.  ZIP ファイルの内容を開発用コンピュータの一時的な場所に抽出します。
-3.  Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポートします (**Finance and Operations** &gt; **プロジェクトのインポート** をクリックします)。
+3.  Microsoft Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポートします (**財務と運用** > **プロジェクトのインポート**)をクリックします。
 4.  プロジェクト ファイルをインポートした後は、プロジェクトまたはモジュールをビルドします。
 
 ### <a name="get-the-sample-workspace"></a>サンプル ワークスペースを取得します
@@ -57,8 +57,8 @@ ms.locfileid: "8884711"
 
 モバイル アプリは、最も一般的なモバイル オペレーティング システムで利用可能です。 アプリケーションにログインするためには、Dynamics 365 Unified Operations のインスタンスと、有効なユーザー資格情報が必要です。
 
--   Android (現在利用可能) - [Google Play Store の Finance and Operations モバイル アプリ](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone (現在利用可能) - [iTunes アプリ ストアの Finance and Operations モバイル アプリ](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+-   Android (現在利用可能) - [Google Play Store の財務と運用モバイル アプリ](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
+-   iPhone (現在利用可能) - [iTunes アプリ ストアの財務と運用モバイル アプリ](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
 完了です モバイル デバイスからアプリを起動してサンプル ワークスペースを表示します。
 
@@ -72,3 +72,4 @@ ms.locfileid: "8884711"
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

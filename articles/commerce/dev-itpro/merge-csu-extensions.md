@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-30-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 0e8e9d237eccf475cb69066e9ac9bf000afe589f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 02cc0a7b66f8558fdf71b56a2cb1f6068e87b6e8
+ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881338"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "9168935"
 ---
 # <a name="merge-cloud-scale-unit-extension-packages-for-deployment"></a>展開の Cloud Scale Unit 拡張パッケージのマージ
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) の拡張機能パッケージのマージ方法について説明します。
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a7b6e4c0276e3d99b2405cda1eb1c6e76de31a3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c11f4fd8cd72c152c2805991404ca4daf136cf33
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867030"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103309"
 ---
 # <a name="add-license-files-to-a-deployable-package-in-azure-pipelines"></a>Azure Pipelines にある配置可能なパッケージへのライセンス ファイルの追加
 

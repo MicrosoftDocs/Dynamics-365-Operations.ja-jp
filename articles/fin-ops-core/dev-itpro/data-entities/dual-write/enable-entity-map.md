@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58a7501c04bd7ca922724c670c4c4b3f61f4313d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 53c52418b76da476aac24267819d6564205c46b1
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895322"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112256"
 ---
 # <a name="enable-table-maps-for-dual-write"></a>テーブル マップの二重書き込みの有効化
 

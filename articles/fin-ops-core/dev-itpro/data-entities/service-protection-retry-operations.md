@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-16
 ms.dyn365.ops.version: Platform update 52
-ms.openlocfilehash: 7c8687469b8fde0b0cada681393afcaadb8a86bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c486594248391af4b51f480c092f49703f63799
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861757"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135365"
 ---
 # <a name="retry-operations"></a>再試行操作
 

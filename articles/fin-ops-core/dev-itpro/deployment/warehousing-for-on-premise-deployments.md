@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5ce28e20f3749d855811f0404d106f2329981dea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dae13623761f1aad8335feac87ac3687b773485c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867290"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103371"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス展開の倉庫管理アプリの構成
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、オンプレミス配置の Dynamics 365 for Finance and Operations – Warehousing アプリの構成方法について説明します。
+この記事では、Dynamics 365 Finance の構成方法について説明します – オンプレミスの展開の倉庫管理アプリ。
 
 ## <a name="prerequisites"></a>必要条件
 倉庫管理アプリは Android および Windows オペレーティング システムで使用できます。 オンプレミスの展開にこのアプリを使用するには、少なくともバージョン 1.1.1.0 である必要があります。 Dynamics 365 Finance + Operations (on-premises) が次のサポートされているバージョンの 1 つである必要もあります。 ハードウェアおよびソフトウェア環境で構成がサポートされているかどうかを評価するには、次の表の情報を使用します。
@@ -45,7 +45,7 @@ AD FS および Finance + Operations 間で認証を正常に交換するため�
 1.  アプリケーションのエントリを作成する Windows PowerShell コンソールに、次のコマンドを入力します。  
 
     ```powershell
-    Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+    Add-AdfsClient -Name 'Dynamics 365 Finance - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
     ```
 
     - \<Resource URL\> は、たとえば `https://ax.d365ffo.onprem.contoso.com` などです (`https://ax.d365ffo.onprem.contoso.com` は、Finance + Operations にアクセスするための URL です)。
@@ -180,3 +180,4 @@ JSON ファイルの保存方法については、[接続設定のファイル�
 > 以前のリリースでは、倉庫アプリ ユーザーのテレメトリ ID がない場合、いくつかエラーが発生する可能性があります。 回避策は、Web クライアントを介して Finance + Operations (on-premises) にサインインし、テレメトリ ID を取得することです。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42e17d5930b5c863c5c0bd4325b9b5b50b3ead5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4e7e4eaaa1a5d6afef80c205652dba4affe4af2c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867060"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103742"
 ---
 # <a name="build-automation-that-uses-microsoft-hosted-agents-and-azure-pipelines"></a>Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 
@@ -147,7 +147,7 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 
 ### <a name="creating-a-full-pipeline-that-includes-packaging"></a>パッケージを含む完全なパイプラインの作成
 
-利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps 組織にインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](/azure/devops/marketplace/install-extension)を参照してください。
+利便性のため、パイプラインにはバージョン管理手順とパッケージ手順が含まれている必要があります。 これらのステップをパイプラインに追加する前に、Azure DevOps の [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) 拡張機能が有効になっていて、Azure DevOps 組織にインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[Azure DevOps のドキュメント](/azure/devops/marketplace/install-extension)を参照してください。
 
 パイプライン全体は、少なくとも次の手順で構成されている必要があります。
 
@@ -171,4 +171,5 @@ MSBuild を使用して X++ をビルドするには、いくつかの引数を�
 [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub リポジトリでは、既存の Azure DevOps プロジェクトにインポートできるサンプル パイプラインを見つけることができます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
 

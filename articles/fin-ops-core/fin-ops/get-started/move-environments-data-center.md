@@ -2,7 +2,7 @@
 title: データ センター間で環境を移動する
 description: この記事では、Microsoft によって管理されている環境を別の Microsoft Azure データ センターに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 04/29/2022
+ms.date: 07/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 0e99ce267f65fe3e2c08979c8cc9f708eb85022a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: daf8245d9f08817e4c0efd2d056a084bb48e039b
+ms.sourcegitcommit: 7027250354336f64e5d6cac30506700e2605e655
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871474"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "9209644"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -29,11 +29,9 @@ ms.locfileid: "8871474"
 - プロジェクト作成者は、環境が本来配置された以前に、最適なデータ センターを決定するための十分な調査を行っていません。
 - 顧客はその操作の物理的な場所を移動し、ワイド エリア ネットワーク (WAN) 接続がより短い待機時間を提供するデータ センターにより近くなります。
 
-Microsoft により同じデータ センターですべての環境を維持するよう求められます。 環境を別のデータ センターに移行する場合、最終的にはすべての環境を同じデータ センターに展開することを計画する必要があります。
-
 環境が展開されているデータ センターを Microsoft Dynamics Lifecycle Services (LCS) の **環境の管理** ページ上で確認できます。
 
-データ センターを変更するには、すべての環境を再配置する必要があります。 サンド ボックス環境 (サンド ボックスのスタンダード承認テスト環境、およびサンド ボックスの開発およびテスト環境) のプロセスは運用環境のプロセスとは異なります。
+データ センターを変更するには、環境を再配置する必要があります。 プロセスは、サンドボックス環境と運用環境では異なります。
 
 ## <a name="move-sandbox-environments"></a>サンドボックス環境の移動
 
@@ -73,7 +71,7 @@ Microsoft により同じデータ センターですべての環境を維持す
 
 ## <a name="move-production-environments"></a>運用環境の移動
 
-運用環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、運用環境を別のデータセンターに移動するためのサポート要求を開く必要があります。 このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。 このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。 運用環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409)と関連するサービス レベル契約 (SLA) のドキュメント。
+運用環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、運用環境を別のデータセンターに移動するためのサポート要求を開く必要があります。 このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。 このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。 運用環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](service-description.md)と関連するサービス レベル契約 (SLA) のドキュメント。
 
 > [!NOTE]
 > [主権クラウドとローカル クラウド展開オプション](../../dev-itpro/deployment/deployment-options-geo.md)を有効にするために使用できる複数の LCS インスタンスがあります。 これらの異なる LCS インスタンス間の運用環境の移動はサポートされていません。 

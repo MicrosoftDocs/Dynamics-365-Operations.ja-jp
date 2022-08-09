@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39dfbb7cb9dce19284a487cad85030e7f4be44d2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5f528a98eb9372d585fa1ce4ae1b205fa90943e2
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783218"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103433"
 ---
 # <a name="end-to-end-scenario-for-the-fleet-management-sample-application"></a>フリート管理のサンプル アプリケーションのエンド ツー エンドのシナリオ
 
@@ -53,7 +53,7 @@ ms.locfileid: "7783218"
 ## <a name="use-the-fleet-management-application-to-rent-a-vehicle"></a>車両をレンタルするには、フリート管理アプリケーションを使用します。
 このセクションで移行したアプリで作業をしていることに留意してください。 表示されるフォームは、Microsoft Dynamics AX 2012 バージョンのサンプルから直接ポートされます。 変更および再編成されていますが、再考されてはいません。
 
-1.  Internet Explorer を開き、Finance and Operations アプリケーションにサインインします。
+1.  Internet Explorer を開いて、財務と運用アプリケーションにサイン インします。
 2.  **ダッシュボード** に戻るには、ページの左上隅にある製品名を選択します。
 
     > [!div class="mx-imgBorder"]

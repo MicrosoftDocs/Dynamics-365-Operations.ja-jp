@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更点
-description: この記事では、 Dynamics 365 for Finance and Operations バージョン 10.0.4 の新機能および変更された機能について説明します。 このバージョンは 7 月にリリースされます。
+description: この記事では、Dynamics 365 財務と運用バージョン 10.0.4 の新機能または変更された機能について説明します。 このバージョンは 7 月にリリースされます。
 author: tonyafehr
 ms.date: 07/26/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.4
-ms.openlocfilehash: 73343cc95b7240658f8f580d7a50c6ee8d18948f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 32727d77731801dae483c0b28fe85aa98b1bd374
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894236"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125100"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1004-july-2019"></a>Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更点
 
 [!include [banner](../includes/banner.md)]
 
 
-この記事では、 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 の新機能および変更された機能について説明します。 このバージョンは 7 月にリリースされ、ビルド番号は 10.0.136 です。 バージョン 10.0.4 の詳細については [追加リソース](whats-new-changed-10-0-4.md#additional-resources) を参照してください。
+この記事では、Microsoft Dynamics 365 財務と運用バージョン 10.0.4 の新機能または変更された機能について説明します。 このバージョンは 7 月にリリースされ、ビルド番号は 10.0.136 です。 バージョン 10.0.4 の詳細については [追加リソース](whats-new-changed-10-0-4.md#additional-resources) を参照してください。
 
 
 
@@ -50,7 +50,7 @@ Finance and Operations の規制の更新については、[規制の更新](../
 Finance and Operations 10.0.4 の一部である更新プログラムのそれぞれに含まれるバグ修正については、Lifecycle Services (LCS) にログインし、[KB 資料](https://fix.lcs.dynamics.com/Issue/Details?bugId=328732&dbType=3&qc=cdb2117c03722ee9cdbcb2a2e0558dd5b40a37e3caa32850aca4c9a89c476eb2)を参照してください。
 
 ### <a name="platform-update-28"></a>プラットフォーム update 28
-Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 には、プラットフォーム更新プログラム 28 が含まれています。 プラットフォーム更新プログラム 28 の詳細については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 (2019 年 7 月) の新機能または変更された機能について](whats-new-platform-update-28.md)を参照してください。
+プラットフォーム更新プログラム 28 を含む Microsoft Dynamics 365 財務と運用バージョン10.0.4。 プラットフォーム更新プロフラム 28 の詳細ついては、[Dynamics 365 財務と運用プラットフォーム更新プログラム 28 の新機能や変更 (2019 年 7 月))](whats-new-platform-update-28.md) を参照してください。
 
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
@@ -58,12 +58,12 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 には�
 [2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
-[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事では、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[財務と運用の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) の記事では、Dynamics 365 財務と運用の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは推奨されない機能](../../dev-itpro/migration-upgrade/deprecated-features.md)の記事に発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に[財務と運用の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) の記事に発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

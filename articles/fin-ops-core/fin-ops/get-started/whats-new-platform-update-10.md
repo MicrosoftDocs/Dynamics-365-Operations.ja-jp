@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 10 (2017 年 8 月) の新機能および変更された機能
-description: この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 10 の新機能または変更された機能について説明します。 このバージョンは 2017 年 8 月にリリースされました。
+title: Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 10 新機能および変更された機能 (2017 年 8 月)
+description: この記事では、Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 10 の新機能または変更された機能について説明します。 このバージョンは 2017 年 8 月にリリースされました。
 author: tonyafehr
 ms.date: 08/17/2017
 ms.topic: article
@@ -14,28 +14,28 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 245d62e22c1c57673677748bd9edc03ae98ae548
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d37c2ea013b3345a3fe98ad154d1811ce174ac1d
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905009"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123920"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-10-august-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 10 (2017 年 8 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-enterprise-edition-platform-update-10-august-2017"></a>Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 10 新機能および変更された機能 (2017 年 8 月)
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 10 の新機能または変更された機能について説明します。 このバージョンは 2017 年 8 月にリリースされ、ビルド番号は 7.0.4641.16233 です。
+この記事では、Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 10 の新機能または変更された機能について説明します。 このバージョンは 2017 年 8 月にリリースされ、ビルド番号は 7.0.4641.16233 です。
 
 新機能についての補足情報の検索および開発中の新機能に関する詳細については、[Dynamics 365 ロードマップ](https://roadmap.dynamics.com/) を参照してください。 プラットフォーム更新プログラム 10 に含まれるバグ修正の詳細については、Lifecycle Services (LCS) にログインし、この [サポート技術情報記事](https://go.microsoft.com/fwlink/?linkid=856083) を参照してください。
 
 ## <a name="browser-client---net-promoter-score-integration"></a>ブラウザー クライアント - ネット プロモーター スコアの統合
 
-この機能は、ユーザーに Dynamics 365 for Finance and Operations, Enterprise Edition にフィードバックを提供し、満足度をランク付けするよう定期的に促します。
+この機能は定期的にユーザーにフィードバックを提供し、Dynamics 365 財務と運用、Enterprise edition の満足度をランク付けします。
 
 ## <a name="browser-client---support-for-keyboard-shortcut-sequences"></a>ブラウザー クライアント - キーボード ショートカット シーケンスのサポート
 
-Dynamics 365 for Finance and Operations, Enterprise Edition は、キーボードのみのユーザーが生産性を高めるために、多数のキーボード ショートカットをサポートする複合的な製品です。 今後の機能のキーボード ショートカットを選択するのに十分な数の選択肢を確保し、同様のアクションのショートカットをグループ化できるように、キー シーケンスがサポートされました。 キーの順序は、2 つのキーの組み合わせを順番に押すことで開始されるように特定のアクションを許可します。 たとえば、キーの順序 (Alt + M、N) は、Alt キーを押しながら M を押し、直後に N キーを押すことで、ナビゲーション バーにフォーカスを移動するための新しいショートカットになります。 製品内のキー シーケンスの他の例、特にタスク レコーダーに関連するアクションのショートカットについては、[キーボード ショートカット](shortcut-keys.md)の記事を参照してください。
+Dynamics 365 財務と運用、Enterprise Edition は、キーボードのみのユーザーが生産性を高めるために、多数のキーボード ショートカットをサポートする複合的な製品です。 今後の機能のキーボード ショートカットを選択するのに十分な数の選択肢を確保し、同様のアクションのショートカットをグループ化できるように、キー シーケンスがサポートされました。 キーの順序は、2 つのキーの組み合わせを順番に押すことで開始されるように特定のアクションを許可します。 たとえば、キーの順序 (Alt + M、N) は、Alt キーを押しながら M を押し、直後に N キーを押すことで、ナビゲーション バーにフォーカスを移動するための新しいショートカットになります。 製品内のキー シーケンスの他の例、特にタスク レコーダーに関連するアクションのショートカットについては、[キーボード ショートカット](shortcut-keys.md)の記事を参照してください。
 
 ## <a name="build-and-maintain-mobile-workspaces-using-x-classes"></a>X++ クラスを使用してモバイル ワークスペースをビルドおよび管理する
 

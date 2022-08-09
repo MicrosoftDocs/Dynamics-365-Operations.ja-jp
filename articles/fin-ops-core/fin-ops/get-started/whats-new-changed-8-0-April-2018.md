@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
-description: この記事では、 Dynamics 365 for Finance and Operations バージョン 8.0 の新機能および変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。
+title: Dynamics 365 財務と運用バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
+description: この記事では、Dynamics 365 財務と運用バージョン 8.0 の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,26 +15,26 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 761695917ef96e0849b4a716daef792f0fd8efba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 502b08c9cbbf1e563a8b64e94b0b313eb7df42af
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864508"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124892"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-version-80-april-2018"></a>Dynamics 365 財務と運用バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 
 
-この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
+この記事では、Microsoft Dynamics 365 財務と運用バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
-ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
+ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース計画では、Dynamics 365 財務と運用に含まれる新機能または変更された機能について詳細に説明します。
 
-### <a name="introducing-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の導入
+### <a name="introducing-dynamics-365-finance-and-operations"></a>Dynamics 365 財務と運用の導入
 
-ユーザーおよび開発者は、「Microsoft Dynamics 365 for Finance and Operations」という更新済の製品名を確認できます。 バージョン 8.0 では Dynamics 365 製品がさらに簡素化され、顧客とエコシステムの選択がさらに簡単になります。 今後 Microsoft は、個別エディション (Business Edition および Enterprise Edition) を提供しなくなるため、この Dynamics 365 アプリケーションの製品名は Microsoft Dynamics 365 for Finance and Operations になります。
+ユーザーと開発者に対して、更新された製品名「Microsoft Dynamics 365 財務と運用」が表示されます。 バージョン 8.0 では Dynamics 365 製品がさらに簡素化され、顧客とエコシステムの選択がさらに簡単になります。 今後 Microsoft は、個別エディション (Business Edition および Enterprise Edition) を提供しなくなるため、この Dynamics 365 アプリケーションの製品名は Microsoft Dynamics 365 財務と運用になります。
 
 ## <a name="business-productivity"></a>業務の生産性
 
@@ -101,7 +101,7 @@ Microsoft Power Apps を使用して、外部ソースからのデータを Fina
 
 ### <a name="integration-with-dataverse"></a>Dataverse との統合
 
-Dynamics 365 for Finance and Operations では、Finance and Operations と Dynamics 365 for Field Service の間、および Finance and Operations と Dynamics 365 for Project Service Automation の間のクロス アプリケーションの業務プロセスを有効にしました。 これらのシナリオは、拡張可能なデータ インテグレーター テンプレートと Dataverse を使用して構成され、クロス アプリケーション シナリオを実現します。
+Dynamics 365 財務と運用は、財務と運用と Dynamics 365 for Field Service の間、および財務と運用と Dynamics 365 for Project Service Automation の間のクロスアプリケーションの業務プロセスを有効にしました。 これらのシナリオは、拡張可能なデータ インテグレーター テンプレートと Dataverse を使用して構成され、クロス アプリケーション シナリオを実現します。
 
 ### <a name="integration-with-dynamics-365-for-field-service"></a>Dynamics 365 for Field Service との統合
 
@@ -155,7 +155,7 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="india-localization--project-and-upgrade"></a>インド ローカライズ – プロジェクトとアップグレード
 
-ユーザーはプロジェクト管理および会計モジュールでインドの商品及びサービス税 (GST) を管理でき、AX 2012 の顧客は Dynamics 365 for Finance and Operations にアップグレードできます。
+ユーザーはプロジェクト管理および会計モジュールでインドの商品及びサービス税 (GST) を管理でき、AX 2012 の顧客は Dynamics 365 財務と運用にアップグレードできます。
 
 ### <a name="enhanced-configurability"></a>拡張されたコンフィギュレーションの可能性
 
@@ -191,3 +191,4 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

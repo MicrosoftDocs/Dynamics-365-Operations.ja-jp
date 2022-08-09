@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b187a0947b64ae510e8d0da22f646c01462d0347
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9361892e75b078968db952d0847280ef87d7b72d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861754"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108395"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -29,9 +29,9 @@ ms.locfileid: "8861754"
 ## <a name="list-of-services"></a>サービスのリスト
 次のテーブルでは、すべてのサービス エンドポイントを一覧表示し、アプリケーション、および AX 2012 で使用可能なエンドポイントを比較しています。
 
-| サービス エンドポイント            | AX 2012 | Finance and Operations         |
+| サービス エンドポイント            | AX 2012 | 財務と運用         |
 |-----------------------------|---------|--------------------------------|
-| ドキュメント サービス (AXDs)    | 有     | いいえ – データ エンティティに置き換えられます |
+| ドキュメント サービス (AXDs)    | 有効     | いいえ – データ エンティティに置き換えられます |
 | SOAP ベースのメタデータ サービス | 有     | いいえ – REST メタデータに置き換えられます |
 | SOAP ベースのクエリ サービス    | 有     | いいえ – OData に置き換えられます         |
 | OData クエリ サービス         | 有     | いいえ – OData に置き換えられます         |
@@ -89,7 +89,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ### <a name="register-your-external-application"></a>外部アプリケーションの登録 
 
-1. 財務と運用アプリで、**システム管理** \> **セットアップ** \> **Azure Active Directory アプリケーション** に移動します。
+1. 財務と運用アプリで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** に移動します。
 2. **新規** を選択します。
 3. 新しいレコード用のフィールドに入力します。
 
@@ -141,3 +141,4 @@ REST メタデータ サービスは、読み取り専用サービスです。 �
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

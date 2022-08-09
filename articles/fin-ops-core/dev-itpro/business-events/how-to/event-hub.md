@@ -1,7 +1,7 @@
 ---
 title: ビジネス イベント と Azure イベントのハブ
 description: このチュートリアルでは、 Microsoft Azure イベント ハブでビジネス イベントを機能させるために実行する必要のある手順を扱います。
-author: AXnU
+author: Sunil-Garg
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: Platform update 28
 ms.dyn365.ops.version: 2019-07-31
-ms.openlocfilehash: b8054d5f02d0ccfdfa93b480e089a92123739438
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e492866fdb291d5b3ba249009abd8f11c9a5438c
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865878"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129447"
 ---
 # <a name="business-events-and-azure-event-hubs"></a>ビジネス イベント と Azure イベントのハブ
 

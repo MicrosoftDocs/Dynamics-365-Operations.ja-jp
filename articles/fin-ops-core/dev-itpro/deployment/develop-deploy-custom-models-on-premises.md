@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: a00b81855e758f84b344619e00fd2670a699cd54
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4b406e0645d503c5d4963216b6a282f27c5d1936
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867441"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103457"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 
@@ -82,7 +82,7 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 3. 展開可能なパッケージをアップロードするには、プラス記号 (**+**) をクリックします。 
 
 ## <a name="configure-an-on-premises-runtime-environment-that-uses-your-code"></a>コードを使用するオンプレミスのランタイム環境をコンフィギュレーションする
-2017 年 7 月リリースの Microsoft Dynamics 365 for Finance and Operations (オンプレミス) では、サンボックスの配置または運用環境中にのみカスタマイズや拡張機能を適用できます。
+2017 年 7 月リリースのオンプレミスの Microsoft Dynamics 365 財務と運用では、サンボックスの展開中または運用環境中にのみカスタマイズや拡張機能を適用できます。
 
 1. LCS プロジェクトで、**構成** をクリックして環境を配置します。
 
@@ -101,3 +101,4 @@ Azure サブスクリプションに開発環境またはビルド環境を展�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

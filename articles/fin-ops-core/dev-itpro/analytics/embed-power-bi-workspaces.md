@@ -7,25 +7,26 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.custom: 270794
-ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 4254024c5b3ec1730ff4c844f660920e0780aa88
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "270794"
+ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4
+ms.openlocfilehash: 95b7ad6a68036c482bbe030e6cc2bae01715d487
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851033"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206591"
 ---
 # <a name="analytical-workspaces-using-power-bi-embedded"></a>分析ワークスペース (Power BI Embedded を使用)
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics Finance and Operations アプリは、アプリケーション ワークスペースにシームレスに統合される、強力な対話型レポートを備えるようになります。 Power BI でサポートされているグラフィックおよびビジュアルを使用することにより、ワークスペースは、ユーザーにとって非常に視覚的でありながらインタラクティブな体験を提供することができます。
+Dynamics 財務と運用アプリは、アプリケーション ワークスペースにシームレスに統合される、強力な対話型レポートを備えるようになります。 Power BI でサポートされているグラフィックおよびビジュアルを使用することにより、ワークスペースは、ユーザーにとって非常に視覚的でありながらインタラクティブな体験を提供することができます。
 
 ## <a name="overview"></a>概要
 

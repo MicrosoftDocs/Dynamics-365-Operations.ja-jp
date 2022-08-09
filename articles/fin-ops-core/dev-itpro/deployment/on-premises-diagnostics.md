@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: a838841aa3a92a24651e5035422fabcb88791d63
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fbca81ce53ffc43e1da02c0a1bd06f11e79dd5d1
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867394"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103956"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
@@ -62,7 +62,7 @@ Finance + Operations (オンプレミス) の配置と実行を診断するた�
 > [!NOTE]
 > 既定では、Elastic Stack クラスター内の通信は HTTPS 経由で送信され **ない** ようになっています。 リスクを考慮し、それらのリスクの軽減策を準備または実装していない限り、Elastic スタックを設定しないでください。 X-Pack の[支払済バージョン](https://www.elastic.co/subscriptions) は、Elastic Stack のコミュニケーションを暗号化するために使用されます。 設定の詳細については、[クラスタでの TLS の設定](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html)を参照してください。 オープン ソース [Elasticsearch プラグイン](https://github.com/floragunncom/search-guard-ssl) もあります。 ドキュメントによると、Microsoft はこのプラグインをテストしていませんが、HTTPS を有効にすることができます。
 
-Elastic スタックを展開する場合、この記事で説明されている手順を実行するなら異なる経験になるかもしれません。 テストでは、Microsoft は、Elastic Stack コンポーネントのバージョン 6.2.3 と、Microsoft Dynamics 365 for Finance and Operations 7.3 およびプラットフォーム更新プログラム 12 を使用しました。
+Elastic スタックを展開する場合、この記事で説明されている手順を実行するなら異なる経験になるかもしれません。 テストでは、Microsoft は、Elastic Stack コンポーネントのバージョン 6.2.3 と、Microsoft Dynamics 365 Finance 7.3 およびプラットフォーム更新プログラム 12 を使用しました。
 
 この記事では、オンプレミス配置の動作のために Elastic スタックが必要な設定およびコンフィギュレーションの手順を、Microsoft がどのように処理したかについて説明します。 Finance + Operations (オンプレミス) に関連していないガイダンスについては、Elastic.co のドキュメントを参照してください。
 
@@ -249,3 +249,4 @@ Kibana で、何もデータを受け取っていない場合、Winlogbeat か�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

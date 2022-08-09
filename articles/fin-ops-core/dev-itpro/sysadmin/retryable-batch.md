@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 594d395fb448237f2940e99cc06160d604ea6ea8
-ms.sourcegitcommit: 27200618e78c75873c3257af0eceb09ffbdd0168
+ms.openlocfilehash: d692f069a78cd8ecfd59193e864b2d4f39cfa4ad
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9020848"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108473"
 ---
 # <a name="enable-batch-retries"></a>バッチ再試行の有効化
 
@@ -119,3 +119,4 @@ class TestBatchJob extends SysOperationServiceController implements BatchRetryab
 ### <a name="can-i-change-the-maximum-number-of-retries-and-the-retry-interval"></a>再試行の最大回数と再試行間隔は変更できますか?
 
 **BatchRetryable** インターフェイスにより、一時的な SQL 接続の問題を処理できるようになります。 主にフレームワークによって制御します。 再試行の最大回数や再試行間隔など、**BatchRetryable** の設定を顧客が更新することはできません。
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: afb659daa9b12f224fff889e9a6a51116c482cad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8406230bb7e5014ffddfa635c594952746245c9c
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890376"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124450"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムの環境への適用
 
@@ -29,7 +29,7 @@ ms.locfileid: "8890376"
 
 ## <a name="overview"></a>概要
 
-Finance and Operations で、プラットフォームは次のコンポーネントで構成されます。
+財務と運用において、プラットフォームは次のコンポーネントで構成されています。
 
 -   Application Object Server (AOS)、データ管理フレームワーク、レポートおよびビジネス インテリジェンス (BI) フレームワーク、開発ツール、および分析サービスなどのバイナリ。
 -   次のアプリケーション オブジェクト ツリー (AOT) パッケージ。
@@ -38,7 +38,7 @@ Finance and Operations で、プラットフォームは次のコンポーネン
     -   Test Essentials
 
 > [!IMPORTANT]
-> 最新のプラットフォームに移行するためには、Finance and Operations の実装で、プラットフォームに属する AOT パッケージのカスタマイズ (オーバーレイヤー) を行うことは **できません**。 この制限は、プラットフォーム更新 3 で導入されたため、プラットフォームにシームレスに継続的な更新を行うことができます。 
+> 最新のプラットフォームに移行するため、財務と運用の実装は、プラットフォームに属する AOT パッケージのカスタマイズ (オーバーレイヤー) を行うことは **できません**。 この制限は、プラットフォーム更新 3 で導入されたため、プラットフォームにシームレスに継続的な更新を行うことができます。 
 
 ## <a name="overall-flow"></a>全体的な流れ
 次の図は、プラットフォームを最新の更新プログラムにアップグレードするための全体的なプロセスを示しています。
@@ -175,10 +175,10 @@ msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin" SERVICEACCOUNT="NT AU
 if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 ```
 
-完全なメタデータ バックアップが存在しない場合、コマンドは新しいバックアップを作成します。 このコマンドも ファイルをメタデータ バックアップから展開のメタデータ パッケージ フォルダーに復元する前に、Finance and Operations 配置サービスおよびインターネット インフォメーション サービス (IIS) を停止します。 次の例のような出力が表示されます。 
+完全なメタデータ バックアップが存在しない場合、コマンドは新しいバックアップを作成します。 このコマンドは、ファイルをメタデータ バックアップから展開のメタデータ パッケージ フォルダーに復元する前に、財務と運用の配置サービスおよびインターネット インフォメーション サービス (IIS) を停止します。 次の例のような出力が表示されます。 
 
 ```powershell
-6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping Finance and Operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
+6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping finance and operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
 ```
 
 メタデータ バックアップが復元された後、ビルド プロセスでは検出されないようにメタデータ バックアップ フォルダー (DynamicsBackup\\Packages) を削除します。
@@ -189,7 +189,7 @@ if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\Dynami
 
 ## <a name="additional-resources"></a>追加リソース
 
-[最新の Finance and Operations 更新プログラムへの移行の処理](upgrade-latest-update.md)
+[財務と運用の最新更新プログラムへの移行の処理](upgrade-latest-update.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

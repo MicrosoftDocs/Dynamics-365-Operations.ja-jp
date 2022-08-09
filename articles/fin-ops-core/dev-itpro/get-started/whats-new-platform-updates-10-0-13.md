@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ba2eca51ea5ce781213ab33d200abd31ebd97f95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e20ec956204d0c3189699bce7287dcf496da3f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866659"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066152"
 ---
 # <a name="platform-updates-for-version-10013-of-finance-and-operations-apps-october-2020"></a>財務と運用アプリのバージョン 10.0.13 のプラットフォーム更新プログラム (2020 年 10 月)
 
@@ -60,7 +60,7 @@ ms.locfileid: "8866659"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

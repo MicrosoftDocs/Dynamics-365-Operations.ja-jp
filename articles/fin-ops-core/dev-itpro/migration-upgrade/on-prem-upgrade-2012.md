@@ -2,7 +2,7 @@
 title: Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
 description: この記事では、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) バージョン 10.0.x にアップグレードするプロセスについて説明します。
 author: faix
-ms.date: 12/16/2020
+ms.date: 07/13/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: d3ce02025ba78e40700a556a15cf6d884c101874
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 141eaec5c3577f24d4beebeb1736f181d8c7115c
+ms.sourcegitcommit: 1d8b0af5ea5f42916267e311e677d91bad8ad164
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866149"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9146944"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
 
@@ -67,17 +67,23 @@ ms.locfileid: "8866149"
     ```
 
     > [!NOTE] 
-    > **\<DB-name\>** をデータベースの名前 (**AXDB** など) で置き換えます。 多くの値を編集する場合、この記事の[付録](#appendix)を参照してください。
+    > - 以前の PowerShell スクリプトは、この記事の[付録](#appendix)で提供されています。
+    > - **\<DB-name\>** をデータベースの名前 (**AXDB** など) で置き換えます。 多くの値を編集する場合、この記事の[付録](#appendix)を参照してください。
 
     スクリプトは、データベース接続のテストを実行し、入力した情報が有効であることを検証します。
 
-1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択** で **ソフトウェア配置可能パッケージ** を選択し、**AX2012DataUpgrade-10-0-8** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
+1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択** で **ソフトウェア配置可能パッケージ** を選択し、**AX2012DataUpgrade-10-0-x** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
 1. ファイルをコピーして目的の場所に貼り付け (**c:\\D365FFOUpgrade\\** など)、展開します。
-1. 管理者としてコマンド プロンプト ウィンドウを開き、展開したフォルダーへディレクトリを変更して、次のコマンドを実行します。
+1. 管理者として PowerShell ウィンドウを開き、展開したフォルダーへディレクトリを変更して、次のコマンドを実行します。
 
-    1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
-    2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
-    3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
+    ```PowerShell
+    .\AXUpdateInstaller.exe generate -runbookid="MajorVersionDataUpgrade-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="MajorVersionDataUpgrade-runbook.xml"
+    .\AXUpdateInstaller.exe import -runbookfile="MajorVersionDataUpgrade-runbook.xml"
+    .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook"
+    ```
+
+    > [!NOTE]
+    > アップグレードを監視する方法の詳細については、この記事の[付録](#appendix)の[データ アップグレードの監視](#monitoring-the-data-upgrade)セクションを参照してください。
 
 1. アップグレード プロセスが正常に完了した後、新たにアップグレードしたデータベースをバックアップします。 ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 1. データベースをオンプレミス環境の SQL Server に復元し、AX 2012 データベースの名前とは異なる名前 (**AXDBupgraded** など) を付けます。 復元したデータベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
@@ -115,19 +121,25 @@ ms.locfileid: "8866149"
     ```
 
     > [!NOTE]
+    > - 以前の PowerShell スクリプトは、この記事の[付録](#appendix)で提供されています。
     > - **\<DB-name\>**、**\<SqlServerName\>**、**\<User\>**、および **\<Password\>** を必要な値に置換します。
     > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](/sql/relational-databases/security/authentication-access/create-a-database-user)」を参照してください。
     > - SQL Server 証明書に署名した証明機関の証明書を、OneBox VHD の信頼された証明機関ストアに追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。
     > - 使用するデータベースのユーザーに、**sysadmin** サーバー ロールが割り当てられているか、またはアップグレードするデータベースに少なくとも **すべての特権** があるかを確認します。 また、ユーザーに tempDB にアクセスするためのアクセス許可があることを確認します。 これらの条件を満たしていない場合、アップグレード プロセスのステップ 6 は失敗します。
     > - 証明機関の証明書を OneBox VHD にインストールする場合、そこに表示されるデータベースへ接続するには完全修飾ドメイン名 (FQDN) または IP アドレスを使用してください。 サーバーを指していないため、ドメイン名を使用してデータベースにアクセスできない場合は、ホスト ファイルを編集して FQDN が解決する必要がある FQDN と IP アドレスを追加します。
 
-1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択** で **ソフトウェア配置可能パッケージ** を選択し、**AX2012DataUpgrade-10-0-8** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
+1. LCS では、共有アセット ライブラリに移動します。 **アセット タイプの選択** で **ソフトウェア配置可能パッケージ** を選択し、**AX2012DataUpgrade-10-0-x** を選択して、**MajorVersionDataUpgrade.zip** をダウンロードします。
 1. ファイルをコピーして目的の場所に貼り付け (**c:\\D365FFOUpgrade\\** など)、展開します。
-1. 管理者としてコマンド プロンプト ウィンドウを開き、展開したフォルダーへディレクトリを変更して、次のコマンドを実行します。
+1. 管理者として PowerShell ウィンドウを開き、展開したフォルダーへディレクトリを変更して、次のコマンドを実行します。
 
-    1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
-    2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
-    3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
+    ```PowerShell
+    .\AXUpdateInstaller.exe generate -runbookid="MajorVersionDataUpgrade-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="MajorVersionDataUpgrade-runbook.xml"
+    .\AXUpdateInstaller.exe import -runbookfile="MajorVersionDataUpgrade-runbook.xml"
+    .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook"
+    ```
+
+    > [!NOTE]
+    > アップグレードを監視する方法の詳細については、この記事の[付録](#appendix)の[データ アップグレードの監視](#monitoring-the-data-upgrade)セクションを参照してください。
 
 1. ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 1. この記事の後半にある [VHD データベースのリセット (オプション)](#resetting-the-vhd-database-optional) セクションで記述されている値を使用して **Configure-OnpremUpgrade.ps1** スクリプトを実行します。
@@ -327,11 +339,103 @@ else{
 }
 ```
 
+### <a name="monitoring-the-data-upgrade"></a>データ アップグレードの監視
+
+配置可能パッケージには、アップグレード全体を処理する 1 つ のRunbook ステップがあります。 ただし、このステップはバックグラウンドで実行される次のサブステップで構成されます。
+
+- **PreReq** – この手順は、SQL ディクショナリを構成し、システム シーケンスではなく SQL 順序を適用し、ユーザー情報とシステム変数を変更し、システム テーブルのデータベース同期を行い、新しいテーブルの機能を同期化します。
+- **PreSync** – 最初のアップグレード ジョブ セットをバッチ処理によって呼び出す場合、主に固有インデックスを無効にします。
+- **DBSync** – この手順では、最初の完全同期が実行されます。 PreSync ステップ中に無効となった固有のインデックスは、この手順で作成されません。
+- **PostSync** – この手順では、メイン データ変換ジョブをバッチ処理経由で実行します。
+- **FinalDBSync** – この手順では、データベースの残りの全オブジェクトを同期化する最終的なデータベース同期を行います。
+
+アップグレード サービスの実行手順を決定するために、AXDB データベースで次の SQL クエリを実行できます。
+
+```SQL
+SELECT StartTime, EndTime, Steps, SubSteps, Status
+FROM [DBUPGRADE].[DATAUPGRADESTATUS]
+ORDER BY EndTime DESC
+```
+
+結果は次の例のようになります。 ここで指定された日時は、説明用のみに使用されます。 この時間は、データ量および AX 2012 年に使用されるモジュールによって異なります。
+
+| StartTime | EndTime | ステップ | SubSteps | Status |
+|---|---|---|---|---|
+| 2022-05-20 17:16:07.097 | 2022-05-20 17:16:07.097 | FinalDbSync | DisableDataUpgradeFlag | 完了 |
+| 2022-05-20 17:16:06.997 | 2022-05-20 17:16:06.997 | FinalDbSync | EnableDbLogTriggers | 完了 |
+| 2022-05-20 17:16:06.937 | 2022-05-20 17:16:06.937 | FinalDbSync | DisableSafeMode | 完了 |
+| 2022-05-20 16:48:49.390 | 2022-05-20 17:16:06.802 | FinalDbSync | SyncSchema | 完了 |
+| 2022-05-20 16:48:49.333 | 2022-05-20 16:48:49.333 | FinalDbSync | EnableSafeMode | 完了 |
+| 2022-05-20 16:47:30.860 | 2022-05-20 16:48:49.169 | PostSync | RestoreBatchConfiguration | 完了 |
+| 2022-05-20 16:46:15.207 | 2022-05-20 16:47:30.738 | PostSync | EnableBatchPriorityScheduling | 完了 |
+| 2022-05-20 16:44:43.403 | 2022-05-20 16:46:15.091 | PostSync | DisableSysDeletedObjects | 完了 |
+| 2022-05-20 16:44:40.497 | 2022-05-20 16:44:40.497 | PostSync | ImportIsvLicenses | 完了 |
+| 2022-05-20 16:44:09.190 | 2022-05-20 16:44:40.379 | PostSync | StopBatch | 完了 |
+| 2022-05-20 15:49:38.207 | 2022-05-20 16:44:09.070 | PostSync | WaitForBatch | 完了 |
+| 2022-05-20 15:49:37.517 | 2022-05-20 15:49:38.108 | PostSync | StartBatch | 完了 |
+| 2022-05-20 15:48:31.517 | 2022-05-20 15:49:37.421 | PostSync | ScheduleScripts | 完了 |
+| 2022-05-20 15:47:13.403 | 2022-05-20 15:48:31.431 | PostSync | StartAos | 完了 |
+| 2022-05-20 15:47:12.667 | 2022-05-20 16:44:43.286 | PostSync | ExecuteScripts | 完了 |
+| 2022-05-20 15:47:12.550 | 2022-05-20 15:47:12.550 | DbSync | DisableSafeMode | 完了 |
+| 2022-05-20 07:49:40.827 | 2022-05-20 15:47:12.466 | DbSync | SyncSchema | 完了 |
+| 2022-05-20 07:49:40.760 | 2022-05-20 15:31:05.716 | DbSync | EnableSafeMode | 完了 |
+| 2022-05-20 07:49:06.673 | 2022-05-20 07:49:37.862 | PreSync | StopBatch | 完了 |
+| 2022-05-20 07:46:59.667 | 2022-05-20 07:49:06.528 | PreSync | WaitForBatch | 完了 |
+| 2022-05-20 07:46:58.637 | 2022-05-20 07:46:59.529 | PreSync | StartBatch | 完了 |
+| 2022-05-20 07:46:31.317 | 2022-05-20 07:46:58.497 | PreSync | ScheduleScripts | 完了 |
+| 2022-05-20 07:45:31.900 | 2022-05-20 07:46:31.180 | PreSync | StartAos | 完了 |
+| 2022-05-20 07:45:31.780 | 2022-05-20 07:45:31.780 | PreSync | ConfigureBatch | 完了 |
+| 2022-05-20 07:45:31.220 | 2022-05-20 07:49:40.519 | PreSync | ExecuteScripts | 完了 |
+| 2022-05-20 07:44:18.410 | 2022-05-20 07:45:31.092 | PreSync | DisaleBatchPriorityScheduling | 完了 |
+| 2022-05-20 07:43:14.880 | 2022-05-20 07:44:18.273 | PreSync | SaveBatchConfiguration | 完了 |
+| 2022-05-20 07:42:05.350 | 2022-05-20 07:43:14.749 | PreSync | EnableSysDeletedObjects | 完了 |
+| 2022-05-20 07:40:44.340 | 2022-05-20 07:42:05.211 | PreSync | CleanupDataUpgradeTables | 完了 |
+| 2022-05-20 07:40:44.250 | 2022-05-20 07:40:44.250 | PreReqs | DisableSafeMode | 完了 |
+| 2022-05-20 07:38:29.060 | 2022-05-20 07:40:44.110 | PreReqs | PartialDbSync | 完了 |
+| 2022-05-20 06:30:01.693 | 2022-05-20 07:38:28.908 | PreReqs | AdditiveDbSync | 完了 |
+| 2022-05-20 06:30:01.647 | 2022-05-20 06:30:01.647 | PreReqs | EnableSafeMode | 完了 |
+| 2022-05-20 06:30:01.590 | 2022-05-20 06:30:01.590 | PreReqs | ClearSysLastValue | 完了 |
+| 2022-05-20 06:30:01.523 | 2022-05-20 06:30:01.523 | PreReqs | ResetAdminUser | 完了 |
+| 2022-05-20 06:30:01.477 | 2022-05-20 06:30:01.477 | PreReqs | PatchSqlSystemVariables | 完了 |
+| 2022-05-20 06:30:01.273 | 2022-05-20 06:30:01.367 | PreReqs | PatchUserInfo | 完了 |
+| 2022-05-20 06:30:00.930 | 2022-05-20 06:30:01.164 | PreReqs | PatchSqlDictionaryPass2 | 完了 |
+| 2022-05-20 06:30:00.150 | 2022-05-20 06:30:00.820 | PreReqs | PatchSqlDictionaryPass1 | 完了 |
+| 2022-05-20 06:30:00.043 | 2022-05-20 06:30:00.043 | PreReqs | UpdateKernelSchema | 完了 |
+| 2022-05-20 06:28:01.157 | 2022-05-20 06:29:59.929 | PreReqs | CreateSqlSequences | 完了 |
+| 2022-05-20 06:28:01.020 | 2022-05-20 06:28:01.020 | PreReqs | DisableDbLogTriggers | 完了 |
+
 ### <a name="troubleshooting"></a>トラブルシューティング
 
+#### <a name="database-connectivity-issues"></a>データベース接続問題
 - "0" 引数を使用した "Open" の呼び出しで例外が発生しました: 「ログインによって要求されたデータベース「AxDB1」を開くことはできません。 ログインに失敗しました。 ユーザー 'axdbadmin' のログインが失敗しました。」データベース名が間違っている、またはユーザーにデータベースへのアクセスがありません。 
 - "0" 引数を使用した "Open" の呼び出しで例外が発生しました: SQL Server への接続の確立中に、ネットワーク関連またはインスタンス固有のエラーが発生しました。 サーバーが見つからない、またはアクセスできませんでした。 インスタンス名が正しいかを確認し、さらに SQL Server が構成されリモート接続が許可されていることを確認します。 (プロバイダー: 名前付きパイプ プロバイダー、エラー: 40 - SQL Server への接続を開けませんでした)。 スクリプトは、指定された SQL Server との接続を確立できませんでした。 使用した IP/FQDN およびポートを確認します。  
 - "0" 引数を使用した "Open" の呼び出しで例外が発生しました: 「ユーザー 'axdbadmin' のログインが失敗しました。」指定されたログイン資格情報が正確ではありません。
 
+#### <a name="rerun-the-runbook-after-a-failure"></a>失敗後、Runbook を再実行
+
+データ アップグレードの Runbook が失敗した場合は、次の例に示すように、**-rerunstep** オプションを使用して最後のステップを再試行できます。 必要に応じてステップ番号を編集します。
+
+```PowerShell
+.\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook" -rerunstep=3
+```
+
+#### <a name="review-the-runbook-logs"></a>Runbook ログを確認
+
+ログは、配置可能パッケージの下のサブフォルダに格納されます。 現在の Runbook ステップのログを見つけるログ フォルダを表示し、エラーを確認します。
+
+#### <a name="view-details-about-a-presync-or-postsync-upgrade-job"></a>PreSync アップグレード ジョブまたは PostSync アップグレード ジョブに関する詳細の表示
+
+アップグレード PreSync と PostSync スクリプトは、データ アップグレードのプロセスが開始しているバッチ プロセスを使い、X++ by で実行します。 Visual Studio のアプリケーション エクスプローラーでは、表示できる一部のクラスの前に **ReleaseUpdate** が付いています。 Runbook プロセス中にアップグレード スクリプトが失敗した場合、SQL Server Management Studio を開き、次のコードを実行して ReleaseUpdateScriptsErrorLog をクエリすることでエラーの原因をさらに確認できます。
+
+```SQL
+select * from RELEASEUPDATESCRIPTSERRORLOG
+```
+
+#### <a name="additional-resources"></a>追加リソース
+
+トラブルシューティングについては、次の記事を参照してください。
+
+- [アップグレード中の開発環境のトラブルシューティング](troubleshoot-dev-env.md)
+- [PreSync と PostSync アップグレード スクリプトのトラブルシューティング](pre-post-upgrade-scripts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7d5af788518297f2be380740cf4d6c8fe2271a0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d6411cbedeef372b47bdeef20183603f79f07187
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866282"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124000"
 ---
 # <a name="upgrade-from-ax-2012---estimate-effort-by-using-the-code-upgrade-service"></a>AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
 

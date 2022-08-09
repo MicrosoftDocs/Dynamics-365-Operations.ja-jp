@@ -6,21 +6,22 @@ ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AutomatedEntityStoreRefresh
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 27661
-ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daeb3d06ed6195e17e3d2db904eb0cc54fee45e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27661"
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.form: AutomatedEntityStoreRefresh
+ms.openlocfilehash: 4f3ebd21a025e13e9914c638c39c427a799df064
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906650"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206675"
 ---
 # <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 

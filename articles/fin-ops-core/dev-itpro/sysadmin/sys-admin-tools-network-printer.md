@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3e04e22891ebb89da34f94640ccbc05a08aaed0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 47c71187b3bc96b2dd1e6842c71463930bf5553e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898415"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108465"
 ---
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "8898415"
 > [!IMPORTANT]
 > システム管理ユーティリティへのアクセスは、Carbon Flighting Service によって管理されます。 **システム ネットワーク プリンター管理** ページは、システム管理者のみが使用できます。
 
-ドメイン管理者は、ドキュメント回覧エージェント (DRA) を使用して、Finance and Operations サービスにネットワーク プリンターを登録します。 プリンターが登録されると、組織管理者がユーザーに利用できるようにします。 設定は **ネットワーク プリンターの管理** ページで管理されます (**組織管理** \> **設定** \> **ネットワーク プリンター**)。
+ドメイン管理者は、Document Routing Agent (DRA) を使用して、財務と運用のサービスにネットワーク プリンターを登録します。 プリンターが登録されると、組織管理者がユーザーに利用できるようにします。 設定は **ネットワーク プリンターの管理** ページで管理されます (**組織管理** \> **設定** \> **ネットワーク プリンター**)。
 
 **ネットワーク プリンターの管理** ページの設定は、組織の管理者用であるため、データは有効な法人に限定されます。 システム管理者は、法人間でネットワーク プリンターの設定を管理することはできないので、場合によっては、ネットワーク プリンターの変更が発生したときなど、法人間での設定の更新が困難です。 たとえば、ネットワーク プリンター パスが更新されたときやハードウェアを交換したとき、またはユーザーがプリンター キュー内のすべてのドキュメントを削除しようとしたときに、ネットワーク プリンター インスタンスが削除されます。
 

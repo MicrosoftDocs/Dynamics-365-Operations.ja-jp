@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7404380df623e501cf344b9c70104c84d9b4980a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13233a5c0b0bdd9aba3abe1cffebe7a7c699dbea
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901546"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114286"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 
@@ -34,7 +34,7 @@ ms.locfileid: "8901546"
 ## <a name="wireframe"></a>ワイヤーフレーム
 [![セクション グラフのフォーム パターンのワイヤーフレーム。](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
-## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations のパターンの変更
+## <a name="pattern-changes-for-finance-and-operations-apps"></a>財務と運用アプリのパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
 
 ## <a name="model"></a>モデル

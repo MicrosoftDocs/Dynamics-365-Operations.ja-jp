@@ -2,7 +2,7 @@
 title: 初期同期に関する考慮事項
 description: この記事では、制約、既知の問題、および二重書き込みの初期同期に関するガイダンスについて説明します。
 author: RamaKrishnamoorthy
-ms.date: 10/12/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77e18a9337292e435f12ee8694a040c0890ef492
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ffa58e12c289066856075a12a6394322dcb2647
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898966"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111282"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 
@@ -23,13 +23,13 @@ ms.locfileid: "8898966"
 
 
 
-テーブルで二重書き込みを開始する前に、最初の同期を実行して、財務と運用アプリと Customer Engagement アプリの両面で既存のデータを処理することができます。 2 つの環境間でデータを同期する必要がない場合は、初期同期を省略できます。
+テーブルで二重書き込みを開始する前に、最初の同期を実行して、財務と運用アプリおよび Customer Engagement アプリの両面で既存のデータを処理することができます。 2 つの環境間でデータを同期する必要がない場合は、初期同期を省略できます。
 
 初期同期では、既存のデータを 1 つのアプリから別のアプリに双方向でコピーできます。また、実行する際には、いくつかの考慮事項があります。 たとえば、Go-Live 前にデータ移行が必要な場合があります。 この場合、データはデータ移行によって一方の側に読み込まれ、初期同期によってもう一方の側に同期されます。
 
 初期同期には、次の方法を使用することをお勧めします。
 
-+ **[単一スレッド テーブル](#single-threaded-entities):** まずデータを財務と運用アプリに移行し、次に初期同期をトリガーしてデータを Dataverse に移動します。 Microsoft が実行したラボ テストによると、このシーケンスは、Dataverse から財務と運用アプリへの同期よりもパフォーマンスが高いです。
++ **[単一スレッド テーブル](#single-threaded-entities):** まずデータを財務と運用アプリに移行し、次に初期同期をトリガーしてデータを Dataverse に移動します。 Microsoft が実行したラボ テストに基づいて、このシーケンスは、Dataverse から財務と運用アプリへの同期よりもパフォーマンスが高いです。
 + **複数スレッド テーブル**: まずデータを Dataverse に移行し、次に初期同期をトリガーしてデータを財務と運用アプリに移動します。
 
 ## <a name="constraints"></a>制約
@@ -42,13 +42,13 @@ ms.locfileid: "8898966"
 
 初期同期によって許可される行の最大数は、1 回の実行ごとに 500,000 です。 各リーガル テーブルが個別に実行するため、各リーガル テーブルに 500,000 の行制限が適用されます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。 特に、「パフォーマンスを最適化し、アプリケーションに過負荷をかけないために、現在プロジェクトの実行数を 500K 行に制限しています」という通知に注意してください。
 
-初期同期時に、1 回の実行に 500,000 行以上の行が存在する場合は、データを財務と運用アプリと Dataverse に個別に移行し、初期同期をスキップすることをお勧めします。
+初期同期時に、1 回の実行に 500,000 行以上の行が存在する場合は、データを財務と運用アプリおよび Dataverse に個別に移行し、初期同期をスキップすることをお勧めします。
 
 ### <a name="twenty-four-hour-limit"></a>24 時間制限
 
 Dataverse から財務と運用アプリへの初期同期を実行している場合、24 時間以内にインポートの結果を財務と運用アプリから受け取る必要があります。 そうしない場合、タイムアウトが発生します。 したがって、大量のデータを同期していて、1 回の実行に 24 時間以上かかる場合、タイムアウトが原因で初期同期が失敗する可能性があります。たとえば、**顧客/アカウント** テーブルの Dataverse から財務と運用アプリへの初期同期には、70,000 行が含まれます。 したがって、実行には 24 時間以上の時間がかかる場合があります。
 
-データ量が 70,000 行を超える場合は、[単一スレッド テーブル](#single-threaded-entities)に対して Dataverse から財務と運用アプリへの初期同期を実行しないでください。 これらのテーブルは、インポート時にマルチスレッドをサポートしていないので、ボリュームが 70,000 行を超えると、タイムアウトが発生する可能性があります。 この場合、データを財務と運用アプリと Dataverse に別々に移行し、初期同期をスキップする必要があります。
+データ量が 70,000 行を超える場合は、[単一スレッド テーブル](#single-threaded-entities) に対して Dataverse から財務と運用アプリへの初期同期を実行しないでください。 これらのテーブルは、インポート時にマルチスレッドをサポートしていないので、ボリュームが 70,000 行を超えると、タイムアウトが発生する可能性があります。 この場合、データを財務と運用アプリおよび Dataverse に別々に移行し、初期同期をスキップする必要があります。
 
 ### <a name="limit-of-40-legal-entities-while-the-environments-are-being-linked"></a>環境がリンクされている場合の 40 の法人制限
 
@@ -73,9 +73,9 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 3. 最初の手順の初期同期が正常に完了したら、残りのルックアップ列を追加し、最初の手順で同期されたルックアップ列を削除します。 ルックアップ列の数が 10 であることを再度確認します。 マップを保存し、初期同期を実行します。これらの手順を繰り返して、すべてのルックアップ列が同期されていることを確認します。 
 4. すべてのルックアップ列をマップに戻し、マップを保存して、初期同期をスキップしてマップを実行します。これにより、マップでライブ同期モードが有効になります。
 
-### <a name="five-minute-limit-for-finance-and-operations-data-export"></a>Finance and Operations のデータ エクスポートに対する 5 分の制限
+### <a name="five-minute-limit-for-finance-and-operations-data-export"></a>財務と運用のデータ エクスポートに対する 5 分の制限
 
-財務と運用アプリから Dataverse への初期同期を実行し、Finance and Operations のデータのエクスポートに 5 分以上かかる場合、初期同期がタイムアウトすることがあります。タイムアウトは、データ テーブルに `postLoad` メソッドの仮想列がある場合、またはエクスポート クエリが最適化されていない (たとえば、インデックスが存在しない) 場合に発生する可能性があります。
+財務と運用アプリから Dataverse への初期同期を実行し、財務と運用のデータのエクスポートに 5 分以上かかる場合、初期同期がタイムアウトすることがあります。タイムアウトは、データ テーブルに `postLoad` メソッドの仮想列がある場合、またはエクスポート クエリが最適化されていない (たとえば、インデックスが存在しない) 場合に発生する可能性があります。
 
 このタイプの同期は、Platform update 37 (PU37) 以降でサポートされます。 したがって、財務と運用アプリを PU37 またはそれ以降のバージョンに更新する必要があります。
 
@@ -89,9 +89,10 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 
 ### <a name="error-handling-capabilities"></a>エラー処理機能
 
-#### <a name="initial-synchronization-is-always-a-full-push"></a>初期同期は常にフル プッシュ
+#### <a name="initial-synchronization-is-a-full-push-or-incremental-push"></a>初期同期はフル プッシュまたは広域増分プッシュ
 
-個別の行の同期が失敗した場合は、その個別の行だけを再同期することはできません。 初期同期では、常にデータ セット全体がプッシュされます。 この動作は、*フル プッシュ* と呼ばれます。 初期同期が部分的にしか成功しなかった場合、初期同期に失敗した行だけでなく、すべての行に対して 2 回目の同期が実行されます。
+個別の行の同期が失敗した場合は、その個別の行だけを再同期することはできません。 初期同期の最初の実行では、常にデータ セット全体がプッシュされます。 この動作は、*フル プッシュ* と呼ばれます。 財務と運用アプリで変更追跡が有効になっている場合、その後の実行は、最後に実行されたマップ バージョンに基づく広域増分プッシュです。 変更追跡を無効にすると、後続の実行によってフル プッシュが発生します。 広域増分プッシュ中は、エラー レコードが再送信と見なされません。
+
 
 #### <a name="only-the-top-five-errors-can-be-viewed"></a>上位 5 つのエラーのみ表示可能
 
@@ -119,7 +120,7 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 <tr>
 <td>新規</td>
 <td>新規</td>
-<td>番号</td>
+<td>無効</td>
 <td>財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス。どちらのアプリにも初期データがない場合</td>
 <td>適用できません</td>
 <td>任意</td>
@@ -132,13 +133,13 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 <tr>
 <td rowspan='3'>新規</td>
 <td rowspan='3'>新規</td>
-<td rowspan='3'>あり</td>
-<td rowspan='3'>財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス。どちらかのアプリに移行されたデータがある場合</td>
+<td rowspan='3'>有効</td>
+<td rowspan='3'>新しい財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス。どちらかのアプリに移行されたデータがある場合</td>
 <td>&lt;500,000</td>
 <td><a href='#single-threaded-entities'>単一スレッド</a></td>
 <td>
 <ol>
-<li>財務と運用アプリへのデータ移行</li>
+<li>財務と運用アプリへデータを移行します。</li>
 <li>初期同期を実行します。</li>
 </ol>
 </td>
@@ -166,7 +167,7 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 <tr>
 <td rowspan='4'>新規</td>
 <td rowspan='4'>既存</td>
-<td rowspan='4'>あり</td>
+<td rowspan='4'>有効</td>
 <td rowspan='4'>新しい財務と運用アプリ インスタンスと既存の Customer Engagement アプリ インスタンス</td>
 <td>&lt;70,000</td>
 <td><a href='#single-threaded-entities'>単一スレッド</a></td>
@@ -216,7 +217,7 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 <tr>
 <td rowspan='2'>既存</td>
 <td rowspan='2'>新規</td>
-<td rowspan='2'>あり</td>
+<td rowspan='2'>有効</td>
 <td rowspan='2'>既存の財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス</td>
 <td>&lt;500,000</td>
 <td>任意</td>
@@ -239,7 +240,7 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 <tr>
 <td rowspan='4'>既存</td>
 <td rowspan='4'>既存</td>
-<td rowspan='4'>あり</td>
+<td rowspan='4'>有効</td>
 <td rowspan='4'>既存の財務と運用アプリ インスタンスと既存の Customer Engagement アプリ インスタンス</td>
 <td>&lt;70,000</td>
 <td><a href='#single-threaded-entities'>単一スレッド</a></td>
@@ -299,3 +300,4 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

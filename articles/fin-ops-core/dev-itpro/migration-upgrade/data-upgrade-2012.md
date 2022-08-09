@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f225ca21f4b0377a25044267b0b78a240a086281
-ms.sourcegitcommit: f3ead93f5a096cf6814192eff665e3c4becb0c2a
+ms.openlocfilehash: 5df2fe2503a315088565614cd6aae312127b6c31
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8959325"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124050"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -27,7 +27,7 @@ ms.locfileid: "8959325"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-これは、アップグレード プロジェクトのエキサイティングな瞬間です。 このタスクの出力により、Microsoft Dynamics AX 2012 から最新の Finance and Operations 開発環境にアップグレードされた最初のデータセットが提供されます。
+これは、アップグレード プロジェクトのエキサイティングな瞬間です。 このタスクの出力により、Microsoft Dynamics AX 2012 から最新の財務と運用開発環境にアップグレードされた最初のデータセットが提供されます。
 
 このプロセスを共有サンドボックス環境で実行する前に、開発環境で実行することをお勧めします。 このアプローチには 2 つの理由があります。
 
@@ -206,3 +206,4 @@ select * from RELEASEUPDATESCRIPTSERRORLOG
 - [PreSync と PostSync アップグレード スクリプトのトラブルシューティング](pre-post-upgrade-scripts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

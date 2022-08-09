@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 926a4928c331bb2d07bdcb5c8d32f628ed1e4678
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aa1746e96996bb157cce5b898cdba940eeabc8c0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903538"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108902"
 ---
 # <a name="troubleshooting-guide-for-testing-with-the-performance-sdk"></a>パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
 
@@ -149,7 +149,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
     [![CloudEnvironment.Config ファイル。](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
 
-- 財務と運用アプリが 21Vianet に展開されている場合は、開発環境とパフォーマンス テスト環境が 10.0.11 以上のプラットフォーム更新にあることを確認してください。
+- 財務と運用アプリが 21Vianet に展開されている場合は、開発環境とパフォーマンス テスト環境が 10.0.11 以上のプラットフォーム更新プログラム内にあることを確認してください。
 
 ## <a name="at-least-one-security-token-in-the-message-could-not-be-validated"></a>メッセージ内の少なくとも 1 つのセキュリティ トークンを検証できませんでした
 
@@ -337,3 +337,4 @@ perfSDK を使用して出荷されたサンプル ソリューションは既�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

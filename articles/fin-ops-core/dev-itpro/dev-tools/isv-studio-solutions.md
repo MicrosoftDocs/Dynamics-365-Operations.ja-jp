@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebe71e0714d60c0abc2d5aa41fcedc568b06d50b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42ee31582cce268ab1fd582aa2cff8866e4735cc
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867045"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103488"
 ---
 # <a name="link-x-modules-from-isv-packages-by-using-isv-studio"></a>ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 
@@ -44,3 +44,4 @@ https://partner.microsoft.com/dashboard/commercial-marketplace/offers/<product-I
 :::code language="xml" source="code/descriptor.xml" highlight="19,20":::
 
 再コンパイル後、X++ バイナリには製品 ID が含まれ、Tier 2+ サンドボックスまたは運用環境に配置された後に ISV Studio にリンクされます。
+

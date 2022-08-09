@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: be23020b7afcf8674793f05639cf8f3283087995
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9490a8afce03485d60ef64a4942e85d248d49d3b
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873207"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205576"
 ---
 # <a name="document-reporting-preview-options"></a>ドキュメント レポートのプレビュー オプション
 

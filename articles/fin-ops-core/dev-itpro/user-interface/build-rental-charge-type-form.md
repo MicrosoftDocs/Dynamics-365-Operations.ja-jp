@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e87489dbee48246149940063143854443472e37e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 640dd0a03c54e36c30a6491b1a97a15ca0ae8d25
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783146"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114319"
 ---
 # <a name="build-the-rental-charge-type-form"></a>レンタル料金のタイプ フォームの構築
 
@@ -51,7 +51,7 @@ Visual Studio を使用してチュートリアル プロジェクトをイン�
 
 1.  フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
 2.  デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
-3.  **Finance and Operations** メニューで、**プロジェクトのインポート** をクリックします。
+3.  **財務と運用** メニューで、**プロジェクトのインポート** をクリックします。
 4.  **プロジェクトのインポート** ウィンドウで、**ファイル名** テキスト ボックスの隣にある、省略記号ボタンをクリックします。
 5.  **インポートするファイルの選択** ウィンドウで、C:\FMLab を参照して FMTutorialDataModel.axpp をクリックしてから **開く** をクリックします。
 6.  **プロジェクト ファイルの場所** テキスト ボックスに、C:\FMLab と入力します。

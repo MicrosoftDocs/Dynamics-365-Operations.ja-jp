@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 1dc736ad600e22970e22f0bb6c2df0b2b8055566
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1d42b9f20f66edac5a3472a3d8b68f35ef6501ee
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866164"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124493"
 ---
 # <a name="ax-2009-migration--generate-maps"></a>AX 2009 の移行 － マップの生成
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行する前に、ターゲット環境で、ソース データを配置する必要があります。 この記事では、ソースとターゲットのマッピングを生成する方法について説明します。
+Microsoft Dynamics AX 2009 から財務と運用へデータを移行する前に、ターゲット環境で、ソース データを配置する必要があります。 この記事では、ソースとターゲットのマッピングを生成する方法について説明します。
 
 マップを生成するには、接続を検証するための対象の URL、テナント URL、およびサービス アプリケーション ID を指定する必要があります。
 

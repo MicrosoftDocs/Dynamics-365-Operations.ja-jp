@@ -1,6 +1,6 @@
 ---
 title: 環境管理者の更新
-description: 'この記事では、Microsoft Dynamics Lifecycle Services (LCS) の財務と運用アプリ環境で環境管理者を変更する方法について説明します。 '
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) の財務と運用アプリ環境で環境管理者を変更する方法について説明します。
 author: laneswenka
 ms.date: 05/10/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-03-05
-ms.openlocfilehash: 0879d871d0854898a8b2b2d0133f1dc56d008abe
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed5971ad4337091abf8261a1cd0045f92e3377d4
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866347"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103379"
 ---
 # <a name="update-the-environment-administrator"></a>環境管理者の更新
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) で財務と運用アプリ環境を作成する場合は、コンフィギュレーション オプションの 1 つで環境管理者としてユーザーを選択する必要があります。 このユーザーは、財務と運用アプリでシステム管理者ロールが割り当てられている既定の **管理者** ユーザー レコードに関連付けられている電子メール アカウントになります。
+Microsoft Dynamics Lifecycle Services (LCS) で財務と運用アプリ環境を作成する場合、構成オプションの 1 つで環境管理者としてユーザーを選択する必要があります。 このユーザーは、財務と運用アプリでシステム管理者ロールが割り当てられている既定の **管理者** ユーザー レコードに関連付けられている電子メール アカウントになります。
 
 管理者ユーザーは、システム バッチ ジョブを実行する場合など、アプリのいくつかの場面で重要な役割を果たします。 これらのジョブは管理者特権で実行する必要があります。 組織を去るとユーザーの Azure Active Directory (Azure AD) アカウントは無効になるので、これらのユーザーは会社の通常のユーザーには関連付けできません。
 
@@ -39,3 +39,4 @@ Microsoft Dynamics Lifecycle Services (LCS) で財務と運用アプリ環境を
 > 環境管理者アカウントを変更すると、ターゲットの財務と運用アプリ環境でダウンタイムが発生します。 したがって、この機能は、組織のダウンタイムをスケジュールした後にのみ適切な方法で使用します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

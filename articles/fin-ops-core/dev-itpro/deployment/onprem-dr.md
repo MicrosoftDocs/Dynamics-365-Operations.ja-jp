@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 55701b41ab46977b7f941b6cde9da5f56161978d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c80cae32d13c3d490de4c6680851d4af69040990
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867379"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103453"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミス障害復旧コンフィギュレーション
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + Operations (on-premises) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
@@ -272,3 +272,4 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

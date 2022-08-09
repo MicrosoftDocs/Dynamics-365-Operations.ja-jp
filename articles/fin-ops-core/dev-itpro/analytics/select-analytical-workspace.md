@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: 59cd73dbc3e085109da1335429813fdb01c89dfb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7ae494da6f7d84d5cb01baa4619896c7380a1e20
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883703"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206336"
 ---
 # <a name="select-analytical-workspaces-from-power-bi"></a>Power BI から分析ワークスペースを選択する
 
@@ -27,7 +27,7 @@ ms.locfileid: "8883703"
 
 アプリケーション スイートにバンドルされている分析ワークスペースは、ユーザーにビジネス データに関する適切な洞察を提供します。 ただし、場合によっては、標準レポートを組織のユーザー専用に設計されたカスタムレポートに置き換えることが必要になることがあります。
 
-PowerBI.comが提供するワールドクラスのツールを使用すると、外部ソースからのデータを使用するマッシュアップ ビューを含む分析レポートを生成できます。 Finance and Operations のプラットフォーム更新プログラム 26 では、パワー ユーザーは標準埋め込みレポートを PowerBI.com でホストされているレポートと置き換えることができます。
+PowerBI.comが提供するワールドクラスのツールを使用すると、外部ソースからのデータを使用するマッシュアップ ビューを含む分析レポートを生成できます。 財務と運用のプラットフォーム更新プログラム 26 では、パワー ユーザーは標準埋め込みレポートを PowerBI.com でホストされているレポートと置き換えることができます。
 
 > [!IMPORTANT]
 > この記事で説明する機能は、個人用設定ではありません。 分析ワークスペースのカスタマイズは、有効な法人のすべてのユーザーに適用されます。
@@ -46,7 +46,7 @@ PowerBI.comが提供するワールドクラスのツールを使用すると、
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3lP5m]
 
-[PowerBI.com レポートを埋め込む方法](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) ビデオ (上記参照) は、YouTube の [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+[PowerBI.com レポートを埋め込む方法](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) ビデオ (上記参照) は、YouTube の[財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 標準レポートを置き換えるには、システム レポート エディター セキュリティ グループのメンバーである必要があります。 このセキュリティ グループ メンバーは、標準レポートをカスタマイズするためのアプリケーション ワークスペースのオプションにアクセスできます。 次の例は、標準分析レポートを、PowerBI.comでホストされているカスタム レポートに置き換える方法を示しています。
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc6c5e762acc71575508fe9c5cbb533d33b07feb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cdbcecb5b46bda6c6963f571e62d60b6fff27008
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890078"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114295"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 
@@ -29,7 +29,7 @@ ms.locfileid: "8890078"
 
 ## <a name="introduction"></a>概要
 
-このエクスペリエンスを改善するために、財務と運用アプリ用に新しいメッセージング システムが作成されました。 以前のバージョンと比較すると、財務と運用アプリのメッセージング システムには次の機能が含まれています。
+このエクスペリエンスを改善するために、財務と運用アプリ用に新しいメッセージング システムが作成されました。 以前のバージョンと比較すると、財務と運用アプリのメッセージング システムには次の機能が含まれています:
 
 + コンテキストのあるメッセージの関連性が強化されました (フォームとグローバル)。
 + 中断のレベル (なし、軽微、および中断) を強化しました。
@@ -139,3 +139,4 @@ SystemNotificationsManager::AddSystemNotification(notification);
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

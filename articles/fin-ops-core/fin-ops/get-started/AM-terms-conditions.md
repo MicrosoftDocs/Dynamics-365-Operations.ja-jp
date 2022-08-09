@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fb03f18ddaee129df899f9d0e6737aa105402218
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fbe25444302380ae3701f1ed6782f26c9bf9e945
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855569"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124413"
 ---
 # <a name="microsoft-preview-software-license-terms"></a>MICROSOFT プレビュー ソフトウェア ライセンス条件
 [!include [banner](../includes/banner.md)] 
@@ -32,7 +32,7 @@ ms.locfileid: "8855569"
 
 a) 一般。 所有するデバイスに本ソフトウェアのコピーをいくつでもインストールして使用できます。 Microsoft が別の契約に基づき許可しない限り、本ソフトウェアをライブ オペレーティング環境で使用できません。
 
-b) Microsoft Dynamics 365 for Finance and Operations サブスクリプション  ソフトウェアの使用には Microsoft Dynamics 365 for Finance and Operations オンラインサービス (“オンライン サービス”) の有効なサブスクリプションが必要です。  オンライン サービスはにこの契約のもとで使用するライセンスや承認がありません。 本ソフトウェアを使用したオンライン サービスへのアクセスは、個人または組織のサブスクリプションで適用されるサービスの既存の条項を遵守する必要があります。 (i) 個人や組織のオンライン サービスへのサブスクリプションが期限切れまたは終了した場合、または (ii) 本ソフトウェアに対する個人や組織のライセンスが終了した場合、オンライン サービスのアクセスを失う場合があります。
+b) Microsoft Dynamics 365 for Finance and Operations サブスクリプション ソフトウェアの使用には Microsoft Dynamics 365 for Finance and Operations オンラインサービス (“オンライン サービス”) の有効なサブスクリプションが必要です。 オンライン サービスはにこの契約のもとで使用するライセンスや承認がありません。 本ソフトウェアを使用したオンライン サービスへのアクセスは、個人または組織のサブスクリプションで適用されるサービスの既存の条項を遵守する必要があります。 (i) 個人や組織のオンライン サービスへのサブスクリプションが期限切れまたは終了した場合、または (ii) 本ソフトウェアに対する個人や組織のライセンスが終了した場合、オンライン サービスのアクセスを失う場合があります。
 c) サード パーティ ソフトウェア。 本ソフトウェアは、この契約の対象となるサード パーティ製アプリケーション、または独自の条項に基づくアプリケーションを含む場合があります。 サードパーティ製アプリケーションに関するライセンス条項、通知、および確認事項がある場合は、https://aka.ms/thirdpartynotices のオンラインまたは付属の通知ファイルで確認できます。 そのようなアプリケーションが他の契約によって制御されている場合も、免責、制限、および下記の損害の除外については、適用される法律によって許可される範囲に適用されます。
 
 2.  時間に依存するソフトウェア。

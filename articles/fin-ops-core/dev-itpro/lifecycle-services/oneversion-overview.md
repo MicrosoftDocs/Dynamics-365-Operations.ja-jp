@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: c077667b6cd7e67ced5ab477018c399b021fe898
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5f311d3d6dadee23ed8d6e31a659920bc120e59a
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866398"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103297"
 ---
 # <a name="one-version-service-updates-overview"></a>1 つのバージョンのサービス更新の概要
 
@@ -76,3 +76,4 @@ UAT 環境で更新が完了したら、基本的なビジネス プロセス �
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 0a6b2e93341b16dd7c34291efb32b71fa9d19d29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bafe1f15c08c18d863efed94e1ba3d11c89f6e71
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901719"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069626"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -32,10 +32,10 @@ ms.locfileid: "8901719"
 
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
+- Microsoft Dynamics 365 Finance, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5。
 - Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 (まもなく利用できます)
 - Microsoft Dynamics 365 Retail 7.3 (アプリケーション更新プログラム 5 を含みます)
-- Microsoft Dynamics 365 for Finance and Operations 7.3 (アプリケーション更新プログラム 5 を含みます)
+- Microsoft Dynamics 365 Finance 7.3 (アプリケーション更新プログラム 5 を含みます)。
 
 ## <a name="ext-schema"></a>Ext スキーマ
 

@@ -2,7 +2,7 @@
 title: 1 つのバージョンのサービス更新に関するよく寄せられる質問
 description: この記事では、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールについて明確に説明します。
 author: laneswenka
-ms.date: 06/14/2022
+ms.date: 07/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5f4aee554605361eabf65c17671833a62ae68c45
-ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
+ms.openlocfilehash: 834fd515ab7bca5f1db98b0ca47b95955107c1e7
+ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9012487"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "9189009"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -160,15 +160,11 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 すべての環境がバージョン N に更新されます。 
 
-### <a name="what-if-the-default-sandbox-environment-is-manually-updated-to-the-exact-same-version-as-the-automatic-update-version"></a>既定のサンドボックス環境が自動更新バージョンとまったく同じバージョンに手動で更新された場合はどうなりますか? 
+### <a name="what-if-the-default-sandbox-environment-is-manually-updated-to-the-exact-same-version-or-higher-version-than-the-automatic-update-version"></a>既定のサンドボックス環境が自動更新バージョンとまったく同じバージョンまたはそれ以上のバージョンに手動で更新された場合はどうなりますか? 
 
 運用環境の自動更新はキャンセルされ、追加のすべてのサンドボックス環境は現在の N バージョンに更新されます。  
  
 既定のサンドボックス環境の更新はキャンセルされます。 
-
-### <a name="what-if-the-default-sandbox-environment-is-manually-updated-to-a-newer-version-than-the-automatic-update-version"></a>既定のサンドボックス環境が自動更新バージョンよりも新しいバージョンに手動で更新された場合はどうなりますか?
-
-既定のサンドボックス環境、運用環境の自動更新および追加のすべてのサンドボックス環境はキャンセルされます。 
 
 ### <a name="what-if-the-default-sandbox-environment-is-manually-updated-to-an-older-version-than-the-automatic-update-version"></a>既定のサンドボックス環境が自動更新バージョンよりも古いバージョンに手動で更新された場合はどうなりますか? 
  
@@ -311,3 +307,4 @@ Microsoft では、店舗、デバイス、およびユーザー全体で機能�
 - **Modern POS および Commerce Scale Unit** – Modern POS および Commerce Scale Unit は小売業者によって自己ホストされるため、いずれかのコンポーネントを含むトポロジによっては、個別 (および低速) のリズムかつクラウド専用トポロジより細かい方法での更新の展開が可能になります。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04bb87db231c6d4205b73451fd62e6e5bd8578f7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ed3d71853093226bedd1c1dfa2006ad9c6a85eb1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069946"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108469"
 ---
 # <a name="workflow-system-architecture"></a>ワークフロー システムのアーキテクチャ
 
@@ -63,3 +63,4 @@ X++ ワークフロー ランタイムは、次のコンポーネントで構成
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

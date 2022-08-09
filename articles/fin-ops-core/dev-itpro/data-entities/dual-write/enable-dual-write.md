@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ffa92cc5b03a22f1a044bf664fccaa823bc0b7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ef0d29ebe21700784cca46bcd92c55bfeb603e9
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908282"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111276"
 ---
 # <a name="enable-dual-write-for-existing-finance-and-operations-apps"></a>既存の財務と運用アプリの二重書き込みを有効にする
 
@@ -23,9 +23,9 @@ ms.locfileid: "8908282"
 
 
 
-この一連のトピックでは、財務と運用アプリ (Microsoft Dynamics 365 Finance と Dynamics 365 Supply Chain Management) の既存インスタンスと、新規または既存の Dataverse 環境で二重書き込みを有効にする方法を手順を追って説明します。
+この一連のトピックでは、財務と運用アプリ (Microsoft Dynamics 365 Finance と Dynamics 365 Supply Chain Management) の既存インスタンスと、新規または既存の Dataverse 環境で二重書き込みを有効にする手順を示します。
 
-## <a name="step-by-step-instructions-to-enable-dual-write-for-existing-instances-of-finance-and-operations-apps-and-a-new-or-existing-dataverse-environment"></a>財務と運用アプリの既存インスタンスと、新規または既存の Dataverse 環境で二重書き込みを有効にするための手順
+## <a name="step-by-step-instructions-to-enable-dual-write-for-existing-instances-of-finance-and-operations-apps-and-a-new-or-existing-dataverse-environment"></a>財務と運用アプリの既存インスタンスと、新規または既存の Dataverse 環境で二重書き込みを有効にするためのステップ バイ ステップの説明
 
 二重書き込みを有効にするプロセスには、次の 3 つの部分があります:
 
@@ -40,3 +40,4 @@ ms.locfileid: "8908282"
 [システム要件と前提条件](requirements-and-prerequisites.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

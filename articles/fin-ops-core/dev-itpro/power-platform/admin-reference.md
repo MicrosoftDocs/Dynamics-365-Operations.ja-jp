@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c4b8eb0bff587c2a06b8540e0dcf0f4e120c2f78
-ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.openlocfilehash: d970eb7db9fcb9f4c976a73cb6abb13245337826
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8960209"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108531"
 ---
 # <a name="configure-dataverse-virtual-entities"></a>Dataverse 仮想エンティティの構成
 
@@ -28,15 +28,15 @@ ms.locfileid: "8960209"
 この記事では、Microsoft Dataverse で財務と運用アプリの仮想エンティティを構成する方法について説明します。
 
 > [!IMPORTANT]
-> この記事に含まれる構成手順が必要となるのは、Microsoft Power Platform 統合が有効になって **いない** 財務と運用アプリ環境に対してのみです。 Microsoft Power Platform 統合が有効になっている財務と運用アプリ環境のために、統合を有効にするプロセスの一部としてこの記事で説明した仮想エンティティ構成が自動的に実行されます。 
+> この記事に含まれる構成ステップが必要となるのは、Microsoft Power Platform 統合が有効になって **いない** 財務と運用アプリ環境に対してのみです。 Microsoft Power Platform 統合が有効になっている財務と運用アプリ環境のために、統合を有効にするプロセスの一部としてこの記事で説明した仮想エンティティ構成が自動的に実行されます。 
 > 
 > Dataverse 仮想エンティティがを手動で構成された場合、Microsoft Power Platform 統合を有効にする前にこの記事のガイダンスに従うと、Microsoft Power Platform 統合が有効にされた後、手動構成はリンクされた Power Platform 環境を使用しません。 仮想エンティティは、Microsoft Power Platform 統合によって提供される自動構成を使用して Dataverse 環境に接続します。 ただし、財務と運用アプリ環境を Microsoft Power Platform 統合が有効になっていない追加の Power Platform 環境に接続するには、仮想エンティティの手動構成が使用されます。
 > 
-> 財務と運用アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Microsoft Power Platform 統合の有効化](enable-power-platform-integration.md)を参照してください。
+> 財務と運用アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Microsoft Power Platform 統合の有効化](enable-power-platform-integration.md) を参照してください。
 
 ## <a name="getting-the-virtual-entity-solution"></a><a name="get-virtual-entity-solution"></a> 仮想エンティティ ソリューションの取得
 
-財務と運用仮想エンティティの Dataverse ソリューションは、Microsoft AppSource 仮想エンティティ ソリューションからインストールする必要があります。 詳細については、[財務と運用仮想エンティティ](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity)を参照してください。
+財務と運用仮想エンティティの Dataverse ソリューションは、Microsoft AppSource 仮想エンティティ ソリューションからインストールする必要があります。 詳細については、[財務と運用仮想エンティティ](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity) を参照してください。
 
 次のソリューションが Dataverse にインストールされていることを確認します。
 
@@ -55,10 +55,10 @@ ms.locfileid: "8960209"
 
 ## <a name="authentication-and-authorization"></a>認証と承認
 
-ソリューションを Dataverse 環境にインポートした後は、両方の環境を相互に接続するように設定する必要があります。 Dataverse は、Azure Active Directory (Azure AD) アプリケーションに基づいて、サービス間 (S2S) 認証を使用して財務と運用アプリを呼び出します。 環境この新しい Azure AD アプリケーションは、Dataverse 環境の単一のインスタンスを表します。 Dataverse と財務と運用アプリ環境の組み合わせが複数存在する場合は、組み合わせごとに独立した Azure AD アプリケーションを作成して、財務と運用アプリと Microsoft Power Platform 環境の正しい組み合わせの間で確実に接続が確立されるようにする必要があります。 
+ソリューションを Dataverse 環境にインポートした後は、両方の環境を相互に接続するように設定する必要があります。 Dataverse は、Azure Active Directory (Azure AD) アプリケーションに基づいて、サービス間 (S2S) 認証を使用して財務と運用アプリを呼び出します。 環境この新しい Azure AD アプリケーションは、Dataverse 環境の単一のインスタンスを表します。 Dataverse および財務と運用アプリ環境の組み合わせが複数存在する場合は、組み合わせごとに独立した Azure AD アプリケーションを作成し、財務と運用アプリおよび Microsoft Power Platform 環境の正しい組み合わせの間で確実に接続が確立する必要があります。 
 
 > [!NOTE]
-> 仮想エンティティは、テナント全体でサポートされていません。 Microsoft Power Platform 環境は、財務と運用アプリ環境と同じ Azure AD テナントにある必要があります。
+> 仮想エンティティは、テナント全体でサポートされていません。 Microsoft Power Platform 環境は、財務と運用アプリ環境および同じ Azure AD テナントにある必要があります。
 
 ### <a name="register-the-app-in-the-azure-portal"></a>Azure ポータルでアプリを登録する
 
@@ -93,7 +93,7 @@ ms.locfileid: "8960209"
 
 ### <a name="grant-app-permissions-in-finance-and-operations-apps"></a>財務と運用アプリでアプリのアクセス許可を付与する
 
-作成した Azure AD アプリケーションは、Dataverse によって財務と運用アプリを呼び出すために使用されます。 したがって、財務と運用アプリによって信頼され、適切な権限を持つユーザー アカウントに関連付けられている必要があり ます。 仮想エンティティ機能への権限 **のみ** を持つ特殊サービス ユーザーは、財務と運用アプリで作成される必要があります。 このサービス ユーザーには、その他の権限が設定されている必要はありません。 この手順を完了した後、作成した Azure AD アプリケーションのシークレットを持つアプリケーションによって、この財務と運用アプリ環境を呼び出して仮想エンティティの機能にアクセスできるようになります。
+作成した Azure AD アプリケーションは、Dataverse によって財務と運用アプリを呼び出すために使用されます。 したがって、財務と運用アプリによって信頼され、適切な権限を持つユーザー アカウントに関連付けられている必要があります。 仮想エンティティ機能への権限 **のみ** を持つ特殊サービス ユーザーは、財務と運用アプリで作成される必要があります。 このサービス ユーザーには、その他の権限が設定されている必要はありません。 このステップを完了した後、作成した Azure AD アプリケーションのシークレットを持つアプリケーションによって、この財務と運用アプリ環境を呼び出して仮想エンティティの機能にアクセスできるようになります。
 
 1.  財務と運用で、**システム管理 \> ユーザー \> ユーザー** に移動します。
 
@@ -107,7 +107,7 @@ ms.locfileid: "8960209"
 
     - **電子メール**: **dataverseintegration** (または別の値) を入力します (有効な電子メール アカウントである必要は *ありません*)。
 
-    - このユーザーにセキュリティ ロール **CDS 仮想エンティティ アプリケーション** を割り当てます。
+    - このユーザーにセキュリティ ロール **Dataverse 仮想エンティティ インテグレーション アプリ** を割り当てます。
 
     - **システム ユーザー** を含む他のすべてのロールを削除します。
 
@@ -123,11 +123,11 @@ ms.locfileid: "8960209"
 
 ## <a name="configure-the-virtual-entity-data-source"></a>仮想エンティティ データ ソースの構成
 
-プロセスの次の手順では、接続先の財務と運用インスタンスに Dataverse を提供します。 以下の手順では、プロセスのこの部分について説明します。
+プロセスの次のステップでは、接続先の財務と運用インスタンスに Dataverse を提供します。 以下の手順では、プロセスのこの部分について説明します。
 
 1.  Dataverse では、**詳細設定 \> 管理 \> 仮想エンティティ データ ソース** に移動します。
 
-2.  "財務と運用" という名前のデータ ソースを選択します。
+2.  「財務と運用」という名前のデータ ソースを選択します。
 
 3.  上記の手順に従って情報を入力します。
 
@@ -149,3 +149,4 @@ ms.locfileid: "8960209"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

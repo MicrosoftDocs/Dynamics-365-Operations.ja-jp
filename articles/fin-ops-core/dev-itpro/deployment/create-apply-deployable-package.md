@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: tfehr
 ms.custom: 24211
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a56dafe014c074dfe9647c3dd72f0712e5791ba2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 24248406d6255aef756395d455b4445b0fe21f47
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867462"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129414"
 ---
 # <a name="create-deployable-packages-of-models"></a>モデルの配置可能パッケージを作成する
 

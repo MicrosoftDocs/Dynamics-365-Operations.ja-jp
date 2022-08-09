@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b3c3c257facab45c15d835fa1681f36900def117
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5ae1b845a842cc5a4cfe362e3fd9dc282ae04c4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898925"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067835"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
@@ -58,7 +58,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
 9. **OK** をクリックします。
 10. プロジェクトを右クリックし、**追加 > 新しい項目** を選択します。 **新しい項目の追加** ウィンドウで、**クラス** を選択し、**ContosoRetailTransactionServiceSample** としてクラスの名前を入力します。
 
-    Commerce Runtime (CRT) で CDX メソッドを使用するには、ExtensionOf(classStr(RetailTransactionServiceEx) など、ExtensionOf 属性をクラスに追加する必要があります。 つまり、RetailTransactionServiceEx からクラスが拡張されます。
+    Commerce Runtime (CRT) で CDX メソッドを使用するには、ExtensionOf(classStr(RetailTransactionServiceEx) など、ExtensionOf 属性をクラスに追加する必要があります。 この追加は、RetailTransactionServiceEx からクラスが拡張されることを意味しています。
 
 11. コード エディターで、次のコードを追加します。 
 
@@ -69,7 +69,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
     }
     ``` 
 
-12. クラス内部で、カスタム ロジックを実行する新しいメソッドを追加します。 これは、カスタム ロジックを実行するために CRT から呼び出すメソッドです。
+12. クラス内部で、カスタム ロジックを実行する新しいメソッドを追加します。 このメソッドを CRT から呼び出して、カスタム ロジックを実行します。
 
     ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
@@ -131,7 +131,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
     ```
 
 3.  results オブジェクトからは、リアルタイム サービスからの応答値を読み取ることができます。
-4.  CRT フレームワーク コードは、成功/失敗の状態を確認し、CDX メソッドから返された値に基づいてエラー メッセージを提供します。 必要に応じて、拡張機能コードでこれをキャッチし、追加のロジックを提供することができます。  
+4.  CRT フレームワーク コードは、成功/失敗の状態を確認し、CDX メソッドから返された値に基づいてエラー メッセージを提供します。 必要に応じて、拡張機能コードでこれをキャッチし、より多くのロジックを提供することができます。  
 
     > [!NOTE]
     > **InvokeExtensionMethodRealtimeRequest** メソッドは 2 つのパラメーターを取ります。 1 つのパラメ ーターはリアルタイム サービス メソッド名であり、その他はパラメータの一覧を使用する必要があります。 渡されるメソッド名は、**ContosoRetailTransactionServiceSample** クラスで作成したメソッド名と同じにする必要があります。
@@ -166,3 +166,4 @@ if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

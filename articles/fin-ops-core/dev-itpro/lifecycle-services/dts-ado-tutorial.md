@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: joshsantana
 ms.search.validFrom: 03-28-2022
-ms.openlocfilehash: c566ae5dab70f3a455e2b557cf8a436a7f271adf
-ms.sourcegitcommit: 11986a459c54555c434279ac97bf9c9ca96ec889
+ms.openlocfilehash: c6e0e4a463658b090958d1af234f4964bdaa0279
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602565"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103726"
 ---
 # <a name="dynamics-365-translation-service-azure-devops-extension-tutorial-public-preview"></a>Dynamics 365 Translation Service Azure DevOps 拡張機能のチュートリアル (パブリック プレビュー)
 
@@ -392,3 +392,4 @@ DTS 配置タスクを使用して翻訳メモリ ファイルを作成できま
 ## <a name="summary"></a>要約
 
 このチュートリアルでは、DTS Azure DevOps 拡張機能が提供する機能と特徴について学びました。 翻訳要求を自動化するパイプラインを作成する方法を学びました。 さらに、編集内容に基づいて、翻訳を編集し、それらを再生成する方法も学びました。 そして最後に、配置タスクを使用して XLIFF 翻訳メモリを作成する方法を学びました。
+

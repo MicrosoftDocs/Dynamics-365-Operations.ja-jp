@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b5819bf322cbfcd23415e3a8785a561239c9b31b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a0ba83de6bb74620999923913d55a42eb85bd81
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877290"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065789"
 ---
 # <a name="add-custom-controls-to-modern-pos-mpos-transaction-pages"></a>Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
 
@@ -27,7 +27,7 @@ ms.locfileid: "8877290"
 カスタム コントロールを使用して、トランザクション ページにさらに情報を追加することができます。 画面レイアウト デザイナーを使用して、トランザクション ページにカスタム コントロールを追加することができます。 デザイナーで、ドラッグ アンド ドロップ操作を使用してカスタム コントロールを追加してから、コントロールの位置、高さ、および幅を設定できます。 POS 拡張フレームワークを使用して、独自の拡張機能にカスタム コントロール用ビジネス ロジックを実装することができます。 この記事では、選択した行の項目、項目 ID、および説明の詳細を示す新しいカスタム コントロールを追加する方法について説明します。
 
 > [!NOTE]
-> この記事は Dynamics 365 for Finance and Operations、および Microsoft Dynamics 365 Retail プラットフォーム更新 8 と Retail アプリ更新プログラム 4 修正プログラムに適用されます。
+> この記事は Dynamics 365 Finance、Microsoft Dynamics 365 Retail プラットフォーム更新プログラム 8、および Retail アプリ更新プログラム 4 修正プログラムに適用されます。
 
 ## <a name="add-a-new-custom-control"></a>新しいカスタム コントロールの追加
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d36d0a1b2279055b7a8750c0e2e90c28bf69c2b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eac67923137bac888ceb74ba1204ad6b617f700e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866235"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124474"
 ---
 # <a name="code-migration---context-menu-code"></a>コードの移行 - コンテキスト メニュー コード
 
@@ -27,7 +27,7 @@ ms.locfileid: "8866235"
 
 プログラミング モデルには、コンテキスト メニュー (ショートカット メニュー) が必要です。 この記事では、Microsoft Dynamics AX 2012 から財務と運用へのコンテキスト メニュー コードを移行するプロセスの概要を説明します。 また、コンテキスト メニューのユーザー エクスペリエンス (UX) ガイドラインも含まれています。
 
-Dynamics AX 2012 およびそれ以前のバージョンでは、開発者が **PopupMenu** クラスを使用して右クリック コンテキスト メニュー (ショートカット メニュー) を変更していました。 このクラスは、Web 上で利用できない Microsoft Windows アプリケーション プログラミング インターフェイス (API) に依存していました。 Finance and Operations では、同様の機能を提供する代わりに **ContextMenu** API が作成されました。 以前は、**context()** メソッドと **showContextMenu()** メソッドのオーバーライドは、特定のコントロールのコンテキスト メニューを変更するためのエントリ ポイントでした。 これらの上書きには通常、コンテキスト メニューにオプションを追加したり、ユーザーの選択を処理するためのコードが含まれていました。 ユーザーの選択を処理するコードは、待機モデルを使用していました。 これらの上書きが削除され、待機モデルが消去されるため、開発者は次の 2 つの上書きを作成する必要があります。**getContextMenuOptions()** によりコンテキスト メニューのオプションを追加し、**selectedMenuOption()** によりユーザーの選択を処理します。
+Dynamics AX 2012 およびそれ以前のバージョンでは、開発者が **PopupMenu** クラスを使用して右クリック コンテキスト メニュー (ショートカット メニュー) を変更していました。 このクラスは、Web 上で利用できない Microsoft Windows アプリケーション プログラミング インターフェイス (API) に依存していました。 財務と運用では、同様の機能を提供する代わりに **ContextMenu** API が作成されました。 以前は、**context()** メソッドと **showContextMenu()** メソッドのオーバーライドは、特定のコントロールのコンテキスト メニューを変更するためのエントリ ポイントでした。 これらの上書きには通常、コンテキスト メニューにオプションを追加したり、ユーザーの選択を処理するためのコードが含まれていました。 ユーザーの選択を処理するコードは、待機モデルを使用していました。 これらの上書きが削除され、待機モデルが消去されるため、開発者は次の 2 つの上書きを作成する必要があります。**getContextMenuOptions()** によりコンテキスト メニューのオプションを追加し、**selectedMenuOption()** によりユーザーの選択を処理します。
 
 ## <a name="migrate-context-menu-code"></a>コンテキスト メニュー コードの移行 
 **PopupMenu** API から **ContextMenu** API への移行は、3 つの主な段階に分けることができます。
@@ -84,7 +84,7 @@ public class MainAccount extends FormRun
 2.  オプション処理用の **switch()** ステートメントを、このオーバーライドに移動します。
 
 ## <a name="code-example"></a>コードの例
-このセクションでは、Dynamics AX 2012 から Finance and Operations へのコンテキスト メニューの移行について説明します。 **MainAccount** フォームが例として使用されます。
+このセクションでは、Dynamics AX 2012 から財務と運用へのコンテキスト メニューの移行について説明します。 **MainAccount** フォームが例として使用されます。
 
 ### <a name="original-code"></a>オリジナル コピー
 

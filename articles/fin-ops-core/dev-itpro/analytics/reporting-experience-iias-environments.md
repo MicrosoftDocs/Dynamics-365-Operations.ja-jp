@@ -6,21 +6,22 @@ ms.date: 05/13/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 27661
-ms.assetid: ''
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9545dc9a35fc7de4db4d5464ef4b4fbef566b30a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27661"
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: fb2042bdd1ecf59e8c77f7df28986a89c2373437
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872695"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205578"
 ---
 # <a name="document-reporting-service-in-dynamics-365-applications"></a>Dynamics 365 アプリケーションのドキュメント レポート サービス
 
@@ -56,7 +57,7 @@ Document Reporting Service は、ビジネス文書を一括生成するにあ�
 
 ## <a name="enhancements-in-paginated-reporting"></a>改ページの調整がされるレポートの機能拡張
 
-PDF を使用して、財務と運用アプリにバンドルされているドキュメント レポート サービスでレンダリングされたドキュメントを操作することにには、いくつかの利点があります。
+PDF を使用して、財務と運用アプリにバンドルされているドキュメント レポート サービスでレンダリングされたドキュメントを操作することには、いくつかの利点があります:
 
 - **レポートが画面に迅速に表示されます。** レポートを画面に表示することで、パフォーマンスを向上させることができます。 このパフォーマンスの向上により、プログレス バーの数が減少し、レポートの速度が向上します。
 - **サービスの信頼性が向上します。** 最新のドキュメント レポート サービスのアーキテクチャにより、クラウド規模の能力がご利用の環境に提供されます。 このサービスには、リソース使用率を最大化する自動スケーリング機能が含まれています。

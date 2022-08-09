@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: najaidee
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a9dd1b48881bd91f5047cb894d8765236888e837
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 75bf70e810c9323c5edfc010d6a9c9b372a9307d
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954557"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103298"
 ---
 # <a name="syssetupconfigattribute-attribute"></a>SysSetupConfigAttribute 属性
 
@@ -90,3 +90,4 @@ DBSync によって `_version` パラメーターの値が読み取られ、バ�
 SysSetup クラスは、`SysSetupConfigAttribute` 属性内で `_version` パラメーターの使用を開始する必要があります。 それ以外の場合は、X++ クラスの実行時に既定の動作が使用されます。 つまり、バージョン値は **1.0**、クラスはバージョンごとに 1 回だけ実行されます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jorichar
 ms.search.validFrom: 2021-08-32
-ms.openlocfilehash: ed25c67d22e701debc7575d7b1dc0d454c62df24
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6acea507103fe74c2eda9b8fbca5ab4815094bcb
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866499"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103359"
 ---
 # <a name="fetch-environment-metadata"></a>環境メタデータをフェッチする
 
@@ -128,10 +128,10 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
             "EnvironmentInfrastructure": "MicrosoftManaged",
             "EnvironmentType": "Production",
             "EnvironmentGroup": "Primary",
-            "EnvironmentProduct": "Finance and Operations",
+            "EnvironmentProduct": "finance and operations",
             "EnvironmentEndpointBaseUrl": "<example>",
             "DeploymentState": "Finished",
-            "TopologyDisplayName": "Finance and Operations - High Availability (10.0.20 with Platform update 44)",
+            "TopologyDisplayName": "finance and operations - High Availability (10.0.20 with Platform update 44)",
             "CurrentApplicationBuildVersion": "10.0.886.48",
             "CurrentApplicationReleaseName": "10.0.20",
             "CurrentPlatformReleaseName": "Update44",
@@ -150,10 +150,10 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
             "EnvironmentInfrastructure": "MicrosoftManaged",
             "EnvironmentType": "Sandbox",
             "EnvironmentGroup": "Primary",
-            "EnvironmentProduct": "Finance and Operations",
+            "EnvironmentProduct": "finance and operations",
             "EnvironmentEndpointBaseUrl": "<example>",
             "DeploymentState": "Finished",
-            "TopologyDisplayName": "Finance and Operations - Sandbox (10.0.20 with Platform update 44)",
+            "TopologyDisplayName": "finance and operations - Sandbox (10.0.20 with Platform update 44)",
             "CurrentApplicationBuildVersion": "10.0.960.24",
             "CurrentApplicationReleaseName": "10.0.21",
             "CurrentPlatformReleaseName": "Update45",
@@ -183,3 +183,4 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
 > 制限を超えた要求は拒否され、「HTTP 429 要求過多」の応答が返されます。 **再試行** ヘッダーは、後で要求を再試行する場合の秒数を示します。
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
+

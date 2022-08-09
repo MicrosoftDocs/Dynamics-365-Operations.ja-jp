@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 76be93617c8a7f9b994b9502253a34dc19abb7ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 54eefee510e6ab147cc79a7e477b948bb20f31aa
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863421"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065788"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -400,3 +400,4 @@ RSAT で、**実行** を選択して、選択したテスト ケースを実行
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

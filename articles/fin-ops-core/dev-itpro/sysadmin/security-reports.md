@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: fba87f812a2b2aaae3d82d2eee6dec1a8a295569
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 96a8428843efa275668f05fc1d598ca7bb05cc1f
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869239"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109008"
 ---
 # <a name="out-of-box-security-reports"></a>最初から用意されているセキュリティ レポート
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations では、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートが用意されています。 この記事に記載されているレポートに加え、開発者は **Visual Studio > Dynamics 365 > アドイン > すべてのロールの関連オブジェクトとライセンスを表示** を使用して、すべてのロールのすべてのユーザーのセキュリティ権限を含むワークブックを生成することができます。
+財務と運用は、環境内で実行されている一連のセキュリティ ロールと、各ロールに割り当てられている一連のユーザーを理解するのに役立つ豊富なセキュリティ レポートを用意しています。 この記事に記載されているレポートに加え、開発者は **Visual Studio > Dynamics 365 > アドイン > すべてのロールの関連オブジェクトとライセンスを表示** を使用して、すべてのロールのすべてのユーザーのセキュリティ権限を含むワークブックを生成することができます。
 
 これらのセキュリティ レポートはそれぞれ、 **システム管理 \> 照会 \> セキュリティ** で見つかる場合があります。 各レポートの説明は下で用意されています。
 

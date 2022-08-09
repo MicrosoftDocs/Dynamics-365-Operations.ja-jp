@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55dbeb8472bb9dd03da05e0de7d2f7a204a107ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4b2052e4c8ad025b530ba5ebc91937f77d2795de
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867219"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103504"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
@@ -643,7 +643,7 @@ C# プログラムからコマンド ライン コンソールへの出力は次
 **コンテナー** は、X++ で利用できる特別なデータ型です。 配列と類似したもの、または `List` コレクションと類似したものとみなすことができます。
 
 ## <a name="comparison-collections"></a>比較: コレクション
-Finance and Operations アプリケーションでは、X++ `List` コレクション クラスを使用できます。 C# で使用されている .NET Framework には、`System.Collections.Generic.List` と似た名前のクラスがあります。
+財務と運用アプリケーションでは、X++ `List` コレクション クラスを使用できます。 C# で使用されている .NET Framework には、`System.Collections.Generic.List` と似た名前のクラスがあります。
 
 ### <a name="comparing-the-use-of-the-list-classes"></a>リスト クラスの使用の比較
 
@@ -786,7 +786,7 @@ listStrings.InsertRange(listStrings.Count ,listStr3);
 
 ## <a name="comparison-collections-of-keys-with-values"></a>比較: 値を持つキーのコレクション
 
-Finance and Operations アプリケーションでは、`Map` コレクション クラスを使用できます。 `Map` コレクションには、値のペア (キー値とデータ値の組み合わせ) が保持されます。 これは、`System.Collections.Generic.Dictionary` という名前の .NET Framework クラスに似ています。
+財務と運用アプリケーションでは、`Map` コレクション クラスを使用できます。 `Map` コレクションには、値のペア (キー値とデータ値の組み合わせ) が保持されます。 これは、`System.Collections.Generic.Dictionary` という名前の .NET Framework クラスに似ています。
 
 ### <a name="similarities"></a>類似点
 
@@ -1633,3 +1633,4 @@ End.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

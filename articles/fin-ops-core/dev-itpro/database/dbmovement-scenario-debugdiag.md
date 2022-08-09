@@ -2,7 +2,7 @@
 title: 運用データベースのコピーのデバッグ
 description: この記事では、財務と運用のデバッグおよび診断のシナリオについて説明します。
 author: LaneSwenka
-ms.date: 01/25/2021
+ms.date: 07/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b163ab7dfb88d9a755a51d35282f8d1f8d2c25b3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f34a8b74a38f685430d27a0cd953ede756c7e427
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867548"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203064"
 ---
 # <a name="debug-a-copy-of-the-production-database"></a>運用データベースのコピーのデバッグ
 
@@ -73,6 +73,8 @@ LCS で UAT 環境の環境詳細ページから値を使用するように、�
 <add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
 <add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />
 <add key="DataAccess.SqlUser" value="axdbadmin" />
+<add key="DataAccess.AxAdminSqlPwd" value="<axdbadmin_password_from_LCS>" />
+<add key="DataAccess.AxAdminSqlUser" value="axdbadmin" />
 ```
 ファイル保存します。 クラウドにホストされている環境で操作している場合は、IISRESET を実行します。 Microsoft が管理する開発者向けのコンピューターを使用していてアクセス許可が制限されている場合、必ず Microsoft Visual Studio を閉じてください。
 
@@ -93,6 +95,6 @@ LCS で UAT 環境の環境詳細ページから値を使用するように、�
 - DevTest 環境のコードとバイナリのバージョンが、UAT 環境のバージョンと正確に一致することを確認します。 展開用のパッケージを作成したのと同じブランチに DevTest 環境を接続します。 または、リリースされている最新のカスタマイズで最新の状態になっている "HotfixSupport" ブランチに接続します。
 - Visual Studio からデータベースの同期を実行しないでください。 そうしないと、UAT データベース内のスキーマの可用性に影響を与え、UAT 環境のユーザーに影響を与える可能性があります。
 - 最適なエクスペリエンスのため、UAT 環境として同じデータセンターに配置された開発者環境を使用してください。
-
+- web.conifg ファイルの編集またはコピーの際に、SqlUser と SqlPwd の重複タグを追加していないかを確認してください。 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

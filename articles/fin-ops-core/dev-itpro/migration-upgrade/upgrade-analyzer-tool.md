@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 8032937029229fbfaf82448f2eb5cdc486de2b83
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: faee06c3790ec474191522157fa3c2877f65879c
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890423"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124728"
 ---
 # <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 
@@ -27,7 +27,7 @@ ms.locfileid: "8890423"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-この記事では、アップグレード アナライザー ツールを使用して、Microsoft Dynamics AX 2012 からアップグレードを計画する方法について説明します。 このツールは、AX 2012 環境に対して実行され、 Finance and Operations サブスクリプション コストの削減を助けるために、AX 2012 内でクリーンアップする必要のあるデータを識別します。 このツールは、アップグレード プロセスのスピードアップに役立つ SQL 構成の最適化を提案します。 また、AX 2012 で使用する機能が現在のバージョンで廃止されている場合は、このツールが警告します。 したがって、これらの機能を置き換える方法や回避する方法を計画できます。
+この記事では、アップグレード アナライザー ツールを使用して、Microsoft Dynamics AX 2012 からアップグレードを計画する方法について説明します。 このツールは、AX 2012 環境に対して実行され、財務と運用アプリのサブスクリプション コストの削減を助けるために、AX 2012 内でクリーンアップする必要のあるデータを識別します。 このツールは、アップグレード プロセスのスピードアップに役立つ SQL 構成の最適化を提案します。 また、AX 2012 で使用する機能が現在のバージョンで廃止されている場合は、このツールが警告します。 したがって、これらの機能を置き換える方法や回避する方法を計画できます。
 
 アップグレード アナライザーは、Dynamics Lifecycle Services (LCS) の通常のシステム診断サービスの一部として、AX 2012 環境からデータを収集します。 システム診断サービスの概要、および LCS を通じて使用できるようにデータを収集しクラウドに押し戻す方法に関する情報については、[Lifecycle Services (LCS) のシステム診断](/dynamicsax-2012/appuser-itpro/system-diagnostics-lifecycle-services-lcs)を参照してください。
 

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: vesakkar
 ms.search.validFrom: 2021-06-30
-ms.openlocfilehash: 0d618334bf227673b821b783acf950705ed9f9c9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ebbb105409070605bd513ac81fce5c1a465fec52
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866208"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124046"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-self-service-environments"></a>AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 
@@ -35,7 +35,7 @@ ms.locfileid: "8866208"
 > [!NOTE]
 > 次の点に注意してください:
 > 
-> - Microsoft Dynamics AX 2012 データのアップグレード プロセスは、財務と運用のセルフ サービス、サンドボックス (UAT) 環境専用のためです。 運用環境に対して実行することは出来ません。
+> - Microsoft Dynamics AX 2012 データのアップグレード プロセスは、財務と運用のセルフ サービス、サンドボックス (UAT) 環境専用です。 運用環境に対して実行することは出来ません。
 > - **AX 2012 Database Upgrade Toolkit for Dynamics 365** の最新バージョンを LCS からダウンロードしてください。
 > - AX 2012 データ更新用にリンクされた Power Platform を配置または使用しないでください。 Power Platform 環境は、データ アップグレードの完了後に配置して使用できます。
 
@@ -305,4 +305,5 @@ SSMS で、オブジェクト エクスプローラーに **レプリケーシ�
 - **スナップショット** タブには、スナップショットのステータスが表示されます。
 - 詳細ログ/トランザクションを表示するには、グリッド品目をダブルタップ (またはダブルクリック) します。
 - ターゲットへのデータ レプリケーションを表示するには、**すべてのサブスクリプション** タブで、グリッド品目のサブスクリプションをダブルタップ (またはダブルクリック) します。
+
 

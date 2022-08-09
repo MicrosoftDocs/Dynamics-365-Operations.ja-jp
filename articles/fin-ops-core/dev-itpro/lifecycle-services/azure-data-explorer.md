@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2021-08-20
-ms.openlocfilehash: 563f6a0cebfa8cffa0c646c544bcd020c9fdfb10
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a292d5b6ff15dea3266f7616904a65d2f17b06a6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866493"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103425"
 ---
 # <a name="use-azure-data-explorer-to-query-raw-information-logs"></a>Azure Data Explorer を使用して、生の情報ログをクエリします
 
 [!include[banner](../includes/banner.md)]
 
-顧客、パートナー、コンサルタント、またはサポート エンジニアが、財務と運用アプリの低レベル セキュリティ データを参照する必要のある場合があります。 これらの使用例には、エラーのトラブル シューティング、パフォーマンス関連の調査、または財務と運用アプリ動作に関するいくつかの追加の理解を取得しようとしている場合があります。 権限のあるユーザーは、Lifecycle Services (LCS) の環境監視機能を使用してアクセスでき、さまざまな方法でフィルタ処理して、LCS の[生の情報ログ](monitoring-diagnostics.md#raw-information-logs) の内部に表示することもできます。 データ グリッドを使用して、ログ エントリを検査できます。 LCS ではより洗練されたピボットを許可しないので、ユーザーは Excel をその目的に使用できます。 利用統計情報は、CSV 形式でダウンロードおよび書式設定できます。 
+顧客、パートナー、コンサルタント、またはサポート エンジニアが、財務と運用アプリの低レベル テレメトリ データを参照する必要がある場合があります。 これらのユース ケースには、エラーのトラブル シューティング、パフォーマンス関連の調査、または財務と運用アプリ動作に関してさらに理解しようとすることが含まれます。 権限のあるユーザーは、Lifecycle Services (LCS) の環境監視機能を使用してアクセスでき、さまざまな方法でフィルタ処理して、LCS の[生の情報ログ](monitoring-diagnostics.md#raw-information-logs) の内部に表示することもできます。 データ グリッドを使用して、ログ エントリを検査できます。 LCS ではより洗練されたピボットを許可しないので、ユーザーは Excel をその目的に使用できます。 利用統計情報は、CSV 形式でダウンロードおよび書式設定できます。 
 
 Excel は、このデータの高度なクエリには最適なツールではありません。 その目的に適したより良いデザイン ツールは、Azure Data Explorer です。 高性能なデータ分析向けに最適化された革新的クエリ言語であるクストを提供します。 、発生の *特定のプロセスが発生した頻度*、*発生の 90% はどのくらいかかりましたか*、*1 時間毎にどのくらいの頻度で正しいアクションが 1 日のコースで実行されたか*、などの質問への回答が非常に簡単になり、強力なグラフィックを使用してバックアップすることができます。 
 
@@ -86,3 +86,4 @@ new2
 | project apiAction, percentile_executionTimeMilliseconds_90
 | render columnchart
 ```
+

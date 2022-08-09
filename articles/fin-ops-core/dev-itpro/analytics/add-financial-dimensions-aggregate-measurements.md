@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 for Finance and Operations
-ms.openlocfilehash: 9ef5b5e3ee1f92589f2d5e999132f6b622db1833
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
+ms.openlocfilehash: c9bda7a8c47fd1ace8c92f2af3f4dba74d899b20
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884534"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206400"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 
@@ -31,7 +31,7 @@ ms.locfileid: "8884534"
 財務分析コード フィールドがレポートに含まれた後、他のユーザーとレポートを共有できます。 これらの他のユーザーは、財務分析コード フィールドのすべてまたは一部を含むことによって、チャートなどの既存のビジュアルを変更できます。
 
 > [!NOTE]
-> この機能は Microsoft Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) で使用可能です。 プラットフォーム アップデート 8 以降も必要です。 
+> この機能は Microsoft Dynamics 365 Finance、Enterprise edition (2017 年 7 月) で使用可能です。 プラットフォーム アップデート 8 以降も必要です。 
 
 ## <a name="how-does-this-feature-work"></a>この機能はどのように作用しますか。
 

@@ -7,18 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.search.region:
-- Global for most topics. Set Country/Region name for localizations
+ms.reviewer: sericks
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: milindav
-ms.search.validFrom: 2018-3-30
+ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 70887a520fbc9b267fd1a3952e1099430a975cd7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eb14c2262773ab83b684ffba171cde0232d6366a
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897170"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206264"
 ---
 # <a name="resolve-issues-after-entity-store-maintenance"></a>エンティティ ストアのメンテナンス後に問題を解決
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 60dedc4d83e3acde330f9da9383e1635bbfcd035
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cc56bded079c922f2f544a7bc1500f9708360362
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882066"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124690"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -28,7 +28,7 @@ ms.locfileid: "8882066"
 - 誤ってサブスクリプションが正しくない Azure AD テナントに対して購入されました。
 
     > [!NOTE]
-    > ユーザーがクラウド サービス プロバイダーであり、既存の顧客に Finance and Operations アプリのサブスクリプションを販売する場合は、その顧客との再販業者関係を要求して、顧客の既存の Azure AD テナントにサブスクリプションを配置する必要があります。 Microsoft パートナー センターで新しい顧客レコードを作成する場合、顧客の新しい Azure AD テナントを作成します。
+    > ユーザーがクラウド サービス プロバイダーであり、既存の顧客に財務と運用アプリのサブスクリプションを販売する場合は、その顧客との再販業者関係を要求して、顧客の既存の Azure AD テナントにサブスクリプションを配置する必要があります。 Microsoft パートナー センターで新しい顧客レコードを作成する場合、顧客の新しい Azure AD テナントを作成します。
 
 - サブスクリプションが購入された後、顧客は Azure AD テナントの構造を変更します。
 

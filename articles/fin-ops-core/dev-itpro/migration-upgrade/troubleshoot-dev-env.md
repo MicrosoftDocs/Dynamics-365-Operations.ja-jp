@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: 0be296b6f0dcd43ac3ef2e9e3f1871fa92de41ac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b8fd5d8c365a0d143f046513606de097698324c6
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890435"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123480"
 ---
 # <a name="troubleshoot-development-environments-during-upgrade"></a>アップグレード中の開発環境のトラブルシューティング
 
@@ -39,7 +39,7 @@ Microsoft Dynamics Lifecycle Services (LCS) から仮想マシン (VM) を配置
 
 アップグレードの前提条件の手順の一部として実行される追加同期または部分同期時に、ダウンロードした同期ログで次のようなエラーが発生する場合があります。
 
-> DBSync のモニタリングを停止しました。 Microsot.Dynamics.Ax.Xpp.ErrorException: セッションの作成に失敗しました。ユーザーに Microsoft Dynamics 365 for Finance and Operations にログオンするための適切な権限があることを確認してください。
+> DBSync のモニタリングを停止しました。 Microsot.Dynamics.Ax.Xpp.ErrorException: セッションの作成に失敗しました。ユーザーに Microsoft Dynamics 365 Finance にログオンするための適切な権限があることを確認してください。
 
 **考えられる原因**
 
@@ -54,3 +54,4 @@ Microsoft Dynamics Lifecycle Services (LCS) から仮想マシン (VM) を配置
     ```SQL
     TRUNCATE TABLE SYSCLIENTSESSIONS;
     ```
+

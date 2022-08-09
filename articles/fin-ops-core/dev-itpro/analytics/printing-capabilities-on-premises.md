@@ -5,21 +5,21 @@ author: RichdiMSFT
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
-ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 80a73490233821a3c149350aca87a9bf50aeac37
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: SysCorpNetPrinterList
+ms.service: ''
+ms.openlocfilehash: 403bf24d6c3caa706b6f4f2a28da1381ae4498e6
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847238"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205811"
 ---
 # <a name="document-generation-publishing-and-printing-in-on-premises-deployments"></a>オンプレミス配置でのドキュメントの生成、発行、および印刷
 

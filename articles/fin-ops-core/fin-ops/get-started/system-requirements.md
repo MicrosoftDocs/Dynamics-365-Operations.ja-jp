@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 0162a90c2d65b896e5ce761a9db327c1fbe6af8e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8342f9d53615e4cebbb3670db966e497c57db5c4
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905047"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123932"
 ---
 # <a name="system-requirements-for-cloud-deployments"></a>クラウド配置のシステム要件
 
@@ -47,9 +47,9 @@ ms.locfileid: "8905047"
 
 2020 年 12 月に Internet Explorer 11 のサポートが廃止され、2021 年 8 月にブラウザーのサポートが終了します。 詳細については、[Internet Explorer 非推奨のお知らせ](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps) を参照してください。
 
-バージョン 10.0.20 から、Internet Explorer で 財務と運用アプリにアクセスするユーザーに、そのブラウザに対するサポートの終了に関する通知が表示されます。 2021 年 8 月 17 日より前に、複数の Internet Explorer ユーザーに対して、Internet Explorer サポートが間もなく終了するという情報メッセージが表示されます。 その日以降、サポートが正式に終了したという警告が Internet Explorer ユーザーに表示されます。 組織は、Internet Explorer がユーザーにとって必須になっている以外は、これらの通知を継続することが推奨されます。そのケースでは、**Internet Explorer のサポート終了通知** 機能を無効にし、ユーザー ベースを Microsoft Edge または他の最新のブラウザーに移行する内部プロセスに依存することによりこれらの通知の非表示を選択できます。 
+バージョン 10.0.20 から、Internet Explorer で財務と運用アプリにアクセスするユーザーに、そのブラウザのサポート終了に関する通知が表示されます。 2021 年 8 月 17 日より前に、複数の Internet Explorer ユーザーに対して、Internet Explorer サポートが間もなく終了するという情報メッセージが表示されます。 その日以降、サポートが正式に終了したという警告が Internet Explorer ユーザーに表示されます。 組織は、Internet Explorer がユーザーにとって必須になっている以外は、これらの通知を継続することが推奨されます。そのケースでは、**Internet Explorer のサポート終了通知** 機能を無効にし、ユーザー ベースを Microsoft Edge または他の最新のブラウザーに移行する内部プロセスに依存することによりこれらの通知の非表示を選択できます。 
 
-バージョン 10.0.25 から、Internet Explorer 11 の使用が財務と運用アプリでブロックされます。 組織がそれ以前に Internet Explorer をブロックする必要があり、バージョン 10.0.21 以降を使用している場合は、Microsoft サポートに問い合わせてください。 
+バージョン 10.0.25 から、財務と運用アプリで Internet Explorer 11 の使用がブロックされます。 組織がそれ以前に Internet Explorer をブロックする必要があり、バージョン 10.0.21 以降を使用している場合は、Microsoft サポートに問い合わせてください。 
 
 組織およびユーザーが今後の Internet Explorer のブロックに対応するために、2022 年 1 月以降、Internet Explorer ユーザーは Internet Explorer サポートが間もなくブロックされることを示す無視できないエラー メッセージを受信します。 このエラー メッセージは **Internet Explorer サポート終了通知** により制御 **されません**。 このメッセージを組織に対して非表示にする必要がある場合、顧客は Microsoft サポートに問い合わせる必要があります。
 
@@ -93,3 +93,4 @@ ms.locfileid: "8905047"
 [評価版コピーの入手](../../dev-itpro/dev-tools/get-evaluation-copy.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

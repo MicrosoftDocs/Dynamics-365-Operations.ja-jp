@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce の新機能および変更された機能
 description: この記事では、Dynamics 365 Commerce の各リリースにおける新しい機能と変更された機能について説明する記事を示します。
 author: josaw1
-ms.date: 04/18/2022
+ms.date: 07/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: da15188647c017a42fe94db8ba23cf57953b4ccf
-ms.sourcegitcommit: 27200618e78c75873c3257af0eceb09ffbdd0168
+ms.openlocfilehash: aed9b5615a4ed9cbc0d01dce0382ae8e9f627c90
+ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9020836"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "9169001"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の新機能および変更された機能 
 
@@ -30,6 +30,8 @@ Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューに�
 
 | バージョン | ビルド番号 | 自動更新の可用性 | 詳細 |
 |---------|--------------|--------------|-------------|
+| 10.0.28 | 10.0.1264 | 2022 年 7 月 | [Dynamics 365 Commerce バージョン 10.0.28 の新機能と変更点](whats-new-commerce-10-0-28.md) |
+| 10.0.27 | 10.0.1227 | 2022 年 7 月 | [Dynamics 365 Commerce バージョン 10.0.27 の新機能と変更点](whats-new-commerce-10-0-27.md) |
 | 10.0.26 | 10.0.1192 | 2022 年 5 月 | [Dynamics 365 Commerce バージョン 10.0.26 の新機能と変更点](whats-new-commerce-10-0-26.md) |
 | 10.0.25 | 10.0.1149 | 2022 年 4 月 | [Dynamics 365 Commerce バージョン 10.0.25 の新機能と変更点](whats-new-commerce-10-0-25.md) |
 | 10.0.24 |   10.0.1084     | 2022 年 2 月 | [Dynamics 365 Commerce バージョン 10.0.24 の新機能および変更された機能](whats-new-commerce-10-0-24.md) |
@@ -59,22 +61,23 @@ Dynamics 365 Commerce は 2019 年 10 月にパブリック プレビューに�
 |-----------------------------------------------------------------------|-------------|------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft Dynamics 365 Retail | 10.0.7  | 10.0.283   | 2020 年 1 月 | [Dynamics 365 Retail バージョン 10.0.7 の新機能および変更された機能](whats-new-10-0-7.md) |
 | Microsoft Dynamics 365 Retail | 10.0.6 |   10.0.234   | 2019 年 11 月  | [Dynamics 365 Retail バージョン 10.0.6 の新機能と変更点](whats-new-10-0-6.md) |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0.5      | 10.0.197         | 2019 年 10 月     | [Dynamics 365 for Finance and Operations バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md)                 |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0.4      | 10.0.136         | 2019 年 7 月        | [Dynamics 365 for Finance and Operations バージョン 10.0.4 (2019 年 7 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md)                    |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0.3      | 10.0.107         | 2019 年 6 月        | [Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0.2      | 10.0.80          | 2019 年 5 月         | [Dynamics 365 for Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-2.md)                     |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0.1      | 10.0.51          | 2019 年 4 月       | [Dynamics 365 for Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                   |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | 2019 年 4 月       | [Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
-| Microsoft Dynamics 365 for Finance and Operations                     | 8.1.3       | 8.1.227          | 2019 年 1 月     | [Dynamics 365 for Finance and Operations バージョン 8.1.3 (2019 年 1 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
-| Microsoft Dynamics 365 for Finance and Operations                     | 8.1.2       | 8.1.195          | 2018 年 12 月    | [Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-2.md)                  |
-| Microsoft Dynamics 365 for Finance and Operations                     | 8.1.1       | 8.1.170          | 2018 年 10 月     | [Dynamics 365 for Finance and Operations バージョン 8.1.1 (2018 年 10 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-1.md)                   |
-| Microsoft Dynamics 365 for Finance and Operations                     | 8.1         | 8.1.136          | 2018 年 10 月     | [Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-october-2018.md)          |
-| Microsoft Dynamics 365 for Finance and Operations                     | 8.0         | 8.0.30, 8.0.35   | 2018 年 4 月       | [Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-0-april-2018.md)              |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 7.3         | 7.3.11971.56116  | 2017 年 12 月    | [Dynamics 365 for Finance and Operations, Enterprise edition 7.3 の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md)               |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 2017 年 7 月   | 7.2.11792.56024  | 2017 年 6 月        | [Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-application-july-2017-update.md) |
+| Microsoft Dynamics 365 Finance                     | 10.0.5      | 10.0.197         | 2019 年 10 月     | [Dynamics 365 Finance バージョン 10.0.5 の新機能および変更された機能 (2019 年 10 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md)                 |
+| Microsoft Dynamics 365 Finance                     | 10.0.4      | 10.0.136         | 2019 年 7 月        | [Dynamics 365 Finance バージョン 10.0.4 の新機能および変更された機能 (2019 年 7 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md)                    |
+| Microsoft Dynamics 365 Finance                     | 10.0.3      | 10.0.107         | 2019 年 6 月        | [Dynamics 365 Finance バージョン 10.0.3 の新機能および変更された機能 (2019 年 6 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |
+| Microsoft Dynamics 365 Finance                     | 10.0.2      | 10.0.80          | 2019 年 5 月         | [Dynamics 365 Finance バージョン 10.0.2 の新機能および変更された機能 (2019 年 5 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-2.md)                     |
+| Microsoft Dynamics 365 Finance                     | 10.0.1      | 10.0.51          | 2019 年 4 月       | [Dynamics 365 Finance バージョン 10.0.1 の新機能および変更された機能 (2019 年 4 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                   |
+| Microsoft Dynamics 365 Finance                     | 10.0        | 10.0.8           | 2019 年 4 月       | [財務と運用バージョン 10.0 の新機能および変更された機能 (2019 年 4 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
+| Microsoft Dynamics 365 Finance                     | 8.1.3       | 8.1.227          | 2019 年 1 月     | [Dynamics 365 Finance バージョン 8.1.3 の新機能および変更された機能 (2019 年 1 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
+| Microsoft Dynamics 365 Finance                     | 8.1.2       | 8.1.195          | 2018 年 12 月    | [Dynamics 365 Finance バージョン 8.1.2 の新機能および変更された機能 (2018 年 12 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-2.md)                  |
+| Microsoft Dynamics 365 Finance                     | 8.1.1       | 8.1.170          | 2018 年 10 月     | [Dynamics 365 Finance バージョン 8.1.1 の新機能および変更された機能 (2018 年 10 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-1.md)                   |
+| Microsoft Dynamics 365 Finance                     | 8.1         | 8.1.136          | 2018 年 10 月     | [Dynamics 365 Finance バージョン 8.1 の新機能および変更された機能 (2018 年 10 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-october-2018.md)          |
+| Microsoft Dynamics 365 Finance                     | 8.0         | 8.0.30, 8.0.35   | 2018 年 4 月       | [Dynamics 365 Finance バージョン 8.0 の新機能および変更された機能 (2018 年 4 月)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-0-april-2018.md)              |
+| Microsoft Dynamics 365 Finance、Enterprise Edition | 7.3         | 7.3.11971.56116  | 2017 年 12 月    | [Dynamics 365 Finance、Enterprise edition 7.3 の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md)               |
+| Microsoft Dynamics 365 Finance、Enterprise Edition | 2017 年 7 月   | 7.2.11792.56024  | 2017 年 6 月        | [Dynamics 365 Finance、Enterprise edition の新機能および変更された機能 (2017 年 7 月)](../../fin-ops-core/fin-ops/get-started/whats-new-application-july-2017-update.md) |
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | 2016 年 11 月    | [Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | 2016 年 5 月         | [Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | 2016 年 2 月    | [Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

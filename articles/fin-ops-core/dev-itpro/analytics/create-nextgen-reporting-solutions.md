@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
-ms.custom: 21551
-ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fafdab1612eee6081915844f39b8e68dae156d287ac8710f87b22c3ffac0254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "21551"
+ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
+ms.openlocfilehash: 5419490f9f8391ae1c9f6b9e374a7de3540795c4
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772144"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206048"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 
@@ -48,7 +49,7 @@ ms.locfileid: "6772144"
 - ネットワーク印刷監視フォーム
 - VS クエリ選択ツールを通じてサポートする必要があるテーブル拡張
 
-## <a name="what-is-a-report-in-dynamics-365-finance-and-operations-apps"></a>Dynamics 365 Finance and Operations アプリのレポートとは何ですか。
+## <a name="what-is-a-report-in-dynamics-365-finance-and-operations-apps"></a>Dynamics 365 財務と運用アプリのレポートとは何ですか?
 レポートは、単に構造化されたデータ セットの表示として定義することができます。 これには、表形式のレイアウトで提示されたトランザクション データと集約情報の高度なグラフィカル ビューが含まれます。 この広範な定義を考慮し、アプリケーションは、複雑なビジネス要件を満たすレポートを作成するためのツールをいくつか提供しています。 ERP におけるレポートの一般的なアプリケーションは次のとおりです。
 
 - 転記処理の一部としてトランザクション ドキュメントのアーカイブと作成をしています
@@ -116,7 +117,7 @@ ms.locfileid: "6772144"
 2. ツール バーで、**表示** をクリックし、**アプリケーション エクスプローラー** を選択します。
 3. **フリート管理** モジュールで、**アプリケーション エクスプローラー** を使用して **FMReservationsReport** フォームを検索します。
 4. **アプリケーション エクスプローラーの** 検索結果で、**FMReservationsReport** フォームを右クリックしてから、**新しいプロジェクトに追加** を選択します。
-5. **Finance and Operations プロジェクト** テンプレートを選択し、**OK** をクリックしてプロジェクトを作成します。
+5. **財務と運用プロジェクト** テンプレートを選択し、**OK** をクリックしてプロジェクトを作成します。
 6. **ソリューション エクスプローラー** で **FMReservationsReport** メニュー項目を右クリックしてから、**スタートアップ オブジェクトとして設定** を選択します。
 7. Ctrl+Shift+B キーを押して、プロジェクトを保存およびビルドします。
 8. Ctrl + F5 キーを押して、レポートを含むフォームを読み込みます。

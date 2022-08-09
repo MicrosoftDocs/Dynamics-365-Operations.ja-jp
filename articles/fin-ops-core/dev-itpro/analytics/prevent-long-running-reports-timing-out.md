@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
-ms.custom: 20521
-ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d39a56271f5c6ee9faa31987a837fc43c852d5e6c5f403f18289fe03fc681a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "20521"
+ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
+ms.openlocfilehash: dcd6a707c95d4e0c8c72b659e9ad16ba97a9d710
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741696"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206773"
 ---
 # <a name="help-prevent-long-running-reports-from-timing-out"></a>実行時間の長いレポートがタイムアウトしないようにする
 

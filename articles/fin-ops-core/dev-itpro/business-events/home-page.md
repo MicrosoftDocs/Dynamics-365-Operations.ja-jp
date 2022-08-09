@@ -1,28 +1,27 @@
 ---
 title: ビジネス イベントの概要
-description: この記事は、外部システムが財務と運用アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
-author: Sunil-Garg
-ms.date: 04/22/2022
+description: この記事は、外部システムが財務と運用アプリから通知を受信可能にするビジネス イベントに関する情報を提供します。
+author: jaredha
+ms.date: 07/15/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: c819831cc86f5b2457ddd6559ade4ce4dcc5d5ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b6df32df0b25121d255b8008e9eff239a5e37614
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892374"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166647"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 ビジネス イベントは外部システムが財務と運用アプリケーションから通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
 
@@ -207,3 +206,4 @@ Azure Service Bus や Azure Event Grid に送信されるビジネス イベン�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e80ef6191b4b55bf7a799e7d8edf952e36b1457
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1f94810ea1cedebadf3403e2aaec1dfbc58b907
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867258"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103441"
 ---
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 
@@ -826,7 +826,7 @@ ms.locfileid: "8867258"
 <li>date および utcdatetime などの日付/時刻フィールドでは、最小日時は受け入れられません。</li>
 <li>int、real、enum などの数値フィールドでは、0 (ゼロ) の値は受け入れられません。</li>
 </ul>
-Finance and Operations は、ほとんどの SQL データベース製品に標準的な <strong>null</strong> 値に対するセマンティクスをサポートしません。 フィールドはデータベースで Null にはなりません。 したがって、<strong>Mandatory</strong> プロパティは、<strong>null</strong> 値の概念とは関係ありません。 <strong>注意:</strong> 必須テーブル フィールドは、<strong>EnumType</strong> プロパティを列挙に設定できます。 整数値 <strong>0</strong> を持つ品目を含む列挙型としてフィールドを定義することがあります。 この場合、<strong>0</strong> はページで選択可能な項目ではありません。 フォーム システムは自動的に、<strong>必須</strong> プロパティの設定を強制する <strong>validateWrite</strong> メソッドを呼び出します。 ただし、<strong>必須</strong>プロパティはテーブル フィールドの値を挿入または更新する直接の X++ SQL の動作には影響を与えません。 直接の X++ SQL では、テーブル バッファ変数に <strong>validateWrite</strong> メソッドへの呼び出しを含めることができます。 バッファ変数は、<strong>xRecord</strong> クラスからメソッドを継承します。</td>
+財務と運用では、ほとんどの SQL データベース製品に標準的な <strong>null</strong> 値に対するセマンティクスをサポートしません。 フィールドはデータベースで Null にはなりません。 したがって、<strong>Mandatory</strong> プロパティは、<strong>null</strong> 値の概念とは関係ありません。 <strong>注意:</strong> 必須テーブル フィールドは、<strong>EnumType</strong> プロパティを列挙に設定できます。 整数値 <strong>0</strong> を持つ品目を含む列挙型としてフィールドを定義することがあります。 この場合、<strong>0</strong> はページで選択可能な項目ではありません。 フォーム システムは自動的に、<strong>必須</strong> プロパティの設定を強制する <strong>validateWrite</strong> メソッドを呼び出します。 ただし、<strong>必須</strong>プロパティはテーブル フィールドの値を挿入または更新する直接の X++ SQL の動作には影響を与えません。 直接の X++ SQL では、テーブル バッファ変数に <strong>validateWrite</strong> メソッドへの呼び出しを含めることができます。 バッファ変数は、<strong>xRecord</strong> クラスからメソッドを継承します。</td>
 </tr>
 <tr class="even">
 <td>MinReadAccess</td>

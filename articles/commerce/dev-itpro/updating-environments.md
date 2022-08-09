@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: c66f060677b316da3836ab7ca01ed6fd012fb934
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 156d81117637c51e87ce1d2caec4852012a8ea25
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864910"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068377"
 ---
 # <a name="update-code-and-environments-for-commerce-projects"></a>Commerce プロジェクトのコードと環境の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "8864910"
 
 データまたはコードのいずれかを更新することにより、環境を更新できます。
 
-データを更新する複数の方法があります。 環境にデータを取得する方法を示す例については、[財務と運用アプリとサードパーティ サービス間の統合](/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview) を参照してください。
+データを更新する複数の方法があります。 環境にデータを取得する方法を示す例については、[財務と運用アプリとサードパーティ サービス間の統合](/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview)を参照してください。
 
 環境を更新するときは、データベース全体の移動も考慮する必要があります。 このアプローチにより、データをある環境から別の環境に素早く簡単に複製できます。
 
@@ -194,3 +194,4 @@ Finance およびコマース カスタマイズ パッケージは、ビルド�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

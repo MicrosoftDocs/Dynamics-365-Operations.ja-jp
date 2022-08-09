@@ -6,21 +6,22 @@ ms.date: 10/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PrintMgmtSetupUIMain
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.custom: 82783
-ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1da31d2e433cf138871c989a5ddf112962ff7829
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "82783"
+ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
+ms.search.form: PrintMgmtSetupUIMain
+ms.openlocfilehash: b68ca476a427240f864ea365f18e8b588529d3a8
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908459"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206214"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 

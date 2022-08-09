@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 488457ca486a64c5ef54350b9ed65c5d0a586572
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28aeed31d7a386cd5f5ec729089b25aa399000d1
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860278"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066203"
 ---
 # <a name="development-in-cloud-hosted-environments-without-admin-access"></a>管理者のアクセス権を使用しないクラウド ホスト環境での開発
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition、プラットフォーム更新プログラム 12 では、Microsoft 定期購読を実行している開発または構築環境で仮想マシン (VM) 管理者アカウントにアクセスできなくなり、Microsoft サブスクリプションを使用して層 1 環境を配置することはできません。
+Microsoft Dynamics 365 Finance、Enterprise Edition、プラットフォーム更新プログラム 12 では、Microsoft サブスクリプションを実行している開発または構築環境で仮想マシン (VM) 管理者アカウントにアクセスできなくなり、Microsoft サブスクリプションを使用してレベル 1 環境を配置することはできません。
 
 リモート デスクトップ (RDP) を使用して、Lifecycle Services (LCS) 環境ページに用意されている非管理ユーザーを使用するこれらの制限された環境にアクセスすることができます。 管理者アクセスを許可しない環境の詳細については、[管理者アクセスを許可しない開発用 およびビルド用 VM に関するよく寄せられる質問](../../fin-ops-core/dev-itpro/sysadmin/vms-no-admin-access.md)を参照してください。
 

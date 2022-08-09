@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: eba14f2f3dc8187ec843b240d37ad52acdc19789
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a205cc1979a0a1bc38c7908947232fcf563d8d4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848269"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066124"
 ---
 # <a name="human-resources-virtual-tables-faq"></a>Human Resources 仮想テーブルに関するよく寄せられる質問
 
@@ -94,13 +94,13 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 **Microsoft Dataverse 統合** ページで仮想テーブルを設定すると、アクション センターに次のようなエラー メッセージが表示される場合があります。
 
-`User Dynamics365 for Talent was not found in Finance and Operations. Please ensure this user exists.`
+`User Dynamics365 for Talent was not found in finance and operations. Please ensure this user exists.`
 
 このメッセージは、仮想テーブル用に設定されたアプリに対して、Human Resources アプリケーションでアクセス許可が付与されていないことを示しています。 これを解決するには、[Human Resourcesでアプリのアクセス許可を付与する](hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources) 手順を実行します。
 
-### <a name="what-do-i-do-if-the-finance-and-operations-virtual-data-source-configurations-option-isnt-available-in-my-microsoft-dataverse-environment"></a>Finance and Operations 仮想データ ソースの構成オプションを Microsoft Dataverse 環境で使用できない場合はどうしたらよいですか?
+### <a name="what-do-i-do-if-the-finance-and-operations-virtual-data-source-configurations-option-isnt-available-in-my-microsoft-dataverse-environment"></a>財務と運用の仮想データ ソースの構成オプションを Microsoft Dataverse 環境で使用できない場合はどうしたらよいですか?
 
-仮想テーブルの設定時に Dynamics 365 HR 仮想テーブル アプリをインストールする必要があります。このアプリにより、**Finance and Operations 仮想データ ソースの構成** オプションが追加されます。 **Microsoft Dataverse 統合** ページでのアプリのインストールの詳細については、[Dataverse 仮想テーブルの構成](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) を参照してください。
+仮想テーブルの設定時に Dynamics 365 HR 仮想テーブル アプリをインストールする必要があります。このアプリにより、**財務と運営の仮想データ ソースの構成** オプションが追加されます。 **Microsoft Dataverse 統合** ページでのアプリのインストールの詳細については、[Dataverse 仮想テーブルの構成](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) を参照してください。
 
 **Microsoft Dataverse 統合** ページの **仮想テーブル アプリのインストール** アクションが正常に完了しなかった場合は、Power Platform 管理センターでアクションを実行できます。
 
@@ -118,7 +118,7 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 7. **インストール** を選択します。
 
-インストールには数分かかります。 完了すると **Finance and Operations 仮想データ ソースの構成** エンティティがこの環境で生成されます。
+インストールには数分かかります。 完了すると **財務と運用の仮想データ ソースの構成** エンティティがこの環境で生成されます。
 
 ![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします。](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
@@ -148,3 +148,4 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 > **複数のレコードの変更** ページを使用すると、複数の仮想テーブルを一度に生成できます。 ページで複数のレコードを選択し、リボンで **編集** アクションを選択します。 これにより、選択したすべてのレコードについて、**生成済み** のプロパティを変更できます。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

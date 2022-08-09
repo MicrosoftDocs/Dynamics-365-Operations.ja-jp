@@ -11,15 +11,15 @@ ms.reviewer: tfehr
 ms.custom: 195943
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
 ms.search.region: Global
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b89a68aecf2668290cd32afe3bc0bb75d435daff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 06a1d466d2361f004744e7050743117bdefdd7d8
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867596"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135767"
 ---
 # <a name="troubleshoot-service-authentication-issues"></a>サービス認証問題のトラブルシューティング
 

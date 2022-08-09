@@ -10,12 +10,12 @@ ms.custom: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-12-16
-ms.openlocfilehash: 9f66c09896641e2132896b4b25d5b8c015582136
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 894d47dd54e7a5b4a04fe2da305913714863f86f
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854654"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103646"
 ---
 # <a name="run-the-regression-suite-automation-tool-rsat-with-parallel-execution"></a>Regression suite automation tool (RSAT) の並列実行
 
@@ -143,3 +143,4 @@ RSAT を開くたびに、構成ファイルに保存されている新しい設
     > RSAT の実行に使用される環境は、一度に 1 つのテスト環境でのみ機能するように構成できます。 この制限があるのは、テスト環境へのアクセスに使用される証明書を通信ポート 745 にバインドする必要があり、一度に 1 つのテスト環境からの証明書のセットを 1 つだけバインドするためです。
 
 - 新しい管理者以外のユーザーが共有環境の使用を開始した場合、そのユーザーに対して非管理者スクリプトを実行して、重要な RSAT リソースにアクセスできるようにする必要があります。
+

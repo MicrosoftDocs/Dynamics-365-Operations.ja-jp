@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: kfend
-ms.custom: 10234
-ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f44afc84d0927d288332c5e67492827875d3dd4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "10234"
+ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
+ms.openlocfilehash: d4855c2c3b5d7e329c0e4bd25e2ef4ab204ee21c
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906814"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206260"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 

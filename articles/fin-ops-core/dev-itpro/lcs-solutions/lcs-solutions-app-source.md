@@ -12,12 +12,12 @@ ms.custom: 197023
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 27e183104fb8a66650ca985a1b205b8b9e20108a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3f0049fdd8220b83a5fc8c91df548c153dd77876
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866522"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067480"
 ---
 # <a name="requirements-for-publishing-apps-on-appsource"></a>AppSource でアプリを公開するための要件
 
@@ -36,3 +36,4 @@ Microsoft AppSource の Lifecycle Services (LCS) ソリューション パッケ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

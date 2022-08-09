@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 2e9663b5cb8fd760b330f2f196dacdb90339511b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d38b8cab5c6ae1d0eade7124074e569e89e3910e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866490"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103421"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 

@@ -13,13 +13,13 @@ ms.assetid: ''
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-08-01
-ms.dyn365.ops.version: Finance and Operations
-ms.openlocfilehash: 731527412e21c0c86ce757d9b7fc15a60e28d740
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: Finance and operations
+ms.openlocfilehash: 54147ac06cfaa7e1c744deda6407ad1f76bc23bb
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848710"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109412"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -175,3 +175,4 @@ ms.locfileid: "8848710"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

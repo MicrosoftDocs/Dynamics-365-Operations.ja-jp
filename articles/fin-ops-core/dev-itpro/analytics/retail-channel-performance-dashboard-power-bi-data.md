@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 105483
-ms.assetid: cb5aff3b-5b29-44f7-9c6f-6b055c043996
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f03e945d222557832acc9630feadac03cc5edb07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "105483"
+ms.assetid: cb5aff3b-5b29-44f7-9c6f-6b055c043996
+ms.openlocfilehash: c8ea55f9438502c4ad7abaae7c93d03521a9c95b
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883712"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206252"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 

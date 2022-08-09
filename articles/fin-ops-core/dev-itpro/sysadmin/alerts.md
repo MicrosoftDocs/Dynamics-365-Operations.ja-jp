@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 515df2c2784df75b3696e553db08f297084a2674
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 070b152a2177fb4621691f27f3150957227d1def
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853637"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108581"
 ---
 # <a name="set-up-alerts"></a>警告の設定
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations の重大なイベントの通知システムは、警告によって形成されます。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。 警告ルールの組み合わせを設定できます。そうすることでバッチ ジョブの終了時にエラーが発生した場合、またはキャンセルされた場合に警告を表示させることができます。 警告を電子メールで送信するか、アクション センターに通知として表示するかどうかを選択することができます。 警告はバッチ ジョブおよびユーザーごとに設定が可能です。
+財務と運用の重大なイベントの通知フォームは、警告によって形成されます。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。 警告ルールの組み合わせを設定できます。そうすることでバッチ ジョブの終了時にエラーが発生した場合、またはキャンセルされた場合に警告を表示させることができます。 警告を電子メールで送信するか、アクション センターに通知として表示するかどうかを選択することができます。 警告はバッチ ジョブおよびユーザーごとに設定が可能です。
 
 ## <a name="set-up-alerts-for-batch-enhanced-forms"></a>バッチ ジョブの警告の設定
 

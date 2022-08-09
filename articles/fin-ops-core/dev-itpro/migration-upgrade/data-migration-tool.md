@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: a0454a24bb9e0d3f09030634ffe9dedb361abdf0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25e53644b2a25cf3966d94b13c241e67c95ce1cf
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866214"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124740"
 ---
 # <a name="ax-2009-upgrade---use-the-data-migration-tool-to-migrate-from-dynamics-ax-2009-to-finance-and-operations"></a>AX 2009 アップグレード - データ移行ツールを使用して、Dynamics AX 2009 から財務と運用へ移行します 
 
 [!include [banner](../includes/banner.md)]
 
-AX 2009 から Finance and Operations へデータを移行するため Microsoft Dynamics AX 2009 データ移行ツール (DMT) を使用することができます。 DMT の使用は、唯一サポートされている AX 2009 からのアップグレード パスです。 DMT は、各バージョンのテーブル スキーマ間を検索してその間のギャップを埋めることができ、またデータを移動も行います。 
+AX 2009 から財務と運用へデータを移行するため Microsoft Dynamics AX 2009 データ移行ツール (DMT) を使用することができます。 DMT の使用は、唯一サポートされている AX 2009 からのアップグレード パスです。 DMT は、各バージョンのテーブル スキーマ間を検索してその間のギャップを埋めることができ、またデータを移動も行います。 
 
 > [!NOTE]
 > クラウドへの移行を開始するときは、[Dynamics 365移行プログラム](https://dynamics.microsoft.com/migration-program/)を使用した場合でも、無料で義務なしの移行評価を使用します。
 
 ## <a name="architecture"></a>アーキテクチャ
-次の図では、DMT のアーキテクチャ、また、ソース システム (AX 2009) のデータの処理方法とターゲット システム (Finance and Operations) への移動方法について説明します。
+次の図では、DMT のアーキテクチャ、また、ソース システム (AX 2009) のデータの処理方法とターゲット システム (財務と運用) への移動方法について説明します。
 
 ![データ移行の技術フロー。](media/dmt_technical_flow.png)
 

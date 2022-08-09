@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d47a7e59438f77161ddaab34eee1679e1b0440808a9ed8aa45f221c303d53d8c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c604eeb7caf3450b9c90cfb4f5dde31a7641238
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775272"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066136"
 ---
 # <a name="regulatory-watch-and-communication-of-regulatory-updates"></a>規制の監視と規制の更新の通知
 
 [!include [banner](../includes/banner.md)]
 
-ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
+ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
 
 ## <a name="set-up-an-alerting-project-in-lcs"></a>LCS で警告のプロジェクトを設定
 
@@ -38,7 +38,7 @@ ms.locfileid: "6775272"
 1.  プラス記号 (**+**) をクリックして新しいプロジェクトを追加します。
 2.  次のプロジェクトにおける名前付け規則を使用する名前を入力します。**REG-Alerts-Country/region 名前**
 3.  プロジェクトの説明を入力します。
-4.  製品名では、Dynamics 365 Finance and Operations アプリの最新バージョンを指定します。
+4.  製品名では、財務と運用アプリの最新バージョンを指定します。
 5.  製品バージョンでは、最新バージョンを指定します。
 6.  業界を指定します。
     -   ソリューションがすべての業界に関連する場合は **その他** を選択します。
@@ -140,7 +140,7 @@ ms.locfileid: "6775272"
 > 送信された警告は、さまざまな理由で否認されることがあります。 次にいくつか例を挙げます。
 >    -   警告が漠然としているため、基になるローカライズ機能を特定できません。
 >    -   警告は、機能がまったくローカライズされていない領域に関連しています。
->    -   警告は、現時点では Finance and Operations 機能でサポートされていない領域に関連しています。
+>    -   警告は、現時点では財務と運用機能でサポートされていない領域に関連しています。
 > 
 > 警告は参照として LCS に保管できます。
 > 

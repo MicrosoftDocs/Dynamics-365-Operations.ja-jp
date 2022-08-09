@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 712744201dc3197ac0e06a2bc0b6bd8efb3eb7da
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 431e8adf27af0371e69e626401db1a12d64bd8b5
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866279"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124744"
 ---
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 

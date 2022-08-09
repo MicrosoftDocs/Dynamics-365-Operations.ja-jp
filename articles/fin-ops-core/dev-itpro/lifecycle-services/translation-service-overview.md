@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abmotgi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e093b185dc0fc35cd75b68bae8f702a413e69847
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3eace9e9c1df24dd6cbff133a98fbff39bd6d9e7
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866353"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103343"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service の概要
 
@@ -97,3 +97,4 @@ DTSの使用方法の詳細については、[ユーザー インタ フェー�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

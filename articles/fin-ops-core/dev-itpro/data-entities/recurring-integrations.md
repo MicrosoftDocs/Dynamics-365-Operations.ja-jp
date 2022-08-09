@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83f8865fda372de0dd998ecc8d443fb51ba0ae84
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: 4986ef4c5115bd4484c2a8d5bc603f03763bde3c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958118"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109324"
 ---
 # <a name="recurring-integrations"></a>定期統合
 
@@ -28,7 +28,7 @@ ms.locfileid: "8958118"
 移行を繰り返し行うと以下の処理が行われます:
 
 - これは、データ エンティティとデータ管理フレームワークで構築されます。
-- Finance and Operations とあらゆるサード パーティ製アプリケーションやサービスで、ドキュメントまたはファイルの交換を可能にします。
+- 財務と運用とあらゆるサード パーティ製アプリケーションやサービス間で、ドキュメントまたはファイルの交換を可能にします。
 - 複数のドキュメント形式、ソース マッピング、XSLT (Extensible Stylesheet Language Transformations)、およびフィルターをサポートします。
 
     ![複数の文書形式のドキュメントまたはファイルを交換。](./media/recurring-integrations.png)
@@ -207,7 +207,7 @@ BODY
 実装に、ファイルまたはパッケージをアップロードした、定期的なジョブの実行が含まれている可能性があります。 ご使用の実装には、アップロードするものがないため、ファイルまたはパッケージがアップロードされなかった実行が含まれていることがあります。 アップロードする必要のあるファイルがアップロードされていない、またはアップロードする必要がないファイルがアップロードされていた場合は、定期的なエクスポート ジョブに対して **メッセージの管理** ページを使用して、デバッグ プロセスを支援することができます。
 
 > [!NOTE]
-> これらの機能が、Microsoft Dynamics 365 for Finance and Operations、Enterprise edition プラットフォーム更新プログラム 12 に追加されました。 プラットフォーム更新 12 にアップグレードする前に実行されたジョブは、次の列に値を持ちません。
+> これらの機能は、Microsoft Dynamics 365 の財務と運用、Enterprise Edition プラットフォーム更新プログラム 12 に追加されました。 プラットフォーム更新 12 にアップグレードする前に実行されたジョブは、次の列に値を持ちません。
 
 **エクスポートされたレコードの合計** 列には、エクスポートされたレコードの合計数が表示されます。 **0** (ゼロ) の値は、ファイルにエクスポートされたまたはパッケージに含まれていたレコードがないことを示します。
 
@@ -220,3 +220,4 @@ BODY
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

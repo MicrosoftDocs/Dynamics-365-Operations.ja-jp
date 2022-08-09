@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 517e6ba2b3c873585fd7d306b1c0b06c12db6fe7
-ms.sourcegitcommit: 0c23c361c9aa3918e4fc75e5eb69cd368a9f2e73
+ms.openlocfilehash: 13dc259b641e435fcf43a0e40aa5479cb825e47d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2022
-ms.locfileid: "9030276"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070618"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10028-august-2022"></a>Dynamics 365 Finance 10.0.28 (2022 年 8 月) の新機能および変更された機能
 
@@ -92,3 +92,4 @@ Dynamics 365 Finance 10.0.28 には、プラットフォーム更新プログラ
 コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86f94b2dd6bf73a8b8869dcfd16f60b6249a66fe
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b590bdd33f54b932382c6584f87c2ec69b3ebea5
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867213"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103496"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 
@@ -244,7 +244,7 @@ static void UseQuery()
 
 クラスはソース コードに入れ子にできます。 入れ子になったクラスはフォーム内 (**FormRun** を拡張するクラスなど) でのみ使用でき、コントロール、データ ソースまたはデータ フィールドを表すために使用します。 属性の修飾で接尾語に **属性** がある場合、属性の修飾などのクラスまたはメソッドで、属性名の接尾語を省略できます。 したがって、X++ は **\[MyFavoriteAttribute\]** を必要とするのではなく、**\[MyFavorite\]** を許可します。 また、属性はデリゲートとメソッドのハンドラーに現在適用され、ハンドラーをこれらのターゲットにマップします。
 
-AX 2012 およびそれ以前のバージョンでは、クライアントまたはサーバーのいずれかで実行するメソッドを指定することができました。 ただし、Finance and Operations アプリケーションでは、コンパイルされたすべての X++ コードがサーバーの .NET 共通中間言語 (CIL) として実行されます。 クライアント サイトまたはブラウザーで評価されるコードはなくなりました。 したがって、**client** キーワードと **server** キーワードは無視されるようになりました。 これらのキーワードが使用される場合コンパイル エラーは発生しませんが、新しいコードを使用することはできません。
+AX 2012 およびそれ以前のバージョンでは、クライアントまたはサーバーのいずれかで実行するメソッドを指定することができました。 ただし、財務と運用アプリケーションでは、コンパイルされたすべての X++ コードがサーバーの .NET 共通中間言語 (CIL) として実行されます。 クライアント サイトまたはブラウザーで評価されるコードはなくなりました。 したがって、**client** キーワードと **server** キーワードは無視されるようになりました。 これらのキーワードが使用される場合コンパイル エラーは発生しませんが、新しいコードを使用することはできません。
 
 ### <a name="private-and-protected-member-variables"></a>プライベートおよび保護されたメンバー変数
 
@@ -460,3 +460,4 @@ public void printCust()
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

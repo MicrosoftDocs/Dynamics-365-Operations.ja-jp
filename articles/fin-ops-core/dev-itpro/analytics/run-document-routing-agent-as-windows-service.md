@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 191133
-ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 0e308933b8ba834efeb6d72e50ae3faaf49c4a88
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "191133"
+ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
+ms.openlocfilehash: f956bbb5e4117cbf56f192343730506bf91be89f
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883709"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205577"
 ---
 # <a name="run-the-document-routing-agent-as-a-windows-service"></a>ドキュメント回覧エージェントを Windows サービスとして実行する
 
@@ -44,14 +45,14 @@ ms.locfileid: "8883709"
 Document Routing Agent は、デスクトップ アプリケーションとして実行されるときは、Adobe Reader の活用を続行して、財務と運用で選択されている共有プリンター デバイスにドキュメントをスプールします。 カスタムの余白を設定したドキュメントを印刷する必要があるシナリオを処理するには、ドキュメント ルーティング エージェントを複数の場所にインストールすることをお勧めします。 デスクトップ アプリケーション モードで実行されるドキュメント ルーティング エージェントでのみ、これらのドキュメントを処理するプリンターをインストールします。 または、実行後のプロセスを使用してターゲット ディレクトリ内のファイルを取得し適切な方法でそれらを指示します。
 
 ## <a name="install-the-latest-build"></a>最新ビルドのインストール
-1. 現在のドキュメント回覧エージェント構成ファイルのコピーを保存します。 このファイルは、C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config にあります。このパスでは、&lt;UserID&gt;は、ドキュメント ルーティング エージェントがインストールされた Active Directory Domain Services (AD DS) のユーザー名です。
+1. 現在のドキュメント回覧エージェント構成ファイルのコピーを保存します。 このファイルは、C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 Finance Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config にあります。このパスでは、&lt;UserID&gt;は、Document Routing Agent がインストールされた Active Directory Domain Services (AD DS) のユーザー名です。
 2. ドキュメント回覧エージェントの現在のバージョンをアンインストールします。
 3. [ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md)の手順に従って、ドキュメント回覧エージェントの最新バージョンをインストールします。
 
     > [!NOTE]
     > この時点でアプリケーションをインストールしますが、まだ実行しないでください。
 
-4. 手順 1 では、構成ファイルをコピーし、次のディレクトリに貼り付けます。c:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing。 このステップにより、ドキュメント回覧エージェント アプリケーションの新しいバージョンに以前のすべての構成設定が使用されていることを保証できます。
+4. 手順 1 では、構成ファイルをコピーし、次のディレクトリに貼り付けます。c:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 Finance Document Routing。 このステップにより、ドキュメント回覧エージェント アプリケーションの新しいバージョンに以前のすべての構成設定が使用されていることを保証できます。
 5. ドキュメント回覧エージェントを実行します。
 6. Microsoft Azure Active Directory (Azure AD) または財務と運用アプリの資格情報を使用してログインします。
 7. 適切なメニュー項目をクリックして、設定およびプリンターを表示して確認します。
@@ -71,7 +72,7 @@ Document Routing Agent は、デスクトップ アプリケーションとし�
 
 ### <a name="configure-and-start-the-windows-service"></a>Windows サービスのコンフィギュレーションおよび開始
 1. Windows で、Service Manager を開始します。
-2. 一覧で、**Microsoft Dynamics 365 for Finance and Operations ドキュメント ルーティング サービス** を選択します。
+2. 一覧で、**Microsoft Dynamics 365 Finance ドキュメント回覧サービス** を選択します。
 3. 名前を右クリックし、**プロパティ** を選択します。
 4. **ログオン** タブで、**この勘定** オプションを選択し、サービスを実行するために使用される AD DS 資格情報を入力します。
 

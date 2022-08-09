@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 34f4464c6659097d1aab257700bd7e3a305ed2d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 799db25550050decdcae33253f6a64f3f6fbe7f7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874941"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067805"
 ---
 # <a name="add-custom-controls-to-pos-views"></a>POS ビューへのカスタム コントロールの追加
 
@@ -48,8 +48,8 @@ Microsoft Dynamics 365 Commerce POS のビューに表示される情報を改�
 
 > [!NOTE]
 > カスタム コントロールは、次の製品バージョンでのみサポートされます。
-> - **画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 3 と Microsoft Dynamics 365 Retail アプリケーション更新プログラム 3
-> - **画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 for Finance and Operations アプリケーション更新プログラム 4 と Microsoft Dynamics 365 Retail アプリケーション更新プログラム 4
+> - **画面レイアウト デザイナーに基づかないビュー:** Microsoft Dynamics 365 Finance アプリ更新プログラム 3 および Microsoft Dynamics 365 Retail アプリ更新プログラム 3
+> - **画面レイアウト デザイナーに基づくビュー:** Microsoft Dynamics 365 Finance アプリ更新プログラム 4 および Microsoft Dynamics 365 Retail アプリ更新プログラム 4
 
 ## <a name="create-a-custom-control"></a>カスタム コントロールの作成
 

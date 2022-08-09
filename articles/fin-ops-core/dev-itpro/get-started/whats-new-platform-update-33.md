@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a2c40285244b8ece594971d0c56ff9d480000972
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1218fba795cb92c0290bef499715bca6a34958b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866668"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068576"
 ---
 # <a name="whats-new-or-changed-in-platform-update-33-for-finance-and-operations-apps-april-2020"></a>財務と運用アプリのプラットフォーム更新プログラム 33 (2020 年 4 月) の新機能および変更された機能
 
@@ -60,7 +60,7 @@ ms.locfileid: "8866668"
 この機能の説明を読むには、リリース計画の [RSAT の新しいタスク レコーダー機能](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat)を参照してください。
 
 ### <a name="preview-branding-changes-for-updated-finance-and-operations-licensing"></a>(プレビュー) 更新された財務と運用のライセンスのブランドの変更
-この機能の説明については、リリース計画の[財務と運用のライセンス](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing)を参照してください。
+この機能の説明については、リリース計画の[財務と運用のライセンス](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -76,7 +76,7 @@ ms.locfileid: "8866668"
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
-[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md)の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
+[削除済みまたは非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) の記事では、削除された機能、または財務と運用アプリのプラットフォーム更新プログラムで削除予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *非推奨* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

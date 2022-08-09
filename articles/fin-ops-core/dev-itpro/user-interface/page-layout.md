@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed087318cef6820a06973ed1f3a167e3dbc7c765
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc36477639411fd9f486f257efef71532d3e538a
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905044"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114327"
 ---
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 
@@ -41,7 +41,7 @@ ms.locfileid: "8905044"
 
 グリッドとは、柔軟なサイズ変更 (**SizeToAvailable**) などいくつかのコンテナ動作を持つ特殊なタイプのコントロールです。 ただし、グリッドには特別な視覚化があり、汎用のコンテナー コントロールではありません。
 
-## <a name="layout-dynamics-ax-2012-vs-finance-and-operations-apps"></a>レイアウト: Dynamics AX 2012 対 Finance and Operations アプリ
+## <a name="layout-dynamics-ax-2012-vs-finance-and-operations-apps"></a>レイアウト: Dynamics AX 2012 対財務と運用アプリ
 ### <a name="layout-in-dynamics-ax-2012"></a>Dynamics AX 2012 でのレイアウト
 
 Microsoft Dynamics AX 2012 では、コンテナーのコントロールの配置はほとんど必ず縦で、列を手動で設定して水平に拡大します。
@@ -50,9 +50,9 @@ Microsoft Dynamics AX 2012 では、コンテナーのコントロールの配�
 
 **列** = **1** 1 2 3 **列** = **2** 1 4 2 5 3 Dynamics AX 2012 では、**高さ** プロパティと **幅h** プロパティを使用してサイジングできます。 **高さ** および **幅** が **自動** と設定されている場合、サイズは子コントロールが必要とする大きさになります。 **高さ** および **幅** が **列** に設定されている場合、コンテナーは親コンテナー内に収まる大きさになります。 既定では、**高さ** と **幅** はすべてのコンテナーに対して **自動** に設定されています。
 
-### <a name="layout-in-finance-and-operations"></a>Finance and Operations でのレイアウト 
+### <a name="layout-in-finance-and-operations-apps"></a>財務と運用アプリでのレイアウト 
 
-Finance and Operations では、レイアウトが Dynamics AX 2012 でのレイアウトを制御する同じ基本的なプロパティによって制御されます。 ただし、応答性の良いレイアウトをサポートするため、追加のオプションが追加されました。 特に、ページのレイアウトは次の要因に基づいています。
+財務と運用アプリでは、レイアウトが Dynamics AX 2012 でのレイアウトを制御する同じ基本的なプロパティによって制御されます。 ただし、応答性の良いレイアウトをサポートするため、追加のオプションが追加されました。 特に、ページのレイアウトは次の要因に基づいています。
 
 -   **ArrangeMethod** プロパティによって指定される配置メソッド。
 -   **列** プロパティで指定された列。

@@ -12,12 +12,12 @@ ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 36e81b0d9bb5cd308b24404cf0cd47b455b826f6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b95d2d9bde330ffa3cab242c07087fbbb43f426
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866520"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065727"
 ---
 # <a name="back-up-the-databases-for-finance-and-operations-apps"></a>財務と運用アプリのデータベースのバックアップ
 
@@ -37,3 +37,4 @@ Microsoft SQL Server Management Studio で、データベースのバックア�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

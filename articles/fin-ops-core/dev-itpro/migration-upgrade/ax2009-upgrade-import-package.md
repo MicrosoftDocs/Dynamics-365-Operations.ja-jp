@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: e8741fb477e234b924d2ebb1d2df300e93880c8f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10786b676a7bedecd09b60810ff9ac7ac5115189
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866241"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123966"
 ---
 # <a name="ax-2009-migration--import-packages"></a>AX 2009 の移行 - パッケージのインポート
 
@@ -26,7 +26,7 @@ ms.locfileid: "8866241"
 データは、正しい順序で配列された論理的に関連するエンティティのグループにインポートできます。 移行する Microsoft Dynamics AX 2009 データをインポートするために、以下の 3 つのオプションがあります。
 
 - AX 2009
-- Finance and Operations
+- 財務と運用
 
 ## <a name="ax-2009"></a>AX 2009
 移行のデータは、ソース システムから直接インポートできます。 以下の手順を実行します。
@@ -36,8 +36,8 @@ ms.locfileid: "8866241"
 3. **移行グループ** フォームで、エクスポートする移行グループを選択し、**今すぐエクスポート** をクリックします。
 4. **データのエクスポート** フォームで、**ターゲットにパッケージをインポートする** チェック ボックスをオンにし、**OK** をクリックします。
 
-## <a name="finance-and-operations"></a>Finance and Operations
-Finance and Operations 環境を使用して、移行のデータをインポートできます。 以下の手順を実行します。
+## <a name="finance-and-operations"></a>財務と運用
+財務と運用環境を使用して、移行するデータをインポートできます。 以下の手順を実行します。
 
 1. 管理者ロールを使用して、環境にログインします。
 2. ダッシュボードで、**データ管理** ワークスペースを選択します。

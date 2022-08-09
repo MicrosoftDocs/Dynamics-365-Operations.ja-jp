@@ -1,6 +1,6 @@
 ---
 title: 最新バージョンへのセルフサービス アップグレード
-description: この記事では、財務と運用の最新の更新バージョンに移行するプロセスについて説明します。
+description: この記事では、財務と運用の最新の更新プログラムに移行するプロセスについて説明します。
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: cb286b3688a9fb726192df0c489f8b2515b3ce1b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3cef835edde1ca35a51bfe2c59c60515d4492f1c
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890438"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124378"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> ここで説明されているプロセスは、財務と運用アプリの古いバージョンと最新バージョン間のデータ更新では非推奨となりました。 Dynamic AX 2012 のアップグレードの詳細については、[AX 2012 から財務と運用へアップグレードする](upgrade-overview-2012.md)を参照してください。
+> ここで説明されているプロセスは、財務と運用アプリの古いバージョンと最新バージョン間のデータ更新に対しては非推奨となりました。 Dynamic AX 2012 のアップグレードの詳細については、[AX 2012 から財務と運用へアップグレードする](upgrade-overview-2012.md)を参照してください。
 >
 > この記事は、次の開始バージョンに適用されます:
 >
 > - Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) (バージョン 7.1 とも呼ばれます)
-> - Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月) (バージョン 7.2 とも呼ばれます)
-> - Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3
+> - Microsoft Dynamics 365 財務と運用、Enterprise Edition (2017 年 7 月) (バージョン 7.2 とも呼ばれる)
+> - Microsoft Dynamics 365 財務と運用、Enterprise Edition 7.3
 
 このチュートリアルでは、これらのタスクを実行する方法を説明します。
 
@@ -231,3 +231,4 @@ ms.locfileid: "8890438"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

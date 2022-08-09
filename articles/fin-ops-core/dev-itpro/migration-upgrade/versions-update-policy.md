@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: e938079ce934db106ba571d6ec2bb2d98a88bbd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c82f44d5d48ee921fae8ac87d832d894589684f4
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868779"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124462"
 ---
 # <a name="software-lifecycle-policy-and-cloud-releases"></a>ソフトウェアのライフサイクル ポリシーおよびクラウド リリース
 
@@ -28,13 +28,13 @@ ms.locfileid: "8868779"
 この記事では、財務と運用オンライン サービスにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
 
 ## <a name="modern-lifecycle-policy"></a>Modern Lifecycle ポリシー
-Finance and Operations オンライン サービスは、Modern Lifecycle ポリシーの対象となります。 Modern Lifecycle Policy は、継続的に保守およびサポートされる製品およびサービスをカバーします。 このポリシーの詳細については、[Modern Lifecycle ポリシー](https://support.microsoft.com/help/30881) を参照してください。 ライセンス供与された顧客は、次のサービスとシステムの要件に従って、Finance and Operations オンライン サービスに対する更新で最新の状態にする必要があります。
+財務と運用オンライン サービスは、モダン ライフサイクル ポリシーの対象となります。 Modern Lifecycle Policy は、継続的に保守およびサポートされる製品およびサービスをカバーします。 このポリシーの詳細については、[Modern Lifecycle ポリシー](https://support.microsoft.com/help/30881) を参照してください。 ライセンス供与された顧客は、次のサービスとシステムの要件に従って、財務と運用オンライン サービスに対する更新で最新の状態にする必要があります。
 
 - 財務と運用アプリのサブスクリプションを購入し、以下のアプリケーション バージョンで運用している顧客には、プラットフォームおよび Financial Reporting の継続的な更新が行われます。 Microsoft は、これらのコンポーネントを継続的に更新します。 顧客は、最大 3 回のサービス更新を延期できます。
     - 財務と運用アプリ、バージョン 10.0+ (2019 年 4 月)
     - 財務と運用アプリ、バージョン 8.0 (2018 年 4 月)
-    - Dynamics 365 for Finance and Operations、Enterprise edition 7.3 (2017 年 12 月)   
-    - Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 6 月)
+    - Dynamics 365 財務と運用、Enterprise Edition 7.3 (2017 年 12 月)   
+    - Dynamics 365 財務と運用、Enterprise edition (2017 年 6 月)
     - Dynamics 365 for Operations バージョン 1611 (2016 年 11 月)
     
 
@@ -44,12 +44,12 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
 
     - **重要な修正** - 重要な修正には、セキュリティ修正およびサービスがサポートする可用性サービス レベル アグリーメント (SLA) に準拠するために必要な修正が含まれます。 重要な修正プログラムは、最新のプラットフォーム更新プログラム バージョンで、およびバージョン 8.1 で動作している顧客の場合は最新のサービス更新プログラムで利用可能になります。 さらに、顧客とオンライン サービスを保護するため、Microsoft は顧客の環境に重要な修正プログラムを直接適用する場合があります。 重要な修正プログラムを適用する必要がある場合、Microsoft は必要なダウンタイム ウィンドウ (ダウンタイムが発生する場合) についてお客様に通知し、修正プログラムを適用可能な環境に適用します。 重要な修正プログラムにより、システムが最新の更新バージョンに更新されます。
 
-    - **重要ではない更新** – 以下のアプリケーション リリースで動作しているユーザーは、重要ではない更新を導入するには、最新の Finance and Operations プラットフォームと財務レポートのバージョンに更新する必要があります。 
+    - **重要ではない更新** – 以下のアプリケーション リリースで動作している顧客は、重要ではない更新を導入するには、最新の財務と運用プラットフォームおよび financial reporter バージョンに更新する必要があります。 
     
       - 財務と運用アプリ、バージョン 10.0+ (2019 年 4 月)
       - 財務と運用アプリ、バージョン 8.0+ (2018 年 4 月)
-      - Dynamics 365 for Finance and Operations、Enterprise edition 7.3 (2017 年 12 月)   
-      - Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 6 月)
+      - Dynamics 365 財務と運用、Enterprise Edition 7.3 (2017 年 12 月)   
+      - Dynamics 365 財務と運用、Enterprise edition (2017 年 6 月)
       - Dynamics 365 for Operations バージョン 1611 (2016 年 11 月)          
 
 > [!NOTE]
@@ -59,12 +59,12 @@ Finance and Operations オンライン サービスは、Modern Lifecycle ポリ
 
 ## <a name="dates-and-versions-for-application-and-platform-releases"></a>アプリケーションおよびプラットフォーム リリースの日付とバージョン
 
-アプリケーションおよびプラットフォームのリリースの日付とバージョンについての詳細については、 [財務と運用アプリ ホーム ページの新機能および変更事項](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
+アプリケーションおよびプラットフォームのリリースの日付とバージョンについての詳細については、[財務と運用アプリ ホーム ページの新機能および変更事項](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
 
 > [!NOTE]
 > -  サービス更新は本質的に累積的であり、次の一部またはすべてのコンポーネントの更新が含まれることがあります: プラットフォーム、アプリケーション、Financial Reporting、Commerce、およびオペレーティング システムの更新。 
 > -  Microsoft Dynamics Lifecycle Services (LCS) プロジェクトの更新設定を使用して、すべてのサンドボックス環境と運用環境が利用可能な最新の更新プログラムより 3 バージョン以内の場合、顧客はサービス更新プログラムを一時停止、遅延、またはオプトアウトできます。 詳細については、[更新を遅らせることができますか? ポリシーとは何ですか?](../../fin-ops/get-started/one-version.md#can-the-updates-be-delayed-what-is-the-policy) を参照してください。
-> -  Microsoft に提出された[拡張要求](../extensibility/extensibility-home-page.md) を実行しなかったユーザーを除き、すべてのユーザーは 2019 年 4 月までに財務と運用アプリの最新バージョンにする必要がありました。 2019 年 1 月 1 日までに拡張要求を送信したユーザーは、拡張要求が満たされるまでバージョン 7.3 がサポートされます。 ユーザーは、拡張機能要求が満たされてから 90 日以内に最新バージョンにアップグレードする必要があります。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../../fin-ops/get-started/one-version.md)を参照してください。 
+> -  Microsoft に提出された[拡張要求](../extensibility/extensibility-home-page.md) を実行しなかった顧客を除き、すべての顧客は 2019 年 4 月までに財務と運用アプリの最新バージョンにする必要がありました。 2019 年 1 月 1 日までに拡張要求を送信したユーザーは、拡張要求が満たされるまでバージョン 7.3 がサポートされます。 ユーザーは、拡張機能要求が満たされてから 90 日以内に最新バージョンにアップグレードする必要があります。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../../fin-ops/get-started/one-version.md)を参照してください。 
 
 ## <a name="downloadable-virtual-hard-drive-vhd-releases"></a>ダウンロード可能な仮想ハード ドライブ (VHD) をリリース
 財務と運用アプリのダウンロード可能な VHD の更新は、メジャーリリースと同時に、4 月と 10 月に、1 年に 2 回リリースされます。 VHD が最新のサービス更新にバンドルされている場合、そのリリースは関連付けられているサービス更新のリリースに従います。 メジャーサービス更新が一般にすべての顧客に提供された後に VHD 更新が行われる予定です。 財務と運用のリリース日は、[サービス更新の可用性](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) に表示されています。
@@ -73,3 +73,4 @@ VHD の使用の際には、[ソフトウェア ライセンス条件](https://g
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
-description: この記事では、 Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能および変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。
+title: Dynamics 365 財務と運用バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
+description: この記事では、Dynamics 365 財務と運用バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 54304ac790ec0e9881dcddf0c717602efb85cc68
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b58893e474a9e6e20d8947448e029264f5173d6f
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866102"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124884"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-version-812-december-2018"></a>Dynamics 365 財務と運用バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 
-この記事では、 Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能および変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされ、ビルド番号は 8.1.195 です。
+この記事では、Microsoft Dynamics 365 財務と運用バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされ、ビルド番号は 8.1.195 です。
 
 Retail の新機能または変更された機能についての最新のリリースについては、[Dynamics 365 for Retail の新機能または変更された機能](../../../commerce/get-started/whats-new.md) を参照してください。
 
@@ -43,11 +43,11 @@ Retail の新機能または変更された機能についての最新のリリ�
 
 ## <a name="platform-update-22"></a>プラットフォーム update 22
 
-Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2 には、プラットフォーム更新プログラム 22 が含まれています。 プラットフォーム更新プログラム 22 については、[Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 22 (2018 年 12 月) の新機能と変更](whats-new-platform-update-22.md)を参照してください。
+プラットフォーム更新プログラム 22 を含む Microsoft Dynamics 365 財務と運用バージョン8.1.2。 プラットフォーム更新プロフラム 22 の詳細ついては、[Dynamics 365 Finance プラットフォーム更新プログラム 22 の新機能や変更 (2018 年 12 月)](whats-new-platform-update-22.md) を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳細については、[Dynamics 365 for Finance and Operations バージョン 8.1.2 で変更された拡張機能](../../dev-itpro/extensibility/extensibility-changes-812.md)を参照してください。
+Finance and Operations の今回のリリースでは、列挙、メタデータ、メソッドの強化など、拡張性をサポートするために、さまざまな拡張機能の強化が加えられています。 詳細については、[Dynamics 365 Finance バージョン 8.1.2 の拡張機能の変更](../../dev-itpro/extensibility/extensibility-changes-812.md) を参照してください。
 
 ## <a name="derived-dimension-values"></a>派生分析コード値
 
@@ -132,3 +132,4 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

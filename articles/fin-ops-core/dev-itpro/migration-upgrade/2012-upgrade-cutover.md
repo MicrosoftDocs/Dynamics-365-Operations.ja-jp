@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 7e4da3172cd0e39aa1230023b7554ddaa4a5dea4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9d0409ca3cf8430d5b500aac8d295ab2fd63924a
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866288"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125176"
 ---
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 
@@ -30,7 +30,7 @@ ms.locfileid: "8866288"
 > [!NOTE]
 > AX 2012 アップグレード プロセスは、運用環境ではなくサンドボックス環境で実行する必要があります。
 
-*切替* という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、Finance and Operations をオンにする前に発生するタスクで構成されます。 最終的な切替を計画する前に、[切替テスト](./upgrade-cutover-testing.md) で説明されているように、成功した切替モックを正常に完了する必要があります。
+*切替* という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、財務と運用をオンにする前に発生するタスクで構成されます。 最終的な切替を計画する前に、[切替テスト](./upgrade-cutover-testing.md) で説明されているように、成功した切替モックを正常に完了する必要があります。
 
 次の図は、運用環境で発生するような、切替中の全体的なプロセスを示しています。
 
@@ -72,3 +72,4 @@ ms.locfileid: "8866288"
 - [AX 2012 からのアップグレード - 切替テスト (切替モック)](./upgrade-cutover-testing.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

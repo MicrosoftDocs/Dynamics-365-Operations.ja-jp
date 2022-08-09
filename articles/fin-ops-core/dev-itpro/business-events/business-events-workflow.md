@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 839cdd02252a4c96ac945bd34129d453454864c9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d85d16297cc3c0706e5bea26ea68cd79ba169787
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870391"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068301"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -85,8 +85,8 @@ Microsoft Power Automate で作業項目完了を設定する詳細なガイド�
 ## <a name="templates-for-work-item-completion-in-power-automate"></a>Power Automate での作業項目完了のテンプレート
 
 Power Automate での作業項目完了に関する次のテンプレートが使用できます。
-- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU26) を完了](https://flow.microsoft.com/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
-- [Dynamics 365 for Finance and Operations ワークフロー作業項目 (PU29) を完了](https://flow.microsoft.com/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
+- [財務と運用のワークフローの作業項目を完了する (PU26)](https://flow.microsoft.com/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
+- [財務と運用のワークフローの作業項目を完了する (PU29)](https://flow.microsoft.com/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
 
 プラットフォーム更新プログラム 29 バージョンは、ビジネス イベント ペイロードから完了オプションを取得します。 これらのオプションはプラットフォーム更新プログラム 29 で追加され、承認アクションによりユーザーに表示されます。 
 
@@ -110,3 +110,4 @@ Power Automate を作成することでその他のビジネス イベントが�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 247e0a5d94bbb7b6a21e8a5844c3067c9c81ab9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b8b4604273ba6e35eb0ea1a77bb352d1a58399
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850934"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103652"
 ---
 # <a name="maintain-test-cases-in-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) でのテスト ケースの管理
 
@@ -101,3 +101,4 @@ RSAT で削除するテスト ケースは、 ローカルと Azure DevOps の�
 Azure DevOps では作業項目はテスト ケースを表し、テスト スイートにはテスト ケースの作業項目へのリンクが含まれます。 テスト ケースは、複数のテスト スイートからテスト ケースにリンクして再利用されます。 RSAT でテスト ケースを削除すると、RSAT はテスト ケースが 1 つのテスト スイートにリンクするか、複数のテスト スイートにリンクするかを決定します。 テスト ケースが現在のテスト スイートのみで使用されている場合は、RSAT によってテスト ケースを表す Azure DevOps 作業項目が削除されます。 テスト ケースが他のテスト スイートで使用されている場合、RSAT によってこの作業項目自体は削除されません。 代わりに、作業項目へのリンクだけが削除されます。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d2d5b5242fee3a2fb78600f47ccda3a36f0c84f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ec6648480363f58acde06ca3cb4132f1d9c00cf6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867042"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103910"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 
@@ -112,7 +112,7 @@ var query = customers
     .Select(primaryAndForeign => primaryAndForeign.P);
 ```
 
-X++ で使用されている `while select` 構文と C\# の特殊な LINQ 構文 (Visual Basic には特に優れた LINQ 構文があります) の間に良好な一致があります。 特殊な LINQ 構文は実際、結合を表現する際に有効ですが、C\# コンパイラに組み込まれた特殊な構文は Finance and Operations アプリケーションが提供する拡張機能を処理しません。
+X++ で使用されている `while select` 構文と C\# の特殊な LINQ 構文 (Visual Basic には特に優れた LINQ 構文があります) の間に良好な一致があります。 特殊な LINQ 構文は実際、結合を表現する際に有効ですが、C\# コンパイラに組み込まれた特殊な構文は財務と運用アプリケーションが提供する拡張機能を処理しません。
 
 ### <a name="limitation-of-the-specialized-linq-syntax"></a>特殊な LINQ 構文の制限
 
@@ -178,3 +178,4 @@ private IEnumerable RichCustomers(bool orderByName)
 LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レコードの更新、削除、挿入のモデルはセット ベース操作の式には役に立ちません。 現在、セットベース操作に変換される LINQ モデルに追加する拡張機能に取り組んできます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

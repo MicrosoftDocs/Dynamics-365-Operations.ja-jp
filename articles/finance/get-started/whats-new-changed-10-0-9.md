@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a17ae50d390ed6eb2e6b641b9fa23057ded5fdc6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6ef4cb2ec34d77c2aca00b12d1c6156e5e3e2317
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894011"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069263"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-version-1009-april-2020"></a>Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) の新機能および変更された機能
 
@@ -83,7 +83,7 @@ Dynamics 365 財務と運用アプリの規制の更新については、[規制
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)の記事は Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) の記事では、Dynamics 365 Finance の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
@@ -94,3 +94,4 @@ Dynamics 365 財務と運用アプリの規制の更新については、[規制
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

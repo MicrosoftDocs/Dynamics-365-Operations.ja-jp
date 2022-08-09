@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-16
 ms.dyn365.ops.version: Platform update 52
-ms.openlocfilehash: 4b4412d393f455b73a02f291b2819e900019a921
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f9254f09f2ab666595bef6b12d6819798b5dadf
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897126"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108399"
 ---
 # <a name="maximize-api-throughput"></a>API スループットの最大化
 
@@ -45,7 +45,7 @@ ms.locfileid: "8897126"
 
 ## <a name="avoid-large-batches"></a>大きなバッチを避ける
 
-*バッチ処理* とは、単一の要求に対して複数の操作を送信するプロセスを指します。 ほとんどのシナリオは単一の要求が送信され、高い並列度がある場合に最速となります。 バッチ サイズによってパフォーマンスが向上すると考える場合は、小さなバッチ サイズから開始し、操作を再試行する必要があるというサービス保護 API 制限エラーの受信を開始するまで同時実行数を増やすのが最良の戦略です。 財務と運用アプリでは、バッチ サイズが 5,000 操作に限定されます。
+*バッチ処理* とは、単一の要求に対して複数の操作を送信するプロセスを指します。 ほとんどのシナリオは単一の要求が送信され、高い並列度がある場合に最速となります。 バッチ サイズによってパフォーマンスが向上すると考える場合は、小さなバッチ サイズから開始し、操作を再試行する必要があるというサービス保護 API 制限エラーの受信を開始するまで同時実行数を増やすのが最良の戦略です。 財務と運用アプリでは、バッチ サイズは 5,000 操作に限定されます。
 
 財務と運用アプリのサービス エンドポイントを持つバッチ要求の詳細については、[バッチ要求](../data-entities/odata.md#batch-requests) を参照してください。
 
@@ -84,3 +84,4 @@ System.Net.ServicePointManager.UseNagleAlgorithm = false;
 詳細については、[接続の管理](/dotnet/framework/network-programming/managing-connections) を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

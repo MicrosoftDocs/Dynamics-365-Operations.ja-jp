@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: d1e373c2a75e892350bb6dc92a24b88a2149230a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fdd02d2b8ce5a8228a0aa50234092c3d04610d28
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867459"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103542"
 ---
 # <a name="deploy-a-demo-environment"></a>デモ環境の配置
 
@@ -44,7 +44,7 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 1. LCS でプロジェクトを開き、**環境** セクションでプラス記号 (**+**) をクリックします。
 2. Azure 環境トポロジを選択し、**デモ** を選択します。
 3. トポロジを選択します。
-    - Finance and Operations で、Finance and Operations 用の最新の Azure Resource Manager (ARM) トポロジを選択します。
+    - 財務と運用で、財務と運用向けの最新の Azure リソース マネージャー (ARM) トポロジを選択します。
     - コマースで、**Dynamics 365 for Commerce - デモ** を選択します。
 4. **環境の配置** ダイアログ ボックスに、環境の名前を入力します。 この名前は Azure サブスクリプションで一意である必要があります。 環境を簡単に識別できるようにするには、ユーザー名とトポロジを使用して略語を作成することを検討してください。
 5. 仮想マシン (VM) のサイズを選択します。 財務と運用のワークロードには、**Ev3 シリーズ サイズ** を使用する必要があります。 **Ev3** をお勧めします。 配賦に失敗した場合は、[Azure のトラブルシューティング ガイド](/azure/virtual-machines/troubleshooting/allocation-failure)を参照してください。
@@ -66,7 +66,7 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 
 2. 右にスクロールし、**環境の詳細** ウィンドウの **クラウド サービス** で、適切なリンクをクリックします。
 
-      - **Finance and Operations にログオン**
+      - **財務と運用にログオン**
       - **コマースにログオン**
 
 

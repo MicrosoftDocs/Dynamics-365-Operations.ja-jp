@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408ec0f17726f4860a2e80e77bbdb09f8f98abf3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab1a5c691b89890f8475ab7f255f600b83d38841
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885493"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103562"
 ---
 # <a name="use-the-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) の使用
 

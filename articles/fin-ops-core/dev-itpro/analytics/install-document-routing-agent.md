@@ -6,21 +6,22 @@ ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 98663
-ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31c58f52af7e4db51874eb50501001e0d1df1fae
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.custom:
+- "98663"
+ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
+ms.search.form: SysCorpNetPrinterList
+ms.openlocfilehash: 27e0d8f3623a27900ffd56114a80c05d5ef3522c
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033705"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206527"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
@@ -72,7 +73,7 @@ ms.locfileid: "9033705"
 4. 次の設定を追加します。
 
     - **アプリケーション ID** - アプリケーション固有の ID で、自動的に入力されます。
-    - **財務と運用 URL**- アプリケーションのベース URL です。
+    - **財務と運用 URL** - アプリケーションのベース URL です。
     - **Azure AD テナント** – Azure AD のドメイン名。
 
 5. **OK** をクリックします。
@@ -140,7 +141,7 @@ ms.locfileid: "9033705"
 
 いいえ、この時点ではありません。 Azure の機能には、Microsoft Windows Server 2012 R2 および Microsoft Windows Server 2016 でのみ使用可能ないくつかの依存関係があります。
 
-### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operations-apps-security-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、財務と運用アプリ セキュリティ グループの一部である必要がありますか。
+### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operations-apps-security-group"></a>Document Routing Agent をインストールするユーザーは、財務と運用アプリ セキュリティ グループの一部である必要がありますか。
 
 はい。 エージェントのインストール リンクにアクセスするには、ユーザーは **ドキュメント ルート指定クライアント** のセキュリティ ロールの一部でなければなりません。
 
@@ -154,3 +155,4 @@ ms.locfileid: "9033705"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

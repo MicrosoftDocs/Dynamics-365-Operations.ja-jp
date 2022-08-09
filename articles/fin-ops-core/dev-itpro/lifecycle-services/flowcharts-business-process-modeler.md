@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: bd589622b315868bc440c5cb29f687915eaa684a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f6df9f806eeae6405a422219f7f8b0e2d5f0b4e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866451"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103664"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
@@ -44,9 +44,9 @@ Activities that can appear in flowcharts are described in the following table.
 | Script                    | Action performed by a script.                                                                                                                                    |
 | Loop                      | Action performed repetitively.                                                                                                                                   |
 | Service                   | Action performed by a service.                                                                                                                                   |
-| Manual                    | Step performed outside of a Finance and Operations app.                                                                                                                               |
-| Receive                   | Information received from outside of a Finance and Operations app without using a service or script.                                                                                  |
-| Send                      | Information sent outside of a Finance and Operations app without using a service or script.                                                                                           |
+| Manual                    | Step performed outside of a finance and operations app.                                                                                                                               |
+| Receive                   | Information received from outside of a finance and operations app without using a service or script.                                                                                  |
+| Send                      | Information sent outside of a finance and operations app without using a service or script.                                                                                           |
 | User                      | Action performed by a user.                                                                                                                                      |
 | Collapsed                 | A sub-process that is not shown in the diagram. Collapsed processes cannot be expanded.                                                                          |
 | Arrow                     | Indicates direction of flow between process steps.                                                                                                               |

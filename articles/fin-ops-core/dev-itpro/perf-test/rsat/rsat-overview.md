@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ae8e62ad44d9c01a5d0c8696a2f9e2728f34b5e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 59ab92b1a1f60f30585943792015c4cd8cf46abf
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851904"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103106"
 ---
 # <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
 
@@ -51,25 +51,25 @@ RSATは、テストの実行、報告、および調査のために Microsoft Az
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4uM5U]
 
-[タスク レコーダーを使用して、Regression Suite Automation Tool (RSAT) のテスト ケースを作成する方法](https://youtu.be/bBr4BXAxTNI) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+[タスク レコーダーを使用して、Regression Suite Automation Tool (RSAT) のテスト ケースを作成する方法](https://youtu.be/bBr4BXAxTNI)ビデオ (上記参照) は、YouTube で入手可能な[財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
 
 ### <a name="create-a-test-plan-in-azure-devops-to-use-with-rsat"></a>Azure DevOps でテスト プランを作成し、RSAT で使用する
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx0I]
 
-[Azure DevOps でテスト プランを作成し、Regression Suite Automation Tool (RSAT) で使用する方法](https://youtu.be/3jIuBleAnQk) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+[Azure DevOps でテスト プランを作成し、Regression Suite Automation Tool (RSAT) で使用する方法](https://youtu.be/3jIuBleAnQk)ビデオ (上記参照) は、YouTube で入手可能な[財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
 
 ### <a name="how-to-use-rsat"></a>RSAT の使用方法
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
 
-[Regression Suite Automation Tool (RSAT) の使用方法](https://youtu.be/uhN9JItzGAk) ビデオ (上記参照) は、YouTube で入手可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+[Regression Suite Automation Tool (RSAT) の使用方法](https://youtu.be/uhN9JItzGAk)ビデオ (上記参照) は、YouTube で入手可能な[財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
 
 ### <a name="the-improved-excel-experience-in-rsat-20"></a>RSAT 2.0 での Excel エクスペリエンスの向上
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
 
-[RSAT 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg) ビデオ (上記参照) は、YouTube で試聴できる [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+[RSAT 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg)ビデオ (上記参照) は、YouTube で試聴できる[財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
 
 ## <a name="end-to-end-flow"></a>エンド ツー エンド フロー
 
@@ -101,7 +101,7 @@ RSAT は、開発ライフサイクルの最後に通常行われるビジネス
 
 ### <a name="cloud-pos"></a>クラウド POS
 
-Finance and Operations タスク レコーダーを使用して記録されたプロセスのテストに加えて、RSAT は Dynamics 365 Commerce の Cloud POS プロセスのテストもサポートしています。 RSAT と Cloud POS の詳細については、[Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](../../../../commerce/dev-itpro/pos-rsat.md) を参照してください。
+財務と運用タスク レコーダーを使用して記録されたプロセスのテストに加えて、RSAT は Dynamics 365 Commerce の Cloud POS プロセスのテストもサポートしています。 RSAT と Cloud POS の詳細については、[Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](../../../../commerce/dev-itpro/pos-rsat.md) を参照してください。
 
 ### <a name="warehouse-mobile-app"></a>Warehouse mobile app
 
@@ -149,7 +149,7 @@ RSAT 2.1 により、**クイック リンク** タブおよび DevOps のテス
 
 ### <a name="useful-links"></a>役に立つリンク
 
-**リンク** タブで、新しい機能が提供されます。 **リンク** タブを選択すると、Finance and Operations 環境にすばやく移動するか、最近のテスト実行、最後のテスト実行、および現在のテスト計画を表示するのに役立つ Azure DevOps ページに移動することができます。 RSAT ドキュメント ページへのリンクもあります。
+**リンク** タブで、新しい機能が提供されます。 **リンク** タブを選択すると、財務と運用環境にすばやく移動するか、最近のテスト実行、最後のテスト実行、および現在のテスト計画を表示するのに役立つ Azure DevOps ページに移動することができます。 RSAT ドキュメント ページへのリンクもあります。
 
 ![UI リンク タブ。](media/UI-links-tab.png)
 
@@ -167,3 +167,4 @@ RSAT 2.1 により、**クイック リンク** タブおよび DevOps のテス
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

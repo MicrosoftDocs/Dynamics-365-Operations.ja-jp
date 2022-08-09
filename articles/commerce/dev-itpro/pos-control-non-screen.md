@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 5950a912e75164580cb6e048a95c059d8c678ede
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0950e02b8d8794918dca1b604a1bcb478190b7e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874944"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067508"
 ---
 # <a name="add-custom-controls-to-non-screen-designer-based-pos-views"></a>非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
 
@@ -26,7 +26,7 @@ ms.locfileid: "8874944"
 
 カスタム コントロールを追加することにより、Dynamics 365 Commerce POS ビューに表示される情報を拡張することができます。 カスタム コントロールを使用すると、POS の既存のビューにカスタム情報を追加できます。 カスタム コントロールは、POS 拡張フレームワークを使用して実装できます。 現時点では、実行時にカスタム コントロールを目的の場所に配置することはできません。POS は POS を固定位置にロードします。
 
-この記事では Dynamics 365 for Finance and Operations、Dynamics 365 Retail プラットフォーム更新 8、および Retail アプリケーション更新プログラム 4 修正プログラムが適用されます。 
+この記事では Dynamics 365 Finance、Dynamics 365 Retail プラットフォーム更新プログラム 8、および Retail アプリケーション更新プログラム 4 修正プログラムに適用されます。 
 
 次のテーブルに、カスタム コントロールをサポートする非画面レイアウト デザイナーベース ビューを示します。
 

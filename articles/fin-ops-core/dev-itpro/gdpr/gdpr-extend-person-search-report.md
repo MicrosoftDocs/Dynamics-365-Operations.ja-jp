@@ -1,6 +1,6 @@
 ---
 title: 個人検索レポートを拡張
-description: この記事では、財務と運用の担当者検索レポートを拡張するためのプロセスを説明します。
+description: この記事では、財務と運用の個人検索レポートを拡張するためのプロセスを説明します。
 author: rschloma
 ms.date: 01/24/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d44dc6fd91b7b2611b3439ef2635ec38d43df673
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bcc0c985371796d18b2dc2e3e0a6ada5af2853be
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866724"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066475"
 ---
-# <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
+# <a name="extend-the-person-search-report"></a>個人検索レポートを拡張
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations アプリの担当者検索レポートは、1 人のエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。 担当者検索レポートは、Finance and Operations のデータを検索し、生成される識別子のセットを作成します。 それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。 個人検索レポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) の記事を参照してください。
+財務と運用アプリの個人検索レポートは、1 人のエンティティのコレクションを管理するように設計されたインテリジェント検索プロセッサによってサポートされています。 個人検索レポートは、財務と運用のデータを検索し、生成される識別子のセットを作成します。 それぞれの結果は、検索カテゴリ (たとえば、顧客) および関連するテーブルの結果レコードを参照します。 個人検索レポートの使用の詳細については、[個人検索レポート](gdpr-person-search-report.md) の記事を参照してください。
 
 > [!NOTE]
 > 個人検索では、Dynamics 365 Finance、Supply Chain Management、コマース、および人事管理に対して使用できます。 Microsoft Dynamics AX 2012 では今のところ担当者検索レポートは使用できません。

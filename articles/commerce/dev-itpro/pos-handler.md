@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: fcc59eb249c7decd943d7ab686ece69a2075d2fd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df00c7ec306754ba06b60458bfdfa2d966d96349
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876991"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070808"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 
@@ -34,7 +34,7 @@ ms.locfileid: "8876991"
 
 ## <a name="pos-request-handler-logic-exposed-for-overriding"></a>オーバーライドするために公開される POS 要求ハンドラー ロジック
 
-このリストは、[Microsoft Dynamics 365 for Finance and Operations - バージョン 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1) に基づきます。
+この一覧は、[Microsoft Dynamics 365 Finance - バージョン 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1) に基づいています。
 
 毎月の更新プログラムのたびに、拡張ポイントが追加されるため、完全な一覧については Retail SDK で Pos.api.d.ts ファイルをチェックしてください。
 

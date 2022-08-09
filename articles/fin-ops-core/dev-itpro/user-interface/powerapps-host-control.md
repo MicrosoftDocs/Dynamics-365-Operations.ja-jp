@@ -1,6 +1,6 @@
 ---
 title: Power Apps ホスト コントロール
-description: Power Apps ホスト コントロールを使用すると、アプリを Power Apps から Finance and Operations アプリの 1 つに埋め込むことができます。
+description: Power Apps ホスト コントロールを使用すると、アプリを Power Apps 財務と運用アプリの 1 つに埋め込むことができます。
 author: TLeforMicrosoft
 ms.date: 04/25/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c80a8ced070e8e785aefed7543cde356796e077
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b054dde4dca09af9f59700d531b759421f1767ca
+ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781258"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114299"
 ---
 # <a name="power-apps-host-control"></a>Power Apps ホスト コントロール
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power Apps では、作成したアプリ、または別の人が作成してユーザーと共有したアプリを使用して組織データを管理できます。 [電話などのモバイル デバイス](https://powerapps.microsoft.com/tutorials/run-app-client/) または [ブラウザー](https://powerapps.microsoft.com/tutorials/run-app-browser/) で実行するアプリ。 Microsoft Visual Studio 開発者エクスペリエンスを使用する開発者は、アプリを Finance and Operations アプリに組み込むこともできます。 Power Apps の詳細については、[https://powerapps.microsoft.com](https://powerapps.microsoft.com/) を参照してください。
+Microsoft Power Apps では、作成したアプリ、または別の人が作成してユーザーと共有したアプリを使用して組織データを管理できます。 [電話などのモバイル デバイス](https://powerapps.microsoft.com/tutorials/run-app-client/) または [ブラウザー](https://powerapps.microsoft.com/tutorials/run-app-browser/) で実行するアプリ。 Visual Studio 開発者エクスペリエンスを使用する開発者は、アプリを 財務と運用アプリに組み込むこともできます。 Power Apps の詳細については、[https://powerapps.microsoft.com](https://powerapps.microsoft.com/) を参照してください。
 
 ## <a name="host-an-app-from-power-apps-on-a-page"></a>ページの Power Apps からアプリをホストする
 

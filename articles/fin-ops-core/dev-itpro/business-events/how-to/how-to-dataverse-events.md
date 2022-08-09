@@ -10,21 +10,21 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-11-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: fbdb565f76d63ba70ba44456a88735048c9fe074
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8493ae6b556a87be341db61dda0539f3f7a441f8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848736"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111520"
 ---
 # <a name="subscribe-to-events-in-dataverse"></a>Dataverse のイベントをサブスクライブする
 
 [!include[banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> 財務と運用アプリのビジネス イベントと Microsoft Dataverse のデータ イベントに登録する前に、Microsoft Power Platform 統合を有効にする必用があります。 財務と運用アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Power Platform 統合の有効化](../../power-platform/enable-power-platform-integration.md)を参照してください。
+> 財務と運用アプリのビジネス イベントと Microsoft Dataverse のデータ イベントに登録する前に、Microsoft Power Platform 統合を有効にする必用があります。 財務と運用アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Power Platform 統合の有効化](../../power-platform/enable-power-platform-integration.md) を参照してください。
 
-Dataverse のイベントでプラグインとソフトウェア開発キット (SDK) の手順を登録することにより、財務と運用アプリのビジネス イベントと Dataverse のデータ イベントをサブスクライブすることができます。 この記事では、Visual Studio の Power Platform Tools の拡張機能を使用して、財務と運用アプリ イベントのプラグインを登録する方法について説明します。 サブスクリプションは、財務と運用アプリのビジネス イベント カタログ内の他のサブスクリプションと共に表示されます。 エンドポイントは、財務と運用アプリのビジネス イベント カタログの他のエンドポイントと同じように動作します。
+Dataverse のイベントでプラグインとソフトウェア開発キット (SDK) のステップを登録することにより、財務と運用アプリのビジネス イベントと Dataverse のデータ イベントをサブスクライブすることができます。 この記事では、Visual Studio の Power Platform Tools の拡張機能を使用して、財務と運用アプリ イベントのプラグインを登録する方法について説明します。 サブスクリプションは、財務と運用アプリのビジネス イベント カタログ内の他のサブスクリプションと共に表示されます。 エンドポイントは、財務と運用アプリのビジネス イベント カタログの他のエンドポイントと同じように動作します。
 
 ## <a name="set-up-your-development-environment"></a>開発環境を設定する
 
@@ -50,7 +50,7 @@ Power Platform Tools の拡張機能をインストールした後、新しい�
 
     1. **配置のタイプ** フィールド グループで、**Office 365** のオプションを選択します。
     2. **使用可能な組織のリストを表示する** チェック ボックスを選択します。
-    3. **ログイン** を選択し、資格情報を入力して、財務と運用アプリ環境にリンクされている Dataverse 環境にサインインします。
+    3. **ログイン** を選択し、資格情報を入力して、財務と運用アプリ環境にリンクされている Dataverse 環境にサイン インします。
     4. 組織のリスト内で、作業する Microsoft Power Platform 環境を選択します。 その後、**ログイン** を選択します。
     5. **次へ** を選択します。
 
@@ -83,7 +83,7 @@ Dataverse アセンブリは署名されている必要があります。 ソリ
 3. **厳密な名前のキー ファイルを選択する** フィールドで、**新規** を選択します。
 4. キーの名前とパスワードを入力し、**OK** を選択します。
 
-## <a name="subscribe-to-a-finance-and-operations-apps-event"></a>財務と運用アプリ イベントの登録
+## <a name="subscribe-to-a-finance-and-operations-apps-event"></a>財務と運用アプリ イベントをサブスクライブする
 
 開発環境の設定が完了したら、コードの記述を開始できます。 プラグインがサブスクライブされている財務と運用アプリのビジネス イベントまたはデータ イベントが発生するときに、Dataverse でビジネス ロジックを実行する C# クラス ライブラリを作成することができます。
 
@@ -93,7 +93,7 @@ Dataverse アセンブリは署名されている必要があります。 ソリ
 
     Power Platform エクスプローラーに、開発環境の設定中に選択した Dataverse 環境から取得されたコンポーネントのリストが表示されます。 これらのコンポーネントには、テーブル、選択肢、およびイベント カタログが含まれます。
 
-2. **イベント カタログ** ノードで、**財務と運用** を展開します。
+2. **イベント カタログ** ノードの下に、**財務と運用** を展開します。
 
     **財務と運用** ノードの下に、選択した Microsoft Power Platform 環境の **Dynamics 365 ERP 仮想エンティティ** ソリューションで使用可能なカタログの一覧が表示されます。 各カタログの下で、環境内のカテゴリに対して生成された仮想エンティティのリスト、および各仮想エンティティについて使用可能なデータ イベント (**作成後**、**更新後**、および **削除後**) が表示されます。 
 
@@ -141,3 +141,4 @@ Dataverse アセンブリは署名されている必要があります。 ソリ
 2. **オプション** ダイアログ ボックスの **Power Platform Tools** ノードの下にある **一般** を選択します。
 3. **詳細なログ データを表示する** および **(診断) Dataverse の詳細な通信ログ** を選択します。
 4.  **OK** を選択します。
+

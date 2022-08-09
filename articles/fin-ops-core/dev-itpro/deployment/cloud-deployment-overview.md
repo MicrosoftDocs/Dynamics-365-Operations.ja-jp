@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: a8091cc2e4d9ef9500b375924218de11f8a4be77
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6725346d1c9b11bc5c046340acac642efb74bbb4
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867465"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103852"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
@@ -41,7 +41,7 @@ Microsoft は、すべての顧客がすべてのクラウド配置に対して�
 
 プロジェクトのいくつかのフェーズでは、すべての環境を一度に実行することができます。 既定のライセンスおよび使用可能な層の詳細については、[Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
-クラウドがホストする用語、または Microsoft サブスクリプションがあることがわかります。 *クラウドでホストされているサブスクリプション* では、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションを持ち込み、財務と運用アプリを配置します。 顧客やパートナーは、Azure 価格リストに基づいて Azure サブスクリプションに展開されるリソースに対して支払います。 *Microsoft サブスクリプション* とは、顧客が Finance and Operations ライセンスを購入し、Microsoft が管理する Azure サブスクリプションに環境を配置できることを意味します。これにより、顧客には Azure からの別個の請求はありません。 
+クラウドがホストする用語、または Microsoft サブスクリプションがあることがわかります。 *クラウドでホストされているサブスクリプション* とは、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションを持ち込み、財務と運用アプリを配置できるという意味です。 顧客やパートナーは、Azure 価格リストに基づいて Azure サブスクリプションに展開されるリソースに対して支払います。 *Microsoft サブスクリプション* とは、顧客が財務と運用ライセンスを購入し、Microsoft が管理する Azure サブスクリプションに環境を配置できることを意味します。これにより、顧客には Azure からの別個の請求はありません。 
 
 各 エンタープライズには、既定で 2 つの環境が含まれています。
 - ユーザー受け入れテスト (UAT) に使用する、階層 2 サンド ボックス (マルチ ボックス環境)。
@@ -82,9 +82,9 @@ Lifecycle Services における環境管理者またはプロジェクト所有�
 
 
 ## <a name="security-and-compliance"></a>セキュリティとコンプライアンス
-Finance and Operations は、PA-DSS 3.1 認定を受けています。これは、コンポーネント間のすべての通信が何もしなくても保護されることを意味します。 
+財務と運用は、PA-DSS 3.1 認定を受けています。これは、コンポーネント間のすべての通信が既定で保護されることを意味します。 
 
-Microsoft Azure のすべての Finance and Operations フロント エンド仮想マシンは、TLS 1.2 のみを受け入れるように配置時に構成されます。 
+Microsoft Azure のすべての財務と運用フロント エンド仮想マシンは、TLS 1.2 のみを受け入れるように配置時に構成されます。 
 
 > [!IMPORTANT]
 > 購入したアドオン サンドボックスを含む Microsoft 管理対象のサンドボックスに管理者権限を持つお客様は、次のガイドラインに従わなければなりません。
@@ -92,7 +92,7 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > - これらの環境の管理者パスワードは、変更しないでください。 変更済管理者パスワードをもつ環境では、Microsoft がフラグを設定します。 Microsoft は、管理者パスワードをリセットする権利を保有し、実際にリセットします。  
 > - Microsoft 管理対象 VM に新しいユーザー アカウントを追加することは、許可されていません。 Microsoft は、通知することなく新しく追加されたユーザー アカウントを削除する権利を保有し、実際に削除します。
 >
-> 現時点で、Finance and Operations は、FedRAMP ATO の対象外です。 財務と運用を米国でプロビジョニングする場合、残りのすべての顧客データは米国のデータ センターで保管されます。 Finance and Operations では、他の Dynamics 365 US Government または Microsoft 365 GCC コンプライアンス属性 (たとえば、米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) はサポートされません。 
+> 現時点で、財務と運用は FedRAMP ATO の対象外です。 財務と運用を米国でプロビジョニングする場合、残りのすべての顧客データは米国のデータ センターで保管されます。 財務と運用は、他の Dynamics 365 US Government または Microsoft 365 GCC コンプライアンス属性 (たとえば、米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) はサポートしません。 
 
 ## <a name="remote-desktop"></a>リモート デスクトップ
 
@@ -125,8 +125,8 @@ Windows Remoting (WinRM) はすべての環境で無効です。 Azure ポータ
 > [!WARNING]
 > WinRM を有効にするための例外は、Microsoft が管理する環境では許可されません。 
 
-## <a name="availability"></a>在庫状態
-財務と運用アプリの保証稼働時間は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 詳細については、 [財務と運用アプリまたは Lifecycle Services (LCS) のサポート情報ー](../lifecycle-services/lcs-support.md) を参照してください。
+## <a name="availability"></a>使用可能性
+財務と運用アプリの稼働時間保証は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 詳細については、[財務と運用アプリまたは Lifecycle Services (LCS) のサポート情報](../lifecycle-services/lcs-support.md)を参照してください。
 
 ### <a name="high-availability-features"></a>高可用性機能
 サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 単一障害点イベントを防止するために、Azure 使用可能性セットが使用されます。 Azure の可用性セットの詳細については、[可用性ゾーンを使用してデータセンター レベルの障害から保護する](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures)を参照してください。
@@ -137,11 +137,11 @@ Microsoft 管理対象環境またはセルフサービスの階層 2 ~ 5 環境
 
 ### <a name="disaster-recovery-features"></a>障害復旧の機能
 運用環境は、以下のものを含む Azure 障害復旧サポートで構成されます。
-- Azure SQL のアクティブ geo レプリケーションは、運用環境の Finance and Operations データベースに対して構成されています。 SQL レプリケーションの詳細については、[geo レプリケーションとフェールオーバー グループの比較](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups) を参照してください。 
+- Azure SQL のアクティブ geo レプリケーションは、運用環境の財務と運用データベースに対して構成されています。 SQL レプリケーションの詳細については、[geo レプリケーションとフェールオーバー グループの比較](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups) を参照してください。 
 - 他の Azure リージョンでの Azure blob storage (ドキュメントの添付ファイルを含む) のジオ重複コピー。 詳細については、[Azure 冗長性](/azure/storage/common/storage-redundancy) を参照してください。
 - Azure SQL および Azure ブログ記憶域レプリケーションの同じセカンダリ地域。  
 
-プライマリのデータ格納場所のみレプリケーションがサポートされます。 Financial Reporting サービスおよびエンティティ格納データベースは、プライマリ データベースから変換されたデータを使用し、リカバリ サイトの設定および Finance and Operations サービスの開始後に生成する必要があります。 
+プライマリのデータ格納場所のみレプリケーションがサポートされます。 財務報告サービスおよびエンティティ格納データベースは、プライマリ データベースから変換されたデータを使用し、リカバリ サイトの設定および財務と運用サービスの開始後に生成する必要があります。 
 
 ## <a name="service-availability-in-azure-regions"></a>Azure リージョンにおけるサービスの可用性
 Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ センターのサブセットに財務と運用アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 財務と運用アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[財務と運用アプリのサービスの説明](../../fin-ops/get-started/service-description.md)を参照してください。
@@ -156,7 +156,7 @@ Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ �
 ### <a name="upcoming-changes-to-region-availability"></a>利用可能なリージョンに関する将来の変更
 Dynamics 365 ソリューションは、複数のサービスで構成されています。 Dynamics 365 アプリケーション、Power Platform および Azure サービスがそれぞれ依存している状況からしても、サービスに関して必要となるマトリックスは非常に大きくなり、拡大しています。 当社は必要なサービスのポートフォリオ全体を確実に利用していただけるようにするため、世界中のデータセンター リージョンのサブセットを選択する戦略を固めてきました。 当社の計画は、ソリューションにおけるコンポーネント サービス間の遅延を最小限に抑えることを目的としており、このため、指定された各データセンターにおいて、利用可能なサービスのポートフォリオ全体を用意することに重点をおいています。
 
-加えて、Finance and Operations アーキテクチャでは、柔軟性と信頼性を高め、よりシームレスな保守が行えるように、セルフサービスで構築するための機能拡張が行われています。 より少数のデータセンターで、セルフサービスでの展開をより十分に活用していただくことにより、お客様は材料効率を高めることができます。 この移行には、Azure リージョンのサブセットを選択することによる利点もあります。 その趣旨で、財務と運用アプリの利用可能な地域は、すべての新しいプロジェクトに対して、<strong>北米の米国東部、米国西部、および米国中部に制限される</strong>ことになります。 最新のサポート対象地域の一覧については、 次の記事を参照してください:
+加えて、財務と運用アーキテクチャでは、柔軟性と信頼性を高め、よりシームレスな保守が行えるように、セルフサービスで構築するための機能拡張が行われています。 より少数のデータセンターで、セルフサービスでの展開をより十分に活用していただくことにより、お客様は材料効率を高めることができます。 この移行には、Azure リージョンのサブセットを選択することによる利点もあります。 その趣旨で、財務と運用アプリの利用可能な地域は、すべての新しいプロジェクトに対して、<strong>北米の米国東部、米国西部、および米国中部に制限される</strong>ことになります。 最新のサポート対象地域の一覧については、 次の記事を参照してください:
 
 - [ローカル地域における Dynamics 365 Finance、Supply Chain Management、および Commerce](deployment-options-geo.md)
 - [US Government Community Cloud (GCC) の Dynamics 365 Finance、Supply Chain Management、Commerce](us-gcc-deployment.md)
@@ -211,7 +211,7 @@ Microsoft が管理する階層 1 から階層 5 のサンドボックス環境�
 環境へのアクセスを回復するには、接続先のコンピュータの IP アドレスを追加する必要があります。 これを行うには、この記事前半の[リモート デスクトップ](#remote-desktop) セクションの手順を実行します。
 
 ### <a name="when-will-the-availability-of-reduced-regions-go-into-effect-for-new-onboarding"></a>削減された領域の可用性は、いつ新しいオンボードに有効になりますか?
-2020 年 8 月 1 日から、Finance and Operations の新しいプロジェクトは次の地域にオンボードされます。
+2020 年 8 月 1 日から、財務と運用の新しいプロジェクトは次の地域にオンボードされます:
 
 - 米国東部
 - 米国西部
@@ -235,3 +235,4 @@ Microsoft が管理する階層 1 から階層 5 のサンドボックス環境�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

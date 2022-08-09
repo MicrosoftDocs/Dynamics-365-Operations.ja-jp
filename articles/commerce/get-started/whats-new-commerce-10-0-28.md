@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-05-31
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: afd702244a86fbe5572c403e8819f17f8a20c642
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bea9ca69e2ceeac71456387f11bed3565f9afaf9
+ms.sourcegitcommit: 84e9946509c34a67d88c9dd9cc934d7d245ddb27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869445"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "9093851"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10028-july-2022"></a>Dynamics 365 Commerce 10.0.28 (2022 年 7 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-この記事では、Microsoft Dynamics 365 Commerce 10.0.28 の新機能または変更された機能を示します。 このバージョンのビルド番号は 10.0.1227 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Commerce 10.0.28 の新機能または変更された機能を示します。 このバージョンのビルド番号は 10.0.1264 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 5 月
 - **リリースの一般提供 (手動更新):** 2022 年 7 月
@@ -69,3 +69,4 @@ Dynamics 365 Finance 10.0.28 には、プラットフォーム更新プログラ
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.custom: 266674
-ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 0d97027b80901df0d44baa2ae54a498546ddf978
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "266674"
+ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
+ms.openlocfilehash: ba8651314e611c73847577445726de0c99fced4d
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858697"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206116"
 ---
 # <a name="extend-report-menu-items-to-redirect-user-navigation"></a>レポート メニューの項目を拡張してユーザーナビゲーションをリダイレクトします。
 

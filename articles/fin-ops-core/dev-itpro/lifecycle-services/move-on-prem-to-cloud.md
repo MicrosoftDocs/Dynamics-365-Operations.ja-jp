@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: marwalke
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dc59d549596a5af42be1e32bb5dc60954405cc3a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c456de412d7cc05754eaaeebd47890cb52a2986c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866407"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103656"
 ---
 # <a name="move-lcs-implementation-projects-from-on-premises-to-the-cloud"></a>LCS 実装プロジェクトをオンプレミスからクラウドに移動する
 
@@ -186,3 +186,4 @@ Finance + Operations (オンプレミス) 環境のドキュメント処理添�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

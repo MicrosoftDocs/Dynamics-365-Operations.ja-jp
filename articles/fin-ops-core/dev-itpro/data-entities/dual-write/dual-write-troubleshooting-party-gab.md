@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2136952ba6e4eeb938fc24a4be426a5b4b52e49
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f2415a1d70a5b86931afc1d20635157fccf9f90
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892878"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111317"
 ---
 # <a name="party-and-global-address-book-troubleshooting"></a>当事者およびグローバル アドレス帳のトラブルシューティング
 
@@ -87,7 +87,7 @@ Dataverse の **msdyn_company** テーブルで定義された複数のキーが
 
 ## <a name="error-when-you-try-to-create-a-new-contact-from-the-view-contact-form"></a>連絡先の表示フォームから新しい連絡先を作成しようとする場合のエラー
 
-財務と運用アプリの **連絡先の表示** フォームから新しい連絡先を作成しようとする場合、次のエラー メッセージが表示される場合があります。
+財務と運用アプリの **連絡先の表示** フォームから新しい契約を作成しようとする場合、次のエラー メッセージが表示される場合があります。
 
 *エンティティ msdyn_contactforparties にデータを書き込めません。{000006057} 値を使用して msdyn_parties を参照できません。{000020} 値を使用して cdm_workers を参照できません。*
 
@@ -121,8 +121,9 @@ Dataverse の **msdyn_company** テーブルで定義された複数のキーが
 
 当事者の郵便番号と当事者の電子住所の初期同期を実行しようとする場合に、"**当事者** 番号が見つかりませんでした" などのエラーが表示される場合があります。
 
-**個人** と **組織** タイプの当事者のみをフィルタ処理するため、財務と運用アプリで **DirPartyCDSEntity** エンティティに範囲が追加されています。 その結果、**CDS 関係者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先 V3 (msdyn_partyelectronicaddresses)** で最初の同期を実行するとき、**当事者** 番号が Dataverse に見つからないなどのエラーが表示される場合があります。
+**個人** と **組織** タイプの当事者のみをフィルター処理するため、財務と運用アプリで **DirPartyCDSEntity** エンティティに範囲が追加されています。 その結果、**CDS 関係者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先 V3 (msdyn_partyelectronicaddresses)** で最初の同期を実行するとき、**当事者** 番号が Dataverse に見つからないなどのエラーが表示される場合があります。
 
 すべてのタイプの関係者が Dataverse に正常に同期するために、財務と運用アプリ エンティティで当事者タイプの範囲を削除しています。 今後の更新については、この記事に戻って確認してください。 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

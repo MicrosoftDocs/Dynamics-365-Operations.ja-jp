@@ -7,19 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.custom: 69191
-ms.assetid: 57aaba22-4068-4c3f-9428-7fcd99632295
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb766d3ab7d3566a91451c25c3504ff4a015a797
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "69191"
+ms.assetid: 57aaba22-4068-4c3f-9428-7fcd99632295
+ms.openlocfilehash: b87910e5c01717f64db7e44f4021b825e100b0d2
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890229"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205879"
 ---
 # <a name="document-reporting-services"></a>ドキュメント レポート サービス
 

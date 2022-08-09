@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 753d51f9f0def688962f24ab88347e1f95196f2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 143bcf9014ea87e4c29c54af2076af3b35653aca
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858607"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103558"
 ---
 # <a name="troubleshoot-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool のトラブルシューティング
 
@@ -54,7 +54,7 @@ RSAT のインストール フォルダー (たとえば、**C:\\Program Files (
 + 認証証明書は、RSAT がインストールされているのと同じコンピューター上の管理者によって作成およびインストールされる必要があります。 管理者によって作成されていない場合は、テスト ケースを実行しようとすると次のエラー メッセージが表示されます。
 
 ```Plaintext
-Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.
+Cannot access finance and operations environment. Verify your settings and make sure the environment is available.
 ```
 
 + 同じコンピューターで以前のバージョンの RSAT を使用した場合は、新しいバージョンをインストールする前に、そのバージョンを閉じてアンインストールしてください。

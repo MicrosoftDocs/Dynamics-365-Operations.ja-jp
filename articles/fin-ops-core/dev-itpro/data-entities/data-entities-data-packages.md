@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11f1b78ce1d7f75d1e45d2a1d34761c7c4aa79b6
-ms.sourcegitcommit: 0c23c361c9aa3918e4fc75e5eb69cd368a9f2e73
+ms.openlocfilehash: 46c9145382256422701eb4ff7d1a839bca18d2d5
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2022
-ms.locfileid: "9030275"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108840"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
@@ -307,3 +307,4 @@ ms.locfileid: "9030275"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

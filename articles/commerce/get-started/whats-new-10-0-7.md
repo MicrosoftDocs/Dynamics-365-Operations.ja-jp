@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 17e2f2aaf5e1adf16ae40410815755104a9af979
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bb3e3dd5b1df58ada19920a3157c9cebca72d4c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876967"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069964"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail-version-1007"></a>Dynamics 365 Retail バージョン 10.0.7 の新機能と変更点
 
@@ -64,7 +64,7 @@ Microsoft Dynamics 365 Retail 10.0.7 には、プラットフォーム更新プ�
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) の記事は Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
+[削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) の記事では、Dynamics 365 Finance の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

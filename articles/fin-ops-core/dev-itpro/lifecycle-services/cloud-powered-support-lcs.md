@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a72ba08ecc79de66f33a9d1ec21bfb667a74f011
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 606d0f20147ecb89bc4d4b18ca21bb96852e0e2e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866481"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103461"
 ---
-# <a name="manage-support-experiences-for-finance-and-operations-apps"></a>Finance and Operations アプリのサポート エクスペリエンスを管理する
+# <a name="manage-support-experiences-for-finance-and-operations-apps"></a>財務と運用アプリのサポート エクスペリエンスの管理
 [!include [banner](../includes/banner.md)]
 
 
@@ -138,3 +138,4 @@ PartnerSourceビジネス センター アカウントが見つからない場�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

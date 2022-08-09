@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05302f14e171a41416d6cf6218bb59dae68c876f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fa6d211f0c2ff1f582d47696b67cd584ff58c942
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890081"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111874"
 ---
 # <a name="edit-a-legal-entity-after-dual-write-setup"></a>二重書き込み設定後に法人を編集する 
 

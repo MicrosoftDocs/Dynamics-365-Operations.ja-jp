@@ -1,24 +1,23 @@
 ---
 title: Commerce Scale Unit の自動更新 (クラウド)
 description: この記事では、Commerce Scale Unit (クラウド) の自動更新について説明します。
-author: AamirAllaq
-manager: tonyafehr
+author: jashanno
 ms.date: 05/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 31a8eb882ce82198feed864cd61ce509527c63b1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 74f8686066f5284a9d586b9da29e2385b6795c3b
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867527"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206218"
 ---
 # <a name="auto-update-for-commerce-scale-unit-cloud"></a>Commerce Scale Unit の自動更新 (クラウド)
 [!include[banner](../includes/banner.md)]

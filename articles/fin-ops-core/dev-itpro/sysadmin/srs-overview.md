@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 48919678f8661c714e2dea054813b8f74b7aeba7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3af18d24fbca160559029815f0663bdf7b6e5800
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902598"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109312"
 ---
 # <a name="cross-company-data-sharing-overview"></a>会社間データ共有の概要
 
 [!include [banner](../includes/banner.md)]
 
-会社間データ共有の概念により、財務と運用配置内で、会社固有のマスター、参照、および設定データを会社間で共有できます。 
+会社間データ共有の概念により、財務と運用の展開内で、会社固有のマスター、参照、および設定データを会社間で共有できます。 
 
 2 つのデータ共有概念を使用できます。 
 + 重複レコード共有 (DRS) は、ポリシー内の任意の会社のレコードの作成、更新、または削除が、ポリシー内のすべての会社間でコピー/複製されるという概念です。 ポリシーで共有するように選択されている場合は、フィールドの更新も複製されます。 DRS は、利用可能になった最初の共有タイプでした。 
@@ -137,3 +137,4 @@ DRS の共有ロジックは、レコードの固有キー (顧客のアカウ�
 +   子会社テーブルの変更追跡はサポートされていません。 たとえば、これは、データ管理では完全なエクスポートを使用する必要があることを意味します。
 +   共有は、小売チャンネル データベースと組み合わせて使用することはできません。
 +   共有はカーネル ロジックに基づいています。 これは、子会社の SQL に実際のレコードが存在しないことを意味します。
+

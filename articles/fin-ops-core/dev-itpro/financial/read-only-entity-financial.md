@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: e92a4dfd3908407271dce3778f66db45a6965167
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4357f055a5b6cc07ac1d200c2b67e6baa8499cef
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866745"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065784"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]
@@ -86,7 +86,7 @@ VendInvoiceTrans の場合のように、ウィザードは自然キーを持た
 ## <a name="expose-financial-dimensions-as-fields"></a>財務分析コードをフィールドとして公開
 次の重要なステップは、財務分析コードをエンティティ上の異なるフィールドとして公開することです。 シナリオは転記済トランザクションの上に構築されるため、フィールドを DimensionCombinationentity エンティティに追加する必要があります。 拡張機能による方法を使用して復元力のある方法で調整を行います。これにより、コード ベースを新しいバージョンに今後アップグレードするとき、必要なメンテナンスは最小限になります。
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-version-1611"></a>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition バージョン 1611
+### <a name="dynamics-365-finance-and-operations-enterprise-edition-version-1611"></a>Dynamics 365 財務と運用、Enterprise Edition バージョン 1611
 
 バージョン 1611 以降については、Microsoft Visual Studio (**Dynamics 365** &gt; **アドイン** &gt; **Odata の財務分析コードの追加**) で利用できるウィザードを使用する必要があります。 手順については、[Excel テンプレートに分析コードを追加する](dimensions-overview.md) を参照してください。
 
@@ -173,3 +173,4 @@ AccountingDistributionCurrent と DimensionCombinationentity エンティティ�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

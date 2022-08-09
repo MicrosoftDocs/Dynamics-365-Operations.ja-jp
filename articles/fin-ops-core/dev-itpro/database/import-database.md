@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 882131d622221a6391cfcbe2dd9ad07794f5ab10
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45d7f7a976498cace05942940c372d0c4bfe87e5
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867530"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103492"
 ---
 # <a name="import-a-database"></a>データベースのインポート
 
@@ -63,3 +63,4 @@ web.config ファイルを変更するために環境に管理者ユーザー �
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

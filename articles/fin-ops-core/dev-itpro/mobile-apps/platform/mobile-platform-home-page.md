@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: f90c76c1677becde388882302f1acee7fe41eb0e
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 5ec9e3dc673d2674b9550ff8d2de180e2948375a
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811450"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103251"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 
@@ -90,14 +90,14 @@ ms.locfileid: "8811450"
 - Azure でホストされた開発マシン (モバイル デバイスで指定できます)
 
 #### <a name="steps-to-debug-the-client-side"></a>クライアント側をデバッグする手順
-1. Azure でホストされた開発マシンで公開されている Web クライアントで、Finance and Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、 [モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
+1. Azure でホストされた開発マシンで公開されている Web クライアントで、財務と運用アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、 [モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
 
-2. Android デバイスで Finance and Operations アプリの Android デバッグ apk をインストールします。
+2. Android デバイスで財務と運用アプリの Android デバッグ apk をインストールします:
     - 1 回のみ、apk ファイルのインストールを許可 -  **メニュー** > **設定** > **セキュリティ** の順に移動し、電話が Google Play ストア以外のソースからアプリをインストールするのを許可するよう **未知のソース** を確認します。
     - 財務と運用アプリのアンインストール - 財務と運用アプリの以前のバージョンがアンインストールされていることを確認します。
     - apk ファイルのダウンロード - デバイスのブラウザーから、最新の [GitHub 上の財務と運用 Android デバッグ apk](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) に移動し、**ダウンロード** (または[ファイルへの直接リンク](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)) をクリックします。
-    - Finance and Operations apk ファイルをインストール - apk ファイル経由で Finance and Operations アプリのインストールを確認します。
-    - デバイスのデバッグ Finance and Operations アプリケーションを実行し、サインインします。
+    - 財務と運用 apk ファイルをインストール - apk ファイル経由で財務と運用アプリのインストールを確認します。
+    - デバイスのデバッグ財務と運用アプリを実行し、サインインします。
 
 3. デバッグ マシンからデバイスに接続します。
 
@@ -127,7 +127,7 @@ ms.locfileid: "8811450"
 - Azure でホストされた開発マシン (モバイル デバイスで指定できます)
 
 #### <a name="steps-to-debug-the-server-side"></a>サーバー側をデバッグする手順
-1. Azure でホストされた開発マシンで公開されている Web クライアントで、Finance and Operations アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、 [モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
+1. Azure でホストされた開発マシンで公開されている Web クライアントで、財務と運用アプリ用に公開されたモバイル ワークスペースがあることを確認します。 モバイル ワークスペースを公開する方法については、 [モバイル ワークスペースの公開](../publish-mobile-workspace.md) を参照してください。
 
 2. アプリをデバイスで開いて、Azure でホストされた開発マシンを参照し、サインインします。
 
@@ -152,16 +152,16 @@ ms.locfileid: "8811450"
 
 ### <a name="the-mobile-client-app-is-not-working-on-particular-devices"></a>モバイル クライアント アプリ が 特定のデバイスで動作しない
 アプリと関連付けられているキャッシュが動作不良の原因となる場合があるため、これらを削除してください。 ただし、アプリケーションに関連付けられているデータをクリアする唯一の方法は、アプリケーションをアンインストールすることです。
-アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **財務と運用 (Dynamics 365)** の順に移動し、**アプリの削除** をクリックしてアプリを完全にアンインストールします。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
+アプリケーションを完全にアンインストールするには、"長押ししてゆらゆらした状態でアプリ アイコンの x を押す" 方法を使用しないでください。 代わりに、**設定** > **全般** > **iPhone ストレージ** > **財務と運用 (Dynamics 365)** の順に移動してから、**アプリの削除** をクリックしてアプリを完全にアンインストールします。 10 ～ 15秒後、アプリケーションを再インストールすることができます。
 
 ### <a name="on-android-devices-with-non-english-regions-the-comma-cant-be-used-as-the-decimal-separator-in-an-amount-field"></a>英語圏以外の Android デバイスでは、カンマが金額フィールドで小数点の記号として使用できない場合があります
 英語圏以外の Android デバイスでは、カンマを小数点の記号として標準使用してください。 金額フィールドで発生するカンマの問題は、 Android 固有の問題であり、iPhone では発生していません。 Android における金額フィールドのカンマ問題は、既定のキーボードとされている「gboard」やその他のキーボードが原因で発生しています。 SwiftKey キーボード (Microsoft 製) をインストールすることで、iPhone のようなカンマ入力が可能となります: [SwiftKey キーボード](https://www.microsoft.com/swiftkey)。
 
 ### <a name="change-needed-for-adfs-to-support-mobile-client-in-on-premises-environments"></a>ADFS がオンプレミス環境でモバイル クライアントをサポートするために必要な変更 
-Active Directory フェデレーション サービス (AD FS) がドメインで使用されていて、かつオンプレミス環境の場合は、 Windows Integrated Authentication (WIA) ではなく、 **ADFS を構成して従来のフォームを使用した認証画面** を使用してください。 iOS と Android の Finance and Operations アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 このスクリプトおよび問題の詳細については、[WIA に対応していないデバイスに向けたイントラネットのフォームベースの認証を構成する](/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
+Active Directory フェデレーション サービス (AD FS) がドメインで使用されていて、かつオンプレミス環境の場合は、 Windows Integrated Authentication (WIA) ではなく、 **ADFS を構成して従来のフォームを使用した認証画面** を使用してください。 iOS と Android の財務と運用アプリには、標準のフォーム ベースの認証画面が必要です。 ADFS は、ブラウザー クライアント (ユース ケース) のみ WIA を提供するように構成する必要があります。 このスクリプトおよび問題の詳細については、[WIA に対応していないデバイスに向けたイントラネットのフォームベースの認証を構成する](/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)を参照してください。
 
-### <a name="using-multi-factor-authentication-with-the-finance-and-operations-app"></a>Finance and Operations アプリでの多要素認証の使用
-Finance and Operations (モバイル クライアント) アプリでは、埋め込みブラウザー内に Azure AD  サインインの Web ページを表示することにより、Azure Active Directory (Azure AD) でのユーザー認証を容易に行えるようにします。 正常にサインインをすると、クッキーからユーザーのトークンを取得して、これは対話サービスでのやりとりに使用されます。またこれは web クライアントに共有されます。 多要素認証の仕様上、デバイス内で別のアプリへの切り替えを行うと埋め込みブラウザが閉じられてしまうため、サインインができなくなることがあります。 この問題を回避するには:
+### <a name="using-multi-factor-authentication-with-the-finance-and-operations-app"></a>財務と運用アプリでの多要素認証の使用
+財務と運用 (モバイル クライアント) アプリでは、埋め込みブラウザー内に Azure AD サインインの Web ページを表示することにより、Azure Active Directory (Azure AD) でのユーザー認証を容易に行えるようにします。 正常にサインインをすると、クッキーからユーザーのトークンを取得して、これは対話サービスでのやりとりに使用されます。またこれは web クライアントに共有されます。 多要素認証の仕様上、デバイス内で別のアプリへの切り替えを行うと埋め込みブラウザが閉じられてしまうため、サインインができなくなることがあります。 この問題を回避するには:
 
 - 別のデバイス - 別のデバイスを使って多要素認証への応答をすることで、元のデバイス上ではアプリ がアクティブな状態を維持することができます。
 - 電話を使った多要素認証 - 多要素認証の応答に電話を使用することでアプリの切り替えが不要になります。
@@ -225,3 +225,4 @@ MFA 認証で継続的な問題がある場合は、[Microsoft Authenticator ア
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

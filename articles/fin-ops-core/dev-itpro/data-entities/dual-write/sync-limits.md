@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cbda65d1d155da7ad19fd684e5f42e6a87e40e6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f303d691e5bc189c167c8a8836bc64b1d168efc
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898931"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111583"
 ---
 # <a name="dual-write-limits-for-live-synchronization"></a>ライブ同期に関する二重書き込みの制限
 
@@ -99,7 +99,7 @@ while (/* loop condition */)
 
 ## <a name="transaction-time-limit"></a>トランザクションの制限時間
 
-二重書き込みを使用して財務と運用アプリまたは Dataverse にレコードを書き込む場合、各トランザクションは特定の時間内に完了する必要があります。 トランザクションの制限時間に達する前にトランザクションが完了しない場合、二重書き込みを使用して財務と運用アプリと Dataverse にレコードが確定されることはありません。 この場合、トランザクション内のレコードは、Finance and Operations 環境と Dataverse 環境の両方でロールバックされます。
+二重書き込みを使用して財務と運用アプリまたは Dataverse にレコードを書き込む場合、各トランザクションは特定の時間内に完了する必要があります。 トランザクションの制限時間に達する前にトランザクションが完了しない場合、二重書き込みを使用して財務と運用アプリと Dataverse にレコードが確定されることはありません。 この場合、トランザクション内のレコードは、財務と運用の環境と Dataverse 環境の両方でロールバックされます。
 
 たとえば、二重書き込みを使用して財務と運用アプリから Dataverse に契約の更新を同期する場合、財務と運用アプリのビジネス ロジックが完了し、Dataverse プロセスが開始される時にタイマーが開始されます。 トランザクションが確定される時にタイマーは終了します。 Dataverse で費やされた時間全体には、書き込み必要な時間、標準およびカスタムのプラグインを処理するのに必要な時間も含まれます。 トランザクションが制限時間を超えた場合、Dataverse にレコードは確定されません。
 
@@ -119,7 +119,7 @@ while (/* loop condition */)
 | 1 つのトランザクションあたりのレコード数 | <p>1,000 レコード</p><p>1 つのトランザクションのレコードが 1,000 件を超える場合、そのトランザクションを複数のトランザクションに分割することを検討してください。 詳細については、この記事の [1,000 レコードを超えるトランザクション ](#transactions-with-more-than-1000-records) を参照してください。</p> |
 | トランザクションの制限時間 | 2 分 |
 
-### <a name="from-dataverse-to-finance-and-operations-apps"></a>Dataverse から財務と運用アプリへ
+### <a name="from-dataverse-to-finance-and-operations-apps"></a>財務と運用アプリから Dataverse へ
 
 Dataverse から財務と運用アプリにデータを書き込む場合、次の制限が適用されます。
 
@@ -193,3 +193,4 @@ if (committPending == true)
 ```
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

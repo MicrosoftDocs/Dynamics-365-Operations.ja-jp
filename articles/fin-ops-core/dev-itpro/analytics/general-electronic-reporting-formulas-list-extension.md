@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4968ac8c0503958c9d43ef48bbcaaecea7cd120
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 60f7a63cd767c2bcdf3482ba925d3fef4d926336
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700025"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108719"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 
@@ -29,7 +29,7 @@ ms.locfileid: "7700025"
 テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式 (ER) でサポートされています。 組み込み関数に加えて、ER により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
 
 > [!IMPORTANT]
-> Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 では、**ERExpression** クラスの拡張機能の使用は非推奨になっています。 **ERExpression** クラスの拡張機能を使用してカスタムの組み込み ER 関数を追加する代わりに、カスタム クラスのパブリック メソッドとしてカスタム ロジックを実装することができます。 これらのメソッドは、[*クラス*](er-formula-supported-data-types-composite.md#class) タイプまたは [*オブジェクト*](er-formula-supported-data-types-composite.md#object) タイプのいずれかの必要な ER データ ソースを構成する ER 形式および ER モデル マッピングから呼び出すことができます。 詳細については、[アプリケーション クラスのメソッドを呼び出す ER 式の設計](tasks/design-expressions-app-class-er.md)を参照してください。
+> Microsoft Dynamics 365 Finance、Enterprise edition 7.3 では、**ERExpression** クラスの拡張機能の使用は非推奨になっています。 **ERExpression** クラスの拡張機能を使用してカスタムの組み込み ER 関数を追加する代わりに、カスタム クラスのパブリック メソッドとしてカスタム ロジックを実装することができます。 これらのメソッドは、[*クラス*](er-formula-supported-data-types-composite.md#class) タイプまたは [*オブジェクト*](er-formula-supported-data-types-composite.md#object) タイプのいずれかの必要な ER データ ソースを構成する ER 形式および ER モデル マッピングから呼び出すことができます。 詳細については、[アプリケーション クラスのメソッドを呼び出す ER 式の設計](tasks/design-expressions-app-class-er.md)を参照してください。
 
 アプリケーション コードのすべての ER 機能は、**ERExpression** クラスを拡張するクラスとして表示されます。 2 種類の関数が認識されます。
 
@@ -117,3 +117,4 @@ class ERExpressionStringMid extends ERExpressionString
 [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
