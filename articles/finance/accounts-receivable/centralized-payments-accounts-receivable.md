@@ -196,8 +196,8 @@ Fabrikam は、Fabrikam 顧客 4000 の Northwind Traders について、Fabrika
 | 現金割引 (Fabrikam East)       | 12.00 EUR / 14.47 USD   |                         |
 | 売掛金 (Fabrikam East) |                         | 12.00 EUR / 14.47 USD   |
 
-## <a name="example-5-customer-credit-note-with-primary-payment"></a>例 5 : 基本支払のある顧客貸方票
-Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を受け取ります。 支払は、Fabrikam West の顧客 10000 に対する未処理請求書および Fabrikam East の顧客 4000 に対する未処理の貸方票で決済されます。 支払は、**トランザクションの決済** ページで基本支払として選択されています。
+## <a name="example-5-customer-credit-note-with-primary-payment"></a>例 5 : 基本支払のある顧客訂正票
+Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を受け取ります。 支払は、Fabrikam West の顧客 10000 に対する未処理請求書および Fabrikam East の顧客 4000 に対する未処理の訂正票で決済されます。 支払は、**トランザクションの決済** ページで基本支払として選択されています。
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>顧客 10000 について請求書が Fabrikam West に転記される
 
@@ -206,7 +206,7 @@ Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を
 | 売掛金 (Fabrikam West) | 100.00       |               |
 | 売上 (Fabrikam West)               |              | 100.00        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>顧客 4000 について貸方票が Fabrikam East に転記される
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>顧客 4000 について訂正票が Fabrikam East に転記される
 
 | アカウント                             | 借方金額 | 貸方金額 |
 |-------------------------------------|--------------|---------------|
@@ -220,7 +220,7 @@ Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を
 | 現金 (Fabrikam)                | 75.00        |               |
 | 売掛金 (Fabrikam) |              | 75.00         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam の支払が、Fabrikam West の請求書と Fabrikam East の貸方票で決済される
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam の支払が、Fabrikam West の請求書と Fabrikam East の訂正票で決済される
 
 **Fabrikam の転記**
 
@@ -245,8 +245,8 @@ Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を
 | Fabrikam からの借り (Fabrikam West)   | 100.00       |               |
 | 売掛金 (Fabrikam West) |              | 100.00        |
 
-## <a name="example-6-customer-credit-note-without-primary-payment"></a>例 6 : 基本支払のない顧客貸方票
-Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を受け取ります。 支払は、Fabrikam West の顧客 10000 に対する未処理請求書および Fabrikam East の顧客 4000 に対する未処理の貸方票で決済されます。 支払は、**トランザクションの決済** ページでは基本支払として選択されません。
+## <a name="example-6-customer-credit-note-without-primary-payment"></a>例 6 : 基本支払のない顧客訂正票
+Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を受け取ります。 支払は、Fabrikam West の顧客 10000 に対する未処理請求書および Fabrikam East の顧客 4000 に対する未処理の訂正票で決済されます。 支払は、**トランザクションの決済** ページでは基本支払として選択されません。
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>顧客 10000 について請求書が Fabrikam West に転記される
 
@@ -255,7 +255,7 @@ Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を
 | 売掛金 (Fabrikam West) | 100.00       |               |
 | 売上 (Fabrikam West)               |              | 100.00        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>顧客 4000 について貸方票が Fabrikam East に転記される
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>顧客 4000 について訂正票が Fabrikam East に転記される
 
 | アカウント                             | 借方金額 | 貸方金額 |
 |-------------------------------------|--------------|---------------|
@@ -269,7 +269,7 @@ Fabrikam は、顧客 4000 の Northwind Traders について 75.00 の支払を
 | 現金 (Fabrikam)                | 75.00        |               |
 | 売掛金 (Fabrikam) |              | 75.00         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam の支払が、Fabrikam West の請求書と Fabrikam East の貸方票で決済される
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam の支払が、Fabrikam West の請求書と Fabrikam East の訂正票で決済される
 
 **Fabrikam の転記**
 

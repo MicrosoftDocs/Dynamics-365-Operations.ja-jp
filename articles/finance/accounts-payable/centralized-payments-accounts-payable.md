@@ -194,8 +194,8 @@ Fabrikam East には、仕入先 100 の Fourth Coffee に対する未処理請�
 | 買掛金 (Fabrikam East) | 11.28 EUR / 13.61 USD   |                         |
 | 現金割引 (Fabrikam East)    |                         | 11.28 EUR / 13.61 USD   |
 
-## <a name="example-5-vendor-credit-note-with-primary-payment"></a>例 5 : 基本支払のある仕入先貸方票
-Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する未処理貸方票で決済されます。 支払は、**トランザクションの決済** ページで基本支払として選択されています。
+## <a name="example-5-vendor-credit-note-with-primary-payment"></a>例 5 : 基本支払のある仕入先訂正票
+Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する訂正票で決済されます。 支払は、**トランザクションの決済** ページで基本支払として選択されています。
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>仕入先 3004 に対して Fabrikam West で転記される請求書
 
@@ -204,7 +204,7 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | 経費 (Fabrikam West)          | 100.00       |               |
 | 買掛金 (Fabrikam West) |              | 100.00        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>仕入先 100 に対して Fabrikam East に転記される貸方票
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>仕入先 100 に対して Fabrikam East に転記される訂正票
 
 | 勘定                          | 借方金額 | 貸方金額 |
 |----------------------------------|--------------|---------------|
@@ -218,7 +218,7 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | 買掛金 (Fabrikam) | 75.00        |               |
 | 現金 (Fabrikam)             |              | 75.00         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam West の請求書および Fabrikam East の貸方票で決済される Fabrikam の支払
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam West の請求書および Fabrikam East の訂正票で決済される Fabrikam の支払
 
 **Fabrikam の転記**
 
@@ -243,8 +243,8 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | 買掛金 (Fabrikam West) | 100.00       |               |
 | Fabrikam 借り (Fabrikam West)  |              | 100.00        |
 
-## <a name="example-6-vendor-credit-note-without-primary-payment"></a>例 6 : 基本支払のない仕入先貸方票
-Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する未処理貸方票で決済されます。 支払は、**トランザクションの決済** ページでは基本支払として選択されません。
+## <a name="example-6-vendor-credit-note-without-primary-payment"></a>例 6 : 基本支払のない仕入先訂正票
+Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を生成します。 支払は、Fabrikam West の仕入先 3004 に対する未処理請求書および Fabrikam East の仕入先 100 に対する未処理の訂正票で決済されます。 支払は、**トランザクションの決済** ページでは基本支払として選択されません。
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>仕入先 3004 に対して Fabrikam West で転記される請求書
 
@@ -253,7 +253,7 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | 経費 (Fabrikam West)          | 100.00       |               |
 | 買掛金 (Fabrikam West) |              | 100.00        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>仕入先 100 に対して Fabrikam East に転記される貸方票
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>仕入先 100 に対して Fabrikam East に転記される訂正票
 
 | 勘定                          | 借方金額 | 貸方金額 |
 |----------------------------------|--------------|---------------|
@@ -267,7 +267,7 @@ Fabrikam は、仕入先 3004 の Fourth Coffee に対する 75.00 の支払を�
 | 買掛金 (Fabrikam) | 75.00        |               |
 | 現金 (Fabrikam)             |              | 75.00         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam West の請求書および Fabrikam East の貸方票で決済される Fabrikam の支払
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam West の請求書および Fabrikam East の訂正票で決済される Fabrikam の支払
 
 **Fabrikam の転記**
 
