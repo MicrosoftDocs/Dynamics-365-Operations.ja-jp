@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874815"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111663"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>分離型二重書き込みアプリケーション オーケストレーション ソリューションの適用
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874815"
 以前は、二重書き込みアプリケーション オーケストレーション パッケージは、次のソリューションを含む 1 つのパッケージでした:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations 共通アンカー
-- Dynamics 365 Finance and Operations 二重書き込みエンティティ マップ
+- Dynamics 365 財務と運用共通アンカー
+- Dynamics 365 財務と運用二重書き込みエンティティ マップ
 - Dynamics 365 アセット マネジメント アプリ
 - Dynamics 365 アセット マネジメント
 - HCM 共通
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Dynamics 365 財務と運用共通
 - Dynamics 365 Company
 - Currency Exchange Rates
 - Field Service Common
@@ -247,7 +247,7 @@ Dual-write Notes パッケージには、メモや注釈データの同期に必
 
 このパッケージでは、以下のマップが利用可能です。
 
-| Finance and Operations                     | Customer Engagement |
+| 財務と運用                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | 販売注文のヘッダー ドキュメント添付    | 注釈         |
 | 顧客の添付ファイル                       | 注釈         |
@@ -344,3 +344,4 @@ Project Operations は、次のパッケージに依存します。 したがっ
 - 二重書き込みアプリケーション コア パッケージ
 - 二重書き込み Finance パッケージ
 - Dual-write Supply Chain パッケージ
+

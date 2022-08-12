@@ -1,25 +1,25 @@
 ---
 title: 給与の期首残高の入力
 description: この記事では、所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。
-author: andreabichsel
+author: twheeloc
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d14e7e0772c5b365818d3a8a230abe9f674a077e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 21cd8b3f68627a8255df82ee818e919b3ac20f88
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850021"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167802"
 ---
 # <a name="enter-payroll-beginning-balances"></a>給与の期首残高の入力
 

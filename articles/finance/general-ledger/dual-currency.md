@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19337b2651830d79543361d525bf24c4f794e825
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906358"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065749"
 ---
 # <a name="dual-currency"></a>二重通貨
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) で導入された機能は、レポート通貨の別目的での使用および 2 番目の会計通貨としての使用を有効にします。 この機能は、*二重通貨* と呼ばれます。 二重通貨の変更を、コンフィギュレーション キーまたはパラメーターを通じて無効にはできません。 レポート通貨が 2 つ目の会計通貨として使用され、転記論理でのレポート通貨の計算方法が変更されたためです。
+Microsoft Dynamics 365 Finance バージョン 8.1 (2018 年 10 月) で導入された機能は、レポート通貨の別目的での使用および 2 番目の会計通貨としての使用を有効にします。 この機能は、*二重通貨* と呼ばれます。 二重通貨の変更を、コンフィギュレーション キーまたはパラメーターを通じて無効にはできません。 レポート通貨が 2 つ目の会計通貨として使用され、転記論理でのレポート通貨の計算方法が変更されたためです。
 
 さらに、複数のモジュールが、さまざまなプロセスでレポート通貨を追跡、レポート、および使用するよう強化されました。 影響を受けるモジュールは、次のとおりです。
 
@@ -209,3 +209,4 @@ Dynamics 365 Finance バージョン 10.0.5 (2019 年 10 月) に導入された
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

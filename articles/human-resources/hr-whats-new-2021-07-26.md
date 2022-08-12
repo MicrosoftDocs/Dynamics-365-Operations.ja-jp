@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-26
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6c7211135733f45a9841ae5a80607b01999d7c69
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14041dfc753b508a0d68b90ee99d79510d07e622
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870932"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070083"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-26-2021"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 7 月 26 日)
 
@@ -41,7 +41,7 @@ ms.locfileid: "8870932"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| プラットフォーム update 10.0.20 | -- | [財務と運用アプリのバージョン 10.0.20 (2021 年 8 月) のプラットフォーム更新プログラム](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
+| プラットフォーム update 10.0.20 | -- | [財務と運用アプリのバージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -83,3 +83,4 @@ ms.locfileid: "8870932"
 [機能の管理](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

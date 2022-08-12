@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845416"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125153"
 ---
 # <a name="saved-views"></a>保存されているビュー
 
@@ -215,7 +215,7 @@ ms.locfileid: "8845416"
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>自分の環境で保存されたビューをどのように有効にしますか。
 
 > [!NOTE]
-> **保存されたビュー** 機能では、Finance and Operations の個人用設定システムが有効になっている必要があります。 環境全体の個人用設定が無効になっている場合は、下記の手順を実行しても、ビューは無効になります。 
+> **保存されたビュー** 機能では、財務と運用アプリの個人用設定システムが有効になっている必要があります。 環境全体の個人用設定が無効になっている場合は、下記の手順を実行しても、ビューは無効になります。 
 
 **保存済ビュー** 機能のオン/オフは、任意の環境の機能管理機能を介して有効にできます。 有効にすると、以降のすべてのユーザー セッションで保存されたビューが有効になります。
 
@@ -255,3 +255,4 @@ ms.locfileid: "8845416"
 - **バージョン 10.0.21 以降 :** **保存されたビューに対する改善された法人サポート** 機能が有効になっている場合、指定された法人のビューのみがビュー セレクターに表示されます。 この動作は、この機能によってビュー (個人用ビューを含む) を特定の法人にリンクさせることにより発生します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

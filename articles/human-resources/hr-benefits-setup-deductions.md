@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4817cd6370166b6dfdf17b3d733b13374db8f49
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fb5f5b0b50f407f58193aafd79f28dd1fd432ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694910"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066795"
 ---
 # <a name="configure-deductions"></a>控除のコンフィギュレーション
 
@@ -45,7 +45,7 @@ Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金�
    | **ヘッダー** | この控除が給与の給付金を処理するときに控除の従業員部分に使用する給与計算システムの見出しコード。 これは、サード パーティの給与計算プロバイダーを使用するときに使用されます。 |
    | **従業員給与控除参照** | 給与計算のために給付金を処理する際に、従業員分の控除に対して、この控除で使用する給与システムの控除コード。 |
    | **金額の見出し** | 給与の給付金を処理するときに、この控除額が従業員の控除部分に使用する給与計算システムの見出しコード。 これは通常、サード パーティの給与計算プロバイダーを使用するときに使用されます。 |
-   | **削除可能** | Dynamics 365 for Finance and Operations からエクスポートされた値が給与計算システムで値を削除できるかどうかを指定します。 |
+   | **削除可能** | Dynamics 365 Finance からエクスポートされた値が給与計算システムで値を削除できるかどうかを指定します。 |
    | **ペアの列** | 対になった隣接する列の見出しと控除額を給与計算システムにエクスポートするかどうかを指定します。 |
    | **変更の有効日** | 給付控除の変更が有効になる日付。 この日付に、**控除変更の更新** 処理を実行している限り、給付控除を変更し、この控除に関連するすべての給付プランを更新します。 |
    | **控除の変更が完了しています** | 控除更新の変更処理によって給付控除の変更が完了すると、**控除の変更が完了しました** チェック ボックスが自動的に選択されます。 |
@@ -56,3 +56,4 @@ Microsoft Dynamics 365 Human Resources の控除を使用して、各給付金�
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

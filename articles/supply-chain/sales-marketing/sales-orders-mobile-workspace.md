@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc04a90c0c071508c9ebee57862a029de0e58f9a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38971f2a5f3f3d2692de0e52365e2215170101cc
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844767"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103183"
 ---
 # <a name="sales-orders-mobile-workspace"></a>販売注文モバイル ワークスペース
 
@@ -29,7 +29,7 @@ ms.locfileid: "8844767"
 
 この記事では、**販売注文** モバイル ワークスペースについての情報について説明します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。 
 
-このモバイル ワークスペースは、Finance and Operations (Dynamics 365) モバイル アプリで使用するためのものです。
+このモバイル ワークスペースは、財務と運用 (Dynamics 365) モバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要
 **販売注文** モバイル ワークスペースを使用して、各販売注文に関する詳細情報を表示できます。 この情報には、注文のステータス、顧客の連絡先情報および注文受付者の連絡先情報が含まれます。 **販売注文** モバイル ワークスペースは、販売注文のインスタント ビューを提供します。 すべての販売注文、顧客別の販売注文、または特定の販売注文に関する情報を表示できます。 
@@ -118,7 +118,7 @@ Dynamics 365 for Operations バージョン 1611 およびプラットフォー�
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
-財務と運用 (Dynamics 365) モバイル アプリをダウンロードしてインストールする
+財務と運用 (Dynamics 365) モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -143,3 +143,4 @@ Dynamics 365 for Operations バージョン 1611 およびプラットフォー�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

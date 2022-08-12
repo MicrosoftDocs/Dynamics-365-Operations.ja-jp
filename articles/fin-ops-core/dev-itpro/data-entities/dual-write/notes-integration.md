@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19a1fd53f19575a16ee8d8b7391c30f0cacf26a8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876718"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111459"
 ---
 # <a name="note-integration"></a>メモ統合
 
@@ -30,7 +30,7 @@ ms.locfileid: "8876718"
 + **Dynamics 365 ユーザーの実用的な情報** - たとえば、Surface ユニットを購入する顧客は、出荷前にデバイスを贈り物用に包装する必要があるという特別な指示を入力します。 これらの指示は、梱包を担当する Contoso の従業員が処理する必要がある、実用的な情報です。
 + **非実用的な情報** - 例えば、顧客は Contoso ストアにアクセスし、店舗スタッフとの会話の中で、*Halo* のゲームとゲーム用アクセサリに関心を示します。 店舗スタッフはこの情報をメモします。 その後、製品の推奨エンジンを使用して、顧客に対して推奨事項を作成します。
 
-一般に、実用的な情報は、財務と運用アプリと Customer Engagement アプリに *活動* として記録されます。 非実用的な情報は、財務と運用アプリに *メモ*、Customer Engagement アプリに *注釈* として記録されます。
+一般に、実用的な情報は、財務と運用アプリおよび Customer Engagement アプリに *活動* として記録されます。 非実用的な情報は、財務と運用アプリに *メモ*、Customer Engagement アプリに *注釈* として記録されます。
 
 > [!TIP]
 > メモは非実用的な情報を対象としていますが、メモを使用して実用的な情報を保管および処理する場合、アプリがその使用を妨げることはありません。
@@ -62,7 +62,7 @@ Customer Engagement アプリでメモを作成し、それを財務と運用ア
 
     ![Customer Engagement アプリからのメモ。](media/notes-ce-5.png)
 
-メモに対する更新は、財務と運用アプリとCustomer Engagement アプリ間で相互に同期されます。
+メモに対する更新は、財務と運用アプリと Customer Engagement アプリ間で相互に同期されます。
 
 ## <a name="create-a-note-in-a-finance-and-operations-app"></a>財務と運用アプリでメモを作成する
 
@@ -121,3 +121,4 @@ URL を作成することもできます。
 ノート ソリューションをインストールすると、アンインストールすることはできなくなります。 
 
 詳細については、[二重書き込みマッピングのリファレンス](mapping-reference.md) を参照してください。
+

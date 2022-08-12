@@ -2,21 +2,21 @@
 title: 統一された製品経験
 description: この記事では、財務と運用アプリと Dataverse 間の製品データの統合について説明します。
 author: t-benebo
-ms.date: 12/12/2019
+ms.date: 06/23/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1546cdaf3c63a7ff9a330ae8609595aaf48fbc48
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885001"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111489"
 ---
-# <a name="unified-product-experience"></a>製品の統合エクスペリエンス
+# <a name="unified-product-experience"></a>統一された製品経験
 
 [!include [banner](../../includes/banner.md)]
 
@@ -30,13 +30,13 @@ Sales の製品データ モデルを次に示します。
 
 財務と運用アプリの製品データ モデルを次に示します。
 
-![Finance and Operations の製品データ モデル。](media/dual-write-products-5.jpg)
+![財務と運用の製品データ モデル。](media/dual-write-products-5.jpg)
 
 次に示すように、この 2 つの製品データ モデルは、Dataverse に統合されています。
 
 ![Dynamics 365 アプリの製品データ モデル。](media/dual-write-products-6.jpg)
 
-製品のデュアル書き込みテーブル マップは、データを一方向にのみ、財務と運用アプリから Dataverse にほぼリアルタイムでフローするように設計されています。 ただし、製品のインフラストラクチャは開かれており、必要に応じて双方向で使用できるようになっています。 ユーザーは自己責任でカスタマイズできますが、Microsoft では、この方法を推奨していません。
+製品の二重書き込みテーブル マップは、データを一方向にのみ、財務と運用アプリから Dataverse にほぼリアルタイムでフローするように設計されています。 ただし、製品のインフラストラクチャは開かれており、必要に応じて双方向で使用できるようになっています。 ユーザーは自己責任でカスタマイズできますが、Microsoft では、この方法を推奨していません。
 
 ## <a name="templates"></a>テンプレート
 
@@ -52,7 +52,7 @@ Sales の製品データ モデルを次に示します。
 [製品カテゴリ](mapping-reference.md#166) | msdyn_productcategories | 各製品カテゴリとその構造と特性に関する情報は、製品カテゴリ テーブルに含まれています。
 [製品カテゴリの割り当て](mapping-reference.md#167) | msdyn_productcategoryassignments | 製品をカテゴリに割り当てるには、製品カテゴリの割り当てテーブルを使用できます。
 [製品カテゴリ階層](mapping-reference.md#168) | msdyn_productcategoryhierarchies | 製品階層を使用して、製品を分類またはグループ化します。 カテゴリ階層は、製品カテゴリの階層テーブルを使用して Dataverse で利用可能です。
-[製品カテゴリ階層ロール](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | 製品階層は、D365 Finance and Operations のさまざまなロールに対して使用できます。 これらは製品カテゴリのロール エンティティが使用される、各ロールで使用するカテゴリを指定します。
+[製品カテゴリ階層ロール](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | 製品階層は、D365 財務と運用のさまざまなロールに対して使用できます。 これらは製品カテゴリのロール エンティティが使用される、各ロールで使用するカテゴリを指定します。
 [製品の既定の注文設定 V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
 [製品分析コード グループ](mapping-reference.md#173) | msdyn\_productdimensiongroups | 製品を定義する製品分析コードが定義されている製品分析コード グループ。
 [製品マスターの色](mapping-reference.md#187) | msdyn_sharedproductcolors | **共有製品の色** テーブルは、特定の製品マスターに対して設定できる色を示します。 この概念は、データの整合性を保つために Dataverse に移行されます。
@@ -64,7 +64,7 @@ Sales の製品データ モデルを次に示します。
 [リリース済製品 V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** テーブルには、製品を定義する財務と運用アプリの列が含まれます。これには、製品の財務情報と管理情報が含まれています。
 [サイズ](mapping-reference.md#174) | msdyn\_productsizes
 [保管分析コード グループ](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | 製品保管分析コード グループは、倉庫における製品の配置を定義するために使用される方法を表します。
-[スタイル](mapping-reference.md#178) | msdyn\_productsytles
+[スタイル](mapping-reference.md#178) | msdyn\_productstyles
 [追跡用分析コード グループ](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | 製品追跡用分析コード グループは、在庫の製品を追跡するために使用される方法を表します。
 [単位](mapping-reference.md#219) | uoms
 [単位換算](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
@@ -81,13 +81,13 @@ Sales の製品データ モデルを次に示します。
 
 ![製品のデータ モデル。](media/dual-write-product.png)
 
-デュアル書き込み機能が有効になっている場合、Finance and Operations からの製品はその他の Dynamics 365 アプリに **下書き** 状態で同期されます。 同期の内容は、Customer Engagement アプリで使用されているのと同じ通貨の最初の価格リストに追加され、価格リスト名でアルファベット順の並べ替えを使用して追加されます。 これは、同期の内容が、製品が財務と運用アプリでリリースされている法人テーブルの通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 指定した通貨の価格リストがない場合は、価格リストが自動的に作成され、製品が割り当てられます。
+二重書き込み機能が有効になっている場合、財務と運用からの製品はその他の Dynamics 365 アプリに **下書き** 状態で同期されます。 同期の内容は、Customer Engagement アプリで使用されているのと同じ通貨の最初の価格リストに追加され、価格リスト名でアルファベット順の並べ替えを使用して追加されます。 これは、同期の内容が、製品が財務と運用アプリでリリースされている法人テーブルの通貨と一致する Dynamics 365 アプリの最初の価格表に追加されるという意味です。 指定した通貨の価格リストがない場合は、価格リストが自動的に作成され、製品が割り当てられます。
 
-既定の価格リストを単位に関連付ける二重書き込みプラグインの現在の実装は、 アプリに関連付けられている通貨を検索し、価格リスト名でアルファベット順の並べ替えを使用して、財務と運用アプリの最初の価格リストを見つけます。 特定の通貨に複数の価格リストがある場合に、その通貨の既定の価格リストを設定するには、価格リストの名前を同じ通貨の他の価格リストよりもアルファベット順で早い名前に更新する必要があります。 指定した通貨の価格リストがない場合は、新しい通貨が作成されます。
+既定の価格表を単位に関連付ける二重書き込みプラグインの現在の実装は、アプリに関連付けられている通貨を検索し、価格表名でアルファベット順の並べ替えを使用して、財務と運用アプリの最初の価格表を見つけます。 特定の通貨に複数の価格リストがある場合に、その通貨の既定の価格リストを設定するには、価格リストの名前を同じ通貨の他の価格リストよりもアルファベット順で早い名前に更新する必要があります。 指定した通貨の価格リストがない場合は、新しい通貨が作成されます。
 
 既定では、財務と運用アプリの製品は、**下書き** 状態で他の Dynamics 365 アプリに同期されます。 製品を **有効** 状態と同期して、販売注文の見積書で直接使用できるようにするには、例として、次の設定を選択する必要があります。**システム > 管理 > システム管理 > システム設定 > 販売** タブで、**有効な状態で製品を作成 = はい** を選択します。
 
-製品が同期されている場合は、Salse では必須フィールドなので、財務と運用アプリの **販売単位** フィールドに値を入力する必要があります。
+製品が同期されている場合は、Salse では必須フィールドであるため、財務と運用アプリの **販売単位** フィールドに値を入力する必要があります。
 
 Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重書き込み同期ではサポートされていません。
 
@@ -109,7 +109,7 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 ---|---
 [カラー](mapping-reference.md#170) | msdyn\_productcolors
 [サイズ](mapping-reference.md#174) | msdyn\_productsizes
-[スタイル](mapping-reference.md#178) | msdyn\_productsytles
+[スタイル](mapping-reference.md#178) | msdyn\_productstyles
 [構成](mapping-reference.md#171) | msdyn\_productconfigurations
 
 1 つの製品に異なる製品分析コードが含まれている場合 (たとえば、製品マスターのサイズや色が製品分析コードと同じである場合)、個々の特徴的製品 (つまり、各製品バリアント) は、それらの製品分析コードの組み合わせとして定義されます。 たとえば、製品番号 B0001 は、XS サイズの黒い T シャツで、製品番号 B0002 は S サイズの黒い T シャツです。 この場合、製品分析コードの既存の組み合わせが定義されています。 たとえば、前の例の T シャツは、XS サイズの黒、S サイズの黒、M サイズの黒、L サイズの黒にすることができますが、XL サイズの黒にすることはできません。 つまり、製品マスターが実行できる製品分析コードは指定されており、これらの値に基づいてバリアントをリリースできます。
@@ -147,13 +147,13 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 [単位](mapping-reference.md#219) | uoms
 [単位換算](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
 
-## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-dataverse"></a>Finance and Operations と Dataverse の間で一致する単位データの初期同期
+## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-dataverse"></a>財務と運用と Dataverse の間で一致する単位データの初期同期
 
 ### <a name="initial-synchronization-of-units"></a>単位の初期同期
 
-デュアル書き込みが有効になっている場合、財務と運用アプリの単位は、他の Dynamics 365 アプリに同期されます。 Dataverse の財務と運用アプリから同期された単位グループには、"外部で管理されている" ことを示すフラグが設定されています。
+二重書き込みが有効になっている場合、財務と運用アプリの単位は、他の Dynamics 365 アプリに同期されます。 Dataverse の財務と運用アプリから同期された単位グループには、"外部で管理されている" ことを示すフラグが設定されています。
 
-### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations および他の Dynamics 365 アプリの単位と単位クラス/グループのデータの照合
+### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>財務と運用および他の Dynamics 365 アプリの単位と単位クラス/グループのデータの照合
 
 まず、単位の統合キーが msdyn_symbol であることに注意する必要があります。 したがって、この値は、Dataverse または他の Dynamics 365 アプリで一意である必要があります。 他の Dynamics 365 アプリでは、単位の一意性を定義する "単位グループID" と "名前" のペアであるため、財務と運用アプリと Dataverse の間で単位データを一致させるためのさまざまなシナリオを検討する必要があります。
 
@@ -162,9 +162,9 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 + **単位は、財務と運用アプリ内の関連付けられている単位クラスに対応する他の Dynamics 365 アプリの単位グループに属します**。 この場合、他の Dynamics 365 アプリの msdyn_symbol 列には、財務と運用アプリの単位記号を入力する必要があります。 したがって、データが照合されると、その単位グループは、他の Dynamics 365 アプリでは "外部管理" として設定されます。
 + **単位は、財務と運用アプリの関連付けられた単位クラスに対応していない他の Dynamics 365 アプリの単位グループに属しています (他の Dynamics 365 アプリにある単位クラスの財務と運用アプリに既存の単位クラスはありません)。** この場合、msdyn_symbol にはランダムな文字列を入力する必要があります。 この値は、他の Dynamics 365 アプリで一意である必要があります。
 
-Finance and Operations の単位および単位クラスで、他の Dynamics 365 アプリに存在しない場合:
+財務と運用の単位および単位クラスで、他の Dynamics 365 アプリに存在しない場合:
 
-財務と運用アプリの単位グループをデュアル書き込みの一部とし、それに対応する単位を他の Dynamics 365 アプリと Dataverse に作成して同期し、この単位グループを "外部管理" として設定します。 追加のブートストラップ作業は不要です。
+財務と運用アプリの単位グループを二重書き込みの一部とし、それに対応する単位を他の Dynamics 365 アプリと Dataverse に作成して同期してから、この単位グループを "外部管理" として設定します。 追加のブートストラップ作業は不要です。
 
 他の Dynamics 365 アプリの単位で、財務と運用アプリに存在しない場合:
 
@@ -190,28 +190,29 @@ Finance and Operations の単位および単位クラスで、他の Dynamics 36
 
 ## <a name="integration-key-for-products"></a>製品の統合キー
 
-Dynamics 365 for Finance and Operations と Dataverse の製品との間で製品を一意に識別するために、統合キーが使用されます。
-製品では、**(productnumber)** は Dataverse の製品を識別する固有のキーです。 これは、次の連結によって構成されます **(会社、msdyn_productnumber)**。 **会社** は Finance and Operations の法人エンティティを示し、**msdyn_productnumber** は Finance and Operations の特定の製品の製品番号を示します。
+Dynamics 365 Finance と Dataverse の製品との間で製品を一意に識別するために、統合鍵が使用されます。
+製品では、**(productnumber)** は Dataverse の製品を識別する固有のキーです。 これは、次の連結によって構成されます **(会社、msdyn_productnumber)**。 **会社** は財務と運用の法人エンティティを示し、**msdyn_productnumber** は財務と運用の特定の製品の製品番号を示します。
 
 その他の Dynamics 365 アプリのユーザーについては、この製品は **msdyn_productnumber** という UI で識別されます (列のラベルが **製品番号** であることに注意してください)。 製品フォームでは、会社と msydn_productnumber の両方が表示されます。 ただし、製品の固有キーである (productnumber) 列は表示されません。
 
 Dataverse でアプリを作成した場合は、**製品番号** (固有の製品 ID) を統合キーとして使用することに注意する必要があります。 **msdyn_productnumber** は一意ではないので使用しないでください。
 
-## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>製品の初期同期と、Dataverse から Finance and Operations へのデータの移行
+## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>製品の初期同期と、Dataverse から財務と運用へのデータの移行
 
 ### <a name="initial-synchronization-of-products"></a>製品の初期同期
 
-デュアル書き込みが有効になっている場合、財務と運用アプリからの製品は Dataverse と Customer Engagement アプリに同期されます。 デュアル書き込みの前に Dataverse およびその他の Dynamics 365 アプリで作成された製品は、財務と運用アプリの製品データに更新および照合されません。
+二重書き込みが有効になっている場合、財務と運用アプリからの製品は Dataverse と Customer Engagement アプリに同期されます。 二重書き込みの前に Dataverse およびその他の Dynamics 365 アプリで作成された製品は、財務と運用アプリの製品データに更新および照合されません。
 
-### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations および他の Dynamics 365 アプリの製品データの照合
+### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>財務と運用および他の Dynamics 365 アプリの製品データの照合
 
-Finance and Operations、Dataverse および他の Dynamics 365 アプリで同じ製品が保持 (重複/一致) されている場合、デュアル書き込みを有効にすると、Finance and Operations の製品が同期され、同じ製品の重複したレコードが Dataverse に表示されます。
-以前の状況を回避するために、他の Dynamics 365 アプリが Finance and Operations と重複/一致する製品を所有している場合、二重書き込みを有効にする管理者は、製品の同期が行われる前に **会社** (例: "USMF") および **msdyn_productnumber** (例: "1234:Black:S") の列をブートストラップする必要があります。 つまり、Dataverse の製品のこの 2 つの列には、製品をその製品番号と照合する必要がある Finance and Operations アプリの各会社を入力する必要があります。
+財務と運用、Dataverse および他の Dynamics 365 アプリで同じ製品が保持 (重複/一致) されている場合、デュアル書き込みを有効にすると、財務と運用の製品が同期され、同じ製品の重複したレコードが Dataverse に表示されます。
+以前の状況を回避するために、他の Dynamics 365 アプリが財務と運用と重複/一致する製品を所有している場合、二重書き込みを有効にする管理者は、製品の同期が行われる前に **会社** (例: "USMF") および **msdyn_productnumber** (例: "1234:Black:S") の列をブートストラップする必要があります。 つまり、Dataverse の製品のこの 2 つの列には、製品をその製品番号と照合する必要がある財務と運用の各会社を入力する必要があります。
 
-次に、同期が有効になって実行されると、Finance and Operations の製品が Dataverse および他の Dynamics 365 アプリの一致する製品と同期されます。 これは、特徴的製品と製品バリアントの両方に適用できます。
+次に、同期が有効になって実行されると、財務と運用の製品が Dataverse および他の Dynamics 365 アプリの一致する製品と同期されます。 これは、特徴的製品と製品バリアントの両方に適用できます。
 
-### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Dynamics 365 アプリから Finance and Operations への製品データの移行
+### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Dynamics 365 アプリから財務と運用への製品データの移行
 
-他の Dynamics 365 アプリに Finance and Operations に存在しない製品がある場合、管理者はまず **EcoResReleasedProductCreationV2Entity** を使用して、その製品を Finance and Operations にインポートできます。 次に、上記の説明に従って、Finance and Operations および他の Dynamics 365 アプリの製品データを照合します。
+他の Dynamics 365 アプリに財務と運用に存在しない製品がある場合、管理者はまず **EcoResReleasedProductCreationV2Entity** を使用して、その製品を財務と運用にインポートできます。 次に、上記の説明に従って、財務と運用および他の Dynamics 365 アプリの製品データを照合します。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -10,18 +10,35 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 19193cc445bc9c7d79463734d7d5787737ecc4f7
+ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954666"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "9188994"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20300"></a>Version 2.0.30.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- 安定性が改善されました。
+
+## <a name="version-20280"></a>Version 2.0.28.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- 安定性が改善されました。
+- 画面にエラー ダイアログが表示されている間もスキャンを続行する機能が導入されました。
+- バーコードでの ASCII10 のサポートが追加されました。
+- ステップ インストラクション ダイアログの使いやすさが向上しました。
+- 空白の画面が表示される場合がある問題を修正します。
+- Microsoft Windows で実行されているときに作業一覧が正しくスクロールできない問題を修正します。
 
 ## <a name="version-20250"></a>Version 2.0.25.0
 

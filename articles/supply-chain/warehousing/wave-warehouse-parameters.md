@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e02cd80a3b7692f496fc70e50b812fae358103bc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909615"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067854"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>ウェーブ処理用の倉庫パラメーター
 
@@ -52,7 +52,7 @@ ms.locfileid: "8909615"
 > [!NOTE]
 > ウェーブ処理に使用するウェーブ テンプレートで、ウェーブ処理を自動化する設定を指定できます。 バッチ ジョブのスケジュールを設定する場合、ウェーブ テンプレートの自動化の設定でタイミングを調整する必要があります。 詳細については、[ウェーブ テンプレートの作成](wave-templates.md) を参照してください。
 >
-> *輸送管理* と *高度な倉庫管理* を使用する場合、ウェーブ処理時に積荷を連結するかどうか指定できます。 たとえば、複数の小さな積荷を同時に出荷するときに便利です。 ファイルを処理するときに負荷を連結するには、**積荷** タブで、**ウェーブ処理中に積荷を連結** チェック ボックスをオンにします。</P>
+> *輸送管理* と *倉庫管理プロセス (WMS)* を使用する場合、ウェーブ処理時に積荷を連結するかどうか指定できます。 たとえば、複数の小さな積荷を同時に出荷するときに便利です。 ファイルを処理するときに負荷を連結するには、**積荷** タブで、**ウェーブ処理中に積荷を連結** チェック ボックスをオンにします。</P>
 
 ## <a name="set-up-full-or-partial-reservation-for-production-waves"></a>生産ウェーブの完全または部分引当の設定
 

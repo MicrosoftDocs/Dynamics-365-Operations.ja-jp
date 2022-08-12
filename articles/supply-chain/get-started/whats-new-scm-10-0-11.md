@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: b0cde3da6f2894d6d0bbfe2e5842c055a120e348
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 360f2bc80c1e3926cbee3bced176e7d7217ca952
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857869"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124133"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Dynamics 365 Supply Chain Management 10.0.11 (2020 年 7 月) の新機能または変更された機能
 
@@ -51,7 +51,7 @@ ms.locfileid: "8857869"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.11 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.11 (2020 年 7 月) のプラットフォーム更新プログラム ](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.11 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.11 のプラットフォーム更新プログラム (2020 年 7 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 756895ab0ccdbd2bc42f0a750ad9895ee7b284a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9e5160cc3961703475ffb8dc4a4daf2ae872aaba
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847163"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124928"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>財務と運用アプリのサービスの説明
 
@@ -46,7 +46,7 @@ ms.locfileid: "8847163"
 
 ## <a name="operating-model"></a>運用モデル
 
-財務と運用アプリの運用モデルでは、サービスの有効期間中の顧客、実装パートナー、Microsoft に対する特定のロールと職責を定義しています。 詳細については、[クラウドの工程とサービス](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md) を参照してください。
+財務と運用アプリの運用モデルは、サービスのライフサイクル全体を通じて、顧客、実装パートナー、および Microsoft の特定のロールと責任を定義しています。 詳細については、[クラウドの工程とサービス](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md) を参照してください。
 
 ### <a name="customer-activities"></a>顧客活動
 
@@ -61,7 +61,7 @@ ms.locfileid: "8847163"
 
 ### <a name="microsoft-responsibilities"></a>Microsoft の責任
 
-Microsoft は、Microsoft SaaS サブスクリプションで顧客のサンドボックスと運用環境を展開し、アクティブに監視し、サービスを提供することにより財務と運用のサービスを管理します。 この管理には、サービスを実行し、サービスの正常性について顧客と事前通信するために必要なシステム インフラストラクチャを割り当てることが含まれます。 責任には次のものが含まれます。
+Microsoft は、Microsoft SaaS サブスクリプションで顧客のサンドボックスと運用環境を展開、アクティブに監視、そしてサービスを提供することにより財務と運用のサービスを管理します。 この管理には、サービスを実行し、サービスの正常性について顧客と事前通信するために必要なシステム インフラストラクチャを割り当てることが含まれます。 責任には次のものが含まれます。
 
 **インフラストラクチャ管理**
 - セキュリティと分離
@@ -116,8 +116,8 @@ Microsoft は、トランザクション量とユーザーの同時実行を処�
 
 ### <a name="countryregion-specific-considerations"></a>国/地域固有の考慮事項
 
-- 現地のデータ所在地を必要とするフランスの法人とビジネスを行う規制対象の業界または商業組織の顧客は、[フランスの財務と運用](../../dev-itpro/deployment/france-local-deployment.md)を確認する必要があります。
-- 中国で事業を行っている顧客は、[Azure China プレイブック](/azure/china/)と[中国の 21Vianet で運用されている財務と運用](../../dev-itpro/deployment/china-local-deployment.md)を確認する必要があります。
+- 現地のデータ所在地を必要とするフランスのエンティティとビジネスを行う規制対象の業種または商業組織の顧客は、[フランスの財務と運用](../../dev-itpro/deployment/france-local-deployment.md) を確認する必要があります。
+- 中国で事業を行っている顧客は、[Azure China プレイブック](/azure/china/) と[中国の 21Vianet で運用されている財務と運用](../../dev-itpro/deployment/china-local-deployment.md) を確認する必要があります。
 - ロシアで事業を行っている顧客は、[ロシアの個人データローカリゼーション法](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia) を確認する必要があります。
 
 ### <a name="general-data-protection-regulation-gdpr"></a>一般データ保護規則 (GDPR)
@@ -228,7 +228,7 @@ SaaS サブスクリプションの財務と運用の環境のデーターベー
 
 ## <a name="service-update-strategy"></a>サービス更新の戦略
 
-[ソフトウェアのライフサイクル ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md)に従って、財務と運用アプリは継続的にサービスおよびサポートされる製品を対象とする Microsoft [Modern Lifecycle ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy)に従います。 
+[ソフトウェアのライフサイクル ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md)に従って、財務と運用アプリは継続的にサービスおよびサポートされる製品を対象とする Microsoft [Modern Lifecycle ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy) に従います。 
 
 Microsoft は、以下の月に財務と運用アプリのサービス更新を毎年 8 つリリースします。
 
@@ -311,13 +311,13 @@ Microsoft の障害復旧の計画と手順は、System and Organization Control
 
 ## <a name="finance-and-operations-support-offerings"></a>財務と運用のサポートの提供
 
-技術サポートは、財務と運用のサービスが提供されるマーケットで提供されます。 [サポート エクスペリエンス](../../dev-itpro/lifecycle-services/lcs-support.md)は、LCS または財務と運用アプリで提供されます。 次にいくつか例を挙げます。
+技術サポートは、財務と運用のサービスが提供されるマーケットで提供されます。 [サポート エクスペリエンス](../../dev-itpro/lifecycle-services/lcs-support.md) は、LCS または財務と運用アプリで提供されます。 次にいくつか例を挙げます。
 
 - LCS の [問題検索](../../dev-itpro/lifecycle-services/issue-search-lcs.md)
 - 財務と運用アプリの[統合された技術サポート](../../dev-itpro/lifecycle-services/support-experience.md)
 - LCS の [クラウドを利用したサポート](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md)
 
-Microsoft では、財務と運用のお客様に 3 つのサポートプラン (プレミア、Professional Direct、およびサブスクリプションに含まれるサポート) を提供しています。 サポート レベルはプランごとに異なります。 次の表に、3 つのプランの比較を示します。
+Microsoft では、財務と運用の顧客に 3 つのサポートプラン (Premier、Professional Direct、およびサブスクリプションに含まれるサポート) を提供しています。 サポート レベルはプランごとに異なります。 次の表に、3 つのプランの比較を示します。
 
 | サポート機能 | プレミア | Professional Direct | サブスクリプション |
 |---|---|---|---|
@@ -428,3 +428,4 @@ Dynamics 365 ソリューションのアーキテクチャ、セキュリティ�
 ### <a name="user"></a>ユーザー
 
 財務と運用の環境を使用し、顧客のテナントに関連付けられている 1 人のユーザー。
+

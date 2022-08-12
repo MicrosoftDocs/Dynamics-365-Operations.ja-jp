@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef392fd744a68c54bc0438152b3487233ac5c7f3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905576"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070352"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>倉庫作業用のモバイル デバイスを設定する
 
@@ -123,13 +123,13 @@ ms.locfileid: "8905576"
 <td>移動オーダー品目入庫</td>
 <td>品目の数量の受け入れを登録し、プット アウェイ作業を別の作業者に対して作成します。
 
-<strong>注意:</strong> 倉庫管理プロセスが有効になっていない倉庫から品目が出荷された場合にのみ、このオプションを使用します。</td>
+<strong>注意:</strong> 倉庫管理プロセスが (WMS) 有効になっていない倉庫から品目が出荷された場合にのみ、このオプションを使用します。</td>
 </tr>
 <tr>
 <td>移動オーダー品目入庫とプット アウェイ</td>
 <td>品目の数量の受け入れを登録し、その品目をプット アウェイします。 同じ作業者が両方のアクションを実行します。
 
-<strong>注意:</strong> 倉庫管理プロセスが有効になっていない倉庫から品目が出荷された場合にのみ、このオプションを使用します。</td>
+<strong>注意:</strong> 倉庫管理プロセスが (WMS) 有効になっていない倉庫から品目が出荷された場合にのみ、このオプションを使用します。</td>
 </tr>
 <tr>
 <td>移動オーダー明細行入庫</td>

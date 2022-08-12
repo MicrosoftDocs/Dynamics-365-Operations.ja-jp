@@ -2,19 +2,19 @@
 title: B2B カスタマイズの Commerce カタログの拡張性に対する影響
 description: この記事では、Microsoft Dynamics 365 Commerce の B2B 機能のコマース カタログの拡張性への影響について説明します。
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: a9abdb5ea702917a745c3156f774aade757c159e
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 06d304226270c9c63c6907190dc1038a38f70e44
+ms.sourcegitcommit: d1491362421bf2fcf72a81dc2dc2d13d3b98122b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027257"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9136803"
 ---
 # <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>B2B カスタマイズの Commerce カタログの拡張性に対する影響
 
@@ -67,3 +67,5 @@ ms.locfileid: "9027257"
 [B2B サイトのコマース カタログの作成](catalogs-b2b-sites.md)
 
 [B2B のコマース カタログに関するよく寄せられる質問](catalogs-b2b-sites-FAQ.md)
+
+[カタログ ピッカー モジュール](catalog-picker.md)

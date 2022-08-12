@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771875"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108767"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>組織階層の計画
 
@@ -42,7 +42,7 @@ ms.locfileid: "6771875"
 
 業務を表す 1 つ以上の法人が必要です。 法人は、法的契約を締結することが可能であり、業績を報告する財務諸表の作成が要求されます。
 
-法人は、トランザクション業務または連結に対して使用できます。 このことは、 Finance and Operations での法人は、ビジネスの実際のエンティティを必ずしも表さないことを意味します。 たとえば、トランザクションに参加する会社は、関連法人を所有できます。 このシナリオでは、トランザクションのために法人が必要であり、関連法人の業績および残高を連結するために仮想の法人が必要です。
+法人は、トランザクション業務または連結に対して使用できます。 このことは、財務と運用での法人は、ビジネスの実際のエンティティを必ずしも表さないことを意味します。 たとえば、トランザクションに参加する会社は、関連法人を所有できます。 このシナリオでは、トランザクションのために法人が必要であり、関連法人の業績および残高を連結するために仮想の法人が必要です。
 
 支社などの企業の内部組織を、追加の法人として、または主法人の作業単位として表すことができます。 作業単位は法的に定義された組織である必要はありません。 作業単位は、企業の経済資源と業務プロセスの管理に使用されます。 たとえば、部門、コスト センターは作業単位です。
 
@@ -171,7 +171,7 @@ ms.locfileid: "6771875"
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>組織を作業単位としてシミュレーションする場合
 
-法定レポートは、別のアプリケーションを使用して作成する必要があります。 本社の要件とは異なる各作業単位の要件をサポートするように、データを Finance and Operations アプリで確実に取得する必要があります。
+法定レポートは、別のアプリケーションを使用して作成する必要があります。 本社の要件とは異なる各作業単位の要件をサポートするように、データを財務と運用アプリで確実に取得する必要があります。
 
 ### <a name="currency"></a>通貨
 
@@ -242,3 +242,4 @@ ms.locfileid: "6771875"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

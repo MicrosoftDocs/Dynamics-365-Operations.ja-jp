@@ -13,18 +13,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: be2c0f921fde13598685553ea01bfcf3f8255362
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313570"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108674"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>ER モデルおよび形式のデータ バインディングにおける相対パスの使用
 
 [!include[banner](../includes/banner.md)]
 
-電子申告 (ER) ツールは、ユーザーが電子フォーマット構造を定義できるようにし、アプリケーションに存在するデータとアルゴリズムを使用してこれらの構造を入力する方法を説明します。 詳細については、[電子申告 (ER) コンフィギュレーションの作成](electronic-reporting-configuration.md) を参照してください。 Finance and Operations のデータを取得し、それを使用して電子ドキュメントを生成するためのデータ フローを指定するには、以下を実行する必要があります。
+電子申告 (ER) ツールは、ユーザーが電子フォーマット構造を定義できるようにし、アプリケーションに存在するデータとアルゴリズムを使用してこれらの構造を入力する方法を説明します。 詳細については、[電子申告 (ER) コンフィギュレーションの作成](electronic-reporting-configuration.md) を参照してください。 財務と運用のデータを取得し、それを使用して電子ドキュメントを生成するためのデータ フローを指定するには、以下を実行する必要があります。
 
 - 設計されたドメイン固有のデータ モデルの要素に対するコンフィギュレーションされたデータ ソースをバインドします。 モデル構造と選択されたデータ ソースは、複雑な階層構造の一部であることがあります。 このため、最終バインディングは非常に大きくなり、異なるタイプのさまざまな要素 (たとえば、関係、テーブル、およびメソッド) を含むことがあります。 バインディングは読み取れず、特に所有者でない場合、確認や把握が非常に複雑になることがあります。 
 - データ モデル要素と形式コンポーネントをバインドして、データ モデルから生成された形式の出力に設定するデータを定義します。
@@ -58,3 +58,4 @@ ER マッピング デザイナーの使用可能性を改善する目的でに�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

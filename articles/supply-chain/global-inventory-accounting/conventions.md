@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0055757a0d012896232de58330ee142f702e4ed1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f148d4c6ece543c8a11eee3e6dcdff47b3767936
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8875397"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135508"
 ---
 # <a name="conventions"></a>規則
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 規則は、システム動作に影響を及ぼす一連のポリシーのコンテナーです。 業務上の要件に基づいて、グローバル在庫会計で原価を転記する方法を確立するさまざまなポリシーの組み合わせを使用して、規則を定義する必要があります。 各規則を 1 つ以上の元帳に関連付け、元帳間で適用される会計ポリシーで整合性を確保できます。
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a78b4c37bfca9fedbd46cd8a16b47bd4444fbfee
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91462cc589be6170418f7f78267feea5e25c037d
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849535"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123781"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) の新機能または変更された機能
 
@@ -164,3 +164,4 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.21 には、Platform updates
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

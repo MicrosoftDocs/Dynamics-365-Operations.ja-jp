@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897635"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066643"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>在庫可視化アドインの概要
 
@@ -61,9 +61,9 @@ Inventory Visibility サービスで仮引当を使用しない場合は、注�
 
 ATP 機能は、日々の注文フルフィルメント プロセスに簡単に導入できます。 最も重要なのは、他の Inventory Visibility の提供と同様に、ATP 機能が *グローバルでリアルタイム* であることです。 したがって、すべてのビジネス チャネルとデータ ソースをカバーする完全な在庫状況クエリを含む複数の ATP 計算式を設定できます。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>高度な倉庫管理品目との互換性
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>倉庫管理プロセス (WMS) 品目との互換性
 
-Microsoft は、高度な倉庫管理 (WHS) とのすぐに利用できる統合を提供することを目指しており、WHS の顧客も Inventory Visibility サービスのメリットを受けることができます。 2022 ウェーブ 1 リリース (3 月のパブリック プレビュー) により、在庫サービスは WHS 品目の手持クエリと ATP をサポートします。 仮引当と配賦機能は、WHS の顧客に対して次のウェーブでサポートされます。 詳細については、[WHS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。
+Microsoft は、すぐに使用できる倉庫管理プロセス (WMS) との統合を提供することを目指しており、WMS の顧客も在庫可視化サービスの利点を享受できます。 2022 ウェーブ 1 リリース (3 月のパブリック プレビュー) により、在庫サービスは WMS 品目の手持クエリと ATP をサポートします。 仮引当と配賦機能は、WMS の顧客に対して次のサイクルでサポートされます。 詳細については、[WMS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。
 
 ## <a name="licensing"></a>ライセンス
 

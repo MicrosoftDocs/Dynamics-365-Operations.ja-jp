@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 66ed258ebddaadb5a306f41dea3e439e9b5a7be3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907119"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065866"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>V3 データ エンティティを通じて受信 ASN をインポートする
 
@@ -29,7 +29,7 @@ ASN は、倉庫作業員が何がいつ到着するかを知るのに役立ち�
 この記事では、ASN ファイルの操作方法を例を挙げて示すシナリオをまとめて紹介します。
 
 > [!IMPORTANT]
-> *受信 ASN* のインポートは、高度な倉庫管理 (WMS) に対して有効な品目にのみ適用されます。 ASN を受け取る前に、ASN を送信する仕入先に対して発注書をシステムに登録する必要があります。
+> *受信 ASN* のインポートは、倉庫管理プロセス (WMS) に対して有効な品目にのみ適用されます。 ASN を受け取る前に、ASN を送信する仕入先に対して発注書をシステムに登録する必要があります。
 
 ## <a name="inbound-asn-v3-entity"></a>受信 ASN V3 エンティティ
 

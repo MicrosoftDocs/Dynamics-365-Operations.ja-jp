@@ -2,7 +2,7 @@
 title: イタリアの FatturaPA と SDI の直接統合を設定する
 description: この記事では、イタリア向けの電子請求を開始して、Italian FatturaPA と取引システム (SDI) の直接統合を設定する際に役立つ情報を提供します。
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853195"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203172"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>イタリアの FatturaPA と SDI の直接統合を設定する
 
@@ -69,10 +69,13 @@ ms.locfileid: "8853195"
     - **ドキュメントに署名** アクションの場合は **証明書名** フィールドにデジタル署名証明書を指定します。
     - **送信** アクションの場合は **URL アドレス** と **証明書** フィールドを設定します。 **証明書** フィールドの値は証明書のチェーンであり、最初の証明書はルート CA 証明書 (caentrate.cer) であり、2 番目の値はクライアント証明書です。
 
-4. **検証** を選択して、必須フィールドを必ずすべて設定します。
-5. 変更を保存して、ページを閉じます。
-6. **設定** タブで **プロジェクト請求書** を選択し、**編集** を選択します。
-7. プロジェクト請求書について手順 3 〜 5 を繰り返します。
+4. **適合性ルール** セクションで、句を実行し、必要なフィールドの確認または設定を行います。
+    - **LegalEntityID** 句を確認し、法人の正しい値を使用して更新します。
+
+5. **検証** を選択して、必須フィールドを必ずすべて設定します。
+6. 変更を保存して、ページを閉じます。
+7. **設定** タブで **プロジェクト請求書** を選択し、**編集** を選択します。
+8. プロジェクト請求書について手順 3 〜 6 を繰り返します。
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>インポートに使用する処理パイプラインを構成する
 

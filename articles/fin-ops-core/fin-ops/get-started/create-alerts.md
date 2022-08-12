@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a420c5b2a036ac63a1a179f93462d152c3941fda
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853620"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124227"
 ---
 # <a name="create-alert-rules"></a>警告ルールの作成
 
@@ -75,7 +75,7 @@ ms.locfileid: "8853620"
 
 ## <a name="alerts-as-business-events"></a>ビジネス イベントとしての警告
 
-ビジネス イベント フレームワークを使用して、警告を外部に送信できます。 警告を作成する場合は、**組織全体** を **いいえ** に設定し、**外部への送信** を **はい** に設定します。 ビジネス イベントをトリガーする警告が発生したら、財務と運用コネクターの **ビジネス イベントが発生した場合** のトリガーを使用して Power Automate に組み込まれたフローをトリガーするか、 **ビジネス イベント カタログ**.を介してイベントをビジネス イベント エンドポイントに明示的に送信できます。
+ビジネス イベント フレームワークを使用して、警告を外部に送信できます。 警告を作成する場合は、**組織全体** を **いいえ** に設定し、**外部への送信** を **はい** に設定します。 ビジネス イベントをトリガーする警告が発生したら、財務と運用コネクタの **ビジネス イベントが発生した場合** のトリガーを使用して Power Automate に組み込まれたフローをトリガーするか、**ビジネス イベント カタログ** を介してイベントをビジネス イベント エンドポイントに明示的に送信できます。
 
 ## <a name="create-an-alert-rule"></a>警告ルールを作成
 

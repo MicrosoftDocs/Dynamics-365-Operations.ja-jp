@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fc3cf3b5d28a4e512f921db6ba090dd5731391cc
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713279"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123985"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -26,13 +26,13 @@ ms.locfileid: "8713279"
 
 Dynamics 365 Finance、Dynamics 365 Supply Chain Management あるいは Dynamics 365 Commerce を体験するのは初めてですか? お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つステップ バイ ステップ ガイダンスを作成しました。
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>手順 1: Finance and Operations を 30 日間無料で試す
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>ステップ 1: 財務と運用を 30 日間無料で試す
 
-Dynamics 365 for Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce は、簡単な E メールでのサインアップを通じて 30 日間お試しいただけます。 Finance and Operations アプリケーションのトライアル バージョンには、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオの探索や練習には使用できますが、カスタマイズすることはできません。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 [プレビュー サブスクリプションのサインアップ](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe) で詳細を確認できます。
+Dynamics 365 for Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce は、簡単な E メールでのサインアップを通じて 30 日間お試しいただけます。 財務と運用アプリケーションのトライアル バージョンには、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている、はじめにタスク ガイドが含まれています。 この製品は、シナリオの探索や練習には使用できますが、カスタマイズすることはできません。 製品の使用を簡単にするため、また経験がより意味あるものになるためにデモ データが含まれています。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 [プレビュー サブスクリプションのサインアップ](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe) で詳細を確認できます。
 
 ## <a name="step-two-choose-a-deployment-option"></a>ステップ 2: 配置オプションを選択
 
-Finance and Operations アプリケーションをクラウドにまたはオンプレミスで展開できるようになりました。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。
+財務と運用アプリケーションをクラウドにまたはオンプレミスで展開できるようになりました。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。
 
 配置オプションとしてオンプレミスを選択する場合、次の考慮事項を考慮する必要があります。
 
@@ -62,13 +62,13 @@ Microsoft クラウド ソリューション プロバイダーはお客様と�
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Dynamics パートナー (オンプレミス) から購入
 
-Finance and Operations オンプレミスを購入するにはパートナーと協力する必要があります。 詳細については、[Finance + Operations (オンプレミス) の購入](purchase-on-premises.md) を参照してください。
+Finance + Operations (on-premises) を購入するにはパートナーと協力する必要があります。 詳細については、[Finance + Operations (オンプレミス) の購入](purchase-on-premises.md) を参照してください。
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>ボリューム ライセンス (クラウドまたはオンプレミス) を通じて購入
 
 組織に 250 を超える Dynamics 365 のユーザーがいる場合、[ボリューム ライセンス契約書](https://www.microsoft.com/Licensing/product-licensing/dynamics365) をお勧めします。
 
-ボリューム ライセンスでは、Finance and Operations アプリケーションは以下を通じて使用可能です。
+ボリューム ライセンスでは、財務と運用アプリケーションは以下を通じて使用可能です。
 
 - エンタープライズ契約
 - エンタープライズ契約のサブスクリプション
@@ -94,3 +94,4 @@ Microsoft Dynamics AX 2012 からアップグレードまたは Microsoft Dynami
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

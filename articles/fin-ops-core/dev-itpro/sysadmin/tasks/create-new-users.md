@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 00da7c69ff18abd02ca0cd7984e9b2de5e453a0c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595389"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103328"
 ---
 # <a name="create-new-users"></a>新規ユーザーの作成
 
 [!include [banner](../../includes/banner.md)]
 
-Finance and Operations アプリにアクセスするには、まず **ユーザー** ページ (**システム管理 \> ユーザー \> ユーザー**) に追加する必要があります。 ユーザーには、組織の内部従業員、または外部顧客や仕入先が含まれます。 ユーザーは手動でインポートまたは追加できます。 すべてのユーザーは、準拠して使用するために正しいライセンスを取得する必要があります。
+財務と運用アプリにアクセスする前に、まず **ユーザー** ページ (**システム管理者 \> ユーザー \> ユーザー**) に追加する必要があります。 ユーザーには、組織の内部従業員、または外部顧客や仕入先が含まれます。 ユーザーは手動でインポートまたは追加できます。 すべてのユーザーは、準拠して使用するために正しいライセンスを取得する必要があります。
 
-Finance and Operations アプリの購入方法とライセンスの取得方法については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
+財務と運用アプリの購入方法とライセンスの取得方法の詳細については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
 
 ## <a name="assign-a-license-to-a-user"></a>ライセンスのユーザーへの割り当て
-システム管理者は、[Microsoft 365 管理者センター](/office365/admin/admin-overview/about-the-admin-center)で、[ユーザーにライセンスを割り当てる](/office365/admin/subscriptions-and-billing/assign-licenses-to-users)ことができます。
+システム管理者は、[Microsoft 365 管理センター](/office365/admin/admin-overview/about-the-admin-center)で[ユーザーにライセンスを割り当てる](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) ことができます。
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Azure AD への外部ユーザーの追加とライセンスの割り当て 
-外部ユーザーがライセンスを割り当てできるよう、テナント ディレクトリ (Azure Active Directory (Azure AD)) に表示される必要があります。 それら外部ユーザーは、ゲスト ユーザーとして Azure AD のテナントに追加した後、適切なライセンスを割り当てる必要があります。 Finance and Operations アプリの要件は、ゲスト ユーザーの会社が Azure AD を使用することです。 詳細については、[Azure ポータルで Azure Active Directory B2B コラボレーション ユーザーを追加する](/azure/active-directory/b2b/add-users-administrator) を参照してください。
+外部ユーザーがライセンスを割り当てできるよう、テナント ディレクトリ (Azure Active Directory (Azure AD)) に表示される必要があります。 それら外部ユーザーは、ゲスト ユーザーとして Azure AD のテナントに追加した後、適切なライセンスを割り当てる必要があります。 財務と運用アプリの要件は、ゲスト ユーザーの会社が Azure AD を使用することです。 詳細については、[Azure ポータルで Azure Active Directory B2B コラボレーション ユーザーを追加する](/azure/active-directory/b2b/add-users-administrator) を参照してください。
 
 ## <a name="import-new-users-from-azure-ad"></a>Azure AD からの新規ユーザーのインポート 
 1. **システム管理** \> **ユーザー** \> **ユーザー** の順に移動します。

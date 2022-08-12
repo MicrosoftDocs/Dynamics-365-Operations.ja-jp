@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900973"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112196"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
@@ -40,7 +40,7 @@ ms.locfileid: "8900973"
 
 ## <a name="availability"></a>使用可能性
 
-計画の最適化は現在、次の Azure の地域で利用可能です: 米国、カナダ、ブラジル、ヨーロッパ、英国、オーストラリア、アジア太平洋、日本、インド。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。 Azure の地域および関連地域の詳細については、[Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) の地域 を参照してください。
+計画の最適化は現在、次の Azure の地域で利用可能です: 米国、カナダ、ブラジル、ヨーロッパ、フランス、英国、オーストラリア、アジア太平洋、日本、およびインド。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。 Azure の地域および関連地域の詳細については、[Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) の地域 を参照してください。
 
 計画の最適化では、 Dynamics 365 Supply Chain Management の社内設置型の配置に対応していないことに注意してください。
 
@@ -58,7 +58,7 @@ ms.locfileid: "8900973"
 
 - LCS が有効になっている高可用性環境の tier 2 またはそれ以降 (OneBox 環境ではなく)、Dynamics 365 Supply Chain Management バージョン 10.0.7 またはそれ以降で Supply Chain Management を実行する必要があります。 このアドインを OneBox 環境にインストールはできません。インストール処理をキャンセルする必要があります。
 
-- システムは Power Platform 統合用に設定されている必要があります。 詳細については、[Microsoft Power Platform と財務と運用アプリの統合](../../../fin-ops-core/dev-itpro/power-platform/overview.md) を参照してください。
+- システムは Power Platform 統合用に設定されている必要があります。 詳細については、[Microsoft Power Platform と財務と運用アプリの統合](../../../fin-ops-core/dev-itpro/power-platform/overview.md)を参照してください。
 
 ### <a name="enable-the-planning-optimization-license"></a>計画最適化ライセンスを有効化する
 
@@ -135,3 +135,4 @@ LCS プロジェクトからアドインをインストールし、Supply Chain 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

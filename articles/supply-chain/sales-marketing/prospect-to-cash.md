@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea07b40c0a1a7eae7cd167f46796556b1e0ecc46
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857231"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103597"
 ---
 # <a name="prospect-to-cash"></a>見込顧客を現金化
 
@@ -43,13 +43,13 @@ ms.locfileid: "8857231"
 ## <a name="system-requirements-for-supply-chain-management"></a>Supply Chain Management のシステム要件
 見込顧客の現金化は次のバージョンでサポートされています。
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 (2017 年 12 月)
+### <a name="microsoft-dynamics-365-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 財務と運用、Enterprise Edition 7.3 (2017 年 12 月)
 
-- Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 12 月) - アプリケーション ビルド 7.3.11971.56116 とプラットフォーム更新プログラム 12 (7.0.4709.41129)
+- Dynamics 365 財務と運用、Enterprise edition (2017 年 12 月) - プラットフォーム 更新プログラム 12 (7.0.4709.41129) によるアプリケーション ビルド 7.3.11971.56116
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月)
+### <a name="dynamics-365-finance-enterprise-edition-july-2017"></a>Dynamics 365 Finance、Enterprise Edition (2017 年 7 月)
 
-- Dynamics 365 for Finance and Operations、Enterprise edition (2017 年 7 月) - プラットフォーム更新プログラム 8 (アプリケーション ビルド 7.2.11792.56024 とプラットフォーム ビルド 7.0.4565.16212)。
+- Dynamics 365 財務と運用、Enterprise edition (2017 年 7 月) - プラットフォーム 更新プログラム 8 (プラットフォーム ビルド 7.0.4565.16212 によるアプリケーション ビルド 7.2.11792.56024) による。
 - 次の修正プログラムが必要です。
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – この修正プログラムはデータ統合機能を利用した Sales から Supply Chain Management への販売注文の同期を有効にします。 他のいくつかの機能拡張も提供されています。
@@ -59,9 +59,9 @@ ms.locfileid: "8857231"
     > [!NOTE]
     > インストールに他の修正プログラムからの変更が含まれているため、KB4045570 のみをインストールしなければなりません。 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations バージョン 1611 (2016 年 11 月)
+### <a name="dynamics-365-finance-and-operations-version-1611-november-2016"></a>Dynamics 365財務と運用バージョン 1611 (2016 年 11 月)
 
-- Dynamics 365 for Finance and Operations バージョン1611 (2016 年 11 月) プラットフォーム更新プログラム 8 またはそれ以降
+- プラットフォーム 更新プログラム 8 またはそれ以降による Dynamics 365 財務と運用バージョン 1611 (2016 年 11 月)
 
 - 次の修正プログラムが必要です。
 

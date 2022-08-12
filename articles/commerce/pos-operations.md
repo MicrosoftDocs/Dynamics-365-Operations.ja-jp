@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 3948fff15108568df514406ad443d4f538653e62
+ms.sourcegitcommit: 1af2b01aea6b5a4d88ee3fae6faa0eaf1976c5dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027286"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9146488"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>オンラインおよびオフラインでの販売時点管理 (POS) の操作
 
@@ -271,7 +271,7 @@ ms.locfileid: "9027286"
 | 1218 | 周辺機器を強制的にロック解除                           | システムはこの操作を内部的に使用して POS 周辺機器のロックを解除します。                                                                                                                                           | 該当なし | 該当なし     | 該当なし | 該当なし    | 無効              |
 | 1219 | POS で URL を開く                                   | POS で構成されている管理者 URL を開きます。                                                                                                                                                                           | 有効            | 有効                | 有効            | 有効               | 無効              |
 | 1220 | 金庫の管理                                       | さまざまなレジスター用の金庫を管理します。                                                                                                                                                                       | 有効            | 有効                | 有効            | 有効               | 無効              |
-| 1221 | 中断されたトランザクションの無効化                       | 中断されたトランザクションを無効化します。                                                                                                                                                                               | 有効            | 有効                | 有効            | 有効               | 無効              |
+| 1221 | 中断されたトランザクションの無効化                       | 中断されたトランザクションを無効化します。                                                                                                                                                                               | 有効            | 無効                | 無効            | 有効               | 無効              |
 | 1300 | 会計登録のスキップ                          | 会計登録をスキップします。                                                                                                                                                                                       | 無効            | 無効                | 無効            | 有効               | 無効             |
 | 1301 | 登録されている会計イベントをマーク                      |  会計イベントを [登録済み] にマークします。                                                                                                                                                                                  | 無効            | 無効                | 無効            | 有効               | 無効             |
 | 1302 | 会計登録プロセスの完了              | 会計登録プロセスを完了します。                                                                                                                                                                           | 無効            | 無効                | 有効            | 有効               | 有効             |

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b8faa7b73349c48d3a02b685546b47c4969c6027
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403844"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109435"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>インポート ジョブで日時を同期する
 
@@ -27,7 +27,7 @@ ms.locfileid: "7403844"
 
 この二重変換によって、アプリケーション間で日付が変更されます。 たとえば、二重変換では、ローカル タイム ゾーンの違いにより Dynamics 365 Human Resources と Dynamics 365 Finance の間で従業員の開始日が異なる場合があります。 インポート ジョブを UTC に設定すると、この問題が解決します。
 
-1. Dynamics 365 Finance and Operations で、**データ管理** を選択します。
+1. Dynamics 365 財務と運用で、**データ管理** を選択します。
 
 2. **プロジェクトのインポート** を選択し、プロジェクトを選択します。
 
@@ -41,3 +41,4 @@ ms.locfileid: "7403844"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

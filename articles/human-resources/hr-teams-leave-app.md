@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4843e5bc0cc97f47e212c0cb4a6ddc4a2032f306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cdfd8db68647623e2b5f1b9eca93b57776e1bfe9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858130"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067064"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -185,7 +185,7 @@ Human Resources で、**設定** を選択してから、**ユーザー オプ�
 
 ![Human Resources ユーザー オプション。](./media/hr-teams-leave-app-user-options.png)
 
-それでも翻訳の問題が発生する場合は、お知らせください。 詳細については、[財務と運用アプリまたは Lifecycle Services (LCS) に関するサポートの利用](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json) を参照してください。
+それでも翻訳の問題が発生する場合は、お知らせください。 詳細については、[財務と運用アプリまたは Lifecycle Services (LCS) に関するサポートの利用](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリで休暇申請を承認する際のエラー
 
@@ -245,3 +245,4 @@ Human Resources アプリでチャット ボットと会話しながら、会話
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

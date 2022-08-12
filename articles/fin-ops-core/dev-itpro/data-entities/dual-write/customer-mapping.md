@@ -1,6 +1,6 @@
 ---
 title: 統合された顧客マスター
-description: この記事では、財務と運用と Dataverse 間の顧客データの統合について説明します。
+description: この記事では、財務と運用および Dataverse 間の顧客データの統合について説明します。
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890459"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111727"
 ---
 # <a name="integrated-customer-master"></a>統合された顧客マスター
 
@@ -30,9 +30,9 @@ ms.locfileid: "8890459"
 
 ![顧客データ フロー。](media/dual-write-customer-data-flow.png)
 
-顧客は、商用 / 組織の顧客および消費者 / エンド ユーザーの 2 種類に大きく分類できます。 これら 2 種類の顧客は、Finance and Operations と Dataverseにて、異なる方法で格納および処理されます。
+顧客は、商用 / 組織の顧客および消費者 / エンド ユーザーの 2 種類に大きく分類できます。 これら 2 種類の顧客は、財務と運用および Dataverseにて、異なる方法で格納および処理されます。
 
-Finance and Operations では、商用 / 組織の顧客および消費者 / エンド ユーザーの両方が、**CustTable** (CustCustomerV3Entity) という名前の単一のテーブルで習得され、**タイプ** 属性に基づいて分類されます。 (**タイプ** が **組織** に設定されている場合、顧客は商用/組織の顧客であり、**タイプ** が **個人** に設定されている場合、顧客はコンシューマー/エンド ユーザーです。) 主な連絡担当者情報は、SMMContactPersonEntity テーブルを介して処理されます。
+財務と運用では、商用 / 組織の顧客および消費者 / エンド ユーザーの両方が、**CustTable** (CustCustomerV3Entity) という名前の単一のテーブルで習得され、**タイプ** 属性に基づいて分類されます。 (**タイプ** が **組織** に設定されている場合、顧客は商用/組織の顧客であり、**タイプ** が **個人** に設定されている場合、顧客はコンシューマー/エンド ユーザーです。) 主な連絡担当者情報は、SMMContactPersonEntity テーブルを介して処理されます。
 
 Dataverse では、商取引/組織の顧客はアカウント テーブルで習得され、**RelationshipType** 属性が **顧客** に設定されている場合、顧客として識別されます。 コンシューマ/エンド ユーザーと連絡担当者の両方が、連絡先テーブルによって表されます。 コンシューマー/エンド ユーザーと連絡担当者の間を明確に分離するために、**連絡先** テーブルには **販売可能** という名前のブール値フラグがあります。 **販売可能** が **True** の場合、連絡先はコンシューマー / エンド ユーザーであり、その連絡先に対して見積と注文を作成できます。 **販売可能が** が **False** の場合、連絡先は顧客の主要な連絡担当者にすぎません。
 
@@ -57,3 +57,4 @@ Dataverse では、商取引/組織の顧客はアカウント テーブルで�
 [支払条件](mapping-reference.md#161) | msdyn_paymentterms | このテンプレートは、顧客および仕入先の支払条件 (支払に関する条件) に関する参照データを同期します。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

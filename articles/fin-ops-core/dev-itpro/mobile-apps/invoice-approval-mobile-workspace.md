@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4cc05d9fcea129cfb2ed8ed8df4bd4034a1fed4c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868672"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066393"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>モバイル ワークスペースの請求書承認
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868672"
 
 この記事では、**請求書承認** モバイル ワークスペースに関する情報を提供します。 このワークスペースは、仕入先請求書ヘッダーのワークフロー プロセスを通して割り当てられている請求書の一覧を提供します。 
 
-このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。
+このモバイル ワークスペースは、財務と運用のモバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要
 
@@ -61,7 +61,7 @@ ms.locfileid: "8868672"
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
 
-Finance and Operations モバイル アプリをダウンロードしてインストールします。
+財務と運用モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -88,3 +88,4 @@ Finance and Operations モバイル アプリをダウンロードしてイン�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

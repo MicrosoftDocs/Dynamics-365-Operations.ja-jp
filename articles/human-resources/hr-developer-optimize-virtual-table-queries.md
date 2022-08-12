@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f75176781620cd6f845c002876eba6e34d5793e7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1f379cd7783cc984666582d2c680a1db013627ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692229"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070175"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Dataverse 仮想テーブル クエリの最適化
 
@@ -49,12 +49,12 @@ Human Resources の Dataverse 仮想テーブルでパフォーマンスが低�
 この影響が見られる例は、作業者 (**mshr_hcmworkerentity**) または基本作業者 (**mshr_hcmworkerbaseentity**) エンティティに対するクエリです。 さまざまな方法でパフォーマンスの問題が発生する可能性があります。
 
 - **クエリの実行が遅い**: 仮想テーブルに対するクエリは予期された結果を返す場合がありますが、クエリの実行が完了するまでに予想よりも時間がかかります。
-- **クエリのタイムアウト**: クエリがタイムアウトし次のエラーが返される場合があります。「Finance and Operations を呼び出すためのトークンが取得されましたが、Finance and Operations はタイプ InternalServerError のエラーを返しました。」
+- **クエリのタイムアウト**: クエリがタイムアウトし次のエラーが返される場合があります。「財務と運用を呼び出すためのトークンが取得されましたが、財務と運用はタイプ InternalServerError のエラーを返しました。」
 - **予期しないエラー**: クエリは、「予期しないエラーが発生しました」というメッセージとともにエラー タイプ 400 を返す場合があります。
 
   ![HcmWorkerBaseEntity のエラー タイプ 400。](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **調整**: クエリはサーバー リソースを過剰に使用し、調整の対象になる可能性があります。 この場合、クエリは次のエラーを返します:「Finance and Operations を呼び出すためのトークンが取得されましたが、Finance and Operations はタイプ 429 のエラーを返しました。」 Human Resources の調整の詳細については [スロットリングに関するよく寄せられる質問](./hr-admin-integration-throttling-faq.md) を参照してください。
+- **調整**: クエリはサーバー リソースを過剰に使用し、調整の対象になる可能性があります。 この場合、クエリは次のエラーを返します: 「財務と運用を呼び出すためのトークンが取得されましたが、財務と運用はタイプ 429 のエラーを返しました。」 Human Resources の調整の詳細については [スロットリングに関するよく寄せられる質問](./hr-admin-integration-throttling-faq.md) を参照してください。
 
   ![HcmWorkerBaseEntity のエラー タイプ 429。](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -161,3 +161,4 @@ Dataverse Web API クエリおよび Power BI と同様に、関連するテー�
 - [スロットリングに関するよく寄せられる質問](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

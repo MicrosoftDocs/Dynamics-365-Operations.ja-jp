@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba80c4c3eac703ba96a4f2741fcc19bceeb24ed0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519932854dfd3e872433b0fb304e683c57cea1cb
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898494"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108500"
 ---
 # <a name="datetodatetime-er-function"></a>DATETODATETIME ER 関数
 
@@ -47,7 +47,7 @@ DATETODATETIME (date)
 
 ## <a name="example-1"></a>例 1
 
-`DATETODATETIME (CompInfo. 'getCurrentDate()')` は、現在の Microsoft Dynamics 365 Finance セッションの日付 2015 年 12 月 24 日を **12/24/2015 12:00:00 AM** として返します。 この例では、**CompInfo** は、**Finance and Operations/Table** タイプの電子申告 (ER) データ ソースで、CompanyInfo テーブルを参照します。
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` は、現在の Microsoft Dynamics 365 Finance セッションの日付 2015 年 12 月 24 日を **12/24/2015 12:00:00 AM** として返します。 この例では、**CompInfo** は、**財務と運用/テーブル** タイプの電子申告 (ER) データ ソースで、CompanyInfo テーブルを参照します。
 
 ## <a name="example-2"></a>例 2
 

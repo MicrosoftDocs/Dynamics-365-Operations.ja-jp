@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8cfbcfea3c6056d87eb600c9a2f9e0d1727c30ff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f73f7189ad82d85169a4e0df573dd26dab8bb009
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894746"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070603"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Regulatory Configuration Services (RCS) で ER の構成を作成し、グローバル リポジトリにアップロードする
 
@@ -37,7 +37,7 @@ Microsoft Regulatory Configuration Service (RCS) を使用して電子レポー�
 
 また、組織用に RCS 環境がプロビジョニングされていることを確認する必要があります。 組織用に RCS インスタンスがプロビジョニングされていない場合は、次の手順で行うことができます:
 
-1. Finance and Operations アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** の順に移動します。
+1. 財務と運用アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** の順に移動します。
 2. **関連リンク / 外部リンク** で、**Regulatory services - 構成** を選択し、指示に従って **サインアップ** してプロビジョニングします。
 
 RCS 環境が既に組織用にプロビジョニングされている場合は、ページの URL を使用してアクセスし、**サインイン** オプションを選択します。
@@ -105,3 +105,4 @@ RCS 環境が既に組織用にプロビジョニングされている場合は�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

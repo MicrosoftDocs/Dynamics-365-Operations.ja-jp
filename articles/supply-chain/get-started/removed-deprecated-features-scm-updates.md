@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 949fa0df58bc3338c8bc84ecbd4f2ad17117dd12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865269"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171518"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
@@ -48,11 +48,11 @@ ms.locfileid: "8865269"
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Supply Chain Management 10.0.18 リリースの削除済みまたは非推奨の機能
 
-### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations- 倉庫管理 (倉庫アプリ)
+### <a name="supply-chain-management--warehousing-the-warehouse-app"></a><a name="wma"></a>Supply Chain Management- 倉庫管理 (倉庫管理アプリ)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | 2021 年 4 月付で、*Dynamics  365 for Finance and Operations - 倉庫管理* (倉庫アプリ) は非推奨となり、2022 年 4 月以降はサポートされなくなります。 これで、Supply Chain Management のバージョン 10.0.17 にリリースされた *Warehouse Mobile モバイル アプリ* によって置き換えられたのです。 この新しいアプリは完全に交換するものですが、移行を容易にする基になる同じフレームワークを使用します。 必要に応じて、2 つのアプリケーションを並べて、新しいアプリの使い方をユーザーが徐々に調整できるよう支援することができます。<br><br>新しい Warehouse Management モバイル アプリについての詳細は、[Warehouse Management モバイル アプリケーション](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) と [Warehouse Management モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) をご覧ください。 |
+| **廃止 / 削除の理由** | 2021 年 4 月付で、*Supply Chain Management - 倉庫管理* (倉庫管理アプリ) は廃止され、2022 年 4 月以降はサポートされません。 これで、Supply Chain Management のバージョン 10.0.17 にリリースされた *Warehouse Mobile モバイル アプリ* によって置き換えられたのです。 この新しいアプリは完全に交換するものですが、移行を容易にする基になる同じフレームワークを使用します。 必要に応じて、2 つのアプリケーションを並べて、新しいアプリの使い方をユーザーが徐々に調整できるよう支援することができます。<br><br>新しい Warehouse Management モバイル アプリについての詳細は、[Warehouse Management モバイル アプリケーション](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) と [Warehouse Management モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) をご覧ください。 |
 | **別の機能で置き換えられているか?**   | はい、新しい Warehouse Mobile モバイル アプリによって置き換えられる必要があります。 |
 | **影響を受ける製品領域**         | Supply Chain Management - 倉庫アプリ |
 | **配置オプション**              | クラウドとオンプレミス |
@@ -98,3 +98,4 @@ ms.locfileid: "8865269"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

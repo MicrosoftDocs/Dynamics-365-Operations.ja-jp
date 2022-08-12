@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876127"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135846"
 ---
 # <a name="posting-profiles-overview"></a>転記プロファイルの概要
 
@@ -111,13 +111,14 @@ Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Comme
 - 経費管理の転記 (近日予定)
 - [固定資産転記プロファイル](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - 会社間勘定の転記 (近日予定)
-- 在庫転記プロファイル (近日予定)
+- [在庫転記](inventory-posting.md)
 - [陸揚原価の転記](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [転記の定義の概要](posting-definitions.md)
-- 生産管理の転記 (近日予定)
+- [生産の転記](production-posting.md)
 - プロジェクト管理および会計の転記 (近日予定)
 - サービス管理の転記 (近日予定)
 - 税金の転記 (近日予定)
 - 時間と出勤の転記 (近日予定)
 - 輸送管理の転記 (近日予定)
 - リベート管理の転記プロファイル (近日予定)
+

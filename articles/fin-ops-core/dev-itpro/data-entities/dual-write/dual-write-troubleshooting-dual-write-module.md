@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864575"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111173"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
 
@@ -22,12 +22,12 @@ ms.locfileid: "8864575"
 
 
 
-この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの **デュアル書き込み** モジュールの問題修正に特化したトラブルシューティング情報を提供します。
+この記事では、財務と運用アプリと Dataverse 間の二重書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの **二重書き込み** モジュールの問題修正に特化したトラブルシューティング情報を提供します。
 
 > [!IMPORTANT]
 > この記事で説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>財務と運用アプリでデュアル書き込みモジュールを読み込めない
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>財務と運用アプリで二重書き込みモジュールを読み込めない
 
 **データ管理** ワークスペースで **デュアル書き込み** タイルを選択しても **デュアル書き込み** のページを開くことができない場合は、データ統合サービスがダウンしている可能性があります。 サポートチケットを作成して、データ統合サービスの再起動を要求してください。
 
@@ -77,7 +77,7 @@ Root activity ID: \<your root activity\> id
 
 財務と運用アプリでの並列処理を有効にするには、次の手順に従います。
 
-1. 財務と運用環境にログインします。
+1. 財務と運用の環境にログインします。
 2. **データ管理 > フレームワーク パラメーター** の順に移動します。
 3. **エンティティ設定** を選択し、**エンティティ実行パラメーターの構成** を選択します。
 4. 並行処理用のパラメーターを追加します。
@@ -97,7 +97,7 @@ Root activity ID: \<your root activity\> id
 マッピングの状態を **実行中** に設定しようとすると、次のエラーが表示される場合があります。 エラーの原因によって修正方法は異なります。
 
 + マッピングに依存マッピングが含まれている場合は、このテーブル マッピングの依存マッピングを有効にする必要があります。
-+ マッピングにソース列、または出力先の列がない可能性があります。 財務と運用アプリの列が存在しない場合は、[マップに存在しないテーブル列の問題](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse で列が表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、列が自動的にマッピングに反映されるようにします。
++ マッピングにソース列、または出力先の列がない可能性があります。 財務と運用アプリの列が存在しない場合は、[マップに存在しないテーブル列の問題](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps)のセクションに記載されている手順を実行します。 Dataverse で列が表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、列が自動的にマッピングに反映されるようにします。
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>バージョンの不一致エラーとデュアル書き込みソリューションのアップグレード
 
@@ -112,3 +112,4 @@ Root activity ID: \<your root activity\> id
 この問題を修正するには、Dataverse でデュアル書き込みソリューションを更新します。 必要なソリューション バージョンに一致する最新のソリューションにアップグレードしてください。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

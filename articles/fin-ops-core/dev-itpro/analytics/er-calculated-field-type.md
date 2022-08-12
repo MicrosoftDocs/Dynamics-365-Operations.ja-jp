@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934705"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108332"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 
@@ -36,7 +36,7 @@ ms.locfileid: "8934705"
     - 電子申告機能コンサルタント
     - システム管理者
 
-- 次のいずれかのロールで、Finance and Operations と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) にアクセスします。
+- 次のいずれかのロールで、財務と運用と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) にアクセスします。
 
     - 電子申告開発者
     - 電子申告機能コンサルタント
@@ -84,7 +84,7 @@ ms.locfileid: "8934705"
             - 税額の合計。
             - 適用される税率の最小値。
 
-    このコンフィギュレーションのモデル マッピングは、このモデルに対して作成され Finance and Operations で実行される、すべての ER フォーマットの基本データ モデルを実装します。 その結果、**税** および **Gr** データ ソースの内容は、抽象データ ソースなどの ER フォーマットに対して公開されます。
+    このコンフィギュレーションのモデル マッピングは、このモデルに対して作成され、財務と運用で実行される、すべての ER フォーマットの基本データ モデルを実装します。 その結果、**税** および **Gr** データ ソースの内容は、抽象データ ソースなどの ER フォーマットに対して公開されます。
 
     ![税および Gr データ ソースを表示するモデル マッピング デザイナー ページ。](media/er-calculated-field-type-01.png)
 
@@ -343,3 +343,4 @@ ms.locfileid: "8934705"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

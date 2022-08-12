@@ -1,6 +1,6 @@
 ---
 title: Dataverse での会社の概念
-description: この記事では、財務と運用と Dataverse 間の企業データの統合について説明します。
+description: この記事では、財務と運用および Dataverse 間の企業データの統合について説明します。
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,29 +9,31 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873181"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205939"
 ---
-# <a name="company-concept-in-dataverse"></a>Dataverse の企業概念
+# <a name="company-concept-in-dataverse"></a>Dataverse での会社の概念
 
 [!include [banner](../../includes/banner.md)]
 
 
 
 
-Finance and Operations では、*企業* の概念は、法的コンストラクトとビジネス コンストラクトの両方です。 また、データのセキュリティと可視性の境界でもあります。 ユーザーは常に単一の会社のコンテキストで作業し、データのほとんどは会社によってストライプされます。
+財務と運用では、*企業* の概念は、法的コンストラクトとビジネス コンストラクトの両方です。 また、データのセキュリティと可視性の境界でもあります。 ユーザーは常に単一の会社のコンテキストで作業し、データのほとんどは会社によってストライプされます。
 
 Dataverse は、同等の概念を持っていません。 最も近い概念は、主にユーザー データのセキュリティと可視性の境界である *事業単位* です。 この概念は、企業概念と同じ法的またはビジネス上の意味を持ちません。
 
 事業単位と企業は同等の概念ではないため、Dataverse 統合を目的として 1 対 1 (1:1) のマッピングを強制することはできません。 ただし、ユーザーは既定でアプリケーションと Dataverse で同じ行を表示する必要があるため、Microsoft では cdm\_Company という Dataverse に新たなテーブルを導入しています。 このテーブルは、アプリケーションの企業テーブルと同等です。 行の可視性はアプリケーションと Dataverse 間で同等に、すぐに使用できることを保証するために、Dataverse のデータで次の設定をお勧めします。
 
-+ デュアル書き込みが有効になっている Finance and Operations の企業の行ごとに、関連付けられた cdm\_ 企業の行が作成されます。
-+ cdm\_Company の行が作成され、デュアル書き込みが有効になると、同じ名前の既定の事業単位が作成されます。 既定のチームは、その事業単位に対して自動的に作成されますが、事業単位は使用されません。
-+ 同じ名前を持つ別の所有者チームが、作成されます。 また、事業単位にも関連付けられています。
++ デュアル書き込みが有効になっている財務と運用の企業の行ごとに、関連付けられた cdm\_ 企業の行が作成されます。
+
++ cdm\_Company の行が作成され、デュアル書き込みが有効になると、同じ名前の既定の事業単位が作成されます。 既定所有者のチームは、その事業単位に対して自動的に作成されますが、事業単位は使用されません。
++ デュアル書込みの接尾語と同じ名前を持つ別の所有者チームが、作成されます。 また、事業単位にも関連付けられています。
+
 + 既定では、作成されて、Dataverse にデュアル書き込みされた行の所有者は、関連付けられた事業部にリンクされている 「DW 所有者」 チームに設定されます。
 
 次の図では、Dataverse のデータ設定の例を示します。
@@ -43,7 +45,7 @@ Dataverse は、同等の概念を持っていません。 最も近い概念は
 + 「営業マネージャー」のロールは、「USMF セールス」チームのメンバーに割り当てられます。
 + 「営業マネージャー」のロールを持つユーザーは、自分が所属する同じ事業単位のメンバーである任意の取引先企業の行にアクセスできます。
 + 「USMF セールス」チームは、前述の USMF 事業単位にリンクされています。
-+ したがって、「USMF セールス」チームのメンバーは、Finance and Operations の USMF 会社テーブルに由来する「USMF DW」ユーザーが所有するアカウントを確認できます。
++ したがって、「USMF セールス」チームのメンバーは、財務と運用の USMF 会社テーブルに由来する「USMF DW」ユーザーが所有するアカウントを確認できます。
 
 ![チームの使用方法。](media/dual-write-company-2.png)
 

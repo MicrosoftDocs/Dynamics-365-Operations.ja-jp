@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 54655d2b1cfb4b11f32842d4c3cff2f4d8e97ef5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2c811ac48a6bf29267192f61a33b6b47721659
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856802"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068169"
 ---
 # <a name="customer-payment-insights-preview"></a>顧客支払に関するインサイト (プレビュー)
 
@@ -69,9 +69,10 @@ AI ソリューションの開発と展開は困難です。 データ科学者�
 
 ## <a name="privacy-notice"></a>プライバシー通知
 
-プレビュー (1) は、Dynamics 365 Finance and Operations サービス (2) を下回るプライバシーおよびセキュリティ対策を使用している場合があり、このサービス (3) のためにサービス レベル契約には含まれておらず、個人データや、その他法律上または規制順守要件の対象となるデータを処理することはできず、(4) のサポートは制限されます。
+プレビュー (1) は、Dynamics 365 財務と運用サービス (2) を下回るプライバシーおよびセキュリティ対策を使用している場合があり、このサービス (3) のためにサービス レベル アグリーメントには含まれておらず、個人データや、その他法律上または規制順守要件の対象となるデータを処理することはできず、(4) のサポートは制限されます。
 
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

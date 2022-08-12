@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899443"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201869"
 ---
 # <a name="reserve-inventory-quantities"></a>在庫数量の引当
 
@@ -75,7 +75,7 @@ ms.locfileid: "8899443"
 
 **在庫および倉庫管理パラメーター** ページの引当に関連付けられる 2 つのオプションがあります:
 -   **一般** タブの **注文済品目の引当** オプションで、売掛金勘定、プロジェクト管理および会計、生産管理の品目払出に対して注文される品目入庫の引当を行うことができます。 このオプションをオフにした場合は、現物入庫済品目の引当のみを行うことができます。 特定の品目がマイナス在庫を許容するように設定されている場合、このフィールドは関係ありません。
--   **配送** タブの **品目の自動引当** オプションは、品目が移動オーダーに自動的に引当されている場合の既定の設定を決めます。 既定の設定は、個々の移動オーダーで上書きできます。
+-   **譲渡** タブの **品目の自動引当** オプションは、品目が移動オーダーに自動的に引当されている場合の既定の設定を決めます。 既定の設定は、個々の移動オーダーで上書きできます。
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>生産パラメータ ページの在庫引当ポリシー
 

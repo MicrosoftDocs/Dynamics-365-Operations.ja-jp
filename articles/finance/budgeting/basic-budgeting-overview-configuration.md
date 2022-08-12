@@ -1,6 +1,6 @@
 ---
 title: 予算作成の概要
-description: Microsoft Dynamics 365 Finance の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Finance and Operations 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。
+description: Microsoft Dynamics 365 Finance の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、財務と運用予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。
 author: panolte
 ms.date: 04/29/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48fcfec7126b4835b7d05e431bbc6ad7b9176bbe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 380afc399a050215bb2d7b1e5ddb20088226f654
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710416"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068963"
 ---
 # <a name="budgeting-overview"></a>予算作成の概要
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、Finance and Operations 予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。
+Microsoft Dynamics 365 Finance の財務機能を使用するほとんどすべての会社は、実績対予算のレポートを作成できなければなりません。 この記事では、財務と運用予算で作成したり、サード パーティ製プログラムから読み込むために必要な最低限のコンフィギュレーションを説明します。
 
 ## <a name="overview"></a>概要
 
@@ -89,3 +89,4 @@ Microsoft Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) で導入
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

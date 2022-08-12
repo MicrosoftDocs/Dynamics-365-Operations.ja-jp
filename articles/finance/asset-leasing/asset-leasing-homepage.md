@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fa27e20bc0c0ff5c639dfb2d079adef8926f535f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889152"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069350"
 ---
 # <a name="asset-leasing-home-page"></a>資産リースのホームページ
 
@@ -90,9 +90,9 @@ ms.locfileid: "8889152"
 
 ### <a name="blogs"></a>ブログ
 
-意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 財務と運用 - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
-[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Microsoft Dynamics パートナーが Dynamics 365 の最新情報とトレンドを知ることができる単一のリソースを提供しています。
+[Microsoft Dynamics 運用パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための一元化したリソースを Microsoft Dynamics パートナー向けに提供しています。
 
 ### <a name="videos"></a>ビデオ
 
@@ -100,3 +100,4 @@ ms.locfileid: "8889152"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

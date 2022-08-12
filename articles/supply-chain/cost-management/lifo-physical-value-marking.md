@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670443"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135572"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>現物価格とマーキングを使用した LIFO
 
@@ -128,7 +128,7 @@ ms.locfileid: "8670443"
 - 6a. 原価価格 USD 23.00 で数量 1 に対する在庫現物払出 (財務転記済トランザクションの移動平均)
 - 7\. 在庫決算が行われました。 LIFO 法を使用するマーキング原則に基づいて、マークされたトランザクションは相互に決済されます。 この例では、3b が 2b に対して決済され、USD 6.00 の調整が 3b に転記されて、値が USD 22.00 になります。 この例では、決算は財務更新済トランザクションにのみ決済を作成するため、追加決済は行われません。
 
-新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。
+新しい移動平均原価価格は、USD 17.50 での財務および現物更新済トランザクションの平均を反映しています。
 
 次の図は、払出と受入との間でマーキングを使用した場合の、この一連のトランザクションでの LIFO 在庫モデルの影響について説明しています。
 

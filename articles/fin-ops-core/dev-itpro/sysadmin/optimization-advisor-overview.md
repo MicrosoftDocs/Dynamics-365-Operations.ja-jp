@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dd66e27098b4125b03c4fe6b52825afe2ff34cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865864"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109043"
 ---
 # <a name="optimization-advisor-overview"></a>最適化アドバイザーの概要
 
@@ -44,7 +44,7 @@ ms.locfileid: "8865864"
 
 いくつかの最適化の機会を捉えると、システムは業務プロセスのランタイムの短縮という点で営業案件の影響を計算します。 ただし、すべての最適化の機会に対して、この機能は有効ではありません。
 
-最適化アドバイザーの詳細については、簡単なビデオ [Dynamics 365 for Finance and Operations の最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ)をご視聴ください。 
+最適化アドバイザーの詳細については、簡単なビデオ [Dynamics 365 Finance の最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ) をご視聴ください。
 
 ## <a name="optimization-rules"></a>最適化ルール
 
@@ -90,7 +90,7 @@ ms.locfileid: "8865864"
 
 [最適化アドバイザーのルールの作成](./create-rules-optimization-advisor.md)
 
-[Dynamics 365 for Finance and Operations の最適化アドバイザー (ビデオ)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Dynamics 365 Finance の最適化アドバイザー (ビデオ)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

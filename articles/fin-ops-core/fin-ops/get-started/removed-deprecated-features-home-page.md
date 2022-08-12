@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: cc813ba4bafb526c16445eecaed9f1be68a8d726
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 27c8e44a43e7bc1b0ed1e759c963b8685a34e623
+ms.sourcegitcommit: de1ac28d9441146d5d91b1f13ab6d8c8a0f7387b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859984"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9187148"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>削除済みまたは非推奨の機能に関するホーム ページ
 
@@ -30,6 +30,7 @@ ms.locfileid: "8859984"
 - [Dynamics 365 Commerce の削除済みまたは非推奨の機能](../../../commerce/get-started/removed-deprecated-features-commerce.md)
 - [Dynamics 365 Finance の削除済みまたは非推奨の機能](../../../finance/get-started/removed-deprecated-features-finance.md)
 - [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
+- [Dynamics 365 Human Resources の削除済みまたは非推奨の機能](../../../human-resources/get-started/removed-deprecated-features-hr.md)
 - [Dynamics 365 Project Operations の削除済みまたは非推奨の機能](/dynamics365/project-operations/whats-new/removed-depreciated-features-project)
 - [削除済みまたは非推奨のプラットフォームの機能](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
 - [以前のリリースの削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md)
@@ -38,3 +39,4 @@ ms.locfileid: "8859984"
 次の記事では、Microsoft Power Platform での非推奨について説明します。
 
 - [Power Apps、Power Automate、Customer Engagement アプリで予定されている重要な変更点 (廃止)](/power-platform/important-changes-coming)
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ff074e62489fe74f0c2de6dae0e02d1da7e7f6ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f34acd78966cc9f26242653e9d0d16fdf22e0b2
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901911"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103833"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Dynamics 365 Supply Chain Management の顧客ポータルの概要
 
@@ -42,7 +42,7 @@ ms.locfileid: "8901911"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-[Dynamics 365 Supply Chain Management の顧客ポータル テンプレートの概要](https://youtu.be/nPrqoLuHfV8) ビデオ (上記参照) は、YouTube で利用可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+[Dynamics 365 Supply Chain Management の顧客ポータル テンプレートの概要](https://youtu.be/nPrqoLuHfV8) ビデオ (上記参照) は、YouTube で利用可能な [財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ## <a name="who-should-use-it"></a>対象となるユーザー
 
@@ -62,7 +62,7 @@ ms.locfileid: "8901911"
 
 [Power Appsポータル](/powerapps/maker/portals/overview)を使用することで、組織の外部のユーザーがログインできる外部向けの Web サイトをユーザーが作成できるようになります。 ポータルの作成には、コードの記述がほとんど必要ありません。 顧客ポータルは、Microsoft から入手可能な、多くの [Dynamics 365 ポータルテンプレート](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) の1つです。
 
-[二重書き込み](/powerapps/maker/portals/overview) は、Customer Engagement アプリと財務と運用アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャ製品です。 二重書き込みは、財務と運用アプリと Microsoft Dataverse の双方向統合を提供します。 そのため、アプリを横断して統合されたユーザー エクスペリエンスを実現します。 顧客ポータルは、デュアル書き込みと同期されているテーブルに依存関係があります。 Supply Chain Management からのデータを顧客ポータルで表示する前に、デュアル書き込みをすべての適切なテーブルに対して有効にする必要があります。
+[二重書き込み](/powerapps/maker/portals/overview) は、Customer Engagement アプリおよび財務と運用アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャ製品です。 二重書き込みは、財務と運用アプリおよび Microsoft Dataverse の双方向統合を提供します。 そのため、アプリを横断して統合されたユーザー エクスペリエンスを実現します。 顧客ポータルは、デュアル書き込みと同期されているテーブルに依存関係があります。 Supply Chain Management からのデータを顧客ポータルで表示する前に、デュアル書き込みをすべての適切なテーブルに対して有効にする必要があります。
 
 ![顧客ポータルの依存関係。](media/customer-portal-elements.png "顧客ポータルの依存関係")
 

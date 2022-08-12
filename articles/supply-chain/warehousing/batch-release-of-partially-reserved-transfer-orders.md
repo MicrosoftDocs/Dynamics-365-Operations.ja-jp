@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 591c93eef61992507188323909f37e3f33550a7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888386"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068637"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>部分的に引当済の移動オーダーのバッチ リリース
 
@@ -28,7 +28,7 @@ ms.locfileid: "8888386"
 部分的に引当済の移動オーダーのバッチ リリースの機能で、バッチ ジョブを使用して、移動オーダーを倉庫に部分的にリリースできます。
 一部の数量をリリースするオプションがあるため、注文をリリースする前に倉庫で全体の注文数量が入手可能になるのを待つ必要はありません。
 
-倉庫へのオーダーのリリースは、高度な倉庫管理プロセスです。 このプロセスには、倉庫作業者がモバイル デバイスを使用して実行できる、ピッキング、梱包、出荷などの活動が含まれます。
+倉庫へのオーダーのリリースは、倉庫管理プロセス (WMS) です。 このプロセスには、倉庫作業者がモバイル デバイスを使用して実行できる、ピッキング、梱包、出荷などの活動が含まれます。
 
 ## <a name="where-it-applies"></a>該当する場所
 

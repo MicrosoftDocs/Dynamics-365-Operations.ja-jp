@@ -1,7 +1,7 @@
 ---
 title: 詳細な口座調整のインポート プロセスの設定
 description: 詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。
-author: panolte
+author: angelad116
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,23 @@ ms.reviewer: kfend
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0616d8f85f742ed2679450c9b59814345f764bc9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: d8d186e6b3e44222410c8be94390d7c58a90e352
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727373"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151528"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>詳細な口座調整のインポート プロセスの設定
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> この機能は 2022 年 9 月で廃止される予定です。新しいユーザーは電子申告を使用する必要があります。 詳細については、[電子申告を使用した詳細な口座調整インポートの設定](../accounts-payable/import-bai2-er.md) を参照してください。
+
 
 詳細な口座調整機能では、電子口座取引明細書をインポートし、Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。 
 

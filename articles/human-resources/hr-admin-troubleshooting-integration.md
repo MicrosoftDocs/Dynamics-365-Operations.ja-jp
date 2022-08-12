@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879282"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067619"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
@@ -88,7 +88,7 @@ ms.locfileid: "8879282"
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>双方向の統合を設定できますか。
 
-いいえ、統合は現在一方向です (Human Resources から Finance and Operations)。 ただし、人事管理から Finance にデータを送信可能な既定のテンプレートがあります。
+いいえ、統合は現在一方向です (Human Resources から財務と運用へ)。 ただし、人事管理から Finance にデータを送信可能な既定のテンプレートがあります。
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>自分の統合の一部として、レコードの削除を許可できますか。
 
@@ -118,7 +118,7 @@ ms.locfileid: "8879282"
 
 - データ転送がなかったため、転送ソース (Dataverse) で重複レコードの抽出となりました。
 
-- データ転送には、Finance and Operations で必要とされるフィールドの null 値があります。 Dataverse にあり、Finance and Operations の要件を満たすデータを確認します。
+- データ転送には、財務と運用で必要なフィールドの null 値があります。 Dataverse にあり、Finance and Operations の要件を満たすデータを確認します。
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>実行エラーがあり従業員 ID が同期しなかった場合、失敗した従業員レコードがある履歴ジョブをどのように見つけますか。
 
@@ -150,7 +150,7 @@ Dataverse で予定どおりにデータが表示されない場合は、エン�
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Finance にインポートした後、従業員の住所が正しくありません。 何をする必要がありますか。
 
-**場所 ID** の番号順序は、人事管理および Finance の両方で同じパターンを使用します。 Dataverse から Finance and Operations にデータを統合する場合、アドレスの衝突がないように、番号順序は両側で一意である必要があります。
+**場所 ID** の番号順序は、人事管理および Finance の両方で同じパターンを使用します。 Dataverse から財務と運用にデータを統合する場合、アドレスの衝突がないように、番号順序は両側で一意である必要があります。
 
 人事管理の実装中に、番号順序が人事管理および Finance and Operations で同じではないことを確認します。 データが両方のシステムで維持される可能性がある場合は、すべての番号順序が同一でないことを検証します。
 
@@ -184,3 +184,4 @@ Dataverse で予定どおりにデータが表示されない場合は、エン�
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.openlocfilehash: 9d0c2e821ee504cd62a536674ef91ee89a25c0a9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033663"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066420"
 ---
 # <a name="get-started-with-financial-reporting"></a>財務諸表の使用を開始する 
 
@@ -151,7 +151,7 @@ ms.locfileid: "9033663"
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>スリップ ストリーミングによる Financial Reporting の更新
 
-財務と運用アプリは毎月更新されます。 ただし、Financial Reporting は、必ずしもその頻度で更新されるわけではありません。 さらに、財務と運用アプリの更新を実施する時期については、さまざまな選択肢があります。 Financial Reporting の更新は自動的にインストールされます。 Financial Reporting には、サービス アップデートの実施時、ダウンタイムの開始時に顧客の環境がメンテナンス モードになった時に、顧客の環境で消費されるバージョンが指定されています。 このプロセスは *スリップストリーム* または *トゥルーアップ* と呼ばれるもので、すべての顧客の実装が同じバージョンの Financial Reporting に設定されます。
+財務と運用アプリは毎月更新されます。 ただし、Financial Reporting は、必ずしもその頻度で更新されるわけではありません。 さらに、財務と運用アプリの更新を実施する時期について、顧客にはさまざまな選択肢があります。 Financial Reporting の更新は自動的にインストールされます。 Financial Reporting には、サービス アップデートの実施時、ダウンタイムの開始時に顧客の環境がメンテナンス モードになった時に、顧客の環境で消費されるバージョンが指定されています。 このプロセスは *スリップストリーム* または *トゥルーアップ* と呼ばれるもので、すべての顧客の実装が同じバージョンの Financial Reporting に設定されます。
 
 各バージョンでリリースされる変更は、[Dynamics 365 Finance の新機能、または更新](../../finance/get-started/whats-new-home-page.md) で確認できます。 プラットフォームの更新やバグ修正は、各リリースのページ下部にある 「追加リソース」 セクションで確認できます。
 
@@ -254,3 +254,4 @@ Microsoft サポートとの会話をより効果的にし、より迅速な解�
 - [財務諸表のレポート ツリー定義](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

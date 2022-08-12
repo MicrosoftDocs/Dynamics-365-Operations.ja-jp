@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855935"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070322"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -56,7 +56,7 @@ ms.locfileid: "8855935"
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>入荷時に到着する品目数量の登録
 
-Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を記録するためのいくつかの運用方法をサポートします。 したがって、特定の業務要件に合わせてシステムをコンフィギュレーションができます。 このセクションでは、システムで高度な倉庫管理が有効になっている場合に、モバイル デバイスを使用して、入荷品目数量を登録する方法について説明します。 ただし、モバイル デバイスの代わりに着荷仕訳帳を使用することに基づく代替フローがあります。 そのフローの詳細については、[品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録](tasks/register-items-advanced-warehousing.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を記録するためのいくつかの運用方法をサポートします。 したがって、特定の業務要件に合わせてシステムをコンフィギュレーションができます。 このセクションでは、システムで倉庫管理プロセス (WMS) が有効になっている場合に、モバイル デバイスを使用して、入荷品目数量を登録する方法について説明します。 ただし、モバイル デバイスの代わりに着荷仕訳帳を使用することに基づく代替フローがあります。 そのフローの詳細については、[品目の着荷仕訳帳を使用した倉庫管理プロセスに対応した品目の登録](tasks/register-items-advanced-warehousing.md)を参照してください。
 
 最初に、倉庫に入庫積荷が到着したとき、倉庫作業者は、出荷に含まれる品目の数量を登録する必要があります。 通常は、ハンドヘルド スキャナーを使用します。 このワークフローは、システムに次の品目が存在する場合にのみ使用できます:
 

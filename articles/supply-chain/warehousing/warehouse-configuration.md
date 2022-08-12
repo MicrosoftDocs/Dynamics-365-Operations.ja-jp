@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983007"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065190"
 ---
 # <a name="warehouse-configuration-overview"></a>倉庫のコンフィギュレーションの概要
 
@@ -31,10 +31,10 @@ ms.locfileid: "7983007"
 この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。
 
 > [!NOTE]
-> この記事は、**倉庫管理** モジュールの機能が対象です (詳細な倉庫保管)。 **在庫管理** モジュールの倉庫機能は対象外です。
+> この記事は、**倉庫管理** モジュールの機能に適用されます。 **在庫管理** モジュールの倉庫機能は対象外です。
 
 ## <a name="warehouse-layout"></a>倉庫レイアウト
-Supply Chain Management の倉庫管理システムは、最適な倉庫効率を達成できるよう、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供します。
+Supply Chain Management の倉庫管理プロセス (WMS) は、最適な倉庫効率を達成できるよう、変化するニーズを満たす倉庫レイアウトを定義する柔軟な方法を提供します。
 
 -   商品を最適に配置するために、優先順位が高い保管エリアと優先順位の低い保管エリアを設定できます。
 -   品目の温度条件や回転率など、さまざまな倉庫のニーズに対応するため、倉庫をゾーンに分割できます。
@@ -42,7 +42,7 @@ Supply Chain Management の倉庫管理システムは、最適な倉庫効率�
 -   物理的能力制約の設定を使用して場所をグループ化できます。
 -   クエリ定義したルールに基づいて品目の保管、ピッキング方法を制御できます。
 
-Supply Chain Management で倉庫管理を使用するには、倉庫を作成し、詳細またはより特別な倉庫管理の活動に対して有効にする必要があります。 **倉庫** ページで、**倉庫管理プロセスの使用** オプションを選択します。
+Supply Chain Management で WMS を使用するには、倉庫を作成して WMS 用に有効化する必要があります。 **倉庫** ページで、**倉庫管理プロセスの使用** オプションを選択します。
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>ゾーン グループ、ゾーン、場所のタイプと場所
 

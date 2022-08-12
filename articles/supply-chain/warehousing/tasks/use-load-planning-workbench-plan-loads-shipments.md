@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ad9c91051c1a1140661c93d7c5e86a78de5ec3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0e53b7667dd4589a7c6c14b8aaf8ba51017eee0d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877337"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068333"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>積荷計画ワークベンチを使用した積荷および出荷の計画
 
@@ -38,7 +38,7 @@ ms.locfileid: "8877337"
 7. 品目 **A0001** を選択します。 **A0001** は輸送管理に対して有効になっています。  
 8. **サイト** フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開き、次に品目を選択します。
 9. **数量** フィールドに、数値を入力します。
-10. **倉庫** フィールドに、この例の場合、「24」と入力します。 この倉庫は、輸送管理および高度な倉庫管理で有効になっています。  
+10. **倉庫** フィールドに、この例の場合、「24」と入力します。 この倉庫は、輸送管理および倉庫管理プロセス (WMS) で有効になっています。  
 11. **保存** を選択します。
 12. ページを閉じます。
 

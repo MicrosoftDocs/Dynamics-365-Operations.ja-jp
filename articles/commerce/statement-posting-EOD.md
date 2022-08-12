@@ -9,22 +9,22 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 33b4f17cd46338b62bed96f0a285e7b9634cc87a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886909"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067822"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>明細書転記機能の改良
 
 [!include [banner](includes/banner.md)]
 
-この記事では、明細書転記の機能に加えられた最初の一連の機能強化事項について説明します。 これらの機能強化事項は、Microsoft Dynamics 365 for Finance and Operations 7.3.2 で利用可能です。
+この記事では、明細書転記の機能に加えられた最初の一連の機能強化事項について説明します。 これらの機能強化事項は、Microsoft Dynamics 365 Finance 7.3.2 で利用可能です。
 
-## <a name="activation"></a>有効化
+## <a name="activation"></a>アクティブ化
 
-既定では、Finance and Operations 7.3.2 の展開中に、プログラムは明細書転記のレガシ機能を使用するために設定されます。 改良された明細書転記機能を有効にするには、そのためのコンフィギュレーション キーをオンにする必要があります。
+既定では、財務と運用 7.3.2 の展開中に、プログラムは明細書転記のレガシ機能を使用するために設定されます。 改良された明細書転記機能を有効にするには、そのためのコンフィギュレーション キーをオンにする必要があります。
 
 - **システム管理** \> **設定** \> **ライセンス コンフィギュレーション** の順に移動し、その後、**Retail と Commerce** ノードで、**明細書 (従来)** チェック ボックスを消去し、**明細書** チェック ボックスをオンにします。
 
@@ -190,3 +190,4 @@ ms.locfileid: "8886909"
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

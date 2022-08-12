@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 6d9b40409089e2050dc28c21040069107b766aa0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a53b7834271355aaf11c13c3f1886257a97b1da8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871249"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068993"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>総勘定元帳への補助元帳の転送
 
@@ -28,7 +28,7 @@ ms.locfileid: "8871249"
 
 この記事では、補助元帳仕訳のバッチの転送のルールに関連する機能について説明します。
 
-バージョン 8.1 では、ルールの転送を許可するよう変更が加えられ、**同期** オプションは非推奨になりました。 詳細については、[Finance and Operations の削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20) を参照してください。
+バージョン 8.1 では、ルールの転送を許可するよう変更が加えられ、**同期** オプションは非推奨になりました。 詳細については、[財務と運用の削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20) を参照してください。
 
 次のオプションは、補助元帳バッチの転送に使用できます:
 
@@ -46,3 +46,4 @@ ms.locfileid: "8871249"
 プロセス自動化設定の詳細については、[プロセスの自動化](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

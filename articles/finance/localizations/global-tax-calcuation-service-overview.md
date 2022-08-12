@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 24d4a722ee143dc0869f758475aaf377e7a9e084
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954542"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166842"
 ---
 # <a name="tax-calculation-overview"></a>税の計算の概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "8954542"
 税計算は、Dynamics 365 Finance および Dynamics 365 Supply Chain Management と統合されます。 最終的には、Dynamics 365 Project Operations、Dynamics 365 Commerce やその他のファースト パーティ アプリケーションとも統合されます。
 
 > [!IMPORTANT]
-> 税計算を有効にした場合、サービス データを管理するデータ センター以外のデータ センターで、関連データに対する一部の操作が実行される場合があります。 税計算を有効にする前に、[条件](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) を確認してください。 Microsoft にとってお客様のプライバシーは重要です。 詳細については、Microsoft [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=521839)をお読みください。
+> 税計算を有効にした場合、サービス データを管理するデータ センター以外のデータ センターで、関連データに対する一部の操作が実行される場合があります。 税計算を有効にする前に、[条件](https://go.microsoft.com/fwlink/?linkid=2156043) を確認してください。 Microsoft にとってお客様のプライバシーは重要です。 詳細については、Microsoft [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=521839)をお読みください。
 
 税計算は、指数関数的なスケーラビリティを提供し、次のタスクの実行に役立つマイクロサービス ベースの税エンジンです。
 

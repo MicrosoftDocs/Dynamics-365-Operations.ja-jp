@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 11a4b1667e3d97b651b8019c9dbe577ab30aed67
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868701"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068202"
 ---
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868701"
 
 この記事では、**自分のチーム** モバイル ワークスペースについての情報を提供します。 このワークスペースでは、管理者が直属の部下および拡張スタッフを表示することができます。 また、レポート チェーン内の各個人に称賛を送信することもできます。
 
-このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。
+このモバイル ワークスペースは、財務と運用のモバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要 
 **自分のチーム** モバイル ワークスペースでは、管理者がこれらのタスクを実行できます。
@@ -50,12 +50,12 @@ ms.locfileid: "8868701"
 <tbody>
 <tr class="odd">
 <td>次の製品のいずれかを組織内に配置する必要があります。
-<ul><li>Finance and Operations アプリ</li>
+<ul><li>財務と運用アプリ</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>システム管理者</td>
-<td>組織にまだ Finance and Operations アプリが配置されない&#39;ホーム組織場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない&#39;場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
+<td>組織にまだ財務と運用アプリが配置されていない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない&#39;場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ ms.locfileid: "8868701"
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
 
-Finance and Operations モバイル アプリをダウンロードしてインストールします。
+財務と運用モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -99,3 +99,4 @@ Finance and Operations モバイル アプリをダウンロードしてイン�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

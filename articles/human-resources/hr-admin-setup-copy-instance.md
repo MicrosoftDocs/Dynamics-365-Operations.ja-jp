@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692425"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178536"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**適用先:** スタンドアロン インフラストラクチャの人事管理_ 
 
+> [!NOTE]
+> 2022 年 6 月から、人事管理の環境は、財務と運用アプリのインフラストラクチャにのみ展開することができます。 詳細については、[財務と運用のインフラストラクチャでの人事管理のプロビジョニング](hr-admin-setup-provision-fo.md)を参照してください。
+
+> [!IMPORTANT]
+> 財務および運用のインフラストラクチャは、インスタンスのコピー機能はサポートしていません。 新しい環境を展開し、データベースの移動を使用してコピーを作成することができます。 セルフサービス展開の詳細については、[セルフサービス展開の概要](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)を参照してください。 財務と運用のインフラストラクチャにおけるデータベース移動に関する詳細については、[データベース移動操作ホーム ページ](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)を参照してください。
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 Human Resources データベース をサンドボックス環境にコピーすることができます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス環境にデータベースをコピーすることもできます。
 
@@ -50,7 +55,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 - Microsoft Azure Blob storage 内のドキュメントは環境間でのコピーがされません。 そのため、この ストレージ に属するドキュメントやテンプレートはコピーされず、コピー元の環境に残ります。
 
-- 「システム管理者」セキュリティ ロールを持つユーザー以外のユーザー、および他の内部サービス ユーザー アカウントは使用できません。 管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
+- 「システム管理者」セキュリティ ロールを持つユーザー以外のユーザー、および他の内部サービス ユーザー アカウントは使用できません。 管理者ユーザーは他のユーザーがシステムに復帰する前にデータを削除することができます。
 
 - 「システム管理者」というセキュリティ ロールを持つユーザーは、統合エンドポイントを特定のサービスや URL に再接続するなど、必要な設定変更を行う必要があります。
 
@@ -67,15 +72,17 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 3. コピーをするインスタンスを選択して、**コピー** を選択します。
 
-4. **インスタンスをコピーする** のタスク ウィンドウで、上書きするインスタンスを選択し、続いて **コピー** を選択します。 **コピーのステータス** フィールドの値が **完了** となるまで待機してください。
+4. **インスタンスをコピーする** のタスク ウィンドウで、上書きするインスタンスを選択し、続いて **コピー** を選択します。 **コピーのステータス** フィールドが **完了** となるまで待機してください。
 
-   ![[上書きするインスタンスを選択する。](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[上書きするインスタンスを選択します。](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. **Power Platform** を選択し、 Microsoft Power Platform 管理センターにサインインします。
 
-   ![[Power Platform を選択する。](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform を選択します。](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. コピーをするPower Apps 環境 を選択して、 **コピー** を選択します。
+
+Power Apps 環境のコピーに関する詳細については、[環境をコピーする](/power-platform/admin/copy-environment#copy-an-environment-1)を参照してください。
 
 7. コピー処理の完了後、対象のインスタンスにサインインし、 Dataverse 統合を有効化します。 詳細情報と解説については、 [Dataverse の統合を構成する](./hr-admin-integration-common-data-service.md) を参照してください。
 
@@ -115,7 +122,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 ## <a name="environment-admin"></a>環境管理者
 
-対象となるサンドボックス環境の、管理者を含む全ユーザーが、コピー元のユーザーに置き換えられます。 インスタンスのコピーの実行者は、自分にソース環境で管理者の権限があることを確認してください。 管理者の権限がない場合は、コピーの完了後に対象のサンドボックス環境にサイン インすることができません。
+対象となるサンドボックス環境の、管理者を含む全ユーザーが、コピー元のユーザーに置き換えられます。 インスタンスのコピーの実行者は、自分にソース環境で管理者の権限があることを確認してください。 管理者の権限がない場合、コピーが完了した後は対象のサンドボックス環境にサインインすることはできません。
 
 コピー先のサンドボックス環境内の全ての非管理者ユーザーは無効化され、サンドボックス環境へと不必要なログインができません。 システム管理者は、必要に応じてユーザーを有効化することができます。
 

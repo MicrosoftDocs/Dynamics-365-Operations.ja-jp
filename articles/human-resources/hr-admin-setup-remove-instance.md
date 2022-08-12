@@ -14,16 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ce676c93e133cc04ad9c49417ed2ca0d6791e93
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859636"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178475"
 ---
 # <a name="remove-an-instance"></a>インスタンスの削除
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**適用先:** スタンドアロン インフラストラクチャの人事管理_ 
+
+> [!NOTE]
+> 2022 年 7 月から、スタンドアロンの人事管理インフラストラクチャに新しい人事管理環境をプロビジョニングすることはできず、新しい Microsoft Dynamics Lifecycle Services (LCS) プロジェクトを作成することもできません。 顧客は、財務および運用のインフラストラクチャに人事管理の環境を展開することができます。 詳細については、[財務と運用のインフラストラクチャでの人事管理のプロビジョニング](/hr-admin-setup-provision-fo.md)を参照してください。
+
+> [!IMPORTANT]
+> 財務と運用アプリのインフラストラクチャは、環境の削除をサポートします。 環境を削除する方法に関する詳細については、[環境の削除](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment)を参照してください。
 
 この記事では、Microsoft Dynamics 365 Human Resources の体験版環境または運用環境の削除について説明します。
 
@@ -42,10 +48,13 @@ ms.locfileid: "8859636"
 
 この記事では、人事管理をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 
 
-ひとつの人事管理環境がひとつの Power Apps 環境内に含まれているため、2 つのオプションを考慮できます。 最初のオプションは、Power Apps 環境全体を削除することです。2 番目のオプションは、人事管理のみを削除することです。 最初のオプションは、人事管理をプロビジョニングする目的で特別に Power Apps 環境を作成し、実装を開始したばかりの場合、または既存の統合がない場合に優先されます。 2 つめのオプションは、Power Apps および Power Automate で活用されている豊富なデータが格納された Power Apps 環境が確立されている場合に適しています。
+ひとつの人事管理環境がひとつの Power Apps 環境に含まれているため、環境を削除するとき 2 つのオプションを考慮できます。 
+- **Power Apps 環境全体の削除** このオプションは、人事管理をプロビジョニングする目的で特別に Power Apps 環境を作成し、実装を開始したばかりの場合、または既存の統合がない場合に優先されます。  
+- **人事管理のみを削除します。** このオプションは、Microsoft Power Apps および Power Automate で活用されている豊富なデータが格納された Power Apps 環境が確立されている場合に適しています。
+
 
 > [!Important]
-> Power Apps 環境を削除する前に、それが人事管理のスコープ外の豊富なデータ統合に使用されていないことを確認してください。 また、既定の Power Apps 環境を削除することはできないので注意してください。 
+> Power Apps 環境を削除する前に、それが人事管理の範囲外のデータ統合に使用されていないことを確認してください。 また、既定の Power Apps 環境を削除することはできないので注意してください。 
 
 人事管理や関連付けられたアプリ、およびフローを含む Power Apps 環境全体を削除するには:
 
@@ -73,7 +82,7 @@ ms.locfileid: "8859636"
 
 ## <a name="recover-a-soft-deleted-environment"></a>論理削除された環境を復旧する
 
-人事環境に接続されている Power Apps 環境を削除すると、Lifecycle Services の人事管理環境の状態が **論理削除** になります。 この場合、ユーザーは人事に接続することはできません。
+人事管理の環境に接続されている Power Apps 環境を削除すると、LCS の人事管理の環境の状態が **論理削除** になります。 この場合、ユーザーは人事に接続することはできません。
 
 環境を復元するには、次の操作を行います :
 

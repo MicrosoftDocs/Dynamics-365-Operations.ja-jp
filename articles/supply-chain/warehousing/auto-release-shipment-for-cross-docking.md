@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c7199f5a5a401e627bb5fac9dece3950900e5f97
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903785"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067914"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>クロスドッキングの自動リリース出荷
 
@@ -40,8 +40,8 @@ ms.locfileid: "8903785"
 
 | 前提条件 | 説明 |
 |---|---|
-| 項目 | 品目は倉庫管理プロセスで有効にする必要があります。<p>**注:** CW が有効な品目は、クロスドッキング プロセスに含めることはできません。</p> |
-| 倉庫 | 倉庫は倉庫管理プロセスで有効にする必要があります。 |
+| 項目 | 品目は倉庫管理プロセス (WMS) で有効にする必要があります。<p>**注:** CW が有効な品目は、クロスドッキング プロセスに含めることはできません。</p> |
+| 倉庫 | 倉庫は倉庫管理プロセス (WMS) で有効にする必要があります。 |
 | クロスドッキング テンプレート | 特定の倉庫に対して、**供給受領時** の需要リリース ポリシーを使用する少なくとも 1 つのクロスドッキング テンプレートを設定する必要があります。 |
 | 作業クラス | **クロスドッキング** 作業指示書タイプには、クロスドッキング作業クラス ID を作成する必要があります。 |
 | 作業テンプレート | **クロスドッキング** 作業指示書タイプの作業テンプレートは、クロスドッキングのピッキングとプット作業を作成するために必要です。 |

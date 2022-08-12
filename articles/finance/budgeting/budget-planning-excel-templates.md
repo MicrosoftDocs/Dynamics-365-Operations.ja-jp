@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872502"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070667"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Excel の予算計画テンプレート
 
@@ -79,7 +79,7 @@ Excel ファイルの挿入位置にカーソルを合わせます。 **ラベ�
 [![列を追加および挿入します。](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> 式を定義するには、式をスプレッドシートで作成し、**デザイン** ウィンドウにコピーします。 Finance and Operations のバインドされたテーブルは、通常「AXTable1」と呼ばれます。 たとえば、スプレッドシートの要求 Q1 : 要求 Q4 の列を集計するには、式 = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\] となります。
+> 式を定義するには、式をスプレッドシートで作成し、**デザイン** ウィンドウにコピーします。 財務と運用のバインドされたテーブルは、通常「AXTable1」と呼ばれます。 たとえば、スプレッドシートの要求 Q1 : 要求 Q4 の列を集計するには、式 = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\] となります。
 
 以上の手順を繰り返して、**調整** 列を挿入します。 この列では式 = AxTable1\[Total request\]\*$I$1 を使用します。 これは、セル I1 の値を取得し、**合計要求** 列の値をかけて、調整金額を計算します。
 
@@ -129,3 +129,4 @@ Excel ファイルを保存して閉じます。 **レイアウト** で、**テ
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

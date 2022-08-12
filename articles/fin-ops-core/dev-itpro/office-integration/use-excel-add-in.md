@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 388be651164af622dbabd7b2c7b3437233454bea
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862158"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108604"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Excel でのエンティティ データの表示および更新 
 
@@ -57,7 +57,7 @@ Excel アドインが、選択したエンティティのデータを自動的�
 2. Office ストアで、**Dynamics** で検索し、**Microsoft Dynamics Office アドイン** (Excel アドイン) の隣の **追加** を選択します。
 3. 初めて Excel アドインを実行する場合は、**このアドインを信頼します** を選択して Excel アドインの実行を有効化します。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4. **サーバー情報の追加** を選択して **オプション** ウィンドウを開きます。
-5. お使いのブラウザで、ターゲットの財務と運用アプリインスタンスから URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
+5. お使いのブラウザで、ターゲットの財務と運用アプリ インスタンスから URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
 
     たとえば、URLが `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage` の場合、`https://xxx.dynamics.com` を除くすべてを削除します。
 
@@ -146,3 +146,4 @@ Excel ワークブック テンプレートの作成者は、テンプレート�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

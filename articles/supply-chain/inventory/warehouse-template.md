@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dafd51a46b19f3709963ffc12b3c8c77b6c809ac
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856109"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070442"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
@@ -90,7 +90,7 @@ ms.locfileid: "8856109"
 
 **実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
 
-同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、YouTube のこの 3 分間ビデオ [Finance and Operations で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) をご覧ください。
+同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、YouTube のこの 3 分間ビデオ [財務と運用で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) をご覧ください。
 
 ## <a name="related-article"></a>関連記事
 

@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7b6fb9643873178f1cb93e3da15e83598af51de0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910418"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109553"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>財務パフォーマンス PowerBI.com ソリューション
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> この PowerBI.com ソリューションは、[Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) で記載されたものとして非推奨になっています。
+> この PowerBI.com ソリューションは、[財務と運用の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)で記載されたものとして非推奨になっています。
 
 この記事では、**財務パフォーマンス** PowerBI.com ソリューションについて説明します。 含まれているダッシュボードおよびレポートについて説明し、ソリューションを作成するために使用したデータ モデルとエンティティに関する情報を提供します。
 

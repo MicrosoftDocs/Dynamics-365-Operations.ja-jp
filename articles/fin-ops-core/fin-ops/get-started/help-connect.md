@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35f5d73075d118079ccb0616fbd1c5e1a8e00424
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900132"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123627"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>財務と運用アプリのヘルプ エクスペリエンスの構成
 
@@ -29,7 +29,7 @@ ms.locfileid: "8900132"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-この記事では、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources などの財務と運用アプリに関するヘルプ システムのコンポーネントの概要を説明します。 また、この記事では、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
+この記事では、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、および Dynamics 365 Human Resources などの財務と運用アプリに関するヘルプ システムのコンポーネントの概要を説明します。 また、この記事では、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
 
 ## <a name="help-architecture"></a>ヘルプ アーキテクチャ
 
@@ -103,3 +103,4 @@ Microsoft では、ユーザー定義のヘルプを展開して **ヘルプ** �
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

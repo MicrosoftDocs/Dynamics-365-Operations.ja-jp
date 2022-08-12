@@ -1,6 +1,6 @@
 ---
 title: ビデオ
-description: このページでは、YouTube および他のサイトで使用可能な Finance and Operations アプリに関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
+description: このページでは、YouTube および他のサイトで使用可能な財務と運用アプリに関連する Microsoft が作成したハウツーおよび技術解説ビデオを一覧表示します。
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: a21a9122badc308940c0182061a18051bfcc0abd
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958141"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124954"
 ---
 # <a name="videos"></a>ビデオ 
 
 [!include [banner](../includes/banner.md)]
 
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) で、Dynamics 365 製品の幅広いビジネス ソリューションを示す、Microsoft によって作成されたビデオを見つけることができます。 このセクションでは、チャンネルでホストされている Finance and Operations アプリのハウツー ビデオを一覧表示します。
+[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) で、Dynamics 365 製品の幅広いビジネス ソリューションを示す、Microsoft によって作成されたビデオを見つけることができます。 このセクションでは、チャンネルでホストされている財務と運用アプリのハウツー ビデオを一覧表示します。
 
 > [!Note]
 > 表示されるビデオの一部は、以前の製品名で公開されましたが、引き続き適用可能です。
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Finance and Operations の開発と管理に関するビデオ
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>財務と運用の開発と管理に関するビデオ
 
 ### <a name="data-integration"></a>データ統合
 
-- [Dynamics 365 for Field Service と Finance and Operations アプリ間のワーク オーダーの同期](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Dynamics 365 for Field Service と財務と運用アプリ間の作業指示書の同期](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>データ管理
 
@@ -50,8 +50,8 @@ ms.locfileid: "8958141"
 ### <a name="intelligence"></a>インテリジェンス
 
 - [分析ワークスペースで埋め込みレポートを編集する方法](https://youtu.be/_8WlwmSggcQ)
-- [Finance and Operations アプリで PowerBI.com レポートを組み込む方法](https://youtu.be/gGWuNJDoi-M)
-- [Finance and Operations アプリに自分のデータベース (BYOD) の持ち込み](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [財務と運用アプリで PowerBI.com レポートを組み込む方法](https://youtu.be/gGWuNJDoi-M)
+- [財務と運用アプリに自分のデータベース (BYOD) を持ち込む](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Dynamics 365 で原価管理 Power BI コンテンツを使用する方法](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -169,3 +169,4 @@ ms.locfileid: "8958141"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

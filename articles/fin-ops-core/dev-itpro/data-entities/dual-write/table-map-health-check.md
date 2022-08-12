@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16c79a788b66830b77b2cdfb33fd2416c530f7d2
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884086"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111569"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>テーブル マップの正常性チェックのエラー コード
 
@@ -26,13 +26,13 @@ ms.locfileid: "8884086"
 
 ## <a name="error-100"></a>エラー 100
 
-エラーメッセージは、"Finance and Operations の推奨を実行するために最低限必要な Finance and Operations プラットフォーム のバージョンは PU 43 です" になります。
+エラー メッセージは、"財務と運用のレコメンデーションを実行するために最低限必要な財務と運用プラットフォームのバージョンは PU 43 です" になります。
 
-この機能には、財務と運用アプリのバージョン 10.0.19 以降のプラットフォームを更新する必要 があります。
+この機能には、財務と運用アプリのバージョン 10.0.19 以降のプラットフォーム更新プログラムが必要です。
 
 ## <a name="error-400"></a>エラー 400
 
-エラー メッセージは、"エンティティ \{財務と運用 UniqueEntityName\} のビジネス イベント登録データが見つかりません。つまり、マップが実行されていないか、すべてのフィールド マッピングが単一方向であるかのいずれかです。" になります。
+エラー メッセージは、"エンティティ \{finance and operations UniqueEntityName\} のビジネス イベント登録データが見つかりません。つまり、マップが実行されていないか、すべてのフィールド マッピングが単一方向であるかのいずれかです。" になります。
 
 ## <a name="error-500"></a>エラー 500
 
@@ -42,21 +42,21 @@ ms.locfileid: "8884086"
 
 ## <a name="error-900"></a>エラー 900
 
-このエラー メッセージは、"無効なソース フィルター \{sourceFilter\} format for entity \{Finance and Operations UniqueEntityName\}" です。
+このエラー メッセージは、"エンティティ \{finance and operations UniqueEntityName\} のソース フィルター \{sourceFilter\} が無効" です。
 
 財務と運用アプリのテーブル マップで指定されたソース フィルターの構文が正しくありません。 このフィルター基準を検証するには、[ライブ同期に関する問題のトラブルシューティング](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps) を参照してください。
 
 ## <a name="error-1000"></a>エラー 1000
 
-エラー メッセージは、"デュアル書き込みライブ同期に使用されるエンティティ \{Finance and Operations UniqueEntityName\} クエリは \{Finance and Operations EntityFilterQueryString\}  です。 クエリ基準を満たすレコードは、同期のためにピックアップされます。" です。
+エラー メッセージは、"二重書き込みライブ同期に使用されるエンティティ \{finance and operations UniqueEntityName\} クエリは \{finance and operations EntityFilterQueryString\} です。 クエリ基準を満たすレコードは、同期のためにピックアップされます。" です。
 
 返されたエンティティ クエリは、エンティティのバッキング SQL クエリです。 ライブ同期のために収集されるビジネス データを決定するクエリに対して、内部結合またはフィルタが適用されたかどうかを確認します。 二重書き込みライブ同期のために取得されるレコードごとに実行する必要がある、内部結合およびフィルターの選択は必須です。
 
 ## <a name="error-1300"></a>エラー 1300
 
-エラー メッセージは、"エンティティ \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} 向けのバーチャル フィールド \{s.EntityFieldName\} は、デュアル書き込み向けに追跡できない場合があります。"
+エラー メッセージは、"エンティティ \{finance and operations EntityMetadata.EntityProperties.LogicalEntityName\} 向けのバーチャル フィールド \{s.EntityFieldName\} は、二重書き込み向けに追跡できない場合があります。"
 
-Finance and Operations テーブルからの仮想フィールドは追跡に対して有効になっていません。 ライブ同期ではデータを同期できますが、列に対して行われた変更をピックアップできません。
+財務と運用テーブルからの仮想フィールドは追跡に対して有効になっていません。 ライブ同期ではデータを同期できますが、列に対して行われた変更をピックアップできません。
 
 ## <a name="error-1500"></a>エラー 1500
 
@@ -66,7 +66,7 @@ Finance and Operations テーブルからの仮想フィールドは追跡に対
 
 ## <a name="error-1600"></a>エラー 1600
 
-エラー メッセージは、"データソース: エンティティ \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} の \{datasource.DataSourceName\} には範囲があります。 範囲の条件を満たすレコードだけが出荷用に選択されます。" です。
+エラー メッセージは、"データソース: エンティティ \{finance and operations EntityMetadata.EntityProperties.LogicalEntityName\} の \{datasource.DataSourceName\} には範囲があります。 範囲の条件を満たすレコードだけが出荷用に選択されます。" です。
 
 財務と運用アプリのエンティティは、フィルター範囲が有効になっているデータ ソースを使用できます。 これらの範囲により、ライブ同期の一部として取得されるレコードが定義されます。 一部のレコードが財務と運用アプリから Dataverse にスキップされた場合は、そのレコードがエンティティの範囲基準を 満たされているかどうかを確認します。 このチェックを簡単に実行するには、次の例のような SQL クエリを実行します。
 
@@ -96,3 +96,4 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 Dataverse エンティティの同期プラグインは、トランザクション負荷が追加されるため、ライブ同期および初期同期のパフォーマンスに影響する可能性があります。 特定のエンティティで最初の同期や同期で読み込み時間が遅い場合に、プラグインをオフにするか、これらのプラグインを同期させる方法をお勧めします。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

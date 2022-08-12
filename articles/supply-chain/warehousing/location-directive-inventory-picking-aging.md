@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885699"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068673"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 
@@ -82,7 +82,7 @@ FIFO と LIFO 戦略を使用して、在庫が倉庫に入った日付に基づ
 
 1. **OK** を選択して設定を適用し、クエリのダイアログ ボックスを閉じます。
 1. **保存** を選択し、場所のディレクティブへの変更を保存します。
-1. モバイル デバイスまたは PC の *Dynamics 365 for Finance and Operations - Warehousing* アプリで、次の手順に従って、シナリオをサポートするために倉庫の場所から既存の在庫を削除します:
+1. モバイル デバイスまたは PC の *Dynamics 365 Supply Chain Management - Warehousing* アプリで、次の手順に従って、シナリオをサポートするために倉庫の場所から既存の在庫を削除します:
 
     1. 適切なユーザー ID とパスワードを使用して、倉庫 *63* にサインインします。
     1. メイン メニューで **品質** を選択します。

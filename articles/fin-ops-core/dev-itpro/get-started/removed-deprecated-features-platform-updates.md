@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945807"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069925"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォームの機能
 
@@ -35,11 +35,11 @@ ms.locfileid: "8945807"
 
 ## <a name="feature-deprecation-effective-june-2022"></a>2022 年 6 月に廃止される機能
 
-### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Finance and Operations (Dynamics 365) モバイル アプリケーションとモバイル プラットフォーム 
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>財務と運用 (Dynamics 365) モバイル アプリケーションとモバイル プラットフォーム 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | Finance and Operations (Dynamics 365) モバイル アプリケーションおよびプラットフォームを廃止して、単一のモバイル プラットフォーム (Power Apps) に統合する予定です。 |
+| **廃止 / 削除の理由** | 財務と運用 (Dynamics 365) モバイル アプリケーションおよびプラットフォームを廃止して、単一のモバイル プラットフォーム (Power Apps) に統合する予定です。 |
 | **別の機能で置き換えられているか?**   | はい、財務と運用アプリ データ上のモバイル エクスペリエンスは、Power Platform 統合により構築できます。 詳細については、[ブログ投稿](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/)および[モバイル エクスペリエンスを構築する](../power-platform/build-mobile-experiences.md)を参照してください。 |
 | **影響を受ける製品領域**         | 財務と運用アプリ |
 | **配置オプション**              | すべて |
@@ -77,7 +77,7 @@ ms.locfileid: "8945807"
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | データ管理での XSLT スクリプトのサポートは、財務および運用アプリ内でセキュリティとデータ保護の改善のためには推奨されません。  |
+| **廃止 / 削除の理由** | データ管理での XSLT スクリプトのサポートは、財務と運用アプリ内でセキュリティとデータ保護の改善のためには推奨されません。  |
 | **別の機能で置き換えられているか?**   | いいえ。 顧客と ISV は、XSLT スクリプトの代わりとして、X++ 言語に基づいてソリューションの再実装を検討する必要があります。 |
 | **影響を受ける製品領域**         | 財務と運用アプリ |
 | **配置オプション**              | すべて |
@@ -204,7 +204,7 @@ ms.locfileid: "8945807"
 ## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.17 のプラットフォーム更新プログラム
 
 
-### <a name="visual-studio-2015"></a>Visual Studio2015
+### <a name="visual-studio-2015"></a>Visual Studio 2015
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -228,7 +228,7 @@ ms.locfileid: "8945807"
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | Dynamics AX 2012 エンタープライズ ポータル (EP) に関連付けられたメタデータ コンポーネントは、財務と運用アプリでサポートされたことがないので廃止されました。 |
+| **廃止 / 削除の理由** | Dynamics AX 2012 エンタープライズ ポータル (EP) に関連付けられたメタデータ アーティファクトは、財務と運用アプリでサポートされたことがないので廃止されました。 |
 | **別の機能で置き換えられているか?**   | 無効 |
 | **影響を受ける製品領域**         | Web クライアント |
 | **配置オプション**              | All |
@@ -340,7 +340,7 @@ ms.locfileid: "8945807"
 | **配置オプション**              | クラウド |
 | **ステータス**                         | 非推奨: この機能は、セルフサービス配置に対して完全に廃止されました。 |
 
-### <a name="visual-studio-2015"></a>Visual Studio2015
+### <a name="visual-studio-2015"></a>Visual Studio 2015
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -354,7 +354,7 @@ ms.locfileid: "8945807"
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | テーブル メタデータ定義のフィールド グループには、無効なフィールド参照を含めることができます。 これらのフィールド グループを展開すると、Financial Reporting と Microsoft SQL Server Reporting Services (SSRS) でランタイム エラーが発生する可能性があります。 Platform update 23 では、このメタデータの問題に対応するコンパイラの *警告* が導入されました。 財務と運用アプリのバージョン 10.0.11 に対するプラットフォームのアップデートは、この問題をコンパイラ *エラー* として分類できるようになりました。<p>この問題を解決するには、次の手順に従います。</p><ol><li>テーブルのフィールド グループの定義から無効なフィールド参照を削除します。</li><li>再コンパイル。</li><li>すべてのエラーが対処されていることを確認します。</li></ol> |
+| **廃止 / 削除の理由** | テーブル メタデータ定義のフィールド グループには、無効なフィールド参照を含めることができます。 これらのフィールド グループを展開すると、Financial Reporting と Microsoft SQL Server Reporting Services (SSRS) でランタイム エラーが発生する可能性があります。 Platform update 23 では、このメタデータの問題に対応するコンパイラの *警告* が導入されました。 財務と運用アプリのバージョン 10.0.11 に対するプラットフォーム更新プログラムは、この問題をコンパイラ *エラー* として分類できるようになりました。<p>この問題を解決するには、次の手順に従います。</p><ol><li>テーブルのフィールド グループの定義から無効なフィールド参照を削除します。</li><li>再コンパイル。</li><li>すべてのエラーが対処されていることを確認します。</li></ol> |
 | **別の機能で置き換えられているか?**   | コンパイラ エラーは、コンパイラの警告を完全に置換します。  |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | すべて |
@@ -398,3 +398,4 @@ ms.locfileid: "8945807"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

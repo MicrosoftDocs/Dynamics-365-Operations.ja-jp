@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6b3cff1029b02aaabef2ea9795ab9912f20f1129
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d54e246b175c81b5d161ea35f141fc7dea9c6f1f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871423"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070727"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>確認後支払ファイルの設定と生成
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> この機能は 2022 年 9 月で廃止される予定です。新しいユーザーは電子申告を使用する必要があります。 詳細については、[電子申告を使用した確認後支払ファイルの設定](set-up-positive-pay-er.md) を参照してください。
 
 この記事は、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。 
 

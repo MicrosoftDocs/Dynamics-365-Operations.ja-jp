@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867415"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103975"
 ---
 # <a name="on-premises-deployment-home-page"></a>オンプレミス配置のホーム ページ
 
@@ -52,8 +52,8 @@ Dynamics 365 Finance + Operations (on-premises) を展開できます。 オン�
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
-- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
+- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
+- [財務と運用アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続](../user-interface/client-disconnected.md)
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
 - [オンプレミス環境の再配置](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Dynamics 365 Finance + Operations (on-premises) を展開できます。 オン�
 - [オンプレミス環境の問題を解決するスクリプト](onprem-tsg-implementations.md)
 - [証明書のローテーション](certificate-rotation-on-prem.md)
 - [オンプレミス診断](on-premises-diagnostics.md)
-- [Finance and Operations の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
+- [財務と運用の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
 - [ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

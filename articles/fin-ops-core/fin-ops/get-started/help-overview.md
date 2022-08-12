@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898372"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124197"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -53,7 +53,7 @@ docs.microsoft.com のコンテンツは、任意の検索エンジンを使用�
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>RSS フィードを通じて変更の通知を受け取る
 
-財務と運用アプリ全体で docs.microsoft.com のコンテンツに加えられたすべての更新の RSS フィードを購読するには、次のリンクを使用します:
+財務と運用アプリ全体で docs.microsoft.com のコンテンツに加えられたすべての更新の RSS フィードを購読するには、次のリンクを使用します。
 
 [RSS フィード](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -87,7 +87,7 @@ docs.microsoft.com のコンテンツは、任意の検索エンジンを使用�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
-[Microsoft Dynamics365 のドキュメントへの投稿方法](https://youtu.be/m5djioozRbg)ビデオ (上記参照) は YouTube の Microsoft Dynamics 365 チャンネルに含まれています。
+[Microsoft Dynamics 365 のドキュメントへの投稿方法](https://youtu.be/m5djioozRbg)ビデオ (上記参照) は YouTube の Microsoft Dynamics 365 チャンネルに含まれています。
 
 詳細については、docs.microsoft.com サイトを構築したチームが公開した [Docs 共同作成者ガイド](/contribute)を参照してください。
 
@@ -98,7 +98,7 @@ docs.microsoft.com のコンテンツは、任意の検索エンジンを使用�
 
 タスク ガイドは、制御された、ガイド付きでインタラクティブな方法による、タスクまたは業務プロセスの手順の説明です。 **ヘルプ** ウィンドウからタスク ガイドを開く (再生する) ことができます。 最初にタスク ガイドを選択すると、**ヘルプ** ウィンドウには、タスクのステップ バイ ステップの手順が表示されます。 ローカライズされたタスク ガイドが利用可能となりました。
 
-Microsoft は、2017年12月の Dynamics 365 for Finance and Operations のリリースを介して製品バージョンのタスク ガイド ライブラリをリリースしました。 この記事の [ヘルプ ウィンドウからタスク ガイドにアクセスする](#accessing-task-guides-from-the-help-pane) セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。
+Microsoft は、2017 年 12 月の Dynamics 365 財務と運用のリリースを介して製品バージョンのタスク ガイド ライブラリをリリースしました。 この記事の [ヘルプ ウィンドウからタスク ガイドにアクセスする](#accessing-task-guides-from-the-help-pane) セクションでは、製品の正しいタスク ガイドを検索する方法について説明します。
 
 ![タスク ガイドの読み取りビュー。](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ On the **System parameters** page, follow these steps:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

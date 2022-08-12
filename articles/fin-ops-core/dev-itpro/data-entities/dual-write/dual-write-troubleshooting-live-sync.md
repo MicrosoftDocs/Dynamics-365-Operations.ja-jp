@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1211f7da15686f1c55a4c942f04c73d671e0ba6b
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896708"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111429"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 
@@ -22,7 +22,7 @@ ms.locfileid: "8896708"
 
 
 
-この記事では、財務と運用アプリと Microsoft Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、ライブ同期の問題修正に役立つトラブルシューティングに特化した情報を提供します。
+この記事では、財務と運用アプリと Microsoft Dataverse 間の二重書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、ライブ同期の問題修正に役立つトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
 > この記事説明されている問題の中には、システム管理者ロールまたは Azure Active Directory (Azure AD) テナント管理者の資格情報のいずれかが必要な場合があります。 各セクションでは、特定のロールまたは特定の資格情報が必要な場合について説明しています。
@@ -47,7 +47,7 @@ ms.locfileid: "8896708"
 
 データが両方の場所に存在し、問題がデータに起因するものではないことが分かった場合は、次の手順を実行してください。
 
-1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
+1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、財務と運用の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
 2. 二重書き込みマップおよびプロジェクトで問題があるレコードを選択および削除します。 二重書き込みマッピングごとに 2 つのレコードがあります。
 3. Excel アドインを使用して変更を公開します。 エンティティおよび基になるテーブルからレコードが削除されるので、この手順は重要です。
 
@@ -94,10 +94,10 @@ ms.locfileid: "8896708"
 
 1. 財務と運用アプリで、次の手順に従います:
 
-    1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
+    1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、財務と運用の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
     2. 二重書き込みマップおよびプロジェクトで問題があるレコードを選択および削除します。 二重書き込みマッピングごとに 2 つのレコードがあります。
     3. Excel アドインを使用して変更を公開します。 エンティティおよび基になるテーブルからレコードが削除されるので、この手順は重要です。
-    4. Finance and Operations または Dataverse 環境を再リンクする際にエラーを防ぐには、デュアル書き込みの構成が残っていないことを確認してください。
+    4. 財務と運用または Dataverse 環境を再リンクする際にエラーを防ぐには、二重書き込みの構成が残っていないことを確認してください。
 
 2. Dataverse で、以下の手順を実行します。
 
@@ -110,10 +110,10 @@ ms.locfileid: "8896708"
 
 3. 財務と運用アプリで、次の手順に従います:
 
-    1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
+    1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、財務と運用の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
     2. 二重書き込みマップおよびプロジェクトで問題があるレコードを選択および削除します。 二重書き込みマッピングごとに 2 つのレコードがあります。
     3. Excel アドインを使用して変更を公開します。 エンティティおよび基になるテーブルからレコードが削除されるので、この手順は重要です。
-    4. Finance and Operations または Dataverse 環境を再リンクする際にエラーを防ぐには、デュアル書き込みの構成が残っていないことを確認してください。
+    4. 財務と運用または Dataverse 環境を再リンクする際にエラーを防ぐには、二重書き込みの構成が残っていないことを確認してください。
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>データベース全体のコピーを実行した後のライブ同期エラー
 
@@ -206,7 +206,7 @@ while(qRun.next())
 
 ### <a name="troubleshooting-steps"></a>トラブルシューティングの手順
 
-1. 二重書き込み管理者ページ上のフィールド マッピングを確認します。 フィールドが財務と運用アプリから Dataverse にマップされていない場合、フィールド は追跡されません。 たとえば、次の図では、**説明** フィールドは Dataverse から追跡されていますが、財務と運用アプリからは追跡 されていません。 財務と運用アプリ内のそのフィールドへの変更は追跡されません。
+1. 二重書き込み管理者ページ上のフィールド マッピングを確認します。 フィールドが財務と運用アプリから Dataverse にマップされていない場合、フィールド は追跡されません。 たとえば、次の図では、**説明** フィールドは Dataverse から追跡されていますが、財務と運用アプリからは追跡されていません。 財務と運用アプリ内のそのフィールドへの変更は追跡されません。
 
     ![追跡されるフィールド。](media/live-sync-troubleshooting-1.png)
 
@@ -220,7 +220,7 @@ while(qRun.next())
 
 ### <a name="sample-scenario"></a>サンプル シナリオ
 
-財務と運用アプリでは、連絡先レコードの住所が更新されますが、住所の変更は Dataverse に同期されません。 このシナリオは、**BusinessEventsDefinition** テーブルのレコードに、影響を受けるテーブルとエンティティの組み合わせがないために発生します。 具体的には、**LogisticsPostalAddress** テーブルは **smmContactpersonCDSV2Entity** エンティティの直接データ ソースではありません。 **smmContactpersonCDSV2Entity** エンティティには **smmContactPersonV2Entity** がデータ ソースとしてあり、**smmContactPersonV2Entity** には **LogisticsPostalAddressBaseEntity** がデータ ソースとしてあります。 **LogisticsPostalAddress** テーブルは、**LogisticsPostalAddressBaseEntity** のデータ ソースです。
+財務と運用アプリでは、連絡先レコードの住所は更新されますが、住所の変更は Dataverse に同期されません。 このシナリオは、**BusinessEventsDefinition** テーブルのレコードに、影響を受けるテーブルとエンティティの組み合わせがないために発生します。 具体的には、**LogisticsPostalAddress** テーブルは **smmContactpersonCDSV2Entity** エンティティの直接データ ソースではありません。 **smmContactpersonCDSV2Entity** エンティティには **smmContactPersonV2Entity** がデータ ソースとしてあり、**smmContactPersonV2Entity** には **LogisticsPostalAddressBaseEntity** がデータ ソースとしてあります。 **LogisticsPostalAddress** テーブルは、**LogisticsPostalAddressBaseEntity** のデータ ソースです。
 
 同様の状況は、財務と運用アプリで変更されているテーブルが、それを含むエンティティに明らかにリンクされていない場合など、一部の非標準パターンで発生する可能性があります。 たとえば、基本住所データは **smmContactPersonCDSV2Entity** エンティティで計算されます。 二重書き込みフレームワークは、基になるテーブルに対する変更がエンティティにマップされる方法を決定しようとします。 通常、この方法で十分です。 ただし、場合によっては、リンクが非常に複雑であるため、具体的にする必要があります。 関連するテーブルの **RecId** がエンティティで直接利用可能であることを確認する必要があります。 次に、静的メソッドを追加して、テーブルの変更を監視します。
 
@@ -262,7 +262,7 @@ while(qRun.next())
 
 財務と運用アプリでは、Dataverse 環境に関連するエラーが発生する場合があります。 エラー メッセージには、メッセージの全文またはその他の関連データが含まれていない場合があります。 詳細情報を取得するには、財務と運用アプリのすべてのプロジェクト構成の **DualWriteProjectConfigurationEntity** エンティティに存在する **IsDebugMode** フラグを設定することにより、詳細ログを有効にできます。
 
-1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
+1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、財務と運用の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
 2. プロジェクトの **IsDebugMode** フラグを **はい** に設定します。
 3. シナリオを実行します。
 4. 詳細なログは、**DualWriteErrorLog** テーブルで確認できます。 テーブル ブラウザを使用してデータを検索するには、次の URL を使用します: `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`。
@@ -290,7 +290,7 @@ Dataverse で顧客を追加しようとする際に、次のエラー メッセ
 
 *"RecordError0": "書き込みに失敗したエンティティ顧客 V3 に対して不明な例外 - 当事者タイプ '組織' の当事者レコードが見つかりませんでした"}。*
 
-Dataverse で顧客を作成すると、新しい当事者番号が生成されます。 エラー メッセージは、顧客レコードが当事者とともに財務と運用アプリに同期されたときに表示されますが、別の当事者番号を持つ顧客レコードがすでに存在します。
+Dataverse で顧客を作成すると、新しい当事者番号が生成されます。 エラー メッセージは、顧客レコードが当事者と共に財務と運用アプリに同期されたときに表示されますが、別の当事者番号を持つ顧客レコードはすでに存在しています。
 
 問題を修正するには、当事者ルックアップで顧客を検索します。 顧客が存在しない場合、新しい顧客レコードを作成します。 顧客が存在する場合は、既存の当事者を使用して新しい顧客レコードを作成します。
 
@@ -300,7 +300,7 @@ Dataverse で顧客を作成すると、新しい当事者番号が生成され�
 
 *当事者のタイプを「DirOrdirization」から「DirPerson」に更新することはできません。代わりに、既存の当事者を削除し、その後、新しいタイプの挿入を実行する必要があります。*
 
-Dataverse では、**msdyn_party** テーブルに番号順序があります。 Dataverse でアカウントが作成されると、新しい当事者が作成されます (例えば、**組織** タイプの **Party-001**)。 このデータは財務と運用アプリに送信されます。 Dataverse 環境がリセットされるか、Finance and Operations 環境が別の Dataverse 環境にリンクされ、Dataverse に新しい連絡先レコードが作成されると、**Party-001** で始まる新しい当事者値が作成されます。 この時、作成される当事者レコードは、**個人** タイプの **Party-001** です。 このデータが同期されると、**組織** タイプの当事者レコード **Party-001** がすでに存在するため、財務と運用アプリは上記のエラー メッセージを表示します。
+Dataverse では、**msdyn_party** テーブルに番号順序があります。 Dataverse でアカウントが作成されると、新しい当事者が作成されます (例えば、**組織** タイプの **Party-001**)。 このデータは財務と運用アプリに送信されます。 Dataverse 環境がリセットされるか、財務と運用の環境が別の Dataverse 環境にリンクされ、Dataverse に新しい連絡先レコードが作成されると、**Party-001** で始まる新しい当事者値が作成されます。 この時、作成される当事者レコードは、**個人** タイプの **Party-001** です。 このデータが同期されると、**組織** タイプの当事者レコード **Party-001** がすでに存在するため、財務と運用アプリは上記のエラー メッセージを表示します。
 
 この問題を修正するには、Dataverse の **msdyn_party** テーブルの **msdyn_partynumber** フィールドの自動番号順序を別の自動番号順序に変更します。
 
@@ -355,3 +355,4 @@ public static container getEntityDataSourceToFieldMapping(container mapping)
 3. マップを開始します。 **smmContactPersonCDSV2Entity** および **CustCustomerV3Entity** エンティティと **BusinessEventsDefinition** テーブルに表示されるレコードが少なくなり、パフォーマンスがわずかに向上する可能性があります。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

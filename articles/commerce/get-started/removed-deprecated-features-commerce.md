@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: この記事では、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
-ms.date: 04/27/2022
+ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
+ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910527"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9138589"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -32,6 +32,19 @@ ms.locfileid: "8910527"
 
 > [!NOTE]
 > 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="feature-deprecation-effective-july-2022"></a>2022 年 7 月に廃止される機能
+
+### <a name="commerce-analytics-preview"></a>Commerce 分析 (プレビュー)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Dynamics 365 Commerce チームは、コマース分析 (プレビュー) 機能の使用と取り込みを分析しました。この機能を一般提供に持ち込む方向に進めないことを決定をしました。   |
+| **別の機能で置き換えられているか?**   | 現時点では、コマース分析 (プレビュー) は他の機能やソリューションには置き換えられることはありません。 [財務と運用アプリでの Data Lake へのエクスポート](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md) で説明されているように、財務と運用アプリから Azure Data Lake への生のトランザクションとマスター データのエクスポートは引き続き使用可能です。 パートナーおよび顧客は、そのデータ ストリームを使用して、ビジネス ニーズに合った任意の目的の分析レポートを作成できます。
+| **影響を受ける製品領域**         | Commerce 分析 (プレビュー) |
+| **配置オプション**              | すべて |
+| **状態**                         | この機能を無効にする日は 2022 年 8 月 30 日です。  この日付以降、コマース分析 (プレビュー) によって提供される現在の Power BI レポートは更新されません。     |
+
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Commerce 10.0.25 リリースの削除済みまたは非推奨の機能
 
@@ -195,3 +208,4 @@ ModernPos.sln、CloudPos.sln、POS.Extension.csproj、および POS フォルダ
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

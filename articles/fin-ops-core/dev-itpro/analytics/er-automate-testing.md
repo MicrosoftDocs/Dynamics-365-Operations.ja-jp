@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6254d15d13e40007396c9f2a36a8cd3122dc2609
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892772"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109343"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>電子申告を使用したテストの自動化
 
@@ -57,7 +57,7 @@ ER データ モデルと ER モデル マッピングは、さまざまなタ�
 この記事のタスクを完了する前に、以下の前提条件を完了する必要があります。
 
 - テストの自動化をサポートするトポロジを配置します。 **システム管理者** ロールは、このトポロジのインスタンスへのアクセスが必要です。 このトポロジには、この例で使用するデモデータを含める必要があります。 詳細については、[継続的なビルドとテストの自動化をサポートする環境を配置して使用する](../perf-test/continuous-build-test-automation.md) を参照してください。
-- ユーザー受け入れと統合テストを自動的に実行するには、使用しているトポロジに RSAT をインストールし、適切な方法でコンフィギュレーションする必要があります。 RSAT をインストールして構成する方法および Finance and Operations アプリと Azure DevOps と連携するように構成する方法の詳細については、[Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) を参照してください。 このツールを使用するための前提条件に注意してください。 以下の図は、RSAT の設定の一例を表しています。 青い四角形は、Azure DevOpsへのアクセスを指定するパラメーターを囲みます。 緑色の四角形は、インスタンスへのアクセスを指定するパラメーターを囲みます。
+- ユーザー受け入れと統合テストを自動的に実行するには、使用しているトポロジに RSAT をインストールし、適切な方法でコンフィギュレーションする必要があります。 RSAT をインストールして構成する方法および財務と運用アプリと Azure DevOps が連携するように構成する方法の詳細については、[Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) を参照してください。 このツールを使用するための前提条件に注意してください。 以下の図は、RSAT の設定の一例を表しています。 青い四角形は、Azure DevOpsへのアクセスを指定するパラメーターを囲みます。 緑色の四角形は、インスタンスへのアクセスを指定するパラメーターを囲みます。
 
     ![RSAT 設定。](media/GER-Configure.png "RSAT の設定ダイアログ ボックスのスクリーンショット")
 

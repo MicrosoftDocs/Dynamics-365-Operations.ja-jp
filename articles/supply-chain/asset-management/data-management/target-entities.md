@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 172f49c13c183eb4df986dc3e30ff3955bc1a605
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 838e3affd4e782bea463638e28da3943329671d4
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860989"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111859"
 ---
 # <a name="target-entities"></a>ターゲット エンティティ
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860989"
 
 **データ管理** ワークスペースでは、ターゲット エンティティ、関連するエンティティ タイプ、および **資産管理** モジュールに関連するステージング テーブルの概要を取得できます。 
 
-1. 画面の左上隅にある **Finance and Operations** ボタンをクリックし、**データ管理** をクリックします。
+1. 画面の左上隅にある **財務と運用** ボタンをクリックし、**データ管理** をクリックします。
 
 2. **インポート/エクスポート** セクションで、**データ エンティティ** をクリックします。 
 

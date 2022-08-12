@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 2ef4fb1a51bd92db440841eb2a9d9ebcce0e1b1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 599cfdab8232cab28c59c5098094c4afd351df77
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872943"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112397"
 ---
 # <a name="dual-write-overview"></a>二重書き込みの概要
 
@@ -49,7 +49,7 @@ ms.locfileid: "8872943"
 + 信頼できるアプリケーション ライフサイクル管理
 + 新しい顧客に対する標準の設定エクスペリエンス
 
-### <a name="application"></a>申請書
+### <a name="application"></a>アプリケーション
 
 二重書き込みは、財務と運用アプリと Customer Engagement アプリにおける概念の間にマッピングを作成します。 この統合により、次のシナリオがサポートされます。
 
@@ -82,7 +82,7 @@ ms.locfileid: "8872943"
 
 二重書き込みは、財務と運用アプリと Customer Engagement アプリ間のデータ フローを自動化します。 二重書き込みは、Dataverse にインストールされている 2 つの AppSource ソリューションで構成されています。 ソリューションは、Dataverse のテーブル スキーマ、プラグイン、ワークフローを展開して、ERP サイズに合わせて拡張できるようにします。 実装を成功させるためには、Customer Engagement アプリの開発者や設計者は、これらの変更点を理解し、財務と運用アプリ上で担当者と協力する必要があります。
 
-財務と運用アプリケーションと同等の機能を作成するために、二重書き込みは Dataverse スキーマにいくつかの重要な変更を加えます。 計画を理解すれば、将来の設計や開発のやり直しを回避できます。
+財務と運用アプリと同等の機能を作成するために、二重書き込みは Dataverse スキーマにいくつかの重要な変更を加えます。 計画を理解すれば、将来の設計や開発のやり直しを回避できます。
 
 + 二重書き込み AppSource パッケージがインストールされると、Dataverse は会社や関係者などの新しい概念を持つようになります。 これらの概念は、Dynamics 365 Sales、Dynamics 365 Marketing、Dynamics 365 Customer Service、Dynamics 365 Field Service を含む、Dataverse 上に構築されたアプリケーションが、財務と運用アプリとシームレスとやりとりするのに役立ちます。
 
@@ -99,3 +99,4 @@ ms.locfileid: "8872943"
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

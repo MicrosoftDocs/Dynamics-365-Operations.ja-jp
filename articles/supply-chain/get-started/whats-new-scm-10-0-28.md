@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.28 のプレビュー (2022 年 8 月)
+title: Dynamics 365 Supply Chain Management 10.0.28 (2022 年 8 月) の新機能または変更された機能
 description: この記事では、Microsoft Dynamics 365 Supply Chain Management 10.0.28 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 05/27/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902056"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186522"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Dynamics 365 Supply Chain Management 10.0.28 のプレビュー (2022 年 8 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Dynamics 365 Supply Chain Management 10.0.28 (2022 年 8 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-この記事では、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.28 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1264 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.28 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1264 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 5 月
 - **リリースの一般提供 (手動更新):** 2022 年 7 月
@@ -35,7 +34,7 @@ ms.locfileid: "8902056"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
 | 在庫および物流 | [サード パーティ配送業者の陸揚原価統合エンティティ](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [陸揚原価エンティティの概要](../landed-cost/landed-cost-entities-overview.md) | 既定で有効 |
-| 計画 | [需要主導型材料所要量計画 (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | 間もなく公開 | 機能管理:<br>*(プレビュー) 計画最適化のための DDMRP* |
+| 計画 | [需要主導型材料所要量計画 (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [需要主導型材料所要量計画の概要](../master-planning/planning-optimization/ddmrp-overview.md) | 機能管理:<br>*(プレビュー) 計画最適化のための DDMRP* |
 | 計画 | [生産可能在庫 (CTP) での計画最適化のサポート](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | 間もなく公開 | 機能管理:<br>*(プレビュー) 計画最適化のための CTP* |
 | 計画 | [有効期限の最適化サポートの計画](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | 間もなく公開 | 既定で有効 |
 
@@ -92,3 +91,4 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.28 には、Platform updates
 コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

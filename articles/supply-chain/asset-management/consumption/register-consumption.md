@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 729ef6aae228ad1e528945031567b92c44cdf256
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015088"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111757"
 ---
 # <a name="register-consumption"></a>消費の登録
 
@@ -90,7 +90,7 @@ ms.locfileid: "9015088"
 - *品目の登録 :* 最初に、仕訳帳ヘッダーの財務分析コードが追加されます (存在する場合)。 そして、関連するワーク オーダー プロジェクトの財務分析コードが追加されます。 次に、サイトからの財務分析コードが追加されます。 最後に品目からの財務分析コードが追加されます。
 
 >[!NOTE]
->3 つの登録タイプすべてについて、財務分析コードの組み合わせが検証され、無効な組み合わせは空白になります。 これは、他の Finance and Operations アプリに標準で設定されています。
+>3 つの登録タイプすべてについて、財務分析コードの組み合わせが検証され、無効な組み合わせは空白になります。 これは、他の財務と運用アプリに標準で設定されています。
 
 
 

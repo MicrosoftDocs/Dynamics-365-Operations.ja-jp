@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0449a13989bad45cf0456a2678e5724036d2af3d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883419"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070697"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>スキャン済みドキュメントの請求書の自動化
 
@@ -58,7 +58,7 @@ ms.locfileid: "8883419"
 
 仕入先請求書ドキュメントの添付ファイルは、この機能の一部として導入される新しいデータ エンティティです。 添付ファイルをサポートできるように、仕入先請求書ヘッダーのエンティティが変更されました。 この機能に関して、仕入先請求書の明細行のエンティティは変更されていません。
 
-データパッケージの詳細については、[データ管理の概要](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。 データ管理ワークスペースを使用したデータ パッケージの作成方法については、[Dynamics 365 財務と運用アプリ ソリューションにおけるデータ パッケージの処理と消費](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md) を参照してください 。
+データパッケージの詳細については、[データ管理の概要](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。 データ管理ワークスペースを使用したデータ パッケージの作成方法については、[Dynamics 365 財務と運用アプリ ソリューションにおけるデータ パッケージの処理と消費](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md) を参照してください。
 
 請求書および添付ファイルを含むテスト データを簡単に生成するには、以下の手順を実行します。
 
@@ -86,7 +86,7 @@ ms.locfileid: "8883419"
 
 ## <a name="exception-processing"></a>例外処理
 
-統合により仕入先請求書が Finance and Operations に渡されるシナリオの場合、買掛金勘定のチーム メンバーが例外処理や障害が発生した請求書を扱い、障害が発生した請求書から保留中の請求書を作成する簡単な方法が存在する必要があります。 この仕入先請求書の例外処理は、Finance and Operations の一部として提供されています。
+統合により仕入先請求書が財務と運用に渡されるシナリオの場合、買掛金勘定のチーム メンバーが例外処理や障害が発生した請求書を扱い、障害が発生した請求書から保留中の請求書を作成する簡単な方法が存在する必要があります。 この仕入先請求書の例外処理は、財務と運用の一部として提供されています。
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>リストのインポートに失敗した仕入先請求書ページ
 
@@ -225,3 +225,4 @@ Contoso がセキュリティを適用しない場合、同じユーザーがす
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

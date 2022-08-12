@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89175763357f4309c4eb7874d0068586c5d9e726
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856921"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123951"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
 
@@ -122,9 +122,9 @@ ms.locfileid: "8856921"
 <td>2 つの連続した二重引用符 (<strong>""</strong>) は、現在の列に対する値のない行を検索します。</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations クエリ</span>) (かっこの間の Finance and Operations クエリ)</td>
+<td>(<span class="code">財務と運用クエリ</span>) (かっこの間の財務と運用クエリ)</td>
 <td>定義されたクエリと一致</td>
-<td>Finance and Operations クエリ言語を使用して、かっこの間にクエリを SQL ステートメントとして入力します。</td>
+<td>財務と運用クエリ言語を使用して、かっこの間にクエリを SQL ステートメントとして入力します。</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        ルート データソースのフィールドと別のデータソースのフィールドのフィルター条件の構文の例として (すべての顧客ページ用)</td>
 </tr>

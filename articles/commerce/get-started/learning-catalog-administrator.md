@@ -12,18 +12,18 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 54a3dfe64d46b082db12ef05b88075831c9f525e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 473977a7a75bb7bbe493225c6455a918ba5f748e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898548"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070791"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Dynamics 365 Commerce 管理者向けラーニング カタログ
 
 システムとデータのフロー、プロビジョニング、およびセキュリティを 24 時間維持する必要がありますか。
 
-次のカタログは、コア知識から特定のドメインまで、および最も基本的なものから最も高度なものまでまとめられています。 コンテンツが複数の形式で存在する場合は、ご自分のニーズに合ったトレーニング形式を選択できます。 このカタログには、Dynamics 365 Commerce に固有の機能のみが含まれています。 他の財務と運用アプリと共有する機能に関するトレーニングについては、[Dynamics 365 Finance ラーニング カタログ](../../finance/get-started/learning-catalog-administrator.md) を参照してください。
+次のカタログは、コア知識から特定のドメインまで、および最も基本的なものから最も高度なものまでまとめられています。 コンテンツが複数の形式で存在する場合は、ご自分のニーズに合ったトレーニング形式を選択できます。 このカタログには、Dynamics 365 Commerce に固有の機能のみが含まれています。 他の財務と運用アプリと共有する機能に関するトレーニングについては、[Dynamics 365 Finance ラーニング カタログ](../../finance/get-started/learning-catalog-administrator.md)を参照してください。
 
 ## <a name="get-started"></a>使用開始<a name="get-started"></a>
 
@@ -49,3 +49,4 @@ ms.locfileid: "8898548"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

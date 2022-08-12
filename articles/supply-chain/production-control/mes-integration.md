@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 46f6db3dd9942131b379216e6fffe5551d6c8fc3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860641"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068034"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>サード パーティ製造システムとの統合
 
@@ -252,9 +252,10 @@ MES から Supply Chain Management にメッセージが送信された後に、
 そのような場合は、Supply Chain Management の標準警告機能を活用できます。 標準警告のしくみについては、次のリソースを参照してください。
 
 - ヘルプ記事: [警告の概要](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
-- ビデオ: [Dynamics 365 for Finance and Operations の警告ルールオプション](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
+- ビデオ : [財務と運用の警告ルール オプション](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 たとえば、メッセージの状態に関するフィードバックを提供するために、次の警告を設定できます。
 
 - メッセージが *失敗* した場合に使用されるビジネス イベント (「外部送信」) を作成します。
 - IT 管理者または生産現場マネージャに通知と電子メールを送信します。
+

@@ -2,19 +2,19 @@
 title: 初めて同期をする際に発生する問題のトラブルシューティング
 description: この記事では、 初めて同期をする際に発生する可能性のある問題の修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: bb3db4c651aaac521974d92753be5a8219bfe1ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8fb27a6af2962be31288a3d2260110e5fe6a201
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892360"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112085"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>初めて同期をする際に発生する問題のトラブルシューティング
 
@@ -22,7 +22,7 @@ ms.locfileid: "8892360"
 
 
 
-この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、 初めて同期をする際に発生する可能性のある問題の修正に役立つトラブルシューティングに特化した情報を提供します。
+この記事では、財務と運用アプリと Dataverse 間の二重書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、 初めて同期をする際に発生する可能性のある問題の修正に役立つトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
 > この記事で説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
@@ -63,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 このエラーが継続して発生し、初回同期を完了できない場合は、次の手順に従って問題を修正してください。
 
-1. 仮想マシン (VM) にサインインし、財務と運用アプリにアクセスします。
+1. 財務と運用アプリの仮想マシン (VM) にサインインします。
 2. Microsoft 管理コンソールを起動します。
 3. **サービス** ウィンドウで、Microsoft Dynamics 365 データインポート エクスポート フレームワーク サービスが実行されていることを確認します。 初回同期が必要となるため、停止している場合は再起動してください。
 
@@ -75,7 +75,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 問題を解決するには、次の手順に従います。
 
-1. 財務と運用アプリにログインします。
+1. 財務と運用アプリにサインインします。
 2. **Azure Active Directory アプリケーション** のページで、**DtAppID** クライアントを削除し、再度追加します。
 
 ![Azure AD アプリケーションの一覧の DtAppID クライアント。](media/aad_applications.png)
@@ -104,7 +104,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 1. 財務と運用アプリで、マッピングから **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列を削除し、マッピングを保存します。
 
-    1. **仕入先 V2 (msdyn\_vendors)** のデュアル書き込みマッピング ページで、左のフィールドにある **テーブル マッピング** タブで、**Finance and Operations apps.Vendors V2** を選択します。 右側のフィルターで、**Sales.Vendor** を選択します。
+    1. **仕入先 V2 (msdyn\_vendors)** のデュアル書き込みマッピング ページで、左のフィールドにある **テーブル マッピング** タブで、**財務と運用アプリ. 仕入先 V2** を選択します。 右側のフィルターで、**Sales.Vendor** を選択します。
     2. **primarycontactperson** を検索して、**PrimaryContactPersonId** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
@@ -151,7 +151,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 1. 財務と運用アプリで、**顧客 V3 (アカウント)** マッピングから **ContactPersonID** 列と **InvoiceAccount** 列を削除し、マッピングを保存します。
 
-    1. **顧客 V3 (アカウント)** のデュアル書き込みマッピング ページにある **テーブル マッピング** タブの左のフィルタで、**Finance and Operations app.Customers V3** を選択します。 右側のフィルターで、**Dataverse.Account** を選択します。
+    1. **顧客 V3 (アカウント)** の二重書き込みマッピング ページにある **テーブル マッピング** タブの左のフィルタで、**財務と運用アプリ. 顧客 V3** を選択します。 右側のフィルターで、**Dataverse.Account** を選択します。
     2. **contactperson** を検索して、**ContactPersonID** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
@@ -183,9 +183,9 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 5. **顧客 V3 (アカウント)** マッピングに **InvoiceAccount** 列と **ContactPersonId** 列を追加し直し、マッピングを保存します。 **InvoiceAccount** 列と **ContactPersonId** 列の両方が再度ライブ同期モードの一部になりました。 次の手順では、これらの列の初期同期をおこないます。
 6. **顧客 V3 (アカウント)** マッピングの初期同期を再度実行します。 Change Tracking が無効になっているため、**InvoiceAccount** と **ContactPersonId** のデータが財務と運用アプリから Dataverse に同期されます。
-7. **InvoiceAccount** と **ContactPersonId** のデータを Dataverse から財務と運用アプリに同期するには 、データ統合プロジェクトを使用します。
+7. **InvoiceAccount** と **ContactPersonId** のデータを Dataverse から財務と運用アプリに同期するには、データ統合プロジェクトを使用します。
 
-    1. Power Apps で、 **Sales.Account** と **Finance and Operations apps.Customers V3** テーブルの間にデータ統合プロジェクトを作成します。 データの方向は、Dataverse から財務と運用アプリである必要があります。 **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。
+    1. Power Apps で、**Sales.Account** と **財務と運用アプリ.顧客 V3** テーブルの間にデータ統合プロジェクトを作成します。 データの方向は、Dataverse から財務と運用アプリである必要があります。 **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。
 
         次の図は、**CustomerAccount** と **ContactPersonId** を更新するプロジェクトを示しています。
 
@@ -201,7 +201,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
     行の初期同期が完了しました。
 
-8. 財務と運用アプリで、**顧客 V3** テーブルの Change Tracking をオンにし直します。
+8. 財務と運用アプリで、**顧客 V3** テーブルの変更追跡をオンにし直します。
 
 ## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>10 以上のルックアップ フィールドを持つマップでの初期同期に失敗した場合
 
@@ -229,10 +229,19 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 **個人** と **組織** タイプの当事者をフィルタ処理するため、財務と運用アプリで **DirPartyCDSEntity** に範囲が指定されています。 その結果、**CDS 当事者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先V3 (msdyn_partyelectronicaddresses)** で初期同期を実行するとき、エラーを受け取る可能性があります。
 
-すべてのタイプの関係者が Dataverse に正常に同期するために、Finance and Operations エンティティで当事者タイプの範囲を削除するよう修正中です。
+すべてのタイプの関係者が Dataverse に正常に同期するために、財務と運用のエンティティで当事者タイプの範囲を削除するよう修正中です。
 
 ## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>顧客または連絡先データの初期同期を実行する際のパフォーマンスに問題がありますか?
 
 **顧客** データの初期同期を実行し、**顧客** マップを実行中で、**連絡先** データの初期同期を実行しているなら、**顧客** 住所の **LogisticsPostalAddress** や **LogisticsElectronicAddress** テーブルへの挿入および更新時にパフォーマンスに問題が発生する可能性があります。 **CustCustomerV3Entity** と **VendVendorV2Entity** では同じグローバル郵便住所と電子アドレス テーブルが追跡されており、二重書き込みによって、データを他方の側に書き込むクエリをさらに作成しようとします。 **顧客** の初期同期を既に実行している場合は、**連絡先** データの初期同期を実行している間は対応するマップを停止してください。 同じ作業を **仕入先** データに行います。 初期同期が完了したら、すべてのマップを初期同期をスキップして実行できます。
 
+## <a name="float-data-type-that-has-a-zero-value-cant-be-synchronized"></a>値が 0 の Float データ型の同期ができない
+
+**固定支払額** やトランザクション通貨の **金額** など、価格フィールドの値が 0 であるレコードに対して、初期同期が失敗することがあります。 この場合、次のようなエラーメッセージが表示される場合があります。
+
+*入力パラメーターの検証中にエラーが発生しました: Microsoft.OData.ODataException: リテラル '000000' を想定される型の 'Edm.Decimal' に変換できません...*
+
+問題は、**データ管理** モジュールの **ソース データ形式** の下にある **言語ロケール** 値にあります。 **言語ロケール** フィールドの値を **en-us** に変更して、もう一度やり直してください。
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

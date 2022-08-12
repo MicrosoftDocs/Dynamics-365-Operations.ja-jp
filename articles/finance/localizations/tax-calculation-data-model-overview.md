@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859698"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068851"
 ---
 # <a name="tax-calculation-data-model"></a>税計算データ モデル
 
@@ -134,3 +134,4 @@ ms.locfileid: "8859698"
 | 単位                          | <ul><li>**販売注文:** 単位</li><li>**発注書:** 単位</li><li>**移動オーダー - 出荷:** 単位</li><li>**移動オーダー - 入庫:** 単位</li><li>**購買要求:** 単位</li><li>**見積依頼:** 単位</li><li>**販売見積:** 単位</li></ul> |
 | バリアント番号                | <ul><li>**販売注文:** バリアント番号</li><li>**発注書:** バリアント番号</li><li>**販売見積:** バリアント番号</li></ul> |
 | 倉庫                     | <ul><li>**販売注文:**<ol><li>明細行 &gt; 倉庫</li><li>製品 &gt; 倉庫</li></ol></li><li>**発注書:**<ol><li>明細行 &gt; 倉庫</li><li>製品 &gt; 倉庫</li></ol></li><li>**移動オーダー - 出荷:** 出荷元倉庫</li><li>**移動オーダー - 入庫:** 出荷先倉庫</li><li>**購買要求:** 明細行 &gt; 倉庫</li><li>**見積依頼:** 明細行 &gt; 倉庫</li><li>**販売見積:**<ol><li>明細行 &gt; 倉庫</li><li>製品 &gt; 倉庫</li></ol></li></ul> |
+

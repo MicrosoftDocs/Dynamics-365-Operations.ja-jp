@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 00e536241710fc8a75158472688757320abf4247
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710360"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067211"
 ---
 # <a name="collections-in-accounts-receivable"></a>売掛金勘定の回収
 
@@ -65,7 +65,7 @@ ms.locfileid: "8710360"
 
 > [!NOTE]
 > 経過期間スナップショットは、これらのリスト ページの情報を表示する前に、作成する必要があります。 情報は、経過期間スナップショットを作成した顧客に対してのみ表示されます。 リスト ページに表示されるレコードは、次のようにしてさらにフィルタできます。
-> <li>既定では、Finance and Operations のユーザーは、経過期間スナップショットのあるすべての顧客にアクセスできます。</li>
+> <li>既定では、財務と運用のユーザーは、経過期間スナップショットのあるすべての顧客にアクセスできます。</li>
 > <li>顧客プールが存在する場合、ユーザーは回収代行業者として設定され、プールを使用して回収リスト ページの情報をフィルタ処理する必要があります。 情報は、選択した顧客プールに含まれる顧客に限定されます。</li>
 > <li>ユーザーが回収代行業者として設定されている場合、その回収代行業者に選択したプールのみがリスト ページで使用できます。 回収代行業者について、[回収代行業者] ページで [エージェントがすべての顧客プールを表示できるようにする] の切り替えを選択した場合、すべてのプールがその業者で使用できます。</li>
 
@@ -110,3 +110,4 @@ ms.locfileid: "8710360"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

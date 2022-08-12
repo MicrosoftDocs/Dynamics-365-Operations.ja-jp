@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f032f95377fdc6f8ec7fbbfa7aadab8fc448be5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fb0fbfcceece2883c32a266bcbe659211b0b56ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577771"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069729"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>最小/最大の補充プロセスの設定
 
 [!include [banner](../../includes/banner.md)]
 
-この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。 在庫が最小レベルを下回った場合、場所を補充するために作業が作成されます。 手順では、在庫が最小レベルを下回った場合でも補充を許可する固定のピッキング場所の使用方法や、バッチ ジョブを使用して定期的に補充プロセスを実行できるようにする方法も示します。 通常、これらのタスクを実施するのは、倉庫マネージャーです。 以下の例の値を使用するデモ データの会社 USMF でこの手順を実行したり、独自のデータで実行したりできます。 自分のデータを使用している場合は、倉庫管理プロセスに対して有効な倉庫があることを確認してください。
+この手順では、最小/最大の補充方法を使用する新しい補充プロセスを設定する方法を示します。 在庫が最小レベルを下回った場合、場所を補充するために作業が作成されます。 手順では、在庫が最小レベルを下回った場合でも補充を許可する固定のピッキング場所の使用方法や、バッチ ジョブを使用して定期的に補充プロセスを実行できるようにする方法も示します。 通常、これらのタスクを実施するのは、倉庫マネージャーです。 以下の例の値を使用するデモ データの会社 USMF でこの手順を実行したり、独自のデータで実行したりできます。 自分のデータを使用している場合は、倉庫管理プロセス (WMS) に対して有効な倉庫があることを確認してください。
 
 
 ## <a name="create-a-fixed-picking-location"></a>固定のピッキング場所の作成

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 281ee90b7cae2d24d37d0684ad9975118560bb3e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b611abb2d68d93178d0c26ba40b22f1b8d26b191
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869984"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203112"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>移動オーダーに対する税金機能のサポート
 
@@ -111,7 +111,10 @@ ms.locfileid: "8869984"
 6. 品目税グループの適用方法を定義します。
 
     1. **列の管理** を選択し、該当するテーブルの作成に使用する列を選択します。
-    2. 適合性ルールを追加します。 **品目税グループ** フィールドは空欄のままにしないでください。
+    2. 適合性ルールを追加します。
+        
+       > [!NOTE]
+       > 課税対象ドキュメント明細行で既定設定されている品目消費税グループがすでに正しい場合、このマトリックスを空白のままにします。 
         
         移動オーダー出荷と受領の新しいルールを追加します。
         1. **適用性ルール** ページで、**追加** を選択します。

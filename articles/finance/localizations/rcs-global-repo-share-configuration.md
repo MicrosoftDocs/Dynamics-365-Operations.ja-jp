@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f789fd86904c1e625be8fc5be3bfe456fe0659b4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888926"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068751"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Microsoft Regulatory Configuration Service (RCS) のグローバル レポジトリの電子レポート (ER) の構成を外部組織と共有する
 
@@ -36,7 +36,7 @@ Microsoft Regulatory Configuration Service (RCS) を使用すると、電子レ�
 
 また、RCS 環境がプロビジョニングされていることを確認しておく必要があります。
 
-1. Finance and Operations アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** の順に移動します。
+1. 財務と運用アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** の順に移動します。
 2. RCS 環境がご利用の会社にプロビジョニングされていない場合は、**Regulatory services – 外部の構成** を選択し、続いてプロビジョニングの指示に従います。
 
 RCS 環境が既にプロビジョニングされている場合は、[サインイン] オプションを選択して、ページの URL を使用してこの機能にアクセスします。

@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 757d969cf9d1ebc12aeb34b0810fc291e47dffad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b1edfa314d2810bff4cf02762aeb66bee801858d
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906069"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135431"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>グローバル在庫会計の Power BI を有効にする
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 [PowerBI.com](https://powerbi.com/) アカウントから Microsoft Dynamics 365 アプリケーション ワークスペースにタイル、ダッシュ ボード、およびレポートをピン留めすることができます。
 

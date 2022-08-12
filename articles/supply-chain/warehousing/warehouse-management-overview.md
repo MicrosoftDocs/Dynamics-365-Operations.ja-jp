@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa2b62a0bfda57879850771488e6576592fbb894
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d22ed879f309c0fbb999bf166aefd13f27376042
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982855"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069095"
 ---
 # <a name="warehouse-management-overview"></a>倉庫管理の概要
 
@@ -39,7 +39,7 @@ ms.locfileid: "7982855"
 - [発注書のプット アウェイ場所のディレクティブの設定](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 - [発注書の作業テンプレートの設定](./tasks/set-up-work-template-purchase-orders.md)
 
-## <a name="warehouse-management-processes"></a>倉庫管理プロセス
+## <a name="warehouse-management-processes-wms"></a>倉庫管理プロセス (WMS)
 - 販売注文、返品、移動オーダー、製造オーダー、およびかんばんの元伝票の統合されたサポート  
 - 変動、入庫、出庫材料ワークフローサポートはクエリに基づいています
 - 製造、および輸送管理提供との完全な統合

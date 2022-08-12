@@ -7,24 +7,24 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fba78f091a9e1ba209489b0e324027c4885a198d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b06821f02e6a80f2e15db7d0dd95ef6c9a30d5bc
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884552"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206419"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Power BI Embedded を使用したワークスペースへの分析の追加
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> この機能は、Finance and Operations (バージョン 7.2 以降) でサポートされています。
+> この機能は、財務と運用 (バージョン 7.2 以降) でサポートされています。
 
 ## <a name="introduction"></a>概要
 この記事では、ワークスペースの **分析** タブで Microsoft Power BI レポートを組み込む方法を説明します。 ここで示した例では、フリート管理アプリケーションの **予約管理** ワークスペースを拡張して、分析ワークスペースを **分析** タブに埋め込みます。

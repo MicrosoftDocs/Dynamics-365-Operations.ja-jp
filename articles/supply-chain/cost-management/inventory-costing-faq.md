@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850847"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068396"
 ---
 # <a name="inventory-costing-faq"></a>在庫原価計算の FAQ
 
@@ -112,11 +112,11 @@ ms.locfileid: "8850847"
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>保管分析コード グループの Warehouse Management プロセス オプションを有効にする必要がありますか？
 
-将来、高度な Warehouse Management 機能を使用する必要がある場合は、**Warehouse Management プロセスを使用** オプションを有効にする必要があります。 保管分析コード グループを保存した後は、その保管分析コード グループに対する **倉庫管理プロセスを使用する** オプションの 設定は変更できなくなりました。 後で Warehouse Management プロセスを使用する場合は、オプションが有効な新しい倉庫を作成する必要があります。 ある倉庫から別の倉庫にすべての在庫を移動したり、関連する構成を新しい倉庫にコピーしたりするために使用できる自動プロセスはありません。
+将来、倉庫管理プロセス (WMS) 機能を使用する必要がある場合は、**倉庫管理プロセスを使用** オプションを有効にする必要があります。 保管分析コード グループを保存した後は、その保管分析コード グループに対する **倉庫管理プロセスを使用する** オプションの 設定は変更できなくなりました。 後で Warehouse Management プロセスを使用する場合は、オプションが有効な新しい倉庫を作成する必要があります。 ある倉庫から別の倉庫にすべての在庫を移動したり、関連する構成を新しい倉庫にコピーしたりするために使用できる自動プロセスはありません。
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>高度な Warehouse Management を使用する予定がなくても、保管分析コード グループに対して Warehouse Management プロセスを使用できますか？
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>倉庫管理プロセス (WMS) を使用する予定がなくても、保管分析コード グループに対して倉庫管理プロセスを使用できますか?
 
-はい。高度な Warehouse Management 機能を使用する予定がない場合でも、保管分析コード グループの **Warehouse Management プロセスを使用** オプションを有効にすることができます。 トランザクションを作成および処理するには、最小の構成 (予約階層や単位順序グループなど) を完了する必要があります。 ただし、一般に、ピッキング リスト、梱包明細、および製品入庫 (販売注文ページや発注書ページなど) を手動で処理する場合は、高度な倉庫管理の設定は無視されます。
+はい。倉庫管理プロセス (WMS) を使用する予定がない場合でも、保管分析コード グループの **倉庫管理プロセスを使用** オプションを有効にすることができます。 トランザクションを作成および処理するには、最小の構成 (予約階層や単位順序グループなど) を完了する必要があります。 ただし、一般に、ピッキング リスト、梱包明細、および製品入庫 (販売注文ページや発注書ページなど) を手動で処理する場合は、WMS の設定は無視されます。
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>いつ、保管分析コード グループまたは追跡分析コード グループに対して物理在庫オプションを有効にする必要がありますか？
 

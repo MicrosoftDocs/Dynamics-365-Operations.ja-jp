@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ee1ba338d90c6ee9cdc37948061f518040ae1a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e18735117d1f671e0efc0947248bbe266fa0ca6
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869665"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065602"
 ---
 # <a name="quarantine-orders"></a>検査指示
 
@@ -31,7 +31,7 @@ ms.locfileid: "8869665"
 検査指示により在庫をブロックできます。 たとえば、 品質テストの理由で品目を検査する場合があります。 検査された在庫は、検査倉庫に転送されます。
 
 > [!NOTE]
-> 高度な倉庫管理プロセス (倉庫管理で) を使用している場合、検査指示の処理は返品販売注文に対してのみ使用されます。
+> 倉庫管理プロセス (倉庫管理モジュールで) を使用している場合、検査指示の処理は返品販売注文に対してのみ使用されます。
 
 ## <a name="quarantine-on-hand-inventory-items"></a>手持在庫品目の検査
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5bfabae39d3bcb8f7fdd71ac5c93fcdbaeb9d946
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 130db343c4d09f2b8d31bf8acad3dcceec2be32e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893297"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067944"
 ---
 # <a name="production-output-location"></a>生産出荷場所
 
@@ -36,7 +36,7 @@ ms.locfileid: "8893297"
 3. そこに場所が見つからない場合は、本番ルートで定義されている最後の操作のリソースにより使用されているリソース グループで定義されている出荷場所を使用します。
 4. そこに場所が見つからない場合は、製造オーダーに定義されている倉庫で定義されている出荷場所を使用します。
 
-既定の生産出荷場所は、高度な倉庫プロセスを使用して設定されている製品にのみ設定されます。 このタイプの品目が完了報告されると、**商品の保存を完了** または **連産品および副産物の保存** タイプの倉庫作業が作成されます。 このタイプの作業は、ピッキング場所として生産出荷場所を使用します。 プット アウェイの場所は、場所ディレクティブによって決定されます。
+既定の生産出荷場所は、倉庫プ管理ロセス (WMS) を使用して設定されている製品にのみ設定されます。 このタイプの品目が完了報告されると、**商品の保存を完了** または **連産品および副産物の保存** タイプの倉庫作業が作成されます。 このタイプの作業は、ピッキング場所として生産出荷場所を使用します。 プット アウェイの場所は、場所ディレクティブによって決定されます。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

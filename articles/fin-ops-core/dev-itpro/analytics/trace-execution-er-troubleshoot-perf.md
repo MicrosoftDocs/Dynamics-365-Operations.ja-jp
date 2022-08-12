@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851954"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108859"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>パフォーマンス上の問題をトラブルシューティングするため ER 形式の実行を追跡します
 
@@ -98,7 +98,7 @@ ms.locfileid: "8851954"
 
 ER ソリューションの最初のバージョンのデザインが完了したとします。 これにより、インスタンスでテストを行い、実行パフォーマンスを分析できます。
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER コンフィギュレーションを RCS から Finance and Operations にインポートする
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER コンフィギュレーションを RCS から財務と運用にインポートする
 
 1. アプリケーション インスタンスにサインインします。
 2. このチュートリアルでは、RCS インスタンス (ER コンポーネントを設計する場所) から、インスタンス (テストして最後に使用する場所) にコンフィギュレーションをインポートします。 したがって、必要なコンポーネントがすべて準備されたことを確認する必要があります。 手順については、[規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート](rcs-download-configurations.md) を参照してください。
@@ -363,7 +363,7 @@ Web ブラウザーによって、ダウンロード用の zip ファイルが�
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>外部ツールを使用してデータベース クエリを含む実行トレースを確認する
 
-ER フレームワークに行われた改善のため、PerfView 形式で生成されたパフォーマンスの追跡により、ER 形式の実行に関する詳細情報が提供されるようになりました。 Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.4 (2019 年 7 月) では、このトレースに、アプリケーション データベースに対して実行された SQL クエリの詳細を含めることができるようになりました。
+ER フレームワークに行われた改善のため、PerfView 形式で生成されたパフォーマンスの追跡により、ER 形式の実行に関する詳細情報が提供されるようになりました。 Microsoft Dynamics 365 Finance バージョン 10.0.4 (2019 年 7 月) では、このトレースに、アプリケーション データベースに対して実行された SQL クエリの詳細を含めることができるようになりました。
 
 ### <a name="configure-user-parameters"></a>ユーザー パラメーターのコンフィギュレーション
 
@@ -392,3 +392,4 @@ Web ブラウザーによって、ダウンロード用の zip ファイルが�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

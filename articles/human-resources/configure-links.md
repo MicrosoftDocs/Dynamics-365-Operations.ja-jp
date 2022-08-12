@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9640f460ed7b0b1a0cfdffb7c318bf833f8627fc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859669"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065296"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Human Resources から別の Finance 環境へのリンクの作成
 
@@ -53,7 +53,7 @@ Human Resources では、システム管理者は **Human Resources** ページ�
 
    必要なメニュー項目を検索するには:
    1. Finance 環境に移動し、ナビゲーションのターゲットとなるページを開きます。 
-   2. URL からメニュー項目をコピーします。 たとえば、リンクにより Finance and Operations の従業員リストに移動したい場合、URL の「&mi」の後に表示される値を入力します。 
+   2. URL からメニュー項目をコピーします。 たとえば、リンクにより財務と運用の従業員リストに移動する場合、URL の「&mi」の後に表示される値を入力します。 
    3. この例の従業員リスト ページに移動するメニュー項目は、HcmWorkerListPage_Employees です。
 
  - **データ ソースへのリンク**: リンクが参照しているデータのソースを選択します。 **作業者** および **職位** など、最も一般的なソースが利用可能です。
@@ -63,4 +63,5 @@ Human Resources では、システム管理者は **Human Resources** ページ�
 **このリンクを有効にする** オプションが **いいえ** に設定されている場合でも、システム管理者は、定義されたページ上で新しく作成されたリンクを参照することができます。 これは、リンクをテストするために、他の従業員に表示されるより前に使用できます。 他のすべてのロールには、**このリンクを有効にする** オプションを **はい** に設定した後、構成されたリンクのみが表示されます。 リンクが表示されるページにアクセスできる従業員は、このリンクにアクセスできます。
 
 ユーザーは、その環境のページにアクセスするために定義されたセカンダリ環境内のセキュリティ権限も持っている必要があります。 そうでない場合、リンクを使用する時に、セキュリティ ダイアログ ボックスが表示されます。
+
 

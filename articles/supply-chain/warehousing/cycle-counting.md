@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: da7aef93cf994c40410598ab9c4ff2b21f4750e7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902224"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065931"
 ---
 # <a name="cycle-counting"></a>循環棚卸
 
@@ -52,11 +52,11 @@ ms.locfileid: "7902224"
 <tbody>
 <tr class="odd">
 <td>品目</td>
-<td>品目は倉庫管理プロセスで有効にする必要があります。</td>
+<td>品目は倉庫管理プロセス (WMS) で有効にする必要があります。</td>
 </tr>
 <tr class="even">
 <td>倉庫</td>
-<td>倉庫は倉庫管理プロセスで有効にする必要があります。 倉庫管理プロセスで倉庫を有効にするには、<strong>倉庫</strong> ページで、倉庫を選択し、<strong>倉庫管理プロセスの使用</strong> オプションを選択します。 循環棚卸中に作業者がパレットを移動できるようにするには、<strong>倉庫管理</strong> クイック タブで、<strong>循環棚卸中にパレット移動を許可</strong> オプションを選択します。</td>
+<td>倉庫は倉庫管理プロセス (WMS) で有効にする必要があります。 WMS で倉庫を有効にするには、<strong>倉庫</strong> ページで、倉庫を選択し、次に <strong>倉庫管理プロセスの使用</strong> オプションを選択します。 循環棚卸中に作業者がパレットを移動できるようにするには、<strong>倉庫管理</strong> クイック タブで、<strong>循環棚卸中にパレット移動を許可</strong> オプションを選択します。</td>
 </tr>
 <tr class="odd">
 <td>作業プール</td>

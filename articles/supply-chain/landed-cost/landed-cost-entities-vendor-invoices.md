@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 171b383e1549babd76fd18e4932436a66aa62cc1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f0371cf9862afaf3bc43a44def725c420e9aaf56
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873930"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166746"
 ---
 # <a name="vendor-invoice-entities"></a>仕入先請求書エンティティ
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 **陸揚原価** モジュールを使用すると、内部原価または外部から派生した原価に対し、原価タイプ コードを構成できます。 原価がビジネスの外部である場合は、サービス プロバイダーによる請求書が必要です。 この請求書は航海に関連付けられる請求仕訳帳として処理され、その請求書の額は航海の 1 つ以上の費用に配賦できます。
 

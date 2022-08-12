@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a2ed8f66d447e1d9e890c0885fd20e9b55c66ac0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2177eeb6497269d580d2baea87ebb4fcd395223b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855879"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069671"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>コンテンツ配信ネットワーク (CDN) のサポートの追加
 
@@ -101,7 +101,7 @@ Azure Front Door Service でルート指定ルールを設定するには、次�
 
 
 > [!WARNING]
-> 使用するドメインが既に有効化されている場合は、[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) の **サポート** タイルからサポートチケットを作成して、次の手順についてのサポートを受けてください。 詳細については、 [財務と運用アプリまたは Lifecycle Services (LCS) のサポート情報ー](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
+> 使用するドメインが既に有効化されている場合は、[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) の **サポート** タイルからサポートチケットを作成して、次の手順についてのサポートを受けてください。 詳細については、[財務と運用アプリまたは Lifecycle Services (LCS) のサポート情報](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
 
 ご利用のドメインが新しく、かつ既存のドメインではない場合は、Azure Front Door Service の構成にカスタム ドメインを追加することができます。 これにより、web トラフィックが Azure Front Door インスタンスを介してサイトに誘導されるようになります。 カスタム ドメイン (たとえば、`www.fabrikam.com`) を追加するには、ドメインの正規名 (CNAME) をコンフィギュレーションする必要があります。
 

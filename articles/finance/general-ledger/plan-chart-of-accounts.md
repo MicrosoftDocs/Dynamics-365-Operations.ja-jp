@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853351"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070637"
 ---
 # <a name="plan-your-chart-of-accounts"></a>勘定科目表の計画
 
@@ -43,7 +43,7 @@ ms.locfileid: "8853351"
 **勘定科目表** ページで、勘定科目表を作成します。 主勘定は、**勘定科目表** ページまたは **主勘定** ページから作成できます。 自分の主勘定には、勘定科目表の区切り文字として使用される特殊文字を使用しないでください。 それ以外の場合、動作が不安定になることがあります。また、勘定と分析コードの組み合わせを入力するとき、常にルックアップまたはダイアログ ボックスを使用する必要がある場合があります。 詳細については、「[主勘定の作成](tasks/create-main-account.md)」を参照してください。
 
 > [!NOTE]
-> Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) では、**総勘定元帳パラメーター** ページから勘定科目表の区切り記号を変更することができます。
+> Dynamics 365 Finance バージョン 8.0 (2018 年 4 月) では、**総勘定元帳パラメーター** ページから勘定科目表の区切り記号を変更することができます。
 
 主勘定を主勘定カテゴリにリンクし、既定の財務諸表を変更を加えずに使用することをお勧めします。 したがって、より迅速かつ簡単にレポートを作成および管理できます。
 
@@ -60,3 +60,4 @@ ms.locfileid: "8853351"
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
 title: 生成された ER レポートの結果をベースライン値と比較して追跡する機能の向上
-description: この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019年6月) における ER ベースライン機能の改善について説明します。
+description: この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.3 (2019年6月) における ER ベースライン機能の改善について説明します。
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb2e76492ac9f6feb71811d0fbfd25919b59ac4d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847404"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109145"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>生成された ER レポートの結果をベースライン値と比較して追跡する機能の向上
 
 [!include[banner](../includes/banner.md)]
 
-この記事では、電子申告 (ER) フレームワークのベースライン機能に対して行われた最初の一連の改善について説明します。 これらの改善は、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019 年 6 月) 以降 で利用できます。
+この記事では、電子申告 (ER) フレームワークのベースライン機能に対して行われた最初の一連の改善について説明します。 これらの改善は、Microsoft Dynamics 365 Finance バージョン 10.0.3 (2019 年 6 月) 以降 で利用できます。
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>ベースライン ルールの設定の自動化
 
@@ -208,3 +208,4 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

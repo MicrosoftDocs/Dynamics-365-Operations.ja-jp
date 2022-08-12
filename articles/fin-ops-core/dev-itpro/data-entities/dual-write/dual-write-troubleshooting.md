@@ -1,6 +1,6 @@
 ---
 title: 一般的なトラブルシューティング
-description: この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
+description: この記事では、財務と運用アプリと Dataverse 間の二重書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853658"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112367"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -22,7 +22,7 @@ ms.locfileid: "8853658"
 
 
 
-この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
+この記事では、財務と運用アプリと Dataverse 間の二重書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 
 > [!IMPORTANT]
 > この記事で説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
@@ -55,14 +55,14 @@ ms.locfileid: "8853658"
 
 追跡ログの内容をコピーしてメモ帳などの別のアプリケーションに貼り付け、ログやテキスト ファイルを表示すると、すべてのコンテンツを簡単に把握できます。 
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>デバッグ モードを有効にして、財務と運用アプリでのライブ同期に関する問題のトラブルシューティングを行います
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>デバッグ モードを有効にして、財務と運用アプリ間のライブ同期に関する問題のトラブルシューティングを行う
 
 **エラーを表示するために必要な役割：** システム管理者
 
-Dataverse で発生するデュアル書き込みエラーは、財務と運用アプリでも発生する場合があります。 エラーの詳細ログを有効にするには、次の手順を実行します。
+Dataverse で発生する二重書き込みエラーは、財務と運用アプリでも発生する場合があります。 エラーの詳細ログを有効にするには、次の手順を実行します。
 
 1. 財務と運用アプリのすべてのプロジェクトの構成には、**DualWriteProjectConfiguration** テーブル内に **IsDebugMode** フラグがあります。
-2. Excel アドインを使用して **DualWriteProjectConfiguration** を開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、シートに **DualWriteProjectConfiguration** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
+2. Excel アドインを使用して **DualWriteProjectConfiguration** を開きます。 アドインを使用するには、財務と運用の Excel アドインでデザイン モードを有効にし、シートに **DualWriteProjectConfiguration** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
 3. プロジェクトで、**IsDebugMode** を **はい** に設定します。
 4. エラーが発生するシナリオを実行します。
 5. 詳細なログは、**DualWriteErrorLog** テーブルに保存されます。
@@ -109,11 +109,11 @@ UI では、ブラウザーのセッション記憶域を使用して、ホー�
 1.  [設定] -> [サイトのアクセス許可] -> [Cookie とサイトのデータ] に移動します。
 2.  [サード パーティの Cookie をブロックする] をオフにします。  
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>財務と運用アプリから、別の Dataverse 環境をリンク/リンク解除する方法
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>財務と運用アプリから、別の Dataverse 環境のリンク解除およびリンクを行う方法
 
-**環境のリンクの解除に必要な役割:** 財務と運用アプリ、または Dataverse のいずれかのシステム管理者。
+**環境のリンク解除に必要な役割:** 財務と運用アプリ、または Dataverse のいずれかのシステム管理者。
 
-1. 財務と運用アプリにログインします。
+1. 財務と運用アプリにサインインします。
 2. **ワークスペース \> データ管理** に移動して、**デュアル書き込み** のタイルを選択します。
 3. 実行中のすべてのマッピングを選択し、**停止** を選択します。
 4. **リンク解除の環境** を選択します。
@@ -141,14 +141,14 @@ Dynamics 365 Sales で販売注文を作成する際に、**+ 製品の追加** 
 2.  **データ管理** を選択します。
 3.  データ管理内で、**フレームワーク パラメータ** を選択します。
 4.  **データのインポート/エクスポート フレームワークのパラメータ** ページで、**エンティティ設定** タブを選択し、**エンティティ リストの更新** を選択します。 関連するエンティティの数によっては、更新に 30 分以上かかる場合があります。
-5.  **データ管理** に移動し、**データ エンティティ** を選択して、予期されるエンティティが一覧表示されていることを検証します。 予想されるエンティティが表示されない場合は、エンティティが財務と運用環境に表示されていることを確認し、必要に応じて欠落しているエンティティを復元します。
+5.  **データ管理** に移動し、**データ エンティティ** を選択して、予期されるエンティティが一覧表示されていることを検証します。 予想されるエンティティが表示されない場合、エンティティが財務と運用環境に表示されていることを確認し、必要に応じて欠落しているエンティティを復元します。
 
 #### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>更新で問題が解決しない場合は、エンティティを削除して再追加する
 
 > [!NOTE]
 > 削除する前に、エンティティを有効に使用している処理グループを停止する必要がある場合があります。
 
-1.  財務と運用環境で **データ管理** を選択し、**データ エンティティ** を選択します。
+1.  財務と運用の環境で **データ管理** を選択し、**データ エンティティ** を選択します。
 2.  問題のあるエンティティを検索し、対象のエンティティ、ステージング テーブル、エンティティ名、およびその他の設定をメモします。 一覧から 1 つまたは複数のエンティティを削除します。
 3.  **新規** を選択し、手順 2 のデータを使用して 1 つまたは複数のエンティティを再追加します。 
 
@@ -174,3 +174,4 @@ Power Platform 管理センターにログオン し、**データ統合を** �
 4. 結果を HAR としてエクスポートするには、**保存** を選択します。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

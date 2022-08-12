@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c542684642e4f6eda0f862623889a68f85b2b20
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887808"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068881"
 ---
 # <a name="choose-a-data-integration-technology"></a>データ統合テクノロジの選択
 
@@ -70,7 +70,7 @@ Dataverse テーブルおよび関連付けられている API は、Web アプ�
 
 ### <a name="dmfdixf-entities"></a>DMF/DIXF エンティティ
 
-財務と運用アプリケーションと同じプラットフォームで主に構築された Human Resources は、[データ管理フレームワーク (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json) を提供します。 DMF は、データ インポート エクスポート フレームワーク (DIXF) とも呼ばれます。 Human Resources には、Human Resources データのインポートとエクスポートに使用できる一連のデータ エンティティが用意されています。 Dataverse テーブルは Human Resources の優先データ統合インターフェイスですが、DMF エンティティは次のような環境でも有用です:
+財務と運用アプリと同じプラットフォームで主に構築された人事管理は、[データ管理フレームワーク (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json) を提供します。 DMF は、データ インポート エクスポート フレームワーク (DIXF) とも呼ばれます。 Human Resources には、Human Resources データのインポートとエクスポートに使用できる一連のデータ エンティティが用意されています。 Dataverse テーブルは Human Resources の優先データ統合インターフェイスですが、DMF エンティティは次のような環境でも有用です:
 
 - Dataverse テーブルをまだ利用できません。
 
@@ -113,7 +113,7 @@ BYOD は、[Azure Data Factory](/azure/data-factory/) パイプラインのデ�
 
 ### <a name="odata-enabled-entities"></a>OData 対応エンティティ
 
-ほとんどの DMF エンティティは、Human Resources データ サービス (OData) を使用したアクセスにも有効です。 [Finance and Operations OData サービス](/dynamics365/unified-operations/dev-itpro/data-entities/odata) に提供されるドキュメントは、独自の OData 公開エンティティを作成する場合を除き、Human Resources に適用されます。
+ほとんどの DMF エンティティは、Human Resources データ サービス (OData) を使用したアクセスにも有効です。 [財務と運用の OData サービス](/dynamics365/unified-operations/dev-itpro/data-entities/odata)に提供されるドキュメントは、独自の OData 公開エンティティを作成する場合を除き、人事管理に適用されます。
 
 Dataverse および Dataverse によって ([Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) を通じて) 用意されている OData 実装は、Human Resources データ サービスよりも優先されますが、現在のところ、Human Resources データ サービスは、Human Resources データに対してより完全なエンティティ カバレージを提供します。
 
@@ -153,3 +153,4 @@ Excel アドインは、ビジネス ドメインの専門家による一時的�
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

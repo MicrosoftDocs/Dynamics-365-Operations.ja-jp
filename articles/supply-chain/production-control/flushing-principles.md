@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849303"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065557"
 ---
 # <a name="flushing-principles"></a>部品消費ルール
 
@@ -50,7 +50,7 @@ ms.locfileid: "8849303"
 ## <a name="description-of-the-flushing-principles"></a>部品消費ルールの説明
 
 ### <a name="manual"></a>手動
-手動部品消費ルールは、材料消費の登録が手動操作であることを示します。 このルールは、追跡の目的で、時間を追跡できるようにしたい場合や、バッチ番号やシリアル番号の使用量を考慮する必要がある場合などに適しています。 手動の消費は、生産のピッキング リスト仕訳帳に登録されます。 高度な倉庫プロセスが有効になっている品目については、ハンドヘルド フローを適用できます。
+手動部品消費ルールは、材料消費の登録が手動操作であることを示します。 このルールは、追跡の目的で、時間を追跡できるようにしたい場合や、バッチ番号やシリアル番号の使用量を考慮する必要がある場合などに適しています。 手動の消費は、生産のピッキング リスト仕訳帳に登録されます。 倉庫プロセス (WMS) が有効になっている品目については、ハンドヘルド フローを適用することができます。
 
 ### <a name="start"></a>開始
 開始の部品消費ルールは、製造オーダーの開始時に品目が自動的に消費されることを示します。 消費される材料の量は、開始されている数量に比例します。 開始の部品消費ルールを製造実行システムとともに使用すると、操作またはプロセス ジョブの開始時に材料をフラッシュすることもできます。 消費差異が低い、材料が低価額材料、追跡の要件がない、または操作における実行時間が短い場合は、このルールが適用されます。 

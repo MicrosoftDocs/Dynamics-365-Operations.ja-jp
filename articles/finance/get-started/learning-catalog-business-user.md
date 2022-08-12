@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2c7b1faac6af3356e4621d932031e798413b6563
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889903"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069287"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Dynamics 365 Finance のユーザーのラーニング カタログ
 
@@ -31,7 +31,7 @@ ms.locfileid: "8889903"
 |---------|-------------|--------|--------|
 | [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス | 8 時間 |
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間   |
-| [財務と運用アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | 財務と運用アプリによって業務をサポートし、グローバルな財務システム、運用業務プロセス、合理化されたサプライ チェーンを管理して、情報に基づく迅速な意思決定を行えるようにする方法を学びます。   財務と運用アプリを使って仕事をする第一歩として、目的のロールを問わず、その機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
+| [財務と運用アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | 財務と運用アプリによって業務をサポートし、グローバルな財務システム、運用業務プロセス、合理化されたサプライ チェーンを管理して、情報に基づく迅速な意思決定を行う方法を学びます。   財務と運用アプリを使用して仕事をする最初のステップとして、目的のロールを問わず、その機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [Dynamics 365 Intelligent Order Management の使用を開始する](/learn/modules/get-started-intelligent-order-management/) | Dynamics 365 Intelligent Order Management によって、顧客は注文からフルフィルメントまでのオーケストレーションを管理できます。 これらの機能により、組織はさまざまなプラットフォームおよびアプリ間で注文フローを調整できます。 | 無料の自習型オンライン学習モジュール | 30 分 |
 | [コース MB-900T01-A: Dynamics 365 の基本](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | このコースでは、Dynamics 365の機能と事業価値について理解します。 このコースでは、Dynamics 365 アプリケーション、Power Platform、クラウドの概念、セキュリティ モデル、およびライセンスに関する考慮事項について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 

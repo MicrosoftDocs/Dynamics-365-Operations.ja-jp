@@ -1,7 +1,7 @@
 ---
 title: 銀行口座の調整
 description: この記事では、銀行口座を調整する方法について説明します。
-author: panolte
+author: angelad116
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,17 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6a7d89c4ee0694326e321b9459c6cfd04d94f392
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889036"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151254"
 ---
 # <a name="reconcile-a-bank-account"></a>銀行口座の調整
 

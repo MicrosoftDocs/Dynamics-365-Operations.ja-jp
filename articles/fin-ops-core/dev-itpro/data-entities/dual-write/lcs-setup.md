@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879807"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111973"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Lifecycle Services からの二重書き込みの設定
 
@@ -29,7 +29,7 @@ ms.locfileid: "8879807"
 次のトピックで説明するように、顧客は Power Platform の統合を完了する必要があります。
 
 - まだ Microsoft Power Platform を使用しておらず、プラットフォーム機能を追加して財務および運用の環境を拡張する場合は、[Power Platform 統合 - 環境の展開中に有効化する](../../power-platform/enable-power-platform-integration.md#enable-during-deploy) を参照してください。
-- すでに Dataverse と Power Platform 環境が存在し、それらを財務および運用の環境に接続する場合は、[Power Platform 統合 - 環境の展開後に有効化する](../../power-platform/enable-power-platform-integration.md#enable-after-deploy) を参照してください。
+- すでに Dataverse と Power Platform 環境が存在し、それらを財務と運用の環境に接続する場合は、[Power Platform 統合 - 環境の展開後に有効化する](../../power-platform/enable-power-platform-integration.md#enable-after-deploy) を参照してください。
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>新規または既存の Dataverse 環境で二重書き込みを設定する
 
@@ -53,7 +53,7 @@ ms.locfileid: "8879807"
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Power Platform 環境へのリンク。":::
 
-8. リンクが完了すると、ハイパーリンクが表示されます。 このリンクを使用して、Finance and Operations 環境内の二重書き込み管理領域にログインします。 そこから、エンティティ マッピングを設定します。
+8. リンクが完了すると、ハイパーリンクが表示されます。 このリンクを使用して、財務と運用環境内の二重書き込み管理領域にログインします。 そこから、エンティティ マッピングを設定します。
 
 ## <a name="linking-mismatch"></a>リンクの不一致
 
@@ -71,3 +71,4 @@ LCS を Power Platform 統合に設定していない場合は、二重書き込
 以前はサポート チケットの手動オプションを利用できましたが、それは上記のオプション 1 が存在する前でした。  Microsoft は現在、サポート チケットによる手動再リンク要求に対応していません。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65d45eaf618075e0c78881634fc77bda0fab277e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849734"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065677"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止
 
@@ -81,7 +81,7 @@ RCS は、ER コンフィギュレーションを作成および編集するた�
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>LCS がない場合、"テスト" コンフィギュレーションと "プロダクション" コンフィギュレーションを容易に管理および転送するためのコンフィギュレーション保存方法としてする推奨されるものは何ですか。
 
-RCS は、*接続されたアプリケーション* の概念を使用します。 接続されたアプリケーションは、RCS と財務と運用アプリの任意のインスタンス間の接続を形成します。 RCS を使用してコンフィギュレーションを編集することができるため、接続されているアプリケーションを使用すると、デザイナーから財務と運用アプリ環境にコンフィギュレーションを直接プッシュできます。 したがって、LCS プロジェクトレベルの記憶域を使用する必要なく、コンフィギュレーションをすばやく変更およびテストできます。
+RCS は、*接続されたアプリケーション* の概念を使用します。 接続されたアプリケーション フォームは、RCS と財務と運用アプリの任意のインスタンス間の接続を形成します。 RCS を使用してコンフィギュレーションを編集することができるため、接続されているアプリケーションを使用すると、デザイナーから財務と運用アプリ環境にコンフィギュレーションを直接プッシュできます。 したがって、LCS プロジェクトレベルの記憶域を使用する必要なく、コンフィギュレーションをすばやく変更およびテストできます。
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>設定と管理の例を示す例がありますか。
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f6f3f2db6efcc4d4d6ae3d278751a230fca9a64
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899327"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068599"
 ---
 # <a name="cycle-counting-example-scenarios"></a>循環棚卸のシナリオ例
 
@@ -127,7 +127,7 @@ Warehouse Management mobile app を使用するには、ご利用のシステム
 1. リスト ウィンドウで、倉庫 *61* を選択します。 既存のレコードにこの名前が存在しない場合は作成します。
 1. **倉庫** クイック タブで、次の値を設定します。
 
-    - **Warehouse Managementプロセスを使用する:** *はい* (この値は、Warehouse Managementプロセスの倉庫を有効にします。)
+    - **倉庫管理プロセスを使用する:** *はい* (この値は、倉庫管理 (WMS) プロセスの倉庫を有効にします。)
     - **循環棚卸中にライセンス プレートの移動を許可する:** *はい* (この値により、作業者は循環棚卸中にライセンス プレートを移動できます。)
 
 ## <a name="scenario-1-guided-cycle-counting"></a>シナリオ 1: ガイド付き循環棚卸

@@ -16,19 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
-ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
+ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941769"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171458"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのインストールと接続
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> この記事では、新しい Warehouse Management モバイル アプリの構成方法について説明します。 古い倉庫アプリ (現在非推奨) を構成する方法の詳細については、[倉庫アプリをインストールして接続する](../../supply-chain/warehousing/install-configure-warehousing-app.md) を参照してください。
 
 この記事では、各モバイル デバイスに Warehouse Management モバイル アプリをダウンロードおよびインストールして、Supply Chain Management 環境へ接続するようアプリを構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
 

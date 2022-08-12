@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885815"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065901"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>柔軟な倉庫レベル分析コードの引当ポリシー
 
 [!include [banner](../includes/banner.md)]
 
-*以下のバッチ非優先\[ロケーション\]* タイプの在庫引当の階層が製品に関連付けられている場合、一括管理された製品を販売し、 Microsoft Dynamics 365 倉庫管理システム (WMS) が有効な業務として物流を運営している企業は、顧客の販売注文に対して特定のバッチを引当てできません。
+以下の *バッチ非優先\[ロケーション\]* タイプの在庫引当の階層が製品に関連付けられている場合、一括管理された製品を販売し、倉庫管理システム (WMS) が有効な業務として物流を運営している企業は、顧客の販売注文に対して特定のバッチを引当てできません。
 
 また、特定のライセンス プレートは、製品が既定の引当階層に関連付けられている場合、販売注文の製品に対して引当することはできません。
 

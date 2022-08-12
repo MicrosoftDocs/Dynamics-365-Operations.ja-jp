@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0144be929045b385c58dd29f6241330fc1092f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3478e8c712c7bcbfb8ace9e7b43f0d8d3cf4ac8a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862485"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069155"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>倉庫なしの販売注文の出荷
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、製品が顧客に出荷されたときに販売注文を更新する方法について説明します。 このガイドは、倉庫管理 (基本的または詳細な倉庫管理) 用に設定されていないフルフィルメント フローに適用可能です。そのため、出荷前に製品のピッキングを登録する必要はありません。 この手順は、独自のデータで、またはデモ データの会社 USMF のデータで実行できます。 どちらの場合も、このタスクを開始する前に、1 より大きな数量で在庫品目の販売注文を作成します。 転記エラーを回避するには、注文で選択したサイトと倉庫の製品の手持数量が注文数量をカバーするかを確認する必要があります。
+この記事では、製品が顧客に出荷されたときに販売注文を更新する方法について説明します。 このガイドは、倉庫管理 (基本的または倉庫管理プロセス (WMS)) 用に設定されていないフルフィルメント フローに適用可能です。そのため、出荷前に製品のピッキングを登録する必要はありません。 この手順は、独自のデータで、またはデモ データの会社 USMF のデータで実行できます。 どちらの場合も、このタスクを開始する前に、1 より大きな数量で在庫品目の販売注文を作成します。 転記エラーを回避するには、注文で選択したサイトと倉庫の製品の手持数量が注文数量をカバーするかを確認する必要があります。
 
 ## <a name="post-packing-slip-for-an-order"></a>注文の [梱包明細] の転記
 1. ナビゲーション ウィンドウで、**モジュール > 販売とマーケティング > 販売注文 > すべての販売注文** の順に移動します。

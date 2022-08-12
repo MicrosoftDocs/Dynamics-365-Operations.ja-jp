@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91cc0e59405bc085e09f01f05ef02e4a0260481e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894269"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111897"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>データ統合からデュアル書き込みへの見込顧客の現金データへの移行
 
@@ -32,7 +32,7 @@ ms.locfileid: "8894269"
 
 データ統合からデュアル書き込みへの見込顧客の現金データへ移行するには、次の手順に従ってください。
 
-1. 見込顧客から現金データの統合ジョブを実行して、最終的な完全同期を 1 つ実行します。 これにより、両方のシステム (財務と運用アプリと Customer Engagement アプリ) がすべてのデータが確実に設定されます。
+1. 見込顧客から現金データの統合ジョブを実行して、最終的な完全同期を 1 つ実行します。 これにより、両方のシステム (財務と運用アプリおよび Customer Engagement アプリ) がすべてのデータが確実に設定されます。
 2. データが失われる可能性を防ぐには、Microsoft Dynamics 365 Sales から Excel ファイルまたはコンマ区切り値 (CSV) ファイルに、見込顧客を現金データにエクスポートします。 次のエンティティからデータをエクスポートします。
 
     - [口座](#account-table)
@@ -51,7 +51,7 @@ ms.locfileid: "8894269"
 6. デュアル書き込みテーブル マップを有効にし、必要な参照データに対して初期同期を実行します。 (詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) をご覧ください。) 必須データの例として、顧客グループ、支払条件、支払スケジュールがあります。 初期化が必要なテーブル (勘定、見積、見積行、注文、注文など) に対して二重書き込みマップを有効にすることはできません。
 7. Customer Engagement アプリで、**詳細設定 \> システム設定 \> データ管理 \> 複製検出ルール** に移動し、すべてのルールを無効にします。
 8. 手順 2 に示したテーブルを初期化します。 手順については、この記事の残りのセクションを参照してください。
-9. 財務と運用アプリを開き、テーブル マップ (勘定、見積、見積依頼行、注文、注文の行テーブル マップなど) を有効にします。 その後初期同期を実行します。 (詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。) このプロセスでは、処理ステータス、出荷先住所と請求先住所、サイト、倉庫などの追加情報を財務と運用アプリから同期します。
+9. 財務と運用アプリを開き、テーブル マップ (勘定、見積もり、見積もり依頼行、注文、注文の行テーブル マップなど) を有効にします。 その後初期同期を実行します。 (詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。) このプロセスでは、処理ステータス、出荷先住所と請求先住所、サイト、倉庫などの追加情報を財務と運用アプリから同期します。
 
 ## <a name="account-table"></a>アカウント テーブル
 
@@ -76,7 +76,7 @@ ms.locfileid: "8894269"
 
 ## <a name="invoice-table"></a>請求テーブル
 
-**請求書** テーブルのデータは、財務と運用アプリから Customer Engagement アプリに対して一方向に流れる設計なので、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを財務と運用アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
+**請求書** テーブルのデータは、財務と運用アプリから Customer Engagement アプリに対して一方向に流れる設計であるため、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを財務と運用アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
 
 ## <a name="order-table"></a>オーダー テーブル
 
@@ -94,7 +94,7 @@ ms.locfileid: "8894269"
 
 ## <a name="products-table"></a>製品テーブル
 
-**製品** テーブルのデータは、財務と運用アプリから Customer Engagement アプリに対して一方向に流れる設計なので、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを財務と運用アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
+**製品** テーブルのデータは、財務と運用アプリから Customer Engagement アプリに対して一方向に流れる設計であるため、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを財務と運用アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
 
 ## <a name="quote-and-quote-product-tables"></a>見積および見積製品テーブル
 
@@ -102,3 +102,4 @@ ms.locfileid: "8894269"
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

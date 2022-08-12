@@ -1,26 +1,27 @@
 ---
 title: 財務諸表での列の定義
 description: この記事では、列定義に関する情報を示します。 列定義は、レポートの列の内容を定義する、レポート コンポーネントです。
-author: ShylaThompson
+author: aprilolson
 ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 106601
-ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 199dceb91195a3488dd269786a8cd59811d8d828db686c3636e3d6320c77bbeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "106601"
+ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
+ms.search.form: FinancialReports
+ms.openlocfilehash: 30d00f50844f7ad040d3c054726b7cc1a7e85d01
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729098"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206385"
 ---
 # <a name="column-definitions-in-financial-reports"></a>財務諸表での列の定義
 
@@ -547,7 +548,7 @@ ms.locfileid: "6729098"
 
 ### <a name="calculation-column-in-a-column-definition"></a>列定義の計算列
 
-列定義の **CALC** の列タイプは、 **フォーミュラ** セルでの複雑な計算をサポートし、**+**、**-**、**\**、*/** 演算子、および **IF/THEN/ELSE** 文を含めることができます。 計算列は他の列、後続の列さえも参照できます。 また、計算列には、列のヘッダーをサポートするために、会計年度、および期間を含めることができます。 計算式の上限は 1,024 文字です。 割合として計算の結果を表すには、特別な形式の上書きを使用します。
+列定義の **CALC** の列タイプは、 **フォーミュラ** セルでの複雑な計算をサポートし、**+**、**-**、**\**_、_*/** 演算子、および **IF/THEN/ELSE** 文を含めることができます。 計算列は他の列、後続の列さえも参照できます。 また、計算列には、列のヘッダーをサポートするために、会計年度、および期間を含めることができます。 計算式の上限は 1,024 文字です。 割合として計算の結果を表すには、特別な形式の上書きを使用します。
 
 > [!NOTE]
 > 計算式の結果には、印刷対象外の列の範囲の値は含まれません。 たとえば、**A:D** の印刷は **0** (ゼロ)ですが、**A+B+C** のノンプリンティング値は、値を計算します。

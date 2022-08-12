@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 42d00f570403af6e7a6a39a6643eec1f59ccdc20
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ec7d8dbc73dce57d3968c4d239a51d27673a2493
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687927"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066286"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 18 日)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8687927"
 
 ## <a name="platform-update-32"></a>プラットフォーム update 32 
 
-プラットフォーム更新プログラム 32 が使用できるようになりました。 詳細については、[Finance and Operations のプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md) を参照してください。
+プラットフォーム更新プログラム 32 が使用できるようになりました。 詳細については、[財務と運用のプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md)を参照してください。
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>合理化された従業員フォームで表示オプションを変更すると、検索値が記憶される (383833)
 

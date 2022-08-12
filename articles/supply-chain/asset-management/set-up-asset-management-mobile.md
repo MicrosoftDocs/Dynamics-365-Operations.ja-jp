@@ -1,6 +1,6 @@
 ---
 title: 資産管理モバイル ワークスペースの設定
-description: この記事では、作業者が資産管理タスクを実行するために使用できる資産管理モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と Finance and Operations (Dynamics 365) モバイル アプリの設定方法について説明します。
+description: この記事では、作業者が資産管理タスクを実行するために使用できる資産管理モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と財務と運用 (Dynamics 365) モバイル アプリの設定方法について説明します。
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef4e6bf2ae59adb05c7d4aacc3f5675a5adcafc9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870845"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070056"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースの設定
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、作業者が資産管理タスクを実行するために使用できる **資産管理** モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と Finance and Operations (Dynamics 365) モバイル アプリの設定方法について説明します。
+この記事では、作業者が資産管理タスクを実行するために使用できる **資産管理** モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と財務と運用 (Dynamics 365) モバイル アプリの設定方法について説明します。
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Supply Chain Management でのメンテナンス作業者ユーザーの設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "8870845"
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースの公開
 
-Finance and Operations (Dynamics 365) モバイル アプリで資産管理機能を使用するには、**資産管理** モバイル ワークスペースを公開する必要があります。
+財務と運用 (Dynamics 365) モバイル アプリで資産管理機能を使用するには、**資産管理** モバイル ワークスペースを公開する必要があります。
 
 1. Supply Chain Management で、**設定** ボタン (右上隅のギア記号) を選択し、メニューの **モバイル アプリ** を選択します。
 1. **モバイル アプリの管理** ダイアログ ボックスで、**資産管理** タイルを検索します。 "メタデータ内 - 未公開" というテキストが含まれている場合、ワークスペースはまだ公開されていません。 "メタデータ内 - 公開済" という文字列が含まれている場合、ワークスペースは既に発行済みで、この手順の残りを省略できます。
@@ -50,14 +50,14 @@ Finance and Operations (Dynamics 365) モバイル アプリで資産管理機�
 
 1. **資産管理** タイルを選択し、ツール バーの **発行** を選択します。 しばらくすると、ワークスペースが正常に発行されたことを示す通知が表示されます。 また、タイル上のテキストは "メタデータ内 - 公開済" に変更する必要があります。
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Finance and Operations (Dynamics 365) モバイル アプリをインストールして設定する
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>財務と運用 (Dynamics 365) モバイル アプリをインストールして設定する
 
-1. 次のいずれかのアプリケーション店舗に移動して **Microsoft Finance and Operations (Dynamics 365)** アプリをモバイル デバイスにインストールします。
+1. 次のいずれかのアプリケーション店舗に移動して **Microsoft 財務と運用 (Dynamics 365)** アプリをモバイル デバイスにインストールします。
 
     - [Google Android デバイスの場合](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Apple iOS デバイスの場合](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Finance and Operations (Dynamics 365) アプリを開きます。 サインイン ページが表示されます。 **サインイン** フィールドに Supply Chain Management の URL を入力するか、**最新の環境** ボックスの一覧で最近の URL を選択して、**接続** をクリックします。
+1. 財務と運用 (Dynamics 365) アプリを開きます。 サインイン ページが表示されます。 **サインイン** フィールドに Supply Chain Management の URL を入力するか、**最新の環境** ボックスの一覧で最近の URL を選択して、**接続** をクリックします。
 
     ![サインイン ページ。](media/mobile-app-sign-in.png "サインイン ページ")
 
@@ -80,7 +80,7 @@ Finance and Operations (Dynamics 365) モバイル アプリで資産管理機�
 
 **資産管理** モバイル ワークスペースの使用方法の詳細については、[資産管理モバイル ワークスペースの使用](asset-management-mobile-workspace.md) を参照してください。
 
-Finance and Operations (Dynamics 365) モバイル アプリの詳細については、[モバイル アプリ ホーム ページ](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md) を参照してください。
+財務と運用 (Dynamics 365) モバイル アプリの詳細については、[モバイル アプリ ホーム ページ](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md) を参照してください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

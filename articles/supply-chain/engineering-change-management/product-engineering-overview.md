@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c9bfcdef91ad07b8346498b8944e1d741d623a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862659"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067395"
 ---
 # <a name="engineering-change-management-overview"></a>エンジニアリング変更管理の概要
 
@@ -40,7 +40,7 @@ ms.locfileid: "8862659"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-前のビデオ ([Dynamics 365 Supply Chain Management の管理機能の変更](https://youtu.be/N313FqvRuBc)) は、YouTube で利用可能な  [Finance and Operations のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+前のビデオ ([Dynamics 365 Supply Chain Management の管理機能の変更](https://youtu.be/N313FqvRuBc)) は、YouTube で利用可能な [財務と運用のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>システムのエンジニアリング変更管理機能を有効にする
 
@@ -88,3 +88,4 @@ ms.locfileid: "8862659"
 | エンジニアリング製品のバリアントの生成 | <p>この機能により、使用可能な分析コード値に基づいて、エンジニアリング製品のバリアントを生成できます。</p><p>詳細については、[エンジニアリング製品のバリアントの生成](engineering-variants.md)を参照してください。</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

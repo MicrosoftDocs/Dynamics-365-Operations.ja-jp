@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b0427d33ac39d34bccc302e58bb84e1ad4c3598c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 12a9c57e2587150914c6087c041d63af9783c1f3
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888444"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103700"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Microsoft Dynamics 365 Field Service との統合の概要
 
@@ -73,7 +73,7 @@ Field Service および Supply Chain Management 間のワーク オーダーを�
 ### <a name="system-requirements-for-supply-chain-management"></a>Supply Chain Management のシステム要件
 Field Service 統合は、次のバージョンがサポートされています。
 
-- Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) は、2018 年 12 月にリリースされ、アプリケーション ビルド番号 8.1.195、プラットフォーム更新 22 (7.0.5095) となっています。 
+- Dynamics 365 財務と運用 バージョン 8.1.2 (2018 年 12 月) は 2018 年 12 月にリリースされ、アプリケーション ビルド番号 8.1.195、プラットフォーム更新 22 (7.0.5095) となっています。 
 
 ### <a name="system-requirements-for-field-service"></a>Field Service のシステム要件
 Field Service 統合ソリューションを使用するには、以下のコンポーネントをインストールする必要があります:

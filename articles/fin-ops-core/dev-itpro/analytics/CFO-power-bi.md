@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1ea8f12102cc2fac1948027f7c15d45bf5d1b15d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e98b9d772c3b42162566fe666c3eeba5d1fb2392
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881554"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108989"
 ---
 # <a name="cfo-overview-power-bi-content"></a>CFO 概要 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)] 
 
-この記事では、**CFO 概要** Microsoft Power BI コンテンツについて説明します。 この Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.2 を使い適用されます。 バージョン 7.3 またはそれ以降を使用している場合は、[財務インサイト](financial-insights.md)を参照してください。
+この記事では、**CFO 概要** Microsoft Power BI コンテンツについて説明します。 この Power BI コンテンツは、Microsoft Dynamics 365 Finance バージョン 7.2 を使い適用されます。 バージョン 7.3 またはそれ以降を使用している場合は、[財務インサイト](financial-insights.md)を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 
@@ -44,3 +44,4 @@ ms.locfileid: "8881554"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

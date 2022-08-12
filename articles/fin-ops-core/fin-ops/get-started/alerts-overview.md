@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b81eb8e0be4c7d7357a6b8b7b5f0ac025b9ab8ca
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850081"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124261"
 ---
 # <a name="alerts-overview"></a>警告の概要
 
@@ -77,13 +77,13 @@ ms.locfileid: "8850081"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-[警告を使用してフィルタ処理されたデータを監視する方法](https://youtu.be/ZYKMcv6kl9s) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
+[警告を使用してフィルタ処理されたデータを監視する方法](https://youtu.be/ZYKMcv6kl9s) ビデオ (上記) を含む、[財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
 
 ### <a name="alert-rule-options"></a>警告ルールオプション
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-[警告ルールオプション](https://youtu.be/cpzimwOjicM) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は、YouTube でご覧いただけます。
+[警告ルールオプション](https://youtu.be/cpzimwOjicM) ビデオ (上記) を含む、[財務と運用プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は、YouTube でご覧いただけます。
 
 
 

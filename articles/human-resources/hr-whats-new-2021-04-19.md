@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fffe9c042c71dc220179bb6d1ba7fd59d5e53cc0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846303"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069536"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 4 月 19 日)
 
@@ -41,7 +41,7 @@ ms.locfileid: "8846303"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| プラットフォーム 更新プログラム 10.0.17 (41) | -- | [財務と運用アプリのバージョン 10.0.17 (2021 年 4 月) のプラットフォーム更新プログラム](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| プラットフォーム 更新プログラム 10.0.17 (41) | -- | [財務と運用アプリのバージョン 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | 給付金管理フォームでのカスタム フィールドのサポート | [給付金管理でのカスタム フィールドのサポート](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [福利厚生の管理の概要](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>バグ修正
@@ -90,3 +90,4 @@ ms.locfileid: "8846303"
 [機能の管理](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

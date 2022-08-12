@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954499"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167734"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management 10.0.25 (2022 年 4 月) の新機能および変更された機能
 
@@ -36,8 +36,7 @@ ms.locfileid: "8954499"
 | 在庫&nbsp;および&nbsp;物流 | [危険物の拡張機能](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | 間もなく公開 | 機能管理:<br>*危険物の拡張機能* |
 | 在庫&nbsp;および&nbsp;物流 | [梱包ステーションの梱包作業](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | 間もなく公開 | 機能管理:<br>*梱包ステーションの梱包作業* |
 | 在庫&nbsp;および&nbsp;物流 | [GS1 形式標準を使用した倉庫内のバーコードのスキャン](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 バーコードと QR コード](../warehousing/gs1-barcodes.md) | 機能管理:<br>*GS1 バーコードのスキャン* |
-| 製造 | [生産現場の実行インターフェースで材料消費と予約する](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*(プレビュー) 生産現場の実行インターフェースで材料消費を登録する (WMS 非対応)*<br><br>かつ/または:<br><br>機能管理:<br>*(プレビュー) 生産現場の実行インターフェイス (WMS 対応) で材料消費を登録* |
-| 製造 | [スケール ユニットで材料消費を登録する](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード](../cloud-edge/cloud-edge-workload-manufacturing.md) | 機能管理:<br>*モバイル アプリにスケール ユニットで材料消費を登録* |
+| 製造 | [生産現場の実行インターフェースで材料消費と予約する](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェースで材料消費を登録する (WMS 非対応)*<br><br>かつ/または:<br><br>機能管理:<br>*(プレビュー) 生産現場の実行インターフェイス (WMS 対応) で材料消費を登録* |
 | 計画 | [計画の最適化集中カレンダーのメンテナンス](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [カレンダーおよびマスター プラン](../master-planning/supply-chain-calendars-master-planning.md) | 既定で有効 |
 | 計画 | [既存の供給を最適化するための計画の最適化に関する提案](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [アクション メッセージ](../master-planning/action-messages.md) | 既定で有効 |
 | 計画 | 簡易計画オーダー | [簡易計画オーダー](../master-planning/planning-optimization/planned-orders-simplified.md ) | 機能管理:<br>*簡易計画オーダー* |
@@ -209,3 +208,4 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.25 には、Platform updates
 コンパイル時に影響する重大な変更が、サンドボックス環境および運用環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

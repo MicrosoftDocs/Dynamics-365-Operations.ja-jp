@@ -1,6 +1,6 @@
 ---
-title: 品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録
-description: この記事では、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオについて説明します。
+title: 品目の着荷仕訳帳を使用した倉庫管理プロセスに対応した品目の登録
+description: この記事では、倉庫管理プロセス (WMS) を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオについて説明します。
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863624"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066970"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した倉庫管理プロセスに対応した品目の登録
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオについて説明します。 これは通常、入荷係により行われます。
+この記事では、倉庫管理プロセス (WMS) を使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオについて説明します。 これは通常、入荷係により行われます。
 
 ## <a name="enable-sample-data"></a>サンプルデータの有効化
 
@@ -36,7 +36,7 @@ ms.locfileid: "8863624"
 - 確認された発注書に対して、オープンな発注書の明細行を指定する必要があります。
 - 明細行の品目は在庫がある必要があります。 製品バリアントを使用することはできません。追跡分析コードを使用することはできません。
 - その品目は、倉庫管理プロセスが有効化された保管分析コード グループと関連付けられている必要があります。
-- 使用される倉庫は、倉庫管理プロセスに対して有効化されている必要があり、また受入に使う場所は、ライセンス プレートにより管理されている必要があります。
+- 使用される倉庫は、WMS に対して有効化されている必要があり、また受入に使う場所は、ライセンス プレートにより管理されている必要があります。
 
 ## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>倉庫管理を使用する着品目仕訳帳ヘッダーの作成
 

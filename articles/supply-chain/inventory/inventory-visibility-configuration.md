@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895818"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066673"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility の構成
 
@@ -55,7 +55,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
 | *OnhandChangeSchedule* | このオプション機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
 | *割り当て* | このオプション機能により Inventory Visibility は、在庫保護 (リングフェンシング) および過剰販売管理の機能を持つことができます。 詳細については、[Inventory Visibility の在庫配賦](inventory-visibility-allocation.md) を参照してください。 |
-| *在庫可視化で在庫品目を有効化* | このオプション機能によって、在庫品目一覧が有効になり、高度な倉庫プロセス (WHS 品目) が有効な品目がサポートされます。 詳細については、[WHS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |
+| *在庫可視化で在庫品目を有効化* | このオプション機能によって、在庫品目一覧が有効になり、倉庫管理プロセス (WMS) が有効な品目がサポートされます。 詳細については、[WMS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>サービス エンドポイントを検索する
 
@@ -809,3 +809,4 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

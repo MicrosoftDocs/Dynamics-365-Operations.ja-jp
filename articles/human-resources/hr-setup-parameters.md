@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13a25d3f1f72d8053ed3951b036522cfa3a15959
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856283"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065647"
 ---
 # <a name="configure-human-resources-parameters"></a>Human Resources パラメーターのコンフィギュレーション
 
@@ -27,7 +27,7 @@ ms.locfileid: "8856283"
 
 他のパラメーター設定は会社固有ですが、人事管理のパラメーター設定は会社間で共有されます。 この記事では、会社固有の人事管理のパラメーターを設定する方法について説明します。
 
-2 つのページが人事管理のパラメータの設定に使用されます。 会社間で共有されるパラメータに、**人事管理の共有パラメーター** ページを使用します。 会社固有のパラメータ (つまり、設定を単一の会社に適用する場合) に、**人事管理パラメータ** ページを使用します。
+2 つのページが人事管理のパラメータの設定に使用されます。 会社間で共有されるパラメータに、**人事管理の共有パラメーター** ページを使用します。 会社固有のパラメーターに、**人事管理パラメーター** ページを使用します。
 
 ![人事管理パラメーターに移動する。](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -74,9 +74,10 @@ Dynamics 365 Finance では、**報酬** タブの設定は、ユーザーが固
 
 人事管理では、**報酬** タブを使用して、報酬プランへのアクセスの制限や、既定の通貨の設定を選択できます。
 
-報酬の詳細については、[報酬プランの概要](hr-compensation-overview.md)を参照してください。
+> [!NOTE]
+> 統合されたインフラストラクチャでは、**人事管理パラメーター** ページの **報酬** タブにある既定の **通貨** パラメーターが削除されました。 今後、通貨は **元帳通貨** パラメーターによって処理され、既存の財務と運用機能に競合がないようにし、重複を防ぎます。 元帳通貨機能の使用方法については、[元帳の構成](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md)を参照してください。 
 
-![報酬タブ。](./media/hr-setup-parameters-compensation.png)
+報酬の詳細については、[報酬プランの概要](hr-compensation-overview.md)を参照してください。
 
 ## <a name="number-sequences"></a>番号順序
 
@@ -122,7 +123,7 @@ FMLA タブでは、FMLA 資格条件と、FMLA 資格付与時間を設定し�
 **マネージャー セルフ サービス** の設定は、マネージャーが **マネージャー セルフ サービス** に表示する内容に影響します。 このタブでは、次のオプションを構成できます。
 
 - 期限が切れるレコードの範囲
-- マネージャーが期限が切れるレコードで表示できる情報
+- 期限が切れるレコード内でマネージャーが表示できる情報
 - マネージャーが拡張レポートの空いている職位を表示できるかどうか
 - 既存の作業者の表示
 - マネージャー向けに役立つリンク

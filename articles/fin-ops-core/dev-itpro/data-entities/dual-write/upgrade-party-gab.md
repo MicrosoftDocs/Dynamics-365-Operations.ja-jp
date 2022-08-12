@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895279"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111821"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>当事者およびグローバル アドレス帳モデルへのアップグレード
 
@@ -120,7 +120,7 @@ ms.locfileid: "8895279"
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>パーティの配送先住所テンプレートを実行する設定
 
-1. Customer Engagement アプリにサインインして、**設定** \> **パーソナライズ設定** にアクセスします。 **全般** タブで、 システム管理者アカウントのタイムゾーン構成を行います。 財務と運用アプリから住所の有効期限を更新するには、タイムゾーンが協定世界時 (UTC) である必要があります。
+1. Customer Engagement アプリにサインインして、**設定** \> **パーソナライズ設定** にアクセスします。 **全般** タブで、 システム管理者アカウントのタイムゾーン構成を行います。 財務と運用アプリからの住所の「有効開始日」および「有効終了日」を更新するには、協定世界時 (UTC) である必要があります。
 
     ![システム管理者アカウントのタイムゾーン設定。](media/ADF-1.png)
 
@@ -387,7 +387,7 @@ ms.locfileid: "8895279"
 3. 手順 3 では、Customer Engagement アプリから取引先企業、取引先担当者、ベンダーのアドレスデータを重複排除してマージします。
 4. 手順 4 では、財務と運用アプリで使用する .csv ファイルを作成し、取引先企業、取引先担当者、仕入先の住所に基づいた新しい住所データを作成します。
 5. 手順 5-1 では、財務と運用アプリと Customer Engagement アプリの両方に基づいて、Customer Engagement アプリで使用する .csv ファイルを作成し、すべての住所データを作成します。
-6. 手順 5-2では、.csvファイルを手動インポートで使用する Finance and Operations インポートのフォーマットに変換します。
+6. 手順 5-2では、.csvファイルを手動インポートで使用する財務と運用インポートのフォーマットに変換します。
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -425,3 +425,4 @@ ms.locfileid: "8895279"
 ## <a name="learn-more-about-the-template"></a>テンプレートの詳細を確認する
 
 テンプレートに関する詳細については、[Azure Data Factory テンプレートの readme コメント](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md) で確認できます。
+

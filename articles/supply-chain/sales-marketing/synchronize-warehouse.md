@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 7fac40ebd8a1f7994997e12f1231e5522a0c0e24
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b86b6a59344299a7a2d277543c3186ed2b8cee4
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865066"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103236"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service への倉庫の同期
 
@@ -58,7 +58,7 @@ Field Service および Supply Chain Management の統合をサポートする�
 **外部で管理** 列は、在庫レベル、調整、移動、ワーク オーダーの使用状況の同期を制御します。 **外部で管理** が **はい** に設定された倉庫のみ、その他のシステムの同じ倉庫に直接同期するのに使用されます。 
 
 > [!NOTE]
-> Field Service で複数の倉庫を作成し (**外部で管理** = いいえ)、高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Supply Chain Management に更新を送信するだけの場合に使用されます。 この場合、Field service では、Supply Chain Management からの在庫レベルの更新は受信しません。 追加情報については、「[Field Service から Finance and Operations への在庫調整の同期](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments)」および「[Field Service でのワーク オーダーを Finance and Operations のプロジェクトにリンクされている販売注文に同期](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)」を参照してください。
+> Field Service で複数の倉庫を作成し (**外部で管理** = いいえ)、高度なクエリおよびフィルター処理を使用して 1 つの倉庫にマッピングすることができます。 これは、Field service に詳細な在庫レベルを習得させ、Supply Chain Management に更新を送信するだけの場合に使用されます。 この場合、Field service では、Supply Chain Management からの在庫レベルの更新は受信しません。 追加情報については、「[Field Service から Supply Chain Management への在庫調整の同期](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments)」および「[Field Service でのワーク オーダーを Supply Chain Management のプロジェクトにリンクされている販売注文に同期](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)」を参照してください。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 ### <a name="data-integration-project"></a>データ統合プロジェクト

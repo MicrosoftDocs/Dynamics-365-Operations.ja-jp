@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: aa0092f65461b6ebeea6649f48c0cf1c07cc936d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2fd29d747c7141b051e6c7c68db94abfd849f947
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866257"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123499"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>勘定科目表の区切り記号を一意にする
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics AX 2012 では、勘定科目表および分析コード値に対して、同じ区切り記号を使用することができます。 財務と運用の現在のバージョンでは、勘定科目表および分析コード名または値に対して同じ区切り記号を設けることはできません。 重複する区切り記号がある場合、アップグレード後に変更することができます。 
+Microsoft Dynamics AX 2012 では、勘定科目表および分析コード値に対して、同じ区切り記号を使用することができます。 財務と運用の現在のバージョンでは、勘定科目表と分析コード名、または値に対して同じ区切り記号を設けることはできません。 重複する区切り記号がある場合、アップグレード後に変更することができます。 
 
 ## <a name="update-delimiter"></a>区切り記号の更新
 勘定科目表との競合が発生している場合、勘定科目表の区切り記号およびプロジェクト/下位プロジェクト ID の形式は変更できません。 その他の分析コードの区切り記号を変更することはできません。 
@@ -39,3 +39,4 @@ Microsoft Dynamics AX 2012 では、勘定科目表および分析コード値�
 アップグレードされた環境の区切り記号が競合している場合、セグメント化エントリ コントロールまたは分析コード エントリ コントロールに値を入力する際に動作が不安定になることがあります つまり、勘定と分析コードの組み合わせを入力するときは、ルックアップまたはポップ アップ メニューを常に使用する必要があります。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022526"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069789"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>作業者が生産現場の実行インターフェイスを使用する方法
 
@@ -217,7 +217,7 @@ ms.locfileid: "9022526"
 
 **材料の調整** ダイアログ ボックスで、**材料の引当** を選択することで、作業者が材料の引当を行および調整できます。 表示される **材料の引当** ダイアログ ボックスには、保管分析コードおよび追跡分析コードごとに品目に対して物理的に使用可能な在庫が表示されます。
 
-高度な倉庫プロセスで材料が有効になっている場合は、材料の生産入力場所で物理的に利用可能な在庫だけが一覧に表示されます。 生産入力の場所は、生産ジョブが計画されているリソースで定義されます。 品目番号がバッチ番号またはシリアル番号によって制御されている場合は、物理的に利用可能なバッチ番号とシリアル番号の完全なリストが表示されます。 作業者は、予約する数量を指定するために **材料の引当** を選択できます。 既存の予約を削除するには、作業者は **予約の削除** を選択できます。
+倉庫管理プロセス (WMS) で材料が有効になっている場合は、材料の生産入力場所で物理的に利用可能な在庫だけが一覧に表示されます。 生産入力の場所は、生産ジョブが計画されているリソースで定義されます。 品目番号がバッチ番号またはシリアル番号によって制御されている場合は、物理的に利用可能なバッチ番号とシリアル番号の完全なリストが表示されます。 作業者は、予約する数量を指定するために **材料の引当** を選択できます。 既存の予約を削除するには、作業者は **予約の削除** を選択できます。
 
 生産入力の場所の設定方法の詳細については、次のブログ投稿:生産 [入力場所の設定を参照してください](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production)。
 
