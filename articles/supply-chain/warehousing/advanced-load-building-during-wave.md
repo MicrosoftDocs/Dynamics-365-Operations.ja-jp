@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 76aee3a736efa9ed7431d4e5127cd0abaccd659f
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863769"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218851"
 ---
 # <a name="advanced-load-building-during-wave"></a>ウェーブ中の高度な積荷構築
 
@@ -50,7 +50,7 @@ ms.locfileid: "8863769"
 
 ### <a name="make-sample-data-available"></a>サンプル データを有効化する
 
-ここで指定されたサンプル レコードと値を使用してこのデモを実行するには、標準の [デモ データ](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
+ここで指定されたサンプル レコードと値を使用してこのデモを実行するには、標準の [デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
 
 このデモは、実稼働システムで作業するときにこの機能を使用するためのガイダンスとして使用することもできます。 ただし、その場合は、独自の値に置き換える必要があり、標準のデモ データが提供するいくつかのタイプの必要なレコードが不足している可能性があります。
 

@@ -1,26 +1,26 @@
 ---
 title: 延長保証の作成と構成
 description: この記事では延長保証を取り上げ、Microsoft Dynamics 365 Commerce で延長保証を作成および設定する方法について説明します。
-author: sijoshi
+author: josaw1
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
-ms.author: sijoshi
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9ed9851a9609e8a87ae0ffadc5cdd20c03fa17ee
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: 3754de54763be52c9090596fac0e170b0c5fc520
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886987"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268371"
 ---
 # <a name="create-and-configure-extended-warranties"></a>延長保証の作成と構成
 

@@ -1,26 +1,26 @@
 ---
 title: 画像とビデオ以外のファイルのアップロード
 description: この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーの画像とビデオ以外のバイナリ ファイルをアップロードする方法について説明します。
-author: psimolin
+author: josaw1
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5952c44d066729d66d62c47249214221fe39ad9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: df3df007a676c83a93d1ef5252987de869839be9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863438"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282217"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>画像とビデオ以外のファイルのアップロード
 

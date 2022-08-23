@@ -1,24 +1,26 @@
 ---
 title: 帳簿の資産耐用年数期間中の減価償却方法の変更
 description: 日本では、固定資産の耐用年数期間中、減価償却方法を変更することができます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_JP,  AssetUndepreciatedBalancedSchedule_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 640e381358c63dc0bda8e6dd60bf4e0f298c647b
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form:
+- AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_JP
+- AssetUndepreciatedBalancedSchedule_JP
+ms.openlocfilehash: eabecf6fe0c850147425f7b9fd17604f92b6fe48
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565566"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292183"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-book"></a>帳簿の資産耐用年数期間中の減価償却方法の変更
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849187"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219445"
 ---
 # <a name="item-consolidation---location-utilization"></a>品目の連結 - 場所の使用率
 
@@ -30,8 +30,8 @@ ms.locfileid: "8849187"
 
 この記事で説明されている機能を使用するには、システムでこれらの機能を有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 次の両方の機能を、記載されている順序で有効にします。 (両方の機能は、**倉庫管理** モジュール用です。)
 
-1. 倉庫の場所の状態
-2. 品目の連結場所の使用率
+1. *倉庫の場所の状態* (バージョン 10.0.29 では、この機能は既定で有効に設定されています。 詳細については、[倉庫の場所の状態](warehouse-location-status.md) を参照してください。)
+2. *品目の連結場所の使用率*
 
 ## <a name="warehouse-location-status"></a>倉庫の場所の状態
 

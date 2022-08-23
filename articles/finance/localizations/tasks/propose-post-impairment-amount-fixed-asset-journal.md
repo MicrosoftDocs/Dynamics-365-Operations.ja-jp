@@ -1,24 +1,24 @@
 ---
 title: 固定資産仕訳帳を使用した減損損失の提案と転記
 description: この手順を用いて、固定資産仕訳帳を使用して減損金額を提示および転記する方法を把握します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55cab97bf36821334d6df8937de1800f6fd8efa7804bc048608a70c518024b40
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
+ms.openlocfilehash: 9fad44ce14ad8ad5aebec9894783c47b8044a96d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714392"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270541"
 ---
 # <a name="propose-and-post-the-impairment-amount-by-using-fixed-asset-journal"></a>固定資産仕訳帳を使用した減損損失の提案と転記
 

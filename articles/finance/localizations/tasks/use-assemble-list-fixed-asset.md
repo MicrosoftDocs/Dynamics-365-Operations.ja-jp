@@ -1,24 +1,24 @@
 ---
 title: 固定資産の組み立て一覧の使用
 description: 日本では、在庫品目を固定資産に移転できます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetTable, AssetComponentList_JP, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42b95e71c3174a9d882db340a10d328c06842a75
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: AssetTable, AssetComponentList_JP, LedgerJournalTable, LedgerJournalTransAsset
+ms.openlocfilehash: 26f5311c56ddb835a6b2b4e21f0e8974f99ef9e9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566152"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292166"
 ---
 # <a name="use-assemble-list-of-a-fixed-asset"></a>固定資産の組み立て一覧の使用
 

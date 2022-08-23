@@ -1,24 +1,24 @@
 ---
 title: 減損会計の共通パラメーターおよび転記プロファイルの設定
 description: このタスクでは、減損会計の共通パラメーターと転記プロファイルの定義方法が確認できます。
-author: ShylaThompson
+author: kfend
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 345d84dd9dd1688030f8cc0b530f82e59e09fd66
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: AssetParameters, AssetPosting
+ms.openlocfilehash: 7677158ebd879e8b345d7869db90910c1857994b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565901"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285734"
 ---
 # <a name="setup-impairment-accounting-common-parameters-and-posting-profile"></a>減損会計の共通パラメーターおよび転記プロファイルの設定
 

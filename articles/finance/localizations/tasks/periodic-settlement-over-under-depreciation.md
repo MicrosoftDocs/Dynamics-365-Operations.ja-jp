@@ -1,24 +1,24 @@
 ---
 title: 償却超過額/償却不足額の定期決済
 description: このタスクでは、損金の減価償却費を計算および記録する方法を説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm, AssetDepPreTaxDedProcess_JP, AssetDepPreTaxDedProcessDetail_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f56e6118a769a9e1ef1ed529a8253bb7d4dcdfbec0edfba70db16fb1138b9718
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm, AssetDepPreTaxDedProcess_JP, AssetDepPreTaxDedProcessDetail_JP
+ms.openlocfilehash: 79182e3db6ad6f82deab8f7109fbec8a943d1083
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761202"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275203"
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation"></a>償却超過額/償却不足額の定期決済
 

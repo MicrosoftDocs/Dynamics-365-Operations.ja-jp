@@ -1,25 +1,25 @@
 ---
 title: ページの保存、プレビュー、および公開
 description: この記事では、Microsoft Dynamics 365 Commerce でページの保存、プレビュー、公開を行う方法について説明します。
-author: psimolin
+author: josaw1
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54f9f99ca7f7be5da1659e3fdead6f3d08546bda
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: bf9cc4eb916976ed0c87f27cf8df7c0d52d07ef0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892262"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280217"
 ---
 # <a name="save-preview-and-publish-a-page"></a>ページの保存、プレビュー、および公開
 

@@ -1,24 +1,24 @@
 ---
 title: 増加償却パラメーターおよび転記プロファイルのコンフィギュレーション
 description: 日本では、加速償却は [レート係数]、[レートしきい値] および [計算方法] に基づいて計算されます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 032047878797752e10fd40090294292f5d51655279e4f66f69495c3691417e72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: AssetParameters, AssetPosting
+ms.openlocfilehash: 1e7868c1e193eb8a6af8454a8b7f574290084be3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714423"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274477"
 ---
 # <a name="configure-accelerated-depreciation-parameters-and-posting-profiles"></a>増加償却パラメーターおよび転記プロファイルのコンフィギュレーション
 

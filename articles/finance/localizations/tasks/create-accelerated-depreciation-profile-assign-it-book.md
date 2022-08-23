@@ -1,24 +1,24 @@
 ---
 title: 加速減価償却プロファイルを作成し、帳簿に割り当てる
 description: 日本では、ほかの減価償却方法と同様、加速償却に減価償却プロファイルが必要です。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetDepreciationProfile, AssetBookTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9034874492b2440f54cea25d7838b6b337e72c8b
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: AssetDepreciationProfile, AssetBookTable
+ms.openlocfilehash: af22d36ec8bcd11c0e38ecfbf1afd8b989a58a3c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566113"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286958"
 ---
 # <a name="create-accelerated-depreciation-profile-and-assign-it-to-book"></a>加速減価償却プロファイルを作成し、帳簿に割り当てる
 

@@ -1,24 +1,24 @@
 ---
 title: JBA のファイル形式の顧客支払のインポート
 description: この記事では、JBA 形式の EFT ファイルのインポート方法について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerForm
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4671617612f38559ef48a6711c90216c205601b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerForm
+ms.openlocfilehash: 8df551e7f1bd6ff33fa116e520ff05bd85ff0f4a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874324"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280588"
 ---
 # <a name="import-customer-payment-with-jba-file-format"></a>JBA のファイル形式の顧客支払のインポート
 

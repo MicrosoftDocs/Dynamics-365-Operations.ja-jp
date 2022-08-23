@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ebea86e5ea63ab4f5a844cd3d0936c0d65bbe2b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905489"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220245"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>梱包とストレージへのさまざまな分析コードの設定
 
@@ -50,7 +50,7 @@ ms.locfileid: "8905489"
 
 #### <a name="enable-demo-data"></a>デモ データを有効にする
 
-ここで指定されたデモ レコードと値を使用してシナリオを実行するには、標準 [デモ データ](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) がインストールされているシステムを使用する必要があります。 また、開始する前に *USMF* 法人を選択する必要があります。
+ここで指定されたデモ レコードと値を使用してシナリオを実行するには、標準 [デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 また、開始する前に *USMF* 法人を選択する必要があります。
 
 #### <a name="add-a-new-physical-dimension-to-a-product"></a>製品への新しい物理的分析コードの追加
 

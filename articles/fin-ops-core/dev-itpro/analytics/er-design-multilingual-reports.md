@@ -1,26 +1,26 @@
 ---
 title: 電子申告における多言語レポートの設計
 description: この記事では、電子申告 (ER) ラベルを使用して多言語レポートをデザインおよび生成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c042d609d68544aa4be5d707109a15b2ab8d422c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
+ms.openlocfilehash: 5575ba3154521e3855ce6b97c5b37d3c4868e3e9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845747"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285488"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>電子申告における多言語レポートの設計
 

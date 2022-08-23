@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom:
-- "270294"
+ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
-ms.openlocfilehash: 555a815446a6aaca51ed973b5fa43a0a5ab3df83
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 9f019bec9c28602e31b43a8b3ab820f4a3a31ee8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206237"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267935"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>原価会計分析の Power BI コンテンツのセキュリティ設定
 

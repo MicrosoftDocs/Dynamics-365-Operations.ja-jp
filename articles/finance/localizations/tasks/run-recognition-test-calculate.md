@@ -1,24 +1,24 @@
 ---
 title: 認識テストの実行と個別資産の減損損失の計算
 description: このタスクは、認識テストの実行方法および個々の資産の減損金額の計算方法について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetImpairmentRecognitionTest_JP, SysQueryForm, AssetImpairmentCreateTest_JP, AssetImpairmentRecognitionTestResult_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6b53f53ff19c0ae79e976b8d96a08dd46bca9ac4
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: AssetImpairmentRecognitionTest_JP, SysQueryForm, AssetImpairmentCreateTest_JP, AssetImpairmentRecognitionTestResult_JP
+ms.openlocfilehash: beeb128070e464b34e66342e968b96433d05e26e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565570"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270538"
 ---
 # <a name="run-the-recognition-test-and-calculate-the-impairment-amount-on-individual-assets"></a>認識テストの実行と個別資産の減損損失の計算
 

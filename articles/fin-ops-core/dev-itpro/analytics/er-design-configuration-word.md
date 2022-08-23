@@ -1,24 +1,26 @@
 ---
 title: Word 形式のレポートを生成するための新しい ER 構成を設計する
 description: この記事では、ユーザーが新しい電子申告 (ER) 形式を構成して、レポートを Microsoft Word ドキュメントとして生成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893015"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273341"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための新しい ER 構成を設計する
 
@@ -35,7 +37,7 @@ Word ドキュメントを Word 形式のレポートのテンプレートとし
 
 ![構成ページで形式構成を作成。](./media/er-design-configuration-word-image2.gif)
 
-ソリューションの ER 形式コンポーネントには **Excel\\File** 形式要素を含む必要があり、その形式要素は、実行時に生成されるレポートのテンプレートとして使用される Word ドキュメントにリンクされている必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで作成された ER 構成の [ドラフト](general-electronic-reporting.md#component-versioning) バージョンを開く必要があります。 その後、**Excel\\File** 要素を追加し、編集可能な ER 形式に Word テンプレートを添付し、そのテンプレートを追加した **Excel\\File** 要素にリンクします。
+ソリューションの ER 形式コンポーネントには **Excel\\File** 形式要素を含む必要があり、その形式要素は、実行時に生成されるレポートのテンプレートとして使用される Word ドキュメントにリンクされている必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで作成された ER 構成の ドラフト バージョンを開く必要があります。 その後、**Excel\\File** 要素を追加し、編集可能な ER 形式に Word テンプレートを添付し、そのテンプレートを追加した **Excel\\File** 要素にリンクします。
 
 > [!NOTE]
 > テンプレートを添付する場合、ER パラメーターで事前に [構成](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) されている [ドキュメント タイプ](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) を使用して、ER 形式のテンプレートを保存する必要があります。

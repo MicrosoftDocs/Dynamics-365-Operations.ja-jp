@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2b3c408f5a5e4ce85a235ac83c15b648e43b5e10
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065467"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220060"
 ---
 # <a name="warehouse-location-status"></a>倉庫の場所の状態
 
@@ -42,10 +42,7 @@ Microsoft Dynamics 365 Supply Chain Management には、場所を操作したり
 
 ## <a name="turn-on-the-warehouse-location-status-feature"></a>倉庫の場所のステータス機能をオンにします
 
-*倉庫の場所のステータス* 機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *倉庫の場所のステータス*
+この機能は使用する前にシステムでオンにする必要があります。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースで *倉庫の場所の状態* 機能を検索して、この機能の有効/無効を切り替えることができます。
 
 ## <a name="set-up-warehouse-location-status"></a>倉庫の場所のステータスの設定
 
@@ -55,7 +52,7 @@ Microsoft Dynamics 365 Supply Chain Management には、場所を操作したり
 
 #### <a name="use-the-usmf-legal-entity"></a>USMF 法人を使用します
 
-ここで指定されたサンプル レコードと値を使用してシナリオ例を実行するには、標準の[デモ データ](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
+ここで指定されたサンプル レコードと値を使用してシナリオ例を実行するには、標準の[デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
 
 #### <a name="set-up-location-profiles"></a>場所プロファイルを設定します
 

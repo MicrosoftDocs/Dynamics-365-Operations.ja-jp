@@ -1,24 +1,24 @@
 ---
 title: 固定資産の取得と政府助成金の申請
 description: 固定資産の取得および政府補助金の申請についての説明を見るには、このタスクを使用します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5db64f1c4d9aa1fd45d13c8a153b55107084d606bcab442b513d51383a44c7cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
+ms.openlocfilehash: 8bb1b946e91b26280c8c33835c7a90b5b86b6525
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755579"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279187"
 ---
 # <a name="acquire-a-fixed-asset-and-claim-for-the-government-grant-subsidy"></a>固定資産の取得と政府助成金の申請
 

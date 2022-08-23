@@ -1,24 +1,26 @@
 ---
 title: 割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション
 description: この手順を使用して、特別償却の減価償却プロファイルと転記プロファイルを構成する方法を説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetDepreciationProfile,  AssetPosting
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21df806e9abc0612d4146c98aa37049123f60cab
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form:
+- AssetDepreciationProfile
+- AssetPosting
+ms.openlocfilehash: 0557052ffb6670f4e0f4b083bc092b6b57919293
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565514"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276479"
 ---
 # <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation"></a>割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション
 

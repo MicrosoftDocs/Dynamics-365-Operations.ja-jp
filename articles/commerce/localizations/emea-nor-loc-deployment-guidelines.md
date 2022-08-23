@@ -1,58 +1,79 @@
 ---
-title: ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
-description: この記事は、ノルウェーで Microsoft Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。
-author: EvgenyPopovMBS
-ms.date: 12/20/2021
-ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgriffin
-ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b17bd56f9f3e4def341658626915adbd7f5aada6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894465"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281541"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
+---
 
-[!include [banner](../includes/banner.md)]
+title: ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ) [!include [banner](../includes/banner.md)]
+description: この記事は、ノルウェーで Microsoft Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。
 
-この記事は、ノルウェーで Microsoft Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
+author: EvgenyPopovMBS この記事は、ノルウェーで Microsoft Dynamics 365 Commerce のローカライズを有効にする方法を示す展開ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
+ms.date: 12/20/2021
 
-このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 SDK に関する詳細については、[Retail ソフトウエア開発キット (SDK) アーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+ms.topic: article このサンプルは、Retail ソフトウェア開発キット (SDK) の一部です。 SDK に関する詳細については、[Retail ソフトウエア開発キット (SDK) アーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+audience: アプリケーション ユーザー、開発者、IT プロ
 
-このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
+ms.reviewer: v-chgriffin このサンプルは Commerce runtime (CRT)、Retail Server、そして POS の拡張機能で構成されます。 このサンプルを実行するには、CRT、Retail Servers および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
+ms.search.region: グローバル
 
+ms.author: josaw
 > [!NOTE]
-> Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 この記事は、アプリの以前の複数のバージョンに適用されるため、この記事全体で *Retail サーバー* を使用します。
+ms.search.validFrom: 2018-02-28 Commerce 10.0.8 以上では、Retail Server は Commerce Scale Unit と呼ばれます。 この記事は、アプリの以前の複数のバージョンに適用されるため、この記事全体で *Retail サーバー* を使用します。
 >
+---
 > 使用しているコマースのバージョンによって、この記事の手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
 
+
+6. Retail Server コンフィギュレーション ファイルを更新します。 **RetailSDK\\Packages\\RetailServer\\Code\\web.config** ファイルの **extensionComposition** セクションに次の行を追加します。
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用
 
-Commerce バージョン 10.0.15 では、Key Vault または本社が使用できない場合に、オフラインにするためのフェールオーバーをサポートする[小売店舗のユーザー定義の証明書プロファイル](./certificate-profiles-for-retail-stores.md) を使用できます。 この機能は、[小売チャンネルのシークレットを管理 ](../dev-itpro/manage-secrets.md) を拡張ます。
 
+    ``` xml
+Commerce バージョン 10.0.15 では、Key Vault または本社が使用できない場合に、オフラインにするためのフェールオーバーをサポートする[小売店舗のユーザー定義の証明書プロファイル](./certificate-profiles-for-retail-stores.md) を使用できます。 この機能は、[小売チャンネルのシークレットを管理 ](../dev-itpro/manage-secrets.md) を拡張ます。
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
+
+    ```
 CRT でこの機能を適用するには、次の手順を実行します。
 
+
+7. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
 1. 新しい CRT 拡張機能プロジェクトを作成します (C# クラス ライブラリ プロジェクト タイプ)。 Retail ソフトウェア開発キット (SDK) からサンプル テンプレートを使用します (RetailSDK\SampleExtensions\CommerceRuntime)。
+8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+
 
 2. CertificateSignatureServiceRequest のカスタム ハンドラーを SequentialSignatureRegister プロジェクトに追加します。
+### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Modern POS のオフライン モードでのデジタル署名を有効にします。
+
 
 3. シークレット呼び出しを読み取るには、profileId パラメーターのあるコンストラクターを使用し、`GetUserDefinedSecretCertificateServiceRequest` を実行します。 これにより、証明書プロファイルの設定で機能が開始されます。 この設定に基づいて、証明書は Azure Key Vault またはローカルマシン ストレージから取得されます。
+Modern POSでオフライン モードでのデジタル署名を有効にするには、新しい端末で Modern POS を有効化した後、これらの手順に従う必要があります。
+
 
     ```csharp
+1. Sign in to POS.
     GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
+2. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
     GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+3. Sign out of POS.
 
+4. Wait a while for the offline database to be fully synchronized.
     X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+5. Sign in to POS.
     ```
+6. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **オフライン データベースで取引を保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
 
+7. Modern POS を再起動します。
 4. 証明書が取得されたら、データ署名に進みます。
 
+
+
 5. CRT 拡張機能プロジェクトを作成します。
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 6. 出力クラス ライブラリをコピーし、手動テスト用の ...\RetailServer\webroot\bin\Ext に貼り付けます。
 
@@ -1612,27 +1633,3 @@ Retail 7.3.1 もしくはそれ以降を使用しているときに限り、次�
     ファイル名は **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** で、**Extensions.SequentialSignatureRegister\\bin\\Debug** の下にあります。
 
     ---
-
-6. Retail Server コンフィギュレーション ファイルを更新します。 **RetailSDK\\Packages\\RetailServer\\Code\\web.config** ファイルの **extensionComposition** セクションに次の行を追加します。
-
-    ``` xml
-    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
-    ```
-
-7. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
-8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
-
-### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Modern POS のオフライン モードでのデジタル署名を有効にします。
-
-Modern POSでオフライン モードでのデジタル署名を有効にするには、新しい端末で Modern POS を有効化した後、これらの手順に従う必要があります。
-
-1. POS にサインインします。
-2. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **ダウンロードの保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
-3. POS からのサインアウト
-4. オフライン データベースが完全に同期するため少しの間待ちます。
-5. POS にサインインします。
-6. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **オフライン データベースで取引を保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
-7. Modern POS を再起動します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

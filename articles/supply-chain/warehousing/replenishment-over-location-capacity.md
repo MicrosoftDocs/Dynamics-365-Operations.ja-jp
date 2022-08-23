@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 543afe2e689fa787158551bec64e2458141be71c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899240"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220090"
 ---
 # <a name="replenishment-over-location-capacity"></a>場所の能力を超える補充
 
@@ -41,7 +41,7 @@ ms.locfileid: "8899240"
 
 ### <a name="enable-sample-data"></a>サンプルデータの有効化
 
-ここで指定されたサンプル レコードと値を使用して [シナリオ例](#example-scenario) を実行するには、標準の [デモ データ](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
+ここで指定されたサンプル レコードと値を使用して [シナリオ例](#example-scenario) を実行するには、標準の [デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
 
 ### <a name="location-profile"></a>場所プロファイル
 

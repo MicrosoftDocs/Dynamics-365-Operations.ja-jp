@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124501"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219067"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Management 10.0.26 (2022 年 5 月) の新機能および変更された機能
 
@@ -35,7 +35,7 @@ ms.locfileid: "9124501"
 |---|---|---|---|
 | 在庫および物流 | [高度な倉庫管理品目をサポートする在庫可視性の手持在庫に対するクエリ](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [WMS 品目に対応した在庫可視化](../inventory/inventory-visibility-whs-support.md) | 機能管理:<br>*在庫可視化で在庫品目を有効化* |
 | 在庫および物流 | [在庫の可視化アドインの納期回答可能在庫](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility の手持変更スケジュールと納期回答可能在庫](../inventory/inventory-visibility-available-to-promise.md) | サービス コンフィギュレーションによって有効 |
-| 製造 | [生産現場の実行インターフェイスの CW 品目](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*(プレビュー) 生産現場の実行インターフェイスからの CW 品目に関するレポート* |
+| 製造 | [生産現場の実行インターフェイスの CW 品目](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェイスからの CW 品目に関するレポート* |
 | 製造 | 生産現場の実行インターフェース上の [自分の職務] タブ <!-- KFM: Add link to release plan when available --> | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェース上の [自分の職務] タブ* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張

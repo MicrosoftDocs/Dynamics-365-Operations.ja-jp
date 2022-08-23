@@ -1,27 +1,27 @@
 ---
 title: 小売価格レポート
 description: この記事には、さまざまな製品の今後の価格変更を表示するために使用できる価格レポート機能の概要が含まれます。
-author: shajain
+author: ShalabhjainMSFT
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: 16181
-ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 84025cf148e1b5a92b78593fc093c629a3af4764
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 16181
+ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 09350d15660978126d36199a3b4e93f6be5fe157
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899044"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269030"
 ---
 # <a name="retail-price-reports"></a>小売価格レポート
 

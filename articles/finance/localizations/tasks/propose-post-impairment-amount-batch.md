@@ -1,24 +1,24 @@
 ---
 title: バッチごとの減損損失の提案と転記
 description: このタスクは、バッチによる減損損失額の提案と転記について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62d48eb9e7e5e20e4e0da050239cc1308d2b36a930df8f0577fb29f523b6fb33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
+ms.openlocfilehash: 88fa2d66d57a8e1cc1052ab78750a0b819750211
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746297"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275200"
 ---
 # <a name="propose-and-post-the-impairment-amount-by-batch"></a>バッチごとの減損損失の提案と転記
 

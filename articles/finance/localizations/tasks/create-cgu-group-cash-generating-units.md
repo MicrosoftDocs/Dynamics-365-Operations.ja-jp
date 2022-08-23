@@ -1,24 +1,24 @@
 ---
 title: CGU グループおよび資産グループの作成
 description: 日本では、固定資産の減損は、個々の固定資産または資産グループに基づき決定することができます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmentCashGenUnit_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44d6ebe7f324b4a5dc6a04c6c6a814ce9f48d622
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmentCashGenUnit_JP
+ms.openlocfilehash: e0a9b592d069518e785a37d53d3f0e6535531bd7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565985"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279172"
 ---
 # <a name="create-cgu-group-and-cash-generating-units"></a>CGU グループおよび資産グループの作成
 

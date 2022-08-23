@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895199"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227778"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>前払請求書と前払
 
@@ -78,6 +78,8 @@ ms.locfileid: "8895199"
 仕入先の前払請求書を記録するには、**発注書** ページで **前払請求書** オプションを選択して **仕入先請求書** ページに移動します (**買掛金勘定\>共通\>発注書\>すべての発注書\>請求書タブ\>前払請求書**)。 請求書番号など、前払請求書の情報を入力します。 前払請求書の数量は変更できません。 仕入先が発注書で定義されている前払金額の一部の金額を請求している場合は、単位価格を更新して部分的な値を反映できます。
 
 前払請求書を転記すると、仕入先残高と前払勘定が更新されます。 発注書に含まれる前払定義の **前払申請** の値も更新されます。 転記済前払伝票の既定の財務分析コードエントリは、発注書のヘッダー情報から取得されます。
+
+**機能管理** ページの **仕入先前払請求書の請求書明細行の財務分析コードをロックする** 機能が有効になっている場合は、前払いヘッダーまたは明細行の分析コードを更新できません。 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>前払請求書の支払の転記および決済
 次に、前払請求書は **支払仕訳帳** ページから支払われます。 支払仕訳帳にアクセスするには、**買掛金勘定\>仕訳帳\>支払\>支払仕訳帳** をクリックします。 支払の決済を前払請求書に転記した後で、発注書の **前払申請の残り** 値が更新されます。

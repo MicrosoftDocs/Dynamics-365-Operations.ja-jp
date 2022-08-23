@@ -4,19 +4,19 @@ description: この記事では、Warehouse Management モバイル アプリに
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895499"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220152"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのステップ タイトルとインストラクションのカスタマイズ
 
@@ -30,10 +30,7 @@ ms.locfileid: "8895499"
 
 ## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>倉庫アプリ ステップの指示機能の有効
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *倉庫アプリ ステップ インストラクション*
+この機能は使用する前にシステムでオンにする必要があります。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *倉庫アプリのステップ* 機能を検索して、この機能をオンまたはオフにできます。
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>アプリ内のステップ タイトルとステップ インストラクション
 

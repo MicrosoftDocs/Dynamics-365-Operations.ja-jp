@@ -1,24 +1,24 @@
 ---
 title: JBA 形式で EFT 支払ファイルを生成
 description: この記事では、JBA 形式の EFT ファイルを生成する方法を説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5dd09b9468b185e4b20656f938cace6c0c391d84
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: 2ea7043e52eff6647ba39b2b904e212636fef8d9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846442"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281194"
 ---
 # <a name="generate-eft-payment-file-with-jba-format"></a>JBA 形式で EFT 支払ファイルを生成
 

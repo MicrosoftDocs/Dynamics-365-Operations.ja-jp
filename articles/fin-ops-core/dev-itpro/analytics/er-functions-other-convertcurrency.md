@@ -1,25 +1,25 @@
 ---
 title: CONVERTCURRENCY ER 関数
 description: この記事では、CONVERTCURRENCY 電子申告 (ER) 関数の使用方法についての情報を提供します。
-author: NickSelin
+author: kfend
 ms.date: 12/17/2019
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e51086d977652e4be4c19390a824d4f4507b60d3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: ac9a1cbb1c0a4b381a4e268f563c6ab0dd9c8053
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898465"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275515"
 ---
 # <a name="convertcurrency-er-function"></a>CONVERTCURRENCY ER 関数
 

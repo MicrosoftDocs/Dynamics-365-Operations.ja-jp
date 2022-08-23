@@ -1,24 +1,24 @@
 ---
 title: 圧縮記帳のある固定資産の処分
 description: このタスクでは、圧縮記帳のある固定資産の日本での処理方法について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3990c5dc9739d83cd916dc3ed07793f37e4106a6
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
+ms.openlocfilehash: e5398563b83b60d629ad18f88a85e085b1d59de7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565612"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267642"
 ---
 # <a name="dispose-of-a-fixed-asset-with-reduction-entry"></a>圧縮記帳のある固定資産の処分
 

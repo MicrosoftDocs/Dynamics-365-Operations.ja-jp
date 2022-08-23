@@ -1,26 +1,26 @@
 ---
 title: 画像のトリミング
 description: この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーの画像のトリミング方法について説明します。
-author: psimolin
+author: josaw1
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8618ef19593c362853fe8441c249dd4580d65737
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: 0c4b8d0d1d4625aefbd1e3a6894612df10e7ceaf
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893064"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278046"
 ---
 # <a name="crop-images"></a>画像のトリミング
 

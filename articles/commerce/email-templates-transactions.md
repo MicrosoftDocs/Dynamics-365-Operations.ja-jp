@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910553"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279571"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>トランザクション イベント用の電子メール テンプレートの作成
 
@@ -117,7 +117,29 @@ Dynamics 365 Commerce は、次の通知タイプをサポートしています�
 
 ### <a name="customer-created"></a>顧客が作成されました
 
-*作成された顧客* の通知タイプは、Commerce 本部で新しい顧客エンティティが作成されるとトリガーされます。
+*作成された顧客* の通知タイプは、Commerce 本部で新しい顧客エンティティが作成されるとトリガーされます。 
+
+顧客作成通知を有効にするには、Commerce headquarters で **小売とコマース \> 本社の設定 \> パラメーター \> コマース パラメーター \> 全般** に移動します。 **電子メール通知プロファイル** ドロップダウン リストで、顧客作成の通知タイプを含む電子メール通知プロファイルを選択します。 
+
+既定では、顧客が作成したイベントは、**顧客とチャネル要求の同期** バッチ ジョブと共に headquarters に アップロードされます。 リアルタイム サービスの呼び出しを使用してこれらのイベントを送信する場合は、顧客作成テンプレートのメール ID を **newCust** に設定します。 ただし、リアルタイム サービスの呼び出しは "ファイアー アンド フォーゲット" 呼び出しであり、バッチ ジョブが提供する代替ロジックまたは再試行ロジックがないので、推奨されません。
+
+> [!NOTE] 
+> 顧客作成通知を有効にすると、法人内のすべてのチャネルで作成された顧客は、顧客作成メールを受け取ります。 現在、顧客作成通知を 1 つのチャネルに制限することはできません。  
+
+バッチ ジョブを通じて呼び出されると、顧客作成通知タイプは以下のプレースホルダに対応します。
+
+| プレースホルダー名 | Description                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | アカウントを作成した顧客の姓と名。 |
+
+リアルタイム サービスの呼び出しを通じて呼び出されると、顧客作成通知タイプは以下のプレースホルダに対応します。
+
+| プレースホルダー名 | Description                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Name             | アカウントを作成した顧客の姓と名。 |
+| メール            | アカウントを作成した顧客のメール アドレス。    |
+| 電話番号            | アカウントを作成した顧客の電話番号。      |
+| URL              | アカウントの作成時に顧客によって提供された URL。 |
 
 ### <a name="b2b-prospect-approved"></a>企業間見込顧客が承認されました
 

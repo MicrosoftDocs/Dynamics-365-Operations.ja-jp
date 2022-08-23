@@ -2,21 +2,21 @@
 title: 発注書および請求書の減額後の繰り越し予算の更新
 description: この記事では、発注書がキャンセルまたは減額された場合、および請求書が減額された場合の繰り越し予算に発生したことをどのように管理するかについて説明します。
 author: TaylorVH
-ms.date: 02/11/2022
+ms.date: ''
 ms.topic: article
-ms.search.form: LedgerFund
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: v-savanh
-ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2022-02-01
-ms.openlocfilehash: 7f0ef0ffdf697609e811f754b4378b1f7a81c494
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: Version 1611
+ms.search.form: LedgerFund
+ms.openlocfilehash: f51839b6890e39a2f2c5867977f3935ab43e2c5d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897961"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280532"
 ---
 # <a name="update-the-carry-forward-budget-after-reductions-in-purchase-orders-and-invoices"></a>発注書および請求書の減額後の繰り越し予算の更新
 

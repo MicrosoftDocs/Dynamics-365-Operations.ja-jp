@@ -1,26 +1,26 @@
 ---
 title: 売上グループを使用した販売時点管理 (POS) でのコミッションの追跡
 description: 顧客からの支援、アップセリング、クロスセリング、トランザクションの処理を担当したアソシエイトの売上を追跡するのは、一般的な小売業務です。
-author: jblucher
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 261234
-ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 261234
+ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
+ms.search.industry: Retail
+ms.openlocfilehash: 5a5cdf57d8c920b105e7f4a457b064cb2ceba242
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770912"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272798"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>売上グループを使用した販売時点管理 (POS) でのコミッションの追跡
 

@@ -1,24 +1,24 @@
 ---
 title: 決済トランザクションを使用した仕入先月次締め請求書の決済
 description: 日本では、支払は月次締め請求書に対して行われ決済されます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: VendConsInvoice_JP, VendTable, VendOpenTrans
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8da8be016a85ae10a8d62a7f373168ded8a212df
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: VendConsInvoice_JP, VendTable, VendOpenTrans
+ms.openlocfilehash: e1bc1b39a10924ce75588e54e47f77a0c9596fd9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566107"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292169"
 ---
 # <a name="settle-vendor-consolidated-invoices-by-using-settle-transactions"></a>決済トランザクションを使用した仕入先月次締め請求書の決済
 

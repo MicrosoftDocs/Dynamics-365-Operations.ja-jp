@@ -1,24 +1,24 @@
 ---
 title: 資産グループの減損損失の提案と転記
 description: 日本では、減損金額の計算後に、その金額を固定資産仕訳帳に提案し転記することができます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93267a8ac6d876ffb1de830f86ced3318cfa010e
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
+ms.openlocfilehash: 5ef46dd500f590932a7b890dc3cbe59f640c260b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565510"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280579"
 ---
 # <a name="propose-and-post-the-impairment-amount-on-a-cash-generating-unit"></a>資産グループの減損損失の提案と転記
 

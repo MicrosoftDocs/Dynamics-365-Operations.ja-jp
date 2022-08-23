@@ -1,28 +1,26 @@
 ---
 title: 電子レポートのカスタマイズを構成して電子ドキュメントを生成する
 description: この記事では、Microsoft が提供する電子レポート (ER) の構成をカスタマイズして、カスタム電子ドキュメントを生成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854701"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278949"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>電子レポートのカスタマイズを構成して電子ドキュメントを生成する
 
@@ -310,7 +308,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 5. **名前** フィールドに、**請求書モデル (Litware)** と入力します。
 6. **構成の作成** を選択して、新しい ER の構成を追加します。
 
-これで、ER データ モデル デザイナーを使用して、**請求モデル (Litware)** の ER 構成のバージョン 50.1 を **ドラフト** の[状態](general-electronic-reporting.md#component-versioning)で編集できるようになります。
+これで、ER データ モデル デザイナーを使用して、**請求モデル (Litware)** の ER 構成のバージョン 50.1 を **ドラフト** 状態で編集できるようになります。
 
 ![構成ページの ER の構成 バージョン 50.1 です。](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 #### <a name="complete-a-custom-data-model-configuration"></a>カスタム データ モデルの構成を完了する
 
-他のカスタム ER の構成を追加できるように、カスタム ER データ モデル構成のバージョン 50.1 を使用して作業を[完了](general-electronic-reporting.md#component-versioning)する必要があります。
+他のカスタム ER の構成を追加できるように、カスタム ER データ モデル構成のバージョン 50.1 を使用して作業を完了する必要があります。
 
 1. **組織管理** \> **電子申告** \> **構成** の順に移動します。
 2. **構成** ページの左側ペインの構成ツリーで、**請求書モデル** を展開し、**請求書モデル (Litware)** を選択します。
@@ -394,7 +392,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>カスタム モデルの構成を完了する
 
-カスタム ER モデル マッピング構成のバージョン 50.19.1 を使用できるようにするには、作業を[完了](general-electronic-reporting.md#component-versioning)させる必要があります。
+カスタム ER モデル マッピング構成のバージョン 50.19.1 を使用できるようにするには、作業を完了させる必要があります。
 
 1. **組織管理** \> **電子申告** \> **構成** の順に移動します。
 2. **構成** ページの左側ペインの構成ツリーで、 **顧客請求書モデル** \> **顧客請求書モデル マッピング** を展開し、**請求書モデル マッピング (Litware)** を選択します。
@@ -428,7 +426,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 ![構成ページでカスタム形式の構成を追加します。](./media/er-quick-start3-adding-custom-format.png)
 
-これで、ER オペレーション デザイナーを使用して、**Peppol 売上請求書 (Litware)** の ER 構成のバージョン 11.2.2.1 を **ドラフト** の[状態](general-electronic-reporting.md#component-versioning)で編集できるようになります。
+これで、ER オペレーション デザイナーを使用して、**Peppol 売上請求書 (Litware)** の ER 構成のバージョン 11.2.2.1 を **ドラフト** の状態で編集できるようになります。
 
 ![構成ページの ER 構成の バージョン 11.2.2.1 です。](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 #### <a name="complete-a-custom-format-configuration"></a>カスタム形式の構成を完了する
 
-カスタム ER 形式の構成バージョン 11.2.2.1 を使用できるようにするには、作業を[完了](general-electronic-reporting.md#component-versioning)させる必要があります。
+カスタム ER 形式の構成バージョン 11.2.2.1 を使用可能にするには、作業を完了させる必要があります。
 
 1. **組織管理** \> **電子申告** \> **構成** の順に移動します。
 2. **構成** ページの左側ペインの構成ツリーで、**顧客請求書モデル** \> **UBL 売上請求書** \> **Peppol 売上請求書** を展開し、**Peppol 売上請求書 (Litware)** を選択します。
@@ -650,7 +648,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 3. アクション ペインの **ドキュメント** グループで、**送信** \> **原本** を選択します。
 
     > [!NOTE] 
-    > この時点では、**Peppol 売上請求書 (Litware)** ER 形式の設定には 2 つのバージョンがあり、どちらのバージョンにも [有効日](general-electronic-reporting.md#component-date-effectivity) の値がないため、最新のバージョンを使用して電子請求書を作成しています。
+    > これで **Peppol 売上請求書 (Litware)** ER 形式の構成には 2 つのバージョンがあり、どちらのバージョンにも有効日の値がないため、最新のバージョンを使用して電子請求書が生成されます。
 
 4. **自由書式の請求書**  ページを閉じます。
 

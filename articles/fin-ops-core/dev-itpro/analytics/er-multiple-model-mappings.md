@@ -1,24 +1,24 @@
 ---
 title: 1 つのモデル ルートに対する複数の派生マッピングの管理
 description: この記事では、1 つのモデル ルートに対して構成された複数の派生マッピングを管理する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.openlocfilehash: 868d47ccfebb9a9753d93344c72b10ae4353b0e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892482"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277511"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>1 つのモデル ルートに対する複数の派生マッピングの管理
 
@@ -106,7 +106,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
 3. **構成の作成** ドロップダウン ダイアログ ボックスの **新規** フィールドで、**名前から取得: 請求書モデル マッピング、Microsoft** を選択します。
 4. **名前** フィールドに、**請求書モデル マッピング Litware** と入力します。
 5. **構成の作成** を選択します。
-6. 派生マッピングの [下書き](general-electronic-reporting.md#component-versioning) バージョンを、実行時に使用可能として [マーク](er-quick-start2-customize-report.md#MarkFormatRunnable) します:
+6. 派生マッピングの [下書き](general-electronic-reporting.md) バージョンを、実行時に使用可能として [マーク](er-quick-start2-customize-report.md#MarkFormatRunnable) します:
 
     1. アクション ペインの **構成** タブにある **詳細設定** グループで、**ユーザー パラメーター** を選択します。
     2. **ユーザー パラメーター** ダイアログ ボックスで、**実行設定** オプションを **はい** に設定し、**OK** を選択します。

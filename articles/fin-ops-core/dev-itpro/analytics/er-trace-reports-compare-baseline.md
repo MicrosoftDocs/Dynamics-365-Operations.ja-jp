@@ -1,25 +1,25 @@
 ---
 title: 生成されたレポート結果を追跡し、ベースライン値と比較する
 description: この記事では、ベースライン レポート値で生成された電子申告 (ER) レポートの結果を比較する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 168060f6dee7420a496e06cc3a85f5b10239c2cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.openlocfilehash: f37405b548a321735abdd73da5c7cf3f4b00ff01
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847375"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278769"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>生成されたレポート結果を追跡し、ベースライン値と比較する
 

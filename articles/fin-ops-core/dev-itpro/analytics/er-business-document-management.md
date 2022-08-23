@@ -1,25 +1,25 @@
 ---
 title: ビジネス ドキュメント管理の概要
 description: この記事では、ER フレームワークのビジネス ドキュメント管理機能を使用する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
+ms.openlocfilehash: 0fab7e1a36d9b4092cf4353533704859e83bed26
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903620"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288291"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 

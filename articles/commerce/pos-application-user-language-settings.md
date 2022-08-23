@@ -1,27 +1,27 @@
 ---
 title: 販売時点管理 (POS) アプリケーションおよびユーザー言語の設定
 description: この記事では、Modern POS (MPOS) とクラウド POS の言語設定を変更する方法を説明します。
-author: jblucher
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 78891
-ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 15490885b5ce366edbab669893f3c3e36585f308
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 78891
+ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
+ms.search.industry: Retail
+ms.search.form: HcmWorker, RetailStoreTable
+ms.openlocfilehash: 663e9a3558bd4d0556644fe5ad6f7f832a18ded5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863350"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288382"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>販売時点管理 (POS) アプリケーションおよびユーザー言語の設定
 

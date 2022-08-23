@@ -1,24 +1,26 @@
 ---
 title: 顧客の為替手形の裏書きによって日本の支払を設定します
 description: このタスクでは、日本での顧客の為替手形の裏書きによる支払いの設定について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustPosting,  CustParameters
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c97cf32020551cde4bc3a0e8d431e8cd6f5d63e7c17d0f7938ecf4ba57fb5a15
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form:
+- CustPosting
+- CustParameters
+ms.openlocfilehash: 1b1b090ccc3d3f8f67b1fac296521e84d307ab53
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776448"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278170"
 ---
 # <a name="setup-japan-payment-by-endorsing-a-customer-bill-of-exchange"></a>顧客の為替手形の裏書きによって日本の支払を設定します
 

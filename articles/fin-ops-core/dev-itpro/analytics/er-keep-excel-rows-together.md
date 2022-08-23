@@ -1,26 +1,26 @@
 ---
 title: 同じ Excel ページに行をまとめる ER 形式を設計する
 description: この記事では、同じ Microsoft Excel ページで一緒に行を維持する電子レポート (ER) 形式を設計する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: 7ecc4358a0d4d9ae9e729393bd3ac4cefbf15ad2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854672"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287961"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>同じ Excel ページに行をまとめる ER 形式を設計する
 

@@ -2,7 +2,7 @@
 title: Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 description: この記事では、Dynamics 365 Supply Chain Management から削除された、または削除される予定の機能について説明します。
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171518"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218806"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
@@ -33,6 +33,17 @@ ms.locfileid: "9171518"
 > [!NOTE]
 > 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Supply Chain Management 10.0.29 リリースの削除済みまたは非推奨の機能
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>移転価格が課税される在庫移動オーダー
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **廃止 / 削除の理由** | [在庫移動注文の移動価格に課税する](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)機能は、[インド向け在庫移動注文](../../finance/localizations/apac-ind-stock-transfer.md)機能に置き換わります。 |
+| **別の機能で置き換えられているか?**   | はい、[在庫移動注文の移動価格に課税する](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)機能は、[インド向け在庫移動注文](../../finance/localizations/apac-ind-stock-transfer.md)機能に置き換わります。 |
+| **影響を受ける製品領域** | Supply Chain Management - 在庫 |
+| **配置オプション** | クラウドとオンプレミス |
+| **状態** | <p>現在非推奨です。 *移動価格に課税される在庫移動注文* の機能はバグ修正やセキュリティ修正のサポートを受けられなくなります。</p><p>2023 年 4 月以降、お客様には既定で、改良機能の *インド向け在庫移動注文* をご利用いただくことになります。 2023 年 10 月以降、*移動価格に課税される在庫移動注文* 機能は使えなくなり、お客様には改良された *インド向け在庫移動注文* 機能への移行をご案内する予定です。</p><p>詳細については、[インド向け在庫移動オーダー](../../finance/localizations/apac-ind-stock-transfer.md)を参照してください。</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Supply Chain Management 10.0.19 リリースの削除済みまたは非推奨の機能
 

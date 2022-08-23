@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 34f74c2a889b3a659831897897e2086b277256e0
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907148"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219781"
 ---
 # <a name="gs1-bar-codes"></a>GS1 バーコード
 
@@ -115,7 +115,7 @@ Supply Chain Management で GS1 バーコードの認識とでコードを正し
 
 ### <a name="turn-on-the-enhanced-parser-for-gs1-barcodes-feature"></a>GS1 バーコードの拡張パーサー機能を有効にする
 
-GS1 バーコードを使用する場合、*GS1 バーコードの拡張パーサー* 機能も有効にすることをお勧めします。 この機能により、GS1 バーコード パーサーの実装が改善されます。 次の改善点が追加されます。
+GS1 バーコードを使用する場合、*GS1 バーコードの拡張パーサー* 機能もオンにすることをお勧めします。 この機能により、GS1 バーコード パーサーの実装が改善されます。 次の改善点が追加されます。
 
 - これは、記号データ解析に関する GS1 一般仕様アルゴリズムに従っており、記号内のデータが仕様に従って有効であるかどうかを検証します。
 - **識別子の最大長** 値を設定する必要はありません。また、構成されているアプリケーション識別子から最も長い接頭語照合が使用されます。

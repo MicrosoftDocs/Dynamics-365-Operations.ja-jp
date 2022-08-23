@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070322"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219505"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -279,7 +279,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 #### <a name="enable-sample-data"></a>サンプルデータの有効化
 
-指定されたサンプル レコードと値を使用してこれらのシナリオを実行するには、標準のデモ データがインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
+指定されたサンプル レコードと値を使用してこれらのシナリオを実行するには、標準の [デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
 
 #### <a name="add-a-menu-item-for-receiving-load-items-when-a-mobile-device-is-used"></a>モバイル デバイスの使用時に積荷品目を入庫するメニュー項目を追加する
 

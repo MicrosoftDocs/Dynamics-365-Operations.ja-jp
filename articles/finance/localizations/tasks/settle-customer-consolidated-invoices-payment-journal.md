@@ -1,24 +1,24 @@
 ---
 title: 支払仕訳帳を使用した顧客月次締め請求書の決済
 description: 日本では、支払いは顧客の月次締め請求書に対して作成され決済されます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustConsInvoice_JP, LedgerJournalTable, LedgerJournalTransCustPaym, CustPaymProposalEdit
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 111cb5d3b3144638b1c2c9e024cf49dcb7b51370
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.search.form: CustConsInvoice_JP, LedgerJournalTable, LedgerJournalTransCustPaym, CustPaymProposalEdit
+ms.openlocfilehash: b7030509a169c630eede0ec6a1864a85973a27b3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601440"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270542"
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-a-payment-journal"></a>支払仕訳帳を使用した顧客月次締め請求書の決済
 

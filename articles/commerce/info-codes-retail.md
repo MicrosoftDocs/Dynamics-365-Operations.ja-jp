@@ -1,27 +1,27 @@
 ---
 title: 情報コードおよび情報コード グループ
 description: この記事は、情報コード、情報コード グループとその使用方法に関する概要を示します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 22761
-ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2f905fda2224da8fd15a287f20339a9bfd1cab992024c195ca040ce2c1c671d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 22761
+ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
+ms.search.industry: Retail
+ms.search.form: RetailInfocodeTable
+ms.openlocfilehash: a6fc84db368c602f74778eb0a44ac52798dc5161
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729122"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273506"
 ---
 # <a name="info-codes-and-info-code-groups"></a>情報コードおよび情報コード グループ
 

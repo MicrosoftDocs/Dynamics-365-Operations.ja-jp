@@ -1,25 +1,25 @@
 ---
 title: 印刷可能な FTI フォームの生成
 description: この記事では、電子レポート (ER) フレームワークを使用して、印刷可能な自由書式の請求書 (FTI) フォームを Microsoft Office ドキュメントとして生成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.openlocfilehash: a451eb7a4b7e328ac4512ee4e757e23cfb345e82
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868832"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274082"
 ---
 # <a name="generate-printable-fti-forms"></a>印刷可能な FTI フォームを生成する
 

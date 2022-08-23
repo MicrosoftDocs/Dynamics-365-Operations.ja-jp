@@ -1,24 +1,24 @@
 ---
 title: ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 description: この記事では、外部ファイルから Microsoft Microsoft Dynamics 365 Finance アプリにデータをインポートできるように電子申告構成を設計する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
+ms.openlocfilehash: 199873af83ec14d441aa3927dc84509486e4927a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865896"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9290157"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 

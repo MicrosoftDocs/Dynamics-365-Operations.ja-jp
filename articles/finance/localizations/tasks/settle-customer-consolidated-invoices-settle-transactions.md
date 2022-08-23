@@ -1,24 +1,24 @@
 ---
 title: 決済トランザクションを使用した顧客月次締め請求書の決済
 description: この記事では、月次締め請求書に対して作成および決済される支払に関する情報を提供します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5910acd38021583c5f692144567b6a6d34d00658
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
+ms.openlocfilehash: 14aa9e1d0898c362d7727ee2522701c29d2e5302
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855248"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278167"
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-settle-transactions"></a>決済トランザクションを使用した顧客月次締め請求書の決済
 

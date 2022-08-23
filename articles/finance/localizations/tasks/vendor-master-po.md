@@ -1,24 +1,24 @@
 ---
 title: 月次締め請求書の対象にする仕入先マスターおよび発注書の設定
 description: 日本では通常、仕入先はトランザクションに月次締め請求書を使用します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: VendTable, PurchTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1dde5f9c592e908566f0a7cada66212ba8cfe43fc54344cb8ed8c751831f3f0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: VendTable, PurchTable
+ms.openlocfilehash: 4970d75bda595bbb4559dfe4faba90a1b9405d60
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741475"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285722"
 ---
 # <a name="setup-vendor-master-and-purchase-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象にする仕入先マスターおよび発注書の設定
 

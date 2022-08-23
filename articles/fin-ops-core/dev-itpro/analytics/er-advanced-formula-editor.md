@@ -1,26 +1,26 @@
 ---
 title: 電子申告の高度なフォーミュラ エディター
 description: この記事では、高度なフォーミュラ エディターを使用して、電子申告 (ER) モデル マッピングおよび形式コンポーネントで式を構成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 06/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f54ab248e38d87b0a9fb7a73143f56fa704a3f67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
+ms.openlocfilehash: 269102028962cf1ebae599b9885f97871785a551
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869102"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286220"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>電子申告の高度なフォーミュラ エディター
 

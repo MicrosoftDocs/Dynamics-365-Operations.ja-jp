@@ -1,25 +1,25 @@
 ---
 title: ROUND ER 関数
 description: この記事では、ROUND 電子申告 (ER) 関数の使用方法についての情報を提供します。
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dce96077ab25f8e545bb99d4bed8fc5bba61e2a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 57d41ed92a5577fdc5fffeccef2834e9b6fb5197
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905202"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286062"
 ---
 # <a name="round-er-function"></a>ROUND ER 関数
 

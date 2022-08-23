@@ -1,24 +1,24 @@
 ---
 title: 支払手数料の生成および転記
 description: このタスクでは、日本の支払手数料を生成および転記する方法について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendTableLookup
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ce87dde182652dadb6da976a4063045e2cae1701e604c67f1c36a51f2660c01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendTableLookup
+ms.openlocfilehash: 8c177e5a3a1ec44799e4f91786e0bff2df872d77
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782794"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270547"
 ---
 # <a name="generate-and-post-payment-fee"></a>支払手数料の生成および転記
 

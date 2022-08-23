@@ -1,25 +1,25 @@
 ---
 title: 計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 description: この記事では、ER データ ソースに対して計算済みフィールド タイプを使用する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 512ef44d0b0867227ebdc56f83cd6560be64c026
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108332"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276021"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 

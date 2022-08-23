@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41b9538d3064bad24c4c5c60d401605e47e9c655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2dc24fed1ec71432d9e2a3e1cb5b366267c2938b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905457"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218745"
 ---
 # <a name="warehouse-app-event-processing"></a>倉庫アプリのイベント処理
 
@@ -28,7 +28,7 @@ Supply Chain Management で実行されるバッチ ジョブでは、キュー�
 
 ## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>倉庫アプリのイベント処理機能をオンまたはオフにする
 
-Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *倉庫アプリ イベントの処理* 機能を検索して、この機能をオンまたはオフにできます。
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management のバージョン 10.0.29 では、この機能は必須です。 そのため、既定では有効で、再び無効にできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースで *倉庫アプリ イベントの処理* 機能を検索して、この機能を有効または無効にすることができます。
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>倉庫アプリのイベントを処理するためのバッチ ジョブを設定する
 

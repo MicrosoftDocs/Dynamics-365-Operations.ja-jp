@@ -1,24 +1,26 @@
 ---
 title: 単一資産の資産耐用年数期間中の減価償却方法の変更
 description: 日本では、固定資産の耐用年数期間中、減価償却方法を変更することが許可されています。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetTable, AssetBook, AssetDepProfileChange_JP,  AssetUndepreciatedBalancedSchedule_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c374befd22c7cf18b38afdc9c7c6dc1c023d44c8cdcc2d8a53e8530dea28e06d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form:
+- AssetTable, AssetBook, AssetDepProfileChange_JP
+- AssetUndepreciatedBalancedSchedule_JP
+ms.openlocfilehash: c3a62394fcd2ee7786b4b14ffae2d936b4f4f9f7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723733"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270573"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset"></a>単一資産の資産耐用年数期間中の減価償却方法の変更
 

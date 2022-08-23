@@ -1,24 +1,24 @@
 ---
 title: 月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
 description: この記事では、月次締め請求書の設定と構成について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: VendParameters, PaymDay, PaymTerm
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9eeb320979dca5c1e5730d75f821a1e3cb5f590b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: VendParameters, PaymDay, PaymTerm
+ms.openlocfilehash: b4bea02711fcdb4ea8b4951fceef3a130a15f11c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887822"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276476"
 ---
 # <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
 

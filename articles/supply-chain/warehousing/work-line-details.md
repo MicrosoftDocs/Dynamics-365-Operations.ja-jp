@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3dd9f4930303b1e3506e613d5437613138944430
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1017527419acc2e4cb42b2bcb83131339d82b665
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877308"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218885"
 ---
 # <a name="work-line-details"></a>作業ラインの詳細
 
@@ -52,7 +52,7 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 
 ### <a name="make-sample-data-available"></a>サンプル データを有効化する
 
-ここで指定されたサンプル レコードと値を使用してこのデモを実行するには、標準の [デモ データ](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
+ここで指定されたサンプル レコードと値を使用してこのデモを実行するには、標準の [デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
 
 このデモは、実稼働システムで作業するときのガイダンスとして使用することもできます。 ただし、独自の値に置き換える必要があり、標準のデモ データが提供するいくつかのタイプの必要なレコードが不足している可能性があります。
 

@@ -1,24 +1,24 @@
 ---
 title: 資産除去責務に関連するトランザクションの照会
 description: 日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetTrans, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationExplorer_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c085e55328a8ad5fc8657fb3e2643dea63442bf50ce6dd00fad94caf46ec6a49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: AssetTrans, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationExplorer_JP
+ms.openlocfilehash: a67a548a1c4eb3a60bbb9b60a4cc2c6abdf5be16
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754865"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283778"
 ---
 # <a name="inquiries-of-the-asset-retirement-obligation-related-transactions"></a>資産除去責務に関連するトランザクションの照会
 

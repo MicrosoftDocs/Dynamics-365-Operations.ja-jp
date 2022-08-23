@@ -1,7 +1,7 @@
 ---
 title: ユーザー インターフェイスの要素
 description: この記事では、アプリのユーザー インターフェイス (UI) の要素について説明します。
-author: tlefor
+author: jasongre
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 60f5abfe009b45adc5ae5f064f1b5c367f2844f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: de6e4f8472cf73fb1d9874a57442622c0da23b54
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906503"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275945"
 ---
 # <a name="user-interface-elements"></a>ユーザー インターフェイスの要素
 

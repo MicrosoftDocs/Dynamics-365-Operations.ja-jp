@@ -1,28 +1,26 @@
 ---
 title: カスタム電子ドキュメントを生成するための電子申告形式の調整
 description: この記事では、Microsoft が提供する電子レポート (ER) 形式を調整して、カスタム電子ドキュメントを生成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886794"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283561"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>カスタム電子ドキュメントを生成するための電子申告形式の調整
 
@@ -271,7 +269,7 @@ Microsoft Dynamics 365 Finance の現在のインスタンスに標準的な ER 
 
 6. **構成の作成** を選択します。
 
-**BACS (英国カスタム)** ER 形式コンフィギュレーションのバージョン 1.1.1 が作成されます。 このバージョンは **ドラフト** の[状態](general-electronic-reporting.md#component-versioning) で、編集することができます。 カスタム ER 形式の現在の内容は、Microsoft が提供する形式の内容と一致しています。
+**BACS (英国カスタム)** ER 形式コンフィギュレーションのバージョン 1.1.1 が作成されます。 このバージョンは **ドラフト** の状態で、編集することができます。 カスタム ER 形式の現在の内容は、Microsoft が提供する形式の内容と一致しています。
 
 ![BACS (英国カスタム) ER 形式のコ構成バージョン 1.1.1 の構成ページ。](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Microsoft Dynamics 365 Finance の現在のインスタンスに標準的な ER 
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a> カスタム形式を実行可能としてマーク
 
-これで、カスタム書式の最初のバージョンが作成され、ステータスが **ドラフト** になり、テストを目的として実行できます。 レポートを実行するには、カスタム ER 形式を参照する支払方法を使用して、仕入先支払を処理する必要があります。 既定では、申請から ER 形式を呼び出すとき、**完了済** または **共有** のステータスを持つバージョンのみが[考慮](general-electronic-reporting.md#component-versioning) されます。 この動作により、未完成の設計を持つ ER 形式が使用されるのを防ぐことができます。 ただし、テストの実行には、**ドラフト** のステータスを持つ ER 形式のバージョンをアプリケーションに強制的に使用させることができます。 これにより、変更が必要な場合は、現在の形式バージョンを調整できます。 詳細については、[適合性](electronic-reporting-destinations.md#applicability) を参照してください。
+これで、カスタム書式の最初のバージョンが作成され、ステータスが **ドラフト** になり、テストを目的として実行できます。 レポートを実行するには、カスタム ER 形式を参照する支払方法を使用して、仕入先支払を処理する必要があります。 既定では、申請から ER 形式を呼び出すと、**完了済** または **共有** のステータスを持つバージョンのみが考慮されます。 この動作により、未完成の設計を持つ ER 形式が使用されるのを防ぐことができます。 ただし、テストの実行には、**ドラフト** のステータスを持つ ER 形式のバージョンをアプリケーションに強制的に使用させることができます。 これにより、変更が必要な場合は、現在の形式バージョンを調整できます。 詳細については、[適合性](electronic-reporting-destinations.md#applicability) を参照してください。
 
 ER 形式のドラフト バージョンを使用するには、ER 形式を明示的にマークする必要があります。
 

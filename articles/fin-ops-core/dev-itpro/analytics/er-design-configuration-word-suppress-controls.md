@@ -1,24 +1,26 @@
 ---
 title: 生成されたレポートの Word コンテンツ コントロールを非表示にする
 description: この記事では、コンテンツ コントロールが非表示の Microsoft Word ファイルとしてレポートを生成する電子申告 (ER) 形式の構成方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 02/11/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: e11b697b78c89a1758fa9e81c901bd29fe281539
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: 8787d43a0c453d49dd1d0efcbb7b5d276721be9e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882116"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267317"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>生成されたレポートの Word コンテンツ コントロールを非表示にする
 
@@ -42,7 +44,7 @@ Dynamics 365 Finance のバージョン 10.0.6 以降では、ER 形式のフォ
 これらのタスク ガイドの手順を完了すると、次の項目が準備されます。
 
 - Word 形式でドキュメントを生成するために構成される **ワークシート レポートのサンプル** ER 形式
-- **実行可能** としてマークされている **サンプル ワークシート レポート** ER 形式の [ドラフト](general-electronic-reporting.md#component-versioning) バージョン
+- **実行可能** としてマークされている **サンプル ワークシート レポート** ER 形式の ドラフト バージョン
 - 仕入先支払の処理のために **サンプル ワークシート レポート** ER 形式を使用するために構成される **電子** 支払メソッド
 
 また、サンプル レポート用に次のテンプレートをダウンロードして保存する必要があります。

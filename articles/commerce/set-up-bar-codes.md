@@ -1,27 +1,27 @@
 ---
 title: バーコードの設定
 description: この記事は、Dynamics 365 Commerce でのバーコードの使用方法について説明します。
-author: jblucher
+author: josaw1
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 15971
-ms.assetid: 6b4b2ac2-0344-41aa-8818-62c30017d5ac
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d2b6754dadd3bf6ad797ecf2831c486fc03f64fcc5e0bb570a7adc98ae42d106
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 15971
+ms.assetid: 6b4b2ac2-0344-41aa-8818-62c30017d5ac
+ms.search.industry: Retail
+ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
+ms.openlocfilehash: 5771ada4a9bba92fb32155ae425f08d6429b46e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743962"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271799"
 ---
 # <a name="set-up-bar-codes"></a>バーコードの設定
 

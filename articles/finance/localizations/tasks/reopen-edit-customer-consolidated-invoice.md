@@ -1,24 +1,24 @@
 ---
 title: 顧客月次締め請求書の再オープンと編集
 description: この記事では、確認済の顧客月次締め請求書を再度開いて変更する方法について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustConsInvoice_JP, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b46b6acbf59c403294d3c444a5887b04ad2b5738
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: CustConsInvoice_JP, SysQueryForm
+ms.openlocfilehash: cc8b00a82e5dba85527d43910b355def3923cef7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871066"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282370"
 ---
 # <a name="reopen-and-edit-a-customer-consolidated-invoice"></a>顧客月次締め請求書の再オープンと編集
 

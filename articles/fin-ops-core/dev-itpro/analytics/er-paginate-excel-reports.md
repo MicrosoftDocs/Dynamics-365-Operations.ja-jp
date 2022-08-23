@@ -1,26 +1,26 @@
 ---
 title: ER フォーマットを設計して、Excel で生成されたドキュメントのページ設定をする
 description: この記事では、生成されたドキュメントのページ設定を Microsoft Excel で行う 電子レポート (ER) フォーマットを設計する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: e4a34dffda9e9b95f5d6c7ee382723663817ec6b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909281"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285004"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>ER フォーマットを設計して、Excel で生成されたドキュメントのページ設定をする
 
@@ -58,11 +58,11 @@ ms.locfileid: "8909281"
 5. **名前** フィールドで、**イントラスタット レポート Litware** を入力します。
 6. **構成の作成** を選択して、新規フォーマットを作成します。
 
-**イントラスタット レポート Litware** ER 形式コンフィギュレーションのバージョン 1.9.1 が作成されます。 このバージョンは **ドラフト** の[状態](general-electronic-reporting.md#component-versioning) で、編集することができます。 カスタム ER 形式の現在の内容は、Microsoft が提供する形式の内容と一致しています。
+**イントラスタット レポート Litware** ER 形式コンフィギュレーションのバージョン 1.9.1 が作成されます。 このバージョンは **ドラフト** の状態で、編集することができます。 カスタム ER 形式の現在の内容は、Microsoft が提供する形式の内容と一致しています。
 
 ### <a name="make-the-custom-format-runnable"></a>カスタム フォーマットを実行可能な状態にする
 
-カスタム フォーマットの最初のバージョンが作成され、状態が **ドラフト** になったため、テスト用にフォーマットを実行することができます。 レポートを実行するには、カスタム ER 形式を参照する支払方法を使用して、仕入先支払を処理します。 既定では、申請から ER 形式を呼び出すとき、**完了済** または **共有** のステータスを持つバージョンのみが[考慮](general-electronic-reporting.md#component-versioning) されます。 この動作により、未完成の設計を持つ ER 形式が使用されるのを防ぐことができます。 ただし、テストの実行には、**ドラフト** のステータスを持つ ER 形式のバージョンをアプリケーションに強制的に使用させることができます。 これにより、変更が必要な場合は、現在の形式バージョンを調整できます。 詳細については、[適合性](electronic-reporting-destinations.md#applicability) を参照してください。
+カスタム フォーマットの最初のバージョンが作成され、状態が **ドラフト** になったため、テスト用にフォーマットを実行することができます。 レポートを実行するには、カスタム ER 形式を参照する支払方法を使用して、仕入先支払を処理します。 既定では、申請から ER 形式を呼び出すと、**完了済** または **共有** のステータスを持つバージョンのみが考慮されます。 この動作により、未完成の設計を持つ ER 形式が使用されるのを防ぐことができます。 ただし、テストの実行には、**ドラフト** のステータスを持つ ER 形式のバージョンをアプリケーションに強制的に使用させることができます。 これにより、変更が必要な場合は、現在の形式バージョンを調整できます。 詳細については、[適合性](electronic-reporting-destinations.md#applicability) を参照してください。
 
 ER 形式のドラフト バージョンを使用するには、ER 形式を明示的にマークする必要があります。
 

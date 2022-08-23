@@ -1,24 +1,24 @@
 ---
 title: 裏書済受取手形の取消
 description: このタスクは、裏書きされた為替手形の取消について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseReverse, LedgerTransVoucher
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b89bf34d70863bdcade50331c6fced971236505
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseReverse, LedgerTransVoucher
+ms.openlocfilehash: 7891d4cd5e5ffa23af8c13b82740fcdf197b8863
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565604"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275197"
 ---
 # <a name="reverse-an-endorsed-bill-of-exchange"></a>裏書済受取手形の取消
 

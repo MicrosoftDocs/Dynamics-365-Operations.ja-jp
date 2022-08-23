@@ -1,24 +1,24 @@
 ---
 title: 訂正票での元の請求書への参照
 description: この記事では、元の請求書番号を関連する訂正票の設定や印刷する方法について説明します。
-author: ilkond
+author: mrolecki
 ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ''
+ms.openlocfilehash: f1f9ca3914aa02cc38ddfe9f8dd88eb7fc88fd4b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861534"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281238"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>訂正票での元の請求書への参照
 

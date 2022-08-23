@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845927"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219535"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>出荷連結ポリシーを構成する
 
@@ -61,7 +61,6 @@ ms.locfileid: "8845927"
 1. **倉庫** のクイックタブで、 **倉庫にリリースする出荷を連結する** オプションを *はい* に設定し ます。
 1. 連結が必要となるその他すべての倉庫に対して、手順 2 から 手順 4 を繰り返します。
 1. ページを閉じます。
-1. [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して、*出荷連結ポリシー* 機能を有効化します。 **機能管理** ワークスペースでは、この機能は *出荷連結* と呼ばれ ます。
 1. **倉庫管理  \> 設定 \> 倉庫へのリリース \> 出荷統合ポリシー** に移動します。 機能の有効化後は、新しい **出荷連結ポリシー** メニュー項目を表示するには、ブラウザーの更新が必要となる場合があります。
 1. アクション ウィンドウで、**既定の設定の作成** を選択して次のポリシーを作成します:
 
@@ -81,7 +80,6 @@ ms.locfileid: "8845927"
 
 次の手順に従って、新規環境における既定の出荷連結ポリシーを設定します。
 
-1. [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して、*出荷連結ポリシー* 機能を有効化します (まだ有効化していない場合)。 **機能管理** ワークスペースでは、この機能は *出荷連結* と呼ばれ ます。
 1. **倉庫管理  \> 設定 \> 倉庫へのリリース \> 出荷統合ポリシー** に移動します。
 1. アクション ウィンドウで、**既定の設定の作成** を選択して次のポリシーを作成します:
 

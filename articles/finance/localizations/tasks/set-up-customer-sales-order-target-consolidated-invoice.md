@@ -1,24 +1,24 @@
 ---
 title: 月次締め請求書の対象とする顧客および販売注文の設定
 description: 通常日本では、顧客はすべてのトランザクションに月次締め請求書を使用します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustTable, SalesTableListPage, SalesTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d40c44aae11b7c7ad400181c9017378842154ca5
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.search.form: CustTable, SalesTableListPage, SalesTable
+ms.openlocfilehash: cbd5347c570f53f894b1542dec35a3341e036188
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404061"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283775"
 ---
 # <a name="set-up-a-customer-and-sales-order-to-be-target-of-consolidated-invoice"></a>月次締め請求書の対象とする顧客および販売注文の設定
 

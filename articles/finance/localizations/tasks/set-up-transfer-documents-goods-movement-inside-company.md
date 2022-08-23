@@ -1,24 +1,24 @@
 ---
 title: 社内の商品移動の移動文書の設定
 description: この手順では、社内の製品移動に関わるドキュメントを設定する方法を示します。
-author: v-oloski
+author: AdamTrukawka
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-oloski
+ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 80805bf30b4be753d7543ed4c6de30401d36e981
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
+ms.openlocfilehash: 333c5b5e5cfa25e705c9864542517f8ec5532dfe
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601453"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282337"
 ---
 # <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>社内の商品移動の移動文書の設定
 

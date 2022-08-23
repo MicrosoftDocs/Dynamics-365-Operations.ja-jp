@@ -1,24 +1,24 @@
 ---
 title: 仕入先月次締め請求書の作成および確認
 description: この記事では、毎月の仕入先の請求書を集約して支払額を算出する方法を説明しています。
-author: ShylaThompson
+author: kfend
 ms.date: 10/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: VendConsInvoice_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 798cc0c7e4d870b6ff97261e5df822327e24d136
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: VendConsInvoice_JP
+ms.openlocfilehash: 271b7478118a21841586760ee8fc1f166b9551fe
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907657"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273761"
 ---
 # <a name="create-and-confirm-a-vendor-consolidated-invoice"></a>仕入先月次締め請求書の作成および確認
 

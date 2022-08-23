@@ -1,24 +1,26 @@
 ---
 title: JBA 支払ファイル形式の有効化
 description: 日本では、電子資金決済 (EFT) のファイル形式は全国銀行協会 (JBA) により指定されています。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendPaymMode
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6500f14ac2028a1a01a271bb91f14e48d1667fce
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form:
+- ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
+- VendPaymMode
+ms.openlocfilehash: 04480d112db67b956da4a68e7728941dca47b438
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565529"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292175"
 ---
 # <a name="enable-the-jba-payment-file-format"></a>JBA 支払ファイル形式の有効化
 

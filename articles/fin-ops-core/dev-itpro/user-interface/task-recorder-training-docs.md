@@ -1,26 +1,26 @@
 ---
 title: タスク レコーダーによるドキュメントやトレーニングの作成
 description: この記事では、タスク レコーダーとタスク ガイド、タスク記録の作成方法、また Microsoft タスク ガイドのカスタマイズ方法とそれをヘルプに含める方法について説明します。
-author: josaw1
+author: jasongre
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: tfehr
-ms.custom: 25391
-ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b556003edf2fe186f6b095e538f142fcf5a0bba5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 25391
+ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
+ms.search.form: SysHelpSetup
+ms.openlocfilehash: 175eb31c0ae4730544450ff8e073a73717e4207e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891817"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284914"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>タスク レコーダーによるドキュメントやトレーニングの作成
 

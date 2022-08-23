@@ -1,25 +1,25 @@
 ---
 title: POWER ER 関数
 description: この記事では、POWER 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
-author: NickSelin
+author: kfend
 ms.date: 12/17/2019
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da3ae988b57cb5588de1e2fd8ee962b77b5534ff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 9b6693d7c1afebcf9c30d1bf8d72950053c305bd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864691"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273999"
 ---
 # <a name="power-er-function"></a>POWER ER 関数
 

@@ -1,26 +1,26 @@
 ---
 title: Store Commerce または Cloud POS を選択する
 description: この記事では、Store Commerce とクラウド POS の主な違いについて説明し、Dynamics 365 Commerce を実装する小売業者が要件を最適な方法で選択するために考慮すべきさまざまな要因について説明します。
-author: jblucher
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854009"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276457"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Store Commerce または Cloud POS を選択する
 

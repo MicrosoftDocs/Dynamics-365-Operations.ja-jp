@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901150"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227900"
 ---
 # <a name="benefits-management-overview"></a>福利厚生の管理の概要
 
@@ -147,6 +147,16 @@ ms.locfileid: "8901150"
 - [ライフ イベントの処理](hr-benefits-process-life-events.md)
 - [ライフ イベントの変更の処理](hr-benefits-process-life-event-changes.md)
 - [ライフ イベントの適格性の処理](hr-benefits-process-life-event-eligibility.md)
+
+ライフ イベント処理が完了し、ライフ イベントの登録期間がオープンである限り、従業員はライフ イベントから影響を受ける計画オプションを変更できます。 管理者は、従業員の代わりに変更を行うことができます。 登録期間が終了し、ライフ イベント トランザクションに関連する確認済みの計画タイプがない場合、トランザクションは終了します。
+
+ライフ イベントの影響を受けるすべての計画を選択または免除し、確認する必要があります。 計画が選択、免除されていないために未確認の場合、ライフ イベント トランザクションは終了されません。
+
+管理者は、ライフ イベント トランザクションを選択して **閉じる** を選択すると、必要に応じて手動で閉じることができます。 トランザクションに未確認の計画があり、管理者がそれを閉じようとすると、ライフ イベントのクローズが計画の編集を制限する場合があります。
+
+終了したライフ イベントは削除できます。
+
+管理者は、ライフ イベント トランザクションを選択して **再度開く** を選択すると、必要に応じて再度開くことができます。
 
 ## <a name="rate-updates-optional"></a>レートを更新する (オプション)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e66cda6e529a70d40e599718332152bac95b061e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889638"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220030"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>エンジニアリングの変更管理機能のチュートリアル
 
@@ -45,7 +45,7 @@ ms.locfileid: "8889638"
 
 ### <a name="make-standard-demo-data-available"></a>標準デモ データを有効化する
 
-[標準のデモ データがインストールされている](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) システムで作業します。 標準のデモ データによって、複数のデモ法人 (会社および組織) のデータが追加されます。 この演習では、右側にある会社の選択を使用して、*エンジニアリング組織* として設定されている1つの会社 (*DEMF*) *運営組織* として設定されている別の会社 (*USMF*) を切り替えます。
+標準の [デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムで作業します。 標準のデモ データによって、複数のデモ法人 (会社および組織) のデータが追加されます。 この演習では、右側にある会社の選択を使用して、*エンジニアリング組織* として設定されている1つの会社 (*DEMF*) *運営組織* として設定されている別の会社 (*USMF*) を切り替えます。
 
 ### <a name="set-up-an-engineering-organization"></a>エンジニアリング組織の設定
 

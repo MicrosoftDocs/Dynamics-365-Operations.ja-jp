@@ -1,26 +1,26 @@
 ---
 title: ER データ モデルのパラメーター化された呼び出しへの対応
 description: この記事では、電子レポート (ER) データ モデルのパラメータ化された呼び出しを実装する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 03/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
+ms.openlocfilehash: 5be189c19d963991ec012de189bbf7b721b88fef
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884260"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275991"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>ER データ モデルのパラメーター化された呼び出しへの対応
 
@@ -278,7 +278,7 @@ ER 形式は、コンマ区切り値 (CSV) 形式でテキスト ファイルと
 
 1. **組織管理** \> **電子申告** \> **構成** の順に移動します。
 2. **構成** ページで、ペインの左側の構成ツリーで、**サンプル監査モデル** を選択します。
-3. **バージョン** クイック タブで、状態が **[下書き](general-electronic-reporting.md#component-versioning)** となっているバージョン **2** を選択します。
+3. **バージョン** クイック タブで、状態が **下書き** となっているバージョン **2** を選択します。
 4. **コンポーネントのコンフィギュレーション** クイック タブを選択します。
 5. **デザイナー** を選択すると、編集用のデータモデルが開きます。
 6. **データ モデル** ページで、`Root` フィールドが選択されていることを確認し、**新規** を選択します。

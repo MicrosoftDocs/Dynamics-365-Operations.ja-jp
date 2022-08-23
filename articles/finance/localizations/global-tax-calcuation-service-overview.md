@@ -1,24 +1,24 @@
 ---
 title: 税計算の概要
 description: この記事では、税計算機能の全体的な範囲と機能について説明します。
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166842"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270668"
 ---
 # <a name="tax-calculation-overview"></a>税の計算の概要
 
@@ -54,10 +54,15 @@ ms.locfileid: "9166842"
 
 - アジア太平洋
 - オーストラリア
+- ブラジル
 - カナダ
 - ヨーロッパ
+- フランス
+- インド
 - 日本
+- 南アフリカ
 - スイス
+- アラブ首長国連邦
 - イギリス
 - 米国
 
@@ -149,11 +154,15 @@ ms.locfileid: "9166842"
 - ベンダー支払仕訳帳
 - 顧客支払の仕訳帳
 
+次のトランザクションは、バージョン 10.0.29 でサポートされています: 
+
+- 定期処理仕訳帳
+
 ## <a name="supported-countriesregions"></a>サポートされる国/地域
 
-税計算は法人によって有効にできます。 
+税の計算は、法人の主要所在地の次の国/地域でサポートされているローカライズ機能を使用して実行できます。 
 
-法人の基本住所に対する次の国/地域は、バージョン 10.0.21 でサポートされています:
+バージョン 10.0.21 でサポート:
 
 - オーストリア
 - ベルギー
@@ -176,7 +185,7 @@ ms.locfileid: "9166842"
 - イギリス
 - 米国
 
-法人の基本住所に対する次の国/地域は、バージョン 10.0.22 でサポートされています:
+バージョン 10.0.22 でサポート:
 
 - オーストラリア
 - バーレーン
@@ -191,22 +200,24 @@ ms.locfileid: "9166842"
 - 南アフリカ
 - アラブ首長国連邦
 
-法人の基本住所に対する次の国/地域は、バージョン 10.0.23 でサポートされています:
+バージョン 10.0.23 でサポート:
 
 - タイ
 - 日本
 - マレーシア
 - シンガポール
 
-法人の基本住所に対する次の国/地域は、バージョン 10.0.24 でサポートされています:
+バージョン 10.0.24 でサポート:
 
 - メキシコ
 
-法人の基本住所に対する次の国/地域は、バージョン 10.0.26 でサポートされています:
+バージョン 10.0.26 でサポート:
 
 - 中国
 - チェコ共和国
 - スペイン
+
+Microsoft によってローカライズされていない国/地域については、税の計算を有効にして、他のグローバル機能で実行することもできます。
 
 ## <a name="related-resources"></a>関連するリソース
 

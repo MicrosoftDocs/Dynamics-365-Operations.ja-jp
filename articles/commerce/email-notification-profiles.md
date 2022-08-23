@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: db6c46d471e3b54982132df3e4819236833cf4a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878489"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292138"
 ---
 # <a name="set-up-an-email-notification-profile"></a>電子メール通知プロファイルの設定
 
@@ -31,17 +31,9 @@ ms.locfileid: "8878489"
 
 追加の電子メールのコンフィギュレーションに関する詳細については、[電子メールのコンフィギュレーションおよび送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json) を参照してください。
 
-## <a name="create-an-email-notification-profile"></a>電子メール通知プロファイルの作成
 
-電子メール通知プロファイルを作成するには、次の手順を実行します。
 
-1. ナビゲーション ウィンドウで、**モジュール \> 小売りとコマース \> 本社の設定 \> コマース電子メール通知プロファイル** に移動します。
-1. アクション ウィンドウで、**新規** をクリックします。
-1. **電子メール通知プロファイル** フィールドに、プロファイルを識別する名前を入力します。
-1. **説明** フィールドに関連する説明を入力します。
-1. **有効な** スイッチを **はい** に設定します。
-
-### <a name="create-an-email-template"></a>電子メール テンプレートを作成する
+## <a name="create-an-email-template"></a>電子メール テンプレートを作成する
 
 メール通知タイプを有効にする前に、サポートする通知タイプごとに Commerce 本部で組織メール テンプレートを作成する必要があります。 このテンプレートは、サポートされている各言語のメールの件名、送信者、既定の言語、メール本文を定義します。
 
@@ -63,14 +55,24 @@ ms.locfileid: "8878489"
 
 メールテンプレートの作成についての詳細について、[トランザクション イベントのメールテンプレートの作成](email-templates-transactions.md) を参照してください。 
 
-### <a name="create-an-email-event"></a>電子メール イベントの作成
+## <a name="create-an-email-notification-profile"></a>電子メール通知プロファイルの作成
+
+Headquarters で電子メール通知プロファイルを作成するには、次の手順を実行します。
+
+1. ナビゲーション ウィンドウで、**モジュール \> 小売りとコマース \> 本社の設定 \> コマース電子メール通知プロファイル** に移動します。
+1. アクション ウィンドウで、**新規** を選択します。
+1. **電子メール通知プロファイル** フィールドに、プロファイルを識別する名前を入力します。
+1. **説明** フィールドに関連する説明を入力します。
+1. **有効な** スイッチを **はい** に設定します。
+
+## <a name="add-a-notification-type"></a>通知タイプの追加
 
 電子メール イベントを作成するには、次の手順に従います。
 
 1. ナビゲーション ウィンドウで、**モジュール \> 小売りとコマース \> 本社の設定 \> コマース電子メール通知プロファイル** に移動します。
-1. 一覧で、目的のレコードを見つけ、選択します。 
-1. **電子メール ID** ドロップダウン リストから電子メール テンプレートを選択します。
+1. **小売用の電子メール通知設定** で、**新規** を選択します。
 1. ドロップダウン リストから適切な **電子メール通知タイプ** を選択します。
+1. 上で作成した電子メール テンプレートを **メール ID** のドロップダウン リストから選択します。
 1. **有効** チェック ボックスをオンにします。
 1. アクション ウィンドウで、**保存** を選択します。
 
@@ -78,14 +80,12 @@ ms.locfileid: "8878489"
 
 ![イベント通知設定。](media/email-notification-profile.png)
 
-> [!NOTE]
-> 顧客が作成した通知タイプでは、メール通知を送信する前に、カスタマイズを実施する必要があります。
 
-### <a name="schedule-a-recurring-email-notification-process-job"></a>定期的なメール通知処理のジョブをスケジュールする
+## <a name="schedule-a-recurring-email-notification-process-job"></a>定期的なメール通知処理のジョブをスケジュールする
 
 電子メール通知を送信するには、**小売注文のメール通知を処理する** ジョブが実行されている必要があります。
 
-Commerce 本部で **小売注文のメール通知を処理する** ジョブを設定する (まだ設定していない場合) には、以下の手順に従います。
+トランザクション メールを送信するために headquarters でバッチ ジョブを設定するには、次の手順に従います。
 
 1. **小売とコマース  \> 小売とコマース IT \>メールと通知 \> メール通知の送信** に移動します。
 1. **小売注文のメール通知を処理する** ダイアログボックスで、**繰り返し** を選択します。
@@ -94,9 +94,9 @@ Commerce 本部で **小売注文のメール通知を処理する** ジョブ�
 1. **OK** を選択して、**小売注文のメール通知を処理する** ダイアログボックスに戻ります。
 1. ジョブのセットアップを完了するには、**OK** を選択します。
 
-### <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ
 
-メールを送信する前に、送信メール サービスをコンフィギュレーションし、バッチ ジョブを設定する必要があります。 詳細については、[電子メールのコンフィギュレーションと送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json) を参照してください。
+メールを送信する前に、送信メール サービスを構成する必要があります。 詳細については、[電子メールのコンフィギュレーションと送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

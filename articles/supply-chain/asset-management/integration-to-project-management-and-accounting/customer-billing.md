@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887692"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220425"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>顧客所有資産のメンテナンスに対する請求書
 
@@ -49,7 +49,7 @@ ms.locfileid: "8887692"
 
 この機能の動作の詳細については、次のシナリオ例を参照してください。
 
-ここで指定されたサンプル レコードと値を使用してシナリオを実行するには、標準[デモ データ](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人を選択する必要があります。
+ここで指定されたサンプル レコードと値を使用してシナリオを実行するには、標準[デモ データ](../../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人を選択する必要があります。
 
 このシナリオは、実稼働システムで作業するときにこの機能を使用するためのガイダンスとして使用することもできます。 ただし、その場合は、独自の値に置き換える必要があり、標準のデモ データが提供するいくつかのタイプの必要なレコードが不足している可能性があります。
 

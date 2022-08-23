@@ -4,19 +4,19 @@ description: この記事では、作業員が現在のタスクを待機して�
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863595"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219007"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>モバイル デバイス メニュー項目で手順の迂回を構成する
 
@@ -34,20 +34,8 @@ ms.locfileid: "8863595"
 モバイル デバイス のメニュー項目の手順に対して迂回を構成する前に、必要な機能を有効にして、Warehouse Management モバイル アプリで必要なフィールド名を生成するには、次の手順に従う必要があります。
 
 1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
-1. [**機能管理** ワークスペース](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で、次の方法で一覧表示されている機能を有効にします。
-
-    - **モジュール:** *倉庫管理*
-    - **機能名:** *倉庫アプリ ステップ インストラクション*
-
-    *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。 この機能は、*Warehouse Management アプリの迂回* 機能の前提条件です。
-
-1. 次の方法で表示された機能を有効にします。
-
-    - **モジュール:** *倉庫管理*
-    - **機能名:** *Warehouse Management アプリの迂回*
-
-    この機能は、この記事で説明する機能です。
-
+1. システムで *倉庫アプリのステップ指示* 機能が有効になっていることを確認します。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。 この機能は、*Warehouse Management アプリの迂回* 機能の前提条件です。
+1. *Warehouse Management アプリの迂回* 機能を有効にします。 この機能は、この記事で説明する機能です。
 1. **Warehouse Management \> 設定 \> モバイル デバイス \> Warehouse アプリのフィールド名** の順に移動して、**デフォルト設定を作成する** を選択することで Warehouse Management mobile アプリのフィールド名を更新します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
 1. Warehouse Management モバイル アプリを使用する法人 (会社) ごとに前の手順を繰り返します。
 
@@ -65,7 +53,7 @@ ms.locfileid: "8863595"
 
 ### <a name="enable-sample-data"></a>サンプルデータの有効化
 
-指定されたサンプル レコードと値を使用してこのシナリオ全体を実行するには、標準のデモ データ がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
+指定されたサンプル レコードと値を使用してこのシナリオ全体を実行するには、標準の[デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md)がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>メニュー固有の上書きを作成し、シナリオ 1 に対して迂回を構成する
 
@@ -118,7 +106,7 @@ ms.locfileid: "8863595"
 
 ### <a name="enable-sample-data"></a>サンプルデータの有効化
 
-指定されたサンプル レコードと値を使用してこのシナリオ全体を実行するには、標準のデモ データ がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
+指定されたサンプル レコードと値を使用してこのシナリオ全体を実行するには、標準の[デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md)がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>メニュー固有の上書きを作成し、シナリオ 2 に対して迂回を構成する
 

@@ -1,26 +1,26 @@
 ---
 title: 法人ごとに指定されたパラメーターを使用するよう電子申告形式を構成する
 description: この記事では、法人ごと指定されたパラメーターを使用して電子申告 (ER) 形式を構成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
+ms.openlocfilehash: b81c9c8fd1639b9af53c8e15a041c00db8c19752
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858831"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292679"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
 

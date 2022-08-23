@@ -1,27 +1,27 @@
 ---
 title: コマース階層
 description: この記事は、Dynamics 365 Commerce の階層について説明します。
-author: jblucher
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 15851
-ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60534536476cfbe7a4f254923785ab1eb0001a3eaf7630dec75f28f07dff30d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 15851
+ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
+ms.search.industry: Retail
+ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
+ms.openlocfilehash: ce196acc8c4bced865b983b12d72f8bc6e4d02a0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716170"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271880"
 ---
 # <a name="commerce-hierarchies"></a>コマース階層
 

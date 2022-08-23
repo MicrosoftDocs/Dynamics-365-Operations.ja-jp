@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 09a01a9100b5fc17317d40a8b3e4dbd1aae92e8b
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186522"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228484"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Dynamics 365 Supply Chain Management 10.0.28 (2022 年 8 月) の新機能または変更された機能
 
@@ -35,7 +35,7 @@ ms.locfileid: "9186522"
 |---|---|---|---|
 | 在庫および物流 | [サード パーティ配送業者の陸揚原価統合エンティティ](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [陸揚原価エンティティの概要](../landed-cost/landed-cost-entities-overview.md) | 既定で有効 |
 | 計画 | [需要主導型材料所要量計画 (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [需要主導型材料所要量計画の概要](../master-planning/planning-optimization/ddmrp-overview.md) | 機能管理:<br>*(プレビュー) 計画最適化のための DDMRP* |
-| 計画 | [生産可能在庫 (CTP) での計画最適化のサポート](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | 間もなく公開 | 機能管理:<br>*(プレビュー) 計画最適化のための CTP* |
+| 計画 | [生産可能在庫 (CTP) での計画最適化のサポート](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | [CTP を使用した販売注文配送日の計算](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | 機能管理:<br>*(プレビュー) 計画最適化のための CTP* |
 | 計画 | [有効期限の最適化サポートの計画](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | 間もなく公開 | 既定で有効 |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張

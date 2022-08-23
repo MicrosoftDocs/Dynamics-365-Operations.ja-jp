@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068673"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219475"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 
@@ -34,8 +34,8 @@ FIFO と LIFO 戦略を使用して、在庫が倉庫に入った日付に基づ
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能を順にオンにします:
 
-1. 倉庫の場所の状態
-1. 場所のディレクティブ在庫ピッキング エイジング
+1. *倉庫の場所の状態* (バージョン 10.0.29 では、この機能は既定で有効に設定されています。 詳細については、[倉庫の場所の状態](warehouse-location-status.md) を参照してください。)
+1. *場所のディレクティブ在庫ピッキング エイジング*
 
 ## <a name="feature-requirements"></a>機能要件
 
@@ -50,7 +50,7 @@ FIFO と LIFO 戦略を使用して、在庫が倉庫に入った日付に基づ
 
 ### <a name="make-sample-data-available"></a>サンプル データを有効化する
 
-指定されたサンプル レコードと値を使用してこれらのシナリオを実行するには、標準の[デモ データ](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
+指定されたサンプル レコードと値を使用してこれらのシナリオを実行するには、標準の[デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムを使用する必要があります。 また、開始する前に **USMF** 法人を選択する必要があります。
 
 これらのシナリオは、実稼働システムで機能を使用するためのガイダンスとして使用できます。 ただし、その場合は、ここで説明する設定ごとに独自の値に置き換える必要があります。
 

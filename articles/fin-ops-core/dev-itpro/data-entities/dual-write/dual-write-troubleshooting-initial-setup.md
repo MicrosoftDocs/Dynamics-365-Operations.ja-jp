@@ -5,22 +5,20 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: d33fc6f4895b53f16cc6957a3a2fc6b1abe90a2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111203"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289517"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>初期セットアップ中の問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 この記事では、財務と運用アプリと Dataverse 間の二重書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、 デュアル書き込み統合の初期設定を行う際に、発生する可能性がある問題を修正するトラブルシューティングに特化した情報を提供します。
 
@@ -51,7 +49,7 @@ ms.locfileid: "9111203"
 
 *接続設定の保存に失敗しました! 同じキーを持つ品目が既に追加されています。*
 
-デュアル書き込みでは、同じ名前を持つ複数の法人/会社はサポートされていません。 たとえば、Dataverse に「DAT」という名前の 2 つの会社がある場合、このエラー メッセージが表示されます。
+デュアル書き込みでは、同じ名前を持つ複数の法人/会社はサポートされていません。 たとえば、Dataverse に "DAT" という名前の 2 つの会社がある場合、このエラー メッセージが表示されます。
 
 顧客のブロックを解除するには、Dataverse の **cdm_company** テーブルから重複レコード テーブルを削除します。 また、**cdm_company** テーブルに空白の名前のレコードがある場合は、それらのレコードを削除または修正します。
 
@@ -87,6 +85,19 @@ Dataverse の環境をデュアル書き込みにリンクしようとすると�
 
 + ログインに使用するユーザーが、財務と運用のインスタンスと同じテナントではない。
 + Microsoft がホストしていた従来の財務と運用のインスタンスには、ディスカバリーに関する問題がありました。 この問題を解決するには、財務と運用のインスタンスを更新します。 どのようなアップデートでも、この環境は検出可能になります。
+
+## <a name="403-forbidden-error-while-connections-are-being-created"></a>接続作成中の 403 (許可されていません) エラー
+
+二重書き込みリンク プロセスの一環として、リンクされた Dataverse 環境でユーザーに代わって 2 つの Power Apps 接続 (*Apihub* 接続とも呼ばれます) が作成されます。 顧客に Power Apps 環境のライセンスがない場合、ApiHub 接続の作成に失敗し、403 (許可されていません) エラーが表示されます。 エラー メッセージの例を次に示します:
+
+> MSG=\[二重書き込み環境の設定に失敗しました。 エラーの詳細 : 応答状態コードが成功とならない: 403 (許可されていません)。 - 応答状態コードが成功とならない: 403 (許可されていません)。\] STACKTRACE=\[   at Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297 --- 例外がスローされた直前の場所からのスタック・トレースの終了 --- at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
+
+このエラーは、Power Apps ライセンスがないために発生します。 適切なライセンス (例: Power Apps Trial 2 Plan) をユーザーに割り当て、接続を作成するアクセス許可を与えます。 ライセンスを確認するには、顧客は [マイ アカウント](https://portal.office.com/account/?ref=MeControl#subscriptions) サイトに移動して、現在ユーザーに割り当てられているライセンスを表示します。
+
+Power Apps ライセンスの詳細については、次の記事を参照してください:
+
+- [ユーザーをライセンスに割り当てる](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [組織で Power Apps を購入する](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 

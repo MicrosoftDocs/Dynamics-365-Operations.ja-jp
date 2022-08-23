@@ -1,24 +1,24 @@
 ---
 title: 支払仕訳帳を使用した仕入先月次締め請求書の決済
 description: 日本では、支払は仕入先の月次締め請求書に対して作成され決済されます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: VendConsInvoice_JP, LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymProposalEdit
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ea7ef192342de6cb3419bb49d6155d89fb68254
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: VendConsInvoice_JP, LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymProposalEdit
+ms.openlocfilehash: 018cda2683ce9b46fe3d335910d1c539a14645f7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566074"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280574"
 ---
 # <a name="settle-vendor-consolidated-invoices-by-using-a-payment-journal"></a>支払仕訳帳を使用した仕入先月次締め請求書の決済
 

@@ -1,26 +1,26 @@
 ---
 title: グローバリゼーション機能をその他の組織と共有する
 description: この記事では、グローバリゼーション機能を外部組織と共有する方法について説明します。
-author: dkalyuzh
+author: gionoder
 ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ae6e4cc59ff14197e41bb2db8d1f49afed67e95e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: 07c6dcd0be346d118bf5c470c5183bad3c961e06
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874404"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275259"
 ---
 # <a name="share-globalization-features-with-other-organizations"></a>グローバリゼーション機能をその他の組織と共有する
 

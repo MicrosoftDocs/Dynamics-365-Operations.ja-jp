@@ -1,24 +1,24 @@
 ---
 title: 日本消費税レポートの生成
 description: この手順では、日本の消費税申告の生成について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerConsumptionTaxCalcTrans_JP, LedgerConsumptionTaxReportTrans_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e92c04c5ebbd36eb7aba57ba68e438597ed45c8
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: LedgerConsumptionTaxCalcTrans_JP, LedgerConsumptionTaxReportTrans_JP
+ms.openlocfilehash: 1826a265893527850eaa62a9afd20ab37820c7a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565499"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291552"
 ---
 # <a name="generate-japan-consumption-tax-report"></a>日本消費税レポートの生成
 

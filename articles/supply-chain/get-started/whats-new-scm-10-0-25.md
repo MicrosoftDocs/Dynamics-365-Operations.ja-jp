@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167734"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219097"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management 10.0.25 (2022 年 4 月) の新機能および変更された機能
 
@@ -34,7 +34,7 @@ ms.locfileid: "9167734"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
 | 在庫&nbsp;および&nbsp;物流 | [危険物の拡張機能](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | 間もなく公開 | 機能管理:<br>*危険物の拡張機能* |
-| 在庫&nbsp;および&nbsp;物流 | [梱包ステーションの梱包作業](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | 間もなく公開 | 機能管理:<br>*梱包ステーションの梱包作業* |
+| 在庫&nbsp;および&nbsp;物流 | [梱包ステーションの梱包作業](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | [出荷コンテナーの梱包と出荷処理に関する梱包作業](../warehousing/packing-work.md) | 機能管理:<br>*梱包ステーションの梱包作業* |
 | 在庫&nbsp;および&nbsp;物流 | [GS1 形式標準を使用した倉庫内のバーコードのスキャン](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 バーコードと QR コード](../warehousing/gs1-barcodes.md) | 機能管理:<br>*GS1 バーコードのスキャン* |
 | 製造 | [生産現場の実行インターフェースで材料消費と予約する](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェースで材料消費を登録する (WMS 非対応)*<br><br>かつ/または:<br><br>機能管理:<br>*(プレビュー) 生産現場の実行インターフェイス (WMS 対応) で材料消費を登録* |
 | 計画 | [計画の最適化集中カレンダーのメンテナンス](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [カレンダーおよびマスター プラン](../master-planning/supply-chain-calendars-master-planning.md) | 既定で有効 |

@@ -1,26 +1,26 @@
 ---
 title: 電子申告 (ER) の送信先
 description: この記事では、電子申告の送信先の管理、サポートされている送信先のタイプ、およびセキュリティ上の注意事項について説明します。
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851080"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281970"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -118,7 +118,7 @@ ER 形式では、現在、次の送信先がサポートされています。 �
 
 [![コンフィギュレーション リンク。](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-同時に、現在の Finance インスタンスにインポートされた形式の [バージョン](general-electronic-reporting.md#component-versioning) が複数あることがあります。 それらは、参照フィールドを選択した **時** に提供される **コンフィギュレーション** リンクを選択した場合に表示できます。
+同時に、現在の Finance インスタンスにインポートされた形式の バージョン が複数あることがあります。 それらは、参照フィールドを選択した **時** に提供される **コンフィギュレーション** リンクを選択した場合に表示できます。
 
 [![コンフィギュレーション バージョン。](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -180,6 +180,16 @@ Finance **バージョン 10.0.9** からは、PDF 変換のオプションは�
 Finance **バージョン 10.0.9** では、Excel 出力から生成される PDF ドキュメントでは、横方向のみがサポートされます。 Finance **バージョン 10.0.10** 以降では、ER 送信先を構成する際に、Excel 出力から生成される PDF ドキュメントの [印刷の向きを指定](#SelectPdfPageOrientation) することができます。
 
 埋め込みフォントを含まない出力の変換には、Windows オペレーティング システム共通のシステム フォントのみが使用されます。
+
+### <a name="resources"></a>リソース
+
+Finance バージョン 10.0.29 より前では、PDF 変換は現在の Finance インスタンスの外部でのみ実行できます。 生成されたファイルは Finance から換算サービスに送信され、そのサービスは変換されたドキュメントを返しました。 ただし、バージョン **10.0.29 以降** では、**Microsoft Office 形式から PDF に電子申告送信ドキュメントを変換する** 機能に加えて、**アプリケーション リソースを使用して Word から PDF 形式に CBD ドキュメントを変換する** 機能を有効にすることができます。 この機能により、現在の Finance インスタンスでアプリケーション サーバー リソースを使用して、生成した Word ドキュメントをローカルで PDF 形式に変換できます。 
+
+**アプリケーション リソースを使用して Word から PDF 形式に CBD ドキュメントを変換する** 機能を有効にした場合のローカル PDF 変換の利点は次のとおりです:
+
+- 生成される PDF ドキュメントは、ページ数の上限に [制限](#limitations) されません。
+- 変換される Word ドキュメントには、[多数のコンテンツ コントロール](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3) を含めることができます。
+- インターネット接続は、オンプレミスの展開では必要ありません。
 
 ### <a name="use-the-pdf-conversion-option"></a>PDF 変換オプションの使用
 

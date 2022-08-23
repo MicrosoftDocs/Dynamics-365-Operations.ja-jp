@@ -1,7 +1,7 @@
 ---
 title: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのインポート
-description: この手順に記載のステップを完了するには、まず 「ER 構成プロバイダを作成し、アクティブとしてマークする」 に記載の手順を完了する必要があります。
-author: NickSelin
+description: この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。
+author: kfend
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
@@ -9,21 +9,21 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a75b268f2d8341c1a6dd0d3f1bd9dcb31d9084ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ccff17ad83b6840b5e8f327e24f8ac8a5e8ff620
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884144"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9290577"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのインポート
 
 [!include [banner](../../includes/banner.md)]
 
-この手順に記載のステップを完了するには、まず 「ER 構成プロバイダを作成し、アクティブとしてマークする」 に記載の手順を完了する必要があります。
+この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。
 
 この手順のステップでは、電子ドキュメントを生成するために電子申告 (ER) コンフィギュレーションを設計する方法について説明します。 この手順では、サンプル会社 Litware, Inc. 用に作成した必要な ER コンフィギュレーションをインポートし、それを使用して電子ドキュメントを生成します。 この手順は、「システム管理者」または「電子レポート開発者」ロールが割り当てられているユーザー用に作成されています。 これらのステップは、DEMF データ セットを使用して完了することができます。 始める前に、ヘルプ トピック "電子申告ツールを使用して電子ドキュメントを生成し、アプリケーション データを更新する" (generate-electronic-documents-update-application-data/) にリスト表示されたファイルをダウンロードして保存してください。 ファイルは、イントラスタット (モデル) .xml、イントラスタット (マッピング) .xml、およびイントラスタット (形式) .xml です。
 

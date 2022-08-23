@@ -1,24 +1,24 @@
 ---
 title: ER コンフィギュレーション先
 description: この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1e679b52b28ff1ca117c5224fc7e2825feb26e5e5aea1c8b5bc3a88d1eaf235
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
+ms.openlocfilehash: 3c8d03e9783013183fbe76cb36014fa9e1e1cbed
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743266"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291057"
 ---
 # <a name="er-configure-destinations"></a>ER コンフィギュレーション先
 
@@ -26,7 +26,7 @@ ms.locfileid: "6743266"
 
 この手順では、フォルダーまたはファイルなどの電子申告 (ER) の出力コンポーネントにさまざまな出力先を設定して使用する方法を示します。 この手順の作成に使用するデモ データの会社は DEMF です。 ドイツが法人の第一の住所が所在する国/地域となっていますが、この手順ではあらゆる法人を使用できます。 
 
-この例で使用する形式は ISO20022 債権移動ですが、既にインポートした形式であればどんな形式でも使用できます。 この手順は 1 つのファイルと1つの出力先からなる設定の例であることに注意してください。 電子レポート送信先管理に関する詳細については、Dynamics 365 Finance ヘルプで確認できます。
+この例で使用する形式は ISO20022 債権移動ですが、既にインポートした形式であればどんな形式でも使用できます。 この手順は 1 つのファイルと1つの出力先からなる設定の例であることに注意してください。 電子申告の送信先管理に関する詳細については、Dynamics 365 Finance のヘルプで確認できます。
 
 1. [組織管理] > [電子申告] > [電子申告の送信先] に選択します。
 2. 形式の送信先のための新しいセットを作成するには、[新規] をクリックします。

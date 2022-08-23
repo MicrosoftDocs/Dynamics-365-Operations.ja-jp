@@ -1,24 +1,24 @@
 ---
 title: バッチ ジョブの作成
 description: バッチ ジョブは、自動処理のために Application Object Server (AOS) インスタンスに送信されるタスクのグループです。
-author: maertenm
+author: matapg007
 ms.date: 11/22/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: BatchJob, SysRecurrence, BatchAlerts
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: matgupta
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 76c6c68f7effad0c40282b22ea2a6bf991862cf5
-ms.sourcegitcommit: d7d997ad84623ad952672411c0eb6740972ae0b1
+ms.search.form: BatchJob, SysRecurrence, BatchAlerts
+ms.openlocfilehash: 06fb9a18e70c316be97645ba76f9462cd3ccc729
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "7864176"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292453"
 ---
 # <a name="create-a-batch-job"></a>バッチ ジョブの作成
 

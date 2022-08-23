@@ -1,25 +1,25 @@
 ---
 title: リスト カテゴリ内の ER 関数のリスト
 description: この記事では、電子申告 (ER) でサポートされるリスト関数について説明します。
-author: NickSelin
+author: kfend
 ms.date: 04/01/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 6c28445f731393857cdb0c75c1244e557b5ff4a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869058"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277695"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>リスト カテゴリ内の ER 関数のリスト
 
@@ -47,6 +47,7 @@ ms.locfileid: "8869058"
 | [ListOfFields](er-functions-list-listoffields.md)         | この関数は、*列挙* または *コンテナー (レコード)* 型の指定された引数の構造に基づいて作成された *レコード リスト* 値を返します。 |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | この関数は、指定されたリストの最初のレコードのみで構成される *レコード リスト* 値を返します。|
 | [OrderBy](er-functions-list-orderby.md)                   | この関数は、指定されたリストを、指定された引数に基づいて並べ替えられた後に *レコード リスト* 値として返します。 これらの引数は、式として定義することができます。 |
+| [反復](er-functions-list-repeat.md)                     | この関数は、指定された入力に一致する値を持つフィールドを含むレコードを作成します。 次に、指定された回数だけ繰り返されるレコードの新しい *レコード リスト* を返します。 |
 | [取消](er-functions-list-reverse.md)                   | この関数は、指定されたリストを、逆の並べ替え順で *レコード リスト* 値として返します。 |
 | [分割](er-functions-list-split.md)                       | この関数は、指定された入力文字列をサブ文字列に分割し、新しい *レコード リスト* 値として結果を返します。 |
 | [SplitList](er-functions-list-splitlist.md)               | この関数は、指定されたリストをサブリスト (またはバッチ) に分割します。各サブリストには指定されたレコード数が含まれます。 その後、結果をバッチで構成された新しい *レコード リスト* 値として返します。 |

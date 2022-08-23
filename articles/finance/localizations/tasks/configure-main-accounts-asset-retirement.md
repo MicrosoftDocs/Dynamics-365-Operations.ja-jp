@@ -1,24 +1,24 @@
 ---
 title: 資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション
 description: 日本では、法的な除去責務のある固定資産を取得した場合、除去する際には資産除去責務を評価し転記する必要があります。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetPosting, AssetDiscountRateSchedule_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 333f8528f4ff0a0f29511f6430613f36c8e3f5a0
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: AssetPosting, AssetDiscountRateSchedule_JP
+ms.openlocfilehash: 1d58e4549126361aaf2e537acacfb661ea9f92f7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565610"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279175"
 ---
 # <a name="configure-main-accounts-for-asset-retirement-obligation-posting-and-market-discount-rates"></a>資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション
 

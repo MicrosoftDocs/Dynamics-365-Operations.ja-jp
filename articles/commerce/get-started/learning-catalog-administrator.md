@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Commerce の管理者ラーニング カタログ
 description: Dynamics 365 Commerce で管理者ロールのすべてのトレーニング オプションを検索します。
-author: margoc
-ms.topic: article
+author: josaw1
 ms.date: 07/23/2020
-ms.author: margoc
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 473977a7a75bb7bbe493225c6455a918ba5f748e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: dda931c33ce286d5a2fee9fba5e7ed0264bae8f8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070791"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292766"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Dynamics 365 Commerce 管理者向けラーニング カタログ
 

@@ -1,25 +1,25 @@
 ---
 title: 日本の消費税レポート
 description: この記事では、日本の法人向け、消費税レポートの設定および生成方法について説明します。
-author: anasyash
+author: AdamTrukawka
 ms.date: 06/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 28791
 ms.search.region: Japan
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a37de51198dc201a170241d2f08897fa2467f786
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.custom: 28791
+ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
+ms.openlocfilehash: 13465b949e9cafb49d6425c45c6947229eed8794
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954736"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268572"
 ---
 # <a name="japan-consumption-tax-report"></a>日本の消費税レポート
 

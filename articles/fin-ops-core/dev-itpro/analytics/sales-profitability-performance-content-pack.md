@@ -12,16 +12,15 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom:
-- "260674"
+ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.form: SalesProfitabilityPerformancePowerBI
-ms.openlocfilehash: 2a3e0a46656f54a423a3bdfb05b87e3b7ad68efd
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 77271ad9f5a1d7c131e1d7750de280f0c70daaa4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205604"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274662"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>販売と収益性のパフォーマンス Power BI コンテンツ
 
@@ -77,7 +76,7 @@ ms.locfileid: "9205604"
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 次のデータは、**販売と収益性のパフォーマンス** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md) を参照してください。
 
-このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の売上キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。
+このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の販売キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。
 
 請求明細行エンティティの以下のキー集計の測定は、コンテンツの基準として使用されます。
 

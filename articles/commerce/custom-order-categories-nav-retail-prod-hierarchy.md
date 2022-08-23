@@ -2,7 +2,7 @@
 title: 販売促進エンティティの並べ替え順序の変更
 description: この記事では、Dynamics 365 Commerce で、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,27 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80586597f4f60476b341e4cf1cfd90f3681e15c0
+ms.sourcegitcommit: 52e31b1ef2b3ed8675de931d06090cd57e057fc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847657"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9265839"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>販売促進エンティティの並べ替え順序の変更
 
 
 [!Include [banner](includes/banner.md)]
 
-小売業者は、製品の検出を、すべてのチャネルでの顧客とのやり取りにおける主要なツールと考えています。 さまざまな機能により、顧客が製品を簡単に検索できるようになります。 たとえば、カテゴリ、検索、およびフィルターを参照できます。
+小売業者は、製品の検出を、すべてのチャネルでの顧客とのやり取りにおける主要なツールと考えています。 顧客が製品を簡単に見つけるのに役立つ機能がいくつかあります。 たとえば、顧客は、カテゴリ、検索、およびフィルターを参照できます。
 
 この記事では、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。 また、並べ替え順序を変更する方法についても説明します。
 
-## <a name="overview"></a>概要
+## <a name="overview"></a>開始する
 
-販売促進に関連したさまざまなエンティティを並べ替えるためのサポートが強化されました。 このサポートにより、以前には実装パートナーからの拡張を必要としていた既存の顧客シナリオとの整合性が向上しました。
+Commerce では、さまざまな販売促進に関連するエンティティの並べ替えは、既存の顧客シナリオに沿ったものであり、実装パートナーからの拡張機能は不要になります。
 
-バージョン 10.0.5 よりも前の Retail のバージョンでは、ナビゲーション階層でのカテゴリの並べ替え順序はアルファベット順になっていました。 新しいカスタム並べ替え順序機能を使用すると、販売促進マネージャーは、すべてのエンド ユーザー クライアントでの販売促進に関連したさまざまなエンティティの並べ替え順序をコンフィギュレーションできます。 これらのクライアントには、本社 (HQ) およびコール センターが含まれます。
+Commerce バージョン 10.0.5 およびそれ以前では、ナビゲーション階層でのカテゴリの並べ替え順序はアルファベット順でした。 現在のカスタム並べ替え順序機能を使用すると、販売促進マネージャーは、すべてのエンド ユーザー クライアントでの販売促進に関連したさまざまなエンティティの並べ替え順序を構成できます。 これらのクライアントには、本社 (HQ) およびコール センターが含まれます。
 
 ## <a name="configure-the-display-order-for-categories-in-the-product-hierarchy"></a>製品階層でのカテゴリに対する表示順序のコンフィギュレーション
 
@@ -67,7 +67,7 @@ ms.locfileid: "8847657"
 6. **表示順序** フィールドに数値を入力します。
 7. ツリーで、**ファッション \> ウィメンズウェア \> トップス** を選択します。
 
-    同様に、サブカテゴリの並べ替え順序を定義できます。
+同様に、サブカテゴリの並べ替え順序を定義できます。
 
 8. ツリーで、**ファッション \> メンズウェア \> カジュアル シャツ** を選択します。
 9. **表示順序** フィールドに数値を入力します。
@@ -84,7 +84,7 @@ ms.locfileid: "8847657"
 ![カスタム並べ替えされたカテゴリを含む POS。](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> 既定では、カスタム並べ替え順序機能が無効になっています。 この機能およびその他の機能を有効にする方法については、[機能管理](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview) を参照してください。
-
+> 既定では、**販売促進エンティティの表示順序の有効化** 機能は無効になっています。 [機能管理](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して有効にします。 機能を有効にした後、配送スケジュールから **グローバル構成 -1110** CDX ジョブを実行します。
+> POS でカテゴリの順序が更新されない場合は、デバイスを再度有効にします。 カテゴリ情報は、デバイスのアクティブ化が発生したときにフェッチされるため、デバイスは更新された表示順序でカテゴリ情報の再フェッチが必要な場合があります。 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,24 @@
 ---
 title: 月次締め請求書の設定
 description: 日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustParameters, PaymDay, PaymTerm
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d9d6623d13dd94c9e197a96e3af1f410db8dec5861ad0f573182f86752882e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: CustParameters, PaymDay, PaymTerm
+ms.openlocfilehash: 15c098043e45faeec9dd9aa62fd0e42c361f33f2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727935"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279751"
 ---
 # <a name="set-up-consolidated-invoices"></a>月次締め請求書の設定
 

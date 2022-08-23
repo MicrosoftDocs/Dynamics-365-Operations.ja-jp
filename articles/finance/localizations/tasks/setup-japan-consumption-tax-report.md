@@ -1,24 +1,24 @@
 ---
 title: 日本の消費税レポートの設定
 description: このタスクでは、日本の消費税申告をサポートするシステムの設定について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 12/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1974b172d0b644980d252b4c4f9e70770924fdaf
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTable
+ms.openlocfilehash: a183a641d9c9cddc8e96d690b064632cf242a1d1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566072"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283768"
 ---
 # <a name="setup-japan-consumption-tax-report"></a>日本の消費税レポートの設定
 

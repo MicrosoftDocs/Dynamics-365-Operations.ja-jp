@@ -2,19 +2,19 @@
 title: 当事者およびグローバル アドレス帳
 description: この記事では、二重書き込みの当事者およびグローバル アドレス帳の機能について説明します。
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892196"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228993"
 ---
 # <a name="party-and-global-address-book"></a>当事者およびグローバル アドレス帳
 
@@ -119,11 +119,11 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
 
 グリッドの上にある **新しい住所** ボタンを使用して、必要な数の郵便番号を作成できます。
 
-**口座** ページの **集計** タブにある **住所 1** フィールドと **住所 2** フィールドが、それぞれ **配送先** 住所と **請求先** 住所に対応します。
+Customer Engagement アプリでは、ユーザーが **アカウント** ページの **サマリー** タブで住所を入力する際、**住所 1** と **住所 2** の欄がそれぞれ **納品先** と **請求先** に対応する。 しかし、ユーザーが財務と運用アプリで郵便物の住所を作成すると、顧客レコードの最初の 2 つの住所が **Address1** および **Address2** フィールドに表示され、ユーザーは住所目的を **配達** と **請求書** に変更するオプションがあります。
 
 ![住所の集計タブ。](media/party-gab-image5.png)
 
-**連絡先** ページの **集計** タブにある **住所 1** フィールド、**住所 2** フィールド、および **住所 3** フィールドが、それぞれ **ビジネス** 住所、**配送先** 住所、および **請求先** 住所に対応します。
+同様に、**連絡先** ページの **集計** タブにある **住所 1** フィールド、**住所 2** フィールド、および **住所 3** フィールドが、それぞれ **ビジネス** 住所、**配送先** 住所、および **請求先** 住所に対応します。
 
 ## <a name="electronic-addresses"></a>電子アドレス
 

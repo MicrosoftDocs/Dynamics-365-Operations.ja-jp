@@ -1,27 +1,27 @@
 ---
 title: 顧客と製品の収益性の評価
 description: この記事では、アクセスしたり、参照したり、Dynamics 365 Commerce データから顧客と製品の収益性についての理解を深めるために、メモリ内およびリアルタイム分析を使用する方法について説明します。
-author: ashishmsft
+author: ''
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysOperationsTemplateForm, RetailStoreManagementWorkspace
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 52902
-ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d7b51ffb3613800033d817b1e911ba22cb978c0cdb21a256693ba52674ad5885
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 52902
+ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
+ms.search.industry: Retail
+ms.search.form: SysOperationsTemplateForm, RetailStoreManagementWorkspace
+ms.openlocfilehash: 0fd3c6f37fadb0d2186817fa3cd040b5b5f30afa
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728318"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276949"
 ---
 # <a name="assess-customer-and-product-profitability"></a>顧客と製品の収益性の評価
 

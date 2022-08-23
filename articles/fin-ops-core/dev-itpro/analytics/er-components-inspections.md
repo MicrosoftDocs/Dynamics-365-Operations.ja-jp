@@ -1,26 +1,26 @@
 ---
 title: 構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 description: この記事では、構成済み電子レポート (ER) コンポーネントを検査して、発生する可能性のあるランタイムの問題を回避する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864839"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277853"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
@@ -30,8 +30,8 @@ ms.locfileid: "8864839"
 
 既定では、前述の ER コンポーネントを含む ER 構成について、次の場合に検証が自動的に適用されます:
 
-- ER 構成の新しい [バージョン](general-electronic-reporting.md#component-versioning) を Microsoft Dynamics 365 Finance のインスタンスに [インポート](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) します。
-- 編集可能な ER 構成の [状態](general-electronic-reporting.md#component-versioning) を **ドラフト** から **完了** に変更します。
+- ER 構成の新しい バージョン を Microsoft Dynamics 365 Finance のインスタンスに [インポート](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) します。
+- 編集可能な ER 構成の状態を **ドラフト** から **完了** に変更します。
 - 新しい基本バージョンを適用することにより、編集可能な ER 構成を [リベース](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) します。
 
 この検証を明示的に実行することもできます。 次の 3 つのオプションのいずれかを選択し、指定されている手順に従います:
@@ -770,7 +770,7 @@ ER 形式コンポーネントを構成する場合、基本 ER データ モデ
 
 ## <a name="not-linked-template"></a><a id="i12"></a>リンクされていないテンプレート
 
-テンプレートを使用して送信ドキュメントを生成するように ER 形式コンポーネントを [手動で](er-fillable-excel.md#manual-entry) 構成する場合は、**Excel\\File** 要素を手動で追加し、必要なテンプレートを編集可能なコンポーネントの添付ファイルとして追加して、追加された **Excel\\File** 要素で、その添付ファイルを選択する必要があります。 このようにして、実行時に追加された要素で選択したテンプレートを埋めるように指定します。 **ドラフト** [状態](general-electronic-reporting.md#component-versioning) で形式コンポーネントのバージョンを構成する場合は、編集可能なコンポーネントにテンプレートをいくつか追加し、**Excel\\File** 要素で各テンプレートを選択して、ER 形式を実行することができます。 このようにして、実行時にさまざまなテンプレートがどのように入力されるかを確認できます。 **Excel\\File** 要素で選択されていないテンプレートがある場合、ER 形式デザイナーは、編集可能な ER 形式コンポーネント バージョンの状態が **ドラフト** から **完了** に変更されるたときに、これらのテンプレートがそのバージョンから削除されることを警告します。
+テンプレートを使用して送信ドキュメントを生成するように ER 形式コンポーネントを [手動で](er-fillable-excel.md#manual-entry) 構成する場合は、**Excel\\File** 要素を手動で追加し、必要なテンプレートを編集可能なコンポーネントの添付ファイルとして追加して、追加された **Excel\\File** 要素で、その添付ファイルを選択する必要があります。 このようにして、実行時に追加された要素で選択したテンプレートを埋めるように指定します。 **ドラフト** 状態で形式コンポーネントのバージョンを構成する場合は、編集可能なコンポーネントにテンプレートをいくつか追加し、**Excel\\File** 要素で各テンプレートを選択して、ER 形式を実行することができます。 このようにして、実行時にさまざまなテンプレートがどのように入力されるかを確認できます。 **Excel\\File** 要素で選択されていないテンプレートがある場合、ER 形式デザイナーは、編集可能な ER 形式コンポーネント バージョンの状態が **ドラフト** から **完了** に変更されるたときに、これらのテンプレートがそのバージョンから削除されることを警告します。
 
 次の手順は、この問題がどのように発生するかを示しています。
 

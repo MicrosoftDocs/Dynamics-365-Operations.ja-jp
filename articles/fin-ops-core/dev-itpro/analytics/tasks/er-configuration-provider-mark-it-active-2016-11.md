@@ -1,24 +1,24 @@
 ---
 title: コンフィギュレーション プロバイダーを作成し、有効としてマークする
 description: この記事では、システム管理者または電子申告開発者のロールに割り当てられたユーザーが、構成プロバイダーを作成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 07/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93c2e114c97290347b71e94d87ea5339688791cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
+ms.openlocfilehash: db5226720a4e0c0f167921a972429c0a5ecdd2e9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883599"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267816"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>コンフィギュレーション プロバイダーを作成し、有効としてマークする
 

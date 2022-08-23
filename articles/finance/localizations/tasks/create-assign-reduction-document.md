@@ -1,24 +1,24 @@
 ---
 title: 政府助成金の圧縮記帳ドキュメントの作成および割り当て
 description: 日本では、圧縮記帳ドキュメントとは、政府助成金によって支援された固定資産に添えるドキュメントのことです。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetReductionEntryProfile_JP, AssetTable, AssetBook
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec1527bfa35d05b977b8678706606f64bf75f2dc
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form: AssetReductionEntryProfile_JP, AssetTable, AssetBook
+ms.openlocfilehash: 153eeb363efe67445b17ce22f59c4722c2e3cee0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565644"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269247"
 ---
 # <a name="create-and-assign-a-reduction-entry-document-for-a-government-grant-subsidy"></a>政府助成金の圧縮記帳ドキュメントの作成および割り当て
 

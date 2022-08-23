@@ -1,25 +1,25 @@
 ---
 title: WEEKNUM ER 関数
 description: この記事では、WEEKNUM 電子申告 (ER) 関数の使用方法についての情報を提供します。
-author: NickSelin
+author: kfend
 ms.date: 01/15/2022
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: AX 10.0.24
-ms.openlocfilehash: 2c6eef0d6e1f90a3f8d382591edad3d568da84ec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: ''
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 4658f88b7e353e651177fad0c8636c5403be1256
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858773"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268149"
 ---
 # <a name="weeknum-er-function"></a>WEEKNUM ER 関数
 

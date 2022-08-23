@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 66fc9e21b79d70ec14750440c74d354bb8ec0695
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066970"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219601"
 ---
 # <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した倉庫管理プロセスに対応した品目の登録
 
@@ -29,7 +29,7 @@ ms.locfileid: "9066970"
 
 ## <a name="enable-sample-data"></a>サンプルデータの有効化
 
-この記事で指定したサンプルのレコードと値を使用してこのシナリオを実行するには、標準のデモ データがインストールされているシステムを使用している必要があります。また、開始する前に *USMF* 法人を選択する必要があります。
+この記事で指定したサンプルのレコードと値を使用してこのシナリオを実行するには、標準の [デモ データ](../../../fin-ops-core/fin-ops/get-started/demo-data.md)がインストールされているシステムを使用している必要があります。また、開始する前に *USMF* 法人を選択する必要があります。
 
 代わりに、次のデータがある場合は、独自のデータから値を代入してこのシナリオを実行できます。
 

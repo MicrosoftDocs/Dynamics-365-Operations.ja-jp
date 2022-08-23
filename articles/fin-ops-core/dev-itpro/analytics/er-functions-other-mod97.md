@@ -1,25 +1,25 @@
 ---
 title: MOD_97 ER 関数
 description: この記事では、MOD_97 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
-author: NickSelin
+author: kfend
 ms.date: 12/17/2019
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f57b55a9c4182b411e098ebce2f36b78ef03b6f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 55d2bce660186f10fc48e29f5cf03385a778a57a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898436"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285218"
 ---
 # <a name="mod_97-er-function"></a>MOD_97 ER 関数
 

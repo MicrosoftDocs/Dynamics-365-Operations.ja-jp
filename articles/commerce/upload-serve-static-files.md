@@ -1,25 +1,25 @@
 ---
 title: 静的ファイルのアップロードと配信
 description: この記事では、静的ファイルを Microsoft Dynamics 365 Commerce サイト ビルダーにアップロードする方法と、そのファイルを要求するために使用できるカスタム URL およびファイル名の作成方法について説明します。
-author: StuHarg
+author: bicyclingfool
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 8b30150d4187bbb0195bcb23960afe7389d56a5c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885325"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281942"
 ---
 # <a name="upload-and-serve-static-files"></a>静的ファイルのアップロードと配信
 

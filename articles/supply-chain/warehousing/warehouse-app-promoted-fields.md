@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857057"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218977"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの手順に昇格したフィールドを構成する
 
@@ -32,13 +32,7 @@ ms.locfileid: "8857057"
 昇格したフィールドを設定できるようになる前に、次の手順を完了して、Warehouse Management モバイル アプリで必要な機能を有効にして、必須フィールド名を生成する必用があります。
 
 1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
-1. [**機能管理** ワークスペース](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で、次の方法で一覧表示されている機能を有効にします。
-
-    - **モジュール:** *倉庫管理*
-    - **機能名:** *倉庫アプリ ステップ インストラクション*
-
-    *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。 この機能は、*Warehouse Management アプリの昇格したフィールド* 機能の前提条件です。
-
+1. システムで *倉庫アプリのステップ指示* 機能が有効になっていることを確認します。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。 この機能は、*Warehouse Management アプリの昇格したフィールド* 機能の前提条件です。
 1. 次の方法で表示された機能を有効にします。
 
     - **モジュール:** *倉庫管理*
@@ -67,7 +61,7 @@ ms.locfileid: "8857057"
 
 ### <a name="enable-sample-data"></a>サンプルデータの有効化
 
-指定されたサンプル レコードと値を使用してこのシナリオ全体を実行するには、標準のデモ データ がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
+指定されたサンプル レコードと値を使用してこのシナリオ全体を実行するには、標準の[デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md)がインストールされているシステムを使用する必要があります。 開始する前に、**USMF** 法人も選択する必要があります。
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>ライセンス プレート上に昇格したステップで販売ピッキングを構成する
 

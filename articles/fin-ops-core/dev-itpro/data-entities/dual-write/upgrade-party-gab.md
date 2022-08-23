@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7141f9c7ae4e27013bd655ce78892fc44c181315
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111821"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242985"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>当事者およびグローバル アドレス帳モデルへのアップグレード
 
@@ -274,7 +274,7 @@ ms.locfileid: "9111821"
 
     ![新しい Dataverse レコードをインポートします。](media/data-factory-import-party.png)
 
-9. Data Factory では、パーティの配送先住所とパーティの電子住所のテンプレートを続けて実行します。
+9. データ ファクトリでは、パーティの電子アドレス テンプレートとパーティの住所テンプレートを続けて実行します。
 
     + パーティの配送先住所テンプレートは、Customer Engagement アプリ内のすべての配送先住所レコードをアップサートし、対応する **取引先企業**、**取引先担当者**、**ベンダー** レコードと関連づけます。 3 種類の .csv が生成されます: ImportFONewPostalAddressLocation.csv、ImportFONewPartyPostalAddress.csv、ImportFONewPostalAddress.csv 。
     + パーティの電子先住所テンプレートは、Customer Engagement アプリ内のすべての電子住所レコードをアップサートし、対応する **取引先企業**、**取引先担当者**、**ベンダー** レコードと関連づけます。 1 種類の .csv が生成されます: ImportFONewElectronicAddress.csv 。

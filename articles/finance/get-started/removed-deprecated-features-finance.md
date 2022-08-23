@@ -2,7 +2,7 @@
 title: Dynamics 365 Finance の削除済みまたは非推奨の機能
 description: この記事では、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068925"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219571"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは非推奨の機能
 
@@ -32,6 +32,20 @@ ms.locfileid: "9068925"
 
 > [!NOTE]
 > 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Finance 10.0.29 リリースの削除済みまたは非推奨の機能
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>移転価格が課税される在庫移動オーダー
+
+[移転価格が課税される在庫移動オーダー](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **廃止 / 削除の理由** | [インドの在庫移動オーダー](../../finance/localizations/apac-ind-stock-transfer.md)が改良機能に更新されました|
+| **別の機能で置き換えられているか?**   | 有効 |
+| **影響を受ける製品領域** | アプリケーション |
+| **配置オプション** | すべて |
+| **状態** | 非推奨です: 2023 年 4 月以降、**移動価格に課税される在庫移動注文** の機能はバグ修正やセキュリティ修正のサポートを受けられなくなります。 お客様には、改良された機能である[インド向け在庫移動注文](../../finance/localizations/apac-ind-stock-transfer.md)をご利用いただくことになります。 2023 年 10 月以降、**移動価格に課税される在庫移動注文** 機能は使えなくなり、お客様には改良された機能への移行をお願いする予定です。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Finance 10.0.26 リリースの削除済みまたは非推奨の機能
 

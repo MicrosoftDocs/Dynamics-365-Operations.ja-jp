@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォームの機能
 description: この記事では、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 05/24/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
+ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069925"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9262301"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォームの機能
 
@@ -31,6 +31,50 @@ ms.locfileid: "9069925"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="feature-deprecation-effective-august-2022"></a>2022 年 8 月に廃止される機能
+
+### <a name="lifecycle-services-lcs-features-deprecated-in-august-2022"></a>2022 年 8 月に非推奨となる Lifecycle Services (LCS) の機能
+
+[One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) の取り組みの一環として、以下の LCS 機能は非推奨となります。
+
+| 機能名 | AX 2012 で使用しますか? | 財務と運用アプリとの併用をしますか？ | 別の機能で置き換えられているか? |
+|--------------|--------------------|----------------------------------------|------------------------------|
+| 通知 | 有効 | 有効 | はい : プロジェクトや環境の個別ページには、通知用のバナーが存在します。 |
+| 構成マネージャー | 有効 | 無効 | 無効 |
+| クラッシュ＆ダンプ分析 | 有効 | 無効 | 無効 |
+| フィードバックとバグ | 有効 | 有効 | 無効 |
+| 自分のサブスクリプション | 有効 | 有効 | 無効 |
+| Office 365 | 有効 | 有効 | はい: Azure Active Directory、または Microsoft 管理者ポータルです。 |
+| 影響分析 | 無効 | 有効 | 無効 |
+| トータルな経済的影響推定ツール | 無効 | 有効 | 無効 |
+| サービス要求 | 無効 | 有効 | はい: [セルフサービス展開](../deployment/infrastructure-stack.md) |
+| SharePoint 統合 | 有効 | 有効 | 無効 |
+| 構成マネージャーおよびデータ マネージャー | 無効 | 有効 | 無効 |
+| プロセス データ パッケージ | 無効 | 有効 | はい: データのインポート/エクスポート フレームワーク (DIXF) |
+| 環境のアップグレード | 無効 | 有効 | はい : [1つのバージョン](../lifecycle-services/oneversion-overview.md) のサービス更新を利用できます。 |
+| インフラストラクチャ見積もりツール | 有効 | 無効 | 無効 |
+| ライセンス サイズ設定 | 有効 | 無効 | 無効 |
+| 使用状況プロファイラー | 有効 | 無効 | 無効 |
+| カスタマイズ分析 | 有効 | 無効 | 無効 |
+| システム診断 | 有効 | 有効 | 無効 |
+| ビジネス プロセス モデラー Visio 管理 | 有効 | 有効 | 無効 |
+| AX 2012 クラウド環境管理 | 有効 | 無効 | 無効 |
+| RDFE Azure コネクタ | 有効 | 有効 | 無効 |
+| AX 2012 バージョン | 有効 | 無効 | 無効 |
+| LCS ストレージに格納された作業項目 | 有効 | 有効 | 無効 |
+| 修正プログラムの要求 | 有効 | 有効 | 無効 |
+
+
+### <a name="transport-layer-security-tls-rsa-cipher-suites"></a>トランスポート層セキュリティ (TLS) RSA 暗号スイート
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 現在のセキュリティ プロトコルに準拠するため、以下の暗号スイートのリストを削除します。<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
+| **別の機能で置き換えられているか?**   | 2022 年 11 月 30 日から、お客様が利用できるのは、私たちの [標準暗号スイート](/power-platform/admin/server-cipher-tls-requirements)のみです。 この変更は、当社のサーバーと通信するお客様のクライアントやサーバーに影響を与え、当社の標準暗号スイートを遵守していないお客様のサードパーティーの統合に影響を与える可能性があります。 |
+| **影響を受ける製品領域**         | 財務と運用アプリ |
+| **配置オプション**              | クラウド展開 |
+| **状態**                         | 非推奨。 顧客は、2022 年 11 月 30 日以前にサーバーをアップグレードする必要があります。 TLS 暗号スイート オーダーの構成についての詳細は、 [トランスポート層セキュリティ (TLS)](/windows-server/security/tls/manage-tls)をご参照ください。  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>2022 年 6 月に廃止される機能

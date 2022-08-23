@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854300"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219910"
 ---
 # <a name="improve-scheduling-engine-performance"></a>スケジューリング エンジンのパフォーマンスの改善
 
@@ -294,7 +294,9 @@ MRP では、特定の部品表 (BOM) レベルのすべての製造オーダー
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>リソースの数量が 1 より高い工順
 
-行程に必要なリソースの数量を 1 より高く設定すると、複数の並列ジョブがエンジンに送信されるため、基本行程/二次行程を使用する場合と実質的に同じ結果になります。 ただし、この場合、数量が 1 を超えると行程に複数のリソースが適用可能である必要があるため、特定のリソース割り当てを使用するオプションはありません。
+行程に必要なリソースの数量が 1 より大きい場合、複数の並列ジョブがエンジンに送信されるため、基本行程/二次行程を使用する場合と実質的に同じ結果になります。 ただし、この場合、数量が 1 を超えると行程に複数のリソースが適用可能である必要があるため、特定のリソース割り当てを使用できません。
+
+リソースの読み込み数量が 1 より大きい二次工程は、基本工程の各リソースに対して二次リソースの指定が必要であることを意味します。 たとえば、基本工程のリソースの数量が 2 に設定され、その二次工程のリソースの数量が 3 に設定されている場合、二次工程に対して合計 6 個のリソースが必要です。
 
 ### <a name="excessive-use-of-finite-capacity"></a>有限能力の過度な使用
 

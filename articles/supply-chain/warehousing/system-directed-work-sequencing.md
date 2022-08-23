@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849129"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219691"
 ---
 # <a name="system-directed-work-sequencing"></a>システム主導の作業優先順位
 
@@ -44,7 +44,7 @@ ms.locfileid: "8849129"
 
 ### <a name="make-demo-data-available"></a>デモ データを有効化する
 
-この記事で示されている値を使用してシナリオを実行するには、標準のデモ データがインストールされているシステムで作業する必要があります。 また、**USMF** 法人を選択する必要があります。 このシナリオでは、デモ データの倉庫 *51* を使用します。
+この記事で示されている値を使用してシナリオを実行するには、標準の [デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md) がインストールされているシステムで作業する必要があります。 また、**USMF** 法人を選択する必要があります。 このシナリオでは、デモ データの倉庫 *51* を使用します。
 
 > [!IMPORTANT]
 > 注文を倉庫にリリースする前に、ピッキング場所に注文のすべての品目に十分な在庫があることを確認してください。

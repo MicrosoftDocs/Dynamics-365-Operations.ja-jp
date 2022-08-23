@@ -1,7 +1,7 @@
 ---
 title: ユーザー補助機能
 description: この記事では、さまざまな障がいを持つユーザーを支援するようにデザインされた機能について説明します。
-author: TLeforMicrosoft
+author: jasongre
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4e6a077cc7848448233ed5f94f9b1ba5b385c3fe
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881054"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284026"
 ---
 # <a name="accessibility-features"></a>ユーザー補助機能
 

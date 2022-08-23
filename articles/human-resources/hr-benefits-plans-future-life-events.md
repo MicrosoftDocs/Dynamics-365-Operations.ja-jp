@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 183d0f13a17ffac723fac6c4801bd187dd54e976
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2cb3ca03e0d9d7e5423a405f1eb0372e1c19588d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888857"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227988"
 ---
 # <a name="configure-future-life-events"></a>将来のライフ イベントのコンフィギュレーション
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dynamics 365 Human Resources 将来のライフ サイクルをスケジュールできます。
 
@@ -40,10 +41,11 @@ Dynamics 365 Human Resources 将来のライフ サイクルをスケジュー�
    | ログ タイプ | アクションが次のいずれかであるかどうかを示します。</br></br>- **更新** – ライフ イベントを追跡している既存のレコードへの変更</br></br>- **挿入** – 新しいライフ イベント レコードを作成 |
    | ライフ イベント タイプ ID | ライフ イベント タイプの固有識別子。 |
    | ライフ イベント タイプ | 従業員の給付金登録を更新する触媒。 詳細については、ライフ イベント トリガーのセクションを参照してください。 |
-   | ステータス | ライフ イベント処理されているかどうか。 |
-   | ライン | 将来のライフ イベントの行番号。 |
+   | Status | ライフ イベント処理されているかどうか。 |
+   | 明細行 | 将来のライフ イベントの行番号。 |
 
 4. **保存** を選択します。 
 
+将来のライフ イベントを削除できます。 処理された将来のライフ イベントが削除された場合は、将来のレコードも削除されます。 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

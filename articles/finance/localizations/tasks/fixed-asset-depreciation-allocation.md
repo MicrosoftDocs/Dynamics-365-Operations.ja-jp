@@ -1,24 +1,26 @@
 ---
 title: 固定資産減価償却配賦の設定
 description: 日本では、特定の固定資産の減価償却費は複数の部門間で共有できます。
-author: ShylaThompson
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetAllocationRuleSetup_CN,  AssetPosting
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: China (PRC), Japan
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5052e758ccee4d2ef24983b98a435e79edec2ef6
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.search.form:
+- AssetAllocationRuleSetup_CN
+- AssetPosting
+ms.openlocfilehash: e001cafd351e23c1d7a068a34fef637d76bdc4b2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565564"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285740"
 ---
 # <a name="setup-fixed-asset-depreciation-allocation"></a>固定資産減価償却配賦の設定
 

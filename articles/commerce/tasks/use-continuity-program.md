@@ -1,25 +1,25 @@
 ---
 title: 連続プログラムの使用
 description: この手順では、連続プログラムの販売と関連する販売注文の処理について説明します。
-author: scott-tucker
+author: josaw1
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b8e3903aac99d32bbf4d065e6db1c3f3aab998c04d052d08338eb3f54ccc96f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.industry: Retail
+ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
+ms.openlocfilehash: 3736984a336b35b23b7060b2d98770912cc9ec6e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761541"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267407"
 ---
 # <a name="using-continuity-program"></a>連続プログラムの使用
 

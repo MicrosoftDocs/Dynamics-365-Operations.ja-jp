@@ -1,26 +1,26 @@
 ---
 title: バーコードのイメージを生成するためにバーコード データソースを使用する
 description: この記事では、バーコードのイメージを生成するためのバーコード データ ソースの使用方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: a604f7532d38b7f9efcecaa4d4a441ccce96643c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880315"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284211"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>バーコードのイメージを生成するためにバーコード データソースを使用する
 
