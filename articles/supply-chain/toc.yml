@@ -12,6 +12,8 @@
               items:
                 - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.29 (2022 年 10 月)
+                  href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (2022 年 8 月)
                   href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (2022 年 7 月)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/supply-chain
                 - name: サービス更新に関する通知を受け取る
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/supply-chain
+                - name: プロアクティブな品質の更新
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
                 - name: データ タスクの自動化
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
                 - name: 1 つのバージョンを使用した ISV ソリューションの提供
@@ -330,6 +334,8 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
                         - name: エジプト用電子請求の使用を開始する
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+                        - name: フランス用電子請求の使用を開始する
+                          href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
                         - name: メキシコ用電子請求の使用を開始する
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
                         - name: サウジアラビア用電子請求の使用を開始する
@@ -1053,6 +1059,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
                         - name: Split
@@ -1763,9 +1771,11 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: 生産計画
                   href: master-planning/planning-optimization/production-planning.md
+                - name: 有効期限のある製品のマスター プラン
+                  href: master-planning/planning-optimization/shelf-life.md
                 - name: 無限能力を使用したスケジューリング
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
-                - name: 能力に基づいたリソース選択でスケジュールする
+                - name: 能力に基づいたリソース選択でのスケジューリング
                   href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: 優先順位に基づいた計画
                   href: master-planning/planning-optimization/priority-based-planning.md
@@ -1809,9 +1819,11 @@
                   href: master-planning/planning-optimization/cancel-planning-job.md
                 - name: アクション メッセージ
                   href: master-planning/action-messages.md
+                - name: CTP を使用した販売注文配送日の計算
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: 計画最適化のトラブルシューティング
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: 計画最適化の拡張機能
+                - name: 計画最適化の拡張性
                   href: master-planning/planning-optimization/extensibility.md
             - name: マスター プラン
               items:
@@ -1879,9 +1891,11 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: 組み込みマスター プランを使用した正味必要量およびペギング情報
                   href: master-planning/net-requirements-built-in-master-planning.md
+                - name: 受注生産供給の自動化
+                  href: master-planning/make-to-order-supply-automation.md
             - name: 予測
               items:
-                - name: 需要予測と供給予測
+                - name: 需要と供給の予測
                   items:
                     - name: 在庫予測
                       href: master-planning/inventory-forecast.md
@@ -2463,10 +2477,12 @@
           items:
             - name: 生産プロセスの概要
               href: production-control/production-process-overview.md
-            - name: 'ミックス モードの計画: 個別、プロセス、およびリーン調達の連結'
+            - name: '混合モードの計画: 個別、プロセス、リーン調達の連結'
               href: production-control/mixed-mode-plan.md
             - name: 生産での外注作業の管理
               href: production-control/manage-subcontract-work-production.md
+            - name: 完成品を仕訳帳に転記する前に現物在庫にする
+              href: production-control/deferred-posting.md
             - name: ジョブ ID の統合番号順序
               href: production-control/unified-job-ids.md
             - name: プロセス自動化フローを呼び出して品質指示を作成する
@@ -2809,6 +2825,8 @@
               items:
                 - name: 注文納期日
                   href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: CTP を使用した販売注文配送日の計算
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: 注文入力期限
                   href: sales-marketing/order-entry-deadlines.md
                 - name: 代替配送先
@@ -2945,6 +2963,8 @@
               href: sales-marketing/trade-allowance.md
             - name: 新しい売買契約の作成
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: インポート時の明細行の正味金額の再計算
+              href: sales-marketing/calc-line-net-amounts-import.md
             - name: 販売履歴データのクリーンアップをスケジュールする
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: サービス管理
@@ -3387,9 +3407,11 @@
                       href: warehousing/piece-picking-confirmation.md
                     - name: 梱包材および費用
                       href: warehousing/pack-materials-packing-material-fees.md
-                    - name: 手動の梱包の設定 (2016 年 2 月および 5 月のみ)
-                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
-                    - name: 品目再配賦の未処理ピッキングの設定
+                    - name: 出荷コンテナーの梱包
+                      href: warehousing/packing-containers.md
+                    - name: 出荷コンテナーの梱包と出荷処理に関する梱包作業
+                      href: warehousing/packing-work.md
+                    - name: 未処理ピッキング品目の再配賦の設定
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: 例外処理のために倉庫作業をキャンセル
                       href: warehousing/cancel-warehouse-work.md
@@ -3541,10 +3563,12 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Warehouse Management モバイル アプリのステップのタイトルと手順をカスタマイズする
                       href: warehousing/mobile-app-titles-instructions.md
-                    - name: モバイル デバイスのステップで昇格済みフィールドを構成する
+                    - name: 昇格したフィールドをモバイル デバイスのステップで構成する
                       href: warehousing/warehouse-app-promoted-fields.md
                     - name: モバイル デバイスのメニュー項目でステップの迂回を構成する
                       href: warehousing/warehouse-app-detours.md
+                    - name: Warehouse Management モバイル アプリの迂回を使用してデータをクエリする
+                      href: warehousing/warehouse-app-data-inquiry.md
                     - name: Warehouse Management モバイル アプリで受信するライセンス プレート
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: 発注書の作業を完了するためのモバイル デバイスのメニュー項目の設定

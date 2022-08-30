@@ -12,6 +12,8 @@
               items:
                 - name: Commerce の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (2022 年 10 月)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (2022 年 7 月)
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (2022 年 7 月)
@@ -60,6 +62,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: サービス更新に関する通知を受け取る
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: プロアクティブな品質の更新
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: データ タスクの自動化
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: 1 つのバージョンを使用した ISV ソリューションの提供
@@ -422,6 +426,8 @@
                       href: hide-non-carrier-modes.md
                     - name: MPOS および Cloud POS のタスク レコーダーとヘルプ
                       href: task-recorder-retail-pos.md
+                    - name: カスタム Azure AD アプリを使用するための CPOS の構成
+                      href: cpos-custom-aad.md
                     - name: ハードウェア周辺機器
                       items:
                         - name: 周辺機器
@@ -698,8 +704,8 @@
                   href: prevent-discounts.md
                 - name: 支払/入金ベースの割引
                   href: tender_based_discounts.md
-                - name: 出荷割引の概要
-                  href: retail-shipping-discount.md
+                - name: 出荷割引
+                  href: shipping-discount.md
                 - name: 購買プロモーションを使用したギフトのコンフィギュレーション
                   href: gift-with-purchase.md
                 - name: クーポンの設定
@@ -714,9 +720,13 @@
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: 正確な価格と割引の計算を遅延する
                   href: delayed-price-calculation.md
-            - name: 推奨事項
+                - name: POS の価格関数
+                  href: pos-pricing-functions.md
+                - name: Commerce 価格 API
+                  href: pricing-apis.md
+            - name: レコメンデーション
               items:
-                - name: 製品推奨事項の概要
+                - name: 製品レコメンデーションの概要
                   href: product-recommendations.md
                 - name: Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効にする
                   href: enable-ADLS-environment.md
@@ -872,6 +882,8 @@
               href: async-customer-mode.md
             - name: 非同期顧客の同期顧客への変換
               href: convert-async-to-sync.md
+            - name: 非同期顧客作成モードに関するよくあるご質問
+              href: async-customer-mode-faq.md
             - name: クライアンテリング
               items:
                 - name: クライアンテリングの概要
@@ -1246,12 +1258,16 @@
                   items:
                     - name: ID 管理ページとモジュール
                       href: identity-mgmt-modules.md
-                - name: 製品収集モジュール
+                - name: 製品コレクション モジュール
                   items:
-                    - name: 製品収集モジュール
+                    - name: 製品コレクション モジュール
                       href: product-collection-module-overview.md
                     - name: クイック ビュー モジュール
                       href: quick-view-module.md
+                - name: 製品比較モジュール
+                  items:
+                    - name: 製品比較モジュール
+                      href: product-comparison-modules.md
                 - name: ナビゲーション モジュール
                   items:
                     - name: 階層リンク モジュール
@@ -1272,6 +1288,10 @@
                   items:
                     - name: Cookie の同意モジュール
                       href: cookie-consent-module.md
+                - name: チャット モジュール
+                  items:
+                    - name: Commerce チャット モジュール
+                      href: commerce-chat-module.md
             - name: 検索
               items:
                 - name: 既定のカテゴリ ランディング ページと検索結果ページの概要
@@ -1402,11 +1422,9 @@
                           href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
             - name: オーストリア
               items:
-                - name: オーストリア向け会計登録サービス統合のサンプル
+                - name: オーストリア向け会計登録サービス統合サンプル
                   href: localizations/emea-aut-fi-sample.md
-                - name: オーストリア向けキャッシュ レジスターの展開ガイドライン
-                  href: localizations/emea-aut-deployment.md
-                - name: オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)
+                - name: オーストリア向け会計統合サンプルの配置ガイドライン (レガシ)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: ブラジル
               items:
@@ -1502,6 +1520,8 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: キャッシュ レジスターの配置ガイドライン
                   href: localizations/emea-nor-fi-deployment.md
+                - name: ノルウェー向けレガシ機能からの移行
+                  href: localizations/emea-nor-fi-migration.md
                 - name: キャッシュ レジスターの配置ガイドライン (レガシ)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: ロシア
@@ -1764,6 +1784,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
                         - name: Split
@@ -2482,7 +2504,7 @@
               items:
                 - name: Commerce SDK の概要
                   items:
-                    - name: サンプルと参照パッケージ
+                    - name: Commerce SDK サンプルと参照パッケージのダウンロード
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: レガシ Retail SDK の移行
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md

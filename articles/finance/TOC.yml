@@ -12,6 +12,8 @@
               items:
                 - name: Finance の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.29 (10 月)
+                  href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (8 月)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (7 月)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
                 - name: サービス更新に関する通知を受け取る
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+                - name: プロアクティブな品質の更新
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
                 - name: データ タスクの自動化
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
                 - name: 1 つのバージョンを使用した ISV ソリューションの提供
@@ -1114,7 +1118,9 @@
                       href: general-ledger/tasks/process-ledger-allocation-journal.md
                     - name: 仕訳入力またはトランザクションの表示
                       href: general-ledger/tasks/view-journal-entries-or-transactions.md
-                    - name: 仕訳帳から関連する会社間伝票を表示する
+                    - name: 一般会計伝票の内部データの編集を許可する
+                      href: general-ledger/allow-edits-internal-data-gl-vouchers.md
+                    - name: 仕訳帳からの関連する会社間伝票の表示
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
                     - name: Excel からの仕訳帳明細行およびドキュメントの発行
                       href: general-ledger/open-lines-excel-journals-documents.md
@@ -1568,14 +1574,20 @@
                           href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
                         - name: エジプト用電子請求の使用を開始する
                           href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+                        - name: フランス用電子請求の使用を開始する
+                          href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: メキシコ用電子請求の使用を開始する
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+                        - name: ポーランド用電子請求の使用を開始する
+                          href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: サウジアラビア用電子請求の使用を開始する
-                          href: localizations/e-invoicing-sa-get-started.md
+                          href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: サウジアラビアの電子請求のオンボード
+                          href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: イタリアの FatturaPA と SDI の直接統合の設定
-                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
                         - name: 電子請求サービスを使用して仕入先請求書をインポートする
-                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: 電子請求に関するよくあるご質問
                       href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: 税計算
@@ -1648,6 +1660,10 @@
                           items:
                             - name: VAT 申告
                               href: localizations/emea-nor-vat-declaration.md
+                        - name: ポーランドの申告
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-pol-vat-declaration.md
                         - name: スペインの申告
                           items:
                             - name: VAT に関する情報の即時提供 (Suministro Inmediato de Información del IVA、SII)
@@ -1714,6 +1730,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: 仕入先請求書の消費税の計算と調整
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: 一般仕訳帳経由での消費税の調整
+                      href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: 仕訳帳の遅延税計算の有効化
                       href: general-ledger/enable-delayed-tax-calculation.md
                     - name: 消費税支払の作成
@@ -1770,6 +1788,8 @@
                           href: general-ledger/global-withholding-tax-overview.md
                         - name: グローバル源泉徴収税の設定
                           href: general-ledger/set-up-global-withholding-tax.md
+                        - name: グローバル源泉徴収税の為替レート タイプと日付タイプの設定を有効にする
+                          href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
                         - name: 購買トランザクションの源泉徴収税
                           href: general-ledger/withholding-tax-in-purchase-transactions.md
                         - name: 販売トランザクションの源泉徴収税
@@ -1948,6 +1968,8 @@
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
                     - name: NF-e XML ファイルを添付として移動する
                       href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+                    - name: NT2021.004 – 電子会計ドキュメント内のレイアウトと検証の更新 (NF-e)
+                      href: localizations/latam-bra-nfe-nt2021.004.md
                     - name: NT2020.005 – 電子会計ドキュメント内のレイアウトと検証の更新 (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – NF-e 向け中継販売デジタル プラットフォーム
@@ -2552,11 +2574,13 @@
                       href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: 会計ソフトウェアの監査証跡と編集ログ
                   href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+                - name: インドの電子請求書
+                  href: localizations/apac-ind-e-invoices.md
                 - name: 間接税
                   items:
-                    - name: インドの商品及びサービス税
+                    - name: インドの販売税
                       items:
-                        - name: インドの商品及びサービス税の概要
+                        - name: インドの販売税の概要
                           href: localizations/apac-ind-gst.md
                         - name: 税エンジン
                           items:
@@ -3548,11 +3572,15 @@
                           href: localizations/rus-set-up-inventory-profile.md
                         - name: ドキュメントおよびクエリでの在庫プロファイルの使用
                           href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: 通関手続き
+                      items:
+                        - name: 関税手続きの作業
+                          href: localizations/rus-work-with-customs-clearance.md
                 - name: レポート
                   items:
                     - name: 財務諸表
                       href: localizations/rus-financial-reports.md
-                    - name: Excel での財務諸表のコンフィギュレーション
+                    - name: Excel での財務諸表の構成
                       href: localizations/rus-excel-financial-report.md
                     - name: 電子形式の会計レポート
                       href: localizations/rus-accounting-reporting.md
@@ -3576,6 +3604,8 @@
                       href: localizations/rus-company-divisions.md
                     - name: ロシア語の住所形式と FIAS からのインポート
                       href: localizations/rus-russian-address-format-and-import-from-FIAS.md
+                    - name: 州住所登録 (GAR) からのインポート
+                      href: localizations/rus-russian-address-format-import-gar.md
                 - name: 繰延
                   items:
                     - name: 繰延の設定
@@ -4069,6 +4099,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
                         - name: Split

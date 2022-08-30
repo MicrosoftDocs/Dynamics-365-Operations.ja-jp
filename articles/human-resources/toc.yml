@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Human Resources の新機能および変更された機能
               items:
+                - name: Human Resources 10.0.29 (マージされたインフラストラクチャ)
+                  href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (マージされたインフラストラクチャ)
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Human Resources 10.0.27 (マージされたインフラストラクチャ)
@@ -602,8 +604,12 @@
               items:
                 - name: 会社ごとの給付金管理パラメーターのコンフィギュレーション
                   href: hr-benefits-setup-parameters-per-company.md
-                - name: すべての会社の給付金管理と従業員セルフサービスのパラメータの設定
+                - name: すべての会社の給付金管理と従業員セルフサービスのパラメーターの設定
                   href: hr-benefits-setup-parameters.md
+                - name: ライフ イベント向け管理者権限の構成
+                  href: admin-life-events.md
+                - name: 給付金のメール通知の構成
+                  href: hr-email-notifications.md
                 - name: 適格性のルールとオプションのコンフィギュレーション
                   href: hr-benefits-setup-eligibility-rules.md
                 - name: 個人の連絡先の適格性オプションのコンフィギュレーション

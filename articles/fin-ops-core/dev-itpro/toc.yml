@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムの新機能および変更された機能に関するホームページ
                   href: get-started/whats-new-home-page.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.29 (2022 年 10 月)
+                  href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.28 (2022 年 8 月)
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.27 (2022 年 7 月)
@@ -1090,6 +1092,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: エンティティ マップの二重書き込みの有効化
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: 二重書き込みセッションに対して 5 分のセッション タイムアウト期間を有効にする
+                      href: data-entities/dual-write/5-minute-mode.md
                     - name: 分離型二重書き込みアプリケーション オーケストレーション パッケージ
                       href: data-entities/dual-write/separated-solutions.md
                     - name: 二重書き込みの通貨データ型の移行

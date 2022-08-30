@@ -1,24 +1,24 @@
 ---
 title: 収益認識の再配賦 - シナリオ 3
 description: この記事では、既存の請求済販売注文に、新しい明細行が追加された、再配賦シナリオについて説明します。 新しい品目が契約に追加されると、新しい販売注文または既存の販売注文のいずれかに追加できます。
-author: kweekley
+author: bking
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e76c077aa24813c9b6ac8c72db06b38cedaafd18
+ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904819"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9348186"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>収益認識の再配賦 – シナリオ 3
 
