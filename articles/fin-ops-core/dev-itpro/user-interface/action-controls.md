@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 55521
-ms.assetid: 93b61e0c-b9bc-48fc-a9b7-874a8b0aeebd
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 713f6cf65f43921ed36a06023e7258b5589f093e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 55521
+ms.assetid: 93b61e0c-b9bc-48fc-a9b7-874a8b0aeebd
+ms.openlocfilehash: 81a3ffc835a1b97a809ab685a0abf6d3890b36b0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783006"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274611"
 ---
 # <a name="action-controls"></a>アクション コントロール
 

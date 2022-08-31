@@ -12,16 +12,15 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.custom:
-- "265974"
+ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
 ms.search.form: BIMeasurementDeployManagementEntityStore
-ms.openlocfilehash: c705bc2772f9fc2ac97b326754b9bba445b4d316
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: abe7b0b85103f202aa1c890fb5b44e7bbb4c7ada
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206595"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273044"
 ---
 # <a name="power-bi-integration-with-entity-store"></a>エンティティ格納と Power BI の統合
 

@@ -2,7 +2,7 @@
 title: 材料取り扱い設備のインターフェイス (MHAX)
 description: この記事では、外部の材料取り扱い設備のインターフェイス (MH) システムに接続できるような材料取り扱い設備のインターフェイス (MHAX) を設定する方法について説明します。
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 1056c7aee3ea96ddcb012704be40bef6c363f323
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068362"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334358"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>材料取り扱い設備のインターフェイス (MHAX)
 
@@ -41,12 +41,13 @@ ms.locfileid: "9068362"
 
 MHAX 機能を使用する前に、その機能とコンフィギュレーション キーの両方を有効にする必要があります。
 
-1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
-2. **[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ワークスペースで、*材料取り扱い設備のインターフェイス* という名前の機能を有効にします。
-3. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、システムをメンテナンス モードにします。
-4. **システム管理 \> 設定 \> ライセンス コンフィギュレーション** の順にクリックします。
-5. **取引 \>倉庫と輸送管理** を展開し、**材料取り扱い設備のインターフェイス** のチェック ボックスをオンにします。
-6. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします。
+1. Supply Chain Management のバージョン 10.0.28 以前を稼働している場合、次のいずれかの手順を実行します:
+    1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
+    1. **[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ワークスペースで、*材料取り扱い設備のインターフェイス* という名前の機能を有効にします。 (Supply Chain Management 10.0.29 では、この機能は必須であり、オフにすることはできません。)
+1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、システムをメンテナンス モードにします。
+1. **システム管理 \> 設定 \> ライセンス コンフィギュレーション** の順にクリックします。
+1. **取引 \>倉庫と輸送管理** を展開し、**材料取り扱い設備のインターフェイス** のチェック ボックスをオンにします。
+1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします。
 
 ## <a name="set-mhax-parameters"></a>MHAX パラメーターの設定
 

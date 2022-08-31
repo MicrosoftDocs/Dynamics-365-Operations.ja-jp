@@ -1,25 +1,25 @@
 ---
 title: Trace Parser を使用してトレースを実行
 description: このチュートリアルでは、トレースする方法についてのガイドラインを示します。
-author: RobinARH
+author: josaw1
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 25471
-ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72bbe52151cc4c1fa26d9fd8c6171d8e41f9fd5f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 25471
+ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
+ms.openlocfilehash: b290471c42ad1b79e5278728755c6b388de987a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781935"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279987"
 ---
 # <a name="take-traces-by-using-trace-parser"></a>Trace Parser を使用してトレースを実行
 

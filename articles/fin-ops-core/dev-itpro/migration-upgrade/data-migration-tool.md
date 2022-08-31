@@ -1,7 +1,7 @@
 ---
 title: AX 2009 アップグレード - データ移行ツールを使用して、Dynamics AX 2009 から財務と運用へ移行します
 description: この記事では、データ移行ツール (DMT) を使用して、Microsoft Dynamics AX 2009 から財務と運用へデータを移行する方法を説明します。
-author: kfend
+author: peakerbl
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: kfend
+ms.author: peakerbl
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 25e53644b2a25cf3966d94b13c241e67c95ce1cf
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 23d16906a50ea0555f77d64d09c75c88fb346a8e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124740"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273024"
 ---
 # <a name="ax-2009-upgrade---use-the-data-migration-tool-to-migrate-from-dynamics-ax-2009-to-finance-and-operations"></a>AX 2009 アップグレード - データ移行ツールを使用して、Dynamics AX 2009 から財務と運用へ移行します 
 

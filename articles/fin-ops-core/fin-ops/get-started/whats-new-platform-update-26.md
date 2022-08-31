@@ -1,25 +1,25 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の新機能および変更された機能
 description: この記事では、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) でプレビューされる機能について説明します。
-author: tonyafehr
+author: sericks007
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2019-XX-XX
 ms.dyn365.ops.version: Platform 26
-ms.openlocfilehash: fdd40fac70807545f06b339380cac0e2cb53d0ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: e78d46b3ede7044e42ccbef93f0b1f8c1194d746
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863207"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276514"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-26-may-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 (2019 年 5 月) の新機能および変更された機能
 

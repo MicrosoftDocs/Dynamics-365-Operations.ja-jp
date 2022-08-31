@@ -2,7 +2,7 @@
 title: 出荷連結ポリシーのコンフィギュレーション
 description: この記事では、既定およびユーザー定義の出荷連結ポリシーの設定方法について説明します。
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219535"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336495"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>出荷連結ポリシーを構成する
 
@@ -33,10 +33,7 @@ ms.locfileid: "9219535"
 > [!IMPORTANT]
 > この記事で説明する [最初のシナリオ](#scenario-1) では、まず以前の出荷連結機能を使用するよう、倉庫の設定をします。 続いて、出荷統合ポリシーを使用できるようにします。 このようにして、アップグレード シナリオの機能を体験できます。 デモ データ環境を使用して最初のシナリオを実行する場合は、この機能を有効にしてからシナリオを開始する必要があります。
 
-*出荷連結ポリシー* 機能を使用する前に 、システムでこの機能を有効にしておく必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *出荷連結*
+*出荷連結ポリシー* 機能を使用する前に 、システムでこの機能をオンにしておく必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *出荷の連結ポリシー* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="make-demo-data-available"></a>デモ データを有効化する
 

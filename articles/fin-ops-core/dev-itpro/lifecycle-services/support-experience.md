@@ -1,25 +1,25 @@
 ---
 title: 財務と運用アプリの技術サポートの設定
 description: この記事では、クラウドおよびオンプレミス配置のサポートについて説明します。
-author: kfend
+author: sericks007
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 29531
-ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
 ms.search.region: Global
-ms.author: anupams
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6997c6ae023cc6d2a74d75d7f1334e4c7c26d6cd
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 29531
+ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
+ms.openlocfilehash: 3baa437bfa59312294a676dc23f649a5609cb1a5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103387"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280011"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations-apps"></a>財務と運用アプリの技術サポートの設定 
 [!include [banner](../includes/banner.md)]

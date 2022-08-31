@@ -1,26 +1,26 @@
 ---
 title: 電子申告 (ER) コンフィギュレーションの作成
 description: この記事では、電子レポートを使用しての構成の作成に役立つ背景情報を提供します。
-author: nselin
+author: kfend
 ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 ms.reviewer: kfend
-ms.custom: 27621
-ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d12e7b07dc1d5d568f8a98f458fd9280499ef96d
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 27621
+ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: f2bc07a2c91a23eea55be25a0525308d8663ecc1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109160"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285563"
 ---
 # <a name="create-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションの作成
 

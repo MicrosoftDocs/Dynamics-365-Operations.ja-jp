@@ -2,7 +2,7 @@
 title: 遅延許容範囲 (マイナス在庫日数)
 description: この記事では、遅延許容範囲の計算、および計画の最適化における計画オーダーの作成への影響に関する情報を提供します。
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219970"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335378"
 ---
 # <a name="delay-tolerance-negative-days"></a>遅延許容範囲 (マイナス在庫日数)
 
@@ -23,11 +23,11 @@ ms.locfileid: "9219970"
 
 遅延許容範囲機能を使用すると、計画の最適化により、補償グループ、品目補充、およびマスター プランに設定されている **マイナス在庫日数** の値を考慮できます。 これは、マスター プランの際に適用される遅延許容範囲の期間を拡張するために使用されます。 このようにして、既存の供給が短期間の遅延後に需要を満たすことができる場合は、新しい供給注文の作成を回避できます。 この機能の目的は、特定の需要に対して新しい供給注文を作成する意味があるかどうかを決定することです。
 
-## <a name="turn-on-the-feature-in-your-system"></a>システムで機能を有効化する
+## <a name="turn-delay-tolerance-features-on-or-off"></a>遅延許容誤差機能を有効または無効にする
 
 遅延許容範囲機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、以下の機能を有効にします:
 
-- *計画の最適化のマイナス在庫日数* – の機能により、補充グループおよび品目補充に対するマイナス在庫日数設定が有効になります。
+- *計画の最適化のマイナス在庫日数* – の機能により、補充グループおよび品目補充に対するマイナス在庫日数設定が有効になります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。
 - *受注生産供給の自動化* – この機能により、マスター プランのマイナス在庫日数設定が有効になります。 (詳細については、[受注生産供給の自動化](../make-to-order-supply-automation.md) を参照してください。)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>計画の最適化の遅延許容範囲

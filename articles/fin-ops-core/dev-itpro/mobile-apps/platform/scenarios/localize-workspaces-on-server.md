@@ -1,25 +1,25 @@
 ---
 title: モバイル ワークスペースのローカライズ
 description: この記事では、ワークスペース クラスを使用して、ワークスペースにローカライゼーション サポートを提供する方法について説明します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 255544
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: fff97c94675f82adeefee820eb8808be4d911eab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 255544
+ms.assetid: ''
+ms.openlocfilehash: 3461457d7bcd1019f9ae3b9a3b8c2e7eb71ba27f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884687"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291748"
 ---
 # <a name="localize-mobile-workspaces"></a>モバイル ワークスペースのローカライズ
 

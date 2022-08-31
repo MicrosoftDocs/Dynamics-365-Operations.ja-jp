@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom:
-- "105483"
+ms.custom: 105483
 ms.assetid: cb5aff3b-5b29-44f7-9c6f-6b055c043996
-ms.openlocfilehash: c8ea55f9438502c4ad7abaae7c93d03521a9c95b
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 46db096667d37512ebe76c8756a1392515dbd9ec
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206252"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274711"
 ---
 # <a name="retail-channel-performance-powerbicom-solution"></a>小売チャネルの実績 PowerBI.com ソリューション
 

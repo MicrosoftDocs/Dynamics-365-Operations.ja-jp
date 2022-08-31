@@ -2,7 +2,7 @@
 title: 品目価格の保管レポートの比較
 description: 比較商品価格の保存レポートを生成し、結果を参照および/またはエクスポートする方法について説明します。
 author: JennySong-SH
-ms.date: 01/30/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6373679299b68413d75236ca8cc18ceba03e091
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846216"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334988"
 ---
 # <a name="compare-item-prices-storage-report"></a>品目価格の保管レポートの比較
 
@@ -35,12 +35,9 @@ ms.locfileid: "8846216"
 
 **品目価格保存の比較** レポートでは、出力に多数の行が含まれている場合に便利です。 たとえば、原価バージョンに保留中の品目価格を 4 万品目以上保持している場合、この出力には多くの明細行が含まれます。
 
-## <a name="enable-compare-item-prices-storage"></a>品目価格保管の比較を有効化
+## <a name="turn-the-compare-item-prices-storage-feature-on-or-off"></a>品目価格在庫の比較機能をオン/オフにする
 
-この機能を使用するには、事前にシステム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して機能状態を確認し、必要に応じてそれを有効にすることができます。 この機能は次のように一覧表示されます。
-
-- **モジュール** - 原価管理
-- **機能名** - 品目価格保管の比較
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *品目価格在庫の比較* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="generate-a-compare-item-prices-storage-report"></a>品目価格保管のレポートの比較を生成
 

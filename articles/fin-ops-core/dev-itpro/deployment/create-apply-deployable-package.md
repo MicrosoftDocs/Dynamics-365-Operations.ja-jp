@@ -1,24 +1,24 @@
 ---
 title: 配置可能なモデル パッケージの作成
 description: この記事では、展開可能なパッケージを作成および適用するためのワークフローについて説明します。
-author: jorisdg
+author: gianugo
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 24211
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24248406d6255aef756395d455b4445b0fe21f47
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.custom: 24211
+ms.openlocfilehash: 8ccb403626959dc0e0d8344aa410a6c444463d85
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129414"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271483"
 ---
 # <a name="create-deployable-packages-of-models"></a>モデルの配置可能パッケージを作成する
 

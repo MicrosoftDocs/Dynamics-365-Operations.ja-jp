@@ -1,23 +1,23 @@
 ---
 title: POS 拡張機能の概要
 description: この記事では、新しい独立した POS 拡張モデルおよびシールドされたソフトウェア開発キット (SDK) を使用して販売時点管理 (POS) 拡張機能を作成する方法に関する情報を提供します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 29a410fc88b0d5e4d8c220505861ba59872d4348
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 90fd8d13081fd4cde184bc11d0976169266ed5a1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890341"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270019"
 ---
 # <a name="pos-extension-overview"></a>POS 拡張機能の概要
 

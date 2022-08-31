@@ -7,17 +7,17 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: a1e2b263faea230c1a967d328843a813c9ec350b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 604944bd6db2454d479fb579a3d7b5366c7d8e3d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065402"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284502"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 

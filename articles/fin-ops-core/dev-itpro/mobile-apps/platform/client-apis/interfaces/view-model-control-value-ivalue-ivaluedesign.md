@@ -1,18 +1,18 @@
 ---
 title: ValueDesign タイプ
 description: 値 デザイン オブジェクトの種類。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: f3c19fa67d8a75d6386219c470e97fde90123ab0
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 3b104531de82811ae32cdb513c02f8bca16ed7f7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811283"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284405"
 ---
 # <a name="valuedesign-type"></a>ValueDesign タイプ
 

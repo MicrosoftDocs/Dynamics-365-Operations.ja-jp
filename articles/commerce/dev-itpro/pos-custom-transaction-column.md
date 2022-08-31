@@ -1,24 +1,24 @@
 ---
 title: 販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
 description: この記事では、画面レイアウト デザイナーを使用して POS トランザクション ページに新しいカスタム列を追加する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 13d1455e2db44367d22d0271f9ded7805e859575
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: 83892
+ms.openlocfilehash: ff15314dfdfe97ff5b7a34508e3322ad95be8fa3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067800"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282783"
 ---
 # <a name="add-custom-columns-to-a-point-of-sale-pos-transaction-grid"></a>販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加
 

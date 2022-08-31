@@ -1,18 +1,18 @@
 ---
 title: PageData タイプ
 description: ページに読み込まれたデータを表します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 99a5824584fd0bdb7fe0994e072b649c5c7fee1c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: f8ae24e5c8d066e4ba42eae7b8820436dff6354a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811591"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282533"
 ---
 # <a name="pagedata-type"></a>PageData タイプ
 

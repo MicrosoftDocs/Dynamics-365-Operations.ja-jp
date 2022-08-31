@@ -2,7 +2,7 @@
 title: 出庫ワークロードの視覚化
 description: この記事は、ワークロードの視覚化に関する情報を提供します。 この機能により、倉庫管理者と監修者は、現在の作業の進捗状況と残っている金額を監視するために使用できるカスタム ワークロード グラフを作成できるようになります。 倉庫管理者は、複数のビューを作成し、必要に応じて自動更新を設定できます。
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 78d0d81095bb52a314936dd7590a5690d94ecb15
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851336"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334418"
 ---
 # <a name="outbound-workload-visualization"></a>出庫ワークロードの視覚化
 
@@ -29,7 +29,7 @@ ms.locfileid: "8851336"
 
 ## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>出庫ワークロードの視覚化機能をオンまたはオフにする
 
-Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *出庫ワークロードの視覚化* 機能を検索して、この機能をオンまたはオフにできます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *ワークロードの視覚化を発信する* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="set-up-outbound-workload-visualizations"></a>出庫ワークロードの視覚化の設定
 

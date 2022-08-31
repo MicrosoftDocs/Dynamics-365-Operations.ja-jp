@@ -2,7 +2,7 @@
 title: Warehouse Management モバイル アプリの迂回を使用してデータをクエリする
 description: この記事では、データ照会モバイル デバイスのメニュー項目を構成し、迂回の一部として使用する方法について説明します。
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220567"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336608"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Warehouse Management モバイル アプリの迂回を使用してデータをクエリする
 
@@ -35,19 +35,19 @@ ms.locfileid: "9220567"
 この記事で説明する機能を使用するには、次の手順に従って必要な機能を有効にする必要があります。
 
 1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。 (**機能管理** ワークスペースの使用方法の詳細については、[機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を参照してください。)
-1. 次の方法で表示された機能を有効にします。
+1. Supply Chain Management のバージョン 10.0.28 以前を実行している場合、この機能をオンにします。この機能は、次の方法で一覧表示されます。
 
     - **モジュール:** *倉庫管理*
     - **機能名:** *倉庫アプリ ステップ インストラクション*
 
-    この機能は、*Warehouse Management アプリのデータ照会フロー* 機能の前提条件です。 *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。
+    この機能は、*Warehouse Management アプリのデータ照会フロー* 機能の前提条件です。 Supply Chain Management バージョン 10.0.29 の場合、これはは必須でオフにすることはできません。 *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。
 
 1. 次の方法で表示された機能を有効にします。
 
     - **モジュール:** *倉庫管理*
     - **機能名:** *Warehouse Management アプリの迂回*
 
-    この機能は、*Warehouse Management アプリのデータ照会フロー* 機能の前提条件です。 *Warehouse management アプリの迂回* 機能の詳細については、[モバイル デバイス メニュー項目で手順の迂回を構成する](warehouse-app-detours.md)を参照してください。
+    この機能は、*Warehouse Management アプリのデータ照会フロー* 機能の前提条件です。 Supply Chain Management のバージョン10.0.21では、既定で有効になっています。 *Warehouse management アプリの迂回* 機能の詳細については、[モバイル デバイス メニュー項目で手順の迂回を構成する](warehouse-app-detours.md)を参照してください。
 
 1. *Warehouse Management アプリの迂回* 機能がまだ有効でない場合、**倉庫管理 \> 設定 \> モバイル デバイス \> 倉庫アプリ フィールド名** の順に移動して、**既定の設定の作成** を選択することで Warehouse Management モバイル アプリのフィールド名を更新します。 Warehouse Management モバイル アプリを使用する法人 (会社) ごとにこの手順を繰り返します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
 1. 次の方法で表示された機能を有効にします。

@@ -1,23 +1,23 @@
 ---
 title: ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 description: この記事では、ISV Studio を使用した X++ パッケージのリンクについて説明します。
-author: jorisdg
+author: gianugo
 ms.date: 04/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 70381
-ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42ee31582cce268ab1fd582aa2cff8866e4735cc
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 70381
+ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.openlocfilehash: 6d577075e03658779480ac90d90425be97e33045
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103488"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271107"
 ---
 # <a name="link-x-modules-from-isv-packages-by-using-isv-studio"></a>ISV Studio を使用した ISV パッケージからの X++ モジュールのリンク
 

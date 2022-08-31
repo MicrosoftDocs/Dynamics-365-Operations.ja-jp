@@ -1,20 +1,20 @@
 ---
 title: セットベースからレコード単位への操作の変換
 description: この記事では、X++ 言語での SQL 操作を高速化する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/16/2020
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1c667791e8d3ffec95fe5461cd265b4e0086ae58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7e04e079e198e0b8a3cbb3e3b1eab308ea887b66
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867201"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271363"
 ---
 # <a name="conversion-of-operations-from-set-based-to-record-by-record"></a>セットベースからレコード単位への操作の変換
 

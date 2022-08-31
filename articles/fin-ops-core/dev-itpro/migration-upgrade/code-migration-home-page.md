@@ -1,24 +1,24 @@
 ---
 title: コードの移行とホーム ページのアップグレード
 description: この記事では、コードの移行に関するトピックへのリンクを提供します。
-author: RobinARH
+author: jasongre
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8b4452cc894d6fb58d3d2c94cc81821e7925c96
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: intro-internal
+ms.openlocfilehash: 7aa6763f1f0975aa8d98a29dc8bae11ce133eeea
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125168"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273028"
 ---
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 

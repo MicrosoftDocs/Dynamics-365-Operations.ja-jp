@@ -1,26 +1,26 @@
 ---
 title: オンプレミス配置のトラブルシューティング
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
-author: PeterRFriis
+author: faix
 ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 60373
-ms.assetid: ''
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 99310cf62f5a0002556bfef86b24ccaf19391698
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.custom: 60373
+ms.assetid: ''
+ms.service: ''
+ms.openlocfilehash: a079b6538c1033f25cc15f2f2a0d5f44ad3b81d4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945828"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271443"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 

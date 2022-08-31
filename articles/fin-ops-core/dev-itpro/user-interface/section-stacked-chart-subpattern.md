@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29251
-ms.assetid: 58fea559-4d50-46f3-9a88-4cca1d882d04
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26708c5ab10ff57366e08b40b98ef617e54835d5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 29251
+ms.assetid: 58fea559-4d50-46f3-9a88-4cca1d882d04
+ms.openlocfilehash: 5768d0ef282f00172cb8da9b551da9862870cb21
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781250"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287106"
 ---
 # <a name="section-stacked-chart-subpattern"></a>セクション積み上げグラフのサブパターン
 

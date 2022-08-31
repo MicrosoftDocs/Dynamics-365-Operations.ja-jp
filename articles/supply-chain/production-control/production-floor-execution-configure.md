@@ -2,7 +2,7 @@
 title: 生産現場の実行インターフェースを構成する
 description: この記事では、生産現場実行インターフェイスに 1 つ以上の構成を作成する方法について説明します。 生産現場実行インターフェイスを開くと、ブラウザーとデバイスに固有の選択した構成とジョブ フィルターが自動的に読み込まれます。 構成では、特定の用途に適用する必要があるポリシーを設定します。
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220365"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336188"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -63,29 +63,32 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>生産現場の実行インターフェースの資産管理機能
 
-この機能により、生産フロア実行インターフェイスに資産管理タブが追加されます。 作業者は、このタブを使用して、ジョブ リストの選択したフィルター内のマシン リソースに接続されている資産を選択できます。 選択したマシン資産に対して、作業者は、カウンタの値から資産の状態と状態を最大 4 つのカウンタで表示できます。 この機能を使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で、次の機能を有効にします。
+この機能により、生産フロア実行インターフェイスに資産管理タブが追加されます。 作業者は、このタブを使用して、ジョブ リストの選択したフィルター内のマシン リソースに接続されている資産を選択できます。 選択したマシン資産に対して、作業者は、カウンタの値から資産の状態と状態を最大 4 つのカウンタで表示できます。
 
-- *生産現場の実行インターフェースの資産管理機能*<br>(Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。)
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産現場の実行インターフェースの資産管理機能* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-### <a name="enable-job-search"></a>ジョブ検索の有効化
+### <a name="job-search"></a>職の検索
 
-この機能により、ジョブ リストに検索フィールドを追加できます。 作業者は、ジョブ ID を入力して特定のジョブを検索したり、注文 ID を入力して特定の注文のすべてのジョブを検索できます。 作業員は、キーパッドを使用するか、バーコードをスキャンして ID を入力できます。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
+この機能により、ジョブ リストに検索フィールドを追加できます。 作業者は、ジョブ ID を入力して特定のジョブを検索したり、注文 ID を入力して特定の注文のすべてのジョブを検索できます。 作業員は、キーパッドを使用するか、バーコードをスキャンして ID を入力できます。
 
-- *生産現場の実行インターフェイスのジョブ検索*<br>(Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。)
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産現場の実行インターフェイスのジョブ検索* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>連産物および副産物に関するレポートの有効化
+### <a name="report-on-co-products-and-by-products"></a>連産物と副産物を報告する
 
-この機能により、作業者は生産現場の実行インターフェイスを使用して、バッチ オーダーの進捗状況を報告できます。 このレポートには、連産物および副産物に関するレポートが含まれます。 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
+この機能により、作業者は生産現場の実行インターフェイスを使用して、バッチ オーダーの進捗状況を報告できます。 このレポートには、連産物および副産物に関するレポートが含まれます。
 
-- *生産現場の実行インターフェースの連産品と副産物に関するレポート*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management のバージョン10.0.29 では、この機能は既定で有効になっています。 管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産現場の実行インターフェースの連産品と副産物に関するレポート* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>完全なシリアル番号、バッチ番号、およびライセンス認証番号の表示を可能にする
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>完全なシリアル番号、バッチ番号、およびライセンス認証番号を表示する
 
 この機能により、生産現場の実行インターフェイスでシリアル番号、バッチ番号、およびライセンス プレート番号のリストを表示し、さらに効率が向上します。 表示は、限られた文字数のカード ビューから、完全な値を表示するのに十分なスペースを提供するリスト ビューに変わります。 このリストは、特定の番号を検索する機能も提供します。
 
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 以前のバージョンを稼働している場合は、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産フロア実行インターフェイスの完全なシリアル番号、バッチ番号、ライセンス プレート番号を表示する* 機能を検索することで、この機能をオンまたはオフにすることができます。
+
+
 Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産フロア実行インターフェイスの完全なシリアル番号、バッチ番号、ライセンス プレート番号を表示する* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-### <a name="enable-registering-of-material-consumption"></a>材料消費の登録を有効にする
+### <a name="register-material-consumption"></a>材料消費の登録
 
 この機能により、作業員は生産フロア実行インターフェイスを使用して材料消費、バッチ番号、およびシリアル番号を登録できます。 一部のメーカー、特にプロセス業界のメーカーでは、各バッチまたは製造オーダーで消費される材料の量を明示的に登録する必要があります。 たとえば、作業者はスケールを使用して、作業時に消費される材料の量を計量できます。 完全な材料トレーサビリティを確保するために、これらの組織は各製品の生産時に消費されたバッチ番号も登録する必要があります。
 
@@ -97,7 +100,7 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 > [!IMPORTANT]
 > WMS 以外の機能は単独で使用できます。 ただし、WMS を使用する場合は、両方の機能を有効にする必要があります。
 
-### <a name="enable-reporting-on-catch-weight-items"></a>CW 品目のレポートを有効にする
+### <a name="report-on-catch-weight-items"></a>CW 品目のレポート
 
 作業者は生産現場の実行インターフェースを使用して、CW 品目のバッチ オーダーの進捗状況を報告できます。 バッチ オーダーはフォーミュラから作成されますが、それらのフォーミュラはフォーミュラ品目、連産品、副産物としての CW 品目を含むように定義できます。 フォーミュラは、CW に定義される材料のフォーミュラ明細行を持つ場合も定義できます。 CW 品目では、在庫を追跡する 2 つの測定単位 (CW 数量と在庫数量) を使用します。 たとえば、食品業界では、箱入り肉は CW 品目として定義できます。この場合、CW 数量は箱数の追跡に使用され、在庫数量は箱の重量の追跡に使用されます。
 
@@ -105,15 +108,13 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 
 - *生産現場の実行インターフェイスからの CW 品目に関するレポート*
 
-### <a name="enable-the-my-day-dialog"></a>「マイ デイ」 ダイアログを有効にする
+### <a name="the-my-day-dialog"></a>"自分の 1 日" ダイアログ
 
 **マイ デイ** ダイアログには、毎日の登録の概要と、有給時間、有給残業時間、欠勤、および有給欠勤に関する作業者の現在の残高が表示されます。
 
-この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management のバージョン10.0.29 では、この機能は既定で有効になっています。 管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産現場の実行インターフェイスの [自分の 1 日の職務] ビュー* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-- *生産現場の実行インターフェイスの [自分の 1 日の職務] ビュー*
-
-### <a name="enable-teams"></a>チームを有効にする
+### <a name="teams"></a>チーム
 
 複数の作業者が同じ生産ジョブに割り当てられている場合、彼らはチームを形成することができます。 チームは、1 人の作業員をパイロットとして推薦することができます。 残りの作業員は自動的にそのパイロットのアシスタントになります。 それによって編成されたチームでは、パイロットのみがジョブの状態を登録する必要があります。 時間レコードは、すべてのチーム メンバーに適用されます。
 
@@ -121,7 +122,7 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 
 - *生産現場の実行インターフェイスの生産チーム*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスの追加構成を有効にする
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>生産現場の実行インターフェイス上の追加の構成
 
 この機能は、**生産現場の実行の構成** ページに次の機能の設定を追加します。
 
@@ -136,7 +137,6 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
 
 - *生産現場の実行インターフェイス上の追加の構成*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>生産現場の実行構成を使って作業する
 

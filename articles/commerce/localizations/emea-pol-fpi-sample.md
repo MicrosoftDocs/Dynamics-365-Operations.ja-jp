@@ -2,27 +2,28 @@
 title: ポーランド向け会計プリンター統合サンプル
 description: この記事では、Microsoft Dynamics 365 Commerce のポーランド向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2019-02-01
-ms.openlocfilehash: 1466532099820abcdf4496db80f9a34682e2ed5a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2019-02-01.
+ms.openlocfilehash: 52710252d78d34c444de2d40e16423868b12b5c1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274235"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336687"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>ポーランド向け会計プリンター統合サンプル
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Microsoft Dynamics 365 Commerce のポーランド向け会計統合サンプルの概要について説明します。
 
-ポーランド向け Dynamics 365 Commerce 機能には、POSと会計用プリンターの連携のサンプルが含まれています。 このサンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)を拡張し、[Posnet Polska S.A.](https://www.posnet.com.pl) の会計プリンタ用プロトコル POSNET THERMAL HD 2.02 をサポートしており、COM ポートで接続された会計プリンタと、ネイティブ ソフトウェア ドライバを使用して通信することができます。 Posnet Thermal HD FV EJ は、Posnet が提供している Posnet Thermal HD FV EJ のソフトウェア エミュレータを使って実装し、テストを行いました。 このサンプルはソース コード形式で提供され、Retail ソフトウェア開発キット (SDK) に含まれます。
+ポーランド向け Dynamics 365 Commerce 機能には、POSと会計用プリンターの連携のサンプルが含まれています。 このサンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)を拡張し、[Posnet Polska S.A.](https://www.posnet.com.pl) の会計プリンタ用プロトコル POSNET THERMAL HD 2.02 をサポートしており、COM ポートで接続された会計プリンタと、ネイティブ ソフトウェア ドライバを使用して通信することができます。 Posnet Thermal HD FV EJ は、Posnet が提供している Posnet Thermal HD FV EJ のソフトウェア エミュレータを使って実装し、テストを行いました。 このサンプルはソース コード形式で提供され、Commerce ソフトウェア開発キット (SDK) に含まれます。
 
 マイクロソフトは、Posnet からハードウェア、ソフトウェア、ドキュメントをリリースしていません。 会計プリンタの入手方法や操作方法については、[Posnet Polska S.A.](https://www.posnet.com.pl) にお問い合わせください
 
@@ -97,12 +98,10 @@ ms.locfileid: "9274235"
 
 ## <a name="set-up-fiscal-integration-for-poland"></a>ポーランド向け、会計統合の設定
 
-ポーランド向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Posnet** フォルダにあります (例: [release/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)) サンプルは、Commerce Runtime (CRT) の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+ポーランド向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Commerce SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Posnet** フォルダーにあります。 [サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) は、Commerce Runtime (CRT) の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタから構成されています。 Commerce SDK の使用方法の詳細については、[Commerce SDK サンプルと GitHub と NuGet からのリファレンス パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) と [独立パッケージSDK のパイプラインを設定する](../dev-itpro/build-pipeline.md) をご覧ください。
 
-> [!WARNING]
-> [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retail SDK の以前のバージョンを使用する必要があります。 詳細については、[ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)](emea-pol-fpi-sample-sdk.md)を参照してください。
->
-> 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+> [!NOTE]
+> ポーランドのプリンター統合サンプルは、Commerce SDK で Commerce バージョン 10.0.29 として提供されています。 Commerce version 10.0.28 以前では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retail SDK の以前のバージョンを使用する必要があります。 詳細については、[ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)](emea-pol-fpi-sample-sdk.md)を参照してください。
 
 [Commerce チャンネルの会計統合を設定する](setting-up-fiscal-integration-for-retail-channel.md)で説明されている会計統合の設定手順を実行します。
 
@@ -119,20 +118,18 @@ ms.locfileid: "9274235"
 1. 会計ドキュメント プロバイダーと会計コネクタの構成ファイルをダウンロードします。
 
     1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) レポジトリ を開きます。
-    1. SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します (例: **[リリース/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**)。
+    1. SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。
     1. **src \>FiscalIntegration \>Posnet** を開きます。
-    1. 会計ドキュメント プロバイダ構成ファイルを **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml** (例: [release/9.33 のファイルなど](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml)) でダウンロードします。
-    1. 会計コネクター構成ファイルを **HardwareStation \> ThermalDeviceSample \> Configuration \> ConnectorPosnetThermalFVEJ.xml** (例: [release/9.33 のファイル](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)) でダウンロードします。
+    1. **CommerceRuntime \> DocumentProvider.PosnetSample \> 構成 \> DocumentProviderPosnetSample.xml** で会計ドキュメントプロバイダー構成ファイルをダウンロードします。
+    1. **HardwareStation \> ThermalDeviceSample \> 構成 \> ConnectorPosnetThermalFVEJ.xml** で会計コネクタ構成ファイルをダウンロードします。
 
-    > [!WARNING]
-    > [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 この会計統合サンプルの構成ファイルは、LCS の開発者 VM 上の Retail SDK が含む次のフォルダーに存在します。
+    > [!NOTE]
+    > Commerce バージョン  10.0.28 以前の場合、LCS の開発者 VM で、以前のバージョンを使用する必要があります。 この会計統合サンプルの構成ファイルは、LCS の開発者 VM 上の Retail SDK が含む次のフォルダーに存在します。
     >
     > - **会計ドキュメント プロバイダ構成ファイル:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml
     > - **会計コネクタ 構成ファイル:**  RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml
-    > 
-    > 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
 
-1. **Retail とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。 **一般** タブで、**会計統合の有効化** オプションを **はい** に設定します。
+1. **小売とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。 **一般** タブで、**会計統合の有効化** オプションを **はい** に設定します。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計ドキュメント プロバイダー** に移動し、先ほどダウンロードした会計ドキュメント プロバイダー コンフィギュレーション ファイルを読み込みます。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計コネクタ** に移動し、先ほどダウンロードした会計コネクタ コンフィギュレーション ファイルを読み込みます。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> コネクタ機能プロファイル** の順に移動します。 新しいコネクタ機能プロファイルを作成します。 以前に読み込んだドキュメント プロバイダーとコネクタを選択します。 必要に応じて [データ マッピング設定](#default-data-mapping) を更新します。
@@ -173,16 +170,15 @@ ms.locfileid: "9274235"
 
 ### <a name="configure-channel-components"></a>チャネル コンポーネントの構成
 
-> [!WARNING]
-> [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 詳細については、[ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)](emea-pol-fpi-sample-sdk.md)を参照してください。
->
-> 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+> [!NOTE]
+> - ポーランドのプリンター統合サンプルは、Commerce SDK で Commerce バージョン 10.0.29 として提供されています。 Commerce バージョン  10.0.28 以前の場合、LCS の開発者 VM で、以前のバージョンを使用する必要があります。 詳細については、[ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)](emea-pol-fpi-sample-sdk.md)を参照してください。
+> - 自分の環境に配置されている Commerce サンプルは、Commerce コンポーネントにサービスまたは品質の更新を適用すると自動的に更新されません。 手動で必要なサンプルを更新する必要があります。
 
 #### <a name="set-up-the-development-environment"></a>開発環境の設定
 
 開発環境を設定してサンプルのテストと拡張を行う際は、次の手順に従います。
 
-1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリをクローンまたはダウンロードします。 SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。 詳細については、[GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください。
+1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリをクローンまたはダウンロードします。 SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。 詳細については、[GitHub と NuGet から Commerce SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください。
 1. **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln** で会計プリンター統合ソリューションを開き、ビルドします。
 1. CRT 拡張機能をインストールします:
 
@@ -220,10 +216,10 @@ ms.locfileid: "9274235"
 
 ## <a name="design-of-extensions"></a>拡張機能の設計
 
-ポーランド向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Posnet** フォルダにあります (例: [release/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)) サンプルは、CRT の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+ポーランド向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Commerce SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Posnet** フォルダーにあります。 [サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) は、CRT の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタから構成されています。 Commerce SDK の使用方法の詳細については、[Commerce SDK サンプルと GitHub と NuGet からのリファレンス パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) と [独立パッケージSDK のパイプラインを設定する](../dev-itpro/build-pipeline.md) をご覧ください。
 
-> [!WARNING]
-> [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 詳細については、[ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)](emea-pol-fpi-sample-sdk.md)を参照してください。 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+> [!NOTE]
+> ポーランドのプリンター統合サンプルは、Commerce SDK で Commerce バージョン 10.0.29 として提供されています。 Commerce バージョン  10.0.28 以前の場合、LCS の開発者 VM で、以前のバージョンを使用する必要があります。 詳細については、[ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)](emea-pol-fpi-sample-sdk.md)を参照してください。
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime 拡張機能の設計
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1dab8d8bdace046f0f061713600fd1eab69e7c12
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219691"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335468"
 ---
 # <a name="system-directed-work-sequencing"></a>システム主導の作業優先順位
 
@@ -35,7 +35,7 @@ ms.locfileid: "9219691"
 
 ## <a name="turn-on-the-organization-wide-system-directed-work-sequencing-feature"></a>組織全体のシステム主導の作業優先順位機能を有効にする
 
-システム主導の作業優先順位を使用するには、システム上でこの機能を有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+システム主導の作業優先順位を使用するには、システムでこの機能を有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *組織全体のシステム主導の作業優先順位*

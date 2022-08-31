@@ -1,25 +1,25 @@
 ---
 title: ページまたはグリッドの画像
 description: この記事では、画像をページまたはグリッドに表示する手順について説明します。
-author: RobinARH
+author: jasongre
 ms.date: 07/09/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 55871
-ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b06ea5a51a8fd6c445ac4855fe53cfa69ee5a47
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 55871
+ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
+ms.openlocfilehash: 1390e2bcce2b4508622dcc4cb461275754a25eb9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881071"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287860"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページまたはグリッドの画像
 

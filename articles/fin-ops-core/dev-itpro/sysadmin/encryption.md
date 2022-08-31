@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 21631
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13f1b4bd7db0a383580ac49d34f213ef2bd8b46d
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 21631
+ms.openlocfilehash: 1796e67276142e0ff2ab0642eb1bb38b7c21e6e8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108832"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284385"
 ---
 # <a name="encryption-in-finance-and-operations-apps"></a>財務と運用アプリの暗号化
 

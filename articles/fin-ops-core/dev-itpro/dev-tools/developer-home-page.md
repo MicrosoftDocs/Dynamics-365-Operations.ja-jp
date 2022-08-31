@@ -1,22 +1,22 @@
 ---
 title: ホーム ページの開発とカスタマイズ
 description: この記事では、開発に関するトピックへのリンクを提供します。
-author: RobinARH
+author: josaw1
 ms.date: 06/13/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58f0d61847b1d649c12d61404873286ab71edab3
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: intro-internal
+ms.openlocfilehash: 22ff1c9758b0b503af4a2f72d99fa7cabdfa71c2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103711"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271179"
 ---
 # <a name="develop-and-customize-home-page"></a>ホーム ページの開発とカスタマイズ
 

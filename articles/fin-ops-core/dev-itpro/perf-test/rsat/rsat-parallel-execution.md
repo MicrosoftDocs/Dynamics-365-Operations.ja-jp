@@ -5,17 +5,17 @@ author: FrankDahl
 ms.date: 12/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-12-16
-ms.openlocfilehash: 894d47dd54e7a5b4a04fe2da305913714863f86f
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: ''
+ms.openlocfilehash: 3014b8b92f3c7cf1f693ae829a0782d05ff480c4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103646"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277430"
 ---
 # <a name="run-the-regression-suite-automation-tool-rsat-with-parallel-execution"></a>Regression suite automation tool (RSAT) の並列実行
 

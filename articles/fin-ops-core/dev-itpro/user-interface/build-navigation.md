@@ -1,25 +1,25 @@
 ---
 title: ナビゲーションの構築
 description: このチュートリアルでは、ワークスペースとナビゲーション ウィンドウにナビゲーション要素を追加します。
-author: aneesmsft
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26031
-ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbcd28b23cc8559e10884dfd04f52a2ecc7227d1
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 26031
+ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
+ms.openlocfilehash: 3a3a61eee426596430e274f90fc17c49634730fd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114351"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286690"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 

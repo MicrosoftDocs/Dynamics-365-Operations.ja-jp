@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 12414
-ms.assetid: 60279057-6aea-428f-b75c-313ec041c0c0
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd5cea2e59f9411abea5303251fc3a24aaddb54
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 12414
+ms.assetid: 60279057-6aea-428f-b75c-313ec041c0c0
+ms.openlocfilehash: 1311feac0a7c81dfabefbb1bd68e1d5d93277ef6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782148"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279963"
 ---
 # <a name="fill-text-subpattern"></a>テキスト入力のサブパターン
 

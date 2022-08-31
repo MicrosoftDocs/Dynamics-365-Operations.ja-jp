@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 998511bd87fa5e1dbd7cdae2d6cd912d61dc29ae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d6a4ceb6607ca397b8d755abb1c6645cebc7f660
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691697"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323393"
 ---
 # <a name="set-up-tier-codes"></a>層コードの設定
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources では、従業員と雇用主によって支払われる給付金レートと共に階層コードが使用されます。 無制限の数の階層コードを定義し、会社のニーズに合うようにレート計算を設定できます。
 

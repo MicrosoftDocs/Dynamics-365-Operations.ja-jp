@@ -1,23 +1,23 @@
 ---
 title: 財務と運用アプリのデータ パッケージの処理と使用
 description: この記事では、ソリューションの処理およびデータ パッケージを消費する方法について説明します。
-author: kfend
+author: sericks007
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
-ms.search.region: Global
-ms.author: omarc
-ms.openlocfilehash: ed7615354be0453b9252e068d47de86dabd16095
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: e63a5143912310f40b1eea12ff47deeb5f4f7ec7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065399"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270727"
 ---
 # <a name="process-and-consume-data-packages-in-finance-and-operations-apps"></a>財務と運用アプリのデータ パッケージの処理と使用 
 

@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom:
-- "266674"
+ms.custom: 266674
 ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
-ms.openlocfilehash: ba8651314e611c73847577445726de0c99fced4d
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: e5df20d85c3f5515204bd6ecb1216727ba236112
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206116"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274843"
 ---
 # <a name="extend-report-menu-items-to-redirect-user-navigation"></a>レポート メニューの項目を拡張してユーザーナビゲーションをリダイレクトします。
 

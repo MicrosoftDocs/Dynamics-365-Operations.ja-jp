@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 08/25/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf61958cd3fa69107de126c85f0ede48fa9ed70b
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.openlocfilehash: ff71fd083901a266395b0a5ad622a198d5279485
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114343"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279967"
 ---
 # <a name="hierarchyviewer-control"></a>HierarchyViewer コントロール
 

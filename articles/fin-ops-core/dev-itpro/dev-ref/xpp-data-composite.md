@@ -1,20 +1,20 @@
 ---
 title: X++ 複合データ型
 description: この記事では、X++ の複合データ型について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b590bdd33f54b932382c6584f87c2ec69b3ebea5
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: 0c03b59d0ca3034c873c36b86c6003a36fee8a7c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103496"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271383"
 ---
 # <a name="x-composite-data-types"></a>X++ 複合データ型
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066673"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306321"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility の構成
 
@@ -52,7 +52,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | 機能管理名 | Description |
 |---|---|
 | *OnHandReservation* | この機能では、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。 |
-| *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
+| *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 既定の同期頻度は 15 分に 1 回で、5 分ごとに高く設定できます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
 | *OnhandChangeSchedule* | このオプション機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
 | *割り当て* | このオプション機能により Inventory Visibility は、在庫保護 (リングフェンシング) および過剰販売管理の機能を持つことができます。 詳細については、[Inventory Visibility の在庫配賦](inventory-visibility-allocation.md) を参照してください。 |
 | *在庫可視化で在庫品目を有効化* | このオプション機能によって、在庫品目一覧が有効になり、倉庫管理プロセス (WMS) が有効な品目がサポートされます。 詳細については、[WMS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |

@@ -1,25 +1,25 @@
 ---
 title: 財務と運用アプリの開発と管理
 description: このページは、開発者と IT プロが財務と運用の使用を開始するのに役に立ちます。
-author: josaw
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: josaw
-ms.custom: intro-internal
-ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c5e68fe8feb0ae65a5be5b2a82f9a786ec9aa21
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.custom: intro-internal
+ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
+ms.openlocfilehash: 87c5b3da14825452d3df278186dfef0e1fb2a3cb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166691"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270767"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>財務と運用アプリの開発と管理
 

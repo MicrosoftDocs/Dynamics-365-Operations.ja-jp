@@ -1,18 +1,18 @@
 ---
 title: MultiLookup タイプ
 description: 複数ルックアップ コントロールの種類。 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: e80f2e0000681b530b7a3d947b2619889eb3af4d
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 488a60185982bceca476bccbf6c026da624398dc
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811306"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283488"
 ---
 # <a name="multilookup-type"></a>MultiLookup タイプ
 

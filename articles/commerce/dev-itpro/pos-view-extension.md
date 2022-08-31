@@ -1,24 +1,24 @@
 ---
 title: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 description: この記事では、顧客の追加/編集画面などの既存の POS ビューを拡張する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 24411
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9e582e0ce1fd06cb47f39bb29c8d5fbefda55014
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 24411
+ms.openlocfilehash: 653f8fb87dc22e245dfe95b40dcf28cd7e4538da
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850290"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275455"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 

@@ -1,18 +1,18 @@
 ---
 title: サービス モジュール
 description: クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 01aa29dab910a269e0c5f9dda7b9f880cc7cc019
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 2bc3224acf02aaa00a3011504ef5942ef0858a5e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811073"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279995"
 ---
 # <a name="services-module"></a>サービス モジュール
 

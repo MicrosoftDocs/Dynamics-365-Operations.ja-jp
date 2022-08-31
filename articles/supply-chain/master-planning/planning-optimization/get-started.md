@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112196"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295932"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
@@ -29,7 +29,7 @@ ms.locfileid: "9112196"
 
 [すでに発表した](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) ように、計画の最適化は、既存の組み込みマスター プラン エンジンと置き換えるようにスケジュールされています。
 
-現在、組み込みのマスター プラン エンジンを使用している場合は、すぐに計画の最適化への移行の計画を開始する必要があります。 廃止が適用されると操作が影響を受ける可能性があるため、移行プロセスをすぐに開始することが重要です。 廃止が実施された場合に、最新の問題を回避するために、2020 年 12 月 1 日までに移行を完了することを強くお勧めします。 
+現在、組み込みのマスター プラン エンジンを使用している場合は、すぐに計画の最適化への移行の計画を開始する必要があります。 廃止が適用された場合 (実施の実施が現在スケジュールされていない場合)、他の方法で操作が影響を受ける可能性があるため、この作業を今すぐ開始することが重要です。 新しいサービスの多くのパフォーマンス向上と他の新しい機能を活用できるよう、計画の最適化によって必要な機能がサポートされた後は、移行をできるだけ早く完了してください。
 
 現時点では、計画の最適化機能では、Supply Chain Management に組み込まれている計画エンジンで利用可能なすべての機能がサポートされていません。 したがって、計画の最適化で現在利用可能な機能セットが要件を満たすかどうかを評価することが重要です。 現在、計画の最適化機能は Dynamics Lifecycle Services (LCS) で既定では有効になっていないため、機能を有効にする前に評価を行う機会があります。
 

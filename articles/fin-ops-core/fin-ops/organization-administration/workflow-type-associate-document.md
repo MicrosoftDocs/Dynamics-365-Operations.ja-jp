@@ -1,25 +1,25 @@
 ---
 title: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
 description: この記事では、ワークフロー タイプにワークフロー ドキュメント クラスを関連付ける方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 202694
-ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 46f40e8d9b8a0307ed06af02682fa97a8e505036
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 202694
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
+ms.openlocfilehash: 968ae8b4b3bc2285540dcc0a17a89a5afd96717f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847048"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287060"
 ---
 # <a name="associate-a-workflow-document-class-with-a-workflow-type"></a>ワークフロー ドキュメント クラスとワークフロー タイプの関連付け 
 

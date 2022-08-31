@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1b8b3d8d83bdad2efe49bd4e878793cca6c49f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ba01a90f805300a27e4550e1371fb55d5e3a7536
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891208"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335048"
 ---
 # <a name="creating-work-orders"></a>作業指示書の作成
 
@@ -64,7 +64,7 @@ ms.locfileid: "8891208"
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>自動生成された作業指示書のグループ化の有効化
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+この機能は使用する前にシステムでオンにする必要があります。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *資産管理*
 - **機能名 :** *メンテナンス計画の実行中に作業指示書をグループ化するルールの適用*

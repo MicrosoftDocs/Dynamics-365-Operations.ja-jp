@@ -2,7 +2,7 @@
 title: 出荷連結ワークベンチを使用して出荷を連結する
 description: この記事では、複数の注文が倉庫にリリースされ、出荷連結ワークベンチを使用して出荷に連結するシナリオを示します。
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: a33189cdcbb66304eef80558e931209ea236f576
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: db8dc5101b223a0033284d8e6c494721871809d8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218621"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335798"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>出荷連結ワークベンチを使用して出荷を連結する
 
@@ -34,14 +34,11 @@ ms.locfileid: "9218621"
 
 このシナリオでは、既にこの機能を有効にし、[出荷連結ポリシーの構成](configure-shipment-consolidation-policies.md)内の実習を完了しており、同ページ内に記述されているポリシーとその他のレコードを作成していることを前提としています。 このシナリオを続行する前に、この演習を行っている必要があります。
 
-## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>手動での出荷連結機能を有効化する
+## <a name="turn-the-manual-shipment-consolidation-feature-on-or-off"></a>手動での出荷連結機能をオンまたはオフにする
 
-*手動出荷連結* 機能を使用する前に 、システムでこの機能を有効にしておく必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+手動での出荷連結を使用するには、これをシステムでオンにする必要があります。 Supply Chain Management のバージョン10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *手動での出荷連結* 機能を検索して、この機能をオンまたはオフにできます。
 
-- **モジュール:** *倉庫管理*
-- **機能名:** *手動出荷連結*
-
-ポリシーを作成する前に、*出荷の連結* 機能を有効にしておく必要もあります。 詳細については、[出荷連結ポリシーを構成する](configure-shipment-consolidation-policies.md) を参照してください。
+また、ポリシーを作成する前に *出荷の連結* 機能を有効にする必要があります (Supply Chain Management バージョン 10.0.29 の場合、この機能は必須で、オフにできません)。 詳細については、[出荷連結ポリシーを構成する](configure-shipment-consolidation-policies.md) を参照してください。
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>このシナリオで使用する販売注文の作成
 

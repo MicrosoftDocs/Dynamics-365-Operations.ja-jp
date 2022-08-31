@@ -1,23 +1,23 @@
 ---
 title: Visual Studio 開発ツールの更新
 description: この記事では、開発ツールを更新する方法について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 07/18/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 33571
-ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 671d52d41b38ea0146c34dbd20a7169ca538e5b7
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 33571
+ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
+ms.openlocfilehash: bbdc61a3dfc9ff577330881a656f4d7c43ae792c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103730"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271019"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 

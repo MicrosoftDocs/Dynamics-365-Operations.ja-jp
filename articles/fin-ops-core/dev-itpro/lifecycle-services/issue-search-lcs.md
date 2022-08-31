@@ -1,25 +1,25 @@
 ---
 title: Lifecycle Services (LCS) での問題検索
 description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) の問題検索ツールに関する情報を提供します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 18881
-ms.assetid: 160b2882-c70c-44b1-9780-68dc47afb2e8
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f03eff13d1798f9ae7365fb9bf2c85bf77603fa8e003e2ed4665c3ab81d32058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 18881
+ms.assetid: 160b2882-c70c-44b1-9780-68dc47afb2e8
+ms.openlocfilehash: 563ab07d952391e227bad65797edbff691519680
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753008"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284451"
 ---
 # <a name="issue-search-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での問題検索
 

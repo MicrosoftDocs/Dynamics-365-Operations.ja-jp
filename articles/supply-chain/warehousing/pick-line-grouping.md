@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: f9e6cbf0f520f0f30c01cefba03689e9c119f2cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 00a4e07ac38a83cd4569006f3b6e2bdd59ed1a42
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890628"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334538"
 ---
 # <a name="pick-line-grouping"></a>ピッキング行のグループ化
 
@@ -30,7 +30,7 @@ ms.locfileid: "8890628"
 
 ## <a name="turn-on-the-pick-line-grouping-feature"></a>ピッキング行のグループ機能をオンにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、この機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+この機能は使用する前にシステムでオンにする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、この機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *ピッキング行のグループ*

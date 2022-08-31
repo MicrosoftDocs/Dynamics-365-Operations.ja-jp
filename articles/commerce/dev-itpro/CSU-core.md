@@ -1,21 +1,21 @@
 ---
 title: Commerce Scale Unit (CSU) コアの概要
 description: この記事では、Microsoft Dynamics 365 Commerce の Commerce Scale Unit (CSU) Core の概要を説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/27/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-30-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-30
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 9e91bc348c84c2a6697644061adcc3015215ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3a13ebc45510a9e81133664bd1ae2a93df5acaf
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876569"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282195"
 ---
 # <a name="introduction-to-commerce-scale-unit-csu-core"></a>Commerce Scale Unit (CSU) コアの概要
 

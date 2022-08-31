@@ -1,21 +1,21 @@
 ---
 title: ローカル開発環境の設定
 description: この記事では、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) および販売時点管理 (POS) 機能のローカル開発環境の設定方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 09/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 09-16-2021
+ms.author: josaw
+ms.search.validFrom: 2021-09-16
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 3b8df31f52ea90483355659e4642b71632b0e555
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 6f81e88ce3939b51160f22b5957ca2f87748bb48
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069008"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284761"
 ---
 # <a name="set-up-a-local-development-environment"></a>ローカル開発環境の設定
 

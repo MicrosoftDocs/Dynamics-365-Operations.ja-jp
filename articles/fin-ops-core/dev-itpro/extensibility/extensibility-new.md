@@ -1,25 +1,25 @@
 ---
 title: 拡張性の新機能および変更された機能
 description: この記事では、拡張性の更新に関するトピックへのリンクを提供します。
-author: RobinARH
+author: josaw1
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 268724
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: b56b3378945dba45c775f4f7648ebd293f873adb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 268724
+ms.assetid: ''
+ms.openlocfilehash: 887de4ba46493af4fce581d68e2b21a2f4790b87
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866891"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270871"
 ---
 # <a name="whats-new-or-changed-for-extensibility"></a>拡張性の新機能および変更された機能
 

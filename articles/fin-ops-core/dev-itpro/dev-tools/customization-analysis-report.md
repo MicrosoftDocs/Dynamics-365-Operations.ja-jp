@@ -1,23 +1,23 @@
 ---
 title: カスタマイズ分析のレポート (CAR)
 description: この記事では、モデルのカスタマイズ分析のレポートを生成する方法について説明し、レポートに含まれるいくつかのベスト プラクティス ルールについて説明します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 49681
-ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab637ccd753c22cf00ffa7b51ab9d2175ba64cb7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 49681
+ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
+ms.openlocfilehash: b0d6411918b7e595a3e3354e1cfb3c745311c562
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867087"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271195"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 

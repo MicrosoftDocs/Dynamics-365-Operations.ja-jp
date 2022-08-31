@@ -7,20 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 251594
-ms.assetid: 922881a2-f12a-41b4-8ef9-a5b31b464ef1
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9bc5c4ce81ad132c8ab88029c9f56126f8766d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 251594
+ms.assetid: 922881a2-f12a-41b4-8ef9-a5b31b464ef1
+ms.search.industry: Retail
+ms.openlocfilehash: 28f5b89d7ed001e8798aa36565e22da413781e70
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895449"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274372"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 

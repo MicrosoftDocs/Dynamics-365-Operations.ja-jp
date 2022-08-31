@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 04/07/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e313f20c87c6ba62d74cdd36e1c0990deafaa68c
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 71a309ae6c2e83ea30b9119ee72473446661c76c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111410"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288906"
 ---
 # <a name="unlink-and-relink-dual-write-environments"></a>二重書き込み環境のリンク解除および再リンク
 

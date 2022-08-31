@@ -1,24 +1,24 @@
 ---
 title: 販売時点管理 (POS) サンプルを実行
 description: この記事では、POS サンプルの実行方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 11/27/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 4e6fc1f3b5114111bcfe1088301cb71ba72dcd1e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 83892
+ms.openlocfilehash: 0ab5d80c1b1fd3e0719c4ecf4b90e56fbce678eb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863418"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286946"
 ---
 # <a name="run-the-point-of-sale-pos-samples"></a>販売時点管理 (POS) サンプルを実行
 

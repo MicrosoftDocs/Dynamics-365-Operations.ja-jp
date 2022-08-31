@@ -1,24 +1,24 @@
 ---
 title: 受信したドキュメントを解析する
 description: この記事では、受信したドキュメントを解析できる電子申告の形式を設定する方法について説明します。
-author: nickselin
+author: kfend
 ms.date: 11/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0df803a0904cc2900c282a656ae5faa807ccb1aa
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: a256c84ab4b2cbd6a877d8ff69db83e15ed8b3f1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108423"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269708"
 ---
 # <a name="parse-incoming-documents"></a>受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]

@@ -2,25 +2,29 @@
 title: ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)
 description: この記事では、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) からポーランド向け会計プリンターの統合サンプルを展開するためのガイドラインを提供します。
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 883f09f73e3b372d6896b6702e54e2e664cff4d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 178301e6d8e5f87376ed893e4bf5f966260cad62
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286529"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336719"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) から、ポーランド向け会計プリンター統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[ポーランド向け会計プリンター統合サンプル](emea-pol-fpi-sample.md) を参照してください。 
+> [!IMPORTANT]
+> Microsoft Dynamics 365 Commerce バージョン10.0.28 以前を使用している場合は、この記事のガイドラインに従う必要があります。 Commerce バージョン 10.0.29 では、ポーランドの会計プリンター サービス統合サンプルは、Commerce ソフトウエア開発キット (SDK) で提供されています。 詳細については、[チャネル コンポーネントの構成](./emea-pol-fpi-sample.md#configure-channel-components) を参照してください。
+
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で Dynamics 365 Commerce Retail SDK からポーランド向け会計プリンター統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[ポーランド向け会計プリンター統合サンプル](emea-pol-fpi-sample.md) を参照してください。 
 
 ポーランド向け会計統合サンプルは、Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 このサンプルは、Commerce runtime (CRT) とハードウェア ステーションの拡張機能で構成されます。 このサンプルを実行する際は、CRT とハードウェア ステーション プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 

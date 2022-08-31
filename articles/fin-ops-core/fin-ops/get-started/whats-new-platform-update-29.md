@@ -1,25 +1,25 @@
 ---
 title: 財務と運用アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能および変更された機能
 description: この記事では、財務と運用アプリのプラットフォーム更新プログラム 29 の機能について説明します。
-author: tonyafehr
+author: sericks007
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 4c89adf219909bc2962b5170dfb0e1c48b087670
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 13264eb7f5f2bb19b54b56167906a254e7ba9769
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103680"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278361"
 ---
 # <a name="whats-new-or-changed-in-platform-update-29-for-finance-and-operations-apps-october-2019"></a>財務と運用アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能および変更された機能
 

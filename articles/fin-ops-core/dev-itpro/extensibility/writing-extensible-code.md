@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 268724
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: c39317c3862dee2093bbdb8800ad04ca828f270c
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 268724
+ms.assetid: ''
+ms.openlocfilehash: 55403df8fe8ff42082a04a9219144d08184a2ddf
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103293"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270755"
 ---
 # <a name="write-extensible-code"></a>拡張可能なコードの書き込み
 

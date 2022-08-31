@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3478e8c712c7bcbfb8ace9e7b43f0d8d3cf4ac8a
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2bb4115a486fbfe7287c9b183224699de4dfd456
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069155"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335528"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>倉庫なしの販売注文の出荷
 
@@ -45,7 +45,7 @@ ms.locfileid: "9069155"
 14. **ビューの変更** を選択します。
 15. **ヘッダーの表示** を選択します。
     - 注文の明細行がすべて出荷すると、注文のステータスが [未処理] から [出荷済] に変更されます。  
-    - この例では、注文明細行が部分的に出荷されています。 そのため、注文の状態は [Open] のままです。     
+    - この例では、注文明細行が部分的に出荷されています。 そのため、注文の状態はオープンのままです。     
     - **ドキュメントのステータス** フィールドは、注文明細行の少なくとも 1 つが出荷されたので、梱包明細に設定されます。  
 16. アクション ウィンドウで、**一般** を選択します。
 17. **明細行の数量** を選択します。

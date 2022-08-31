@@ -1,21 +1,21 @@
 ---
 title: 二重書き込み FAQ
 description: この記事では、二重書き込みについてよく寄せられる質問に回答します。
-author: tonyafehr
+author: sericks007
 ms.date: 05/20/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: ramasri
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c58a002d4611d22bd30cdc0d64414f3cf6e65a5
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 9f938343c862f795564ccfdccfb83eee94db84a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111504"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289660"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 

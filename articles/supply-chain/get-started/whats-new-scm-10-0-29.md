@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7f5691c5784b7b381ff805b0431d8adb1a25f1cb
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266401"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334748"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Dynamics 365 Supply Chain Management 10.0.29 (2022 年 10 月) のプレビュー
 
@@ -74,10 +74,7 @@ ms.locfileid: "9266401"
 
 | モジュール | 機能名 | 新しい機能の状態 |
 | --- | --- | --- |
-| 資産管理 | [メンテナンス計画の実行中に作業指示書のグループ化に関するルールを適用する](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | 必須 |
 | 資産管理 | [生産現場の実行インターフェースの資産管理機能](../production-control/production-floor-execution-configure.md) | 必須 |
-| 資産管理 | [カウンターに基づくメンテナンス機能拡張](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | 既定で有効 |
-| 資産管理 | [作業指示書の請求](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | 必須 |
 | 原価管理 | [決算と調整の取消のラベルを "取消" に変更](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | 必須 |
 | 原価管理 | BOM 計算の詳細クロス原価計算バージョンのクリーンアップ | 必須 |
 | 原価管理 | [品目価格の比較ストレージ](../cost-management/compare-item-price.md) | 必須 |
@@ -102,7 +99,7 @@ ms.locfileid: "9266401"
 | 在庫および倉庫管理 | 在庫仕訳帳の測定単位と単位数量を使用する | 必須 |
 | 在庫および倉庫管理 | 在庫仕訳帳のロックを解除する | 必須 |
 | 製造 | [自動転記されたピッキング リストの倉庫対応材料の自動ピッキング](whats-new-scm-10-0-23.md) | 一般に入手可能 |
-| 製造 | 生産工順の工程の材料リストで在庫分析コードの表示を有効にする | 既定で有効 |
+| 製造 | 生産工順の工程の材料リストで在庫分析コードの表示を有効にする | 必須 |
 | 製造 | [ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。](../production-control/report-finished-job-device.md) | 既定で有効 |
 | 製造 | 改善された生産 CW 数量ピッキング | 既定で有効 |
 | 製造 | [生産現場の実行インターフェイスのジョブ検索](../production-control/production-floor-execution-configure.md) | 必須 |
@@ -127,20 +124,19 @@ ms.locfileid: "9266401"
 | マスター プラン | [フィルター処理された計画オーダーの確定](../master-planning/planning-optimization/planned-order-firming.md) | 必須 |
 | マスター プラン | [計画最適化の計画製造オーダー](../master-planning/planning-optimization/production-planning.md) | 必須 |
 | マスター プラン | [計画最適化のための購買契約](../master-planning/planning-optimization/purchase-trade-agreement.md) | 必須 |
-| マスター プラン | リソース計画とメンテナンス | 必須 |
 | マスター プラン | [計画オーダーの保存済みビュー](saved-views-scm.md) | 必須 |
 | 調達 | 発注書の請求金額の最低金額および最高金額 | 必須 |
 | 調達 | 購買要求配分のリセット ボタンの無効化 | 既定で有効 |
 | 調達 | [調達関連ワークフローのリセットを有効にする](whats-new-scm-10-0-20.md) | 既定で有効 |
 | 調達 | [バッチ タスクあたりの発注書明細行数の制限](whats-new-scm-10-0-27.md) | 既定で有効 |
 | 調達 | [仕入先の財務分析コードと発注書の有効な分析コード リンクの財務分析コードを結合](whats-new-scm-10-0-25.md) | 必須 |
+| 調達 | [受領書および仕入先請求書に対して在庫製品の登録数量と非在庫製品の残余を転記する](whats-new-scm-10-0-26.md) | 一般に入手可能 |
 | 調達 | [複数の購買要求がワークフロー内にある場合に一般予算引当の過剰消費を防止する](whats-new-scm-10-0-21.md) | 既定で有効 |
 | 調達 | [購買契約責任者](../procurement/purchase-agreements.md) | 必須 |
 | 調達 | [発注書用に保存されているビュー](saved-views-scm.md) | 必須 |
 | 製品情報管理 | タイムアウトを回避するための部品表レポートの前処理 | 必須 |
 | 製品情報管理 | 品目テンプレートを使用するときに個別に既定の財務分析コードを使用する | 必須 |
 | 製品情報管理 | 品目テンプレートの製品分析コード グループの有効化 | 必須 |
-| 製品情報管理 | [エンジニアリング変更管理の属性継承の改善](../engineering-change-management/engineering-attributes-and-search.md) | 必須 |
 | 製品情報管理 | 品目 - バーコード エンティティの改善 | 必須 |
 | 製品情報管理 | 用語に基づく製品バリアント名の再生成 | 必須 |
 | 製品情報管理 | [リリースされた製品用に保存されているビュー](saved-views-scm.md) | 必須 |
@@ -161,27 +157,30 @@ ms.locfileid: "9266401"
 | 販売とマーケティング | [1 度クリックして販売注文を確認](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | 必須 |
 | 輸送管理 | 転記済の仕入先請求仕訳帳を使用しない、運賃請求書明細行の運賃請求書の照合解除を許可します | 既定で有効 |
 | 輸送管理 | [運賃請求書を破棄する際に仕入先請求仕訳帳の作成を有効にする](whats-new-scm-10-0-20.md) | 既定で有効 |
-| 輸送管理 | [小型パーセルの出荷](../warehousing/small-parcel-shipping.md) | 既定で有効 |
+| 輸送管理 | [小型パーセルの出荷](../warehousing/small-parcel-shipping.md) | 必須 |
 | 輸送管理 | [USMCA 原産地証明書](../transportation/usmca-certification-of-origin.md) | 既定で有効 |
 | 倉庫管理 | [追加の場所ゾーン](../warehousing/additional-location-zones.md) | 必須 |
 | 倉庫管理 | [作業のキャンセル](../warehousing/cancel-warehouse-work.md) | 必須 |
-| 倉庫管理 | [出荷の連結](../warehousing/configure-shipment-consolidation-policies.md) | 既定で有効 |
+| 倉庫管理 | [出荷の連結](../warehousing/configure-shipment-consolidation-policies.md) | 必須 |
 | 倉庫管理 | [倉庫アプリからの移動オーダーを作成および処理します](../warehousing/create-transfer-order-from-warehouse-app.md) | 必須 |
 | 倉庫管理 | クロスドッキング テンプレートと場所ディレクティブ | 既定で有効 |
-| 倉庫管理 | [ASN からのプットアウェイ作業を切り離す](whats-new-scm-10-0-21.md) | 既定で有効 |
-| 倉庫管理 | [遅延プット オペレーション](../warehousing/deferred-processing-manual-inventory-movement.md) | 既定で有効 |
+| 倉庫管理 | [ASN からのプットアウェイ作業を切り離す](whats-new-scm-10-0-21.md) | 必須 |
+| 倉庫管理 | [遅延プット オペレーション](../warehousing/deferred-processing-manual-inventory-movement.md) | 必須 |
 | 倉庫管理 | 遅延プット - コンテナー | 既定で有効 |
 | 倉庫管理 | 遅延プット処理 – トリガーイベントが [前] に設定されている監査テンプレート機能を有効にします | 必須 |
 | 倉庫管理 | [ブロックされた在庫をサンプルした品質指示の予定入庫を無効にする](../inventory/inventory-blocking.md) | 既定で有効 |
 | 倉庫管理 | 倉庫モバイル デバイスの高速検証を有効にする | 必須 |
-| 倉庫管理 | [柔軟な倉庫レベル分析コードの引当](../warehousing/flexible-warehouse-level-dimension-reservation.md) | 既定で有効 |
-| 倉庫管理 | [柔軟な注文 - コミットされたライセンス プレート引当](../warehousing/flexible-warehouse-level-dimension-reservation.md) | 既定で有効 |
-| 倉庫管理 | [出庫ワークロードの視覚化](../warehousing/outbound-workload-visualization.md) | 必須 |
+| 倉庫管理 | [GS1 バーコードの拡張パーサー](../warehousing/gs1-barcodes.md) | 一般に入手可能 |
+| 倉庫管理 | [柔軟な注文 - コミットされたライセンス プレート引当](../warehousing/flexible-warehouse-level-dimension-reservation.md) | 必須 |
+| 倉庫管理 | [柔軟な倉庫レベル分析コードの引当](../warehousing/flexible-warehouse-level-dimension-reservation.md) | 必須 |
 | 倉庫管理 | [品目の連結場所の使用率](../warehousing/item-consolidation-location-utilization.md) | 既定で有効 |
 | 倉庫管理 | ライセンス プレートの受取履歴 | 既定で有効 |
 | 倉庫管理 | [手動による出荷の連結](../warehousing/consolidate-shipments-manual-workbench.md) | 既定で有効 |
+| 倉庫管理 | [管理者または同様の信頼できるユーザーのための移動明細行手動ピッキング サービス](whats-new-scm-10-0-28.md) | 一般に入手可能 |
 | 倉庫管理 | [材料取り扱い設備のインターフェイス](../warehousing/mhax.md) | 必須 |
-| 倉庫管理 | [計画済クロスドッキング](../warehousing/planned-cross-docking.md) | 既定で有効 |
+| 倉庫管理 | [新しい積荷計画ワークベンチ ページ](whats-new-scm-10-0-24.md) | 一般に入手可能 |
+| 倉庫管理 | [出庫ワークロードの視覚化](../warehousing/outbound-workload-visualization.md) | 必須 |
+| 倉庫管理 | [計画済クロスドッキング](../warehousing/planned-cross-docking.md) | 必須 |
 | 倉庫管理 | [倉庫アプリ イベントの処理](../warehousing/warehouse-app-events.md) | 必須 |
 | 倉庫管理 | 連産品と副産物のプット アウェイ作業テンプレートのクエリの拡張 | 必須 |
 | 倉庫管理 | [倉庫へのリリース時に数量を最も近い販売単位に切り捨てる](whats-new-scm-10-0-19.md) | 必須 |
@@ -190,13 +189,14 @@ ms.locfileid: "9266401"
 | 倉庫管理 | [ウェーブ処理用に保存されているビュー](saved-views-scm.md) | 必須 |
 | 倉庫管理 | [積荷処理用に保存されているビュー](saved-views-scm.md) | 必須 |
 | 倉庫管理 | [出荷処理用に保存されているビュー](saved-views-scm.md) | 必須 |
-| 倉庫管理 | 出荷ウェーブ ラベルの詳細 | 既定で有効 |
+| 倉庫管理 | [GS1 バーコードのスキャン](../warehousing/gs1-barcodes.md) | 一般に入手可能 |
+| 倉庫管理 | 出荷ウェーブ ラベルの詳細 | 必須 |
 | 倉庫管理 | [スロット混合単位](whats-new-scm-10-0-21.md) | 必須 |
 | 倉庫管理 | [梱包ステーションでコンテナーの終了/再オープンのために高速 API を使用する](whats-new-scm-10-0-21.md) | 既定で有効 |
 | 倉庫管理 | [補充ジョブに選択されているテンプレートの検証](whats-new-scm-10-0-20.md) | 既定で有効 |
-| 倉庫管理 | [倉庫アプリのプロモーション フィールド](../warehousing/warehouse-app-promoted-fields.md) | 既定で有効 |
-| 倉庫管理 | [倉庫アプリのステップ指示](../warehousing/mobile-app-titles-instructions.md) | 既定で有効 |
-| 倉庫管理 | [倉庫の場所の状態](../warehousing/warehouse-location-status.md) | 既定で有効 |
+| 倉庫管理 | [倉庫アプリのプロモーション フィールド](../warehousing/warehouse-app-promoted-fields.md) | 必須 |
+| 倉庫管理 | [倉庫アプリのステップ指示](../warehousing/mobile-app-titles-instructions.md) | 必須 |
+| 倉庫管理 | [倉庫の場所の状態](../warehousing/warehouse-location-status.md) | 必須 |
 | 倉庫管理 | [Warehouse Management アプリの迂回](../warehousing/warehouse-app-detours.md) | 既定で有効 |
 | 倉庫管理 | [ウェーブ バッチ ジョブの詳細](../warehousing/wave-processing.md) | 必須 |
 | 倉庫管理 | [ウェーブの実行通知](../warehousing/wave-execution-notifications.md) | 必須 |

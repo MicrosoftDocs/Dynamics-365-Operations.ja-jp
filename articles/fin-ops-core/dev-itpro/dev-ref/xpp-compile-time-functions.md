@@ -1,20 +1,20 @@
 ---
 title: X++ コンパイル時関数
 description: この記事では、コンパイル時関数の一覧を示し、その構文、パラメーター、および戻り値について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 11/03/2017
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e6f24c3ea87c20488fc1827d04ba1e8d7a8d868
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1e68b1ddefcd82fb4b8b0e531de23ea055aea597
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867231"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271403"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 

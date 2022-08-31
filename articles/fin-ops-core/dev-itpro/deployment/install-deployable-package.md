@@ -1,25 +1,25 @@
 ---
 title: コマンド ラインから展開可能パッケージをインストールする
 description: この記事では、コマンド ラインを使用して、バイナリ更新プログラムまたは環境で作成されたアプリケーション (AOT) 配置可能パッケージを適用する方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 24191
-ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05207535c81fd76546c1b6907b3d2dc0a7fa3a8e
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 24191
+ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
+ms.openlocfilehash: a22e391f7501b810d41401d6a6273eec275374ce
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103111"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271475"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインから展開可能パッケージをインストールする
 

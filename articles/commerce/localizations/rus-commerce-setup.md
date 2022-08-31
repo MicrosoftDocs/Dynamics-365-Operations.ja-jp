@@ -1,24 +1,24 @@
 ---
 title: ロシア向け Dynamics 365 Commerce ローカライズの設定
 description: この記事では、ロシア向け Microsoft Dynamics 365 Commerce ローカライズの設定方法が説明されます。
-author: akviklis
+author: EvgenyPopovMBS
 ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Russia
-ms.search.industry: Retail
-ms.author: akviklis
-ms.search.validFrom: 07/01/2021
+ms.author: josaw
+ms.search.validFrom: 2021-07-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0026c71dda6275530e70d558132d6425b72571ac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+ms.openlocfilehash: c879f74b7139ec7aa710f1f41e9db080fc28bacc
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856944"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278006"
 ---
 # <a name="set-up-the-dynamics-365-commerce-localization-for-russia"></a>ロシア向け Dynamics 365 Commerce ローカライズの設定
 

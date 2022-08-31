@@ -1,25 +1,25 @@
 ---
 title: ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 description: この記事では、ビジネス プロセス ライブラリを表示する方法、コピーおよび変更する方法、ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 13301
-ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 133e9887391c62cbb56aba901db9b7c5dd437433
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 13301
+ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
+ms.openlocfilehash: d062a968a72acef44c6e012b328a1b87213a5d14
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866487"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270715"
 ---
 # <a name="business-process-libraries-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 

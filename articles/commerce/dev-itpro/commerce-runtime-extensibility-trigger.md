@@ -1,26 +1,26 @@
 ---
 title: Commerce Rumtime (CRT) の拡張機能とトリガー
 description: この記事では、Microsoft Dynamics 365 commerce runtime (CRT) のトリガー サポートについて説明します。 CRT は、すべての要求に対してプレ トリガーおよびポスト トリガーをサポートしています。
-author: RobinARH
+author: josaw1
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 17731
-ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: sijoshi
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0070fb787a6188a1a2c2fbec1bba1644bcfa0f62
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 17731
+ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc
+ms.search.industry: Retail
+ms.openlocfilehash: 8ff2c00236292ced2dd5598006c86292dadb8726
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899193"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274376"
 ---
 # <a name="commerce-runtime-crt-extensibility-and-triggers"></a>Commerce Rumtime (CRT) の拡張機能とトリガー
 

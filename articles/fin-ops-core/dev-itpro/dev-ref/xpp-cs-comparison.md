@@ -1,20 +1,20 @@
 ---
 title: X++ と C# の比較
 description: この記事では、X++ と C# の構文とプログラミングを比較します。
-author: RobinARH
+author: josaw1
 ms.date: 04/10/2020
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b2052e4c8ad025b530ba5ebc91937f77d2795de
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: 93d8d25fd43c10d96094cb8832d79c5ac6bbb324
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103504"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271395"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 

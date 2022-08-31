@@ -1,31 +1,33 @@
 ---
 title: AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 description: この記事では、アップグレード アナライザー ツールを使用して、Dynamics AX 2012 からアップグレードを計画する方法について説明します。
-author: tariqbell
+author: laneswenka
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 106163
-ms.assetid: ''
 ms.search.region: Global
-ms.author: sericks
+ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: faee06c3790ec474191522157fa3c2877f65879c
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: 106163
+ms.assetid: ''
+ms.openlocfilehash: 902d9b549b7c88e691440a130218defff53524db
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124728"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305136"
 ---
 # <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
+
 
 この記事では、アップグレード アナライザー ツールを使用して、Microsoft Dynamics AX 2012 からアップグレードを計画する方法について説明します。 このツールは、AX 2012 環境に対して実行され、財務と運用アプリのサブスクリプション コストの削減を助けるために、AX 2012 内でクリーンアップする必要のあるデータを識別します。 このツールは、アップグレード プロセスのスピードアップに役立つ SQL 構成の最適化を提案します。 また、AX 2012 で使用する機能が現在のバージョンで廃止されている場合は、このツールが警告します。 したがって、これらの機能を置き換える方法や回避する方法を計画できます。
 

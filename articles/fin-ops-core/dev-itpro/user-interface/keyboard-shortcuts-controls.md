@@ -1,25 +1,25 @@
 ---
 title: 拡張可能なコントロールのキーボード ショートカット
 description: この記事では、拡張可能なコントロールのキーボード ショートカットを実装するための推奨される方法について説明します。
-author: tonyafehr
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 89563
-ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 1790a1a6f5170ba48269f38d2715d8622032407a
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 89563
+ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
+ms.openlocfilehash: 44fcf9bf3ef4ccf583a7f962d171c1bf48a6a13f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114307"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288657"
 ---
 # <a name="keyboard-shortcuts-for-extensible-controls"></a>拡張可能なコントロールのキーボード ショートカット
 

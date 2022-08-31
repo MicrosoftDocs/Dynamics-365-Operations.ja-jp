@@ -1,24 +1,24 @@
 ---
 title: GDPR データ要求への応答のリソース
 description: この記事では、一般データ保護規則 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。
-author: rschloma
+author: josaw1
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: roschlom
+ms.author: josaw
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ddda0f33b1574ca575ccdb08307c55116e2c3d46
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: intro-internal
+ms.openlocfilehash: 5ac50ef6db96926e09f0d4daa0feea490094a6a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866721"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284534"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 

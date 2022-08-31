@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 89563
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: b97f69ccea5c853aadf193fd5d1c372ffa2c4ca0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 89563
+ms.assetid: ''
+ms.openlocfilehash: 22c0bcb0ac60b4d2d86b501a97c8c791c97a38be
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866828"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270783"
 ---
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 

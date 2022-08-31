@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 07/30/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f2415a1d70a5b86931afc1d20635157fccf9f90
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 049952d6e71b675f47d9cc19b5d95cad76f87f9d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111317"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289408"
 ---
 # <a name="party-and-global-address-book-troubleshooting"></a>当事者およびグローバル アドレス帳のトラブルシューティング
 

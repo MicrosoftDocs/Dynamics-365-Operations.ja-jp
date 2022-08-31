@@ -1,18 +1,18 @@
 ---
 title: 値の型
 description: 値コントロール型 これは、単一の値のコントロールの基本クラスです。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: a1582ef5d1a9fe74b859fb26ba82adecccfcb1fe
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 215937526fe9de9d826d16db614aa665fb1a0ec2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811282"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277480"
 ---
 # <a name="value-type"></a>値の型
 

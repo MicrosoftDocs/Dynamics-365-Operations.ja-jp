@@ -1,18 +1,18 @@
 ---
 title: 画像タイプ
 description: モバイル アプリ内のイメージを表すためのイメージ コントロール インターフェイス。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 53a581ebe9c2cd6ceccd015a1eb2b7b0e4720b40
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: eb0f9ed153fbfbab7a3291c795dd6d8f737e8722
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811587"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274643"
 ---
 # <a name="image-type"></a>画像タイプ
 

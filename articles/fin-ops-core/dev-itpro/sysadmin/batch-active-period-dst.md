@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: NotInToc
-ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 366aa20786e066e421323c55d5dbaad2e918bc0d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: NotInToc
+ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
+ms.openlocfilehash: 9ab127dc612c2f7583a62552273acc155f29b109
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894251"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273020"
 ---
 # <a name="daylight-saving-time-support-for-active-batch-periods"></a>アクティブなバッチ期間に対応した夏時間のサポート
 

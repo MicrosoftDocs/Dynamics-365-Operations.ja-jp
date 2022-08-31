@@ -5,18 +5,18 @@ author: laneswenka
 ms.date: 07/08/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 10031
-ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: ce59dfe77b8e1798bda2ccbb13ed5b5a3ce16b8d
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.custom: 10031
+ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
+ms.openlocfilehash: 3b7d7f59511736865ee185f88f01f058bbc0a7ab
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129496"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271251"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -43,7 +43,7 @@ ms.locfileid: "9129496"
 
 Lifecycle Services (LCS) プロジェクトのクラウド開発環境をデプロイするには:
 
-1. LCS プロジェクトと Azure サブスクリプションの間に接続を作成します。 Azure サブスクリプション ID が必要であり、サブスクリプションの使用を承認します。
+1. LCS プロジェクトと Azure サブスクリプションの間に接続を作成します。 これには、Azure サブスクリプション ID が必要であり、サブスクリプションの使用を承認します。
 2. 配置する **環境** の下で **+** を選択します。
 
     ![LCS Onboard の方法。](media/access-instances-5.jpeg)
@@ -77,7 +77,7 @@ Lifecycle Services (LCS) プロジェクトのクラウド開発環境をデプ�
 
 ### <a name="accessing-an-instance-through-a-url"></a>URL を試用したインスタンスへのアクセス
 
-エンド ユーザーはシステムにアクセスできます。 管理者は、インスタンスの **ユーザー** ページを使用して、このシステムにユーザーを追加することができます。 これらの追加のユーザーは LCS 内のユーザーである必要はないことに注意してください。 LCS プロジェクト サイトからは、クラウド環境のベース URL を取得します。
+エンド ユーザーはシステムにアクセスできます。 管理者は、インスタンスの **ユーザー** ページを使用して、このシステムにユーザーを追加することができます。 これらの追加のユーザーは LCS 内のユーザーである必要はありません。 LCS プロジェクト サイトからは、クラウド環境のベース URL を取得します。
 
 1. LCS プロジェクトのナビゲーション メニューに移動し、**クラウドホスト環境** を選択します。
 2. 環境リスト、配置された環境を選択します。
@@ -104,12 +104,12 @@ Lifecycle Services (LCS) プロジェクトのクラウド開発環境をデプ�
 開発者環境の利用が終わった場合、またはインフラストラクチャ問題のトラブルシューティングに時間がかかる場合は、いつでも LCS から環境を削除し、後から新しい環境を作成できます。  クラウド ホスト環境を LCS から削除するには、次の手順に従います:
 
 1. LCS プロジェクトのナビゲーション メニューに移動し、**クラウドホスト環境** を選択します。
-2. 削除する環境を強調表示し、**割り当て解除** を選択します。  これにより、Azure サブスクリプションのマシンがシャット ダウンします。
+2. 削除する環境を強調表示し、**Deallocate** を選択します。この環境では、Azure サブスクリプションのコンピュータの電源がダウンします。
 3. 割り当て解除が正常に行われた後、環境は *割り当て解除済* の状態になります。  **削除** ボタンを使用して削除プロセスを開始できるようになります。
 
-クラウド ホスト環境で作成された仮想ネットワーク (VNET) が他のクラウド ホスト環境でも使用されている場合は、クラウド ホスト環境を削除できません。  これは一般的ではありませんが、お客様の中には、開発環境間でより簡単にファイルを共有するため、開発環境はすべて既存の VNET を再利用してほしいというケースもあります。  このような場合、元の VNET を作成した基本環境を削除する前に、他の環境も削除する必要があります。
+クラウド ホスト環境で作成された仮想ネットワーク (VNET) が他のクラウド ホスト環境でも使用されている場合は、クラウド ホスト環境を削除できません。 このシナリオは一般的ではありませんが、顧客の中には、開発環境間でより簡単にファイルを共有するため、すべての彼らの開発環境はすべて既存の VNET を再利用してほしいというケースもあります。 このシナリオが実装されている場合、元の VNET を作成した基本環境を削除する前に、その他の環境も削除する必要があります。
 
-削除操作が失敗した場合、次のいずれかが発生した可能性を確認します:
+削除操作が失敗した場合、次の問題いずれかが発生した可能性を確認します。
 
 - Azure コネクタの管理証明書が期限切れです。
 - Azure サブスクリプションが、元のテナントから別のテナントに移動されました。
@@ -130,12 +130,11 @@ LCS で削除操作を正常に完了できなかった場合、その操作は 
 2. 資産タイプの **ダウンロード可能な VHD** を選択します。
 3. 目的の財務と運用バージョンに基づいて、探している VHD を検索します。 VHD は、ダウンロードする必要がある複数のファイル パーツに分割されています。 たとえば、 "VHD - 10.0.5" で始まる資産ファイルは、バージョン 10.0.5 をインストールするために必要な別のファイルです。
 4. 目的の VHD に関連付けられているすべてのファイル (パーツ) をローカル フォルダーにダウンロードします。
-5. ダウンロードが完了したら、ダウンロードした実行可能ファイルを実行して、ソフトウェア使用許諾契約に同意し、VHD を抽出するファイル パスを選択します。
-6. これにより、ローカルの仮想マシンを実行するのに使用できるローカル VHD ファイルが作成されます。
+5. ダウンロードが完了したら、ダウンロードした実行可能ファイルを実行して、ソフトウェア使用許諾契約に同意し、VHD を抽出するファイル パスを選択します。 このステップにより、ローカルの仮想マシンを実行するのに使用できるローカル VHD ファイルが作成されます。
 
 ### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
-コマースもコンフィギュレーションしている場合は、このセクションの手順に従います。
+コマースも構成している場合は、このセクションの手順に従います。
 
 ダウンロード可能な VHD を POS のカスタマイズに使用するには、次の手順も実行する必要があります。
 
@@ -188,7 +187,7 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
 
 ### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
-コマースもコンフィギュレーションしている場合は、このセクションの手順に従います。
+コマースも構成している場合は、このセクションの手順に従います。
 
 ### <a name="base-url-of-the-local-application"></a>ローカル アプリケーションの基本 URL
 
@@ -218,12 +217,61 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
     - **Aos.AppRoot** - このキーは、Application Object Server (AOS) Web アプリケーションのルート フォルダーをポイントします。
 
 ### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
-
 ソフトウェア開発キット (SDK) は、C:\RetailSDK にあります。 アプリケーションの使用およびカスタマイズ方法の詳細については、次のトピックを参照してください。
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
 - [販売時点管理 (POS) デバイスのライセンス認証](../../../commerce/dev-itpro/retail-device-activation.md)
 
+#### <a name="remove-preexisting-encrypted-data-from-headquarters"></a>本社からの既存の暗号化されたデータの削除
+
+複数のハードウェアを複数のモデルに接続する場合、イベント ビューアで次の "NoCertificateFoundException" というエラーが表示される場合、そのロールに対応する EC 環境の Commerce 構成では、配置された環境から販売プロパティを手動で削除する必要があります。 
+
+`No certificate found for id <id value presented>...`
+
+自分の VHD 環境の AOS で、**SECUREMERCHANTPROPERTIES** 属性または **CONNECTIONMERCHANTPROPERTIES** 属性でプリロードされた値が設定されている場合、これらの値は次のテーブルからクリアされる必要があります。
+
+```SQL
+SELECT SECUREMERCHANTPROPERTIES FROM dbo.RETAILHARDWAREPROFILE -- hardware profile form
+```
+ 
+```SQL
+SELECT SECUREMERCHANTPROPERTIES FROM dbo.RETAILCHANNELPAYMENTCONNECTORLINE -- online stores form
+```
+
+```SQL 
+SELECT SECUREMERCHANTPROPERTIES FROM dbo.CREDITCARDACCOUNTSETUP -- payment service form 
+```
+
+```SQL 
+SELECT CONNECTIONSTRING FROM dbo.RETAILCONNDATABASEPROFILE -- payment service connection string for CDX
+```
+ 
+プリロードされた値が見つかった場合は、次の例のようなスクリプトで属性値を空に設定します。
+
+> [!WARNING]
+> 以下に示す UPDATE スクリプトの例は、前述の証明書の問題を経験する新たに準備された環境の例です。 破壊的なデータの更新や破壊的なデータの更新を回避するために、目的のテーブルまたは行の値のみを更新する必要があります。 更新するテーブルの特定の行を更新する場合は、追加のセレクタが必要な場合があります。
+
+```SQL
+UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)
+```
+
+```SQL
+UPDATE dbo.RETAILCHANNELPAYMENTCONNECTORLINE SET SECUREMERCHANTPROPERTIES=";)
+```
+
+```SQL
+UPDATE dbo.CREDITCARDACCOUNTSETUP SET SECUREMERCHANTPROPERTIES=";)
+```
+
+```SQL
+UPDATE dbo.RETAILCONNDATABASEPROFILE SET CONNECTIONSTRING=";
+```
+
+クリアした後、本社のフォームを使用して、環境に適したハードウェア プロファイル、オンライン店舗チャンネル、または支払サービス フォームで支払ゲートウェイの販売者の詳細を設定します。 支払オプションに必要な設定手順については、次の該当する記事を参照してください。
+ - [Adyen 向け Dynamics 365 Payment Connector の設定](../../../commerce/dev-itpro/adyen-connector-setup.md)
+ - [PayPal 向け Dynamics 365 Payment Connector](../../../commerce/paypal.md)
+
 ## <a name="redeploying-or-restarting-the-runtime-on-the-vm"></a>VM でのランタイムの再配置または再起動
+ 
 ローカルのランタイムを再起動して、すべてのパッケージを再配置するには、次の手順を実行します。
 
 1. ファイル エクスプローラーを開き、C:\CustomerServiceUnit に移動します。
@@ -242,7 +290,7 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 ### <a name="are-cloud-hosted-environments-supported-with-azure-bastion"></a>クラウド ホスト環境は Azure Bastion でサポートされていますか?
 これらの環境はテストされておらず、Azure Bastion でサポートされてもいません。  
 
-### <a name="environment-is-in-a-failed-state-with-the-error-message-updated-aad-tenant-is-missing-reply-url-configuration-how-do-i-resolve-this"></a>環境に、「更新された AAD テナントに、返信 URL コンフィギュレーションがありません」というエラー メッセージが表示され、失敗の状態です。 これをどのように解決しますか。
+### <a name="environment-is-in-a-failed-state-with-the-error-message-updated-aad-tenant-is-missing-reply-url-configuration-how-do-i-resolve-this-issue"></a>環境に、「更新された AAD テナントに、返信 URL コンフィギュレーションがありません」というエラー メッセージが表示され、失敗の状態です。 この問題をどのように解決しますか?
 このメッセージは、レベル 1/顧客管理環境が、配置時に使用するテナントとは異なる Azure AD テナントを使用して構成されていることを示します。 この問題の解決に役立つさまざまなオプションがあります:
 1. (推奨) 環境を削除し、環境が使用されるテナントで再配置します。 
 2. 設定を配置時に使用したテナント のコンフィギュレーションに戻します。
@@ -253,12 +301,12 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 
 クラウド ホスト型の配置を円滑にするために、パートナー企業は、この手順に従って顧客固有のクラウド ホスト環境を作成することをお勧めします。 これにより、配置が正しいテナント下で確実に登録されます。
 
-- 環境が使用されるテナントからユーザーを通じて環境を配置します。 管理者ユーザーのプロビジョニング ツールを使用して、レベル 1 または顧客管理またはクラウド ホスト環境のテナントを変更する必要があります。
+- 環境が使用されるテナントからユーザーを通じて環境を配置します。 レベル 1 または顧客管理またはクラウド ホスト環境のテナントを変更するには、管理者ユーザーのプロビジョニング ツールを使用すべきではありません。
 
 > [!NOTE]
 > Azure サブスクリプションに関連付けられている Azure AD テナントは、環境コンフィギュレーションでは一切の役割を果たします。 Azure サブスクリプションおよび対応するコネクタ コンフィギュレーションは、Azure リソースの配置にのみ使用されます。
 
-### <a name="i-have-run-the-admin-user-provisioning-tool-on-my-development-environment-and-now-i-receive-the-following-sign-in-error-error-aadsts50011-the-reply-url-specified-in-the-request-does-not-match-the-reply-urls-configured-for-the-application"></a>自分の開発環境で管理者ユーザー プロビジョニング ツールを実行したところ、次のサインイン エラーが発生しました: 「エラー: AADSTS50011: リクエストで指定された返信 URL がアプリケーションに対して構成されている返信 URL と一致しません」
+### <a name="i-have-run-the-admin-user-provisioning-tool-on-my-development-environment-and-now-i-receive-the-following-sign-in-error-error-aadsts50011-the-reply-url-specified-in-the-request-doesnt-match-the-reply-urls-configured-for-the-application"></a>自分の開発環境で管理者ユーザー プロビジョニング ツールを実行したところ、次のサインイン エラーが発生しました: 「エラー: AADSTS50011: リクエストで指定された返信 URL がアプリケーションに対して構成されている返信 URL と一致しません」
 上記の説明のように、正しい Azure AD テナント下に財務と運用環境を配置することが非常に重要です。 LCS を使用してレベル 1 または顧客管理環境において、Azure AD テナント設定の変更は配置後にはサポートされません。
 
 ### <a name="how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors"></a>環境が失敗した状態の場合、またはサインイン エラーが発生している場合に、既存の環境をどのように修正しますか?
@@ -297,11 +345,11 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
     ```
 
-### <a name="i-have-fixed-my-environment-but-it-is-still-in-a-failed-state-how-do-i-resolve-this"></a>環境は修正されましたが、まだエラー状態です。 これをどのように解決しますか。
+### <a name="ive-fixed-my-environment-but-its-still-in-a-failed-state-how-do-i-resolve-this-issue"></a>環境は修正されましたが、まだエラー状態です。 この問題をどのように解決しますか?
 環境に対して最初に **停止** から **開始** 操作を実行し、URL から環境を再起動します。 環境コンフィギュレーションが正しいと検出された場合、環境 URL は自動的に **開始** 操作の **2 時間以内** に再起動します。
 
-### <a name="while-running-the-admin-user-provisioning-tool-on-my-local-development-environment-i-get-the-error-the-values-length-for-key-password-exceeds-its-limit-of-128"></a>ローカル開発環境で管理者ユーザー プロビジョニング ツールを実行中に、「キーのパスワードの値の長さが '128' の上限を超えています」というエラーが表示されます。
-バージョン 10.0.24 以降にリリースされた仮想ハード ドライブ (VHD) を使用している場合は、管理者ユーザー プロビジョニング ツールの前に自己署名証明書生成ツールを実行する必要があります。 詳細情報については、[最初に使用する際にダウンロードできる VHD を設定する](vhd-setup.md)を参照してください。
+### <a name="while-running-the-admin-user-provisioning-tool-on-my-local-development-environment-i-get-the-error-the-values-length-for-key-password-exceeds-its-limit-of-128"></a>ローカル開発環境で管理者ユーザー プロビジョニング ツールを実行中に、"キーのパスワードの値の長さが '128' の上限を超えています" というエラーが表示されます。
+バージョン 10.0.24 以降にリリースされた仮想ハード ドライブ (VHD) を使用している場合は、管理者ユーザー プロビジョニング ツールの前に自己署名証明書生成ツールを実行する必要があります。 詳細情報については、[最初に使用する際にダウンロードできる VHD を設定する](vhd-setup.md) を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

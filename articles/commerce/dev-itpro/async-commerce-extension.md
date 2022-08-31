@@ -1,21 +1,21 @@
 ---
 title: ビジネス ロジックで非同期コマース (CRT) API を作成する
 description: この記事では、非同期で実行される Commerce (CRT) アプリケーション プログラミング インターフェイス (API) (つまり、要求) の作成方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 03/16/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d93095e390fd9fd4ecc42ecf8a629f6be5da6a87
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 56acb04c226f34a23ee24eb8ad29a013e7573407
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865990"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268432"
 ---
 # <a name="create-asynchronous-commerce-crt-apis-in-your-business-logic"></a>ビジネス ロジックで非同期コマース (CRT) API を作成する
 

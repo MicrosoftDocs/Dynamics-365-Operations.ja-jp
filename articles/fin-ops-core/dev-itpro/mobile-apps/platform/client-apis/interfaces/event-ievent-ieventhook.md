@@ -1,18 +1,18 @@
 ---
 title: EventHook タイプ<T>
 description: EventHook タイプ
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 7b641e164eab9b22c9fa96f743d3a7e63e7ad76a
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: fa9658a866950dbd2a84a26d00c6350c24752faf
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811448"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268641"
 ---
 # <a name="eventhook-typelttgt"></a>EventHook タイプ&lt;T&gt;
 

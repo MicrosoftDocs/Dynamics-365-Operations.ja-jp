@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181127"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306206"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>税計算コンフィギュレーションのマスタ データルックアップの有効化 
 
@@ -108,7 +108,7 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
     - **プロバイダー** - このフィールドを **NonAAD** に設定します。
     - **ユーザー ID** - **dataverseintegration** または別の値を入力します。 (この値は、有効な電子メール アカウントである必要はありません。)
 
-3. そのユーザーに **CDS 仮想エンティティ アプリケーション** のセキュリティ ロールを割り当てます。
+3. ユーザーに **Dataverse 仮想エンティティ インテグレーション アプリ** のセキュリティ ロールを割り当てます。
 4. **システム ユーザー** を含む他のすべてのロールを削除します。
 5. **システム管理** \> **設定** \> **Azure Active Directory アプリケーション** の順に移動して、Dataverse を登録します。 
 6. 行を追加し、**クライアント ID** フィールドに、以前にメモした **アプリケーション (クライアント) ID** の値を入力します。
@@ -199,17 +199,11 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a> 税計算用に接続されているアプリケーションを設定する
 
-1. RCS で、**機能管理** ワークスペースを開き、次の機能を有効にします。
-
-    - 電子報告 Dataverse データ ソース サポート
-    - 税サービス Dataverse のデータソースのサポート
-    - グローバリゼーション機能
-
-2. **電子申告**、次に **関連リンク** セクションに移動し、**接続されているアプリケーション** を選択します。
+1. **電子申告**、次に **関連リンク** セクションに移動し、**接続されているアプリケーション** を選択します。
 
     [![接続されているアプリケーション。](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. **新規** を選択してレコードを追加し、次の情報を入力します。
+2. **新規** を選択してレコードを追加し、次の情報を入力します。
 
     - **名前** – 名前を入力します。
     - **タイプ** - **Dataverse** を選択します。
@@ -217,12 +211,18 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
     - **テナント** - テナントを入力します。
     - **カスタム URL** - Dataverse URL を入力し、**/api/data/v9.1** を追加します。
 
-4. **接続の確認** を選択し、表示されるダイアログ ボックスで、**選択したリモート アプリケーションに接続するには、ここをクリックする** を選択します。
+3. **接続の確認** を選択し、ダイアログ ボックスで、**ここをクリックして選択したリモート アプリケーションに接続する** を選択します。
 
     [![接続を確認します。](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. 「成功!」を受け取ることを確認する 接続が正常に確立されたことを示すメッセージです。
+4. 「成功!」を受け取ることを確認する 接続が正常に確立されたことを示すメッセージです。
 
     [![成功メッセージ。](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. RCS で、**機能管理** ワークスペースを開き、次の機能を有効にします。
+
+    - グローバリゼーション機能
+    - 電子報告 Dataverse データ ソース サポート
+    - 税サービス Dataverse のデータソースのサポート
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a> Dataverse モデル マッピング コンフィギュレーションをインポートし、設定する
 

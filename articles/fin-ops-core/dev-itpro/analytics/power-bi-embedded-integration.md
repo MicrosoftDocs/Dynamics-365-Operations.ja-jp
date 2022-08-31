@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom:
-- "270754"
+ms.custom: 270754
 ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
-ms.openlocfilehash: 557271df3a2255840bbce74a9b7b17b09c180972
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 52ebd82ed985ec875e8eaa53da57afd6d48572d5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206599"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273083"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 

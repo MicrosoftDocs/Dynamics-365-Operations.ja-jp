@@ -1,25 +1,25 @@
 ---
 title: ファイルのアップロード コントロール
 description: この記事では、ファイル アップロード コントロールについて説明します。 このコントロールを使用して、ファイルをアップロードできます。
-author: aneesmsft
+author: jasongre
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 54311
-ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d8032ec15f6b25d08e0aa3005a07d1b4c1c24
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 54311
+ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
+ms.openlocfilehash: 500ae28c1ffb908ac557a27db20190af7c810266
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114284"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279971"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 

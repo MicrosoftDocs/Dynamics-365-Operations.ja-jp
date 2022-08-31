@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895760"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306176"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Inventory Visibility アプリを使用する
 
@@ -70,10 +70,24 @@ ms.locfileid: "8895760"
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>在庫集計
 
-**在庫集計** は、*在庫手持合計* エンティティ用にカスタマイズされたビューです。 すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、Inventory Visibility から 15 分ごとに定期的に同期されます。 **在庫集計** タブでデータを表示するには、**機能管理** タブで *OnHandMostSpecificBackgroundService* 機能を有効にして、**構成の更新** を選択する必要があります。
+**在庫概要** ページは、すべての分析コードと共に、製品の在庫概要を提供します。 これは、*手持在庫合計* エンティティ用にカスタマイズされたビューです。 在庫概要データは、在庫品目一覧から定期的に同期されます。
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>在庫概要を有効にして同期頻度を設定する
+
+**在庫概要** ページを有効にして、同期頻度を設定するには次の手順に従います。
+
+1. **構成** ページを開きます。
+1. **機能管理 & 設定** タブを開きます。
+1. **OnHandMostSpecificBackgroundService** 機能の 切り替えスイッチを *はい* に設定します。
+1. この機能を有効にすると、**サービス構成** セクションが使用できる状態になり、**OnHandMostSpecificBackgroundService** 機能を構成するための行が含まれます。 この設定により、在庫概要データを同期する頻度を選択できます。 **値** 列の **上へ** ボタンおよび **下へ** ボタンを使用して、同期間の時間を変更します (最大で 5 分)。 その後、**保存** を選択します。
+1. すべての変更 を保存するには、**構成の更新** を選択します。
+
+![OnHandMostSpecificBackgroundService 設定](media/inventory-visibility-ohms-freq.PNG "OnHandMostSpecificBackgroundService 設定")
 
 > [!NOTE]
 > *OnHandMostSpecificBackgroundService* 機能は、機能を有効にした後に発生した製品の手持在庫変更のみを追跡します。 機能を有効にしてから変更していない製品のデータは、在庫サービス キャッシュから Dataverse 環境に同期されません。 **在庫集計** ページに必要なすべての手持在庫情報が表示されていない場合は、**在庫管理 > 定期処理タスク > Inventory Visibility の統合** に移動し、バッチ ジョブを無効にしてから再度有効にします。 これにより、最初のプッシュが実行され、次の 15 分ですべてのデータが *Inventory OnHand Sum* エンティティに同期されます。 この機能を使用する場合は、手持在庫変更を作成し、**Inventory Visibility 統合** バッチ ジョブを有効にする前に、この機能をオンにすることをお勧めします。
+
+### <a name="work-with-the-inventory-summary"></a>在庫概要を使って作業する
 
 Dataverse が提供する **高度なフィルター** を使用することにより、自分にとって重要な行を示す個人用ビューを作成できます。 高度なフィルター オプションを使用すると、単純なものから複雑なものまで、さまざまなビューを作成できます。 グループ化され、入れ子になった条件をフィルターに追加することもできます。 **高度なフィルター** の使用方法の詳細については、[高度なグリッド フィルターを使用した個人用ビューの編集または作成](/powerapps/user/grid-filters-advanced)を参照してください。
 

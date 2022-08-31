@@ -2,7 +2,7 @@
 title: モバイル デバイス メニュー項目で手順の迂回を構成する
 description: この記事では、作業員が現在のタスクを待機して、別のタスクを実行し、情報を失わずに元のタスクに戻る方法を、メニュー項目に対して設定する方法について説明します。
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219007"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336128"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>モバイル デバイス メニュー項目で手順の迂回を構成する
 
@@ -35,9 +35,8 @@ ms.locfileid: "9219007"
 
 1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
 1. システムで *倉庫アプリのステップ指示* 機能が有効になっていることを確認します。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。 この機能は、*Warehouse Management アプリの迂回* 機能の前提条件です。
-1. *Warehouse Management アプリの迂回* 機能を有効にします。 この機能は、この記事で説明する機能です。
-1. **Warehouse Management \> 設定 \> モバイル デバイス \> Warehouse アプリのフィールド名** の順に移動して、**デフォルト設定を作成する** を選択することで Warehouse Management mobile アプリのフィールド名を更新します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
-1. Warehouse Management モバイル アプリを使用する法人 (会社) ごとに前の手順を繰り返します。
+1. *Warehouse Management アプリの迂回* 機能を有効にします。 この機能は、この記事で説明する機能です。 Supply Chain Management のバージョン10.0.21では、既定で有効になっています。
+1. *Warehouse Management アプリの迂回* 機能がまだ有効でない場合、**倉庫管理 \> 設定 \> モバイル デバイス \> 倉庫アプリ フィールド名** の順に移動して、**既定の設定の作成** を選択することで Warehouse Management モバイル アプリのフィールド名を更新します。 Warehouse Management モバイル アプリを使用する法人 (会社) ごとにこの手順を繰り返します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>メニュー固有の上書きからの迂回を構成する
 

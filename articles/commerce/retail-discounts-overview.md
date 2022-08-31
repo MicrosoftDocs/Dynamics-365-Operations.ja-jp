@@ -1,29 +1,27 @@
 ---
 title: 小売割引
 description: この記事は、Dynamics 365 Commerce の割引機能の概要について説明します。 さまざまな割引フォームにあるプロパティとおよび割引管理のベスト プラクティスについて説明します。
-author: shajain
+author: ShalabhjainMSFT
 ms.date: 10/15/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: IT Pro
-ms.reviewer: v-chgri
-ms.custom:
-- "16181"
-- intro-internal
-ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 047cb14c0ef5a10e17c1725b4a63036cfb9d23c9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 16181,  ""intro-internal
+ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: c7e45b35be12978a8b998d63bf0ec50a55bff7e0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900430"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271920"
 ---
 # <a name="retail-discounts"></a>小売割引
 

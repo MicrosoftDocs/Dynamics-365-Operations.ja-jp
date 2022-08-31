@@ -1,24 +1,24 @@
 ---
 title: コードを変更して、ユーザーが名前付き送信先を構成して使用可能にする
 description: この記事では、電子申告 (ER) API を使用して、ユーザーが名前付き ER 送信先を構成および使用する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5002b13fe52d092cdefc97425a628f4f051df491
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERFormatDestinationTable
+ms.openlocfilehash: 67c5f43238a5c05634be0daf16821280853c830c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869084"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277834"
 ---
 # <a name="change-code-to-enable-users-to-configure-and-use-named-er-destinations"></a>コードを変更して、ユーザーが名前付き送信先を構成して使用できるようにする
 

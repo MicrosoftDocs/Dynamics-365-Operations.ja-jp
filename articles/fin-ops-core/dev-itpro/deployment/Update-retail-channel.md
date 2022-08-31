@@ -1,23 +1,23 @@
 ---
 title: Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 description: この記事では、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
-author: AamirAllaq
+author: jashanno
 ms.date: 12/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
-ms.search.validFrom: 2018-4-30
+ms.author: jashanno
+ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 48a270b1c5057539607abea54de0638927c58d1a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 32aaaec05e4208df078b545e074a34ed589f4841
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867495"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271495"
 ---
 # <a name="apply-updates-and-extensions-to-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 

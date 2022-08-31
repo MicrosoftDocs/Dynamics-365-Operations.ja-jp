@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 268724
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 1c7e901c4743d425a10ba526964308d752ac9e99
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 268724
+ms.assetid: ''
+ms.openlocfilehash: f5dd18995a58c9a13f07d1893afc5eedb9c3c565
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866873"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270847"
 ---
 # <a name="write-extensible-enums"></a>拡張可能列挙の書き込み
 

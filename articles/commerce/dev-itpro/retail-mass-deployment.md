@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 7805c106fabb228473660bde95257174e4bc3eea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2aa51f1936421c8c2f92280fdbf1bca776fa4e8f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878555"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286598"
 ---
 # <a name="mass-deployment-of-legacy-self-service-components"></a>レガシ セルフサービス コンポーネントの一括配置
 

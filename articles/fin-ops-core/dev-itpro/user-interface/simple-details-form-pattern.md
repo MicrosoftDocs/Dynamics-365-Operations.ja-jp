@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 14791
-ms.assetid: ee67618d-edc8-4bc5-bccc-6872c4af6273
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a2ed4cc50300e44ba880d0e50f6b6b30528e9d6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 14791
+ms.assetid: ee67618d-edc8-4bc5-bccc-6872c4af6273
+ms.openlocfilehash: 48f0a32c4dfd6390380876a8b04f92b77e0a2506
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783354"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279959"
 ---
 # <a name="simple-details-form-pattern"></a>簡易詳細のフォーム パターン
 

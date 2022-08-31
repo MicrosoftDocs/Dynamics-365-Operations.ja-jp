@@ -1,25 +1,25 @@
 ---
 title: 最新のプラットフォーム更新プログラムの環境への適用
 description: この記事では、財務と運用の環境に最新のプラットフォーム更新プログラムを適用する方法について説明します。
-author: tariqbell
+author: LaneSwenka
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 253274
-ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 ms.search.region: Global
-ms.author: sericks
+ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 8406230bb7e5014ffddfa635c594952746245c9c
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: 253274
+ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
+ms.openlocfilehash: 6dc906984de94806cd2535d07bf55e7c2b5522c8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124450"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283504"
 ---
 # <a name="apply-the-latest-platform-update-to-environments"></a>最新のプラットフォーム更新プログラムの環境への適用
 

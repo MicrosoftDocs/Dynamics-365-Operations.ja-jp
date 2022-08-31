@@ -2,7 +2,7 @@
 title: ジョブ カード デバイスから完了として報告する
 description: この記事では、ジョブ カード デバイスのユーザーが製造オーダーから在庫に対して完成品を報告できるようにシステムを構成する方法について説明します。
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 56d19a966d93202668c34ffaaef561d72b7669ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070472"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334628"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>ジョブ カード デバイスから完了として報告する
 
@@ -56,13 +56,12 @@ ms.locfileid: "9070472"
 - **定義済バッチ番号** - 作業者は、製造オーダーがジョブ カード デバイスにリリースされる前に、システムによって自動的に生成されるバッチ番号の一覧から、バッチ番号を選択します。
 - **固定バッチ番号** - 作業者はバッチ番号の入力や選択をしません。 その代わりに、システムは製造オーダーにバッチ番号を自動的に割り当ててからリリースされます。
 
-
 ### <a name="enable-the-feature-on-your-system"></a>システムで機能を有効化する
 
-完了報告時にジョブ カード デバイスがバッチ番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、次の機能を (この順序で) 有効にする必要があります。
+完了報告時にジョブ カード デバイスがバッチ番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、次の機能を有効にする必要があります。
 
-1. ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上
-1. ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。
+- *ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上*
+- *ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。*<br>(Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。)
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>バッチ番号の報告を必要とする製品をコンフィギュレーションする
 
@@ -137,10 +136,10 @@ ms.locfileid: "9070472"
 
 ### <a name="enable-the-feature-on-your-system"></a>システムで機能を有効化する
 
-完了報告時にジョブ カード デバイスがシリアル番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して、次の機能を (この順序で) 有効にする必要があります。
+完了報告時にジョブ カード デバイスがシリアル番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して、次の機能を有効にする必要があります。
 
-1. ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上
-1. ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。
+- *ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上*
+- *ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。*<br>(Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。)
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>シリアル番号の報告を必要とする製品をコンフィギュレーションする
 

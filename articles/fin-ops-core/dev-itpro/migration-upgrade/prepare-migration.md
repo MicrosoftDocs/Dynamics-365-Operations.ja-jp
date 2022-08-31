@@ -1,25 +1,25 @@
 ---
 title: 財務と運用へのコードの移行の準備
 description: この記事では、コード アップグレード サービスと Visual Studio ツールを使用して、Dynamics AX 2012 R3 から財務と運用に移行する方法について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 25971
-ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9cebe731fc6798b6671e6d031e59a7494aa81a
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: 25971
+ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
+ms.openlocfilehash: 333d17f51d326cbcb1bd14670f92de71439695eb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124478"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268773"
 ---
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>財務と運用へのコードの移行の準備
 

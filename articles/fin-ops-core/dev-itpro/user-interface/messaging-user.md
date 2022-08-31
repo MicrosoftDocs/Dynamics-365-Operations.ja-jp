@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 50401
-ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f794d268db1b0c4192e1c286bef839ea3d635376
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 50401
+ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
+ms.openlocfilehash: bdf64c47ec55493701c2e724ee604d07539fed18
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114335"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273939"
 ---
 # <a name="messaging-system-for-finance-and-operations-apps"></a>財務と運用アプリのメッセージング システム
 

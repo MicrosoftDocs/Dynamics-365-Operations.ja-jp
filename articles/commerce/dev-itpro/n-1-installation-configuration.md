@@ -6,20 +6,20 @@ ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 44351
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 7e7f76fcacb3c09e849bc188f5b5d2032d3464a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 44351
+ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
+ms.openlocfilehash: 53206090a63b409f407576e37fb5685095a7d025
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905439"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273531"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) のインストール、構成、切替ガイド
 

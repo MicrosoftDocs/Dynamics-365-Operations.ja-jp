@@ -1,24 +1,24 @@
 ---
 title: 小売チャネルのシークレットの管理
 description: この記事では、シークレットへのアクセスを必要とするチャネルで拡張機能を使用している際のシークレット管理方法について説明します。
-author: AamirAllaq
+author: ShalabhjainMSFT
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: shajain
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 174660440ee7f46395d7d8772f318bb87457e5a9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 83892
+ms.openlocfilehash: 20c0c211859ffedd9676c0f65139135a5ba5268e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895446"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278518"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャネルのシークレットの管理
 

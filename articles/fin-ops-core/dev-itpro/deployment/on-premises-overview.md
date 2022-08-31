@@ -1,28 +1,26 @@
 ---
 title: オンプレミス配置の概要
 description: Dynamics 365 Finance + Operations (on-premises) は、顧客データ センターでビジネス プロセスの実行をサポートします。
-author: cabeln
+author: faix
 ms.date: 11/30/2021
 ms.topic: overview
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "23401"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: cabeln
+ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: e6c76500f850b3c7042d5a96f1802d666481c5bb
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.custom: 23401,  ""intro-internal
+ms.assetid: ''
+ms.service: ''
+ms.openlocfilehash: 5873e6f76cf8d3fe94c9daa60eb3a55bb4963706
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566023"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271463"
 ---
 # <a name="on-premises-deployment-overview"></a>オンプレミス配置の概要
 

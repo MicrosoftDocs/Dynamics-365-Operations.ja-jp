@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53c52418b76da476aac24267819d6564205c46b1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: a2f43f67162007a75d4580427c8625676bcc84b4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112256"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289336"
 ---
 # <a name="enable-table-maps-for-dual-write"></a>テーブル マップの二重書き込みの有効化
 

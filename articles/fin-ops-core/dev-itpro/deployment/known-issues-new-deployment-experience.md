@@ -12,17 +12,18 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: c37db4946d57e0eb364c0a191990f386c2d2d8a8
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: 90a90d6179e8d833cfa4733d96492f1895b10d92
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103848"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305169"
 ---
 # <a name="known-issues-with-self-service-deployment"></a>セルフサービス配置に関する既知の問題
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 この記事では、[セルフ サービス配置](infrastructure-stack.md)の既知の問題について説明します。
 

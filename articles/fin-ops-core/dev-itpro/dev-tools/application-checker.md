@@ -5,17 +5,17 @@ author: AndreasHassing
 ms.date: 09/22/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 01a47254b87ab36a3c8766bbfc45756752826ce6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c896c7e1f119826d06954f9e3f28d84a44d7829f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867108"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271243"
 ---
 # <a name="application-checker"></a>アプリケーション チェッカー
 

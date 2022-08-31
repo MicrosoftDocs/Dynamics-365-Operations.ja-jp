@@ -5,17 +5,17 @@ author: laneswenka
 ms.date: 01/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 904c02f75c3133cbd5a4c585236e5e766b48069b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57a1e4bee76b7cd3757ebcdd897b995307c67e1f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867093"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271207"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的デリバリーに関するよく寄せられる質問
 

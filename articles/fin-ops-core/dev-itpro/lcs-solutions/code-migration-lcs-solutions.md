@@ -1,23 +1,23 @@
 ---
 title: 財務と運用アプリ ソリューションのコードの移行
 description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) で、コードをアップグレードおよび分析する方法について説明します。
-author: kfend
+author: sericks007
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
-ms.search.region: Global
-ms.author: omarc
-ms.openlocfilehash: b7ed9b593c28b5ad8beb15f0630e0ff3158c2759
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: f1c0a970cbd8dbedd8e8f7cff7859ed4a632adf8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067484"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270739"
 ---
 # <a name="migrate-code-for-finance-and-operations-apps-solutions"></a>財務と運用アプリ ソリューションのコードの移行
 

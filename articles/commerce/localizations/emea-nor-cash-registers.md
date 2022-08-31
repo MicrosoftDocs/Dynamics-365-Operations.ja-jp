@@ -2,19 +2,19 @@
 title: ノルウェイのキャッシュ レジスター機能
 description: この記事では、Microsoft Dynamics 365 Commerce のノルウェーで利用可能なキャッシュ レジスター機能の概要と、機能を設定するためのガイドラインを説明します。
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: 42eda805646dbb30b40528254a3137102e3075e4
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 30bd5ad8c1513c3d56cc4aa0a77b70fe38d31e0a
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9292739"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9346021"
 ---
 # <a name="cash-register-functionality-for-norway"></a>ノルウェイのキャッシュ レジスター機能
 
@@ -117,6 +117,13 @@ SAF-T キャッシュ レジスター フォーマットは、本部では[電�
 
 ノルウェーに対して次の設定を指定する必要があります。
 
+### <a name="enable-features-for-norway"></a>ノルウェー用の機能を有効にする
+
+Commerce headquarters の **機能の管理** ワークスペースで、次の機能を有効にする必要があります。
+
+- (ノルウェー) POS で追加監査イベントを有効にする
+- (ノルウェー) POS の営業終了明細書で追加情報を有効にする
+
 ### <a name="set-up-the-legal-entity"></a>法人を設定する
 
 法人の名前が指定されている必要があります。 この名前は、X レポートと Z レポートに印刷されます。
@@ -149,7 +156,7 @@ SAF-T キャッシュ レジスター フォーマットは、本部では[電�
 
 | 言語 ID | テキスト                   | テキスト ID |
 |-------------|------------------------|---------|
-| ja       | レシートのタイトル          | 900011  |
+| ja-JP       | レシートのタイトル          | 900011  |
 | ja       | ギフト カードです           | 900012  |
 | ja       | 合計 (販売)          | 900013  |
 | ja       | 税の合計 (販売)      | 900014  |

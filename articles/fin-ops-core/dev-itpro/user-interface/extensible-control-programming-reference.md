@@ -1,25 +1,25 @@
 ---
 title: 拡張可能なコントロールのプログラミング リファレンス
 description: この記事では、拡張可能なコントロール プログラミングの参考資料を提供します。
-author: TLeforMicrosoft
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 50211
-ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dce12a9bf8d0b6e91dbb19c0793acb54d4064b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 50211
+ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
+ms.openlocfilehash: 72d15241e8187d931575ac23da7a49bf9983104a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905062"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285885"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 

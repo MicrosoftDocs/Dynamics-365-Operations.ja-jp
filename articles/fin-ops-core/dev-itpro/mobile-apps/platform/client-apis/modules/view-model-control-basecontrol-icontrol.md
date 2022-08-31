@@ -1,18 +1,18 @@
 ---
 title: 管理モジュール
 description: コントロールは、ページのコンテンツを構成するものです。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 6404d33e7a4cdeea40111f47fcf49b2a0d25cce5
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 864b59bffe17d1859854a87c3e0d539be3105928
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811486"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279378"
 ---
 # <a name="control-module"></a>管理モジュール
 

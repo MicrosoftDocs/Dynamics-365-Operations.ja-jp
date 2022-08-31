@@ -1,26 +1,26 @@
 ---
 title: 販売時点管理 (POS) デバイスのライセンス認証
 description: この記事では、Cloud POS および Modern POS の新しいガイド付きデバイスの有効化について説明します。
-author: athinesh99
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailSharedParameters, RetailDevice
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 18341
-ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 33a515620860f6a307e197c1b9c68d14b68016be
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 18341
+ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
+ms.search.form: RetailSharedParameters, RetailDevice
+ms.openlocfilehash: bb1bdcc5ee59e7f92416a15aed12c85dee633824
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781128"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284765"
 ---
 # <a name="point-of-sale-pos-device-activation"></a>販売時点管理 (POS) デバイスのライセンス認証
 

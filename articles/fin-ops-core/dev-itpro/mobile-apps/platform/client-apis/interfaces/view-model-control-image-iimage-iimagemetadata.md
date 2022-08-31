@@ -1,18 +1,18 @@
 ---
 title: ImageMetadata タイプ
 description: イメージ メタデータの種類。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 7b80496c1725b7e17d14ab86091fc006e3261466
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 457d644f281d7ad8ea011c2f5bfc15c8397066c1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811149"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283225"
 ---
 # <a name="imagemetadata-type"></a>ImageMetadata タイプ
 

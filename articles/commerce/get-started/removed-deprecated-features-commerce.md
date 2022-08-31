@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: この記事では、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287626"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337599"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -33,32 +33,49 @@ ms.locfileid: "9287626"
 > [!NOTE]
 > 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Commerce 10.0.29 リリースの削除済みまたは非推奨の機能
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Commerce パラメーター設定 - 製品価格の値上げへの価格調整を許可します
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | この設定を使用して、価格調整機能で製品価格の増加を許可するかどうかを制御しました。 このパラメータをオフにした場合、価格調整機能を使用する場合、組織で設定できるのは、製品の単価を基準価格および契約販売価格よりも低い値にのみです。 この設定は、このボックスから二方的な調整 (増加または減少) をサポートするために価格調整機能が更新されたため、推奨されません。 |
+| **別の機能で置き換えられているか?**   | 無効 |
+| **影響を受ける製品領域**         | 価格決定と割引 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨 : この設定は、Commerce Version 10.0.29 以降、既定で有効になり、2023 年 10 月に削除されます。 |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Commerce パラメーターの設定 - 小売店舗の価格レポートを有効にする
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 店舗の構成フォームで価格レポート機能を使用できるかどうかを制御するには、この設定を使用しました。 価格レポート機能を標準機能として常に提供するために店舗の構成フォームが更新されたため、この設定は推奨されません。 |
+| **別の機能で置き換えられているか?**   | 無効 |
+| **影響を受ける製品領域**         | 価格決定と割引 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨 : この設定は 2023 年 10 月に削除されます。 |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Commerce パラメータ設定 - 今日の日付を使用した価格の計算
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Supply Chain Management (SCM) 価格決定エンジンでは、今日の日付と共に、出荷予定日と定入荷日に基づいて価格決定計算をサポートします。 Commerce 価格設定エンジンは、今日の日付に基づく価格決定計算のみをサポートします。 SCM と Commerce の両方の機能を使用する顧客については、この設定を用意し、顧客が 2 つの価格決定サービスを組み合わせて作業できるよう、この設定を常に **はい** に設定してください。 この設定は計算の動作は変わらないため、推奨されません。 |
+| **別の機能で置き換えられているか?**   | 無効 |
+| **影響を受ける製品領域**         | 価格決定と割引 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨 : この設定は、Commerce Version 10.0.29 以降、既定で有効になり、2023 年 10 月に削除されます。 |
+
 ## <a name="feature-deprecation-effective-july-2022"></a>2022 年 7 月に廃止される機能
 
 ### <a name="commerce-analytics-preview"></a>Commerce 分析 (プレビュー)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | Dynamics 365 Commerce チームは、コマース分析 (プレビュー) 機能の使用と取り込みを分析しました。この機能を一般提供に持ち込む方向に進めないことを決定をしました。   |
-| **別の機能で置き換えられているか?**   | 現時点では、コマース分析 (プレビュー) は他の機能やソリューションには置き換えられることはありません。 [財務と運用アプリでの Data Lake へのエクスポート](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md) で説明されているように、財務と運用アプリから Azure Data Lake への生のトランザクションとマスター データのエクスポートは引き続き使用可能です。 パートナーおよび顧客は、そのデータ ストリームを使用して、ビジネス ニーズに合った任意の目的の分析レポートを作成できます。
+| **廃止 / 削除の理由** | Dynamics 365 Commerce チームは、Commerce 分析 (プレビュー) 機能の使用と取り込みを分析しました。この機能を一般提供に持ち込む方向に進めないことを決定をしました。   |
+| **別の機能で置き換えられているか?**   | 現時点では、Commerce 分析 (プレビュー) は他の機能やソリューションには置き換えられることはありません。 [財務と運用アプリでの Data Lake へのエクスポート](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md) で説明されているように、財務と運用アプリから Azure Data Lake への生のトランザクションとマスター データのエクスポートは引き続き使用可能です。 パートナーおよび顧客は、そのデータ ストリームを使用して、ビジネス ニーズに合った任意の目的の分析レポートを作成できます。
 | **影響を受ける製品領域**         | Commerce 分析 (プレビュー) |
 | **配置オプション**              | すべて |
 | **状態**                         | この機能を無効にする日は 2022 年 8 月 30 日です。  この日付以降、コマース分析 (プレビュー) によって提供される現在の Power BI レポートは更新されません。     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Commerce 10.0.25 リリースの削除済みまたは非推奨の機能
-
-### <a name="modern-point-of-sale-mpos"></a>Modern 販売時点管理 (MPOS)
-
-モダン販売時点管理 (MPOS) アプリケーションは、Commerce バージョン 10.0.25 のリリースで非推奨となり、Store Commerce アプリに置き換えらます。
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 店舗内のアプリは、Dynamics 365 Commerce オムニチャネル オファリングの基礎です。 モダンでインテリジェントなストア エクスペリエンスを提供するために継続的に革新し、Windows で既存の店舗内アプリケーションを使用し IT オペレーションとユーザー エクスペリエンスを大幅に改善する新しい一連の変更を展開するソリューションをさらにモダンにします。 新しい Store Commerce アプリケーションは、既存の MPOS のテクノロジ アップグレードです。 Windows プラットフォームでのパフォーマンス、信頼性、および長期のサポートを強化し、更新を行うごとにアプリを再梱包する必要がなされます。 |
-| **別の機能で置き換えられているか?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **影響を受ける製品領域**         | Modern 販売時点管理 |
-| **配置オプション**              | すべて |
-| **状態**                         | 非推奨: Commerce バージョン 10.0.25 のリリース時に、LCS 仮想マシン (VMs) を介して出荷された MPOS インストーラーは、2023 年 10 月に削除されます。 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commerce 10.0.21 リリースの削除済みまたは非推奨の機能
 
@@ -130,8 +147,8 @@ ModernPos.sln、CloudPos.sln、POS.Extension.csproj、および POS フォルダ
 | **廃止 / 削除の理由** | このリリースから、 Dynamics 365 本部 の **Commerce Scheduler パラメーター** フォームでは、**日数の完全なデータセット生成間隔** は非推奨となります。 また、今回のリリースからは、フィールドを視覚的に削除し、値を編集できないようになっています。 これは **0** の値で表示されます。 |
 | **別の機能で置き換えられているか?**   | なし |
 | **影響を受ける製品領域**         | Dynamics 365 Commerce |
-| **配置オプション**              | All|
-| **状態**                         | 非推奨。 このフィールドを使用したり、値を変更したりすることはできません。|
+| **配置オプション**              | すべて|
+| **状態**                         | 非推奨。 このフィールドを使用したり、値を変更したりしないでください。|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10015-release"></a>Commerce 10.0.15 リリースの削除済みまたは非推奨の機能
 
@@ -198,7 +215,7 @@ ModernPos.sln、CloudPos.sln、POS.Extension.csproj、および POS フォルダ
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | GetProductAvailabilities と GetAvailableInventoryNearby API は、新たに最適化された API に置き換えられます。 |
-| **別の機能で置き換えられているか?**   | 今後は、GetEstimatedAvailabilty と GetEstimatedProductWarehouseAvailability API がご利用頂けます。 |
+| **別の機能で置き換えられているか?**   | はい: これは、GetEstimatedAvailabilty と GetEstimatedProductWarehouseAvailability API で置き換えられます。 |
 | **影響を受ける製品領域**         | eコマース アプリケーション SDK |
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: リリース バージョン 10.0.7 の時点では、GetProductAvailabilities と GetAvailableInventoryNearby に対する新規開発は今後行われません。 これら API をeコマース環境で使用している組織では、新しい GetEstimatedAvailabilty と GetEstimatedProductWarehouseAvailability API に置き換えを行い、[最適化された商品在庫計算機能 ](../calculated-inventory-retail-channels.md) を有効化する必要があります。  |

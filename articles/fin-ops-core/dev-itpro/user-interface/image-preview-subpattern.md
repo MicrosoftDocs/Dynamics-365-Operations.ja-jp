@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 244b9fdcbe7c3c935849b08072efb13bb3fad07e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a7b207789c55e27a8a829a4d4d178f421e1734df
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781917"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287110"
 ---
 # <a name="image-preview-subpattern"></a>画像のプレビューのサブパターン
 

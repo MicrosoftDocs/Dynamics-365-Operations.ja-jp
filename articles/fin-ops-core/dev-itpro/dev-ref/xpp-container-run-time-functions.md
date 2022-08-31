@@ -1,20 +1,20 @@
 ---
 title: X++ コンテナー ランタイム関数
 description: この記事では、コンテナー ランタイム関数について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/20/2017
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43f23791580fa4db04def5cf725206a09aa9d91d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e94869cca3f3f9d323b499a7984a875a4cb10d2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867225"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271391"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 

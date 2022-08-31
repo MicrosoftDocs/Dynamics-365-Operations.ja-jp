@@ -1,20 +1,21 @@
 ---
 title: オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
 description: この記事では、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
-author: hasaid
+author: josaw1
 ms.date: 03/22/2019
 ms.topic: article
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jujoh
+ms.author: josaw
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: ca37b3268e122969d826bb68d60e4d61ef596e09
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 0d2e1b178ab525c11f4d51c4c3b886e71921219b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108391"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287888"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチ ユーザー テスト
 

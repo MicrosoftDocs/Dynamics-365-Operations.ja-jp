@@ -1,25 +1,25 @@
 ---
 title: 支払いに関するよくあるご質問
 description: この記事では、Dynamics 365 Commerce で使用できる支払いオプションについて説明します。
-author: athinesh99
+author: josaw1
 ms.date: 10/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 65801
-ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f2a1cdbee801f7d0d1ab4b8b2fcb27e7cc130f2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 65801
+ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
+ms.openlocfilehash: aa56c6856cbd6bf5559005b4767c622e0514176c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852801"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268428"
 ---
 # <a name="payments-faq"></a>支払いに関するよくあるご質問
 

@@ -2,7 +2,7 @@
 title: 倉庫アプリからの移動オーダーの作成
 description: この記事では、倉庫管理モバイル アプリから移動オーダーを作成および処理する方法について説明します
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877453"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336458"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>倉庫アプリからの移動オーダーの作成
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877453"
 
 この機能により、倉庫作業者は倉庫管理モバイル アプリから移動オーダーを直接作成および処理することができます。 作業者は、出荷先倉庫を選択することによって開始し、アプリを使用して 1 つ以上のライセンス プレートをスキャンして、移動オーダーにライセンス プレートを追加できます。 倉庫作業者が **注文の完了** を選択すると、バッチ ジョブによって、そのライセンス プレートに対して登録されている手持在庫に基づいて必要な移動オーダーおよび注文明細行が作成されます。
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>この機能のオン/オフを切り替える
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>この機能とその前提条件を有効にする
 
 この機能を使用する前に、機能と前提条件の両方をシステム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページを使用して、機能状態を確認し、必要に応じてそれを有効にすることができます。
 
 1. [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースで以下の 2 つの機能を (順番に) 有効にします。 Supply Chain Management のバージョン 10.0.25 では、この両方の機能が規定でオンになっています。
-    1. *倉庫アプリ イベントの処理*
-    1. *倉庫アプリからの移動オーダーを作成および処理します*
-1. アウトバウンド出荷の処理を自動化するには、[バッチ ジョブからのアウトバウンド出荷の確認](confirm-outbound-shipments-from-batch-jobs.md)機能も有効にする必要があります。
+    1. *倉庫アプリ イベントの処理*<br>(Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。)
+    1. *倉庫アプリからの移動オーダーを作成および処理します*<br>(Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。)
+1. アウトバウンド出荷の処理を自動化するには、[*バッチ ジョブからのアウトバウンド出荷の確認*](confirm-outbound-shipments-from-batch-jobs.md) 機能も有効にする必要があります。 (Supply Chain Management のバージョン10.0.21 では、この機能は既定で有効になっています。 (Supply Chain Management 10.0.25 では、この機能は必須であり、オフにすることはできません。)
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>移動オーダーを作成するためのモバイル デバイスのメニュー項目の設定
 
@@ -307,11 +307,11 @@ ms.locfileid: "8877453"
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>注文がまだバック エンド システムで作成されていない場合に、倉庫管理モバイル アプリで "移動オーダーの選択" ボタンを介して使用する既存の移動オーダーを検索する方法がありますか?
 
-現時点では、アプリで移動オーダーを検索することはできませんが、**倉庫アプリ イベント** のページで移動オーダー番号を見つけることができます。 詳細については、[倉庫アプリのイベントの照会](#inquire-the-warehouse-app-events) を参照してください。
+作業者は、[データ照会](warehouse-app-data-inquiry.md) 機能を使用して Warehouse Management モバイル アプリで移動オーダー番号を参照することができます。 たとえば、*選択の順序 - MobileDeviceQueueMessageCollectionIdentifierId* ステップの一部としてWebクライアントの **倉庫アプリ イベント** ページ (`WHSMobileDeviceQueueMessageCollection`) に表示されるデータをクエリする [迂回](warehouse-app-detours.md) モバイル デバイス メニュー項目を作成できます。 移動オーダー番号は、**ID** フィールドに表示される値と一致します。 [倉庫アプリのイベントの照会](#inquire-the-warehouse-app-events) もご覧ください。
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>倉庫管理モバイルアプリから使用する移動オーダー番号を手動で選択できますか？
 
-番号順序を介して自動生成された移動オーダー番号のみがサポートされます。
+番号順序を介して自動生成された移動オーダー番号のみがサポートされます。 **移動オーダーの選択** ボタンの設定方法に関する前の質問 への回答も参照 してください。 移動オーダー番号の値を検索する方法の詳細については、[倉庫アプリ イベントの照会](#inquire-the-warehouse-app-events) を参照してください。
 
 ### <a name="background-processing"></a>バックグラウンド処理
 

@@ -1,21 +1,21 @@
 ---
 title: タスク レコーダーのクイック リファレンス
 description: この記事では、タスク レコーダー メニュー内の各ボタンの動作を説明するクイック リファレンス シートを提供します。
-author: RobinARH
+author: jasongre
 ms.date: 12/01/2019
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b643b840a20c3ee20a6cdad9a8706e7415389931
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 61a79c7010a2bc37b5d5afb7d4ba46c1eba39f35
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900146"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275313"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 

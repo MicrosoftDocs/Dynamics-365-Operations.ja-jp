@@ -1,25 +1,25 @@
 ---
 title: トリガーの使用によるトランザクションのブロック
 description: この記事では、トリガーを使用して請求書またはクレジット取引をブロックする方法を示します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 65893
-ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: da6317a32f89c06687b6431406d7812c2e04c347
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 65893
+ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
+ms.openlocfilehash: 282edc12384da453beb5977a9b5f2339d8ac31d6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885215"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281039"
 ---
 # <a name="block-transactions-by-using-triggers"></a>トリガーの使用によるトランザクションのブロック
 

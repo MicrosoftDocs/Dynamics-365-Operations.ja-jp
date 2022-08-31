@@ -1,25 +1,25 @@
 ---
 title: 規制の監視と規制の更新の通知
 description: ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
-author: ShylaThompson
+author: kfend
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
-ms.custom: 27831
-ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
+ms.reviewer: kfend
 ms.search.region: global
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c604eeb7caf3450b9c90cfb4f5dde31a7641238
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: 27831
+ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
+ms.openlocfilehash: d06a85f0d35cc840ea543f7c1d8f1794fc54834a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066136"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270723"
 ---
 # <a name="regulatory-watch-and-communication-of-regulatory-updates"></a>規制の監視と規制の更新の通知
 

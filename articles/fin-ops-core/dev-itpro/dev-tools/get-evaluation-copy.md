@@ -1,22 +1,22 @@
 ---
 title: ベータ評価版の入手
 description: パブリック プレビューを使用できます。
-author: RobinARH
+author: gianugo
 ms.date: 11/02/2020
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 85243
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f05b933e627cb23d5e625fb75f9cd61ac0b3bf4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 85243
+ms.openlocfilehash: 6a162821dad00f6574379d0c9ca8272a460157ce
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783042"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271139"
 ---
 # <a name="get-evaluation-copies"></a>ベータ評価版の入手
 

@@ -12,16 +12,15 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom:
-- "27661"
+ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.form: PowerBIConfiguration
-ms.openlocfilehash: f2587dc4c5ba3e12365c692fcc3580643d16eb71
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 8fafa8fa4e87b84dfdbac9aa5d9ac3af10da8aef
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206268"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268819"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 

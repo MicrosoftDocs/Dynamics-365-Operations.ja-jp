@@ -1,27 +1,25 @@
 ---
 title: ビジネス ロジック イベント
 description: ビジネス ロジックで実行されるコードは、ページ、アクション、およびコントロールのメタデータにランタイム変更を加えることができます。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom:
-- "255544"
-- intro-internal
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 16065f4a5d6c2d937ebfaa8b0d6e66164d63acc7
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.custom: 255544,  ""intro-internal
+ms.assetid: ''
+ms.openlocfilehash: 9d8a141d953fc4d882a2f23ffd3ff83a32581903
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811589"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276546"
 ---
 # <a name="business-logic-events"></a>ビジネス ロジック イベント
 

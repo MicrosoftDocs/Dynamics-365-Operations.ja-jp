@@ -9,16 +9,16 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: India
-ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2018-1-31
+ms.author: josaw
+ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 1953e0b8de1231b2a4e7b27c87e480a78dddc98f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+ms.openlocfilehash: 89e8df523bdf09c7841d53ec502a96140129574f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869145"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276187"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 

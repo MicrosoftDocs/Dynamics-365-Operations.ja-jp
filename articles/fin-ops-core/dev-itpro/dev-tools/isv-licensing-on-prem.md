@@ -1,25 +1,25 @@
 ---
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 description: この記事では、オンプレミス環境における独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 11/29/2021
 ms.topic: article
-audience: Developer
 ms.prod: dynamics-365
-ms.service: ''
-ms.reviewer: tfehr
-ms.custom: 70381
-ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 3ea2af1fc56e81403d79c2218ec817b2948fa0d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 70381
+ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.service: ''
+ms.openlocfilehash: bc592a50e18d3534483f4d04e40688e6de5df5cb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867051"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271119"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 

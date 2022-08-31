@@ -1,26 +1,26 @@
 ---
 title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 ～ 40)
 description: この記事では、Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 12 から 40 を計画、設定、展開する方法について説明します。
-author: PeterRFriis
+author: faix
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: bd1fd30bdf48f40338b2e24afef16e874598366d
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: ''
+ms.assetid: ''
+ms.service: ''
+ms.openlocfilehash: 697a568222367ebfddb348f05286932656ebec81
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103449"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271439"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 ～ 40)
 

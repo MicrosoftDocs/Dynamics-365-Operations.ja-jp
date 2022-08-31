@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 16281
-ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 751548f788b38639947a15f0fc29280ea74c114d
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 16281
+ms.assetid: 016c8e36-0abe-4b55-a575-5696761959a5
+ms.openlocfilehash: c78f099c2653f5f3de1a6a259d638d50f35081f2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114275"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267226"
 ---
 # <a name="details-transaction-form-pattern"></a>詳細トランザクション フォーム パターン
 

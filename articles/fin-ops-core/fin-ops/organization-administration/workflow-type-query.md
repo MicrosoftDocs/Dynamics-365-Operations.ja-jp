@@ -1,25 +1,25 @@
 ---
 title: ワークフロー タイプのクエリの作成
 description: この記事では、ワークフロー タイプのクエリを作成する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 202694
-ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 4d27af969ba2b261862fde81b81f6b0085c62b24
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 202694
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
+ms.openlocfilehash: d31f26ae9baf10046bfa6f653b146bd5437ff9c1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871469"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267740"
 ---
 # <a name="create-a-query-for-a-workflow-type"></a>ワークフロー タイプのクエリの作成 
 

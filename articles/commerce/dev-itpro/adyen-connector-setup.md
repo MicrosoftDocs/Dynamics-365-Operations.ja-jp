@@ -1,26 +1,26 @@
 ---
 title: Adyen 向け Dynamics 365 Payment Connector の設定
 description: この記事では、Adyen にサインアップし、Adyen 向け Microsoft Dynamics 365 Payment Connector を設定する方法について説明します。
-author: rassadi
+author: Reza-Assadi
 ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7ef26961210adb580137397dee7e3d1bb989a6be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
+ms.openlocfilehash: 86329a1e8b54c3d5553c13287040f9735089c1df
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893047"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280349"
 ---
 # <a name="set-up-dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector の設定
 

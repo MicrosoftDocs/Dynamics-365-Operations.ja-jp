@@ -2,27 +2,28 @@
 title: オーストリア向け会計登録サービス統合のサンプル
 description: この記事では、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 7f4f1d796028330d2d655b1e13d3e36bbef95403
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: da4deb37b260ffa2a68e2a36aef01965cbf098b2
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287568"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313804"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>オーストリア向け会計登録サービス統合のサンプル
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
 
-オーストリアのキャッシュ レジスターにおける現地の財政要件を満たすため、オーストリア向け Dynamics 365 Retail 機能には、販売時点管理 (POS) と外部財政登録サービスとの統合例が含まれています。 このサンプルは [会計統合機能](fiscal-integration-for-retail-channel.md) を拡張します。 これは [EFSTA](https://www.efsta.eu/at/) の [EFR (電子会計登録)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) ソリューションに基づいており、HTTPS プロトコルによる EFR サービスとの通信を実現します。 Retail ハードウェア ステーション、またはハードウェア ステーションから接続できる別のマシンのいずれかで、EFR サービスをホストする必要があります。 このサンプルはソース コード形式で提供され、Retail ソフトウェア開発キット (SDK) に含まれます。
+オーストリアのキャッシュ レジスターにおける現地の財政要件を満たすため、オーストリア向け Dynamics 365 Retail 機能には、販売時点管理 (POS) と外部財政登録サービスとの統合例が含まれています。 このサンプルは [会計統合機能](fiscal-integration-for-retail-channel.md) を拡張します。 これは [EFSTA](https://www.efsta.eu/at/) の [EFR (電子会計登録)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) ソリューションに基づいており、HTTPS プロトコルによる EFR サービスとの通信を実現します。 Retail ハードウェア ステーション、またはハードウェア ステーションから接続できる別のマシンのいずれかで、EFR サービスをホストする必要があります。 このサンプルはソース コード形式で提供され、Commerce ソフトウェア開発キット (SDK) に含まれます。
 
 マイクロソフトは、EFSTA によるハードウェア、ソフトウェア、ドキュメントをリリースしません。 EFR ソリューションを入手して操作する方法については [EFSTA](https://www.efsta.eu/at/kontakt) に問い合わせてください。
 
@@ -102,6 +103,13 @@ ms.locfileid: "9287568"
 - オーストリアにあるすべての店舗の POS 機能プロファイルで、 **ISO コード フィールド** を **AT** (オーストリア) に設定します。
 
 オーストリアに対応する次の設定を指定する必要があります。 設定が完了したら、必ず適切な配布ジョブを実行します。
+
+### <a name="enable-features-for-austria"></a>オーストリア向けの機能を有効にする
+
+**機能の管理** ワークスペースで、次の機能を有効にする必要があります。
+
+- (オーストリア) POS で追加監査イベントを有効にする
+- (オーストリア) POS の営業終了明細書で追加情報を有効にする
 
 ### <a name="set-up-vat-per-austrian-requirements"></a>オーストリアの要件に従って VAT を設定する
 
@@ -204,10 +212,10 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 
 ## <a name="set-up-fiscal-integration-for-austria"></a>オーストリア向け会計統合を設定する
 
-オーストリアの会計登録サービス統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Efr** フォルダにあります (例: [release/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)) サンプルは、Commerce Runtime (CRT) の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+オーストリアの会計登録サービス統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいており、Commerce SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Efr** フォルダーにあります。 [サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) は、Commerce Runtime (CRT) の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタから構成されています。 Commerce SDK の使用方法の詳細については、[Commerce SDK サンプルと GitHub と NuGet からのリファレンス パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) と [独立パッケージSDK のパイプラインを設定する](../dev-itpro/build-pipeline.md) をご覧ください。
 
-> [!WARNING]
-> [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retail SDK の以前のバージョンを使用する必要があります。 詳細については、[オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)](emea-aut-fi-sample-sdk.md) を参照してください。 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+> [!NOTE]
+> オーストリアの会計登録サービス統合サンプルは、Commerce SDK で Commerce Version 10.0.29 として提供されています。 Commerce version 10.0.28 以前では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retail SDK の以前のバージョンを使用する必要があります。 詳細については、[オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)](emea-aut-fi-sample-sdk.md) を参照してください。
 
 [Commerce チャンネルの会計統合を設定する](setting-up-fiscal-integration-for-retail-channel.md) で説明されている会計統合の設定手順を実行します。
 
@@ -223,20 +231,22 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 1. 会計ドキュメント プロバイダーと会計コネクタの構成ファイルをダウンロードします。
 
     1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) レポジトリ を開きます。
-    1. SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します (例: **[リリース/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**)。
+    1. SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。
     1. **src \> FiscalIntegration \> Efr** を開きます。
-    1. **Configurations \> DocumentProviders** を開き、次の会計ドキュメント プロバイダー構成ファイルをダウンロードします: **DocumentProviderFiscalEFRSampleAustria.xml** と **DocumentProviderNonFiscalEFRSampleAustria.xml** (例: [リリースするファイルの場所/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders))。
-    1. **Configurations \> Connectors \> ConnectorEFRSample.xml** から会計コネクタ構成ファイルをダウンロードします (例: [リリース/9.33 のファイル](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml))。
+    1. **構成 \> DocumentProviders** を開いて、会計ドキュメント プロバイダーの構成ファイルをダウンロードします。 
 
-    > [!WARNING]
-    > [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 この会計統合サンプルの構成ファイルは、LCS の開発者 VM 上の Retail SDK が含む次のフォルダーに存在します。
+        - DocumentProviderFiscalEFRSampleAustria.xml
+        - DocumentProviderNonFiscalEFRSampleAustria.xml
+
+    1. **構成 \> コネクタ \> ConnectorEFRSample.xml** で会計コネクタ構成ファイルをダウンロードします。
+
+    > [!NOTE]
+    > Commerce バージョン  10.0.28 以前の場合、LCS の開発者 VM で、以前のバージョンを使用する必要があります。 この会計統合サンプルの構成ファイルは、LCS の開発者 VM 上の Retail SDK が含む次のフォルダーに存在します。
     >
     > - **会計ドキュメント プロバイダー構成ファイル:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration
     > - **会計コネクタ構成ファイル:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration
-    > 
-    > 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
 
-1. **Retail とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。 **一般** タブで、**会計統合の有効化** オプションを **はい** に設定します。
+1. **小売とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。 **一般** タブで、**会計統合の有効化** オプションを **はい** に設定します。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計ドキュメント プロバイダー** に移動し、先ほどダウンロードした会計ドキュメント プロバイダー コンフィギュレーション ファイルを読み込みます。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計コネクタ** に移動し、先ほどダウンロードした会計コネクタ コンフィギュレーション ファイルを読み込みます。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> コネクタ機能プロファイル** の順に移動します。 以前に読み込んだ会計ドキュメント プロバイダーごとに 1 つずつ、新しいコネクタ機能プロファイルを 2 つ作成し、以前に読み込んだ会計コネクタを選択します。 必要に応じて [データ マッピング設定](#default-data-mapping) を更新します。
@@ -244,7 +254,7 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 1. **Retail と Commerc \> チャネル設定 \> 会計統合 \> 会計コネクタ グループ** の順に移動します。 既に作成した各コネクタ機能プロファイル用に 2 つの新しい会計コネクタ グループを作成します。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計登録プロセス** の順に移動します。 新しい会計登録プロセスと会計登録プロセス ステップを 2 つ作成し、以前に作成した会計コネクタ グループを選択します。
 1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル** の順に移動します。 登録プロセスを有効化する、店舗にリンクされている機能プロファイルを選択します。 **会計登録プロセス** クイックタブで、以前に作成した会計登録プロセスを選択します。 POS で非会計イベントの登録を有効化する際は、**機能** クイック タブの **POS** 配下で、**監査** オプションに **はい** と設定します。
-1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** の順に移動します。 会計プリンターの接続先のハードウェア ステーションにリンクされているハードウェア プロファイルを選択します。 **会計周辺機器** クイックタブで、先ほど作成したコネクタ テクニカル プロファイルを選択します。
+1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** の順に移動します。 会計登録サービスの接続先のハードウェア ステーションにリンクされているハードウェア プロファイルを選択します。 **会計周辺機器** クイックタブで、先ほど作成したコネクタ テクニカル プロファイルを選択します。
 1. 配布スケジュール (**Retail と Commerce \> Retail と Commerce IT \> 配送スケジュール**) を開き、ジョブ **1070** と **1090** を選択してチャネル データベースにデータを転送します。
 
 #### <a name="default-data-mapping"></a>既定のデータ マッピング
@@ -269,16 +279,15 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 
 ### <a name="configure-channel-components"></a>チャネル コンポーネントの構成
 
-> [!WARNING]
-> [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 詳細については、[オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)](emea-aut-fi-sample-sdk.md) を参照してください。
->
-> 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+> [!NOTE]
+> - オーストリアの会計登録サービス統合サンプルは、Commerce SDK で Commerce Version 10.0.29 として提供されています。 Commerce バージョン  10.0.28 以前の場合、LCS の開発者 VM で、以前のバージョンを使用する必要があります。 詳細については、[オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)](emea-aut-fi-sample-sdk.md) を参照してください。
+> - 自分の環境に配置されている Commerce サンプルは、Commerce コンポーネントにサービスまたは品質の更新を適用すると自動的に更新されません。 手動で必要なサンプルを更新する必要があります。
 
 #### <a name="set-up-the-development-environment"></a>開発環境の設定
 
 開発環境を設定してサンプルのテストと拡張を行う際は、次の手順に従います。
 
-1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリをクローンまたはダウンロードします。 SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。 詳細については、[GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください。
+1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリをクローンまたはダウンロードします。 SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。 詳細については、[GitHub と NuGet から Commerce SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください。
 1. **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln** で EFR ソリューションを開き、ビルドします。
 1. CRT 拡張機能をインストールします:
 
@@ -330,10 +339,10 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 
 ## <a name="design-of-extensions"></a>拡張機能の設計
 
-オーストリアの会計登録サービス統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Efr** フォルダにあります (例: [release/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)) サンプルは、CRT の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+オーストリアの会計登録サービス統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいており、Commerce SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Efr** フォルダーにあります。 サンプルは、CRT の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Commerce SDK の使用方法の詳細については、[Commerce SDK サンプルと GitHub と NuGet からのリファレンス パッケージをダウンロードする](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立パッケージSDK のパイプラインを設定する](../dev-itpro/build-pipeline.md) をご覧ください。
 
-> [!WARNING]
-> [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 詳細については、[オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)](emea-aut-fi-sample-sdk.md) を参照してください。 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+> [!NOTE]
+> オーストリアの会計登録サービス統合サンプルは、Commerce SDK で Commerce Version 10.0.29 として提供されています。 Commerce バージョン  10.0.28 以前の場合、LCS の開発者 VM で、以前のバージョンを使用する必要があります。 詳細については、[オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)](emea-aut-fi-sample-sdk.md) を参照してください。
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime 拡張機能の設計 
 

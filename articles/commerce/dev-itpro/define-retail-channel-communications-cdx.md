@@ -1,26 +1,26 @@
 ---
 title: Commerce Data Exchange とコマース チャネルの通信
 description: この記事では、Commerce Data Exchange とそのコンポーネントの概要を提供します。
-author: athinesh99
+author: josaw1
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 27021
-ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c8b0a19255f2096120fcab23c714f5c474f60a95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 27021
+ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
+ms.search.industry: Retail
+ms.openlocfilehash: 10d85ae9d328717832fa0793d3265e884097df94
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902787"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276234"
 ---
 # <a name="commerce-data-exchange-and-commerce-channel-communications"></a>Commerce Data Exchange とコマース チャネルの通信
 

@@ -1,25 +1,25 @@
 ---
 title: モバイル プラットフォームのリソース
 description: モバイル プラットフォームを使用して、ワークスペースのモバイル アプリを作成できます。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: intro-internal
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 5ec9e3dc673d2674b9550ff8d2de180e2948375a
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: intro-internal
+ms.assetid: ''
+ms.openlocfilehash: df6e7477d4a5fe16cccc672aeb2312edc38e6f12
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103251"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284961"
 ---
 # <a name="mobile-platform-resources"></a>モバイル プラットフォームのリソース
 

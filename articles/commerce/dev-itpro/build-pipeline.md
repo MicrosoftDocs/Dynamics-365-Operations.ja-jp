@@ -1,21 +1,21 @@
 ---
 title: 独立したパッケージ SDK のビルド パイプラインの設定
 description: この記事では、拡張コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成できるよう、Retail ソフトウェア開発キット (SDK) のビルド パイプラインを設定する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 05/17/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 05-17-2020
+ms.author: josaw
+ms.search.validFrom: 2020-05-17
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 1d17552bf56f02c7d2f36b6c7fcaf4ac675aeee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b699d4ce97fdc418a1900a8ab4ecd255b8b936b6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869181"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282191"
 ---
 # <a name="set-up-a-build-pipeline-for-the-independent-packaging-sdk"></a>独立したパッケージ SDK のビルド パイプラインの設定
 

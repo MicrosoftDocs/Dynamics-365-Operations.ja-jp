@@ -6,22 +6,22 @@ ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: c8f88e4d056838e5ef17ae12db6f6cfe5153c05d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: RetailITWorkspace
+ms.openlocfilehash: 9746265991fef0339421f34431da822722843d74
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877023"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273709"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 

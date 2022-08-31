@@ -2,24 +2,22 @@
 title: サウジアラビア向け QR コードの生成とレシートへの印刷
 description: この記事では、Microsoft Dynamics 365 Commerce でサウジアラビアで使用できる QR コードを印刷するための機能の概要を説明します。
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2021-11-04
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b22d466ee1f19b5328d329d11a0f54b1a46539b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1327900ba05122db0575683d3d169ccb16b2b165
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885128"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337363"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts-for-saudi-arabia"></a>サウジアラビア向け QR コードの生成とレシートへの印刷
 

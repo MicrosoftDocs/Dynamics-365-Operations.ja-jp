@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 28291
-ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9289bf401c78e96ab39aec94b4c914dd6bb9bc20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 28291
+ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec
+ms.openlocfilehash: 7761bfb4618dccef4bf6e19e1eb53c096ece4eaa
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870356"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292414"
 ---
 # <a name="test-forms-that-use-custom-patterns"></a>カスタム パターンを使用したテスト フォーム
 

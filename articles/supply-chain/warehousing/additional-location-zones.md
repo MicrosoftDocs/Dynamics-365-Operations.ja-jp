@@ -2,7 +2,7 @@
 title: 追加の場所ゾーン
 description: この記事では、Microsoft Dynamics 365 Supply Chain Management に追加された新しい場所ゾーンの概要を示します。
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c20225cfb3c44fff955d0ad4e96c7fecf0ddf715
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 819330e0f6e6cd419da441f919d68ff996b6475c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900654"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336518"
 ---
 # <a name="additional-location-zones"></a>追加の場所ゾーン
 
@@ -32,7 +32,7 @@ Microsoft Dynamics 365 Supply Chain Management では、3 つの新しいゾー�
 
 ## <a name="turn-the-additional-location-zone-feature-on-or-off"></a>追加の場所ゾーン機能のオン/オフ
 
-Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *追加ロケーション ゾーン* 機能を検索して、この機能のオン/オフを切り替えることができます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *追加の場所のゾーン* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="use-location-zones"></a>場所ゾーンの使用
 

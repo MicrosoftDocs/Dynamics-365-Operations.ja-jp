@@ -1,8 +1,8 @@
 ---
 title: Finance + Operations (オンプレミス) の購入
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) を購入し、展開する方法を説明します。
-author: cabeln
-ms.date: 11/30/2021
+author: faix
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -10,15 +10,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: cabeln
+ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 2c55b7e48b84952e1f563b9a188c486b3cf99978
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35dcdb8bf1b049e9fb1702ce4a1be98d56f45c74
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903524"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228038"
 ---
 # <a name="buy-finance--operations-on-premises"></a>Finance + Operations (オンプレミス) の購入
 
@@ -58,7 +58,7 @@ Finance + Operations (オンプレミス) を購入するには、Microsoft Onli
 
 Microsoft Online Services ID は、Finance + Operations (オンプレミス) をエンティティが所有するハードウェアと環境にプロビジョニングして登録するために必要です。 プロビジョニングおよび登録プロセスを完了するには、プロビジョニング ガイド (下へのリンク) を参照してください。 Microsof tオンライン サービス ID が既に存在する場合は、グローバル管理者によって、プロセスを完了する必要があります。 Microsoft オンライン サービスの ID を最初に作成する場合は、プロセスを開始する担当者がグローバル管理者になります。
 
-既存の Microsoft オンライン サービス試用版または有料サブスクリプションがある場合は、サインアップ時に作成された Microsoft オンライン サービス ID が既にあります。 オンプレミス環境にこの同じ Azure Active Directory (AAD) テナントを使用する場合、このアカウントでログインを選択します。 詳細については、[プロビジョニング ガイド](https://mbs2.microsoft.com/fileexchange/?fileID=b5aec84e-28e9-491f-ba91-9f662acd4e70) を参照してください。
+既存の Microsoft オンライン サービス試用版または有料サブスクリプションがある場合は、サインアップ時に作成された Microsoft オンライン サービス ID が既にあります。 オンプレミス環境にこの同じ Azure Active Directory (AAD) テナントを使用する場合、このアカウントでログインを選択します。 詳細については、[プロビジョニング ガイド](https://mbs2.microsoft.com/fileexchange/?fileID=7ddd6ddf-aa22-402a-baa1-5405ce0b1076) を参照してください。
 
 LCS にログインすると、プロジェクトが自動的にプロビジョニングします。 LCS プロジェクトでは、オンプレミス環境を配置できます。 LCS プロジェクトの使い方の詳細については、[Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
 

@@ -1,23 +1,23 @@
 ---
 title: プレビュー サブスクリプションのサインアップ
 description: この記事では、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 12/16/2020
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 13211
-ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 449c08fdb368b08e4376b427111145c12fd5e303
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 13211
+ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
+ms.openlocfilehash: c95533ef5841151111f05c33984ebb6dc47967dc
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103676"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271043"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 

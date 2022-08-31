@@ -7,20 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
-- "10031"
-- intro-internal
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6d8d0d56573bac5793fa271307a365c55f02804
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: 10031,  ""intro-internal
+ms.openlocfilehash: 0d4794d0462e5b8d9a649a883e225f3d2d76f88f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069395"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284538"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 

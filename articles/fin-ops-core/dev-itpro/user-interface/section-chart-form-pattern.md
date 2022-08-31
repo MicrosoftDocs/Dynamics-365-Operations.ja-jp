@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29271
-ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13233a5c0b0bdd9aba3abe1cffebe7a7c699dbea
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 29271
+ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
+ms.openlocfilehash: 9cc4814c1442b3abc49dd2969cc34ecb79203553
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114286"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291720"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 

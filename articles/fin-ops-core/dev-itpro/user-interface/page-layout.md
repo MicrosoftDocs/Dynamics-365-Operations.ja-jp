@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 28251
-ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc36477639411fd9f486f257efef71532d3e538a
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 28251
+ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
+ms.openlocfilehash: 479abb2b769f6be92eb7fb5b2827bbe2d77e2b76
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114327"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273935"
 ---
 # <a name="page-layout-in-the-web-client"></a>Web クライアントのページ レイアウト
 

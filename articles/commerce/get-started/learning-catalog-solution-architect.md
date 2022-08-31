@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Commerce ソリューション アーキテクトのラーニング カタログ
 description: Dynamics 365 Commerce ソリューション アーキテクト向けのすべてのトレーニング オプションを検索します。
-author: margoc
-ms.topic: article
+author: josaw1
 ms.date: 07/27/2020
-ms.author: margoc
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: bbf57678d240ea0a6b4b99aa1c34b2839c8d500d
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: a18f20e31f1de45ed524a58ccd72c2b403acc098
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066160"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284730"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-solution-architects"></a>Dynamics 365 Commerce ソリューション アーキテクトのラーニング カタログ
 

@@ -10,15 +10,14 @@ audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: India
 ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7e6ec83b7615967676c255f7a8e045c8853e1035
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 03c05a8818d7c763b4183bfa03dacb553e8b522f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885417"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337364"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts-for-india"></a>インド向け QR コードの生成とレシートへの印刷
 
@@ -1169,5 +1168,3 @@ namespace Contoso
     }
 }
 ```     
-
----

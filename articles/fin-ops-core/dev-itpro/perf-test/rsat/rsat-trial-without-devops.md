@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 21631
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d42484454dd4aedab780449b9746259b1297941
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 21631
+ms.openlocfilehash: 5f61d62d1b6b01622a8f692d5d90402a6cff0e50
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854622"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277422"
 ---
 # <a name="trial-mode-without-azure-devops"></a>Azure DevOps を使用しない試用版モード
 

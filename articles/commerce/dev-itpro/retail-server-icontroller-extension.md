@@ -1,25 +1,25 @@
 ---
 title: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 description: この記事では、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 28021
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 67c5442fa8ece7c830d248d9d723a14e6d5e5086
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 28021
+ms.assetid: ''
+ms.openlocfilehash: 0206d3f874bb923a61c77b0c8505e9bbde7f3966
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893038"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282183"
 ---
 # <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 

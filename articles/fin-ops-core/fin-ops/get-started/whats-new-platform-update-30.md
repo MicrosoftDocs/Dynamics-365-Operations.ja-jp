@@ -1,25 +1,25 @@
 ---
 title: 財務と運用アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 description: この記事では、財務と運用アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。
-author: tonyafehr
+author: sericks007
 ms.date: 11/08/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: d8eee97a4c75266fab0706544f5c38647f1c0268
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: bed82a8568d9b76325fd931e6c7d5c0c8a18d912
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103130"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280738"
 ---
 # <a name="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>財務と運用アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 

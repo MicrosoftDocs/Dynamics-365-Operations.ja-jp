@@ -5,17 +5,17 @@ author: NHelgren
 ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 496339a5d7129147758f6a20af0a82356ac3bb18
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 6e15828fbf29bed8d4de459fd937af08e0178e79
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111678"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288902"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -121,6 +121,9 @@ ms.locfileid: "9111678"
     *財務と運用アプリは Dataverse に接続可能*<br>
     *二重書き込みを有効にする前に、相互に接続するアプリへのアクセスを許可する必要があります<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 00000015-0000-0000-c000-000000000000 のアプリ ユーザーが存在します<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b のアプリ ユーザーが存在します*
 
+    > [!NOTE]
+    > レコードが財務と運用アプリで作成された場合、**所有者** フィールドは、一致するレコードが Dataverse に存在する場合でも、データが Dataverse に対してデュアル書き込みされます。 デュアル書き込みでは、ID **00000015-0000-0000-c000-000000000000 を持つアプリ ユーザーを使用して、** Dataverse、と通信して、**変更者** フィールドは、アプリケーション ユーザーに設定されます。
+
 5. テナントでアプリへの同意をします。
    バージョン 1.0.16.0 以上の二重書き込みコア ソリューションの場合、この手順は不要になりました。
 
@@ -176,7 +179,7 @@ ms.locfileid: "9111678"
 
 **バージョン 1.0.16.0 より前の二重書き込みコア ソリューションのみ**
 
-1. 上記の手順 3b で、新しいクライアント ID 行 **33976c19-1db5-4c02-810e-c243db79efde** (および 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452) を作成します。
+1. 上記の手順 3b で、新しいクライアント ID 行: **33976c19-1db5-4c02-810e-c243db79efde** (および 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452) を作成します。
 2. テナントでアプリへの同意を追加します。
 
     1. 次のURLを開き、管理者の資格情報を使用してサインインします。 同意を求めるメッセージが表示されます。

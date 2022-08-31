@@ -1,7 +1,7 @@
 ---
 title: ユーザー ライセンス要件への準拠の維持
 description: この記事では、財務と運用アプリのユーザー ライセンス要件を遵守する方法について説明します。
-author: peakerbl
+author: VolkerDeuss
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: chaubold
+ms.author: vodeuss
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 1cd0ff1aa5ef1d802461535e0ca89086bdd0baef
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: b6ad1cf9d9e6e141694e04e9c659f1037b5f9f6b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108543"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274626"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 

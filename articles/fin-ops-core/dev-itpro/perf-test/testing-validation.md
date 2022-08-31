@@ -1,25 +1,25 @@
 ---
 title: テストと検証
 description: このチュートリアルでは、テスト ケースを作成して実行する方法を説明します。
-author: jorisdg
+author: gianugo
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 24231
-ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 063c45bda9dff228943158de518b69c14b14b5d0
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 24231
+ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
+ms.openlocfilehash: 08363b36e487da674647d5145325459aa7708eee
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108371"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279991"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 

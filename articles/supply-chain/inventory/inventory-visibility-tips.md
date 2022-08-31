@@ -1,5 +1,5 @@
 ---
-title: Inventory Visibility のヒント
+title: 在庫品目一覧のヒント
 description: この記事では、在庫可視化アドインを設定して使用する際に役立つヒントを紹介します。
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885960"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306088"
 ---
 # <a name="inventory-visibility-tips"></a>在庫可視化のヒント
 
@@ -35,5 +35,8 @@ ms.locfileid: "8885960"
 - 現在、[パーティション構成](inventory-visibility-configuration.md#partition-configuration)は、データの分散方法を示す 2 つの基本分析コード (`SiteId` と `LocationId`) で構成されています。 同じパーティションで運用することで、より高いパフォーマンスを低コストで実現できます。 ソリューションには、このパーティション構成が規定で含まれています。 したがって、 *自分で定義する必要はありません*。 既定のパーティション構成をカスタマイズしないでください。 それを削除したり変更したりすると、予期せぬエラーが発生する可能性があります。
 - パーティション構成で定義されている基本分析コードは、[プロダクトインデックスの階層構成](inventory-visibility-configuration.md#index-configuration) では定義しないでください。
 - [製品インデックス階層構成](inventory-visibility-configuration.md#index-configuration) には、少なくとも 1 つのインデックス階層 (基準分析コード `Empty` を含むなど) を含める必要があります。そうしない場合、クエリは "インデックス階層が設定されていません" というエラーで失敗します。
+- データ ソース `@iv` は、定義済みのデータ ソースであり、接頭語 `@` 付きの `@iv` で定義された物理メジャーは事前に定義されたメジャーです。 これらのメジャーは配賦機能の事前に定義された構成なので、配賦機能を変更または削除したり、配賦機能を使用するときに予期しないエラーが発生する可能性があります。
+- 定義済の計算メジャー `@iv.@available_to_allocate` に新しい物理メジャーを追加できますが、名前は変更してはなりません。
+- Supply Chain Management のデータベースを復元すると、復元したデータベースに、Dataverse への在庫品目一覧で以前に同期されたデータと一致しなくなったデータが含まれている場合があります。 このデータの不整合によって、システム エラーや他の問題が発生する可能性があります。 したがって、Supply Chain Management の データベースを Dataverse から復元する前に、関連のすべての在庫品目一覧データを常にクリーンアップすることが重要です。 詳細については、[Supply Chain Management データベースを復元する 前の Dataverse からの在庫品目一覧のクリーンアップ](inventory-visibility-setup.md#restore-environment-database) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

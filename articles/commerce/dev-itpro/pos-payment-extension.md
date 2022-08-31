@@ -1,24 +1,24 @@
 ---
 title: 販売時点管理 (POS) 支払拡張機能
 description: この記事では、ハードウェア ステーション API を使用して、支払デバイスまたは支払コネクタに主要な支払いロジックを実装する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 24411
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: be43a90d375462e961d7c04f293fe20a20d232b6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 24411
+ms.openlocfilehash: 99a9f7ebd4a6d7a5ee1e9af2d7c1db7913aa6e22
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900433"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284769"
 ---
 # <a name="point-of-sale-pos-payment-extension"></a>販売時点管理 (POS) 支払拡張機能
 

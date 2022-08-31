@@ -5,18 +5,18 @@ author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9a0b36b36983a9430e5de0039901eef359a7472
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.openlocfilehash: 02048a7eeab6ceff2b5854df87ab650212ecf1bb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854584"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267776"
 ---
 # <a name="upgrade-parameter-files"></a>パラメーター ファイルのアップグレード
 

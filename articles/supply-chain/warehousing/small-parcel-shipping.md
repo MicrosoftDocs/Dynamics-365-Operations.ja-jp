@@ -2,7 +2,7 @@
 title: 小型荷物の出荷
 description: この記事では、小型パーセルの出荷 (SPS) 機能に関する情報について説明します。 この機能は、Microsoft Dynamics 365 Supply Chain Management を有効にして、梱包コンテナに関する詳細を配送業者に送信した後、配送業者から出荷ラベル、出荷レート、追跡番号を受け取ります。
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219721"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336158"
 ---
 # <a name="small-parcel-shipping"></a>小型パーセルの出荷
 
@@ -34,12 +34,9 @@ SPS 機能は、専用の *レート エンジン* を通じて配送業者と�
 
 SPS 機能を使用する前に、機能管理で SPS 機能を有効にし、レート エンジンを追加し、**輸送管理** モジュールと **倉庫管理** モジュールを設定して、それをサポートする必要があります。
 
-### <a name="turn-on-the-sps-feature"></a>SPS 機能をオンにする
+### <a name="turn-the-sps-feature-on-or-off"></a>SPS 機能のオン/オフを切り替える
 
-この SPS 機能を使用するには、システム上で有効化する必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、この機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
-
-- **モジュール:** *輸送管理*
-- **機能名:** *小型パーセルの出荷*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *小型荷物の出荷* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ### <a name="deploy-and-set-up-rate-engines"></a>レート エンジンの配置と設定
 

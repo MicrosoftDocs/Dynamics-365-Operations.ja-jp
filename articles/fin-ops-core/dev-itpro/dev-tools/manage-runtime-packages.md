@@ -1,23 +1,23 @@
 ---
 title: ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 description: この記事では、サードパーティ ソリューションを管理、配布、展開するうえで推奨される戦略について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 05/21/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26731
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 272cd1529406dd99dcc601fe2d35469e9dedcd3a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 26731
+ms.assetid: ''
+ms.openlocfilehash: 0f3ccac3ababe4a4dab8e4403d3172a75c2dd554
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867039"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271099"
 ---
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 

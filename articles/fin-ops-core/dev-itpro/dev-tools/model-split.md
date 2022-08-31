@@ -1,23 +1,23 @@
 ---
 title: 分割されたモデル
 description: この記事では、スタックを 3 つの主要モデル (アプリケーション プラットフォーム、アプリケーション基準、アプリケーション スイート) に分割する方法について説明します。
-author: maertenm
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26941
-ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54cc3522a8026b924719a23b7667b47d9b00a0f9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 26941
+ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
+ms.openlocfilehash: d874771c5d710bd9f330667b58e0d9998f29320d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867036"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271091"
 ---
 # <a name="model-split"></a>分割されたモデル
 

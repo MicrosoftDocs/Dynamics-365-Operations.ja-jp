@@ -1,25 +1,25 @@
 ---
 title: 機能タイトルの規制証明情報
 description: この記事では、機能のタイトルで認証に関する情報を使用する方法について説明します。
-author: ShylaThompson
+author: kfend
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
-ms.custom: 27581
-ms.assetid: d0b8286a-b2c1-4fa2-905a-3383b1d34d56
+ms.reviewer: kfend
 ms.search.region: global
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30cfd9c9756e0ed1683459d6d2ef00af1d1196aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 27581
+ms.assetid: d0b8286a-b2c1-4fa2-905a-3383b1d34d56
+ms.openlocfilehash: d79a9b47bdaa22eeb789443ff04424081fbc451c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866511"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284462"
 ---
 # <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 

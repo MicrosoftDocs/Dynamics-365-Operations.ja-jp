@@ -1,20 +1,20 @@
 ---
 title: X++ 文字列ランタイム関数
 description: この記事では、文字列ランタイム関数について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 08/15/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cbe2f781c50b4d52d2c639104b1b2d777e6e8f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 39b963651bee5d6d1aa35f3243690824625a7ea8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867123"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271259"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 

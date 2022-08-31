@@ -1,20 +1,20 @@
 ---
 title: Visual Studio で X++ を使用する要件
 description: この記事では、X++ の Visual Studio 拡張機能を実行するために必要な Visual Studio コンポーネントの一覧を示します。
-author: jorisdg
+author: gianugo
 ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.author: jorisde
+ms.reviewer: josaw
+ms.author: gianura
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a23ca5884e86c2ee9be5ea68c8df656289777087
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6ee5b0f92a1b7e2d6e5f09331503f7c2191da381
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867075"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271171"
 ---
 # <a name="visual-studio-requirements-for-x"></a>Visual Studio で X++ を使用する要件
 

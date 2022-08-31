@@ -2,7 +2,7 @@
 title: 生産材料の既定の予約原則のオーバーライド
 description: この記事では、生産部品表 (BOM) またはバッチ オーダー フォーミュラの一部である各品目に対して、異なる予約原則を自動的に適用できるよう、各品目モデル グループに対して既定の予約原則を設定する方法について説明します。
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87f10efd7eebdc034af3f7c9081d2674a6190b38
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907235"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334598"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>生産材料の既定の予約原則の上書き
 
@@ -32,7 +32,7 @@ ms.locfileid: "8907235"
 
 ## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>既定の生産引当のオーバーライドをオンまたはオフにする
 
-Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *既定の生産引当のオーバーライド* 機能を検索して、この機能をオンまたはオフにできます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *既定の製造予約を上書きする* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>品目モデル グループへの生産予約ポリシーの割り当て
 

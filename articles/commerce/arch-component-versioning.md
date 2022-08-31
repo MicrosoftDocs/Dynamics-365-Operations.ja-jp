@@ -1,27 +1,27 @@
 ---
 title: Dynamics 365 Commerce コンポーネントのバージョン管理要件
 description: この記事では、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
-author: rezaassadi
+author: Reza-Assadi
 ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: e9e8d8395061188ade5e5f88b2b2d2f58559db32
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: RetailITWorkspace
+ms.openlocfilehash: d069af8042f5486ab5cc7157f6513d94b7629575
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178367"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277043"
 ---
 # <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerce コンポーネントのバージョン管理要件
 

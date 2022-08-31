@@ -1,25 +1,25 @@
 ---
 title: ワークスペースのクラスを使用してフィールドを必須にする
 description: この記事では、ワークスペース クラスを使用して、フィールドを必須にする方法について説明します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 255544
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: c1d5d20fc3906559cf104bd996aa08772499e660
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 255544
+ms.assetid: ''
+ms.openlocfilehash: 812550879cc63cc1023b9836eebaf120982e8fd1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884684"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291744"
 ---
 # <a name="make-fields-mandatory-by-using-workspace-classes"></a>ワークスペースのクラスを使用してフィールドを必須にする
 

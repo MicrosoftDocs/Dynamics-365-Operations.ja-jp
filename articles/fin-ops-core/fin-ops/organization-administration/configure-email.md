@@ -2,7 +2,7 @@
 title: 電子メールのコンフィギュレーションと送信
 description: 電子メール サブシステムの動作は、管理者コンフィギュレーション、ユーザー コンフィギュレーション、およびユーザーの選択の組み合わせに影響されます。
 author: jasongre
-ms.date: 07/13/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c2f66ef275518ca76000bf6e3cd15e14a713ec3
-ms.sourcegitcommit: 1d8b0af5ea5f42916267e311e677d91bad8ad164
+ms.openlocfilehash: 21a78b9d68bbf66caad3c9e53461888761c2d923
+ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9146940"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9258931"
 ---
 # <a name="configure-and-send-email"></a>電子メールのコンフィギュレーションと送信
 
@@ -42,7 +42,10 @@ ms.locfileid: "9146940"
 
 **メール履歴** セクションには 2 つの目的があります。 まず、**メール履歴** ページへのエントリ ポイントを提供し、管理者はすべての送信済みメールと、メール送信を防げたエラーを確認することができます。 次に、メール履歴を維持する期間を構成できます。 既定では、メール履歴は過去 30 日間保持されます。 この期間は、**メール履歴の保持日数** をゼロ以外の数字に変更することで調整できます。 値を **0** (ゼロ) に設定すると、既定数と既定の動作が使用されます。
 
-バージョン 10.0.16 では、機能管理でご使用の環境で **電子メール調整** 機能がオンになっている場合、**電子メール調整** セクションが表示されます。 この機能により非対話型の電子メール プロバイダー (バッチ電子メール プロバイダーなど) は 1 分あたりの送信制限に従うことができます。 したがって、システムがプロバイダーが許可する数を超える電子メールを送信しようとした場合に、いくつかのエラーを防ぐのに役立ちます。 具体的に、1 分あたりの送信制限に達したために最初に電子メールを送信できない場合、電子メールの送信試行は最大 1 分間延期されます。 10 回の延期後、1 分あたりの送信制限に達した場合でも、システムは電子メールを送信しようとします。 Microsoft 365 電子メール プロバイダーの送信制限は、[Exchange Online 送信制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)に応じて自動的に設定されます。 他のすべての電子メール プロバイダーについては、手動での構成が必要です。 **1 分あたりの電子メール送信制限** フィールドを **0** にリセットすることにより、プロバイダーから 1 分あたりの送信制限を削除できます。
+**メール スロットリング** セクションは、非対話型の電子メール プロバイダー (バッチ電子メール プロバイダーなど) が 1 分あたりの送信制限に従うことを可能にします。 この機能は、システムがプロバイダーが許可する数を超える電子メールを送信しようとした場合に、いくつかのエラーを防ぐのに役立ちます。 得に、1 分あたりの送信制限に達したために最初にメールを送信できない場合、メールの送信試行は最大 1 分間延期されます。 10 の延期後、システムはメールを送信します。 **1 分あたりの電子メール送信制限** フィールドを **0** にリセットすることにより、プロバイダーから 1 分あたりの送信制限を削除できます。 Office 365 SMTP メール プロバイダーの送信制限は、[Exchange Online 送信制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits) に応じて自動的に設定されます。 他のすべての電子メール プロバイダーについては、手動での構成が必要です。 
+
+> [!NOTE]
+> **メール スロットリング** 機能を使用する場合は、Exchange 電子メール プロバイダには独自の制御メカニズムを備えるので、この機能は推奨されません。 したがって、Exchange を使用している場合は、**メール送信制限** フィールドが **0** に設定されている必要があります。
 
 ### <a name="smtp-settings-tab"></a>SMTP 設定タブ
 **電子メール パラメーター** ページの、**SMTP 設定** タブで、次の設定に注意してください。
@@ -103,6 +106,9 @@ ms.locfileid: "9146940"
 </tbody>
 
 </table>
+
+> [!NOTE]
+> 財務と運用アプリでは、SMTP に対する多要素認証や Modern auth (OAuth 2.0) はサポートされていません。 管理者は、SMTP AUTH を許可するために基本認証を再有効化する必要がある場合があります。 詳細については、[SMTP AUTH の有効化または無効化](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) を参照してください。 より最新の統合が必要な場合は、Exchange メール プロバイダーを使用できます。 [Exchange Online 用の基本認証の廃止](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) は、財務と運用アプリでの SMTP の使用には影響しません。これは、"基本認証を永久に無効にした場合でも SMTP AUTH を使用できるからです。"
 
 ## <a name="administrator-email-distributor-batch-process"></a>[管理者] 電子メール配布バッチ処理
 
@@ -265,7 +271,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 > [!IMPORTANT]
 > Exchange メール プロバイダーについて、次を参照してください。 
 > -  外部ユーザーにはサポートされていません。これらのユーザーは、そのシステムのテナントで Exchange アカウントを持っていないためです。
-> -  Microsoft が管理する環境でのみ使用可能です。
+> -  Microsoft が管理する環境でのみ使用可能です。 
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

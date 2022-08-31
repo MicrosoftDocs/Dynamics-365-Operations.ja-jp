@@ -1,26 +1,26 @@
 ---
 title: Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 description: この記事では、企業間のトランザクション機能を実装する方法について説明します。
-author: sarvanisathish
+author: paulliew
 ms.date: 04/09/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: B2BInvitationConfiguration
 audience: developer, IT Pro
 ms.reviewer: sericks
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: paulliew
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: c2dc7b4c5c15478e31f33eb5f2f4c8f129c99e0a
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: B2BInvitationConfiguration
+ms.openlocfilehash: fdf55138167d1756760a0d98e5d37b26c6a3c744
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108824"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281373"
 ---
 # <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 

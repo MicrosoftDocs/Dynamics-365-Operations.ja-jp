@@ -2,7 +2,7 @@
 title: データベース移動 API - 認証
 description: この記事では、データベース移動のアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,71 +12,73 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: b96ed87834d072c5be1014f6b4f9f828ec154d12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fa31bcf57cd88c376aa6c05d767ccf8642a16c3e
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867593"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242966"
 ---
 # <a name="database-movement-api---authentication"></a>データベース移動 API - 認証
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、データベース移動のアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
+この記事では、Database Movement API を含む Lifecycle Services API を呼び出すための Azure Active Directory (Azure AD) 設定の概要を提供します。  API Azure AD を使用して利用できるリソースにアクセスするには、各要求の一覧から証証を取得し、ヘッダーとして送信する必要があります。  このトークンを取得する手順は次のとおりです。
 
-## <a name="fundamentals"></a>基本
+正しいアクセス許可を持つ持ち主トークンを取得するには、次の手順が必要です。
 
-データベース移動 API を呼び出すには、アプリケーションが Microsoft ID プラットフォームからアクセス トークンを取得する必要があります。 アクセス トークンには、アプリケーションに関する情報と、Microsoft Dynamics Lifecycle Services (LCS) のリソースを呼び出すために必要なアクセス許可が含まれています。
+1. Azure AD テナントでアプリケーションの登録を作成する
+2. API のアクセス許可の構成
+3. パブリック クライアントの構成 
+4. アクセス トークンの要求
 
-### <a name="access-token"></a>アクセス トークン
+## <a name="step-1-create-an-application-registration"></a>手順 1 アプリケーション登録を作成する
+[Azure AD アプリケーションの登録](https://go.microsoft.com/fwlink/?linkid=2083908) ページに移動し、新しい登録を作成します。  アプリケーションに名前を付け、**シングル テナント** オプションが選択されている必要があります。  リダイレクト URI の設定をスキップすることができます。
 
-Microsoft ID プラットフォームにより発行されるアクセス トークンは、base64 エンコードされた JavaScript Object Notation (JSON) Web トークン (JWT) です。 これにはデータベース移動 API および Microsoft ID プラットフォームによって保護されるその他の Web API が呼び出し元を検証し、呼び出し元が要求している操作を実行するための適切なアクセス許可を持っていることを確認するのに使用する情報 (クレーム) が含まれています。 呼び出し中に、アクセス トークンを不透明として扱うことができます。 アクセス トークンは、常に Transport Layer Security (TLS) や Hypertext Transfer Protocol Secure (HTTPS) などのセキュリティで保護されたチャネルを介して送信する必要があります。
+## <a name="step-2-configure-api-permissions"></a>手順 2 API のアクセス許可の構成
+新規アプリケーション登録内で、**管理 - API のアクセス許可** タブに移動します。**アクセス許可の構成** セクションで、**アクセス許可の追加** を選択します。  開いたダイアログ ウィンドウで、**自分の組織が使用する API** タブで、**Dynamics Lifecycle services** を検索します。  このような名前のエントリがいくつか表示される場合は、必ず GUID **913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0** を持つものを使ってください。  
 
-Microsoft ID プラットフォームによって発行されるアクセス トークンの例を次に示します。
+> [!NOTE]
+> これらの API では、委任されたアクセス許可を現時点でのみ使用します。  ユーザー コンテキストで実行するアプリケーションの場合は、**user_impersonation** の **スコープ** パラメーターを使用して、委任されたアクセス許可を要求します。  これらのアクセス許可は、アプリケーションにサインイン ユーザーの特権を委任し、API エンドポイントを呼び出す際のユーザーの機能を許可します。
+>
+> アプリケーションが独自の ID または管理 ID を使用して API を呼び出すサービス プリンシパル認証はサポートされていません。  
 
-```jwt
-EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/oeJX6U8nnL9nJ5pHLVuPWD0aNnTPTJD8Y4oQTp5zLhDIIfaJCaGcQperULVF7K6yX8MhHxIBwek418rKIp11om0SWBXOYSGOM0rNNN59qNiKwLNK+MPUf7ObcRBN5I5vg8jB7IMoz66jrNmT2uiWCyI8MmYDZgAACPoaZ9REyqke+AE1/x1ZX0w7OamUexKF8YGZiw+cDpT/BP1GsONnwI4a8M7HsBtDgZPRd6/Hfqlq3HE2xLuhYX8bAc1MUr0gP9KuH6HDQNlIV4KaRZWxyRo1wmKHOF5G5wTHrtxg8tnXylMc1PKOtaXIU4JJZ1l4x/7FwhPmg9M86PBPWr5zwUj2CVXC7wWlL/6M89Mlh8yXESMO3AIuAmEMKjqauPrgi9hAdI2oqnLZWCRL9gcHBida1y0DTXQhcwMv1ORrk65VFHtVgYAegrxu3NDoJiDyVaPZxDwTYRGjPII3va8GALAMVy5xou2ikzRvJjW7Gm3XoaqJCTCExN4m5i/Dqc81Gr4uT7OaeypYTUjnwCh7aMhsOTDJehefzjXhlkn//2eik+NivKx/BTJBEdT6MR97Wh/ns/VcK7QTmbjwbU2cwLngT7Ylq+uzhx54R9JMaSLhnw+/nIrcVkG77Hi3neShKeZmnl5DC9PuwIbtNvVge3Q+V0ws2zsL3z7ndz4tTMYFdvR/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
+必要なアクセス許可をアプリケーションに追加したら、設定を完了するために **管理者に同意する** を選択します。  これは、対話型の同意エクスペリエンスを必要とするのではなく、ユーザーがアプリケーションに近い位置でアクセスを許可する場合に必要です。 対話型の同意をサポートできる場合は、[Microsoft ID プラットフォームおよび OAuth 2.0 認証コード フロー](/azure/active-directory/develop/v2-oauth2-auth-code-flow) に従することをお勧めします。
 
-データベース移動 API を呼び出すには、アクセス トークンを HTTP 要求の承認ヘッダーにベアラー トークンとして関連付けます。 次に例を示します。
+## <a name="step-3-configure-public-client"></a>手順 3 パブリック クライアントの構成
+ユーザーの代わりにリソースの読み取りおよび書き込みを開始するには、**パブリック クライアント** 設定を有効にする 必要 があります。  これは、Azure AD がトークン要求の本文でユーザー名とパスワードのプロパティを受け入れる唯一の方法です。  この機能を使用する予定の場合は、多要素認証が有効な勘定には使用できません。  
+
+有効にするには、**管理 - 認証** タブに移動します。**詳細設定** セクションで、**パブリック クライアント** スイッチを **はい** に設定します。 
+
+## <a name="step-4-request-an-access-token"></a>手順 4 アクセス トークンの要求
+ユーザー名とパスワードの証しトークンを要求するには、次の手順に従います。  
+
+### <a name="username-and-password-flow"></a>ユーザー名とパスワードのフロー
+上記の [パブリック クライアント](dbmovement-api-authentication.md#step-3-configure-public-client) セクションを参照してください。  その後、POST リクエストを HTTP 経由でユーザー名とパスワードのペイロードを持った Azure AD に送信します。
 
 ```HTTP
-HTTP/1.1
-Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-Host: lcsapi.lcs.dynamics.com
-GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
+Content-Type: application/x-www-form-urlencoded
+Host: login.microsoftonline.com
+Accept: application/json
+POST https://login.microsoftonline.com/YOUR_TENANT.COM/oauth2/v2.0/token
+BODY:
+client_id={CLIENT_ID_FROM_AZURE_CLIENT_APP}&scope=https://lcsapi.lcs.dynamics.com//.default&username={USER_EMAIL_ADDRESS}&password={PASSWORD}&grant_type=password
+```
+前の例には、Azure Active Directory でクライアント アプリケーションから取得できるプレースホルダが含まれているとします 。  後続の Power Platform API 呼び出しに使用できる応答が返されます。
+
+```JSON
+{
+  "token_type": "Bearer",
+  "scope": "https://lcsapi.lcs.dynamics.com//user_impersonation https://lcsapi.lcs.dynamics.com//.default",
+  "expires_in": 4228,
+  "ext_expires_in": 4228,
+  "access_token": "eyJ0eXAiOiJKV1Qi..."
+}
 ```
 
-## <a name="register-a-new-application-by-using-the-azure-portal"></a>Azure ポータルを使用して新しいアプリケーションを登録する
+以降の通話で **access_token** 値を、**認証** HTTP ヘッダーを持った Lifecycle Services API またはデータベース移動 API に対して使用します。
 
-1. 勤務先または学校アカウント、または Microsoft アカウントを使用して、[Microsoft Azure ポータル](https://portal.azure.com) にサインインします。
-2. アカウントで複数のテナントにアクセスが許可されている場合は、右上隅でアカウントを選択し、ポータル セッションを目的の Azure Active Directory (Azure AD) テナントに設定します。
-3. 左ウィンドウで、**Azure Active Directory** サービスを選択し、**アプリ登録 \> 新規登録** を選択します。
-4. **アプリケーションの登録** ページが表示されたら、アプリケーションの登録情報を入力します。
-
-    - **名前** – アプリのユーザーに表示される、意味のあるアプリケーション名を入力します。
-    - **サポートされる勘定タイプ** – アプリがサポートする必要がある勘定タイプを選択します。
-
-        | サポートされる勘定タイプ | 説明 |
-        |-------------------------|-------------|
-        | この組織ディレクトリのみでの勘定 | 基幹業務アプリを構築している場合は、このオプションを選択します。 このオプションは、アプリをディレクトリに登録していない限り使用できません。<p>このオプションは、**Azure AD のみの単一テナント** にマップされます。</p><p>このオプションは、アプリをディレクトリの外部に登録していない限り、既定のオプションです。 この場合、既定のオプションは **Azure AD マルチ テナントと個人の Microsoft アカウント** です。</p> |
-        | 任意の組織ディレクトリでのアカウント | このオプションを選択して、すべてのビジネスおよび教育機関の顧客を対象にします。<p>このオプションは、**Azure AD のみのマルチ テナント** にマップされます。</p><p>アプリを **Azure AD のみの単一テナント** として登録した場合は、**認証** ブレードを使用して **Azure AD のみのマルチ テナント** に更新してから、**Azure AD のみの単一テナント** に戻ります。</p> |
-        | 任意の組織ディレクトリおよび個人の Microsoft アカウントでのアカウント | このオプションを選択して、最も幅広い顧客を対象にします。<p>このオプションは **Azure AD マルチ テナントと個人の Microsoft アカウント** にマップされます。</p><p>アプリを **Azure AD マルチ テナントと個人の Microsoft アカウント** として登録した場合、ユーザー インターフェイス (UI) でこの設定を変更することはできません。 代わりに、アプリケーション マニフェスト エディターを使用してサポートされているアカウント タイプを変更する必要があります。</p> |
-
-    - **リダイレクト URI (オプション)** – 構築しているアプリのタイプを選択します: **Web** または **パブリック クライアント (モバイル & デスクトップ)**。 次に、アプリのリダイレクト URI (または返信 URL) を入力します。
-
-        - Web アプリに関しては、アプリのベース URL を指定します。 たとえば、`http://localhost:31544` はローカル コンピューターで実行する Web アプリの URL である可能性があります。 ユーザーは、この URL を使用して Web クライアント アプリにサインインします。
-        - パブリック クライアント アプリに関しては、Azure AD を使用してトークン応答を返すための URI を指定します。 `myapp://auth` などの、アプリに固有の値を入力します。
-
-        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Azure AD からのクイック スタート ガイド](/azure/active-directory/develop/#quickstarts) を参照してください。
-
-5. **API アクセス許可** で、**アクセス許可の追加** を選択します。 次に、**自分の組織が使用する API** タブで、**Dynamics Lifecycle services** サービスを検索し、アプリに **ユーザー\_偽装** のアクセス許可を追加します。
-6. **登録** を選択します。
-
-[![Azure ポータルで新しいアプリに登録する。](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
-
-Azure AD は、アプリに固有のアプリケーション ID (クライアント ID) を割り当て、アプリの **概要** ページが表示されます。 アプリに複数の機能を追加するには、他のコンフィギュレーション オプション (ブランド化のオプションや証明書とシークレットのオプションなど) を選択できます。
-
+> [!NOTE]
+> Lifecycle Services のローカル インスタンスや最新のクラウドを使用している場合は、スコープのパラメータに別の URL 形式が必要な場合があります。  たとえば、LCS の EU インスタンスにアクセスする場合は、スコープのパラメータ として `https://lcsapi.eu.lcs.dynamics.com//.default` を使用できます。  これは、ホスト名のために API に対する後続の呼び出しにも適用されます。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

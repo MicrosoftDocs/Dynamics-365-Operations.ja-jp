@@ -1,20 +1,21 @@
 ---
 title: Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 description: この記事では、トレース パーサーを使用してトレースを操作し、展開におけるパフォーマンスを分析する方法について説明します。
-author: tfehr
+author: josaw1
 ms.date: 10/19/2017
 ms.topic: article
 audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e93ebdbc90dd2381daa6fdc05395545cb83884e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bd63e8db3339ad38623e38be595d407563c669dc
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884678"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267765"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 

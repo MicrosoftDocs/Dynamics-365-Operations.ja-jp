@@ -1,22 +1,22 @@
 ---
 title: Azure Pipelines での LCS 接続認証タスクの MSAL への更新
 description: この記事では、認証に Microsoft 認証ライブラリ (MSAL) を使用するように Azure Pipelines を更新する方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 11/30/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5124d0c4c793a31f1604941c0a0b8b977f738ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.openlocfilehash: 84679f8e8fefd7a69e897db70ce06d4d0df79665
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867015"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271059"
 ---
 # <a name="update-lcs-connection-authentication-tasks-to-msal-in-azure-pipelines"></a>Azure Pipelines での LCS 接続認証タスクの MSAL への更新
 

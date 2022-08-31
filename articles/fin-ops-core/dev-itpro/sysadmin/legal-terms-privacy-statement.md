@@ -1,26 +1,26 @@
 ---
 title: 組織の法律条項およびプライバシーに関する声明へのリンクの追加
 description: この記事では、管理者がバージョン情報ウィンドウで、組織の法的条項およびプライバシーに関する声明へのリンクを追加する方法について説明します。
-author: aneesmsft
+author: jasongre
 ms.date: 10/02/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SystemParameters, SysAbout
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: 267894
-ms.assetid: b74f8d8b-e20b-4ffd-8fd6-c64c2fe31c8a
 ms.search.region: Global
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-ms.openlocfilehash: 75d19e9bff54dfe7e6e0f5c67fe8dfc7e391a819
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 267894
+ms.assetid: b74f8d8b-e20b-4ffd-8fd6-c64c2fe31c8a
+ms.search.form: SystemParameters, SysAbout
+ms.openlocfilehash: c1e14c18a3b393ada8d4244a0ed974ec1414022b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892693"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273012"
 ---
 # <a name="add-links-to-your-organizations-legal-terms-and-privacy-statement"></a>組織の法律条項およびプライバシーに関する声明へのリンクの追加
 

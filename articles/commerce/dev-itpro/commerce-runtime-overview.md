@@ -1,27 +1,25 @@
 ---
 title: Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 description: この記事では、Commerce Runtime (CRT) のアーキテクチャと構成に関する情報を提供します。
-author: AamirAllaq
+author: ShalabhjainMSFT
 ms.date: 06/20/2017
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom:
-- "218654"
-- intro-internal
-ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: yabinl
+ms.author: shajain
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9e29c740a0436ea9120c5b8d1a684cc4b1588b5a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.custom: 218654,  ""intro-internal
+ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
+ms.openlocfilehash: ff54c924caebc86980a52806dee584cb1c73867d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984895"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281078"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 

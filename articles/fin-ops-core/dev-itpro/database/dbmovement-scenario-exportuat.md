@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 66e61771280118ac45a1784f73ad5908e8f277b5
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: f28705701d807af30d74d9c7505528f05e5d21c1
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103375"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242936"
 ---
 # <a name="export-a-copy-of-the-standard-user-acceptance-testing-uat-database"></a>標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート
 
@@ -94,14 +94,10 @@ EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
 EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
 CREATE USER axretaildatasyncuser FROM LOGIN axretaildatasyncuser
-EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
 CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
-EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
 CREATE USER axdeployextuser FROM LOGIN axdeployextuser
-EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
 
 CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
 EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'

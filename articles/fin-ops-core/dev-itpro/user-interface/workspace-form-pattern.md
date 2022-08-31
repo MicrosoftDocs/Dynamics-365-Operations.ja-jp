@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29151
-ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f4f7d65b9349bda366b57d7f2b1de977753184
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 29151
+ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
+ms.openlocfilehash: c362a4c1267e6361301f2c55251f0d04b6cd002c
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114276"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306336"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 
@@ -146,7 +146,7 @@ Microsoft Dynamics AX 2012 ロール センターは、アクティビティに�
 
 2. BP 修正ツールの実行が終了した後、現在、少数のプロパティを手動で設定する必要があります。
 
-    - ワークスペースのリンク セクション内の **グループ** コントロールについて、**FrameOptionButton** プロパティを **非表示** に設定して、セクションを折りたたむ機能を抑制します。 この設定により、そのセクションの下の視覚行も削除されます。
+    - ワークスペースのリンク セクション内の **グループ** コントロールについて、**FrameOptionButton** プロパティを **なし** に設定して、セクションを折りたたむ機能を抑制します。 この設定により、そのセクションの下の視覚行も削除されます。
     - ワークスペースのリスト セクションの **FormPartControl** コントロールについて、**幅モード** プロパティを **SizeToAvailable** に設定します。 この設定により、サブフォームはページの全幅にまたがります。
 
 3. ワークスペースの[調整と完了レビュー](#fit-and-finish-reviews) を実行して、垂直方向に最適化します。

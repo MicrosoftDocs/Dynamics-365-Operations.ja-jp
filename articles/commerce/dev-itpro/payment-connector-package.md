@@ -1,25 +1,25 @@
 ---
 title: 財務と運用の展開のための Commerce 支払パッケージの作成
 description: この記事では、Microsoft Dynamics 365 Commerce の財務と運用の展開に支払コネクタをパッケージ化する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 368b65c5d089deb57f8846d968f08c9a39b668d9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 52c4cae1065753ccc082b76ff023da956196d237
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067513"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267575"
 ---
 # <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>財務と運用の展開のための Commerce 支払パッケージの作成
 

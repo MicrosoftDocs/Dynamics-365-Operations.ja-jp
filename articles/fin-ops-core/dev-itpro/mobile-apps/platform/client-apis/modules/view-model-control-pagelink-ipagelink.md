@@ -1,18 +1,18 @@
 ---
 title: ページリンク モジュール
 description: ページリンクは、別のページに移動するコントロールです。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 7ecb4cf941111cb70265dad50def8ebf4686ecf4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: f030a217eb9a27db919e10efb74b1312d7899fa2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811664"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268609"
 ---
 # <a name="pagelink-module"></a>ページリンク モジュール
 

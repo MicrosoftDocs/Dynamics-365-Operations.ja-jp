@@ -1,26 +1,26 @@
 ---
 title: 電子申告 (ER) コンフィギュレーションのインポート
 description: この記事では、Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに電子申告 (ER) の構成をインポートする方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 06/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 audience: Developer
 ms.reviewer: kfend
-ms.custom: 27621
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 5f5731a2c61f54bf76d6b7d44b92302fc8f80e9c
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 27621
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
+ms.openlocfilehash: d74b1743c8378f870cfc2ea01700ff50d7cc3446
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108519"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281920"
 ---
 # <a name="import-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションのインポート
 

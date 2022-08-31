@@ -1,25 +1,25 @@
 ---
 title: 認証プロバイダーの構成
 description: この記事では、新しい OpenID 認証プロバイダを構成するためのプロセスの概要を示します。
-author: kfend
+author: josaw1
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.custom: 31241
-ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: kfend
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7b047ad505286174a7bf34ee8485856f742ec20e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 31241
+ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
+ms.openlocfilehash: 93e895aaaa985b0dbff6c1bd7aeaca75fb7fb196
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861894"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270023"
 ---
 # <a name="configure-authentication-providers"></a>認証プロバイダーの構成
 

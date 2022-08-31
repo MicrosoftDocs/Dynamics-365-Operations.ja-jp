@@ -1,25 +1,25 @@
 ---
 title: Application Insights への拡張イベントの記録
 description: この記事では、Commerce runtime (CRT) 拡張機能から顧客の Application Insights にイベントを記録する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 28021
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 9a5247e214cb9c8eb977ae27f18c37f6bb7571c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 28021
+ms.assetid: ''
+ms.openlocfilehash: e7577de54a70554dcf513ee8d6535e509310ef02
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852023"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270058"
 ---
 # <a name="log-extension-events-to-application-insights"></a>Application Insights への拡張イベントの記録
 

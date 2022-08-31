@@ -1,23 +1,23 @@
 ---
 title: バージョン コントロール、メタデータ検索、およびナビゲーション
 description: このチュートリアルでは、Azure DevOps をコンフィギュレーションして、モデルのソース管理を有効にします。
-author: RobinARH
+author: gianugo
 ms.date: 07/24/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 23401
-ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16c066b120c19a047c61e07ac185bca4b71c84a3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 23401
+ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
+ms.openlocfilehash: 913dc76781e4787385b1aa2d18874b5331c6f182
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866989"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271023"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 

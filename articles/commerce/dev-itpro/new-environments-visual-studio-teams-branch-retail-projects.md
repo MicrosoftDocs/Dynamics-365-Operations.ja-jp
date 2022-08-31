@@ -6,20 +6,20 @@ ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: cd87f1fe60a618215c17c79da1c18e75588613b3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: c7e8428c4f74c55b0c155850e2b24b285dedf03f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860281"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276230"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-projects"></a>プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 

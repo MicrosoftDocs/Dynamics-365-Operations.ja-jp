@@ -2,7 +2,7 @@
 title: 無限能力を使用したスケジューリング
 description: この記事では、計画最適化の無限能力のスケジューリングに関する情報を提供します。 また、現在の機能の制限について説明します。
 author: t-benebo
-ms.date: 09/21/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3646a7ca1f9a3a87a2f130783dc4961a61335f1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873872"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335318"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>無限能力を使用したスケジューリング
 
@@ -24,12 +24,9 @@ ms.locfileid: "8873872"
 
 *計画最適化の無限能力のスケジューリング* 機能では、ルート情報に基づいたスケジューリングが導入されます。 この機能を使用すると、さまざまなルート設定に基づいてジョブをスケジュールできます。 計画最適化のスケジューリングは、頻繁に使用されるルート設定 (ルートの工程順序や、ルート運営リソースの要件など) を対象とします。
 
-## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>無限能力のスケジューリング機能を有効にする
+## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>無限能力のスケジューリング機能をオンまたはオフにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *マスター プラン*
-- **機能名:** *計画最適化のための無限キャパシティ スケジュール設定*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management のバージョン10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *計画の最適化の無限能力のスケジュール* 機能を検索して、この機能をオンまたはオフにできます。
 
 この機能の詳細については、[能力に基づくリソース選択とスケジュール設定](capability-based-scheduling.md)参照してください。
 

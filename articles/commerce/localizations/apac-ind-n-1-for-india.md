@@ -1,7 +1,7 @@
 ---
 title: インド向けアップグレードと N-1 のサポート
 description: この記事では、インドでのコマース顧客向けの N-1 サポート概要を提供します。
-author: kfend
+author: josaw1
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
@@ -9,16 +9,16 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: India
-ms.search.industry: Retail
-ms.author: kfend
+ms.author: josaw
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e7d707c213c7322cac4f38f6f181e0c7163ed98d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+ms.openlocfilehash: bfbbbf8b1cb6052c5b884b998abf2fac3b628124
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855746"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276148"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インド向けアップグレードと N-1 のサポート
 

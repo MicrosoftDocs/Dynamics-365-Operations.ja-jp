@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom:
-- "266574"
+ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
-ms.openlocfilehash: b7223c15f33a61ff2f71eff36352a4294df3797c
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 2efdb20e25aea740944399a512638a3adca9ba9b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205920"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281381"
 ---
 # <a name="create-custom-designs-for-business-documents"></a>ビジネス ドキュメントのカスタム デザインを作成する
 

@@ -6,21 +6,21 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: 220184
-ms.assetid: 8beb4e7f-4a71-4c50-adf7-7733e6a150d9
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: a29478d98984103a3c606448e90623c698f19a68
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220184
+ms.assetid: 8beb4e7f-4a71-4c50-adf7-7733e6a150d9
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 5558c4c0aeba58f67b0be330df4316a069d7e3b1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886535"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267752"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 

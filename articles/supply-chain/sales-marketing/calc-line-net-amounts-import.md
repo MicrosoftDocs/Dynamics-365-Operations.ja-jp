@@ -2,7 +2,7 @@
 title: 販売注文、見積、返品のインポート時に明細行の正味金額を再計算するを参照します
 description: この記事では、販売注文、見積、返品をインポートするときに、行の正味金額を再計算するかどうか、および方法について説明します。 また、さまざまなバージョンの Microsoft Dynamics 365 Supply Chain Management で動作を制御する方法も説明します。
 author: Henrikan
-ms.date: 06/08/2022
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ce34a6be7bc3d14e23bdd8769aa71dc035b983b3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220630"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335558"
 ---
 # <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>販売注文、見積、返品のインポート時に明細行の正味金額を再計算するを参照します
 
@@ -36,7 +36,7 @@ Supply Chain Management のバージョン 10.0.23 では、[bugfix 604418](http
 
 ## <a name="control-calculations-of-line-net-amounts-in-versions-10029-and-later"></a>バージョン 10.0.29 以降での明細行の正味金額算定の制御
 
-Supply Chain Management 10.0.29 では、*インポート時に明細行の正味金額を計算する* 機能が導入されました。 この機能により、**売掛金勘定パラメータ** ページに **明細行の正味金額の計算** という名前のオプションが追加されます。 このオプションを使用すると、インポート時に行の正味金額を計算するための新しい動作とレガシの動作を選択できます。
+Supply Chain Management バージョン 10.0.29 では、*インポート時に明細行の正味金額を計算する* 機能が導入されました。 この機能により、**売掛金勘定パラメータ** ページに **明細行の正味金額の計算** という名前のオプションが追加されます。 このオプションを使用すると、インポート時に行の正味金額を計算するための新しい動作とレガシの動作を選択できます。
 
 ### <a name="turn-the-calculate-line-net-amount-on-import-feature-on-or-off"></a>インポート機能の明細行の正味金額の計算のオン/オフの切り替え
 

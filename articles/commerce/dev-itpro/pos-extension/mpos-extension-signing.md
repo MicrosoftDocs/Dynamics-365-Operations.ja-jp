@@ -1,21 +1,21 @@
 ---
 title: Modern POS (MSIX) 拡張機能パッケージへのコード署名
 description: この記事では、Modern POS (MSIX) 拡張機能パッケージにコード署名する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 10/21/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 87476d5b140a424f36cc5899e2409515ffe5151e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9458693a77a9fa68f62f9c52bf0a2db1b585e674
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882213"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292793"
 ---
 # <a name="code-signing-a-modern-pos-msix-extension-package"></a>Modern POS (MSIX) 拡張機能パッケージへのコード署名
 

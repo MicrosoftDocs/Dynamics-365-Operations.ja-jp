@@ -5,22 +5,22 @@ author: jasongre
 ms.date: 05/05/2020
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29151
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: a626ed316d3074b602fedf5535863976bc2da55b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 29151
+ms.assetid: ''
+ms.service: ''
+ms.openlocfilehash: 55075c7f3a04069b1a447963134e594ef941e289
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897129"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278381"
 ---
 # <a name="client-internet-connectivity"></a>クライアント インターネット接続
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 89563
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: cb572d987bff82f2c2981ab2b0326fc210d9a8de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 89563
+ms.assetid: ''
+ms.openlocfilehash: 1b278fb114a4ef48bc0c4d5397029bc059a24008
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866861"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270831"
 ---
 # <a name="intrusive-customizations"></a>侵入的なカスタマイズ
 

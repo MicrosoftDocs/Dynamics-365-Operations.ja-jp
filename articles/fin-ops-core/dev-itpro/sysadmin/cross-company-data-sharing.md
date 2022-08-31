@@ -6,21 +6,21 @@ ms.date: 06/03/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 89071
-ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 73453db1eaa46e833b61594fcfae8eb0a3d1fa62
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 89071
+ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
+ms.search.form: SysDataSharingConfiguration
+ms.openlocfilehash: 48010d444e4970f34567114830bc59bf19e4d1a5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108836"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277388"
 ---
 # <a name="cross-company-data-sharing"></a>会社間データ共有
 

@@ -1,25 +1,25 @@
 ---
 title: 右から左へ読み書きする言語のサポートと双方向のテキスト
 description: この記事では、双方向テキストの問題とその処理方法について説明します。
-author: RobinARH
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 104543
-ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6d61de4c4a4dcdb7a24930c8bdc195aadcef6ad
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 104543
+ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e
+ms.openlocfilehash: 68ed51775ee5175d8cc5828161237f1989a0cba3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114300"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281694"
 ---
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 

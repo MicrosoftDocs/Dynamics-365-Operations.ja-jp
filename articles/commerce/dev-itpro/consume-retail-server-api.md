@@ -1,25 +1,25 @@
 ---
 title: 外部アプリケーションでの Retail Server API の使用
 description: この記事では、外部アプリケーションで Retail Server API を使用する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 28021
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6ebade6b9988f4badc9297a9e6744168a2086755
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: 28021
+ms.assetid: ''
+ms.openlocfilehash: 9d8bc64ec3a3f32b95f785553a0385184c86c1e1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070269"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269239"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 

@@ -1,25 +1,25 @@
 ---
 title: POS 要求ハンドラーのオーバーライド
 description: この記事では、POS 要求ハンドラーを上書きする方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 68673
-ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: df00c7ec306754ba06b60458bfdfa2d966d96349
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: 68673
+ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.openlocfilehash: e393195b1608e3870eaba46e6f6c07d1ae85bed2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070808"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286951"
 ---
 # <a name="override-pos-request-handler"></a>POS 要求ハンドラーのオーバーライド
 

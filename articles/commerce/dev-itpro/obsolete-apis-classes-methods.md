@@ -1,7 +1,7 @@
 ---
 title: 廃止または削除された API、クラス、メソッド
 description: この記事では、Microsoft Dynamics 365 Commerce で廃止および削除された API、クラス、およびメソッドを一覧表示します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/01/2022
 ms.topic: overview
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 05-24-2022
+ms.author: josaw
+ms.search.validFrom: 2022-05-24
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 386f2a7b7c647a6609f04c0b9763dbc70139ca28
-ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
+ms.openlocfilehash: 91bf8bd3a340e2418978294f4b62428fe372557b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "9169115"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275635"
 ---
 # <a name="obsolete-and-removed-apis-classes-and-methods"></a>廃止または削除された API、クラス、メソッド
 

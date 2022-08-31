@@ -1,18 +1,18 @@
 ---
 title: ContainerControl タイプ
 description: すべてのコンテナー コントロールのメソッドと属性を持つコンテナー コントロール インターフェイス。 コンテナー コントロールは、コントロールの任意の数を含めることができます。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: e5d9de294c29cbf8de24c94e3d9232cb19af968a
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 34dfdd46e8e85ed04beb44de6272c8be792acb43
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811789"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268629"
 ---
 # <a name="containercontrol-type"></a>ContainerControl タイプ
 

@@ -1,23 +1,23 @@
 ---
 title: Azure Pipelines で、X++ モデルのバージョン管理
 description: この記事では、Microsoft Azure DevOps でビルドの自動化を実行するときにバージョン X++ のモデルを自動的に作成する方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26731
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e193920f34fcafd2e814055de0d0a586a5ea2c9
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 26731
+ms.assetid: ''
+ms.openlocfilehash: 83fe555b340e7a3f02fc3ae142724184b800b103
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103198"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271047"
 ---
 # <a name="x-model-versioning-in-azure-pipelines"></a>Azure Pipelines で、X++ モデルのバージョン管理
 

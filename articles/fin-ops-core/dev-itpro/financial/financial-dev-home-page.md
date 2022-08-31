@@ -1,24 +1,24 @@
 ---
 title: 財務開発のホーム ページ
 description: この記事では、財務開発に関するトピックへのリンクを提供します。
-author: tonyafehr
+author: josaw1
 ms.date: 09/12/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5035aa23d85b1b3f6c0fd05f7210fa4a1abaac62
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: intro-internal
+ms.openlocfilehash: 0de50a3f3c80ed9f8b22c4ab03fbb329804c9375
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067500"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286706"
 ---
 # <a name="financials-development-home-page"></a>財務開発のホーム ページ
 

@@ -1,21 +1,21 @@
 ---
 title: 顧客 CDX パッケージを拡張してカスタム データを追加する
 description: この記事では、Microsoft Dynamics 365 Commerce の顧客の Commerce Data Exchange (CDX) パッケージにカスタム データを追加する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-30-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-30
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: bb6a874f7ef430058ec4081eb110ae2be1b6c1e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ca5d7a21d752fce28255eb2aa99e7e1ec1b5a9a3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884623"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271967"
 ---
 # <a name="extend-the-customer-cdx-package-to-add-custom-data"></a>顧客 CDX パッケージを拡張してカスタム データを追加する
 

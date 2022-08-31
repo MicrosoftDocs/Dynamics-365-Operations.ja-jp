@@ -1,25 +1,25 @@
 ---
 title: ワークフロー ドキュメント クラスの作成
 description: この記事では、ワークフロー ドキュメント クラスを作成する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 202694
-ms.assetid: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: fa773fc3e97a6c875e1a324a663583d60670e208
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 202694
+ms.assetid: ''
+ms.openlocfilehash: 7bf746abb36272c34958155ed5443bc11d35707f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894217"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267742"
 ---
 # <a name="create-a-workflow-document-class"></a>ワークフロー ドキュメント クラスの作成
 

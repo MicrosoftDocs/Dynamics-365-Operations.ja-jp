@@ -1,26 +1,26 @@
 ---
 title: 支払コネクタの配置
 description: この記事では、支払コネクタ パッケージを適切なコンポーネントに配置する方法について説明します。
-author: aamirallaqaband
+author: ShalabhjainMSFT
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: aamiral
+ms.author: shajain
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a3bae1849e65ae5ecf30306edbe4de21fd66d985
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
+ms.openlocfilehash: af03d847685329229cdbbcd987fde202124895ef
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903651"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273539"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 

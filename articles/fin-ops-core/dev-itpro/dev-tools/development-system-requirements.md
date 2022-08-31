@@ -1,23 +1,23 @@
 ---
 title: 開発システム要件
 description: この記事では、開発のシステム要件を一覧表示します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 33221
-ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ec7080ee70b43a5ffdfcb4676f1855554f21877
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 33221
+ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
+ms.openlocfilehash: fcf4d2311adf14ed3cbe6e0471618a6dbbdd4084
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867072"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271167"
 ---
 # <a name="development-system-requirements"></a>開発システム要件
 

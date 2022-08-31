@@ -1,23 +1,23 @@
 ---
 title: フリート管理のサンプル アプリケーション
 description: この記事は、フリート管理のサンプル アプリケーションについての概要です。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
-ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3791acb6ffd0f6d87651eebd89f86b925ae9ddc7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: intro-internal
+ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
+ms.openlocfilehash: f387c95a72dfd0bf81789b4758e941c454431361
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867057"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271131"
 ---
 # <a name="fleet-management-sample-application"></a>フリート管理のサンプル アプリケーション
 

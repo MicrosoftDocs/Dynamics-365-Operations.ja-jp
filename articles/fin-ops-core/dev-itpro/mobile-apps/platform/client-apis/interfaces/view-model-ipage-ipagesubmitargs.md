@@ -1,18 +1,18 @@
 ---
 title: PageSubmitArgs タイプ
 description: ページの OnSubmit イベントに指定された引数。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: ec1ed23f5869bc0794930acd403a09c41b8711e3
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 6ce0b8fd28863226fe295511c28a929b5bb8b7e0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811268"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273943"
 ---
 # <a name="pagesubmitargs-type"></a>PageSubmitArgs タイプ
 

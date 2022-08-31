@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 01/14/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d3ec74862db2e5349127b3029ba65a198d3bb51
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: ddc14f420014f7abb404f001d1fa1a39016f9749
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112129"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289592"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 

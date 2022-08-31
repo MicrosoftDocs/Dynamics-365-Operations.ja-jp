@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0f0419f1a109f043cb1af6a575704c24420639f1
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: a48e6a81299badf4b811e1cf905beb06099e5a24
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218917"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335978"
 ---
 # <a name="wave-template-grouping"></a>ウェーブ テンプレートのグループ化
 
@@ -31,7 +31,7 @@ ms.locfileid: "9218917"
 
 ## <a name="turn-on-the-wave-template-grouping-feature"></a>ウェーブ テンプレートのグループ化機能を有効にする
 
-*ウェーブ テンプレートのグループ化* 機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+*ウェーブ テンプレートのグループ化* 機能を使用するには、システム向けに有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *ウェーブ テンプレートのグループ化*

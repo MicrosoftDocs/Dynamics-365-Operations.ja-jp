@@ -1,26 +1,26 @@
 ---
 title: Commerce Runtime (CRT) のサービス
 description: この記事では、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含むライブラリである Commerce Runtime (CRT) サービスについて説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: 9f805fa28ef8869aa00c1809698e3826c7f441ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.openlocfilehash: 8e7e0e9fc5306a27c6011d0518251423188c29f6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851174"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279627"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 

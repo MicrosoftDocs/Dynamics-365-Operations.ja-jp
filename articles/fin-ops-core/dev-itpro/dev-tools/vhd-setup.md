@@ -1,22 +1,22 @@
 ---
 title: 最初に使用する際にダウンロードできる VHD を設定する
 description: この記事では、Application Object Server を最初に使用するためにダウンロード可能な VHD を設定する方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 02/17/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cef4dd0e5bb06d32828c6ce917d390c959259a5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.openlocfilehash: f6136cda0ca89ad722e558f3726c09d66097f4c0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934733"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271011"
 ---
 # <a name="set-up-the-downloadable-vhd-for-first-use"></a>最初に使用する際にダウンロードできる VHD を設定する
 

@@ -1,18 +1,18 @@
 ---
 title: コントロール タイプ
 description: すべてのコントロールの基準メソッドと属性を持つコントロール インターフェイス。 これは、コントロールのランタイムのインスタンスを表します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: c8c501a0e62a6b2cf11948f195dc8245637579bb
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 038522e6d5362299db6fcf09d5768d60fcbe7a06
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811446"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284048"
 ---
 # <a name="control-type"></a>コントロール タイプ
 

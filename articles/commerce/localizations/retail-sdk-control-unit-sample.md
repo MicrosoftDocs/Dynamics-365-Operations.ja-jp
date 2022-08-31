@@ -10,15 +10,14 @@ audience: Developer
 ms.reviewer: josaw
 ms.search.region: Sweden
 ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2018-2-28
-ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 159433117fe21f81da801fb9523030c1c891cda7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 279959f557be40b8bc977d16a921b176a27a48da
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906685"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323450"
 ---
 # <a name="sample-for-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 

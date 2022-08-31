@@ -1,25 +1,25 @@
 ---
 title: E コマース プラットフォーム ソフトウェア開発キット (SDK)
 description: この記事では、電子商取引プラットフォーム SDK について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 18101
-ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a7f09b6931af2bf46901177eb711a4820867d3d2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 18101
+ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
+ms.openlocfilehash: a0e0d8f6df8736b8900e9c99912247ba9796b2bf
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897211"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282853"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 

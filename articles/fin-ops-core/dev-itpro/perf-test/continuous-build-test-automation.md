@@ -1,25 +1,25 @@
 ---
 title: 継続的なビルドおよびテストの自動化環境の配置と使用
 description: この記事では、継続的なビルドとテストの自動化をサポートする開発者トポロジを配置する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 13171
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8a9d56e879e5f5d46353379c5384714e69c7ea0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 13171
+ms.assetid: ''
+ms.openlocfilehash: 6607c6786f56b4b82b5f3ba5cac33bbbbf85bacc
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856947"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291740"
 ---
 # <a name="deploy-and-use-a-continuous-build-and-test-automation-environment"></a>継続的なビルドおよびテストの自動化環境の配置と使用
 
@@ -52,7 +52,7 @@ Microsoft Dynamics Lifecycle Services (LCS) で Azure DevOps サブスクリプ�
 最初のステップは組織に [Azure DevOps プランを選ぶ](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) ことです。
 
 > [!NOTE]
-> TFVC はサポートされている唯一のソース管理リポジトリです。 Git はサポートされていません。
+> LCS は、TFVC の機能を変更するように設計されており、現在は、Git リポジトリとは機能しません。
 
 ### <a name="set-up-azure-devops"></a>Azure DevOps の設定
 
@@ -79,7 +79,7 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
 4. **Azure DevOps** を選択し、モジュール プロジェクトのソース コードが保管されている Azure DevOps URL を入力します。
 5. Azure DevOps リンクを指定して、承認し、**既定のプロジェクトを選択** をクリックします。
    > [!NOTE]
-   > 現在のところ、VSTF をソース コントロールとしてサポートしていますが、Git をサポートしていません。 
+   > LCS は、TFVC の機能を変更するように設計されており、現在は、Git リポジトリとは機能しません。
 
 ### <a name="check-in-migrated-or-new-module-code-into-azure-devops"></a>Azure DevOps に移行または新しいモジュールコードをチェックイン
 

@@ -9,16 +9,16 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: India
-ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2021-12-10
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 78465b4daaf664e2b618b744686b7eeac00b7426
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+ms.openlocfilehash: 19937c55f0d4255cdb08031be2c433e0c1205ac9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892786"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276183"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-e-commerce-sites-for-india"></a>インド向け e コマース サイト用の商品及びサービス税 (GST) 統合
 

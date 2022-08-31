@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852508"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306117"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>在庫の可視化の在庫配賦
 
@@ -63,12 +63,11 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
 - 事前に定義された配賦関連のデータ ソース、現物メジャー、および計算メジャー。
 - 最大 8 つのレベルを持つカスタマイズ可能な配賦グループ。
 - 一連の配賦アプリケーション プログラミング インターフェイス (API):
-
-    - 配賦
-    - 再配賦
-    - 未配賦
-    - 消費
-    - クエリ
+  - 配賦
+  - 再配賦
+  - 未配賦
+  - 消費
+  - クエリ
 
 配賦機能を構成するプロセスには、次の 2 つの手順があります:
 
@@ -84,23 +83,26 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
 初期の現物メジャーを次に示します:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 初期の計算メジャーを次に示します:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>他の現物メジャーへの配賦可能数量の計算メジャーの追加
 
 配賦を使用するには、配賦可能数量の計算メジャー (`@iv.@available_to_allocate`) を設定する必要があります。 たとえば、`fno` データ ソースと `onordered` メジャー、`pos` データ ソースと `inbound` メジャーがあり、`fno.onordered` と `pos.inbound` の合計に対して手元で配賦を行うとします。 この場合、`@iv.@available_to_allocate` には、式に `pos.inbound` と `fno.onordered` を含める必要があります。 次に例を示します:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
+
+> [!NOTE]
+> データ ソース `@iv` は、定義済みのデータ ソースであり、接頭語 `@` 付きの `@iv` で定義された物理メジャーは事前に定義されたメジャーです。 これらのメジャーは配賦機能の事前に定義された構成なので、配賦機能を変更または削除したり、配賦機能を使用するときに予期しないエラーが発生する可能性があります。
+>
+> 定義済の計算メジャー `@iv.@available_to_allocate` に新しい物理メジャーを追加できますが、名前は変更してはなりません。
 
 ### <a name="change-the-allocation-group-name"></a>配賦グループ名の変更
 
@@ -136,7 +138,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ Inventory Visibility が `fno` データ ソースのデータを変更できな
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

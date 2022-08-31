@@ -7,14 +7,14 @@ ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: hasaid
+ms.author: shailesn
 ms.search.validFrom: 2022-04-28
-ms.openlocfilehash: 73fd2af074f6e554451714f844f5ee71e24c66a1
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: c756b56e696c8e9edcaa52fde8dcb60099b21a5f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103538"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271479"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-local-geographies"></a>ローカル地域における Dynamics 365 Finance、Supply Chain Management、および Commerce
 

@@ -1,18 +1,18 @@
 ---
 title: FileUploaderDesign タイプ
 description: ファイル アップローダー デザイン オブジェクトのタイプ。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 10a66abf0f2f30c7b847916f4e4db518363b4360
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 38fe26a5101e788776e131924d538539136d74d3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811310"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283500"
 ---
 # <a name="fileuploaderdesign-type"></a>FileUploaderDesign タイプ
 

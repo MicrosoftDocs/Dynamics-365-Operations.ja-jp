@@ -1,25 +1,25 @@
 ---
 title: Power Apps ホスト コントロール
 description: Power Apps ホスト コントロールを使用すると、アプリを Power Apps 財務と運用アプリの 1 つに埋め込むことができます。
-author: TLeforMicrosoft
+author: jasongre
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 16061
-ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b054dde4dca09af9f59700d531b759421f1767ca
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 16061
+ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
+ms.openlocfilehash: f41611e4964858d7ebb0b823b96879b3563dc7a5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114299"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273901"
 ---
 # <a name="power-apps-host-control"></a>Power Apps ホスト コントロール
 

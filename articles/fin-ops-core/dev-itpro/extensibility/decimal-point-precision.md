@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 89563
-ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 15a524e514e8883f6eea5b509a5465687c47b759
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 89563
+ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
+ms.openlocfilehash: c9265557c99a9efa5a3b290065e6abe43d22e502
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866945"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270943"
 ---
 # <a name="extending-number-of-decimals-for-selected-data-types"></a>選択したデータ型の小数点以下桁数の拡張
 

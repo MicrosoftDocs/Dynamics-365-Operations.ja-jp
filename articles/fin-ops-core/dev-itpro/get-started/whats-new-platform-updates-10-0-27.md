@@ -2,19 +2,19 @@
 title: 財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラム (2022 年 7 月)
 description: この記事では、財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 06/16/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-04-22
-ms.openlocfilehash: 7968c41b2db74dbde68228319f21ed5d85647fb6
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 731fabe3baa7518296524d37eeab2ff62edb8bb7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066144"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219205"
 ---
 # <a name="platform-updates-for-version-10027-of-finance-and-operations-apps-july-2022"></a>財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラム (2022 年 7 月)
 
@@ -33,7 +33,7 @@ ms.locfileid: "9066144"
 | 機能領域    | フィーチャー | 詳細 |  に  によって有効化 |
 |-----------------|---------|------------------|---------------------------|
 | Web クライアント  | [アクション センターの通知の読み込みを最適化する](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/optimize-loading-action-center-notifications)  | 該当なし  |  [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |
-| Web クライアント  | <p>**(プレビュー) コンボ ボックスおよびルックアップ コントロールのキーボード インタラクションを標準化する**</p><p>現在、このプレビュー機能には、コンボ ボックスおよびルックアップ コントロールに対するキーボード操作の対象を絞り込む調整が含まれるので、他の Dynamics 365 製品とのより密接な調整が可能になります。 具体的には、**Enter** キーの動作が変更され、コントロールを編集できる場合にドロップダウン リストが開きます。 したがって、使用可能な値の一覧をユーザーが簡単に取得できます。 ドロップダウン リストを開いているときに **Enter** キーを選択すると現在の値を選択して、ドロップダウン リストを閉じます。</p>  | 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
+| Web クライアント  | [(プレビュー) コンボ ボックスおよびルックアップ コントロールのキーボード インタラクションを標準化する](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/standardize-keyboard-interaction-combo-box-lookup-controls) | 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
 
 ### <a name="bug-fixes"></a>バグ修正
 

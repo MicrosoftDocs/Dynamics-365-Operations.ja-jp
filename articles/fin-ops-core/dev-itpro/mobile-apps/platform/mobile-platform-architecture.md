@@ -1,21 +1,21 @@
 ---
 title: モバイル プラットフォームのアーキテクチャと設計の考慮事項
 description: この記事では、モバイル プラットフォームのアーキテクチャと設計の考慮事項について説明します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: overview
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 3082e7b6613b923780906d82e34118a17c76ebfe
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: e349a2f6808e0949996d7631d04f0c4b74864879
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103255"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284969"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 

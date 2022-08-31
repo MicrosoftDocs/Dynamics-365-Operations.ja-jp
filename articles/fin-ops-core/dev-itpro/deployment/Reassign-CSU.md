@@ -1,23 +1,23 @@
 ---
 title: チャネルを別の Commerce Scale Unit に移行する
 description: この記事では、Microsoft Dynamics 365 Commerce チャネルを別の Commerce Scale Unit に移行する方法について説明します。
-author: AamirAllaq
+author: jashanno
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
-ms.search.validFrom: 2018-4-30
+ms.author: jashanno
+ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: a4f7b605f7b36e403ebd8ddeffe6029f60541137
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 043abe4ffd4aa3e2442e2df5681f521d4fea3725
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867492"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271499"
 ---
 # <a name="migrate-channels-to-a-different-commerce-scale-unit"></a>チャネルを別の Commerce Scale Unit に移行する
 

@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 09/15/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cc55d3a663ff6e84363dbf30018d6ca0e69c594
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 4573e228458ce02006044ba05bc9180e677a6be1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111802"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289682"
 ---
 # <a name="customization-guidance-for-dual-write"></a>二重書き込みのカスタマイズに関するガイダンス
 

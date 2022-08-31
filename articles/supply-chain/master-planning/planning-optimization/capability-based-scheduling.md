@@ -2,7 +2,7 @@
 title: 能力に基づいたリソースの選択を使用したスケジュール設定
 description: この記事では、無限大のキャパシティを持つスケジュール設定において、オペレーションのリソース要件として能力を指定した場合のリソース選択について説明します。
 author: t-benebo
-ms.date: 9/3/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847965"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335408"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>能力に基づいたリソースの選択を使用したスケジュール設定
 
@@ -24,12 +24,9 @@ ms.locfileid: "8847965"
 
 生産ルートの運用のリソース要件を指定することで、その操作の実行に必要な作業を定義します。 たとえば、ある操作には、特定のリソースやリソースグループ、あるいはスキルや能力の組み合わせが必要になる場合があります。 この記事では、無限大のキャパシティを持つスケジュール設定において、オペレーションのリソース要件として能力を指定した場合のリソース選択について説明します。
 
-## <a name="turn-on-the-capability-based-scheduling-feature"></a>能力に基づいたスケジュール設定の機能を有効にする
+## <a name="turn-the-capability-based-scheduling-feature-on-or-off"></a>能力に基づいたスケジュール設定の機能をオンまたはオフにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *マスター プラン*
-- **機能名:** *計画最適化のための無限キャパシティ スケジュール設定*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management のバージョン10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *計画の最適化の無限能力のスケジュール* 機能を検索して、この機能をオンまたはオフにできます。
 
 この能力の詳細については、[無限キャパシティを使用したスケジュール設定](infinite-capacity-planning.md)を参照してください。
 

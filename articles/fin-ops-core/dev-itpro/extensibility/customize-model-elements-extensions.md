@@ -1,25 +1,25 @@
 ---
 title: 拡張機能によってモデル要素をカスタマイズする
 description: この記事では、フリート管理拡張モデルについて説明します。 このモデルには、フリート管理アプリケーションの機能を拡張する要素が含まれています。
-author: jorisdg
+author: gianugo
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 11184
-ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f66a1d1c22777871c7c64fc04f6bbc3836c84ca
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 11184
+ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
+ms.openlocfilehash: bb8adabbff3f4202e700b104709a6e0e65a8bcbd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103480"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270947"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 

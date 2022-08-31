@@ -2,7 +2,7 @@
 title: 計画オーダーの確定
 description: この記事では、計画オーダーを確定する方法について説明します。 計画オーダーが確定されると、それらは実際の発注書、移動オーダー、または製造オーダーになります。
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857521"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335348"
 ---
 # <a name="firm-planned-orders"></a>計画オーダーの確定
 
@@ -37,19 +37,21 @@ ms.locfileid: "8857521"
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>計画オーダーの並列確定をオンまたはオフにする
 
-確定並列化により、複数のスレッド間で並列処理することで、確定プロセスの時間を高速化できます。 この方法は、多くの計画オーダーを確定する場合に便利です。 この機能を使用するには、システムに対して *計画オーダーの並列確定* 機能を有効にする必要があります。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して *計画オーダーの並列確定* 機能を検索して、この機能をオンまたはオフにすることができます。
+確定並列化により、複数のスレッド間で並列処理することで、確定プロセスの時間を高速化できます。 この方法は、多くの計画オーダーを確定する場合に便利です。 この機能を使用するには、システムに対して *計画オーダーの並列確定* 機能を有効にする必要があります。 
 
-### <a name="enable-planned-order-firming-with-filtering"></a>フィルター処理を使用した計画オーダーの確定を有効にする
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して *計画オーダーの並列確定* 機能を検索して、この機能をオンまたはオフにすることができます。
+
+### <a name="turn-planned-order-firming-with-filtering-on-or-off"></a>フィルター処理を使用した計画オーダーの確定をオンまたはオフにする
 
 フィルター処理を使用した計画オーダーの確定により、確定する計画オーダーを選択するロジック基準を定義できます。 選択した計画オーダーをプレビューしたり、プロセスをバックグラウンドで実行したり、またはバッチ ジョブとしてスケジュールしたりもできます。
 
-Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *フィルター処理を使った計画オーダーの確定* の機能を検索して、この機能をオンまたはオフにできます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *フィルター処理された計画オーダーの確定* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-### <a name="enable-auto-firming-for-planning-optimization"></a>計画最適化の自動確定を有効にする
+### <a name="turn-auto-firming-for-planning-optimization-on-or-off"></a>計画最適化の自動確定をオンまたはオフにする
 
 自動確定により、計画オーダーを確定のタイム フェンス内でマスター プラン プロセスの一部として確定できます。 Supply Chain Management に組み込まれている計画エンジンでは、常に自動確定がサポートされています。 ただし、計画の最適化でも使用するには、この機能を有効にする必要があります。
 
-この機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動して、*計画最適化の自動確定* 機能を有効にします。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.29 では、この機能は必須なため、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して *計画最適化の自動確定* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="manually-firm-planned-orders"></a>計画オーダーを手動で確定する
 
@@ -67,8 +69,8 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 
     - **マーキングの更新** – 計画オーダーの確定時に使用する在庫のマーキング ポリシーを選択します。
     - **エラーが発生した場合は確定を中止** – このオプションを *はい* に設定すると、計画オーダーの 1 つでエラーが発生した場合にすべての計画オーダーの確定が停止されます。 **確定並列化** オプションが *はい* に設定されている場合は、このオプションが *いいえ* に設定される必要があります。
-    - **確定並列化** – このオプションは、システムで [*計画オーダーの確定並列化* 機能](#enable-features)が有効になっている場合、および確定する複数の計画オーダーを選択した場合にのみ使用できます。 確定プロセスを並列で実行するには、このオプションを *はい* に設定します。 確定並列化により、パフォーマンスが向上します。
-    - **スレッド数** – このオプションは、システムで [*計画オーダーの確定並列化* 機能](#enable-features)が有効になっている場合、および **確定並列化** オプションを *はい* に設定した場合にのみ使用できます。 確定プロセスを並列化するのに使用するスレッドの数を入力します。 このオプションをマスター プランで使用する方法については、[マスター プランのパフォーマンスの改善](../master-planning-performance.md#number-of-threads)を参照してください。
+    - **確定の並列化** – このオプションは、システムで [*計画オーダーの並行確定* 機能](#enable-features)が有効になっている場合、および確定する複数の計画オーダーを選択した場合にのみ使用できます。 確定プロセスを並列で実行するには、このオプションを *はい* に設定します。 確定並列化により、パフォーマンスが向上します。
+    - **スレッドの数** – このオプションは、システムで [*計画オーダーの確定並列化* 機能](#enable-features) が有効になっている場合、および **確定並列化** オプションを *はい* に設定した場合にのみ使用できます。 確定プロセスを並列化するのに使用するスレッドの数を入力します。 このオプションをマスター プランで使用する方法については、[マスター プランのパフォーマンスの改善](../master-planning-performance.md#number-of-threads)を参照してください。
 
         > [!NOTE]
         > **スレッド数** フィールドの *0* (ゼロ) の値により、マスター プランの実行時間が長くなります。 そのため、このフィールドに常に 0 より大きい値を設定することをお勧めします。

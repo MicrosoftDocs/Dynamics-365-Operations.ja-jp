@@ -14,16 +14,18 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b584c91f49ae944f871bb0199a06d103a514a835
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: 5f7062cdf6e98d4cbac4c03b3cbb1f14b4aeab58
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103351"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305242"
 ---
 # <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
+
 
 Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサービスを提供します。 LCS の目標は、適切な情報を適切なタイミングで適切な相手に伝えることであり、実装、更新、アップグレードを毎回問題なく実行する反復性と予測可能性を実現することです。 LCS は顧客やパートナーがサポート計画の一部として使用できます。 Dynamics 365 財務と運用アプリの最新バージョンの顧客である場合は、Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインできます。 [LCS に移動](https://lcs.dynamics.com/Logon/Index).
 

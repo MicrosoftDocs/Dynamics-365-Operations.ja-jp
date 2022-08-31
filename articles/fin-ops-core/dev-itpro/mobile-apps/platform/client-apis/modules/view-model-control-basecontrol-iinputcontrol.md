@@ -1,18 +1,18 @@
 ---
 title: 入力モジュール
 description: 入力コントロールは、たとえば新しいコントロールに対するユーザー入力を収集するために通常はタスク ページで使用されます。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 81e94d42925224db46d727092411d66bc5d7f418
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 93c08b91697de55e8e94c44c5dcc2f161a2a8c06
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811793"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277476"
 ---
 # <a name="input-module"></a>入力モジュール
 

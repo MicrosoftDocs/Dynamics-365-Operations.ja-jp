@@ -6,21 +6,21 @@ ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: 271823
-ms.assetid: a98f6291-347c-4616-ad80-84d3eb648cba
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: sericks
-ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 438fcd05d67085615b9e8f66542649593e6dbb36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: Platform update 4
+ms.custom: 271823
+ms.assetid: a98f6291-347c-4616-ad80-84d3eb648cba
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 3bda3f2a6f690cec889f51a71914df940059d2e0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890014"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283438"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-4-february-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 4 (2017 年 2 月) の新機能および変更された機能
 

@@ -1,7 +1,7 @@
 ---
 title: 内部在庫移動の移動文書の生成
 description: この手順では、社内の製品移動に関わるドキュメントを作成する方法を示します。
-author: EvgenyPopovMBS
+author: AdamTrukawka
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -9,16 +9,16 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
-ms.openlocfilehash: bb58337f7e0a269392c7969cf24d196b030d576d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 27d18b30586775c98dc602215090810b0a1b918a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9275182"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337174"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>内部在庫移動の移動文書の生成
 

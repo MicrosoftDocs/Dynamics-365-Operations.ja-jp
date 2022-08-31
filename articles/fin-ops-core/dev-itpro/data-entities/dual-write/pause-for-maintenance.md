@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 06/24/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff2ae0f390d3f94627862b8b969fff1b629406e5
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 18daa715b981381b52d456beb71bd990f219c7e8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067762"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288942"
 ---
 # <a name="pause-dual-write-for-maintenance"></a>メンテナンス時に二重書き込みを一時停止する
 

@@ -1,21 +1,21 @@
 ---
 title: Modern POS 拡張機能パッケージの .appx ファイルの作成
 description: この記事では、Microsoft Visual Studio 2017 を使用して、Modern 販売時点管理 (MPOS) のパッケージ プロジェクトの作成方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: ce4f8b6ddbec899d5abc6f24fb1774926d5a75f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef881c59dc0de61e5f40bb545fe0968e64b8f3e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883987"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287744"
 ---
 # <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a>Modern POS 拡張機能パッケージの .appx ファイルの作成
 

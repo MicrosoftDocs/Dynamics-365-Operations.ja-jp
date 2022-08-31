@@ -1,22 +1,22 @@
 ---
 title: 新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
 description: この記事では、新しい NuGet パッケージを使用するために Azure パイプラインを更新する方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 03/04/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfbb0f3562280538ed9e815e49047e5866e9822
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.openlocfilehash: 21410a6c4c4d5b6500ee605ec4e52c4bc68aaf58
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867003"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271036"
 ---
 # <a name="update-the-hosted-azure-pipeline-for-new-nuget-packages"></a>新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
 

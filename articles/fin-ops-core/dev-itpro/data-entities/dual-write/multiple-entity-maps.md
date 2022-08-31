@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 08/12/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68d688ba58461a4f8f6e6de18dd202703053ea67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43c6e85ad654097cea55026d2291292badaffda0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860090"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289064"
 ---
 # <a name="manage-multiple-table-maps"></a>複数のテーブル マップの管理
 

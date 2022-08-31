@@ -6,20 +6,20 @@ ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 109af30a8fb9bccacb0e0e7a8e089136a613903d
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 9e5223d8b52f5cf7b30341d4b42bfc10a0891c86
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066529"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276222"
 ---
 # <a name="implement-commerce-projects"></a>コマース プロジェクトを実装する
 

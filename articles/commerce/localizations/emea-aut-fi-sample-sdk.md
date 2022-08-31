@@ -2,25 +2,29 @@
 title: オーストリア向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 description: この記事では、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) から、オーストリア向け会計統合サンプルを展開するためのガイドラインを提供します。
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 203904f60888464a473cb2997652db497fba6f57
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f5f12dbd638c8228dbc63c1fae8f3dfffc7bfe9c
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276105"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313777"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>オーストリア向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) に Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) からオーストリア向け会計登録サービス統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[オーストリア向け会計登録サービス統合サンプル](emea-aut-fi-sample.md) を参照してください。 
+> [!IMPORTANT]
+> この記事のガイドラインに 従う必要があるのは、Microsoft Dynamics 365 Commerce バージョン10.0.28以前を使用している場合のみです。 Commerce バージョン 10.0.29 では、オーストリアの会計登録サービス統合サンプルは、Commerce ソフトウエア開発キット (SDK) で提供されています。 詳細については、[チャネル コンポーネントの構成](./emea-aut-fi-sample.md#configure-channel-components) を参照してください。
+
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) に Dynamics 365 Commerce Retail SDK からオーストリア向け会計登録サービス統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[オーストリア向け会計登録サービス統合サンプル](emea-aut-fi-sample.md) を参照してください。 
 
 オーストリア向け会計統合サンプルは Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 会計統合サンプルは、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) での拡張で構成されています。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 

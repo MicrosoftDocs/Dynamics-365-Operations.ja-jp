@@ -2,7 +2,7 @@
 title: 安全マージン
 description: この記事では、Microsoft Dynamics 365 Supply Chain Management の計画の最適化アドインで安全マージンをどのように使用できるかについて説明します。
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854242"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335198"
 ---
 # <a name="safety-margins"></a>安全マージン
 
@@ -79,12 +79,9 @@ ms.locfileid: "8854242"
 
 ## <a name="set-up-safety-margins"></a>安全マージンの設定
 
-### <a name="turn-on-safety-margins-in-feature-management"></a>機能管理で安全マージンをオンにする
+### <a name="turn-safety-margins-on-or-off"></a>安全マージンをオンまたはオフにする
 
-計画の最適化でこの機能を使用する前に、システム上でこれを有効にする必要があります。 管理者は、[機能の管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
-
-- **モジュール:** _マスター プラン_
-- **機能名:** _計画の最適化のためのマージン_
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *計画最適化のマージン* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ### <a name="define-safety-margins"></a>安全マージンの定義
 

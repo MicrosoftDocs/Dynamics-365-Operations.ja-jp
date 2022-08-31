@@ -1,21 +1,21 @@
 ---
 title: ヘッドレス コマースのアーキテクチャ
 description: この記事では、ヘッドレス コマースのアーキテクチャについて説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/03/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 00d33bc6ae33c21207c143e0f6264af38bdb89e7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 535a1de16555f96f0073f81ba4e7e5317ec35e33
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884620"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273523"
 ---
 # <a name="headless-commerce-architecture"></a>ヘッドレス コマースのアーキテクチャ
 

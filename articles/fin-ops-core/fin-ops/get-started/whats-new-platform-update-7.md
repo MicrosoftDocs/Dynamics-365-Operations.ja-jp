@@ -1,26 +1,26 @@
 ---
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
 description: この記事では、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
-author: tonyafehr
+author: sericks007
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: 54cfeac5-e977-4c02-8e7a-4ddb4b336713
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 7311795151f86aa2641b0a5d9c437b5f76f4679b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: 54cfeac5-e977-4c02-8e7a-4ddb4b336713
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: b577e6cf949b42cd182a49e7d43f0f69bd8761a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888110"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291687"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-7-may-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
 

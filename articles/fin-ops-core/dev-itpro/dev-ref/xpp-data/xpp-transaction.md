@@ -1,20 +1,20 @@
 ---
 title: X++ トランザクションの整合性
 description: この記事では、X++ 言語でのトランザクションの整合性について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/16/2020
 audience: Developer
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0b3ad6fa57089dd16a358a6d1be352b9d176d249
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 780c3f3ab7d4e0240e41c2e44922546ceb03c1a0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103746"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271339"
 ---
 # <a name="x-transactional-integrity"></a>X++ トランザクションの整合性
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 15911
-ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cf436dabde206bf5440d203df92c3edaf1c10b9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 15911
+ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
+ms.openlocfilehash: 87dc26e33cd7345ed64faea8b602138ab0e9335d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781218"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276522"
 ---
 # <a name="toolbar-and-fields-subpattern"></a>ツールバーおよびフィールドのサブパターン
 

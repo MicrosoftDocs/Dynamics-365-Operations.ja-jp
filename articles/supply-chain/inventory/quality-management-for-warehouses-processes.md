@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b4d0b09ea4bee58799a659217e2236fe74102949
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069245"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335438"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>倉庫プロセスに対する品質管理
 
@@ -29,7 +29,7 @@ _倉庫プロセスの品質管理_ 機能は、基本品質管理機能の能�
 
 ## <a name="turn-on-the-quality-management-for-warehouse-processes-feature"></a>倉庫プロセスの品質管理機能をオンにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+この機能は使用する前にシステムでオンにする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *倉庫プロセスの品質管理*

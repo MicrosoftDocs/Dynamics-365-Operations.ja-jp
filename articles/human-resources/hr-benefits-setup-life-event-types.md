@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64e536bad996e9a1948dad18437ec6f98ad27033
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: df523dd4da11e24c7b601c8f34aef24ad6cb3b18
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691725"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337013"
 ---
 # <a name="configure-life-event-types"></a>ライフ イベント タイプのコンフィギュレーション
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources は、**ライフ イベント タイプ** を使用して、結婚や子供が生まれるなど、従業員の給付金の登録の更新に有効なイベントを定義します。 各ライフ イベント タイプ ID は、1 つのライフ イベント タイプにのみ関連付けることができます。 たとえば、ライフ イベント タイプ **従業員の住所変更** に関連付けられた **住所変更** という **ライフ イベント ID** を作成する場合、**従業員の住所変更** というラベルが付いた別の ID を作成して、ライフ イベント タイプ **従業員の住所変更** と関連付けることはできません。 ライフ イベント タイプが計画タイプに関連付けられていない場合、ライフ イベント タイプはライフ イベントをトリガーしません。 詳細については、[計画タイプの作成](hr-benefits-setup-plan-types.md) を参照してください。
 

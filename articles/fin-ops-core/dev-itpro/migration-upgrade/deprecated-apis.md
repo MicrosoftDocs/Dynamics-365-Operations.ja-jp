@@ -1,25 +1,25 @@
 ---
 title: 非推奨 API
 description: このドキュメントでは、非推奨の API のリストと非推奨の API の移行ガイドを提供しています。
-author: aneesmsft
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: sericks
-ms.custom: 26011
-ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aneesa
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2298b5ef496f5f10b240bac3b01d07fbc61ea37785256ad233dacd86c7c1ae5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 26011
+ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
+ms.openlocfilehash: e1d1d299a8a817a4b864d135fe3b00fbbc79ccbd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736250"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284090"
 ---
 # <a name="deprecated-apis"></a>非推奨 API
 

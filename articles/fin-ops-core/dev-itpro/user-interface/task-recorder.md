@@ -4,19 +4,19 @@ description: この記事では、タスク レコーダーを使用して、業
 author: jasongre
 ms.date: 09/11/2020
 ms.topic: article
-ms.search.form: SysTaskRecorderPane
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d9c45fa2c4c1c6060741eb1295a9af5a07759e0
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.search.form: SysTaskRecorderPane
+ms.openlocfilehash: 07c43d2cd8aa3796a3730997b4b2976ee9cefb47
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114323"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292422"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 

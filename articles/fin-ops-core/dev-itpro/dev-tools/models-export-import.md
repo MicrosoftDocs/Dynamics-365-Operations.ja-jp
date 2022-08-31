@@ -1,23 +1,23 @@
 ---
 title: モデルのエクスポートとインポート
 description: この記事では、モデルをモデル ファイルにエクスポートし、モデル ファイルをインストールし、開発環境でモデルを削除する方法について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 10/01/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 20451
-ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26226056eba4cea3b792e30fa137aaa276c2324f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 20451
+ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
+ms.openlocfilehash: 47d9dab048cbdfbe6e0b3ef1dc1bf1b628ba9375
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782765"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271087"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 

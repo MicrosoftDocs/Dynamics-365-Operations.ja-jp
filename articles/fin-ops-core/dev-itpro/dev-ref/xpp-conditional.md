@@ -1,20 +1,20 @@
 ---
 title: X++ 条件付きステートメント
 description: この記事では、X++ の条件付きステートメントについて説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/17/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91f8f88378a30cfc6ef771f115b2043c8787d90e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 856139e3d09ed690e07bfc3aa64f04fbf41ff70b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867228"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271399"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 

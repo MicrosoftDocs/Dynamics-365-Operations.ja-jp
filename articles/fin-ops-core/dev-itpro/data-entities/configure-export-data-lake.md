@@ -2,7 +2,7 @@
 title: Azure Data Lake へのエクスポート アドインのインストール
 description: この記事では、Azure Data Lake へのエクスポートの構成に関する情報を説明します。
 author: MilindaV2
-ms.date: 11/22/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: dac1884efbbfd57e3d3b5dffb2f44fb18fcd5581
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 9b79accb49185a8e63ea98c398220fdb63e318de
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108871"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242957"
 ---
 # <a name="install-export-to-azure-data-lake-add-in"></a>Azure Data Lake アドインにエクスポート機能をインストールする
 
@@ -104,13 +104,10 @@ Azure portal で行われる手順は次のとおりです。
     - **対応しているアカウントのタイプ** : 適切なオプションを選択します。
 
 3. アプリケーションの作成後は、これを選択し、<a name="appid"></a> アプリケーション (クライアント) IDをページの先頭に保存します。 これは後で必要になります。
-4. 左のナビゲーション ウィンドウで、**API のアクセス許可** を選択します。
-5. **アクセス許可の追加** を選択し、**API アクセス許可の要求** ダイアログ ボックスで、**Azure キー コンテナー** を選択し ます。
-6. **委任されたアクセス許可** を選択し 、**user_impersonation** を選択します。続いて **アクセス許可の追加** を選択します。
-7. 左のナビゲーションウィンドウで、**証明書とシークレット** を選択し、 **新たなクライアント シークレット** を選択します。 
-8. **説明** フィールドに名前を入力します。
-9. **有効期限** フィールドで、オプションを選択し、**追加** を選択します。 システムがシークレットを生成し、グリッドの下に表示します。 
-10. シークレット **値** をクリップボードにコピーします。 これは後でキー コンテナーを設定する際に、<a name="secret"></a> 値を提供する必要があります。
+4. 左のナビゲーションウィンドウで、**証明書とシークレット** を選択し、 **新たなクライアント シークレット** を選択します。 
+5. **説明** フィールドに名前を入力します。
+6. **有効期限** フィールドで、オプションを選択し、**追加** を選択します。 システムがシークレットを生成し、グリッドの下に表示します。 
+7. シークレット **値** をクリップボードにコピーします。 これは後でキー コンテナーを設定する際に、<a name="secret"></a> 値を提供する必要があります。
 
 ## <a name="create-a-data-lake-storage-gen2-account-in-your-subscription"></a><a name="createsubscription"></a>サブスクリプションに Data Lake ストレージ（Gen2）を作成します
 
@@ -142,13 +139,11 @@ Data Lake ストレージ アカウントは、財務と運用アプリのデー
     > フィールド対する変更、**Azure AD ユーザー、グループ、サービス プリンシパル** への **アクセス権の割り当て** は行わないでください。
 
 7. **保存** を選択します。
-8. 手順 4 ~ 7 を繰り返して、次に示すように **ストレージ BLOB データの読み取り** ロールを追加します。
-9. 先ほど作成した[アプリケーション](#appid) のストレージ アカウント ロール の割り当てを検証します。 
+8. 先ほど作成した[アプリケーション](#appid) のストレージ アカウント ロール の割り当てを検証します。 
 
     | 申請書                                   | 役割 |
     |-----------------------------------------------|------|
     | 既に作成した[アプリケーション](#appid) | ストレージ BLOB データの共同作成者 |
-    | 既に作成した[アプリケーション](#appid) | ストレージ BLOB データの読み取り権限を持つユーザー |
 
 ## <a name="create-a-key-vault"></a><a name="createkeyvault"></a> キー コンテナーの作成
 
@@ -202,23 +197,7 @@ Data Lake ストレージ アカウントは、財務と運用アプリのデー
 
 ## <a name="power-platform-integration"></a><a name="powerplatformintegration"></a>Power Platform 統合
 
-この環境に初めてアドインをインストールする場合、この環境に対して **Power Platform 統合** を有効にする必要があるかもしれません。 財務と運用アプリ環境で Power Platform 統合を設定するには 2 つのオプションがあります。
-
-### <a name="option-1-set-up-power-platform-integration-using-lcs"></a>オプション 1: LCS を使用して Power Platform 統合の設定
-
-LCS から Power Platform 統合を設定するには、[アドインの概要](../power-platform/add-ins-overview.md) を参照してください。
-
-### <a name="option-2-set-up-power-platform-integration-using-the-dual-write-wizard"></a>オプション 2: 二重書き込みウィザードを使用して Power Platform 統合の設定
-
-**Power Platform 統合** を設定するもう 1 つの方法は、データベースで Power Platform 環境を作成し、二重書き込みの設定を使用します。 次の手順を実行して、Power Platform 環境を作成し、統合を完了します。 
-
-1. [データベースを使用して環境を作成します](/power-platform/admin/create-environment#create-an-environment-with-a-database.md)。
-2. [要件と前提条件を完了します](dual-write/requirements-and-prerequisites.md)。
-3. [二重書き込みウィザードを使用して環境をリンクする](dual-write/link-your-environment.md) を使用します。
-4. Power Platform 統合が設定され、LCS 環境ページに追加されていることを確認します。
-
-> [!NOTE]
-> このアプローチを使用する場合は、財務と運用環境と同じリージョンにある Power Platform 環境を選択する必要があります。 別の地域の Power Platform 環境を選択した場合、アドインのインストールが失敗する場合があります。
+この環境に初めてアドインをインストールする場合、この環境に対して **Power Platform 統合** を有効にする必要があるかもしれません。 詳細については、[Microsoft Power Platform と財務と運用アプリの統合](../power-platform/overview.md)を参照してください。
 
 ## <a name="install-the-export-to-data-lake-add-in-in-lcs"></a><a name="installaddin"></a>LCS の Data Lake アドインへにエクスポート機能をインストールする 
 

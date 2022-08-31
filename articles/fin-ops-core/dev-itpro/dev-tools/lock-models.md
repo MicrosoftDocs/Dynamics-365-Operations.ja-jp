@@ -5,19 +5,19 @@ author: pvillads
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 89593
-ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f341c21147fc23ef6926833f57bebb4b0f677580
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 89593
+ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
+ms.openlocfilehash: 1a6cad6fdc388ca18ce91ee69bd6229ed3445cf7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103734"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271103"
 ---
 # <a name="turn-off-model-customization-and-deprecate-functionality"></a>カスタマイズをオフにして機能を廃止
 

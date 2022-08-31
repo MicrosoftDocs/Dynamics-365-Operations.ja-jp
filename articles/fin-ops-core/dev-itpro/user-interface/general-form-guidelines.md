@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 14701
-ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bf82e98b8a677a3761541f854678d3216979e92
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 14701
+ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
+ms.openlocfilehash: de3258dd060f083e7efd66761d0a808b050b3e34
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890370"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270678"
 ---
 # <a name="general-form-guidelines"></a>フォームの全般的なガイドライン
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
-ms.openlocfilehash: d1e3359875d55f5ce33d01ef833e016b2a15257f
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 2ec0e9de179f15a15a3c5aa982150a4a48fe07b8
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206150"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228099"
 ---
 # <a name="priority-based-batch-scheduling"></a>優先順位に基づくバッチスケジューリング 
 

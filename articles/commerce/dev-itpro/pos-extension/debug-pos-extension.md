@@ -1,21 +1,21 @@
 ---
 title: MPOS (シールド) と CPOS 拡張機能のデバッグ
 description: この記事では、モダン販売時点管理 (シールド) と Cloud POS 拡張機能のデバッグ方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 05/05/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: d0d3005df25dcb8043545e9a7ba1a400440bae2e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df34e899997d1817599b80cbb0aa8950b36d3f15
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870568"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284773"
 ---
 # <a name="debug-mpos-sealed-and-cpos-extensions"></a>MPOS (シールド) と CPOS 拡張機能のデバッグ
 

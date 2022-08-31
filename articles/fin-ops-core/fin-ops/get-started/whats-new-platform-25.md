@@ -1,25 +1,25 @@
 ---
 title: Dynamics 365 Finance プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更された機能
 description: この記事では、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能または変更された機能について説明します。
-author: tonyafehr
+author: sericks007
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
-ms.openlocfilehash: c204df9fc5d6d65e4c8b1162006c9ddd82c86991
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 6831154a8aa2cbb6a02f9935f69f0c0543e88797
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123438"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267180"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-platform-update-25-april-2019"></a>Dynamics 365 Finance プラットフォーム更新プログラム 25 (2019 年 4 月) の新機能および変更された機能
 

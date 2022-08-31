@@ -1,26 +1,26 @@
 ---
 title: オンプレミス配置の計画および準備
 description: この記事は、オンプレミス展開の計画と準備に役立ちます。
-author: PeterRFriis
+author: faix
 ms.date: 01/26/2022
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 60373
-ms.assetid: ''
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 5a81f38f082485aa8ece764819e2cb4b6c7fa0e6
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 60373
+ms.assetid: ''
+ms.service: ''
+ms.openlocfilehash: a3f26940e020ea745b1741d0dba8737137b45f4e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103445"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271459"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 

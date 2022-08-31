@@ -6,21 +6,21 @@ ms.date: 09/15/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: babe60e0001e83a2de1a3c804fb7a315a0da403d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: RetailITWorkspace
+ms.openlocfilehash: 1e49c1fd95c13bba4e2d1042586fda53471caca8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887181"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279666"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 

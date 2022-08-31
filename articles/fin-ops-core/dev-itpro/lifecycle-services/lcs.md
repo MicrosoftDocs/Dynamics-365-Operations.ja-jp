@@ -1,29 +1,30 @@
 ---
 title: Lifecycle Services のリソース
 description: Microsoft Dynamics 用 Lifecycle Services (LCS) は、アプリケーションのライフサイクルの管理に役立つ環境およびサービスを提供します。
-author: kfend
+author: sericks007
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 71724
-ms.assetid: 5bd51009-9047-4694-9f95-9fc1207ed583
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ffa6b021612b9fb5a907c9e959e818a55d993722
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 71724
+ms.assetid: 5bd51009-9047-4694-9f95-9fc1207ed583
+ms.openlocfilehash: 9e6db747ab21edd8b9cc48fffaabbdce2e98a7d8
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103660"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305218"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 Microsoft Dynamics 用 Lifecycle Services (LCS) はコラボレーション ポータルで、環境や、定期的に更新される一連のサービスを提供し、財務と運用アプリの実装のアプリケーション ライフサイクルを管理するのに役立ちます。
 

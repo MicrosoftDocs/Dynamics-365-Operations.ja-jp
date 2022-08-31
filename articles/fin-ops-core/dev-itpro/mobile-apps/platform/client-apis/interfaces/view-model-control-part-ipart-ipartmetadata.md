@@ -1,18 +1,18 @@
 ---
 title: PartMetadata タイプ
 description: パーツ メタデータ タイプ。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 780698807eaeb905e722ae2b894ce67b0e30dc5e
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 19e3e2138494d1591e8923e87e7090d737aac5c0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811290"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268617"
 ---
 # <a name="partmetadata-type"></a>PartMetadata タイプ
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: baad2dedf57ef5032b40ffb4179c73a59af6369f
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 63a77cf0e6e8ee87a673d50a0b3ccb248be369a3
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9150954"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324278"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Adyen 向け Dynamics 365 Payment Connector の概要
 
@@ -298,7 +298,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | [専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト](../pos-multi-hws.md) | ✔<br>(10.0.12 以降) | |
 | [Adyen コネクタによる SDK レベルのチップ サポート](tipping.md) | ✔<br>(10.0.14 以降) | |
 | [注文請求の増分取得](incremental-capture.md) |  | ✔<br>(10.0.18 以降) |
-| [ウォレット支払い](./wallets.md) |  | ✔<br>(10.0.20 以降) |
+| [ウォレット支払い](../wallets.md) |  | ✔<br>(10.0.20 以降) |
 | [Adyen による Google Pay](google-pay-adyen.md) |  | ✔<br>(10.0.27 以降) |
 
 ## <a name="next-steps"></a>次のステップ
@@ -316,4 +316,3 @@ Adyen 向け Dynamics 365 Payment Connector のサインアップおよび構成
 [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
-

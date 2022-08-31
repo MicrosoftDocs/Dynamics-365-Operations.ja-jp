@@ -2,7 +2,7 @@
 title: Warehouse Management モバイル アプリの手順に昇格したフィールドを構成する
 description: この記事では、Warehouse Management モバイル アプリのタスク フローで任意のステップに対して特定情報のレベルを上げてハイライトする方法について説明します。
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218977"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336068"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの手順に昇格したフィールドを構成する
 
@@ -29,19 +29,12 @@ ms.locfileid: "9218977"
 
 ## <a name="enable-promoted-fields-in-your-system"></a>自分のシステムで昇格したフィールドを有効にする
 
-昇格したフィールドを設定できるようになる前に、次の手順を完了して、Warehouse Management モバイル アプリで必要な機能を有効にして、必須フィールド名を生成する必用があります。
+Supply Chain Management バージョン 10.0.28 以前を実行している場合、昇格したフィールドを設定できるようになる前に、次の手順を完了して、Warehouse Management モバイル アプリで必要な機能を有効にして、必須フィールド名を生成する必用があります。 Supply Chain Management バージョン 10.0.29 以降を実行している場合、これらの機能は必須であり、オフにできないので、この手順を省略できます。
 
-1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
-1. システムで *倉庫アプリのステップ指示* 機能が有効になっていることを確認します。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。 この機能は、*Warehouse Management アプリの昇格したフィールド* 機能の前提条件です。
-1. 次の方法で表示された機能を有効にします。
-
-    - **モジュール:** *倉庫管理*
-    - **機能名:** *Warehouse アプリの昇格したフィールド*
-
-    この機能は、この記事で説明する機能です。
-
-1. **Warehouse Management \> 設定 \> モバイル デバイス \> Warehouse アプリのフィールド名** の順に移動して、**デフォルト設定を作成する** を選択することで Warehouse Management mobile アプリのフィールド名を更新します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
-1. Warehouse Management モバイル アプリを使用する法人 (会社) ごとに前の手順を繰り返します。
+1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。 このページの詳細については、[機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+1. システムで *倉庫アプリのステップ指示* 機能が有効になっていることを確認します。 この機能は、*Warehouse Management アプリの昇格したフィールド* 機能の前提条件です。 Supply Chain Management バージョン 10.0.29 の場合、これはは必須でオフにすることはできません。 *倉庫アプリのステップの手順* 機能の詳細については、[Warehouse Management モバイル アプリ](mobile-app-titles-instructions.md) を参照してください。
+1. システムで *倉庫アプリのプロモーション フィールド* 機能が有効になっていることを確認します。 これは、この記事で説明する機能です。 Supply Chain Management バージョン 10.0.29 の場合、これはは必須でオフにすることはできません。
+1. **Warehouse Management \> 設定 \> モバイル デバイス \> Warehouse アプリのフィールド名** の順に移動して、**デフォルト設定を作成する** を選択することで Warehouse Management mobile アプリのフィールド名を更新します。 Warehouse Management モバイル アプリを使用する法人 (会社) ごとにこの手順を繰り返します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>メニュー特定のオーバーライドで昇格したフィールドを構成する
 

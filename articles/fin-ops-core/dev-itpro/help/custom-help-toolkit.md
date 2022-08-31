@@ -5,17 +5,17 @@ author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 6105639093ac6f6c809ae99632068b8fd6ab2b73
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9bc9079dc38f8ba716f8eb6631ae0f6fa8b76aa7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066437"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284486"
 ---
 # <a name="custom-help-toolkit"></a>カスタム ヘルプ ツールキット
 

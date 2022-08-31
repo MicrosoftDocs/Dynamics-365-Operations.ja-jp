@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37cadf844dbee10b0c432386ea7189fb2bcd0321
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 9586b6e509795effd0e0310a85bffdd8e66f9d09
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111512"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289796"
 ---
 # <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 

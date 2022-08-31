@@ -2,34 +2,32 @@
 title: ノルウェーのキャッシュ レジスタの配置ガイドライン
 description: この記事では、ノルウェーの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: b19fc35a96c3194cf516ea505b6980072571a595
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9149e9da7222699e9ca996b69e56fff07b77a737
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281020"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9345994"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
 [!include[banner](../includes/banner.md)]
 
-この記事では、ノルウェーの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引の登録、販売取引のデジタル署名、およびローカルの形式でレポートの印刷ができます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。 ノルウェー向け Commerce の設定方法の詳細については、[ノルウェー向け Commerce の設定](./emea-nor-cash-registers.md#setting-up-commerce-for-norway)を参照してください。
+> [!IMPORTANT]
+> この記事で説明されている手順を実装する必要があります (Microsoft Dynamics 365 Commerce バージョン 10.0.29 以降を使用している場合)。 Commerce version 10.0.28 以前では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retail ソフトウェア開発キット (SDK) の以前のバージョンを使用する必要があります。 詳細は、[ノルウェー向けキャッシュ レジスター展開ガイドライン (レガシ)](./emea-nor-loc-deployment-guidelines.md)を参照してください。 Commerce Version バージョン 10.0.28 以前を使用している場合で、Commerce バージョン10.0.29 以降に移行する場合は、[ノルウェー向けレガシ Commerce 機能から移行する](./emea-nor-fi-migration.md) の手順に従う必要があります。
 
-> [!WARNING]
-> [新たに独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、このローカライズ機能は使用できません。 Microsoft Dynamics Lifecycle Services (LCS) の開発者用仮想マシン (VM) 上で、前バージョンの Retail ソフトウェア開発キット (SDK) に含まれるノルウェー用デジタル署名サンプルのバージョンを使用する必要があります。 詳細は、[ノルウェー向けキャッシュ レジスター展開ガイドライン (レガシ)](./emea-nor-loc-deployment-guidelines.md)を参照してください。
->
-> 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+この記事では、ノルウェーの Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。 このローカリゼーションは、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、販売時点管理 (POS) での支払取引の登録、販売取引のデジタル署名、ローカルの形式で X および Z レポートの印刷を行える等のアクションを実行できるようにする、いくつかのコンポーネント拡張機能から構成されています。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。 ノルウェー向け Commerce の設定方法の詳細については、[ノルウェー向け Commerce の設定](./emea-nor-cash-registers.md#setting-up-commerce-for-norway)を参照してください。
 
 ## <a name="set-up-fiscal-registration-for-norway"></a>ノルウェー向け会計登録の設定
 
-ノルウェーの会計登録サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\SequentialSignatureNorway** フォルダにあります (例: [release/9.34 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)) このサンプルは、Commerce Runtime (CRT) の拡張機能である 会計ドキュメント プロバイダーと会計コネクタで[構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+ノルウェーの会計登録サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいており、Commerce SDK の一部となっています。 このサンプルは、[Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\SequentialSignatureNorway** フォルダーにあります。 この [サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) は、Commerce Runtime (CRT) の拡張機能である 会計ドキュメント プロバイダーと会計コネクタから構成されています。 Commerce SDK の使用方法の詳細については、[Commerce SDK サンプルと GitHub と NuGet からのリファレンス パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) と [独立パッケージSDK のパイプラインを設定する](../dev-itpro/build-pipeline.md) をご覧ください。
 
 [Commerce チャンネルの会計統合を設定する](./setting-up-fiscal-integration-for-retail-channel.md)で説明されている会計登録の設定手順を実行します:
 
@@ -45,10 +43,10 @@ ms.locfileid: "9281020"
 1. Commerce SDK から会計ドキュメント プロバイダーと会計コネクタのコンフィギュレーション ファイルをダウンロードします。
 
     1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) レポジトリ を開きます。
-    1. 使用可能な最後のリリース ブランチを開きます (例:**[リリース/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)** )。
+    1. 使用可能な最後のリリース分岐を開きます。
     1. **src \> FiscalIntegration \> SequentialSignatureNorway \> CommerceRuntime** を開きます。
-    1. 会計ドキュメント プロバイダ構成ファイルを **DocumentProvider.SequentialSignNorway \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml** (例: [release/9.34 のファイルなど](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignNorway/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml)など) でダウンロードします。
-    1. 会計コネクター構成ファイルを  **Connector.SequentialSignNorway \> Configuration \> ConnectorSequentialSignatureNorwaySample.xml** (例: [release/9.34 のファイル](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignNorway/Configuration/ConnectorSequentialSignatureNorwaySample.xml)) でダウンロードします。
+    1. 会計ドキュメント プロバイダー構成ファイルを、**DocumentProvider.SequentialSignNorway \> 構成 \> DocumentProviderSequentialSignatureNorwaySample.xml** でダウンロードします。
+    1. 会計コネクター構成ファイルを **Connector.SequentialSignNorway \> 構成 \> ConnectorSequentialSignatureNorwaySample.xml** でダウンロードします。
 
 1. **Retail と Commerce \> 本社の設定 \> パラメーター \> Shared パラメーター** の順にクリックします。 **一般** タブで、**会計統合の有効化** オプションを **はい** に設定します。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計コネクタ** に移動し、先ほどダウンロードした会計コネクタ コンフィギュレーション ファイルを読み込みます。
@@ -99,11 +97,11 @@ Key Vault を操作する方法の詳細については、[Azure Key Vault の�
 
 ### <a name="configure-channel-components"></a>チャネル コンポーネントの構成
 
-### <a name="development-environment"></a>開発環境
+#### <a name="development-environment"></a>開発環境
 
 サンプルをテストして拡張できるように開発環境を設定するには、次の手順に従います。
 
-1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリをクローンまたはダウンロードします。 SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。 詳細については、[GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください。
+1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリをクローンまたはダウンロードします。 SDK/アプリケーションのバージョンに応じた適切なリリース ブランチ バージョンを選択します。 詳細については、[GitHub と NuGet から Commerce SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) を参照してください。
 1. **Dynamics365Commerce.Solutions\\FiscalIntegration\\SequentialSignatureNorway** 配下で **SequentialSignatureNorway.sln** を開き、ビルドします。
 1. CRT 拡張機能をインストールします:
 
@@ -126,7 +124,7 @@ Key Vault を操作する方法の詳細については、[Azure Key Vault の�
             ModernPOS.SequentialSignNorway.Installer.exe install --verbosity 0
             ```
 
-### <a name="production-environment"></a>運用環境
+#### <a name="production-environment"></a>運用環境
 
 [会計統合サンプルのビルド パイプラインを設定する](fiscal-integration-sample-build-pipeline.md) の手順に従って、会計統合サンプルの Cloud Scale Unit とセルフサービスの展開可能なパッケージを生成し、リリースします。 **SequentialSignatureNorway build-pipeline.yaml** テンプレートの YAML ファイルは、[Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリの **パイプライン\\YAML_Files** フォルダにあります。
 

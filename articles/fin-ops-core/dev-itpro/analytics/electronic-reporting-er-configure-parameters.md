@@ -1,26 +1,26 @@
 ---
 title: 電子申告 (ER) フレームワークの構成
 description: この記事では、電子レポート (ER) フレームワークのパラメーターを構成する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 27621
-ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6f887c14d2331a45c266223df21195db605421aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 27621
+ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
+ms.openlocfilehash: 933581d9d24d91e3833faa7bca87f0461bb0c5c1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897173"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284226"
 ---
 # <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 

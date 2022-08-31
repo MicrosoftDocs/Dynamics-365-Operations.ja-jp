@@ -1,23 +1,23 @@
 ---
 title: Visual Studio の財務と運用のプロジェクト タイプ
 description: 財務と運用プロジェクト タイプは、開発ツールの一部です。
-author: RobinARH
+author: gianugo
 ms.date: 09/12/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 31781
-ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd30c339369e345154a723f26037af306d20c81a
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 31781
+ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
+ms.openlocfilehash: 2229e46c2b83fb6e2af15b77065bbf1a3613d585
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103902"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271035"
 ---
 # <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の財務と運用のプロジェクト タイプ
 

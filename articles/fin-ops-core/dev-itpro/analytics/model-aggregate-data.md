@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom:
-- "10234"
+ms.custom: 10234
 ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
-ms.openlocfilehash: d4855c2c3b5d7e329c0e4bd25e2ef4ab204ee21c
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 685e1e2ed677bbf9ab9eb59fe49d255e825cc517
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206260"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284132"
 ---
 # <a name="model-aggregate-data"></a>データの集計モデル
 

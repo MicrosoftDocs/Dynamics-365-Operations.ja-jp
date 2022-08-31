@@ -1,21 +1,21 @@
 ---
 title: SysSetupConfigAttribute 属性
 description: この記事では、SysSetup インターフェイスを実装するクラスで SysSetupConfigAttribute 属性を使用する方法について説明します。
-author: tonyafehr
+author: josaw1
 ms.date: 06/03/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: najaidee
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 75bf70e810c9323c5edfc010d6a9c9b372a9307d
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: a39318f3222ab40007121d6d39cfc41307df4fd2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103298"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271027"
 ---
 # <a name="syssetupconfigattribute-attribute"></a>SysSetupConfigAttribute 属性
 

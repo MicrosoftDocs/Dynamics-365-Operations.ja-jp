@@ -5,21 +5,21 @@ author: sericks007
 ms.date: 03/14/2018
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: josaw
-ms.custom: ''
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: ae8b2f8a40aa2c91ad32f03b0076ef9db7183d84
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: ''
+ms.service: ''
+ms.openlocfilehash: e19683676e0f0d54855f3376a62c9cac2241ef9b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123924"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292320"
 ---
 # <a name="whats-new-or-changed-in-on-premises-deployments-of-dynamics-365-finance-and-operations-enterprise-edition-72-with-platform-update-12-march-2018"></a>Dynamics 365 財務と運用、Enterprise edition 7.2 およびプラットフォーム更新プログラム 12 (2018 年 3 月) のオンプレミスの展開での新機能および変更された機能
 

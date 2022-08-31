@@ -2,7 +2,7 @@
 title: アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 description: このチュートリアルでは、アップグレードされた Microsoft Dynamics AX 2012 R3 キューブ スキーマを、財務と運用アプリケーションのエンティティ格納に移行します。
 author: MilindaV2
-ms.date: 06/20/2017
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c24c970f860880a13f3fd8eb01ed9076a4db0c42
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 95b733f0eb7dc0a47ea18055b42efcff209644f4
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124314"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219552"
 ---
 # <a name="migrate-upgraded-ax-2012-r3-sales-cubes-to-the-entity-store"></a>アップグレードした AX 2012 R3 販売キューブのエンティティ格納への移行
 
@@ -56,7 +56,7 @@ ms.locfileid: "9124314"
 4.  **SalesCubeCopy** という名前の集計の測定がプロジェクトに追加されます。
 5.  この測定値の名前を変更します。 ソリューション エクスプローラーで、**SalesCubeCopy** を選択します。 右クリックし、**名前の変更** を選択します。 **SalesCubeV2** という新しい名前を入力します。
 6.  Aggregate measurement designer を起動するには、**SalesCubeV2** をダブルクリックします。 Dynamics AX 2012 から移行された集計の測定の構造体を確認します。
-7.  Dynamics AX 2012 の Sales キューブは、販売に関連する広範な分野を包含していました。 この場合、アップグレードしたメタデータを使用してより小規模で焦点を絞った Power BI モデルを作成しましょう。 **販売注文明細行** のメジャー グループを展開し、メジャー リストおよび分析コードの参照を確認します。
+7.  Dynamics AX 2012 の営業キューブは、販売に関連する広範な分野を包含していました。 この場合、アップグレードしたメタデータを使用してより小規模で焦点を絞った Power BI モデルを作成しましょう。 **販売注文明細行** のメジャー グループを展開し、メジャー リストおよび分析コードの参照を確認します。
 
     > [!NOTE]
     > モデリング機能を活用することで、このモデルをすばやく機能拡張することができます。 改善の提案:
@@ -77,7 +77,7 @@ ms.locfileid: "9124314"
 管理者は、クライアントを使用して集計測定の更新をコンフィギュレーションできます。
 
 1.  Dynamics AX クライアントを起動して、**システム管理** &gt; **設定** &gt; **エンティティ格納** に移動します。 **エンティティ格納** フォームには、エンティティ格納に配置するために使用できる集計測定の一覧が表示されます。
-2.  **売上キューブ** (Dynamics AX 2012 からアップグレードされた) がエンティティ格納への配置に使用できないことを確認します。 **SalesCubeV2**、前の手順で作成したものをエンティティ格納に展開できます。
+2.  **営業キューブ** (Dynamics AX 2012 からアップグレードされた) がエンティティ格納への配置に使用できないことを確認します。 **SalesCubeV2**、前の手順で作成したものをエンティティ格納に展開できます。
 3.  リストから **SalesCubeV2** を選択し、**更新** ボタンをクリックします。 **更新** ダイアログ ボックスが表示されます。 **バックグラウンドで実行** タブを展開します。
 4.  **タスクの説明** フィールドにわかりやすい名前を入力します。 必要に応じて、**定期的なアイテム** タブを選択し、1 回限りの更新ではなく定期的なスケジュールを作成できます。 **OK** をクリックします。
 5.  エンティティ ストア内の集計測定値をリフレッシュするためのバッチ ジョブが作成されます。

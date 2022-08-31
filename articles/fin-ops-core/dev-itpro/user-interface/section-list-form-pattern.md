@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29211
-ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e47324246b69fba6144975de5a2ea187065cdee
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 29211
+ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
+ms.openlocfilehash: 0b77954a9a87d53101f195d0f3af773e4a854d5a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114277"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284937"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パターン セクション リストのフォーム パターン
 

@@ -2,7 +2,7 @@
 title: 場所のディレクティブ在庫ピッキング エイジング
 description: この記事では、ピッキング中の先入れ先出し (FIFO) と後入れ先出し (LIFO) の場所ディレクティブ戦略の使用方法について説明します。
 author: Mirzaab
-ms.date: 07/15/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4ed1308ea36b731b156b518182846b60a59528d5
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219475"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335618"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 
@@ -34,7 +34,7 @@ FIFO と LIFO 戦略を使用して、在庫が倉庫に入った日付に基づ
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能を順にオンにします:
 
-1. *倉庫の場所の状態* (バージョン 10.0.29 では、この機能は既定で有効に設定されています。 詳細については、[倉庫の場所の状態](warehouse-location-status.md) を参照してください。)
+1. *倉庫の場所の状態* (バージョン 10.0.29 では、この機能は必須でオフにすることはできません。 詳細については、[倉庫の場所の状態](warehouse-location-status.md) を参照してください。)
 1. *場所のディレクティブ在庫ピッキング エイジング*
 
 ## <a name="feature-requirements"></a>機能要件

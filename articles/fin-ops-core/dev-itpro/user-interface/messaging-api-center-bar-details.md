@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 64153
-ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdbcecb5b46bda6c6963f571e62d60b6fff27008
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 64153
+ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
+ms.openlocfilehash: f2ca71e12512de2ec088812ae926ce6083ac1747
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114295"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291728"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 

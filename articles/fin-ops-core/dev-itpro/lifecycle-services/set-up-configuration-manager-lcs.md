@@ -1,29 +1,30 @@
 ---
 title: 構成マネージャーの設定
 description: この記事では、構成マネージャーの設定方法に関する情報について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 62673
-ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b70871fe0b0dfa63e4faf1c52e8f1ab8adafe8cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 62673
+ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
+ms.openlocfilehash: 89b9ede500c9b8519a81f86058b49d9f2d9c995c
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866365"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305160"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 > [!IMPORTANT]
 > この機能は、運用上の用途ではサポートされて **いません**。  構成マネージャー (ベータ) は、環境内のデータのインポート/エクスポート フレームワークからのエンティティに依存します。 これらのエンティティには現在 AX 2012 R3 のすべての機能が含まれていないため、一部の構成データは環境間でコピーされません。

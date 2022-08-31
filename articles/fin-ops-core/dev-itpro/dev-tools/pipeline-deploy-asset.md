@@ -1,22 +1,22 @@
 ---
 title: Azure Pipelines を使用した資産のデプロイ
 description: この記事では、Azure DevOps のパイプラインを使用して、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリから資産を配置する方法について説明します。
-author: jorisdg
-ms.date: 07/21/2022
+author: gianugo
+ms.date: 04/29/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 027e2a4bb55b827eb78b9e6380d860b9285f4732
-ms.sourcegitcommit: 9cfccb5c260ce56a3457f9ea12e80f54ea55a3b4
+ms.custom: ''
+ms.openlocfilehash: 05a8c116206b321c782b039932d889568020e054
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "9183346"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271063"
 ---
 # <a name="deploy-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のデプロイ
 
@@ -40,7 +40,7 @@ Microsoft Azure DevOps の **Dynamics Lifecycle Services (LCS) 資産の配置**
 **Dynamics 365 Finance and Operations Tools** 拡張のバージョン 0.2.1239020 から、オンプレミスのローカル ビジネス データ環境にパッケージを展開することが可能になりました。 少なくとも **Dynamics Lifecycle Services (LCS) アセット配置** タスクのバージョン 3.\* を使用する必要があります。 その後、**資産のタイプ** フィールドで **オンプレミス環境のソフトウェア配置可能パッケージ** を選択できます。
 
 > [!NOTE]
-> クラウド環境と同様に、このタスクを使用して運用環境に配置することはできません。
+> パイプラインの実行全体には 1 時間以上かかるので、Microsoft がホストしている無料のエージェントはタイムアウトになりますので使用すべきではありません。
 
 ## <a name="dynamics-365-commerce-cloud-scale-unit-csu-extension-and-e-commerce-package-deployment"></a>Dynamics 365 Commerce Cloud Scale Unit (CSU) 拡張機能および eコマース パッケージの展開
 

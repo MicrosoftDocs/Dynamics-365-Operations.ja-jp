@@ -1,21 +1,21 @@
 ---
 title: コメント、使用、および印刷ステートメント
 description: この記事では、X++ のステートメントについて説明します。
-author: tonyafehr
+author: josaw1
 ms.date: 08/27/2021
 audience: Developer
-ms.devlang: xpp
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164ca9585b0767e1bc37c526c8852f256970818c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.devlang: xpp
+ms.openlocfilehash: 31ec127057ced34fc2c855f4c1aaf525827a2b0e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867129"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271275"
 ---
 # <a name="comments-using-and-print-statements"></a>コメント、使用、および印刷ステートメント
 

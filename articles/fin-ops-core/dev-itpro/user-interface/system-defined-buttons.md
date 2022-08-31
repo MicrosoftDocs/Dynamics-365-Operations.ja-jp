@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 28271
-ms.assetid: 23b4dade-cb99-4c61-bd1e-cf2aeafddea4
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5acdcf7825dc57f7f7dd749c732aa6a56bd94955
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 28271
+ms.assetid: 23b4dade-cb99-4c61-bd1e-cf2aeafddea4
+ms.openlocfilehash: a85d0d3548e6d4d06603df393d741720d1fd1274
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848718"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272996"
 ---
 # <a name="system-defined-buttons"></a>システム定義ボタン
 

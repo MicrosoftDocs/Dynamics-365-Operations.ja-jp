@@ -6,22 +6,22 @@ ms.date: 03/22/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 266544
-ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: eaaba1ca5d04096495578df3e1145c715b71f8a8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 266544
+ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
+ms.search.industry: Retail
+ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
+ms.openlocfilehash: 7e5e92a51f9f58a45cb3e4c3a0d0ca7b8c79923d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892284"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287724"
 ---
 # <a name="peripheral-simulator-for-commerce"></a>コマースの周辺機器シミュレーター
 

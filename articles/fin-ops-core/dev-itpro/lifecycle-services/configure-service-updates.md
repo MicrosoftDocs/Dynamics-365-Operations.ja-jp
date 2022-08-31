@@ -2,7 +2,7 @@
 title: Lifecycle Services (LCS) によるサービスの更新の構成
 description: この記事では、環境の最新のサービスを受け取る方法とタイミングを指定する方法について説明します。
 author: angelmarshall
-ms.date: 01/26/2022
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 2d8afe82384aee3b88ee41ffd005073fda259e33
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ffde897e1801c18df17846f6badf97d614533da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866469"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218637"
 ---
 # <a name="configure-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の構成
 
@@ -89,7 +89,7 @@ LCS で **プロジェクト所有者** ロールが割り当てられている�
 
 運用環境を配置していない場合は、追加のサンドボックス環境は自動更新されません。
 
-実稼働更新に関する電子メールが送信される **前** に運用環境が更新された場合、運用環境およびすべての追加のサンドボックス環境は更新 **されません**。 実稼働更新に関する電子メールが送信された **後** に運用環境が更新された場合、運用環境は **キャンセル** されますが、追加のサンドボックス環境は更新されます。
+実稼働更新に関する電子メールが送信される **前** に運用環境が更新された場合、運用環境およびすべての追加のサンドボックス環境は更新 **されません**。 実稼働更新に関するメールが送信された **後** に運用環境が更新された場合、運用環境の更新はキャンセルされる **予定** ですが、追加のサンドボックス環境は更新されます。
 
 運用環境で更新に失敗した場合や、その他のサンドボックス環境で更新に失敗した場合、残りの更新に影響することはありません。 つまり、生産の更新が失敗した場合は、追加のサンドボックス更新が続行されます。 同様に、更新中に追加のサンドボックス環境の 1 つの更新に失敗した場合、他の環境更新は続行されます。
 

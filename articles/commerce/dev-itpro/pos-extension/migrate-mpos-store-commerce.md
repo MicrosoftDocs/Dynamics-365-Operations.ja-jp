@@ -1,7 +1,7 @@
 ---
 title: Modern POS を Store Commerce に移行する
 description: この記事では、Microsoft Dynamics 365 Commerce Modern POS (MPOS) から Microsoft Dynamics 365 Commerce Store Commerce アプリに移行する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/01/2022
 ms.topic: overview
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 05-24-2022
+ms.author: josaw
+ms.search.validFrom: 2022-05-24
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 0c53169a704c3eb0d33ad556837d3dc736b7bc5e
-ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
+ms.openlocfilehash: 15752e6ef025dbc078b326abafdd85e283fec79d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "9168966"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281047"
 ---
 # <a name="migrate-modern-pos-to-store-commerce"></a>Modern POS を Store Commerce に移行する
 

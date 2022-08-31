@@ -1,29 +1,30 @@
 ---
 title: 構成マネージャーを使用して構成をコピーする
 description: 構成マネージャー (ベータ) 機能を使用すると、Microsoft Dynamics AX 2012 R3 の 1 つのインスタンスから他のインスタンスに構成をコピーすることができます。
-author: kfend
+author: sericks007
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 15541
-ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 3ee3d3df48b49378b1eaeae6250abf8bedd95ae0ee33c8eff3140516a3da0748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 15541
+ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb
+ms.openlocfilehash: b050c6b1bec2f4311db204c6204848f3c8fc6f5a
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753010"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305140"
 ---
 # <a name="copy-configurations-by-using-configuration-manager"></a>構成マネージャーを使用して構成をコピーする
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 開始する前に、構成マネージャー (ベータ) を設定する必要があります。 詳細については、 [構成マネージャーの設定](set-up-configuration-manager-lcs.md) を参照してください。
 

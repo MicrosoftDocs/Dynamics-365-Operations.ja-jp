@@ -13,19 +13,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: 2e3fa839b6e0f3cbaea8d2225b5a42ee8a368272
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9227900"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337062"
 ---
 # <a name="benefits-management-overview"></a>福利厚生の管理の概要
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 競争力を維持するには、最高の従業員を獲得し維持するために、充実したメリットを提供する必要があります。 医療や歯科などの標準的な利点に加えて、採用支援、レクリエーション プログラム、および衣料手当などの拡張サービスを提供することもできます。 Microsoft Dynamics 365 Human Resources の給付金の管理には、さまざまな給付金オプションをサポートする柔軟なソリューションが用意されています。 人事管理では、製品を紹介するための使いやすい従業員エクスペリエンスも含まれています。
 

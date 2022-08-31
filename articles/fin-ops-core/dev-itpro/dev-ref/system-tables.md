@@ -1,20 +1,20 @@
 ---
 title: システム テーブル
 description: この記事では、システム テーブルについて説明します。
-author: RobinARH
+author: josaw1
 ms.date: 11/06/2017
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ee0c1fdb3bcfcfd8e1a36e64a9922f98b739fcd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 551a8b88097bcde5b592ba7da1f4e2ec2c00bfb3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867243"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271455"
 ---
 # <a name="system-tables"></a>システム テーブル
 

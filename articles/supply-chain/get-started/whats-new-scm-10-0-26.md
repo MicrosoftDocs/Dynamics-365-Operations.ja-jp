@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219067"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334718"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Management 10.0.26 (2022 年 5 月) の新機能および変更された機能
 
@@ -51,7 +51,6 @@ ms.locfileid: "9219067"
 | 製品情報管理 | 製品属性値のクリーンアップ | この機能により、**製品属性値のクリーンアップ** という定期的なタスクが追加され、製品カテゴリを介して製品に関連付けられなくなった製品属性値レコードがクリーンアップされます。 |
 | 在庫および倉庫管理 | (ロシア) WMS 対応品目を含む発注書に対して GTD を発行する際に不一致を回避する | この機能はロシアのローカライズ専用です。 この機能は、倉庫管理プロセス (WMS) が有効になっている品目を含む輸入発注書に対してロシア関税申告番号 (GTD) を発行するときに発生する不一致を回避します。 GTD 発行プロセスでは、カスタム仕訳帳に含まれる請求書に関連する在庫トランザクションの一部の在庫分析コード値を変更します。その結果、発注書の作業レコードと購買の在庫トランザクション間に不一致が生じます。 この機能が有効な場合、GTD 発行プロセスではそのような不一致を解消する調整作業を生成します。 |
 | 倉庫管理 | GS1 バーコードの拡張パーサー | この機能により、GS1 記号データ用拡張パーサーの使用を有効にします。 新しいパーサーは、GS1 記号を解析するための GS1 一般仕様アルゴリズムを実装し、データの正確性を確認するためのより強力な検証機能を備えています。 詳細については、[GS1 バーコード スキャニング](../warehousing/gs1-barcodes.md) をご覧ください。 |
-| 倉庫管理 | 新しい積荷計画ワークベンチ ページ | 2 つの新しい積荷計画ワークベンチ ページを追加しました: **入庫積荷計画ワークベンチ** と **出庫積荷計画ワークベンチ**。 |
 | 倉庫管理 | 倉庫管理アプリケーション - 空白の GTD | この機能はロシアのローカライズ専用です。 このオプションを使用すると、Warehouse Management モバイル アプリを使用する作業者は、必要に応じて [ロシア関税申告番号] 番号 (GTD) を空白のままにできます。 GTD 追跡用分析コードで空白の値を許可設定している場合、手持ち在庫がある場合に在庫操作の GTD の在庫操作に空白の値を使用できるようになります。 |
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース

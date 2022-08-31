@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 17e336fb059880e54a1cba7c0079e7452925c24d
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 44e7dfdbc980c5df6b9426515365611bc0de45c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220000"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335948"
 ---
 # <a name="zone-threshold-replenishment"></a>ゾーンしきい値の補充
 
@@ -38,7 +38,7 @@ ms.locfileid: "9220000"
 
 ## <a name="turn-on-the-zone-threshold-replenishment-feature"></a>ゾーンしきい値の補充機能を有効にする
 
-*ゾーンしきい値の補充* 機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+*ゾーンしきい値の補充* 機能を使用するには、システムに対して有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *ゾーンしきい値の補充*

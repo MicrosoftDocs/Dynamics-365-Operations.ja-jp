@@ -1,18 +1,18 @@
 ---
 title: ValueMetadata タイプ
 description: 値 メタデータ タイプ
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: f4d128b09f8620487e9d09064555b31b916ab24b
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: cf1421e2e3ab4c96fa5e48fecd3f0379672259a1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811286"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276526"
 ---
 # <a name="valuemetadata-type"></a>ValueMetadata タイプ
 

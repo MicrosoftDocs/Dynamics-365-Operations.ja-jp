@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 10031
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07d4901698a21b0f8027d4449dd9eabb0fd5f780
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 10031
+ms.openlocfilehash: aacb4618d390a423cf52bd6049234553ed0e5d4f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866733"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284550"
 ---
 # <a name="manage-access-to-sensitive-data"></a>機密データへのアクセスを管理
 

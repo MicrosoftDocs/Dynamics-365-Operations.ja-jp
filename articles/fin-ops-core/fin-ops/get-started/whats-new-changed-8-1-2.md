@@ -1,26 +1,26 @@
 ---
 title: Dynamics 365 財務と運用バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 description: この記事では、Dynamics 365 財務と運用バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。
-author: tonyafehr
+author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: b364a31d-52de-45c5-b698-64c5262c592a
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: b58893e474a9e6e20d8947448e029264f5173d6f
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: ''
+ms.assetid: b364a31d-52de-45c5-b698-64c5262c592a
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 80554ff2ea80efef8e6750236b98f4944dca39d5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124884"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285843"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-version-812-december-2018"></a>Dynamics 365 財務と運用バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 

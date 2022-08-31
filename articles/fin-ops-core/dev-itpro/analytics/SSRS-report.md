@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.custom:
-- "203494"
+ms.custom: 203494
 ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
-ms.openlocfilehash: 25ae66744865263a8812141d6a55b131cd6ff07a
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 247f03792ffb9bd3013622ef498fc81956f326bb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206272"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273443"
 ---
 # <a name="sql-server-reporting-services-ssrs-reports-that-are-available"></a>使用可能な SQL Server Reporting Services (SSRS) レポート
 

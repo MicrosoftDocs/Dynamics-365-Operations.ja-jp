@@ -1,25 +1,25 @@
 ---
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能および変更された機能
 description: この記事では、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 21 の新機能または変更された機能について説明します。 このバージョンは 2018 年 11 月にリリースされました。
-author: tonyafehr
+author: sericks007
 ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: a765a61c-52a3-47c5-b579-68b9249c592b
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform 21
-ms.openlocfilehash: a66d8a2242523e429f9d66671e9186d4623e205d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: a765a61c-52a3-47c5-b579-68b9249c592b
+ms.openlocfilehash: a4cf50c0107766c2f68ce71e751fee7c6b1f0100
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908209"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276518"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-21-november-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 21 (2018 年 11 月) の新機能および変更された機能
 

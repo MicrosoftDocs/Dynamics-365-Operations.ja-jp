@@ -1,21 +1,21 @@
 ---
 title: 財務と運用の更新とカスタム コード ライフサイクルの管理
 description: この記事では、財務と運用の更新とカスタム コードのライフサイクルを管理する方法について説明します。
-author: rbadawy
+author: josaw1
 ms.date: 11/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: robadawy
+ms.author: josaw
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 1ee3ac972c9042d220bfd4175e242712ae22b199
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 3ed1356d56e5ec3c5deec94e4d77a368172928b9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124276"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268649"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>財務と運用の更新とカスタム コード ライフサイクルの管理
 

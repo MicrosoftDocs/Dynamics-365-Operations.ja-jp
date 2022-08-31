@@ -1,25 +1,25 @@
 ---
 title: パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 description: この記事では、Microsoft Visual Studio、パフォーマンス SDK、およびタスク レコーダー パフォーマンス テスト スクリプトを使用してシングルユーザー テストを行う方法について説明します。
-author: hasaid
+author: josaw1
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 9954
-ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jujoh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: df7cd2261b11796280c46d2fa2efdef703692ba5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 9954
+ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
+ms.openlocfilehash: 40828ce6b4fbea235b1606de5d7d1a159b91c80c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854616"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278397"
 ---
 # <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 

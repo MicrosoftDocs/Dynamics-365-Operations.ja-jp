@@ -1,18 +1,18 @@
 ---
 title: PageTarget タイプ
 description: PageTarget タイプ
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 378b4b24f9dc8774e235c1882b3df2057f7b1a92
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: e7086e5485b434438151fd6f2298719a7ea123c1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811266"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287912"
 ---
 # <a name="pagetarget-type"></a>PageTarget タイプ
 

@@ -11,14 +11,14 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8 for Finance and Operations
+ms.dyn365.ops.version: Platform update 8 for finance and operations
 ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
-ms.openlocfilehash: c9bda7a8c47fd1ace8c92f2af3f4dba74d899b20
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 14356f592a43644631fbfd29fa2b57334e55e742
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206400"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291440"
 ---
 # <a name="add-financial-dimensions-to-aggregate-measurements"></a>集計の測定への財務分析コードの追加
 

@@ -1,25 +1,25 @@
 ---
 title: デモ環境の配置
 description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。
-author: sarvanisathish
+author: laneswenka
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: 141093
-ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: laswenka
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: fdd02d2b8ce5a8228a0aa50234092c3d04610d28
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 141093
+ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
+ms.openlocfilehash: d6b8e63fe3fc33df44f74628226a5c57f34b7454
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103542"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271487"
 ---
 # <a name="deploy-a-demo-environment"></a>デモ環境の配置
 

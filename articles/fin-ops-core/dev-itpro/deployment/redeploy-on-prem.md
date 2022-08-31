@@ -1,26 +1,26 @@
 ---
 title: オンプレミス環境の再配置
 description: この記事では、オンプレミス環境の再展開について説明します。
-author: PeterRFriis
+author: faix
 ms.date: 10/14/2020
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 5c9ada6479a86268cdfa758f03f2de6e699e74a3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.service: ''
+ms.openlocfilehash: eae67ab9706009748ab93f28ccfde200253d8ff7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867349"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271447"
 ---
 # <a name="redeploy-on-premises-environments"></a>オンプレミス環境の再配置
 

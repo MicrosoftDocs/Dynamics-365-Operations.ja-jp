@@ -2,25 +2,29 @@
 title: チェコ共和国向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 description: この記事では、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) から、チェコ共和国向け会計統合サンプルを展開するためのガイドラインを提供します。
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: d689e5b48fb8274a58d0c3a18e70b598aca2c310
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8338b1e11e1bd4fe7482b914ac6bf5f60ebc2e36
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287541"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313832"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>チェコ共和国向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) に Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) から、チェコ共和国向け会計登録サービス統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[チェコ共和国向け会計登録サービス統合サンプル](emea-cze-fi-sample.md) を参照してください。 
+> [!IMPORTANT]
+> この記事のガイドラインに 従う必要があるのは、Microsoft Dynamics 365 Commerce バージョン10.0.28以前を使用している場合のみです。 Commerce バージョン 10.0.29 では、チェコ共和国の会計登録サービス統合サンプルは、Commerce ソフトウエア開発キット (SDK) で提供されています。 詳細については、[チャネル コンポーネントの構成](./emea-cze-fi-sample.md#configure-channel-components) を参照してください。
+
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) に Dynamics 365 Commerce Retail SDK から、チェコ共和国向け会計登録サービス統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[チェコ共和国向け会計登録サービス統合サンプル](emea-cze-fi-sample.md) を参照してください。 
 
 チェコ共和国向け会計統合サンプルは Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 このサンプルは、Commerce runtime (CRT) とハードウェア ステーションの拡張機能で構成されます。 このサンプルを実行する際は、CRT とハードウェア ステーション プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 

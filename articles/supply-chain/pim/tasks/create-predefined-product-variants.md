@@ -2,7 +2,7 @@
 title: 事前定義された製品バリアントの作成
 description: この手順では、製品分析コードの組み合わせを使用する製品マスターの製品バリアントの作成を説明します。
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6d3a4ae8efd438e01c263af1c0a1746d9484e491
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a26439b8c7346cdce2b4c9804493fea94c29ac31
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103101"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335918"
 ---
 # <a name="predefined-product-variants"></a>事前定義された製品バリアント
 
@@ -86,7 +86,7 @@ ms.locfileid: "8103101"
 
 ### <a name="turn-the-variant-suggestions-page-improvements-feature-on-or-off"></a>バリアントの候補ページの強化機能のオン/オフ
 
-Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *バリエーション提案ページの改善* 機能を検索して、この機能のオン/オフを切り替えることができます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *バリアントの提案ページの改善* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ### <a name="work-with-the-improved-variant-suggestions"></a>改善されたバリアント提案に関する作業
 

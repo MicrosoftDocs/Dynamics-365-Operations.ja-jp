@@ -1,20 +1,20 @@
 ---
 title: 会計統合サンプル用のビルド パイプラインの設定
 description: この記事では、サンプル コードに対して Cloud Scale Unit およびセルフサービスの配置可能パッケージを生成およびリリースできるよう、Microsoft Dynamics 365 Commerce の Retail ソフトウェア開発キット (SDK) からの会計統合サンプルのビルド パイプラインとリリース パイプラインを設定する方法について説明します。
-author: Sergio1C
+author: josaw1
 ms.date: 12/21/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: global
-ms.author: v-seskry
+ms.author: josaw
 ms.search.validFrom: ''
-ms.openlocfilehash: 61386fa8eb93d5092653d174b131e190dc6a19d8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19f888c556483970d4929d098a64430e3d7ee392
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884830"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286484"
 ---
 # <a name="set-up-a-build-pipeline-for-a-fiscal-integration-sample"></a>会計統合サンプル用のビルド パイプラインの設定
 

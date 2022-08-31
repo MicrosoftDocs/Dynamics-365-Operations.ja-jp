@@ -1,25 +1,25 @@
 ---
 title: コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 description: この記事では、デリゲート インスタンスとデリゲート ハンドラ間でコントラクトを定義する手段としてデリゲート メソッドがどのように機能するかについて説明します。
-author: maertenm
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 27001
-ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd32f1ce6c2f40f411a2767717ce0f0ab769b57a
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: 27001
+ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
+ms.openlocfilehash: 0658f1c87a6e33e5bc8ad3b58f198aa045006681
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123672"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323976"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 
@@ -31,7 +31,7 @@ ms.locfileid: "9123672"
 
 財務と運用は、各モデルが個別のパッケージにある、複数のモデルに分割されます。 主要な 3 つのモデルは、アプリケーション プラットフォーム、アプリケーション基盤、アプリケーション スイートです。 モデル分割を使用して、階層が作成されました。ここで上位のモデルは依存関係を持つことができ、下位のモデル内の要素にアクセスできますが、上位のモデルにはアクセスできません。 たとえば、この設定では、アプリケーション スイートはその要素、アプリケーション基盤の要素およびアプリケーション プラットフォームの要素にフル アクセスできます。 アプリケーション基準は、独自の要素とアプリケーション プラットフォームの要素にアクセスできます。 最後に、アプリケーション プラットフォームは独自の要素にのみアクセスできます。 モデルとパッケージについては、 [モデル と パッケージ](../dev-tools/models.md) を参照してください。
 
-[![Del1。](./media/del1.jpg)](./media/del1.jpg) 
+[![モデルとモデル パッケージについての詳細](./media/del1.jpg)](./media/del1.jpg) 
 
 モデルの分割には多くの利点がありますが、上位モデルで定義された要素にアクセスするとき問題が発生します。 上位モデルの要素に下位モデルからアクセスするに、デリゲートが推奨されています。 デリゲートは、デリゲート インスタンスが呼び出されると、互換性のある署名コードを持つハンドラーが実行されるという点で、イベントと非常によく似ています。 これにより、ハンドラーである上位レイヤーコードが、デリゲート インスタンスである下位レイヤーコード (デリゲート インスタンス) によって呼び出されるようになります。
 
@@ -63,19 +63,19 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 デリゲートが必要な多くの場合、以前にオーバーレイされたコードは既に Microsoft によってデリゲート ハンドラーに移動されています。 これらのインスタンスで、Microsoft は利用できるデリゲートを作成し、デリゲート ハンドラーで同様の方法でコードをオーバーレイできます。 このシナリオでは、独立系ソフトウェア ベンダー (ISV) が、LogisticsEntityPostalAddressFormHandler クラスで showSalesTax() メソッドをオーバーレイした Dynamics AX 2012 R3 からコードを移行しています。 移行後に、CodeUpgrade プロジェクトは、*Your Solution*、*Microsoft AX 2012*、*Microsoft AX* セクションを使用する LogisticsEntityPostalAddressFormHandler が含まれ、showSalesTax() メソッドを解決します。 コメントされた Your Solution セクションには、売上税の表示を承認するための追加のテーブルを追加することによって、showSalesTax() メソッドがオーバーレイされたことが示されています。 このオーバーレイは、赤で丸で囲まれた &lt;isv&gt; タグの間に表示されます。 
 
-[![4.](./media/41.png)](./media/41.png)
+[![オーバーレイが表示されます。](./media/41.png)](./media/41.png)
 
 このオーバーレイを Dynamics AX 2012 のコードと比較するとき、これは単純な変更です。 オーバーレイによって、switch ステートメントに追加のテーブルが追加されました。 
 
-[![5.](./media/51.png)](./media/51.png) 
+[![オーバーレイによって、switch ステートメントに追加のテーブルが追加されました。](./media/51.png)](./media/51.png) 
 
 ただし、財務と運用のセクションでは、Dynamics AX 2012 コード スニペットのいずれかと同じようには表示されません。 
 
-[![6.](./media/61.png)](./media/61.png) 
+[![財務と運用では、AX Dynamics 2012 コード スニペットのいずれかと同じようには表示されません。](./media/61.png)](./media/61.png) 
 
 詳細な点検を行う際、コードはデリゲート メソッド showSalesTax\_delegate() を呼び出します。 
 
-[![this.showSalesTax\_delegate(this.getCallerRecord().TableId, result);.](./media/showsalestax_delegate.png)](./media/showsalestax_delegate.png) 
+[![詳細な点検を行う際、コードはデリゲート メソッド showSalesTax\_delegate() を呼び出します。](./media/showsalestax_delegate.png)](./media/showsalestax_delegate.png) 
 
 デリゲートの使用は、コードが別の場所に移動されたことを意味します。 showSalesTax\_delegate() は、アプリケーション基準で宣言され、Application Suite で処理されました。 移動されたコードを表示するには、デリゲート ハンドラを探します。 **デリゲートとハンドラーの検索** セクションには、デリゲートとハンドラーを検索するメソッドがあります。 アプリケーション スイートでデリゲート ハンドラー メソッドを検索した後、showSalesTax() メソッドからから移動されたコードを参照します。 Dynamics AX 2012 で適用されているオーバーレイされた同じ変更を、デリゲート ハンドラーに適用できます。 
 
@@ -89,7 +89,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 
 このシナリオでは、アプリケーション スイートで作成された割引を考慮するために、アプリケーション基準に存在する既存の税計算方法を変更します。 Foundation レイヤーの次のクラスは、総額に基づいて税金を計算します。 
 
-![SimpleTax クラス。](media/simple-tax.png)
+![Foundation レイヤーの次のクラスは、総額に基づいて税金を計算します。 ](media/simple-tax.png)
 
 アプリケーション スイートでは、現在の割引を含む ProductDiscount クラスを追加することで割引の概念を導入しました。 
 
@@ -121,7 +121,7 @@ SubscribesTo キーワードを使用して、applyDiscountDelegateHandler メ�
 
 ##### <a name="simpletax-class-in-the-application-foundation-layer"></a>Application Foundation Layer の SimpleTax クラス
 
-![SimpleTax クラス。](media/simple-tax-full-code.png)
+![Application Foundation Layer の SimpleTax クラス](media/simple-tax-full-code.png)
 
 ##### <a name="productdiscount-class-in-the-application-suite-layer"></a>アプリケーション スイート レイヤーの ProductDiscount クラス
 

@@ -1,25 +1,25 @@
 ---
 title: 小売チャネル拡張機能を最新の Retail SDK にアップグレード
 description: この記事では、コマース チャネル拡張機能を以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 11/21/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 68673
-ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: e585447aa99ca3f1317a09ceadafd2dcca17ac8f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 68673
+ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.openlocfilehash: 663f29396d8b82f034ff6a39a48c20862e42be1d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885461"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281082"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>小売チャネル拡張機能を最新の Retail SDK にアップグレード
 

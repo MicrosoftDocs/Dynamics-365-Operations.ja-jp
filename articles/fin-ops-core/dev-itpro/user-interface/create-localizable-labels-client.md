@@ -1,25 +1,25 @@
 ---
 title: ローカライズ可能なラベルの作成
 description: この記事では、クライアント コンポーネントと HTML/JavaScript コントロールのローカライズ可能なラベルを作成する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 18531
-ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca6439be1421d30f33e4111493ef486e75a64ba6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 18531
+ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
+ms.openlocfilehash: b0bd1472e23c9bda65916a841e815b7d2d1fc396
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782699"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287114"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 

@@ -13,18 +13,18 @@ ms.author: filatovm
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: EROperationDesigner
-ms.openlocfilehash: fa66edef7e39c72d4859a21a1474096f7bc1c1dd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a2ea132b51f2f451fbe81a9c7869bea84bf4017a
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9278799"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324022"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>生成されたファイルの BOM 文字を非表示にする ER 構成の設計
 
 [!include [banner](../includes/banner.md)]
 
-送信ドキュメントを生成するための [電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) をデザインできます。 ドキュメントをテキスト ファイルまたは XML ファイルとして生成するには、ER 形式 コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) をソリューションに含める必要があります。 生成されたファイル内の文字セットを表す [文字エンコード](/windows/win32/intl/character-sets) を指定するには、ER 形式に **Common\\File** 形式要素を含む必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで ER 構成の [下書き](general-electronic-reporting.md#component-versioning) バージョンを開き、**Common\\File** 要素を追加します。 **エンコード** フィールドで、このコンポーネントを使用して実行時に生成される送信ファイルのエンコードを指定します。
+送信ドキュメントを生成するための [電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) をデザインできます。 ドキュメントをテキスト ファイルまたは XML ファイルとして生成するには、ER 形式 コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) をソリューションに含める必要があります。 生成されたファイル内の文字セットを表す [文字エンコード](/windows/win32/intl/character-sets) を指定するには、ER 形式に **Common\\File** 形式要素を含む必要があります。 ER 形式コンポーネントを構成するには、ER 形式デザイナーで ER 構成の 下書き バージョンを開き、**共通\\ファイル** 要素を追加します。 **エンコード** フィールドで、このコンポーネントを使用して実行時に生成される送信ファイルのエンコードを指定します。
 
 > [!NOTE]
 > 形式に誤ったエンコード名が含まれている場合、形式の設定に対する変更を保存すると、エラーがスローされます。

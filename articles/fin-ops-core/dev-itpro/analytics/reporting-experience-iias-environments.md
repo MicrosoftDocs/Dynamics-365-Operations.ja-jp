@@ -12,16 +12,15 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.custom:
-- "27661"
+ms.custom: 27661
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: fb2042bdd1ecf59e8c77f7df28986a89c2373437
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: d8c9fa349adf49836018ed3e57ec796a5c4c4613
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205578"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274749"
 ---
 # <a name="document-reporting-service-in-dynamics-365-applications"></a>Dynamics 365 アプリケーションのドキュメント レポート サービス
 

@@ -1,24 +1,24 @@
 ---
 title: 生成されるドキュメントに対するカスタム送信先の実装
 description: この記事では、電子申告 (ER) 形式で生成されたドキュメントを格納する ER 送信先リストを拡張する方法について説明します。
-author: NickSelin
+author: kfend
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable, ERParameters
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: da3e09c15c336301ec3b17b313afc9e96bf4cd1a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERFormatDestinationTable, ERParameters
+ms.openlocfilehash: 728b22f784e13f265bb9c66e6e0fae2a3d660d53
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864763"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291372"
 ---
 # <a name="implement-a-custom-destination-for-generated-documents"></a>生成されるドキュメントに対するカスタム 送信先の実装
 

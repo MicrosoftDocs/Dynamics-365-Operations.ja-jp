@@ -1,7 +1,7 @@
 ---
 title: Retail を購入する前に
 description: Dynamics 365 Commerce を体験するのは初めてですか。 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つガイダンスを作成しました。
-author: jblucher
+author: josaw1
 ms.date: 09/28/2017
 ms.topic: article
 ms.prod: ''
@@ -9,16 +9,16 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 2f5a3ab7ef94b0d8efeae475f421c7e1aaa9d782
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: retail
+ms.openlocfilehash: 9a09883bca06923e13380626b93d323e682f1a72
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898560"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292779"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 

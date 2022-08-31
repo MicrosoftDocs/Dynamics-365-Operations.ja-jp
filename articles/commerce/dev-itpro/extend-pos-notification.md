@@ -1,25 +1,25 @@
 ---
 title: POS でカスタム通知を表示する
 description: この記事では、販売時点管理 (POS) でカスタマイズした通知を追加する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 28021
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d24f896ad9357d46b6abde64282b0b17dd7ca954
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: 28021
+ms.assetid: ''
+ms.openlocfilehash: fe41354df56893ab9943f4f5d28ff85bfd8b3794
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069622"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282187"
 ---
 # <a name="show-custom-notifications-in-the-pos"></a>POS でカスタム通知を表示する
 
@@ -73,11 +73,11 @@ Retail ソフトウェア開発キット (SDK) には、通知サービス (**Re
 
 ## <a name="properties-of-the-notification-detail-entity"></a>通知の詳細エンティティのプロパティ
 
-通知の詳細エンティティには、次のプロパティがあります。
+通知の詳細エンティティには、次のプロパティがあります。 一部のプロパティは、Retail Essentials ボタン グリッド デザイナーと Commerce Headquarters で構成できます。
 
-| プロパティ               | データ型      | 説明                                                                            |
+| プロパティ               | データ型      | Description                                                                            |
 |------------------------|----------------|----------------------------------------------------------------------------------------|
-| ActionProperty         | 文字列         | POS 操作に送信するカスタム プロパティ。                                        |
+| ActionProperty         | 文字列         | POS 操作に送信するカスタム プロパティ。 (このプロパティは、ボタン グリッド デザイナーの **操作パラメータ** フィールドを使用して構成できます。)         |
 | DisplayText            | 文字列         | 通知の表示テキスト。                                                  |
 | IsLiveContentOnly      | ブール           | 通知がライブ コンテンツのみを対象とするかどうかを示す値。              |
 | IsNew                  | ブール           | 通知が新しいかどうかを示す値。                                |
@@ -95,11 +95,11 @@ Retail ソフトウェア開発キット (SDK) には、通知サービス (**Re
 5. 新しいクラスを作成して、**GetNotificationsExtensionServiceRequest** を上書きするか、サンプル テンプレートを使用します。 
 6. **NotificationExtensionService** クラスには、**Process** という名前のメソッドがあります。 このコードは、メソッド内で操作 ID を確認し、操作 ID に基づいて通知の詳細オブジェクトを作成し、通知を追加します。 カスタム操作 ID かどうかを確認し、通知があるかどうかを確認するロジックを記述します。 通知がある場合は、詳細を含む通知オブジェクトを作成し、応答と共に返します。 その後、POS が応答を解析し、通知を表示します。 テンプレートに基づくコード例を次に示します。
 
-    > [!NOTE]
-    > プロセス メソッド内のサンプル実装を削除します。 カスタム ロジックのみを保持します。
+> [!NOTE]
+> 通知の詳細エンティティのアクション プロパティが POS 操作要求に送信されます。 このアクション プロパティを使用すると、通知サービス から POS にカスタム情報を渡すことができます。 **ActionProperty** は、ボタン グリッド デザイナーの **操作パラメータ** フィールドを使用して構成できます。**ActionProperty** 値は、ボタン グリッド デザイナーでの **操作** パラメーターの入力と等しくなります。
 
-    ```csharp
-    namespace Contoso
+```csharp
+   namespace Contoso
     {
         namespace Commerce.Runtime.NotificationSample
         {
@@ -138,6 +138,7 @@ Retail ソフトウェア開発キット (SDK) には、通知サービス (**Re
                         IsSuccess = true,
                         // If you would like POS to navigate to a specific action property for the given operation
                         // when the notification tile is selected, define the action property as well.
+                        // This property can be configured using the Operation parameter field of the button grid designer and passed to the CRT code.
                         ActionProperty = "1"
                         };
                     details.Add(detail);
@@ -148,16 +149,13 @@ Retail ソフトウェア開発キット (SDK) には、通知サービス (**Re
             }
         }
     }
-    ```
+```
 
 7. 変更が完了したら、プロジェクトをビルドし、出力ライブラリを **\\RetailServer\\webroot\\bin\\Ext** にドロップします。
 8. **CommerceRuntime.Ext.config** ファイルに出力ライブラリを登録します。
 9. POS で、CRT 拡張機能で使用されているのと同じ操作 ID を使用して、新しい操作を作成します。 この例では、操作 ID は **5000** です。 5000 以上の任意の操作 ID を使用できます。
 10. POS ユーザーが通知タイルを選択すると、POS フレームワークは使用される操作 ID の操作ハンドラーを呼び出します。 ハンドラー内で、POS ユーザーが通知を選択したときに行われる特定の動作について、必要なロジックを追加します。 POS 操作要求、応答、およびハンドラーの作成方法については、 [販売時点管理 (POS) での注文通知の表示](add-POS-operations.md) を参照してください。
-
-    > [!NOTE]
-    > 通知の詳細エンティティのアクション プロパティが POS 操作要求に送信されます。 このアクション プロパティを使用すると、通知サービス から POS にカスタム情報を渡すことができます。
-
+ 
 11. [販売時点管理 (POS) での注文通知の表示](../notifications-pos.md) の指示に従って、通知スケジューラをコンフィギュレーションします。
 
 ## <a name="validate-the-customization"></a>カスタマイズの検証

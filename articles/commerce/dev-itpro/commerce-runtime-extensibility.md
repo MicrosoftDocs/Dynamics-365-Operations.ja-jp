@@ -1,25 +1,25 @@
 ---
 title: Commerce Runtime (CRT) の拡張機能
 description: この記事では、Commerce Runtime (CRT) と Retail Server を拡張するさまざまな方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
-ms.custom: 104593
-ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6651a2f64bd0d67d96c679eb17b8f54ae3030df2
-ms.sourcegitcommit: 19ac134c6d6cb997871b010e25d43ba07bcc140d
+ms.custom: 104593
+ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
+ms.openlocfilehash: 24c035869e36745716770d1df8ed132ddac31b8a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9023346"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276246"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce Runtime (CRT) の拡張機能
 

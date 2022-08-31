@@ -1,23 +1,23 @@
 ---
 title: 個人検索レポートを拡張
 description: この記事では、財務と運用の個人検索レポートを拡張するためのプロセスを説明します。
-author: rschloma
+author: josaw1
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: roschlom
+ms.author: josaw
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc0c985371796d18b2dc2e3e0a6ada5af2853be
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 589c4f444e2e5633993ffb7489dc3c12f2523b7c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066475"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284542"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートを拡張
 

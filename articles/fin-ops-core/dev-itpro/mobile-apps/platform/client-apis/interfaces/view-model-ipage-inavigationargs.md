@@ -1,18 +1,18 @@
 ---
 title: NavigationArgs タイプ
 description: NavigationArgs タイプ
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 4148524bdc3c3262c8771934e06e81120e237b1d
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: a1d1ea4a52109f542b9ee5789979d93d2ed78e3b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811276"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279382"
 ---
 # <a name="navigationargs-type"></a>NavigationArgs タイプ
 

@@ -2,20 +2,20 @@
 title: ヘルプ (ビデオを含む) の拡張、カスタマイズ、および共同作業
 description: この記事では、財務と運用アプリの GitHub リポジトリとマークダウン ファイルを使用するためのヒントと秘訣を示します。
 author: edupont04
+ms.date: 05/11/2020
 ms.topic: article
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.date: 05/11/2020
-ms.author: edupont
-ms.openlocfilehash: f9cbc39344b1302417d6364cafad82c5484e8a41
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c75ae4d1f7410c4bd41c95e59730204dcdc65c86
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066879"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284506"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29191
-ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b509fe7c29cffe31aa551219507493c731d5af3a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 29191
+ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
+ms.openlocfilehash: 2060210220b43217a779bb23187d9ece0cc0d50e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844542"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291732"
 ---
 # <a name="filters-and-toolbar-subpatterns"></a>フィルターおよびツールバーのサブパターン
 

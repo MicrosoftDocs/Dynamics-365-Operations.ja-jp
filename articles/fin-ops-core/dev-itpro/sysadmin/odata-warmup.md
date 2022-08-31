@@ -6,21 +6,21 @@ ms.date: 03/25/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: laswenka
+ms.author: hasaid
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 59589a1b0b45feb88418692f4d89782658ea31c2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: e4c52ccc4d45d939eba6bf3bddc1eebc004956f9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872697"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272538"
 ---
 # <a name="build-odata-metadata-cache-when-the-aos-starts"></a>AOS 起動時に OData メタデータ キャッシュを作成する
 

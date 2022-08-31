@@ -1,18 +1,18 @@
 ---
 title: ControlMetadata タイプ
 description: コントロールのメタデータのインターフェイス。 コントロール メタデータをオーバーライドすると、コントロール&#x27;の外観と動作を変更できます。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: b28f21a4c729fb6d4b1637f8ef66f7584e441935
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 1d751608dad6dc8980240b4b23139b0573964921
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811100"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268633"
 ---
 # <a name="controlmetadata-type"></a>ControlMetadata タイプ
 

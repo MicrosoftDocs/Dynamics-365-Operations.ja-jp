@@ -1,21 +1,21 @@
 ---
 title: Store Commerce アプリ
 description: この記事では、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/10/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-01-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: bac91885e7bc47d098a179b08c63b5352da81b92
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 3ec56e1f8cb12c292aef73170a48de667dcc0b21
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954714"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274368"
 ---
 # <a name="store-commerce-app"></a>Store Commerce アプリ
 
@@ -144,7 +144,7 @@ Store Commerce には CPOS と完全に同等の機能があります。 さら�
 
 ### <a name="prerequisites"></a>必要条件
 
-- Windows 10 のバージョン 17763.0 以降、Windows 11、または Windows Server 2019
+- Windows 10 のバ―ジョン 17763.0 以降、Windows 11 (Pro、Enterprise、LTSC、IOT Enterprise Edition)、または Windows Server 2019 (Standard、Essentials)
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Evergreen スタンドアロン インストーラーを使用します)。
 - SQL Server Express、SQL Server Standard、または SQL Server Enterprise (オフライン モードの場合のみ必須)。 使用する SQL Server エディションの詳細については、[Commerce のオフライン実装およびトラブルシューティング](implementation-considerations-offline.md) を参照してください。
 - Dynamics 365 Commerce (Commerce 本部と Cloud Scale Unit)

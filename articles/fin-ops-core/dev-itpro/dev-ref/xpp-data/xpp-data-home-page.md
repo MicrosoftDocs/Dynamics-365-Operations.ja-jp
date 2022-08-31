@@ -1,21 +1,21 @@
 ---
 title: X++ データの選択と操作の概要
 description: この記事では、X++ データの選択と操作についてのトピックへのリンクを提供します。
-author: tonyafehr
+author: josaw1
 ms.date: 06/16/2020
-audience: Developer
-ms.reviewer: tfehr
-ms.search.region: Global
 ms.topic: overview
-ms.author: tfehr
-ms.dyn365.ops.version: AX 7.0.0
+audience: Developer
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 2799ee68bab529b4ac62075d1f6c007a2caebda1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f185ead7e10143205101be8ab609c586e83a98ba
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867210"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271371"
 ---
 # <a name="x-data-selection-and-manipulation-overview"></a>X++ データの選択と操作の概要
 

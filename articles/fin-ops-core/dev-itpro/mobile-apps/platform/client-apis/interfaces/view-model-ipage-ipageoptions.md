@@ -1,18 +1,18 @@
 ---
 title: PageOptions タイプ
 description: PageOptions タイプ
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 6298aa3a6c87c8596209f4a48bf1504305aea8ce
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 4dfb2c9521c2feb645432140444da10ee38a9536
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811270"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279999"
 ---
 # <a name="pageoptions-type"></a>PageOptions タイプ
 

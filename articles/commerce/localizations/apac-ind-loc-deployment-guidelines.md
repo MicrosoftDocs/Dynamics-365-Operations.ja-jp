@@ -1,7 +1,7 @@
 ---
 title: インドのキャッシュ レジスターの配置ガイドライン
 description: この記事は、Commerce のインド向けローカライズ用配置ガイドです。
-author: AlexChern0v
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
@@ -9,16 +9,16 @@ ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: India
-ms.search.industry: Retail
-ms.author: jiaqia
-ms.search.validFrom: 2018-1-31
+ms.author: josaw
+ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: b50f6890e1d6c452a3a8dab2f52412c32a4c79e7
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.search.industry: Retail
+ms.openlocfilehash: bce907793897a4be3b7d3b26132a55f9d13c64ca
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027076"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276179"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 

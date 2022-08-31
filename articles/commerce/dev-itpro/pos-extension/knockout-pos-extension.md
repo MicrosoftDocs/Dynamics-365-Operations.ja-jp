@@ -1,21 +1,21 @@
 ---
 title: POS 拡張機能で Knockout.js のような外部またはサード パーティー ライブラリを使用する方法
 description: この記事では、販売時点管理 (POS) 拡張機能で Knockout.js のような外部またはサード パーティー ライブラリを使用する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 18450c4db0bf4009c19cb3c1a8c68405076e32f5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5f287273c4dcfe7acba3a58c91fbbd717a0a5c0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892088"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286602"
 ---
 # <a name="consume-external-or-third-party-libraries-like-knockoutjs-in-pos-extensions"></a>POS 拡張機能で Knockout.js のような外部またはサード パーティー ライブラリを使用する
 

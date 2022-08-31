@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 89563
-ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3bd70781acc3a6000b9db1d3ad5fb0ffe20ffb89
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 89563
+ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
+ms.openlocfilehash: c4c49b5a9c08430e4d096e3df0296341ea5d48e7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783032"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270959"
 ---
 # <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 

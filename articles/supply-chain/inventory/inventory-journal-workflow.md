@@ -2,7 +2,7 @@
 title: 在庫仕訳帳の承認ワークフロー
 description: この記事では、さまざまな種類の現物在庫取引の在庫仕訳帳の承認ワークフローを設定して使用する方法について説明します。 在庫仕訳帳のワークフローは、承認済の在庫仕訳帳のみをトランザクションに転記できるようにするのに役立ちます。
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873988"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334658"
 ---
 # <a name="inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフロー
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873988"
 > [!NOTE]
 > 在庫仕訳帳のワークフローは、在庫管理モジュールを使用して記録された取引にのみ適用されます。 倉庫管理モジュールからトリガーされた在庫仕訳帳では動作しません。
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>在庫仕訳帳の承認ワークフロー機能をオンにする
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>在庫仕訳帳の承認ワークフロー機能をオンまたはオフにする
 
-Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
-
-- **モジュール:** *在庫と倉庫管理*
-- **機能名:** *在庫仕訳帳承認ワークフロー*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management のバージョン10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *在庫仕訳帳承認ワークフロー* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフローの作成
 

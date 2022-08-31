@@ -1,25 +1,25 @@
 ---
 title: 国または地域固有の規制機能に関わる通知を送信
 description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用して、ローカライズおよび Translation service を通じて警告を送信する方法について説明します。
-author: JaneA07
+author: kfend
 ms.date: 12/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 27791
-ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 ms.search.region: global
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57a4cd120fcf4cbf514d167bdf53b44eb01163eb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 27791
+ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
+ms.openlocfilehash: 4d8e12d41004a3b0cc3ea0a1ac0de22b2c830977
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866508"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270731"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 

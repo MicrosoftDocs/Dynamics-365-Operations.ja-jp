@@ -1,26 +1,26 @@
 ---
 title: 購買プロモーションを使用したギフトのコンフィギュレーション
-description: この記事では、Microsoft Dynamics 365 Commerce で「ギフトと購入」プロモーションを構成する方法について説明します。
-author: shalabh
+description: この記事では、Microsoft Dynamics 365 Commerce で "購入でのギフト" プロモーションを構成する方法について説明します。
+author: ShalabhjainMSFT
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: v-chgri
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ecd1ea70b6c614fbee3e8c244a7b20199f2a781c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
+ms.openlocfilehash: 90e6afef3d9b6a8c5a3d1b2e8adeb29fbb839931
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897023"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284230"
 ---
 # <a name="configure-gift-with-purchase-promotions"></a>購買プロモーションを使用したギフトのコンフィギュレーション
 

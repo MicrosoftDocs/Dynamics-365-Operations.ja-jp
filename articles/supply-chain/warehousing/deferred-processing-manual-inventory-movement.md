@@ -2,7 +2,7 @@
 title: 手動在庫移動の繰延処理
 description: この記事では、Microsoft Dynamics 365 Supply Chain Management で手動在庫移動の繰延処理を使用する方法について説明します。
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219811"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336398"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>手動在庫移動の繰延処理
 
@@ -32,10 +32,10 @@ ms.locfileid: "9219811"
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします。 次の順序でオンにする必要があります。
 
-1. *組織全体の作業のブロック*<br>(Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
-1. *倉庫アプリ イベントの処理*<br>(Supply Chain Management のバージョン10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management のバージョン 10.0.29 では、この機能は必須です。 そのため、既定で有効となっており、再び無効にすることはできません。)
-1. *遅延プット オペレーション*
-1. *手動在庫移動操作の遅延処理*<br>(Supply Chain Management のバージョン 10.0.25 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
+1. *組織全体の作業のブロック*<br>(Supply Chain Management バージョン 10.0.21 では、この機能は必須であり、オフにすることはできません。)
+1. *倉庫アプリ イベントの処理*<br>(Supply Chain Management のバージョン10.0.25 では、この機能は既定で有効になっています。 (Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。)
+1. *遅延プット オペレーション*<br>(Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。)
+1. *手動在庫移動操作の遅延処理*<br>(Supply Chain Management バージョン 10.0.25 では、この機能は必須であり、オフにすることはできません。)
 
 ## <a name="configure-the-work-processing-policies"></a>作業処理ポリシーの構成
 

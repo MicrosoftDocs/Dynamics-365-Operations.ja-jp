@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ef0d29ebe21700784cca46bcd92c55bfeb603e9
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: c5edb01379623c15f78521e1b9eac610bc1906bb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111276"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289340"
 ---
 # <a name="enable-dual-write-for-existing-finance-and-operations-apps"></a>既存の財務と運用アプリの二重書き込みを有効にする
 

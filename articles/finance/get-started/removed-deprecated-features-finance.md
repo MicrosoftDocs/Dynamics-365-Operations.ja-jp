@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219571"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313886"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは非推奨の機能
 
@@ -46,6 +46,17 @@ ms.locfileid: "9219571"
 | **影響を受ける製品領域** | アプリケーション |
 | **配置オプション** | すべて |
 | **状態** | 非推奨です: 2023 年 4 月以降、**移動価格に課税される在庫移動注文** の機能はバグ修正やセキュリティ修正のサポートを受けられなくなります。 お客様には、改良された機能である[インド向け在庫移動注文](../../finance/localizations/apac-ind-stock-transfer.md)をご利用いただくことになります。 2023 年 10 月以降、**移動価格に課税される在庫移動注文** 機能は使えなくなり、お客様には改良された機能への移行をお願いする予定です。 |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>口座取引明細書のインポートとエクスポート (正支払ファイル)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **廃止 / 削除の理由** |改善された機能に置き換えられた、口座取引明細書をインポートし、正の支払ファイルをエクスポートします。| 
+| **別の機能で置き換えられているか?**   | 有効 |
+| **影響を受ける製品領域**         | アプリケーション |
+| **配置オプション**              | すべて |
+| **状態**                         | 推奨されない : ファイルのインポートとエクスポートのための XSLT 機能では、修正とセキュリティを修正したファイルではサポートされません。 顧客は、改善された機能を使用する必要があります: [電子レポートを使用して正の支払ファイルを設定](../../finance/accounts-payable/set-up-positive-pay-er.md) および [電子レポートを使用して高度な口座調整インポートを設定](../../finance/accounts-payable/import-bai2-er.md)。 2022 年 9 月以降は、XSLT 機能は使用できなくなりました。顧客は、改善された機能に移行する必要があります。|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Finance 10.0.26 リリースの削除済みまたは非推奨の機能
 

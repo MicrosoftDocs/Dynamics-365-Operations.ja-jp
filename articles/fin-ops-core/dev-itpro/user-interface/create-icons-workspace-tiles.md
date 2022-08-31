@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 141853
-ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: e6a5fe9b6e93f3a34298939a0ff5c0445d10f9be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 141853
+ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
+ms.openlocfilehash: 67f204be4cc5900a2a0b1806ef69e23beea232d3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853634"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287118"
 ---
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 

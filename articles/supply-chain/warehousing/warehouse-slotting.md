@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: d319a1130facbc2988cc074960e6cdfbe053a2d6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: bb86800f1491e8cb9ad629ed6cc1c76e9393e945
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218947"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336038"
 ---
 # <a name="warehouse-slotting"></a>倉庫のスロッティング
 
@@ -34,7 +34,7 @@ ms.locfileid: "9218947"
 
 ## <a name="turn-on-the-warehouse-slotting-features"></a>倉庫のスロッティング機能をオンにする
 
-これらの機能を使用するには、システム上で有効化する必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効化することができます。 必要に応じて、次の機能を有効にします。
+これらの機能を使用するには、システム向けに有効化する必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効化することができます。 必要に応じて、次の機能を有効にします。
 
 - 倉庫スロット機能
 - 移動オーダー用の倉庫のスロッティング

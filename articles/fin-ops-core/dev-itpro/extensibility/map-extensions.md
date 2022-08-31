@@ -5,17 +5,17 @@ author: MichaelFruergaardPontoppidan
 ms.date: 12/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: f9c1277d38b82286eed1f882d8e933df9f140a74
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 715a0d3f0adae306d3d1c71237cf272d7e1c6cc5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866854"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270823"
 ---
 # <a name="table-map-extension"></a>テーブル マップ拡張
 

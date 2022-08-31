@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: toskaue
+ms.author: peakerbl
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 050a701430f64daba5b774e7ada63b082ad22fff
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 3544e62ff9d8e673ddd7de31ae9ba2872befb42e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109004"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287868"
 ---
 # <a name="view-independent-software-vendor-license-status"></a>独立系ソフトウェア ベンダーのライセンス ステータスの表示
 

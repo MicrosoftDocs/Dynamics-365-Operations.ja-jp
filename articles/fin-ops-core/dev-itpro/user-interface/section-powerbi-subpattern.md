@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29431
-ms.assetid: 3e760372-e5ee-49d6-b715-c638294345de
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbc0481f911328a43690983072f739f20aeab8a1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 29431
+ms.assetid: 3e760372-e5ee-49d6-b715-c638294345de
+ms.openlocfilehash: 508dc295115fab8bddbad5e53502639a5b084a6f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781255"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288653"
 ---
 # <a name="section-power-bi-subpattern"></a>セクション Power BI のサブパターン
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 14741
-ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d68ab5e33320151e548d5855d7ed70b38c81ffa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 14741
+ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
+ms.openlocfilehash: 45a056c98d3ff9638b84bfc8c4b80ef821392fe0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863240"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292430"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 

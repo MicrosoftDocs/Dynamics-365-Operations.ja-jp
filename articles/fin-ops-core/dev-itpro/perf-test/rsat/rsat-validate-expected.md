@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 21631
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44c9309b7295f6b8a182d0d7fb5b06bf9713bac1
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 21631
+ms.openlocfilehash: f6e4a9e1bb833fc25318a88ecdc9895febe576e8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103554"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286694"
 ---
 # <a name="validate-expected-values"></a>予測値を検証する
 

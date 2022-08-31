@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.custom:
-- "265844"
+ms.custom: 265844
 ms.assetid: a0011a12-a1eb-46bd-8d28-e532fec14e09
-ms.openlocfilehash: 8b3a32ed7f6fbfeaaa896e99a8ea21f832582280
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 70fedddc23463866935d7d92bb3ebf94174fa873
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206603"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273078"
 ---
 # <a name="pin-power-bi-content"></a>Power BI コンテンツのピン留め
 

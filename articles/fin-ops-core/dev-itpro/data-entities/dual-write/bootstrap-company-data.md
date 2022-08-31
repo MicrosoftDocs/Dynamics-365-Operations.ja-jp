@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 12/01/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: ramasri
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f955b83022d1a3581aeee8df8aa47e99a0b6f26
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 524ae5ed1c07ffbc055cd14da6c3517331065e11
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111508"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289792"
 ---
 # <a name="initialize-company-data"></a>会社データの初期化
 

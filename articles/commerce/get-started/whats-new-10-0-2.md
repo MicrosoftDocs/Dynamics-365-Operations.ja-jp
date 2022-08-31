@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-05
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 4bff6434b5adf60d7c94c00ebea0f3256fa9a03d
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 005d1c4f5209f2ebb01c0ba8430e44e7ac36b5b0
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070238"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9345976"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-for-retail-version-1002"></a>Dynamics 365 for Retail バージョン 10.0.2 の新機能と変更点
 
@@ -42,7 +42,7 @@ Microsoft Dynamics 365 Finance の機能については [財務と運用バー�
 
 チャネル全体で無料または割引配送を有効にする、配送プロモーションを設定できます。
 
-詳細については、[出荷割引の概要](../retail-shipping-discount.md) を参照してください。
+詳細については、[出荷割引の概要](../shipping-discount.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

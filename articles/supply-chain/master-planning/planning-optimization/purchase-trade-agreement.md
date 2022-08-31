@@ -2,7 +2,7 @@
 title: 購買売買契約を使用したマスター プラン
 description: この記事では、計画の最適化で計画オーダーの仕入先やリードタイムを、購買契約書に記載されている最高価格またはリードタイムに基づいて検出する方法について説明します。
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873756"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335228"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>購買売買契約を使用したマスター プラン
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873756"
 
 この記事では、計画の最適化で計画オーダーの仕入先やリードタイムを、特定の製品に対して指定されたすべての購買売買契約に記載されている最高価格またはリードタイムに基づいて検出する方法について説明します。
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>計画の最適化機能の購買売買契約を有効にする
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>計画の最適化機能の購買売買契約をオンまたはオフにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
-
-- **モジュール:** *マスター プラン*
-- **機能名:** *計画の最適化の購買売買契約*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *計画最適化のための購買契約* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>マスタープラン中に購買売買契約を評価できるようにシステムを準備する
 

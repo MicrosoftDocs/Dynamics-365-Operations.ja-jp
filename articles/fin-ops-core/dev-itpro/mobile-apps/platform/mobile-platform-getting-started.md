@@ -1,27 +1,25 @@
 ---
 title: モバイル プラットフォームの使用を開始する
 description: この記事では、モバイル プラットフォームでの開発方法について説明します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom:
-- "255544"
-- intro-internal
-ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 14741023b9c49612472f875e7604be350e6953c1
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 255544,  ""intro-internal
+ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
+ms.openlocfilehash: aae95c4e5e40d770977b78be3b7f3f0329ad3d62
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103119"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284965"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームの使用を開始する
 

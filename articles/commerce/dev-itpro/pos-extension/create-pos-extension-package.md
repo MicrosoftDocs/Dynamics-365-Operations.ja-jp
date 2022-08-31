@@ -1,21 +1,21 @@
 ---
 title: POS 拡張機能パッケージ プロジェクトの作成
 description: この記事では、販売時点管理 (POS) 拡張機能パッケージ プロジェクトの作成方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 12ae4170a970bf30d34efb8cc0b6d0633a171532
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9384a1e9b1d7af00a2eef5b673aa450710440280
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869178"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287740"
 ---
 # <a name="create-a-pos-extension-package-project"></a>POS 拡張機能パッケージ プロジェクトの作成
 

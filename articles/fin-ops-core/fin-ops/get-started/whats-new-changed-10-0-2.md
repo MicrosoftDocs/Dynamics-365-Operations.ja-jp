@@ -1,26 +1,26 @@
 ---
 title: Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能および変更点
 description: この記事では、Dynamics 365 財務と運用バージョン 10.0.2 の新機能または変更された機能について説明します。 このバージョンは 5 月にリリースされます。
-author: tonyafehr
+author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: e94b3ffadbcf5fb41b71f670559f7ed9ccb0a863
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: ''
+ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 1cf1ff7d5197a208a887bdda6d477fcbca1485e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124896"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283213"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1002-may-2019"></a>Finance and Operations バージョン 10.0.2 (2019 年 5 月) の新機能および変更点
 

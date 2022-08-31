@@ -1,26 +1,26 @@
 ---
 title: Android および iOS での POS Hybrid アプリの設定
 description: この記事では、Android および iOS で POS ハイブリッド アプリをセットアップする方法を説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 89d4bc86575ca8da2754f06ceac051f3fdf7e899
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.openlocfilehash: 190d8c0f9412af4d5299df3776e5a57964c61247
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876988"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283771"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS Hybrid アプリの設定
 [!include [banner](../includes/banner.md)]
@@ -55,13 +55,16 @@ Xamarin をインストールした後、最新の安定バージョンに更新
 > [!NOTE]
 > Visual Studio 2019 以降を使用して Android アプリを構築することをお勧めします。
 
-1. インストールが完了したら、Visual Studio を起動し、Microsoft アカウント (これは、Windows で使用するのと同じアカウント) を使用してサインインします。 **ツール > オプション > Xamarin** または **ツール > オプション > Xamarin > その他** をクリックして、Xamarin の更新をチェックします。 ここには、**いますぐ確認** リンクがあります。 Xamarin のオプションが **ツール > オプション** に表示されない場合、インストールを確認するか、Visual Studio を再起動してみてください。 **オプション** ダイアログ ボックスで Xamarin を検索することもできます。 必要な場合は、最新バージョンをダウンロードおよびインストールします。
+1. インストールが完了したら、Visual Studio を起動し、Microsoft アカウント (これは、Windows で使用するのと同じアカウント) を使用してサインインします。 **ツール \> オプション \> Xamarin** または **ツール \> オプション \> Xamarin \> その他** をクリックして、Xamarin の更新をチェックします。 ここには、**いますぐ確認** リンクがあります。 **ツール \> オプション** で Xamarin のオプションが表示されない場合、インストールを確認するか、Visual Studio を再起動してみてください。 **オプション** ダイアログ ボックスで Xamarin を検索することもできます。 必要な場合は、最新バージョンをダウンロードおよびインストールします。
       
-2.  [Retail SDK フォルダー](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk) で、SampleExtensions\HybridApp\Android\solution を開きます。 エミュレーターを使用して構築および展開し、すべて正常に表示されていることを確認します。
+1. [Retail SDK フォルダー](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk) で、**SampleExtensions\HybridApp\Android\Sample.HybridApp.Android.sln** を開きます。 エミュレーターを使用して構築および展開し、すべて正常に表示されていることを確認します。
+
+    > [!NOTE]
+    > カスタム Azure Active Directory (Azure AD) ホスト URL を追加する場合は、ソリューションで **PosActivity.cs** ファイルを編集し、**AadHostUrls** という文字列配列変数を検索し、カスタム Azure AD ホスト URL を配列に追加します。 
   
-3.  [Android 用 Visual Studio エミュレーター](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Android 用の Visual Studio エミュレーター") または Android 用のエミュレーターを使用して、POS ハイブリッド アプリを起動し、Commerce Scale Unit URL を入力して、保存します。
+1. [Android 用 Visual Studio エミュレーター](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Android 用の Visual Studio エミュレーター") または Android 用のエミュレーターを使用して、POS ハイブリッド アプリを起動し、Commerce Scale Unit URL を入力して、保存します。
   
-4.  ログインして、デバイスをアクティブにすることができます。
+1. ログインして、デバイスをアクティブにすることができます。
 
 ### <a name="build-the-ios-retail-hybrid-app"></a>iOS Retail ハイブリッド アプリの構築
 
@@ -81,19 +84,20 @@ iOS で Xamarin をインストールに関する詳しい手順については�
   
   ### <a name="build-the-ios-retail-hybrid-app"></a>iOS Retail ハイブリッド アプリの構築
   
-  1.  [Retail SDK フォルダー](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk) で、SampleExtensions\HybridApp\iOS\solution を開きます。
-      Mac に接続して Visual Studio でアプリケーションを構築したら、iOS デバイスの種類を選択し、選択したデバイス上にアプリケーションを展開します。
+1. [Retail SDK フォルダー](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk) で、**SampleExtensions\HybridApp\iOS\Sample.HybridApp.iOS.sln** を開きます。 Mac に接続して Visual Studio でアプリケーションを構築したら、iOS デバイスの種類を選択し、選択したデバイス上にアプリケーションを展開します。
       
-       ![展開用 POS iOS アプリ VS 設定。](./media/iOSSetting.png)
+    ![展開用 POS iOS アプリ VS 設定。](./media/iOSSetting.png)
+       
+    > [!NOTE]
+    > カスタム Azure AD ホスト URL をアクティブ化するために追加する場合は、ソリューションで **PosActivity.cs** ファイルを編集し、**AadHostUrls** という文字列配列変数を検索し、カスタム Azure AD ホスト URL を配列に追加します。 
+   
+1. エミュレーターを使用して、**設定 \> RetailMPOS** に移動します。 Commerce Scale Unit URL を入力します。
       
-  2.  エミュレーターを使用して、**設定 > RetailMPOS** に移動します。 Commerce Scale Unit URL を入力します。
+     ![POS iOS アプリ設定。](./media/iOSApp.png)
       
-       ![POS iOS アプリ設定。](./media/iOSApp.png)
+     ![RS URL の POS iOS アプリ設定。](./media/iOSRSURL.png)
       
-       ![RS URL の POS iOS アプリ設定。](./media/iOSRSURL.png)
-      
-  3.  MPOS アプリを起動します。 ログインして、デバイスをアクティブにすることができます。
-
+1. MPOS アプリを起動します。 ログインして、デバイスをアクティブにすることができます。
 
 ## <a name="hybrid-app-signing-and-distribution"></a>ハイブリッド アプリの署名と配布
 
@@ -107,8 +111,6 @@ Android および iOS アプリに署名および 配布するには、次のオ
 - [iOS コード署名](https://developer.apple.com/support/code-signing/)
 - [iOS アプリの配布](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
 
-
-  
 ## <a name="dedicated-hardware-station-support-for-the-hybrid-android-app"></a>ハイブリッド Android アプリケーションに対応した専用ハードウェアステーション
   
 リリース8.1.3以降、専用ハードウェアステーションがハイブリッド Android アプリケーションに対応していします。 Retail Modern POS が周辺機器へのビルトインサポートしているのと同様に、 Android アプリは 専用のハードウェアステーションを使用して、IISベースのハードウェアステーションの配置をせずとも周辺機器に接続することができます。

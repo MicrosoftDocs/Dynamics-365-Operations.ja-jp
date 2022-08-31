@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 07/06/2022
+ms.date: 08/10/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 1642deb06f559b8b1e850208013b3faf569fd406
-ms.sourcegitcommit: ec57cbd25008dc76d5752001b12e69f7bb947522
+ms.openlocfilehash: 9da9793d21b00862ad11a967e64dcdedc83d1a9b
+ms.sourcegitcommit: 2e14e9a5e8ce78beffc7118ca466d2ef0878d3e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121433"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246326"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 
@@ -248,14 +248,18 @@ Service Fabric Cluster と展開されているすべてのアプリケーショ
 > [!IMPORTANT]
 > Microsoft は、AD CS による自動証明書の作成をサポートして、セットアップ スクリプトによる自己署名証明書の生成のサポートを終了する予定です。
 
-証明書の推奨設定を次に示します。
+#### <a name="general-certificate-settings"></a>一般証明書設定
 
-- **署名アルゴリズム:** sha256RSA
-- **署名ハッシュ アルゴリズム:** sha256
-- **公開キー:** RSA (2048 ビット)
-- **Thumbprint アルゴリズム:** sha1
+| 設定                  | 値           | 必要量 |
+|--------------------------|-----------------|-------------|
+| 署名アルゴリズム      | sha256RSA       | 推奨 |
+| 署名ハッシュ アルゴリズム | sha256          | 推奨 |
+| 公開キー               | RSA (2048 ビット) | 必須   |
+| 拇印アルゴリズム     | sha1            | 推奨 |
 
-| 目的                                      | 説明 | 追加条件 |
+#### <a name="overview-of-required-certificates"></a>必要な証明書の概要
+
+| 使用方法                                      | 説明 | 追加条件 |
 |----------------------------------------------|-------------|-------------------------|
 | SQL Server SSL 証明書                   | この証明書は、ネットワーク上の SQL Server インスタンスとクライアント アプリケーションの間で転送されるデータを暗号化するために使用されます。 | <p>証明書の場合、ドメイン名は SQL Server のインスタンスまたはリスナーの完全修飾ドメイン名 (FQDN) と一致する必要があります。 たとえば、SQL のリスナーが DAX7SQLAOSQLA のコンピューターにホストされている場合、証明書のドメイン ネーム システム (DNS) 名は、DAX7SQLAOSQLA.contoso.com です。</p><ul><li>**共通名 (CN):** DAX7SQLAOSQLA.contoso.com</li><li>**DNS 名:** DAX7SQLAOSQLA.contoso.com</li></ul> |
 | Service Fabric Server 証明書            | この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。 これはクラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。 | <p>この証明書については、\*.contoso.com などのドメイン用ワイルドカード SSL 証明書を使用することもできます。 (詳細については、このテーブルに続くテキストを参照してください。) それ以外の場合は、次の値を使用します。</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS 名:** sf.d365ffo.onprem.contoso.com</li></ul> |
@@ -413,6 +417,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 - アカウントがコンピューターに必要とするアクセス許可
 - オペレーティング システムの既定のトランスポート層セキュリティ (TLS) プロトコルを使用するように .NET Framework を構成するかどうか。
 - セキュリティ保護されていない TLS および SSL プロトコルを無効にするかどうか。
+- セキュリティ保護されていない TLS 暗号を無効にするかどうか。
 
 データベースごとに、infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml コンフィギュレーション ファイルでは、次の詳細について説明します。
 
@@ -796,6 +801,10 @@ Finance + Operations 向けに SQL Server を構成するために CA から SSL
 
     | リリース | データベース |
     |---------|----------|
+    | バージョン 10.0.26 (プラットフォーム更新プログラム 50 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.26 デモ データ |
+    | バージョン 10.0.26 (プラットフォーム更新プログラム 50 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.26 空データ |
+    | バージョン 10.0.23 (プラットフォーム更新プログラム 47 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.23 デモ データ |
+    | バージョン 10.0.23 (プラットフォーム更新プログラム 47 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.23 空データ |
     | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.21 デモ データ |
     | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.21 空データ |
     | バージョン 10.0.20 (プラットフォーム更新プログラム 44 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.20 デモ データ |
@@ -964,6 +973,8 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
     > [!NOTE]
     > これらのコマンドは、Windows Server 2019 以降が稼働する AD FS サーバーでのみ実行できます。 Windows Server 2016 の AD FS は廃止されました。 詳細については、[Microsoft Dynamics 365 Finance + Operations (on-premises) サポート ソフトウェア](onprem-compatibility.md#active-directory-federation-services-ad-fs) を参照してください。
 
+5. 設定が正しく適用されるように、AD FS サービスを再起動します。
+
 AD FS が認証を交換するために Finance + Operations を信頼できるようにするには、AD FS で AD FS アプリケーション グループの下にさまざまなアプリケーション エントリを登録する必要があります。 設定プロセスをスピードアップしてエラーを減らすために、Publish-ADFSApplicationGroup.ps1 スクリプトを使用して登録します。 AD FS を管理するための十分なアクセス許可を持つユーザー アカウントを使用してスクリプトを実行します。 (たとえば、管理者アカウントを使用します。)
 
 スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後に LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を失った場合は、AD FS がインストールされているコンピューターにサインインし、サーバー マネージャーを開き、**ツール** \> **AD FS 管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations オンプレミス** の順に移動します。 ネイティブ アプリケーションでクライアント ID を検索できます。
@@ -1006,6 +1017,9 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
+
+    > [!NOTE]
+    > 2016 または 2019 のバージョンを使用している場合は、必ず正しい SQL Server のバージョンを選択してインストールしてください。
 
 10. コンフィギュレーションを保存してから、**コンフィギュレーションのダウンロード** を選択して **localagent-config.json** コンフィギュレーション ファイルをダウンロードします。
 11. **localagent-config.json** ファイルを、エージェント インストーラー パッケージが展開されているコンピューターにコピーします。

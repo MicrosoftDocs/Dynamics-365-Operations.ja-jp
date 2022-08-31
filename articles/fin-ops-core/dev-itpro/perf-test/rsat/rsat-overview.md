@@ -7,17 +7,17 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59ab92b1a1f60f30585943792015c4cd8cf46abf
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: aaadd5b43381de39a4d84a7336fe770b7c65ac00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103106"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277438"
 ---
 # <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
 

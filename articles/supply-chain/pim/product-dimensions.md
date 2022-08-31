@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a8deb71713619b4be6c875223ab3b1f08499dfb2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867930"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335138"
 ---
 # <a name="product-dimensions"></a>製品分析コード
 
@@ -108,7 +108,7 @@ ms.locfileid: "8867930"
 
 #### <a name="turn-on-the-version-dimension"></a>バージョン分析コードをオンにする
 
-このバージョン分析コードを使用する前に、自分のシステム上で有効化する必要があります。 このタスクには、管理者のアクセス許可が必要です。
+このバージョン分析コードを使用する前に、自分のシステムで有効化する必要があります。 このタスクには、管理者のアクセス許可が必要です。
 
 1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
 1. *製品分析コードバージョン* という機能を有効にします。 (詳細については、[フィーチャー管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) をご覧ください。)

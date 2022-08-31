@@ -7,21 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom:
-- "27661"
+ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.form: AutomatedEntityStoreRefresh
-ms.openlocfilehash: 4f3ebd21a025e13e9914c638c39c427a799df064
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 5beefb2f2bf64c8c1da9c352b1b6985a1e588896
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206675"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279406"
 ---
 # <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 

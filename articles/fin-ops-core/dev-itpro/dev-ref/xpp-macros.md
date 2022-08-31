@@ -1,20 +1,20 @@
 ---
 title: X++ でのマクロ
 description: この記事では、X++ でマクロを作成および使用する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a41c2fbe2bd3a6d2eeb0986046568dc116bc1fb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cee6208e1ee4667495e89c22c6c874c533199a2c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867150"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271295"
 ---
 # <a name="macros-in-x"></a>X++ でのマクロ
 

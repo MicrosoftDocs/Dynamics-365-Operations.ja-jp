@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom:
-- "266594"
+ms.custom: 266594
 ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
-ms.openlocfilehash: 1b7f75a54a6100d55924499a9a341d5fea03d4a4
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 7d7d663de0ae0e5d57e213f7ace6d4d4cec6b0cd
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206777"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280079"
 ---
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 

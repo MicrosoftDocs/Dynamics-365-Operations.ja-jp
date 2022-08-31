@@ -1,7 +1,7 @@
 ---
 title: オーストラリアのキャッシュ レジスターの配置ガイドライン
 description: この記事は、オーストリアのローカライズ用配置ガイドです。
-author: AlexChern0v
+author: josaw1
 ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
@@ -9,16 +9,16 @@ ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Austria
-ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c24e2a85a3f4d4910fc129d4fe961d1078f88235
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+ms.openlocfilehash: 8c3ba2f99571337dc78047ddd9cdf5e434d78b9c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902778"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276104"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 

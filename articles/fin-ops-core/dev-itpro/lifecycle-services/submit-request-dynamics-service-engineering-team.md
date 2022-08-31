@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 3923cda7eb73b240f0f754c22a561bbea874c8f3
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: 110f583dcf29b9bf013d54c0c97c108ba3a2d424
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103612"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305149"
 ---
 # <a name="submit-service-requests-to-the-dynamics-service-engineering-team"></a>Dynamics Service Engineering チームへのサービス要求の送信
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 サービス要求は、Dynamics サービス エンジニア リング (DSE) チームがお客様の環境で事前定義された一連のタスクを実行することを要求するために使用するチケットです。
 

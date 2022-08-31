@@ -2,7 +2,7 @@
 title: 原産国の USMCA 証明書
 description: この機能を使用すると、米国 - メキシコ - カナダ協定 (USMCA) によって要求される原産国ドキュメントを印刷できます。
 author: Weijiesa
-ms.date: 10/23/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 2a87e1aa27085f1b4821d27cece782dffbcd2096
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851365"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336548"
 ---
 # <a name="usmca-certification-of-origin"></a>原産国の USMCA 証明書
 
@@ -33,12 +33,9 @@ ms.locfileid: "8851365"
 
 ドキュメントの印刷選択に応じて、システムからのデータをドキュメントにあらかじめ入力しておくことができます。 印刷されたドキュメントを、Microsoft Word などの編集可能な形式にエクスポートすることによって、印刷ドキュメントに変更または追加することができます。 エクスポート後に、申告を行う前に必要な変更を適用できます。
 
-## <a name="turn-on-the-usmca-feature"></a>USMCA 機能をオンにする
+## <a name="turn-the-usmca-feature-on-or-off"></a>USMCA 機能をオンまたはオフにする
 
-USMCA 機能を使用するには、システム上で有効化する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *輸送管理*
-- **機能名:** *原産国の USMCA 証明書ドキュメント*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management のバージョン10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *原産国の USMCA 証明書* 機能を検索して、この機能をオンまたはオフにできます。
 
 ## <a name="document-content"></a>ドキュメントのコンテンツ
 

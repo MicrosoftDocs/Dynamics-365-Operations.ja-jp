@@ -1,26 +1,26 @@
 ---
 title: 診断とトラブルシューティングの Commerce コンポーネント イベント
 description: この記事では、コマース固有のコンポーネントからイベントを検索する場所について説明します。
-author: aamirallaqaband
-ms.date: 03/22/2022
+author: ShalabhjainMSFT
+ms.date: 08/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 85493
-ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: aamiral
+ms.author: shajain
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5c790d2efb7ad843fd181151bde1b5af77af723b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 85493
+ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
+ms.search.industry: Retail
+ms.openlocfilehash: 42060c4accf4f5ee0a594ead64f7e56d9b7516fc
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894544"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295913"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -197,6 +197,15 @@ Commerce 本部で Application Insights の診断イベントを有効にする�
 1. 各 Commerce Scale Unit を再起動します。 LCS で、**環境の詳細 \> Commerce \> 管理** に移動して Commerce Scale Unit のインスタンスを選択し、**再起動** を選択します。
 1. Application Insights を使用にする環境ごとに前の手順を繰り返します。
 
+> [!NOTE]
+> Commerce バージョン 10.0.29 以降では、このセクションの手順により、販売時点管理 (POS) の運用イベントのストリーミングを Application Insights アカウントに対して有効化することもできます。
+>
+> 構成ファイルを使用して POS の運用情報イベントを制御するには、次の手順を実行します。
+>
+>1. テキスト エディタを使用して、“C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker”にある "DLLHost.exe.config" ファイルを開きます。
+>
+>1. diagnosticsSection” からクラス名 "Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger" を持つシンク XML 要素を削除します。 
+
 #### <a name="disable-diagnostic-events-in-application-insights"></a>Application Insights の診断イベントを無効にする
 
 Application Insights へ診断イベントを送信する必要がなくなった場合は、機能を無効にする必要があります。
@@ -214,5 +223,7 @@ Commerce 本部で Application Insights の診断イベントを無効にする�
 
 単一の環境に対して診断イベントを無効にするには、**オペレーション インサイト** ページの **Application Insights レジストリ** タブにあるインストルメンテーション キーを削除します。 前の手順の手順 3 と 4 を実行します。
 
+> [!NOTE]
+> Commerce バージョン 10.0.29 以降では、このセクションのステップにより、POS の運用インサイト イベントのストリーミングを Application Insights アカウントに対して無効化することもできます。 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

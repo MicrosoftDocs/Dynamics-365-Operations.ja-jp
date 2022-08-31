@@ -1,23 +1,23 @@
 ---
 title: 開発ツールのチュートリアル
 description: このチュートリアルでは、Visual Studio の フリート管理 ソリューションとその開発ツールの概要を紹介します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
-ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a0c10db74c4577a93dc461692399b27279911f8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: intro-internal
+ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
+ms.openlocfilehash: 2e32985897c1249b5765ff3fd60f042d92a61ec8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781080"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271127"
 ---
 # <a name="development-tools-tutorial"></a>開発ツールのチュートリアル
 

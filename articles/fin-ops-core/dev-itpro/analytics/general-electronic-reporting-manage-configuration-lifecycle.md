@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
-ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0209679c9882d87edab68d043fba9e7b3400a2a2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271586"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337196"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>電子申告 (ER) コンフィギュレーション ライフサイクルの管理
 
@@ -84,7 +84,7 @@ ER に関連する次の理由から、財務と運用の個別のインスタ�
 
 ## <a name="data-persistence-consideration"></a> データ持続性の考慮事項
 
-ER [コンフィギュレーション](general-electronic-reporting.md#Configuration) のさまざまな [バージョン](general-electronic-reporting.md#component-versioning) を Finance インスタンスに個別に [インポート](tasks/er-import-configuration-lifecycle-services.md) できます。 新しいバージョンの ER コンフィギュレーションをインポートするとき、システムはこのコンフィギュレーションのドラフト バージョンのコンテンツを制御します。
+ER [構成](general-electronic-reporting.md#Configuration) のさまざまなバージョンを自分の財務インスタンスに個別に [インポート](tasks/er-import-configuration-lifecycle-services.md) できます。 新しいバージョンの ER コンフィギュレーションをインポートするとき、システムはこのコンフィギュレーションのドラフト バージョンのコンテンツを制御します。
 
 - インポートされたバージョンが、現在の Finance インスタンスにおけるこのコンフィギュレーションの最も新しいバージョンより低い場合、そのコンフィギュレーションのドラフト バージョンのコンテンツは変更されないままです。
 - インポートされたバージョンが、現在の Finance インスタンスにおけるこのコンフィギュレーションのその他のバージョンより新しい場合、インポートされたバージョンのコンテンツはこのコンフィギュレーションのドラフト バージョンにコピーされ、最後に完了したバージョンの編集を続行できます。
@@ -112,7 +112,7 @@ ER コンフィギュレーションは、他のコンフィギュレーショ�
 
 ![構成ページの派生 ER 形式のコンフィギュレーション。](./media/ger-configuration-lifecycle-img1.png)
 
-形式の設計が完了したら、ER 形式コンフィギュレーションの初期 [バージョン](general-electronic-reporting.md#component-versioning) のステータスを **ドラフト** から **完了** に変更できます。 その後、グローバル リポジトリに [公開](../../../finance/localizations/rcs-global-repo-upload.md) することで、ER 形式コンフィギュレーションの完成 バージョンを共有できます。 次に、任意の RCS または Finance クラウド インスタンスからグローバル リポジトリにアクセスできます。 その後、アプリケーションに適用できる ER コンフィギュレーション バージョンを、グローバル リポジトリからアプリケーションにインポートできます。
+形式の設計が完了したら、ER 形式構成の初期 バージョン のステータスを **ドラフト** から **完了** に変更できます。 その後、グローバル リポジトリに [公開](../../../finance/localizations/rcs-global-repo-upload.md) することで、ER 形式コンフィギュレーションの完成 バージョンを共有できます。 次に、任意の RCS または Finance クラウド インスタンスからグローバル リポジトリにアクセスできます。 その後、アプリケーションに適用できる ER コンフィギュレーション バージョンを、グローバル リポジトリからアプリケーションにインポートできます。
 
 ![コンフィギュレーション リポジトリ ページで公開された ER 形式コンフィギュレーション。](./media/ger-configuration-lifecycle-img2.png)
 

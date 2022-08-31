@@ -10,18 +10,26 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 19193cc445bc9c7d79463734d7d5787737ecc4f7
-ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
+ms.openlocfilehash: 115708ce9e71c35feb1cf370ead556847e04cbd2
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "9188994"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324206"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20310"></a>Version 2.0.31.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+-   パフォーマンスおよび安定性を強化します。
+-   長い選択リストの処理がより速く簡単になる、改善されたユーザー インターフェイス。 これで、作業者はリスト全体をスクロールせずに、リスト項目を名前で検索できるようになりました。
+-   文字によるスキャンで事前に入力した値が上書きされないという問題が修正されました。
 
 ## <a name="version-20300"></a>Version 2.0.30.0
 

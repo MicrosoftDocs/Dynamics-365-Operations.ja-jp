@@ -1,18 +1,18 @@
 ---
 title: FileUploader タイプ
 description: ファイル アップローダーコントロール タイプ。 イメージなどのファイルをアップロードするためのコントロールです。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: e1cf95fdf7cc45ef1d21a25cf5f12d82a4688748
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 8b7ccec347a1a34d10df759b68298718159c7ed7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811151"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268621"
 ---
 # <a name="fileuploader-type"></a>FileUploader タイプ
 

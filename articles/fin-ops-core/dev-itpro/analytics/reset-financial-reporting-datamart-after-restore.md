@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom:
-- "261824"
+ms.custom: 261824
 ms.search.form: FinancialReports
-ms.openlocfilehash: 12456866256bdbd56aace43294b472a16b208650
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: e585f5a35215eeb387629dad1facd1c72a2bcf8b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206256"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274745"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 

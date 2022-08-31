@@ -1,23 +1,23 @@
 ---
 title: Visual Studio でのメタデータの検索
 description: この記事では、メタデータ検索を使用して、任意のパターンやコンテンツのコードとメタデータを検索する方法について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 83303
-ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dca75c96b74cc73c770f6a0653ec06796193591
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 83303
+ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
+ms.openlocfilehash: fc871f591dde6e2bc186a5847041bd137692a5e7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783036"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271095"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 

@@ -1,18 +1,18 @@
 ---
 title: ApplicationMetadata タイプ
 description: アプリケーションの宣言メタデータを表します
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 1c3baf3c1df8bc761195c69f13f8a2e0cd48506f
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 54326069b34939fed9ffc52d968fb0760ccb8ab4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811791"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282545"
 ---
 # <a name="applicationmetadata-type"></a>ApplicationMetadata タイプ
 

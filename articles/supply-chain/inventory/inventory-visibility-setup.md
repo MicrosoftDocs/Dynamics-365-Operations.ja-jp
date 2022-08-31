@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility Add-in をインストールする
-description: この記事では、Microsoft Dynamics 365 Supply Chain Management の在庫視覚化アドインのインストールの方法を説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の在庫品目一覧アドインのインストールの方法を説明します。
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895702"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306057"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility のインストールと設定
 
@@ -43,7 +43,7 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Inventory Visibility Add-in をインストールする
 
-アドインをインストールする前に、アプリケーションを登録し、Azure サブスクリプションの下の Azure Active Directory (Azure AD) にクライアント シークレットを追加します。 手順については、[アプリケーションの登録](/azure/active-directory/develop/quickstart-register-app)および[クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)を参照してください。 **アプリケーション (クライアント) ID**、**クライアント シークレット**、および **テナント ID** の値は後で必要になるので、必ずメモしておいてください。
+アドインをインストールする前に、アプリケーションを登録し、Azure サブスクリプションの下の Azure Active Directory (Azure AD) にクライアント シークレットを追加します。 手順については、[アプリケーションの登録](/azure/active-directory/develop/quickstart-register-app)および[クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)を参照してください。 **アプリケーション (クライアント) ID**、**クライアント シークレット**、**テナント ID** の値は後で必要になるので、必ずメモしておいてください。
 
 > [!IMPORTANT]
 > 複数の LCS 環境を使用する場合は、環境ごとに異なる Azure AD アプリケーションを作成します。 同じアプリケーション ID とテナント ID を使用して異なる環境の在庫視覚化アドインをインストールした場合、古い環境ではトークンの問題が発生します。 その結果、最後にインストールされたものだけが有効になります。
@@ -88,20 +88,6 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 >
 > 1. インストールが完了したら、LCS ページに戻ってもう一度やり直し、**在庫視覚化** アドインを再インストールします。
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>在庫可視化アドインをアンインストールする
-
-在庫可視化アドインをアンインストールするには、LCS ページで **アンインストール** を選択します。 アンインストール プロセスは、在庫可視化アドインを終了させ、LCS からアドインの登録を解除し、在庫可視化アドイン データ キャッシュに保存されている一時的なデータが削除されます。 ただし、Dataverse サブスクリプションに保存されている基本在庫データは削除されません。
-
-Dataverse サブスクリプションに保存されている在庫データをアンインストールするには、[Power Apps](https://make.powerapps.com) を開き、ナビゲーション バーの **環境** を選択し、LCS 環境と連携している Dataverse 環境を選択します。 次に、**ソリューション** に移動し、次の 5 つのソリューションをこの順序で削除します:
-
-1. Dynamics 365 ソリューションが含む在庫品目一覧アプリケーションのアンカー ソリューション。
-1. Dynamics 365 FNO SCM Inventory Visibility アプリケーション ソリューション
-1. 在庫サービス コンフィギュレーション
-1. 在庫品目一覧スタンドアロン
-1. Dynamics 365 FNO SCM Inventory Visibility の基準ソリューション
-
-これらのソリューションを削除すると、テーブルに保存されているデータも削除されます。
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Supply Chain Management における在庫視覚化の設定
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>在庫の視覚化統合パッケージの配置
@@ -135,10 +121,45 @@ Supply Chain Management 環境で次の機能が有効になっていること�
 
 1. オプションの *引当相殺と在庫視覚化の統合* 機能を有効にしている場合は、**引当相殺** タブを開き、次の設定を行います。
     - **引当相殺を有効にする** – *はい* に設定し、この機能を有効にします。
-    - **引当相殺モディファイア** – 在庫視覚化に対して行われた引当を相殺する在庫トランザクション状態を選択します。 この設定は、相殺をトリガーする注文処理ステージを決定します。 ステージは、注文の在庫トランザクション状態によって追跡されます。 次のいずれかを選択します : 
+    - **引当相殺モディファイア** – 在庫視覚化に対して行われた引当を相殺する在庫トランザクション状態を選択します。 この設定は、相殺をトリガーする注文処理ステージを決定します。 ステージは、注文の在庫トランザクション状態によって追跡されます。 次のいずれかのオプションを選択します。
         - *受注中* – *トランザクション中* の状態では、注文が作成されると相殺要求を送信します。 相殺数量は作成された注文の数量になります。
         - *引当* – *引当注文済トランザクション* 状態では、注文が引当、ピッキング、梱包明細の転記、または請求を行った際に相殺要求を送信します。 要求は前述のプロセスが発生したときの最初のステップに対して、1 度だけトリガーされます。 相殺数量は注文明細行の在庫トランザクション状態が *受注中* から *引当済注文* (またはそれ以降の状態) に変更された数量となります。
 
 1. **在庫管理 \> 定期処理 \> 在庫の視覚化統合** の順に移動し、ジョブを有効します。 Supply Chain Management からのすべての在庫変更イベントが在庫の視覚化に転記されるようになります。
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>在庫可視化アドインをアンインストールする
+
+在庫品目一覧のアドオンをアンインストールするには、次の手順に従います。
+
+1. Supply Chain Management にサインインします。
+1. **在庫管理 \> 定期処理 \> 在庫品目一覧の統合** の順に移動し、ジョブを無効化します。
+1. LCS に移動して、アドインをアンインストールする環境のページを開きます ([在庫品目一覧アドインのインストール](#install-add-in) も参照してください)。
+1. **アンインストール** を選択します。
+1. アンインストール プロセスは現在、在庫品目一覧アドインを終了させ、LCS からアドインの登録を解除し、在庫品目一覧アドイン データ キャッシュに保存されている一時的なデータが削除されます。 ただし、Dataverse サブスクリプションに同期されている基本在庫データは依然ここに保管されます。 このデータを削除するには、この手順の残りを完了させます。
+1. [Power Apps](https://make.powerapps.com) を開きます。
+1. ナビゲーション バーで **環境** を選択します
+1. LCS 環境と連携している Dataverse 環境を選択します。
+1. **ソリューション** に移動し、次の順序で次のソリューションを削除します。
+    1. Dynamics 365 ソリューションが含む在庫品目一覧アプリケーションのアンカー ソリューション。
+    1. Dynamics 365 FNO SCM Inventory Visibility アプリケーション ソリューション
+    1. 在庫サービス コンフィギュレーション
+    1. 在庫品目一覧スタンドアロン
+    1. Dynamics 365 FNO SCM Inventory Visibility の基準ソリューション
+
+    これらのソリューションを削除すると、テーブルに保存されているデータも削除されます。
+
+> [!NOTE]
+> 在庫品目一覧アドインをアンインストールした後に Supply Chain Management データベースを復元し、アドインを再インストールする場合は、アドインを再インストールする前に、Dataverse サブスクリプションに保存されている古い在庫品目一覧データを (前の手順の説明に従って) 削除してください。 これによって、データの不整合の問題が発生する可能性がなされます。
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a>Supply Chain Management データベースを復元する前の Dataverse からの在庫品目一覧のクリーンアップ
+
+在庫品目一覧を使用していて、Supply Chain Management のデータベースを復元するには、復元したデータベースに、Dataverse への在庫品目一覧で以前に同期されたデータと一致しなくなったデータが含まれている場合があります。 このデータの不整合によって、システム エラーや他の問題が発生する可能性があります。 したがって、Supply Chain Management の データベースを Dataverse から復元する前に、すべての在庫品目一覧データを常にクリーンアップすることが重要です。
+
+Supply Chain Management のデータベースを復元する必要がある場合は、次の手順に従います。
+
+1. [在庫品目一覧アドインのアンインストール](#uninstall-add-in) に説明がある通り、在庫品目一覧アドインをアンインストールして、Dataverse でのすべての関連データを削除します
+1. Supply Chain Management のデータベースを、たとえば [データベースの時点管理 (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) または [実稼働データベースのサンドボックス環境へのポイントインタイム復元](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md) で説明されているように復元します。
+1. それでも使いたい場合は、[在庫品目一覧アドインのインストール](#install-add-in) と [在庫品目一覧統合の設定](#setup-inventory-visibility-integration) にある通り在庫品目一覧アドインを設定します
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

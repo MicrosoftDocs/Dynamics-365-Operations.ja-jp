@@ -1,23 +1,23 @@
 ---
 title: POS 拡張機能パッケージ情報の表示
 description: この記事では、販売時点管理 (POS) の設定ビューの拡張パッケージ セクションに関する情報を提供します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: 9b41d8f6c20c19b381c23dd1cf1e1ffe98576b0b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: beff252671828b52490c202adeaad1d721118d09
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884919"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282777"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 

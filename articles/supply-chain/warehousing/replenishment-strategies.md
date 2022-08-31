@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 3b4d691bbcf88cc73d10e3bb401710508ec641e1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1245d07436a9b57ee4f0402687e7a4367668cbfa
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893152"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336278"
 ---
 # <a name="replenishment-strategies"></a>補充戦略
 
@@ -36,7 +36,7 @@ ms.locfileid: "8893152"
 
 ## <a name="turn-on-the-replenish-to-max-based-on-stocking-limits-feature"></a>[在庫上限に基づき最大まで補充] 機能をオンにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、この機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+この機能は使用する前にシステムでオンにする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、この機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *在庫上限に基づき最大まで補充*

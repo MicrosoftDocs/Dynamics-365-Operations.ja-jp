@@ -1,25 +1,25 @@
 ---
 title: フォーム、製品、およびコントロールのユーザー補助機能
 description: この記事は、フォーム、製品、またはコントロールのユーザー補助機能を有効にするためのベスト プラクティスについて説明します。 アクセシビリティ チェックリストも含まれます。
-author: RobinARH
+author: jasongre
 ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 104943
-ms.assetid: 5b97c471-212a-4487-baef-120d01063319
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: ab16e0dd468205da084d4282e32a07c47b8fed67
-ms.sourcegitcommit: f9201fc3f11532d82c926c4d7867375116026ca3
+ms.custom: 104943
+ms.assetid: 5b97c471-212a-4487-baef-120d01063319
+ms.openlocfilehash: 65036d1c13516f1ffca9e628572957c3d318277a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114331"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286682"
 ---
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 

@@ -1,20 +1,20 @@
 ---
 title: X++ 変数
 description: この記事では、X++ の変数について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0820afee0c02034a49bc9ac13e23d9181c90f54b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8c1001da19d84dbae4af8405783aabb49f3ff605
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867117"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271247"
 ---
 # <a name="x-variables"></a>X++ 変数
 

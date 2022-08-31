@@ -1,18 +1,18 @@
 ---
 title: イベント モジュール
 description: イベント モジュール
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 175c96b0e397f833e20345d0b154e5a0cec9a583
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 1deebfa7ae0f82cbf82bbe59e71819cba265b752
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811264"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281702"
 ---
 # <a name="event-module"></a>イベント モジュール
 

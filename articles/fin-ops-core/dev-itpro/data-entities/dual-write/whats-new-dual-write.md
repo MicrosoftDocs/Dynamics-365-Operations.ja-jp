@@ -2,7 +2,7 @@
 title: 二重書き込みの新機能および変更された機能
 description: この記事では、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
 author: RamaKrishnamoorthy
-ms.date: 06/24/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 254736be70650a2cb9acbc6aed54bd166b3bbeca
-ms.sourcegitcommit: a5d29004839e5ca5e68a7c7ca7cc653cc9ec94d5
+ms.openlocfilehash: b0d653d9f39adbf151d3538aed6f4ac730346777
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "9189513"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228003"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -24,6 +24,12 @@ ms.locfileid: "9189513"
 二重書き込みは、Microsoft Dynamics 365 の Customer Engagement アプリおよび財務と運用アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャです。 デュアル書き込みを開始する方法については、[デュアル書き込みホームページ](dual-write-home-page.md) を参照してください。
 
 ## <a name="july-2022-release"></a>2022 年 7 月リリース 
+
+[二重書き込みコア ソリューション 1.0.36.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) の 7 月リリース版には次の変更が含まれます。
+
+| フィーチャー | Description | Status |
+|---|---|---|
+| フィーチャー | [デュアル書き込みセッション用に 5 分のセッション タイムアウト ウィンドウを有効にする](5-minute-mode.md) | 一般提供 |
 
 7 月リリースの二重書き込みグローバル アドレス帳ソリューション バージョン 3.5.1.6 には、次のバグ修正が含まれます。
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b7eaf57e0f02c0b9dd6454a58184db7bb3f58c04
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854271"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337137"
 ---
 # <a name="forecast-reduction-keys"></a>予測の下方修正キー
 
@@ -133,7 +133,7 @@ ms.locfileid: "8854271"
 - 下方修正キーは必要でないまたは使用されません。 
 - 予測が完全に減少すると、現在の予測の予測要求は 0 (ゼロ) になります。
 - 将来の予測がない場合、入力された最後の予測からの予測要求は減少します。
-- タイム フェンスは予測下方修正の計算に含まれます。
+- 需要予測の減少タイム フェンスは、予測の減少の計算には含まれません。 代わりに、補充グループ タイム フェンスが予測の減少に使用されます。
 - プラス在庫日数は予測下方修正の計算に含まれます。
 - 実際の注文トランザクションが予測要求を超える場合、残りのトランザクションは次の予測の期間には繰り越されません。
 

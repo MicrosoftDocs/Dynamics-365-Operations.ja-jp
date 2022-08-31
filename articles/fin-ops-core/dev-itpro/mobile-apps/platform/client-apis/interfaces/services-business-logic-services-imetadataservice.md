@@ -1,18 +1,18 @@
 ---
 title: MetadataService タイプ
 description: アプリケーション ワークスペースでさまざまなメタデータ要素にアクセスして構成する機能を提供します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: f6aad7c726b77e14c17dba99cec443558f364d7a
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: da6177a7128ec30ceac6500f9d3617404e290cec
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811340"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274639"
 ---
 # <a name="metadataservice-type"></a>MetadataService タイプ
 

@@ -1,25 +1,25 @@
 ---
 title: Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 10 新機能および変更された機能 (2017 年 8 月)
 description: この記事では、Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 10 の新機能または変更された機能について説明します。 このバージョンは 2017 年 8 月にリリースされました。
-author: tonyafehr
+author: sericks007
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: d37c2ea013b3345a3fe98ad154d1811ce174ac1d
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: ''
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: bd0cac040fa22a520cb9e0174de11e8e9fed7c5b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123920"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273855"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-enterprise-edition-platform-update-10-august-2017"></a>Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 10 新機能および変更された機能 (2017 年 8 月)
 

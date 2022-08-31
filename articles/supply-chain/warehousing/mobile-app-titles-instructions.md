@@ -2,7 +2,7 @@
 title: Warehouse Management モバイル アプリのステップ タイトルとインストラクションのカスタマイズ
 description: この記事では、Warehouse Management モバイル アプリに設定する各作業フローのそれぞれのステップに対して、カスタム インストラクションを作成および表示する方法について説明します。
 author: Mirzaab
-ms.date: 08/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: faa9bfa320823664603153601c56654170e7e23a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220152"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334479"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのステップ タイトルとインストラクションのカスタマイズ
 
@@ -28,9 +28,9 @@ ms.locfileid: "9220152"
 - **作業者を変更し、すべてのタスク ステップの簡単なインストラクションに従って作業時間を短縮します。** フローのすべてのステップには、第一線の作業者がタスクを理解することを可能にする指示が用意されています。
 - **独自のプロセスに一致するインストラクションを提供します。** 業務および倉庫のプロセスに合わせて、独自のインストラクションを記述します。 たとえば、用語を物理的なスペースとローカルの省略形に合わせて作成できます。
 
-## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>倉庫アプリ ステップの指示機能の有効
+## <a name="turn-the-warehouse-app-step-instructions-feature-on-or-off"></a>倉庫アプリ ステップの指示機能をオンまたはオフにする
 
-この機能は使用する前にシステムでオンにする必要があります。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *倉庫アプリのステップ* 機能を検索して、この機能をオンまたはオフにできます。
+この機能は使用する前にシステムでオンにする必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *倉庫アプリ手順の指示* 機能を検索して、この機能を有効または無効にすることができます。
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>アプリ内のステップ タイトルとステップ インストラクション
 

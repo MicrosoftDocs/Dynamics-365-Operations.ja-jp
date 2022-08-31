@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874577"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324332"
 ---
 # <a name="accounts-receivable-posting"></a>売掛金勘定の転記
 
 [!include [banner](../includes/banner.md)]
 
 **売掛金勘定** モジュールの主要な転記プロファイルは、顧客転記プロファイルです。 この転記プロファイルは、顧客の残高を一般会計に転記する際に使用する集計勘定を決定します。 集計勘定は主勘定です。 また、売掛金取引勘定とも呼ばれます。
+
+**顧客と元帳間の調整** レポートは転記後に顧客と勘定科目の残高を調整するために使用できます。 このレポートでは、顧客転記プロファイルの集計勘定にある情報が使用されます。 ドキュメントに対して作成される会計の集計勘定は使用されません。 トランザクションの転記後に顧客転記プロファイルまたは顧客に割り当てられている顧客グループを変更した場合、レポートには顧客と勘定科目の残高の差額が表示される場合があります。 相違がある行と、顧客勘定と勘定科目の両方が 0 である明細行のみを表示するには、レポートの印刷時に **差額のみ** パラメータを選択します。
 
 詳細については、[顧客転記プロファイル](../accounts-receivable/customer-posting-profiles.md) を参照してください。
 

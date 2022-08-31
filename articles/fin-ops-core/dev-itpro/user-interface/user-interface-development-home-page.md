@@ -1,25 +1,25 @@
 ---
 title: ユーザー インターフェイス開発のホーム ページ
 description: この記事には、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
-author: RobinARH
+author: jasongre
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
-ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f7db19c5d51126b39ddcc39af2c8c460d76a358
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: intro-internal
+ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
+ms.openlocfilehash: 61e3b27ac1bdfc467fa9a8274153d9085f9a0d2d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901543"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280784"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発のホーム ページ
 

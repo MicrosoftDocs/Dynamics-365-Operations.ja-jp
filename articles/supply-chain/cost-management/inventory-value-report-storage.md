@@ -2,7 +2,7 @@
 title: 在庫金額レポート
 description: この記事では、在庫金額レポートを設定、生成、使用する方法を説明します。 これらのレポートは、在庫の物理的数量および金額と財務上の数量および金額に関する詳細を提供します。
 author: JennySong-SH
-ms.date: 10/19/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3128abb25fdb8f8e01b4d1fe153f5b5fff6cb706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854561"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334928"
 ---
 # <a name="inventory-value-reports"></a>在庫金額レポート
 
@@ -55,7 +55,7 @@ ms.locfileid: "8854561"
 
 ## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>在庫評価額レポートのストレージ機能をオン/オフにする
 
-Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *棚卸価値レポートの保管* 機能を検索して、この機能のオン/オフを切り替えることができます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *在庫値レポート ストレージ* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>在庫金額レポートのコンフィギュレーションの定義
 

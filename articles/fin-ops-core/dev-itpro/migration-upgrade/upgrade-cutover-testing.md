@@ -1,7 +1,7 @@
 ---
 title: AX 2012 からのアップグレード - 切替テスト (切替モック)
 description: この記事では、Microsoft Dynamics AX 2012 環境をオフにしてから財務と運用アプリをオンにするまでの切替えプロセスをテストする方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 589103c5294c211c720de3e8c5b609f44fba731b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1cb4fbc01006fc0c1dd495c2a7829e380f6a0215
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124666"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278421"
 ---
 # <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 

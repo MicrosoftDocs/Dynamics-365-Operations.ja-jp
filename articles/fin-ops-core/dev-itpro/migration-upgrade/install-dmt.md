@@ -1,7 +1,7 @@
 ---
 title: AX 2009 の移行 － データ移行ツールのインストール
 description: この記事では、Microsoft Dynamics AX 2009 からデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
-author: kfend
+author: Peakerbl
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: kfend
+ms.author: peakerbl
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 2dbb75f7acd2b8674c8ae89fe49379ae60ccc2ac
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b394afa071765ed7a1926e2dd0bf0105887ababe
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124470"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279386"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 

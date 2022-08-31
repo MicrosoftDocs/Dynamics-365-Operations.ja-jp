@@ -6,22 +6,22 @@ ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 219744
-ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 723935a317294cb364b025bf8d95dec5e5e91808
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 219744
+ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
+ms.search.industry: Retail
+ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
+ms.openlocfilehash: 26e8bba4ab8ee7171588ceb5793ac7054f29e2f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869184"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288465"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 

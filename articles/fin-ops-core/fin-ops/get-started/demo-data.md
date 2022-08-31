@@ -8,20 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "56551"
-- intro-internal
-ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
-ms.author: pmantha
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb2e6531ed925c15abadf93b6f12a16b8d4dda28
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 56551,  ""intro-internal
+ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
+ms.openlocfilehash: ecc54e7025cfe0bc4698eef5be4c1828bd59c828
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848715"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273859"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 

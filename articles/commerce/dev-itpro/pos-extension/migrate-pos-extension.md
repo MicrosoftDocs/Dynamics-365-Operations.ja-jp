@@ -1,21 +1,21 @@
 ---
 title: 独立したパッケージ モデルへの POS 拡張機能の移行
 description: この記事では、販売時点管理 (POS) 拡張機能を独立したパッケージ モデルに移行する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: f06ab9c3394e19bd530f86c8fd1d9dc7b94933fa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8c747629fb8ac2ba3c0f4fbf084fbbeb501eb734
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885452"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279611"
 ---
 # <a name="migrate-a-pos-extension-to-the-independent-packaging-model"></a>独立したパッケージ モデルへの POS 拡張機能の移行
 

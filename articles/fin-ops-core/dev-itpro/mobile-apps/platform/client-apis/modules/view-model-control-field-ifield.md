@@ -1,18 +1,18 @@
 ---
 title: フィールド モジュール
 description: フィールドのランタイムのインスタンスを表します。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 7700f8c0c78559afffc3e167b3bda56586191123
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 744b3481be88eabb10d04306422338df62e19b9b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811442"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283476"
 ---
 # <a name="field-module"></a>フィールド モジュール
 

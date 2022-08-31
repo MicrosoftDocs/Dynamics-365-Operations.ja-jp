@@ -1,21 +1,21 @@
 ---
 title: Visual Studio Code を使用した Store Commerce 拡張機能のデバッグ
 description: この記事では、Visual Studio Code を使用して Microsoft Dynamics 365 Commerce Store Commerce 拡張機能をデバッグする方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-30-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-30
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 85b29d24fec1abbe995902d1127616c429f4634e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a04a2e1ca73879b3a6b472c9d000919b6740f566
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908670"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284331"
 ---
 # <a name="debug-store-commerce-extensions-using-visual-studio-code"></a>Visual Studio Code を使用した Store Commerce 拡張機能のデバッグ
 

@@ -1,21 +1,21 @@
 ---
 title: X++ ループ ステートメント
 description: この記事では、X++ のループ ステートメントについて説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/17/2019
 audience: Developer
-ms.devlang: xpp
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1c17c1473d35c0973b11de22fb9b9eb60acef05
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.devlang: xpp
+ms.openlocfilehash: f0ec916a1ff880837edae16c3a250c9e8489fb6e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867153"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271303"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 

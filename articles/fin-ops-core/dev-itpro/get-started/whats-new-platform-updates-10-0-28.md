@@ -2,19 +2,19 @@
 title: 財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラム (2022 年 8 月)
 description: この記事では、財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 07/15/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-05-11
-ms.openlocfilehash: 05d96de3c1193588f1f438805708fdc56d289d23
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 34857b1f96a703471f6c648e95a10085c7c50abf
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166821"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219325"
 ---
 # <a name="platform-updates-for-version-10028-of-finance-and-operations-apps-august-2022"></a>財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラム (2022 年 8 月)
 
@@ -33,7 +33,7 @@ ms.locfileid: "9166821"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |--------------|---------|------------------|------------|
 | Web クライアント | <p>**Highcharts をバージョン 4 からバージョン 9 にアップグレード**</p><p>この機能は、財務と運用アプリのチャート JavaScript ライブラリをバージョン 9 にアップグレードします。 新しいライブラリを使用すると、チャートやグラフをアプリで構築、展開、使用するときに、より豊富な視覚化セットを使用できます。 この機能を有効にする前に、Highcharts アプリケーション プログラミングインターフェイス (APIs) を使用する拡張可能なコントロールまたはカスタム JavaScript コードをテストして、アップグレードに問題がないことを確認する必要があります。 この機能は、2023 年 4 月のリリースで必須となることを目標としていますが、影響を受ける API の移行に時間をかけるために、現在はオプションです。</p> | 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Web クライアント  | <p>**システム通知管理の有効化**</p><p>この機能により、システム管理者は、システムに影響を与える可能性のある大量通知ルールを監視し、アクションを実行できます。 既定では、1 時間あたり 100 件以上の通知を生成するルールには大量のフラグが付けられますが、管理者はこの基準を調整できます。 管理者は、大量のルールが通知を生成し続けるのをブロックするオプションと、そのルールに関連付けられている既存の通知を削除するオプションを利用できます。</p>  | 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Web クライアント  | [システム通知管理の有効化](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/enable-system-notification-management) | 該当なし | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 
 ### <a name="bug-fixes"></a>バグ修正
 

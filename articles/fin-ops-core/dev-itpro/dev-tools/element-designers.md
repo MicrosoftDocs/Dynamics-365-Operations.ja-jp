@@ -1,23 +1,23 @@
 ---
 title: 要素デザイナー
 description: この記事では、要素デザイナーを確認し、それらを使用する方法について説明します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 79871
-ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b85842b6fd1bf6198b6fb1454652dcf49b3e3571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 79871
+ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
+ms.openlocfilehash: 90dcdf2de8bc4c021a4e440645c223d4c3ce5b8e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867069"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271159"
 ---
 # <a name="element-designers"></a>要素デザイナー
 

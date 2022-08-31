@@ -1,26 +1,26 @@
 ---
 title: 財務と運用アプリ バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能
 description: この記事では、財務と運用アプリ バージョン 10.0.5 の新機能または変更された機能について説明します。 このバージョンは 10 月にリリースされます。
-author: tonyafehr
+author: sericks007
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ad71bb48ebd259ef190d5f2fa1e459a224a6f33b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: ''
+ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: fb88c68fbcd1642fdde10bb8b56cec0b0da522c6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124888"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287098"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1005-october-2019"></a>財務と運用アプリ バージョン 10.0.5 (2019 年 10 月) の新機能および変更された機能
 

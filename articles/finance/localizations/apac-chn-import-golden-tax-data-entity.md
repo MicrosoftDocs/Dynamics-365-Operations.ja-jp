@@ -1,25 +1,25 @@
 ---
 title: 中国金税ファイルのインポート
 description: この記事では、中国金税ファイルを Microsoft Microsoft Dynamics 365 Finance にインポートする方法について説明します。
-author: ilkond
+author: mrolecki
 ms.date: 12/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
 audience: IT Pro
 ms.reviewer: kfend
-ms.custom: 261394
 ms.search.region: China (PRC)
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 02619ff2e91e3549dcaa5d4afda828357675b60a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 261394
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
+ms.openlocfilehash: f9fc6e32b80be4d10acf83404a47b5cb9916c494
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865668"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286667"
 ---
 # <a name="import-the-chinese-golden-tax-files"></a>中国金税ファイルのインポート
 

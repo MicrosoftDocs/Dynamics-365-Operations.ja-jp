@@ -2,7 +2,7 @@
 title: 品目の連結 - 場所の使用率
 description: この記事では、倉庫管理者が倉庫全体の場所の容積使用率を容易に確認およびフィルター処理できる機能について説明します。 管理者は品目の連結ページから直接場所を選択して在庫移動作業を作成することで、品目を連結することができるため、倉庫空間をより有効に活用できます。
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d0e52769de3f200e2bb3060b3d9cb19dc0847b69
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219445"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336426"
 ---
 # <a name="item-consolidation---location-utilization"></a>品目の連結 - 場所の使用率
 
@@ -30,8 +30,8 @@ ms.locfileid: "9219445"
 
 この記事で説明されている機能を使用するには、システムでこれらの機能を有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 次の両方の機能を、記載されている順序で有効にします。 (両方の機能は、**倉庫管理** モジュール用です。)
 
-1. *倉庫の場所の状態* (バージョン 10.0.29 では、この機能は既定で有効に設定されています。 詳細については、[倉庫の場所の状態](warehouse-location-status.md) を参照してください。)
-2. *品目の連結場所の使用率*
+1. *倉庫の場所の状態*<br>(Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。) 詳細については、[倉庫の場所の状態](warehouse-location-status.md) を参照してください。)
+2. *品目の連結場所の使用率*<br>(Supply Chain Management 10.0.29 より、この機能は規定でオンになっています。)
 
 ## <a name="warehouse-location-status"></a>倉庫の場所の状態
 

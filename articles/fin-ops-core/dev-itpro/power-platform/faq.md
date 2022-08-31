@@ -2,7 +2,7 @@
 title: 財務と運用の仮想エンティティに関するよくあるご質問
 description: この記事では、財務と運用の仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: Sunil-Garg
-ms.date: 01/05/2022
+ms.date: 08/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f929f19483d13c217a2e7099a59c58276e9179e
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 99123f496a6aa120b265cdd2880b4ac5dd13b5df
+ms.sourcegitcommit: 91f58a9863f4e8f30ac787c2a9771c1ff6a05f72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108786"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9224258"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>財務と運用の仮想エンティティに関するよくあるご質問
 
@@ -103,7 +103,7 @@ Microsoft Power Platform の **対話型ユーザー** が仮想エンティテ�
 
 ### <a name="if-i-develop-a-new-finance-and-operations-entity-and-want-to-see-it-in-dataverse-do-i-have-to-select-refresh-entity-list-in-finance-and-operations-do-i-have-to-do-anything-in-dataverse"></a>新しい財務と運用エンティティを作成し、それを Dataverse に表示する場合、財務と運用でエンティティ リストの更新を選択する必要はありますか? Dataverse で何かを行う必要はありますか。
 
-理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合は、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Dataverse から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする *必要があります* が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
+理論的には、エンティティの一覧を更新する必要はありません。 通常は、Application Object Server (AOS) の実行場所に応じて、インターネット インフォメーション サービス (IIS) をリセットするか、IIS Express を再起動するだけでかまいません。 エンティティの一覧は、プロセスごとのキャッシュである SysGlobalObjectCache にキャッシュされるということになります。 このキャッシュにリストが正確であると示されていない場合はいつでも、リストが再構築されます。 リビルド プロセスには約 5 秒かかります。 したがって、AOS プロセス (w3wp.exe または iisexpress.exe) を再起動すると、リストは次に Dataverse から照会されるときに正確になります。 また、リコンパイルは SysGlobalObjectCache キャッシュをフラッシュする *必要があります* が、そうでない場合もあります。 この場合、AOS を再起動すると、それがフラッシュされます。
 
 ### <a name="is-there-guidance-on-when-to-use-a-virtual-entity-and-when-to-use-dual-write"></a>いつ仮想エンティティを使用するか、いつ二重書き込みを使用するかについてのガイダンスはありますか?
 
@@ -140,6 +140,17 @@ Microsoft Power Platform 統合が有効になっている場合、財務と運�
 無効になっているコンフィギュレーション キーによって、このエラーが発生する場合があります。 Dynamics 365 ERP 仮想エンティティ ソリューションで提供される既定の仮想エンティティには、すべての構成が有効になっている場合、一時テーブルは含まれません。 ただし、エンティティのバッキング テーブルに対してコンフィギュレーション キーが有効になっていない場合は、物理テーブルが一時テーブルに置き換えられるので、スキーマ変更に対してシステムを再コンパイルする必要はありません。 これにより、仮想エンティティ クエリに一時テーブルが含まれます。 これらのシナリオでは、関連付けられているコンフィギュレーション キーを有効にしてエラーを解決します。
 
 コンフィギュレーション キーがデータ エンティティに与える影響の詳細については、[コンフィギュレーション キーおよびデータ エンティティ](../data-entities/config-key-entities.md)を参照してください。
+
+### <a name="im-getting-an-error-that-the-call-was-rejected-by-finance-and-operations-apps-as-not-authorized-how-do-i-work-around-this"></a>通話が承認されていないとして財務と運用アプリによって拒否されたというエラーが表示されます。 回避するにはどうすればよいですか。
+
+仮想エンティティに対してクエリを実行すると、メッセージでエラー応答が表示される場合があります。"財務と運用を呼び出すトークンが得られたが、承認されていないとして財務と運用によって拒否されました。 Azure Active Directory アプリで AAD アプリケーションの値が指定されていることを検証し、関連するユーザー アカウントに CDSVirtualEntity Web サービスを呼び出す特権が与えけられている点を確認します。"
+
+このエラーは、既定の統合アプリケーションが環境から削除された結果である可能性があります。 財務と運用アプリ環境の **Azure Active Directory アプリケーション** ページに、次の 2 つのアプリケーションが一覧表示されている点を確認します。 これらのアプリケーションは、既定でこの環境に追加されます。 財務と運用アプリの Dataverse 仮想エンティティは、これらのアプリケーションを一覧から削除すると、財務と運用環境の認証を取得できません。
+
+| クライアント ID | Name | ユーザー ID |
+| --------- | ---- | ------- |
+| 61a0518c-121a-421a-9ad6-f0955a88be43 | PowerPlatformApplication | PowerPlatformApp |
+| f1752846-f0df-4766-96f5-c109adf67d7f | PowerPlatRuntimeApp | PowerPlatformApp |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

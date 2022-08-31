@@ -2,7 +2,7 @@
 title: 購買契約
 description: この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。
 author: GalynaFedorova
-ms.date: 06/20/2017
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 188a71ec660787b0b942a3d3bf4967b747c4469f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669575"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335888"
 ---
 # <a name="purchase-agreements"></a>購買契約
 
@@ -41,7 +41,7 @@ ms.locfileid: "8669575"
 購買契約書の分類における主要な担当者および二次担当者を識別できます。 これらの値は、結果としての購買契約によって継承されます。 担当作業者を購買契約書に追加する必要はなく、購買契約書自体に基づいて、ケースごとに直接変更することができます。 二次担当作業者は必要ではありませんが、主要な担当作業者なしに二次担当作業者を指定することは出来ません。 同じ作業者を、主要な、また二次担当作業者の両方に指定することはできません。
 
 > [!IMPORTANT]
-> 責任者の機能を使用するには、システム上で有効化する必要があります。 Supply Chain Management 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *購買契約の責任者* の機能を検索して、この機能をオンまたはオフにできます。
+> 責任者の機能を使用するには、システムで有効化する必要があります。 Supply Chain Management バージョン 10.0.25 では、この機能は既定で有効になっています。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *購買契約責任者* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="commitment-types"></a>確約のタイプ
 購買契約書の各行は、購入確約を示します。 複数の発注書 (PO) の行を使用して確約を履行することができます。 確約には次の 4 つのタイプがあります。

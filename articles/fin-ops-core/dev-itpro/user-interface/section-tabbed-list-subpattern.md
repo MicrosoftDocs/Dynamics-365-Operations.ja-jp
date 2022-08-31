@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 29291
-ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c079b238d48d70174c4ec988adbfc47320102a5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 29291
+ms.assetid: 3f8b00ff-54f0-4e32-bd7f-b94a74785537
+ms.openlocfilehash: 6926736a18eedb0e65a35f3e05aab0d3301e51b0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781492"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273008"
 ---
 # <a name="section-tabbed-list-subpattern"></a>セクション タブ付きリストのサブパターン
 

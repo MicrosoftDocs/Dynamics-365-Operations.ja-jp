@@ -1,18 +1,18 @@
 ---
 title: GenericValue タイプ
 description: コントロール タイプの一般的な値。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: b1b1bfcab815b20ab8d4b88b1ce54d6e47f55d9b
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 79211883399b0bea50bf7be72ebe398335a5bbc0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811288"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277484"
 ---
 # <a name="genericvalue-type"></a>GenericValue タイプ
 

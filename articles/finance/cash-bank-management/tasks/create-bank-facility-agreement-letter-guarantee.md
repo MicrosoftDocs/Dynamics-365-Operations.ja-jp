@@ -1,7 +1,7 @@
 ---
 title: 信用保証状の銀行融資契約の作成
 description: このタスクは、信用保証状を処理する銀行融資契約を作成します。
-author: panolte
+author: angelad116
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92227330cac26900446d8bae5309edd684565fe2
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ee3f65c1f4b369ac751236625f5d184b22ba1b29
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710195"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337538"
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>信用保証状の銀行融資契約の作成
 

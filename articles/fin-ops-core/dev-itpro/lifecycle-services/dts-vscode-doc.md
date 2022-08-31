@@ -1,20 +1,20 @@
 ---
 title: Dynamics 365 Translation Service Visual Studio Code 拡張機能 (パブリック プレビュー)
 description: この記事では、Visual Studio Code 用の Microsoft Dynamics 365 Translation Service (DTS) 拡張機能を Visual Studio Code ワークフローに統合する方法について説明します。
-author: joshftb
-ms.date: 4/18/2022
+author: joshsantana
+ms.date: 04/18/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: joshsantana
 ms.search.validFrom: 2022-05-02
-ms.openlocfilehash: f8778128780b248208c9b972696b5ae07c58b637
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 00d3efb3983aed2af175fd3eafb0775c3235332c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866457"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270699"
 ---
 # <a name="dynamics-365-translation-service-visual-studio-code-extension-public-preview"></a>Dynamics 365 Translation Service Visual Studio Code 拡張機能 (パブリック プレビュー)
 

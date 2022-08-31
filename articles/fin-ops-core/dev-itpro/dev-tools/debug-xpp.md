@@ -1,23 +1,23 @@
 ---
 title: Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 description: この記事では、Microsoft Visual Studio のデバッグ機能を使用して X++ コードをデバッグする方法について確認します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 23921
-ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb00778ce5bc54ed964a6ff3033869ef8df8d598
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 23921
+ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
+ms.openlocfilehash: 84d9aafb553ac40a308ba7804b542399b4b10c36
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103434"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271191"
 ---
 # <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a>Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 

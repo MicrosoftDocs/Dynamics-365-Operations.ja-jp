@@ -1,23 +1,23 @@
 ---
 title: 方法とメタデータの要素の廃止
 description: この記事では、コード ベースの拡大に伴って古くなるメソッドよびメタデータ要素の廃止に関する情報が提供されます。
-author: jorisdg
+author: gianugo
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
-ms.search.validFrom: 2019-1-31
+ms.author: gianura
+ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 9be5f1a55ddd205072301d9195161feb2bb5731f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4dab7b440cc5752324f4374bdf0f88626587c36c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866170"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279398"
 ---
 # <a name="deprecation-of-methods-and-metadata-elements"></a>方法とメタデータの要素の廃止
 

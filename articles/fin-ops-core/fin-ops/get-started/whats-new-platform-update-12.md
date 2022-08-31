@@ -1,26 +1,26 @@
 ---
 title: Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 12 新機能および変更された機能 (2017 年 11 月)
 description: この記事では、Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされました。
-author: tonyafehr
+author: sericks007
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: e577d51d-42d2-47c5-b388-93c8219c692a
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 132e5ec1e5696aa2173245791ebeb864e2cca344
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.custom: ''
+ms.assetid: e577d51d-42d2-47c5-b388-93c8219c692a
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: fd1c36fae566cec4335a5c711a730ffec30a69ae
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124850"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274602"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 財務と運用、Enterprise edition プラットフォーム更新プログラム 12 新機能および変更された機能 (2017 年 11 月)
 

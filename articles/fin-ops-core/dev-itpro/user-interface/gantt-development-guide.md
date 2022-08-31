@@ -1,25 +1,25 @@
 ---
 title: ガント コントロール開発ガイド
 description: この記事では、Gantt コントロールを使用して新しいフォームを作成する方法について説明します。
-author: ShylaThompson
+author: josaw1
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 17311
-ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c7003ac5c83869e5ceb9737d4c0ff541cc612a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 17311
+ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
+ms.openlocfilehash: 28dbb048c93b5200521a7ec6254fd53e17b78ea9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888125"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281690"
 ---
 # <a name="gantt-control-development-guide"></a>ガント コントロール開発ガイド
 

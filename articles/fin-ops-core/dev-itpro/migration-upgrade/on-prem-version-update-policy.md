@@ -1,26 +1,26 @@
 ---
 title: ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) リリースにおけるライフサイクルおよびサポート ポリシーの概要を説明します。
-author: cabeln
+author: faix
 ms.date: 12/14/2021
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
-ms.search.form: SysAbout
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 69914
 ms.search.region: Global
-ms.author: cabeln
+ms.author: osfaixat
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 77dd2cd1fd1abfad1fb63b57ad930b09964a2cf3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 69914
+ms.search.form: SysAbout
+ms.service: ''
+ms.openlocfilehash: 10a8bdbb625b9ded63bbb7112a7e56f954bc1385
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866143"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278425"
 ---
 # <a name="software-lifecycle-policy-for-microsoft-dynamics-365-finance--operations-on-premises"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) のソフトウェアのライフサイクル ポリシー
 

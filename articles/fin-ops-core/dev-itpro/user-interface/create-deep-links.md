@@ -1,25 +1,25 @@
 ---
 title: 共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 description: フォームおよびレコードへの共有可能かつセキュリティで保護された URL を作成する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 24321
-ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80bca47df8e89e3e6d7080f196d2522553214f1a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 24321
+ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
+ms.openlocfilehash: ae3e861ca64c8b245d255865f8035e64df83517f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783130"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275325"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 

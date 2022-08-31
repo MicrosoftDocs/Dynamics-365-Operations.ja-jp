@@ -1,25 +1,25 @@
 ---
 title: ツリー コントロールでのチェック ボックスのサポート
 description: この記事は、ツリー コントロールのチェック ボックス コントロールを使用するための入門書として作成されています。 ツリー コントロールを使用するための一般的な「方法」ではありません。
-author: RobinARH
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 31501
-ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ded5c9b82f43054f481350ff75237d5c15eed98e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 31501
+ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
+ms.openlocfilehash: 76bb7e6d7dd3b877cceb550db37f0035ea0db7ae
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783138"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279975"
 ---
 # <a name="check-box-support-in-tree-controls"></a>ツリー コントロールでのチェック ボックスのサポート
 

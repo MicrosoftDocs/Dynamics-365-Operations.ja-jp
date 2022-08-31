@@ -2,7 +2,7 @@
 title: Lifecycle Services (LCS) によるサービスの更新の一時停止
 description: この記事は環境に応じてサービスの更新を一時停止する方法を説明します。
 author: laneswenka
-ms.date: 04/21/2022
+ms.date: 08/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f310420df875ffc96b91bbdab6a23d3992fbe3c7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18a30ebf10420196869388ab6c95c3435769efdf
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866395"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219423"
 ---
 # <a name="pause-service-updates-through-lifecycle-services-lcs"></a>Lifecycle Services (LCS) によるサービスの更新の一時停止
 
@@ -55,7 +55,7 @@ LCS で **プロジェクト所有者** ロールが割り当てられている�
 > - バージョン N-1 は N よりも 1 つ古いバージョン (たとえば、10.0.24)
 > - バージョン N-2 は N よりも 2 つ古いバージョン (たとえば、10.0.23)
 > - バージョン N-3 は N よりも 3 つ古いバージョン (たとえば、10.0.22)
-> - バージョン N-4 は N よりも 4 つ古いバージョン (たとえば、10.0.22) (この例では、バージョン 10.0.22 の顧客は更新を一時停止 **できません**。)
+> - バージョン N-4 は N よりも 4 つ古いバージョン (たとえば、10.0.22) (この例では、バージョン 10.0.21 の顧客は更新を一時停止 **できません**。)
 
 一度に最大3つまでの連続する更新プログラムを一時停止することができます。 たとえば、バージョン 10.0.22 を使用している場合は、バージョン 10.0.23、10.0.24、10.0.25 に対して更新を一時停止することができます。 ただし、バージョン 10.0.26 に対する更新を一時停止することはできません。 1 年に 2 回以上の更新をお願いしています。
 

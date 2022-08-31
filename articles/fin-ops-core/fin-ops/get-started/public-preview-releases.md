@@ -2,7 +2,7 @@
 title: サービス更新の可用性
 description: この記事では、異なるリリース オプションに関する情報を提供します。
 author: hmahl
-ms.date: 06/21/2022
+ms.date: 08/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hmahl
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: bcf158b59831d929216443689a34ae44fadbb8e0
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: a450e6fb7d1fb10c909c0741bcda4d520e549383
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124972"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324375"
 ---
 # <a name="service-update-availability"></a>サービス更新の可用性
 
@@ -76,7 +76,7 @@ Microsoftは、予測可能なサービス更新を提供することを約束�
 
 ## <a name="release-processes"></a>プロセスのリリース
 
-それぞれの新しいリリースは、Dynamics 365 チームによって設計および開発されます。 新しいリリースはまずフィーチャー チームによって検証され、次に財務と運用チームによって検証されます。 このとき、広範なテストがさまざまなトポロジで行われます。 互換性チェックでは、下位互換性を確保するためのテストも実行されます。 さらに、 [リリース検証プログラム](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUQVdKVkVORjVDNloxTEkwS1JUSUxWN1pSWi4u) はお客様がご利用いただけます。 このプログラムを使用することにより、データベースおよびベンチマークのために使用され、品質保証の追加レイヤーを提供するオートメーションでテストされるコードなどのコンポーネントを共有できます。
+それぞれの新しいリリースは、Dynamics 365 チームによって設計および開発されます。 新しいリリースはまずフィーチャー チームによって検証され、次に財務と運用チームによって検証されます。 このとき、広範なテストがさまざまなトポロジで行われます。 互換性チェックでは、下位互換性を確保するためのテストも実行されます。
 
 プレビューをご利用いただくことで、すべてのお客様が今後のサービス更新にいち早くアクセスすることができます。 プレビュー サービス アップデートを通してできることは、機能のカスタマイズの検証、新機能の経験、Microsoftへのフィードバック提供です。  この段階では、サービス更新を開発環境、またはテスト環境に展開する必要があります。  このリリースを運用環境で使用することはできません。 リリース後は、パッケージは LCS の共有アセット ライブラリからダウンロードできます。 インストール時にプログラム規約に同意したものとします。 プレビュー (旧プレビュー アーリー アクセス プログラム (PEAP)) へのアクセス登録は不要になりました。
 

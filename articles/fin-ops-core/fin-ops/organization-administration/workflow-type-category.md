@@ -1,25 +1,25 @@
 ---
 title: ワークフロー カテゴリの作成
 description: この記事では、ワークフロー カテゴリの作成方法を説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 202694
-ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c639351a0df88a1f44ea435f06aa1a48c07b496b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 202694
+ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
+ms.openlocfilehash: ac416c76b31fcdd029894452b043a49b0bbdd00e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868564"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275926"
 ---
 # <a name="create-a-workflow-category"></a>ワークフロー カテゴリの作成
 

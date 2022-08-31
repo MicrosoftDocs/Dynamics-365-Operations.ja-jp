@@ -1,21 +1,21 @@
 ---
 title: Modern POS 拡張機能パッケージの作成
 description: この記事では、Modern POS 拡張機能パッケージの作成方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: caf74f8c993ec5b4e88579559d20b55e5b77e901
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2b43e4c57770a85e700aba6053590edc40efa9ba
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882216"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276850"
 ---
 # <a name="create-a-modern-pos-extension-package"></a>Modern POS 拡張機能パッケージの作成
 

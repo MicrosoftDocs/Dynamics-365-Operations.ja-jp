@@ -2,28 +2,31 @@
 title: フランスのキャッシュ レジスターの配置ガイドライン
 description: この記事では、フランスの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 08/10/2021
+ms.date: 08/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: France
-ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2021-4-30
+ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 6841b6bce5ee90f9f741bc0a0b267bdabd4c4520
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: Retail
+manager: annbe
+ms.openlocfilehash: f1fe4538e26c97bef72e289b22643d1d1d9c614b
+ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872814"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305164"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
+
+> [!WARNING]
+> この記事で説明されている手順を実装する必要があります (Commerce Version 10.0.28以前を使用している場合)。 バージョン10.0.29から、フランスで必要なすべての Commerce チャンネル コンポーネントがチェック ボックスから有効化されます。 Commerce Version 10.0.28 以前を使用している場合で、Commerce バージョン10.0.29 以降に移行する場合は、[Commerce Version 10.0.29 に移行する](#migrate-to-commerce-version-10029-or-later) の手順に従う必要があります。
 
 この記事では、フランスの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引の登録、販売取引のデジタル署名、およびローカルの形式で X および Z レポートの印刷を行えます。 フランスのローカライズの詳細については、 [フランスのキャッシュ レジスター機能](./emea-fra-cash-registers.md) を参照してください。 フランス向け Commerce の設定方法の詳細については、[フランス向け Commerce の設定](./emea-fra-cash-registers.md#set-up-commerce-for-france)を参照してください。
 
@@ -115,6 +118,9 @@ Modern POS 拡張コンポーネントを有効にするには、次の手順に
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -141,6 +147,9 @@ Cloud POS 拡張コンポーネントを有効にするには、次の手順に�
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -175,6 +184,9 @@ Commerce コンポーネントを含む配置可能パッケージを作成し�
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -183,14 +195,20 @@ Commerce コンポーネントを含む配置可能パッケージを作成し�
 1. Visual Studio ユーティリティ用の MSBuild コマンド プロンプトを起動し、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
 1. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
-## <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Modern POS のオフライン モードでのデジタル署名を有効にします。
+## <a name="migrate-to-commerce-version-10029-or-later"></a>Commerce Version 10.0.29 以降に移行する
 
-Modern POSでオフライン モードでのデジタル署名を有効にするには、新しい端末で Modern POS を有効化した後、これらの手順に従う必要があります。
+Commerce Version 10.0.28 以前を使用し、バージョン10.0.29 以降に移行する場合は、このセクションに説明されている手順が必要です。 Commerce 環境を正しく更新するには、次の手順に従う必要があります。
 
-1. POS にサインインします。
-1. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されていることを確認します。 **ダウンロードの保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
-1. POS からのサインアウト
-1. オフライン データベースが完全に同期するのを待ちます。
-1. POS にサインインします。
-1. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されていることを確認します。 **オフライン データベースで取引を保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
-1. Modern POS を再起動します。
+1. Commerce headquarters を更新します。
+1. **機能管理** ワークスペースで、[フランス特有の機能](./emea-fra-cash-registers.md#enable-features-for-france) を有効にして、その変更をチャネルに配布します。
+1. Commerce Runtime、クラウド POS、および Modern POS を更新し、フランスのレガシの拡張機能を除外します。
+    - **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** ファイルの Commerce Runtime 拡張 :
+        - Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance
+        - Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance
+        - Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration
+        - Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance
+    - **extensions.json** ファイルの POS 拡張機能:
+        - Microsoft/Receipts.FR
+        - Microsoft/FifAuditEvent.FR
+        - Microsoft/RestrictShiftDuration
+        

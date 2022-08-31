@@ -1,24 +1,24 @@
 ---
 title: 店舗内トポロジの選択
 description: この記事では、様々な Dynamics 365 Commerce の実店舗構成図を提供します。
-author: rassadi
+author: Reza-Assadi
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 44351
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: e40f889d5b233485f849fda7f40fb714b9f43ac8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 44351
+ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
+ms.openlocfilehash: 0ce16f1bef8aac78d6390aa8cf758e603b0f74bb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888281"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287728"
 ---
 # <a name="select-an-in-store-topology"></a>店舗内トポロジの選択
 

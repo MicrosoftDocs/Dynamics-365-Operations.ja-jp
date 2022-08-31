@@ -12,15 +12,14 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.custom:
-- "266104"
+ms.custom: 266104
 ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
-ms.openlocfilehash: 754f070afaec75ce35914967e6eadc7342a7624a
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 7d078184f85f81ad8ad54eb45132a3106ba8a8c9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205580"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281377"
 ---
 # <a name="information-access-and-reporting"></a>情報へのアクセスとレポート
 

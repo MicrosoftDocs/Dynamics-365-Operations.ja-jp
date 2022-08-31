@@ -1,26 +1,26 @@
 ---
 title: 会社間データ共有の概要
 description: この記事では、会社間でのデータ共有の概要について説明します。 これは、展開において、参照およびグループ データを会社間で共有するためのメカニズムです。
-author: ramasri
+author: RamaKrishnamoorthy
 ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
-ms.reviewer: kfend
-ms.custom: 89071
-ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3af18d24fbca160559029815f0663bdf7b6e5800
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 89071
+ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
+ms.search.form: SysDataSharingConfiguration
+ms.openlocfilehash: e23e3e559e9f77f28d14e1d90f476abbc72b2bc6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109312"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292468"
 ---
 # <a name="cross-company-data-sharing-overview"></a>会社間データ共有の概要
 

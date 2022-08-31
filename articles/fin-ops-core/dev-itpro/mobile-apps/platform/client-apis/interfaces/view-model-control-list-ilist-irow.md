@@ -1,18 +1,18 @@
 ---
 title: 行タイプ
 description: 行コントロールは、一覧を構成しています。 リストには、任意の数の行のコントロールが含まれています。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: c1d7f3a32b764860455782c76bfb7c17e0977f40
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 9001c2e5b069629befc6b933b34d01cd25c61452
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811218"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277492"
 ---
 # <a name="row-type"></a>行タイプ
 

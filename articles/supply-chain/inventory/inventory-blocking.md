@@ -2,7 +2,7 @@
 title: 在庫ブロック
 description: この記事では、Supply Chain Management の品質検査プロセスの一部である在庫ブロックの概要を示します。 在庫ブロックは、品目が処理または消費されるのを防ぐために使用できます。
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857811"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334688"
 ---
 # <a name="inventory-blocking"></a>在庫ブロック
 
@@ -96,11 +96,11 @@ ms.locfileid: "8857811"
 
 2 つのケース間のトランザクション状態と分析コードの違いに注意してください。 このため、**注文済品目の引当** オプションを有効にすることをお勧めします。
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>ブロックされた在庫をサンプルした品質指示の予定入庫を無効にする機能
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>ブロックされた在庫をサンプルした品質指示の予定入庫を無効にする
 
 在庫状況の結果として在庫がブロックされた品質注文をサンプルとする場合、在庫取引を簡素化するために、そのような品質注文からの予想受取を無効にする機能が利用できるようになります。 入荷予定が在庫状況により直ちにブロックされるため、この変更により手持ち在庫が減ることはありません。
 
-既定では、この機能は無効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースの *ブロックされた在庫をサンプルとする品質注文からの受領予測を無効にする* 機能を検索することで、オン/オフを切り替えることができます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management のバージョン10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースの *ブロックされた在庫をサンプルとする品質注文からの受領予測を無効にする* 機能を検索することで、この機能のオン/オフを切り替えることができます。
 
 ## <a name="additional-resources"></a>追加リソース
 

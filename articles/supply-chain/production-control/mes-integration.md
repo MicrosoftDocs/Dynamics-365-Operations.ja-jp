@@ -2,7 +2,7 @@
 title: サード パーティ製造システムとの統合
 description: この記事では、Microsoft Dynamics 365 Supply Chain Management をサード パーティの製造実行システム (MES) と統合する方法について説明します。
 author: johanhoffmann
-ms.date: 10/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 46f6db3dd9942131b379216e6fffe5551d6c8fc3
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 8629ef2581a114609d14999a3c1fc48b49c988e0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068034"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336218"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>サード パーティ製造システムとの統合
 
@@ -45,9 +45,7 @@ Supply Chain Management のユーザーは、このソリューションをよ�
     1. **ライセンス コンフィギュレーション** ページで 、**時間と出勤** チェック ボックスを オンにします。
     1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします
 1. **システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
-1. 次の方法で一覧表示されている機能を有効にします ([機能管理概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) も参照してください):
-    - **モジュール:** *生産制御*
-    - **フィーチャー名:** *製造実行システム統合*
+1. [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、*製造実行システム統合* 機能をオンにします。 (Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。)
 
 ## <a name="processes-available-for-mes-integration"></a>MES 統合で使用できるプロセス
 

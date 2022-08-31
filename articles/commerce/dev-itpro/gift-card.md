@@ -7,21 +7,21 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.devlang: ''
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: ivanv
+ms.author: brshoo
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: b25847b89aaf8f393fe1579a1c93a0e7542425c2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: retail
+ms.devlang: ''
+ms.openlocfilehash: 40a75956dbd8af8c58d582a618dbbad7cb3fc92b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881344"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271963"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 

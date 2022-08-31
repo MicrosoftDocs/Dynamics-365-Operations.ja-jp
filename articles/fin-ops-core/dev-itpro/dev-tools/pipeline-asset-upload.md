@@ -1,22 +1,22 @@
 ---
 title: Azure Pipelines を使用した資産のアップロード
 description: この記事では、Azure Pipelines を使用して、Microsoft Dynamics Lifecycle Services (LCS) の資産ライブラリに資産をアップロードする方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26731
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ffdf80396944204a3a7f3098df680be4238a299
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 26731
+ms.openlocfilehash: d8ef642ca68e8527a1e5bacf2878a32bf47459a0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103476"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271071"
 ---
 # <a name="upload-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のアップロード
 

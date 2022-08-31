@@ -1,25 +1,25 @@
 ---
 title: 共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 description: この記事では、共有環境で Retail Cloud POS をセキュリティ保護するための推奨事項について説明します。
-author: pdp1207
+author: josaw1
 ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 257674
-ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: prabhup
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5a1fb00d5bd71a6b72fe88db507040f6e85377ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 257674
+ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
+ms.openlocfilehash: 93048e6dcc21cfaf0649443412d0eac4b48074a1
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853808"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275099"
 ---
 # <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 

@@ -1,25 +1,25 @@
 ---
 title: コントロールの拡張機能
 description: この記事では、開発者がユーザー インターフェイスを拡張し、新しいユーザー インターフェイス パターンを定義できるようにするアーキテクチャについて説明します。
-author: RobinARH
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 27461
-ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c933f5a03b20a81c5ea642967911f729bf15508d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 27461
+ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413
+ms.openlocfilehash: a0e7dbc26ee91c2d0ae55cb5cbe2227835da5984
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783132"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272504"
 ---
 # <a name="control-extensibility"></a>コントロールの拡張機能
 

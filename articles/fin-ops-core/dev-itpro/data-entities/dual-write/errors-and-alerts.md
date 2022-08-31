@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 06/24/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed5821fe9a548258edffe371042ece0ef9d7a066
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c4a1922760d9979a09678a11333e58c3f1f1825a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066487"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289332"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 

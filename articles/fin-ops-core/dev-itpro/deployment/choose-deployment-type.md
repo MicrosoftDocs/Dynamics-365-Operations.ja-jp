@@ -1,7 +1,7 @@
 ---
 title: 展開オプション
 description: 財務と運用アプリは、クラウドまたはオンプレミスで実行することができます。 この記事では、各種の展開オプションについて説明します。
-author: sericks007
+author: LaneSwenka
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -9,18 +9,17 @@ ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.custom:
-- "60373"
+ms.custom: 60373
 ms.assetid: ''
-ms.openlocfilehash: 59a38dad319f8737d10deed6f5b0a388c74a434a
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: a5af3bfabf6b1ad4981e4e8c7d7de19f532a4d82
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205912"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271491"
 ---
 # <a name="deployment-options"></a>展開オプション
 

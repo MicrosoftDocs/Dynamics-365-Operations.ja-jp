@@ -1,18 +1,18 @@
 ---
 title: アプリケーション モジュール
 description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 7e7c141bea78819394ecd44de46fda09fe9059c0
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: 8314b40fa2ad8b3a381da9a0eab2dd77b7860d8e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811230"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267781"
 ---
 # <a name="application-module"></a>アプリケーション モジュール
 

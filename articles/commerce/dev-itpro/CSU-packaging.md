@@ -1,21 +1,21 @@
 ---
 title: Cloud Scale Unit 拡張機能パッケージの作成
 description: この記事では、Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) の拡張機能パッケージの作成方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 06/01/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-30-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-30
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: f09a4f6ea7fed72ee589e267011c529f176317ae
-ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
+ms.openlocfilehash: 15c0d392447d3a1a30dabbeb0773cc7fc816d4fa
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "9168971"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276250"
 ---
 # <a name="create-a-cloud-scale-unit-extension-package"></a>Cloud Scale Unit 拡張機能パッケージの作成
 

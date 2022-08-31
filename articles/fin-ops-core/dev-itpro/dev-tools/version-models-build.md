@@ -1,23 +1,23 @@
 ---
 title: 自動ビルドのモデル バージョンの更新
 description: この記事では、ビルド出力のソース パッケージと配置可能なパッケージのモデルを、それらを生成したビルドのバージョンで更新する方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 05/25/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26731
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75fb12d55ff614f2c930a183a7191349f4eb3433
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 26731
+ms.assetid: ''
+ms.openlocfilehash: ff8d81f16a56c11b048ae3cd2a5e4f848553e76b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866986"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271015"
 ---
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 

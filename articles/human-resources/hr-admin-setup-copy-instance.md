@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178536"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324263"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
@@ -47,13 +47,14 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Human Resources データベースのコピーによる影響
 
+> [!Note]
+> 2022 年 8 月から、運用環境をサンドボックス環境にコピーする際に、Microsoft Azure Blob Storage のドキュメントは含まれています。 添付するすべてのドキュメントやテンプレートは、ソース環境からターゲット環境へコピーされます。
+
 Human Resources データベースのコピーをする際に、次のイベントが発生します。
 
 - コピーの過程で、対象とする環境の既存のデータベースが削除されます。 コピーの完了後は、既存のデータベースを復元することはできません。
 
 - 対象とする環境は、コピーが完了するまで使用することができません。
-
-- Microsoft Azure Blob storage 内のドキュメントは環境間でのコピーがされません。 そのため、この ストレージ に属するドキュメントやテンプレートはコピーされず、コピー元の環境に残ります。
 
 - 「システム管理者」セキュリティ ロールを持つユーザー以外のユーザー、および他の内部サービス ユーザー アカウントは使用できません。 管理者ユーザーは他のユーザーがシステムに復帰する前にデータを削除することができます。
 

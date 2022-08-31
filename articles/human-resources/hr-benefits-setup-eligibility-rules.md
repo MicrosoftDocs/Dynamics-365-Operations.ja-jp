@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4c8cd4e32880df771a4a72237d212e061f849ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848255"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337026"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>適格性のルールとオプションのコンフィギュレーション 
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 給付金管理の必須パラメーターを構成したら、給付金プランに関連付ける適格性ルール、バンドル、期間、およびプログラムを作成できます。
 

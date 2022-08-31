@@ -1,25 +1,25 @@
 ---
 title: 国/地域コンテキストの適用
 description: この記事では、ローカライズおよび翻訳要件を満たすために国/地域コンテキストを適用する方法に関する情報を提供します。
-author: ShylaThompson
+author: sericks007
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 21681
-ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad29ecaae18c072389e475cd4a669178b6fabbc3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 21681
+ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
+ms.openlocfilehash: 9f81816ae173fd36fedac63b135d0f37962261ea
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866569"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270751"
 ---
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 

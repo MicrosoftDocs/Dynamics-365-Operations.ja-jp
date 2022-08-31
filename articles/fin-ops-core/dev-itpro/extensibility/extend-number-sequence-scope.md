@@ -1,25 +1,25 @@
 ---
 title: 番号順序スコープの拡張
 description: この記事では、開発者が番号シーケンスのスコープを拡張する方法について説明します。
-author: RobinARH
+author: josaw1
 ms.date: 04/14/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 10031
-ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: lgou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed02657f79e96fedc3e4769c0fe08c80c11aa47b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 10031
+ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
+ms.openlocfilehash: de3114e008ba2957c56f09b1594f518937a7be66
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866942"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270939"
 ---
 # <a name="extend-the-scope-of-number-sequences"></a>番号順序スコープの拡張
 

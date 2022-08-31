@@ -1,24 +1,24 @@
 ---
 title: 注文属性の定義および設定
 description: この記事では、Commerce Headquarters、POS、および CRT でオーダーの属性値を直接編集および設定する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 09/25/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 60c820864cb68acbf9acc202e378e2035a62b337
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 83892
+ms.openlocfilehash: ff065a668d693d6591e0d776bd8de371bd263007
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860272"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9287748"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義および設定
 

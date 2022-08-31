@@ -2,19 +2,19 @@
 title: 財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラム (2022 年 5 月)
 description: この記事では、財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 03/04/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-03-04
-ms.openlocfilehash: a1617b7a22ec0046b3c4e24e0c177affa7152578
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 6a3bb6f8eea344e044340e098f0a89b287c92976
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067738"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218832"
 ---
 # <a name="platform-updates-for-version-10026-of-finance-and-operations-apps-may-2022"></a>財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラム (2022 年 5 月)
 
@@ -32,8 +32,8 @@ ms.locfileid: "9067738"
 
 | 機能領域    | フィーチャー | 詳細 |  に  によって有効化 |
 |-----------------|---------|------------------|---------------------------|
-| クライアント  | <p>**フルページ フォームのタビング動作を合理化する**</p><p>これまで財務と運用アプリでは、フルページ フォームの各領域 (ナビゲーション バー、メイン フォーム、アクション ウィンドウなど) のすべてのコントロール間をタブで移動していました。 ページ上の別の領域にフォーカスを移動するには、マウスまたは専用のキーボード ショートカットを使用する必要がありました。 この機能を使用すると、これらのタビング コンテナーが削除されるため、ユーザーが作業している領域に関係なく、特別なキーボード ショートカットを必要とせずに、フルページ フォームのすべてのコントロールをタブで移動できます。<br><br>既存のキーボード ショートカットは、ユーザーがページ上の領域間をすばやく移動する手段としてそのまま機能します。 | [キーボード ショートカット](../../fin-ops/get-started/shortcut-keys.md)  | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |
-| クライアント  | <p>**ユーザーがタイル サイズを選択および変更できるようにする**</p><p>この機能により、ユーザーはワークスペース内のタイルのサイズを 4 つの使用可能なサイズのいずれかに変更できます。 ワークスペースに新しいタイルを追加するユーザーは、構成ダイアログで目的のタイル サイズを選択できます。</p><p>この機能はプレビューリ リースでは使用できないことに注意してください。</p> | [ユーザー エクスペリエンスのパーソナライズ](../../fin-ops/get-started/personalize-user-experience.md)  | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |  
+| クライアント  | [フルページ フォームのタビング動作を合理化する](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/streamlined-tabbing-behavior-full-page-forms) | [キーボード ショートカット](../../fin-ops/get-started/shortcut-keys.md)  | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |
+| クライアント  | [ユーザーがタイル サイズを選択および変更できるようにする](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/allow-users-select-change-tile-sizes) | [ユーザー エクスペリエンスのパーソナライズ](../../fin-ops/get-started/personalize-user-experience.md)  | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |  
 
 ### <a name="bug-fixes"></a>バグ修正
 

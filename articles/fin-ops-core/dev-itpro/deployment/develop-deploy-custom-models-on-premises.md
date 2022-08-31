@@ -1,26 +1,26 @@
 ---
 title: カスタム モデルの開発とオンプレミス環境への配置
 description: この記事では、カスタマイズと拡張機能を開発し、オンプレミス環境に展開するプロセスについて説明します。
-author: kfend
+author: gianugo
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 107013
-ms.assetid: ''
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 4b406e0645d503c5d4963216b6a282f27c5d1936
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 107013
+ms.assetid: ''
+ms.service: ''
+ms.openlocfilehash: a54f7aaf5bad3c3085ed383e1dfe9d2fbc912f46
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103457"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271471"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 

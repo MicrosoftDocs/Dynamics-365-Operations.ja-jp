@@ -1,25 +1,25 @@
 ---
 title: POS カートのビュー イベントとハンドラー
 description: この記事では、拡張機能がカスタム シナリオの販売時点管理 (POS) ビュー イベントとハンドラーを使用する方法について説明します。
-author: mugunthanm
+author: josaw1
 ms.date: 02/13/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 9b8767d26e9af70f39d8e4b1f026a62f8c75d768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 2071e46236d03f912518d99ca8a109121a4b4d93
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897240"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284335"
 ---
 # <a name="pos-cart-view-events-and-handlers"></a>POS カートのビュー イベントとハンドラー
 

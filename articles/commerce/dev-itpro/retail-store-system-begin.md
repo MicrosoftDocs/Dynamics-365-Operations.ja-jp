@@ -1,26 +1,26 @@
 ---
 title: Commerce Scale Unit (自己ホスト)
 description: この記事では、Commerce Scale Unit (自己ホスト) と、どんなときにそれを使用するかについて説明します。
-author: athinesh99
+author: josaw1
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
-ms.custom: 219714
-ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ccb846d10f73ad5fa7f7aac1a81a2ee61e45def7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 219714
+ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
+ms.search.industry: Retail
+ms.openlocfilehash: 00ef84339954e9bd0b40803dcada7c9244c0c2fe
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874938"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275095"
 ---
 # <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 

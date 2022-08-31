@@ -1,23 +1,23 @@
 ---
 title: 要素の使用方法を決定するためのコマンド
 description: この記事では、アプリケーションでの要素の使用方法を決定するために、Microsoft Visual studio ツールに追加されたコマンドについて説明します。
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 4984
-ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 226a7b9e74d19d7c2e148db21c16877b5818c4ed
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.custom: 4984
+ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
+ms.openlocfilehash: 63953051ea39b3669e6d1dd0f5277f7868294018
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781771"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271155"
 ---
 # <a name="commands-for-determining-how-elements-are-used"></a>要素の使用方法を決定するためのコマンド
 

@@ -1,18 +1,18 @@
 ---
 title: HyperLinkMetadata タイプ
 description: HyperLink メタデータ タイプ。
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 0da2fa27b4f11145f3602d697f4bdf3fcf849d76
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.author: jasongre
+ms.openlocfilehash: bbcac7637f3b6cbd32d3964ad289666b0224f99d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811700"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276534"
 ---
 # <a name="hyperlinkmetadata-type"></a>HyperLinkMetadata タイプ
 

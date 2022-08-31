@@ -2,7 +2,7 @@
 title: 倉庫の場所の状態
 description: この記事では、倉庫の場所のステータス機能の概要を示します。
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 2b3c408f5a5e4ce85a235ac83c15b648e43b5e10
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9b12a7d6a7ce388c8fd049c4aef79ea57c82ae60
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220060"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336098"
 ---
 # <a name="warehouse-location-status"></a>倉庫の場所の状態
 
@@ -40,9 +40,9 @@ Microsoft Dynamics 365 Supply Chain Management には、場所を操作したり
     - **ピッキング** – 最後に空になった後の場所に対して、出庫トランザクションが実行されています。
     - **ストレージ** – 最後に空になった後の場所に対して、入庫トランザクションのみが実行されています。
 
-## <a name="turn-on-the-warehouse-location-status-feature"></a>倉庫の場所のステータス機能をオンにします
+## <a name="turn-the-warehouse-location-status-feature-on-or-off"></a>倉庫の場所のステータス機能をオンまたはオフにする
 
-この機能は使用する前にシステムでオンにする必要があります。 Supply Chain Management のバージョン 10.0.29 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースで *倉庫の場所の状態* 機能を検索して、この機能の有効/無効を切り替えることができます。
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *倉庫の場所の状態* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="set-up-warehouse-location-status"></a>倉庫の場所のステータスの設定
 

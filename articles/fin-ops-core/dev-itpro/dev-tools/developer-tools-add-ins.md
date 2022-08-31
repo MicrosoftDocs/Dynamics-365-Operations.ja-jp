@@ -1,23 +1,23 @@
 ---
 title: Visual Studio 用のツールおよびアドイン
 description: この記事では、Microsoft Visual Studio に追加されたアドイン インフラストラクチャを説明し、開発者が開発ツールをより簡単に追加できるようにします。
-author: RobinARH
+author: gianugo
 ms.date: 08/17/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 27521
-ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e119d17757b49cc704815c71dbf8fcf01ecef545
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 27521
+ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
+ms.openlocfilehash: 19b6b37099fe04a85f71603b602f77b89c68d4df
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867078"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271175"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 

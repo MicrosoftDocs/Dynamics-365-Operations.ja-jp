@@ -1,24 +1,24 @@
 ---
 title: オンプレミス配置で使用できるコマースの機能
 description: この記事では、オンプレミス配置で使用できる Commerce 機能を一覧表示します。
-author: aamirallaqaband
+author: ShalabhjainMSFT
 ms.date: 01/31/2022
 ms.topic: article
 ms.prod: dynamics-365
-ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: shajain
 ms.search.validFrom: July 2017 update
-ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: bf4de47a227ef41652a5dc721e40b9406f65a2d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.dyn365.ops.version: 6/30/2017
+ms.service: ''
+ms.openlocfilehash: 2eb689a2395d001c9533f8d70c4e748a41df99c5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877226"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288310"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 

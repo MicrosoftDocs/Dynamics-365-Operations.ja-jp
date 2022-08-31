@@ -1,25 +1,25 @@
 ---
 title: 拡張機能およびオーバーレイによるカスタマイズ
 description: この記事では、モデル要素のソース コードとメタ データをカスタマイズするオーバーレイと拡張機能の 2 つの方法について説明します。
-author: jorisdg
+author: gianugo
 ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26961
-ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c03903a1f06bb2c50e2a8ae1f5a7d4dd509e1fd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 26961
+ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
+ms.openlocfilehash: c5595d8d65a44a308fb63de3b9b7b6cea8718c8f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866948"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270951"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能およびオーバーレイによるカスタマイズ
 

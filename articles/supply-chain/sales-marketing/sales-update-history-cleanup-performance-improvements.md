@@ -2,7 +2,7 @@
 title: 販売履歴データのクリーンアップをスケジュールする
 description: この記事では、販売更新履歴のクリーンアップ定期処理タスクを定期的に実行してスケジュールすることで、システムのパフォーマンスを向上させる方法について説明します。
 author: myvakalo
-ms.date: 03/21/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e9a4dd5372afa8a0452449d1cb9121107e6e1610
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900828"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335506"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>販売履歴データのクリーンアップをスケジュールする
 
@@ -51,10 +51,7 @@ Microsoft Dynamics 365 Supply Chain Management は標準操作の一部として
 
 *経過日数に基づいて販売更新履歴をクリーンアップする* 機能を使用すると、*販売更新履歴クリーンアップ* 定期処理タスクの実行時に保持するレコードの最大期間を指定できます。 古いレコードは削除されます。 この機能は、タスクが実行される日付を基準として常に年数が計算されるので、タスクを定期的に実行するために設定する場合に役立ちます。 この機能を使用しない場合、保持できる最も古いレコードに対する特定の日付だけを設定できます。
 
-この機能は使用する前にシステムでオンにする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *販売とマーケティング*
-- **機能名:** *経過日数に基づいて販売更新履歴をクリーンアップする*
+この機能を使用するには、システムでオンにする必要があります。 Supply Chain Management バージョン 10.0.29 では、この機能は必須であり、オフにすることはできません。 10.0.29 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *年齢に基づいて営業更新履歴をクリーンアップする* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="set-up-and-schedule-the-sales-history-cleanup-periodic-task"></a>販売履歴クリーンアップ定期処理タスクの設定およびスケジュール設定
 
