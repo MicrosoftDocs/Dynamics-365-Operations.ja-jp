@@ -466,6 +466,8 @@
                           items:
                             - name: 外部ギフト カードのサポート
                               href: dev-itpro/gift-card.md
+                            - name: ギフト カードの会社間データ共有
+                              href: dev-itpro/data-sharing-gift-cards.md
                     - name: RSAT
                       items:
                         - name: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
