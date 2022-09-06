@@ -2,7 +2,7 @@
 title: 電子申告 (ER) の送信先
 description: この記事では、電子申告の送信先の管理、サポートされている送信先のタイプ、およびセキュリティ上の注意事項について説明します。
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281970"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360982"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -247,6 +247,52 @@ ER フォーマットの **フォルダ** コンポーネントの配信先を�
 ### <a name="limitations"></a>制限
 
 ネストした他の **フォルダー** コンポーネントを含む **フォルダー** コンポーネントの **名前を付けて送信** フィールドを **個別のファイル** に設定した場合、その設定はネストした **フォルダー** コンポーネントには設定の変更が適用されません。
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> テンプレートのページ レイアウト プロパティの変更
+
+レポート生成用にテンプレートを Microsoft Office (Excel または Word) 形式で使用するように設計されている ER 書式コンポーネント用の ER 出力先を構成できます。 この形式の所有者ではない場合に、形式のテンプレートのページ レイアウト プロパティを変更する必要がある場合、バージョン 10.0.29 より前のバージョンの Finance で、派生するフォーマットを作成し、テンプレートのプロパティを変更する必要があります。 次に、派生形式の構成を管理する必要があります。 ただし、バージョン 10.0.29 以降では、派生形式の構成を作成および管理しなくてすむように、テンプレートのページ レイアウト プロパティを実行時に変更できます。 これを行うには、必要なプロパティを、設定済みの ER 送信先の一部として設定します。 ER 形式を実行し、特定のページ レイアウト プロパティを使用するように構成されている ER 送信先を実行すると、実行される送信先のページ レイアウト プロパティの値が使用しているテンプレートに適用され、元のテンプレートのプロパティが置換されます。 同じ形式のコンポーネントに対してさまざまな送信先を設定し、使用中のテンプレートに対して異なるページ レイアウト プロパティを構成できます。
+
+次のプロパティは、Excel または Word 形式のテンプレートを使用するように設計されている形式コンポーネントに対して ER 送信先で構成できます。
+
+- ページの向き
+    - 縦
+    - 横
+- 紙のサイズ
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - 法的情報
+    - Letter
+    - Statement
+    - Tabloid
+- ページ余白
+    - 上
+        - ヘッダー
+    - 下
+        - フッター
+    - 左
+    - 右
+
+> [!NOTE]
+> PDF 変換が構成されている場合、この方法で構成されたテンプレートの印刷の向きは、[PDF 変換の印刷の向き](#select-a-page-orientation-for-pdf-conversion)に揃える必要があります。
+
+ページの余白を設定するには、長さの単位を選択する必要があります。
+
+- インチ
+- センチメートル
+- ミリメートル
+
+![[電子申告の送信先] ページのページ レイアウト プロパティを設定します。](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> 余白の値はセンチメートルで示され、小数点以下桁数が複数に指定されている場合、実行時に小数点以下 1 桁の最も近い値に丸められます。
+>
+> 余白の値はミリメートルで示され、小数点以下桁数で指定されている場合、Excel の実行時に小数点なしの最も近い整数に丸められます。
+>
+> 余白の値はミリメートルで示され、小数点以下桁数が複数に指定されている場合、Word の実行時に小数点 1 桁の最も近い値に丸められます。
 
 ## <a name="security-considerations"></a>セキュリティ上の注意事項
 

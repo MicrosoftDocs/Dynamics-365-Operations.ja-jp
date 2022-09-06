@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 6b42252a37f01a2b387c2393760998a6b2e4761d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271518"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357661"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -69,10 +69,10 @@ Commerce Scale Unit は、次の地域に配置することができます。
 | APAC            | 東アジア           | 能力上限    |   コメントはありません。                           |
 | APAC            | インド南部         | キャパシティが制限されている | 展開は許可されていません。    |
 | APAC            | インド中部       | 能力上限    | 承認プロセスが必要です。 |
-| EMEA            | 西ヨーロッパ         | 能力上限    | 現時点では LCS で使用できません。 |
-| EMEA            | 北ヨーロッパ        | 能力上限    | 現時点では LCS で使用できません。 |
-| EMEA            | イギリス南部            | 一般に入手可能 |    コメントはありません。                          |
-| EMEA            | イギリス西部             | 一般に入手可能 |    コメントはありません。                          |
+| EMEA            | 西ヨーロッパ         | 一般に入手可能    |  コメントはありません。 |
+| EMEA            | 北ヨーロッパ        | 一般に入手可能    |  コメントはありません。 |
+| EMEA            | 英国南部            | 一般に入手可能 |    コメントはありません。                          |
+| EMEA            | 英国西部             | 一般に入手可能 |    コメントはありません。                          |
 | スイス     | スイス北部   | 能力上限    | 承認プロセスが必要です。 |
 | アラブ首長国連邦             | アラブ首長国連邦北部           | 能力上限    | 承認プロセスが必要です。 |
 

@@ -2,7 +2,7 @@
 title: Modern POS (MPOS) のインストール、構成、有効化
 description: この記事では、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 author: jashanno
-ms.date: 09/01/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 372fab52f0f8e1ec470a5c8857a1cef6cb932373
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5edd551167752b8d04a9010d517893fc80ed984c
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910484"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9386992"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
@@ -355,7 +355,7 @@ Modern POS インストーラーは、まず関連付けられているファイ
 
 開発者トポロジまたはデモ環境などのシングル コンピュータ システム上、または Commerce Scale Unit と Modern POS が同じコンピュータにインストールされている場合は、Modern POS はデバイス有効化を完了できません。
 
-**ソリューション:** この問題は、Modern POS が同じコンピューターへのネットワーク コール (つまり、それ自体の呼び出し) を行うことができないために発生します。 この問題を緩和するには、同じコンピュータに対して通信できるように AppContainer ループバック例外を有効にする必要があります。 Modern POS のこのループバックを有効にするのにさまざまなアプリケーションが役立ちます。 ループバックの詳細については、[ループバックの有効化およびネットワーク分離のトラブルシューティングの方法](/previous-versions/windows/apps/hh780593(v=win.10))を参照してください。
+**ソリューション:** この問題は、Modern POS が同じコンピューターへのネットワーク コール (つまり、それ自体の呼び出し) を行うことができないために発生します。 これは生産設定のシナリオではないはずですが、同じコンピュータに通信が行われるように、AppContainer ループバック例外を有効にして、この問題を軽減することができます。 Modern POS のこのループバックを有効にするのにさまざまなアプリケーションが役立ちます。 ループバックの詳細については、[ループバックの有効化およびネットワーク分離のトラブルシューティングの方法](/previous-versions/windows/apps/hh780593(v=win.10))を参照してください。 セキュリティ リスクの可能性があるため、絶対に必要な場合を除き、ループバックを使用することは推奨されないことを理解するのが重要となります。
 
 ## <a name="additional-resources"></a>追加リソース
 

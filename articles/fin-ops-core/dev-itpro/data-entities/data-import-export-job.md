@@ -2,7 +2,7 @@
 title: データ インポートおよびエクスポート ジョブの概要
 description: データ管理ワークスペースを使用して、データ インポート/エクスポート ジョブを作成して管理します。
 author: peakerbl
-ms.date: 04/25/2022
+ms.date: 08/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109465"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357600"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>データ インポート/エクスポート ジョブの概要
 
@@ -76,6 +76,19 @@ ms.locfileid: "9109465"
 
 > [!NOTE]
 > XML ベースのファイル形式の場合は、必ず有効な文字のみを使用してください。 有効な文字の詳細については、[XML 1.0 の有効な文字](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/) を参照してください。 XML 1.0 では、タブ、キャリッジ リターン、ライン フィード以外の制御文字は使用できません。 無効な文字の例としては、角かっこ、中かっこ、バックスラッシュがあります。 
+
+データをインポートまたはエクスポートするには、特定のコード ページの代わりに Unicode を使用します。 これにより、最も一貫した結果を得ることができます。また、Unicode 文字も含まれるため、データ管理ジョブの失敗がなくなります。 Unicode を使用するシステム定義のソース データ形式ではすべて、ソース名に **Unicode** が使用されます。 Unicode 形式は、**地域の設定** タブの **コード ページ** として Unicode エンコード ANSI コード ページを選択することで適用されます。Unicodeの次のいずれかのコード ページを選択します。
+
+| コード ページ | 表示名                |
+|-----------|-----------------------------|
+| 1200      | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001     | Unicode (UTF-32 Big-Endian) |
+| 1201      | Unicode (Big-Endian)        |
+| 65000     | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+コード ページの詳細については、[コード ページ識別子](/windows/win32/intl/code-page-identifiers/)を参照してください。
 
 ### <a name="sequence-the-entities"></a>エンティティに順序付けをする
 データ テンプレート、またはインポート/エクスポート ジョブで、エンティティに順序付けをすることができます。 1 つ以上のデータ エンティティが含まれるジョブを実行する場合、データ エンティティが正しく順序付けされていることを確認する必要があります。 主にエンティティ間の機能依存関係に合うように、エンティティに順序付けします。 エンティティに機能依存関係がない場合は、並行インポートまたはエクスポートにスケジューリングできます。 

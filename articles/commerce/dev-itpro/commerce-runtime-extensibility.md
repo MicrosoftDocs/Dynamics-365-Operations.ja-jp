@@ -2,7 +2,7 @@
 title: Commerce Runtime (CRT) の拡張機能
 description: この記事では、Commerce Runtime (CRT) と Retail Server を拡張するさまざまな方法について説明します。
 author: josaw1
-ms.date: 06/16/2022
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
-ms.openlocfilehash: 24c035869e36745716770d1df8ed132ddac31b8a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa0d5faafd737fbdd073318fc801d48b05431c80
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276246"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9386954"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce Runtime (CRT) の拡張機能
 
@@ -214,7 +214,7 @@ POS から CRT をデバッグするには、POS が Retail Server に接続さ�
 > [!NOTE]
 > - 拡張機能コードに対して、要求の実行時に **ConfigureAwait(false)** を使用することをお勧めします。
 > - CRT データベース拡張機能での Microsoft 分散トランザクション コーディネーター (MSDTC) の使用はサポートされていません。
-> - 既存の CRT 要求および応答を TransactionScope でラッピングすると、同じトランザクション内で複数のデータベース接続が開かれているため、データベースの例外が発生する可能性があるため、避けてください。 また、パフォーマンスを改善するには、読み取りシナリオに TransactionScope を使用しないようにしてください。
+> - 既存の CRT 要求および応答を TransactionScope でラッピングすると、同じトランザクション内で複数のデータベース接続が開かれているため、データベースの例外が発生する可能性があるため、避けてください。 また、パフォーマンスを改善するには、読み取りシナリオに TransactionScope を使用しないようにしてください。 代わりに、**TransactionSyncAsyncFlowOption.Enabled** を指定して、非同期呼び出しを適切に許可します。
 
 
 ### <a name="request-class"></a>クラスのリクエスト

@@ -1,7 +1,7 @@
 ---
 title: 財務と運用アプリケーションのアーキテクチャ
 description: この記事では、財務と運用アプリケーション アーキテクチャの概要を示します。
-author: ClaudiaBetz-Haubold
+author: abunduc-ms
 ms.date: 04/24/2020
 ms.topic: overview
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
-ms.author: chaubold
+ms.author: abunduc
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e5085dc12b50cb638982cc0cc92f8efb3efb89c
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: d37210a2bca1e37d5bd092a20341c032f537da99
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109024"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387043"
 ---
 # <a name="finance-and-operations-application-architecture"></a>財務と運用アプリケーションのアーキテクチャ
 

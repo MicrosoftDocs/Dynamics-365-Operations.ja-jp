@@ -2,7 +2,7 @@
 title: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 description: この記事では、セルフサービスを使用して、従来型の店舗にあるコンピューターに Commerce Scale Unit (自己ホスト) を構成し、インストールする方法について説明します。
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
 ms.search.industry: Retail
 ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
-ms.openlocfilehash: 26e8bba4ab8ee7171588ceb5793ac7054f29e2f0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f3218c492911eabdf42b7c64eeacf92381a85b01
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288465"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387000"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
@@ -153,6 +153,7 @@ ms.locfileid: "9288465"
 ### <a name="run-the-commerce-scale-unit-installer"></a>Commerce Scale Unit インストーラーの実行
 
 > [!NOTE]
+> - CSU (Self-hosted) インストーラを実行して現在のインストールを更新する場合は、バージョンが同じかそれより新しいことを確認してください。 何らかの理由で以前のバージョンをインストールする必要がある場合は、現在の CSU (セルフサービス) をアンインストールし、CSU SQL データベースを削除する必要があります。 以前のバージョンが必要なシナリオでデータベースを削除しない場合、データベース スキーマとデータの新しいバージョンは、CSU インストールおよびエラーおよび問題が発生します。
 > - 通常、Retail Server とチャネル データベースがすでに構成されている開発者環境に CSU をインストールしないでください。
 > - Commerce Scale Unit (自己ホスト) インストーラーを実行する前に、インストーラーの実行可能ファイルと同じ名前の構成ファイルがあることを確認してください。 これは、**ExecutableInstallerName.xml** のように表示され、両方のファイルを同じフォルダに配置します。 別の方法として、構成ファイルを手動で指定するためのコマンド ライン区切り記号があります。
 > - Retail Cloud POS をインストールして使用する場合は、次の手順に従って、インストーラーを初めて実行するときに構成を初期化する必要があります。

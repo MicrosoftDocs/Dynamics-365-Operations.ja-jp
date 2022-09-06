@@ -1,7 +1,7 @@
 ---
 title: サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 description: この記事では、サブスクリプションおよびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
-author: ClaudiaBetz-Haubold
+author: skaue-ms
 ms.date: 08/11/2020
 ms.topic: overview
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: chaubold
+ms.author: toskaue
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: c6b713f411a3a9683103bd6a72aceb01a21fca4b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 417372bee78d67bbe896b644646ad74c41a44f6e
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124686"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9386949"
 ---
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 

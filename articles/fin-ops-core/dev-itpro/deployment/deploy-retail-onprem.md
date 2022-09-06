@@ -2,7 +2,7 @@
 title: オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
 description: この記事では、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 23a65b68bc52d43e8eabdc51261e22a294eb88f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c71030739054ca3dcdfe7adfda7ec1a30f1f5fbe
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867456"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387004"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での Retail チャネルのコンポーネントのインストール手順
 
@@ -43,7 +43,7 @@ ms.locfileid: "8867456"
 ## <a name="installation-steps"></a>インストール手順
 
 1. 以前に作成した [アプリケーションの共有](setup-deploy-on-premises-pu12.md#setupfile) ( **LocalAgent** 共有フォルダではありません) にて、共有を行う場所のルートディレクトリに **selfservicepackages** という名称のフォルダを作成します。  
-2. 各 AOS コンピューターで、簡単にアクセスできるディレクトリを作成します (**C:/selfservicepackages** など)。
+2. 各 AOS コンピューターで、簡単にアクセスできるディレクトリを作成します (**C:/RetailSelfService** など)。
 3. いづれかのAOSコンピュータ (どれでも構いません) 上で、次のPowerShellスクリプトを実行します。
 
     ```powershell
@@ -54,7 +54,7 @@ ms.locfileid: "8867456"
     > - 上記の手順は、バージョン 10.0 以降に適用されます。
     >
     > ```powershell
-    > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>' -SendProductSupportTelemetryToMicrosoft
+    > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/RetailSelfService**>' -SendProductSupportTelemetryToMicrosoft
     > ```
     > - パラメーター **- envName** は、環境が生成されるときに作成時に既知である必要があります。
     > - 従来のパラメータ **-DatabaseServer** および **-DatabaseName** が環境設定に基づいて認識される必要があります。
@@ -71,7 +71,7 @@ ms.locfileid: "8867456"
     > パラメーター **-RetailSelfServicePackages** は、この手順の最初で作成したフル パスの場所です (**C:/selfservicepackages**)。
 
 5.  コマース インストーラーを使用するには、LCS から適切なバイナリ更新をダウンロードしてください。 手順については、 [Lifecycle Services (LCS) から更新プログラムをダウンロードする](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
-6.  ZIP ファイルを展開し、すべてのセルフ サービス インストーラーを、手順 2 において各 AOS コンピューターで定義および作成された **C:/selfservicepackages** フォルダーにコピーします。 6 つのセルフ サービス インストーラーは次のとおりです。 
+6.  ZIP ファイルを展開し、すべてのセルフ サービス インストーラーを、手順 2 において各 AOS コンピューターで定義および作成された **C:/RetailSelfService** フォルダーにコピーします。 6 つのセルフ サービス インストーラーは次のとおりです。 
     - AsyncServerConnectorServiceSetup.exe
     - RealtimeServiceAX63Setup.exe
     - HardwareStationSetup.exe
@@ -89,17 +89,13 @@ ms.locfileid: "8867456"
 10.  新しく生成されたサーバー アプリケーションを編集し、**シークレットをリセット** を選択します。
 
      > [!NOTE]
-     > これは、各 Commerce Scale Unit でこのスクリプトを実行する重要なセキュリティ手法です。  これにより、セキュリティが最大化され、セキュリティ侵害が発生した場合のワークロードが最小化されます。 
-     >
-     > このシークレットを安全に保つことが重要です。 このシークレットは、1 回だけコピーしてください。システムに保存しないでください。  生成されたクライアント ID とシークレットは、Commerce Scale Unit インストーラーの実行中に使用されるため、後で使用する必要があります。  シークレットはいつでも再度リセットできますが、前のシークレットを使用した Commerce Scale Unit で更新する必要があります。
-
+     > - これは、各 Commerce Scale Unit でこのスクリプトを実行する重要なセキュリティ手法です。  これにより、セキュリティが最大化され、セキュリティ侵害が発生した場合のワークロードが最小化されます。 
+     > - このシークレットを安全に保つことが重要です。 このシークレットは、1 回だけコピーしてください。システムに保存しないでください。  生成されたクライアント ID とシークレットは、Commerce Scale Unit インストーラーの実行中に使用されるため、後で使用する必要があります。  シークレットはいつでも再度リセットできますが、前のシークレットを使用した Commerce Scale Unit で更新する必要があります。
+     > - 値が追加され、コネクタが完全に構成され、以下の手順 11～17 が完了している可能性があります。 その場合はステップ 11～17 をスキップし、手順 18 に進みます。 選択可能なプロファイル タイトル (この場合は "既定値") があることが重要です。
+    
 11.  **Retail と Commerce \> バックオフィスの設定 \> Commerce スケジューラ \> Microsoft Dynamics AX のコネクタ** に移動します。
 12.  アクション ウィンドウで **編集** を選択します。
-13.  **プロファイル** フィールドに、**既定** 値を入力します。  必要に応じて、**説明** フィールドに説明を入力します。
-
-     > [!NOTE]
-     > 手順 12 ～ 14 の以下のフィールドには既に値が入っている可能性があります。 これが発生した場合、この一連の手順を省略し、そこから続行します。 選択可能なプロファイル タイトル (この場合は既定値) があることが重要です。
-
+13.  **プロファイル** フィールドに、"既定値" を入力します。  必要に応じて、**説明** フィールドに説明を入力します。
 14.   **Web アプリケーション名** フィールドに、**RetailCDXRealTimeService** と入力します。
 15.  **プロトコル** フィールドで、**https** を選択します。
 16.  **通称** フィールドに、**AXServiceUser@contoso.com** と入力します。

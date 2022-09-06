@@ -2,7 +2,7 @@
 title: オフライン販売時点管理 (POS) の機能
 description: この記事では、Commerce Scale Unit が利用できない場合にチャンネルのデータベースからオフライン データベースに POS デバイスが自動的に切り替わる、Modern POS のオフライン モードについて説明します。 また、この記事ではオフライン モードの一般的な設定情報も含まれ、オフライン データベースとチャンネルのデータベース間で発生するデータ同期についても説明します。
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6fd7ca2f90ce07df00ac9169e07d5f66344bc98b0b92d97f7d8161b2815f2c4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a7b8480679509db7b4a9fa1d29d1ef871afa1db0
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745272"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9386996"
 ---
 # <a name="offline-point-of-sale-pos-functionality"></a>オフライン販売時点管理 (POS) の機能
 
@@ -47,7 +47,7 @@ Modern POS にオンラインとオフライン モードを手動で切り替�
 
 ## <a name="setup"></a>段取り
 
-POS のデバイス (登録) のオフライン サポートを有効にするには、**登録** ページで、**オフラインのサポート** オプションを **はい** に設定します。 新しいチャンネル データベース エンティティが作成され、店舗のチャンネル データ グループに追加されます。 その後、オフライン データベースのデータ パッケージを生成するためにすべての配送スケジュールを実行します。 次に、Modern POS のオフライン バージョンをインストールします。 インストール プロセスでは、オフライン データベースが作成されます。 さらに、必要な場合は、Microsoft SQL Server 2014 Express をインストールします。 Modern POS への最初のサインイン後にオフライン データの同期が開始されます。
+POS のデバイス (登録) のオフライン サポートを有効にするには、**登録** ページで、**オフラインのサポート** オプションを **はい** に設定します。 新しいチャンネル データベース エンティティが作成され、店舗のチャンネル データ グループに追加されます。 その後、オフライン データベースのデータ パッケージを生成するためにすべての配送スケジュールを実行します。 次に、Modern POS のオフライン バージョンをインストールします。 インストール プロセスでは、オフライン データベースが作成されます。 必要に応じて、現在サポートされているバージョンの Microsoft SQL Server Express もインストールします。 (現在、SQL 2019 が最新バージョンです)。 Modern POS への最初のサインイン後にオフライン データの同期が開始されます。
 
 ## <a name="data-synchronization"></a>データ同期
 

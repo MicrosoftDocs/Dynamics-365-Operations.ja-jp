@@ -1,7 +1,7 @@
 ---
 title: 実装プロジェクトの研修
 description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
-author: ClaudiaBetz-Haubold
+author: OlgaPetrovaFT
 ms.date: 06/21/2022
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: chaubold
+ms.author: olpetrov
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6225913fcdc3d122b93fcaf1eb6a32e57458321d
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: abed49ff05e677013e14f72af3df01451fff77a5
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070742"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387035"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 

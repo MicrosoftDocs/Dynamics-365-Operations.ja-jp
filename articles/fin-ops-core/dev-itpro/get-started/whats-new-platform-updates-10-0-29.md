@@ -2,19 +2,19 @@
 title: 財務と運用アプリのバージョン 10.0.29 のプラットフォーム更新プログラム (2022 年 10 月)
 description: この記事では、財務と運用アプリのバージョン 10.0.29 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 08/01/2022
+ms.date: 08/24/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-07-22
-ms.openlocfilehash: 75e010cb3e2cef65c1a5960f1207d83bf95238e7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.openlocfilehash: 268f38d8c4931489ab26c9f4b7d61f702c09f334
+ms.sourcegitcommit: 56cfc6e6666573d7b0ec9127d71fcf6b6ea93636
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9221594"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9350713"
 ---
 # <a name="platform-updates-for-version-10029-of-finance-and-operations-apps-october-2022"></a>財務と運用アプリのバージョン 10.0.29 のプラットフォーム更新プログラム (2022 年 10 月)
 
@@ -38,6 +38,9 @@ ms.locfileid: "9221594"
 | Web クライアント | <p>**拡張グリッド集約機能**</p><p>この機能は、ユーザーが数値列ごとに 4 つの集計機能のいずれかを選択することで、グリッドの現在の "合計" 機能を拡張します。 グリッド列は、合計に加えて最小値、最大値、または平均値を表示するように構成できます。 グループ化がグリッドで行われた場合は、列に対して選択した集計機能も各グループに対して表示されるようになりました。</p> | [グリッド機能](../../fin-ops/get-started/grid-capabilities.md) | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Web クライアント | <p>**保存したビューのパフォーマンス向上**</p><p>この機能により、クエリの実行回数を最小限に抑えられ、ページの読み込み時に既定のビューが読み込まれる際のパフォーマンスが向上します。 この結果を達成するため、既定のビューの特定の部分が適用されると機能が変更され、フォームが最初にクエリを実行する時点ですべてのクエリ関連の変更が発生します。</p> | [保存されたビューを十分に活用するフォームの作成](../user-interface/understanding-saved-views.md) | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Web クライアント | <p>**グリッドの外部の数値セルでの数式の評価**</p><p>ユーザーの生産性を向上させるために、新しいグリッドの数値セルによって、ユーザーが数式を直接入力できる期間が長くなりました。 (たとえば、ユーザーが **=15\*4** と入力し、**Enter** を選択した場合、式が評価され、セルに値 **60** が入力されます。) このリリースの時点で、この数式のサポートは、グリッドの外部の数値コントロールに拡張されています。</p> | [グリッド機能](../../fin-ops/get-started/grid-capabilities.md#evaluating-math-expressions) | 既定 |
+
+> [!Important]
+> テーブルに対して、新しい **行バージョン変更追跡を許可する** メタデータ プロパティが追加されました。 このプロパティの既定値は **いいえ** に設定されています。  このプロパティは将来の使用のために予約されているので、値を **はい** に設定しないでください。
 
 ## <a name="features-that-are-mandatory-or-turned-on-by-default-with-this-release"></a>このリリースで既定で必須または有効になっている機能
 

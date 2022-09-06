@@ -1,7 +1,7 @@
 ---
 title: LCS 実装プロジェクトを別の Azure AD テナントに移動する
 description: この記事では、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
-author: ClaudiaBetz-Haubold
+author: RicardoCaeiroPro
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: chaubold
+ms.author: v-ricaei
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: cc56bded079c922f2f544a7bc1500f9708360362
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 9cb6c8c4c037d61ec26700a82b064cf29168a6fa
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124690"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9386920"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 

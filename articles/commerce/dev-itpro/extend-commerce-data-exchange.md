@@ -2,7 +2,7 @@
 title: Commerce Data Exchange の拡張 - リアルタイム サービス
 description: この記事では、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。
 author: josaw1
-ms.date: 11/30/2020
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
-ms.openlocfilehash: a367e7f264f40aaa23a05385731d912871bc1def
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 4c9bb41dcf201605a7adf4f86aea02112fbdd142
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271975"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9386988"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
@@ -50,12 +50,12 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
    -   **バージョン** - 1.0.0.0
    -   **モデルの表示名** - Contoso
 
-4. **次へ** をクリックします。
-5. ダイアログ ボックスで、**既存のパッケージを選択** を選択してから、一覧で **アプリケーション スイート** を選択します。
-6. **次へ** をクリックします。
-7. **完了** をクリックします。
+4. **次へ** を選択します。
+5. ダイアログ ボックスで **新しいパッケージの作成 \> 次へ** を選択し、**参照パッケージを選択** を選択して、一覧で **アプリケーション スイート** と **アプリケーション プラットフォーム** のチェック ボックスをオンにします。
+6. **次へ** を選択します。
+7. **完了** を選択します。
 8. **新しいプロジェクト** ダイアログ ボックスに、**ContosoRetailTransactionServiceEx** というプロジェクト名を入力します。
-9. **OK** をクリックします。
+9. **OK** を選択します。
 10. プロジェクトを右クリックし、**追加 > 新しい項目** を選択します。 **新しい項目の追加** ウィンドウで、**クラス** を選択し、**ContosoRetailTransactionServiceSample** としてクラスの名前を入力します。
 
     Commerce Runtime (CRT) で CDX メソッドを使用するには、ExtensionOf(classStr(RetailTransactionServiceEx) など、ExtensionOf 属性をクラスに追加する必要があります。 この追加は、RetailTransactionServiceEx からクラスが拡張されることを意味しています。
@@ -103,7 +103,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
             catch (Exception::Error)
             {
                 ttsAbort;
-                error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
+                errorMessage = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
             }
 
             // Return sanitized error code.

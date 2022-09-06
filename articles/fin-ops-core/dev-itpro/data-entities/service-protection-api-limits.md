@@ -2,19 +2,19 @@
 title: サービス保護 API 制限
 description: この記事では、財務と運用アプリ サービスのサービス保護アプリケーション プログラミング インターフェイス (API) の制限について説明します。
 author: jaredha
-ms.date: 07/06/2022
+ms.date: 08/25/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-21
-ms.openlocfilehash: 0102b46a86cf4e666c234c2f13c48cd682c1f5bc
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: cf460746d183afc0379174c3e8bef204ead66a3a
+ms.sourcegitcommit: 73afba7ca32f3e5a6e37f41f55e3dfdffe1f6886
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135523"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9353590"
 ---
 # <a name="service-protection-api-limits"></a>サービス保護 API 制限
 
@@ -83,7 +83,9 @@ ms.locfileid: "9135523"
 
 ### <a name="resource-based-service-protection-api-limits"></a>リソース ベースのサービス保護 API 制限
 
-ユーザー ベースのサービス保護 API 制限は Web サーバーごとに各ユーザーに指定されるのに対し、リソース ベースのサービス保護 API 制限は環境リソース稼働率のしきい値に基づいて適用されます。 リソース制限は、Web サーバー リソースの総消費量がサービスのパフォーマンスと可用性を低下させるレベルに達すると、サービス要求を調整します。 リソース ベースのサービス保護 API 制限は、ユーザー ベースの制限と連携し、リソースの過剰使用率を回避するのに役立つ保護設定として機能します。 これにより、システムの応答性を維持し、財務と運用アプリを実行する環境で一貫した可用性とパフォーマンスを実現できます。
+ユーザー ベースのサービス保護 API 制限は Web サーバーごとに各ユーザーに指定されるのに対し、リソース ベースのサービス保護 API 制限は環境リソース稼働率のしきい値に基づいて適用されます。 リソース制限は、Web サーバー リソースの総消費量がサービスのパフォーマンスと可用性を低下させるレベルに達すると、サービス要求を調整します。 しきい値は、環境 Web サーバーでのメモリや CPU などのリソースの使用率に基づいて設定されます。 API 要求が行われたときにサーバー リソースの稼働率が定義済みのしきい値を超えると、要求は調整され、"要求が多すぎ" という応答が表示されます。
+
+リソース ベースのサービス保護 API 制限は、ユーザー ベースの制限と連携し、リソースの過剰使用率を回避するのに役立つ保護設定として機能します。 これにより、システムの応答性を維持し、財務と運用アプリを実行する環境で一貫した可用性とパフォーマンスを実現できます。
 
 リソース ベースのサービス保護 API 制限については、リソースのしきい値に達すると統合が調整される優先順序を定義できます。 詳細については、[スロットリング優先度](priority-based-throttling.md)を参照してください。
 

@@ -2,7 +2,7 @@
 title: キーボード ショートカット
 description: この記事では、財務と運用アプリを操作するときに使用できるショートカット キーの概要を示し ます。
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140442"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357594"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
@@ -135,10 +135,10 @@ ms.locfileid: "9140442"
 | 水平スクロール                                                                                                   | Shift + マウス ホイール             |
 | 前後の列に移動                                                                                       | Tab または Shift+Tab                 |
 | 前後の行に移動                                                                                          | 下方向キーまたは上方向キー           |
-| 選択せずに次または前の行に移動する<blockquote>[!NOTE] このショートカットは、複数選択のシナリオにのみ適用されます。</blockquote> | Ctrl+ 上方向キーまたは Ctrl+ 下方向キー |
-| 現在の行を選択/選択解除<blockquote>[!NOTE] このショートカットは、複数選択のシナリオにのみ適用されます。</blockquote>                    | Ctrl+Space または Ctrl+クリック         |
-| 選択したセットに前後に行を追加<blockquote>[!NOTE] このショートカットは、複数選択のシナリオにのみ適用されます。</blockquote>   | Shift+Space                     |
-| 選択したセットに行の範囲を追加<blockquote>[!NOTE] このショートカットは、複数選択のシナリオにのみ適用されます。</blockquote>         | Shift+クリック                     |
+| 選択せずに次または前の行に移動する<br><br>**注記:** このショートカットは、複数選択のシナリオにのみ適用されます。 | Ctrl+ 上方向キーまたは Ctrl+ 下方向キー |
+| 現在の行を選択/選択解除<br><br>**注記:** このショートカットは、複数選択のシナリオにのみ適用されます。                   | Ctrl+Space または Ctrl+クリック         |
+| 選択したセットに前後に行を追加<br><br>**注記:** このショートカットは、複数選択のシナリオにのみ適用されます。  | Shift+Space                     |
+| 選択したセットに行の範囲を追加<br><br>**注記:** このショートカットは、複数選択のシナリオにのみ適用されます。         | Shift+クリック                     |
 | 前後のデータ ページに移動                                                                                   | Page up キーまたは Page down キー             |
 | グリッドの下部に新しい行を作成                                                                             | 下方向キー (最後の行から)  |
 | 最初のレコードに移動                                                                                               | Ctrl + Home                       |
@@ -148,7 +148,7 @@ ms.locfileid: "9140442"
 | 次のマークした行に移動                                                                                            | Alt + シフト + M、L                  |
 | 前のマークした行に移動                                                                                        | Alt + シフト + M、P                  |
 | 最後のマークした行に移動                                                                                           | Alt + シフト + M、N                  |
-| グリッドで既定のアクションを実行する<blockquote>[!NOTE] フォーカスがハイパーリンクを含んでいるセル上にあり、すべてのセルがそのハイパーリンクを持つ列にある時、このショートカットが有効になります。</blockquote> | 入力                           |
+| グリッドで既定のアクションを実行する<br><br>**注記:** フォーカスがハイパーリンクを含んでいるセル上にあり、すべてのセルがそのハイパーリンクを持つ列にある時、このショートカットが有効になります。 | 入力                           |
 | 選択した行およびヘッダー行間でフォーカスを切り替え                                                               | Alt + Shift + H                     |
 | (ヘッダー行のフォーカスで) 現在の列を大きくする/小さくする                                                  | 右方向キー / 左方向キー        |
 | (ヘッダー行のフォーカスで) 現在の列を次または前の位置に移動する                                   | Ctrl+Shift+右矢印キーまたは Ctrl+Shift+左矢印キー |

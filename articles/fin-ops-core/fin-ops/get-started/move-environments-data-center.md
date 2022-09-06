@@ -1,7 +1,7 @@
 ---
 title: データ センター間で環境を移動する
 description: この記事では、Microsoft によって管理されている環境を別の Microsoft Azure データ センターに移動する方法について説明します。
-author: ClaudiaBetz-Haubold
+author: dvliegen
 ms.date: 07/29/2022
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: chaubold
+ms.author: dvliegen
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: daf8245d9f08817e4c0efd2d056a084bb48e039b
-ms.sourcegitcommit: 7027250354336f64e5d6cac30506700e2605e655
+ms.openlocfilehash: de24b1e0fed49ef9992e941b297480f70cfc02af
+ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "9209644"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387039"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
