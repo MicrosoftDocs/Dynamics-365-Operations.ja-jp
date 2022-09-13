@@ -3413,9 +3413,7 @@
                       href: warehousing/packing-work.md
                     - name: 未処理ピッキング品目の再配賦の設定
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: 例外処理のために倉庫作業をキャンセル
-                      href: warehousing/cancel-warehouse-work.md
-                    - name: システム主導の作業の優先順位
+                    - name: システム主導の作業優先順位
                       href: warehousing/system-directed-work-sequencing.md
                     - name: ピッキング行のグループ化
                       href: warehousing/pick-line-grouping.md
@@ -3431,6 +3429,10 @@
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: 出庫ワークロードの視覚化
                       href: warehousing/outbound-workload-visualization.md
+                    - name: 販売および移動明細行の手動処理の例外
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: 例外処理のために倉庫作業をキャンセル
+                      href: warehousing/cancel-warehouse-work.md
                 - name: 補充
                   items:
                     - name: 補充の概要

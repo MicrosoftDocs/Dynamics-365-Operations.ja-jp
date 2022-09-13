@@ -12,6 +12,8 @@
               items:
                 - name: Commerce の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.30 (2022 年 11 月)
+                  href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (2022 年 10 月)
                   href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (2022 年 7 月)
@@ -702,18 +704,16 @@
                   href: optimal-combination-overlapping-discounts.md
                 - name: チャネル固有の割引の定義
                   href: define-channel-specific-discounts.md
-                - name: 小売製品の割引を回避するためのオプション
-                  href: prevent-discounts.md
                 - name: 支払/入金ベースの割引
                   href: tender_based_discounts.md
                 - name: 出荷割引
                   href: shipping-discount.md
                 - name: 購買プロモーションを使用したギフトのコンフィギュレーション
                   href: gift-with-purchase.md
-                - name: クーポンの設定
-                  href: retail-coupons.md
-                - name: POS での割引の表示
-                  href: discounts-pos.md
+                - name: クーポン
+                  href: coupons.md
+                - name: 価格設定
+                  href: price-settings.md
                 - name: 価格レポート
                   href: price-report.md
                 - name: チャネル固有の売買契約の作成
@@ -796,10 +796,12 @@
                       href: pos-inbound-inventory-operation.md
                     - name: POS でのアウトバウンド在庫操作
                       href: pos-outbound-inventory-operation.md
-                    - name: 小売チャンネルの引当可能在庫数量の計算
+                    - name: 小売チャネルの引当可能在庫数量の計算
                       href: calculated-inventory-retail-channels.md
                     - name: POS での在庫検索操作
                       href: pos-inventory-lookup-operation.md
+                    - name: 在庫を認識した製品の一覧
+                      href: inventory-aware-product-listing.md
                 - name: 発注書
                   items:
                     - name: 発注書の概要

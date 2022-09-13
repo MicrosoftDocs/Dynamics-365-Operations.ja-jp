@@ -12,6 +12,8 @@
               items:
                 - name: Finance の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.30 (11 月)
+                  href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (10 月)
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (8 月)
@@ -1138,6 +1140,8 @@
                       href: general-ledger/subledger-transfer.md
                     - name: 会計ソース エクスプローラー
                       href: accounts-payable/accounting-source-explorer.md
+                    - name: 会計を保留するドキュメント
+                      href: general-ledger/documents-pending-accounting.md
             - name: レポートおよび照会
               items:
                 - name: 仕訳入力とトランザクションの表示
