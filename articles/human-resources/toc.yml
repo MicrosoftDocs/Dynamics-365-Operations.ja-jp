@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Human Resources の新機能および変更された機能
               items:
+                - name: Human Resources 10.0.30 (マージされたインフラストラクチャ)
+                  href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (マージされたインフラストラクチャ)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (マージされたインフラストラクチャ)
@@ -478,6 +480,8 @@
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: 合理化された従業員の入力
               href: stream-employee-entry.md
+            - name: ヘッダー コントロールのカスタマイズ
+              href: hr-worker-header-control.md
             - name: 作業者情報の入力
               href: hr-personnel-enter-worker-information.md
             - name: 雇用されていない作業者

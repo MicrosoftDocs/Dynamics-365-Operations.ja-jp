@@ -12,6 +12,8 @@
               items:
                 - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.30 (2022 年 11 月)
+                  href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (2022 年 10 月)
                   href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (2022 年 8 月)
@@ -1719,6 +1721,28 @@
                   href: inventory/inventory-visibility-api.md
                 - name: Inventory Visibility のヒント
                   href: inventory/inventory-visibility-tips.md
+        - name: Sensor Data Intelligence
+          items:
+            - name: Sensor Data Intelligence のホーム ページ
+              href: sensor-data-intelligence/sdi-home-page.md
+            - name: Sensor Data Intelligence をシステムで有効にする
+              href: sensor-data-intelligence/sdi-enable-feature.md
+            - name: IoT ソリューションを Azure に展開する
+              href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+            - name: Sensor Data Intelligence のパラメーター
+              href: sensor-data-intelligence/sdi-parameters.md
+            - name: テスト用シミュレーション センサーの設定
+              href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+            - name: 資産のダウンタイムのシナリオ
+              href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+            - name: 資産メンテナンスのシナリオ
+              href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+            - name: マシンの状態のシナリオ
+              href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+            - name: 製品品質のシナリオ
+              href: sensor-data-intelligence/sdi-scenario-product-quality.md
+            - name: 生産遅延のシナリオ
+              href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT インテリジェンス
           items:
             - name: IoT インテリジェンスのホーム ページ
@@ -1940,7 +1964,7 @@
                 - name: 原価管理
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: 経費管理
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: 手持在庫
                   href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: 請求書の承認
@@ -1948,11 +1972,11 @@
                 - name: 自分のチーム
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Project モバイル アプリケーションの概要
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
                 - name: プロジェクト時間の入力
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
                 - name: 発注書の承認
                   href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: 販売注文
@@ -3461,11 +3485,11 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: 小型荷物の出荷
                       href: warehousing/small-parcel-shipping.md
-                - name: 出荷の連結に関するポリシー
+                - name: 出荷連結ポリシー
                   items:
-                    - name: 出荷の連結に関するポリシー
+                    - name: 出荷連結ポリシーの概要
                       href: warehousing/about-shipment-consolidation-policies.md
-                    - name: 出荷連結ポリシーのコンフィギュレーション
+                    - name: 出荷連結ポリシーの構成
                       href: warehousing/configure-shipment-consolidation-policies.md
                     - name: シナリオ 1 - 販売注文の自動リリースを使用して、倉庫にリリースされる出荷を連結する
                       href: warehousing/consolidate-shipments-automatic.md

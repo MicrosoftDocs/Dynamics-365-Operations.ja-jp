@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dbf77b57f7a107918c3b8a03290e208ed1c4803b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 18cbcf3ddcfab1f26b0006676f1da8b395e876f4
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066060"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475538"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
@@ -100,10 +100,8 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 - [Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)](/dynamics/s-e/)
 - [BOM calculation by using a costing sheet (原価計算表を使用した BOM 計算)](https://www.microsoft.com/download/details.aspx?id=101937)
 
-## <a name="elearning-courses"></a>eLearning コース
+## <a name="elearning-courses"></a>e ラーニング コース
 
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Supply Chain Management ](/learn/browse/?products=dynamics-scm&resource_type=learning+path) をご確認ください。
-
+オンライン コースおよびトレーニングについては、[Dynamics 365 Supply Chain Management](/learn/browse/?products=dynamics-scm&resource_type=learning+path) をご確認ください。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

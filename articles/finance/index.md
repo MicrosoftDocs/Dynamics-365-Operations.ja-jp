@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9299a0ef4def8a41620ada24e8b13d7b41ed7cb7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a51a601f6e283c5f6d7298b1cf342056707ebbb8
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887893"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475585"
 ---
 # <a name="finance-home-page"></a>Finance ホーム ページ
 
@@ -41,7 +41,7 @@ ms.locfileid: "8887893"
         - [原価会計](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [財務諸表](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
+        - [財務諸表](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [固定資産](fixed-assets/fixed-assets.md)
         - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [一般会計と財務諸表](general-ledger/general-ledger.md) 
@@ -64,7 +64,7 @@ ms.locfileid: "8887893"
 
 ### <a name="countryregion-functionality"></a>国/地域の機能
 
-それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、[ローカライズと規制の機能](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) を参照してください。
+それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、[ローカライズと規制の機能](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) を参照してください。
 
 ### <a name="additional-content"></a>追加のコンテンツ
 
@@ -80,6 +80,6 @@ Supply Chain Management 機能は調達から支払いまでのプロセスの�
 
 ## <a name="elearning-courses"></a>eラーニング コース
 
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance](/learn/browse/?products=dynamics-finance&resource_type=learning+path) をチェックアウトしてください。
+オンライン コースおよびトレーニングについては、[Dynamics 365 Finance のラーニング パス](/learn/browse/?products=dynamics-finance&resource_type=learning+path)をご確認ください。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
