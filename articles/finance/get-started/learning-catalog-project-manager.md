@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Finance を使用する実装プロジェクト マネージャー向けラーニング カタログ
 description: Dynamics 365 Finance で実装プロジェクト マネージャーとして作業するユーザー向けのトレーニング オプションをすべて検索します。
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b4c0a108c581eafee45fa3ab31d532d3acc7ed2
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9f75a7f6fad3fb8a204c579083b9ffaca46e7592
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067653"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424522"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Dynamics 365 Finance を使用する実装プロジェクト マネージャー向けラーニング カタログ
 
@@ -25,11 +25,10 @@ ms.locfileid: "9067653"
 
 次のカタログは、コア知識から特定のドメインまで、および最も基本的なものから最も高度なものまでまとめられています。 コンテンツが複数の形式で存在する場合は、ご自分のニーズに合ったトレーニング形式を選択できます。
 
-## <a name="get-started"></a>はじめに<a name="get-started"></a>
+## <a name="get-started"></a>使用開始<a name="get-started"></a>
 
-| コンテンツ | 説明  | 書式設定  | 期間    |
+| コンテンツ | Description  | 形式  | Length    |
 |-------------|-----------------|-------------|------------|
-| [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間 |
 | [財務と運用アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | 財務と運用アプリによって業務をサポートし、グローバルな財務システム、運用業務プロセス、合理化されたサプライ チェーンを管理して、情報に基づく迅速な意思決定を行う方法を学びます。 財務と運用アプリを使用して仕事をする最初のステップとして、目的のロールを問わず、その機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [購入する前に](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | 財務と運用の使用を検討中か、購入の準備が整っているかに関わらず、ステップ バイ ステップ ガイダンスをご確認ください。 | ドキュメント | |
@@ -49,7 +48,7 @@ ms.locfileid: "9067653"
 | [Go-Live 計画 (DYN458PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18) | 運用プロセスについて詳しく説明し、顧客、パートナー、および Microsoft にとって可能な限りスムーズにするために、どのように準備できるかについて説明します。 | Tech Talk (録画されたウェビナー) | 60 分 |
 | [環境計画 (DYN450PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018) | 環境計画に関するこの Tech Talk にご参加ください。 標準環境、必要になる可能性のある他の環境、取得および配置のためのオプションとタイミング、および環境間で予想されるコードとデータ フローについて学習します。 | Tech Talk (録画されたウェビナー) | 53 分 |
 | [財務と運用: 機能管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | 機能管理エクスペリエンスに関する技術解説。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。 | Tech Talk (録画されたウェビナー) | 47 分 |
-| [Finance and Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新スケジュールが開始されました! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Tech Talk (録画されたウェビナー) | 61 分 |
+| [財務と運用: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新スケジュールが開始されました! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Tech Talk (録画されたウェビナー) | 61 分 |
 | [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この講演では、Microsoft 管理の継続的な更新プログラムに関する最初の発表以降の新機能について説明します。 更新の頻度、プロセスに関するユーザーからの貴重なフィードバックにどのように対応してきたか、また、更新を管理できるようになる予定の Lifecycle Services のユーザー エクスペリエンスについてご紹介します。 | Tech Talk (録画されたウェビナー) | 56 分 |
 | [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、運用環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「運用停止のレポート」オプションのベスト プラクティスについて説明します。 | Tech Talk (録画されたウェビナー) | 40 分 |
 | [Visual Studio Team Services (VSTS) の設定 (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | この Tech Talk では、VSTS のインスタンスとプロジェクトを構成して、開発/テスト環境を構成する LCS 実装プロジェクトに接続するために必要な手順について説明します。 | Tech Talk (録画されたウェビナー) | 41 分 |
@@ -58,13 +57,8 @@ ms.locfileid: "9067653"
 | [財務と運用: Regression Suite Automation Tool -- 背景と設定 (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの最初のものです。 このセッションでは、RSAT を介した自動テストを使用して、継続的な更新に対応する方法について説明します。 RSAT を使用したタスク記録の作成とテストの実行に関する学習と推奨事項については、インストールとセットアップのステップ バイ ステップ チュートリアルに従って説明します。 | Tech Talk (録画されたウェビナー) | 70 分 |
 | [財務と運用: Regression Suite Automation Tool -- ライフサイクル デモのテスト (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの 2 番目のものです。 このセッションでは、財務と運用から LCS の BPM ライブラリにタスク記録を作成して保存し、Azure DevOps で BPM ライブラリを同期してテスト ケースを作成およびテスト ケースをテスト スイートにグループ化して、RSAT でテスト スイートを読み込んで実行する全サイクルのデモについて扱います。 | Tech Talk (録画されたウェビナー) | 70 分 |
 | [パフォーマンス テスト アプローチ (DYN449PAL2)](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) | パフォーマンス テストにアプローチする方法については、この Tech Talk に参加してください。 テストの基本、テストのベスト プラクティス、テストの実行およびパフォーマンスの測定に使用できるツールと技術、およびその結果を最適化のために使用する方法について学びます。 | Tech Talk (録画されたウェビナー) | 45 分 |
-| [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 財務と運用アプリケーション v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Tech Talk (録画されたウェビナー) | 58 分 |
-| [財務と運用アプリ: 7.x から 8 以降へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオとステップについて説明します。 また、拡張機能の要求シナリオと、必要に応じてそれらを上げる方法についても説明します。 2 部構成の第 1 部 | Tech Talk (録画されたウェビナー) | 61 分 |
-| [AX2012 から財務と運用へのアップグレード (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Tech Talk (録画されたウェビナー) | 45 分 |
+| [AX2012 から財務と運用アプリへの更新 - 2020 年 9 月 3 日](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | この Tech Talk では、コードとデータを Dynamics AX 2012 から財務と運用アプリへアップグレードする方法の概要について説明します。 | Tech Talk (録画されたウェビナー) | 66 分 |
 | [分析 & レポート オプション: 印刷とドキュメント回覧エージェント](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| 2 つの関連トピックについて、この Tech Talk にご参加ください。 最初に、Dynamics 365 Finance、Enterprise Edition 向けの分析およびレポートのソリューション パターンとツールについて説明します。 次に、印刷のシナリオと Document Routing Agent について説明します。 | Tech Talk (録画されたウェビナー) | 45 分 |
-| [コース MB-300T01-A: Dynamics 365 Finance のコア共通機能](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | このコースでは、Microsoft Dynamics 365 Finance のコア共通機能について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
-| [コース MB-300T02-A: Dynamics 365 Finance でのコア コンフィギュレーション](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | このコースでは、Microsoft Dynamics 365 Finance のコア コンフィギュレーション タスクについて説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
-| [コース MB-300T03-A: データ移行および Dynamics 365 Finance の運用を開始する準備](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | このコースでは、データ移行と Microsoft Dynamics 365 Finance の運用を開始する準備について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 | [実装ライフサイクル ホーム ページ](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | これらのトピックでは、Microsoft Dynamics 365 Finance プロジェクトの実装ライフサイクルに関連するプログラム、ツール、プロセスについて説明します。 | ドキュメント | |
 
 ## <a name="financial-management"></a>財務管理<a name="financial-management"></a>
@@ -81,13 +75,10 @@ ms.locfileid: "9067653"
 | [パブリック プレビュー用に Dynamics 365 Finance を構成する](/learn/modules/configure-public-sector-dyn365-finance/) | Dynamics 365 Finance は、予算編成、購買、買掛金勘定や売掛金勘定のタスクなど、公的部門と民間部門に共通した業務プロセスを有効化します。 公的機関の機能を使用して、公共機関にサービスを提供する組織の規則、規制、および報告要件を満たすことができます。 | 無料の自習型オンライン モジュール | 1 時間 |
 | [財務諸表 (DYN305PAL) ](https://community.dynamics.com/365/b/techtalks/posts/financial-reporting-april-25-2017) | この Tech Talk では、Dynamics 365 for Operations の財務諸表の設定およびレポートの一覧について説明します。 このセッションでは、UAT環境でのデータ マートのリセット、およびLCSを使用した修正プログラムのトラブルシューティングと検索についても扱います。 | Web カンファレンスの無料録画 | 57 分 |
 | [財務と運用: 英国デジタル税 - Dynamics 365 For Finance And Operations での VAT 申告 (DYN599PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) | このセッションでは、英国の HMRC が VAT 申告のために導入した新しい送信プロセスについて説明します。 Dynamics 365 Finance での VAT 申告のコンフィギュレーション方法、およびでの電子メッセージの設定方法について説明します。 サンドボックス環境における HMRC アプリケーションへの送信プロセスを示します。 このセッションは、機能を実装し、ユーザーにトレーニングを提供するコンサルタントに特に関係があります。 | Web カンファレンスの無料録画 | 63 分 |
-| [コース MB-310T01-A: Dynamics 365 Finance で財務管理の必須コンポーネントをコンフィギュレーションおよび使用する](https://www.microsoft.com/learning/course.aspx?cid=MB-310T01) | 固定資産の取得情報を設定して入力し、それらを減価償却して資本化のしきい値を設定することによって資産を管理できます。 固定資産の処理方法は、国際会計基準およびそれぞれの国または地域の会計法の両方に準拠する必要があります。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 2 日間 |
-| [コース MB-310T02-A: 財務と運用で買掛金勘定、売掛金勘定、および取立をコンフィギュレーションおよび使用する](https://www.microsoft.com/learning/course.aspx?cid=MB-310T02) | 原価計算では、総勘定元帳、補助元帳、予算、および統計情報などのさまざまなソースから、データを収集することができます。 次に分析、集計、および原価データを評価し、管理者が価格の更新、予算、原価管理などの最善の決定ができるようにします。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
-| [コース MB-310T03-A: 財務と運用での予算作成、固定資産、および追加機能のコンフィギュレーションおよび使用](https://www.microsoft.com/learning/course.aspx?cid=MB-310T03) | 期または年度で決算手続きを完了できます。 決算プロセスでは、新しい期間のためのシステムを準備します。 Dynamics 365 Finance で定期的なプロセスを準備、コンフィギュレーション、および実行する方法について学びます。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 
 ## <a name="exams"></a>試験<a name="exams"></a>
 
-| コンテンツ | 説明 | 書式設定 |
+| コンテンツ | Description | 形式 |
 |---|---|---|
 | [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [試験 MB-310: Microsoft Dynamics 365 Finance、財務](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、財務管理の設定とコンフィギュレーション、共通プロセスの管理と適用、買掛金勘定と売掛金勘定の実装および管理、および予算作成と固定資産の管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |

@@ -2,7 +2,7 @@
 title: 推奨事項とデモ データの作成
 description: この記事には、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニチャネル製品の推奨事項を活用する方法についてのガイダンスが含まれます。
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a0e6666cc163f97567cf5c6f820d436ef6ef4cca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e3df414b3c16c28b6f5ca04f765d91c1312ada4
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874898"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9459971"
 ---
 # <a name="create-recommendations-with-demo-data"></a>推奨事項とデモ データの作成
 
@@ -45,7 +45,7 @@ ms.locfileid: "8874898"
 
 | 列名         | 必須          | 説明                                                                                                                                 | 有効値                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| レコリスト            | :ヘビー_チェック_マーク: | デモ データ ポイントが生成する、特定の製品推奨事項リスト タイプ。                                                    | <ul><li>レコベストセリング</li><li>レコニュー</li><li>レコトレンディング</li><li>レコカート</li><li>レコピーポーオールソーバイ</li></ul> |
+| レコリスト            | :ヘビー_チェック_マーク: | デモ データ ポイントが生成する、特定の製品推奨事項リスト タイプ。                                                    | <ul><li>レコベストセリング</li><li>レコニュー</li><li>レコトレンディング</li><li>レコカート</li><li>レコピーポーオールソーバイ</li><li>RecoPicks</li><li>RecoSlarlarVisual</li><li>RecoSlarlarTextual</li></ul> |
 | オペレーティングユニットナンバー | :ヘビー_チェック_マーク: | 製品推奨事項が提示される特定の作業単位番号。                                        |                                                                              |
 | カテゴリ            |                    |    特定のリストが返されるカテゴリ。 カテゴリが指定されていない場合、リストはナビゲーション階層の上部にのみ表示されます。    |                                                                              |
 | SeedItemId          |                    |    シードを必要とするリスト (RecoPeopleAlsoBuy および RecoCart) については、それらのリストの製品には追加の製品が表示されます。            |                                                                              |

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: eb17f24b90933dac0f875bb0ef2d5039a240b197
+ms.sourcegitcommit: 1ca4ad100f868d518f3634dca445c9878962108e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306057"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388544"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility のインストールと設定
 
@@ -56,7 +56,9 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 1. 環境ページの **Power Platform 統合** セクションで、**環境アドイン** セクションが表示されるまで下にスクロール ダウンします。 この場所に Dataverse 環境名が表示されます。 Dataverse 環境名が在庫可視化に使用する名前であることを確認します。
 
     > [!NOTE]
-    > 現在、LCSを使用して作成された Dataverse の環境のみがサポートされています。 Dataverse 環境が何らかの別の方法 (例えば、Power Apps 管理センターを使用して) で作成され、Supply Chain Management 環境にリンクされている場合は、まず在庫可視化製品チーム ([inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com)) にお問い合わせいただき、マッピングの問題を解決する必要があります。 その後、在庫可視化をインストールできます。
+    > 現在、LCSを使用して作成された Dataverse の環境のみがサポートされています。 Dataverse の環境がその他の方法 (PowerApps 管理センターを使用するなど) で作成され、それが Supply Chain Management 環境にリンクされている場合、在庫可視化アドインをインストールする前に、まずマッピングの問題を修正する必要があります。
+    >
+    > LCS を Power Platform 統合に設定していない場合は、二重書き込み環境を Dataverse インスタンスにリンクしている可能性があります。 このリンクの不一致は予期しない動作の原因になる可能性があります。 ビジネスイベント、仮想テーブル、アドインで同じ接続を使用できるように、LCS 環境の詳細をデュアルライトで接続しているものと一致させることをお勧めします。マッピングの問題を解決する方法については、[リンクの不一致](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch) を参照してください。 マッピングの問題が解決されると、在庫可視化のインストールに進むことができます。
 
 1. **環境アドイン** セクションで、**新しいアドインのインストール** を選択します。
 
@@ -140,11 +142,11 @@ Supply Chain Management 環境で次の機能が有効になっていること�
 1. ナビゲーション バーで **環境** を選択します
 1. LCS 環境と連携している Dataverse 環境を選択します。
 1. **ソリューション** に移動し、次の順序で次のソリューションを削除します。
-    1. Dynamics 365 ソリューションが含む在庫品目一覧アプリケーションのアンカー ソリューション。
-    1. Dynamics 365 FNO SCM Inventory Visibility アプリケーション ソリューション
-    1. 在庫サービス コンフィギュレーション
-    1. 在庫品目一覧スタンドアロン
-    1. Dynamics 365 FNO SCM Inventory Visibility の基準ソリューション
+    1. Dynamics 365 在庫可視化 - アンカー
+    1. Dynamics 365 在庫可視化 - アプリケーション
+    1. Dynamics 365 在庫可視化 - コントロール
+    1. Dynamics 365 在庫可視化 - プラグイン
+    1. Dynamics 365 在庫可視化 - ベース
 
     これらのソリューションを削除すると、テーブルに保存されているデータも削除されます。
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186692"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428147"
 ---
 # <a name="buffer-profile-and-levels"></a>バッファー プロファイルおよびレベル
 
@@ -77,6 +77,14 @@ DDMRP では、各在庫バッファーは、最小数量、最大数量、お�
 
 - **ADU (過去)** = (29 + 11 + 23) ÷ 3 = 21
 
+1 日の平均使用量 (過去) の計算では、次のトランザクションが考慮されます:
+
+- 品目の数量を減少させるトランザクション (数量がゼロ未満の `inventtrans` テーブル内)
+- ステータスが *受注中*、*引当済注文*、*引当済現物*、*受取済*、*払出済*、または *売却済み* のトランザクション
+- 選択された過去の期間内の日付のトランザクション (過去の期間の 1 日の平均使用量)
+- 倉庫作業、検査、販売見積、または明細書 (`WHSWork`、`WHSQuarantine`、`SalesQuotation`、または `Statement`) 以外のトランザクション
+- 同じ補充分析コード内の振替仕訳帳以外のトランザクション
+
 ### <a name="average-daily-usage-forward"></a>1 日の平均使用量 (将来)
 
 新しい製品の場合、過去の使用状況データがないことがあります。 このため、代わりに今後の推定 ADU (たとえば、需要予測に基づいて) を使用できます。 次の図は、将来 3 日間 (今日を含む) で計算した場合にこのアプローチがどのように機能するかを示しています。
@@ -86,6 +94,11 @@ DDMRP では、各在庫バッファーは、最小数量、最大数量、お�
 前の図では、今日が 6 月 11 日の朝の場合、次の 3 日間 (6 月 11 日、12 日、13 日) の ADU は 21.66 です。
 
 - **ADU (将来)** = (18 + 18 + 29) ÷ 3 = 21.66
+
+1 日の平均使用量 (将来) の計算では、次のトランザクションが考慮されます:
+
+- マスター プランで予測が選択されている品目の予測トランザクション
+- 選択された将来の期間内の日付のトランザクション (将来の期間の 1 日の平均使用量)
 
 ### <a name="average-daily-usage-blended"></a>1 日の平均使用量 (ブレンド)
 

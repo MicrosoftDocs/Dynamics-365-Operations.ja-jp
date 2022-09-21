@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-05-24
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 15752e6ef025dbc078b326abafdd85e283fec79d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: c0d13c3691da4d36ce0ced862484482213f60d64
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281047"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410398"
 ---
 # <a name="migrate-modern-pos-to-store-commerce"></a>Modern POS を Store Commerce に移行する
 
@@ -32,7 +32,7 @@ Store Commerce アプリの詳細については、[Store Commerce アプリ](..
 | 機能 | Store Commerce | MPOS |
 | ------ | ------ |------ |
 | システム要件 | 使用可能な最新の更新プログラムを含む Windows 11、Windows 10 (Pro、Enterprise、Enterprise LTSC、および IoT エンタープライズ エディション)、または Windows Server 2019 | 使用可能な最新の更新プログラムを含む Windows 11、Windows 10 (Pro、Enterprise、Enterprise LTSC、および IoT エンタープライズ エディション)、または Windows Server 2019 |
-| GitHub | はい。 SQL Express、SQL Standard、および SQL Enterprise がサポートされています。 | はい。 SQL Express、SQL Standard、および SQL Enterprise がサポートされています。 |
+| オフライン | はい。 SQL Express、SQL Standard、および SQL Enterprise がサポートされています。 | はい。 SQL Express、SQL Standard、および SQL Enterprise がサポートされています。 |
 | ローカルまたは専任の HWS サポート | 有効 | 有効 | 
 | Dynamics 365 Commerce headquarters でのデバイスの設定 | Commerce headquarters の **デバイス** ページで、アプリケーションを Store Commerce として使用します。 | Commerce headquarters の **デバイス** ページで、アプリケーションを Retail Modern POS として使用します。 |
 | デバイスの有効化 | 必須 | 必須 |

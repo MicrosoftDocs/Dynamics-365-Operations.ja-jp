@@ -1,24 +1,24 @@
 ---
 title: 実装ライフサイクル管理ホーム ページ
 description: これらのトピックでは、財務と運用プロジェクトの実装ライフサイクルに関連する使用可能なプログラム、ツール、プロセスについて説明します。
-author: ClaudiaBetz-Haubold
+author: alejandra-cabrales
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: chaubold
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2c9d3ade1d3b73a113e401e2e4df29cb107eb50f
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 93e264d91fd2e345dca42d1706b636c99068e01e
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109400"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403510"
 ---
 # <a name="implementation-lifecycle-management-home-page"></a>実装ライフサイクル管理ホーム ページ
 

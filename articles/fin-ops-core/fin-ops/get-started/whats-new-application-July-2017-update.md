@@ -13,12 +13,12 @@ ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a30dca67a142d210164705ee221826eef95ded0f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: bde17d904ea8122417164df4da2b97aa76d77882
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280780"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475683"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 Finance、Enterprise edition の新機能および変更された機能 (2017 年 7 月)
 
@@ -739,7 +739,7 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 - プロジェクトに支払請求可能または非請求可能として時間を記録します。
 - 必要に応じて外部または内部コメントを入力します。
 
-**プロジェクト タイム エントリ** モバイル ワークスペースを実装するには、docs.microsoft.com で Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) を参照してください。
+**プロジェクト タイム エントリ** モバイル ワークスペースを実装するには、Microsoft Dynamics 365 for Operations の関連ドキュメントを参照してください。 詳細については、[プロジェクト時間入力モバイル ワークスペース](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) を参照してください。
 
 ### <a name="rename-project-stages"></a>プロジェクト ステージの名前の変更
 

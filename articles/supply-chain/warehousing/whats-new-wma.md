@@ -10,18 +10,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 115708ce9e71c35feb1cf370ead556847e04cbd2
-ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
+ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
+ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9324206"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388451"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20320"></a>Version 2.0.32.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- 安定性が改善されました。
 
 ## <a name="version-20310"></a>Version 2.0.31.0
 

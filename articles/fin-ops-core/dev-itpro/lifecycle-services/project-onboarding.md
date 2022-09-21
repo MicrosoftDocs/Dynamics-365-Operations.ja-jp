@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7c9c20435b3143174293f377815c40beb39cf0e
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: 957b41c0fc7987fdf13810637189146f91dcc441
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103890"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462197"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 
@@ -51,7 +51,7 @@ Microsoft では、お客様から提供された情報を必要としていま�
 
 - 実装プロジェクトの概要情報を提供します。
 - プロジェクトのビジョンと目標をいくつかの文で説明します。 この情報は、達成する目標とプロジェクトの成功を定義する方法を Microsoft が理解するのに役立ちます。
-- パートナー MPN ID を指定します。この ID は、実装パートナー チームから取得できます。 パートナーが関係していない場合、またはまだ特定されていない場合は、実装パートナーのドロップダウン リストから適切なオプションを選択します。 正確なパートナー データを提供することは、[FastTrack プログラム](/dynamics365/fasttrack/?toc=%2fdynamics365%2fcommerce%2ftoc.json) の割り当ての前提条件であることに注意してください。 パートナーに関する適切な情報が提供されていない場合は、重要なサービスの機会を逃してしまう可能性があります。 パートナーを特定したら、MPN ID を更新する必要があります。
+- パートナー MPN ID を指定します。この ID は、実装パートナー チームから取得できます。 パートナーが関係していない場合、またはまだ特定されていない場合は、実装パートナーのドロップダウン リストから適切なオプションを選択します。 正確なパートナー データを提供することは、[FastTrack プログラム](/dynamics365/fasttrack/?toc=/dynamics365/commerce/toc.json) の割り当ての前提条件であることに注意してください。 パートナーに関する適切な情報が提供されていない場合は、重要なサービスの機会を逃してしまう可能性があります。 パートナーを特定したら、MPN ID を更新する必要があります。
 - 現在のライセンスを含めた完全ロールアウト後のユーザー ライセンスの予測される数量を指定します。 この番号は、現在のライセンス購入時とは異なる場合があります。 変更が予定されていない場合は、現在のユーザー ライセンス数を入力します。 ライセンス タイプが該当しない場合は、**0** (ゼロ) を入力します。
 - インプリメンテーション プロジェクトがデモ プロジェクトの場合、または別のテナントから移動する場合は、詳細を入力します。
 
@@ -109,4 +109,3 @@ Microsoft では、お客様から提供された情報を必要としていま�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

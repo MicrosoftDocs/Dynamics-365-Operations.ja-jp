@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Finance のユーザーのラーニング カタログ
 description: Dynamics 365 Finance のユーザーに対するすべてのトレーニング オプションを確認します。
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 99a672e4fd0bfe270f0cd1bfa421b7bd6feca9e1
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069287"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424566"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Dynamics 365 Finance のユーザーのラーニング カタログ
 
@@ -25,11 +25,10 @@ ms.locfileid: "9069287"
 
 次のカタログは、コア知識から特定のドメインまで、および最も基本的なものから最も高度なものまでまとめられています。 コンテンツが複数の形式で存在する場合は、ご自分のニーズに合ったトレーニング形式を選択できます。
 
-## <a name="get-started"></a>はじめに<a name="get-started"></a>
+## <a name="get-started"></a>使用開始<a name="get-started"></a>
 
-| コンテンツ | 説明 | 書式設定 | 期間 |
+| コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
-| [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス | 8 時間 |
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間   |
 | [財務と運用アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | 財務と運用アプリによって業務をサポートし、グローバルな財務システム、運用業務プロセス、合理化されたサプライ チェーンを管理して、情報に基づく迅速な意思決定を行う方法を学びます。   財務と運用アプリを使用して仕事をする最初のステップとして、目的のロールを問わず、その機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [Dynamics 365 Intelligent Order Management の使用を開始する](/learn/modules/get-started-intelligent-order-management/) | Dynamics 365 Intelligent Order Management によって、顧客は注文からフルフィルメントまでのオーケストレーションを管理できます。 これらの機能により、組織はさまざまなプラットフォームおよびアプリ間で注文フローを調整できます。 | 無料の自習型オンライン学習モジュール | 30 分 |

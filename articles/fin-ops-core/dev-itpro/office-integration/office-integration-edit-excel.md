@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c072ad3c88cb49ddd34dca753d458961d9b2d661
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: dcefa40da87513432202723b400f29b31c9fb1d5
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108631"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460041"
 ---
 # <a name="open-in-excel-experiences-faq"></a>Excel エクスペリエンスで開くに関する FAQ
 
@@ -59,6 +59,9 @@ Excel にエクスポート オプションおよびエクスペリエンスは�
 
 ## <a name="when-will-an-entity-show-as-an-open-in-excel-option"></a>エンティティはいつ [Excel で開く] オプションとして表示されますか ?
 エンティティにフォームと同じルート データ ソース (テーブル) が存在するとき、そのデータソースは、Microsoft Office で開くメニューの Excel で開くセクションのオプションとして追加されます。 これは、「生成済み」オプションと呼ばれます。
+
+> [!NOTE]
+> このオプションを「Excel で開く」メニューに表示するには、ユーザーが基本的なエンティティに対するセキュリティ アクセス権を持っている必要があります。 詳細については、[セキュリティとデータ エンティティ](../data-entities/security-data-entities.md) を参照してください。
 
 ## <a name="what-fields-will-be-shown-in-the-workbook"></a>ブックに何というフィールドが表示されますか ?
 ワークブックに追加される既定のフィールドは、エンティティのキー フィールドと必須フィールドです。 デフォルトで別のフィールドセットを提供する必要がある場合は、これらのフィールドをエンティティの **自動レポートのフィールド グループ** に追加できます。 次の図は、FMCustomerEntity の AutoReport フィールド グループの Visual Studio  ビューを示しています。

@@ -11,17 +11,16 @@ ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-06-20
-ms.openlocfilehash: b56890b546c3cd74b75cf447e62495733ea8d288
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: bc0df6c4aac72907e8523069e3f1ae100780dc3c
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387069"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473934"
 ---
 # <a name="cross-company-data-sharing-for-gift-cards"></a>ギフト カードの会社間データ共有
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Microsoft Dynamics 365 Commerce を構成して、Dynamics 365 Finance データ共有機能を使用してギフト カード データを同期する方法について説明します。 次に、データ レコード共有機能を使用して、2 つのデータ領域間で会社間でデータを共有できます。 こうすることで、Commerce 内部ギフト テーブルが 2 つの会社エンティティ間でデータを共有できます。 Dynamics 365 Finance の会社間データ共有の詳細については、[会社間データ共有](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing)を参照してください。
 

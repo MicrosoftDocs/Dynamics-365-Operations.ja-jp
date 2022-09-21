@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336608"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427851"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Warehouse Management モバイル アプリの迂回を使用してデータをクエリする
 
@@ -268,6 +268,6 @@ ms.locfileid: "9336608"
     ![仕入先による PO の検索を使用した購買入庫、例 2。](media/wma-purchase-receive-lookup-po-vendor-detours.png "仕入先による PO の検索を使用した購買入庫、例 2")
 
 > [!TIP]
-> **購買入庫** メニュー項目から検索を行って入庫フローを実行する代わりに、照会フロー (**メイン \> 紹介\> 仕入先による PO の検索**) から開始し、一覧のいずれかのカードを選択することで目的のフローを実行する迂回を呼び出すことができます。 この方法を使用するには、*GenericDataInquiryList* の **ステップ ID** を持つステップの **モバイル デバイスのステップ** ページで迂回を定義します。 このフローは迂回フローであるため、このフローからさらに迂回を呼び出すことはできません。 そのため、たとえば、品目番号入力画面にアクセスした場合、現在 1 つのレベルの迂回のみサポートされるため、検索を使用できません。
+> **購買入庫** メニュー項目から検索を行って入庫フローを実行する代わりに、照会フロー (**メイン \> 紹介\> 仕入先による PO の検索**) から開始し、一覧のいずれかのカードを選択することで目的のフローを実行する迂回を呼び出すことができます。 この方法を使用するには、*GenericDataInquiryList* の **ステップ ID** を持つステップの **モバイル デバイスのステップ** ページで迂回を定義します。 システムで [*Warehouse Management モバイル アプリの複数レベルの迂回*](warehouse-app-detours.md) 機能が有効化されている場合、必要に応じて迂回を追加することもできます (この機能により、最大 2 レベルの迂回までサポートが追加され、追加のレベルをサポートするためにカスタマイズできます)。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

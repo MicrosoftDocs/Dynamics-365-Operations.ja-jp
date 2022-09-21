@@ -2,7 +2,7 @@
 title: 財務と運用アプリの技術サポートの設定
 description: この記事では、クラウドおよびオンプレミス配置のサポートについて説明します。
 author: sericks007
-ms.date: 10/13/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 29531
 ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
-ms.openlocfilehash: 3baa437bfa59312294a676dc23f649a5609cb1a5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d5d0b9942ca19225c9472ce686bbaa1441b8e0dc
+ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280011"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388464"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations-apps"></a>財務と運用アプリの技術サポートの設定 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="prerequisites"></a>必要条件
 
-テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、Microsoft Dynamics 365 財務と運用アプリのいずれかのサブスクリプションを設定すると作成されます。
+テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、財務と運用アプリのいずれかのサブスクリプションを設定すると作成されます。
 
 ## <a name="create-an-azure-devops-project"></a>Azure DevOps プロジェクトの作成
 Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、Azure DevOps を使用し、クライアントを通して送信された問題と、LCS の **サポート** タイルから手動で作成された問題を格納します。 この機能を使用するには、サポートに使用する LCS プロジェクトで Azure DevOps プロジェクトを設定する必要があります。 **サポート** タイルを使用して問題を提出する必要があるすべてのユーザーは、Azure DevOps プロジェクトにアクセスできる必要があり、LCS が Azure DevOps に自身が代わってアクセスを承認する必要があります。 ほとんどのユーザーは、LCS または Azure DevOps へのアクセス権がありません。 したがって、Azure DevOps プロジェクトでは、問題を提出するために使用できる特別なシステム アカウントを作成する必要があります。
@@ -80,6 +80,10 @@ Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、A
 
 4.  **Azure DevOps の設定** をクリックします。
 5.  **Azure DevOps サイトの URL** フィールドに、前のセクションで作成した Azure DevOps プロジェクトの URL を入力します。
+
+    > [!NOTE]
+    > LCS では、Azure DevOps のルート URL をレガシー形式で入力する必要があります。 レガシ形式は `https://ACCOUNT.visualstudio.com` と `https://contoso.visualstudio.com` です。
+
 6.  **個人用アクセス トークン** フィールドに、前のセクションで作成した個人用アクセス トークンを入力します。 
 
     [![前のセクションで作成した個人用アクセス トークンを入力します。](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)

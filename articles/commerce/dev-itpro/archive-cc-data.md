@@ -2,7 +2,7 @@
 title: クレジット カード トランザクション データのアーカイブ
 description: この記事では、クレジット カード トランザクションをアーカイブに保存することでデータベースの領域を解放できる、Microsoft Dynamics 365 Commerce のアーカイブ ジョブについて説明します。
 author: BrianShook
-ms.date: 01/28/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
-ms.openlocfilehash: 8fbb7a768fad59b3d62ddd48acda600c80570414
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: afae6d91b02aaa4cbb3f1d4b13d01939eccd8a41
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269243"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410435"
 ---
 # <a name="archive-credit-card-transaction-data"></a>クレジット カード トランザクション データのアーカイブ
 
@@ -76,6 +76,16 @@ ms.locfileid: "9269243"
 ![確認用メッセージボックス。](media/PAYMENTS/Batch3.png)
 
 **はい** を選び、アーカイブ ジョブが有効になると、**トランザクションの最小日数** 値よりも古いクレジット カードの認証に関するすべての XML データはアーカイブの対象になります。
+
+## <a name="further-storage-management-with-token-compression"></a>トークン圧縮によるストレージ管理の強化
+
+基になるストレージ テーブルの占有領域を減らするには、**支払トークンの圧縮** 機能を有効にすることで、トークンを圧縮できます。 この機能フラグを有効にすると、システムは格納されている支払プロパティ トークンで圧縮を使用できます。 
+
+Headquarters で **支払トークンの圧縮** 機能を有効にするには、次の手順を実行します。
+
+1. **ワークスペース \> 機能管理** に移動します。 
+1. **すべて** で **支払トークンの圧縮** 機能を検索します。
+1. 機能を選択し、プロパティ ウィンドウで **今すぐ有効にする** を選択します。
 
 ## <a name="additional-resources"></a>追加リソース
 

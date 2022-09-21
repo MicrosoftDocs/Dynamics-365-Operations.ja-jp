@@ -2,7 +2,7 @@
 title: BPM ライブラリと Azure DevOps の同期
 description: この記事では、LCS の BPM ライブラリを Azure DevOps と同期させる方法について説明します。
 author: amarshall
-ms.date: 05/13/2019
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: b6b3e600973032ad0c2cad6179ab85c1d318b9e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d4d4506f8afd002dd82b98bd8bd4738b2adcce9
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866350"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9404444"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 
@@ -58,13 +58,17 @@ Azure DevOps プロジェクトに接続するために、LCS は個人用アク
 2. **Azure DevOps** を選択し、**Azure DevOps の設定** を選択します。 この構成は多くの LCS ツールで必要です。 既に LCS を構成して Azure DevOps プロジェクトに接続している場合、この手順を省略するか、**変更** を選択して既存のコンフィギュレーションを変更できます。
 3. Azure DevOps アカウントのルート URL および以前に作成した個人用アクセス トークンを入力し、**続行** を選択します。
 4. Azure DevOps プロジェクトを選択します。
+
+    > [!NOTE]
+    > LCS では、Azure DevOps のルート URL をレガシー形式で入力する必要があります。 レガシ形式は `https://ACCOUNT.visualstudio.com` と `https://contoso.visualstudio.com` です。
+
 5. LCS/BPM 項目と関連付けられている Azure DevOps 作業項目の種類の間のマッピングを指定します。
 
     ![作業項目タイプ マッピング。](./media/newbpm_BlogPost24.png)
 
 6. **続行** を選択して変更内容を確認し、**保存** を選択します。
 
-## <a name="synchronize-a-bpm-library-with-a-azure-devops-project"></a>Azure DevOps プロジェクトと BPM ライブラリの同期
+## <a name="synchronize-a-bpm-library-with-an-azure-devops-project"></a>Azure DevOps プロジェクトと BPM ライブラリの同期
 
 LCS プロジェクトおよび Azure DevOps プロジェクト間の接続を設定した後は、Azure DevOps プロジェクトに BPM ライブラリを同期することができます。 BPM ライブラリを Azure DevOps プロジェクトと同期させると、BPM ライブラリ内の各業務プロセスの明細行に対して Azure DevOps 作業項目が作成されます。 さらに、BPM の業務プロセスの階層は、Azure DevOps の作業項目の階層に反映されます。 Azure DevOps で作成される作業項目のタイプは、LCS プロジェクトの設定によって異なります。
 
@@ -108,7 +112,7 @@ BPM ライブラリを Azure DevOps プロジェクトと同期させるには�
    - **黄色の円** – プロセスおよびその子プロセスは部分的に確認されています。
    - **赤いダッシュ** – プロセスとその子プロセスは確認されていません。
 
-![レビュー列の例。](./media/newbpm_BlogPost28.png)
+    ![レビュー列の例。](./media/newbpm_BlogPost28.png)
 
 Azure DevOps に接続されている業務プロセスを確認するとき、Azure DevOps プロジェクトに要求を直接追加することができます。
 

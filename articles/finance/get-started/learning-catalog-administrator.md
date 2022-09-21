@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Finance の管理者ラーニング カタログ
 description: Dynamics 365 Finance 管理者に関するすべてのトレーニング オプションを確認します。
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 811ff0eb9d13c34a5fa21014415981574833d256
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7772de29030475c45a86f305e74a7048508887ba
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065252"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424599"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Dynamics 365 Finance 管理者の学習カタログ
 
@@ -62,9 +62,7 @@ ms.locfileid: "9065252"
 | コンテンツ | Description  | 形式 | Length    |
 |---------|--------------|--------|-----------|
 | [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションから財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
-| [財務と運用: 7.x から 8 以降へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 7.X から 8.X へのアップグレード プロセスについて説明する次の Tech Talk にご参加ください。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオとステップについて説明します。 また、拡張機能の要求シナリオと、必要に応じてそれらを上げる方法についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
-| [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 財務と運用アプリケーション v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Web カンファレンスの無料録画 | 58 分 |
-| [AX2012 から Dynamics 365 for Operations へのアップグレード (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Web カンファレンスの無料録画 | 45 分 |
+| [AX2012 から財務と運用アプリへの更新 - 2020 年 9 月 3 日](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | この Tech Talk では、コードとデータを Dynamics AX 2012 から財務と運用アプリへアップグレードする方法の概要について説明します。 | Tech Talk (録画されたウェビナー) | 66 分 |
 | [AX2009 移行ツール](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | このセッションでは、AX2009 から D365 for Operations への移行を支援するための利用可能なツールについて扱います。 | Web カンファレンスの無料録画 | 55 分 |
 
 ## <a name="servicing"></a>サービス<a name="servicing"></a>
@@ -73,9 +71,8 @@ ms.locfileid: "9065252"
 |----------|---------------|---------|-----------|
 | [財務と運用: 機能管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | 機能管理エクスペリエンスに関する技術解説。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。 | Web カンファレンスの無料録画 | 47 分 |
 | [財務と運用: サービス、サポート、および生産管理 (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk では、Dynamics 365 Finance の運用環境を効率的にサポート、保守、サービスする方法について説明します。 | Web カンファレンスの無料録画 | 53 分 |
-| [Finance and Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新スケジュールが開始されました! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Web カンファレンスの無料録画 | 61 分 |
-| [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この講演では、Microsoft 管理の継続的な更新プログラムに関する最初の発表以降の新機能について説明します。 更新の頻度、プロセスに関するユーザーからの貴重なフィードバックにどのように対応してきたか、また、更新を管理できるようになる予定の Lifecycle Services のユーザー エクスペリエンスについてご紹介します。 | Web カンファレンスの無料録画 | 56 分 |
-| [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | ここでは、最新リリースを使用してシステムを最新の状態に保つための Microsoft の計画について説明します。 タイムライン、主要な更新プログラムと小さな更新プログラムの頻度、計画済みの手順、影響、および最適な結果を得るためにするべきことについて説明します。 | Web カンファレンスの無料録画 | 62 分 |
+| [財務と運用: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新スケジュールが開始されました! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Web カンファレンスの無料録画 | 61 分 |
+| [財務と運用: Microsoft 管理の継続的な更新プログラム - 2019 年 4 月 2 日](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Finance and Operations の継続的な更新頻度が開始されました ! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Tech Talk (録画されたウェビナー) | 61 分 |
 | [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、運用環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「運用停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
 
 ## <a name="testing"></a>テスト<a name="testing"></a>
@@ -87,4 +84,3 @@ ms.locfileid: "9065252"
 | [財務と運用: Dynamics 365 のパフォーマンスのトラブルシューティング ツール (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | この Tech Talk では、Microsoft Dynamics 365 Finance のパフォーマンス問題のトラブルシューティングに使用できるさまざまなツールを紹介します。 このセッションには、シナリオ ベースのデモと、一般的なパフォーマンスの問題にアプローチする方法に関する初期ガイダンスが含まれます。 | Web カンファレンスの無料録画 | 64 分 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

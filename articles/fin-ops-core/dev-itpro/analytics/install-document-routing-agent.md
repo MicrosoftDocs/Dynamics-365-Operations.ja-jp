@@ -2,7 +2,7 @@
 title: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 description: この記事では、Microsoft Microsoft Dynamics  365 Finance の配置用に Document Routing Agent をインストールして構成する方法について説明します。
 author: RichdiMSFT
-ms.date: 06/20/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 ms.search.form: SysCorpNetPrinterList
-ms.openlocfilehash: d9a749b0a0bdc7bf9252900608152170ad4e2f77
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f0a217797f854de4c4479492b9cf57c57bdb942a
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271537"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9404445"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
@@ -34,7 +34,7 @@ ms.locfileid: "9271537"
 - ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
 - ドキュメント回覧エージェントをインストールする場合は、管理者ユーザーとしてログインしていることを確認します。
 - ドキュメント回覧エージェントの設定に使用する Microsoft Azure Active Directory (Azure AD) アカウントは、Azure テナントと同じドメインを共有している必要があります。
-- Document Routing Agent には、クライアント上に NET 4.62 またはそれ以降、および 32 ビットまたは 64 ビットの Adobe Acrobat Reader が必要です。
+- Document Routing Agent には、クライアント上に NET 4.7.2 またはそれ以降、および 32 ビットまたは 64 ビットの Adobe Acrobat Reader が必要です。
 - ドキュメントの拡大縮小を防止するために、Adobe クライアントの印刷設定をコンフィギュレーションします。
 
 アプリケーションに登録されているネットワーク プリンターは、環境で定義されているすべての法人 (会社とも呼ばれます) で使用できます。 ネットワーク プリンター設定は会社固有です。 したがって、管理者はユーザーのアクティブな会社に基づいてアクセスを制限できます。 たとえば、有効な会社内のユーザーは、ドキュメント回覧エージェントによって登録されるすべてのネットワーク プリンターへアクセスできる可能性があります。 ただし、別の会社内のユーザーは、アクセスがその会社に対して明示的に有効になるまで、それらのプリンターへアクセスできません。
@@ -115,6 +115,11 @@ ms.locfileid: "9271537"
 既定で有効で、毎日実行するドキュメント回覧履歴のためのクリーンアップ バッチ ジョブがあります。 このバッチ ジョブによって、7 日を経過したドキュメント回覧履歴は削除されます。 この履歴は、印刷で問題があった場合のトラブルシューティングまたは追跡のための顧客による使用を目的としています。 この履歴データへのアクセス方法に応じて、上限と見なされる 7 日間の既定値から保持期間を削減することができます。 このテーブルのレコード数を少なくすると、印刷の最適なパフォーマンスが確保されます。 この設定は、`https://[host_adress]/?mi=DocumentRoutingHistoryCleanupConfig` で構成できます。 **JobHistoryHours** (履歴を保持する時間数) の値を構成します。 
 
 ドキュメント回覧エージェントのポーリングの一環として、このテーブルに対してクエリが実行されます。 このクエリは迅速に実行する必要がありますが、このテーブルにレコードが多い場合、大量の印刷ジョブの場合、速度が非常に遅くなる可能性があります。 このバッチ ジョブが毎日実行されていることを確認し、これを構成して印刷履歴の保持量を削減します。 
+
+## <a name="excluding-printers-with-stuck-print-jobs"></a>印刷ジョブが停止しているプリンターを除外する
+問題のあるプリンターやドライバーに対応するため、**除外したプリンターの有効化** 設定を追加しました。 この設定を有効にすると、印刷ジョブがプリンタスプールに送信され、**保留** 状態で返されない場合、**スタックした印刷ジョブを中止する** フィールドで指定された時間後に、ドキュメント処理エージェントがプリンタを除外リストに追加します。 (既定値は 5 分間です)。 **x 分ごとにこのプリンターをリセットする** フィールド (既定値 30 分) は、指定時間後にプリンターを追加し、印刷ジョブの送信を試みます。 
+
+また、管理者は、**スプーラーの状態** 列の **ネットワーク プリンター** セクションで、除外されたプリンターを確認することができます。 除外されたプリンターは、**リセット** 列の **リセット** アイコンを選択することにより、リセットすることができます。 また、**テストページの印刷** ボタンで、テスト ページをプリンターに送ることができます。 
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="does-the-document-routing-agent-have-to-be-installed-on-each-computer-where-a-user-connects-by-using-a-browser"></a>ドキュメント回覧エージェントは、ユーザーがブラウザーを使い接続する各コンピューターにインストールする必要がありますか。

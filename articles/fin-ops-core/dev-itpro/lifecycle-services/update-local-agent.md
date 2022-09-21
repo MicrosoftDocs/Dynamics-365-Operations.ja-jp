@@ -2,7 +2,7 @@
 title: ローカル エージェントの更新
 description: この記事では、ローカル エージェントを更新する方法について説明します。
 author: faix
-ms.date: 06/08/2022
+ms.date: 09/02/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1e131cb9e5e390f803329e063bb41ae615128bc9
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.openlocfilehash: ac4846df45c3b4362dcfb7c6428341a212c5012c
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103886"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403526"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -33,7 +33,7 @@ ms.locfileid: "9103886"
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
-| 3.1.0               | このバージョンにより、新しい展開オプションが追加されます。 |
+| 3.1.0               | このバージョンでは、Service Fabric SDK をアップグレードし、新しい展開オプションを追加します。 |
 | 3.0.0               | このバージョンには、Edge Scale Unit アプリケーション ライフサイクル管理のサポートが含まれています。 |
 | 2.7.2               | このバージョンには、古いアプリケーション バージョンを配置するための修正が含まれています。 | 
 | 2.7.1               | このバージョンでは、新しい展開オプションが導入され、展開オプションによるバグが修正されます。 |
@@ -54,7 +54,11 @@ ms.locfileid: "9103886"
 
 ## <a name="whats-new-in-local-agent-310"></a>ローカル エージェント 3.1.0 の新機能
 
-- ローカル エージェント 3.1.0 により、新しい展開オプションが導入され、[環境が Regression Suite Automation Tool (RSAT) で機能するよう構成する必要があると指定する](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool)ことができます。
+- ローカル エージェント 3.1.0 は、新しい Service Fabric SDK とランタイムを取得します。
+- このリリースでは、新しい展開オプションが導入され、[環境が Regression Suite Automation Tool (RSAT) で機能するよう構成する必要があると指定する](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool)ことができます。
+
+> [!IMPORTANT]
+> このリリースは、8.1+ Service Fabric クラスターとのみ互換性があります。
 
 ## <a name="whats-new-in-local-agent-300"></a>ローカル エージェント 3.0.0 の新機能
 

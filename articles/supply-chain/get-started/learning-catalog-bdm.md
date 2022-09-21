@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 81c20432a3094ef0fe3013c0867044ef3014adcb
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 4c3289d034346fa21e31000fa4a2b4961a2d5304
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124621"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423667"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management を検討している業務の意志決定者向けラーニング カタログ
 
@@ -25,11 +25,10 @@ ms.locfileid: "9124621"
 
 次のカタログは、コア知識から特定のドメインまで、および最も基本的なものから最も高度なものまでまとめられています。 コンテンツが複数の形式で存在する場合は、ご自分のニーズに合ったトレーニング形式を選択できます。
 
-## <a name="get-started"></a>はじめに<a name="get-started"></a>
+## <a name="get-started"></a>使用開始<a name="get-started"></a>
 
-| コンテンツ | 説明 | 書式設定 | 期間 |
+| コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
-| [Microsoft Dynamics 365 および Power Platform の事業価値について調べる](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 Microsoft Dynamics 365 と Power Platform アプリケーションをどこから初めればいいか分からないですか？ 業務アプリケーションの機能が業務の変革にどのように役立つかについて説明します。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Dynamics 365 および Power Platform の基本](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | ビジネス アプリケーションについて学ぶことに関心がありますか。 この学習パスから開始して、Dynamics 365 アプリの使用方法を確認してください。 クラウドの概念、Power Platform、および Dynamics 365 アプリの使用を開始する方法について説明します。 | 無料の自習型オンライン学習パス | 5.5 時間 |
 | [財務と運用アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | 財務と運用アプリによって業務をサポートし、グローバルな財務システム、運用業務プロセス、合理化されたサプライ チェーンを管理して、情報に基づく迅速な意思決定を行う方法を学びます。 財務と運用アプリを使用して仕事をする最初のステップとして、目的のロールを問わず、その機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2 時間 |
 | [コース MB-900T01-A: Dynamics 365 の基本](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | このコースでは、Dynamics 365の機能と事業価値について理解します。 このコースでは、Dynamics 365 アプリケーション、Power Platform、クラウドの概念、セキュリティ モデル、およびライセンスに関する考慮事項について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |

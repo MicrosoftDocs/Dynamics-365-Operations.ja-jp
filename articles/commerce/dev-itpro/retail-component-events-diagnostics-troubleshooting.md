@@ -2,7 +2,7 @@
 title: 診断とトラブルシューティングの Commerce コンポーネント イベント
 description: この記事では、コマース固有のコンポーネントからイベントを検索する場所について説明します。
 author: ShalabhjainMSFT
-ms.date: 08/15/2022
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 85493
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
 ms.search.industry: Retail
-ms.openlocfilehash: 42060c4accf4f5ee0a594ead64f7e56d9b7516fc
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 49d8bd4981e8bf4f41d2466b7cdd1b58a08c6f51
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295913"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410402"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -198,13 +198,15 @@ Commerce 本部で Application Insights の診断イベントを有効にする�
 1. Application Insights を使用にする環境ごとに前の手順を繰り返します。
 
 > [!NOTE]
-> Commerce バージョン 10.0.29 以降では、このセクションの手順により、販売時点管理 (POS) の運用イベントのストリーミングを Application Insights アカウントに対して有効化することもできます。
+> Operational Insights 内のテレメトリ イベントは変更される可能性があります。 Operational Insights イベントを使用して、予備分析やトラブルシューティングを独自に実行し、ダッシュボードや警告を定義することをお勧めします。 セルフサービスのトラブルシューティングの他にイベントを使用する場合は、Commerce Scale Unit/POS のリリースごとにクエリを検証および更新することをお勧めします。
+> 
+> Commerce バージョン 10.0.29 以降では、このセクションのプロシージャにより、POS Operational Insights のストリーミングを Application Insights アカウントに対して有効にすることもできます。
 >
-> 構成ファイルを使用して POS の運用情報イベントを制御するには、次の手順を実行します。
+> 構成ファイルを使用して POS Operational Insights を制御するには、次の手順を実行します。
 >
->1. テキスト エディタを使用して、“C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker”にある "DLLHost.exe.config" ファイルを開きます。
+> 1. テキスト エディタを使用して、“C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker” にある "DLLHost.exe.config" ファイルを開きます。
 >
->1. diagnosticsSection” からクラス名 "Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger" を持つシンク XML 要素を削除します。 
+> 1. diagnosticsSection” からクラス名 "Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger" を持つシンク XML 要素を削除します。 
 
 #### <a name="disable-diagnostic-events-in-application-insights"></a>Application Insights の診断イベントを無効にする
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: ad5f843e3bafa54a961908d9ebe5ab64e619e1bc
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228571"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475552"
 ---
 # <a name="human-resources-home-page"></a>Human Resources ホーム ページ
 
@@ -40,7 +40,7 @@ ms.locfileid: "9228571"
 - [報酬管理](hr-compensation-overview.md)
 - [従業員の開発](hr-develop-performance-management-overview.md)
 - [学習](hr-learning-courses.md)
-- [ワークフロー システム]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [ワークフロー システム](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 Human Resources はユーザーや業務データを関連付けて、従業員の労働力を最適化するとともに、従業員をケアします。
 
@@ -51,7 +51,8 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 ## <a name="additional-resources"></a>追加リソース
 
 ### <a name="elearning-courses"></a>eラーニング コース
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365) をご確認ください。
+
+オンライン コースおよびトレーニングについては、[Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365) をご確認ください。
 
 ### <a name="videos"></a>ビデオ
 

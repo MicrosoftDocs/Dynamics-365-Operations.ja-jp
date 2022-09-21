@@ -1,7 +1,7 @@
 ---
 title: 実装プロジェクト FAQ の Go-live
 description: この記事では、実装プロジェクトの Go-Live についてよく寄せられる質問を一覧表示します。
-author: OlgaPetrovaFT
+author: alejandra-cabrales
 ms.date: 06/22/2022
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: olpetrov
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 09cd16b8f46b0c01de13fe6d109e4a913b42976b
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: b27b36698533e7182673fc094102ed82260b1c78
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108894"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403511"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 

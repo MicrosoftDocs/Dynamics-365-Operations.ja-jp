@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: db8799aba8095c8144d878c96590e8d90276726b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334718"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428203"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Management 10.0.26 (2022 年 5 月) の新機能および変更された機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "9334718"
 | 在庫および物流 | [高度な倉庫管理品目をサポートする在庫可視性の手持在庫に対するクエリ](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [WMS 品目に対応した在庫可視化](../inventory/inventory-visibility-whs-support.md) | 機能管理:<br>*在庫可視化で在庫品目を有効化* |
 | 在庫および物流 | [在庫の可視化アドインの納期回答可能在庫](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility の手持変更スケジュールと納期回答可能在庫](../inventory/inventory-visibility-available-to-promise.md) | サービス コンフィギュレーションによって有効 |
 | 製造 | [生産現場の実行インターフェイスの CW 品目](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェイスからの CW 品目に関するレポート* |
-| 製造 | 生産現場の実行インターフェース上の [自分の職務] タブ <!-- KFM: Add link to release plan when available --> | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェース上の [自分の職務] タブ* |
+| 製造 | 生産現場の実行インターフェース上の [自分の職務] タブ | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェース上の [自分の職務] タブ* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 

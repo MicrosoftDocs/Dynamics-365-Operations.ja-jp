@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 45a35eb32cb9e51d9f63f6687808fb511f894887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873727"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403697"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>計画最適化リリース プロセスおよびリリース履歴
 
@@ -33,6 +33,7 @@ Microsoft は、計画最適化を月ごとに更新します。 ただし、業
 
 | 変更 | 機能管理の詳細 | リリース日 |
 |---|---|---|
+| <p>一般的なパフォーマンス、品質、および安定性の向上。 | 機能管理は必要ありません。 | 2022 年 8 月 29 日～9 月 3 日 |
 | <p>一般的なパフォーマンス、品質、および安定性の向上。<p>[計画の最適化集中カレンダーのメンテナンス](../supply-chain-calendars-master-planning.md)<p>[既存の供給を最適化するための計画の最適化に関する提案](../action-messages.md)<p>[外注の最適化サポートの計画](../../production-control/manage-subcontract-work-production.md) | 機能管理は必要ありません。 | 2022 年 3 月 7 日～ 11 日 |
 | <p>製造オーダーに対する計画の優先順位のサポートを追加しました。 | *計画の最適化の優先順位の高い MRP サポート* という名前の機能の一部としてバージョン 10.0.25 で利用可能です。 | 2021 年 11 月 12～18 日 |
 | <p>一般的なパフォーマンス、品質、および安定性の向上。 | 機能管理は必要ありません。 | 2021 年 11 月 12～18 日 |

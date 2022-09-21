@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.form: SystemParameters
-ms.openlocfilehash: 35dc37f6669a3f47dd82917be0e84d0b8698e8f8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2c45a203303181c7ea23e20f8fa1bdce1c827aa2
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282468"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462242"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>財務と運用アプリのヘルプ エクスペリエンスの構成
 
@@ -37,7 +37,7 @@ ms.locfileid: "9282468"
 
 [![ヘルプ アーキテクチャ。](./media/help-architecture.png)](./media/help-architecture.png)
 
-製品内のヘルプ システムでは、docs.microsoft.com やその他の接続 web サイトから記事を取得しています。 また、Microsoft Dynamics Lifecycle Services (LCS) 内の業務プロセス (BPM) にて保管されているタスクガイドも取得しています。
+製品内のヘルプ システムでは、Microsoft Docs やその他の接続 web サイトから記事を取得しています。 また、Microsoft Dynamics Lifecycle Services (LCS) 内の業務プロセス (BPM) にて保管されているタスクガイドも取得しています。
 
 ## <a name="adding-task-guides"></a>タスク ガイドの追加
 
@@ -103,4 +103,3 @@ Microsoft では、ユーザー定義のヘルプを展開して **ヘルプ** �
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

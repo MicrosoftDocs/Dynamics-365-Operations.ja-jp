@@ -1,23 +1,23 @@
 ---
 title: Go Live の準備
 description: この記事では、財務と運用アプリの Go-Live に向けた準備方法に関するガイダンスを提供します。
-author: ClaudiaBetz-Haubold
+author: alejandra-cabrales
 ms.date: 07/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: chaubold
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 23bf539570fa8d7f9115f3393f212ac8ee60835d
-ms.sourcegitcommit: ed8ce31c45f35ea616ee48806149700f00f9d322
+ms.openlocfilehash: 857d5d15816a9b4053a08ac98e12b6fee3b75a29
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "9126521"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403512"
 ---
 # <a name="prepare-for-go-live"></a>Go Live の準備
 

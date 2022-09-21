@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287931"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476810"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -137,7 +137,29 @@ ER フォーミュラ デザイナーを使用して、実行時に生成され�
 > 
 > この設定に基づいて、各債務者の支払いに対して生成されるメッセージ **Ustrd** XML 要素には、支払票のテキスト、またはそのテキストが空白の場合は、支払い決済に使用される請求書番号のコンマ区切りのリストが含まれます。
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>構成された式の検証
+## <a name="assistance-in-formulas-writing"></a>フォーミュラ記述の支援
+
+### <a name="data-sources-navigator"></a>データ ソース ナビゲーター
+
+構造化されたデータ ソースの要素を表すフォーミュラを編集できます。 構造化されたデータ ソースの要素へのパスを [相対パス](relative-path-data-bindings-er-models-format.md) として表示するように ER パラメーターを構成した場合、使用される階層ツリー構造の絶対パスの残りの部分ではなく、"at" (@) 記号がフォーミュラに [表示](er-formula-language.md#relative-path) されます。 絶対パスのこの残りの部分は、編集可能な要素の親要素を指しています。 Finance バージョン **10.0.30 以降** では、**フォーミュラ デザイナー** ページの **データ ソース** ウィンドウで、**@ に移動** オプションを選択して、データ ソース ツリーのカーソルを編集可能な要素の親である要素に配置できます。 折りたたまれたすべての昇順要素の構造は、必要に応じて自動的かつ再帰的に展開されます。 この展開により、編集可能な要素の基本要素をすばやく視覚化し、データ ソース ツリー内の編集可能な要素の兄弟を観察して、必要に応じてそれぞれを編集可能なフォーミュラで使用することができます。
+
+!["@ へ移動" オプションを使用して、データ ソース ツリーのカーソルを、フォーミュラ デザイナー ページで編集可能な要素の親である要素に配置します。](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>データ ソースの選択
+
+**フォーミュラ デザイナー** ページの左側にある **データ ソース** ウィンドウで、編集可能なフォーミュラに入力するデータ ソースの要素を選択します。 次に **データ ソースの追加** を選択します。 選択した要素が編集可能なフォーミュラのテキストに追加されます。
+
+> [!TIP]
+> 既定のフォーミュラ エディターで **データ ソースの追加** オプションを使用すると、選択した要素が常にフォーミュラ テキストの末尾に追加されます。 [詳細なフォーミュラ エディター](er-advanced-formula-editor.md) で同じ操作を行うと、選択した要素が現在のカーソル位置にあるフォーミュラ テキストに挿入されます。
+
+### <a name="built-in-functions-picker"></a>組み込み関数の選択
+
+**フォーミュラ デザイナー** ページの右側にある **関数** ウィンドウで、編集可能なフォーミュラに入力する ER 組み込み関数を選択します。 次に **関数の追加** を選択します。 選択した関数が編集可能なフォーミュラのテキストに追加されます。
+
+> [!TIP]
+> 既定のフォーミュラ エディターで **関数の追加** オプションを使用すると、選択した関数が常にフォーミュラ テキストの末尾に追加されます。 [詳細なフォーミュラ エディター](er-advanced-formula-editor.md) で同じ操作を行うと、選択した関数が現在のカーソル位置にあるフォーミュラ テキストに挿入されます。
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>構成された式の検証
 
 **フォーミュラ デザイナー** ページで,  **テスト** を選択して、構成された式の動作を検証します。
 

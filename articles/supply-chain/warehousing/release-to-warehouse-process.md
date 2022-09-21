@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893181"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428039"
 ---
 # <a name="release-to-warehouse"></a>倉庫へのリリース
 
@@ -34,7 +34,7 @@ ms.locfileid: "8893181"
 
 倉庫 *作業* とは、倉庫作業者によって実行される倉庫操作です。 通常、倉庫作業は 2 つ以上の連続するアクションで構成されます。倉庫作業者は 1 つの場所の手持在庫をピッキングし、別の場所に配置します。
 
-注文が倉庫にリリースされると、システムによって *積荷明細行* が作成され、出荷にグループ化されます。 出荷連結処理では、倉庫へのリリース プロセス中の自動出荷連結が可能になります。 詳細については[出荷連結ポリシー](about-shipment-consolidation-policies.md)を参照してください。
+注文が倉庫にリリースされると、システムによって *積荷明細行* が作成され、出荷にグループ化されます。 出荷連結処理では、倉庫へのリリース プロセス中の自動出荷連結が可能になります。 詳細については、[出荷連結ポリシーの概要](about-shipment-consolidation-policies.md) を参照してください。
 
 システムでは、*ウェーブ* を使用して出荷のピッキング作業と積荷が作成されます。 作成するウェーブのタイプおよび注文明細行の倉庫に対する *ウェーブ テンプレート* が使用可能になっている必要があります。 *出荷* タイプのウェーブ テンプレートが販売注文と移動オーダーの品目の出荷に使用されます。
 

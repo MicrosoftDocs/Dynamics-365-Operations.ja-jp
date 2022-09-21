@@ -2,7 +2,7 @@
 title: 在庫設定の適用
 description: この記事では在庫設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287595"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405323"
 ---
 # <a name="apply-inventory-settings"></a>在庫設定の適用
 
@@ -51,12 +51,12 @@ Commerce では、在庫設定はサイト ビルダーの **サイト設定 \> 
     > [!IMPORTANT] 
     > **複数の倉庫の在庫レベル** 設定は、Commerce バージョン 10.0.19 リリースで利用可能です。 古いバージョンの Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 手順については、[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) を参照してください。
 
-- **製品リスト ページの在庫設定** - この設定により、製品コレクションおよび検索結果モジュールによって表示される製品リストに在庫切れ製品を表示する方法が定義されます。 設定可能な値は、**他の商品と一緒に並べて表示する**、**在庫切れの商品をリストから非表示にする**、**在庫切れの商品をリストの最後に表示する** です。 この設定を使用するには、まず Commerce 本部でいくつかの前提となる設定を行う必要があります。 詳細については、[検索結果モジュールの在庫の認識を有効にする](search-result-module.md#enable-inventory-awareness-for-the-search-results-module)を参照してください。
+- **製品リスト ページの在庫設定** - この設定により、製品コレクションおよび検索結果モジュールによって表示される製品リストに在庫切れ製品を表示する方法が定義されます。 設定可能な値は、**他の商品と一緒に並べて表示する**、**在庫切れの商品をリストから非表示にする**、**在庫切れの商品をリストの最後に表示する** です。 この設定を使用するには、まず Commerce 本部でいくつかの前提となる設定を行う必要があります。 詳細については、[在庫を認識した製品の一覧](inventory-aware-product-listing.md) を参照してください。
 
     > [!IMPORTANT] 
     > **商品一覧ページの在庫設定** の設定は、Commerce バージョン 10.0.20 リリースで利用可能です。 古いバージョンの Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 手順については、[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) を参照してください。
 
-- **在庫範囲** – この設定では、メッセージがサイト モジュールに表示される在庫範囲を定義します。 これは、設定に **基準となる在庫レベル** で **引当可能合計数** 値または **引当可能現物数** 値のいずれかが選択されている場合にのみ適用されます。 使用できる値は、**すべて**、**在庫が少なく在庫切れ**、**在庫切れ** です。
+- **在庫範囲** – この設定は、サイト モジュールに表示される在庫範囲メッセージを定義します。 これは、設定に **基準となる在庫レベル** で **引当可能合計数** 値または **引当可能現物数** 値のいずれかが選択されている場合にのみ適用されます。 使用できる値は、**すべて**、**在庫が少なく在庫切れ**、**在庫切れ** です。
 
     - **すべて** を選択すると、在庫あり (" 使用可能" メッセージ) から 在庫切れ ("在庫切れ" メッセージ) まで、すべての在庫範囲のメッセージが表示されます。
     - **在庫が少なく在庫切れ** を選択すると、在庫あり (" 使用可能" メッセージ) を除くすべての在庫範囲のメッセージが表示されます。

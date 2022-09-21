@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 ms.custom: intro-internal
 ms.assetid: ''
-ms.openlocfilehash: 7111f2548ba62cbbb4cc386e3f56c86def274056
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 6f871a900184fc01a6bb5b740d257926e5ba5b2c
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284518"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405481"
 ---
 # <a name="whats-new-or-changed-in-platform-updates"></a>プラットフォーム更新プログラムの新機能および変更された機能
 
@@ -29,6 +29,7 @@ ms.locfileid: "9284518"
 
 | **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細はこちら**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| プラットフォーム更新プログラム 10.0.30 | 7.0.XXXX | 2022 年 11 月    | [財務と運用アプリのバージョン 10.0.30 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-30.md)  |
 | プラットフォーム更新プログラム 10.0.29 | 7.0.6545 | 2022 年 9 月    | [財務と運用アプリのバージョン 10.0.29 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-29.md)  |
 | プラットフォーム更新プログラム 10.0.28 | 7.0.6441 | 2022 年 8 月    | [財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-28.md)  |
 | プラットフォーム更新プログラム 10.0.27 | 7.0.6395 | 2022 年 7 月    | [財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-27.md)  |

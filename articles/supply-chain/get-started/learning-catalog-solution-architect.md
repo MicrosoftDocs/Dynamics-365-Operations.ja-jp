@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 80aa4ccbe6913b6d87defdad6f2d957e70118f0c
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 9662b00b6c4ff6c292e5ae1d5b38a12d47738aab
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123916"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423723"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-solution-architects"></a>Dynamics 365 Supply Chain Management ソリューション アーキテクトのラーニング カタログ
 
@@ -68,9 +68,7 @@ ms.locfileid: "9123916"
 |---------|-------------|--------|--------|
 | [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションから財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [財務と運用アプリの更新とアップグレード](/learn/modules/upgrades-updates-finance-operations-apps/) | エンタープライズ リソース プランニング (ERP) の世界は、絶えず進化しており、顧客が生産性をスケールアップし、操作を効率化するために役立ちます。 財務と運用の進化によって、以前のバージョンの Microsoft Dynamics AX の以前のバージョンから財務と運用クラウド サービスにアップグレードすることが推奨されます。 | 無料の自習型オンライン学習モジュール | 1 時間 |
-| [Finance and Operations: 7.x から 8 以降へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 次回のTechTalkでは、7.X から 8.X へのアップグレード プロセスについて説明します。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオと手順について説明します。 また、拡張機能の要求のシナリオと、必要に応じてそれらを上げる方法についても説明します。 2 部構成の第 1 部 | Web カンファレンスの無料録画 | 61 分 |
-| [7.0 (RTW)/7.1 (リリース 1611) から 7.2 (2017 年 7 月) にアップグレードする方法 (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | このセッションでは、Dynamics 365 財務と運用アプリ v7.0 (RTW) および v7.1 (1611) から v7.2 (2017 年 7 月) にアップグレードする方法について説明します。 Live の顧客と進行中のプロジェクト (まだ Live ではない) を明確に区別します。 | Web カンファレンスの無料録画 | 44 分 |
-| [AX2012 から Dynamics 365 Supply Chain Management へのアップグレード (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 Supply Chain Management にアップグレードする方法の概要を説明します。 | Web カンファレンスの無料録画 | 45 分 |
+| [AX2012 から財務と運用アプリへのアップグレード (DYN865PAL)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | この Tech Talk では、コードとデータを Dynamics AX 2012 から財務と運用アプリへアップグレードする方法の概要について説明します。 | Tech Talk (録画されたウェビナー) | 66 分 |
 | [AX2009 移行ツール](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017)| この Tech Talk では、AX2009 Data Migration Tool のインストール、コンフィギュレーション、見積、移行方法、およびカスタマイズの側面について説明します。 | Web カンファレンスの無料録画 | 57 分 |
 
 ## <a name="servicing"></a>サービス<a name="servicing"></a>
@@ -79,10 +77,8 @@ ms.locfileid: "9123916"
 |---------|-------------|--------|--------|
 | [財務と運用: 運用のサービス、サポート、および管理 (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk では、Dynamics 365 Finance の運用環境を効率的にサポート、保守、サービスする方法について説明します | Web カンファレンスの無料録画 | 53 分 |
 | [財務と運用: 機能管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | 機能管理エクスペリエンスに関する技術解説。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。 | Web カンファレンスの無料録画 | 47 分 |
-| [Finance and Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新頻度が開始されました! この時間帯では、Microsoft が管理する継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定について議論することができます。 | Web カンファレンスの無料録画 | 61 分 |
-| [Finance And Operations: Microsoft 管理の継続的な更新プログラム: 新機能 - 2018 年 11 月 1 日 (DYN533cust)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-what-39-s-new-november-1-2018) | この 1 時間の間に、Microsoft 管理の継続的な更新頻度に対する更新について説明し、Lifecycle Services におけるユーザー エクスペリエンスを確認します。 | Web カンファレンスの無料録画 | 59 分 |
-| [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この講演では、Microsoft が管理する継続的な更新に関する最初の発表以来の新機能について説明します。 更新の頻度、プロセスに関する貴重なフィードバックへの対応を説明し、今後の Lifecycle Services のユーザー エクスペリエンスを確認します。これにより、更新を管理できるようになります。 | Web カンファレンスの無料録画 | 56 分 |
-| [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | ここでは、最新リリースを使用してシステムを最新の状態に保つための Microsoft の計画について説明します。 タイムライン、主要な更新プログラムと小さな更新プログラムの頻度、計画された手順、影響、および最適な結果を得るためにするべきことについて説明します。 | Web カンファレンスの無料録画 | 62 分 |
+| [財務と運用: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新スケジュールが開始されました! この時間帯では、Microsoft が管理する継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定について議論することができます。 | Web カンファレンスの無料録画 | 61 分 |
+| [Finance and Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新頻度が開始されました ! この時間帯に参加して、Microsoft 管理の継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定についてご相談ください。 | Tech Talk (録画されたウェビナー) | 61 分 |
 | [監視、最適化アドバイザーおよび重大な KB (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | ここでは、監視機能、運用環境で Microsoft が行う監視、最適化アドバイザーとその拡張方法、LCS での「重要な X++ 更新プログラム」エクスペリエンス、および LCS での「稼働停止のレポート」オプションのベスト プラクティスについて説明します。 | Web カンファレンスの無料録画 | 40 分 |
 | [パンチ アウト (DYN332PAL2)](https://community.dynamics.com/365/b/techtalks/posts/punch-out-september-21-2017) | この Tech Talk では、パンチアウト機能について説明し、購買要求シナリオを介した外部カタログの設定について扱います。 | Web カンファレンスの無料録画 | 42 分 |
 
@@ -92,7 +88,6 @@ ms.locfileid: "9123916"
 |---------|-------------|--------|--------|
 | [財務と運用アプリでのユーザー受入テストの実行](/learn/modules/perform-uat-finance-operations/) | コンフィギュレーション、カスタマイズ、および統合のいずれかによって顧客のすべての要求が処理された後、財務と運用アプリでユーザー受け入れテスト (UAT) を実行してソリューションを検証する方法を理解する必要があります。 ユーザー受入テストは、本稼働の準備をする上で重要なステップです。 | 無料の自習型オンライン学習モジュール | 1 時間 |
 | [財務と運用: Regression Suite Automation Tool - 背景と設定 (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの最初のものです。 このセッションでは、RSAT を介した自動テストを使用して、継続的な更新に対応する方法について説明します。 RSAT を使用したタスク記録の作成とテストの実行に関する学習と推奨事項については、インストールとセットアップのステップ バイ ステップ チュートリアルに従って説明します。 | Web カンファレンスの無料録画 | 70 分 |
-| [財務と運用: Regression Suite Automation Tool - ライフサイクル デモをテストする (DYN647PAL)](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの 2 番目のものです。 このセッションでは、財務と運用から LCS の BPM ライブラリにタスク記録を作成して保存し、Azure DevOps で BPM ライブラリを同期してテスト ケースを作成し、テスト ケースをテスト スイートにグループ化して、RSAT でテスト スイートを読み込んで実行する全サイクルのデモについて扱います。 | Web カンファレンスの無料録画 | 70 分 |
 | [財務と運用: Dynamics 365 のパフォーマンス ベンチマーク (DYN550PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-benchmark-for-dynamics-365-1-30-19) | この Tech Talk では、Microsoft Dynamics 365 Finance でパフォーマンス ベンチマークを準備して提供するためのアプローチについて説明します。 簡単な事例をデモンストレーションで説明する前に、プロセス、主要な概念、およびツールを紹介します。 | Web カンファレンスの無料録画 | 68 分 |
 | [財務と運用: Dynamics 365 のパフォーマンス キー パターンとアンチ パターン (DYN549PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-key-patterns-and-anti-patterns-for-dynamics-365-1-15-19) | この Tech Talk では、プロジェクト チームが正常に実装している効率的なパフォーマンス パターンを紹介します。 また、Microsoft Dynamics 365 Finance 環境のパフォーマンスを大幅に低下させる可能性のあるアンチ パターンについても説明します。 | Web カンファレンスの無料録画 | 58 分 |
 | [Regression Suite Automation Tool (DYN480PAL)](https://community.dynamics.com/365/b/techtalks/posts/regression-suite-automation-tool-9-25-18) | Regression Suite Automation Tool について説明します。 Microsoft の更新プログラムを取得するとき、または Dynamics 365 Finance 運用環境にカスタム コードとコンフィギュレーションを適用する前に、ユーザー受け入れテストの時間とコストを大幅に削減します。 機能パワー ユーザーが財務と運用タスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくても自動テストのスイートに変換できるようにします。 | Web カンファレンスの無料録画 | 61 分 |

@@ -1,27 +1,25 @@
 ---
 title: Dynamics 365 Finance 開発者のためのラーニング カタログ
 description: Dynamics 365 Finance の開発者に対するすべてのトレーニング オプションを確認します。
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 02b639ddaf7c12e1a6c83bad1c05f8f85fb548dc
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 5fe354d94f7cef15b944828e0e07ce4b50f7eb42
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068531"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424584"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Finance 開発者のためのラーニング カタログ
-
-
 
 他のデータ ソースと統合したり、コア システム機能を拡張したり、複雑なアプリケーションを構築したりするためのコードを記述する必要がありますか。
 
@@ -43,8 +41,7 @@ ms.locfileid: "9068531"
 | [財務と運用アプリを拡張する](/learn/paths/extending-finance-operations/) | 拡張機能を使用すると、開発者は、基本コードに影響しないコードに変更を加えることによって、財務と運用アプリでのユーザー エクスペリエンスを変更することができます。 特に、拡張により開発者はビジネス プロセスと必要な変更を順守するために財務と運用アプリを更新できます。 | 無料の自習型オンライン学習パス | 2.5 時間 |
 | [財務と運用アプリに接続する](/learn/paths/connect-finance-operations/) | 統合および財務と運用アプリのデータへのアクセス機能は、重要な機能です。 財務と運用アプリでコードの構築や拡張を身につけた開発者は、データの統合やデータとの接続がどのようにユーザーに良い影響を与えるのかを学ぶことで、開発の知識を強化できます。 | 無料の自習型オンライン学習パス | 5.75 時間 |
 | [データを移行して、財務と運用アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントとして、顧客のデータを移行用に準備し、データ管理を操作して、そしてユーザー受け入れテストを実行してから財務と運用アプリの運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
-| [Finance and Operations: 開発 ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | この Tech Talk に是非ご参加ください。ここでは、開発アプリケーション ライフ サイクル管理の概念、ツール、および推奨されるベスト プラクティスについて説明します。 Lifecycle Services、Visual Studio、Azure DevOps がどのように連携して、ソリューションのコードベースのビジネスプロセスに焦点を当てた継続的な配信を可能にし、お客様の環境にサービスを提供するかについて扱っています。 | Web カンファレンスの無料録画 | 52 分 |
-| [財務と運用: PowerApps を使用して Dynamics 365 Finance を拡張する (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Microsoft PowerApps のシンプルさを理解し、Dynamics 365 Finance とどのように融合してビジネスをデジタル化、およびユーザーの生産性を向上させるのかを理解しましょう。 | Web カンファレンスの無料録画 | 43 分 |
+| [財務と運用: 開発 ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | この Tech Talk に是非ご参加ください。ここでは、開発アプリケーション ライフ サイクル管理の概念、ツール、および推奨されるベスト プラクティスについて説明します。 Lifecycle Services、Visual Studio、Azure DevOps がどのように連携して、ソリューションのコードベースのビジネスプロセスに焦点を当てた継続的な配信を可能にし、お客様の環境にサービスを提供するかについて扱っています。 | Web カンファレンスの無料録画 | 52 分 |
 | [財務と運用: 拡張性 (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Microsoft 機能拡張計画の概要および更新について説明します。 ソリューションを拡張するさまざまな方法、メタデータ拡張性機能の詳細、および強力なコマンド チェーン機能経由を含むコードの補強および拡張機能について詳しく説明します。 | Web カンファレンスの無料録画 | 50 分 |
 | [Visual Studio Team Services (VSTS) の設定 (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | この Tech Talk では、VSTS のインスタンスとプロジェクトを構成して、開発/テスト環境を構成する LCS 実装プロジェクトに接続するために必要な手順について説明します。 | Web カンファレンスの無料録画 | 41 分 |
 | [Dataverse データ インテグレーター (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Dataverse データ統合の機能に関するこの Tech Talk にご参加ください。 Dynamics 365 Customer Engagement と Dynamics 365 財務と運用間の統合オプション、および他のサードパーティ ソリューションとの統合についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
@@ -55,6 +52,7 @@ ms.locfileid: "9068531"
 | [法人へのコピー (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | このセッションでは、データ管理フレームワークの新機能である、法人へのコピーについて説明します。 まず、ワークスペース、テンプレート、およびデータ プロジェクト用にプラットフォーム 8 のデータ管理フレームワークに追加された新機能を簡単に確認し、次に法人へのコピーに追加された追加機能について説明します。 | Web カンファレンスの無料録画 | 54 分 |
 | [新しい分析ワークスペースの拡張またはビルド方法 (DYN321PAL)](https://community.dynamics.com/365/b/techtalks/posts/how-to-extend-or-build-new-analytical-workspaces-september-18-2017) | この Tech Talk では、新しい分析ワークスペースを拡張またはビルドする方法について説明します。 | Web カンファレンスの無料録画 | 59 分 |
 | [モバイル フレームワーク (VIR824PAL) ](https://community.dynamics.com/365/b/techtalks/posts/mobile-framework-april-11-2017) | この Tech Talk では、Dynamics 365 for Operations でアプリを構築するためのモバイル フレームワーク機能について説明します。 このセッションでは、最近構築されたアプリの一部も紹介します。 | Web カンファレンスの無料録画 | 58 分 |
+| [コース MB-500T00: Microsoft Dynamics 365: 財務と運用アプリ開発者](/training/courses/mb-500t00) | 本コースでは、Dynamics 365 財務と運用アプリにおいて、開発者の役割を果たすために必要な作業について説明します。 Dynamics 365 for Finance and Operations (FO) 開発者は、ビジネスの要件を満たすアプリケーションの実装・拡張する重要な技術リソースです。 | 講師による指導付きトレーニング、費用は地域やパートナーによって異なります | 5 日間 |
 
 ## <a name="servicing"></a>サービス<a name="servicing"></a>
 
@@ -62,17 +60,14 @@ ms.locfileid: "9068531"
 |---------|-------------|--------|--------|
 | [財務と運用: サービス、サポート、および生産管理 (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk では、Dynamics 365 Finance の運用環境を効率的にサポート、保守、サービスする方法について説明します。 | Web カンファレンスの無料録画 | 53 分 |
 | [財務と運用: 機能管理 (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 機能管理エクスペリエンスに関する技術解説。 各リリースで提供されている機能を表示、有効化、無効化、およびスケジュールできるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 この会議に参加すると、10.0.3 で提供される内容と、今後のリリースの計画を確認できます。 | Web カンファレンスの無料録画 | 47 分 |
-| [Finance and Operations: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新スケジュールが開始されました! Microsoft が管理する継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定について説明します。 | Web カンファレンスの無料録画 | 61 分 |
-| [Microsoft 管理の継続的な更新プログラム: 新機能 (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | この講演では、Microsoft 管理の継続的な更新プログラムに関する最初の発表以降の新機能について説明します。 更新の頻度、プロセスに関するユーザーからの貴重なフィードバックにどのように対応してきたか、また、更新を管理できるようになる予定の Lifecycle Services のユーザー エクスペリエンスについてご紹介します。 | Web カンファレンスの無料録画 | 56 分 |
-| [Microsoft 管理の継続的な更新プログラム (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | ここでは、最新リリースを使用してシステムを最新の状態に保つための Microsoft の計画について説明します。 タイムライン、主要な更新プログラムと小さな更新プログラムの頻度、計画済みの手順、影響、および最適な結果を得るためにするべきことについて説明します。 | Web カンファレンスの無料録画 | 62 分 |
+| [財務と運用: Microsoft 管理の継続的な更新プログラム (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | 財務と運用の継続的な更新スケジュールが開始されました! Microsoft が管理する継続的な更新、Lifecycle Services で使用可能なユーザー エクスペリエンス、および今後の更新の予定について説明します。 | Web カンファレンスの無料録画 | 61 分 |
 
 ## <a name="migration-and-upgrade"></a>移行およびアップグレード<a name="migration-and-upgrade"></a>
 
 | コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
 | [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションから財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
-| [財務と運用アプリ: 7.x から 8 以降へのアップグレード (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | 次回の TechTalk では、7.X から 8.X へのアップグレード プロセスについて説明します。 ここでは、コードのアップグレードおよびデータのアップグレードのために実行するさまざまなシナリオとステップについて説明します。 また、拡張機能の要求シナリオと、必要に応じてそれらを上げる方法についても説明します。 2 部構成の第 1 部 | Web カンファレンスの無料録画 | 61 分 |
-| [AX2012 から財務と運用アプリへのアップグレード (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | この Tech Talk では、コードとデータを Dynamics AX 2012 から Dynamics 365 for Operations にアップグレードする方法の概要を説明します。 | Web カンファレンスの無料録画 | 45 分 |
+| [AX2012 から財務と運用アプリへの更新 - 2020 年 9 月 3 日](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | この Tech Talk では、コードとデータを Dynamics AX 2012 から財務と運用アプリへアップグレードする方法の概要について説明します。 | Tech Talk (録画されたウェビナー) | 66 分 |
 | [AX2009 から財務と運用アプリへの移行ツール (VIR809PAL)](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | このセッションでは、AX2009 から財務と運用への移行を支援するために利用可能なツールについて扱います。 | Web カンファレンスの無料録画 | 55 分 |
 
 ## <a name="testing"></a>テスト<a name="testing"></a>
@@ -95,4 +90,3 @@ ms.locfileid: "9068531"
 |[試験 MB-500: Microsoft Dynamics 365: 財務と運用アプリ開発者](/learn/certifications/exams/mb-500) | この試験では、次の技術的タスクを遂行する能力を評価します: アーキテクチャとソリューション設計の計画; 開発者ツールの適用; AOT要素の設計・開発; コードの開発とテスト; レポートの実装; データ ソリューションの統合および管理; セキュリティの実装とパフォーマンスの最適化。 | 試験、費用は地域によって異なる |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

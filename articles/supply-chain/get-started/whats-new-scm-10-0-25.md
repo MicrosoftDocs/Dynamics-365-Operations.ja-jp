@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219097"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403685"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management 10.0.25 (2022 年 4 月) の新機能および変更された機能
 
@@ -161,7 +161,7 @@ ms.locfileid: "9219097"
 | 倉庫管理 | [場所ライセンス プレートの配置](../warehousing/location-license-plate-positioning.md) | 必須 |
 | 倉庫管理 | [場所の製品分析コードの混在](../warehousing/location-product-dimension-mixing.md) | 必須 |
 | 倉庫管理 | モバイル デバイスの在庫移動の在庫状態フィールドを編集できるようにする | 必須 |
-| 倉庫管理 | 管理者または同様の信頼できるユーザーのための販売明細行手動ピッキング サービス | 必須 |
+| 倉庫管理 | [管理者または同様の信頼できるユーザーのための販売明細行手動ピッキング サービス](../warehousing/manual-order-line-picking-exception-handling.md) | 必須 |
 | 倉庫管理 | [移動オーダー出荷済ライセンス プレートを出荷先倉庫以外の倉庫で使用することを禁止する](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | 必須 |
 | 倉庫管理 | あいまいな [場所/ライセンス プレート] の名前の解決を確認する | 必須 |
 | 倉庫管理 | [品質チェック](../warehousing/quality-check.md) | 必須 |

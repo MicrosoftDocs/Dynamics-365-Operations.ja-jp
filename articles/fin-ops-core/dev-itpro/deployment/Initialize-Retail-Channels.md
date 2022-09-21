@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: f9d21de3e498b293394835d5cf564899338b9c18
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357661"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9474018"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -73,7 +73,6 @@ Commerce Scale Unit は、次の地域に配置することができます。
 | EMEA            | 北ヨーロッパ        | 一般に入手可能    |  コメントはありません。 |
 | EMEA            | 英国南部            | 一般に入手可能 |    コメントはありません。                          |
 | EMEA            | 英国西部             | 一般に入手可能 |    コメントはありません。                          |
-| スイス     | スイス北部   | 能力上限    | 承認プロセスが必要です。 |
 | アラブ首長国連邦             | アラブ首長国連邦北部           | 能力上限    | 承認プロセスが必要です。 |
 
 キャパシティが制限された地域でのデプロイのキャパシティにはかなり制約があります。 デプロイの要求は、状況に応じて評価されます。 キャパシティが制限された地域でのデプロイに対して説得力のあるビジネス ニーズがある場合は、待機リストに追加するサポート要求を提出することができます。 現時点では、Commerce Scale Unit のデプロイを許可していないキャパシティが制限された領域があります。 

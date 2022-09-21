@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65467fd9525ae8fb5a65a9316b7307f611fa6e42
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850673"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475615"
 ---
 # <a name="intercompany-planning"></a>会社間計画
 
@@ -45,8 +45,8 @@ ms.locfileid: "8850673"
 
 会社間計画を使用するには、次のようにシステムを準備する必要があります。
 
-1. 関連する製品は、関連するすべての会社でリリースする必要があります。 詳細については、Microsoft Learn で [Dynamics 365 Supply Chain Management で会社間取引を構成および使用する](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) を参照してください。
-1. 上流会社や関連する既定の在庫分析コード (サイトと倉庫) との会社間リレーションがある仕入先の購買で、ダウンストリームの需要をカバーする必要があります。 詳細については、Microsoft Learn で [Dynamics 365 Supply Chain Management で会社間取引を構成および使用する](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) を参照してください。
+1. 関連する製品は、関連するすべての会社でリリースする必要があります。 詳細については、[Dynamics 365 Supply Chain Management における企業間取引の構成と使用](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/)を参照してください。
+1. 上流会社や関連する既定の在庫分析コード (サイトと倉庫) との会社間リレーションがある仕入先の購買で、ダウンストリームの需要をカバーする必要があります。 詳細については、[Dynamics 365 Supply Chain Management における企業間取引の構成と使用](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/)を参照してください。
 1. 上流会社のマスター プランには、計画された下流需要を含める必要があります。また、関連する会社とマスター プランを下流計画で指定する必要があります。
 
 ## <a name="include-planned-downstream-demand"></a>下流の計画需要を含める
@@ -85,6 +85,5 @@ ms.locfileid: "8850673"
 次の図は、計画製造オーダーの **複数レベルのペギング** ページで、この例がどのように表示されるかを示します。
 
 ![3 つの会社が関わる会社間の例。](media/IntercompanyPlanning2.png)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

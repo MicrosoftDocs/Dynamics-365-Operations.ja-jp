@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313886"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462304"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは非推奨の機能
 
@@ -32,6 +32,20 @@ ms.locfileid: "9313886"
 
 > [!NOTE]
 > 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Finance 10.0.30 リリースの削除済みまたは非推奨の機能
+
+### <a name="revenue-recognition"></a>収益認識
+
+[収益認識](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **廃止 / 削除の理由** |改良された機能である [サブスクリプション請求管理](../../finance/accounts-receivable/subscription-billing-summary.md) に置き換えられる
+| **別の機能で置き換えられているか?**   | 有効 |
+| **影響を受ける製品領域** | アプリケーション |
+| **配置オプション** | すべて |
+| **状態** | 非推奨: 2023 年 4 月以降、Dynamics 365 Finance の収益認識機能は、修正プログラムでサポートされなくなりました。 お客様には、改良された機能である [サブスクリプション請求管理](../../finance/accounts-receivable/subscription-billing-summary.md) 利用していただくことになります。 2023 年 10 月、収益認識機能は使用できなくなりました。 お客様には、改良された機能であるサブスクリプション請求管理に移動していただくことになります。 収益認識の一部としてバンドル機能については、現時点で交換機能は計画されません。|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Finance 10.0.29 リリースの削除済みまたは非推奨の機能
 

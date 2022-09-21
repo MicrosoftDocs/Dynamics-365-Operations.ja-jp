@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec214ef4ebb6ecb72c1684c515df25d3c2403c14
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027142"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475641"
 ---
 # <a name="administration-overview"></a>管理の概要
 
@@ -46,10 +46,10 @@ ms.locfileid: "9027142"
   - [Dayforce との統合のコンフィギュレーション](hr-admin-integration-dayforce.md)
   - [定期的なデータ エクスポート アプリの作成](hr-admin-integration-recurring-data-export.md)
   - Office との統合
-    - [Office 統合のチュートリアル](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Excel でのエンティティ データの更新](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [[Excel で開く] エクスペリエンスの作成](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Office 統合のトラブルシューティング](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office 統合のチュートリアル](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Excel でのエンティティ データの更新](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [[Excel で開く] エクスペリエンスの作成](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office 統合のトラブルシューティング](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [機能の管理](hr-admin-manage-features.md)
 
@@ -99,8 +99,8 @@ ms.locfileid: "9027142"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="elearning-courses"></a>eLearning コース
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) をご確認ください。
+### <a name="elearning-courses"></a>eラーニング コース
+オンライン コースおよびトレーニングについては、[Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) をご覧ください。
 
 ### <a name="videos"></a>ビデオ
 

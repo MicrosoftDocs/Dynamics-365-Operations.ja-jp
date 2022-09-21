@@ -2,7 +2,7 @@
 title: 構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 description: この記事では、構成済み電子レポート (ER) コンポーネントを検査して、発生する可能性のあるランタイムの問題を回避する方法について説明します。
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277853"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476857"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
@@ -243,6 +243,15 @@ ER では、次のカテゴリを使用して、整合性チェック検査を�
 <td>
 <p>ORDERBY 関数のリスト式がクエリ可能ではありません。</p>
 <p><b>ランタイム エラー:</b> 並べ替えはサポートされていません。 構成を検証して、詳細を取得します。</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>廃止されたアプリケーション コンポーネント</a></td>
+<td>データの整合性</td>
+<td>警告</td>
+<td>
+<p>要素 &lt;path&gt; は廃止としてマークされています。<br>または<br>要素 &lt;path&gt; はメッセージ &lt;メッセージ テキスト&gt; とともに廃止としてマークされています。</p>
+<p><b>ランタイム エラー サンプル:</b> クラス '&lt;path&gt;' が見つかりません。</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ ER は、`ORDERBY` 関数で参照されるデータ ソースに対して直接
 #### <a name="option-2"></a>オプション 2
 
 **FilteredVendors** データ ソースの式を `ORDERBY("Query", Vendor, Vendor.AccountNum)` から `ORDERBY("InMemory", Vendor, Vendor.AccountNum)` に変更します。 すべてのレコードがフェッチされ、必要なレコードの順序付けがメモリ内で行われるため、大量のデータがあるテーブル (トランザクション テーブル) の式を変更することはお勧めしません。 したがって、この方法ではパフォーマンスが低下する可能性があります。
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>廃止されたアプリケーション コンポーネント
+
+ER モデル マッピング コンポーネントまたは ER 形式コンポーネントを設計する場合、データベース テーブル、クラスのメソッドなど、ER のアプリケーション コンポーネントを呼び出す ER 式を構成できます。Finance バージョン 10.0.30 以降では、参照されるアプリケーション コンポーネントがソース コードで廃止としてマークされていることを ER に警告させることができます。 通常、廃止されたコンポーネントは最終的にソース コードから削除されるので、この警告は役に立ちます。 コンポーネントのステータスが通知されることで、ソース コードから削除される前に、編集可能な ER コンポーネントで廃止されたコンポーネントを使用しなくなり、実行時に ER コンポーネントから存在しないアプリケーション コンポーネントを呼び出すエラーを防ぐことができます。
+
+**機能管理** ワークスペースで **電子申告データ ソースの廃止された要素を検証する** 機能を有効にして、編集可能な ER コンポーネントの検査中にアプリケーション コンポーネントの廃止された属性の評価を開始します。 廃止された属性は、現在、次のタイプのアプリケーション コンポーネントに対して評価されています:
+
+- データベース テーブル
+    - テーブルのフィールド
+    - テーブルのメソッド
+- アプリケーション クラス
+    - クラスのメソッド
+
+> [!NOTE]
+> 警告は、このデータ ソースがこの ER コンポーネントの少なくとも 1 つのバインドで使用されている場合にのみ、廃止されたコンポーネントを参照するデータ ソースの編集可能な ER コンポーネントの検査中に発生します。
+
+> [!TIP]
+> [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute) クラスを使用して、コンパイラにエラーの代わりに警告メッセージを発行するように通知する場合、検査警告は、**モデル マッピング デザイナー** または **形式デザイナー** ページの **詳細** FastTab で設計時にソース コードで指定された警告を表示します。
+
+次の図は、`CompanyInfo` アプリケーション テーブルの古い `DEL_Email` フィールドが、構成済の `company` データ ソースを使用してデータ モデル フィールドにバインドされている場合に発生する、検証警告を示しています。
+
+![モデル マッピング デザイナー ページの詳細 FastTab で検証警告を確認します。](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>自動解決
+
+この問題を自動的に修正するオプションはありません。
+
+### <a name="manual-resolution"></a>手動解決
+
+廃止されたアプリケーション コンポーネントを参照するデータ ソースへのすべてのバインドを削除して、構成済みのモデル マッピングまたは形式を変更します。
 
 ## <a name="additional-resources"></a>追加リソース
 

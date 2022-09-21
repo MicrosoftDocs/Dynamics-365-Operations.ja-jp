@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357644"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423598"
 ---
 # <a name="inventory-visibility-public-apis"></a>Inventory Visibility の公開 API
 
@@ -41,6 +41,8 @@ ms.locfileid: "9357644"
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | 転記 | [手持在庫数量の設定/上書き](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | 転記 | [1 つの予約イベントの作成](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | 転記 | [複数の予約イベントの作成](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | 転記 | [予約イベントの取り消し](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | 転記 | [複数の予約イベントの取り消し](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | 転記 | [1 つのスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | 転記 | [複数のスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | 転記 | [転記メソッドを使用したクエリ](#query-with-post-method) |
@@ -56,7 +58,7 @@ ms.locfileid: "9357644"
 > 
 > バルク API では、要求ごとに最大 512 件のレコードを返します。
 
-Microsoft では、すぐに利用できる *Postman* 要求コレクションを提供しています。 次の共有リンクを使用して、*Postman* ソフトウェアにこのコレクションをインポートできます: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>。
+Microsoft では、すぐに利用できる *Postman* 要求コレクションを提供しています。 次の共有リンクを使用して、*Postman* ソフトウェアにこのコレクションをインポートできます: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>。
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services 環境に従ってエンドポイントを検索する
 
@@ -168,9 +170,9 @@ Microsoft では、すぐに利用できる *Postman* get トークン コレク
 
 次のテーブルでは、JSON 本文の各フィールドの意味が要約されています。
 
-| フィールド ID | 説明 |
+| フィールド ID | Description |
 |---|---|
-| `id` | 特定の変更イベントの固有 ID。 この ID を使用して、サービスとの通信が転記時に失敗した場合にイベントを再送信しても、同じイベントがシステムで 2 回カウントされることがないようにすることができます。 |
+| `id` | 特定の変更イベントの固有 ID。 サービス障害で再転記が発生した場合、この ID を使用してシステム上で同じイベントが 2 回カウントされることを予防します。 |
 | `organizationId` | イベントにリンクされている組織の ID。 この値は、Supply Chain Management での組織またはデータ領域 ID にマップされます。 |
 | `productId` | 製品の識別子。 |
 | `quantities` | 手持在庫の数量の変更が必要な数量。 たとえば、新たに帳簿を 10 つ追加すると、この値は `quantities:{ shelf:{ received: 10 }}` になります。 棚から 3 つの帳簿が削除される場合、または販売される場合、この値は `quantities:{ shelf:{ sold: 3 }}` になります。 |
@@ -178,7 +180,7 @@ Microsoft では、すぐに利用できる *Postman* get トークン コレク
 | `dimensions` | 動的なキーと値のペア。 値は Supply Chain Management の分析コードの一部にマップされます。 ただし、カスタム分析コード (_ソース_ など)を追加して、イベントが Supply Chain Management から取得されたか、または外部システムから取得されたかどうかを示したりすることもできます。 |
 
 > [!NOTE]
-> `SiteId` および `LocationId` パラメーターは、[パーティションの構成](inventory-visibility-configuration.md#partition-configuration)を構築します。 そのため、手持変更イベントの作成、手持数量の設定または上書き、または引当イベントの作成を行う際は、これらの情報を分析コードで指定する必要があります。
+> `siteId` および `locationId` パラメーターは、[パーティションの構成](inventory-visibility-configuration.md#partition-configuration)を構築します。 そのため、手持変更イベントの作成、手持数量の設定または上書き、または引当イベントの作成を行う際は、これらの情報を分析コードで指定する必要があります。
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a> 1 つの手持在庫変更のイベントの作成
 
@@ -216,14 +218,14 @@ Body:
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ Body:
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ Body:
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ Body:
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ Body:
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -381,7 +383,7 @@ Body:
 
 ## <a name="create-reservation-events"></a>予約イベントの作成
 
-*予約* API を使用するには、予約機能を開いて、予約の構成を完了する必要があります。 詳細については、[予約の構成 (オプション)](inventory-visibility-configuration.md#reservation-configuration) を参照してください。
+*予約* API を使用するには、予約機能をオンにして、予約の構成を完了する必要があります。 詳細については、[予約の構成 (オプション)](inventory-visibility-configuration.md#reservation-configuration) を参照してください。
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a> 1 つの予約イベントの作成
 
@@ -389,7 +391,7 @@ Body:
 
 引当 API を呼び出す際に、要求本文のブール値 `ifCheckAvailForReserv` パラメーターを指定することで、引当の検証を制御できます。 `True` という値は検証が必要であることを意味するのに対し、`False` という値は検証が必要ないことを意味します。 既定値は [`True`] です。
 
-引当をキャンセルしたり、指定した引当在庫数量を解除したい場合は、数量を負の値に設定し、`ifCheckAvailForReserv` パラメーターを `False` に設定して検証をスキップします。
+予約の取り消しや、指定した引当在庫数量を解除する場合は、数量を負の値に設定し、`ifCheckAvailForReserv` パラメーターを `False` に設定して検証をスキップします。 また、同様のことを行う専用の取り消し API も用意されています。 この 2 つの API の違いは、呼び方の違いだけです。 *予約取り消し* API で `reservationId` を使用すると、特定の予約イベントを取り消すことが簡単にできます。 詳細については、[_予約イベントを取り消す_](#reverse-reservation-events) セクションを参照してください。
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ Body:
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+次の例では、正常な応答例を示しています。
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a> 複数の予約イベントの作成
 
-この API は、[1 つのイベント API](#create-one-reservation-event) の一括バージョンです。
+この API は、[1 つのイベント API](#create-reservation-events) の一括バージョンです。
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>予約イベントの取り消し
+
+*取り消し* API は、[*取り消し*](#create-reservation-events) イベントの逆の操作として機能します。 `reservationId` で指定された予約イベントを取り消したり、予約数量を減らしたりする方法を提供します。
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a>予約イベントの取り消し
+
+予約が作成されると、応答の本文に `reservationId` が含まれます。 予約をキャンセルする場合は、同じ `reservationId` を指定し、予約 API 呼び出しに使用したのと同じ `organizationId` と `dimensions` を含める必要があります。 最後に、前回の予約から解放する個数を表す `OffsetQty` 値を指定します。 予約は、指定された `OffsetQty` によって、完全または部分的に取り消すことができます。 たとえば、*100* 個の商品を予約した場合、`OffsetQty: 10` を指定すると、最初の予約量の *10* 個を予約解除できます。
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+次のコードは、本文コンテンツの例を示しています。
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+次のコードは、成功した応答分の例を示しています。
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> 応答本文では、`OffsetQty` が予約数量以下の場合、`processingStatus` には "*成功*"、`totalInvalidOffsetQtyByReservId` には *0* が格納されます。
+>
+> `OffsetQty` が予約の数量より大きい場合、`processingStatus` は "*partialSuccess*"、`totalInvalidOffsetQtyByReservId` は `OffsetQty` と予約金額との差となります。
+>
+>たとえば、予約の数量が *10* で、`OffsetQty` の値が *12* であれば、`totalInvalidOffsetQtyByReservId` は *2* になります。
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a>複数の予約イベントの取り消し
+
+この API は、[1 つのイベント API](#reverse-one-reservation-event) の一括バージョンです。
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>手持在庫をクエリする
 
-_手持在庫をクエリする_ API を使用して、製品の手持在庫データを取り込むことができます。 現在、この API は、最大 100 個の個別アイテムを `ProductID` 値で照会することをサポートしています。 各クエリには、複数の `SiteID` と `LocationID` の値を指定することもできます。 最大制限は、`NumOf(SiteID) * NumOf(LocationID) <= 100` として定義されます。
+*手持在庫をクエリする* API を使用して、製品の手持在庫データを取り込むことができます。 現在、この API は、最大 5000 個の個別アイテムを `productID` 値で照会することをサポートしています。 各クエリには、複数の `siteID` と `locationID` の値を指定することもできます。 上限は以下の式で定義されます:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*。
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a> 転記メソッドを使用したクエリ
 
@@ -517,7 +629,7 @@ Body:
 - `productId` には 1 つ以上の値が含まれます。 空の配列であれば、すべての製品が返されます。
 - `siteId` と `locationId` は、在庫可視化でのパーティション分割に使用されます。 *手持在庫をクエリする* 要求では、複数の `siteId` と `locationId` の値を指定できます。 現在のリリースでは、`siteId` と `locationId` の両方の値を指定する必要があります。
 
-`groupByValues` パラメーターは、インデックス用の構成に従います。 詳細については、[製品インデックス階層の構成](./inventory-visibility-configuration.md#index-configuration)を参照してください。
+`groupByValues` パラメーターを使用して、インデックス作成の設定に従うことをお勧めします。 詳細については、[製品インデックス階層の構成](./inventory-visibility-configuration.md#index-configuration)を参照してください。
 
 `returnNegative` パラメーターは、結果に負のエントリが含まれるかどうかを制御します。
 
@@ -530,13 +642,13 @@ Body:
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ Body:
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -574,10 +686,10 @@ Query(Url Parameters):
     [Filters]
 ```
 
-サンプル取得 URL を次に示します。 この取得要求は、以前に提供された転記サンプルとまったく同じです。
+URL 所得のサンプルは次のとおりです。 この取得要求は、以前に提供された転記サンプルとまったく同じです。
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>納期回答可能在庫

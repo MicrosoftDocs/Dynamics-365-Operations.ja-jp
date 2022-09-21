@@ -1,7 +1,7 @@
 ---
 title: 環境計画
 description: この記事では、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。
-author: laneswenka
+author: skaue-ms
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: laswenka
+ms.author: toskaue
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and operations
-ms.openlocfilehash: 54147ac06cfaa7e1c744deda6407ad1f76bc23bb
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 497f6ef0edc9522c1d1667b543ae58040727afac
+ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109412"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473621"
 ---
 # <a name="environment-planning"></a>環境計画
 

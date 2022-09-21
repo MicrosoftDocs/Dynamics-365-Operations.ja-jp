@@ -2,7 +2,7 @@
 title: キーボード ショートカット
 description: この記事では、財務と運用アプリを操作するときに使用できるショートカット キーの概要を示し ます。
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357594"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405441"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,12 +88,14 @@ ms.locfileid: "9357594"
 | フィルター ペインを開く (すでにフィルタ ウィンドウが開かれている場合、フィルター ペインとメイン フォームの間でフォーカスを切り替え) | Alt+M、F または Ctrl+F3       |
 | フィルター ペインを閉じる (フィルター ペインにフォーカスがある場合)                                                               | Esc キー                      |
 | 高度なフィルター/並べ替えを開く                                                                                        | Ctrl + Shift + F3            |
+| クイック フィルターの適用 (フォーカスがクイック フィルターの場合)                                                              | 入店                    |
+| グリッド フィルターの適用 (フォーカスが列ヘッダーのフィルター フィールドにある場合)                                             | 入店                    |
 
 ## <a name="form-shortcuts"></a>フォームのショートカット
 
 | 目的                                    | キー             |
 |-----------------------------------------------|-------------------|
-| 新しいレコードの作成                           | Alt + N             |
+| 新しいレコードを作成します                           | Alt + N             |
 | レコードの削除                               | Alt+Del または Alt+F9 |
 | レコードの保存                                   | Alt+S または Ctrl+S   |
 | 元に戻す (復元)                              | Ctrl + Shift + F5     |
@@ -157,12 +160,13 @@ ms.locfileid: "9357594"
 
 ## <a name="input-control-shortcuts"></a>入力コントロールのショートカット
 
-| 目的                                                                   |  を押します                         |
+| 目的                                                                   | キー                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | ハイパーリンクを開く                                                           | Ctrl キー +Enter                    |
+| ハイパーリンクを開く (フォーカスが読み取り専用コントロールの場合)<br><br>**注:** このショートカットは、**コンボ ボックスおよびルックアップ コントロールのキーボード インタラクションを標準化する** 機能が有効になっている場合 にのみ適用されます                   | 入店    |
 | セッションの日付を日付フィールドに入力                                       | 借方                             |
 | 現在の日付を日付フィールドに入力                                       | T                             |
-| ルックアップ、コンボ ボックス、日付の選択、ドロップ ダイアログ ボックスを開く                         | Alt+ 下方向キー                |
+| ルックアップ、コンボ ボックス、日付の選択、ドロップ ダイアログ ボックスを開く                         | Alt+ 下方向キー<br><br>Enter (**コンボ ボックスおよびルックアップ コントロールのキーボード インタラクションを標準化する** 機能が有効になっている場合)                |
 | ルックアップ、コンボ ボックス、日付の選択、ドロップ ダイアログ ボックスを閉じる                        | Esc キー                           |
 | ルックアップにフォーカスを移動 (ルックアップがすでに開かれている場合)                   | Alt+ 下方向キー                |
 | コントロールの拡張プレビューを開く                                          | Alt+ 上方向キー                  |

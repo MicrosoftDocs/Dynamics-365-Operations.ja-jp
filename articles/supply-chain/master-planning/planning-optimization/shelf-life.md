@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 95c905cbcc3c057dbccf2b7d6e894b1e99ddfba5
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 68a1ba2bfe90aaf0462917c405d483fa12bf8126
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337144"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428224"
 ---
 # <a name="master-planning-for-products-with-limited-shelf-life"></a>限られた有効期限のある製品のマスター プラン
 
@@ -298,8 +298,6 @@ SO1 は PPO1 の 1 ユニットが対応します。 PO2 の期限が PPO1 よ�
 ![例 4: シンプルな FEFO、期間、リード タイムは数量に依存します。](media/fefo-example-4.png "例 4: シンプルな FEFO、期間、リード タイムは数量に依存します")
 
 ## <a name="example-5-simple-fefo-requirement-10-negative-days"></a>例 5: シンプルな FEFO、要求、マイナス在庫日数 10 日
-
-<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe otherwise remove this example). -->
 
 この例では、品目の多数のマイナス在庫日数が追加された場合に有効期限がどうなるかを説明します。 マイナス在庫日数は、マイナス在庫がある品目の補充を注文するまでに待機する日数です。 マイナス在庫日数を超過しない限り、供給は作成されません。
 

@@ -14,21 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35c38ad25380b940d050b4e498fabca017c35997
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 975b620dc911d154f6f67420a957bd72c02321ed
+ms.sourcegitcommit: 6b013a423ed91973d60a895330046db2a07d92c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336954"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "9472716"
 ---
 # <a name="benefits-management-workspace"></a>給付金管理ワークスペース
 
-[!include [preview feature](./includes/preview-feature.md)]
-
 この記事では、Dynamics 365 Human Resources の **給付金管理** ワークスペースについて説明します。
-
-> [!NOTE]
-> **給付金管理** ワークスペースを表示するには、まず機能管理の **(プレビュー) 給付金管理ワークスペース** 機能を有効にする必要があります。 プレビュー機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md)を参照してください。<br><br>![給付金管理ワークスペースを有効にする。](./media/hr-benefits-management-workspace-enable.png)
 
 **給付金管理** ワークスペースを使用すると、確認が必要な福利厚生項目をすばやく表示できます。 このページでは、次のものを確認できます。
 

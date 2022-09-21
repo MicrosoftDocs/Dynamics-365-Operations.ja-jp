@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: arianap
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afb52c6b2593efacd72d424fa8e28f261aa154a
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
+ms.openlocfilehash: e948dded764119522868cee01bd3e8280ae70ae7
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337521"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462192"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service の概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "9337521"
 
 Microsoft Dynamics 365 Translation Service (DTS) は、Microsoft Dynamics Lifecycle Services (LCS) にホストされています。 パートナーおよび独立系ソフトウェア ベンダー (ISV) がソリューションの翻訳または[サポートされている Dynamics 製品](./translation-service-overview.md#supported-products)に新しい言語を追加するときにエクスペリエンスを向上するために設計されています。
 
-DTS の基本とベスト プラクティスの学習については、Microsoft Learn の [Translate Dynamics 365 アプリおよび Dynamics 365 Translation Service のドキュメント](/learn/modules/dynamics-translation-service/) モジュールの完了をご検討ください。
+DTS の基本とベスト プラクティスの学習については、[Translate Dynamics 365 アプリおよび Dynamics 365 Translation Service](/learn/modules/dynamics-translation-service/) のドキュメント モジュールの完了をご検討ください。
 
 DTS は、翻訳出力の品質を最大限に高めるために [Microsoft 一般提供 (GA) 言語](./translation-service-overview.md#glossary)のカスタム トレーニングを受けた製品固有の機械翻訳 (MT) モデルを使用します。 DTS は、Microsoft Dynamics およびパートナー/ISV の言語資産からの翻訳リサイクルもサポートしています。 したがって、同一の文字列は一度変換され、一貫して再利用されます。
 
@@ -97,4 +97,3 @@ DTSの使用方法の詳細については、[ユーザー インタ フェー�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

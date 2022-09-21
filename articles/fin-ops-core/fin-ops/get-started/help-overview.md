@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: f9095db85e38598ac03b4c77c3fa3be9f450ec02
-ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
+ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305227"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462360"
 ---
 # <a name="help-system"></a>ヘルプ システム
 
@@ -40,18 +40,18 @@ ms.locfileid: "9305227"
 
 ![ヘルプ ウィンドウ。](./media/help-pane-ops-help.png)
 
-## <a name="help-on-docsmicrosoftcom"></a>docs.microsoft.com のヘルプ
+## <a name="help-on-microsoft-docs"></a>Microsoft Docs のヘルプ
 
-docs.microsoft.com サイト ([docs.microsoft.com/dynamics365/](/dynamics365/)) が前述のアプリの製品ドキュメントの既定のソースです。 このサイトには次のような機能が含まれています:
+Microsoft Docs の ([Microsoft Dynamics 365 documentation](/dynamics365/)) が前述のアプリの製品ドキュメントの既定のソースです。 このサイトには次のような機能が含まれています:
 
 - **最新コンテンツへのアクセス** – このサイトは、製品ドキュメントの作成、納品、更新をより迅速かつ柔軟に行うことができます。 最新の技術情へのアクセスに役立てることができます。
 - **専門家が記述したコンテンツ** – このサイトのコンテンツは、Microsoft 内外のコミュニティメンバーによる投稿を受け付けています。
 
-docs.microsoft.com のコンテンツは、任意の検索エンジンを使用して検索できます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: **site:docs.microsoft.com dynamics 365 "検索する語句"**。
+Microsoft Docs のコンテンツは、任意の検索エンジンを使用して検索できます。 最適な結果を得るには、次のようなサイト検索を使用することをお勧めします: **site:docs.microsoft.com dynamics 365 "検索する語句"**。
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>RSS フィードを通じて変更の通知を受け取る
 
-財務と運用アプリ全体で docs.microsoft.com のコンテンツに加えられたすべての更新の RSS フィードを購読するには、次のリンクを使用します。
+財務と運用アプリ全体で Microsoft 技術ドキュメントのコンテンツに加えられたすべての更新の RSS フィードを購読するには、次のリンクを使用します:
 
 [RSS フィード](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -87,7 +87,7 @@ docs.microsoft.com のコンテンツは、任意の検索エンジンを使用�
 
 [Microsoft Dynamics 365 のドキュメントへの投稿方法](https://youtu.be/m5djioozRbg)ビデオ (上記参照) は YouTube の Microsoft Dynamics 365 チャンネルに含まれています。
 
-詳細については、docs.microsoft.com サイトを構築したチームが公開した [Docs 共同作成者ガイド](/contribute)を参照してください。
+詳細については、Microsoft Docs サイトを構築したチームが公開した [Microsoft Docs 共同作成者ガイド](/contribute) を参照してください。
 
 > [!NOTE]
 > 現時点では英語のコンテンツへの寄稿のみを受け付けています。
@@ -166,13 +166,13 @@ On the **System parameters** page, follow these steps:
 
 次の表に Web サイトの一覧を示します。 名前の横にアスタリスク (\*) のあるサイトには、サービス計画と関連付けられたアカウントでサインインする必要があります。
 
-| サイト | 説明 |
+| サイト | Description |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | このサイトでは、Dynamics 365 のすべての製品ドキュメントをホスト、またはリンクしています。 |
+| [Microsoft Dynamics 365 ドキュメント](/dynamics365/) | このサイトでは、Dynamics 365 のすべての製品ドキュメントをホスト、またはリンクしています。 |
 | [Microsoft Learn](/learn/) | このサイトは、無償で提供されている Microsoft eラーニング サイトです。 |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | このサイトでは、顧客やパートナーがプリ セールスから導入、運用までのプロジェクトを管理できるクラウド ベースの共同ワークスペースを提供しています。 このサイトは、実装におけるすべてのフェーズに活用できます。 |
 | [サポート ブログ](https://aka.ms/AXSupportBlog) | サポート チームが投稿するコツやヒントを参照できます。 |
-| [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | 古いリリースのコンテンツをホストします。 |
+| [以前のバージョン](/previous-versions/dynamics/) | 古いリリースのコンテンツをホストします。 |
 | [Dynamics コミュニティ](https://community.dynamics.com/) | ブログ、フォーラム、ビデオをホストします。 |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | 評価と販売情報を提供します。 |
 
@@ -180,4 +180,3 @@ On the **System parameters** page, follow these steps:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

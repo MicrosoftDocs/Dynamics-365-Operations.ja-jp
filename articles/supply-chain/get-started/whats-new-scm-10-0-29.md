@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334748"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427877"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Dynamics 365 Supply Chain Management 10.0.29 (2022 年 10 月) のプレビュー
 
@@ -205,7 +205,7 @@ ms.locfileid: "9334748"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.29 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.29 のプラットフォーム更新プログラム (2022 年 6 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md) を参照してください。 <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.29 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.29 のプラットフォーム更新プログラム (2022 年 10 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

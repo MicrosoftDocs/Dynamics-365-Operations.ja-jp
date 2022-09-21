@@ -13,18 +13,18 @@ ms.author: atrukawk
 ms.search.validFrom: 2021-09-23
 ms.dyn365.ops.version: 10.0.20
 ms.search.form: ''
-ms.openlocfilehash: ed07ae9784da3ca721fcb25a9c5a14c4f75f2e59
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 39cf4eb7eef1a83abeb7bd44fa7b2abefee0806e
+ms.sourcegitcommit: 8eb0cafe5ad20be2c4fff684e88d7d3f2249f820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277373"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409667"
 ---
 # <a name="reference-original-invoices-in-credit-notes-vendor-invoices"></a>訂正票での元の請求書への参照 (仕入先請求書)
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、訂正票を作成する際に元の請求書への参照を作成する方法について説明します。
+一部の国や地域では、印刷された訂正票またはレポーティング ルーチンに元の請求書への参照を含めるという法的要件があります。 この記事では、訂正票を作成する際に元の請求書への参照を作成する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -44,11 +44,17 @@ ms.locfileid: "9277373"
 
 ## <a name="define-a-reference-to-an-original-invoice"></a>元の請求書への参照を定義する
 
+元の請求書への参照を定義するには、次の高レベルの手順が含まれます:
+1. 仕入先請求書を作成して転記します。
+2. 仕入先訂正票を作成します。
+3. 請求書を訂正票にリンクするには、請求の貸方記入を使用します。
+4. 訂正票を転記します。
+
 以下の手順で、指定したビジネス ドキュメントのタイプにオリジナルの請求書への参照を定義します。
 
 ### <a name="vendor-credit-note-purchase-order"></a>仕入先訂正票 (発注書)
 
-1. **買掛金勘定** \> **発注書** \> **すべての発注書** に移動します。
+1. **買掛金勘定** > **発注書** > **すべての発注書** の順に移動します。
 2. 新しい発注書を作成するか、既存の発注書を使用して訂正票を作成します。
 3. アクション ペインの、**請求書** タブで、**導入** グループから **貸方請求書** を選択します。
 4. 訂正の理由と元の請求書の参照先を入力します。

@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: olpetrov
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: abed49ff05e677013e14f72af3df01451fff77a5
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: c97859ecc18818640642fe6c11a240894809c5af
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387035"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403522"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 

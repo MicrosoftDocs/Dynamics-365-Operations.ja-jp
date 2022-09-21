@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 834fd515ab7bca5f1db98b0ca47b95955107c1e7
-ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
+ms.openlocfilehash: 8cdb2e98f07437d97b4509de8a883523be5a26a3
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "9189009"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462259"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
@@ -241,7 +241,7 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 ### <a name="how-can-i-determine-what-is-changed-in-a-service-update"></a>サービス更新プログラムの変更内容はどのようにわかりますか?
 
-"新機能または変更点" のドキュメントは、各サービス更新プログラムサービスの詳細の主要ソースです。 [リリース計画](/business-applications-release-notes/)は、今後のリリースのすべての新機能と変更の情報の主要ソースです。 必要に応じて、機能には docs.microsoft.com のヘルプ トピックも含められます。 
+"新機能または変更点" のドキュメントは、各サービス更新プログラムサービスの詳細の主要ソースです。 [リリース計画](/business-applications-release-notes/)は、今後のリリースのすべての新機能と変更の情報の主要ソースです。 必要に応じて、機能には Microsoft Docs のヘルプ トピックも含められます。
 
 ### <a name="if-im-not-doing-active-developmentrecompilation-of-my-code-how-will-i-learn-whether-there-is-a-deprecated-feature-that-will-affect-me"></a>現在開発中でない、またはコードを再コンパイルしない場合、影響を受ける非推奨の機能があるかどうかはどうすればわかりますか? 
 
@@ -307,4 +307,3 @@ Microsoft では、店舗、デバイス、およびユーザー全体で機能�
 - **Modern POS および Commerce Scale Unit** – Modern POS および Commerce Scale Unit は小売業者によって自己ホストされるため、いずれかのコンポーネントを含むトポロジによっては、個別 (および低速) のリズムかつクラウド専用トポロジより細かい方法での更新の展開が可能になります。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
