@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.28 (2022 年 8 月)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.27 (2022 年 7 月)
-                  href: get-started/whats-new-platform-updates-10-0-27.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -508,9 +506,11 @@
               items:
                 - name: 開発環境
                   href: dev-tools/access-instances.md
-                - name: 1 ボックス開発環境のコンフィギュレーション
+                - name: 1 ボックス開発環境の構成
                   href: dev-tools/configure-developer-vm.md
-                - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよくあるご質問
+                - name: 1 ボックス開発環境のセキュリティ保護
+                  href: dev-tools/secure-developer-vm.md
+                - name: 管理者アクセスを許可しない開発用 VM およびビルド用 VM に関するよくあるご質問
                   href: sysadmin/VMs-no-admin-access.md
                 - name: 最初に使用する際にダウンロードできる VHD を設定する
                   href: dev-tools/vhd-setup.md

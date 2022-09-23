@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (8 月)
                   href: get-started/whats-new-changed-10-0-28.md
-                - name: Finance 10.0.27 (7 月)
-                  href: get-started/whats-new-changed-10-0-27.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -1450,8 +1448,10 @@
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
             - name: カナダの統合売上税の計算
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: グローバリゼーション
+        - name: Globalization Studio
           items:
+            - name: Globalization Studio の概要
+              href: localizations/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: グローバリゼーション リソース
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
             - name: グローバリゼーション サービス
@@ -1734,6 +1734,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: 仕入先請求書の消費税の計算と調整
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: 消費税差異の解決
+                      href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
                     - name: 一般仕訳帳経由での消費税の調整
                       href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: 仕訳帳の遅延税計算の有効化
@@ -2514,6 +2516,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: オンライン請求システム
                   href: localizations/emea-hun-online-invoicing.md
+                - name: VAT 申告 (ハンガリー)
+                  Href: localizations/emea-hun-vat-declaration-hungary.md
                 - name: ハンガリーの消費税レポート
                   href: localizations/emea-hun-sales-tax-reports.md
                 - name: ハンガリーのイントラスタット
