@@ -13,12 +13,12 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: intro-internal
-ms.openlocfilehash: 7aa6763f1f0975aa8d98a29dc8bae11ce133eeea
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 818e435565b2b0cfaa12b3a7a2544c16583353a9
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273028"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538550"
 ---
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 
@@ -39,7 +39,7 @@ Dynamics AX 2012 から Dynamics 365 Finance、Supply Chain Management、また�
 
 ## <a name="learning-path"></a>ラーニング パス
 
-- [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/)
+- [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/training/paths/upgrade-ax-2012-finance-operations/)
 
 ## <a name="additional-concepts"></a>追加コンセプト
 

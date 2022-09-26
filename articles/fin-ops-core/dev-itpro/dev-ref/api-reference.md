@@ -1,6 +1,6 @@
 ---
 title: API、クラス、テーブルのリファレンス
-description: この記事では、Visual Studio および Microsoft のドキュメント サイトで API ドキュメントを見つける場所について説明します。
+description: この記事では、Visual Studio および Microsoft Learn で API ドキュメントを見つける場所について説明します。
 author: josaw1
 ms.date: 07/23/2019
 audience: Developer
@@ -9,18 +9,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a72a2fa8b969b9a2de6b4717e23725426ba690ed
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ac158e07353db85d9cc58cc5038a82321fa9174d
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271431"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538545"
 ---
 # <a name="api-class-and-table-resources"></a>API、クラス、テーブルのリファレンス
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Visual Studio および Microsoft のドキュメント サイトで API ドキュメントを見つける場所について説明します。
+この記事では、Visual Studio および Microsoft Learn で API ドキュメントを見つける場所について説明します。
 
 ## <a name="application-classes-and-tables"></a>アプリケーション クラスおよびテーブル
 
@@ -43,9 +43,9 @@ Microsoft Visual Studio のアプリケーション クラスについては、�
 
 ## <a name="system-classes-and-tables"></a>システム クラスおよびテーブル
 
-### <a name="system-api-class-and-table-documentation-is-on-the-microsoft-docs-site"></a>システム API、クラス、およびテーブル ドキュメントが Microsoft ドキュメント サイトにあります
+### <a name="system-api-class-and-table-documentation-in-microsoft-learn"></a>Microsoft Learn のシステム API、クラス、テーブル ドキュメント
 
-Microsoft docs サイトで使用可能なアプリケーション エクスプローラーの **システム ドキュメント** の下に、表示されているクラスおよび機能のドキュメント。
+[Microsoft Learn](/docs/) ドキュメントで使用可能なアプリケーション エクスプローラーの **システム ドキュメント** の下に、表示されているクラスおよび機能のドキュメント。
 
 ## <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 

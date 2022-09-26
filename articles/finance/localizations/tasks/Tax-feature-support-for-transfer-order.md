@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b611abb2d68d93178d0c26ba40b22f1b8d26b191
-ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
+ms.openlocfilehash: c55d0891ed37d63f89ee09759965ac443db20dc6
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9203112"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542247"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>移動オーダーに対する税金機能のサポート
 
@@ -63,7 +63,7 @@ ms.locfileid: "9203112"
         7. **保存** を選択します。
         
         税コード **BE-RC+21** を作成します。
-        1. **追加** を選択し、**税コード** フィールドに **BE-RC-21** を入力します。
+        1. **追加** を選択し、**税コード** フィールドに **BE-RC+21** を入力します。
         2. **税コンポーネント** フィールドで **正味金額別** を選択します。
         3. **保存** を選択します。
         4. **レート** テーブルで、**追加** を選択します。

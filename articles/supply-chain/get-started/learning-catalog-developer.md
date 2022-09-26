@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 76b3a29523e12d6876c65c07f98677fb3c18f3f9
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 7e4cbb2370f9e615c75d90e21aac0f419ef084ef
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423606"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9539191"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-developers"></a>Dynamics 365 Supply Chain Management 開発者向けラーニング カタログ
 
@@ -29,17 +29,17 @@ ms.locfileid: "9423606"
 
 | コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
-| [財務と運用アプリの使用を開始する](/learn/paths/get-started-finance-operations/) | 財務と運用アプリによって業務をサポートし、グローバルな財務システム、運用業務プロセス、合理化されたサプライ チェーンを管理して、情報に基づく迅速な意思決定を行う方法を学びます。 財務と運用アプリを使用して仕事をする第一歩として、目的のロールを問わず、その機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2.2 時間 |
+| [財務と運用アプリの使用を開始する](/training/paths/get-started-finance-operations/) | 財務と運用アプリによって業務をサポートし、グローバルな財務システム、運用業務プロセス、合理化されたサプライ チェーンを管理して、情報に基づく迅速な意思決定を行う方法を学びます。 財務と運用アプリを使用して仕事をする第一歩として、目的のロールを問わず、その機能に精通しておく必要があります。 | 無料の自習型オンライン学習パス | 2.2 時間 |
 
 ## <a name="core-development-concepts"></a>コア開発の概念<a name="core-development-concepts"></a>
 
 | コンテンツ  | Description  | 形式  | Length    |
 |----------|--------------|---------|-----------|
-| [財務と運用アプリを使用した開発の概要](/learn/paths/introduction-develop-finance-operations/) | 財務と運用アプリを扱う開発者として、Dynamics 365 エコシステムと財務と運用アプリの主要なアーキテクチャ コンポーネントをしっかりと把握することは重要です。 技術力、ソース コード、テスト フレームワーク、レポート ツールを含む、コアとなる開発者の考え方に関する知識によって、財務と運用アプリに適用できる開発スキルの構築におけるさらなる取り組みをサポートします。 | 無料の自習型オンライン学習パス | 7.75 時間 |
-| [財務と運用アプリを構築する](/learn/paths/build-finance-operations/) | 財務と運用アプリでの開発には、新しい要素の構築や、財務と運用アプリのカスタマイズに必要なタスクの基本的な理解が必要です。 タスクには、X++ コードおよび Visual Studio の理解と共に、システムの基本要素を作成および変更できることが含まれます。 | 無料の自習型オンライン学習パス | 13 時間 |
-| [財務と運用アプリを拡張する](/learn/paths/extending-finance-operations/) | 拡張機能を使用すると、開発者は、基本コードに影響しないコードに変更を加えることによって、財務と運用アプリでのユーザー エクスペリエンスを変更することができます。 特に、拡張により開発者はビジネス プロセスと必要な変更を順守するために財務と運用アプリを更新できます。 | 無料の自習型オンライン学習パス | 2.5 時間 |
-| [財務と運用アプリに接続する](/learn/paths/connect-finance-operations/) | 統合および財務と運用アプリのデータへのアクセス機能は、重要な機能です。 財務と運用アプリでコードの構築や拡張を身につけた開発者は、データの統合やデータとの接続がどのようにユーザーに良い影響を与えるのかを学ぶことで、開発の知識を強化できます。 | 無料の自習型オンライン学習パス | 5.75 時間 |
-| [データを移行して、財務と運用アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントとして、顧客のデータを移行用に準備し、データ管理を操作して、そしてユーザー受け入れテストを実行してから財務と運用アプリの運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [財務と運用アプリを使用した開発の概要](/training/paths/introduction-develop-finance-operations/) | 財務と運用アプリを扱う開発者として、Dynamics 365 エコシステムと財務と運用アプリの主要なアーキテクチャ コンポーネントをしっかりと把握することは重要です。 技術力、ソース コード、テスト フレームワーク、レポート ツールを含む、コアとなる開発者の考え方に関する知識によって、財務と運用アプリに適用できる開発スキルの構築におけるさらなる取り組みをサポートします。 | 無料の自習型オンライン学習パス | 7.75 時間 |
+| [財務と運用アプリを構築する](/training/paths/build-finance-operations/) | 財務と運用アプリでの開発には、新しい要素の構築や、財務と運用アプリのカスタマイズに必要なタスクの基本的な理解が必要です。 タスクには、X++ コードおよび Visual Studio の理解と共に、システムの基本要素を作成および変更できることが含まれます。 | 無料の自習型オンライン学習パス | 13 時間 |
+| [財務と運用アプリを拡張する](/training/paths/extending-finance-operations/) | 拡張機能を使用すると、開発者は、基本コードに影響しないコードに変更を加えることによって、財務と運用アプリでのユーザー エクスペリエンスを変更することができます。 特に、拡張により開発者はビジネス プロセスと必要な変更を順守するために財務と運用アプリを更新できます。 | 無料の自習型オンライン学習パス | 2.5 時間 |
+| [財務と運用アプリに接続する](/training/paths/connect-finance-operations/) | 統合および財務と運用アプリのデータへのアクセス機能は、重要な機能です。 財務と運用アプリでコードの構築や拡張を身につけた開発者は、データの統合やデータとの接続がどのようにユーザーに良い影響を与えるのかを学ぶことで、開発の知識を強化できます。 | 無料の自習型オンライン学習パス | 5.75 時間 |
+| [データを移行して、財務と運用アプリの運用を開始する](/training/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントとして、顧客のデータを移行用に準備し、データ管理を操作して、そしてユーザー受け入れテストを実行してから財務と運用アプリの運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
 | [Finance and Operations: 開発 ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | この Tech Talk に是非ご参加ください。ここでは、開発アプリケーション ライフ サイクル管理の概念、ツール、および推奨されるベスト プラクティスについて説明します。 Lifecycle Services、Visual Studio、Azure DevOps がどのように連携して、ソリューションのコードベースのビジネスプロセスに焦点を当てた継続的な配信を可能にし、お客様の環境にサービスを提供するかについて扱っています。 | Web カンファレンスの無料録画 | 52 分 |
 | [財務と運用: PowerApps を使用して財務と運用アプリを拡張する (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Microsoft PowerApps のシンプルさを理解してから、Dynamics 365 Finance とどのように融合しビジネスをデジタル化して、ユーザーの生産性を向上させるのかを理解しましょう。 | Web カンファレンスの無料録画 | 43 分 |
 | [財務と運用: 拡張性 (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Microsoft 機能拡張計画の概要および更新について説明します。 ソリューションを拡張するさまざまな方法、メタデータ拡張性機能の詳細、および強力なコマンド チェーン機能経由を含むコードの補強と拡張機能について説明します。 | Web カンファレンスの無料録画 | 50 分 |
@@ -66,7 +66,7 @@ ms.locfileid: "9423606"
 
 | コンテンツ  | Description    | 形式  | Length    |
 |----------|----------------|---------|-----------|
-| [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションから財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
+| [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/training/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションから財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [AX2012 から財務と運用アプリへのアップグレード (DYN865PAL)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | この Tech Talk では、コードとデータを Dynamics AX 2012 から財務と運用アプリへアップグレードする方法の概要について説明します。 | Tech Talk (録画されたウェビナー) | 66 分 |
 | [AX2009 から Dynamics 365 Supply Chain Management への移行ツール (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | このセッションでは、AX2009 から Dynamics 365 Supply Chain Management への移行を支援するために利用可能なツールについてあつかいます。 | Web カンファレンスの無料録画 | 55 分 |
 
@@ -87,6 +87,6 @@ ms.locfileid: "9423606"
 
 | コンテンツ  | Description  | 形式  |
 |----------|--------------|---------|
-| [試験 MB-500: Microsoft Dynamics 365: 財務と運用アプリ開発者](/learn/certifications/exams/mb-500) | この試験では、次の技術的タスクを遂行する能力を評価します: アーキテクチャとソリューション設計の計画; 開発者ツールの適用; AOT要素の設計・開発; コードの開発とテスト; レポートの実装; データ ソリューションの統合および管理; セキュリティの実装とパフォーマンスの最適化。 | 試験、費用は地域によって異なる |
+| [試験 MB-500: Microsoft Dynamics 365: 財務と運用アプリ開発者](/certifications/exams/mb-500) | この試験では、次の技術的タスクを遂行する能力を評価します: アーキテクチャとソリューション設計の計画; 開発者ツールの適用; AOT要素の設計・開発; コードの開発とテスト; レポートの実装; データ ソリューションの統合および管理; セキュリティの実装とパフォーマンスの最適化。 | 試験、費用は地域によって異なる |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

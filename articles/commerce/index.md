@@ -18,12 +18,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f752e93331be8efa40b0daf4bfb95f9ce5f39cb9
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 9687d44ca125dde049bae7f3014c2fe2af38364c
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462227"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538973"
 ---
 # <a name="commerce-home-page"></a>Commerce のホーム ページ
 
@@ -58,4 +58,4 @@ Dynamics 365 Commerce: 実績のある Dynamics 365 Retail 機能に基づいて
 
 ## <a name="elearning-courses"></a>eラーニング コース
 
-オンライン コースおよびトレーニングについては、[Dynamics 365 Commerce](/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path) をご確認ください。
+オンライン コースおよびトレーニングについては、[Dynamics 365 Commerce](/training/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path) をご確認ください。

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-16
 ms.dyn365.ops.version: Platform update 52
-ms.openlocfilehash: 5c681ddb375d8eaa248ac18b75a1cfbb940acc9c
-ms.sourcegitcommit: 73afba7ca32f3e5a6e37f41f55e3dfdffe1f6886
+ms.openlocfilehash: c40b485ee711ade632a0788a1b973355283245e7
+ms.sourcegitcommit: 20df336e6483d1537da4cb5c687008c4dde8ed48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "9353586"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "9554315"
 ---
 # <a name="monitor-api-throttling"></a>API スロットリングの監視
 
@@ -86,6 +86,9 @@ ms.locfileid: "9353586"
 6. クエリ オブジェクトで次の項目を入力します。
     - **開始日**: API 使用状況データを表示する範囲の開始日と開始時刻。
     - **終了日**: API 使用状況データを表示する範囲の終了日と終了時刻。
+      > [!NOTE]
+      > クエリに許容される時間の最大範囲は 20 分です。 **終了日** の値を **開始日** の値から 20 分を超えて設定しないでください。
+      
     - **ユーザー オブジェクト ID**: ユーザーの Azure Active Directory (AAD) ユーザー オブジェクト ID。
     - **アプリケーション ID**: API を使用する統合アプリケーションの AAD アプリケーション ID。
 7. **検索** を選択します。

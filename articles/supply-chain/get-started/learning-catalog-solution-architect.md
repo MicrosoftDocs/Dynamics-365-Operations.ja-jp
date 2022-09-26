@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9662b00b6c4ff6c292e5ae1d5b38a12d47738aab
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 050acac2d896c73e2be574892e9987b8d426c678
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423723"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9539133"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-solution-architects"></a>Dynamics 365 Supply Chain Management ソリューション アーキテクトのラーニング カタログ
 
@@ -32,14 +32,14 @@ ms.locfileid: "9423723"
 | コンテンツ | 説明 | 書式設定 | 期間 |
 |---------|-------------|--------|--------|
 | [Dynamics FastTrack 設計者 Bootcamp](https://community.dynamics.com/365/b/partnerevents/posts/dynamics-365-fasttracks-bootcamp) | Dynamics FastTrack の技術者 Bootcamps は、Microsoft Dynamics 365 FastTrack の顧客成功プログラムによって管理される顧客実装を開始するソリューション インテグレーター パートナー専用です。 無料の集中 Bootcamps は、FastTrack 契約に割り当てられたソリューション インテグレーター パートナーの設計者向けの特別なものであり、Dynamics 365 エンジニアリング チームの上級設計者が主導します。 | インストラクターによる無料の対面研修。 資格が適用されます。 | 5 日間 |
-| [Dynamics 365 と Power Platform のソリューション アーキテクトを目指しましょう](/learn/paths/become-solution-architect/) | ソリューション アーキテクトは、ソリューション全体の設計、実装、展開、採用を成功させる責任を負います。 ソリューション アーキテクトは、ソリューションが現在と将来において顧客のニーズを満たすことを保証します。 ソリューション アーキテクトは展開中に「ボタンをクリックする」ことはできませんが、最終的にはソリューションの責任者であり、展開チームと密接に連携して作業を行います。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [Dynamics 365 と Power Platform のソリューション アーキテクトを目指しましょう](/training/paths/become-solution-architect/) | ソリューション アーキテクトは、ソリューション全体の設計、実装、展開、採用を成功させる責任を負います。 ソリューション アーキテクトは、ソリューションが現在と将来において顧客のニーズを満たすことを保証します。 ソリューション アーキテクトは展開中に「ボタンをクリックする」ことはできませんが、最終的にはソリューションの責任者であり、展開チームと密接に連携して作業を行います。 | 無料の自習型オンライン学習パス | 4 時間 |
 
 ## <a name="core-platform-knowledge"></a>コア プラットフォームの知識<a name="core-platform-knowledge"></a>
 
 | コンテンツ | 説明 | 書式設定 | 期間 |
 |---------|-------------|--------|--------|
-| [Success by Design for Dynamics 365 ソリューションの使用](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 は、顧客やパートナーが Dynamics 365 ソリューションを正常に配置できるよう支援するために設計されています。 このサービスを提供するために、ソリューション アーキテクトは Success by Design を使用する必要があります。 このラーニング パスでは、Success by Design の概念について説明します。 | 無料の自習型オンライン学習パス | 12 時間 |
-| [財務と運用アプリの実装](/learn/paths/implement-finance-operations/) | 財務と運用の実装プロジェクトを成功させるために最も重要な要素とベスト プラクティスについて学びます。 プロジェクトの方法論を計画、設計する最初のステップから、FastTrack サービスの利用、開発戦略、データ管理など、稼働開始後の運用を維持、監視するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 11.5 時間 |
+| [Success by Design for Dynamics 365 ソリューションの使用](/training/paths/use-success-design/) | FastTrack for Dynamics 365 は、顧客やパートナーが Dynamics 365 ソリューションを正常に配置できるよう支援するために設計されています。 このサービスを提供するために、ソリューション アーキテクトは Success by Design を使用する必要があります。 このラーニング パスでは、Success by Design の概念について説明します。 | 無料の自習型オンライン学習パス | 12 時間 |
+| [財務と運用アプリの実装](/training/paths/implement-finance-operations/) | 財務と運用の実装プロジェクトを成功させるために最も重要な要素とベスト プラクティスについて学びます。 プロジェクトの方法論を計画、設計する最初のステップから、FastTrack サービスの利用、開発戦略、データ管理など、稼働開始後の運用を維持、監視するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 11.5 時間 |
 | [Go-Live 計画 (DYN458PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18) | Go-Live プロセスについて詳しく説明し、お客様、パートナー、および Microsoft にとって可能な限りスムーズにするために、どのように準備できるかについて説明します。 | Web カンファレンスの無料録画 | 60 分 |
 | [環境計画 (DYN450PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018) | 環境計画に関するこの Tech Talk にご参加ください。 標準環境、必要になる可能性のある他の環境、取得および配置のためのオプションとタイミング、および環境間で予想されるコードとデータ フローについて学習します。 | Web カンファレンスの無料録画 | 53 分 |
 | [デモ データ パッケージ (DYN443PAL) ](https://community.dynamics.com/365/b/techtalks/posts/demo-data-packages-february-14-2018) | 最近リリースされたデモ データ パッケージに関するこの Tech Talk にご参加ください。 これを使用して、シナリオに必要なデモ データをカスタマイズし、必要なものだけを環境に読み込むことができます。 | Web カンファレンスの無料録画 | 40 分 |
@@ -66,8 +66,8 @@ ms.locfileid: "9423723"
 
 | コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
-| [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/learn/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションから財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
-| [財務と運用アプリの更新とアップグレード](/learn/modules/upgrades-updates-finance-operations-apps/) | エンタープライズ リソース プランニング (ERP) の世界は、絶えず進化しており、顧客が生産性をスケールアップし、操作を効率化するために役立ちます。 財務と運用の進化によって、以前のバージョンの Microsoft Dynamics AX の以前のバージョンから財務と運用クラウド サービスにアップグレードすることが推奨されます。 | 無料の自習型オンライン学習モジュール | 1 時間 |
+| [Dynamics AX 2012 から財務と運用アプリにアップグレードする](/training/paths/upgrade-ax-2012-finance-operations/) | Dynamics AX 2012 ソリューションから財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについて学びます。 主要なアーキテクチャの違いを発見する最初のステップから、アップグレード プロセスの開始、コードとデータのアップグレード ツール、最新の機能に基づいて統合、分析、レポートを再設計するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 7 時間 |
+| [財務と運用アプリの更新とアップグレード](/training/modules/upgrades-updates-finance-operations-apps/) | エンタープライズ リソース プランニング (ERP) の世界は、絶えず進化しており、顧客が生産性をスケールアップし、操作を効率化するために役立ちます。 財務と運用の進化によって、以前のバージョンの Microsoft Dynamics AX の以前のバージョンから財務と運用クラウド サービスにアップグレードすることが推奨されます。 | 無料の自習型オンライン学習モジュール | 1 時間 |
 | [AX2012 から財務と運用アプリへのアップグレード (DYN865PAL)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | この Tech Talk では、コードとデータを Dynamics AX 2012 から財務と運用アプリへアップグレードする方法の概要について説明します。 | Tech Talk (録画されたウェビナー) | 66 分 |
 | [AX2009 移行ツール](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017)| この Tech Talk では、AX2009 Data Migration Tool のインストール、コンフィギュレーション、見積、移行方法、およびカスタマイズの側面について説明します。 | Web カンファレンスの無料録画 | 57 分 |
 
@@ -86,7 +86,7 @@ ms.locfileid: "9423723"
 
 | コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
-| [財務と運用アプリでのユーザー受入テストの実行](/learn/modules/perform-uat-finance-operations/) | コンフィギュレーション、カスタマイズ、および統合のいずれかによって顧客のすべての要求が処理された後、財務と運用アプリでユーザー受け入れテスト (UAT) を実行してソリューションを検証する方法を理解する必要があります。 ユーザー受入テストは、本稼働の準備をする上で重要なステップです。 | 無料の自習型オンライン学習モジュール | 1 時間 |
+| [財務と運用アプリでのユーザー受入テストの実行](/training/modules/perform-uat-finance-operations/) | コンフィギュレーション、カスタマイズ、および統合のいずれかによって顧客のすべての要求が処理された後、財務と運用アプリでユーザー受け入れテスト (UAT) を実行してソリューションを検証する方法を理解する必要があります。 ユーザー受入テストは、本稼働の準備をする上で重要なステップです。 | 無料の自習型オンライン学習モジュール | 1 時間 |
 | [財務と運用: Regression Suite Automation Tool - 背景と設定 (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | これは、Regression Suite Automation Testing (RSAT) の 2 部構成のシリーズの最初のものです。 このセッションでは、RSAT を介した自動テストを使用して、継続的な更新に対応する方法について説明します。 RSAT を使用したタスク記録の作成とテストの実行に関する学習と推奨事項については、インストールとセットアップのステップ バイ ステップ チュートリアルに従って説明します。 | Web カンファレンスの無料録画 | 70 分 |
 | [財務と運用: Dynamics 365 のパフォーマンス ベンチマーク (DYN550PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-benchmark-for-dynamics-365-1-30-19) | この Tech Talk では、Microsoft Dynamics 365 Finance でパフォーマンス ベンチマークを準備して提供するためのアプローチについて説明します。 簡単な事例をデモンストレーションで説明する前に、プロセス、主要な概念、およびツールを紹介します。 | Web カンファレンスの無料録画 | 68 分 |
 | [財務と運用: Dynamics 365 のパフォーマンス キー パターンとアンチ パターン (DYN549PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-key-patterns-and-anti-patterns-for-dynamics-365-1-15-19) | この Tech Talk では、プロジェクト チームが正常に実装している効率的なパフォーマンス パターンを紹介します。 また、Microsoft Dynamics 365 Finance 環境のパフォーマンスを大幅に低下させる可能性のあるアンチ パターンについても説明します。 | Web カンファレンスの無料録画 | 58 分 |
@@ -97,7 +97,6 @@ ms.locfileid: "9423723"
 
 | コンテンツ | Description | 形式 |
 |---------|-------------|--------|
-| [Exam MB-700: 財務と運用アプリ ソリューション アーキテクト](/learn/certifications/exams/mb-700) | この試験では、次の技術的なタスクを実行できるかどうかを測定します。ソリューション要件を特定します。ソリューションコンポーネントをデザインします。ソリューションのテストと管理の戦略を定義します。 | 試験、費用は地域によって異なる |
+| [Exam MB-700: 財務と運用アプリ ソリューション アーキテクト](/certifications/exams/mb-700) | この試験では、次の技術的なタスクを実行できるかどうかを測定します。ソリューション要件を特定します。ソリューションコンポーネントをデザインします。ソリューションのテストと管理の戦略を定義します。 | 試験、費用は地域によって異なる |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -2,7 +2,7 @@
 title: 更新プロセス
 description: Microsoft Dynamics 365 Human Resources は、アプリケーションとプラットフォームの変更のための、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178446"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520813"
 ---
 # <a name="update-process"></a>更新プロセス
 
 _**適用先:** スタンドアロン インフラストラクチャの人事管理_ 
 
 > [!NOTE]
-> 2022 年 7 月から、スタンドアロンの人事管理インフラストラクチャに新しい人事管理環境をプロビジョニングすることはできず、新しい Microsoft Dynamics Lifecycle Services (LCS) プロジェクトを作成することもできません。 顧客は、財務および運用のインフラストラクチャに人事管理の環境を展開することができます。 詳細については、[財務と運用のインフラストラクチャでの人事管理のプロビジョニング](/hr-admin-setup-provision-fo.md)を参照してください。
+> 2022 年 7 月から、スタンドアロンの人事管理インフラストラクチャに新しい人事管理環境をプロビジョニングすることはできず、新しい Microsoft Dynamics Lifecycle Services (LCS) プロジェクトを作成することもできません。 顧客は、財務および運用のインフラストラクチャに人事管理の環境を展開することができます。 詳細については、[財務と運用のインフラストラクチャでの人事管理のプロビジョニング](hr-admin-setup-provision-fo.md)を参照してください。
 
 > [!IMPORTANT]
 > 財務と運用アプリのインフラストラクチャの更新プログラムおよび修正プログラムのプロセスは、人事管理のスタンドアロンの更新プログラムおよび修正プログラムのプロセスとは異なります。 更新プログラムのプロセスに関する詳細については、[財務と運用の最新更新プログラムへの移行の処理](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md)を参照してください。 修正プログラムに関する詳細については、[Lifecycle Services (LCS) から更新プログラムをダウンロード](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md)を参照してください。 

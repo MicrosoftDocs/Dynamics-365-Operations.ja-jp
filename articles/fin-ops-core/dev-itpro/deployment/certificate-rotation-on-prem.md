@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: d83edd8051e71bbe2415da1a20f98548164a4976
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 7f1a4f4d855c88c0b80707852885f1ff125c7915
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954556"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520734"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -109,7 +109,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
         ```powershell
         # If remoting, only execute
-        # .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+        # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
         .\Configure-PreReqs.ps1
         ```

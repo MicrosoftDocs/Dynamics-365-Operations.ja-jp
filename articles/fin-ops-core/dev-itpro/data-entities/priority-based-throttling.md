@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 74e7b3bbb26b55a157f45f1466b7ff26afbd2f08
-ms.sourcegitcommit: 73afba7ca32f3e5a6e37f41f55e3dfdffe1f6886
+ms.openlocfilehash: 25aafdd9e32d2eb22fd4ae37a9b61b46b2240cca
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "9353594"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9539129"
 ---
 # <a name="throttling-prioritization"></a>スロットリング優先度
 
@@ -36,7 +36,7 @@ ms.locfileid: "9353594"
 
 ## <a name="determine-prioritization"></a>優先順位の決定
 
-**調整優先順位マッピング** ページは、要求が調整された場合、優先順位が受け入れられるように統合の優先順位を割り当てるために使用されます。 適切な優先順位を設定することにより、優先順位の低い統合を優先順位の高い統合の前に調整することができます。 統合の設定方法の詳細については、[外部サービスとの接続を有効にする](/learn/modules/integrate-azure-finance-operations/7-connect-external) を参照してください。 
+**調整優先順位マッピング** ページは、要求が調整された場合、優先順位が受け入れられるように統合の優先順位を割り当てるために使用されます。 適切な優先順位を設定することにより、優先順位の低い統合を優先順位の高い統合の前に調整することができます。 統合の設定方法の詳細については、[外部サービスとの接続を有効にする](/training/modules/integrate-azure-finance-operations/7-connect-external) を参照してください。 
 
 次は、Azure Active Directory (AAD) でサポートされる認証タイプです。 詳細については、[認証](services-home-page.md) を参照してください。
 - **ユーザー ベース**: このフローでは、認証と承認にユーザー名とパスワードを使用します。 
@@ -68,4 +68,3 @@ ms.locfileid: "9353594"
 6. 適切な優先順位を割り当て、**保存** を選択します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

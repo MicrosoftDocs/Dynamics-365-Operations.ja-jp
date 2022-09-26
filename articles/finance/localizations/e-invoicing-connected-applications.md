@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa6c80914301cc0403974a6acc5e95ff61c9c1a7
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277334"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524692"
 ---
 # <a name="connected-applications"></a>接続されているアプリケーション
 
@@ -35,7 +35,7 @@ RCS の Finance または Supply Chain Management パラメーターを使用で
 ## <a name="create-a-connected-application"></a>接続されたアプリケーションを作成する
 
 1. RCS アカウントにサインインします。
-2. **グローバリゼーション機能** ワークスペースの **環境t** セクションで、**電子請求** タイルを選択します。
+2. **グローバリゼーション機能** ワークスペースの **関連リンク** セクションで、**環境設定** を選択します。
 3. **環境の設定** ページのアクション ウィンドウで、**接続されたアプリケーション** を選択します。
 4. **新規** を選択して、接続されたアプリケーションを作成します。
 5. **名前** フィールドに、接続するアプリケーションの名前を入力します。

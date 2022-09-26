@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9427877"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520753"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Dynamics 365 Supply Chain Management 10.0.29 (2022 年 10 月) のプレビュー
 
@@ -35,7 +35,7 @@ ms.locfileid: "9427877"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
 | 在庫および物流 | [在庫可視化の WMS 品目の配賦と引当](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | 間もなく公開 | 既定で有効 |
-| 在庫および物流 | [合理化された手持在庫リストの事前読み込み](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | 間もなく公開 | 既定で有効 |
+| 在庫および物流 | [合理化された手持在庫リストの事前読み込み](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Inventory Visibility アプリを使用する](../inventory/inventory-visibility-power-platform.md) | サービス コンフィギュレーションによって有効 |
 | 受注生産供給の自動化 | [受注生産供給の自動化](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [受注生産供給の自動化](../master-planning/make-to-order-supply-automation.md) | 機能管理:<br>*受注生産供給の自動化* |
 | 計画 | [DDMRP の詳細な分析情報の表示と適用](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [需要主導型材料所要量計画の概要](../master-planning/planning-optimization/ddmrp-overview.md) | 機能管理:<br>*(プレビュー) 計画最適化のための DDMRP* |
 | 生産管理 | [完成品を仕訳帳に転記する前に現物在庫にする](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [完成品を仕訳帳に転記する前に現物在庫にする](../production-control/deferred-posting.md) | 機能管理:<br>*(プレビュー) 完成品を仕訳帳に転記する前に現物在庫にする* |

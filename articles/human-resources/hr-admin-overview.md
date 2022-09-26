@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
-ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
+ms.openlocfilehash: d2484b601a645694b988ac038a460a376ec912b0
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9475641"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538708"
 ---
 # <a name="administration-overview"></a>管理の概要
 
@@ -99,8 +99,9 @@ ms.locfileid: "9475641"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="elearning-courses"></a>eラーニング コース
-オンライン コースおよびトレーニングについては、[Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) をご覧ください。
+### <a name="elearning-courses"></a>e ラーニング コース
+
+オンライン コースおよびトレーニングについては、[Dynamics 365 Human Resources のラーニング パス](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path) をご確認ください。
 
 ### <a name="videos"></a>ビデオ
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347292"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542355"
 ---
 # <a name="planning-optimization-fit-analysis"></a>計画最適化適合分析
 
@@ -62,7 +62,7 @@ ms.locfileid: "9347292"
 | --- | --- | --- | --- |
 | アクション | アクション計算が有効なカバレッジ グループ ：*\#* | 現在、この機能をサポートしています。 | サポート |
 | 基本カレンダー | 基本カレンダーを使用したカレンダー： *\#* | 現在、この機能をサポートしています。 | サポート | 
-| バッチ状態コード | 考慮されないバッチ廃棄マスター：*\#* | この機能は保留中です。 現在のところ、バッチ状態コードは、計画の最適化が有効になっている場合は無視されます。 | 2022 年リリース サイクル 2 |
+| バッチ状態コード | 考慮されないバッチ廃棄マスター：*\#* | この機能は保留中です。 現在のところ、バッチ状態コードは、計画の最適化が有効になっている場合は無視されます。 | 2022 年リリース サイクル 2 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | 生産可能在庫（CTP） | 配送日管理が CTP 設定である既定の注文設定: *\#* | Supply Chain Management 10.0.28 以降では、*計画最適化のための CTP* と呼ばれるプロセスにより、動的計画の実行後に確認済みの出荷日と受入日が利用可能になります。 計画の最適化が有効な場合、以前の Supply Chain Management では、レガシ CTP 設定が無視されます。 | サポート |
 | 静的計画を動的計画へコピー | 静的計画から動的計画へのコピーは、マスター プランのパラメーターで有効です。 | 計画最適化は、この設定に関わらず、静的計画は動的計画にコピーされません。 一般に、この概念は、計画の最適化が提供する再生速度と完全な再生速度のために、関連性が低くなります。 2つ以上の計画を使用する場合は、各計画ごとにマスター計画をトリガーする必要があります。 | 在庫切れ |
 | 確定 | 自動確定タイム フェンスが設定された補償範囲グループ： *\#* | バージョン10.0.7以降では、"確定" は、マスター計画の完了後に別の確定バッチ ジョブとしてサポートされています (*計画最適化の自動確定機能*  が[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で有効になっている場合)。 計画最適化の自動確定は、要求日 (終了日) ではなく、注文日 (開始日) に基づいて決定されることに注意してください。 この動作により、計画されたオーダーの確定は、確定時間のフェンスにリードタイムを含めることなく、期限内に確実に行われるようになります。 | サポート |

@@ -14,12 +14,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: intro-internal
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
-ms.openlocfilehash: e6e624af11af9c65e795d7c76b0879dae8d96cea
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 404c3248473d972b17a8d9599b5f7418e58d5763
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462255"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538924"
 ---
 # <a name="development-and-administration-for-finance-and-operations-apps"></a>財務と運用アプリの開発と管理
 
@@ -71,7 +71,6 @@ Finance、Supply Chain Management、およびコマースはクラウドでホ�
 Microsoft Office の統合機能は、生産的環境を提供し、Office 製品を使用して作業を遂行するユーザーを支援します。 詳細については、 [Office 統合の概要](office-integration/office-integration.md) を参照してください。
 
 ## <a name="elearning-courses"></a>eラーニング コース
-オンライン コースおよびトレーニングについては、[Dynamics 365 Finance と Operations](/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper) をご確認ください。
-
+オンライン コースおよびトレーニングについては、[Dynamics 365 Finance と Operations](/training/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper) をご確認ください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

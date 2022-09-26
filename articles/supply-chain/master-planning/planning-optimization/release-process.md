@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
-ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
+ms.openlocfilehash: 2f91c46367ee2f881476a496555f15454c9f6baa
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9403697"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542323"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>計画最適化リリース プロセスおよびリリース履歴
 
@@ -30,6 +30,8 @@ Microsoft は、計画最適化を月ごとに更新します。 ただし、業
 計画最適化を使用する環境では、最新のリリースが自動的に提供されます。 ユーザー アクションは必要ありません: サービスが自動的に更新されます。 ただし、重要な変更機能が自動的に環境にプッシュされることはありません。 既定では、重要と見なされる変更はオフにされ、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して明示的に有効にする必要があります。 したがって、これらの変更は、有効にするまで環境に表示されません。
 
 環境内で計画最適化が更新されると通知は表示されないので、次の表のリリース ノートを確認して、変更がいつリリースされたのか、またどの機能が導入されたのかを決定できます。 この表は、計画最適化のためにリリースされた変更、それらの変更が機能管理の機能に関連付けられているかどうか、およびリリース日を示しています。
+
+<!-- KFM: Add this? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 
 
 | 変更 | 機能管理の詳細 | リリース日 |
 |---|---|---|

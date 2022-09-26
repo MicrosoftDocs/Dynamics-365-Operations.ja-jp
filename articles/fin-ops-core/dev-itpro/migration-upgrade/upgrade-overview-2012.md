@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 5937e50a2320bd2c3c300b9d1b04cabe63a1b4ae
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 78ff6889162b6e34bd6c4b9ddd3921def445208b
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124904"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538540"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から財務と運用へのアップグレード
 
@@ -43,7 +43,7 @@ ms.locfileid: "9124904"
 
 ![アップグレード プロセス。](./media/upgrade-process.png)
 
-Dynamics AX 2012 ソリューションを財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについては、[Dynamics AX 2012 を財務と運用アプリにアップグレード](/learn/paths/upgrade-ax-2012-finance-operations/) を参照してください。
+Dynamics AX 2012 ソリューションを財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについては、[Dynamics AX 2012 を財務と運用アプリにアップグレード](/training/paths/upgrade-ax-2012-finance-operations/) を参照してください。
 
 ## <a name="analyze"></a>分析
 
@@ -200,4 +200,3 @@ AX 2012 R2 および AX 2012 R3 からクラウド バージョンの財務と�
 Dynamics AX 2012 RTM からのアップグレードは現在サポートされていません。 [Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス](on-prem-upgrade-2012.md) で記載されているようにオンプレミス バージョンへのアップグレードがサポートされます。 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

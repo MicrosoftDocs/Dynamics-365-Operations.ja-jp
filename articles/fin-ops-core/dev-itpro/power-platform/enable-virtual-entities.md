@@ -2,22 +2,22 @@
 title: Microsoft Dataverse 仮想エンティティを有効化する
 description: この記事では、Microsoft Dataverse で財務と運用アプリの仮想エンティティを有効にする方法について説明します。
 author: jaredha
-ms.date: 05/12/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-14
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c34924c1b4c1ed404a9abed17e73364171ea5897
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 77c774185e2cc9983eb6620391c52850ace82e20
+ms.sourcegitcommit: 20df336e6483d1537da4cb5c687008c4dde8ed48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108379"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "9554307"
 ---
 # <a name="enable-microsoft-dataverse-virtual-entities"></a>Microsoft Dataverse 仮想エンティティを有効化する
 
@@ -52,6 +52,14 @@ ms.locfileid: "9108379"
 ## <a name="refresh-virtual-entity-metadata"></a>仮想エンティティ メタデータの更新
 
 財務と運用アプリのエンティティ メタデータが変更されたと予想される場合、仮想エンティティ メタデータを強制的に更新できます。 強制的に更新するには、**更新** チェックボックスを選択し、変更を保存します。 財務と運用アプリの最新のエンティティ定義が Dataverse に同期され、仮想エンティティが更新されます。
+
+## <a name="disable-virtual-entities"></a>仮想エンティティの無効化
+
+財務と運用アプリの仮想エンティティは、マネージド ソリューションに存在し、Maker Portal から直接削除することはできません。 仮想エンティティを無効にして Dataverse 環境から仮想エンティティ メタデータを削除するには、次の手順に従います。
+
+1. この記事の [仮想エンティティの生成](enable-virtual-entities.md#generate-virtual-entities) セクションの手順1 から 8 に従ってエンティティを検索して開きます。
+1. **表示** チェックボックスをクリアします。
+1. 変更を保存します。
 
 ## <a name="reference-virtual-entities"></a>仮想エンティティの参照
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vetric
 ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 957b41c0fc7987fdf13810637189146f91dcc441
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 1de34b99927b685985979d7a0eb1669a0860d121
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462197"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538853"
 ---
 # <a name="project-onboarding"></a>プロジェクトの研修
 
@@ -66,7 +66,7 @@ Microsoft では、お客様から提供された情報を必要としていま�
 - ユーザー リストに有効な電子メール アドレスがある少なくとも 2 人のユーザーに対して、**FastTrack の基本連絡先** オプションを **はい** に設定します。 どのチーム メンバーに対してもこのオプションが **はい** に設定されていない場合は、FastTrack が実装時に実装ガイドのためにすべてのチーム メンバーに連絡します。 必要に応じて、FastTrack から連絡を受ける少なくとも 1 人の顧客と 1 人のパートナー チーム メンバーを指名する必要があります。
 - 各チーム メンバーには、プロジェクト セキュリティ ロールおよび実装ロールが割り当てられます。 プロジェクト セキュリティ ロールは LCS プロジェクト ワークスペースへのアクセスに関連しており、実装ロールは、実装チームにおける個々のチーム メンバーのロールに関連しています。 監視対象の電子メール アドレスを持つプロジェクト チーム メンバーの間に、顧客の代表者を含めることを強くお勧めします。
 
-詳細については、[プロジェクト セキュリティのコンフィギュレーション](configure-lcs-security.md#configuring-project-security) および [Dynamics 365 実装のロール](/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
+詳細については、[プロジェクト セキュリティのコンフィギュレーション](configure-lcs-security.md#configuring-project-security) および [Dynamics 365 実装のロール](/training/modules/get-started-implementation-project/01-2-roles) を参照してください。
 
 ## <a name="define-milestone-dates"></a>マイルストーン日付の定義
 

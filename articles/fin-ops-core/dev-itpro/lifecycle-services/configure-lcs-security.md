@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b58156fe831be52e43e1303fc09cc8b3e5b5e1b4
-ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
+ms.openlocfilehash: 5507abba2d355f9eca7145527bc78df645770270
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305156"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9539125"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -120,8 +120,7 @@ LCS には次の 3 種類の組織ロールがあります。
 1 つのプロジェクトのセキュリティをコンフィギュレーションした後は、別のプロジェクトにユーザーをインポートできます。
 
 ## <a name="configure-implementation-roles"></a>実装ロールのコンフィギュレーション 
-実装プロジェクトがある場合、プロジェクト ユーザーの実装ロールを指定するためのオプションが表示されます。 詳細については、[Dynamics 365 実装のロール](/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
+実装プロジェクトがある場合、プロジェクト ユーザーの実装ロールを指定するためのオプションが表示されます。 詳細については、[Dynamics 365 実装のロール](/training/modules/get-started-implementation-project/01-2-roles) を参照してください。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

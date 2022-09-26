@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6963a65481f8e7f23cc94cbeba8f40e91451e2f9
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: ef4849ee9fd62662541eef35c59d281dd9057a4c
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423802"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538900"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-commerce"></a>Dynamics 365 Commerce を使用する実装プロジェクト マネージャー向けラーニング カタログ
 
@@ -31,7 +31,7 @@ ms.locfileid: "9423802"
 
 | コンテンツ | Description | 形式 | Length |
 |---------|-------------|--------|--------|
-| [Dynamics 365 Commerce の使用を開始する](/learn/paths/get-started-dynamics-365-commerce/)  | 実績のある Dynamics 365 Retail 機能に基づいて構築された Dynamics 365 Commerce は、バックオフィス、店舗、コール センター、デジタル経験を統合する包括的なオムニチャネル ソリューションを提供します。 Dynamics 365 Commerce では、カスタマイズされた顧客契約を通じてブランド ロイヤルティの構築、従業員の生産性向上に伴う収益の増加、コストの削減とサプライ チェーンの効率性の向上を実現しており、それによって優れたビジネス上の成果を生み出します。 | 無料の自習型オンライン学習パス   | 2 時間   |
-| [Dynamics 365 Fraud Protection の使用を開始する](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection は、E コマース、実在する店舗、およびオムニチャネル の加盟店向けに設計されたクラウドベース ソリューションであり、不正行為からユーザー アカウントを保護する一方で、不正行為や悪用を減らし、運用コストを削減し、承認率を向上させるためのツールと機能を提供することで、収益と評判を保護します。 | 無料の自習型オンライン学習パス | 35 分 |
+| [Dynamics 365 Commerce の使用を開始する](/training/paths/get-started-dynamics-365-commerce/)  | 実績のある Dynamics 365 Retail 機能に基づいて構築された Dynamics 365 Commerce は、バックオフィス、店舗、コール センター、デジタル経験を統合する包括的なオムニチャネル ソリューションを提供します。 Dynamics 365 Commerce では、カスタマイズされた顧客契約を通じてブランド ロイヤルティの構築、従業員の生産性向上に伴う収益の増加、コストの削減とサプライ チェーンの効率性の向上を実現しており、それによって優れたビジネス上の成果を生み出します。 | 無料の自習型オンライン学習パス   | 2 時間   |
+| [Dynamics 365 Fraud Protection の使用を開始する](/training/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection は、E コマース、実在する店舗、およびオムニチャネル の加盟店向けに設計されたクラウドベース ソリューションであり、不正行為からユーザー アカウントを保護する一方で、不正行為や悪用を減らし、運用コストを削減し、承認率を向上させるためのツールと機能を提供することで、収益と評判を保護します。 | 無料の自習型オンライン学習パス | 35 分 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

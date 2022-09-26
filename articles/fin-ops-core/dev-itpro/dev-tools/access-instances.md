@@ -2,7 +2,7 @@
 title: 開発環境の配置とアクセス
 description: この記事では、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者のための構成設定を見つける方法について説明します。
 author: laneswenka
-ms.date: 07/08/2022
+ms.date: 09/15/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -11,12 +11,12 @@ ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
-ms.openlocfilehash: 3b7d7f59511736865ee185f88f01f058bbc0a7ab
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 47bef20deb17ff967eb476f06f5c2490249da7a6
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271251"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520795"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -39,7 +39,7 @@ ms.locfileid: "9271251"
 | 開発者 | Microsoft Visual Studio 環境でコードを開発するユーザー。 開発者は、開発環境 (VM) へのリモート デスクトップ アクセスが必要です。 開発者アカウントは、VM の管理者である必要があります。 |
 
 
-## <a name="deploying-cloud-development-environments"></a>クラウド開発環境の配置
+## <a name="deploy-cloud-development-environments"></a>クラウド開発環境の配置
 
 Lifecycle Services (LCS) プロジェクトのクラウド開発環境をデプロイするには:
 
@@ -62,20 +62,7 @@ Lifecycle Services (LCS) プロジェクトのクラウド開発環境をデプ�
 + クラウド環境を要求するユーザーは、その環境内の管理者としてプロビジョニングされます。
 + ユーザー アカウントは開発用 VM にプロビジョニングされ、リモート デスクトップを使用して環境へのアクセスを許可します。これらの資格情報は LCS の環境ページからアクセスできます。
 
-> [!NOTE]
-> LCS を通じて提供される各クラウド環境は、次のリソースを含むリソース グループを Azure サブスクリプションに作成します。
-> 
-> + 1 仮想マシン
-> + 5 ディスク
-> + 1 ロード バランサー
-> + 1 通常のネットワーク インターフェイス
-> + 1 ネットワーク セキュリティ グループ
-> + 1 仮想ネットワーク
-> + 1 パブリック IP アドレス
-> + 1 ストレージ アカウント
-> + 製品バイナリのストレージが「dyn」ではじまる 1 つ以上の追加ストレージ アカウント
-
-### <a name="accessing-an-instance-through-a-url"></a>URL を試用したインスタンスへのアクセス
+### <a name="access-an-instance-through-a-url"></a>URL を使用したインスタンスへのアクセス
 
 エンド ユーザーはシステムにアクセスできます。 管理者は、インスタンスの **ユーザー** ページを使用して、このシステムにユーザーを追加することができます。 これらの追加のユーザーは LCS 内のユーザーである必要はありません。 LCS プロジェクト サイトからは、クラウド環境のベース URL を取得します。
 
@@ -85,7 +72,7 @@ Lifecycle Services (LCS) プロジェクトのクラウド開発環境をデプ�
 4. 有効なエンド ユーザー資格情報を使用して、アプリケーションにサインインします。 現在の LCS ユーザーが最初に環境を展開したユーザーである場合は、そのユーザーは有効な終了ユーザーおよびアプリケーションの管理者である可能性があります。
 5. ブラウザーで、サインインした後にベース URL を記録します。 たとえば、ベース URL は、`https://dynamicsAx7aosContoso.cloud.dynamics.com` である可能性があります。
 
-### <a name="accessing-the-cloud-instance-through-remote-desktop"></a>リモート デスクトップを使用したクラウド インスタンスへのアクセス
+### <a name="access-the-cloud-instance-through-remote-desktop"></a>リモート デスクトップを使用したクラウド インスタンスへのアクセス
 
 クラウド環境は、エンド ユーザーおよび開発者の両方としてアクセスできます。 開発者は、リモート デスクトップの資格情報を使用してシステムにアクセスできます。 リモート デスクトップの資格情報は、LCS プロジェクト サイトの環境ページから取得されます (この記事の前の図を参照してください)。
 
@@ -99,7 +86,7 @@ Lifecycle Services (LCS) プロジェクトのクラウド開発環境をデプ�
 
 リモート デスクトップを通じて環境にサインインした後、ブラウザーからローカル アプリケーションにアクセスできるようにする場合、リモート コンピューターからアプリケーションにアクセスするために使用するのと同じベース URL を使用します。 上記のセクションは、このベース URL を LCS から取得する方法について説明します。
 
-### <a name="deleting-cloud-hosted-developer-environments"></a>クラウド ホスト開発環境の削除
+### <a name="delete-cloud-hosted-developer-environments"></a>クラウド ホスト開発環境の削除
 
 開発者環境の利用が終わった場合、またはインフラストラクチャ問題のトラブルシューティングに時間がかかる場合は、いつでも LCS から環境を削除し、後から新しい環境を作成できます。  クラウド ホスト環境を LCS から削除するには、次の手順に従います:
 
@@ -124,6 +111,7 @@ LCS で削除操作を正常に完了できなかった場合、その操作は 
 環境のリソース グループは、LCS の環境と同じ名前で、Azure サブスクリプションで容易に識別できます。
 
 ## <a name="vm-that-is-running-locally"></a>ローカルで実行されている VM
+
 仮想ハード ディスク (VHD) は LCS からダウンロードができるようになり、ローカル コンピューター上に設定可能です。 このシステムは、開発者によるアクセスを目的としており、財務と運用アプリの事前構成済みワンボックス開発環境です。 VHD は、資産タイプの **ダウンロード可能な VHD** の下で、LCS の共有アセットライブラリで使用可能です。
 
 1. LCS のメイン ページに移動して **共有アセット ライブラリ** を選択するか、または [共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) に移動します。 
@@ -132,7 +120,7 @@ LCS で削除操作を正常に完了できなかった場合、その操作は 
 4. 目的の VHD に関連付けられているすべてのファイル (パーツ) をローカル フォルダーにダウンロードします。
 5. ダウンロードが完了したら、ダウンロードした実行可能ファイルを実行して、ソフトウェア使用許諾契約に同意し、VHD を抽出するファイル パスを選択します。 このステップにより、ローカルの仮想マシンを実行するのに使用できるローカル VHD ファイルが作成されます。
 
-### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
+### <a name="configure-the-vhd-for-commerce"></a>Commerce 用 VHD の構成
 
 コマースも構成している場合は、このセクションの手順に従います。
 
@@ -172,7 +160,7 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
 1. [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/download/details.aspx?id=53424) をダウンロードしてインストールします。
 2. Hyper-V ホスト サービスを起動します。 詳細については、[Hyper-V: Hyper-V 仮想マシン管理サービスを実行している必要があります](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)) を参照してください。 起動中にエラーが発生した場合は、ゲスト VM で Hyper-V ロールをアンインストールし、再インストールすることもできます。
 
-### <a name="provisioning-the-administrator-user"></a>管理者ユーザーを準備
+### <a name="provision-the-administrator-user"></a>管理者ユーザーのプロビジョニング
 
 開発者がアクセスするには、インスタンスで管理者である必要があります。 LCS を介して提供される環境については、適切なユーザーを配置してください。 詳細については、[よく寄せられる質問](access-instances.md#frequently-asked-questions) を参照してください。 ローカル LCS で管理者として資格情報をプロビジョニングするには、管理者ユーザー プロビジョニング ツールを実行します。 ローカル VM では、デスクトップに提供されているリンクがあります。
 
@@ -205,6 +193,7 @@ POS アプリケーションの URL は `https://usnconeboxax1pos.cloud.onebox.d
 - 出納係ストア: **ヒューストン**
 
 ## <a name="location-of-packages-source-code-and-other-aos-configurations"></a>パッケージ、ソース コード、およびその他の AOS コンフィギュレーションの場所
+
 VM で、AOSWebApplication の web.config file を開くことによって、ほとんどのアプリケーション コンフィギュレーションが表示されます。
 
 1. IIS を起動します。
@@ -217,6 +206,7 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
     - **Aos.AppRoot** - このキーは、Application Object Server (AOS) Web アプリケーションのルート フォルダーをポイントします。
 
 ### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
+
 ソフトウェア開発キット (SDK) は、C:\RetailSDK にあります。 アプリケーションの使用およびカスタマイズ方法の詳細については、次のトピックを参照してください。
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
 - [販売時点管理 (POS) デバイスのライセンス認証](../../../commerce/dev-itpro/retail-device-activation.md)
@@ -270,7 +260,7 @@ UPDATE dbo.RETAILCONNDATABASEPROFILE SET CONNECTIONSTRING=";
  - [Adyen 向け Dynamics 365 Payment Connector の設定](../../../commerce/dev-itpro/adyen-connector-setup.md)
  - [PayPal 向け Dynamics 365 Payment Connector](../../../commerce/paypal.md)
 
-## <a name="redeploying-or-restarting-the-runtime-on-the-vm"></a>VM でのランタイムの再配置または再起動
+## <a name="redeploy-or-restart-the-runtime-on-the-vm"></a>VM でのランタイムの再配置または再起動
  
 ローカルのランタイムを再起動して、すべてのパッケージを再配置するには、次の手順を実行します。
 
