@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2021-11-30
-ms.openlocfilehash: d4c6afe0ace84512fb46f2eaeef96a91fbe6ae7e
-ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
+ms.openlocfilehash: 3fa29da2cfb72c996797c372d6369e9b690ac238
+ms.sourcegitcommit: 97cf0c1d6ce0e2a535c67322134f6c31628548cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9012488"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "9596325"
 ---
 # <a name="export-to-azure-data-lake-overview"></a>Azure Data Lake へのエクスポートの概要
 
@@ -60,9 +60,9 @@ Azure Data Lake へのエクスポートは、Microsoft が完全に管理する
 >
 > プレビュー機能を有効にすることにより、[追加使用条件](../../fin-ops/get-started/public-preview-terms.md)に同意します。
 
-## <a name="enhanced-metadata-preview"></a>拡張メタデータ (プレビュー)
+## <a name="enhanced-metadata"></a>拡張メタデータ 
 
-データに加え、Data Lake には、データの名前、データ型、およびサイズを記述したメタデータが含まれています。 レイクでは、データ ファイルに加え、データ ファイルに対応するフォルダー レベルでメタデータ ファイルが表示されます。 Data Lake 機能にエクスポートをインストールし、データ レイクに追加するデータを選択すると、システムはデータに加えてメタデータ ファイルを書き込みます。 Data Lake へのエクスポートをインストールする際 **拡張メタデータ (プレビュー)** オプションを選択する場合、システムによって更に多くのメタデータが追加されます。 メタデータと拡張メタデータ (プレビュー) 機能については、[Azure Data Lake のデータと格納メタデータ](Azure-Data-Lake-Enhanced-Metadata.md) を参照してください。
+データに加え、Data Lake には、データの名前、データ型、およびサイズを記述したメタデータが含まれています。 レイクでは、データ ファイルに加え、データ ファイルに対応するフォルダー レベルでメタデータ ファイルが表示されます。 Data Lake 機能にエクスポートをインストールし、データ レイクに追加するデータを選択すると、システムはデータに加えてメタデータ ファイルを書き込みます。 Data Lake にエクスポートをインストールするときに **拡張メタデータ** オプションを選択すると、システムによって更に多くのメタデータが追加されます。 メタデータと拡張メタデータ機能については、[Azure Data Lake 内に格納されたデータとメタデータ](Azure-Data-Lake-Enhanced-Metadata.md) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

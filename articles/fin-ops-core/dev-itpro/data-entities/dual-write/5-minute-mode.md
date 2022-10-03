@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-07-31
-ms.openlocfilehash: 1208d0a3a7097948e788b7aff4507e22626932d0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: 32de688865686b43c444fa8e9bcb70db717d93ab
+ms.sourcegitcommit: 085f64b3ed5aef0a3cf7706e2391ff4f9e685bbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9230001"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "9595870"
 ---
 # <a name="enable-a-five-minute-session-time-out-window-for-dual-write-sessions"></a>デュアル書き込みセッション用に 5 分のセッション タイムアウト ウィンドウを有効にする
 
@@ -26,7 +26,7 @@ ms.locfileid: "9230001"
 
 ## <a name="sandbox-and-production-environments"></a>サンドボックスと運用環境
 
-Microsoft サポート チームとサポート チケットを開きます。 タイトルとして **デュアル書き込み DV から FinOps トランザクションに対して 5 分のトランザクション タイムアウトを有効にする** を入力し、組織 ID またはテナント ID を提供します。 5 分のセッション タイムアウト ウィンドウが有効になります。
+[LCS](/fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md) からのデュアル書き込みを設定し、Power Platform 統合 Dataverse 環境がデュアル書き込みリンク Dataverse 環境と同じ場合は、Microsoft サポート チームでサポート チケットを開きます。 タイトルとして **デュアル書き込み DV から FinOps トランザクションに対して 5 分のトランザクション タイムアウトを有効にする** を入力し、組織 ID またはテナント ID を提供します。 5 分のセッション タイムアウト ウィンドウが有効になります。 
 
 ## <a name="developer-and-customer-hosted-environments"></a>開発者および顧客がホストする環境
 

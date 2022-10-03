@@ -2,7 +2,7 @@
 title: Finance Insights の構成
 description: この記事では、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861419"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573197"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insights の構成
 
@@ -39,7 +39,7 @@ Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finan
 1. LCS で、Dynamics 365 Finance 環境を作成または更新します。 この環境では、アプリのバージョン 10.0.21 以降が必要です。
 
     > [!NOTE]
-    > この環境は、高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
+    > この環境は、高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning)を参照してください。
 
 2. サンドボックス環境で Finance insights を構成している場合は、予測を機能させる前に、運用データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの十分な過去のデータが含まれていません。 
 
@@ -51,13 +51,16 @@ Azure Active Directory (Azure AD) は、Dataverse および Microsoft Power Plat
 
 - **システム管理者** および **システム カスタマイザー** のアクセスが Power Portal 管理センターにある。
 - Dynamics 365 Finance または同等のライセンスが、Finance Insights アドインをインストールするユーザーに適用されている。
+- 以下の Azure AD アプリが Azure AD に登録されています。
 
-以下の Azure AD アプリが Azure AD に登録されています。
+    |  アプリケーション                             | アプリ ID                               |
+    |------------------------------------------|--------------------------------------|
+    | Microsoft Dynamics ERP マイクロサービス CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  申請書                             | アプリ ID                               |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP マイクロサービス CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    アプリケーションが Azure AD に登録されていることを確認するには、**すべての申請** リストを確認します。 詳細については、[エンタープライズ アプリケーションの表示](/azure/active-directory/manage-apps/view-applications-portal) を参照してください。
+  
+    アプリケーションが Azure AD に登録されていない場合は、サポートにお問い合わせください。
+  
 ## <a name="configure-dataverse"></a>Dataverse のコンフィギュレーション
 
 以下の手順で、Finance insights に Dataverse を構成します。

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5edd551167752b8d04a9010d517893fc80ed984c
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: e255e5a2c8fa3c6219445ca44c163ef26435f7a7
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9386992"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589074"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
@@ -68,6 +68,9 @@ ms.locfileid: "9386992"
 4. **レジスター番号** 列でレジスター番号を選択することにより、レジスターを選択します。 Houston 店舗では、レジスター Houston-3 が適切に定義されているため、例として役立ちます。
 5. レジスターのページの、**一般** で、**オフライン サポート** オプションが **いいえ** に設定されていることを確認します。 オフライン サポートを使用するには、アクション ウィンドウで **編集** を選択し、**オフライン サポート** オプションを **はい** に設定します。
 
+    > [!NOTE]
+    > Azure Active Directory (Azure AD) 認証を使用する場合、オンライン接続が常に必要となるので、POS オフラインは機能しません。
+
 ### <a name="download-the-modern-pos-installer"></a>Modern POS インストーラーのダウンロード
 
 1. **ようこそ** ページで、左上隅のメニューを使用して、**Retail と Commerce** &gt; **チャンネル** &gt; **チャネル配置** に移動します。
@@ -103,6 +106,9 @@ ms.locfileid: "9386992"
     - **値:** 1
 
 - オフラインが使用されている (オフライン データベースが作成されている) 場合、既定の SQL Server のインスタンスが存在している必要があります。 SQL Server のインスタンスが存在していても、既定として設定されていない場合、インストーラーはオフライン データベースのインストールに失敗します。
+
+> [!NOTE]
+> Azure Active Directory 認証を使用する場合、オンライン接続が常に必要となるので、POS オフラインは機能しません。
 
 オンプレミス環境で使用する Modern POS をインストールする場合は、次のようにコマンド ラインからインストーラーを起動する必要があります。
 

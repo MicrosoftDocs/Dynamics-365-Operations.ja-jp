@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and operations
-ms.openlocfilehash: 497f6ef0edc9522c1d1667b543ae58040727afac
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: 38e723b5558c56e22a59d59969bc703aa7414eec
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473621"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9583236"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -139,11 +139,9 @@ ms.locfileid: "9473621"
 
 ### <a name="selecting-the-correct-tier-2-or-higher-environment"></a>正しいレベル 2 以上の環境の選択
 
-環境の用途によって、正しいレベル 2 以上の環境を選択することが重要です。 次の図に記載されているガイダンスは、*ベースライン* です。 特定のビジネス シナリオと、ユーザーの種類、複雑さ、およびボリュームなどの要因に基づいて、実装パートナーと協力してこのガイドを調整してください。
+環境の用途によって、正しいレベル 2 以上の環境を選択することが重要です。 特定のビジネス シナリオと、ユーザーの種類、複雑さ、およびボリュームなどの要因に基づいて、実装パートナーと協力してこのガイドを調整してください。
 
-![環境レベル。](./media/environment-planning-3-environment-tiers.png)
-
-サブスクリプション見積が有効になると、次の図に示すように、LCS で 1 時間あたりのトランザクション明細行を表示できます。
+サブスクリプションの見積が有効になると、次の図に示すように、容量チェックのために LCS で時間あたりのトランザクション明細行を表示することもできます。
 
 ![サブスクリプション見積。](./media/environment-planning-4-subscription-estimate.png)
 

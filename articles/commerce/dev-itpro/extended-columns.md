@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: e94c808deb9d894de2e99cad4cefd12983468836
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49fc02f3abbe512aad5224ad61f04cda19127745
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274382"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589105"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 
@@ -199,6 +199,8 @@ namespace Contoso
 | RETAILTRANSACTIONSALESTRANS   | ITEMID                                                                 | Nvarchar (100)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | INVENTLOCATIONID                                                                | Nvarchar (25)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | 単位                                                             | Nvarchar (20)  |                       |                                     |
+| RETAILTRANSACTIONSALESTRANS   | ORIGINALTAXITEMGROUP                                                             | Nvarchar (100)  |                       |                                     |
+| RETAILTRANSACTIONSALESTRANS   | TAXITEMGROUP                                                             | Nvarchar (100)  |                       |                                     |
 | RETAILDLVMODEADDRESSEXPLODED   | STATE                                                                        | Nvarchar (60)  |                       |                                     |
 | INVENTDIM                     | INVENTBATCHID                                                                 | Nvarchar (50)  |                       |                                     |
 | INVENTDIM                     | INVENTSERIALID                                                                | Nvarchar (50)  |                       |                                     |
@@ -257,6 +259,7 @@ namespace Contoso
 | INVENTITEMGTIN               | GLOBALTRADEITEMNUMBER                                                         | Nvarchar (16)  |                       |                                     |
 | INVENTITEMGROUPITEM               | ITEMID                                                         | Nvarchar (100)  |                       |                                     |
 | INVENTDIMCOMBINATION               | ITEMID                                                         | Nvarchar (100)  |                       |                                     |
+| INVENTDIMCOMBINATION               | RETAILVARIANTID                                                         | Nvarchar (20)  |                       |                                     |
 | TMPASSORTEDPRODUCTS               | ITEMID                                                         | Nvarchar (100)  |                       |                                     |
 | INVENTORYINBOUNDOUTBOUNDSOURCEDOCUMENTLINE               | ITEMID                                                         | Nvarchar (100)  |                       |                                     |
 | INVENTITEMSALESSETUP               | ITEMID                                                         | Nvarchar (100)  |                       |                                     |
@@ -419,6 +422,8 @@ namespace Contoso
 | GUPITEMBASEPRICE          | ITEMID | Nvarchar (100)      |          |          |  
 | AGREEMENTLINE         | ITEMID | Nvarchar (100)      |          |          |  
 | MARKUPAUTOTABLE           | ITEMRELATION | Nvarchar (100)      |          |          |  
+| MARKUPAUTOLINE            | TAXITEMGROUP | Nvarchar (100)      |          |          |
+| MARKUPTABLE           | TAXITEMGROUP | Nvarchar (100)      |          |          |
 
 
 

@@ -16,12 +16,12 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
 ms.search.form: RetailITWorkspace
-ms.openlocfilehash: 6fd3017f28f07258a80083d0e6e6dde78c37378c
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 58ef07c5dc233c8cbf2262949b412615c3d1f78e
+ms.sourcegitcommit: 346a9ca833237836d5e4ca496aeb2b5b24bdb27b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520727"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9583750"
 ---
 # <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerce コンポーネントのバージョン管理要件
 
@@ -39,15 +39,15 @@ ms.locfileid: "9520727"
 
 顧客およびパートナーがサービスおよび配置を行うすべてのコマース コンポーネントとの互換性を確保するには、更新サービス中にいくつかのバージョン依存関係に従う必要があります。 次のリストは、これらの依存関係をすべて示しています。
 
-- **Commerce headquarters および財務と運用アプリは、Commerce Scale Unit (クラウドと自己ホスト型の両方) と同じバージョンか、それよりも新しいバージョンになっている必要があります。**
+- **Commerce headquarters および財務と運用アプリは、Commerce Scale Unit (クラウドと自己ホスト型の両方) と同じバージョンか、それよりも以前のバージョンになっている必要があります。**
 
     たとえば、Commerce headquarters および財務と運用アプリがバージョン 10.0.29 である場合、Commerce Scale Unit はバージョン 10.0.29 またはそれ以前 (10.0.28、または 10.0.27 など) である必要があります。
 
-- **Commerce Scale Unit は、Modern Point of Sale (POS)、Hardware Station、コマース ソフトウェア キット (SDK) と同じバージョンかそれより新しいバージョン、および関連するローカル サイト コンフィギュレーション (モジュール、データ アクション、テーマなど) でなくてはなりません。**
+- **Commerce Scale Unit は、Modern 販売時点管理 (POS)、Hardware Station、Commerce ソフトウェア開発キット (SDK) と同じバージョンかそれより以前のバージョン、および関連するローカル サイト コンフィギュレーション (モジュール、データ アクション、テーマなど) でなくてはなりません。**
 
     たとえば、Commerce Scale Unit がバージョン 10.0.29 である場合、Modern POS、Hardware Station、および Commerce 店舗はバージョン 10.0.29 またはそれ以前 (たとえば、10.0.28 または 10.0.27) である必要があります。
 
-- **拡張機能パッケージは、拡張機能が適用されるターゲット コンポーネントと同じバージョン、またはそれより新しいバージョンに対してコンパイルする必要があります。**
+- **拡張機能パッケージは、拡張機能が適用されるターゲット コンポーネントと同じバージョン、またはそれより以前のバージョンに対してコンパイルする必要があります。**
 
     たとえば、展開された Commerce Scale Unit がバージョン 10.0.29 である場合、対応する拡張パッケージをバージョン 10.0.29 またはそれ以前 (たとえば、10.0.28 または 10.0.27) に対してコンパイルする必要があります。
 

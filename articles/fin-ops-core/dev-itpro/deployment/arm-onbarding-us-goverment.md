@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sasurana
 ms.search.validFrom: 2021-07-31
-ms.openlocfilehash: da38b52470c8cac5a3a8f33756606560f05b1803
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 22c80206c40415671684a2569de95dc66c19be25
+ms.sourcegitcommit: 31db95d082e33bda06408d0f76bbe44f85c381d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867483"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "9594383"
 ---
 # <a name="complete-the-azure-resource-manager-onboarding-process-for-us-government-lifecycle-services-projects"></a>米国政府の Lifecycle Services プロジェクトに対する Azure Resource Manager オンボード プロセスの実行
 
@@ -27,7 +27,10 @@ Azure Resource Manager トポロジをデプロイするには、コネクタに
 - 展開する Azure サブスクリプション ID
 
     > [!NOTE]
-    > 米国政府機関向け Microsoft Dynamics Lifecycle Services (LCS) プロジェクトでは、Azure US government 固有の Azure サブスクリプションのみサポートされます。
+    > 米国政府機関向け Microsoft Dynamics Lifecycle Services (LCS) プロジェクトの場合、 
+    > 1. Azure Government 固有の Azure サブスクリプションのみがサポートされています。
+    > 2. 管理証明書のサポートが使用できない Azure Government サブスクリプション (例: CSP Azure サブスクリプション) は、現在サポートされて **いません**。
+
 
 - Azure サブスクリプションの所有権、またはサブスクリプション所有者へのアクセス。共同作成者ワークフローを追加し、管理証明書をアップロードできるようにする
 - テナント管理者。管理者の同意ワークフローを介して作業を行えるようにする

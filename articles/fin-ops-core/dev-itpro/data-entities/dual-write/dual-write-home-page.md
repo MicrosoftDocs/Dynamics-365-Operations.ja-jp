@@ -11,12 +11,12 @@ ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: intro-internal
-ms.openlocfilehash: 1950d071106ed978c70fdeb7098195741b4886d4
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f6fd0b1897b2a18fbfc66e9445e42105d3d916ec
+ms.sourcegitcommit: 085f64b3ed5aef0a3cf7706e2391ff4f9e685bbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9289656"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "9595866"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -45,8 +45,7 @@ ms.locfileid: "9289656"
     + [システム要件と前提条件](requirements-and-prerequisites.md)
     + [二重書き込みウィザードを使用して環境をリンクする方法](link-your-environment.md)
     + [テーブル マップの二重書き込みの有効化](enable-entity-map.md)
- + [デュアル書き込みセッション用に 5 分のセッション タイムアウト ウィンドウを有効にする](5-minute-mode.md)
- + [分離型二重書き込みアプリケーション オーケストレーション ソリューションの適用](separated-solutions.md)
+  + [分離型二重書き込みアプリケーション オーケストレーション ソリューションの適用](separated-solutions.md)
 
 ## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
 

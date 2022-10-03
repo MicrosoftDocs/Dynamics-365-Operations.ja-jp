@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 0f005352970ec3dadb178dfafeaf4f7e36f8c18d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279813"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573308"
 ---
 # <a name="get-started-with-tax-calculation"></a>税計算の使用を開始する
 
@@ -186,9 +186,9 @@ ms.locfileid: "9279813"
 
     | 税グループ    | 税コード           |
     | ------------ | ------------------- |
-    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_Dom | DEU_VAT19; DEU_VAT7 |
     | DEU_EU       | DEU_Exempt          |
-    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
 20. **品目別税グループ** タブで、**品目別税グループ** 列を選択し、マトリックスに入力条件として追加した後、品目別税グループのマスター データを管理するための明細行を追加します。
@@ -204,11 +204,11 @@ ms.locfileid: "9279813"
 
     次に例を示します。
 
-    | 業務プロセス | 出荷元 | 出荷先 | 税グループ    |
+    | 業務プロセス | 出荷元 | 発送先 | 税グループ    |
     | ---------------- | --------- | ------- | ------------ |
-    | 販売注文            | DEU       | DEU     | DEU_Domestic |
-    | 販売注文            | DEU       | FRA     | DEU_EU       |
-    | 営業            | BEL       | BEL     | BEL_Domestic |
+    | 営業            | DEU       | DEU     | DEU_Dom |
+    | 営業            | DEU       | FRA     | DEU_EU       |
+    | 営業            | BEL       | BEL     | BEL_Dom |
     | 営業            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]

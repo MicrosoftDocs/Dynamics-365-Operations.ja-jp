@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 9da9793d21b00862ad11a967e64dcdedc83d1a9b
-ms.sourcegitcommit: 2e14e9a5e8ce78beffc7118ca466d2ef0878d3e2
+ms.openlocfilehash: b5d7112495ed881d37607ecdf28e56a047df1989
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246326"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592025"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 
@@ -256,6 +256,7 @@ Service Fabric Cluster と展開されているすべてのアプリケーショ
 | 署名ハッシュ アルゴリズム | sha256          | 推奨 |
 | 公開キー               | RSA (2048 ビット) | 必須   |
 | 拇印アルゴリズム     | sha1            | 推奨 |
+| 暗号化プロバイダー   | Microsoft Enhanced RSA および AES Cryptographic Provider | 必須 (暗号化証明書を除く) |
 
 #### <a name="overview-of-required-certificates"></a>必要な証明書の概要
 
@@ -267,8 +268,8 @@ Service Fabric Cluster と展開されているすべてのアプリケーショ
 | 暗号化証明書                     | この証明書は、SQL Server パスワードとユーザー アカウントのパスワードなどの重要な情報を暗号化するために使用されます。 | <p>証明書は、**Microsoft Enhanced Cryptographic Provider v1.0** プロバイダーを使用して作成する必要があります。</p><p>証明書キーの使用にはデータ暗号化 (10) が含まれている必要があり、サーバー認証またはクライアント認証は含めないでください。</p><p>詳細については、[Service Fabric アプリケーションでの機密情報の管理](/azure/service-fabric/service-fabric-application-secret-management) を参照してください。</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS 名:** axdataenciphermentcert</li></ul> |
 | AOS SSL 証明書                          | <p>この証明書は、AOS Web サイトに接続するクライアントに提示されるサーバー証明書として使用されます。 また、WCF (Windows Communication Foundation) / SOAP (Simple Object Access Protocol) 証明書を有効にするためにも使用されます。</p> | <p>Service Fabric サーバー証明書として使用したのと同じワイルドカード SSL 証明書を使用できます。 それ以外の場合は、次の値を使用します:</p><ul><li>**CN:** ax.d365ffo.onprem.contoso.com</li><li>**DNS 名:** ax.d365ffo.onprem.contoso.com</li></ul> |
 | セッション認証証明書           | AOS はこの証明書を使用してユーザーのセッション情報を保護します。 | <p>この証明書は、LCS からの展開時に使用されるファイル共有証明書です。</p><ul><li>**CN:** SessionAuthentication</li><li>**DNS 名:** SessionAuthentication </li></ul> |
-| データの暗号化証明書                  | AOS はこの証明書を使用して機密情報を暗号化します。 | <p>この証明書は、**Microsoft Enhanced RSA and AES Cryptographic Provider** プロバイダーを使用して作成する必要があります。</p><ul><li>**CN:** DataEncryption</li><li>**DNS 名:** DataEncryption</li></ul> |
-| データ署名の証明書                     | AOS はこの証明書を使用して機密情報を暗号化します。 | <p>この証明書はデータ暗号化証明書とは別のもので、**Microsoft Enhanced RSA and AES Cryptographic Provider** プロバイダーを使用して作成する必要があります。</p><ul><li>**CN:** DataSigning</li><li>**DNS 名:** DataSigning</li></ul> |
+| データの暗号化証明書                  | AOS はこの証明書を使用して機密情報を暗号化します。 | <ul><li>**CN:** DataEncryption</li><li>**DNS 名:** DataEncryption</li></ul> |
+| データ署名の証明書                     | AOS はこの証明書を使用して機密情報に署名します。 | <p>この証明書は、データの暗号化証明書とは別のものです。</p><ul><li>**CN:** DataSigning</li><li>**DNS 名:** DataSigning</li></ul> |
 | Financial Reporting クライアント証明書       | この証明書を使用して、Financial Reporting サービスと AOS 間の通信を保護します。 | <ul><li>**CN:** FinancialReporting</li><li>**DNS 名:** FinancialReporting</li></ul> |
 | 報告証明書                        | この証明書を使用して、SSRS と AOS 間の通信を保護します。| <p>**重要:** Financial Reporting クライアント証明書を再利用 **しない** でください。</p><ul><li>**CN:** ReportingService</li><li>**DNS 名:** ReportingService</li></ul> |
 | SSRS Web サーバー証明書                  | この証明書は、SSRS Web サーバーに接続するクライアント (AOS) に提示されるサーバー証明書として使用されます。 | <p>証明書のドメイン名は SSRS ノードの SSRN と一致する必要があります。</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS 名:** BI1.contoso.com</li></ul>
@@ -801,6 +802,8 @@ Finance + Operations 向けに SQL Server を構成するために CA から SSL
 
     | リリース | データベース |
     |---------|----------|
+    | Version 10.0.29 | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.29 デモ データ |
+    | Version 10.0.29 | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.29 空データ |
     | バージョン 10.0.26 (プラットフォーム更新プログラム 50 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.26 デモ データ |
     | バージョン 10.0.26 (プラットフォーム更新プログラム 50 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.26 空データ |
     | バージョン 10.0.23 (プラットフォーム更新プログラム 47 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.23 デモ データ |
@@ -940,7 +943,7 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
     ```
 
     > [!WARNING]
-    > AD FS がシングル サインオン用 Microsoft 365 (旧 Office 365) と連携するように設定されている場合、この手順はシナリオを壊す可能性があります。
+    > AD FS がシングル サインオン用 Microsoft 365 (旧 Office 365) と連携するように設定されている場合、この手順はシナリオを壊す可能性があります。 AD FS Microsoft 365 互換性の配置オプションを使用する場合は、上記のコマンドを実行しないでください。
     >
     > シナリオが引き続き機能するには、展開オプションを指定して、Dynamics 365 for Finance + Operations インストールをその要件に合わせることができます。 詳細については、[AD FS Microsoft 365 互換性](./onprem-adfscompatibility.md) を参照してください。
 
@@ -963,7 +966,7 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
     Set-AdfsClaimsProviderTrust -TargetIdentifier 'AD AUTHORITY' -AlternateLoginID mail -LookupForests $domainName
     ```
 
-4. Office アドインを使用してサインインするには、クロス オリジン リソース共有 (CORS) ヘッダーを有効にする必要があります。
+4. Office アドインを使用してサインインできるようにするには、クロス オリジン リソース共有 (CORS) ヘッダーを有効にする必要があります。
 
     ```powershell
     Set-AdfsResponseHeaders -EnableCORS $true

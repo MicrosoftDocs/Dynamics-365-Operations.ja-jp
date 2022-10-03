@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 7f1a4f4d855c88c0b80707852885f1ff125c7915
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: f8900306112b1ab6e7dcd5c4e842c0320b5cd608
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520734"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592021"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -145,7 +145,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
 #### <a name="service-fabric-with-certificates-that-arent-expired"></a>期限切れになっていない証明書を含む Service Fabric
 
-これ以上のアクションは必要ありません。 Service Fabric により新しい証明書が自動的に検出されます。 
+Service Fabric Cluster でこれ以上のアクションは必要ありません。 Service Fabric により新しい証明書が自動的に検出されます。 [LocalAgent 証明書を更新する](#update-the-localagent-certificates) に進んでください。 
 
 証明書の共通名を変更した場合は、Service Fabric Cluster コンフィギュレーションをアップグレードする必要があります。
 
@@ -223,7 +223,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
 [オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy)の手順に従って、このプロセスを続行します。
 
-## <a name="update-the-localagent-certificate"></a>LocalAgent 証明書を更新する
+## <a name="update-the-localagent-certificates"></a>LocalAgent 証明書を更新する
 
 次のような場合は、LocalAgent を再インストールする必要があります。
 

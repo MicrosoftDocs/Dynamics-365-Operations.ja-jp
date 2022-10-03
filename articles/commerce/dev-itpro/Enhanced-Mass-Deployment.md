@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: 426473c14cdf9e171810aafd97dbb1afd5988b2f
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387022"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589092"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>シールされた Commerce セルフサービス コンポーネントの一括配置
 
@@ -47,7 +47,7 @@ ms.locfileid: "9387022"
 | -EnvironmentId | 環境 ID。 |
 | -HardwareStationAppInsightsInstrumentationKey | Hardware Station AppInsights インストルメンテーション キー。 |
 | インストール | このインストーラーが提供するコンポーネントをインストールするかどうかを指定するパラメーター。 インストールを実行する際にはこのパラメータが必要で、先頭にダッシュ文字はありません。 |
-| -InstallOffline | Modern POS の場合、このパラメータは、オフライン データベースもインストールして構成する必要があることを指定します。 **-SQLServerName** パラメータも使用します。 それ以外の場合、インストーラーは前提条件を満たす既定のインスタンスを見つけようとします。 |
+| -InstallOffline | Modern POS の場合、このパラメータは、オフライン データベースもインストールして構成する必要があることを指定します。 **-SQLServerName** パラメータも使用します。 それ以外の場合、インストーラーは前提条件を満たす既定のインスタンスを見つけようとします。 Azure Active Directory (Azure AD) 認証を使用する場合、オンライン接続が常に必要となるので、POS オフラインは機能しません。 |
 | -ポート | Retail Server 仮想ディレクトリに関連付けられて使用されるポート。 ポートが設定されてない場合、既定のポート 443 が使用されます。 |
 | -登録 | 本社の **登録** ページに表示される登録 ID。 |
 | -RetailServerAadClientId | Retail Server が本社との通信中に使用する必要がある Azure AD クライアント ID。 |

@@ -2,19 +2,19 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境での Windows Server のアップグレード
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) 環境が使用している  Windows Server バージョンをアップグレードする方法について説明します。
 author: faix
-ms.date: 06/07/2022
+ms.date: 9/21/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: b4bb534357b38f22e03d2c33eeb38220cb3c1fe2
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: be726b24cf9e01df1783c2202c236a1d13a1d641
+ms.sourcegitcommit: 346a9ca833237836d5e4ca496aeb2b5b24bdb27b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945774"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9583797"
 ---
 # <a name="upgrade-windows-server-in-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) 環境での Windows Server のアップグレード
 
@@ -82,6 +82,12 @@ SQL Server データベースを使用している場合は、[SQL Server を使
     新しいファーム/インスタンスを Finance + Operations (On-premises) で使用する準備が整いました。
 
 1. 新しいファーム/インスタンス エンドポイントが古いファーム/インスタンス エンドポイントと異なる場合は、 、**設定の更新** オプションを選択し、**ADFS OpenID メタデータ エンドポイント** フィールドを新しい値に設定して、Microsoft Dynamics Lifecycle Services (LCS) のエンドポイントを更新してください。
+
+1. 新しいファーム/インスタンス ID が古いファーム/インスタンス ID と異なる場合は、新しいコンフィギュレーションを反映するようにユーザー情報テーブルを更新する必要があります。 インフラストラクチャ スクリプトのバージョン 2.17.0 では、次のコマンドを AOS ノードの 1 つから実行して、各ユーザーのコンフィギュレーションを自動的に更新および再生成できます。
+
+    ```powershell
+    .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
+    ```
 
 ### <a name="post-upgrade-actions"></a>アップグレード後のアクション
 

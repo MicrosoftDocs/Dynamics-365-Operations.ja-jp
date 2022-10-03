@@ -2,7 +2,7 @@
 title: X++ データの選択と操作の概要
 description: この記事では、X++ データの選択と操作についてのトピックへのリンクを提供します。
 author: josaw1
-ms.date: 06/16/2020
+ms.date: 09/28/2022
 ms.topic: overview
 audience: Developer
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f185ead7e10143205101be8ab609c586e83a98ba
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 5caaeeffc0a7981014cd5fbc20fe95738843dc6f
+ms.sourcegitcommit: 97cf0c1d6ce0e2a535c67322134f6c31628548cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271371"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "9596329"
 ---
 # <a name="x-data-selection-and-manipulation-overview"></a>X++ データの選択と操作の概要
 
@@ -57,5 +57,14 @@ ms.locfileid: "9271371"
 **executeQueryWithParameters** API は、[SQL インジェクション攻撃の軽減](../query-with-parameters.md) に役立ちます。
 
 結合の使用の詳細については、[Exists 結合および Notexists 結合についてのよくある誤解](https://community.dynamics.com/365/financeandoperations/b/peter-s-x-developer-blog/posts/common-misconception-about-exists-and-notexists-joins) を参照してください。
+
+## <a name="sql-statement-timeout"></a>SQL ステートメントのタイムアウト
+
+上記のすべての SQL ステートメントには、発行するセッション タイプに応じて、ステートメントごとにタイムアウトが設定されます。  
+
+- **対話型** セッション - 30 分。
+- **非対話型 (バッチ、サービス、OData)** - 3 時間。 
+
+ブロックが原因で、または予想以上のデータ量やクエリ プランの問題で、ステートメントがタイムアウトした場合、メッセージ *クエリの実行中に、データベース内でタイムアウトが発生しました。* と共に型の例外 **Exception::Timeout** がスローされます X++ では、この例外に基づく処理タイムアウト例外および再試行を許可します。 既定のタイムアウトは、[queryTimeout API](/dotnet/api/microsoft.dynamics.ax.xpp.common.querytimeout) を呼び出すことによって上書きできます。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

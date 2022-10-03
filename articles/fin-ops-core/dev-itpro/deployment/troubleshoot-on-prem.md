@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Platform Update 8
 ms.custom: 60373
 ms.assetid: ''
 ms.service: ''
-ms.openlocfilehash: a079b6538c1033f25cc15f2f2a0d5f44ad3b81d4
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8e5b7777ec1109753a82cdde2257962ace9144d8
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271443"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592026"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -161,8 +161,10 @@ Service Fabric エクスプローラーで、**アプリケーション ノー�
 次のスクリプトは、LocalAgent および LocalAgent の監視エージェントを除く、すべての Service Fabric アプリケーションを削除してプロビジョニング解除します。 オーケストレータ仮想マシン (VM) 上でこのスクリプトを実行する必要があります。
 
 ```powershell
-$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry')
+$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry', 'fabric:/LBDTelemetry-Agent')
 $applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
+
+Connect-ServiceFabricCluster
 
 Get-ServiceFabricApplication | `
     Where-Object { $_.ApplicationName -notin $applicationNamesToIgnore } | `

@@ -1799,13 +1799,15 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: 生産計画
                   href: master-planning/planning-optimization/production-planning.md
-                - name: 有効期限のある製品のマスター プラン
+                - name: 限られた有効期限のある製品のマスター プラン
                   href: master-planning/planning-optimization/shelf-life.md
-                - name: 無限能力を使用したスケジューリング
+                - name: 無制限の能力でのスケジューリング
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: 制限付きの能力計画とスケジューリング
+                  href: master-planning/planning-optimization/finite-capacity.md
                 - name: 能力に基づいたリソース選択でのスケジューリング
                   href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: 優先順位に基づいた計画
+                - name: 優先順位に基づく計画
                   href: master-planning/planning-optimization/priority-based-planning.md
                 - name: 需要主導型材料所要量計画 (DDMRP)
                   items:

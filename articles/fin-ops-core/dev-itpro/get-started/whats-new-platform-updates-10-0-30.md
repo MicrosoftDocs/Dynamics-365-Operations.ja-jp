@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-08-19
-ms.openlocfilehash: 317a1ec5aa592d639e5d5cf356a004e2347f0e83
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 356b2fc81310daabc60ccc8e72ca774b26252df6
+ms.sourcegitcommit: 0a5885dc792fc608ae59d0ef9b36fb61790b24de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520728"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "9594003"
 ---
 # <a name="platform-updates-for-version-10030-of-finance-and-operations-apps-november-2022"></a>財務と運用アプリのバージョン 10.0.30 のプラットフォーム更新プログラム (2022 年 11 月)
 
@@ -35,7 +35,7 @@ ms.locfileid: "9520728"
 |---|---|---|---|
 | Web クライアント | プレビューから一般に入手可能に移行する[コンボ ボックスおよびルックアップ コントロールのキーボード インタラクションを標準化する](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/standardize-keyboard-interaction-combo-box-lookup-controls) | [キーボード ショートカット](../../fin-ops/get-started/shortcut-keys.md) | [機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Web クライアント | <p>グループ化されたカード リストおよび複数列カード リストの新しいグリッド コントロールのサポート</p><p>このようなタイプのカード リストを含むページは、レガシ グリッド コントロールを使用する際に自動的に元に戻さなくなくなりました。 また、グループ化されたカード リストまたは複数列のカードのため、`forceLegacyGrid()` API は削除しても安全です。</p> | [グリッド機能](../../fin-ops/get-started/grid-capabilities.md) | 既定で有効  |
-| データ エンジン | ステートメントのタイムアウト | 非対話型セッションから発行された SQL クエリには、タイムアウトの期間が割り当てられます。 個々のクエリの既定値は 3 時間です。 クエリの実行が長くなることが予想されるシナリオでは、[queryTimeout API](https://docs.microsoft.com/en-us/dotnet/api/microsoft.dynamics.ax.xpp.common.querytimeout) を使用して既定値を上書きします。 </p> |   既定で有効  |
+| データ エンジン | ステートメントのタイムアウト | 非対話型セッションから発行された SQL クエリには、タイムアウトの期間が割り当てられます。 個々のクエリの既定値は 3 時間です。 クエリの実行が長くなることが予想されるシナリオでは、[queryTimeout API](/dotnet/api/microsoft.dynamics.ax.xpp.common.querytimeout) を使用して既定値を上書きします。 </p> |   既定で有効  |
 
 ### <a name="bug-fixes"></a>バグ修正
 
