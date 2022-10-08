@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5c1072bfc86dfc6a5dba62d3e7d9ce19b0be159
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 3fad7deacf6b55ac8f2d88164498ce55ddac5884
+ms.sourcegitcommit: f62c9b24c2205d03e2fd6e7c67f7b5c316233b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108411"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "9598067"
 ---
 # <a name="integration-between-finance-and-operations-apps-and-third-party-services"></a>財務と運用アプリと、サード パーティ サービス間の統合
 
@@ -230,7 +230,7 @@ PLM ソリューション:
 
 オンプレミスシステム:
 
-- REST バッチ データ API を使用して、ファイルをインポートします。
+- REST バッチ データ API を使用して、ファイルをエクスポートします。
 
 ### <a name="export-large-volumes-of-purchase-orders"></a>大量の発注書をエクスポート
 

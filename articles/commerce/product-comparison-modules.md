@@ -2,19 +2,19 @@
 title: 製品比較モジュール
 description: この記事では、顧客が Microsoft Dynamics 365 Commerce の e コマースサイトで商品比較を実施できる商品比較モジュールとその実装方法について説明します。
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 9ff45f3fbcc86b21f336d580582adef586417de4
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474129"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618388"
 ---
 # <a name="product-comparison-modules"></a>製品比較モジュール
 
@@ -91,6 +91,19 @@ ms.locfileid: "9474129"
 1. 右側のプロパティ ウィンドウで、**製品比較ボタン** モジュールのプロパティを構成します。
 1. **保存** を選択し、 続いて **プレビュー** を選択してページをプレビューします。
 1. **編集の完了** を選択してページをチェックインし、 **発行** を選択して公開します。
+
+## <a name="add-a-product-comparison-preview-panel-module-to-pages-on-your-website"></a>製品比較プレビュー パネル モジュールを Web サイトのページに追加する
+
+製品比較プレビュー パネル モジュールは、比較に対して追加や削除を行った製品をレビューするオプションを、顧客に提供します。 プレビュー パネルには、比較ページに直接移動するオプションや、製品のリスト全体をクリアするオプションも提供します。 
+
+**製品比較ボタン** が有効な、すべてのページでプレビュー パネルを有効化することを推奨します。 このモジュールをスロットとして **製品比較ボタン** に追加でき、比較する製品の追加や削除を行う機能がない場合でも、任意のページで設定できるスタンドアロン モジュールとして使用できます。 
+
+製品比較プレビュー パネル モジュールを手動でページに追加する必要があります。 プレビュー パネル モジュールを 1 つだけページに追加する必要があります。 モジュールの複数のインスタンスをページに追加すると、最初のモジュールをレンダリングして、残りは無視します。
+
+![製品比較プレビュー パネル](./media/product-comparison-preview-panel-2.png)
+
+商品比較の制限を指定する場合は、比較にさらに追加できる製品の数を示す灰色のプレースホルダーを有効化するオプションが、プレビュー パネルにあります。 この灰色のプレースホルダーは、製品を比較に追加すると置き換えられます。 製品比較の制限を構成して、灰色のプレースホルダーを有効化する場合は、サイト ビルダーで **サイト設定 > 拡張** に移動し、**製品比較** セクションで変更します。 この構成は、すべてのページの、すべてのプレビュー パネルに適用されます。 
+
 
 ## <a name="specify-the-maximum-number-of-products-to-show-in-the-comparison-tray"></a>比較トレイに表示する製品の最大数を指定する
 

@@ -2,20 +2,20 @@
 title: Commerce のオフライン実装とトラブルシューティング
 description: この記事では、Microsoft Dynamics 365 Commerce オフライン実装に関する考慮事項とトラブルシューティングの概要を説明します。
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 09/29/2022
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: e729c5e4f6438376c02ffb23e19c97a76ac97a4b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2653cdd1d71327d12e78f953191d1ae0bd195a5b
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888284"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601556"
 ---
 # <a name="commerce-offline-implementation-and-troubleshooting"></a>Commerce のオフライン実装とトラブルシューティング
 
@@ -37,7 +37,8 @@ ms.locfileid: "8888284"
 | 機能名 | 説明 |
 |--------------|-------------|
 | オフラインの詳細 | この機能は、オフライン プロファイルの一連の設定で構成されます。 これらの設定により、追加のオフライン切り替えシナリオを使用できるようになり、ユーザーが POS にサインインする前にオフライン モードに切り替える機能を提供し、強化された Commerce Headquarters の可用性テストが可能になるため、簡単にオフライン モードに切り替え、オンライン状態に戻すことができます。 |
-| オフライン状態ダッシュボード | Commerce バージョン 10.0.20 リリース以降に用意された新しいダッシュボードには、各デバイスの最新のオフライン状態、エラー、およびデータベースの詳細が表示されます。  このダッシュボードは、**Retail と Commerce \> チャネル設定 \> POS 設定 \> レジスターのオフライン状態** で確認できます。 このダッシュボードが正しく機能するには、**機能管理** ワークスペースで **Modern POS オフライン監視** 機能をオンにしてから、1110 配送スケジュール ジョブを実行する必要があります。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。 |
+| オフライン状態ダッシュボード | Commerce バージョン 10.0.20 リリース以降に用意された新しいダッシュボードには、各デバイスの最新のオフライン状態、エラー、およびデータベースの詳細が表示されます。  このダッシュボードは、**Retail と Commerce \> チャネル設定 \> POS 設定 \> レジスターのオフライン状態** で確認できます。 このダッシュボードが正しく機能するには、**機能管理** ワークスペースで **最新化の POS オフライン監視** 機能をオンにしてから、**1110** 配送スケジュール ジョブを実行する必要があります。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。 |
+| オフライン データベース圧縮 | この機能は Commerce リリース 10.0.29 以降で使用でき、オフライン データベースのサイズを縮小するために、チャネル [営業時間](store-hours.md) 外で自動インデックス圧縮を有効化します。 営業時間を構成していないか、または適切に機能しない場合は、常に圧縮します。 圧縮が発生すると、営業時間に基づくかどうかにかかわらず、Modern POS や Store Commerce は、100 MB を超える、またはデータベースの合計サイズの少なくとも 1% である、非圧縮と非クラスター化インデックスに対し、オフライン データベースにクエリを実行します。 この基準を満たすインデックスが見つかった場合、リストが含む最大のインデックスに対して圧縮を開始し、その後 10 分間アイドル状態になります。 この時間が経過すると、次のインデックスに対して圧縮を開始し、選択したすべてのインデックスを圧縮するまで、このサイクルを繰り返します。 インデックスが見つからない場合、圧縮ロジックは 30 分間一時停止してから、もう一度確認します。 このダッシュボードが正しく機能するには、**昨日管理** ワークスペースで **POS オフライン データベース圧縮** をオンにして、その後 **1070** 配信スケジュール ジョブを実行する必要があります。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 記事を参照してください。 |
 | パフォーマンス ベースのオフライン切り替え (パフォーマンスを低下させる POS シームレスなオフライン) | この機能はリリース 10.0.20 以降で提供されており、アウトバウンド Web 要求のパフォーマンスが低下した場合に、最新の POS デバイスをシームレスにオフラインモードに切り替えることができます。  この機能を使用するには、本社の **オフライン プロファイル** ページから **詳細なオフライン切り替えの有効化** 機能を有効にする必要があります。 **パフォーマンスを低下させる POS シームレスなオフライン** 機能は、機能管理ワークスペースでオンにする必要があります。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。 |
 
 ### <a name="advanced-offline-feature"></a>オフラインの詳細機能

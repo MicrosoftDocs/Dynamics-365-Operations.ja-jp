@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 857d5d15816a9b4053a08ac98e12b6fee3b75a29
-ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
+ms.openlocfilehash: e520330093c0d57991e32548d1e86deb4e4b3ccf
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9403512"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618401"
 ---
 # <a name="prepare-for-go-live"></a>Go Live の準備
 
@@ -26,6 +26,10 @@ ms.locfileid: "9403512"
 この記事では、財務と運用アプリの Go-Live に向けた準備方法に関するガイダンスを提供します。
 
 運用環境がライブ運用に使用されるようにするため、Microsoft はソリューションの準備が整い、Microsoft との Go-live 準備完了レビューの一部としてプロジェクトの準備状況が検証された後に、運用インスタンスをプロビジョニングします。 ご利用のサブスクリプションでの環境の詳細については、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
+
+> [!Note]
+> ほとんどのプロジェクトは、Microsoft による Go-live 準備完了レビューで **FastTrack for Dynamics 365 実装ポータル** を使用する際に **必須** です。
+
 
 Go-live に関する一般的な質問への回答については、[Go-live に関するよく寄せられる質問](go-live-faq.md)を参照してください。
 
@@ -81,7 +85,7 @@ Go-live に関する一般的な質問への回答については、[Go-live に
 ほとんどのプロジェクトに関しては、Go-live 準備完了レビューは、FastTrack for Dynamics 365 実装ポータルで行われます。
 
 > [!Note]
-> FastTrack for Dynamics 365 実装ポータルを使用しない **2 つの例外** があります:
+> FastTrack for Dynamics 365 実装ポータルを使用しない **例外が 2 つ** だけ存在します。
 > - **[米国 (US) 政府機関向けコミュニティ クラウド (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md)** に入っているプロジェクトです。 [Go-live チェックリスト](https://aka.ms/d365fogolivechecklist)をダウンロードし、必要事項をご記入の上、<d365fogccglr@microsoft.com> まで電子メールで送信してください。 電子メールには、顧客からの主な関係者と実装パートナーを必ず含めます。 Microsoft FastTrack がプロジェクトをレビューし、フォローアップします。
 > - 既に運用しているプロジェクトで、運用ソリューションを新しいテナントに移動する予定だった場合は、ソリューションが変更されていなければ、新たに Go-live 準備完了レビューを完了する必要はありません。 [運用環境を新しいテナントに移動する](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant)で説明されている手順に従い、新しいテナントで生産スロットを有効にします。
 

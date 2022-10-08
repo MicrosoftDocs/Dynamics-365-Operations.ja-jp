@@ -2,19 +2,19 @@
 title: イタリア向け会計プリンター統合サンプル
 description: この記事では、Microsoft Dynamics 365 Commerce のイタリア向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6ad97e87e4114a8f2250d0ba4880b7a466b3689e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336746"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631399"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>イタリア向け会計プリンター統合サンプル
 
@@ -67,7 +67,7 @@ ms.locfileid: "9336746"
 - 次のオプションなど、エラー処理。
 
     - 会計プリンターが接続されていない、準備ができていない、応答がない、プリンターの紙切れ、紙詰まりなど、再試行が可能な場合は、会計登録を再試行します。
-    - 会計登録の延期。
+    - 会計登録を繰り延べます。
     - 会計登録をスキップするか、またはトランザクションを登録済みとしてマークして、失敗した理由と追加情報を取得するための情報コードを含めます。
     - 新しい販売トランザクションの開始時や販売トランザクション確定時に、会計用プリンターの使用可能性を確認します。
 
@@ -111,7 +111,7 @@ ms.locfileid: "9336746"
 1. [割引用の会計テキストを設定します](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts)。
 1. [エラーの処理の設定](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings)。
 1. [POS からの会計 X/Z レポートの設定](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos)。
-1. [延期された会計登録の手動実行を可能にする](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)。
+1. [繰り延べした会計登録の手動実行を有効化します](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration)。
 1. [POS に顧客情報を管理する機能を設定します](emea-ita-customer-information.md#setup)。
 1. [チャネル コンポーネントの構成](#configure-channel-components)。
 

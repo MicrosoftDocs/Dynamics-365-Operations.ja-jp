@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.29 (2022 年 10 月) の新機能と変更された機能
 description: この記事では、Microsoft Dynamics 365 Commerce 10.0.29 の新機能および変更された機能について説明します。
 author: josaw1
-ms.date: 08/17/2022
+ms.date: 09/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
-ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
+ms.openlocfilehash: 0629228516d688abf4dcd4280d1ad676f8f35331
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "9475906"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601574"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Dynamics 365 Commerce 10.0.29 (2022 年 10 月) の新機能または変更された機能
 
@@ -39,6 +39,7 @@ ms.locfileid: "9475906"
 | eコマース | eコマースでの製品比較のサポート | 買い物客がさまざまなカテゴリの製品を比較し、自分で適切な購買の意思決定ができるようにします。 この機能は、企業と顧客間 (B2C) サイトと B2B サイトの両方で使用できます。 | サイト ビルダー | 
 | ギフト カード | 会社間データ共有の小売ギフト カード テーブルのサポート | Dynamics headquarters は、Dynamics アーキテクチャの特定のテーブルに対して会社間データ共有を有効にする機能をサポートしています。 Dynamics 365 Commerce では、この機能で、小売ギフト カード テーブル に対して会社間データ共有のサポートを追加します。 そのため、ある会社のギフト カードのデータを環境内の別の会社に複製することができます。 元の会社のギフト カード テーブルに行った変更は、複製する会社のギフト カード テーブルに共有されます。 | 開発者 |
 | グローバリゼーション | [新しい Commerce SD Kに対する Commerce ローカライズ機能の有効化](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | この新しい機能により、機能管理フレームワークまたはパラメーターを使用して Commerce Headquarters の Commerce ローカライズ機能を活用できます。 会計統合サンプルが、新しい Commerce SDK に組み込まれ、独立した梱包がサポートされるようになりました。 また、この機能により、グローバルな Commerce 顧客が Store Commerce アプリを使用する方法も採用されます。<p><p>このリリースには、[オーストリア](../localizations/emea-aut-fi-sample.md)、[チェコ共和国](../localizations/emea-cze-fi-sample.md)、 [フランス](../localizations/emea-fra-cash-registers.md)、[ドイツ](../localizations/emea-deu-fi-sample.md)、[イタリア](../localizations/emea-ita-fpi-sample.md)、[ノルウェー](../localizations/emea-nor-cash-registers.md)、および[ポーランド](../localizations/emea-pol-fpi-sample.md)の編集機能と会計統合サンプルが含まれています。 | 管理者/作成者によって有効化 |
+| オフライン | [POS オフライン データベースの圧縮](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | この新機能は、チャネルの [営業時間](../dev-itpro/store-hours.md) 外に自動インデックス圧縮を有効化することで、オフライン データベースのサイズを削減します。 | 機能管理<p>*POS オフライン データベースの圧縮* |
 | 業績 | "顧客の編集" シナリオの RTS 依存関係の削除 | 販売時点管理 (POS) および eコマース チャネルでは、高可用性とハイ パフォーマンスがデフォルト期待されます。 こうした期待に応えるために、Dynamics 365 Commerce チャネルは、顧客情報を編集する際に、Commerce headquarters とのリアルタイムの通信に依存する必要がなくなりました。 非同期顧客および非同期でない顧客に対して顧客情報を非同期的に編集する機能を使用すると、Commerce headquarters へのリアルタイムの呼び出しを減らすのに役立ちます。 | 管理者/作成者によって有効化 |
 
 ## <a name="feature-state-changes-in-this-release"></a>このリリースでの機能の状態変更

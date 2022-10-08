@@ -1745,22 +1745,12 @@
               href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
             - name: 製品品質のシナリオ
               href: sensor-data-intelligence/sdi-scenario-product-quality.md
-            - name: 生産遅延のシナリオ
+            - name: 生産の遅延のシナリオ
               href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT インテリジェンス
           items:
-            - name: IoT インテリジェンスのホーム ページ
+            - name: IoT インテリジェンスは Sensor Data Intelligence に置き換えられました
               href: iot/iot-intelligence-home-page.md
-            - name: Azure リソースの設定
-              href: iot/iot-azure-setup.md
-            - name: IoT ハブのメッセージ スキーマの形式
-              href: iot/iot-schema-format.md
-            - name: メトリックスの設定
-              href: iot/iot-metrics-setup.md
-            - name: シナリオの設定
-              href: iot/iot-scenario-setup.md
-            - name: 監視および管理
-              href: iot/iot-management.md
         - name: マスター プラン
           items:
             - name: マスター プランのホーム ページ

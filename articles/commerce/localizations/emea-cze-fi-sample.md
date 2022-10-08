@@ -2,19 +2,19 @@
 title: チェコ共和国向け会計登録サービス統合サンプル
 description: この記事では、Microsoft Dynamics 365 Commerce のチェコ共和国向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-01
-ms.openlocfilehash: 3838792c0a420fb88ea9daab0a67c2e644c80681
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: de26b038009d8bf3518c67389c96aade19a0b65b
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313751"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631291"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>チェコ共和国向け会計登録サービス統合サンプル
 
@@ -48,7 +48,7 @@ ms.locfileid: "9313751"
 - 次のオプションなど、エラー処理。
 
     - 会計登録サービスが利用できない場合、準備ができていない場合、応答していない場合など、再試行できるときは会計登録をやり直します。
-    - 会計登録の延期。
+    - 会計登録を繰り延べます。
     - 会計登録をスキップするか、またはトランザクションを登録済みとしてマークして、失敗した理由と追加情報を取得するための情報コードを含めます。
     - 新しい販売トランザクションの開始時や販売トランザクション確定時に、会計登録サービスの使用可能性を確認します。
 
@@ -188,7 +188,7 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 
 1. [会計登録プロセスの設定](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process)。 また、[今回の会計登録サービス統合サンプルに固有](#set-up-the-registration-process)の会計登録処理の設定をメモしておきます。
 1. [エラーの処理の設定](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings)。
-1. [延期された会計登録の手動実行を可能にする](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)。
+1. [繰り延べした会計登録の手動実行を有効化します](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration)。
 1. [チャネル コンポーネントの構成](#configure-channel-components)。
 
 ### <a name="set-up-the-registration-process"></a>登録プロセスの設定

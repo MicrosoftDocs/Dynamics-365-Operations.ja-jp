@@ -2,19 +2,19 @@
 title: ドイツ向け会計登録サービス統合サンプル
 description: この記事では、Microsoft Dynamics 365 Commerce のドイツ向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-05-29
-ms.openlocfilehash: c3fdc0c378ad57300213357eccd50d817e06789a
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: a725badbce498e4e7b35aecb2500e273586c7b77
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313944"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631456"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>ドイツ向け会計登録サービス統合サンプル
 
@@ -265,7 +265,7 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
     > - 会計登録の最初の実行が成功しなかった場合でも、すべてのトランザクションを正しく登録する必要があるため、**会計登録プロセス** ページの **エラーでも続行** オプションをオフのままにすることを推奨します。
     > - **会計登録プロセス** ページで **スキップ** や **登録済としてマーク** オプションをオンにする前に、会計登録プロセスに対するこれらの変更について、税理士や地域の税務署と協議する必要があります。
 
-1. [延期された会計登録の手動実行を可能にする](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)。
+1. [繰り延べした会計登録の手動実行を有効化します](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration)。
 1. [チャネル コンポーネントの構成](#configure-channel-components)。
 
 ### <a name="set-up-the-registration-process"></a>登録プロセスの設定

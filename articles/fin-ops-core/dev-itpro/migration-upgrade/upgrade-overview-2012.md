@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 78ff6889162b6e34bd6c4b9ddd3921def445208b
-ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
+ms.openlocfilehash: dc781cf9ad6e1293735ddd154fb92fa37d853a7e
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9538540"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618366"
 ---
 # <a name="upgrade-from-ax-2012-to-finance-and-operations"></a>AX 2012 から財務と運用へのアップグレード
 
@@ -44,6 +44,10 @@ ms.locfileid: "9538540"
 ![アップグレード プロセス。](./media/upgrade-process.png)
 
 Dynamics AX 2012 ソリューションを財務と運用アプリに正常にアップグレードするのに最も重要な要素とベスト プラクティスについては、[Dynamics AX 2012 を財務と運用アプリにアップグレード](/training/paths/upgrade-ax-2012-finance-operations/) を参照してください。
+
+> [!IMPORTANT]
+> Microsoft Dynamics AX 2012 からのアップグレードは複雑です。 ある程度の作業、データのクリーンアップ、チューニング、カスタマイズを行うことなく、このプロセスがエンドツーエンドで実行されることは期待できません。 アップグレードに使用するツールとコードは、完全なソリューションではなく、フレームワークと見なすべきです。 AX 2012 データベースとメタデータ (コード) は多くの変数を含み、アップグレード プロセスですべての潜在的な問題を処理することは不可能です。 
+
 
 ## <a name="analyze"></a>分析
 

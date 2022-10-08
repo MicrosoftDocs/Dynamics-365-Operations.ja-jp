@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: b93852bfb7c6f5a9f2f83f30a1f76da3f9559c7e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d01ad490301dd2f4103b8bd3f702db12b93a45a8
+ms.sourcegitcommit: bd7b1ffe90b25eb4c68d6aaebd063bf33e09d9cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286840"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "9627499"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>チャネルの返品と払戻のポリシーを作成および更新する
 
@@ -36,12 +36,8 @@ Dynamics 365 Commerce のチャネルの返品ポリシーでは、小売業者�
 
 ## <a name="enable-return-policy"></a>返品ポリシーの有効化
 
-Commerce 本社で、チャネル返品ポリシー機能を有効にするには、次の手順を実行します。
+既定では、この機能は有効になっています。 機能名のリストで **チャネル返品ポリシーの有効化** を検索すると、**機能管理** ワークスペースで見つけることができます。
 
-1. Dynamics 365 Commerce の **機能管理** ワークスペースに移動します。
-1. 機能名のリストで、**チャネル返品ポリシーの有効化** 機能を検索します。
-1. **直ちに有効化** を選択します。
-1. **配送スケジュール** ページで、**1110** (グローバル コンフィギュレーション) ジョブを実行して機能の変更を配布します。
 
 ## <a name="configure-return-policy"></a>返品ポリシーのコンフィギュレーション
 

@@ -2,19 +2,19 @@
 title: X++ 例外処理
 description: この記事では、X++ の例外処理について説明します。
 author: josaw1
-ms.date: 11/01/2019
+ms.date: 09/28/2022
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0752f8e1d34f41e2e713ecedbfd674d986bc1d41
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0ddfdaed31d6f719a3395234e7e8e07ca1153e89
+ms.sourcegitcommit: 6b0efcfe2a1731011037d48df5b4a400ea1e1ce8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271319"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "9597804"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
@@ -520,5 +520,6 @@ public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
 | 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告** 例外をスローしないでください。 |
 | [X++ の SQL 接続エラー例外](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
+| タイムアウト       | SQL クエリの実行がタイムアウトしました。トランザクション内では例外をキャッチできません。 catch ブロックで retry ステートメントを使用すると、例外を再試行できます。 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
