@@ -394,6 +394,8 @@
                   items:
                     - name: Store Commerce アプリ
                       href: dev-itpro/store-commerce.md
+                    - name: モバイル プラットフォーム用 Store Commerce アプリ
+                      href: dev-itpro/store-commerce-mobile.md
                     - name: Modern POS を Store Commerce に移行する
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: デバイス管理実装ガイダンス
