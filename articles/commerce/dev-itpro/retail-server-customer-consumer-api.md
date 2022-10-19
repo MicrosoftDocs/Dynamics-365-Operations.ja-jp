@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f9d6c89fa0549d259c30117e1102b09e8ccc9b13
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28c670495909dff5cc1e678d90031523c9f63e03
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9278522"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643953"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 
@@ -228,14 +228,11 @@ Cloud Scale Unit (Commerce プロキシ経由) へのすべての要求は、主
 |-------------------|-----------------------------------------------------------------|-------------------------------------|--------------------------|-------------------------------------------------------------|
 | GetStateProvinces | countryRegionId string型, QueryResultSettings queryResultSettings | PageResult\<StateProvinceInfo\> | 従業員、顧客、匿名、アプリケーション               | 国/地域でフィルタされたすべての州または地域を取得します。 |
 
-## <a name="discount-controller"></a>割引のコントロール
+## <a name="pricing-controller"></a>価格コントローラー
 
-| API                       | パラメーター                                                                          | 戻り値                   | 対応している商取引上の役割 | 説明                                                     |
+| API                       | パラメーター                                                                          | 戻り値                   | 対応している商取引上の役割 | Description                                                     |
 |---------------------------|------------------------------------------------------------------------------------|--------------------------------|--------------------------|-----------------------------------------------------------------|
-| GetDiscountCodes          | QueryResultSettings queryResultSettings                                            | PageResult\<DiscountCode\> | 従業員                 | 一連の割引コードを取得します。                              |
-| GetDiscountCodesByOfferId | offerId string型, QueryResultSettings queryResultSettings                            | PageResult\<DiscountCode\> | 従業員                 | オファーIDでフィルタされた割引コード群を取得します。 |
-| GetDiscountCodesByKeyword | keyword string型, DateTimeOffset activeDate, QueryResultSettings queryResultSettings | PageResult\<DiscountCode\> | 従業員                 | 割引コードを検索します。                                    |
-| GetDiscountCode           | discountCode string型                                                                | DiscountCode                   | 従業員                 | 割引コードを取得します。                                         |
+| CalculateSalesDocument          | カート salesDocument                                            | カート | 従業員、顧客、匿名、アプリケーション                 | 一緒に購入した場合に、指定された数量の製品の価格と割引を順番に計算します。                              |
 
 ## <a name="zipcodes-controller"></a>郵便番号のコントロール
 

@@ -2,7 +2,7 @@
 title: 適格性のルールとオプションのコンフィギュレーション
 description: この記事では、Microsoft Dynamics 365 Human Resources で給付金管理の適格性のルールとオプションを設定する方法について説明します。
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337026"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644087"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>適格性のルールとオプションのコンフィギュレーション 
 
@@ -175,6 +175,7 @@ ms.locfileid: "9337026"
    | **バンドル** | バンドルの一意の識別子。 |
    | **説明** | バンドルの説明。 |
    | **マスター** | バンドル内のプランの 1 つをマスタープランとしてマークする必要があるかどうかを示します。 給付金管理者が従業員の給付金の選択を確認する前に、マスター プランをバンドルの一部として公開登録時に選択する必要があります。 |
+   | **要求済み**| バンドル内の他の計画をチェックアウトするために計画を選択する必要があることを示します。 複数の計画を **必須** としてマークできます。 この場合、バンドル内の計画をチェックアウトするには、**必須** とマークされているすべての計画を選択する必要があります。|
    | **発効日時** | バンドルがアクティブになる日時。 |
    | **失効日** | バンドルの有効期限が切れる日付。 12/31/2154 (無しを表す) が既定値です。 |
 

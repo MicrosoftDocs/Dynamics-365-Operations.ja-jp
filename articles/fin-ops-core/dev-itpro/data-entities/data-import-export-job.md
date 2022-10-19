@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: dfd06c30ae09a175862810a0c85399358a65fdb0
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357600"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671461"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>データ インポート/エクスポート ジョブの概要
 
@@ -64,6 +64,9 @@ ms.locfileid: "9357600"
 
 ### <a name="set-the-data-format-for-the-job"></a>ジョブのデータ形式を設定する
 エンティティを選択する時に、エクスポートまたはインポートするデータの形式を選択する必要があります。 **データ ソース設定** タイルを使用して、形式を定義します。 ソース データ形式は **タイプ**、**ファイル形式**、**行区切り** および **列区切り** の組み合わせです。 他にも属性がありますが、これは理解するために重要な要素です。 次の表に、有効な組み合わせを示します。
+
+> [!NOTE]
+> Excel ファイル形式は、現在政府機関のコミュニティ クラウド (GCC) のデータ管理ワークスペースで使用できません。
 
 | ファイル形式            | 行/列区切り                       | XML スタイル                 |
 |------------------------|--------------------------------------------|---------------------------|

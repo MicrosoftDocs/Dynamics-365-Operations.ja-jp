@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: ff3944b987314a688a5829b05f8627479e3e79ed
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428339"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644060"
 ---
 # <a name="the-asset-maintenance-scenario"></a>資産メンテナンス シナリオ
 
@@ -24,6 +24,12 @@ ms.locfileid: "9428339"
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 *資産メンテナンス* のシナリオ では、シナリオ データを使用してカウンタ レコードを作成できます。 カウンタ レコードは機械資産の使用を追跡し、コンピュータ資産の管理スケジュールを生成する入力として使用されます。
+
+## <a name="video-instructions"></a>ビデオの指示
+
+次のビデオでは、標準の[デモ データ](../../fin-ops-core/fin-ops/get-started/demo-data.md)を使用して資産メンテナンス シナリオを設定して試す方法を説明します。 この記事の残りのセクションでは、テキスト ベースの形式で同じ手順を示します。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58aRW]
 
 ## <a name="prepare-demo-data-for-the-asset-maintenance-scenario"></a>資産メンテナンスシナリオのデモ データの準備
 

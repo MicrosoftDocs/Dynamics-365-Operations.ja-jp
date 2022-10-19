@@ -1,8 +1,8 @@
 ---
 title: Store Commerce アプリ
-description: この記事では、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。
+description: この記事では、Windows 用の Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。 Dynamics 365 Commerce バージョン 10.0.25 以降に適用されます。
 author: josaw1
-ms.date: 06/10/2022
+ms.date: 10/07/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -10,28 +10,30 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 3ec56e1f8cb12c292aef73170a48de667dcc0b21
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b07c26a97e884f158fa0f50d8e95fe64cdc5fb0e
+ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274368"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "9640711"
 ---
 # <a name="store-commerce-app"></a>Store Commerce アプリ
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明し、Microsoft Dynamics 365 Commerce バージョン 10.0.25 およびそれ以降に適用します。
+この記事では、Windows 用の Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。 Dynamics 365 Commerce バージョン 10.0.25 以降に適用されます。
 
-Dynamics 365 Commerce Store Commerce アプリは、物理店舗に対する次世代の提供です。 Modern 販売時点管理 (MPOS) とクラウド販売時点管理 (CPOS) を 1 つのアプリケーションに統合して小売業者の配置の選択肢を提供し、パフォーマンスを向上させ、より優れたアプリケーション ライフサイクル管理 (ALM) を提供します。 同時に、拡張機能を含め、MPOS および CPOS のすべての機能が保持されます。
+Dynamics 365 Commerce Store Commerce アプリは、物理店舗向けの次世代のオファリングです。 Modern 販売時点管理 (MPOS) および Cloud 販売時点管理 (CPOS) を 1 つのアプリケーションに統合し、拡張機能を含めて MPOS および CPOS の機能を保持しながら、小売業者に配置の選択肢を提供し、パフォーマンスの向上や、優れたアプリケーション ライフサイクル管理 (ALM) を行う、現物店舗向けの次世代オファリングです。
 
 Store Commerce アプリは、レジ担当者、販売担当者、販売在庫担当者、在庫担当者、および店舗管理者などの第一線の作業者に豊富なコマース機能を提供します。 これらの作業者は、現金売りトランザクション、現金/シフト管理、顧客契約、支援販売、クライアンテリング、エンドレス アイル、注文処理/フルフィルメント、在庫管理、レポートなどのコマース操作を実行することができます。
 
-Store Commerce は、[Microsoft Edge WebView2](/microsoft-edge/webview2/) コントロールを使用して CPOS アプリケーションを表示する Windows 用の [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true) シェル アプリケーションです。 CPOS は Web ブラウザーでのみ実行できますが、Store Commerce は [MPOS](retail-modern-pos-architecture.md) などのネイティブ WIndows アプリケーションとして実行できます。 したがって、MPOSとCPOSの両方の利点を提供することができます。
+Store Commerce アプリは、[Microsoft Edge WebView2](/microsoft-edge/webview2/) コントロールを使用して CPOS アプリケーションを表示する Windows 用の [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true) シェル アプリケーションです。 CPOS は Web ブラウザでのみ実行できますが、Store Commerce は [MPOS](retail-modern-pos-architecture.md) のようにネイティブの Windows アプリケーションとして実行でき、MPOS と CPOS の両方のメリットがあります。
 
 Store Commerce はローカル ハードウェア ステーションおよびオフライン使用をサポートし、支払ターミナル、プリンター、キャッシュ ドロワーに直接統合できます。 共有ハードウェア ステーションを設定する必要なしに、ハードウェア デバイスを使用することができます。
 
 ユーザー インターフェイス (UI) を表示するために、Store Commerce は、ユニバーサル Windows プラットフォーム (UTC) アプリ表示フレームワークの代わりに Chromium エンジンを使用します。 Chromium エンジンは、Windows の ネイティブの JavaScript UWP アプリよりも表示パフォーマンスが優れています。 MPOS と Store Commerce の主な違いは、Store Commerce がアプリを表示するのに Chromium エンジンを使用する点です。
+
+Store Commerce アプリは、Android および iOS プラットフォームでも利用できます。 詳細については、[モバイル用 Store Commerce](store-commerce-mobile.md) を参照してください。 
 
 ## <a name="benefits-of-store-commerce"></a>Store Commerce の利点
 
@@ -65,7 +67,7 @@ Store Commerce は、2 つのタイプの配置トポロジをサポートして
 
 アプリケーション コンテンツを更新するには、最新バージョンの Store Commerce インストーラを実行します。 CSU を更新するとき、アプリケーション コンテンツは更新されません。 したがって、更新は個々のレジスターで管理することができます。
 
-アプリ内モードはオフライン モードをサポートします。 そのため、インストール中に **--installoffline** パラメーターを渡して、オフラインのデータベースを配置します。 オフライン モードの間 (つまり、接続がない場合)、アプリケーションは CSU または Commerce headquarters に接続することはできず、 ローカルに配置された CRT を使用します。
+アプリ内配置はオフライン モードをサポートします。 インストール中に **--installoffline** パラメーターを渡して、オフラインのデータベースを配置します。 オフライン モードでは、アプリケーションは CSU または Commerce headquarters に接続できず、ローカルに配置された CRT を使用します。
 
 > [!NOTE]
 > Store Commerce のインストール中に、ユーザーはパラメーターを渡して、ハイブリッド オプションまたはアプリ内オプションのいずれかを選択できます。 既定のオプションは、アプリ内配置です。
@@ -80,7 +82,7 @@ Store Commerce を更新するには、CSU を更新します。 その後、Sto
 
 ## <a name="store-commerce-and-mpos-parity"></a>Store Commerce と MPOS の機能
 
-Store Commerce には MPOS と完全に同等の機能があります。 現在、Store Commerce はデュアル ディスプレイをサポートしていません。 さまざまな POS アプリケーションおよびトポロジの詳細については [Modern POS (MPOS) かクラウド POS かの選択](../mpos-or-cpos.md)を参照してください。
+Store Commerce には MPOS と完全に同等の機能があります。 さまざまな POS アプリケーションおよびトポロジの詳細については [Modern POS (MPOS) かクラウド POS かの選択](../mpos-or-cpos.md)を参照してください。
 
 ## <a name="hardware-parity-between-mpos-and-store-commerce"></a>MPOS と Store Commerce の間のハードウェア パリティ
 
@@ -94,7 +96,7 @@ Store Commerce には CPOS と完全に同等の機能があります。 さら�
 
 ## <a name="store-commerce-and-mposcpos"></a>Store Commerce および MPOS/CPOS
 
-新しい配置にはすべて、Store Commerce または CPOS を使用することをお勧めします。 既存の顧客は、MPOS から Store Commerce への移行を計画する必要があります。 
+Windows およびモバイル プラットフォーム用の Store Commerce アプリは、Dynamics 365 Commerce 用の次世代の POS アプリケーションです。 Microsoft では、2023 年 10 月に MPOS および [Retail ハイブリッド アプリ](hybridapp.md) のハイブリッド アプリケーションを廃止する予定であり、新しいすべての配置には Store Commerce または CPOS の使用をお勧めします。 既存の顧客は、MPOS から Store Commerce への移行を計画する必要があります。 
 
 ### <a name="comparison-between-store-commerce-and-mpos"></a>Store Commerce と MPOS の比較
 

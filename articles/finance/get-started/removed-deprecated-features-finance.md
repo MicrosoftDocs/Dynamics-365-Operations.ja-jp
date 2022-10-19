@@ -2,7 +2,7 @@
 title: Dynamics 365 Finance の削除済みまたは非推奨の機能
 description: この記事では、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 author: kfend
-ms.date: 06/29/2022
+ms.date: 10/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462304"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643797"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは非推奨の機能
 
@@ -32,6 +32,18 @@ ms.locfileid: "9462304"
 
 > [!NOTE]
 > 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-finance-10031-release"></a>Finance 10.0.31 リリースの削除済みまたは非推奨の機能
+
+### <a name="edifact-paymul-at-configuration-under-payment-model"></a>支払モデルの EDIFACT PAYMUL (AT) コンフィギュレーション
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **廃止 / 削除の理由** | ISO 20022 pain.001.001.09 に基づく新しい形式に置き換えられました。 | 
+| **別の機能で置き換えられているか?**   | 有効 |
+| **影響を受ける製品領域**         | アプリケーション |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨: オーストリアの銀行は、2022 年 11 月から国境を越えた支払のために EDICFACT-PAYMUL を廃止し、XML バージョン pain.001.001.09N に置き替えます。 新しいコンフィギュレーションはグローバル コンフィギュレーション リポジトリの下に追加され、ユーザーは国境を越えた支払要求を完了できます。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Finance 10.0.30 リリースの削除済みまたは非推奨の機能
 

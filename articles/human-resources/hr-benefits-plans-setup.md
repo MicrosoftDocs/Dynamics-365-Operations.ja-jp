@@ -2,7 +2,7 @@
 title: 給付金プランの作成
 description: この記事では、Dynamics 365 Human Resources の給付金プランを設定する方法について説明します。
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337031"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643940"
 ---
 # <a name="create-a-benefit-plan"></a>福利厚生計画の作成
 
@@ -42,8 +42,9 @@ ms.locfileid: "9337031"
    | **プログラム** | オプションでプランを割り当てるプログラムを指定します。 |
    | **バンドル** | オプションでプランを割り当てるバンドルを指定します。 |
    | **マスター** | 計画が、配賦先のバンドル内のマスター計画であるかどうかを指定します。 |
+   | **要求済み** | バンドル内の他の計画をチェックアウトするために計画を選択する必要があることを示します。 複数の計画を **必須** としてマークできます。 この場合、バンドル内の計画をチェックアウトするには、**必須** とマークされているすべての計画を選択する必要があります。|
    | **発効日時** | プラン開始の日時。 既定値は現在のシステム日付です。 |
-   | **失効日時** | プラン終了の日時。 既定値は 12/31/2154 で、意味がありません。 |
+   | **失効日時** | プラン終了の日時。 既定値は 12/31/2154 で、意味がありません。  |
 
 4. **構成** タブで、作成するプラン タイプに応じて、次のフィールドに値を指定します。
 

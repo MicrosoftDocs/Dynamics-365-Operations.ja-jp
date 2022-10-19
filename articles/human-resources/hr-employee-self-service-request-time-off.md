@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d06c1d40416d2644499723317c0adfd805126b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eea8cdfc0cd2cfe8ca4cc94cefbf5772ab24d9a4
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882898"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643909"
 ---
 # <a name="request-time-off"></a>休暇申請
 
@@ -63,6 +63,10 @@ Dynamics 365 Human Resources において、休暇申請の送信や、休暇残
 2. 承認された休暇申請を表示するには、**承認済休暇** を選択します。 保留中の休暇申請を表示するには、**休暇申請** を選択します。
 
 ## <a name="cancel-time-off-requests"></a>休暇申請のキャンセル
+
+>[!NOTE] 
+> **休暇申請ワークフロー エクスペリエンス拡張** 機能が **機能管理** ワークスペースで有効な場合、**休暇のキャンセル** は使用できません。  
+
 
 1. **従業員セルフ サービス** ワークスペースで、**休暇残日数** タイルの **休暇の表示** を選択します。
 

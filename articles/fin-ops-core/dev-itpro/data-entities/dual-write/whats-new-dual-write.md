@@ -10,18 +10,27 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b0d653d9f39adbf151d3538aed6f4ac730346777
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: 4d016f0c85ca67a6cfc519ae9fb18e880e8f88fc
+ms.sourcegitcommit: a7c532ebfa1b9d45330836f793d6a4f5e992e70d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228003"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "9642522"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
 二重書き込みは、Microsoft Dynamics 365 の Customer Engagement アプリおよび財務と運用アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャです。 デュアル書き込みを開始する方法については、[デュアル書き込みホームページ](dual-write-home-page.md) を参照してください。
+
+## <a name="october-2022-release"></a>2022 年 10 月 リリース 
+
+[二重書き込みコア ソリューション 1.0.37.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) の 10 月リリースには次の変更が含まれます。
+
+| フィーチャー | Description | Status |
+|---|---|---|
+| バグ | このリリース以前は、Dataverse 側の二重書き込みプラグインは、更新されたフィールドが二重書き込みマップに含まれるかどうかにかかわらず、レコードが更新されるたびにトリガーされます。 その結果、Dataverse のすべてのデータベース操作でパフォーマンスのオーバーヘッドが発生しました。 このリリースでは、Dataverse 側の二重書き込みプラグインは、更新されたフィールドが二重書き込みマップに含まれる場合にのみ、トリガーされます。 | プレビュー |
+
 
 ## <a name="july-2022-release"></a>2022 年 7 月リリース 
 

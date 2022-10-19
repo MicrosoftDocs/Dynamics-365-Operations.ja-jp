@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e15828fbf29bed8d4de459fd937af08e0178e79
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d8f3b6e32ee7f25d659e4cf8b489b0cfe968b935
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288902"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671441"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -33,6 +33,7 @@ ms.locfileid: "9288902"
 + カナダ
 + ヨーロッパ
 + フランス
++ ドイツ
 + インド
 + 日本
 + 南アフリカ
@@ -150,21 +151,21 @@ ms.locfileid: "9288902"
     *二重書き込み登録とランタイム プラグインが有効です*<br>
     *Dataverse で CRUD 操作を確実に行うには、二重書き込みプラグインを有効にする必要があります*
 
-7. **二重書き込みアプリケーション オーケストレーション ソリューション** マップ ソリューションをインストールします。
+7. **二重書き込みアプリケーション オーケストレーション ソリューション** をインストールします。
 
-    Power Apps の左ウィンドウで、**ソリューション** を選択します。 **AppSource を開く** を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション** という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューション** の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](/powerapps/maker/common-data-service/solutions-overview)を参照してください。 
- 
-    二重書き込みコア ソリューションには、テーブル マップのメタデータが含まれていますが、二重書き込みアプリケーション オーケストレーション ソリューションには、次の追加のマスタ データ シナリオが含まれます:
+    Power Apps の左ウィンドウで、**Solutions** を選択します。 **AppSource を開く** を選択し、パッケージ、具体的には、[二重書き込みアプリケーション コア ソリューション](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview)、[二重書き込み人事ソリューション](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview)、[二重書き込みサプライ チェーン ソリューション](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview)、[二重書き込み財務ソリューション](https://appsource.microsoft.com/dynamics-365/mscrm.dwfne?tab=Overview)、[二重書き込みメモ ソリューション](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview)、[二重書き込み資産管理ソリューション](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview)、および[二重書き込み当事者およびグローバル アドレス帳ソリューション](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview)を検索します。 これらのソリューションは、次のようなマスター データ シナリオに対応しています
     
     + 顧客、製品、仕入先。
-    + 見込顧客から現金などのエンド ツー エンド プロセス フロー。
-    + 価格設定などのオンデマンド機能。
-    + 元帳、税、支払条件、およびスケジュールの参照データ。 
+    + 見積もりから現金などのエンド ツー エンド プロセス フロー。
+    + 価格、在庫、ATP 日付などのオンデマンド機能。
+    + 元帳、税、支払条件、およびスケジュールなどの参照データ。
+
+[前提条件の指示に従って](/dev-itpro/data-entities/dual-write/separated-solutions)、探しているソリューションを見つけてください。 ソリューションを選択し、プロンプトに従ってインポートします。 
+     
+二重書き込みフレームワークは拡張可能で、数回の追加クリックで顧客中心のビジネス データ交換にも対応します。
     
-    二重の書き込みは今後も拡大し続け、関係者、プロジェクト、手持在庫など、より多くのシナリオをサポートします。 フレームワークは拡張可能で、数回の追加クリックで顧客中心のビジネス データ交換にも対応します。
-    
-    > [!NOTE]
-    > 二重書き込みウィザードを使用して環境をリンクする場合は、次の手順の一部として **ソリューションの適用** を選択する必要があります。 Power Apps ソリューション セクションでソリューション パッケージが作成されるまでに数分かかる場合があります。 表示されるまで待ってから、次のステップに進みます。
+> [!NOTE]
+> 二重書き込みウィザードを使用して環境をリンクする場合は、次の手順の一部として **ソリューションの適用** を選択する必要があります。 Power Apps ソリューション セクションでソリューション パッケージが作成されるまでに数分かかる場合があります。 表示されるまで待ってから、次のステップに進みます。
 
 8. 見込顧客を現金化 (P2C) するソリューションをインストールします。
 

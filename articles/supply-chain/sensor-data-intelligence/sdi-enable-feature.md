@@ -11,17 +11,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: aaf00b5ae459ae2d2a7be85360c9478049d873fd
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 536bf141d473a2886d1ca44dcf92a8febc2d12ce
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428384"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643853"
 ---
 # <a name="turn-on-sensor-data-intelligence-for-your-system"></a>システムに対して Sensor Data Intelligence を有効にする
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
+## <a name="video-instructions"></a>ビデオの指示
+
+次のビデオでは、センサー データ インテリジェンス機能を有効にし、[必要な Azure リソースを配置する](sdi-deploy-iot-solution-on-azure.md)方法を説明します。 この記事の他のセクションでは、テキスト ベースの形式で同じ手順を示します。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+
+## <a name="procedure"></a>手順
 
 Sensor Data Intelligence を使用する前に、システムで有効化する必要があります。
 

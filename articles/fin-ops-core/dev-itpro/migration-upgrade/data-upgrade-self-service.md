@@ -2,19 +2,19 @@
 title: AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 description: この記事では、セルフサービス環境で Microsoft Dynamics AX 2012 からデータ アップグレードを行う方法について説明します。
 author: veeravendhan-s
-ms.date: 05/05/2022
+ms.date: 10/06/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: vesakkar
 ms.search.validFrom: 2021-06-30
-ms.openlocfilehash: ebbb105409070605bd513ac81fce5c1a465fec52
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 578c7bf4b6a959a04fbbc37978f5e59d578aa4dc
+ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124046"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "9640712"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-self-service-environments"></a>AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 
@@ -58,12 +58,13 @@ ms.locfileid: "9124046"
 
     レプリケーション コンポーネントがインストールされていない場合は、[SQL Server レプリケーションのインストール](/sql/database-engine/install-windows/install-sql-server-replication)の手順に従いインストールします。
 
-5. ソース データベース サーバーで SQL Server Agent を有効にして起動します。
+6. SQL Server 認証は、**SQL Server および Windows 認証モード** に設定する必要があります。 (この変更を行うには、SQL Server サービスを再起動する必要があります。) ツールキットではネイティブ SQL ログインのみを使用します。
+7. ソース データベース サーバーで SQL Server Agent を有効にして起動します。
 
     > [!NOTE]
     > ユーザーはソース データベースで **DB\_Owner** 権限を持ち、マスター データベースおよびソース データベースにアクセスできる必要があります。
 
-6. **Migration Toolkit の設定:** ソース データベース テーブルの一部をターゲット データベースに複製しない場合は、IgnoreTables.xml ファイルでそれらを指定できます。 同様に、一部の関数を複製しない場合は、IgnoreFunctions.xml ファイルでそれらを指定できます。
+8. **Migration Toolkit の設定:** ソース データベース テーブルの一部をターゲット データベースに複製しない場合は、IgnoreTables.xml ファイルでそれらを指定できます。 同様に、一部の関数を複製しない場合は、IgnoreFunctions.xml ファイルでそれらを指定できます。
 
     - **IgnoreTables.xml ファイルのパス:** Data\\IgnoreTables.xml
     - **IgnoreFunctions.xml ファイルのパス:** Data\\IgnoreFunctions.xml
@@ -96,7 +97,7 @@ ms.locfileid: "9124046"
     > [!IMPORTANT]
     > これらの XML ファイルで指定されたテーブルと関数はターゲット データベースに複製されないため、同じ形式に従う必要があります。
     
-7. レプリケーションの待機時間/パフォーマンスを最適化するために、**App.config** ファイルで次のディストリビューターのパラメーターを更新できます。
+9. レプリケーションの待機時間/パフォーマンスを最適化するために、**App.config** ファイルで次のディストリビューターのパラメーターを更新できます。
 
     - **MaxBcpThreads** - 既定では、パラメーターは **6** に設定されています。 機械のコア数が 6 未満の場合は、その値をコア数に更新します。 指定できる最大値は **8** です。
     - **NumberOfPublishers** - 既定では、パラメーターは **2** に設定しています。 その値を使用することをお勧めします。
@@ -144,6 +145,8 @@ ms.locfileid: "9124046"
     - レプリケーション スナップショット パス **(D:\\SQLServer\\Snapshot** など)
 
     > [!IMPORTANT]
+    > SQL Server 認証を使用する必要があります。 ドメイン サインインは使用できません。
+    > 
     > 指定した配布データベースとレプリケーション スナップショット パスには、十分な容量が必要です。 容量は、少なくともソース データベースのサイズにすることをお勧めします。 AX 2012 データベースで圧縮を使用した場合、スナップショットが圧縮されていないと必要容量が大きくなります。 パスは、コンピューターのローカル ディスクに含まれる必要があります。 共有パスの使用を避けます。
     > 
     > 仮想コンピューター (VM) またはコンピューター (手順 1. の許可リストのため) に対して静的 IP アドレスを設定することをお勧めします。 これにより、ターゲット データベースに関する接続の問題を防ぐのに役立ちます。

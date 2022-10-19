@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 description: この記事では、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 08/10/2022
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: b5d7112495ed881d37607ecdf28e56a047df1989
-ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
+ms.openlocfilehash: 4a33332597374686cc2980e6a9e214430377fd06
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9592025"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643957"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 
@@ -206,29 +206,17 @@ Finance + Operations のインフラストラクチャを設定するには、�
 - SSRS は、SSRS コンピューターに **ネイティブ** モードでインストールされる (コンフィギュレーションはされない) 必要があります。
 - オプション: AD CS がネットワークにインストールおよびコンフィギュレーションされます。
 
-次の表は、LCS からダウンロードされたインフラストラクチャ セットアップ スクリプトによって VM にインストールされる必須ソフトウェアを示します。
+次の表は、LCS からダウンロードされたインフラストラクチャ セットアップ スクリプトによって VM にインストールされる Microsoft Windows の機能を示します。 ダウンロードしてインストールする必要がある追加の必須ソフトウェアの詳細については、[VMの設定](#setupvms)を参照してください。
 
-| ノード タイプ | コンポーネント | 細目 |
+| ノード タイプ | コンポーネント | 詳細 |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) |
-| AOS       | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | AOS       | Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
-| AOS       | Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | AOS       | Microsoft Internet Information Services (IIS) | **Windows の機能:** WAS、WAS-Process-Model、WAS-NET-Environment、WAS-Config-APIs、Web-Server、Web-WebServer、Web-Security、Web-Filtering、Web-App-Dev、Web-Net-Ext、Web-Mgmt-Tools、Web-Mgmt-Console |
-| AOS       | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
-| AOS       | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
-| AOS       | Microsoft Visual Studio 2017 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 |
-| AOS       | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | BI        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
-| BI        | .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
-| BI        | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | MR        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | MR        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
-| MR        | .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
-| MR        | Visual Studio 2013 用 Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
-| ORCH      | Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | https://go.microsoft.com/fwlink/?linkid=2088631 |
 
 ### <a name="step-1-plan-your-domain-name-and-dns-zones"></a><a name="plandomain"></a>手順 1、 ドメイン名と DNS ゾーンの計画
 
@@ -594,26 +582,31 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
-    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    # .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion "10.0.17"
+    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion "<Version of D365 that you will deploy>"
     ```
+
+    > [!NOTE]
+    > このスクリプトは、配置する D365 Finance + Operations のバージョンに従って、異なるバージョンのインストールや要求を行います。 スクリプトで配置するバージョンの環境が正しく構成されるように、配置するアプリケーションのバージョンを指定します。 プラットフォーム更新プログラム 41 を使用してアプリケーション 10.0.17 を配置する場合は、D365FOVersion パラメータに 10.0.17 を指定します。
 
 2. 次の Microsoft Windows インストーラー (MSI) を全ての VM によりアクセスできるファイル共有にダウンロードします。 たとえば、**インフラストラクチャ** フォルダーを格納する場所と同じファイル共有を使用します。
 
-    | コンポーネント | リンクのダウンロード | 必要なファイル名 |
-    |-----------|---------------|--------------------|
-    | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | Msodbcsql .msi |
-    | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) | msodbcsql\_17.msi |
-    | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) | SSMS-Setup-\*.exe |
-    | Microsoft Visual Studio 2013 用 Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
-    | Microsoft Visual Studio 2017 用 Visual C++ 再頒布可能パッケージ | <https://lcs.dynamics.com/V2/SharedAssetLibrary>に移動して、資産タイプとして **モデル** を選択して、**VC++ 17 再配布可能ファイル** を選択します。 | vc\_redist.x64\_14\_16\_27024.exe |
-    | Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
-    | .NET Framework version 4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> | ndp48-x86-x64-allos-enu.exe |
-    | .NET Framework version 4.7.2 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net472-offline> | ndp472-x86-x64-allos-enu.exe |
+    | コンポーネント | リンクのダウンロード | 必要なファイル名 | 以降で必要 | 以降で不要 |
+    |-----------|---------------|--------------------|----------------|--------------------|
+    | SNAC – ODBC ドライバー 13 | [ODBC ドライバー 13.1](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131) | Msodbcsql .msi | 10.0.0 | 該当なし |
+    | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) | msodbcsql\_17\_5.msi | 10.0.17 | 該当なし |
+    | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) | SSMS-Setup-ENU.exe | 10.0.0 | 10.0.30 |
+    | SQL Server Management Studio 18.x | [SSMS 18.x](/sql/ssms/release-notes-ssms##current-ssms-release) | SSMS-Setup-18-ENU.exe | 10.0.31 | 該当なし |
+    | Microsoft Visual Studio 2013 用 Visual C++ 再頒布可能パッケージ | [Visual C++ 2013 および Visual C++ 再頒布可能パッケージの更新](https://support.microsoft.com/help/3179560) | vcredist\_x64.exe | 10.0.0 | 該当なし |
+    | Microsoft Visual C++ 2015-2019 再頒布可能パッケージ | [結合された Visual C++](/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) | vc\_redist.x64\_1519.exe | 10.0.17 | 10.0.30 |
+    | Microsoft Visual C++ 2015-2022 再頒布可能パッケージ | [結合された Visual C++](/cpp/windows/latest-supported-vc-redist#visual-studio-2015-2017-2019-and-2022) | vc\_redist.x64\_1522.exe | 10.0.31 | 該当なし|
+    | Access データベース エンジン 2010 再頒布可能パッケージ | [Microsoft Access データベース エンジン 2010 再頒布可能パッケージ](https://www.microsoft.com/download/details.aspx?id=13255) | AccessDatabaseEngine\_x64.exe | 10.0.0 | 該当なし |
+    | .NET Framework version 4.8 (CLR 4.0) | [.NET Framework 4.8 オフライン インストーラー](https://dotnet.microsoft.com/download/thank-you/net48-offline) | ndp48-x86-x64-allos-enu.exe | 10.0.0 | 該当なし |
+    | .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 オフライン インストーラー](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | 該当なし |
 
 > [!IMPORTANT]
-> - Management Studio の設定が、対象となるコンピューターのオペレーティング システムと同じ言語であることを確認します。
+> - Management Studio の設定が 英語 (米国) であることを確認してください。
 > - 前の表の "必要なファイル名" 列に指定されている名前がインストーラ ファイルに設定されていることを確認してください。 予期した名前がないファイルの名前を変更します。 そうしないと、Configure-PreReq.ps1 スクリプトの実行時にエラーが発生します。
-> - VC++ 17 再配布可能ファイル をダウンロードする場合、実行可能ファイルが zip ファイル内に含まれます。
 
 次に、各 VM についてこれらのステップに従うか、または単一のコンピューターからリモート処理を使用します。
 

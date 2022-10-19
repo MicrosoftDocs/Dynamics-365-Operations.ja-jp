@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: bking
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: be3e6438e86911d9703a5ac7413515389308b340
-ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
+ms.openlocfilehash: 5bf07356b5613f438034f8dabac7db197e69a6c8
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9348357"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644033"
 ---
 # <a name="revenue-recognition-overview"></a>収益認識の概要
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>この機能は 2023 年 10 月で廃止される予定です。新しいユーザーはサブスクリプション請求管理を使用する必要があります。
 
 製品、サービス、サブスクリプションなどの複数の要素を販売する業界の会社では、一連の会社固有および業界固有のガイドラインに基づいて収益を認識できるように、複数要素注文を細分化できる能力が求められます。
 
