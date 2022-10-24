@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムの新機能および変更された機能に関するホームページ
                   href: get-started/whats-new-home-page.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.31 (2023 年 2 月)
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.30 (2022 年 11 月)
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.29 (2022 年 10 月)
@@ -182,6 +184,8 @@
                   href: data-entities/configuration-data-templates.md
                 - name: エンティティの変更の追跡
                   href: data-entities/entity-change-track.md
+                - name: エンティティに対する行バージョン変更追跡の許可
+                  href: data-entities/rowversion-change-track.md
                 - name: 標準データ エンティティに関する情報の検索
                   href: data-entities/data-entities-report.md
                 - name: 複数のワークシート付きデータ テンプレート
@@ -1228,6 +1232,8 @@
                   href: power-platform/admin-reference.md
                 - name: Dataverse 仮想エンティティを有効化する
                   href: power-platform/enable-virtual-entities.md
+                - name: Dataverse の仮想テーブルの変更の追跡
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
                 - name: Power Apps ポータルと、財務と運用
                   href: power-platform/power-portal-reference.md
                 - name: 財務と運用の仮想エンティティに関するよくあるご質問

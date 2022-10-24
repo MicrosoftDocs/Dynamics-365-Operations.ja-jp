@@ -888,6 +888,8 @@
               href: async-customer-mode.md
             - name: 非同期顧客の同期顧客への変換
               href: convert-async-to-sync.md
+            - name: 顧客操作の同期の監査
+              href: audit-async-customer-operations.md
             - name: 非同期顧客作成モードに関するよくあるご質問
               href: async-customer-mode-faq.md
             - name: クライアンテリング
@@ -1296,8 +1298,14 @@
                       href: cookie-consent-module.md
                 - name: チャット モジュール
                   items:
-                    - name: Commerce チャット モジュール
+                    - name: Commerce チャット機能の概要
+                      href: commerce-chat-overview.md
+                    - name: Customer Service 用オムニチャネルを使った Commerce チャット モジュール
                       href: commerce-chat-module.md
+                    - name: Power Virtual Agents による Commerce チャット モジュール
+                      href: chat-module-pva.md
+                    - name: Commerce チャット モジュールのプロアクティブなチャット パラメータ
+                      href: chat-proactive-chat-parameters.md
             - name: 検索
               items:
                 - name: 既定のカテゴリ ランディング ページと検索結果ページの概要

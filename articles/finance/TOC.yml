@@ -12,6 +12,8 @@
               items:
                 - name: Finance の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.31 (1 月)
+                  href: get-started/whats-new-changed-10-0-31.md
                 - name: Finance 10.0.30 (11 月)
                   href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (10 月)
@@ -232,6 +234,26 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: 買掛金勘定の請求書照合検証の設定
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Invoice Capture ソリューション
+              items:
+                - name: Invoice Capture の概要
+                  href: accounts-payable/invoice-capture-overview.md
+                - name: Invoice Capture のインストール
+                  href: accounts-payable/install-invoice-capture.md
+                - name: Invoice Capture の構成
+                  href: accounts-payable/config-invoice-capture.md
+                - name: Invoice Capture の構成グループ
+                  href: accounts-payable/invoice-capture-config-group.md
+                - name: Invoice Capture のマッピング ルール
+                  href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Invoice Capture ワークスペース
+                  href: accounts-payable/invoice-capture-workspace.md
+                - name: Invoice Capture の詳細設定
+                  href: accounts-payable/invoice-capture-advanced-settings.md
+                - name: Invoice Capture ダッシュボード
+                  href: accounts-payable/invoice-capture-dashboard.md
+                - name: Invoice Capture の受信ファイル
+                  href: accounts-payable/invoice-capture-rec-files.md
             - name: 仕入先請求書の自動化
               items:
                 - name: 自動化された仕入先請求プロセスの概要
