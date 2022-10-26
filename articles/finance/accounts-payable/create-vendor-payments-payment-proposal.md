@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b868db915385a8433845e810cf169f1bf1686e3d
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845377"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682881"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>仕入先支払を使用して仕入先請求書を作成
 
@@ -111,7 +111,7 @@ ms.locfileid: "8845377"
 -   **分析コードのコントロール** フィールドは、詳細な分析コードを定義しなくても有効になります。 支払提案は、分析コードを考慮しなくても作成されます。 作成されたトランザクションは適用されるエントリから分析コードを継承しません。
 -   **財務分析コードのコントロール** フィールドは有効化されており、詳細な分析コードも有効になっています。 ここでは、分析コードが仕訳帳にコピーされる方法を定義します。 例: • 支払方法の事業単位ごとに支払提案を作成するには、**BusinessUnit** チェック ボックスをオンにします • 支払方法の原価部門ごとに支払提案を作成するには、**CostCenter** チェック ボックスをオンにします。
 
-> [[!NOTE]
+>[!NOTE]
 > 3 番目のオプションで複数の分析コードを選択すると、分析コードの組み合わせに対して支払提案が作成されます。
 
 #### <a name="bank-account-selection"></a>銀行口座の選択

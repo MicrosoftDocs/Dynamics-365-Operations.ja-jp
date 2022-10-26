@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 4a33332597374686cc2980e6a9e214430377fd06
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: fed6bb0972b35ce0803bcaa5e397d0f2bc892be5
+ms.sourcegitcommit: 5d33a3398e7e1d3494bfc3cad342fffa7cfa5b76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643957"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680027"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
 
@@ -127,44 +127,46 @@ VMware を使用している場合は、次の Web ページに記載されて�
 
 | マシンの目的          | Service Fabric ノード タイプ | コンピューター名    | IP アドレス    |
 |--------------------------|--------------------------|-----------------|---------------|
-| ドメイン コントローラー        |                          | DAX7SQLAODC1    | 10.179.108.2  |
-| AD FS                    |                          | DAX7SQLAOADFS1  | 10.179.108.3  |
-| ファイル サーバー              |                          | DAX7SQLAOFILE1  | 10.179.108.4  |
-| SQL Always-On クラスター    |                          | DAX7SQLAOSQLA01 | 10.179.108.5  |
-|                          |                          | DAX7SQLAOSQLA02 | 10.179.108.6  |
-|                          |                          | DAX7SQLAOSQLA   | 10.179.108.9  |
-| クライアント                   |                          | SQLAOCLIENT1    | 10.179.108.11 |
-| AOS 1                    | AOSNodeType              | SQLAOSF1AOS1    | 10.179.108.12 |
-| AOS 2                    | AOSNodeType              | SQLAOSF1AOS2    | 10.179.108.13 |
-| AOS 3                    | AOSNodeType              | SQLAOSF1AOS3    | 10.179.108.14 |
-| オーケストレータ 1           | OrchestratorType         | SQLAOSF1ORCH1   | 10.179.108.21 |
-| オーケストレータ 2           | OrchestratorType         | SQLAOSF1ORCH2   | 10.179.108.22 |
-| オーケストレータ 3           | OrchestratorType         | SQLAOSF1ORCH3   | 10.179.108.23 |
-| Management Reporter ノード | MRType                   | SQLAOSMR1       | 10.179.108.31 |
-| SSRS ノード 1              | ReportServerType         | SQLAOSFBI1      | 10.179.108.41 |
+| ドメイン コントローラー        |                          | LBDEN01DC1      | 10.179.108.2  |
+| AD FS                    |                          | LBDEN01ADFS1    | 10.179.108.3  |
+| ファイル サーバー              |                          | LBDEN01FS01     | 10.179.108.4  |
+| SQL Always-On クラスター    |                          | LBDEN01SQLA01   | 10.179.108.5  |
+|                          |                          | LBDEN01SQLA02   | 10.179.108.6  |
+|                          |                          | LBDEN01SQLA     | 10.179.108.9  |
+| AOS 1                    | AOSNodeType              | LBDEN01SFAOS1   | 10.179.108.11 |
+| AOS 2                    | AOSNodeType              | LBDEN01SFAOS2   | 10.179.108.12 |
+| AOS 3                    | AOSNodeType              | LBDEN01SFAOS3   | 10.179.108.13 |
+| オーケストレータ 1           | OrchestratorType         | LBDEN01SFORCH1  | 10.179.108.21 |
+| オーケストレータ 2           | OrchestratorType         | LBDEN01SFORCH2  | 10.179.108.22 |
+| オーケストレータ 3           | OrchestratorType         | LBDEN01SFORCH3  | 10.179.108.23 |
+| Management Reporter ノード | MRType                   | LBDEN01SFMR1    | 10.179.108.31 |
+| SSRS ノード 1              | ReportServerType         | LBDEN01SFBI1    | 10.179.108.41 |
+| クライアント                   |                          | LBDEN01CLIENT1  | 10.179.108.51 |
+
 
 次の表に、バッチ実行と対話型セッションが専用ノードで実行されるハードウェア レイアウトの例を示します。 詳細については、[オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション](./onprem-batchonly.md)を参照してください。
 
 | マシンの目的          | Service Fabric ノード タイプ   | コンピューター名    | IP アドレス    |
 |--------------------------|----------------------------|-----------------|---------------|
-| ドメイン コントローラー        |                            | DAX7SQLAODC1    | 10.179.108.2  |
-| AD FS                    |                            | DAX7SQLAOADFS1  | 10.179.108.3  |
-| ファイル サーバー              |                            | DAX7SQLAOFILE1  | 10.179.108.4  |
-| SQL Always-On クラスター    |                            | DAX7SQLAOSQLA01 | 10.179.108.5  |
-|                          |                            | DAX7SQLAOSQLA02 | 10.179.108.6  |
-|                          |                            | DAX7SQLAOSQLA   | 10.179.108.9  |
-| クライアント                   |                            | SQLAOCLIENT1    | 10.179.108.11 |
-| AOS 1                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS1    | 10.179.108.12 |
-| AOS 2                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS2    | 10.179.108.13 |
-| AOS 3                    | BatchOnlyAOSNodeType       | SQLAOSF1AOS3    | 10.179.108.14 |
-| AOS 4                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS4    | 10.179.108.15 |
-| AOS 5                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS5    | 10.179.108.16 |
-| AOS 6                    | InteractiveOnlyAOSNodeType | SQLAOSF1AOS6    | 10.179.108.17 |
-| オーケストレータ 1           | OrchestratorType           | SQLAOSF1ORCH1   | 10.179.108.21 |
-| オーケストレータ 2           | OrchestratorType           | SQLAOSF1ORCH2   | 10.179.108.22 |
-| オーケストレータ 3           | OrchestratorType           | SQLAOSF1ORCH3   | 10.179.108.23 |
-| Management Reporter ノード | MRType                     | SQLAOSMR1       | 10.179.108.31 |
-| SSRS ノード 1              | ReportServerType           | SQLAOSFBI1      | 10.179.108.41 |
+| ドメイン コントローラー        |                            | LBDEN01DC1      | 10.179.108.2  |
+| AD FS                    |                            | LBDEN01ADFS1    | 10.179.108.3  |
+| ファイル サーバー              |                            | LBDEN01FS01     | 10.179.108.4  |
+| SQL Always-On クラスター    |                            | LBDEN01SQLA01   | 10.179.108.5  |
+|                          |                            | LBDEN01SQLA02   | 10.179.108.6  |
+|                          |                            | LBDEN01SQLA     | 10.179.108.9  |
+| AOS 1                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS1   | 10.179.108.11 |
+| AOS 2                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS2   | 10.179.108.12 |
+| AOS 3                    | BatchOnlyAOSNodeType       | LBDEN01SFAOS3   | 10.179.108.13 |
+| AOS 4                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS4   | 10.179.108.14 |
+| AOS 5                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS5   | 10.179.108.15 |
+| AOS 6                    | InteractiveOnlyAOSNodeType | LBDEN01SFAOS6   | 10.179.108.16 |
+| オーケストレータ 1           | OrchestratorType           | LBDEN01SFORCH1  | 10.179.108.21 |
+| オーケストレータ 2           | OrchestratorType           | LBDEN01SFORCH2  | 10.179.108.22 |
+| オーケストレータ 3           | OrchestratorType           | LBDEN01SFORCH3  | 10.179.108.23 |
+| Management Reporter ノード | MRType                     | LBDEN01SFMR1    | 10.179.108.31 |
+| SSRS ノード 1              | ReportServerType           | LBDEN01SFBI1    | 10.179.108.41 |
+| クライアント                   |                            | LBDEN01CLIENT1  | 10.179.108.51 |
+
 
 ## <a name="overview-of-the-setup-process"></a>設定プロセスの概要
 
@@ -250,7 +252,7 @@ Service Fabric Cluster と展開されているすべてのアプリケーショ
 
 | 使用方法                                      | 説明 | 追加条件 |
 |----------------------------------------------|-------------|-------------------------|
-| SQL Server SSL 証明書                   | この証明書は、ネットワーク上の SQL Server インスタンスとクライアント アプリケーションの間で転送されるデータを暗号化するために使用されます。 | <p>証明書の場合、ドメイン名は SQL Server のインスタンスまたはリスナーの完全修飾ドメイン名 (FQDN) と一致する必要があります。 たとえば、SQL のリスナーが DAX7SQLAOSQLA のコンピューターにホストされている場合、証明書のドメイン ネーム システム (DNS) 名は、DAX7SQLAOSQLA.contoso.com です。</p><ul><li>**共通名 (CN):** DAX7SQLAOSQLA.contoso.com</li><li>**DNS 名:** DAX7SQLAOSQLA.contoso.com</li></ul> |
+| SQL Server SSL 証明書                   | この証明書は、ネットワーク上の SQL Server インスタンスとクライアント アプリケーションの間で転送されるデータを暗号化するために使用されます。 | <p>証明書の場合、ドメイン名は SQL Server のインスタンスまたはリスナーの完全修飾ドメイン名 (FQDN) と一致する必要があります。 たとえば、SQL のリスナーが LBDEN01SQLA01 のコンピューターにホストされている場合、証明書のドメイン ネーム システム (DNS) 名は、LBDEN01SQLA01.contoso.com です。</p><ul><li>**共通名 (CN):** LBDEN01SQLA01.contoso.com</li><li>**DNS 名:** LBDEN01SQLA01.contoso.com</li></ul> |
 | Service Fabric Server 証明書            | この証明書を使用して、Service Fabric ノード間のノードからノードの通信を保護します。 これはクラスターに接続するクライアントに提示されるサーバー証明書としても使用されます。 | <p>この証明書については、\*.contoso.com などのドメイン用ワイルドカード SSL 証明書を使用することもできます。 (詳細については、このテーブルに続くテキストを参照してください。) それ以外の場合は、次の値を使用します。</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS 名:** sf.d365ffo.onprem.contoso.com</li></ul> |
 | Service Fabric Client 証明書            | クライアントはこの証明書を使用して Service Fabric cluster を表示および管理します。 | <ul><li>**CN:** client.d365ffo.onprem.contoso.com</li><li>**DNS 名:** client.d365ffo.onprem.contoso.com</li></ul> |
 | 暗号化証明書                     | この証明書は、SQL Server パスワードとユーザー アカウントのパスワードなどの重要な情報を暗号化するために使用されます。 | <p>証明書は、**Microsoft Enhanced Cryptographic Provider v1.0** プロバイダーを使用して作成する必要があります。</p><p>証明書キーの使用にはデータ暗号化 (10) が含まれている必要があり、サーバー認証またはクライアント認証は含めないでください。</p><p>詳細については、[Service Fabric アプリケーションでの機密情報の管理](/azure/service-fabric/service-fabric-application-secret-management) を参照してください。</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS 名:** axdataenciphermentcert</li></ul> |
@@ -371,7 +373,7 @@ Microsoft ではセットアップ エクスペリエンスを向上させるた
 7. **infrastructure** という名前のフォルダーにファイルを解凍します。
 
 > [!IMPORTANT]
-> **インフラストラクチャ** フォルダーをファイル共有に格納することが重要です。 これにより、各マシンにフォルダーをコピーすることなく、任意のマシンでスクリプトを実行できます。 このフォルダーの ConfigTemplate.xml ファイルにすべての編集を加えるよう確認します。
+> **インフラストラクチャ** フォルダーをファイル共有 (\\\\LBDEN01FS01\\ インストールなど) に格納することが重要です。 これにより、各マシンにフォルダーをコピーすることなく、任意のマシンでスクリプトを実行できます。 このフォルダーの ConfigTemplate.xml ファイルにすべての編集を加えるよう確認します。
 
 ### <a name="step-7-describe-your-configuration"></a><a name="describeconfig"></a>手順 7、 コンフィギュレーションの記述
 
@@ -434,9 +436,9 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 
 以下の SMB 3.0 ファイル共有を設定する必要があります。
 
-- AOS にアップロードされるユーザー ドキュメントを格納するファイル共有 (たとえば、\\\\DAX7SQLAOFILE1\\aos-storage)。
-- デプロイメントを調整するための最新のビルド ファイルと構成ファイルを保存するファイル共有 (たとえば、\\\\DAX7SQLAOFILE1\\agent)。
-- Service Fabric Cluster (たとえば、\\\\DAX7SQLAOFILE1\\DiagnosticsStore など) の診断情報を格納するファイル共有。
+- AOS にアップロードされるユーザー ドキュメントを格納するファイル共有 (たとえば、\\\\LBDEN01FS01\\aos-storage)。
+- デプロイメントを調整するための最新のビルド ファイルと構成ファイルを保存するファイル共有 (たとえば、\\\\LBDEN01FS01\\agent)。
+- Service Fabric Cluster (たとえば、\\\\LBDEN01FS01\\DiagnosticsStore など) の診断情報を格納するファイル共有。
 
     > [!WARNING]
     > 共有に入れるファイルの最大パス長を超えないように、このファイル共有パスはできるだけ短くしておいてください。
@@ -453,7 +455,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
-2. **\\\\DAX7SQLAOFILE1\\aos-storage** ファイル共有を設定します。
+2. **\\\\LBDEN01FS01\\aos-storage** ファイル共有を設定します。
 
     1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
     2. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **aos-storage** と名前を付けます。
@@ -465,13 +467,13 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     > [!NOTE]
     > コンピュータを追加するには、**オブジェクト タイプ** で **コンピューター** を有効にする場合があります。 サービス アカウントを追加するには、**オブジェクト タイプ** で **サービス アカウント** を有効にする場合があります。
 
-3. **\\\\DAX7SQLAOFILE1\\agent** ファイル共有を設定します。
+3. **\\\\LBDEN01FS01\\agent** ファイル共有を設定します。
 
     1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
     2. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **エージェント** と名前を付けます。
     3. ローカル展開エージェント (**contoso\\svc-LocalAgent$**) の gMSA ユーザーに対して **フル コントロール** の許可を与えます。
 
-4. オプション: **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** ファイル共有を設定します。
+4. オプション: **\\\\LBDEN01FS01\\DiagnosticsStore** ファイル共有を設定します。
 
     1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
     1. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **DiagnosticsStore** と名前を付けます。

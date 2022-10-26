@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-08-02
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7a8327552d9e6c38721fdac9ee1795e61f90f329
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: ee767a5d7c3dca2681861802ae42d7a07217c54d
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266486"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689343"
 ---
 # <a name="make-finished-goods-physically-available-before-posting-to-journals"></a>完成品を仕訳帳に転記する前に現物在庫にする
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 作業員が製造品目を完了としてレポートすると、システムはその品目を追加の現物処理 (出荷やプットアウェイなど) で利用可能として登録します。 このプロセスでは、1 つ以上の仕訳帳も転記されます (完了レポート仕訳帳が、ピッキング リスト仕訳帳、工順カード仕訳帳など)。 すべての転記が処理される前に品目を現物で使用可能にする場合は、仕訳帳転記を繰延するようにシステムを設定できます。 繰延転記は、システム リソースが許可するときに、転記を処理するバッチ ジョブによって管理されます。
 

@@ -11,16 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c5eebe9ef6258b43daa7c7007ee28b0278fe5b09
-ms.sourcegitcommit: 1a7729a6ce4f3fcf68bdc4cfdad746a5553da3c5
+ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573137"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689696"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>有限キャパシティ プランニングとスケジューリング
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 有限キャパシティとは、さまざまなリソースの制限を考慮した場合に、特定の期間に生産できる作業量を把握するのに役立つアプローチです。 有限キャパシティ スケジューリングの目的は、プラント全体で均等かつ効率的なペースで作業を進めることです。
 

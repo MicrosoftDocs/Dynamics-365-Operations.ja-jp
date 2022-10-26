@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 8c4808ea3a0389c2a8699f0e11ea154705a6916d
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: c0f1c57251234921779f67faf61d47cdde119e64
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428360"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690051"
 ---
 # <a name="the-product-quality-scenario"></a>製品の品質シナリオ
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 *製品品質* シナリオでは、製造現場での製品ロットの品質を測定するためにセンサーを設定します。 測定が製品の定義済しきい値を超えた場合、スーパーバイザーのダッシュボードに通知が表示されます。 たとえば、センサーが生産ラインから出る食品の水分を測定している場合です。 測定値が製品の水分の許容最小値または最大値を超えた場合は、通知が生成されます。
 

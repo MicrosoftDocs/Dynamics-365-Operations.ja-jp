@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 2e4cd8d4d4ffcd10d02fbf26615f12cdd6ccca9e
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: ba030364056db8b0524de22aacbc6528ef77813b
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428371"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689860"
 ---
 # <a name="sensor-data-intelligence-home-page"></a>Sensor Data Intelligence のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Microsoft Dynamics 365 Supply Chain Management 向け Sensor Data Intelligence は、組織が Supply Chain Management で、製造フロアのマシンや機器からの Internet of Things (IoT) 信号に基づいて業務プロセスを推進するのを可能にします。 これは、以前に Supply Chain Management で使用できる、名前を変更した更新されたバージョンの *IoT インテリジェンス* 機能です。
 

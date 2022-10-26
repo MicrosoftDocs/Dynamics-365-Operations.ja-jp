@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 073762581d84646ba12b570e57327b7cab8efd3b
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 25ccbda1628544f14dc32d9bea3f2162ad47d79e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428351"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690024"
 ---
 # <a name="the-production-delays-scenario"></a>生産の遅延のシナリオ
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 *生産遅延* シナリオでは、生産の処理能力が特定のしきい値を下回った場合に通知が生成されます。 このシナリオでは、生産された品目ごとに *PartOut* 信号が Microsoft Azure IoT Hub に送信されます。 Dynamics 365 Supply Chain Management では、注文の遅延は、製造オーダーの実行がスケジュールされている量、生産されるべき品目の数、ジョブが実行された時間数、および受信された *PartOut* 信号数に基づいて計算されます。 ジョブに対する *PartOut* 信号の数が想定されるしきい値を下回った場合に、遅延通知が生成されます。
 

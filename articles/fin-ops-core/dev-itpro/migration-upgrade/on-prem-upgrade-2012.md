@@ -2,37 +2,38 @@
 title: Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
 description: この記事では、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) バージョン 10.0.x にアップグレードするプロセスについて説明します。
 author: faix
-ms.date: 07/13/2022
+ms.date: 9/16/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 141eaec5c3577f24d4beebeb1736f181d8c7115c
-ms.sourcegitcommit: 1d8b0af5ea5f42916267e311e677d91bad8ad164
+ms.openlocfilehash: ed80522cfc7039989b95a97fdf143efbd6b35636
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9146944"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689329"
 ---
 # <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) バージョン 10.0.x にアップグレードするプロセスについて説明します。 現在、Dynamics AX 2012 R2 または Dynamics AX 2012 R3 のいずれかからのアップグレードのみ、サポートされています。 
-
 > [!IMPORTANT]
+> 現在、アップグレードは、Dynamics AX 2012 R2 または Dynamics AX 2012 R3 のいずれかからのみ行うことができます。 最新の財務と運用アプリケーション リリースにアップグレードする前に、それぞれのリリースに対応した最新の累積的な更新プログラムに更新してください。
+>
 > この記事では、データ アップグレードを行うプロセスについてのみ説明します。 コード アップグレードを実行する方法の詳細については、クラウド バージョンで使用可能なアップグレード ガイドを参照してください。 コード アップグレード ツールは、Microsoft Dynamics Lifecycle Services (LCS) を介してのみ使用可能です。
 
 ## <a name="ax-2012-upgrade-to-dynamics-365-finance--operations-on-premises"></a>AX 2012 の Dynamics 365 Finance + Operations (on-premises) へのアップグレード
 
 現在、サポートされているアップグレード方法は 2 つあります。
 
+- **既存の Dynamics 365 Finance + Operations (on-premises) 環境からのアップグレード** - この方法は、バージョン 10.0.31 以降でのみ使用できます。 アップグレードを終了してテストする場合に推奨される方法です。
 - **VHD 内からのアップグレード** – この方法では、データベースを仮想ハード ディスク (VHD) にコピーし、VHD 内からアップグレードを実行します。 全体的に、この方法は簡単です。
 - **データベースを指す VHD でアップグレード** – この方法は、VHD アップグレード プロセスをデータベースにポイントします。 アップグレード プロセスは、VHD 内から実行されます。
 
@@ -42,10 +43,14 @@ ms.locfileid: "9146944"
 ### <a name="prerequisites"></a>必要条件
 
 1. [プレビュー サブスクリプションへのサインアップ](upgrade-overview-2012.md#sign-up-for-a-preview-subscription)。
-1. 各 AX 2012 リリースについては、Finance + Operations アプリケーションの最新リリースにアップグレードする前に、利用可能な最新の累積更新プログラムに更新します。
 1. アップグレード前のチェックリストをインストールします。 詳細については、[インストール](prepare-data-upgrade.md#installation) を参照してください。
 1. データ アップグレードの準備手順を実行します。 「ユーザー マッピングの設定」の手順はスキップできます。 この手順は、クラウドでホストされているアップグレードのみ関連しています。
 1. データベースのバックアップを作成します (MicrosoftDynamicsAX)。 詳細については、「[フル データベース バックアップの作成](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)」を参照してください。
+
+#### <a name="vhd-prerequisites"></a>VHD 前提条件
+
+データ アップグレードを実行する場合は、次の前提条件を確認する必要があります。
+
 1. LCS で、ページの右側にあるタイルを選択して、共有アセット ライブラリに移動します。 **資産タイプの選択** の下の **ダウンロード可能な VHD** を選択し、オンプレミス環境でアップグレードするバージョンに最も適合する VHD パッケージ全体をダウンロードします。 画像は大量のディスク容量を必要とします。 したがって、十分な空き領域のあるドライブでパッケージをダウンロードし、展開する必要があります。 
 1. ダウンロードしたファイルは、自己展開する zip ファイルです。 十分な空き容量が確保されている場所に VHD を展開してください。
 1. Hyper-V を使用して、仮想マシン (VM) を開始し、VHD を接続します。 (VM はジェネレーション 1 である必要があります。)
@@ -56,6 +61,50 @@ ms.locfileid: "9146944"
     > いずれの場合でも、最新の品質更新プログラムが VHD に適用されていることを確認し、データ アップグレードを実行するための最新の修正プログラムが含まれていることを確認してください。 
 
 1. 拡張機能またはカスタマイズがある場合、今 VHD にインストールしてください。 それ以外の場合、アップグレード プロセスは、カスタマイズに関連するデータをすべて削除します。 アップグレードの前に、環境を準備する必要がある場合、独立系ソフトウェア ベンダー (ISV) または付加価値再販業者 (VAR) に確認します。
+
+#### <a name="dynamics-365-finance--operations-on-premises-prerequisites"></a>Dynamics 365 Finance + Operations (on-premises) 前提条件
+
+データ アップグレードを実行するのに Dynamics 365 環境を使用する場合は、次の前提条件が満たされている必要があります。
+
+1. バージョン 10.0.31以降の Dynamics 365 Finance + Operations (on-premises) 環境は、デモ データ バックアップを使用して展開されます。
+1. 最新の品質更新が環境に適用されています。
+1. 拡張機能またはカスタマイズがある場合、すぐに環境に適用してください。 それ以外の場合、アップグレード プロセスは、カスタマイズに関連するデータをすべて削除します。 アップグレードの前に、環境を準備する必要がある場合、独立系ソフトウェア ベンダー (ISV) または付加価値再販業者 (VAR) に確認します。
+
+### <a name="upgrade-from-a-dynamics-365-finance--operations-on-premises-environment"></a>Dynamics 365 Finance + Operations (on-premises) 環境からのアップグレード
+
+1. Service Fabric Explorer を使用して、すべての Application Object Server (AOS) ノードおよび Management Reporter (MR) ノードを無効にします。
+
+    > [!TIP]
+    > 一度に 1 つのノードを無効にします。 最後のノードを無効にした場合、Azure Service Fabric はそのノード タイプに割り当てられたサービスを別のノードに入れ子にできるようにします。 ただし、他のノードを使用できないので、Service Fabric ではノードを無効にできません。 したがって、Service Fabric Explorer から最後のノードを再起動して、操作を強制する必要があります。 再起動後、ノードは無効になります。
+
+1. 既存のデモ データ データベースを削除します。
+1. 作成したバックアップを、既存のデモ データベースと同じ名前で復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
+1. 管理者特権モードで Windows PowerShell を開き、ファイル共有の **インフラストラクチャ** フォルダーに移動して、次のコマンドを実行します。
+
+    ```Powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
+    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
+    ```
+
+1. 復元したデータベースに対して次の SQL コマンドを実行します。
+
+    ```SQL
+    MERGE [dbo].[SQLSYSTEMVARIABLES] AS VARIABLES
+    USING (values('RUNDATAUPGRADE', '1', 20, NULL)) as NEWVALUE (PARM, VALUE, IPARM, IVALUE)
+    ON (VARIABLES.PARM = NEWVALUE.PARM)
+    WHEN NOT MATCHED THEN
+        INSERT (PARM, VALUE, IPARM, IVALUE)
+        VALUES (NEWVALUE.PARM, NEWVALUE.VALUE, NEWVALUE.IPARM, NEWVALUE.IVALUE);
+    ```
+
+1. Service Fabric Explorer を使用して、AOS ノードの 1 つを有効にします。
+1. AOS ノードが有効化され、サービスが開始されると、データ アップグレード プロセスが自動的にトリガーされます。 データ アップグレード プロセスを監視するには、[データ アップグレードの監視](#monitoring-the-data-upgrade)のガイダンスを使用します。
+1. データのアップグレードが失敗すると、サービス ログ フォルダー内にデータ アップグレード ログが格納されます。 パスは次の例のようになります。
+
+    `C:\ProgramData\SF\<nodename>\Fabric\work\Applications\AXSFType_App95\log`
+
+1. データ アップグレードがうまくいった後、ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
+1. 残りの AOS ノードと MR ノードを再び有効にします。
 
 ### <a name="upgrade-from-inside-the-vhd"></a>VHD 内からアップグレードする
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334868"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682509"
 ---
 # <a name="engineering-change-management-overview"></a>エンジニアリング変更管理の概要
 
@@ -73,6 +73,9 @@ ms.locfileid: "9334868"
 1. データベースは同期され、構成キーが変更を反映させるために正しく更新されている必要があります。 作業する環境のタイプに応じて、次のいずれかの手順を実行します。
     - **レベル 1 (開発) 環境の場合**: Microsoft Visual Studio でプロジェクトを開き、その後 **Dynamics 365 \> データベースの同期 \> 同期** を選択します。
     - **レベル 2 (およびそれ以上) 環境の場合**: 環境をメンテナンス モードに入れた後、データベースは自動的に同期し、この手順を省略できます。
+
+> [!NOTE]
+> エンジニアリング変更管理を使用するには、**番号順序** ページで BOM 番号順序とフォーミュラ番号順序 (フォーミュラを使用している場合) の両方を *自動* に設定する必要があります。
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>追加のエンジニアリング変更管理機能を有効にする
 

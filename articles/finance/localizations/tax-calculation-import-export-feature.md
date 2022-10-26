@@ -2,7 +2,7 @@
 title: 税計算のインポートとエクスポート
 description: この記事では、税計算サービスのインポートおよびエクスポート機能に関する情報を提供します。
 author: Kai-Cloud
-ms.date: 11/22/2021
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8666d4971e36279ebd2b1396de7cab37680980e6
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855176"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690236"
 ---
 # <a name="import-and-export-tax-calculations"></a>税計算のインポートとエクスポート
 
@@ -98,3 +98,21 @@ ms.locfileid: "8855176"
 2. RCS にある **税計算** 機能ページの **税グループの適用** タブで、**追加** を選択して、**税グループ適用の設定** グリッドの下部に空のレコードを挿入します。
 3. **Ctrl + V** を選択して、コピーした行をグリッドに貼り付けます。
 4. **保存** を選択します。
+
+## <a name="import-feature-demo-data"></a>機能のデモ データのインポート
+
+これらの手順に従って、機能のデモ データをインポートします。
+
+1. [RCS](https://marketing.configure.global.dynamics.com/) にサインインします。
+2. **グローバリゼーション機能** ワークスペースで **機能** を選択し、**税計算** タイルを選択します。
+3. **インポート** を選択し、**グローバル リポジトリから機能をインポートする** ページで **同期** を選択します。 
+4. テーブルで、**tax-calculation-feature-demo-data** 機能を選択してから **インポート** を選択します。
+5. **表示** を選択して、インポートされた機能で定義されている税コード、グループ、適用ルールを確認します。
+6. Finance で、**DEMF** 法人に切り替えてから、**税** \> **設定** \> **税構成** \> **税計算パラメーター** の順に移動します。
+7. **全般** タブ で、**税計算サービスを有効にする** を選択します。
+8. **機能設定名** フィールドで、**tax-calculation-feature-demo-data** を選択します。
+9. 新しいデモ税コードの **決算期間** と **元帳転記グループ** を選択し、**確認** を選択します。
+10. **保存** を選択します。
+
+> [!NOTE]
+> **tax-calculation-feature-demo-data** デモ機能は、機能バージョン **40.54.234** に基づいて **DEMF** デモ法人用に設計されています。 Finance と RCS のバージョンは、10.0.26 以降にアップグレードしてください。

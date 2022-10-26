@@ -4,23 +4,25 @@ description: この記事では、作業員が現在のタスクを待機して�
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428066"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689313"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>モバイル デバイス メニュー項目で手順の迂回を構成する
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > この記事で説明する機能は、新しい Warehouse Management モバイル アプリにのみ適用されます。 これらは非推奨となっている古い倉庫アプリには影響しません。
@@ -38,6 +40,7 @@ ms.locfileid: "9428066"
 1. この記事で説明する機能を提供する、次の機能をオンにしてください。
     - *Warehouse Management アプリの迂回*<br>(Supply Chain Management 10.0.29 より、この機能は規定でオンになっています。)
     - *Warehouse Management モバイル アプリの複数レベルの迂回*
+    - *Warehouse Management モバイル アプリの迂回ステップの自動送信*
 1. *Warehouse Management アプリの迂回* および/または *Warehouse Management モバイル アプリの複数レベルの迂回* 機能がまだ有効でない場合、**倉庫管理 \> 設定 \> モバイル デバイス \> 倉庫アプリ フィールド名** の順に移動して、**既定の設定の作成** を選択することで Warehouse Management モバイル アプリのフィールド名を更新します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
 1. Warehouse Management モバイル アプリを使用する法人 (会社) ごとに前の手順を繰り返します。
 
@@ -49,7 +52,7 @@ ms.locfileid: "9428066"
 1. **ステップ ID** と **メニュー項目名** の値の組み合わせを検索し、**ステップ ID** 列で値を選択します。
 1. 表示されるページの **利用できる迂回 (メニュー項目)** クイック タブで、迂回を行う必要があるメニュー項目を指定できます。 また、主タスクからどのフィールド値へ自動的にコピーされ迂回からコピーされるのかも選択できます これらの設定の使用方法の例については、この記事の後半のシナリオを参照してください。
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>サンプル シナリオ 1: 場所の照会が迂回として機能する販売ピッキング
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>サンプル シナリオ 1: 場所の照会が迂回として機能する販売ピッキング
 
 このシナリオでは、作業者向け販売ピッキング タスク フローの中で、場所の照会を迂回として構成する方法を示します。 この迂回により、作業員は、ピッキングから取得した場所のすべてのライセンス プレートを検索し、ピッキングの完了に使用するライセンス プレートをピックしています。 このタイプの迂回は、スキャナー デバイスでバーコードが破損し、読み取りができない場合に役立ちます。 または、作業員が実際に実際に持っているのをシステムで覚える必要がある場合に役立ちます。 このシナリオは、ライセンス プレートで制御される場所からピッキングする場合にのみ機能します。
 
@@ -70,17 +73,19 @@ ms.locfileid: "9428066"
 1. **迂回の追加** ダイアログ ボックスで、Warehouse Management モバイル アプリケーションで使用できる迂回として **場所の照会** を選択します。
 1. **OK** を選択します。
 1. **利用可能な迂回 (メニュー項目)** クイック タブで、追加した迂回を選択し、ツール バーで **送信するフィールドを選択** を選択します。
-1. **送信するフィールドを選択** ダイアログ ボックスで、迂回と送受信すべき情報を指定します。 このシナリオでは、作業者が、場所照会の迂回に入力としてピックすることになっている場所を使用することを許可します。 したがって、**販売ピッキングから送信** セクションで、ツール バーの **追加** を選択して、グリッドに行を追加します。 続いて、新しい行に次の値を設定します。
+1. **送信するフィールドを選択** ダイアログ ボックスで、迂回と送受信すべき情報を指定します。 このシナリオでは、作業者が、場所照会の迂回の入力としてピックすることになっている場所の使用を許可します。 したがって、**販売ピッキングから送信** セクションで、ツール バーの **追加** を選択して、グリッドに行を追加します。 続いて、新しい行に次の値を設定します。
 
     - **販売ピッキングからコピー:** *場所*
     - **場所の照会に貼り付け:** *場所*
+    - **自動送信:** *選択* (ページは貼り付けられた *場所* 値で更新されます)
 
 1. このシナリオの迂回はライセンス プレートの手順で構成されていることから、これは作業員が照会からメイン フローにライセンス プレートを取り戻す場合に役立ちます。 したがって、**場所の照会から戻す** セクションで、ツール バーの **追加** を選択して、グリッドに行を追加します。 続いて、新しい行に次の値を設定します。
 
     - **場所の照会からコピー:** *ライセンス プレート*
     - **販売ピッキングで貼り付け:** *ライセンス プレート*
+    - **自動送信:** *オフ* (*ライセンス プレート* 値のある迂回から返された場合は、自動更新は実行されません)
 
-1. **OK** を選択します。
+1.  **OK** を選択します。
 
 これで、迂回が完全に構成されました。 **場所の照会** を開始するボタンが、**販売ピッキング** メニュー品目のライセンス プレート ステップに表示されるようになりました。
 
@@ -131,6 +136,7 @@ ms.locfileid: "9428066"
 
     - **場所の照会からコピー:** *場所*
     - **移動に貼り付け:** *Loc / LP*
+    - **自動送信:** *オフ* (自動更新は実行されません)
 
     この迂回では、メイン フローは追加の手順が必要ない照会だったため、情報がコピーされるとは予想していません。
 
@@ -140,7 +146,7 @@ ms.locfileid: "9428066"
 
 ### <a name="do-a-location-inquiry-on-a-mobile-device-and-use-the-detour"></a>モバイル デバイスで場所の照会を行い、迂回を使用する
 
-この手順では、Warehouse Management モバイル アプリを使用して場所の照会をおこないます。 その後、迂回を使用して商品の移動を完了します。
+この手順では、Warehouse Management モバイル アプリを使用して場所の照会を行います。 その後、迂回を使用して商品の移動を完了します。
 
 1. Warehouse Management モバイル アプリを開いて、倉庫 24 にサインインします。 (標準デモ データでは、ユーザー IDとして *24*、パスワードとして *1* を使用してサインインします。)
 1. **在庫** メニューを選択し、**場所の照会** メニュー品目を選択します。
@@ -153,3 +159,5 @@ ms.locfileid: "9428066"
 
 > [!NOTE]
 > *Warehouse Management モバイル アプリの複数レベルの迂回* 機能では、複数レベルの迂回 (迂回の中の迂回) を定義できるため、作業員は既存の迂回 2 (2 つ 目) からジャンプしてからまた戻ることができます。 この機能は、既定の迂回の 2 つのレベルをサポートしており、`WHSWorkUserSessionState` テーブルにコード拡張子を作成することにより、3 つ以上のレベルの迂回をサポートするようにシステムをカスタマイズできます。
+>
+> *Warehouse Management モバイル アプリケーションの自動迂回手順* 機能を使用すると、Warehouse Management モバイル アプリで、迅速かつ簡単に迂回フローを完了することができます。 アプリが迂回データを事前設定できるように許可してフロー ステップを有効にし、[*サンプル シナリオ 1: 場所の照会が迂回として機能する販売ピック*](#scenario-1) で表示されているように、ページを自動送信して次の手順に自動的に移動します。

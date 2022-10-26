@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 1f2b424dccf1963a7917059d412b5df7937496ee
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 30fdfb898384aea4c1f8cb2f36f9e104cd316f90
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428348"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689642"
 ---
 # <a name="the-machine-status-scenario"></a>マシン状態のシナリオ
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 この記事では、*マシンのステータス* シナリオについて説明します。これにより、アプリケーション データを使用して設備の状態を監視できます。 機械リソースの生産ジョブで生産が生産される際に信号を送信するシステムを設定したが、指定された間隔内にシステムからの信号は受信されていない場合は、監修者のダッシュボードに通知が表示されます。
 

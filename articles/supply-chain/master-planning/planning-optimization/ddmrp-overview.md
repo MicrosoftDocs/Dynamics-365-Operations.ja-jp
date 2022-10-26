@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186755"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689491"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>需要主導型材料所要量計画 (DDMRP) の概要
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 製品の製造に必要な材料とコンポーネントを計算するシステムとして、企業は長年にわたり材料所要量計画 (MRP) を使用してきました。 しかし、現在、サプライ チェーンは変化しています。 部品は、海外からの調達が多くなっているため、リード タイムが長くなっています。 このため、多くの企業では在庫の量が分からず、在庫切れや過剰在庫になったという報告があります。 また、市場の変動 (時には予測が不正確) が大きく、顧客は短いリード タイムで製品を要求しています。 そのため、世界中でサプライ チェーンが不足しています。 さらに、MRP ツールを使用すると、プランナーが実行するアクションを何千も与えてしまうことがよくあります。 したがって、何を重視すべきかを知るのは困難です。 多くの場合、こうした問題に対する解決策は、需要主導型材料所要量計画 (DDMRP) に切り替えることです。
 

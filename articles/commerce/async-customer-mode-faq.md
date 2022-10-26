@@ -2,19 +2,19 @@
 title: 顧客作成モードを非同期化するに関するよくあるご質問
 description: この記事は、Microsoft Dynamics 365 Commerce で非同期顧客の作成についてよく寄せられる質問に対する回答を提供します。
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: bd5741aeb3278f1d40d63bb02ca57571a907dc21
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 64c895fb9f3e55f7680759fa72626be6660aa67c
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474072"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690205"
 ---
 # <a name="asynchronous-customer-creation-mode-faq"></a>顧客作成モードを非同期化するに関するよくあるご質問
 
@@ -44,5 +44,10 @@ CDX ジョブの実行後、Commerce Scale Unit (CSU) にキャッシュされ�
 
 次のアクションが、記載されている順に実行されたとします。
 
-1. **RETAILASYNCCUSTOMERV2**、**RETAILASYNCCUSTOMERCONTACT**、**RETAILASYNCCUSTOMERCONTACT**、**RETAILASYNCCUSTOMERILIATION**、および **RETAILASYNCCUSTTRIBUTBUT 2** の各テーブルに格納されている同期顧客データを Commerce Headquarters で使用できる状態にするための CDX P ジョブを実行します。
+1. Commerce headquarters で CDX P-ジョブを実行して、同期顧客データが **RETAILASYNCCUSTOMERV2**、**RETAILASYNCCUSTOMERCONTACT**、**RETAILASYNCCUSTOMERCONTACT**、**RETAILASYNCCUSTOMERILIATION**、および **RETAILASYNCCUSTTRIBUTBUT 2** に格納していることを確認します。
 1. Commerce Headquarters で **顧客とチャンネル要求の同期** のバッチ ジョブを実行します。 バッチ ジョブが 正常に実行された後で、前述のテーブルから正常に処理されたレコードはすべて **OnlineOperationCompleted** フィールドを **1** に設定します。
+
+### <a name="how-do-i-know-which-customer-management-in-asynchronous-mode-operation-has-failed-and-how-do-i-make-changes-if-they-are-required"></a>非同期モードの操作で失敗した顧客管理を確認し、必要に応じて変更を加える方法は?
+
+すべての非同期モードの操作とその同期ステータスを表示するには、Commerce Headquarters で **Commerce と Retail \> 顧客 \> 顧客同期ステータス** に移動します。 変更するには、特定の操作を編集し、フィールドを更新し、**保存** を選択して、**同期** を選択して変更を同期します。
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: f43c278ca844655f294d8ddf591343d9dfac31a4
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: b3b5ad7e829dcb3dcc79515cef970a0dc7ca6c7c
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643961"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690361"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10029-october-2022"></a>Dynamics 365 Finance 10.0.29 (2022 年 10 月) の新機能および変更された機能
 
@@ -128,7 +128,7 @@ ms.locfileid: "9643961"
 | 大規模な予算計画のために予算計画クエリの最適化を生成する  |  2022 年 8 月 1 日 | 必須 | 予算計画 |
 | 数量のみの予算登録エントリ |  2022 年 8 月 1 日  | 既定で有効 | 予算作成|
 | 小切手ページから支払仕訳帳を開く   |  2022 年 8 月 1 日  | 必須 | 予算作成 |
-| 法人に基づいてサポート案件の検索を制限する |2022 年 3 月 31 日  | 既定で有効 | キャッシュ管理 |
+| 法人に基づいてサポート案件の検索を制限する |2022 年 3 月 31 日  | 既定で有効 | ケース管理 |
 | 小切手ページから支払仕訳帳を開く   |   2022 年 8 月 1 日  | 必須 | 現金管理 |
 | つなぎ勘定トランザクションに追加される仕入先の詳細と小切手ページ   |  2022 年 8 月 1 日  | 必須 | 現金管理 |
 | パラメーターを指定せず銀行再評価をグローバルに有効にします。 |  2022 年 8 月 1 日 | 必須 | 現金管理 |

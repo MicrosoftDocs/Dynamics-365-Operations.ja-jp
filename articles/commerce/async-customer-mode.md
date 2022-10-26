@@ -2,19 +2,19 @@
 title: 顧客作成モードを非同期化する
 description: この記事では、Microsoft Dynamics 365 Commerce の非同期顧客作成モードについて説明します。
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473709"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690292"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>顧客作成モードを非同期化する
 
@@ -46,6 +46,7 @@ Commerce には、同期と非同期の 2 つの顧客作成モードがあり�
 | 同期顧客作成と非同期式の顧客作成の間の間隔を設定できます。 | 10.0.24 以降 | <p>機能スイッチ: **顧客の拡張非同期作成を有効にする**</p><p>機能の詳細 : 顧客を非同期的に作成する一方で、タイトル、既定の顧客からの所属、副次的な連絡先情報 (電話番号やメール アドレス) などの追加情報をキャプチャする機能</p> |
 | わかりやすいエラー メッセージ | 10.0.28 以降 | これらの拡張機能は、同期の実行中にユーザーがすぐに情報を編集できない場合に、ユーザー を処理するためのエラー メッセージを改善するのに役立ちます。 これらの拡張機能を有効にするには、Commerce サイト ビルダーの **サイト設定** 拡張機能\> で、**非同期顧客設定** を使用して、特定の UI 要素を変更できません。 |
 | 顧客情報を非同期的に編集する機能 | 10.0.29 以降 | <p>機能スイッチ: **非同期モードでの顧客の編集の有効化**</p><p>機能の詳細 : 顧客データを非同期的に編集する機能</p><p>顧客情報の非同期編集に関連する問題に関する一般的な質問への回答については、[非同期顧客作成モードに関するよくあるご質問](async-customer-mode-faq.md) を参照してください。</p> |
+| 顧客管理操作の同期の監査をする能力 | 10.0.31 以降 | この拡張機能を使用すると、ユーザーは Commerce Headquarters での顧客管理業務の同期を監査できます。 また、必要に応じて変更を加え、データを同期化できます。 |
 
 ### <a name="feature-switch-hierarchy"></a>機能スイッチの階層
 

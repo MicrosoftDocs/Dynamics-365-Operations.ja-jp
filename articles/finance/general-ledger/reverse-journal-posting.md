@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284854"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680387"
 ---
 # <a name="reverse-journal-posting"></a>仕訳帳の転記の取消
 
@@ -37,7 +37,7 @@ ms.locfileid: "9284854"
 仕訳帳明細行は個別に取り消すことができます。 仕訳帳転記の取消により、財務仕訳帳全体を取り消すこともできます。 仕訳帳を取り消すには: 
 
 - 転記された仕訳帳にフィルター処理を行い、仕訳帳の **明細行** ビューを開きます。
-- ページ上部の **取消** メニューを選択します。
+- ページ上部の **仕訳帳全体の取消** メニューを選択します。
 - 伝票および伝票明細行の合計数が、取り消される明細行の合計金額と共に表示されます。
 - 既存のトランザクションの日付を使用する場合は **はい** を選択し、新しく入力する場合は **いいえ** を選択します。 場合によっては、元のトランザクションの期間が終了していることがあり、取消のために新しいトランザクション日付を入力する必要があります。
 - **いいえ** を選択した場合、取消のためにトランザクションの日付を入力します。 

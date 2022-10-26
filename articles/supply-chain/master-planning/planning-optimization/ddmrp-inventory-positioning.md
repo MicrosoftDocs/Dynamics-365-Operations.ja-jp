@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: bec36b5b51b937782afdb78d7009a58dcd0942f0
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 847108575cbf7207282db00d731363c8cfad883a
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186734"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689541"
 ---
 # <a name="inventory-positioning"></a>在庫配置
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 戦略的な在庫配置では、自分で在庫を構築することができるサプライ チェーンのデカップリング ポイントを特定することが含まれます。 この方法は主に、リード タイムを圧縮し、サプライ チェーンへの衝撃を吸収するのに役立ちます。 需要の変動性がサプライ チェーン全体に渡されないので、「ブルウィップ効果」を軽減できます。 (*ブルウィップ効果* とは、小売レベルでの需要の小さな変動が、卸売業者、ディストリビューター、製造元、および原材料の仕入先レベルで、需要の変動が徐々に大きくなる可能性があることを指します。)
 

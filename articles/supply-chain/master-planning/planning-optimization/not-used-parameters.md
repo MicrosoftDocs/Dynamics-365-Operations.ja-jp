@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c7469692aac24a5ae554973325a128c787363ba
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: db8a8e929bf75c4d1dac0c1b0a7cbc848ff291a9
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542283"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682671"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>計画最適化で使用されないパラメーター
 
@@ -111,10 +111,8 @@ ms.locfileid: "9542283"
 
 - **全般** クイック タブ:
 
-  - **手持在庫を含む** – *手持在庫の消費* のサポートは保留中です。
   - **手持の上書き** – *手持在庫の消費* のサポートは保留中です。
   - **手持在庫の消費** – *手持在庫の消費* のサポートは保留中です。
-  - **在庫トランザクションを含める** – *手持在庫の消費* のサポートは保留中です。
   - **販売見積を含める** – *販売見積* のサポートは保留中です。
   - **見積依頼を含める** – *見積依頼* のサポートは保留中です。
   - **有効期限日付の使用** – *有効期限* のサポートは保留中です。
@@ -190,4 +188,3 @@ ms.locfileid: "9542283"
 
   - **利益あり** – *バッチ廃棄コード* のサポートは保留中です。
  
-<!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 

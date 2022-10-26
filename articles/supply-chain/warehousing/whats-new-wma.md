@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
-ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
+ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "9388451"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682617"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20340"></a>Version 2.0.34.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+- 安定性が改善されました。
+- パフォーマンスを改善しました。
+- 画面レイアウトを改善し、詳細カードに使用できる容量が増えました。
+- **作業一覧** ページに検索機能が追加されました。 作業者は、ページのすべてのフィールドとタイトルをスキャンまたは入力して検索できるようになりました。
+- 利用可能な接続の一覧をアルファベット順に並べ替えました。
+- 同じ場所で複数の在庫ステータスがある品目に対して重複するカードが表示される問題を修正しました。
+- **選択リスト (大)** ページをスクロールして選択した項目を表示できない問題を修正しました。
+- **選択リスト (大)** ページの検索バーの色を修正しました。
+- XML で定義されている既定のボタンが送信ボタンとして使用できない問題を修正しました。
+- 新しい ID がスキャンされたときに、マルチスキャンおよび高速検証フローのボタンが更新されない問題を修正しました。
+- 他の言語のサポートを追加しました。
 
 ## <a name="version-20320"></a>Version 2.0.32.0
 

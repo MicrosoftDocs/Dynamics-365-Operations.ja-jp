@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 8ee288a1ec7ae950bdff9da7d373e29daef74d3c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 04c625b554d96f8ed28ceffef9647fe9cbf7fe2f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269407"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689463"
 ---
 # <a name="vat-declaration-germany"></a>VAT 申告 (ドイツ)
 
@@ -198,7 +198,8 @@ VAT 申告のボックスを生成する売上税コードを定義するには�
 
    この形式は、**決済期間の売上税のレポート** を実行するときに印刷されます。 **売上税支払** ページで **印刷** を選択した場合にも印刷されます。
 
-4. **税務当局** ページで税務当局を選択し、**レポートのレイアウト** フィールドで **既定** を選択します。
+4. 訂正を報告する必要がある場合は、**特別レポート** セクションで、**訂正を含める** を **はい** に設定します。
+5. **税務当局** ページで税務当局を選択し、**レポートのレイアウト** フィールドで **既定** を選択します。
 
 [複数の VAT 登録](emea-reporting-for-multiple-vat-registrations.md) を持つ法人の VAT 申告を構成する場合は、次の手順に従います:
 

@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 477b27bf77d2a3ef91a5c2d39f2dfb06d8ad4e59
-ms.sourcegitcommit: 562ea02e1f7409f18ee1cc4750a838bff4381e91
+ms.openlocfilehash: 18fec49f2388159cae0809c63685102a04e90c57
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9429126"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689192"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10030-november-2022"></a>Dynamics 365 Supply Chain Management 10.0.30 のプレビュー (2022 年 11 月)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Dynamics 365 Supply Chain Management 10.0.30 (2022 年 11 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-この記事では、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.30 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1362 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.30 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1362 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 9 月
 - **リリースの一般提供 (手動更新):** 2022 年 10 月
@@ -35,7 +34,7 @@ ms.locfileid: "9429126"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
 | 製造 | [Sensor Data Intelligence を使用した機器の監視](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence のホーム ページ](../sensor-data-intelligence/sdi-home-page.md) | 機能管理:<br>*(プレビュー) センサー データ インテリジェンス* |
-| 倉庫管理 | Warehouse Management モバイル アプリの複数レベルの迂回 <!-- KFM: Add link when RP updates --> | [モバイル デバイス メニュー項目のステップの迂回を構成する](../warehousing/warehouse-app-detours.md) | 機能管理:<br>*Warehouse Management モバイル アプリの複数レベルの迂回* |
+| 倉庫管理 | [Warehouse Management モバイル アプリの複数レベルの迂回](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [モバイル デバイス メニュー項目のステップの迂回を構成する](../warehousing/warehouse-app-detours.md) | 機能管理:<br>*Warehouse Management モバイル アプリの複数レベルの迂回* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 
@@ -52,7 +51,7 @@ ms.locfileid: "9429126"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.30 のプラットフォーム更新プログラム (2022 年 11 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md) を参照してください。 <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.30 のプラットフォーム更新プログラム (2022 年 11 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 
