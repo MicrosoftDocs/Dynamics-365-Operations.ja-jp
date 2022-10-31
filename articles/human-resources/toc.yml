@@ -10,18 +10,14 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Human Resources の新機能および変更された機能
               items:
+                - name: Human Resources 10.0.31 (マージされたインフラストラクチャ)
+                  href: ./get-started/whats-new-changed-10-0-31.md
                 - name: Human Resources 10.0.30 (マージされたインフラストラクチャ)
                   href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (マージされたインフラストラクチャ)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (マージされたインフラストラクチャ)
                   href: ./get-started/whats-new-changed-10.0.28.md
-                - name: Human Resources 10.0.27 (マージされたインフラストラクチャ)
-                  href: ./get-started/hr-whats-new-changed-10-0-27.md
-                - name: Human Resources 10.0.26 (マージされたインフラストラクチャ)
-                  href: ./get-started/hr-whats-new-changed-10-0-26.md
-                - name: Human Resources 10.0.25 (マージされたインフラストラクチャ)
-                  href: ./get-started/hr-whats-new-changed-10-0-25.md
                 - name: Dynamics 365 Human Resources の新機能 (スタンドアロン)
                   items:
                     - name: Dynamics 365 Human Resources の新機能 (スタンドアロン) の 2021 年アーカイブ
@@ -714,10 +710,12 @@
               href: hr-develop-add-performance-journal.md
             - name: 目標の作成
               href: hr-develop-create-goal.md
-            - name: パフォーマンス確認の作成
+            - name: パフォーマンス レビューの作成
               href: hr-develop-create-performance-review.md
         - name: ラーニング
           items:
+            - name: コースの概要
+              href: hr-course-overview.md
             - name: トレーニング コースの設定
               href: hr-learning-courses.md
             - name: アンケートの概要

@@ -12,6 +12,8 @@
               items:
                 - name: Commerce の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.31 (2023 年 2 月)
+                  href: get-started/whats-new-commerce-10-0-31.md
                 - name: Commerce 10.0.30 (2022 年 11 月)
                   href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (2022 年 10 月)
@@ -568,6 +570,8 @@
                       href: call-center-refund-payments.md
                     - name: クレジット カードの設定、認証、および取得
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+                    - name: 支払トークンの使用の制限
+                      href: dev-itpro/limit-token-usage.md
                     - name: POS の現金貨幣単位のコンフィギュレーション
                       href: cash-denominations.md
                     - name: クレジット カード処理のコンフィギュレーション
@@ -1236,6 +1240,8 @@
                       href: cart-icon-module.md
                     - name: チェックアウト モジュール
                       href: add-checkout-module.md
+                    - name: チェックアウト モジュールのエラー参照コード
+                      href: checkout-module-error-codes.md
                     - name: 支払モジュール
                       href: payment-module.md
                     - name: 出荷先住所モジュール

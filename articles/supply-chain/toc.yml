@@ -12,7 +12,7 @@
               items:
                 - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.31 (2022 年 2 月)
+                - name: Supply Chain Management 10.0.31 (2023 年 2 月)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (2022 年 11 月)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -3243,6 +3243,8 @@
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: 元の USMCA 証明書
               href: transportation/usmca-certification-of-origin.md
+            - name: 商業請求書
+              href: transportation/commercial-invoice.md
             - name: 船荷証券の作成
               href: transportation/create-bill-of-lading.md
             - name: 貨物輸送ルートの計画
@@ -3433,8 +3435,14 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: 出荷コンテナーの梱包
                       href: warehousing/packing-containers.md
+                    - name: コンテナー ラベルの印刷
+                      href: warehousing/print-container-labels.md
                     - name: 出荷コンテナーの梱包と出荷処理に関する梱包作業
                       href: warehousing/packing-work.md
+                    - name: Warehouse Management モバイル アプリを使用してコンテナーを梱包する
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: シナリオ例 – Warehouse Management モバイル アプリを使用してコンテナーを梱包する
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: 未処理ピッキング品目の再配賦の設定
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: システム主導の作業優先順位
@@ -3691,7 +3699,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: オープン作業一覧のシステム グループ化
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: ライセンス プレート ラベルのドキュメント ルーティング レイアウト
+                    - name: ドキュメント回覧のラベル レイアウト
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: GS1 バー コードと QR コード
                       href: warehousing/gs1-barcodes.md
@@ -3701,6 +3709,12 @@
                   items:
                     - name: Microsoft Dynamics AX 2012 から財務と運用への倉庫管理プロセスのアップグレード
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: 倉庫管理テレメトリ
+              items:
+                - name: Application Insights で倉庫管理テレメトリを有効にする
+                  href: warehousing/application-insights-warehousing.md
+                - name: モバイル デバイスの使用状況とパフォーマンスの監視
+                  href: warehousing/application-insights-wma.md
         - name: Supply Chain Management の開発
           items:
             - name: ガント コントロール開発ガイド

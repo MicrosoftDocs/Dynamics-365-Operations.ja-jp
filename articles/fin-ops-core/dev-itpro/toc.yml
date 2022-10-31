@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.29 (2022 年 10 月)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.28 (2022 年 8 月)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -1605,7 +1603,11 @@
             - name: ライセンス コードとコンフィギュレーション キーのレポート
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: 会社間データ共有
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: データ共有がサポートされているテーブル
+              href: sysadmin/drs-srs-tables.md
+            - name: 開発者向けのデータ共有
+              href: sysadmin/drs-srs-dev.md
             - name: メンテナンス モード
               href: sysadmin/maintenance-mode.md
             - name: コンフィギュレーション済みのシステム アカウント
