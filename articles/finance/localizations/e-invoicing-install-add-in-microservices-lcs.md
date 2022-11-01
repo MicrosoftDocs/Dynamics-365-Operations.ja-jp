@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: a837b85d4893f2915b5fbb5ffaae8eb95f19bc0e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 938b00192acc0ff5534239f2f280792471181fad
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272274"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710811"
 ---
 # <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Lifecycle Services にマイクロサービス向けのアドインをインストールします
 
@@ -35,7 +35,7 @@ ms.locfileid: "9272274"
 2. プロジェクトの **環境** ダッシュボードで、配置された環境を選択します。 選択する環境は実行中である必要があります。
 3. **Power Platform 統合** タブの **環境アドイン** セクションで、**新しいアドインをインストールする** を選択します。
 4. **電子請求** を選択します。
-5. **AAD アプリケーション ID** フィールドに、**091c98b0-a1c9-4b02-b62c-7753395ccabe** を入力します。 この値は固定値です。 グローバル一意識別子 (GUID) だけを入力してください。 スペース、コンマ、ピリオド、引用符など、他の記号を含めないでください。
+5. **AAD アプリケーション ID** フィールドに固定値 **091c98b0-a1c9-4b02-b62c-7753395ccabe** を入力します。 この値は常に固定値です。 グローバル一意識別子 (GUID) だけを入力してください。 スペース、コンマ、ピリオド、引用符など、他の記号を含めないでください。
 6. **AAD のテナント ID** フィールドに、Azure のサブスクリプション アカウントのテナント ID を入力します。 指定する Azure Active Directory (Azure AD) テナントは、Regulatory Configuration Service (RCS) に使用されるテナントと同じである必要があります。
 7. 使用条件を確認して、チェックボックスを選択します。
 8. **インストール** を選択します。 数分後、状態が **インストール中** から **インストール済** に変わります。 この変更を表示するには、ページの更新が必要となる場合があります。

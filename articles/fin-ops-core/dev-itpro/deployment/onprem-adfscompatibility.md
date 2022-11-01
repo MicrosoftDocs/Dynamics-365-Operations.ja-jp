@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e0aa9df291e3d05b947cd1db84ced00b9cbf6fc2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 008d974dac5113e40c4bd7a7fbee1db449f04ff1
+ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867388"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9709232"
 ---
 # <a name="ad-fs-microsoft-365-compatibility"></a>AD FS Microsoft 365 の互換性
 
@@ -32,8 +32,8 @@ ms.locfileid: "8867388"
 ## <a name="existing-deployments"></a>既存の配置
 
 1. Microsoft Dynamics Lifecycle Services (LCS) から新しいローカル エージェント バージョンをダウンロードします。 バージョン 2.2.0 またはそれ以降である必要があります。
-2. この機能に必要な追加の構成が含まれているので、ローカル エージェント構成ファイルの新しいバージョンをダウンロードします。
-3. 新しいローカル エージェント構成ファイルを変更して、**office365AdfsCompatibility** 値を **True** に設定します。
+2. 配置オプションを **AD FS Microsoft 365 の互換性を有効にする** に設定して、LCS でエージェントの構成を更新します。
+3. ローカル エージェント構成ファイルの新しいバージョンをダウンロードします。
 4. 次のコマンドを実行して、古いローカル エージェント バージョンをクラスターからアンインストールします。
 
     ```powershell
@@ -63,6 +63,7 @@ ms.locfileid: "8867388"
 12. Reset-Sid.ps1 スクリプトを実行します。
     
     ```powershell
+    Import-Module ".\D365FO-OP" -Force
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
     ```
 

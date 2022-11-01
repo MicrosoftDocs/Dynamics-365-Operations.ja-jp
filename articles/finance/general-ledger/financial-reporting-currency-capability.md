@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
-ms.openlocfilehash: 57c842967d691cc15958f92e5061e5b0f689bbf7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 474aec7bc9aad375b68d376c9376d55eb279ba37
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713007"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710735"
 ---
 # <a name="currency-capabilities-in-financial-reporting"></a>Financial Reporting の通貨の機能
 
@@ -62,7 +62,7 @@ Financial Reporting 内で金額を換算する場合は、次のタイプの換
 | 現行 | 指定された期間あるいはそれ以前の最終レートを使用します。 通常、貸借対照表勘定に対して使用されます。  |  (レート) |   
 | 加重平均  | 期間の加重平均レートを使用します。 通常は、P&L 勘定に対して使用されます。 | ((レート1 * 有効日数) + (レート2 * 有効日数)) + .../ 有効期間  |   
 |  平均 | これは期間の単純な平均レートです。 通常は、損益勘定に対して使用されます。  | (レートの合計)/(レートの数)  |   
-| トランザクション日付 (履歴)  | トランザクションの転記日付における有効なレートを使用します。 レートが利用不可能な場合は、システムでは以前に入力した直近レートが使用されます。 通常は、利益剰余金、株主資本勘定および長期固定資産 (たとえば、土地) に対して使用されます。  | (レート)  |   
+| トランザクション日付 (履歴)  | トランザクションの転記日付における有効なレートを使用します。 レートが利用不可能な場合は、システムでは以前に入力した直近レートが使用されます。 通常は、[利益剰余金](retained-earnings-enhancements.md)、株主資本勘定および長期固定資産 (たとえば、土地) に対して使用されます。  | (レート)  |   
 
 
 ### <a name="setup-for-exchange-rate-type"></a>為替レート タイプの設定

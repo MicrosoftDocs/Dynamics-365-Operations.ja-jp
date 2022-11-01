@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71b5ec792013ae80be643b9581e388c291d608dd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c578609a64c21a33f10b64a1d77f006b45bac41
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849593"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714739"
 ---
 # <a name="manage-changes-to-engineering-products"></a>エンジニアリング製品に対する変更の管理
 
@@ -141,6 +141,8 @@ ms.locfileid: "8849593"
 ### <a name="create-a-change-order-from-a-change-request"></a>変更要求からの変更オーダーの作成
 
 エンジニアリング変更要求をレビューしているエンジニアは、**エンジニアリング変更要求** ページからエンジニアリング変更オーダーを直接作成できます。 アクション ペインの **変更要求** タブで、**エンジニアリング変更オーダー** グループで、**リンクと製品をコピー** を選択します。
+
+新しいエンジニアリング変更オーダーに対して正しい会社を選択することを確認します。 変更注文によってエンジニアリング製品自体が変更される場合 (新しいバージョン、新しい製品、または新しいバリアント)、変更注文をエンジニアリング会社に割り当てる必要があります。 ローカルでの変更だけが必要な場合 (**影響** は *なし* に設定)、変更注文をローカル会社に割り当て、変更は現在の製品に適用されます。
 
 ## <a name="engineering-change-orders"></a>エンジニアリング変更命令
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 82a43954db8b10554c449f3e8d32ba7e5d7c7f27
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423598"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719351"
 ---
 # <a name="inventory-visibility-public-apis"></a>Inventory Visibility の公開 API
 
@@ -47,7 +47,8 @@ ms.locfileid: "9423598"
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | 転記 | [複数のスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | 転記 | [転記メソッドを使用したクエリ](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | 取得 | [取得メソッドを使用したクエリ](#query-with-get-method) |
-| /api/environment/{environmentId}/allocation/allocate | 転記 | [1 つの配賦イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/onhand/exactquery | 投稿 | [POST メソッドを使用した正確なクエリ](#exact-query-with-post-method) |
+| /api/environment/{environmentId}/allocation/allocate | 投稿 | [1 つの配賦イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/unallocate | 転記 | [1 つの未配賦イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/reallocate | 転記 | [1 つの再配賦イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/consume | 転記 | [1 つの消費イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
@@ -690,6 +691,80 @@ URL 所得のサンプルは次のとおりです。 この取得要求は、以
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
+
+### <a name="exact-query-by-using-the-post-method"></a><a name="exact-query-with-post-method"></a>POST メソッドを使用した正確なクエリ
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+この要求の本文では、`dimensionDataSource` はオプションのパラメーターとなります。 設定をしていない場合、`filters` の `dimensions` が *基本分析コード* として扱われます。 `filters` には `organizationId`、`productId`、`dimensions`、`values`の 4 つの必須フィールドがあります。
+
+- `organizationId` には 1 つの値だけが含まれる必要がありますが、それはまだ配列になっています。
+- `productId` には 1 つ以上の値が含まれます。 空の配列であれば、すべての製品が返されます。
+- `dimensions` 配列で、`siteId` と `locationId` が必要ですが、任意の順序で他の要素と一緒に表示できます。
+- `values` には、`dimensions` に対応する値の 1 つ以上の異なる組み合を含めることができます。
+
+`filters` の `dimensions` は自動的に `groupByValues` に追加されます。
+
+`returnNegative` パラメーターは、結果に負のエントリが含まれるかどうかを制御します。
+
+次の例は、サンプル本文コンテンツを示しています。
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+次の例では、複数のサイトと場所にあるすべての製品をクエリする方法を示します。
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ```
 
 ## <a name="available-to-promise"></a>納期回答可能在庫

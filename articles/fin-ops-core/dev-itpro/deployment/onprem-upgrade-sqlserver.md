@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 2abff7a292c8e510ec19a4c803ea7ad9e59ea416
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2718a8d952304d9a8692f9b521d649b27bac29e0
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867358"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719280"
 ---
 # <a name="upgrade-or-replace-the-sql-server-instance-of-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレードまたは置換
 
@@ -46,11 +46,11 @@ ms.locfileid: "8867358"
 
 環境間の SQL Server コンポーネントは、同じバージョンである必要があります。 たとえば、SQL Server 2019 にアップグレードする場合、SQL Server Reporting Services (SSRS)、SQL Server Integration Services (SSIS)、データベース エンジンは、すべて同じバージョンである必要があります。
 
-1. AOS ノードで、SSIS コンポーネントをアップグレードします。
-1. Business Intelligence (BI) ノードで、SSRS とデータベース エンジン コンポーネントをアップグレードします。
+1. AOS ノードで、SSIS コンポーネントをアップグレードします。 このアクションを実行すると、データ管理フレームワーク (DMF) は SSIS の以前のバージョンに依存しているため、正常に機能しなくなります。 使用している環境にサービスを提供した後も、SSIS の新しいバージョンに更新されるため、DMF は引き続き機能します。
+1. Business Intelligence (BI) ノードで、SSRS とデータベース エンジン コンポーネントをアップグレードします。 このアップグレードを実行する場合、ノードの **Complete-Prereqs.ps1** スクリプト返してサービス権限を再構成する必要があります。 BI ノードのデータベース エンジン コンポーネントを SQL Server 2016 から SQL Server 2019 へのアップグレードすると、SSRS コンポーネントが削除されます。 削除した後、SSRS 2019 インストーラーを使用して SSRS サービスをインストールします。
 
 > [!IMPORTANT]
-> BI ノードのデータベース エンジン コンポーネントを SQL Server 2016 から SQL Server 2019 へのアップグレードすると、SSRS コンポーネントが削除されます。 SQL Server 2019 は、SSRS に独自のインストーラーがあります。
+>  SQL Server 2019 は、SSRS に独自のインストーラーがあります。
 
 ## <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
@@ -85,6 +85,9 @@ ms.locfileid: "8867358"
 
 ## <a name="force-the-re-adding-of-the-assemblies-to-the-global-assembly-cache"></a>アセンブリの再追加をグローバル アセンブリ キャッシュに強制する
 
+> [!NOTE]
+> 環境のアプリケーションのバージョンが 10.0.31 以降場合は、SQL バージョンの変更が自動的に検出されるので、この手順を省略できます。
+
 通常、パッケージ配置で環境をサービスする場合、AXSFType の Service Fabric パッケージ バージョンが変更します。 これにより、環境に対して、追加の配置やサービス操作が実行されます。 **更新設定** アクションを使用しても、バージョンは変更されません。 その結果、適切なアセンブリがグローバル アセンブリ キャッシュにありません。 アセンブリの再追加をグローバル アセンブリ キャッシュに強制するには、次の手順を実行します。
 
 1. aos-storage ファイル共有に移動します。
@@ -92,6 +95,14 @@ ms.locfileid: "8867358"
 3. AOS ノードの名前に対応するフォルダーの一覧が表示されます。 いずれかのフォルダーを開きます。 
 4. 既存の .txt ファイルの名前を1.0.txt に変更します。
 5. 各フォルダーについて、ステップ 4 を繰り返します。
+
+## <a name="force-the-redeployment-of-your-reports-to-the-ssrs-node"></a>レポートの SSRS ノードへの強制再配置
+
+BI ノードを新しいノードに置き換える場合、またはデータベース エンジンを削除して再インストールした場合は、レポートを強制的に配置する必要があります。 この場合は、次のセクションの説明にあるように **環境の更新** アクションをトリガーする前に、ビジネス データベースから次のコマンドを実行します。
+
+```SQL
+UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+```
 
 ## <a name="update-your-environment-settings"></a>環境設定の更新
 

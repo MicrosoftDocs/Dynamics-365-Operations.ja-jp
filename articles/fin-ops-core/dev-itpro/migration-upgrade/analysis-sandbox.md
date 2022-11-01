@@ -14,12 +14,12 @@ ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 ms.custom: 106163
 ms.assetid: ''
-ms.openlocfilehash: 1893a778d08a771cfb79b75f1c34b5e7b8bef1b6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 846ce1b8833e505e4a3eb520c525bd74e959dd6d
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283237"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702172"
 ---
 # <a name="upgrade-from-ax-2012---deploy-a-demo-environment-for-analysis"></a>AX 2012 からのアップグレード: 分析のためのデモ環境の展開
 
@@ -35,5 +35,7 @@ ms.locfileid: "9283237"
 
 ライセンスを既に購入している場合、Microsoft Dynamics Lifecycle Services (LCS) で特殊なタイプのプロジェクト (実装プロジェクト) を構成するためのリンクを受け取ります。 実装プロジェクトにより、開発者/テスト環境とサンドボックス環境を配置できます。 このタイプの環境の配置の詳細については、[AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード](/d365F-O/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service) を参照してください。
 
+> [!IMPORTANT]
+> アップグレードを実行する前に、使用している Dynamics 365 バージョンの最新の **品質更新プログラム** を適用してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

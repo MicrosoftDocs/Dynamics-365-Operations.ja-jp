@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f831c5d5719bbbd72c7cff37b8b35826f48ce6e4
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856196"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719294"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Inventory Visibility の手持変更スケジュールと納期回答可能在庫
 
@@ -205,6 +205,7 @@ SUM (*現物在庫* + *手持在庫* + *制限なし* + *品質検査* + *入庫
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | 複数の変更イベントを作成します。 |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | `POST` メソッドを使用してクエリを実行します。 |
 | `/api/environment/{environmentId}/onhand` | `GET` | `GET` メソッドを使用してクエリを実行します。 |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | `POST` メソッドを使用した正確なクエリ。 |
 
 詳細については、[Inventory Visibility のパブリック API](inventory-visibility-api.md) を参照してください。
 
@@ -394,6 +395,8 @@ Body:
 > [!NOTE]
 > 要求本文で、`returnNegative` パラメーターの設定が *true* か *false* かに関係なく、スケジュール済みの手持在庫変更や ATP 結果のクエリを実行するときに、結果に負の値が含まれます。 これらの負の値が含まれるのは、需要注文のみがスケジュールされている場合、または供給数量が需要数量よりも少ない場合に、スケジュール済み手持在庫変更の数量が負になるからです。 負の値が含まれていない場合は、結果は複雑になります。 このオプション、および他のタイプのクエリに関する情報は、[在庫可視性パブリック API](inventory-visibility-api.md#query-with-post-method) を参照してください。
 
+### <a name="query-by-using-the-post-method"></a>POST メソッドを使用したクエリ
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -419,14 +422,14 @@ Body:
     }
 ```
 
-次の例では、`POST` メソッドを使用して在庫可視性に送信できる要求本文を作成する方法を示します。
+次の例では、`POST` メソッドを使用して在庫可視化に送信できるインデックス要求本文を作成する方法を示します。
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -435,7 +438,7 @@ Body:
 }
 ```
 
-### <a name="get-method-example"></a>GET メソッドの例
+### <a name="query-by-using-the-get-method"></a>GET メソッドを使用したクエリ
 
 ```txt
 Path:
@@ -453,7 +456,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-次の例では、要求 URL を `GET` 要求として作成する方法を説明します。
+次の例では、`GET` 要求としてインデックス クエリ要求 URL を作成する方法を説明します。
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -461,9 +464,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 この `GET` 要求の結果は、前の例で使用した `POST` 要求の結果とまったく同じです。
 
+### <a name="exact-query-by-using-the-post-method"></a>POST メソッドを使用した正確なクエリ
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+次の例では、`POST` メソッドを使用して在庫可視化に送信できる正確なクエリ要求本文を作成する方法を示します。
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### <a name="query-result-example"></a>結果の例のクエリを実行する
 
-以前のクエリの両方の例で、次の返信が作成される場合があります。 たとえば、システムは次の設定で構成されています。
+以前のクエリのいずれかの例で、次の返信が作成される場合があります。 たとえば、システムは次の設定で構成されています。
 
 - **ATP 計算メジャー:** *iv.onhand = pos.inbound – pos.outbound*
 - **スケジュールの期間:** *7*

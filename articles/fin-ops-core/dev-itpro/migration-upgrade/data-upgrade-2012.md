@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 5df2fe2503a315088565614cd6aae312127b6c31
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 80608cb64f8ab967b433af8682e5cdfa43fd104c
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124050"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702087"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -43,6 +43,10 @@ ms.locfileid: "9124050"
 ### <a name="prerequisites"></a>必要条件
 
 AX 2012 にてアップグレード前のチェックリストが完了済みである必要があります。 詳細については、[データ アップグレード用のアップグレード前チェックリスト](prepare-data-upgrade.md) を参照してください。
+
+> [!IMPORTANT]
+> アップグレードを実行する前に、使用している Dynamics 365 バージョンの最新の **品質更新プログラム** を適用してください。
+
 
 ### <a name="back-up-your-ax-2012-database"></a>AX 2012 データベースをバックアップします
 

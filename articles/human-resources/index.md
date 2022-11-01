@@ -2,7 +2,7 @@
 title: Human Resources ホーム ページ
 description: Dynamics 365 Human Resources は、複数の領域にわたってデータ駆動型の従業員エクスペリエンスを構築するために必要となる、従業員に関するインサイトを提供します。
 author: twheeloc
-ms.date: 08/03/2021
+ms.date: 09/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,16 +16,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0710065765c907dc2cc3ef5eeec0414721f7779
-ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
+ms.openlocfilehash: 111070e3ce05e0f60f02259f73be56536fc017e7
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9539112"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702043"
 ---
 # <a name="human-resources-home-page"></a>Human Resources ホーム ページ
-
-
 
 この記事には、Microsoft Dynamics 365 Human Resources のヘルプ トピックとその他のリソースの一覧が含まれています。 
 

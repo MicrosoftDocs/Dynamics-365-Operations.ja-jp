@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 171b9f1dcb1d4ece63bc0beeb71f45b9f8ae7bba
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 118b1c79d23cd1b5044ede9aa9c469409cd22166
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220609"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708786"
 ---
 # <a name="pack-containers-for-shipment"></a>出荷用コンテナーのパック
 
@@ -34,7 +34,9 @@ ms.locfileid: "9220609"
 - [確認および転送](confirm-and-transfer.md)
 - [梱包とストレージへのさまざまな分析コードの設定](packing-vs-storage-dimensions.md)
 - [出荷コンテナーの梱包と出荷処理に関する梱包作業](packing-work.md)
-<!-- KFM: Add link to upcoming topic when available (10.0.31): [Manual packing on the Warehouse management mobile app](manual-packing-on-the-warehouse-management-mobile-app.md) -->
+- [Warehouse Management モバイル アプリでコンテナーを梱包する](warehouse-app-packing-containers.md)
+- [シナリオ例 – Warehouse Management モバイル アプリでコンテナーを梱包する](warehouse-app-pack-containers-scenario.md)
+- [コンテナー ラベルの印刷](print-container-labels.md)
 
 ## <a name="set-up-your-warehouse-to-use-manual-packing-operations"></a>倉庫を設定して、手動パッキング操作を使用する
 

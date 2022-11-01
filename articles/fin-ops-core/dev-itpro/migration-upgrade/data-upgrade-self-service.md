@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: vesakkar
 ms.search.validFrom: 2021-06-30
-ms.openlocfilehash: 578c7bf4b6a959a04fbbc37978f5e59d578aa4dc
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: fefe8bf224e7778e5a8be86817ba3f10d2a9f5eb
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9640712"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702176"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-self-service-environments"></a>AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 
@@ -31,6 +31,10 @@ ms.locfileid: "9640712"
 
 1. Microsoft Dynamics Lifecycle Services (LCS) から、**AX 2012 Database Upgrade Toolkit for Dynamics 365** をダウンロードします。 共有資産ライブラリで、資産タイプとして **モデル** を選び、モデル ファイルを選択します。
 2. LCS のセルフ サービス環境を作成します。 この環境は、**配置済み** 状態である必要があります。 Microsoft が管理する環境である必要があります。 クラウド ホスト型開発環境は、[AX 2012 年からのアップグレード - 開発環境でのデータ アップグレード](data-upgrade-2012.md)としてのみ使用できます。
+
+> [!IMPORTANT]
+> アップグレードを実行する前に、使用している Dynamics 365 バージョンの最新の **品質更新プログラム** を適用してください。
+
 
 > [!NOTE]
 > 次の点に注意してください:

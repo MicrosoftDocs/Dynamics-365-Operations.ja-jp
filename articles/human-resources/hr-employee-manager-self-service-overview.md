@@ -2,7 +2,7 @@
 title: 従業員およびマネージャー セルフ サービスの概要
 description: この記事では、従業員およびマネージャ セルフ サービス ワークスペースの概要を説明します。
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 09/12/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51883730c36a3df2538adbe85ad8ead7d3cf1e98
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0ecc3f5ae03dda6932dfa111bd4d8b7e6e7b5c7f
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694484"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702159"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>従業員およびマネージャー セルフ サービスの概要
 

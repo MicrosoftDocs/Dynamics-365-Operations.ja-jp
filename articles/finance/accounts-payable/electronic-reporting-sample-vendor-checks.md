@@ -1,7 +1,7 @@
 ---
 title: 仕入先小切手の電子申告サンプル
 description: この記事では、電子レポートのサンプル小切手フォーマットの使い方についての一般情報を提供します。
-author: sunfzam
+author: mrolecki
 ms.date: 06/14/2017
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: Application User
 ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: mrolecki
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d2b26a083540924d2368a298632aea90ecf95e9b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6863acaa264cfb8f15c34e85811a94afc67bec5e
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908186"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715213"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>電子レポートのサンプル仕入先小切手
 

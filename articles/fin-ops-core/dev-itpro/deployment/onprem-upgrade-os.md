@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: be726b24cf9e01df1783c2202c236a1d13a1d641
-ms.sourcegitcommit: 346a9ca833237836d5e4ca496aeb2b5b24bdb27b
+ms.openlocfilehash: 822054c0ec6c72724d9137a5d79a0ab4cda5472c
+ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9583797"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9709200"
 ---
 # <a name="upgrade-windows-server-in-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) 環境での Windows Server のアップグレード
 
@@ -86,6 +86,7 @@ SQL Server データベースを使用している場合は、[SQL Server を使
 1. 新しいファーム/インスタンス ID が古いファーム/インスタンス ID と異なる場合は、新しいコンフィギュレーションを反映するようにユーザー情報テーブルを更新する必要があります。 インフラストラクチャ スクリプトのバージョン 2.17.0 では、次のコマンドを AOS ノードの 1 つから実行して、各ユーザーのコンフィギュレーションを自動的に更新および再生成できます。
 
     ```powershell
+    Import-Module ".\D365FO-OP" -Force
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
     ```
 

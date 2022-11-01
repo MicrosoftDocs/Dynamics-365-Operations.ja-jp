@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance 10.0.31 (2023 年 1 月) の新機能および変更された機能
+title: Dynamics 365 Finance 10.0.31 (2023 年 2月) の新機能および変更された機能
 description: この記事では、Microsoft Dynamics 365 Finance バージョン 10.0.31 プレビュー リリースの新機能または変更された機能について説明します。
 author: kfend
 ms.date: 10/18/2022
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: ce67be2acd557968aa9535ee2b283c8c29876107
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: dd41be05680b22faf222a46102a7a6668899036d
+ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690169"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9709775"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-finance-10031-january-2023"></a>Dynamics 365 Finance 10.0.31 (2023 年 1 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-10031-february-2023"></a>Dynamics 365 Finance 10.0.31 (2023 年 2月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 

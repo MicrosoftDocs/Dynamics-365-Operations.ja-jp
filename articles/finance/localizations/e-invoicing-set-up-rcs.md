@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service (RCS) を設定する
 description: この記事では、Regulatory Configuration Service (RCS) を設定する方法について説明します。
 author: gionoder
-ms.date: 02/09/2022
+ms.date: 10/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 63a4f77d6e80133947dff678cef3885167ec55be
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 32ced98925ee66e02f0b073b4acbd586666ac20c
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9285790"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710784"
 ---
 # <a name="set-up-regulatory-configuration-service-rcs"></a>Regulatory Configuration Service (RCS) を設定する
 
@@ -39,7 +39,16 @@ ms.locfileid: "9285790"
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>電子請求と RCS 統合のパラメーターを設定する
 
 1. **関連する設定** セクションの **グローバリゼーション** ワークスペースで、**電子申告パラメーター** を選択します。
-2. **電子請求** タブの **サービス エンドポイント URI** フィールドに、次の表に示すように、Microsoft Azure の地域に対応するサービス エンドポイントを入力します。
+2. パラメータを初めて設定する場合は、ライフ サイクル サービス (LCS) への接続を求めるメッセージが表示されます。 Lifecycle Services に接続するには、**こちらをクリック** をクリックし、接続が確立された後、**OK** を選択します。
+
+    > [!IMPORTANT]
+    > データ型の居住地が適用される国または地域で、LCS が提供される地域で RCS が提供されている場合は、RCS で "要求URIに一致する HTTP リソースが見つかりませんでした" という接続エラー メッセージが表示される場合があります。  **OK** を選択します。 PCS で他のエラーメッセージ、"ユーザー () の代理として Dynamics Lifecycle Services のユーザー トークンを生成できませんでした。" を受信する場合があります。 システム管理者に問い合わせてください。
+    >  
+    > これは、LCS はグローバル サービスであり、米国の地域で提供されている場合に当たって発生します。 データの居住地ポリシーにより、現在の地域の RCS は LCS に接続できません。 これらの回避方法では、次の 2 つの方法があります。
+    > - 現在の地域から RCS を削除し、米国の地域で再作成します。
+    > - エラーを無視して電子請求の設定を続行します。 これらのエラーは、電子請求機能には影響しません。
+
+3. **電子請求** タブの **サービス エンドポイント URI** フィールドに、次の表に示すように、Microsoft Azure の地域に対応するサービス エンドポイントを入力します。
 
     | Azure geography データ センター | サービス エンドポイント URI |
     |----------------------------|----------------------|
@@ -55,8 +64,10 @@ ms.locfileid: "9285790"
     | カナダ                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | フランス                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | インド                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | ノルウェー                     | <p>`https://gw.no-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | 南アフリカ               | <p>`https://gw.za-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. **アプリケーション ID** フィールドが、**0cdb527f-a8d1-4bf8-9436-b352c68682b2** に設定されていることを確認します。 この値は固定値です。 グローバル一意識別子 (GUID) のみを入力し、値にスペース、コンマ、期間、引用符などの他の記号が含まれるのを確認します。
+3. **アプリケーション ID** フィールドに固定値 **0cdb527f-a8d1-4bf8-9436-b352c68682b2** を確認して入力します。 グローバル一意識別子 (GUID) のみを入力し、値にスペース、コンマ、期間、引用符などの他の記号が含まれるのを確認します。
 4. **LCS 環境 ID** フィールドに、Microsoft Dynamics Lifecycle Services (LCS) 環境の ID を入力してください。 この値は、電子請求サービスで使用する財務または  Supply Chain Management 環境への参照です。 ID を取得するには、[LCS](https://lcs.dynamics.com/) にサインインして、自分のプロジェクトを開き、**環境の管理** タブの **環境の詳細** セクションで **環境ID** フィールドを参照します。
 
     > [!IMPORTANT]

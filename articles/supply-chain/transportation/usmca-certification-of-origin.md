@@ -6,18 +6,19 @@ ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c67fd12c31b475b323bc4c7feee4cc5267da7793
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336548"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714702"
 ---
 # <a name="usmca-certification-of-origin"></a>原産国の USMCA 証明書
 
@@ -57,7 +58,7 @@ ms.locfileid: "9336548"
 出荷のための原産国の USMCA 証明書ドキュメントを印刷するには、次の操作を行います。
 
 1. 次のどちらかを実行します。
-    - **輸送管理 > 出荷 > すべての出荷** に移動し、ドキュメントを印刷する出荷を選択します。
+    - **輸送管理 \> 計画 \> 出荷 \> すべての出荷** に移動し、ドキュメントを印刷する出荷を選択します。
     - ドキュメントを印刷する出荷の **出荷の詳細** ページを開きます (**すべての出荷** ページなど、次のいずれかの方法を使用することができます)。
 1. アクション ウィンドウで、**出荷** タブを開き、**印刷** グループから **原産国の USMCA 証明書** を選択します。
 1. **証明書または原産国** ダイアログ ボックスが開きます。 次のサブセクションで説明されている設定を行い、**OK** を選択してドキュメントを生成します。

@@ -1,5 +1,5 @@
 ---
-title: ライセンス プレート ラベルのドキュメント ルーティング レイアウト
+title: ドキュメント ルート指定 ラベル レイアウト
 description: この記事では、書式設定メソッドを使用してラベルに値を印刷する方法について説明します。
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847878"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708648"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>ライセンス プレート ラベルのドキュメント ルーティング レイアウト
+# <a name="document-routing-label-layout"></a>ドキュメント ルート指定 ラベル
 
 [!include [banner](../includes/banner.md)]
 
+この記事では、ライセンス ライセンス 契約、コンテナー、およびラベル (複数) のレイアウトの作成方法について説明します。 また、レイアウトを作成するために使用する Zebra プログラミング言語を使用する際のガイドラインも提供します。
 
-ドキュメント ルーティング レイアウトでは、ライセンス プレート ラベルのレイアウトと、その上に印刷されるデータを定義します。 印刷トリガー ポイントは、モバイル デバイスのメニュー項目と作業テンプレートを設定するときに設定します。
+ドキュメント ルート指定ラベル レイアウトでは、ラベルのレイアウトと、その上に印刷されるデータを定義します。 印刷トリガー ポイントは、モバイル デバイスのメニュー項目と作業テンプレートを設定するときに設定します。
 
-一般的なシナリオでは、倉庫の受け取り担当者は、受け取りエリアに到着したパレットの内容を記録した後にライセンス プレート ラベルを印刷します。 物理的なラベルがパレットに貼られます。 これらは、後続のプット アウェイ プロセスと出荷ピッキング処理の一部として検証に使用できます。
+この記事の情報は、[ライセンス プレート ラベル](tasks/license-plate-label-printing.md)、[コンテナー ラベル](print-container-labels.md)、[サイクル ラベル](configure-wave-label-printing.md) など、すべてのドキュメント ルート指定ラベル のレイアウトに適用されます。
 
-印刷デバイスが送信されたテキストを解釈できる場合は、非常に複雑なラベルを印刷できます。 たとえば、バーコードを含む Zebra プログラミング 言語 (ZPL) レイアウトは、次の例のようになります。
+印刷デバイスが送信されたテキストを解釈できる場合は、非常に複雑なラベルを印刷できます。 たとえば、バーコードを含む  Zebra プログラミング 言語 (ZPL) レイアウトは、次の例のようになります。
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ ms.locfileid: "8847878"
 ^PQ1,,,Y^XZ
 ```
 
-ラベル印刷プロセスの一部として、この例のテキスト `$LicensePlateId$` はデータ値に置き換えられます。
+ラベル印刷プロセスの一部として、この例のテキスト `$LicensePlateId$` はデータ値に置き換えられます。 いくつかの広く使用されているラベル生成ツールには、ラベル レイアウトのテキストの書式設定に役立つものがあります。 これらのツールの多くは、`$FieldName$` 形式をサポートしています。 さらに、Microsoft Dynamics 365 Supply Chain Management では、ドキュメント ルーティング レイアウトのフィールド マッピングの一部として特別な書式設定ロジックを使用しています。
 
 印刷される値を表示するには、**倉庫管理 \> 照会およびレポート \> ライセンス プレート ラベル** に移動します。
-
-いくつかの広く使用されているラベル生成ツールには、ラベル レイアウトのテキストの書式設定に役立つものがあります。 これらのツールの多くは、`$FieldName$` 形式をサポートしています。 さらに、Microsoft Dynamics 365 Supply Chain Management では、ドキュメント ルーティング レイアウトのフィールド マッピングの一部として特別な書式設定ロジックを使用しています。
 
 ## <a name="turn-on-this-feature-for-your-system"></a>システムでこの機能を有効化する
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>ラベルを印刷する方法の詳細
 
-ラベルの設定および印刷方法の詳細については、[ライセンス プレート ラベル印刷の有効化](tasks/license-plate-label-printing.md) を参照してください。
+ラベルの設定と印刷方法についての詳細は、次の記事を参照してください。
 
+- [ライセンス プレート ラベルの印刷](tasks/license-plate-label-printing.md)
+- [コンテナー ラベルの印刷](print-container-labels.md)
+- [ウェーブ ラベルの印刷](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

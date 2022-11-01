@@ -1,8 +1,8 @@
 ---
 title: 現金割引期間外の現金割引の適用
 description: この記事は、支払が現金割引期間外に作成されている場合でも現金割引を行う方法を示す 2 つのシナリオを提供します。
-author: abruer
-ms.date: 08/22/2017
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: twheeloc
 ms.custom: 14301
 ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d
 ms.search.region: Global
-ms.author: shpandey
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b2d88b7f03a13e0e8229d7b45367f6da17390fd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1abf6722348b57594509e90ca0defc07783a112b
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879714"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715886"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>現金割引期間外の現金割引の適用
 

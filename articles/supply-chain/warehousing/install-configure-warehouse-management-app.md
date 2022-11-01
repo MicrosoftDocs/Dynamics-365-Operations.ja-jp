@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ee87eee382263897d97512f6b01c786734a8f27
-ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
+ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "9682537"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714765"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのインストールと接続
 
@@ -63,6 +63,8 @@ Warehouse Management mobile app を使用するには、ご利用のシステム
 
 - **Android:** [倉庫管理 (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
     プレビュー バージョンをダウンロードする場合、インストールするにはいくつかの追加手順が必要です。 詳細については、[Android アプリをテストする](/appcenter/distribution/testers/testing-android) を参照してください。
+
+App Center からダウンロードしたビルドのインストール方法については、[ビルドのインストール](/appcenter/distribution/installation) を参照してください。
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Azure Active Directoryで Web サービス アプリケーションを作成する
 

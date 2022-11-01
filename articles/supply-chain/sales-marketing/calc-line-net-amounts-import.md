@@ -1,6 +1,6 @@
 ---
-title: 販売注文、見積、返品のインポート時に明細行の正味金額を再計算するを参照します
-description: この記事では、販売注文、見積、返品をインポートするときに、行の正味金額を再計算するかどうか、および方法について説明します。 また、さまざまなバージョンの Microsoft Dynamics 365 Supply Chain Management で動作を制御する方法も説明します。
+title: 販売注文と見積のインポート時に明細行の正味金額を再計算する
+description: この記事では、販売注文と見積がインポートされるときに、行の正味金額を再計算するかどうか、および方法について説明します。 また、さまざまなバージョンの Microsoft Dynamics 365 Supply Chain Management で動作を制御する方法も説明します。
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335558"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719337"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>販売注文、見積、返品のインポート時に明細行の正味金額を再計算するを参照します
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>販売注文と見積のインポート時に明細行の正味金額を再計算する
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、販売注文、見積、返品をインポートするときに、行の正味金額を再計算するかどうか、および方法について説明します。 また、さまざまなバージョンの Microsoft Dynamics 365 Supply Chain Management で動作を制御する方法も説明します。
+この記事では、販売注文と見積がインポートされるときに、行の正味金額を再計算するかどうか、および方法について説明します。 また、さまざまなバージョンの Microsoft Dynamics 365 Supply Chain Management で動作を制御する方法も説明します。
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>インポート時に正味行金額に対する更新を計算する方法
 
-Supply Chain Management のバージョン 10.0.23 では、[bugfix 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418) を紹介しました。 この修正では、既存の販売注文、返品、および見積の更新をインポートするときに、行の **正味金額** フィールドを更新または再計算できる条件が変更されました。 バージョン 10.0.29 では、インポート機能で *行の正味金額の計算* をオンにして、この修正を交換 できます。 この機能にも同様の効果がありますが、グローバル設定を使用することで古い動作に戻る必要があります。 新しい動作によりシステムの動作は変更されませんが、次のすべての条件が満たされた特定のシナリオで予期しない結果が生成されます。
+Supply Chain Management のバージョン 10.0.23 では、[bugfix 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418) を紹介しました。 この修正では、既存の販売注文と見積の更新をインポートするときに、行の **正味金額** フィールドを更新または再計算できる条件が変更されました。 バージョン 10.0.29 では、インポート機能で *行の正味金額の計算* をオンにして、この修正を交換 できます。 この機能にも同様の効果がありますが、グローバル設定を使用することで古い動作に戻る必要があります。 新しい動作によりシステムの動作は変更されませんが、次のすべての条件が満たされた特定のシナリオで予期しない結果が生成されます。
 
 - 既存のレコードを更新するデータは、Open Data Protocol (OData) を使用して、*販売注文明細行 V2*、*販売見積明細行 V2* または *返品注文明細行* エンティティを通じてインポートされます。このエンティティには、Excel や一部のサード パーティ統合を使用する場合も含まれます。
-- 設定されている [売買契約評価ポリシー](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) は、販売注文明細行、販売見積明細行、返品注文明細行の **正味金額** フィールドへの更新を制限するポリシーを設立します。
+- 設定されている [売買契約評価ポリシー](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) は、販売注文明細行、販売見積明細行、返品注文明細行の **正味金額** フィールドへの更新を制限するポリシーを設立します。 返品注文明細行の場合は、常に **正味金額** フィールドが計算され、手動で設定できません。
 - インポートされたデータには、明細行の **正味金額** フィールドの変更や、1 つ以上の既存の行レコードについて明細行の **正味金額** フィールドの値が再計算される原因となる変更 (単価、数量、割引など) が含まれます。
 
 これらの特定のシナリオでは、契約評価ポリシーの影響は、明細行の **正味金額** フィールドの更新に制限を設定します。 この制限は *変更ポリシー* と呼ばれる名前です。 このポリシーにより、ユーザー インターフェイスを使用してフィールドを編集または再計算するときに、変更を行うかどうかを確認するメッセージが表示されます。 ただし、レコードをインポートする場合は、システムが選択する必要があります。 バージョン 10.0.23 より前のバージョンでは、受信した明細行の正味金額が 0 (ゼロ) ではない限り、常に明細行の正味金額は変更されません。 ただし、新しいバージョンでは、明示的に正味金額が更新または再計算されるように明示的に指示されていない限り、システムは常に正味金額を更新または再計算します。 新しい動作はさらに論理的ですが、以前の動作を前提としてプロセスや統合を既に実行している場合は、問題が発生する可能性があります。 この記事では、必要に応して古い動作に戻す方法について説明します。
