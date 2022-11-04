@@ -692,20 +692,14 @@
               items:
                 - name: 詳細な口座調整の設定プロセス
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: 詳細な口座調整のインポート処理の設定
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
                 - name: 電子申告を使用した詳細な口座調整のインポート処理の設定
                   href: accounts-payable/import-bai2-er.md
                 - name: 口座調整照合ルールの設定
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: 詳細な口座調整を使用した口座取引明細書の調整
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: 詳細な口座調整 MT940 のインポート - 複合データ エンティティのアップグレード
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: 詳細な口座調整の概要
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: 口座取引明細書ファイルのインポートのトラブルシューティング
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: 銀行仕訳帳の複合エンティティの更新
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: 原価会計

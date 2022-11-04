@@ -2239,6 +2239,16 @@
                   href: procurement/tasks/create-purchasing-policies.md
                 - name: 調達カテゴリ階層に対するポリシーの設定
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: 供給リスク評価
+              items:
+                - name: 供給リスク評価の概要
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: 供給リスク評価の構成
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: 仕入先が抱えるリスクの発見と対応に使用する実用的なワークスペース
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: リスク分析と業績ランキングに使用する Power BI レポート
+                  href: procurement/supply-risk-assessment-reports.md
             - name: 製品受領書と請求書作成
               items:
                 - name: 発注書に対する製品受領書

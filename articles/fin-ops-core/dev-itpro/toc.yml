@@ -334,12 +334,16 @@
                       href: deployment/deployenvironment-newinfrastructure.md
                     - name: 配置に関するよくあるご質問
                       href: deployment/deploymentFAQ.md
+                    - name: 環境の移行
+                      href: deployment/geo-to-geo-migrations.md
                     - name: セルフサービス配置に関する既知の問題
                       href: deployment/known-issues-new-deployment-experience.md
                     - name: 配置の保守操作
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: 環境の更新
                       href: deployment/updateenvironment-newinfrastructure.md
+                    - name: 環境の移行
+                      href: deployment/geo-to-geo-migrations.md
                     - name: セルフサービス配置で配置された環境のトラブルシューティング
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: セルフサービス環境の計画メンテナンスに関するよくあるご質問
@@ -970,8 +974,10 @@
                   href: lifecycle-services/whats-new-lcs.md
             - name: Lifecycle Services ユーザー ガイド
               href: lifecycle-services/lcs-user-guide.md
-            - name: プロジェクト オンボード
+            - name: プロジェクトのオンボーディング
               href: lifecycle-services/project-onboarding.md
+            - name: プロジェクト移行マネージャー
+              href: lifecycle-services/project-migration-manager.md
             - name: サブスクリプション見積もりツール
               href: lifecycle-services/subscription-estimator.md
             - name: セキュリティのコンフィギュレーション

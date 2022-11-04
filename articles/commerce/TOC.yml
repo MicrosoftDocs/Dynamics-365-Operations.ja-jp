@@ -256,8 +256,6 @@
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Commerce の店舗テクノロジ スタックを最新化する (ホワイト ペーパー)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Commerce のオフライン実装とトラブルシューティング
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: オンライン ストア カタログの公開
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI のコンテンツ
@@ -396,12 +394,16 @@
                   items:
                     - name: Store Commerce アプリ
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce アプリの機能
+                      href: store-commerce-capabilities.md
                     - name: モバイル プラットフォーム用 Store Commerce アプリ
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Modern POS を Store Commerce に移行する
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: デバイス管理実装ガイダンス
                       href: implementation-considerations-devices.md
+                    - name: Commerce のオフライン実装とトラブルシューティング
+                      href: dev-itpro/implementation-considerations-offline.md
                     - name: Store Commerce または Cloud POS を選択する
                       href: MPOS-or-CPOS.md
                     - name: オンラインおよびオフラインの POS 操作

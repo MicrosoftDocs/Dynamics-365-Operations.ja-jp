@@ -4,6 +4,18 @@
       items:
         - name: Dynamics 365 Human Resources ホーム ページ
           href: index.md
+        - name: Human Resources インフラストラクチャのマージ
+          items:
+            - name: Human Resources インフラストラクチャのマージの概要
+              href: hr-infrastructure-merge.md
+            - name: Human Resources インフラストラクチャの顧客移行
+              href: hr-cust-migration.md
+            - name: Human Resources インフラストラクチャのマージに関するよくあるご質問
+              href: hr-infrastructure-merge-faq.md
+            - name: Human Resources の顧客移行に関するよくあるご質問
+              href: customer-migration.md
+            - name: Human Resources インフラストラクチャのマージに関係する既知の問題
+              href: hr-migration-issues.md
         - name: 新機能および変更された機能
           items:
             - name: 財務と運用アプリの新機能または変更された機能
@@ -242,15 +254,11 @@
                   href: hr-admin-go-live-prepare.md
                 - name: Go-Live に関するよくあるご質問
                   href: hr-admin-go-live-faq.md
-                - name: Human Resources インフラストラクチャのマージに関するよくあるご質問
-                  href: hr-infrastructure-merge-faq.md
-                - name: Human Resources の顧客移行に関するよくあるご質問
-                  href: customer-migration.md
                 - name: ドキュメント リソース
                   items:
                     - name: ヘルプ システム
                       href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
-                    - name: ヘルプ システムへの接続
+                    - name: ヘルプ システムに接続する
                       href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
                     - name: カスタム ヘルプの概要
                       href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
