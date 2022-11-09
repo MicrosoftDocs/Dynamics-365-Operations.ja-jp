@@ -2,7 +2,7 @@
 title: Store Commerce アプリ
 description: この記事では、Windows 用の Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。 Dynamics 365 Commerce バージョン 10.0.25 以降に適用されます。
 author: josaw1
-ms.date: 10/07/2022
+ms.date: 10/25/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: b07c26a97e884f158fa0f50d8e95fe64cdc5fb0e
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: f998e293ac567be565ca413f42f019bdbe3eb1d8
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9640711"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725564"
 ---
 # <a name="store-commerce-app"></a>Store Commerce アプリ
 
@@ -45,6 +45,8 @@ Store Commerce アプリは、Android および iOS プラットフォームで�
 - POS および拡張機能のアップグレードは、Commerce のシールド インストーラー フレームワークを通じて簡略化できます。
 - 専用のハードウェア ステーションをサポートしています。
 - オフラインでの配置をサポートしています。
+
+Store Commerce アプリの機能を確認するには、[Store Commerce アプリ機能](../store-commerce-capabilities.md)を参照してください。
 
 ## <a name="application-lifecycle-management"></a>アプリケーション ライフサイクル管理
 
@@ -214,6 +216,8 @@ Store Commerceは、ハードウェア デバイスと統合できるよう拡�
 + 有効化の際に、複数のオプションを使用して AAD パスワードを入力するように求めるメッセージが表示されたら、パスワードを選択します。 他のオプションが機能しない場合があります。
 
 ## <a name="additional-resources"></a>追加リソース
+[Store Commerce アプリの機能](../store-commerce-capabilities.md)
+
 [Dynamics 365 Commerce の店舗内テクノロジー スタックの近代化](https://www.microsoft.com/download/details.aspx?id=103896)
 
 [Commerce SDK の技術解説シリーズ](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)

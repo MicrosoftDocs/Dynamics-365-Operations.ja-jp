@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 4f381f1ec0ea08f18db3cac474e8990906364504
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 757e83887e318dd6aa54106fb78305f1d94e0f90
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286894"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734270"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>ゲスト チェックアウトの注文の検索を有効にする
 
@@ -73,6 +73,11 @@ Commerce モジュール ライブラリの注文検索モジュールは、ゲ�
 注文関連のメールでは、顧客が注文した商品の注文詳細ページへのリンクやボタンを提供できます。 このリンク、またはボタンを追加するには、次の例のように、e コマース サイトの注文詳細ページを指す HTML ハイパーリンクを作成し、URL パラメーターとして注文確認 ID と顧客の電子メールアドレスを渡します。
 
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+> [!NOTE]
+> 注文の検索機能を有効にするには、**ライセンス構成** > **構成キー** で **見積** キーが有効であることを確認する必要があります。
+>
+>![見積ライセンス キー構成を有効にする必要があります](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

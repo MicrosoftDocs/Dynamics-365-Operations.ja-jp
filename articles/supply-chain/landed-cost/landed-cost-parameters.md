@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871981"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725524"
 ---
 # <a name="landed-cost-parameters-setup"></a>陸揚原価パラメーターの設定
 
@@ -125,14 +125,11 @@ ms.locfileid: "8871981"
 
 **陸揚原価パラメーター** ページの **番号順序** タブでは、陸揚原価で必要な参照番号順序の各タイプが一覧表示されますが、それは法人間では共有されません。 一覧の各参照については、番号順序コードを選択します。
 
-> [!NOTE]
-> 複数会社の構成では、会社 (法人) ごとに異なる番号順序を作成する必要があります。
 
 ## <a name="shared-number-sequences-tab"></a>共有番号順序タブ
 
 **陸揚原価パラメーター** ページの **共有番号順序** タブでは、陸揚原価の法人間で共有される参照番号順序の各タイプが一覧表示されます。 現在、一覧にある番号順序は 1 つです。 この番号順序は、航海 ID に使用されます。
 
-**全ての航海** ページでは、ユーザーはすべての法人間の航海をすべて表示できます。 ただし、航海の編集および処理を行うには、ユーザーが選択したレコードの法人に属している必要があります。
 
 ## <a name="feature-visibility-tab"></a>機能の可視性タブ
 

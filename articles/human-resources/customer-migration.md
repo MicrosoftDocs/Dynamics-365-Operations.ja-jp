@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151083"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734361"
 ---
 # <a name="human-resources-customer-migration"></a>Human Resources の顧客の移行
 
@@ -40,7 +40,7 @@ ms.locfileid: "9151083"
 各会社の移行は、会社の現在の構成と、財務と運用インフラストラクチャに移行する準備が完了している場合に依存します。 顧客が Microsoft パートナーと協力して、今後の最適な方法を決定するようお勧めします。
 
 - Dynamics 365 Finance の **人事管理** モジュールを使用する組織は、通常の 1 バージョン更新プロセスの一部として、Dynamics 365 Human Resources からの新しい機能を有効にできます。 新しい機能が 2022 年 1 月から一般に利用できる予定です。
-- Dynamics 365 Human Resources を使用する組織は、インフラストラクチャ統合の完了に使用できるツールへのアクセス権を持っています。 Microsoft は、移行中に顧客と協力し、サービスが中断されるのを防ぐのに役立ちます。 移行ツールが使用可能になった時刻から移行を行う顧客の場合、移行期間が 12 ~ 18 か月になります。
+- Dynamics 365 Human Resources を使用する組織は、インフラストラクチャ統合の完了に使用できるツールへのアクセス権を持っています。 Microsoft は、移行中に顧客と協力し、サービスが中断されるのを防ぐのに役立ちます。 移行ツールが使用可能になった時刻から移行を行う顧客の場合、移行期間に 12 か月を要します。
 - Dynamics 365 Human Resources と **人事管理** モジュールの両方を使用する組織は、スタンドアロンの人事管理インフラストラクチャを財務と運用インフラストラクチャに移動できます。 また、統合ツールを使用して環境を単一の環境にすることもできます。 2 つの環境をマージするための要件や時間枠はありません。
 
 最新情報については、[リリース計画](/dynamics365/release-plans/) を定期的にチェックしてください。
@@ -166,4 +166,4 @@ Microsoft では、マージに役立つ FastTrack から利用できるツー�
 
 ## <a name="licensing-impact"></a>ライセンスへの影響
 
-ライセンスが受ける影響の詳細については、[Dynamics 365 Human Resources インフラストラクチャ マージに関するよくある質問](hr-infrastructure-merge-faq.md#licensing-impact) を参照してください。
+ライセンスが受ける影響の詳細については、[Dynamics 365 Human Resources インフラストラクチャのマージ](hr-infrastructure-merge.md#licensing) を参照してください。

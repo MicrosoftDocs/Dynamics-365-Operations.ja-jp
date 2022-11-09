@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 8c60ed0c334bf09916dd633302c6d813ea6f16b6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a891de4a1da6641a02b8316d16ac2e9a8180fac1
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281457"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734254"
 ---
 # <a name="order-lookup-module"></a>注文検索モジュール
 
@@ -44,6 +44,12 @@ ms.locfileid: "9281457"
 ## <a name="add-an-order-lookup-module-to-a-page"></a>注文検索モジュールをページに追加する
 
 注文検索モジュールは、e コマース サイトのどのページの本文にも追加できます。 注文検索モジュールを使用してゲスト チェックアウトの注文の検索を有効にしたい場合、必ずユーザーのサインインが必要ないページに追加してください。 Commerce サイト ビルダー ツリー ビューでページの **サインインが必要?** の設定を見つけるには、**既定のページ (必須)** スロットを選択し、右ウィンドウの下部を確認します。
+
+
+> [!NOTE]
+> 注文の検索機能を有効にするには、**ライセンス構成** > **構成キー** で **見積** キーが有効であることを確認する必要があります。
+>
+> ![見積ライセンス キー構成を有効にする必要があります](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

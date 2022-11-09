@@ -2,7 +2,7 @@
 title: オンラインおよびオフラインでの販売時点管理 (POS) の操作
 description: この記事では、Dynamics 365 Commerce の販売時点管理 (POS) の詳細情報について説明します。 アプリケーション内で操作を呼び出すことができる場所と、オフラインモードで使用できるかどうかを指定します。
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272852"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728279"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>オンラインおよびオフラインでの販売時点管理 (POS) の操作
 
@@ -101,7 +101,7 @@ ms.locfileid: "9272852"
 | 212  | フリート カード情報                                   | この操作はサポートされていません。                                                                                                                                                                                | 該当なし | 該当なし     | 該当なし | 該当なし    | 該当なし  |
 | 213  | クレジット メモで支払う                                   | 店舗によって発行されたクレジット メモ (伝票) での支払を受け付けます。                                                                                                                                                          | 有効            | 有効                | 無効             | 無効                | 無効              |
 | 214  | ギフト カードで支払う                                     | 店舗が発行したギフト カードを承認します。                                                                                                                                                                      | 有効            | 有効                | 無効             | 無効                | 無効              |
-| 215  | ギフト カードをキャッシュ アウトする                                | この操作はサポートされていません。                                                                                                                                                                                | 有効            | 有効                | 無効             | 無効                | 無効              |
+| 215  | ギフト カードをキャッシュ アウトする                                | 構成されたキャッシュ アウト限度額以内の場合に、ギフト カードの残高全額を含む貸方トランザクション。                                                                                                                                                                              | 有効            | 有効                | 無効             | 無効                | 無効              |
 | 216  | クレジット カードで金額を正確に支払う                                    | この操作はサポートされていません。                                                                                                                                                                                | 該当なし | 該当なし     | 該当なし | 該当なし    | 該当なし  |
 | 217  | 小切手で金額を正確に支払う                                   | この操作はサポートされていません。                                                                                                                                                                                | 該当なし | 該当なし     | 該当なし | 該当なし    | 該当なし  |
 | 218  | 顧客口座で金額を正確に支払う                        | この操作はサポートされていません。                                                                                                                                                                                | 該当なし | 該当なし     | 該当なし | 該当なし    | 該当なし  |

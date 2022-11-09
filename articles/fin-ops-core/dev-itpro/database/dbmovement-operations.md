@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2e877f331b35daa768bb640ab019aa8c6a508163
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ce5d56e596430e6b34efb3ead3d67e5afcce8ade
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867542"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9732684"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 
@@ -39,7 +39,8 @@ ms.locfileid: "8867542"
 |DevTest|   サンドボックス|    [データベースのインポート](import-database.md)| サポートされていません | [ゴールデン コンフィギュレーション プロモーション](dbmovement-scenario-goldenconfig.md) |
 運用| DevTest|    直接サポートされていません | サポートされていません | [標準ユーザー承認テスト (UAT) データベースのコピーのエクスポート](dbmovement-scenario-exportuat.md)を推奨 |
 |サンドボックスのポイントインタイム | サンドボックス |[ポイントインタイム復元 (PITR)](database-point-in-time-restore.md) | サポートされていません | [破壊試験](dbmovement-scenario-destructivetests.md) |
-|運用環境のポイントインタイム| サンドボックス| [サンドボックス環境への運用データベースのポイントインタイム復元](database-pitr-prod-sandbox.md) | サポートされていません | [破壊試験](dbmovement-scenario-destructivetests.md)
+|運用環境のポイントインタイム| サンドボックス| [サンドボックス環境への運用データベースのポイントインタイム復元](database-pitr-prod-sandbox.md) | サポートされていません | [破壊試験](dbmovement-scenario-destructivetests.md) |
+|運用環境のポイントインタイム| 生産 | [ポイントインタイム復元 (PITR)](database-point-in-time-restore.md) | サポートされていません | 該当なし |
 
 > [!IMPORTANT]
 > データベース移動の操作は非常に時間のかかる操作です。 これらの操作にかかる時間は、データ量やスキーマの複雑さ、およびエクスポート操作の場合の .bacpac ファイルのように、操作のターゲットがフラット ファイルかどうかによって異なります。 一般に、これらの操作は完了するまでに最大 24 時間かかる場合があり、操作中にキャンセルすることはできません。 さらに、操作のターゲットが、運用環境からサンドボックスへのシナリオのような環境である場合、データベースのコピー操作が完了した時、データベースの同期手順が開始される前の不定の時間にオフラインになります。 これは、環境内のエンド ユーザーに警告なしで発生します。 このため、これらのタイプの操作は、営業時間外にスケジュールするのが最善です。

@@ -13,11 +13,11 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 38ef8c51d52de6b8f748330d0697e860d75233bf
-ms.sourcegitcommit: 43cf54d057eccd07a71bb48e2fcf858d043a9669
+ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2022
+ms.lasthandoff: 11/01/2022
 ms.locfileid: "9620901"
 ---
 # <a name="enable-debug-mode-in-the-tax-calculation-service"></a>税計算サービスでデバッグ モードを有効化する
@@ -27,7 +27,7 @@ ms.locfileid: "9620901"
 この記事では、税計算サービスにおいてデバッグ モードを有効にし、問題に対処する方法について説明します。
 
 1. Application Object Server (AOS) の URL に、**&debug=vs%2CconfirmExit&** を追加し、ページを最新の情報に更新します。
-2. 消費税を計算するために **消費税** を選択した場合、**TaxServiceTroubleshootingLog.txt** という名前のテキスト ファイルを、**C:\AXWeb_SMBShare\temporary-file\\{%session%}\\** 配下のサーバーでキャプチャします。 **TaxServiceTroubleshootingLog.txt** ファイルには、**TaxableDocument** と計算パラメーターが含まれます。 これらの結果は、税サービスおよびトラブルシューティングの例外情報により返されます。
+2. 消費税を計算するために **消費税** を選択した場合、**TaxServiceTroubleshootingLog.txt** という名前のテキスト ファイルが開きます。 **TaxServiceTroubleshootingLog.txt** ファイルには、**TaxableDocument** と計算パラメーターが含まれます。 これらの結果は、税サービスおよびトラブルシューティングの例外情報により返されます。
 
 ## <a name="sample"></a>サンプル
 

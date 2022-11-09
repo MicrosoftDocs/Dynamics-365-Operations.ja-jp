@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905866"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725484"
 ---
 # <a name="manage-voyages"></a>航海の管理
 
@@ -29,7 +29,8 @@ ms.locfileid: "8905866"
 **すべての航海** ページには、航海の詳細、配送及び原価情報、品目、発注書、および移動オーダーの情報が表示されます。 **すべての航海** ページを開くには、**荷揚原価 \> 航海 \> すべての航海** に移動します。 このページには、現在のすべての航海の一覧が表示されます。 アクション ウィンドウのボタンを使用して、航海の作成、削除、および操作を行うことができます。 リスト内の航海を選択すると、その詳細が表示されます。
 
 > [!NOTE]
-> 出荷コンテナーとフォリオは、航海にリンクされます。 購買注文明細行は出荷コンテナーにリンクされます。 出荷コンテナーとフォリオをオフにするとき、直接、航海にリンクすることもできます。 さらに、ここで入力された原価は、添付されたすべての購買注文明細行に配賦されます。
+> 出荷コンテナーとフォリオは、航海にリンクされます。 購買注文明細行は出荷コンテナーにリンクされます。 さらに、ここで入力された原価は、添付されたすべての購買注文明細行に配賦されます。
+> プロジェクト発注書は、Landed Cost (陸揚げコスト) ではサポートされていません。
 
 ## <a name="action-pane"></a>アクション ウィンドウ
 

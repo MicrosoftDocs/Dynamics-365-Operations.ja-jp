@@ -2,19 +2,19 @@
 title: モジュールのエラー参照コードのチェックアウト
 description: この記事では、Microsoft Dynamics 365 Commerce でユーザー が表示するエラー メッセージで表示されるチェック アウト モジュールのエラー参照コードについて説明します 。
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
-ms.openlocfilehash: cd8269a71e56f23dbe3782ec3ffc69ec3ea6b151
-ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
+ms.openlocfilehash: 952cb932522b4e0bb91be985e4f8974cb6cd8bc0
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9709666"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728248"
 ---
 # <a name="checkout-module-error-reference-codes"></a>モジュールのエラー参照コードのチェックアウト
 
@@ -31,9 +31,13 @@ Dynamics 365 Commerce では、オンライン顧客に表示されるオンラ�
 - 環境または支払コネクタ構成で考慮する情報
 - 追加支援が必要な場合にサポート ケースで参照できる情報
 
+## <a name="prerequisites"></a>必要条件
+
+以下のチェックアウト モジュールのエラー参照コードを有効にするには、サイトのサイトビルダーで、**サイト設定 \> 拡張機能** に移動し、**カートとチェックアウト** のセクションで、**オンライン チャンネルのエラー表示メッセージの有効化** を選択します。 
+
 ## <a name="checkout-module-error-reference-codes"></a>モジュールのエラー参照コードのチェックアウト
 
-顧客によって提供またはオンライン店舗で経験したエラー コード参照に関する詳細を取得するには、次の表を使用します。
+顧客によって提供またはオンライン店舗で経験したエラー コード参照に関する詳細を取得するには、次の表を使用します。 右にスクロールすると、**エラーの説明** 列が表示されます。
 
 | エラー コード | Dynamics に関連付けられたエラー コード | エラーの説明 |
 | ---------- | ------------------------------ | ----------------- |

@@ -14,12 +14,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 13171
 ms.assetid: ''
-ms.openlocfilehash: 6607c6786f56b4b82b5f3ba5cac33bbbbf85bacc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 997d16d2942092cb72e11b2a0ce56002ead2cc76
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291740"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9732683"
 ---
 # <a name="deploy-and-use-a-continuous-build-and-test-automation-environment"></a>継続的なビルドおよびテストの自動化環境の配置と使用
 
@@ -49,10 +49,7 @@ Microsoft Dynamics Lifecycle Services (LCS) で Azure DevOps サブスクリプ�
 
 ### <a name="choose-a-plan"></a>計画を選択
 
-最初のステップは組織に [Azure DevOps プランを選ぶ](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) ことです。
-
-> [!NOTE]
-> LCS は、TFVC の機能を変更するように設計されており、現在は、Git リポジトリとは機能しません。
+最初のステップは組織に [Azure DevOps プランを選ぶ](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services) ことです。
 
 ### <a name="set-up-azure-devops"></a>Azure DevOps の設定
 
@@ -68,9 +65,13 @@ LCS の Azure DevOps へのアクセスを承認するまで、「設定が完�
 既にビルド定義を持つ既存の Azure DevOps プロジェクトにビルド環境を展開している場合、ビルドをキューに入れるアクティブなトリガーがないことを確認してください。 また、ビルド プールに対して、スケジュールされたりキューに格納されたビルドがないことを確認してください。
 
 ## <a name="deploy-developer-and-buildtest-environments-from-lcs"></a>LCS 開発およびビルド / テスト環境の展開
+
 LCS では、開発およびビルド / テスト環境を展開するオプションが提供されます。 このオプションでは、Azure DevOps プロジェクトに接続されたクラウド内に、開発者を配置して VM をビルドすることができます。
 
+また、[Microsoft-hosted agents](../dev-tools/hosted-build-automation.md)  を利用することで、X++ のコードをビルドして展開することができます。
+
 ### <a name="azure-devops-credential-setup-and-linking-to-lcs-project"></a>Azure DevOps 資格情報の設定と LCS プロジェクトへのリンク
+
 まだ完了していない場合は、ビルド環境を配置する前に、最初にLCS プロジェクトを設定してから Azure DevOps プロジェクトに接続してください。
 
 1. [https://lcs.dynamics.com/](https://lcs.dynamics.com/)で LCS ポータルにログインして、Azure DevOps および LCS プロジェクトに接続します。
@@ -78,8 +79,6 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
 3. **プロジェクト設定** タイルをクリックします。
 4. **Azure DevOps** を選択し、モジュール プロジェクトのソース コードが保管されている Azure DevOps URL を入力します。
 5. Azure DevOps リンクを指定して、承認し、**既定のプロジェクトを選択** をクリックします。
-   > [!NOTE]
-   > LCS は、TFVC の機能を変更するように設計されており、現在は、Git リポジトリとは機能しません。
 
 ### <a name="check-in-migrated-or-new-module-code-into-azure-devops"></a>Azure DevOps に移行または新しいモジュールコードをチェックイン
 
@@ -100,6 +99,7 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
 
    
 ## <a name="test-integration-with-the-build"></a>ビルドとのテスト統合
+
 テストと検証のためのビルド プロセスの一部としてテストを統合するには、2 つの方法があります。
 
 -   単位とコンポーネントのレベル テストに基づく SysTest フレームワーク。
@@ -108,6 +108,7 @@ LCS では、開発およびビルド / テスト環境を展開するオプシ�
 これらの2つの方法の詳細については、 [テストと検証](testing-validation.md) の記事で説明しています。 テストおよび検証の手順については、この資料を参照してください。
 
 ## <a name="use-the-build-vm-environment"></a>ビルド VM 環境の使用
+
 LCS を通じて開発者トポロジにビルド VM が配置されると、それは事前に構成され、ビルドを開始する準備ができます。 Visual Studio IDE または Azure DevOps インターフェイスから、いつでも既定の構成を変更することができます。 ビルド VM では、簡単なビルドのセットアップのために、モジュール ソース コードがビルド コンピューターに同期されます。 ビルド マシンは、ビルド エージェント、ビルド コントローラー、ビルド プロセス テンプレート、ビルド定義のデフォルト設定で自動構成されています。 ビルドに成功したら、ビルド定義と統合されているテストが実行されます。
 
 ### <a name="review-a-pre-configured-customizable-build-environment"></a>定義済みのカスタマイズ可能なビルド環境を確認
@@ -147,6 +148,7 @@ LCS を通じて開発者トポロジにビルド VM が配置されると、そ
 既定の構成に変更を加えて、そのビルド VM がビルドをトリガーできるようにすることができます。
 
 ## <a name="start-a-build-and-verify-the-build-and-test-execution-results"></a>ビルドを開始し、ビルドとテストの実行結果を確認します。
+
 既定のビルド構成を確認した後、Visual Studio IDE または Azure DevOps Web インターフェイスからビルドを手動でトリガーできます。
 
 1.  ブラウザーを開き、Azure DevOps URL に接続します。

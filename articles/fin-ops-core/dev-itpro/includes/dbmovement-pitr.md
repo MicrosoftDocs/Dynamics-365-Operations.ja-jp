@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 7fb542379a59d6468ecf3a2b9ef1ddf054410621e71f872622a2cce803c4f503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 384d73b400e9cb89cc0267d3bf9f99d7daca2cfe
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716022"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9732708"
 ---
 標準ユーザー承認テスト (UAT) 環境のデータベースを前回のポイントインタイムに復元するには、次のステップを実行します。
 
@@ -12,3 +12,17 @@ ms.locfileid: "6716022"
 2. **ポイントインタイム復元** を選択し、ポイントインタイムを選択します。
 3. 警告に注意してください。 前回のポイントインタイムからコピーされていないデータ要素の一覧を確認します。
 4. 復元操作をすぐに開始します。
+
+> [!IMPORTANT]
+> 運用中のデータベースを以前のポイントインタイムにリストアすることは、一般的なライフサイクル作業ではないため、次のような問題が発生する可能性があります:
+> - **実稼働環境における大規模なダウンタイム**。 データベース のサイズによっては、ポイントインタイム リストア (PITR) に数時間を要する場合があります。
+> - **SQL データ損失**。 SQL データ損失は、PITR 要求の実行時間に依存します。
+> - **SQL データベースの破損[利用可能な復元ポイントのチェーン](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public/blob/main/articles/fin-ops-core/dev-itpro/database/database-point-in-time-restore.md#breaking-the-chain-of-available-restore-points)**。
+
+運用環境のデータベースを以前のポイントインタイムにリストアするには、以下の手順に従います:
+
+1. ターゲットとすつ運用環境の **環境詳細** ページを開き、 メニュー オプションから **管理** > **データベースの移動** を選択します。
+2. **ポイントインタイム復元** を選択し、ポイントインタイムを選択します。
+3. 警告に注意してください。 前回のポイントインタイムからコピーされていないデータ要素の一覧を確認します。
+4. 復元操作をすぐに開始します。 
+

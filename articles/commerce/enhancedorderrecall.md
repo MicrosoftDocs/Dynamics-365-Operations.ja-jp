@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3723b40209ee1f8fb0ef77cb1ad52d123ff2a02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0624c251646110644a8a72658a6dd6f8d319c57f
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869465"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734297"
 ---
 # <a name="recall-order-operation-in-pos"></a>POS での注文の取り消し操作
 
@@ -65,5 +65,11 @@ AppBar から、ユーザーにより工程を選択できます。 注文状態
 ## <a name="add-notifications-to-the-recall-order-operation"></a>リコール注文操作の通知の追加
 
 必要に応じて、バージョン 10.0.18 以降で、**注文の取り消し** 操作のためのPOS 通知およびライブ タイル警告を構成できます。 詳細については、[販売時点管理 (POS) での注文通知の表示](notifications-pos.md) を参照してください。  
+
+> [!NOTE]
+> 注文の検索機能を有効にするには、**ライセンス構成** > **構成キー** で **見積** キーが有効であることを確認する必要があります。
+>
+> ![見積ライセンス キー構成を有効にする必要があります](./media/Quotations_License_Key_Configuration.png)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
