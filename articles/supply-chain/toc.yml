@@ -384,7 +384,7 @@
                       href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
         - name: 分散ハイブリッド トポロジ
           items:
-            - name: 現在、スケール ユニット機能は新規のお客様向けに一時停止されています
+            - name: 現在、Supply Chain Management 向けのスケール ユニット機能は一時停止されています
               href: cloud-edge/cloud-edge-landing-page.md
         - name: 資産管理
           items:
@@ -551,9 +551,9 @@
                   href: asset-management/capacity-planning/calculate-capacity-load.md
                 - name: 品目予測の計算
                   href: asset-management/capacity-planning/calculate-item-forecast.md
-            - name: 作業指示書のスケジューリング
+            - name: 作業指示書のスケジュール
               items:
-                - name: メンテナンス作業者のカレンダーとスケジューリング
+                - name: メンテナンス作業者のカレンダーとスケジュール
                   href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
                 - name: 優先メンテナンス作業者
                   href: asset-management/work-order-scheduling/preferred-maintenance-workers.md
@@ -1753,36 +1753,54 @@
           items:
             - name: マスター プランのホーム ページ
               href: master-planning/master-planning-home-page.md
-            - name: マスター プランの計画最適化への移行
-              href: master-planning/new-master-planning-engine.md
-            - name: 計画最適化
+            - name: マスター プランを開始する
+              href: master-planning/planning-optimization/get-started.md
+            - name: マスター プランのシステム アーキテクチャ
+              href: master-planning/master-planning-architecture.md
+            - name: マスター プランの管理
               items:
-                - name: 計画最適化の概要
-                  href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: 計画最適化の開始
-                  href: master-planning/planning-optimization/get-started.md
                 - name: 計画の最適化のリリース プロセスおよびリリース履歴
                   href: master-planning/planning-optimization/release-process.md
-                - name: 計画最適化適合分析
-                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: 組み込みのマスター プランと計画の最適化の違い
-                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-                - name: 計画の最適化で使用されないパラメーター
-                  href: master-planning/planning-optimization/not-used-parameters.md
-                - name: 供給スケジュール
-                  href: master-planning/supply-schedule.md
-                - name: 計画にフィルターを適用
-                  href: master-planning/planning-optimization/plan-filters.md
+                - name: 計画最適化のトラブルシューティング
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: スケジュール エンジンのエラー「十分な領域が見つかりませんでした」を解決する
+                  href: master-planning/not-enough-capacity-error-resolution.md
+                - name: 計画ジョブのキャンセル
+                  href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: 計画最適化の拡張性
+                  href: master-planning/planning-optimization/extensibility.md
+                - name: 計画履歴と計画ログの表示
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: 計画の最適化で使用する日時パラメーター
+                  href: master-planning/planning-optimization/date-time-used.md
+            - name: マスター プランの構成
+              items:
+                - name: 遅延
+                  href: master-planning/delays.md
+                - name: 展開のトレースを使用する
+                  href: master-planning/trace-explosion.md
+                - name: 受注生産供給の自動化
+                  href: master-planning/make-to-order-supply-automation.md
+                - name: マイナス在庫日数と動的マイナス在庫日数
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: カレンダーおよびマスター プラン
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: サイトのスケジュールの作成
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: サイトの計画の作成
+                  href: master-planning/tasks/create-plan-site.md
                 - name: 需要予測を使用したマスター プラン
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: 供給予測を使用したマスター プラン
                   href: master-planning/planning-optimization/supply-forecast.md
+                - name: 供給スケジュール
+                  href: master-planning/supply-schedule.md
+                - name: 品目のサブセットの計画を実行する
+                  href: master-planning/planning-optimization/plan-filters.md
                 - name: 購買の売買契約を使用したマスター プラン
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: 見積と RFQ に基づく計画
                   href: master-planning/planning-optimization/quotation-planning.md
-                - name: 計画の最適化で使用する日時パラメーター
-                  href: master-planning/planning-optimization/date-time-used.md
                 - name: 安全マージン
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: 遅延許容範囲 (マイナス日数)
@@ -1793,61 +1811,27 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: 限られた有効期限のある製品のマスター プラン
                   href: master-planning/planning-optimization/shelf-life.md
-                - name: 無制限の能力でのスケジューリング
+                - name: 無制限の能力でのスケジュール
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
-                - name: 制限付きの能力計画とスケジューリング
+                - name: 制限付きの能力計画とスケジュール
                   href: master-planning/planning-optimization/finite-capacity.md
-                - name: 能力に基づいたリソース選択でのスケジューリング
+                - name: 能力に基づいたリソース選択によるスケジュール
                   href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: 優先順位に基づく計画
-                  href: master-planning/planning-optimization/priority-based-planning.md
-                - name: 需要主導型材料所要量計画 (DDMRP)
-                  items:
-                    - name: DDMRP の概要
-                      href: master-planning/planning-optimization/ddmrp-overview.md
-                    - name: システムの DDMRP 機能を有効化する
-                      href: master-planning/planning-optimization/ddmrp-enable.md
-                    - name: 在庫の配置
-                      href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
-                    - name: バッファ プロファイルとレベル
-                      href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
-                    - name: 需要主導型計画
-                      href: master-planning/planning-optimization/ddmrp-planning.md
-                    - name: ビジュアル実行と共同実行
-                      href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
-                - name: 計画最適化を使用した在庫マーキング
+                - name: 在庫マーキング
                   href: master-planning/planning-optimization/marking.md
                 - name: 会社間計画
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: 特定の製品ライフサイクル状態の製品を除外する
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: 補充方法と数量の変更
-                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: 補充タイム フェンス
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: 計画の最適化を使用した正味必要量およびペギング情報
+                - name: 正味必要量とペギング情報
                   href: master-planning/planning-optimization/net-requirements.md
-                - name: 計画オーダーの承認
-                  href: master-planning/planning-optimization/approved-planned-order.md
-                - name: 計画オーダーの確定
-                  href: master-planning/planning-optimization/planned-order-firming.md
-                - name: 簡易計画オーダー
-                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: マイナスの手持在庫数量を使用した計画
                   href: master-planning/planning-optimization/negative-on-hand.md
-                - name: 計画履歴と計画ログの表示
-                  href: master-planning/planning-optimization/plan-history-logs.md
-                - name: 計画ジョブのキャンセル
-                  href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: アクション メッセージ
-                  href: master-planning/action-messages.md
                 - name: CTP を使用した販売注文配送日の計算
                   href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
-                - name: 計画最適化のトラブルシューティング
-                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: 計画最適化の拡張性
-                  href: master-planning/planning-optimization/extensibility.md
-            - name: マスター プラン
+            - name: マスター プランの設定
               items:
                 - name: マスター プランの概要
                   href: master-planning/master-plans.md
@@ -1855,74 +1839,60 @@
                   href: master-planning/master-planning-setup.md
                 - name: マスター プランの設定ウィザード
                   href: master-planning/master-planning-setup-wizard.md
+                - name: 制約付き計画の生成
+                  href: master-planning/tasks/constrained-plan.md
+            - name: 補充方法の設定
+              items:
                 - name: 補充設定
                   href: master-planning/coverage-settings.md
                 - name: 品目の補充ルールの定義
                   href: master-planning/tasks/define-coverage-rules-items.md
-                - name: 制約付き計画の生成
-                  href: master-planning/tasks/constrained-plan.md
-                - name: 連産品の材料計画の作成
-                  href: master-planning/tasks/create-material-plan-co-products.md
-                - name: 計画オーダーの管理
-                  href: master-planning/maintain-planned-orders.md
+                - name: 複数の仕入先から製品および材料を調達する
+                  href: master-planning/source-from-multiple-vendors.md
+                - name: 優先順位に基づく計画
+                  href: master-planning/planning-optimization/priority-based-planning.md
+                - name: 補充方法と数量の変更
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+            - name: マスター プランとマルチサイト機能
+              items:
+                - name: マスター プランとマルチサイト機能の概要
+                  href: master-planning/master-plan-multisite-functionality.md
+                - name: マスター プラン - サイトの補充、倉庫は必須
+                  href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                - name: マスター プラン - サイトの補充、倉庫は必須ではない
+                  href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                - name: マスター プラン - サイトと倉庫の補充、倉庫は必須
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                - name: マスター プラン - サイトと倉庫の補充、倉庫は必須ではない
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                - name: BOM バージョンの決定
+                  href: master-planning/master-plan-bom-version-determined.md
+                - name: BOM バージョンの展開
+                  href: master-planning/master-plan-explosion-bom-version.md
+            - name: 安全在庫
+              items:
                 - name: 品目に対する安全在庫フルフィルメント
                   href: master-planning/safety-stock-replenishment.md
                 - name: 安全在庫仕訳帳を使用して品目の最小補充を更新する
                   href: master-planning/safety-stock-journal.md
-                - name: 遅延
-                  href: master-planning/delays.md
-                - name: マスター プラン ジョブのキャンセル
-                  href: master-planning/cancel-master-planning-job.md
-                - name: 展開のトレースを使用する
-                  href: master-planning/trace-explosion.md
-                - name: マスター プランの実行の監視
-                  href: master-planning/tasks/monitor-master-planning-run.md
-                - name: サイトのスケジュールの作成
-                  href: master-planning/tasks/create-schedule-site.md
-                - name: サイトの計画の作成
-                  href: master-planning/tasks/create-plan-site.md
-                - name: カレンダーおよびマスター プラン
-                  href: master-planning/supply-chain-calendars-master-planning.md
-                - name: スケジューリング エンジンのエラー「十分な領域が見つかりませんでした」を解決する
-                  href: master-planning/not-enough-capacity-error-resolution.md
-                - name: マスター プランのパフォーマンスの改善
-                  href: master-planning/master-planning-performance.md
-                - name: スケジューリング エンジンのパフォーマンスの改善
-                  href: master-planning/scheduling-engine-performance.md
-                - name: マスター プランとマルチサイト機能
-                  items:
-                    - name: マスター プランとマルチサイト機能の概要
-                      href: master-planning/master-plan-multisite-functionality.md
-                    - name: マスター プラン - サイトの補充、倉庫は必須
-                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
-                    - name: マスター プラン - サイトの補充、倉庫は必須ではない
-                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
-                    - name: マスター プラン - サイトと倉庫の補充、倉庫は必須
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
-                    - name: マスター プラン - サイトと倉庫の補充、倉庫は必須ではない
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-                    - name: BOM バージョンの決定
-                      href: master-planning/master-plan-bom-version-determined.md
-                    - name: BOM バージョンの展開
-                      href: master-planning/master-plan-explosion-bom-version.md
-                - name: マイナス在庫日数と動的マイナス在庫日数
-                  href: master-planning/more-about-dynamic-negative-days.md
-                - name: 会社間計画の作成
-                  href: master-planning/tasks/create-intercompany-plan.md
-                - name: 出庫の計画企業内需要を表示する
-                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: 組み込みマスター プランを使用した正味必要量およびペギング情報
-                  href: master-planning/net-requirements-built-in-master-planning.md
-                - name: 受注生産供給の自動化
-                  href: master-planning/make-to-order-supply-automation.md
+            - name: 計画オーダーの管理
+              items:
+                - name: 計画オーダーのメンテナンス
+                  href: master-planning/maintain-planned-orders.md
+                - name: 計画オーダーの表示、管理、承認
+                  href: master-planning/planning-optimization/approved-planned-order.md
+                - name: 計画オーダーの確定
+                  href: master-planning/planning-optimization/planned-order-firming.md
+                - name: 簡易計画オーダー
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
+                - name: アクション メッセージ
+                  href: master-planning/action-messages.md
             - name: 予測
               items:
-                - name: 需要と供給の予測
-                  items:
-                    - name: 在庫予測
-                      href: master-planning/inventory-forecast.md
-                    - name: 'ガイド: 需要予測を手動で変更する'
-                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: 在庫予測
+                  href: master-planning/inventory-forecast.md
+                - name: 'ガイド: 需要予測を手動で変更する'
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
                 - name: 需要予測
                   items:
                     - name: 需要予測の概要
@@ -1943,10 +1913,50 @@
                       href: master-planning/monitor-forecast-accuracy.md
                     - name: 'ガイド: ベースライン予測を作成する'
                       href: master-planning/tasks/create-baseline-forecast.md
-                - name: 予測を利用したマスター プラン
-                  items:
-                    - name: 予測の下方修正キー
-                      href: master-planning/reduction-keys.md
+                - name: 予測の下方修正キー
+                  href: master-planning/reduction-keys.md
+            - name: 需要主導型材料所要量計画 (DDMRP)
+              items:
+                - name: DDMRP の概要
+                  href: master-planning/planning-optimization/ddmrp-overview.md
+                - name: システムの DDMRP 機能を有効化する
+                  href: master-planning/planning-optimization/ddmrp-enable.md
+                - name: 在庫の配置
+                  href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
+                - name: バッファ プロファイルとレベル
+                  href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
+                - name: 需要主導型計画
+                  href: master-planning/planning-optimization/ddmrp-planning.md
+                - name: ビジュアル実行と共同実行
+                  href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+            - name: 非推奨の計画エンジン
+              items:
+                - name: 非推奨の計画エンジンの概要
+                  href: master-planning/deprecated-master-planning-overview.md
+                - name: マスター プランの計画最適化への移行
+                  href: master-planning/new-master-planning-engine.md
+                - name: 計画の最適化で使用されないパラメーター
+                  href: master-planning/planning-optimization/not-used-parameters.md
+                - name: 計画の最適化と、非推奨のマスター プラン エンジンの相違点
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+                - name: 計画最適化適合分析
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: マスター プランのパフォーマンスの改善
+                  href: master-planning/master-planning-performance.md
+                - name: スケジュール エンジンのパフォーマンスの改善
+                  href: master-planning/scheduling-engine-performance.md
+                - name: 会社間計画の作成
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: 出庫の計画企業内需要を表示する
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: マスター プランの実行の監視
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: 非推奨の計画エンジンによる正味必要量とペギング情報
+                  href: master-planning/net-requirements-built-in-master-planning.md
+                - name: 連産品の材料計画の作成
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: 非推奨のマスター プラン エンジンで作成したジョブをキャンセルする
+                  href: master-planning/cancel-master-planning-job.md
         - name: モバイル アプリ
           items:
             - name: モバイル アプリのホーム ページ
@@ -2553,7 +2563,7 @@
                       href: production-control/routes-operations.md
                     - name: 作業ポリシー
                       href: warehousing/warehouse-work-policies.md
-                    - name: 作業時間スケジューリング プロパティの作成
+                    - name: 作業時間スケジュール プロパティの作成
                       href: production-control/tasks/create-working-time-scheduling-properties.md
                     - name: 作業時間テンプレートの作成
                       href: production-control/tasks/create-working-time-templates.md
@@ -2567,17 +2577,17 @@
                       href: production-control/tasks/define-expiry-date-production-flow-version.md
                     - name: 生産フロー モデルの定義
                       href: production-control/tasks/define-production-flow-models.md
-                - name: 生産工程のスケジューリング
+                - name: 生産工程のスケジュール
                   items:
-                    - name: 工程のスケジューリング
+                    - name: 工程のスケジュール
                       href: production-control/operations-scheduling.md
-                    - name: ジョブのスケジューリング
+                    - name: ジョブのスケジュール
                       href: production-control/job-scheduling.md
                     - name: ジョブ スケジュールのガント チャート
                       href: production-control/visual-scheduling-production.md
-                    - name: 工程スケジューリング オプション
+                    - name: 工程スケジュール オプション
                       href: production-control/operation-scheduling-options.md
-                    - name: 工程とジョブのスケジューリングによる製造オーダーのスケジュール
+                    - name: 工程とジョブのスケジュールによる製造オーダーのスケジュール
                       href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
                 - name: 生産ジョブの運営
                   items:
@@ -2673,13 +2683,13 @@
                       href: production-control/tasks/define-lean-manufacturing-work-cells.md
                     - name: リーン スケジュール グループの定義
                       href: production-control/tasks/define-lean-schedule-groups.md
-                - name: かんばん作業のスケジューリング
+                - name: かんばん作業のスケジュール
                   items:
-                    - name: リーン生産の視覚的スケジューリング
+                    - name: リーン生産の視覚的スケジュール
                       href: production-control/visual-scheduling-lean-manufacturing.md
-                    - name: リーン生産のかんばん作業のスケジューリング
+                    - name: リーン生産のかんばん作業のスケジュール
                       href: production-control/lean-manufacturing-kanban-job-scheduling.md
-                    - name: ジョブのスケジューリング
+                    - name: ジョブのスケジュール
                       href: production-control/job-scheduling.md
                 - name: かんばん作業の運営
                   items:
@@ -2743,7 +2753,7 @@
                       href: production-control/tasks/remove-kanban-job-schedule.md
                     - name: かんばん作業の状態を元に戻す
                       href: production-control/tasks/revert-kanban-job-status.md
-                    - name: かんばん作業のスケジューリング
+                    - name: かんばん作業のスケジュール
                       href: production-control/tasks/schedule-kanban-jobs.md
                     - name: かんばん作業と材料の転送
                       href: production-control/tasks/transfer-materials-kanban-jobs.md
@@ -2777,13 +2787,13 @@
                       href: production-control/production-parameters-manufacturing-execution.md
                     - name: 生産の設定の要件
                       href: production-control/production-set-up-requirements.md
-                - name: 生産工程のスケジューリング
+                - name: 生産工程のスケジュール
                   items:
-                    - name: 工程のスケジューリング
+                    - name: 工程のスケジュール
                       href: production-control/operations-scheduling.md
-                    - name: 工程スケジューリング オプション
+                    - name: 工程スケジュール オプション
                       href: production-control/operation-scheduling-options.md
-                    - name: ジョブのスケジューリング
+                    - name: ジョブのスケジュール
                       href: production-control/job-scheduling.md
                 - name: 生産ジョブの運営
                   items:
@@ -2969,7 +2979,7 @@
                       href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: 会社基本通貨換算
                   href: sales-marketing/intercompany-currency-conversions.md
-                - name: 会社間マスター スケジューリング
+                - name: 会社間マスター スケジュール
                   href: sales-marketing/intercompany-master-scheduling.md
             - name: 返品
               items:
@@ -3699,7 +3709,7 @@
                       href: warehousing/additional-location-zones.md
                     - name: 貨物使用率のスケジュール設定
                       href: warehousing/schedule-load-utilization.md
-                    - name: ワークロード能力のスケジューリング
+                    - name: ワークロード能力のスケジュール
                       href: warehousing/schedule-workload-capacity.md
                     - name: 廃棄コードの設定
                       href: warehousing/tasks/set-up-dispositions-codes.md

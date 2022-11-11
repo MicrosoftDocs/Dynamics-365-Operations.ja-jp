@@ -30,7 +30,7 @@
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/finance
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/finance
-        - name: 開始する
+        - name: 概要
           items:
             - name: サービスの説明
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/finance
@@ -450,6 +450,8 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: 請求スケジュールのコピー
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: 請求スケジュールによる顧客分割
+                      href: accounts-receivable/sb-customer-split.md
                     - name: 請求スケジュール機能
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: マイルストーン請求
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: 財務期間終了ワークスペース
                   href: general-ledger/financial-period-close-workspace.md
+                - name: 年度末決算の最適化
+                  href: general-ledger/optimize-year-end-close.md
                 - name: 年度末決算
                   href: general-ledger/year-end-close.md
                 - name: 会計年度の決算

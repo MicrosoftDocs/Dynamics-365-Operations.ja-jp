@@ -2,7 +2,7 @@
 title: 年度末の活動に関する FAQ
 description: この記事では、年度末決算でよく発生する質問と、年度末締処理の活動に役立つ回答を一覧で示します。
 author: moaamer
-ms.date: 12/21/2021
+ms.date: 11/08/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2a75d1e3e68837a437b2369ba369b0063e015b12
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865743"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751960"
 ---
 # <a name="year-end-activities-faq"></a>年度末の活動に関する FAQ 
 
@@ -51,7 +51,7 @@ ms.locfileid: "8865743"
 ## <a name="general-ledger-what-is-the-difference-between-undo-and-delete-gl-parameter-for-year-end-close"></a>一般会計: 年度末決算の GL パラメーターの [元に戻す] と [削除] の違いは何ですか。
 **前の決算を元に戻す** パラメーター (**年度末決算** ダイアログ ボックスにあります) と、一般会計の **振替時に決算トランザクションを削除** パラメーター(**一般会計 > 決算期間 > 年度末決算 > 期末決算の実行**) との違いについて、混乱が生じることがあります。  
 
-[![年度末決算の GL パラメーターの [元に戻す] と [削除] の違い。](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![年度末決算の GL パラメーターの元に戻すと削除の違い。](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 年度末決算プロセスを実行するときに、ドロップダウン ダイアログ メニューで **前の決算を元に戻す** を選択すると、すべての決算残高と期首残高のエントリが削除され、年度末決算が実行されなかった状態に戻ります。 伝票は削除されます。 年度末決算は、自動的には再実行されません。 年度末決算を実行するには、このプロセスを再度開始する必要があります。今回は、**前の決算を元に戻す** を **いいえ** に変更します (**一般会計 > 元帳の設定 > 一般会計パラメーター**)。 
 
@@ -159,7 +159,7 @@ ms.locfileid: "8865743"
 
 **既存の 1099 金額を再計算する** チェック ボックスは、請求書に 1099 の値が部分的にある場合、または 1099 税フォームで変更された場合にのみ機能します。 たとえば、$1000.00 の請求書があるが、ユーザーが 1099 で請求書の金額を $500.00 と手動で入力するとします。
 
-[![1099 税トランザクション: [すべて更新]と、[既存の 1099 金額を再計算する] を両方オンにする。](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![1099 税トランザクション: すべて更新と、既存の 1099 金額を再計算するを、両方オンにする。](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
 この金額が支払われた場合、500.00 ドルが 1099 での支払い金額となります。 再計算ルーチンを実行すると、システムは 1099 の金額を、支払われた合計である 1000.00 ドルに変更します。
 

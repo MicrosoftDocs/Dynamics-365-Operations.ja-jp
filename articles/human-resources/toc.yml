@@ -78,7 +78,7 @@
                       href: get-started/removed-deprecated-features-hr.md
         - name: 開始する
           items:
-            - name: 開始する
+            - name: 概要
               href: hr-admin-overview.md
             - name: システム要件
               href: hr-admin-system-requirements.md
@@ -512,7 +512,7 @@
               href: hr-personnel-maintain-employee-injury-illness-information.md
             - name: 採用
               items:
-                - name: 開始する
+                - name: 概要
                   href: ../human-resources/hr-recruit-overview.md
                 - name: 採用プロジェクト
                   items:
@@ -541,12 +541,16 @@
                     - name: 職務候補者の採用
                       href: hr-personnel-recruit.md
         - name: タスク管理
-          href: hr-task-mgmt.md
+          items:
+            - name: 概要
+              href: hr-task-mgmt.md
+            - name: タスク管理のアップグレード
+              href: hr-task-update.md
         - name: 休暇
           items:
-            - name: 開始する
+            - name: 概要
               href: hr-leave-and-absence-overview.md
-            - name: 休暇と欠勤パラメーターの構成
+            - name: 休暇パラメーターの構成
               href: hr-leave-and-absence-parameters.md
             - name: 作業時間カレンダーの作成
               href: hr-leave-and-absence-working-time-calendar.md
@@ -730,9 +734,9 @@
               href: hr-learning-questionnaires.md
             - name: アンケートのデザイン
               href: hr-learning-design-questionnaires.md
-            - name: アンケートの配布とスケジューリング
+            - name: アンケートの配布とスケジュール
               href: hr-learning-distribute-questionnaires.md
-            - name: スケジューリングを使用したアンケートの配布
+            - name: スケジュールを使用したアンケートの配布
               href: hr-learning-distribute-questionnaires-scheduling.md
             - name: アンケート結果の表示
               href: hr-learning-evaluate-questionnaire-results.md
@@ -824,7 +828,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
     - name: Human Resources の開発
       items:
-        - name: 開始する
+        - name: 概要
           href: hr-developer-overview.md
         - name: Power Apps と Power Automate を使用した拡張
           href: hr-developer-power-apps.md
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: カスタム フィールド
           href: hr-developer-custom-fields.md
+        - name: 開発およびカスタマイズ
+          items:
+            - name: 性別基準の列挙型
+              href: enum-exten.md
         - name: データ統合の設定
           items:
             - name: データ統合テクノロジの選択

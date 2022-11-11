@@ -260,7 +260,7 @@
               href: data-entities/Azure-data-lake-Change-feeds.md
         - name: データベース移動操作
           items:
-            - name: 開始する
+            - name: 概要
               href: database/dbmovement-operations.md
             - name: データベース移動ツールキット
               href: database/database-movement-toolkit.md
@@ -292,7 +292,7 @@
                   href: database/dbmovement-scenario-destructivetests.md
             - name: RESTful API
               items:
-                - name: 開始する
+                - name: 概要
                   href: database/api/dbmovement-api-overview.md
                 - name: バージョン管理とサポート
                   href: database/api/dbmovement-api-versioning-support.md
@@ -476,7 +476,7 @@
                   href: help/connect-help-pane.md
                 - name: カスタム ヘルプ ツールキット
                   items:
-                    - name: 開始する
+                    - name: 概要
                       href: help/custom-help-toolkit.md
                     - name: HTML From Repo Generator ツール
                       href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
@@ -488,7 +488,7 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: 製品およびヘルプ間の言語とロケールの記述子
                   href: help/language-locale.md
-                - name: ヘルプでの拡張、カスタマイズ、および共同作業
+                - name: ヘルプでの拡張と共同作業
                   href: help/contributor-guide.md
             - name: 財務と運用アプリでの地域サービス
               items:
@@ -1066,7 +1066,7 @@
                   href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform 統合
           items:
-            - name: 開始する
+            - name: 概要
               href: power-platform/overview.md
             - name: Power Platform 統合の有効化
               href: power-platform/enable-power-platform-integration.md
@@ -1624,6 +1624,10 @@
               href: sysadmin/DataMaintenancePortal.md
             - name: 法人間でのネットワーク プリンターへのアクセスの管理
               href: sysadmin/sys-admin-tools-network-printer.md
+            - name: Application Insights による監視と利用統計情報
+              items:
+                - name: 概要
+                  href: sysadmin/monitoring-and-telemetry-appinsights.md
             - name: セキュリティ
               items:
                 - name: ロールベース セキュリティ
@@ -1674,7 +1678,7 @@
                   href: sysadmin/retryable-batch.md
                 - name: バッチ ジョブのコピー
                   href: sysadmin/copy-batch-job.md
-                - name: 優先順位に基づくバッチスケジューリング
+                - name: 優先順位に基づくバッチスケジュール
                   href: sysadmin/priority-based-batch-scheduling.md
                 - name: 有効なバッチ期間
                   href: sysadmin/activeperiod.md
@@ -1746,7 +1750,7 @@
                   items:
                     - name: 勘定科目表の区切り記号を一意にする
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: プロジェクト リソースのスケジューリング データ モデル
+                    - name: プロジェクト リソースのスケジュール データ モデル
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: ワークフロー サブシステムの変更
                       href: migration-upgrade/workflow-subsystem.md
