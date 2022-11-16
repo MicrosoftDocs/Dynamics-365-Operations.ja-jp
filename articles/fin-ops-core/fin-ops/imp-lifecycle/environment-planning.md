@@ -2,7 +2,7 @@
 title: 環境計画
 description: この記事では、プロジェクトの環境を計画するときに考慮する必要があるさまざまな側面の概要を示します。
 author: skaue-ms
-ms.date: 02/01/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and operations
-ms.openlocfilehash: 38e723b5558c56e22a59d59969bc703aa7414eec
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: ee6b76ebf02d8c5f6d283d15cd9897d6500791a4
+ms.sourcegitcommit: 55e440e30490b2d36d86b22aa1263d5da97633aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9583236"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9745334"
 ---
 # <a name="environment-planning"></a>環境計画
 
@@ -139,9 +139,14 @@ ms.locfileid: "9583236"
 
 ### <a name="selecting-the-correct-tier-2-or-higher-environment"></a>正しいレベル 2 以上の環境の選択
 
-環境の用途によって、正しいレベル 2 以上の環境を選択することが重要です。 特定のビジネス シナリオと、ユーザーの種類、複雑さ、およびボリュームなどの要因に基づいて、実装パートナーと協力してこのガイドを調整してください。
+環境の用途によって、正しいレベル 2 以上の環境を選択することが重要です。 
 
-サブスクリプションの見積が有効になると、次の図に示すように、容量チェックのために LCS で時間あたりのトランザクション明細行を表示することもできます。
+![環境レベル。](./media/environment-planning-3-environment-tiers.png)
+
+> [!IMPORTANT]
+> 指定された値は参照専用です。 特定のビジネス シナリオと、ユーザーの種類、複雑さ、およびボリュームなどの要因に基づいて、実装パートナーと協力してこのガイドを調整してください。
+
+次の図に示すように [LCS サブスクリプション見積もり](../../dev-itpro/lifecycle-services/subscription-estimator.md) を使用して、容量チェックのために LCS の時間あたりのトランザクション明細行を表示できます。
 
 ![サブスクリプション見積。](./media/environment-planning-4-subscription-estimate.png)
 

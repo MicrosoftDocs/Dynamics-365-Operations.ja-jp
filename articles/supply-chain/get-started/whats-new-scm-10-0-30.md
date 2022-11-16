@@ -2,7 +2,7 @@
 title: Dynamics 365 Supply Chain Management 10.0.30 (2022 年 11 月) の新機能および変更された機能
 description: この記事では、Microsoft Dynamics 365 Supply Chain Management 10.0.30 の新機能または変更された機能について説明します。
 author: kamaybac
-ms.date: 09/08/2022
+ms.date: 11/07/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 2983c113487934fd0751efcef9129e1f28d8dce8
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 20674ebd9d49b077371998f53d2b22c74f888fc6
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714801"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748467"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Dynamics 365 Supply Chain Management 10.0.30 (2022 年 11 月) の新機能および変更された機能
 
@@ -31,8 +31,9 @@ ms.locfileid: "9714801"
 
 次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに追加された機能を含めるために、この記事を更新することがあります。
 
-| 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
+| 機能領域 | 機能 | 詳細 |  に  によって有効化 |
 |---|---|---|---|
+| 在庫および物流 | [配賦内のソフト予約済数量の追跡](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/track-soft-reserved-quantities-within-allocations) | [在庫の可視化の在庫配賦](../inventory/inventory-visibility-allocation.md) |  [サービス構成](../inventory/inventory-visibility-configuration.md)によって有効 |
 | 製造 | [Sensor Data Intelligence を使用した機器の監視](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence のホーム ページ](../sensor-data-intelligence/sdi-home-page.md) | 機能管理:<br>*(プレビュー) センサー データ インテリジェンス* |
 | 倉庫管理 | [Warehouse Management モバイル アプリの複数レベルの迂回](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [モバイル デバイス メニュー項目のステップの迂回を構成する](../warehousing/warehouse-app-detours.md) | 機能管理:<br>*Warehouse Management モバイル アプリの複数レベルの迂回* |
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Release 10.0.11
 ms.assetid: ''
 ms.search.industry: Retail
 ms.search.form: RetailITWorkspace
-ms.openlocfilehash: 1e49c1fd95c13bba4e2d1042586fda53471caca8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 14ef158d157487f03a2c623157ae4b5ddeb0502c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279666"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740426"
 ---
 # <a name="dynamics-365-commerce-architecture-overview"></a>Dynamics 365 Commerce アーキテクチャの概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "9279666"
 
 次の図は、Dynamics 365 Commerce コンポーネントの概要を示します。
 
-<a href="/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerceコンポーネントの概要。](./media/commerce-component-overview.jpg)</a>
+![Dynamics 365 Commerce コンポーネントの概要](./media/Commerce_Architecture_Component_Overview.png)
 
 ## <a name="architecture-benefits"></a>アーキテクチャのメリット
 
@@ -48,11 +48,17 @@ Dynamics 365 Commerce、Dynamics 365 Supply Chain Management、Dynamics 365 Fina
 
 ### <a name="unified-data"></a>統合されたデータ
 
-Dynamics 365 Commerce は、[Dataverse](https://powerplatform.microsoft.com/dataverse/) と [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction) 標準で統合しており、統合されたデータソリューションを提供します。 Dynamics 365 Sales や Dynamics 365 Marketing などの Dynamics 365 の業務アプリケーション間の統合やデータ共有は、Dataverse を介してサポートされています。 Data Lake Storage のトランザクショ データは、Dynamics 365 Commerce ソリューションのさまざまな分析や把握のシナリオに対応するために使用されます。 ただし、任意のサードパーティ製ソフトウェアの統合でも使用できます。
+Dynamics 365 Commerce は、[Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/) および [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction) と標準で統合された、統合データ ソリューションを提供します。 Dynamics 365 Sales や Dynamics 365 Marketing などの Dynamics 365 アプリ間の統合やデータ共有は、Microsoft Dataverse を介してサポートされています。 Azure Data Lake Storage のトランザクショ データは、さまざまな統合を使用して分析や分析情報のシナリオを強化するために使用されます。
 
 ### <a name="powered-by-ai-and-analytics"></a>AI と Analytics を搭載
 
 Data Lake Storage には、アクセス可能で、永続性があり、最新かつ統一された組織データを利用できるため、組織全体が Analytics、人工知能（AI）、機械学習（ML）を上から適用できる 「単一の真実のソース」 を手に入れることができます。 このようにして、組織は分析情報を導き出し、すべてのチャネルで業務プロセスを最適化し、自動化するために使用できる主要なパフォーマンス指標（KPI）を取得することができます。
+
+#### <a name="business-and-transactional-analytical-reports-in-pos-and-commerce-headquarters"></a>POS および Commerce headquarters のビジネスとトランザクションの分析レポート
+
+Commerce で事前にパッケージ化された一連のビジネスとトランザクションの分析レポートは、Store Commerce 販売時点管理 (POS) システムおよび Commerce headquarters に high-charts と SSRS ベースのレポートを組み込むことで、小売業者に Commerce エコシステムのすべてのポイントにおいて Intelligent Insights を提供します。 コマース分析ソリューションは、すぐに利用できるビジネスとトランザクションのレポートの包括的なセットを提供し、小売業者がすべてのチャネルで分析情報を活用できるようになります。
+
+POS の highcharts ベースのレポートはリアルタイムであり、店舗の関係者がトランザクションの完了時にチャネルのトランザクションおよびその他の POS 活動を分析できるようになります。 これは、Commerce headquarters のすぐに使用できるレポートとは対照的で、小売業者はデータが同期されると、すべてのチャネルでトランザクション活動に関する分析レポートを表示できます。 Commerce headquarters レポートは、販売実績に焦点を当ててトレンドを予測し、分析情報を明らかにするチャネル マネージャーために特別に設計されており、組織全体の販売実績に関するレポートを従業員、カテゴリ、製品、ターミナル、チャネルなど、グローバルな地域で掘り下げることができます。
 
 ## <a name="component-overview"></a>コンポーネントの概要
 
@@ -138,11 +144,11 @@ CMS では、自身のページを一連のモジュールとして格納して�
 
 #### <a name="dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights
 
-[Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) は、さまざまなトランザクション、行動、観察の各ソースのデータを接続して、360 度の顧客ビューを作成し、分析情報を生成することで、顧客に対する理解を深めることができます。 Dynamics 365 Commerce を使用することで、小売業者は Dynamics 365 Customer Insights との統合を容易に有効化し、POS で生成された分析情報を表示することができます。 これらの分析情報には、顧客離れ率や次に取るべき最良の策が含まれており、販売担当者が顧客と効果的な会話に行い、顧客にパーソナライズされたショッピング体験を提供するのに役立つため、価値のあるものとなっています。 詳細については、 [Dynamics 365 Commerce を使用した Dynamics 365 Customer Insights の統合](./clienteling-overview.md#integration-with-dynamics-365-customer-insights) を参照してください。
+[Dynamics 365 Customer Insights](/ai/customer-insights/overview) は、さまざまなトランザクション、行動、観察の各ソースのデータを接続して、360 度の顧客ビューを作成し、分析情報を生成することで、顧客に対する理解を深めることができます。 Dynamics 365 Commerce を使用することで、小売業者は Dynamics 365 Customer Insights との統合を容易に有効化し、POS で生成された分析情報を表示することができます。 これらの分析情報には、顧客離れ率や次に取るべき最良の策が含まれており、販売担当者が顧客と効果的な会話に行い、顧客にパーソナライズされたショッピング体験を提供するのに役立つため、価値のあるものとなっています。 詳細については、 [Dynamics 365 Commerce を使用した Dynamics 365 Customer Insights の統合](./clienteling-overview.md#integration-with-dynamics-365-customer-insights) を参照してください。
 
-#### <a name="bing-for-commerce"></a>Bing をコマースに使用する
+#### <a name="azure-cognitive-search"></a>Azure Cognitive Search
 
-[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce) は Dynamics 365 Commerce に統合されており、Commerce Scale Unit を使用するすべてのコマース チャネルで一貫した商品発見と検索体験を提供します。 コマース本部では、小売業者は、製品の検索と検索のエクスペリエンスに関するビジネスルールの増強とシンクを構成できます。 (例えば、これらのルールを使用して、割引商品の製品の検出を促進したり、在庫切れの商品を削除することができます)。このように、小売業者は、買い物客の不満やサイトの放棄をアクティブなカートや換算された売上に変えることができます。 この統合が提供する標準で実装されている機能を活用することで、小売業者は、顧客が画像を使用してカタログから類似の製品を検索し、文字を入力せずに発見することができるようになります。
+[Azure Cognitive Search](/azure/search/search-what-is-azure-search) は Commerce に統合されており、Commerce Scale Unit (CSU) を使用するすべての Commerce チャネルで一貫した製品検出と検索のエクスペリエンスを提供します。 統合された Azure Cognitive Search を使用すると、顧客はカテゴリの参照、検索、フィルター処理によって、製品をすばやく見つけるけることができます。 製品発見機能の向上は、小売業者が顧客の維持率と転換率を高めるのに役立ちます。 また、Azure Cognitive Search は、eコマースのトラフィックに必要なスケーラビリティとパフォーマンスも提供します。 詳細については [クラウドを利用した検索の概要](./cloud-powered-search-overview.md) の記事を参照してください。
 
 #### <a name="product-recommendations"></a>製品推奨事項
 
@@ -150,11 +156,6 @@ Dynamics 365 Commerce は、e コマース サイトや POS デバイス上で�
 
 製品の推奨により、顧客は購入したい製品を簡単かつ迅速に見つけることができます。また、クロスセルとアップセルを使用して、顧客が購入する予定のなかった製品を追加で見つけることができます。 製品の検出のために推奨機能を使用した場合、より多くの変換の機会を創出し、販売収益を増加させ、顧客満足度と定着率を高めるのに役立ちます。 詳細については、[製品推奨事項の概要](./product-recommendations.md) を参照してください。
 
-#### <a name="commerce-analytics"></a>コマースの分析
-
-Dynamics 365 Commerce のパッケージ化された企業管理型コマース分析ソリューションは、Power BI レポートをコマース本部や POS システムに組み込むことで、小売業者にコマースのエコシステムのあらゆる点でインテリジェントな洞察力を提供します。 コマース分析ソリューションは、業務とトランザクションのレポート、ダッシュボード、KPI を包括的に提供し、あらゆるチャネルを横断する分析情報を活用します。
-
-このソリューションは、様々なソース（トランザクション、行動、観察、外部データソースなど）からのデータを、Azure Data Lake Storage がホストする統一データモデルに標準化します。 したがって、すべてのチャネルにわたって、業務上の業績を完全に把握することができます。 例えば、割引プロモーションの業績の分析、ウェブ訪問や活動の監視、オンライン購入と店頭訪問や購入の比較、ロイヤルティの償還の追跡、顧客の関心度、頻度、金額（RFM）を分析することができます。
 
 #### <a name="ratings-and-reviews"></a>評価とレビュー
 
@@ -176,7 +177,7 @@ Dataverse は、すべての業務アプリケーションのデータを統合�
 
 [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction)
 
-[Dataverse](https://powerplatform.microsoft.com/dataverse/)
+[Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/)
 
 [Modern POS (MPOS) アーキテクチャ](./dev-itpro/retail-modern-pos-architecture.md)
 
@@ -192,7 +193,6 @@ Dataverse は、すべての業務アプリケーションのデータを統合�
 
 [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview)
 
-[Microsoft Bing をコマースに使用する](https://www.microsoft.com/bing/commerce)
-
+[Azure Cognitive Search](/azure/search/search-what-is-azure-search)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

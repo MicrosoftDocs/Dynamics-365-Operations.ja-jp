@@ -1,6 +1,6 @@
 ---
-title: マスター プラン ジョブのキャンセル
-description: この記事では、組み込み計画機能を使用する有効な計画ジョブを取り消す方法について説明します。
+title: 非推奨のマスター プラン エンジンで作成したジョブをキャンセルする
+description: この記事では、非推奨のマスター プラン エンジンを使用する有効なプラン ジョブを取り消す方法について説明します。
 author: t-benebo
 ms.date: 05/14/2020
 ms.topic: article
@@ -16,39 +16,46 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6a9667be9921fdde7e1ca5de68c7f51d48905ac8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7b71a43f407050dccb7550db7c4b6a98a596d589
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860786"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740880"
 ---
-# <a name="cancel-a-master-planning-job"></a>マスター プラン ジョブのキャンセル
+# <a name="cancel-a-job-that-was-created-using-the-deprecated-master-planning-engine"></a>非推奨のマスター プラン エンジンで作成したジョブをキャンセルする
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management には、マスター プラン ジョブをキャンセルする複数のオプションがあります。 たとえば、マスター プラン ジョブが誤って開始された、または予想よりも長い時間実行していて終了したい場合、キャンセルすることができます。 計画ジョブをキャンセルする最善の方法は、**未完了の計画プロセス** ページからのキャンセルです。 **バッチ ジョブ** および **バッチ ジョブ拡張** ページからの代替オプションは、**未完了の計画プロセス** ページからマスタープラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。
+非推奨のマスター プラン エンジンを使用して作成したジョブをキャンセルするための複数のオプションがあります。 たとえば、マスター プラン ジョブが誤って開始された、または予想よりも長い時間実行していて終了したい場合、キャンセルすることができます。
+
+計画ジョブをキャンセルする最善の方法は、**未完了の計画プロセス** ページからのキャンセルです。 **バッチ ジョブ** および **バッチ ジョブ拡張** ページからの代替オプションは、**未完了の計画プロセス** ページからマスタープラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。
 
 ## <a name="preferred-cancel-option"></a>優先するキャンセル オプション
-### <a name="cancel-master-planning-job-from-unfinished-planning-processes-page"></a>**未完了の計画プロセス** ページからマスター プラン ジョブをキャンセルする
+
+### <a name="cancel-master-planning-job-from-the-unfinished-planning-processes-page"></a>未完了の計画プロセス ページからマスター プラン ジョブをキャンセルする
+
 1. **マスター プラン > 照会およびレポート > マスター プラン > 未完了の計画プロセス** の順に移動します。
 2. キャンセルする計画プロセスを含む行を選択します。
-3. **キャンセル** をクリックします。
+3. **キャンセル** を選択します。
 
 ## <a name="additional-cancel-options"></a>追加のキャンセル オプション
+
 これらは、**未完了の計画プロセス** ページからのマスター プラン ジョブをキャンセルしても数分以内に完了しなかった場合にのみ使用してください。
 
 ### <a name="delete-master-planning-job-from-the-batch-jobs-page"></a>**バッチ ジョブ** ページからマスター プラン ジョブを削除する
+
 1. **システム管理 > 照会 > バッチ ジョブ** の順に移動します。
 2. 削除する計画ジョブを含む行を選択します。
-3. **削除** をクリックします。
+3. **削除** を選択します。
 
 ### <a name="abort-master-planning-job-task-from-the-batch-jobs-enhanced-page"></a>**バッチ ジョブ拡張** ページからのマスター プラン ジョブ タスクを中止する
+
 1. **システム管理 > 照会 > バッチ ジョブ** の順に移動します。
 2. 一覧にジョブ ID が表示されない場合、**拡張フォームに切り替える** をクリックします。それ以外の場合は次の手順に進みます。
-3. バッチ ジョブを開きます。 終了するタスクを含むバッチ ジョブの **ジョブ ID** をクリックします。
+3. バッチ ジョブを開きます。 終了するタスクを含むバッチ ジョブの **ジョブ ID** を選択します。
 4. **バッチ タスク** で、終了するタスクを選択します。
-5. **ステータスの変更** をクリックし、**キャンセル**、続いて **OK** をクリックします。
+5. **ステータスの変更** を選択し、**キャンセル** を選択して、**OK** をクリックします。
 6. **バッチ タスク** クイック タブで **中止** をクリックします。
 
 

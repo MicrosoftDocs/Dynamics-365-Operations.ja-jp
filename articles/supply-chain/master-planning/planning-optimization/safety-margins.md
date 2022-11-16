@@ -1,6 +1,6 @@
 ---
 title: 安全マージン
-description: この記事では、Microsoft Dynamics 365 Supply Chain Management の計画の最適化アドインで安全マージンをどのように使用できるかについて説明します。
+description: この記事では、マスター計画での安全マージンの機能について説明します。
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335198"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740444"
 ---
 # <a name="safety-margins"></a>安全マージン
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 Supply Chain Management の計画の最適化アドインで安全マージンをどのように使用できるかについて説明します。
+この記事では、マスター計画での安全マージンの機能について説明します。
 
 ## <a name="safety-margins-overview"></a>安全マージンの概要
 
@@ -165,12 +165,5 @@ ms.locfileid: "9335198"
 たとえば、ある品目のリードタイムが 3 日で、入庫幅が 3 日であるとします。 この品目の販売注文は、今日必要として設定されます。 この場合、*リードタイム* + *入庫幅* = 4 日として計算されます。 したがって、今日が 8 月 14 日であれば、4 日間の遅延では 8 月 18 日の出荷が生成されます。 次の図は、この例を示しています。
 
 ![遅延計算の例。](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>追加リソース
-
-[計画最適化の開始](get-started.md)
-
-[計画最適化適合分析](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: 需要予測を伴うマスター プラン
-description: この記事では、計画の最適化を使用してマスター プラン中に需要予測を含める方法について説明します。
+description: この記事では、マスター プラン中に需要予測を含める方法について説明します。
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878993"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739786"
 ---
-# <a name="master-planning-with-demand-forecasts"></a>需要予測を伴うマスター プラン
+# <a name="master-planning-with-demand-forecasts"></a>需要予測を使用したマスター プラン
 
 [!include [banner](../../includes/banner.md)]
 
-需要予測を計画の最適化と組み合わせて使用することにより、マスター プランで予測される需要を考慮することができます。 需要予測を手動で作成するか、インポートするか、または Microsoft Dynamics 365 Supply Chain Management の需要予測機能を使用して生成することができます。 需要予測の詳細については、[需要予測の概要](../introduction-demand-forecasting.md) を参照してください。
+需要予測を使用することにより、マスター プランで予測される需要を考慮することができます。 需要予測を手動で作成するか、インポートするか、または Microsoft Dynamics 365 Supply Chain Management の需要予測機能を使用して生成することができます。 需要予測の詳細については、[需要予測の概要](../introduction-demand-forecasting.md) を参照してください。
 
 > [!NOTE]
 > 個別の予測計画は、計画の最適化ではサポートされていません。 したがって、計画の最適化を使用している場合は、**マスター プラン パラメータ** ページの **現在の予測計画** の設定が無効になります。
@@ -50,7 +50,7 @@ ms.locfileid: "8878993"
     - **予測期間** - **予測計画** オプションを *はい* に設定した場合は、需要予測を適用すべき日数 (今日からの日付) を指定します。
 
     > [!IMPORTANT]
-    > **予測計画** 設定は、計画の最適化ではまだサポートされていません。
+    > **予測計画** 設定は、計画の最適化ではサポートされていません。
 
 ## <a name="set-up-a-coverage-group-to-include-a-demand-forecast"></a>需要予測を含めるための補充グループの設定
 

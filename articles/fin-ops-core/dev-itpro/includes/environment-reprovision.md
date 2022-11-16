@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 48e3aac8234abe434aa6c5430971dd4106233d20
-ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
+ms.openlocfilehash: 4bca5d8f1ca4d7c66bb422843faab8b86477675f
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8942837"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752819"
 ---
 > [!IMPORTANT]
 > Commerce headquarters データベース (以前の AOS データベース) を移行する際、関連付けられている Commerce Scale Units (CSUs) は移動されません。 場合によっては、使用する機能に応じて、CSU の再配置が必要になる場合があります。 次に、データを CSU に完全に同期して、再配置を行う必要があります。 データの不一致が残っている場合は、最終的なアクションとして CSU を削除し、新しい CSU を置き換え、新しい CSU に対するデータの完全同期を実行することです。
@@ -22,7 +22,7 @@ ms.locfileid: "8942837"
 HQ 内の Commerce セルフサービス インストーラーにアクセスできるようにするには、データベースの移動操作が完了した後に[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/synchronize-installers.md)する必要があります。
 
 > [!IMPORTANT]
-> 環境の再プロビジョニング手順は、データベース移動操作の一部として完全に自動化されており、これ以上手動で実行する必要はありません。 環境の再プロビジョニング ツールはアセット ライブラリで引き続き使用でき、特定の状況でエラーの状態を軽減するために使用される場合もあります。 
+> 環境の再プロビジョニング手順は、データベース移動操作の一部として完全に自動化されており、これ以上手動で実行する必要はありません。 環境の再プロビジョニング ツールは、引き続きアセット ライブラリで使用でき、データベースを開発環境に復元する場合にのみ必要になります。 
 
 移行先の環境で環境の再プロビジョニング ツールを実行するには、次の手順を実行します。
 

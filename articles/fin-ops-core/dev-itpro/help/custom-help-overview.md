@@ -2,7 +2,7 @@
 title: カスタム ヘルプの概要
 description: この記事では、ソリューションを反映するために Microsoft ヘルプ システムを拡張し、コンテンツをヘルプ ウィンドウに接続する方法について説明します。
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 11/03/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 604944bd6db2454d479fb579a3d7b5366c7d8e3d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: afca7bd7336fb5a910813d75bbac80cd11ad7b38
+ms.sourcegitcommit: 55e440e30490b2d36d86b22aa1263d5da97633aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284502"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9745342"
 ---
 # <a name="custom-help-overview"></a>カスタム ヘルプの概要
 
@@ -40,6 +40,8 @@ ms.locfileid: "9284502"
 通常、カスタム ヘルプ コンテンツは、次の 3 つのソースのいずれかから生成されます。
 
 - Microsoft ドキュメント リポジトリ
+
+    さまざまな GitHub リポジトリの Microsoft のコンテンツは、learn.microsoft.com サイトおよびこのサイトに使用されるツールに対して最適化されています。 これは、直接カスタマイズするのではなく、ローカル Web サイトの記事で補完することを目的としています。 ただし、ソリューションによっては、Microsoft のコンテンツのコピーが必要な場合があります。
 
     カスタム ヘルプ ツールキットの [HTMLFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) ツールを使用して、任意の財務と運用リポジトリからコンテンツを複製し、対応する HTML ファイルを生成できます。 これらのファイルは、ソリューションに固有のコンテンツで更新できます。
 

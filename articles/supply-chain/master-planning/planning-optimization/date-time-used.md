@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885902"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740907"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>計画の最適化で使用される日付と時刻のパラメーター
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885902"
 
 この記事では、計画の最適化が動作中に使用する日付と時刻のパラメータに関する情報について解説しています。
 
-組み込みのマスタ プラン エンジンではすべての計算でトランザクション日付が使用されるのに対し、計画の最適化では日付に変換される日付と時刻の値が使用されます。 この動作の違いにより、たとえば、マスタープランを実行した日の午前 0 時に作成された予測トランザクションは、計画の最適化では現在日付より前に作成されたものとみなされるため、含まれないという状況が発生します。
+非推奨のマスタ プラン エンジンではすべての計算でトランザクション日付が使用されるのに対し、計画の最適化では日付に変換される日付と時刻の値が使用されます。 この動作の違いにより、たとえば、マスタープランを実行した日の午前 0 時に作成された予測トランザクションは、計画の最適化では現在日付より前に作成されたものとみなされるため、含まれないという状況が発生します。
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>発行トランザクションと需要トランザクションのパラメーター
 

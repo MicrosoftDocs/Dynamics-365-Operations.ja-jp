@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: 22a71fe66042a9ad189fd6a83a2666dfa64d35d0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 595a51eba1d0cd432d4f4de9405bf9f30a1ae00c
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281999"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746038"
 ---
 # <a name="task-management-in-pos"></a>POS でのタスク管理
 
@@ -36,6 +36,7 @@ Dynamics 365 Commerce POS アプリケーションにはタスク管理機能が
 - **タスクの状態** – 選択したタスクの状態を変更します。
 - **フィルター** – 既定では、有効なタスクのみが表示されます。 ただし、フィルターを適用することにより、マネージャーは完了またはキャンセルしたタスクを含め、すべてのタスクを表示できます。
 - **新しいタスク** – 既存のタスク リストの下にタスクを作成するか、または単一目的のタスクを作成します。
+- **タスクの編集** – タスクの詳細を編集します。
 
 店舗の作業者は、コマンド バーのボタンを使用して、POS アプリケーションで次のタスク操作を実行できます。
 

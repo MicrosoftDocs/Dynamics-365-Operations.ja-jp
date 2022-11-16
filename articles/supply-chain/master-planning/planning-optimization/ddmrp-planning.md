@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689175"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740305"
 ---
 # <a name="demand-driven-planning"></a>需要主導型計画
 
@@ -55,4 +55,4 @@ ms.locfileid: "9689175"
 この例では、最大レベルから正味フローを差し引いた数である、130 の計画発注書が作成されます。 計画オーダーには、最大数量に対する割合に基づいて、優先順位 53.07 が割り当てられます。 これらの値は 6 月 20 日に検出されたので、6 月 20 日の計画オーダーに品目のデカップリング済リード タイム (この例では 5 営業日) を加えて作成されます。 したがって、本日から 1 週間は 5 営業日であるため、計画オーダーの日付は 6 月 27 日となります。
 
 > [!NOTE]
-> 計画の最適化では、DDMRP を使用して、デカップリングされた品目だけが計算されます。 その他のすべての品目は、標準の材料必要量計画 (MRP) を使用して計算されます。
+> マスター プランでは、DDMRP を使用して、デカップリングされた品目だけが計算されます。 その他のすべての品目は、標準の材料必要量計画 (MRP) を使用して計算されます。

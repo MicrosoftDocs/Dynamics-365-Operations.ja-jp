@@ -2,7 +2,7 @@
 title: 以前に承認および確認済みのトランザクションのリンクされた払戻
 description: この記事では、リンクされた払戻を有効にして使用する方法を説明します。
 author: josaw1
-ms.date: 06/30/2021
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 660ed92dd60fc29d87739aed8ad45b96c9db2a9f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ddfdd684b02651c2855f44fafbac7494cef81697
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282849"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746209"
 ---
 # <a name="linked-refunds-of-previously-approved-and-confirmed-transactions"></a>以前に承認および確認済みのトランザクションのリンクされた払戻
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 返品は小売企業にとって重要な業務です。 販売に対する返品を受け入れて顧客への支払いを払い戻す機能により、小売企業は顧客のニーズに対応して問題を解決できます。
 
@@ -51,18 +52,19 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 
 ![オムニ チャネル支払いの構成。](media/LinkedRefundsOmniChannel.jpg)
 
+Commerce バージョン 10.0.11 以降では、**システム管理 \> ワークスペース \> 機能管理** で、headquarters の **オムニ チャネル支払** 機能を有効にできます。
+
 オムニチャネル支払い機能をオンにすると、配送料とその他の料金を計算して料金を販売時点管理 (POS) 販売に追加するビジネス プロセス フローを変更します。 したがって、この機能を有効にする前に従業員のテストとトレーニングが必要です。
 
-オムニチャネル支払い機能が有効の場合、1 つのチャネル (たとえば、コールセンターや Modern POS (MPOS)) で使用されるカード支払いトークンは、小売企業に設定されたすべてのチャネルで使用可能になります。 POS アプリケーションの場合は、リンクされた払戻機能も有効になります。 コールセンター、MPOS、E コマース アプリケーションの場合、顧客は支払い用のカード番号を手動で入力することもできます。
-
-
+オムニチャネル支払い機能が有効の場合、1 つのチャネル (たとえば、コールセンターや Modern POS (MPOS)) で使用されるカード支払いトークンは、小売企業に設定されたすべてのチャネルで使用可能になります。 POS アプリケーションの場合は、リンクされた払戻機能も有効になります。 コールセンター、MPOS、eコマース アプリケーションの場合、顧客は支払い用のカード番号を手動で入力することもできます。
 
 ### <a name="supported-flows"></a>サポートされているフロー
 
-レジ担当者は、返品のためにカードが提示されない場合も元のトランザクションで使用されたカードへの払戻を処理できます。
+レジ担当者は、返品のためにカードが提示されない場合も元のトランザクションで使用されたカードへの払戻を処理できます。 サポートされるフローは次のとおりです:
 
 - クレジット カードやデビット カードを使用する現金払いトランザクションのリンクされた払戻。
 - クレジット カードやデビット カードを使用する顧客注文のリンクされた払戻。
+- **POS での統合返品処理エクスペリエンス** 機能が有効になっている場合のリンクされた払い戻し (ただし、一度に 1 件の請求書が返される場合のみ)。 
  
 ### <a name="unsupported-flows"></a>サポートされないフロー
 
@@ -71,6 +73,7 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 - 交換注文のリンクされた払戻。
 - 同じトランザクションでの複数の返品注文。
 - レシートや顧客アカウントの詳細なしでの返品。
+- **POS での統合返品処理エクスペリエンス** 機能が有効になっていて、返品のために複数の請求書が同時にグループ化されている場合のリンクされた払い戻し
 
 ## <a name="enable-refunds-over-multiple-captures"></a>複数のキャプチャの払戻を有効にする
 

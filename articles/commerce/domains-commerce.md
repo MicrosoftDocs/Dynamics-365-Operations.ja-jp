@@ -2,19 +2,19 @@
 title: Dynamics 365 Commerce のドメイン
 description: この記事では、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465196"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750683"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のドメイン
 
@@ -44,7 +44,7 @@ ms.locfileid: "9465196"
 
 Dynamics 365 Commerce e コマース環境をプロビジョニングする際、Commerce は環境の作業用アドレスとなる URL を生成します。 この URL は、環境のプロビジョニング後に、LCS に表示されている e コマース サイトのリンクで参照されます。 Commerce 生成の URL は、`https://<e-commerce tenant name>.dynamics365commerce.ms` の形式で、e コマース テナント名は、Commerce 環境に対して LCS に入力された名前です。
 
-サンドボックス環境では、実稼働環境サイトのホスト名を使用することもできます。 このオプションは、サンドボックス環境から実稼働環境にサイトをコピーする場合に最も適しています。
+サンドボックス環境では、実稼働環境サイトのホスト名を使用することもできます。 このオプションは、サンドボックス環境から運用環境にサイトをコピーする場合に最も適しています。
 
 ## <a name="site-setup"></a>サイトの設定
 
@@ -95,17 +95,23 @@ e コマース環境のプロビジョニング後、サイトを作業用 URL �
 
 複数のドメインが提供されている環境でドメインのクエリ文字列が指定されていない場合、Commerce は提供された最初のドメインを使用します。 たとえば、サイトの設定中に最初にパス "fabrikam" が提供された場合、その URL `https://xyz.dynamics365commerce.ms` を使用して、`www.fabrikam.com` の公開サイトのコンテンツ サイトにアクセスできます。
 
+カスタム ドメインを追加することも可能です。 これを行うには、プロジェクトの環境の Commerce 管理ページの **E コマース** サブヘッダーで、**+ カスタム ドメインの追加** を選択します。 スライダーは既存のカスタム ドメインを示し、新しいカスタム ドメインを追加するオプションを提供します。
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>使用する Commerce Scale Unit の更新
+
+Commerce で使用される Commerce Scale Unit (CSU) は、環境を最初に作成するときに選択されるのが一般的です。 Commerce では、環境で使用する CSU インスタンスを変更できるため、セルフサービス機能によりアーキテクチャの保守を向上させ、サポートへの問い合わせを減らすることができます。 CSU インスタンスを更新するには、プロジェクトの環境の Commerce 管理ページに移動し、**Scale Unit を更新する** を選択します。 **新しい Commerce Scale Unit** スライダーを使用して、環境で使用できる CSU の一覧から新しい CSU インスタンスを選択します。
+
 ## <a name="traffic-forwarding-in-production"></a>実稼働環境でのトラフィックの転送
 
 Commerce.dynamics.com エンドポイント自体でドメインのクエリ文字列パラメータを使用して、複数のドメインをシミュレートできます。 ただし、実稼働環境で稼働させる必要がある場合は、カスタム ドメインのトラフィックを `<e-commerce tenant name>.dynamics365commerce.ms` エンドポイントに転送する必要があります。
 
-`<e-commerce tenant name>.dynamics365commerce.ms` エンドポイントは、カスタム ドメイン Secure Sockets Layer (SSL) をサポートしていないため、フロント ドア サービスまたはコンテンツ配信ネットワーク (CDN) を使用してカスタム ドメインを設定する必要があります。 
+`<e-commerce tenant name>.dynamics365commerce.ms` エンドポイントは、カスタム ドメイン Secure Sockets Layer (SSL) をサポートしていないため、フロント ドア サービスまたは Content Delivery Network (CDN) を使用してカスタム ドメインを設定する必要があります。 
 
 フロント ドア サービスまたは CDN を使用してカスタム ドメインを設定するには、次の 2 つのオプションがあります:
 
-- Azure Front Door ようなフロント ドア サービスを設定して、フロント エンド トラフィックを処理し、Commerce 環境に接続します。 これにより、ドメインと証明書の管理をより詳細に制御し、よりきめ細かなセキュリティ ポリシーを提供できます。
+- Azure Front Door のようなフロント ドア サービスを設定して、フロントエンドのトラフィックを処理し、Commerce 環境に接続することで、ドメインと証明書の管理をより詳細に制御し、きめ細かなセキュリティ ポリシーを提供します。
 
-- Commerce 提供の Azure Front Door インスタンスを使用します。 これには、ドメイン検証と実稼動環境ドメインの SSL 証明書を取得するために、Dynamics 365 Commerce チームとの調整が必要です。
+- Commerce が提供する Azure Front Door インスタンスを使用することで、ドメイン検証のために Dynamics 365 Commerce チームとアクションを調整し、運用環境ドメインの SSL 証明書を取得する必要があります。
 
 > [!NOTE]
 > 外部の URL または前もったサービスを使用している場合は、Commerce が提供するリポートを使用して Commerce プラットフォームに上陸し、X-Forwarded-Host (XFH) ヘッダー \<custom-domain\> が設定された Commerce プラットフォームに要求が上陸する必要があります。 たとえば、Commerce エンドポイント `xyz.dynamics365commerce.ms` で、カスタム ドメインが `www.fabrikam.com` である場合は、転送される要求のホスト ヘッダーは、`xyz.dynamics365commerce.ms` である必要があり、XFH ヘッダーも `www.fabrikam.com` である必要があります。
@@ -114,8 +120,8 @@ CDN サービスを直接設定する方法の詳細については、[コンテ
 
 Commerce 提供の Azure Front Door インスタンスを使用するには、Commerce オンボード チームから CDN 設定支援のサービス要求を作成する必要があります。 
 
-- 会社名、実稼動環境ドメイン、環境 ID、および実稼動環境の e コマース テナント名を入力する必要があります。 
-- これが既存のドメイン (現在アクティブなサイトに使用されている) か、新しいドメインであるかを確認する必要があります。 
+- 会社名、運用環境ドメイン、環境 ID、および運用環境の eコマース テナント名を入力する必要があります。 
+- このサービス要求が既存のドメイン (現在アクティブなサイトに使用されている) か、新しいドメインであるかを確認する必要があります。 
 - 新しいドメインの場合、ドメイン検証と SSL 証明書は 1 つのステップで実行できます。 
 - 既存の Web サイトに提供するドメインの場合、ドメイン検証と SSL 証明書を確立するために必要ないくつかのステップ プロセスがあります。 このプロセスには、複数の連続したステップが含まれているため、ドメインが稼働するために 7 営業日のサービス レベル契約 (SLA) があります。
 

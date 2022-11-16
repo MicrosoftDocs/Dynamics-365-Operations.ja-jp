@@ -1,6 +1,6 @@
 ---
-title: 計画最適化の開始
-description: この記事では、計画の最適化機能の使用を開始する方法について説明します。
+title: マスター プランを開始する
+description: この記事では、Dynamics 365 Supply Chain Management でマスター プラン機能の使用を開始する方法について説明します。
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295932"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740332"
 ---
-# <a name="get-started-with-planning-optimization"></a>計画最適化の開始
+# <a name="get-started-with-master-planning"></a>マスター プランを開始する
 
 [!include [banner](../../includes/banner.md)]
 
-[すでに発表した](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) ように、計画の最適化は、既存の組み込みマスター プラン エンジンと置き換えるようにスケジュールされています。
-
-現在、組み込みのマスター プラン エンジンを使用している場合は、すぐに計画の最適化への移行の計画を開始する必要があります。 廃止が適用された場合 (実施の実施が現在スケジュールされていない場合)、他の方法で操作が影響を受ける可能性があるため、この作業を今すぐ開始することが重要です。 新しいサービスの多くのパフォーマンス向上と他の新しい機能を活用できるよう、計画の最適化によって必要な機能がサポートされた後は、移行をできるだけ早く完了してください。
-
-現時点では、計画の最適化機能では、Supply Chain Management に組み込まれている計画エンジンで利用可能なすべての機能がサポートされていません。 したがって、計画の最適化で現在利用可能な機能セットが要件を満たすかどうかを評価することが重要です。 現在、計画の最適化機能は Dynamics Lifecycle Services (LCS) で既定では有効になっていないため、機能を有効にする前に評価を行う機会があります。
-
-> [!NOTE]
-> マスター プラン プロセスに製造が含まれていない (マスター プランで生成された計画製造オーダー) 場合や、バージョン 10.0.15 以降の組み込みマスター プラン エンジンが必要な場合は、移行から計画の最適化に例外を要求する必要があります。 バージョン 10.0.16 以降、計画製造オーダーを生成せずに組み込みマスター プランを実行すると、環境にエラーが表示されます。 計画製造オーダーは、マスター プラン中に計画製造オーダーを生成しないすべての新しい配置に対して使用する必要があります。 計画製造オーダーを生成せずに組み込みマスター プラン エンジンを実行している既存の環境の所有者は、例外プロセスに関する詳細を含むメールを受信します。 パートナーと協力して、計画の最適化への移行を評価および計画することをお勧めします。
-
-計画の最適化を有効にする前に、計画の最適化フィット分析の結果を評価することを強くお勧めします。 詳細については、[計画の最適化フィット分析](planning-optimization-fit-analysis.md) を参照してください。
+Supply Chain Management のマスタ プランは、Dynamics 365 Supply Chain Management 向け計画の最適化アドインと呼ばれる外部サービスによって提供されます。 このトピックでは、そのサービスを取得および設定する方法について説明します。
 
 ## <a name="availability"></a>使用可能性
 
@@ -108,31 +99,15 @@ LCS プロジェクトからアドインをインストールし、Supply Chain 
 **計画の最適化の使用** オプションの設定では、マスター プランに使用する計画エンジンを決定します。
 
 - **はい** – 計画の最適化がマスター プランに使用されます。
-- **いいえ** – 組み込み Supply Chain Management 計画エンジンがマスター プランに使用されます。
+- **いいえ** – 非推奨のマスター プラン エンジンがマスター プランに使用されます。
 
-この設定は、すべての法人 (会社) に適用されます。 一部の法人およびその他の法人の組み込みマスター プランで、計画の最適化を使用することはできません。
+この設定は、すべての法人 (会社) に適用されます。 一部の法人およびその他の法人の非推奨のマスター プラン エンジンで、計画の最適化を使用することはできません。
 
 > [!NOTE]
-> **計画の最適化の使用** オプションが **はい** に設定されているときに、組み込みの Supply Chain Management 計画エンジンに対して作成された既存の計画バッチ ジョブがトリガーされた場合、これらのジョブは失敗します。
+> **計画の最適化の使用** オプションが **はい** に設定されているときに、非推奨のマスター プラン エンジンに対して作成された既存のプラン バッチ ジョブがトリガーされた場合、これらのジョブは失敗します。
 
 ### <a name="integration-with-the-setup"></a>設定との統合
 
 計画の最適化が有効になっている場合は、計画の最適化アドインを使用してマスター プランが実行されます。 この場合、マスター プランの結果と機能が影響を受けます。
 
-## <a name="additional-resources"></a>追加リソース
-
-[プレビュー用の使用条件](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[計画最適化の概要](planning-optimization-overview.md)
-
-[計画の最適化フィット分析](planning-optimization-fit-analysis.md)
-
-[計画の履歴と計画ログの表示](plan-history-logs.md)
-
-[プランへのフィルターの適用](plan-filters.md)
-
-[計画ジョブのキャンセル](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

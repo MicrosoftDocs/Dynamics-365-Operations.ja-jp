@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af7db5657330f577b638ceece5402c0120d5cf5c
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 1a923206df056efcccb431be1dcaed1b134ae143
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027269"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736827"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
@@ -95,7 +95,7 @@ Web アプリケーションは、指定されたオペレーティング シス
 > [!WARNING]
 > Windows 7 オペレーティング システムは、セキュリティ関連の修正以外ではサポートされません。 そのため、Windows 7 で Commerce コンポーネントが機能する場合がありますが、このオペレーティング システムのサポートに特に関連するバグ修正はありません。
 
-#### <a name="modern-pos"></a>Modern POS
+#### <a name="modern-pos-or-store-commerce"></a>Modern POS または Store Commerce
 
 - 使用可能な最新の更新プログラムを含む Windows 11、Windows 10 (Pro、Enterprise、LTSC、および IOT エンタープライズ エディション) がサポートされます。
 
@@ -104,11 +104,11 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 - Windows Server 2019 はサポートされます。
 - 別のセルフサービス コンポーネント (たとえば、ハードウェア ステーションまたは Commerce Scale Unit \[自己ホスト\]) と同じコンピューターの Modern POS を使用することはお勧めしません。
-- Modern POS for iOSは、iOS バージョン 11 以降をサポートしています。
-- Modern POS for Android は、Android バージョン 6.0 以降をサポートしています。
+- iOS のサポートには、iOS バージョン 11 かそれ以降が必要です。
+- Android のサポートには、Android バージョン 6.0 かそれ以降が必要です。
 
 > [!NOTE]
-> Modern POS がオフライン データベースを使う場合、コンピューターは SQL Server のすべてのシステム要件を満たす必要があります。 また、システムに少なくとも 15 ギガバイト (GB) の使用可能なディスク領域が必要です。 ただし、最低 25 GB の使用可能なディスク領域をお勧めします。
+> オフライン データベースを使う場合、コンピューターは SQL Server のすべてのシステム要件を満たす必要があります。 また、システムに少なくとも 15 ギガバイト (GB) の使用可能なディスク領域が必要です。 ただし、最低 25 GB の使用可能なディスク領域をお勧めします。
 
 #### <a name="hardware-station-and-commerce-scale-unit-self-hosted"></a>ハードウェア ステーションと Commerce Scale Unit (自己ホスト)
 

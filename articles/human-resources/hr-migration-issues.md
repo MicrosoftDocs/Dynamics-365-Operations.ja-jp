@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28c2c10a9293d00e26dfcc80ab08b89a122a6135
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733476"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752693"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Dynamics 365 Human Resources インフラストラクチャ統合の既存の問題
 
@@ -44,10 +44,3 @@ ms.locfileid: "9733476"
 
 現在、Teams の既存の人事アプリは、Microsoft Power Platform ソリューションに移行しています。 詳細については、[Teams の Human Resources アプリ](hr-admin-teams-leave-app.md) を参照してください。
 
-## <a name="licensing"></a>ライセンス
-
-次の領域では Dynamics 365 Human Resources のライセンスに変更はありません: 
-
-- **ライセンス購買の最小数**
-- **運用環境とサンドボックス環境のライセンス** - 運用環境とサンドボックス環境を 1 つずつ付与する既存のスタンドアロン人事ライセンスをお持ちの場合、同じ数のライセンスを追加コストなしで財務と運用インフラストラクチャで利用できます。
-- **追加のサンドボックス ライセンス** - スタンドアロンの人事アプリケーションのサンドボックス ライセンスを追加購入した場合、財務と運用インフラストラクチャ上のサンドボックス環境にも同じ数のライセンスが利用できます。 

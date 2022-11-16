@@ -2,7 +2,7 @@
 title: 顧客支払条件の設定
 description: この手順では、現金割引と期日の設定を定義します。
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9b2ae5e63a2efb4bc913efa4d88c65a70133a2d9
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065711"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752779"
 ---
 # <a name="establish-customer-payment-terms"></a>顧客支払条件の設定
 
@@ -34,7 +34,11 @@ ms.locfileid: "9065711"
 6. **月の日付** フィールドに、日付を入力します。 日付は、「10 日」ではなく、「10」などの数値を入力してください。 
 7. **保存** をクリックします。
 8. ページを閉じます。
-9. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 支払設定 > 支払条件** の順に移動します。
+9. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 支払設定 > 支払条件** の順に移動します。 
+
+>[!NOTE] 
+>**支払条件** が **現金** の場合は、**支払条件** ページの **現金支払** フィールドに **いいえ** を指定する必要があります。
+
 10. **新規** をクリックします。 **支払条件** は期日を計算する方法を定義するために使用されます。 現金割引日の設定は個別のページで定義されます。 
 11. **支払条件フィールド** に ID を入力します。
 12. **説明** フィールドに説明を入力します。

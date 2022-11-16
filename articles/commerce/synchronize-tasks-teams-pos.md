@@ -2,22 +2,22 @@
 title: Microsoft Teams と Dynamics 365 Commerce POS 間でタスク管理を同期させる
 description: この記事では、Microsoft Teams と Dynamics 365 Commerce の販売時点管理 (POS) の間で同期する方法について説明します。
 author: gvrmohanreddy
-ms.date: 02/17/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f7a26f1625ca9414a43f895ff37f697d573a36aa
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f339ae031f11ad850dab47f84bc9823cf6776e74
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268277"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746100"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Microsoft Teams と Dynamics 365 Commerce POS 間でタスク管理を同期させる
 
@@ -30,6 +30,21 @@ Teams 統合の主な目的の1つは、POS アプリケーションとチーム
 Planner はチームのタスクのリポジトリとして使用されるので、Teams と Dynamics 365 Commerce の間にリンクがある必要があります。 このリンクは、特定の店舗チームの特定の計画 ID を使用して作成されます。
 
 次の手順では、POS アプリケーションと Teams アプリケーション間のタスク管理同期を設定する方法を示します。
+
+## <a name="link-pos-and-teams-for-task-management"></a>POS とタスク管理のための Teams のリンク
+
+Commerce Headquarters でタスク管理用の POS と Microsoft Teams アプリケーションをリンクするには、次の手順に従います。
+
+> [!NOTE]
+> タスク管理を Teams に統合する前に、[Dynamics 365 Commerce および Microsoft Teams 統合](enable-teams-integration.md) が有効になっている必要があります。 
+
+1. **小売とコマース \> タスク管理 \> Microsoft Teams とのタスク統合** に移動します。
+1. アクション ウィンドウで、**編集** を選択します。
+1. **タスク管理統合の有効化** オプションを **はい** に設定します。
+1. アクション ウィンドウで、**保存** を選択します。
+1. アクション ペインで、**タスク管理の設定** を選択します。 **Teams のプロビジョニング** という名前のバッチ ジョブが作成中であることを示す通知が表示されます。
+1. **システム管理 \> 照会 \> バッチジョブ** に移動し、**Teams のプロビジョニング** の説明がある最新のジョブを検索します。 このジョブの実行が終了するまで待ちます。
+1. **CDX ジョブ 1070** を実行して、計画 ID と Retail Server への店舗参照を公開します。
 
 ## <a name="publish-a-test-task-list-in-teams"></a>Teams でのテストタスク リストの公開
 
@@ -50,20 +65,8 @@ Teams でテスト タスク リストを公開するには、次の手順に従
 
 詳細については、[組織の作業を作成および追跡するためのタスク リストの公開](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df) を参照してください。
 
-## <a name="link-pos-and-teams-for-task-management"></a>POS とタスク管理のための Teams のリンク
-
-Commerce Headquarters でタスク管理用の POS と Microsoft Teams アプリケーションをリンクするには、次の手順に従います。
-
 > [!NOTE]
-> タスク管理を Microsoft Teams に統合する前に、[Dynamics 365 Commerce および Microsoft Teams 統合](enable-teams-integration.md)が有効になっている必要があります。 
-
-1. **小売とコマース \> タスク管理 \> Microsoft Teams とのタスク統合** に移動します。
-1. アクション ウィンドウで、**編集** を選択します。
-1. **タスク管理統合の有効化** オプションを **はい** に設定します。
-1. アクション ウィンドウで、**保存** を選択します。
-1. アクション ペインで、**タスク管理の設定** を選択します。 **Teams のプロビジョニング** という名前のバッチ ジョブが作成中であることを示す通知 が表示されます。
-1. **システム管理 \> 照会 \> バッチジョブ** に移動し、**Teams のプロビジョニング** の説明がある最新のジョブを検索します。 このジョブの実行が終了するまで待ちます。
-1. **CDX ジョブ 1070** を実行して、計画 ID と Retail Server への店舗参照を公開します。
+> タスク リストが Teams で正常に公開されると、タスクは POS に表示されます。 POS マネージャーとレジ担当者は、POS の Azure AD ログインをオンにする必要があります。 詳細については、[POS サインインの Azure Active Directory 認証を有効にする](aad-pos-logon.md) を参照してください。 
 
 ## <a name="additional-resources"></a>追加リソース
 

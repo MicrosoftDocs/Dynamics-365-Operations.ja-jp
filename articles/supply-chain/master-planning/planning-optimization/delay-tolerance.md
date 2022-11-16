@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335378"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740471"
 ---
 # <a name="delay-tolerance-negative-days"></a>遅延許容範囲 (マイナス在庫日数)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ ms.locfileid: "9335378"
 この式により、製品リード タイム中に十分な供給があるときは、マスター プランによって新しい供給注文が作成されないようにします。
 
 > [!NOTE]
-> 計画の最適化における遅延許容範囲の計算では、組み込みのマスター プランからの動的マイナス在庫日数計算が常に使用されます。 **マスター プラン パラメーター** ページの **動的マイナス在庫日数を使用** の設定は、この動作には影響しません。
+> 計画の最適化における遅延許容範囲の計算では、非推奨のマスタ プラン エンジンからの動的マイナス在庫日数計算が常に使用されます。 **マスター プラン パラメーター** ページの **動的マイナス在庫日数を使用** の設定は、この動作には影響しません。
 
 既存の供給によって計算された遅延許容範囲以下の需要遅延が意味される場合、計画の最適化によって、既存の供給が需要と共に関連付けられます。 場合によっては、過剰な供給よりも需要を遅延することをお勧めします。
 

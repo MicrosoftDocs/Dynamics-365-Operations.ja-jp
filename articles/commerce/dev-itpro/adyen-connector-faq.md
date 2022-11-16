@@ -2,7 +2,7 @@
 title: Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
 description: この記事では、Adyen 向けの Microsoft Dynamics 365 Payment Connector に関するよく寄せられる質問への回答を提供します。
 author: Reza-Assadi
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
-ms.openlocfilehash: 3aa976dae2b2618fc32ff8460302cedeb2308f75
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: e39c17ac88fc33b8ddff0f6902de77b5299ee942
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281564"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746175"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-faq"></a>Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Adyen 向けの Microsoft Dynamics 365 Payment Connector に関するよく寄せられる質問への回答を提供します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。 
 
@@ -56,7 +57,7 @@ Adyen は、カードの最初の 6 桁を照合のために返します。 Adye
 
 | Commerce イベント | Adyen 支払ステータス コード |
 |---|---|
-| 進行中の初期トランザクション | **AuthorisedPending** |
+| 進行中の初期トランザクション | **AuthorizedPending** |
 | 正常なトランザクション | **承認済** |
 | 進行中の正常なトランザクション | **SentForSettle** |
 | 完了した正常なトランザクション | **決済済** |
@@ -87,6 +88,10 @@ Adyen 支払ステータス コードの完全な一覧については、[支払
 ### <a name="can-i-cancel-a-refund-action"></a>払戻アクションをキャンセルできますか?
 
 Adyen は、参照型と非参照型の 2 種類の払戻に対応しています。 参照型払戻はキャンセルできません。 未参照型の払戻の場合、キャンセルが試みられても、キャンセルが成功するかどうかは、支払発行者と、Adyen による処理に対して設定されている遅延の可能性に依存します。 POS でローカル払戻キャンセルを強制するときにエラーが発生した場合、POS ではクレジットが使用できます。 ただし、リンクされていない払戻のキャンセルが支払ゲートウェイで受け付けられない場合、Dynamics 365 レポートと Adyen レポートの間に不一致が発生する場合があります。 Adyen による未参照型払戻のキャンセルの詳細については、[未参照型の払戻のキャンセル](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced)を参照してください。 
+
+### <a name="is-3d-secure-3ds-authentication-supported-in-commerce-call-center-iframe-payment-windows"></a>Commerce コール センターの iFrame 支払ウィンドウで 3D セキュア (3DS) 認証はサポートされていますか?
+
+いいえ、Commerce コール センターの支払フォーム (headquarters の **支払サービス** ページにあるコネクタで構成) で使用される支払ウィンドウでは、3DS 認証フローをサポートしていません。 パスワードを必要とする顧客認証または強力な顧客認証 (SCA) は、顧客が機密データおよび保護データを直接入力するオンライン チャネルでのみサポートされます。
 
 ## <a name="next-steps"></a>次のステップ
 

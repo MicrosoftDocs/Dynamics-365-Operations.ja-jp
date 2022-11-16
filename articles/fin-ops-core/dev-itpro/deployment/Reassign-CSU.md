@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 043abe4ffd4aa3e2442e2df5681f521d4fea3725
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a74d5e8d8a1e1a9c82f6db4e38b536522aad0595
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271499"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736819"
 ---
 # <a name="migrate-channels-to-a-different-commerce-scale-unit"></a>チャネルを別の Commerce Scale Unit に移行する
 
@@ -51,7 +51,7 @@ ms.locfileid: "9271499"
 3. **完全なデータの同期** を選択し、ジョブ **9999** (**すべてのジョブ**) を使用するように指定します。
 
 > [!NOTE]
-> 出力先の CSU が自己ホストの場合、個別のチャネル データベース グループを作成して、不要なマスター データ同期量を減らすことを考慮してください。 
+> 出力先の CSU が自己ホストの場合、個別のチャネル データベース グループを作成して、不要なマスター データ同期量を減らすことを考慮してください。 チャンネル データベース グループの構成に関係なく、このドキュメントの手順では、ソース CSU と行先 CSU を含むグループの両方に、以下の実行済みのジョブがすべて含まれます。 たとえば、ソース CSU と行先の CSU が異なるチャネル データベース グループ内にある場合、両方のグループが、実行する必要があるジョブのすべてのインスタンスに対して配送スケジュール ジョブをまとめて実行する必要があります。
 
 ### <a name="prepare-for-migration"></a>移行の準備
 

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-21
-ms.openlocfilehash: a5de2a3d160a8b1673f0bd1c333cb1e2ff921d08
-ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
+ms.openlocfilehash: 84d6229a89c8d4370d0f8caba381bbe7bae6968d
+ms.sourcegitcommit: 55e440e30490b2d36d86b22aa1263d5da97633aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9719301"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9745338"
 ---
 # <a name="service-protection-api-limits"></a>サービス保護 API 制限
 
@@ -92,7 +92,7 @@ API の使用を追跡してサービス保護 API の制限を適用するた�
 
 これらの値は、API 要求に使用されるアクセス トークンから取得されます。 たとえば、企業には OData API を使用して財務と運用データに接続する Web アプリケーションである従業員ポータルがあります。 各従業員は、会社のメール アドレスとパスワードを使用して Web アプリにサインインします。 このシナリオでは、API 要求で使用されるユーザー オブジェクト IDと アプリケーション クライアント ID を用いて、サービス保護 API の制限の使用状況を追跡します。 アプリケーションの各ユーザーの API の使用状況は、個別に追跡、調節されています。 このシナリオでの認証フローの詳細については、[承認](services-home-page.md#authentication) を参照してください。
 
-アプリケーションでユーザー認証の代わりにアプリ認証を使用し、アプリケーションにユーザーでサインインしない場合、調節キーのユーザーは、Azure AD のアプリケーションのオブジェクト ID です。
+アプリケーションでユーザー認証の代わりにアプリ認証を使用し、アプリケーションにユーザーでサインインしない場合、調節キーのユーザーは、Azure AD のアプリケーションのオブジェクト ID です。 アプリケーション オブジェクト ID の検索方法については、[Azure Active Directory のアプリケーションおよびサービス プリンシパル オブジェクト](../../../../azure/active-directory/develop/app-objects-and-service-principals.md#application-object) を参照してください。
 
 ### <a name="resource-based-service-protection-api-limits"></a>リソース ベースのサービス保護 API 制限
 

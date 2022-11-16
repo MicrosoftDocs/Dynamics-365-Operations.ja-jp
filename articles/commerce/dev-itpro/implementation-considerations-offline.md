@@ -10,12 +10,12 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: 2653cdd1d71327d12e78f953191d1ae0bd195a5b
-ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
+ms.openlocfilehash: 2d70737f9ec245fa7785cf695fee27023893df10
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9601556"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736815"
 ---
 # <a name="commerce-offline-implementation-and-troubleshooting"></a>Commerce のオフライン実装とトラブルシューティング
 
@@ -111,6 +111,7 @@ SQL Server のバージョンについては、現在メインストリーム �
 - [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md)
 - [Commerce Data Exchange のトラブルシューティング](CDX-Troubleshooting.md)
 - [Commerce Data Exchange ベスト プラクティス](CDX-Best-Practices.md)
+- [オンラインおよびオフラインでの販売時点管理 (POS) の操作](../pos-operations.md)
 - [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md)
 - [店舗内トポロジの選択](retail-in-store-topology.md)
 - [デバイス管理実装ガイダンス](../implementation-considerations-devices.md)

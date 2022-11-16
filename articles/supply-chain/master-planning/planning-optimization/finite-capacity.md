@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689696"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740089"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>有限キャパシティ プランニングとスケジューリング
 
@@ -28,9 +28,8 @@ ms.locfileid: "9689696"
 
 有限キャパシティ プランニングとスケジューリングでは、制限のない積荷のアプローチで作成されるよりも、現実的な生産プロセスのスケジュールが作成されます。 リソースに十分なキャパシティがない場合は、納期日が延期され、十分なキャパシティがある場合にジョブがスケジュールされます。
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>有限キャパシティ プランニングに対する計画の最適化サポート
-
-有限キャパシティ プランニングとスケジューリングは、計画の最適化または組み込み計画エンジンのどちらを使用するかに関係なく、ほぼ同じように機能します。 ただし、計画の最適化では **ボトルネック タイム** フェンス パラメーターを使用しません。 計画の最適化を使用する場合、ボトルネック リソースは、常に、(有限キャパシティ タイム フェンスで示されるように) ボトルネック以外のリソースと同じタイム フェンスを使用してスケジュールされます。
+> [!NOTE]
+> 有限キャパシティ プランニングとスケジューリングは、計画の最適化または非推奨のマスター プラン エンジンのどちらを使用するかに関係なく、ほぼ同じように機能します。 ただし、計画の最適化では **ボトルネック タイム** フェンス パラメーターを使用しません。 計画の最適化を使用する場合、ボトルネック リソースは、常に、(有限キャパシティ タイム フェンスで示されるように) ボトルネック以外のリソースと同じタイム フェンスを使用してスケジュールされます。
 
 ## <a name="set-up-finite-capacity-functionality"></a>有限キャパシティ機能の設定
 

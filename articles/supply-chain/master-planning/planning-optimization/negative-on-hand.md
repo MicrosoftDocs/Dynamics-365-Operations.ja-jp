@@ -1,6 +1,6 @@
 ---
 title: マイナスの手持在庫数量を使用した計画
-description: この記事では、計画の最適化を使用する場合のマイナスの手持在庫の処理方法について説明します。
+description: この記事では、マイナスの手持在庫の処理方法を説明します。
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856138"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741125"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>マイナスの手持在庫数量を使用した計画
 
@@ -29,7 +29,7 @@ ms.locfileid: "8856138"
 
 システムによってマイナスの集計手持在庫数量が表示される場合、計画エンジンは過剰な供給を回避するため、数量を 0 (ゼロ) として扱います。 この機能の動作は次のとおりです。
 
-1. 計画の最適化機能では、最下位レベルの補充分析コードの手持在庫数量が集計されます。 (たとえば、*場所* が補充分析コードではない場合、計画の最適化では手持在庫数量が *倉庫* レベルで集計されます。)
+1. マスター プランでは、最下位レベルの補充分析コードの手持在庫数量が集計されます。 (たとえば、*場所* が補充分析コードではない場合、マスター プランでは手持在庫数量が *倉庫* レベルで集計されます。)
 1. 最下位レベルの補充分析コードの集計手持在庫数量がマイナスの場合、システムでは手持在庫数量が実際に 0 (ゼロ) であると見なされます。
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ ms.locfileid: "8856138"
 - 数量 *10* 個の販売注文が存在します。 製品 *FG* の。
 - 販売注文の数量は、既存の手持在庫に対して物理的に引当されます。
 
-次に、製品 *FG* の数量を調整すると、手持在庫が 5 になります。 製品の手持在庫は 5 なので、販売注文の数量は、手持在庫のない数量に対して引当されます (手持在庫が 0 の場合は、マイナス在庫に対して販売注文が引当されます)。 ここでマスター プランを実行すると、計画の最適化では常に既存の供給を使用するか、新しい計画オーダーを作成して現物引当を供給するため、*FG* の数量 5 の計画オーダーが作成されて販売注文が供給されます。
-
-## <a name="related-resources"></a>関連するリソース
-
-- [計画最適化の概要](planning-optimization-overview.md)
-- [計画最適化の開始](get-started.md)
-- [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
-- [計画の履歴と計画ログの表示](plan-history-logs.md)
-- [計画ジョブのキャンセル](cancel-planning-job.md)
+次に、製品 *FG* の数量を調整すると、手持在庫が 5 になります。 製品の手持在庫は 5 なので、販売注文の数量は、手持在庫のない数量に対して引当されます (手持在庫が 0 の場合は、マイナス在庫に対して販売注文が引当されます)。 ここでマスター プランを実行すると、マスター プランでは常に既存の供給を使用するか、新しい計画オーダーを作成して現物引当を供給するため、*FG* の数量 5 の計画オーダーが作成されて販売注文が供給されます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b6dff0739e1d8deb2fd96018bdffe410aa78dc99
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: fa231890ccfd88899ed8ff253cd16a8921ca319e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108790"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740808"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "9108790"
 
 ### <a name="planning-optimization"></a>計画の最適化
 
-Microsoft Dynamics 365 Supply Chain Management の計画の最適化アドインを使用すると、マスター プランの計算を、Dynamics 365 Supply Chain Management および関連する SQL データベース以外で行うことができます。 計画の最適化機能に関連する利点として、マスター プランの実行時にパフォーマンスが向上し、SQL データベースへの影響が最小限に抑えられます。 簡単な計画の実行は、営業時間内でも可能です。 したがって、プランナーは、需要またはパラメータの変更に直ちに対応できます。 詳細については、[Planning Optimization 概要](../../../supply-chain/master-planning/planning-optimization/planning-optimization-overview.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management の計画の最適化アドインを使用すると、マスター プランの計算を、Dynamics 365 Supply Chain Management および関連する SQL データベース以外で行うことができます。 計画の最適化機能に関連する利点として、マスター プランの実行時にパフォーマンスが向上し、SQL データベースへの影響が最小限に抑えられます。 簡単な計画の実行は、営業時間内でも可能です。 したがって、プランナーは、需要またはパラメータの変更に直ちに対応できます。 詳細については、[マスター プランのシステム アーキテクチャ](../../../supply-chain/master-planning/master-planning-architecture.md) を参照してください
 
 ### <a name="inventory-visibility"></a>在庫品目一覧
 

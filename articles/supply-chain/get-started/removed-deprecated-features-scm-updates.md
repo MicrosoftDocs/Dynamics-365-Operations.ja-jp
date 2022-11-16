@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218806"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739873"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
@@ -89,7 +89,7 @@ ms.locfileid: "9218806"
 | **別の機能で置き換えられているか?**   | 既存の組み込み Supply Chain Management 計画エンジンは、マスター計画の最適化によって置き換えられます。 |
 | **影響を受ける製品領域**         | Supply Chain Management -マスター プラン |
 | **配置オプション**              | クラウドのみ。 プランの最適化では、オンプレミス展開に対応していません。 |
-| **状態**                         | 非推奨。 2022 年の 4 月 1 日までに、製造シナリオは組込型の Supply Chain Management マスター プラン エンジンに対してはサポートされなくなります。 その日付を以て、組み込み型計画エンジンの製造シナリオにおける有効な開発はすべて中止され、新しい機能はリリースされなくなり、重要なバグ修正のみがリリースされます。 この日付以降は、製造シナリオのサポートを必要となすべての会社がマスター プランの計算に計画の最適化を使用する必要があります。 計画の最適化では、2022 年 10 月までに製造シナリオが完全サポートされる予定です。 詳細については、[計画の最適化に関するドキュメント](../master-planning/planning-optimization/planning-optimization-overview.md) を参照してください。<br><br>Supply Chain Management のオンプレミスをデプロイしている顧客は、2022 年 4 月以降の製造シナリオでは引き続き組み込み型のマスター プラン エンジンを使用することができます。 ただし、今後の機能拡張は提供されません。 |
+| **状態**                         | 非推奨。 2022 年の 4 月 1 日までに、製造シナリオは組込型の Supply Chain Management マスター プラン エンジンに対してはサポートされなくなります。 その日付を以て、組み込み型計画エンジンの製造シナリオにおける有効な開発はすべて中止され、新しい機能はリリースされなくなり、重要なバグ修正のみがリリースされます。 この日付以降は、製造シナリオのサポートを必要となすべての会社がマスター プランの計算に計画の最適化を使用する必要があります。 計画の最適化では、2022 年 10 月までに製造シナリオが完全サポートされる予定です。 詳細については、[非推奨のマスター計画の概要](../master-planning/deprecated-master-planning-overview.md)を参照してください。<br><br>Supply Chain Management のオンプレミスをデプロイしている顧客は、2022 年 4 月以降の製造シナリオでは引き続き組み込み型のマスター プラン エンジンを使用することができます。 ただし、今後の機能拡張は提供されません。 |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Supply Chain Management 10.0.11 リリースの削除済みまたは非推奨の機能
 
@@ -101,7 +101,7 @@ ms.locfileid: "9218806"
 | **別の機能で置き換えられているか?**   | 既存の組み込み Supply Chain Management 計画エンジンは、マスター計画の最適化によって置き換えられます。 |
 | **影響を受ける製品領域**         | Supply Chain Management -マスター プラン |
 | **配置オプション**              | クラウドのみ。 プランの最適化では、オンプレミス展開に対応していません。 |
-| **ステータス**                         | 非推奨。 2021 年の 4 月 1 日までに、配布シナリオは組込型の Dynamics 365 Supply Chain Management マスター プラン エンジンではサポートされなくなります。 配分シナリオでは、顧客はマスター プランの計画にプラン最適化を使用する必要があります。 詳細については、[プランの最適化ドキュメント](../master-planning/planning-optimization/planning-optimization-overview.md) を参照してください。 Dynamics 365 Supply Chain Management のオンプレミスの配置の顧客は、2021 年 4 月以降の配送シナリオでは引き続き Supply Chain Management のマスター プラン エンジンを使用することができます。 ただし、今後の機能拡張は提供されません。 |
+| **ステータス**                         | 非推奨。 2021 年の 4 月 1 日までに、配布シナリオは組込型の Dynamics 365 Supply Chain Management マスター プラン エンジンではサポートされなくなります。 配分シナリオでは、顧客はマスター プランの計画にプラン最適化を使用する必要があります。 詳細については、[非推奨のマスター計画の概要](../master-planning/deprecated-master-planning-overview.md)を参照してください。 Dynamics 365 Supply Chain Management のオンプレミスの配置の顧客は、2021 年 4 月以降の配送シナリオでは引き続き Supply Chain Management のマスター プラン エンジンを使用することができます。 ただし、今後の機能拡張は提供されません。 |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>削除済みまたは非推奨の機能に関する以前の発表
 

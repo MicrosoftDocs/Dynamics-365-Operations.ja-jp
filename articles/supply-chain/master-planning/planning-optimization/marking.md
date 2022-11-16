@@ -1,6 +1,6 @@
 ---
-title: 計画最適化を使用した在庫マーキング
-description: この記事では、計画の最適化を使用する場合に、確定された注文の在庫をマークするために使用できるオプションに関する情報を提供します。
+title: 在庫マーキング
+description: この記事では、確定された注文の在庫をマークするために使用できるオプションに関する情報を提供します。
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c86db6a670d7d0f7bfe74b7466b9bce766e4a08d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219940"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740580"
 ---
-# <a name="inventory-marking-with-planning-optimization"></a>計画最適化を使用した在庫マーキング
+# <a name="inventory-marking"></a>在庫マーキング
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、計画の最適化を使用する場合に、確定された注文の在庫をマークするために使用できるオプションに関する情報を提供します。
+この記事では、確定された注文の在庫をマークするために使用できるオプションに関する情報を提供します。
 
 *マーキング* は、供給と需要をリンクするために使用されます。 これは *ペギング* と似ており、マスター プランが需要を補充する方法を示します。 計画の観点から見ると、主な違いは、マーキングがペギングよりも永続的であることです。
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220608"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740197"
 ---
 # <a name="make-to-order-supply-automation"></a>受注生産供給の自動化
 
@@ -32,12 +32,6 @@ ms.locfileid: "9220608"
 - 会社間情報フローを強化します。 発注書は、配送方法、配送条件、外部品目番号のフィールドを含むように更新されます。 この変更によって、詳細な需要情報が供給会社に確実に伝わります。
 
 この記事では、改良された各機能の設定方法と使用方法について説明します。
-
-> [!NOTE]
-> この記事で説明している改良されたすべての機能は、組み込まれたマスター プランを使用するシステムに適用されます。 以下の改良された 2 つの機能は、Microsoft Dynamics 365 Supply Chain Management の計画最適化アドインでもサポートされます。
->
-> - マスター プランの遅延許容範囲
-> - マスター プラン中に使用されるペギング順序の制御
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>受注生産供給の自動化機能を有効にする
 
@@ -73,7 +67,7 @@ ms.locfileid: "9220608"
 
 これらのオプションは、**マスター プラン パラメーター** ページの **標準更新** タブにある **マーキングの更新** フィールドからもアクセスでき、**確定** ダイアログ ボックスで使用する既定の選択内容を定義できます。
 
-詳細については、[計画の最適化を使用した在庫マーキング](planning-optimization/marking.md) を参照してください。
+詳細については、[在庫マーキング](planning-optimization/marking.md) を参照してください。
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>マスター プラン レベルでの遅延許容範囲 (マイナス日数) の設定
 

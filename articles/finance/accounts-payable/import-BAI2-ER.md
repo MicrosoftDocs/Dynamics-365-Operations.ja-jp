@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
+ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337570"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752723"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>電子申告を使用した詳細な口座調整インポートの設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "9337570"
 2. **Microsoft** 構成プロバイダーのタイルで、**リポジトリ** を選択します。
 3. **グローバル** を選択し、 **開く** を選択します。
 4. リポジトリへの接続を確立する必要がある場合は、ダイアログ ボックスで青色のリンクを選択します。
-5. コンフィギュレーション リストで、**口座取引明細書モデル \> BAI2 の口座取引明細書モデル** を見つけます。
+5. コンフィギュレーション リストで、**詳細な口座調整明細書モデル \> ABR BAI2 形式** を見つけます。
 6. **BAI2** 形式を選択します。
 7. **バージョン** クイック タブで、最新のバージョンを選択して、**インポート** を選択します。
 

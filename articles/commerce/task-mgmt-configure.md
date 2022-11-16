@@ -2,23 +2,23 @@
 title: タスク管理のコンフィギュレーション
 description: この記事では、Microsoft Dynamics 365 Commerce においてタスク管理機能をコンフィギュレーションする方法について説明します。
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282764"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746065"
 ---
 # <a name="configure-task-management"></a>タスク管理のコンフィギュレーション
 
@@ -80,7 +80,11 @@ POS アプリケーションで通知を使用可能にするには、タスク�
 
 ![POS 操作ページのタスク管理操作。](media/HQ-POS-Tasks-Notifications.png)
 
-POS 通知をコンフィギュレーションする方法の詳細については、[販売時点管理 (POS) の注文通知の表示](notifications-pos.md) を参照してください。
+POS 通知を構成する方法の詳細については、[販売時点管理 (POS) の注文通知の表示](notifications-pos.md) 記事を参照してください。
+
+> [!NOTE]
+> 変更を保存すると、次の警告メッセージが表示されます: **工程 ID が 4000 以下の場合、ボタン グリッド デザイナー内の工程パラメーターは有効化されません。カスタム工程を作成してボタン グリッド デザイナーからパラメーター値を渡したい場合は、4000 より大きい工程 ID を使用してください。** **閉じる** を選択して、ダイアログ ボックスを閉じます。
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>POS アプリケーションのホーム ページのタスク タイルのコンフィギュレーション
 

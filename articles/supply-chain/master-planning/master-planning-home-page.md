@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f36459e21d96325151aa7fe90f3824b07c2536c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 6f7289e7ecee49353ca8ee4554914a08074401df
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469984"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740498"
 ---
 # <a name="master-planning-home-page"></a>マスター プランのホーム ページ
 
@@ -83,7 +83,6 @@ ms.locfileid: "8469984"
 ### <a name="tech-conference-recordings"></a>技術会議の記録
 
 - [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [Master planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)](https://youtu.be/7v8BPmEs9Dg)
 - [MRP パフォーマンス チューニング](https://youtu.be/RLXybx20B5o)
 
 

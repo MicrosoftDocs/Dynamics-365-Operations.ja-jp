@@ -2,22 +2,19 @@
 title: カスタム Azure AD アプリを使用するための CPOS の構成
 description: この記事では、カスタム Azure Active Directory (Azure AD) アプリを使用するために クラウド POS (CPOS) を構成する方法について説明します。
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222970"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746263"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>カスタム Azure AD アプリを使用するための CPOS の構成
 
@@ -52,6 +49,9 @@ Azure AD でカスタム Retail Server アプリを作成および構成する�
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Azure AD でカスタム CPOS アプリを設定する
 
+> [!IMPORTANT]
+> Commerce バージョン 10.0.21 より前に作成した既存のカスタムCPOS Azure AD アプリをアップグレードする場合は、[Commerce バージョン 10.0.21 より前に作成した既存のカスタム CPOS Azure AD アプリをアップグレードする](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021) の手順に従ってください。
+
 Azure AD でカスタム CPOS アプリを作成および構成するには、以下の手順に従います。
 
 1. Azure AD ユーザー アカウントを使用して [Azure Active Directory 管理センター](https://aad.portal.azure.com) にサインインします。 ユーザー アカウントに管理者のアクセス許可は必要ありません。
@@ -68,12 +68,25 @@ Azure AD でカスタム CPOS アプリを作成および構成するには、�
 1. **マニフェスト** セクションで **oauth2AllowIdTokenImplicitFlow** と **oauth2AllowImplicitFlow** のパラメーターを **true** に設定し、**保存** を選択します。
 1. **トークンの構成** セクションで、以下の手順に従って 2 つの要求を追加します:
 
-    - **オプション要求の追加** を選択します。 **トークン タイプ** フィールドを **ID** に設定し、**sid** 要求を選択します。 **追加** を選択します。
-    - **オプション要求の追加** を選択します。 **トークン タイプ** フィールドを **アクセス** に設定し、**sid** 要求を選択します。 **追加** を選択します。
+    1. **オプション要求の追加** を選択します。 **トークン タイプ** フィールドを **ID** に設定し、**sid** 要求を選択します。 **追加** を選択します。
+    1. **オプション要求の追加** を選択します。 **トークン タイプ** フィールドを **アクセス** に設定し、**sid** 要求を選択します。 **追加** を選択します。
 
 1. **API アクセス許可** セクションで **アクセス許可の追加** を選択します。
 1. **組織が使用する API** タブで、[Azure AD でカスタム Retail Server アプリを設定する](#set-up-a-custom-retail-server-app-in-azure-ad) セクションで作成した Retail Server アプリを検索します。 次に、**アクセス許可の追加** を選択します。
 1. **概要** セクションで **アプリケーション (クライアント) ID** フィールドの値をメモします。
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Commerce バージョン 10.0.21 より前に作成した既存のカスタム CPOS Azure AD アプリをアップグレードする
+
+Commerce バージョン 10.0.21 より前に作成した既存のカスタム CPOS Azure AD アプリをアップグレードするには、以下の手順を実行します。 
+
+1. Azure portal でカスタム CPOS Azure AD アプリを開きます。
+1. **認証** タブを選択します。
+1. 後で使用するために **Web** タイプから元のリダイレクト URI をコピーして保存してから、削除します。
+1. **プラットフォームの追加** を選択し、**シングル ページ アプリケーション (SPA)** を選択します。
+1. 上記でコピーした元の Web リダイレクト URI を SPA プラットフォームに追加します。
+1. **トークンの構成** セクションで、以下の手順に従って 2 つの要求を追加します:
+    1. **オプション要求の追加** を選択します。 **トークン タイプ** フィールドを **ID** に設定し、**sid** 要求を選択します。 **追加** を選択します。
+    1. **オプション要求の追加** を選択します。 **トークン タイプ** フィールドを **アクセス** に設定し、**sid** 要求を選択します。 **追加** を選択します。
 
 ## <a name="update-the-cpos-configuration-file"></a>CPOS 構成ファイルを更新する
 

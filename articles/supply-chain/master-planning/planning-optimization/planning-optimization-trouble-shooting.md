@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889522"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739732"
 ---
 # <a name="troubleshoot-planning-optimization"></a>計画最適化のトラブルシューティング 
 
@@ -37,13 +37,13 @@ ms.locfileid: "8889522"
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>計画の最適化を有効にすると、バッチジョブの計画が失敗する
 
-計画の最適化を有効にすると、組み込みのマスター プラン エンジンが自動的に無効になる。 組み込みの Supply Chain Management 計画エンジン用に作成されたマスター計画バッチ ジョブは、計画の最適化が有効な状態でトリガーされると失敗します。 *この操作は、計画の最適化が有効な場合に対応していないマスター計画をトリガーしました* のようなメッセージが表示される場合があります。
+計画の最適化を有効にすると、非推奨のマスター プラン エンジンが自動的に無効になります。 非推奨のマスター計画エンジン用に作成されたマスター計画バッチ ジョブは、計画の最適化が有効な状態でトリガーされると失敗します。 *この操作は、計画の最適化が有効な場合に対応していないマスター計画をトリガーしました* のようなメッセージが表示される場合があります。
 
-**修正**:組み込みの Supply Chain Management プラン エンジンに対して作成されたすべてのマスター計画バッチ ジョブをキャンセルします。
+**修正**: 非推奨のマスター プラン エンジンに対して作成されたすべてのマスター計画バッチ ジョブをキャンセルします。
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>計画の最適化の結果が、以前の結果とは異なる
 
-計画の最適化は、一部の領域における組み込みマスタープランのデザインとは異なります。 また、保留されている機能が原因で発生することもあります。
+計画の最適化は、一部の領域における非推奨のマスター プラン エンジンのデザインとは異なります。 また、保留されている機能が原因で発生することもあります。
 
 **修正** : [分析計画の最適化] を実行して結果を分析し、関連ドキュメントを参照して影響を理解してください。 詳細については、[計画の最適化フィット分析](planning-optimization-fit-analysis.md) を参照してください。
 
@@ -63,9 +63,8 @@ ms.locfileid: "8889522"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[計画最適化の開始](get-started.md)
-
-[計画最適化適合分析](planning-optimization-fit-analysis.md)
+- [マスター プランを開始する](get-started.md)
+- [計画最適化適合分析](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

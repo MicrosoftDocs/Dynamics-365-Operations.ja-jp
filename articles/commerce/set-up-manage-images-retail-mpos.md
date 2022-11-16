@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287514"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751944"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Modern POS (MPOS) の画像の設定および管理
 
@@ -160,7 +160,7 @@ Excel の新しいレコードを作成できます。 ただし、正しい情�
     [![カタログ画像ギャラリー ページ。](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> 現在のところ、ギャラリーはメディア テンプレートの画像 URL の画像のプレビューを表示しません。 カタログ、作業者、顧客、およびカテゴリエンティティに、ユーザーがこのページで明示的に URL を指定すると、Commerce Scale Unit のクライアントがカタログ、顧客、作業者、およびカテゴリごとに一つの画像のみを参照するため、既定の画像を指定することをお勧めします。 ユーザーが既定の画像を指定しないと、システムは既定の画像を確認し、コマース サービスの呼び出し元に送信します (MPOS または E コマース)。
+> パブリックおよび匿名でアクセスできる画像のみが POS で表示されます。 POS は、外部でホストされている画像のレンダリングをサポートしますが、この画像が、インライン オクテット ストリームとして GET 要求にヘッダーなしで返されることが要件です。 ホストとユーザーエージェント ヘッダー両方を含めるために要求ヘッダーが必要な SharePointホストの画像を使用する場合は特に、匿名アクセス ポリシーにより、"許可されていない" 応答が返されます。 そのため、ホストとして SharePoint を使用する画像管理は、現時点ではサポートされていません。 **カタログ画像** ギャラリー ページは、メディア テンプレート画像 URL の画像プレビューを表示しません。 Commerce Scale Unit (CSU) のクライアントは、カタログ、顧客、作業者、カテゴリ エンティティごとに画像を一枚のみ表示するため、カタログ、作業者、顧客、およびカテゴリ エンティティ用にこのページで明示的に URL を提供する場合は、既定の画像を指定することをお勧めします。 既定の画像を指定しないと、システムは既定の画像を確認し、コマース サービスの呼び出し元に送信します (MPOS または コマース)。
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>プレビュー ページからカタログ製品画像の画像 URL を上書きします。
 

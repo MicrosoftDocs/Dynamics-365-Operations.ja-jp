@@ -10,13 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bcaaf46a0ddd84cded721c5d02d4a45cd4745114
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846130"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740360"
 ---
+<!-- KFM: Split this up. non-dynamic for deprecated MP, and "dynamic" for new standard PO. -->
+
 # <a name="negative-days-and-dynamic-negative-days"></a>マイナス在庫日数および動的マイナス在庫日数
 
 [!include [banner](../includes/banner.md)]

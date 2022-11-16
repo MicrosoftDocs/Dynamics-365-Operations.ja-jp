@@ -2,19 +2,19 @@
 title: ローカル地域における Dynamics 365 Finance、Supply Chain Management、および Commerce
 description: この記事では、サポートされた Microsoft Dynamics 365 Commerce、Dynamics 365 Finance、および Dynamics 365 Supply Chain Management の地域とエンドポイントに関する情報を提供します。
 author: Shailesh4all
-ms.date: 04/28/2022
+ms.date: 08/29/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2022-04-28
-ms.openlocfilehash: c756b56e696c8e9edcaa52fde8dcb60099b21a5f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dadbe1e13f4c03450341cc484d54c927563a22ce
+ms.sourcegitcommit: a3b1ed5b8ee0d99459b60a7082eb8fc75bcee687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271479"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9742699"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-local-geographies"></a>ローカル地域における Dynamics 365 Finance、Supply Chain Management、および Commerce
 
@@ -30,32 +30,22 @@ Microsoft Dynamics 365 Commerce、Dynamics 365 Finance、および Dynamics 365 
 
 次の表に、Commerce、Finance、および Supply Chain Management でサポートしているローカル地域とエンドポイントの一覧を示します。
 
-| 場所 | LCS エンドポイント |
-|-----------|--------------|
-| フランス | [https://fr.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) |
-| アラブ首長国連邦 | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) |
-| 南アフリカ | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) |
-| スイス | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) |
-| ヨーロッパ | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) |
-| ノルウェー | [https://no.lcs.dynamics.com/](https://no.lcs.dynamics.com/) |
+| 場所 | LCS エンドポイント | LCS API エンドポイント |
+|-----------|--------------|------------------|
+| フランス | [https://fr.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) | https://lcsapi.fr.lcs.dynamics.com |
+| アラブ首長国連邦 | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) | https://lcsapi.uae.lcs.dynamics.com |
+| 南アフリカ | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) | https://lcsapi.sa.lcs.dynamics.com |
+| スイス | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) | https://lcsapi.ch.lcs.dynamics.com |
+| ヨーロッパ | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) | https://lcsapi.eu.lcs.dynamics.com |
+| ノルウェー | [https://no.lcs.dynamics.com/](https://no.lcs.dynamics.com/) | https://lcsapi.no.lcs.dynamics.com |
 
 ## <a name="feature-availability-in-local-geographies"></a>ローカル地域の利用可能な機能
 
-Microsoft は、地域をまたがって業務上使用できるサービス間で同等の機能を維持しています。 例外は次の一覧に示されています。 この一覧は、ビジネス アプリケーション ソリューションの実装が成功することを理解および計画するのに役立ちます。
+Microsoft は、地域をまたがって業務上使用できるサービス間で同等の機能を維持しています。 これらのサービスおよび機能を今後のリリースに含めること、および更新の対象として引き続き評価します。 以下のドキュメントを使用して、使用する予定の地域でのサービスとその提供の概要を取得します。 
 
-これらのサービスおよび機能を今後のリリースに含めること、および更新の対象として引き続き評価します。
-
-- Dynamics Regulatory Alert Submission サービスは、単一のグローバル サービスとして機能するので、ローカル地域では使用できません。 ただし、 Global LCS からサービスにアクセスできます。
-- 会社のライブラリは、American Productivity & Quality Center (APQC) ビジネス プロセス モデラー (BPM) ライブラリで利用可能です。 各ローカル地域のために、LCS は概要ライブラリと最後に公開された APQC ライブラリのみを公開します。 ライブラリをプロジェクト ライブラリにコピーして、法人ライブラリとして編集および公開できます。
-- Dynamics 365 Translation Service は、アメリカ合衆国および欧州連合 (EU) でのみ使用できます。
-- 電子レポート (ER) 資産は、共有資産ライブラリに表示されません。 ただし、LCS Global 資産ライブラリから手動でアップロードできます。 この問題を回避するには、Microsoft エンジニアリングによって提供されるスクリプトを実行します。 または、Global リポジトリに接続して Microsoft Support ER 資産にアクセスすることもできます。 詳細については、 [Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) ストレージの廃止](../../../finance/localizations/rcs-lcs-repo-dep-faq.md) を参照してください。
-- 埋め込み型の Power BI ダッシュボードは使用できません。
-- LCS の環境監視では、Global LCS と同じダッシュボード インターフェイスは公開されません。 ただし、コア キー パフォーマンスのインジケーターは利用可能です。
-- ホストされているエージェントを使用する Azure ビルド パイプラインの場合、LCS ライブラリからのナゲット パッケージは共有資産ライブラリで使用できません。
-- コマースおよび E コマースの Cloud スケール ユニットは、アメリカ合衆国およびヨーロッパでのみ使用できます。
-- 計画の最適化サービスは利用できません。
-- ローカル ビジネス データの配置は、ヨーロッパでのみ使用できます。
-- Dynamics AX 2012 から財務と運用アプリに更新するコード アップグレード機能は、LCS 米国 (lcs.dynamics.com) 以外の地域では使用できません。
+*   [Microsoft ビジネス アプリケーション機能の提供 - 南北アメリカ](https://aka.ms/bapfunctionalparityamericas)
+*   [Microsoft ビジネス アプリケーション機能の提供 - ヨーロッパ、中近東およびアフリカ](https://aka.ms/bapfunctionalparityemea)
+*   [Microsoft ビジネス アプリケーション機能の提供 - アジア太平洋](https://aka.ms/bapfunctionalparityapac)
 
 例外の詳細や地域サービスに関する質問については、[Microsoft Dynamics 365 サポート](https://dynamics.microsoft.com/support/) に問い合わせください。
 

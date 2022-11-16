@@ -1,6 +1,6 @@
 ---
 title: 計画の履歴と計画ログの表示
-description: この記事では、計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
+description: この記事では、計画ジョブの履歴を表示する方法について説明します。
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863943"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740934"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>計画の履歴と計画ログの表示
 
 [!include [banner](../../includes/banner.md)]
 
-この記事では、Microsoft Dynamics 365 Supply Chain Management で計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management で計画ジョブの履歴を表示する方法について説明します。
 
 計画の履歴を表示するには、**マスター プラン** \> **設定** \> **計画** \> **マスター プラン** の順に移動して **履歴** を選択することにより、計画を開きます。 履歴には、選択された計画のすべてのジョブが一覧表示されます。 一覧には、完了ジョブおよび有効なジョブが含まれます。
 
@@ -47,14 +47,6 @@ ms.locfileid: "8863943"
     - レガシー フォームを使用している場合: アクション ウィンドウの、**バッチ ジョブ** タブで、**ログ** を選択します。
 
 1. **メッセージの詳細** を選択して **メッセージの詳細** ウィンドウを開くと、処理中にキャプチャされたすべての警告とエラーを表示できます。
-
-## <a name="related-resources"></a>関連するリソース
-
-- [計画最適化の概要](planning-optimization-overview.md)
-- [計画最適化の開始](get-started.md)
-- [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
-- [プランへのフィルターの適用](plan-filters.md)
-- [計画ジョブのキャンセル](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

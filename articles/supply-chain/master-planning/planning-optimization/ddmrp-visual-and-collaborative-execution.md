@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689779"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740826"
 ---
 # <a name="visual-and-collaborative-execution"></a>可視性および協調性の実行
 
@@ -34,7 +34,7 @@ Microsoft Dynamics 365 Supply Chain Management では、選択したリリース
 1. デカップリング ポイントとして設定されたリリース済品目を選択します。 (詳細については、[在庫配置](ddmrp-inventory-positioning.md)を参照してください。)
 1. アクション ウィンドウで、**計画** タブの **品目補充** を選択します。
 1. **品目補充** ページで、デカップリング ポイントを作成する品目補充レコードを選択します。 (このレコードには、デカップリング ポイントを作成するために設定されている補充グループの名前が表示されます。)
-1. **手持在庫** タブを選択します。このタブには、計画最適化を実行するたびに、特定の期間に記録された手持在庫レベルの値とともに、時間経過に伴う手持在庫数の変化を示すチャートが含まれます。 また、このタブには、記録される各手持在庫レベルが次のどのカテゴリに該当するかを示す表も含まれます:
+1. **手持在庫** タブを選択します。このタブには、マスター プランを実行するたびに、特定の期間に記録された手持在庫レベルの値とともに、時間経過に伴う手持在庫数の変化を示すチャートが含まれます。 また、このタブには、記録される各手持在庫レベルが次のどのカテゴリに該当するかを示す表も含まれます:
 
     - **非常に少ない** – 期間の最小値の半分未満です。
     - **少ない** – 最小値の半分と最小値の間です。

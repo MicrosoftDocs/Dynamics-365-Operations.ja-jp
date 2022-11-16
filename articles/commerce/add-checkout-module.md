@@ -2,7 +2,7 @@
 title: チェックアウト モジュール
 description: この記事では、ページにチェックアウト モジュールを追加し、必要なプロパティを設定する方法について説明します。
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280477"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746228"
 ---
 # <a name="checkout-module"></a>チェックアウト モジュール
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 この記事では、ページにチェックアウト モジュールを追加し、必要なプロパティを設定する方法について説明します。
 
@@ -105,11 +106,13 @@ ms.locfileid: "9280477"
 1. 新しいチェックアウト フラグメントを使用するテンプレートを作成します。
 1. 新しいテンプレートを使用するチェックアウト ページを作成します。
 
+> [注記] [店頭会計の支払を強化](./dev-itpro/enhanced-sca.md) で説明されているように単一の支払認証を使用する場合は、チェックアウト ページの **チェックアウト情報** セクションで、チェックアウト セクションのコンテナーが最後に配置されていることを確認します。 これにより、最終的な支払いのチェックアウトおよび注文完了アクションの前に、必要なすべての情報がチェックアウト ページで確実に収集されます。 
+
 ## <a name="additional-resources"></a>追加リソース
 
 [買い物カゴ モジュール](add-cart-module.md)
 
-[買い物カゴ アイコン モジュール](cart-icon-module.md)
+[カート アイコン モジュール](cart-icon-module.md)
 
 [支払モジュール](payment-module.md)
 

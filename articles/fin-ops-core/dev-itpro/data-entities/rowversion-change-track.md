@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2022-10-10
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 8a58bf40c997081c5a62a55bf37bf85f2553acd4
-ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
+ms.openlocfilehash: b09112bc3230a8cd8d8e440f488adf47a304f648
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9691012"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752679"
 ---
 # <a name="allow-row-version-change-tracking-for-tables-and-data-entities"></a>テーブルおよびデータ エンティティに対する行バージョン変更追跡の許可
 
@@ -43,6 +43,7 @@ ms.locfileid: "9691012"
 > INSERT INTO table2
 > SELECT * FROM table1
 > ```
+> **SysRowVersionNumber** 列は、ライセンス構成フォーム **システム管理 > 設定 > ライセンス > ライセンス構成** の **Sql 行バージョン** がコントロールします。 万一、カスタム SQL 更新ステートメントが列を作成または更新しようとしている場合は、問題が解決されるまで構成キーを無効にする必要があります。 構成キーは、メンテナンス モードでのみ編集できます。詳細は、[メンテナンス モード](../sysadmin/maintenance-mode.md) を参照してください。
 
 ## <a name="enable-row-version-change-tracking-for-data-entities"></a>データ エンティティに対して行バージョンの変更追跡を有効化する
 
@@ -74,6 +75,6 @@ ms.locfileid: "9691012"
 
 ## <a name="retrieve-row-version-entity-changes"></a>行バージョン エンティティの変更の取得
 
-この変更追跡機能は Dataverse 変更追跡と完全に互換性があります。ただし、違いもいくつかあります。 たとえば、Dataverse テーブルに対して使用される 90 日の値ではなく最後のトークンが既定値 10 日以内にある場合、財務およびオペレーション アプリに対する変更が返されます。 詳細については、[変更追跡を使用した外部システムとのデータの同期](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md) を参照してください。 
+この変更追跡機能は Dataverse 変更追跡と完全に互換性があります。ただし、違いもいくつかあります。 たとえば、Dataverse テーブルに対して使用される 90 日の値ではなく最後のトークンが既定値 10 日以内にある場合、財務およびオペレーション アプリに対する変更が返されます。 詳細については、[変更追跡を使用した外部システムとのデータの同期](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) を参照してください。 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

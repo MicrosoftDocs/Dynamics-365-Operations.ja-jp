@@ -2,24 +2,24 @@
 title: タスク リストの作成とタスクの追加
 description: この記事では、Microsoft Dynamics 365 Commerce でタスク リストの作成およびタスクの追加を行う方法について説明します。
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: f754ee78547e785fa2386dee6c3d89371bc0de41
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b81f27f79362516f8a25766c1f663a7691ebb42a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268922"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746162"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>タスク リストの作成とタスクの追加
 
@@ -35,7 +35,7 @@ ms.locfileid: "9268922"
 
 ## <a name="create-a-task-list"></a>タスク リストの作成
 
-タスク リストを作成するには、次の手順に従います。
+タスク リストの作成プロセスを開始する前に、[タスク管理の構成](task-mgmt-configure.md) 記事にある構成を完了してください。 タスク リストを作成するには、次の手順に従います。
 
 1. **Retail と Commerce \>タスク管理\>タスク管理** に移動します。
 1. **新規** を選択し、**名前**、**説明**、および **所有者** フィールドに値を入力します。

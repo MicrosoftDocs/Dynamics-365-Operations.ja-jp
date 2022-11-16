@@ -2,7 +2,7 @@
 title: Adyen 向け Dynamics 365 Payment Connector の設定
 description: この記事では、Adyen にサインアップし、Adyen 向け Microsoft Dynamics 365 Payment Connector を設定する方法について説明します。
 author: Reza-Assadi
-ms.date: 09/14/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
-ms.openlocfilehash: 592e46c53eac8063312f75aa76e839df09b71357
-ms.sourcegitcommit: 594c0445d716a12177234fe5bff3e9586b5c0841
+ms.openlocfilehash: a751cef639cd2212b3777c7cd2ff28da74163f85
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9478238"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746129"
 ---
 # <a name="set-up-dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector の設定
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Adyen にサインアップし、Adyen 向け Microsoft Dynamics 365 Payment Connector を設定する方法について説明します。 Adyen 向け Dynamics 365 Payment Connector の概要については [Adyen 向け Dynamics 365 Payment Connector の概要](adyen-connector.md)を参照してください。
 
@@ -138,7 +139,7 @@ Adyen 支払コネクタは、ローカル ネットワーク経由または Ady
     | ローカル キー識別子 | 支払端末の Adyen キー識別子を入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | mykey |
     | ローカル キー バージョン | 支払端末の Adyen キー バージョンを入力します。 この値は、[Adyen でサインアップ](#sign-up-with-adyen) セクションで説明されているように、Adyen でサインアップするときに提供されます。 | 有 | 無 | 0 |
     | ローカル Cryptor バージョン | Adyen ゲートウェイとやり取りするときに使用する Adyen cryptor バージョンを入力します。 このフィールドは **1** にセットする必要があります。 | 有 | 有 | 1 |
-    | クラウド API キー | Adyen クラウド API キーを入力します。 このキーは Adyen Web サイトの [API キーを取得する方法](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key)ページの指示に従い取得することができます。 | 有 | 無 | abcdefg |
+    | クラウド API キー | Adyen クラウド API キーを入力します。 このキーは Adyen Web サイトの [API キーを取得する方法](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key)ページの指示に従い取得することができます。 ローカル ターミナルの設定でも、このフィールドは必須です。 | 有効 | 無効 | abcdefg |
     | サポートされている通貨 | コネクタが処理する必要がある通貨を入力します。 カードありのシナリオでは、トランザクション要求が支払端末に送信された後、Adyen は[動的通過換算](https://www.adyen.com/pos-payments/dynamic-currency-conversion) を使用した追加通過をすることができます。 サポートされている通貨の一覧を取得するには、Adyen サポートに問い合わせてください。 | 有 | 有 | USD;EUR |
     | サポートされている支払/入金タイプ | コネクタが処理する必要がある支払/入金タイプを入力します。 これらの値は、大文字と小文字を区別します。 | あり | あり | Visa;MasterCard;Amex;Discover;Debit |
     | ギフト カード プロバイダー | ギフト カードの処理にコネクタが使用する必要があるギフト カード プロバイダーを入力します。 このフィールドは、大文字小文字を区別します。 | 番号 | 番号 | 「svs」 または 「givex」 |    
@@ -147,9 +148,12 @@ Adyen 支払コネクタは、ローカル ネットワーク経由または Ady
     | 承認失効期間 (日数) | (*POS のみ*) 承認が失効していると見なされ、取得のためにプロセッサにアクセスする前に拒否されるまでの日数。 | あり | あり | "7" |
     | 元のキー | (*カードは存在しません*)  |
     | EnableRequestProtection | 「カードなし」支払呼び出しに再試行ロジックを追加し、相関する ID を使用した呼び出しの潜在的な重複を減少させます。 「True」の場合、プロバイダー要求に相関する ID が追加され、重複を防ぎます。 「False」の場合、呼び出しは相関する ID または重複保護ロジックなしでプロバイダーに送信されます。 | なし | なし | True/False |
-    | 増分取得以外の支払方法 | 承認応答で増分取得をサポートしないカードの種類を識別するために Adyen が使用する支払方法バリアントまたはカードの種類の名前。 [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) に記載されているように、入力された値は、Adyen で参照するために使用される支払方法バリアントまたはカードの種類の文字列と一致している必要があります 。  | なし | なし | "amexcommercial" |
+    | 増分取得以外の支払方法 | 承認応答で増分取得をサポートしないカードの種類を識別するために Adyen が使用する支払方法バリアントまたはカードの種類の名前。 [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) に記載されているように、入力された値は、Adyen で参照するために使用される支払方法バリアントまたはカードの種類の文字列と一致している必要があります 。  | 無効 | 無効 | "amexcommercial" |
 
 1. アクション ウィンドウで、**保存** を選択します。
+
+> [!NOTE]
+> ローカル POS インスタンスを設定する場合、"カードなし" シナリオが機能するには、**クラウド API** キー フィールドが引き続き必要です。 このようなシナリオには、POS で作成されたオムニチャネル支払の顧客注文、リンクされた払戻、注文集荷での支払認証トークン参照などがあります。
 
 ##### <a name="eft-service-for-cloud-communication"></a>クラウド通信用 EFT サービス
 
@@ -229,6 +233,8 @@ Retail SDK を使用して Modern POS バージョンをパッキングする場
 ### <a name="configure-the-connector-for-call-center-payments"></a>コール センター支払用のコネクタの構成
 
 コール センターの支払のために Adyen 向け Dynamics 365 Payment Connector を構成するには、この記事の前半の[新しいクレジット カードのプロセッサの設定](#set-up-a-processor-for-new-credit-cards)セクションの指示に従います。
+
+**売掛金勘定 \> 支払の設定 \> 支払サービス** での headquarters の構成は、コール センターで使用されるコネクタ構成です。 3D セキュア (3DS) 認証はコール センターでサポートされていません。 コール センターの担当者が顧客の代わりにユーザー パスワードを収集または使用することは禁止されているので、ユーザーにサインインを要求するデジタル ウォレットの最新の支払方法も、コール センターではサポートされていません。
 
 ### <a name="configure-additional-information-for-the-connector"></a>コネクタの追加情報を構成する
 

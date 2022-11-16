@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 8d7533e43abea9048164a6a3ed4c5a365d6c860a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 464fb74ac4fec082d100450b223b88e374d3b091
+ms.sourcegitcommit: 55e440e30490b2d36d86b22aa1263d5da97633aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284474"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9745268"
 ---
 # <a name="prepare-content-for-use-with-the-help-pane"></a>ヘルプ ウィンドウで使用するコンテンツの準備
 
@@ -31,7 +31,7 @@ Microsoft では、Finance、Supply Chain Management、Commerce でサポート�
 
 Microsoft ヘルプ コンテンツは、ソリューションを説明するコンテンツのベースラインとして使用できます。 [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) ツールは、Microsoft リポジトリ内のマークダウン ファイルからコンテンツを取得してHTML ファイルに変換します。
 
-ソリューションを説明するコンテンツのベースラインとして既存の Microsoft コンテンツを使用する方法の詳細については、[ヘルプでの拡張、カスタマイズ、および共同作業](contributor-guide.md) を参照してください。
+ソリューションを説明するコンテンツのベースラインとして既存のマイクロソフトのコンテンツを使用する方法の詳細については、[ヘルプでの拡張、および共同作業](contributor-guide.md) を参照してください。
 
 ## <a name="migrating-content-from-existing-ax-2012-help-content"></a>既存の AX 2012 ヘルプ コンテンツからのコンテンツの移行
 

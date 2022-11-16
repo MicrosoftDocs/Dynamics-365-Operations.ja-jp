@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 85493
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
 ms.search.industry: Retail
-ms.openlocfilehash: 49d8bd4981e8bf4f41d2466b7cdd1b58a08c6f51
-ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
+ms.openlocfilehash: fbcfef0c7ec14c71d21ef6843a482e7f64e07527
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9410402"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736829"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -189,7 +189,7 @@ Commerce コンポーネントの診断イベントを有効にするには、Ap
 Commerce 本部で Application Insights の診断イベントを有効にするには、以下の手順に従います。
 
 1. **機能管理** ワークスペースで、**オペレーション インサイト** 機能を有効にします。
-1. **システム管理 \> オペレーション インサイト** に移動します。
+1. **システム管理 \> 設定 \> オペレーション情報分析** に移動します。
 1. **構成** タブで、**Commerce チャネル イベント** オプション を **はい** に設定します。
 1. **環境** タブで、Application Insights を使用する計画があるすべての環境に対して **LCS 環境 ID** と **環境モード** の値を入力します。 各環境の LCS 環境 ID は、LCS の環境の **環境の詳細** ページで見つけることができます。 データベースのコピー操作が実行されるときに診断イベントが正しくない環境に誤って送信されるのを防ぐために、この手順が必要です。
 1. **Application Insights レジストリ** タブで、各 Application Insights アカウントを使用する環境の Application Insights インストルメンテーション キーおよび対応する環境モードを指定します。

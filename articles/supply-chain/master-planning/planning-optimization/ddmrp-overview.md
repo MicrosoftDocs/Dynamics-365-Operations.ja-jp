@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: cf5ca3996a882111b840e3acb5e2a4f3f26ec4b7
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689491"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740853"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>需要主導型材料所要量計画 (DDMRP) の概要
 
@@ -44,6 +44,6 @@ DDMRP は通常、複数レベルの部品表 (BOM) を持つメーカーで使�
 
 ## <a name="ddmrp-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の DDMRP
 
-DDMRP は Microsoft Dynamics 365 Supply Chain Management に含まれており、追加のライセンス料金は必要ありません。 Supply Chain Management では、既存の **マスター プラン** モジュールに DDMRP 機能が追加されました。 ただし、計画最適化アドインを使用することが条件となります。 
+DDMRP は Microsoft Dynamics 365 Supply Chain Management に含まれており、追加のライセンス料金は必要ありません。 Supply Chain Management では、既存の **マスター プラン** モジュールに DDMRP 機能が追加されました。 ただし、計画最適化アドインを使用することが条件となります。
 
 DDMRP は Supply Chain Management の既存の計画設定と統合され、これらの設定と一緒に使用することで、ビジネスに適した計画構成を行うことができます。 期間、最小/最大、要件などとは全く異なる、新しい補充コードによって制御されます。 これは新しいモジュールでもなければ、既存の計画機能を置き換えるものでもありません。 ただし、使用できる機能は増えています。

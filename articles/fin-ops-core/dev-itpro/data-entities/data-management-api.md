@@ -2,7 +2,7 @@
 title: データ管理パッケージ REST API
 description: この記事では、データ管理フレームワークのパッケージ REST API について説明します。
 author: peakerbl
-ms.date: 08/16/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: eeb67e8026f07d32e0d93546ac6c1d832dd2c4e0
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.openlocfilehash: 3e12686458045b319e2a948cb9fa3782c4945298
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109176"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746242"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
@@ -237,6 +237,8 @@ HTTP/1.1 200 OK
 
 **ImportFromPackage** API は、実装に関連付けられている Blob ストレージにアップロードされるデータ パッケージからインポートを開始するために使用します。 オンプレミス配置の場合、ファイルが以前アップロードされたローカル ストレージから、インポートが開始されます。
 
+このAPI **ImportFromPackageAsync** の非同期バージョンがあります。 仕様は同じです。 返された実行 ID をキャプチャし、後で **GetExecutionSummaryStatus** API を呼び出して、実行が完了したことを確認する必要があります。   
+
 > [!NOTE]
 > **ImportFromPackage** API は、複合エンティティをサポートします。 ただし、1 つのパッケージで 1 つの複合エンティティのみという制限があります。
 
@@ -287,9 +289,63 @@ HTTP/1.1 200 OK
 
 ファイル (データ パッケージ) のエクスポートには、次の API が使用されます。
 
+### <a name="exporttopackagepreview"></a>ExportToPackagePreview 
+
+**ExportToPackagePreview** API は、大量のレコードを含むデータ パッケージのエクスポートをプレビューするために使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。
+
+このAPI **ImportFromPackagePreviewAsync** の非同期バージョンがあります。 仕様は同じです。 返された実行 ID をキャプチャし、後で **GetExecutionSummaryStatus** API を呼び出して、実行が完了したことを確認する必要があります。  
+
+- この API を呼び出す前に、エクスポート データ プロジェクトを作成する必要があります。 プロジェクトが存在しない場合、API の呼び出しには、エラーが返されます。
+- 変更履歴がオンの場合は、最後の実行後に更新または作成されたレコードのみがエクスポートされます。 (つまり、デルタのみが返されます。)
+- **count** パラメーターを使用すると、返されるレコード数が制限できます。
+
+```csharp
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackagePreview
+BODY
+{
+    "definitionGroupId":"<Data project name>",
+    "packageName":"<Name to use for downloaded file.>",
+    "executionId":"<Execution Id if it is a rerun>",
+    "reExecute":<bool>,
+    "legalEntityId":"<Legal entity Id>",
+    "count":"<Legal entity Id>"
+}
+```
+
+成功した応答の例を次に示します。
+
+```json
+HTTP/1.1 200 OK
+{
+    "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+    "value":{
+        "value":"<executionId>"
+    }
+}
+```
+
+**入力パラメーター**
+
+| パラメーター                | 説明 |
+|--------------------------|-------------|
+| string definitionGroupId | エクスポート用のデータ プロジェクトの名前。 |
+| string packageName       | エクスポートされたデータ パッケージの名前。 |
+| string executionId       | ジョブに使用する ID。 これは、UI ではジョブ ID と呼ばれます。 空の ID が割り当てられている場合は、新しい実行 ID が作成されます。 |
+| bool reExecute           | このパラメーターを **True** に設定して対象の手順を実行します。 それ以外の場合、**False** に設定します。 |
+| string legalEntityId     | データ インポートの法人。 |
+| カウント                    | 返すレコードの数。 ゼロに設定すると、トップ カウント条件は適用されません。 |
+    
+**出力パラメーター**
+
+| パラメーター          | Description |
+|--------------------|-------------|
+| string executionId | データ エクスポートの実行 ID。 これは、UI ではジョブ ID と呼ばれます。 |
+
 ### <a name="exporttopackage"></a>ExportToPackage
 
 **ExportToPackage** API は、データ パッケージのエクスポートを開始するために使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。
+
+このAPI **ExportToPackageAsync** の非同期バージョンがあります。 仕様は同じです。 返された実行 ID をキャプチャし、後で **GetExecutionSummaryStatus** API を呼び出して、実行が完了したことを確認する必要があります。 
 
 - この API を呼び出す前に、エクスポート データ プロジェクトを作成する必要があります。 プロジェクトが存在しない場合、API の呼び出しには、エラーが返されます。
 - 変更履歴がオンの場合は、最後の実行後に更新または作成されたレコードのみがエクスポートされます。 (つまり、デルタのみが返されます。)
@@ -333,6 +389,7 @@ HTTP/1.1 200 OK
 | パラメーター          | 説明 |
 |--------------------|-------------|
 | string executionId | データ エクスポートの実行 ID。 これは、UI ではジョブ ID と呼ばれます。 |
+
 
 ### <a name="getexportedpackageurl"></a>GetExportedPackageUrl
 

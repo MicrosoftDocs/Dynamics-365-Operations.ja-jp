@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e602e6d46f928fd5376a6a6d4f94bb4a726d92b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3b2cc172e551096492f2aebfd8b81eb3f9c471b
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844970"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741260"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 
@@ -75,9 +75,8 @@ ms.locfileid: "8844970"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[予測精度の監視](monitor-forecast-accuracy.md)
-
-[統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
+- [予測精度の監視](monitor-forecast-accuracy.md)
+- [統計ベースライン予測の生成](generate-statistical-baseline-forecast.md)
 
 
 

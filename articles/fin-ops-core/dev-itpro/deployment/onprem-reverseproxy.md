@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3fd41197fc3a089547b01a5f4cd889f90227ab37
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3d9366febacad10854479a294e2faef7aecbe12
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867367"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739828"
 ---
-# <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境のプロキシを構成する
+# <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境のプロキシの構成
 
 [!include [banner](../includes/banner.md)]
 
-プロキシの背後にある Dynamics 365 Finance + Operations (on-premises) 環境を保護することができます。 プロキシは、クライアントからのトラフィックを処理している実際のサーバーを隠すサーバーです。 プロキシ サーバーは、環境に代わってクライアントからの要求を受理し、そのトラフィックを転送します。 クライアントは、環境を構成する実際のサーバーを認識していません。 これにより、別のセキュリティ対策が追加され、負荷分散が可能になります。 
+組織によっては、追跡またはパケットの検査のために、すべてのサーバー トラフィックがプロキシ サーバーを経由する必要があります。 このセクションでは、これらのケースで推奨される環境を構成する方法について説明します。
 
 ## <a name="configure-the-proxy"></a>プロキシの設定
 
@@ -54,7 +54,9 @@ Microsoft Azure Service Fabric cluster の **OrchestratorType** の **各** ノ�
 
 ## <a name="safe-list-urls"></a>セーフ リストの URL
 
-LocalAgent は Azure リソースと通信する必要があります。 結果として、次の URL は プロキシやファイアウォールでセーフ リスト化される必要があます。そうすることで全ての **OrchestratorType** ノードがアクセスすることができます。
+LocalAgent は Azure リソースおよび Microsoft Dynamics Lifecyle Services (LCS) と通信する必要があります。 その結果、一部の URL をプロキシやファイアウォールでセーフ リストに追加して、全ての **OrchestratorType** ノードがアクセスできるようにする必要があります。 URL は、配置する環境の LCS 地域によって異なります。
+
+### <a name="lcs-global"></a>LCS グローバル
 
 ```Text
 - lcsapi.lcs.dynamics.com
@@ -64,6 +66,18 @@ LocalAgent は Azure リソースと通信する必要があります。 結果�
 - login.microsoftonline.com
 - dc.services.visualstudio.com
 - uswelcs1lcm.blob.core.windows.net
+```
+
+### <a name="lcs-eu"></a>LCS ヨーロッパ
+
+```Text
+- lcsapi.eu.lcs.dynamics.com
+- login.windows.net
+- euweprodlcm.queue.core.windows.net
+- www.office.com
+- login.microsoftonline.com
+- dc.services.visualstudio.com
+- euweprodlcm.blob.core.windows.net
 ```
 
 

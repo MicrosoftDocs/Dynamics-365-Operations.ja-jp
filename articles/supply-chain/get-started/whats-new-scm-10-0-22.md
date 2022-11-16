@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 310809799a81c6709041764f7038de2a70b7f203
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b95f131a45c11748cfd4c66c47e5a51c765ed486
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124793"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740413"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Management 10.0.22 (2021 年 11 月) の新機能および変更された機能
 
@@ -53,7 +53,7 @@ ms.locfileid: "9124793"
 |---|---|
 | エンジニアリング変更管理 | [エンジニアリング変更管理の概要](../engineering-change-management/product-engineering-overview.md) に、機能管理で使用できるすべての関連機能およびオプション機能が一覧表示するようになりました |
 | マスター プラン | [需要予測の設定](../master-planning/demand-forecasting-setup.md) |
-| マスター プラン | [計画の最適化を使用した正味必要量およびペギング情報](../master-planning/planning-optimization/net-requirements.md) |
+| マスター プラン | [正味必要量とペギング情報](../master-planning/planning-optimization/net-requirements.md) |
 | 倉庫管理 | [倉庫へのリリース ](../warehousing/release-to-warehouse-process.md) では、倉庫プロセスへの完全リリースの詳細な概要が提供されます |
 
 ## <a name="additional-resources"></a>追加リソース

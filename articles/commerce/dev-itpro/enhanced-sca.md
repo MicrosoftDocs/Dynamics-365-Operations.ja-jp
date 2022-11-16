@@ -2,7 +2,7 @@
 title: 店頭会計の支払を強化
 description: この記事では、Microsoft Dynamics 365 Commerce での店舗チェックアウトの強化された強力な顧客認証 (SCA) サポートの概要を提供します。
 author: BrianShook
-ms.date: 06/09/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
-ms.openlocfilehash: 1b0181727d5a43e75536449b420aeced287f7d3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9246e445060859b3dfbd6e5729d8bfa85cc39c2f
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279631"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746078"
 ---
 # <a name="enhanced-payments-in-storefront-checkout"></a>店頭会計の支払を強化
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Microsoft Dynamics 365 Commerce での店舗チェックアウトの強化された強力な顧客認証 (SCA) サポートの概要を提供します。
 
@@ -36,7 +37,7 @@ ms.locfileid: "9279631"
 | リダイレクト | オンラインの買い物客の閲覧セッションを、販売者の店舗外に移動するアクション。 |
 | カードのトークン | 実際の支払カード番号を参照するために使用されるエイリアス。 カード トークンを使用すると、実際の支払カードへの参照を保存できます。 同時に、実際の支払カード番号を保存するときに発生するセキュリティ問題を防ぐのに役立ちます。 |
 
-従来、店舗チェックアウト プロセスでは、支払プロセッサに対して 2 つの異なる呼び出しが行われました。 最初の呼び出しは、チェックアウト時に支払プロセッサの埋め込み HTML iframe 要素に入力されたカード番号をトークン化するために使用されました。 呼び出し中に、SCA も有効になり、必要に応じてカード所有者をカードの発行銀行で認証できるようになりました。 2 番目の呼び出しでは、最初の呼び出しから取得したカード トークンを使用して、実際の承認応答を要求します。
+従来、店舗チェックアウト プロセスでは、支払プロセッサに対して 2 つの異なる呼び出しが行われました。 最初の呼び出しは、チェックアウト時に支払プロセッサの埋め込み HTML iFrame 要素に入力されたカード番号をトークン化するために使用されました。 呼び出し中に、SCA も有効になり、必要に応じてカード所有者をカードの発行銀行で認証できるようになりました。 2 番目の呼び出しでは、最初の呼び出しから取得したカード トークンを使用して、実際の承認応答を要求します。
 
 支払い承認を取得するためのこの 2 回の呼び出し方法は、次の理由により、すべてのケースにおいて理想的ではありませんでした。
 
@@ -65,8 +66,8 @@ ms.locfileid: "9279631"
 既定では、Adyen と PayPal の既成の支払コネクタは、チェックアウト時の強化された支払フローをサポートしています。
 
 > [!IMPORTANT]
-> - Adyen コネクタ バージョン **V002** のみが、拡張 SCA をサポートします。 バージョン **V001** は、チェックアウトが拡張 SCA 用に構成されている場合でも機能します。 ただし、バックグラウンドでは、そのバージョンはまだ 2 つの呼び出しを行います。
-> - 2021 年 1 月 1 日に欧州連合 (EU) で施行された SCA 要件のため、Adyen コネクタのバージョン **V001** は使用しなくまりました。 バージョン **V002** を使用するために Adyen コネクタを構成する方法については、[新しいクレジット カード用のプロセッサの設定](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards) を参照してください。
+> - Adyen コネクタ バージョン **V002** と **V003** のみが、拡張 SCA をサポートします。
+> - 2021 年 1 月 1 日に欧州連合 (EU) で施行された SCA 要件のため、Adyen コネクタのバージョン **V001** は使用しなくまりました。 バージョン **V002** または **V003** を使用するために Adyen コネクタを構成する方法については、[新しいクレジット カードのプロセッサの設定](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards) を参照してください。
 
 ## <a name="enable-enhanced-payments-in-storefront-checkout-in-commerce-site-builder"></a>Commerce サイト ビルダーでの店舗チェックアウトでの拡張支払の有効化
 
@@ -78,6 +79,20 @@ Commerce サイト ビルダーで強化された支払機能を有効にする�
 4. **保存と公開** を選択します。
 
 ![Commerce サイト ビルダーでの店頭会計での強化された支払いを有効にする。](media/rfac.png)
+
+## <a name="checkout-module-placement"></a>チェックアウト モジュールの配置
+
+SCA が有効なときにチェックアウト フローでの注文方法の変更により、チェックアウト ページのセクション コンテナーのチェックアウトが、**チェックアウト情報** モジュール ノードの最後のモジュールである必要があります。 
+
+SCA を使用する場合のチェックアウト情報モジュール ブロックの一般的な設定では、モジュールを次の順序で配置します:
+
+- **集配情報**
+- **出荷先住所**
+- **配送オプション**
+- **連絡先情報**
+- **セクション コンテナーのチェックアウト** (テキスト ブロック、ロイヤルティ ポイント、ギフト カード、支払、請求先住所モジュールを含みます)
+
+![サイト ビルダの共通のチェックアウト モジュール設定ツリー ビュー](../media/CheckoutFormModuleTreeOrder.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

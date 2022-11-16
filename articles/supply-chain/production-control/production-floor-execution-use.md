@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069789"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748716"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>作業者が生産現場の実行インターフェイスを使用する方法
 
@@ -146,9 +146,6 @@ ms.locfileid: "9069789"
 この場合、作業員は、進捗状況のレポート ダイアログ ボックスで **連産品の変動** を選択することで、報告する連産物と数量を指定できます。 その後、作業者は、連産物として定義されているリリースされた製品すべてから選択できます。
 
 ### <a name="reporting-catch-weight-items"></a>CW 品目のレポート
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 作業者は生産現場の実行インターフェースを使用して、CW 品目のために作成されたバッチ オーダーの進捗状況を報告できます。 バッチ オーダーはフォーミュラから作成されますが、それらのフォーミュラはフォーミュラ品目、連産品、副産物としての CW 品目を含むように定義できます。 フォーミュラは、CW に定義される材料のフォーミュラ明細行を持つ場合も定義できます。 CW 品目では、在庫を追跡する 2 つの測定単位 (CW 数量と在庫数量) を使用します。 たとえば、食品業界では、箱入り肉は CW 品目として定義できます。この場合、CW 数量は箱数の追跡に使用され、在庫数量は箱の重量の追跡に使用されます。
 

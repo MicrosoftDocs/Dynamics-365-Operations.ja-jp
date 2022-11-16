@@ -2,7 +2,7 @@
 title: ビジネス ロジックで非同期コマース (CRT) API を作成する
 description: この記事では、非同期で実行される Commerce (CRT) アプリケーション プログラミング インターフェイス (API) (つまり、要求) の作成方法について説明します。
 author: josaw1
-ms.date: 03/16/2022
+ms.date: 11/02/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 56acb04c226f34a23ee24eb8ad29a013e7573407
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 69cefaa7d4f2c32bd837f57e003e9eae2c526dcd
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268432"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736820"
 ---
 # <a name="create-asynchronous-commerce-crt-apis-in-your-business-logic"></a>ビジネス ロジックで非同期コマース (CRT) API を作成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "9268432"
 | SingleAsyncRequestHandler | 1 つの要求のみをサポートする非同期ハンドラーの基本クラス。 |
 | IRequestHandlerAsync      | 非同期要求ハンドラーのインターフェイス。 |
 | IRequestTriggerAsync      | 要求トリガーのインターフェイス。 |
-| CommerceControllerAsync   | 非同期拡張機能 Retail サーバー コントローラー クラスの基本クラス。 |
+| IController               | 非同期拡張機能 Retail サーバー コントローラー クラスの基本クラス。 廃止された CommerceControllerAsync クラスを置き換えます。 |
 | DatabaseContext           | 非同期データベース実行メソッドの基本クラス。 |
 
 次の非同期メソッドが、コマース API フレームワークに追加されました。
@@ -194,7 +194,7 @@ ms.locfileid: "9268432"
 
 ## <a name="create-a-new-asynchronous-retail-server-controller"></a>新しい非同期 Retail サーバー コントローラーの作成
 
-非同期の Retail サーバー コントローラー拡張機能を作成するには、次の例に示すように、**CommerceControllerAsync** クラスからコントローラー クラスを拡張します。
+非同期の Retail サーバー コントローラー拡張機能を作成するには、次の例に示すように、**IController** クラスからコントローラー クラスを拡張します。
 
 ```C#
 namespace Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers
@@ -211,7 +211,7 @@ namespace Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers
     /// The catalogs controller.
     /// </summary>
     [ComVisible(false)]
-    public class CustomController : CommerceControllerAsync<MyEntity, string>
+    public class CustomController : IController<MyEntity, string>
     {
 
         /// <summary>

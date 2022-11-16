@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a823d32ca24278154032a1cba3edea847d692e4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adcb2d41ff70714b6bc9c28f3e23ce95f5292f2e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844870"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740062"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>マスター プラン - サイトと倉庫の補充、倉庫は必須
 
@@ -47,15 +47,11 @@ ms.locfileid: "8844870"
 
 ## <a name="additional-resources"></a>追加リソース
 
-[マスター プランとマルチサイト機能の概要](master-plan-multisite-functionality.md)
-
-[マスター プラン - サイトの補充、倉庫は必須](master-plan-site-coverage-warehouse-mandatory.md)
-
-[マスター プラン - サイトの補充、倉庫は必須ではない](master-plan-site-coverage-warehouse-not-mandatory.md)
-
-[マスター プラン - サイトと倉庫の補充、倉庫は必須ではない](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-
-[BOM バージョンの決定](master-plan-bom-version-determined.md)
+- [マスター プランとマルチサイト機能の概要](master-plan-multisite-functionality.md)
+- [マスター プラン - サイトの補充、倉庫は必須](master-plan-site-coverage-warehouse-mandatory.md)
+- [マスター プラン - サイトの補充、倉庫は必須ではない](master-plan-site-coverage-warehouse-not-mandatory.md)
+- [マスター プラン - サイトと倉庫の補充、倉庫は必須ではない](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+- [BOM バージョンの決定](master-plan-bom-version-determined.md)
 
 
 

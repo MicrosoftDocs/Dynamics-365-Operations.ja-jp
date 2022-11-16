@@ -2,7 +2,7 @@
 title: 増分支払の取得
 description: この記事では、Dynamics 365 Commerce での注文請求の一部として増分取得に対する、すぐに使用できるサポートについて説明します。
 author: BrianShook
-ms.date: 03/12/2021
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
-ms.openlocfilehash: fdd78b2f44163dc1a0ae1f8a03f0eb208b318bb1
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 4f10c4dc45d32e1cc558ec98a117ef8f435f2ce1
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282857"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746179"
 ---
 # <a name="incremental-capture-for-order-invoicing"></a>注文請求の増分取得
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Dynamics 365 Commerce での注文請求の一部として増分取得に対する、すぐに使用できるサポートについて説明します。 また、Adyen 向け Dynamics 365 Payment Connector の増分取得を有効にする方法と、支払ソフトウェア開発キット (SDK) を使用してサード パーティーの支払コネクタに増分取得を追加する方法についても説明します。
 
@@ -70,11 +71,19 @@ Commerce 本社で「クレジット カードの増分取得をサポートす�
 1. **クレジット カードの増分取得をサポートする機能拡張** を検索します。
 1. 機能を選択し、**今すぐ有効化** を選択します。
 
+### <a name="set-the-credit-card-authorization-parameter"></a>クレジット カード認証パラメーターを設定する
+
+headquarters でクレジット カード認証パラメーターを設定するには、次の手順を実行します。
+
+1. **売掛金勘定 \> 設定 \> 売掛金勘定パラメーター** に移動します。 
+1. 左側のナビゲーション ウィンドウで、**クレジット カード** を選択します。
+1. **出荷配送情報を設定** FastTab の **設定** で、**クレジット カード認証** オプションが **はい** に設定されていることを確認します。 **いいえ** に設定した場合、増分取得機能は適切に機能しません。
+
 ### <a name="enable-incremental-capture-for-the-dynamics-365-payment-connector-for-adyen"></a>Adyen 向け Dynamics 365 Payment Connector で増分取得を有効にする
 
-「クレジット カードの増分取得をサポートする機能拡張」機能を有効にすることに加え、Adyen 向け Dynamics 365 Payment Connector の商社プロパティの **要求保護を有効にする** プロパティの値も、コネクタが使用されるチャネルごとに **True** に設定する必要があります。 値が **False** または空白の場合増分取得はコネクタに対して有効になりません。 プロパティが **True** に設定されている場合、重複する要求を防ぐため、追跡 ID が支払プロバイダーへの要求に追加されます。 サード パーティ支払コネクタに対する追跡 ID サポートについては、次の「[サード パーティ支払コネクタ用増分取得の取得](#uptake-incremental-capture-for-third-party-payment-connectors)」で説明されます。
+「クレジット カードの増分取得をサポートする機能拡張」機能を有効にすることに加え、Adyen 向け Dynamics 365 Payment Connector の商社プロパティの **要求保護を有効にする** プロパティの値も、コネクタが使用されるチャネルごとに **True** に設定する必要があります。 値が **False** または空白の場合、増分取得はコネクタに対して有効になりません。 プロパティが **True** に設定されている場合、重複する要求を防ぐため、追跡 ID が支払プロバイダーへの要求に追加されます。 サード パーティ支払コネクタに対する追跡 ID サポートについては、次の「[サード パーティ支払コネクタ用増分取得の取得](#uptake-incremental-capture-for-third-party-payment-connectors)」で説明されます。
 
-一部の支払方法では、増分取得がサポートされない場合があります。 これらの支払方法は、Adyen 向け Dynamics 365 Payment Connector のマーチャント プロパティの **増分取得以外の支払方法** フィールドで構成できます。 このフィールドに設定する値は、Adyen が承認応答でカード タイプを識別するために使用する「支払方法バリアント/カード タイプ」文字列と一致する必要があります。 支払方法バリアント文字列は、Adyen の [PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) にあります。 増分取得を除外する必要がある複数のカード タイプがある場合は、セミコロンで区切る必要があります。 
+一部の支払方法では、増分取得がサポートされていません。 これらの支払方法は、Adyen 向け Dynamics 365 Payment Connector のマーチャント プロパティの **増分取得以外の支払方法** フィールドで構成できます。 このフィールドに設定する値は、Adyen が承認応答でカード タイプを識別するために使用する「支払方法バリアント/カード タイプ」文字列と一致する必要があります。 支払方法バリアント文字列は、Adyen の [PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant) にあります。 増分取得を除外する必要がある複数のカード タイプがある場合は、セミコロンで区切る必要があります。 
 
 増分取得をサポートしない支払方法バリアントの例の 1 つが Interac です。 Adyen のドキュメントでは、Interac 支払方法バリアントに対して一覧表示される文字列は **interac** です。 Interac を受け入れるカナダのマーチャントに対して支払サービスが構成されている場合は、この支払方法バリアントをコネクタのマーチャント プロパティの「増分取得以外の支払方法」のリストに追加する必要があります。  
 
@@ -144,7 +153,7 @@ public static string SupportsMultipleCaptures
 
 ## <a name="incremental-capture-user-experience"></a>増分取得のユーザー エクスペリエンス
 
-増分取得のユーザー エクスペリエンスは、増分取得が有効になっていない場合のユーザー エクスペリエンスと変わりません。 重要な違いは、増分取得が有効な場合に元の承認が有効な場合、注文が部分的に請求された後に新しい承認を取得できない点です。 代わりに、既存の承認が保持され、後続の支払の取得に使用されます。 
+増分取得のユーザー エクスペリエンスは、増分取得が有効になっていない場合のユーザー エクスペリエンスと変わりません。 重要な違いは、増分取得が有効な場合に元の承認がまだ有効であれば、注文が部分的に請求された後に新しい承認を取得できない点です。 代わりに、既存の承認が保持され、後続の支払の取得に使用されます。 
 
 本社またはプロセッサのポータルで支払の問題を調査しているユーザーの場合、承認と取得の比率が 1:1 である従来のフローとは対照的に、複数の支払取得がマップされた単一の承認を持つように、増分取得順序が表示されます。 
 

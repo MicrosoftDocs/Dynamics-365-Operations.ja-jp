@@ -1,6 +1,6 @@
 ---
 title: 購買要求
-description: この記事では、計画の最適化で購買要求がどのようにサポートされるのかについて説明します。
+description: この記事では、購買要求について説明します。
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d9d55186307b18f4c3be78ae0828b08d3c987aad
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867901"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740687"
 ---
 # <a name="purchase-requisitions"></a>購買要求
 
@@ -59,7 +59,7 @@ ms.locfileid: "8867901"
 1. 承認済要求タイム フェンスを設定する追加のマスター プランごとに手順 2 と 3 を繰り返します。
 
 > [!IMPORTANT]
-> **近い時期:** 承認済の要求タイム フェンスが計画の最適化でまだサポートされていません。 サポートされるまでは、**承認済要求** タイム フェンス (日数) フィールドに入力のすべての値が無視されます。
+> 承認済の要求タイム フェンスが計画の最適化でサポートされていません。 サポートされるまでは、**承認済要求** タイム フェンス (日数) フィールドに入力のすべての値が無視されます。
 
 ## <a name="independent-supply-regardless-of-coverage-code"></a>補充コードに関係なく、独立した供給
 
