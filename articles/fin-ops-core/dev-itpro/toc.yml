@@ -1650,8 +1650,10 @@
                   href: sysadmin/tasks/set-up-segregation-duties.md
                 - name: 職務分掌の競合の識別と解決
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
-                - name: ユーザーのセキュリティ ロールへの割り当て
+                - name: ユーザーをセキュリティ ロールに割り当てる
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Active Directory セキュリティ グループ
+                  href: sysadmin/active-directory-security-group.md
                 - name: データ管理を使用してカスタマイズしたセキュリティ コンフィギュレーションをインポート/エクスポートする
                   href: sysadmin/import-export-customized-security.md
                 - name: タスク記録のセキュリティ診断

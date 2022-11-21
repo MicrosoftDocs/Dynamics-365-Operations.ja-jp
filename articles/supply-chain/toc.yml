@@ -3395,6 +3395,8 @@
           items:
             - name: 倉庫管理の概要
               href: warehousing/warehouse-management-overview.md
+            - name: 倉庫管理モジュールの設定を開始する
+              href: warehousing/get-started-with-setting-up-module.md
             - name: 入庫倉庫操作
               items:
                 - name: 発注書に対する入庫積荷の倉庫処理

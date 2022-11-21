@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878515"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764182"
 ---
 # <a name="distributed-order-management-dom"></a>分散型注文管理 (DOM)
 
@@ -68,9 +68,9 @@ DOM では、混合整数計画法 (MIP) と予測分析モデルを使用して
         > [!NOTE]
         > 簡易ソルバーは、特別なライセンスを配置せずに DOM 機能を試すことができるように、用意されています。 運用環境では、簡易ソルバーを使用しないようにしてください。
         >
-        > 本番ソルバーでは、パフォーマンス (1 回の実行で処理できる注文および注文明細行の数) および結果の収束性 (注文をバッチ処理するとシナリオによっては最適な結果が出ない場合があります) が向上します。 **部分注文** ルールや、**場所の最大数** ルールなどの一部のルールでは、本番ソルバーが必要です。
+        > 本番ソルバーでは、パフォーマンス (1 回の実行で処理できる注文および注文明細行の数) および結果の収束性 (注文をバッチ処理するとシナリオによっては最適な結果が出ない場合があります) が向上します。 **部分注文** ルールには本番ソルバーが必要です。
 
-6. **Retail と Commerce \> 配分済み注文の管理 \> 設定 \> DOM パラメーター** の順にクリックして戻ります。
+6. **小売とコマース \> 配分済み注文の管理 \> 設定 \> DOM パラメーター** の順にクリックして戻ります。
 7. **番号順序** タブで、さまざまな DOM エンティティに必要な番号順序を割り当てます。
 
     > [!NOTE]

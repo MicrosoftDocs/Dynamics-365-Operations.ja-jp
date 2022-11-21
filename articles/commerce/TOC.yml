@@ -588,8 +588,10 @@
                           href: dev-itpro/adyen-connector-setup.md
                         - name: Adyen 向け Dynamics 365 Payment Connector に関するよくあるご質問
                           href: dev-itpro/adyen-connector-faq.md
-                        - name: Adyen で Google Pay を構成する
+                        - name: Adyen を使用して Google Pay を構成する
                           href: dev-itpro/google-pay-adyen.md
+                        - name: Adyen を使用して Apple Pay を設定する
+                          href: dev-itpro/apple-pay-adyen.md
                         - name: Adyen 向け Dynamics 365 Payment Connector のトラブルシューティング
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: オンライン支払手段を Adyen コネクタで保存
@@ -598,10 +600,12 @@
                       href: adyen_redirect.md
                     - name: 専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト
                       href: pos-multi-hws.md
-                    - name: ギフト カードとクレジット メモの操作へのシームレスなオフライン切り替え
+                    - name: ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: 請求書の支払シナリオを設定する
                       href: payinvoice.md
+                    - name: Dynamics 365 Commerce での前払い
+                      href: dev-itpro/prepayments-commerce.md
                     - name: 重複支払の防止
                       href: duplicate-payment-protection.md
                     - name: オムニチャネル支払の概要

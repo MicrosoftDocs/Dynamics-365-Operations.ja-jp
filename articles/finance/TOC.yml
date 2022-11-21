@@ -30,7 +30,7 @@
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/finance
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/finance
-        - name: 概要
+        - name: 開始する
           items:
             - name: サービスの説明
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/finance
@@ -1188,6 +1188,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: 元帳決済から年度末決算までの認識
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: 元帳決済の自動化
+                  href: general-ledger/auto-settle.md
                 - name: 一般会計の外貨再評価
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: 一般会計残高
