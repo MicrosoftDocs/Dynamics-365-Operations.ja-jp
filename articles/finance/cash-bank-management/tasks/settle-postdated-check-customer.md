@@ -2,23 +2,23 @@
 title: 顧客からの先日付小切手の決済
 description: 先日付小切手は、銀行で精算された後に決済できます。
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 896d19eb9bc53cc4987d7a500f221cca06aa11db
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9e61ac6d6785dd0383d5e5dcaca4cc55bf6deb52
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725376"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780018"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>顧客からの先日付小切手の決済
 
@@ -40,17 +40,17 @@ ms.locfileid: "8725376"
 
 この手順では、USMF というデモ会社を使用します。
 
-1. [貸方転記および取立] > [照会およびレポート] > [支払] > [顧客の先日付小切手] の順に移動します。
-2. [決済] をクリックします。
-3. [清算項目の決済] をクリックします。
+1. **貸方転記および取立 > 照会およびレポート > 支払 > 顧客の先日付小切手** の順に移動します。
+2. **決済** をクリックします。
+3. **清算項目の決済** をクリックします。
     * 小切手トランザクションの顧客 ID を決済します。  
 4. ページを閉じます。
-5. [総勘定元帳] > [総勘定元帳] > [仕訳入力] > [一般仕訳帳] の順に移動します。
-6. [表示] フィールドで、オプションを選択します。
-7. [作成ユーザーのみ表示] チェック ボックスをオンまたはオフにします。
+5. **総勘定元帳 > 仕訳入力 > 一般仕訳帳** の順に移動します。
+6. **表示** フィールドで、オプションを選択します。
+7. **作成ユーザーのみ表示** チェック ボックスをオンまたはオフにします。
 8. 一覧で、目的のレコードを見つけ、選択します。
-9. [行] をクリックします。
-10. [伝票] をクリックします。
+9. **行** をクリックします。
+10. **伝票** をクリックします。
 11. ページを閉じます。
 
 

@@ -2,26 +2,22 @@
 title: ロイヤルティの概要
 description: この記事では、Dynamics 365 Commerce 内でのロイヤルティ機能、および小売業者がロイヤルティ プログラムを容易に始めるのに役立つ、対応する設定手順について説明します。
 author: josaw1
-ms.date: 07/21/2020
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 16201,  ""intro-internal
+ms.custom: 16201, "intro-internal"
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
-ms.search.industry: Retail
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
-ms.openlocfilehash: e1b2a5ec6d1a2b925ccae07b5217fbb24a2e6a10
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 17742bb5c0091804fc6f43bb2aabb7af73229890
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277991"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9784967"
 ---
 # <a name="loyalty-overview"></a>ロイヤルティの概要
 
@@ -36,6 +32,11 @@ ms.locfileid: "9277991"
 - 報酬を得るために顧客が完了する必要がある活動を識別する、所得ルールを定義します。 また、顧客が報酬をいつどのように引き換えることができるかを識別するための償還ルールを定義できます。
 - ロイヤルティ プログラムに参加しているチャネルからロイヤルティ カードを発行し、顧客が参加している 1 つ以上のロイヤルティ プログラムにロイヤルティ カードをリンクします。 また、顧客レコードをロイヤルティ カードにリンクして、顧客が複数のカードのロイヤルティ ポイントをプールして引き換えることできるようにします。
 - 手動で、ロイヤルティ カードを調整したり、1 枚のカードのロイヤルティ報酬の残高を別のカードに転送して、顧客に便宜を図ったり、報酬を付与します。
+
+次のビデオでは、Dynamics 365 Commerce のロイヤルティ機能の概要とデモを示します 。
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
 
 ## <a name="setting-up-loyalty-programs"></a>ロイヤルティ プログラムの設定
 
