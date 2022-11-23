@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27a6ec8fdba495535227d9d893d59edac5588985
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: cd74c6677f80a9075449908411350f1c81b95b02
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715697"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778360"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>仕入先支払の計算済の割引よりも大幅な割引を行う
 
@@ -32,13 +32,13 @@ ms.locfileid: "9715697"
 
 | マーク     | 現金割引の使用 | 伝票番号   | 口座 | 日      | 期日  | 請求書 | トランザクション通貨の金額 | 通貨 | 決済金額 |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| 選択済 | 標準            | Inv-10040 | 3051    | 6/29/2015 | 7/29/2015 | 10040   | 1,000.00                       | USD      | 940.00           |
+| 選択済 | 標準            | Inv-10040 | 3051    | 2020/6/29 | 2020/7/29 | 10040   | 1,000.00                       | USD      | 940.00           |
 
 割引の情報は **トランザクションの決済** ページの下部に表示されます。
 
-| フィールド                        | 先頭値     |
+| フィールド                        | 値     |
 |------------------------------|-----------|
-| 現金割引日           | 7/12/2015 |
+| 現金割引日           | 2020/7/12 |
 | 現金割引金額         | 60.00     |
 | 現金割引の使用            | 標準    |
 | 適用される現金割引          | 0.00      |

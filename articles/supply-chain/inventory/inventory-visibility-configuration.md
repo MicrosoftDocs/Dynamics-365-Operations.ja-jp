@@ -2,7 +2,7 @@
 title: Inventory Visibility の構成
 description: この記事では、Inventory Visibility を構成する方法について説明します。
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,19 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61819d9c5af64b58697e07be85beebc084ae5935
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542289"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9765710"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility の構成
 
 [!include [banner](../includes/banner.md)]
 
-
-この記事では、Power Apps で  Inventory Visibility アプリを使用して Inventory Visibility を構成する方法を説明します。
+この記事では、Power Apps で Inventory Visibility アプリを使用して Inventory Visibility を構成する方法を説明します。
 
 ## <a name="introduction"></a><a name="introduction"></a>概要
 
@@ -37,46 +36,51 @@ Inventory Visibility の使用を開始する前に、この記事の説明に�
 
 ## <a name="prerequisites"></a>必要条件
 
-開始する前に、[在庫視覚化のインストールと設定](inventory-visibility-setup.md)で示されているように、在庫視覚化アドインのインストールと設定を行います。
+開始する前に、[Inventory Visibility のインストールと設定](inventory-visibility-setup.md)で示されているように、Inventory Visibility アドインのインストールと設定を行います。
 
-## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>在庫視覚化アプリの構成ページ
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Inventory Visibility アプリの構成ページ
 
-Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.md) の **構成** ぺージで手持構成および仮引当構成の設定をサポートします。 アドインをインストールすると、既定の構成に Microsoft Dynamics 365 Supply Chain Management (`fno` データ ソース) からの値が含まれます。 既定の設定を確認できます。 また、業務要件や外部システムの在庫転記要件に基づき、複数のシステム間で在庫変更を転記、整理、およびクエリする方法を標準化するように構成を変更することができます。 この記事の残りのセクションでは、**構成** ページの各部分の使い方について説明します。
+Power Apps で、[Inventory Visibility アプリ](inventory-visibility-power-platform.md) の **構成** ぺージで手持構成および仮引当構成の設定をサポートします。 アドインをインストールすると、既定の構成に Microsoft Dynamics 365 Supply Chain Management (`fno` データ ソース) からの値が含まれます。 既定の設定を確認できます。 また、業務要件や外部システムの在庫転記要件に基づき、複数のシステム間で在庫変更を転記、整理、およびクエリする方法を標準化するように構成を変更することができます。 この記事の残りのセクションでは、**構成** ページの各部分の使い方について説明します。
 
 構成の完了後、必ずアプリ内の **構成の更新** を選択してください。
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Power Apps の機能管理で在庫視覚化機能を有効にする
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Power Apps の機能管理で Inventory Visibility 機能を有効にする
 
-在庫視覚化アドインは、Power Apps のインストールにいくつかの新機能を追加します。 既定では、これらの機能は無効になっています。 これらを使用するには、**構成** ページを開き、**機能管理** タブで必要に応じて以下の機能を有効にします。
+Inventory Visibility アドインは、Power Apps のインストールにいくつかの新機能を追加します。 既定では、これらの機能は無効になっています。 これらを使用するには、**構成** ページを開き、**機能管理** タブで必要に応じて以下の機能を有効にします。
 
 | 機能管理名 | Description |
 |---|---|
-| *OnHandReservation* | この機能では、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。 |
-| *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 既定の同期頻度は 15 分に 1 回で、5 分ごとに高く設定できます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
-| *onHandIndexQueryPreloadBackgroundService* | この機能により、Inventory Visibility の手持在庫クエリを事前に読み込んで、事前選択した分析コードで手持在庫リストを作成できます。 既定の同期頻度は 15 分に 1 回です。 詳細については、[在庫概要](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query) を参照してください。 |
+| *OnHandReservation* | この機能では、Inventory Visibility を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[Inventory Visibility 引当](inventory-visibility-reservations.md) を参照してください。 |
+| *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、Inventory Visibility から定期的に同期されます。 既定の同期頻度は 15 分に 1 回で、5 分ごとに高く設定できます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
+| *onHandIndexQueryPreloadBackgroundService* | この機能により、Inventory Visibility の手持在庫クエリを事前に読み込んで、事前選択した分析コードで手持在庫リストを作成できます。 既定の同期頻度は 15 分に 1 回です。 詳細については、[合理化された手持在庫クエリの事前読み込み](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)を参照してください。 |
 | *OnhandChangeSchedule* | このオプション機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
-| *割り当て* | このオプション機能により Inventory Visibility は、在庫保護 (リングフェンシング) および過剰販売管理の機能を持つことができます。 詳細については、[Inventory Visibility の在庫配賦](inventory-visibility-allocation.md) を参照してください。 |
-| *在庫可視化で在庫品目を有効化* | このオプション機能によって、在庫品目一覧が有効になり、倉庫管理プロセス (WMS) が有効な品目がサポートされます。 詳細については、[WMS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |
+| *割り当て* | このオプション機能により、Inventory Visibility で在庫保護 (リング フェンシング) および過剰販売管理の機能を使用することができます。 詳細については、[Inventory Visibility の在庫配賦](inventory-visibility-allocation.md) を参照してください。 |
+| *Inventory Visibility で在庫品目を有効化* | このオプション機能によって、Inventory Visibility が有効になり、倉庫管理プロセス (WMS) が有効な品目がサポートされます。 詳細については、[WMS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>サービス エンドポイントを検索する
 
-在庫視覚化サービスの正しいエンドポイントが分からない場合、Power Apps の **構成** ページを開き、右上隅の **サービス エンドポイントの表示** を選択します。 ページに正しいサービス エンドポイントが表示されます。
+Inventory Visibility サービスの正しいエンドポイントが分からない場合、Power Apps の **構成** ページを開き、右上隅の **サービス詳細の表示** を選択します。 ページに正しいサービス エンドポイントが表示されます。 また、[Lifecycle Services 環境に応じたエンドポイントの検索](inventory-visibility-api.md#endpoint-lcs) にある説明に従って、Microsoft Dynamics Lifecycle Services でエンドポイントを検索することもできます。
+
+> [!NOTE]
+> 間違ったエンドポイントを使用すると、Supply Chain Management が在庫可視性に同期するときに Inventory Visibility のインストールが失敗し、エラーが発生する可能性があります。 エンドポイントがわからない場合は、システム管理者に問い合わせてください。 エンドポイントの URL では、次の形式を使用します。
+>
+> `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>データ ソースの構成
 
-各データ ソースは、データの取得元のシステムを表しています。 データ ソース名の例には、`fno` ("Dynamics 365 財務と運用アプリ" の略) および `pos` ("販売時点管理" の略) が含まれます。 既定では、Supply Chain Management が在庫視覚化の既定のデータ ソース (`fno`) として設定されます。
+各データ ソースは、データの取得元のシステムを表しています。 データ ソース名の例には、`fno` (Supply Chain Management 対応) および `pos` ("販売時点管理" の略) が含まれます。 既定では、Supply Chain Management が Inventory Visibility の既定のデータ ソース (`fno`) として設定されます。
 
 > [!NOTE]
-> `fno` データ ソースは Supply Chain Management 用に予約されています。 在庫の可視性アドインが Supply Chain Management 環境と統合されている場合は、データソースの `fno` に関連する設定を削除しないことをお勧めします。
+> `fno` データ ソースは Supply Chain Management 用に予約されています。 Inventory Visibility アドインが Supply Chain Management 環境と統合されている場合は、データソースの `fno` に関連する設定を削除しないことをお勧めします。
 
 データ ソースを追加するには、次の手順に従います。
 
-1. Power Apps 環境にサインインし、**在庫視覚化** を開きます。
+1. Power Apps 環境にサインインし、**Inventory Visibility** を開きます。
 1. **構成** ページを開きます。
-1. **データ ソース** タブで **新しいデータ ソース** を選択してデータ ソースを追加します。
+1. **データ ソース** タブで、**新しいデータ ソース** を選択してデータ ソースを追加します (`ecommerce` またはわかりやすいデータ ソース ID など)。
 
 > [!NOTE]
-> データ ソースを追加する場合、在庫視覚化サービスの構成を更新する前に、データ ソースの名前、物理的測定、および分析コードのマッピングを検証してください。 **構成の更新** を選択した後は、これらの設定を変更することはできません。
+> データ ソースを追加する場合、Inventory Visibility サービスの構成を更新する前に、データ ソースの名前、物理的測定、および分析コードのマッピングを検証してください。 **構成の更新** を選択した後は、これらの設定を変更することはできません。
 
 データ ソースの構成には、次の部分が含まれています。
 
@@ -86,13 +90,13 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 ### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>分析コード (分析コード マッピング)
 
-分析コードを構成する目的は、分析コードの組み合わせに基づいて、イベントやクエリを投稿する複数のシステム統合を標準化することです。 在庫視覚化は、データ ソースの分析コードからマッピングできるベース分析コードの一覧を提供します。 33 個の分析コードをマッピングに使用することができます。
+分析コードを構成する目的は、分析コードの組み合わせに基づいて、イベントやクエリを投稿する複数のシステム統合を標準化することです。 Inventory Visibility は、データ ソースの分析コードからマッピングできるベース分析コードの一覧を提供します。 33 個の分析コードをマッピングに使用することができます。
 
-- 既定では、データ ソースの 1 つとして Supply Chain Management を使用している場合、Supply Chain Management の標準分析コードに 13 の分析コードがマップされます。 他の 12 の分析コード (`inventDimension1` から `inventDimension12`) が Supply Chain Management のカスタム分析コードにマッピングされます。 残りの 8 つの分析コードは、外部データ ソースにマップできる拡張分析コードです。
+- データ ソースの 1 つとして Supply Chain Management を使用している場合、Supply Chain Management の標準分析コードに 13 の分析コードが既定でマップされています。 他の 12 の分析コード (`inventDimension1` から `inventDimension12`) が Supply Chain Management のカスタム分析コードにもマッピングされます。 残りの 8 つの分析コード (`ExtendedDimension1` から `ExtendedDimension8`) は、外部データ ソースにマップできる拡張分析コードです。
 - データ ソースの 1 つとして Supply Chain Management を使用しない場合、分析コードを自由にマップすることができます。 使用可能な分析コードの完全な一覧を次の表に示します。
 
 > [!NOTE]
-> 分析コードが既定の分析コードの一覧に含まれておらず、外部データ ソースを使用している場合は、`ExtendedDimension1` から `ExtendedDimension8` を使用してマッピングを行うことをお勧めします。
+> Supply Chain Management を使用し、Supply Chain Management と Inventory Visibility 間で既定の分析コード マッピングを変更した場合、変更された分析コードはデータを同期しません。 そのため、分析コードが既定の分析コードの一覧に含まれておらず、外部データ ソースを使用している場合は、`ExtendedDimension1` から `ExtendedDimension8` を使用してマッピングすることをお勧めします。
 
 | 分析コード タイプ | ベース分析コード |
 |---|---|
@@ -114,11 +118,11 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | System | `Empty` |
 
 > [!NOTE]
-> 前の表で表示されていた分析コード タイプは、参照専用です。 在庫の視覚化で定義する必要はありません。
+> 前の表で表示されていた分析コード タイプは、参照専用です。 Inventory Visibility で定義する必要はありません。
 >
 > 在庫 (カスタム) 分析コードは、Supply Chain Management に対して引当されている場合があります。 その場合、代わりに拡張分析コードを使用できます。
 
-外部システムは、RESTful API を介して在庫の視覚化にアクセスできます。 統合の場合、在庫の視覚化では _外部データ ソース_ と、_外部分析コード_ から _ベース分析コード_ へのマッピングを構成できます。 分析コードのマッピング テーブルの例を次に示します。
+外部システムは、RESTful API を介して Inventory Visibility にアクセスできます。 統合の場合、Inventory Visibility では *外部データ ソース* と、*外部分析コード* から *ベース分析コード* へのマッピングを構成できます。 分析コードのマッピング テーブルの例を次に示します。
 
 | 外部分析コード | ベース分析コード |
 |---|---|
@@ -128,26 +132,27 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | `MyDimension1` | `ExtendedDimension1` |
 | `MyDimension2` | `ExtendedDimension2` |
 
-分析コード マッピングを構成することで、外部分析コードを直接在庫の視覚化に送信できます。 次に、在庫の視覚化は外部分析コードをベース分析コードに自動的に変換します。
+分析コード マッピングを構成することで、外部分析コードを直接 Inventory Visibility に送信できます。 次に、Inventory Visibility は外部分析コードをベース分析コードに自動的に変換します。
 
 分析コード マッピングを追加するには、次の手順に従います。
 
-1. Power Apps 環境にサインインし、**在庫視覚化** を開きます。
+1. Power Apps 環境にサインインし、**Inventory Visibility** を開きます。
 1. **構成** ページを開きます。
-1. **データ ソース** タブの **分析コード マッピング** セクションで **追加** を選択して、分析コード マッピングを追加します。
+1. **データ ソース** タブで、分析コード マッピングを行うデータ ソースを選択します。 次に、**分析コード マッピング** セクションで **追加** を選択して、分析コード マッピングを追加します。
+
     ![分析コード マッピングの追加](media/inventory-visibility-dimension-mapping.png "分析コード マッピングの追加")
 
 1. **分析コード名** フィールドで、ソース分析コードを指定します。
-1. **終了分析コード** フィールドで、マップする在庫視覚化の分析コードを選択します。
+1. **終了分析コード** フィールドで、マップする Inventory Visibility の分析コードを選択します。
 1. **保存** を選択します。
 
-たとえば、データ ソースに製品のカラー分析コードが含まれる場合、`exterchannel` データ ソースで `ProductColor` カスタム分析コードを追加して、`ColorId` ベース分析コードにマップすることができます。 `ColorId` ベース分析コードにマップされます。
+たとえば、製品の色分析コードが含まれる `ecommerce` という名前のデータ ソースを既に作成している場合、 マッピングを行うには、最初に `ProductColor` を `ecommerce` データ ソースの **分析コード名** フィールドに追加してから、**終了基準分析コード** フィールドの `ColorId` を選択します。
 
 ### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>物理的測定
 
-データ ソースが在庫の変更を在庫視覚化に転記する場合、*物理的測定* を使用してその変更を転記します。 物理的測定は数量を変更し、在庫状態を反映します。 必要に応じて、独自の物理的測定を定義することができます。 クエリは、物理的測定に基づくことがあります。
+データ ソースが在庫の変更を Inventory Visibility に転記する場合、*物理的測定* を使用してその変更を転記します。 物理的測定は数量を変更し、在庫状態を反映します。 必要に応じて、独自の物理的測定を定義することができます。 クエリは、物理的測定に基づくことがあります。
 
-在庫の視覚化は、Supply Chain Management (`fno` データ ソース) にリンクされている既定の物理的測定の一覧を提供します。 これら既定の物理的測定は、Supply Chain Management (**在庫管理 \> 照会およびレポート \> 手持在庫リスト**) の **手持在庫リスト** ページにある在庫トランザクションの状態から取得されます。 次の表に、物理的測定の例を示します。
+Inventory Visibility は、Supply Chain Management (`fno` データ ソース) にマップされている既定の物理的測定の一覧を提供します。 これら既定の物理的測定は、Supply Chain Management (**在庫管理 \> 照会およびレポート \> 手持在庫リスト**) の **手持在庫リスト** ページにある在庫トランザクションの状態から取得されます。 次の表に、物理的測定の例を示します。
 
 | 物理的測定の名前 | 説明 |
 |---|---|
@@ -170,28 +175,28 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 データ ソースが Supply Chain Management である場合、既定の物理的測定を再作成する必要はありません。 ただし、外部データ ソースの場合は、次の手順に従って新しい物理的測定を作成することができます。
 
-1. Power Apps 環境にサインインし、**在庫視覚化** を開きます。
+1. Power Apps 環境にサインインし、**Inventory Visibility** を開きます。
 1. **構成** ページを開きます。
-1. **データ ソース** タブの **物理的測定** セクションで **追加** を選択し、ソース測定の名前を指定して、変更を保存します。
+1. **データ ソース** タブで、物理的測定を追加するデータ ソース (`ecommerce` データ ソースなど) を選択します。 次に、**物理的測定** セクションで **追加** を選択し、測定名 (たとえば、このデータ ソースの返品数量を Inventory Visibility に記録する場合は `Returned` など) を指定します。 変更を保存します。
 
 ### <a name="calculated-measures"></a>計算メジャー
 
-在庫視覚化を使用して、在庫の物理的測定と *カスタム計算測定* の両方を照会できます。 計算メジャーは、物理的測定の組み合わせで構成されるカスタマイズされた計算式を提供します。 この機能により、追加または削除される一連の物理的測定を定義して、カスタマイズされた測定を作成できるようになります。
+Inventory Visibility を使用して、在庫の物理的測定と *カスタム計算測定* の両方を照会できます。 計算メジャーは、物理的測定の組み合わせで構成されるカスタマイズされた計算式を提供します。 この機能により、追加または削除される一連の物理的測定を定義して、カスタマイズされた測定を作成できるようになります。
 
 > [!IMPORTANT]
 > 計算メジャーは、現物メジャーの構成です。 その式には、計算メジャーではなく、重複しない現物メジャーのみを含めることができます。
 
-構成により、合計集計された出来高数量を取得するために加算または減算する一連のモディファイアーを定義できます。
+構成により、加算の修飾子または減算の修飾子を含む一連の計算メジャー フォーミュラを定義して、合計集計された出来高数量を取得できます。
 
 カスタム計算測定を設定するには、次の手順に従います。
 
-1. Power Apps 環境にサインインし、**在庫視覚化** を開きます。
+1. Power Apps 環境にサインインし、**Inventory Visibility** を開きます。
 1. **構成** ページを開きます。
 1. **計算測定** タブで **新しい計測** を選択し、計算された測定を追加します。
 1. 新しい計算メジャーについて、次のフィールドを設定します。
 
     - **新しい計算メジャー名** – 計算メジャーの名前を入力します。
-    - **データ ソース** – 新しいモディファイアーに関連付けられているデータ ソースを選択します。 照会しているシステムはデータ ソースです。
+    - **データ ソース** – 新しい計算メジャーを含めるデータ ソースを選択します。 照会しているシステムはデータ ソースです。
 
 1. **追加** を選択して、モディファイアーを新しい計算メジャーに追加します。
 1. 新しいモディファイアー用に次のフィールドを設定します。
@@ -200,15 +205,21 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
     - **データ ソース** – モディファイアー値を提供するメジャーが含まれるデータ ソースを選択します。
     - **メジャー** – モディファイア―の値を提供するメジャーの名前 (選択したデータ ソースから) を選択します。
 
-1. 必要なすべてのモディファイアーを追加するまで、手順 5 から 6 を繰り返します。
+1. ATP に必要なすべての修飾子を追加し、計算メジャーのフォーミュラが完了するまで、手順 5 から 6 を繰り返します。
 1. **保存** を選択します。
 
-例えば、次のようなクエリ結果があるとします。
+たとえば、ファッション会社は、次の 3 つのデータ ソースを使用して運営しています。
+
+- `pos` – 店舗のチャネルに対応します。
+- `fno` – Supply Chain Management に対応します。
+- `ecommerce` – Web チャネルに対応します。
+
+サイト 1、倉庫 11、`ColorID` 分析コードの値が `Red` の製品 D0002 (キャビネット) にクエリを実行する場合、計算メジャーがないと、構成済の物理的測定ごとに在庫数量を表示するクエリ結果が次のようになります。 ただし、データ ソース全体の引当数量に対する利用可能な合計の可視性は確保できません。
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -224,7 +235,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
@@ -239,22 +250,22 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 | 消費システム | 計算メジャー | データ ソース | 物理的測定 | 計算タイプ |
 |---|---|---|---|---|
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `received` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `scheduled` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `issued` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `reserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `received` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `scheduled` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `issued` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `reserved` | `Subtraction` |
 
 この計算式を使用すると、新しいクエリ結果にカスタマイズされた測定が含まれます。
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -270,13 +281,13 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
                 "reserved": 40.0
             },
-            "CustomChannel": {
+            "CrossChannel": {
                 "MyCustomAvailableforReservation": 220.0
             }
         }
@@ -288,7 +299,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>パーティションの構成
 
-現在、パーティション構成は、データの分散方法を示す 2 つの基本分析コード (`SiteId` と `LocationId`) で構成されています。 同じパーティションで運用することで、より高いパフォーマンスを低コストで実現できます。 次の表は、在庫の視覚化アドインが提供する規定のパーティション構成です。
+現在、パーティション構成は、データの分散方法を示す 2 つの基本分析コード (`SiteId` と `LocationId`) で構成されています。 同じパーティションで運用することで、より高いパフォーマンスを低コストで実現できます。 次の表は、Inventory Visibility アドインが提供する規定のパーティション構成です。
 
 | ベース分析コード | 階層 |
 |---|---|
@@ -304,7 +315,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 多くの場合、手持在庫クエリは、最高「合計」レベルのみだけではありません。 代わりに、在庫分析コードに基づいて集計される結果も表示することができます。
 
-在庫可視化は、クエリのパフォーマンスを向上させるための _インデックス_ を設定することで、柔軟性を高めることができます。 これらのインデックスは、分析コードまたは分析コードの組み合わせに基づいています。 インデックスは、次の表で定義されているように、*セット番号*、*分析コード*、および *階層* で構成されています。
+Inventory Visibility は、クエリのパフォーマンスを向上させるための *インデックス* を設定することで、柔軟性を高めることができます。 これらのインデックスは、分析コードまたは分析コードの組み合わせに基づいています。 インデックスは、次の表で定義されているように、*セット番号*、*分析コード*、および *階層* で構成されています。
 
 | 氏名 | 説明 |
 |---|---|
@@ -314,7 +325,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 製品階層インデックスを設定するには、以下の手順に従ってください。
 
-1. Power Apps 環境にサインインし、**在庫視覚化** を開きます。
+1. Power Apps 環境にサインインし、**Inventory Visibility** を開きます。
 1. **構成** ページを開きます。
 1. **製品階層インデックス** タブの **分析コード マッピング** セクションで **追加** を選択して、分析コード マッピングを追加します。
 1. 既定では、インデックスの一覧が用意されています。 既存のインデックスを変更するには、関連するインデックスのセクションで **編集** または **追加** を選択します。 新しいインデックス セットを作成するには、**新しいインデックス セット** を選択します。 すべてのインデックス セットの各行の **分析コード** フィールドで、ベース分析コードの一覧から選択します。 次のフィールドの値は自動的に生成されます。
@@ -334,15 +345,15 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 次の表に、このサンプルで使用可能な在庫の一覧を示します。
 
-| 項目 | ColorId | SizeId | StyleId | 件数 |
+| 品目 | ColorId | SizeId | StyleId | Quantity |
 |---|---|---|---|---|
-| T シャツ | 黒 | 小 | ワイド | 1 |
-| T シャツ | 黒 | 小 | 通常 | 2 |
-| T シャツ | 黒 | 大 | ワイド | 3 |
-| T シャツ | 黒 | 大 | 通常 | 4 |
-| T シャツ | 赤 | 小 | ワイド | 5 |
-| T シャツ | 赤 | 小 | 通常 | 6 |
-| T シャツ | 赤 | 大 | 通常 | 7 |
+| D0002 | 黒 | 小 | ワイド | 1 |
+| D0002 | 黒 | 小 | 通常 | 2 |
+| D0002 | 黒 | 大 | ワイド | 3 |
+| D0002 | 黒 | 大 | 通常 | 4 |
+| D0002 | 赤 | 小 | ワイド | 5 |
+| D0002 | 赤 | 小 | 通常 | 6 |
+| D0002 | 赤 | 大 | 通常 | 7 |
 
 インデックス階層の設定方法を次の表に示します。
 
@@ -356,29 +367,29 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 - `()` – すべてグループ化されます
 
-    - T シャツ、28
+    - D0002、28
 
 - `(ColorId)` – `ColorId` 別にグループ化されます
 
-    - T シャツ、黒、10
-    - T シャツ、赤、18
+    - D0002、黒、10
+    - D0002、赤、18
 
 - `(ColorId, SizeId)` – `ColorId` と `SizeId` の組み合わせ別にグループ化されます
 
-    - T シャツ、黒、S、3
-    - T シャツ、黒、L、7
-    - T シャツ、赤、S、11
-    - T シャツ、赤、L、7
+    - D0002、黒、S、3
+    - D0002、黒、L、7
+    - D0002、赤、S、11
+    - D0002、赤、L、7
 
 - `(ColorId, SizeId, StyleId)` – `ColorId`、`SizeId` および `StyleId` の組み合わせ別にグループ化されます
 
-    - T シャツ、黒、S、ワイド、1
-    - T シャツ、黒、S、レギュラー、2
-    - T シャツ、黒、L、ワイド、3
-    - T シャツ、黒、L、レギュラー、4
-    - T シャツ、赤、S、ワイド、5
-    - T シャツ、赤、S、レギュラー、6
-    - T シャツ、赤、L、レギュラー、7
+    - D0002、黒、S、ワイド、1
+    - D0002、黒、S、通常、2
+    - D0002、黒、L、ワイド、3
+    - D0002、黒、L、通常、4
+    - D0002、赤、S、ワイド、5
+    - D0002、赤、S、通常、6
+    - D0002、赤、L、通常、7
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>引当の構成 (オプション)
 
@@ -391,41 +402,41 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 引当を行う際に、手持在庫が現在引当可能であるかどうかについて知りたい場合があります。 検証は、物理的測定の組み合わせの計算式を表す計算メジャーにリンクされます。
 
-物理的測定から計算メジャーへのマッピングを設定することにより、在庫視覚化サービスを有効にし、物理的測定に基づいて、引当可能在庫数を自動的に検証することができます。
+物理的測定から計算メジャーへのマッピングを設定することにより、Inventory Visibility サービスを有効にし、物理的測定に基づいて、引当可能在庫数を自動的に検証することができます。
 
 このマッピングを設定する前に、(この記事で前述されているように) Power Apps の **構成** ページの **データ ソース** タブと **計算メジャー** タブで、現物メジャー、計算メジャー、およびそれらのデータ ソースを定義する必要があります。
 
 仮引当マッピングを定義するには、次の手順に従います。
 
-1. 仮引当測定として機能する物理的測定を定義します (`SoftReservOrdered` など)。
-1. **構成** ページの **計算メジャー** タブで、物理的計測にマップする AFR 計算式を含む、*引当に使用可能な* (AFR) 計算メジャーを定義します。 たとえば、`AvailableToReserve` (引当に使用可能) を設定し、以前に定義された `SoftReservOrdered` 物理的測定にマップすることができます。 このようにして、引当に使用可能になる `SoftReservOrdered` 在庫状態の数量を検索できます。 次の表は、AFR 計算式を示しています。
+1. 仮引当測定として機能する物理的測定を定義します (`SoftReservPhysical` など)。
+1. **構成** ページの **計算メジャー** タブで、物理的計測にマップする AFR 計算式を含む、*引当に使用可能な* (AFR) 計算メジャーを定義します。 たとえば、`AvailableToReserve` (引当に使用可能) を設定し、以前に定義された `SoftReservPhysical` 物理的測定にマップすることができます。 このようにして、引当に使用可能になる `SoftReservPhysical` 在庫状態の数量を検索できます。 次の表は、AFR 計算式を示しています。
 
     | 計算タイプ | データ ソース | 物理的測定 |
     |---|---|---|
     | 加算 | `fno` | `AvailPhysical` |
     | 加算 | `pos` | `Inbound` |
     | 減算 | `pos` | `Outbound` |
-    | 減算 | `iv` | `SoftReservOrdered` |
+    | 減算 | `iv` | `SoftReservPhysical` |
 
-    引当測定の基になる物理的測定が含まれるように、計算メジャーを設定することをお勧めします。 このようにして、計算メジャー数量は、引当測定数量の影響を受けます。 したがって、この例では、`iv` データー ソースの `AvailableToReserve` 計算メジャーには、コンポーネント として `iv` からの `SoftReservOrdered` 物理測定を含む必要があります。
+    引当測定の基になる物理的測定が含まれるように、計算メジャーを設定することをお勧めします。 このようにして、計算メジャー数量は、引当測定数量の影響を受けます。 したがって、この例では、`iv` データー ソースの `AvailableToReserve` 計算メジャーには、コンポーネント として `iv` からの `SoftReservPhysical` 物理測定を含む必要があります。
 
 1. **構成** ページを開きます。
-1. **仮引当マッピング** タブで、物理的測定から計算メジャーへのマッピングを設定します。 前の例の場合、次の設定を使用して、以前に定義された `SoftReservOrdered` 物理測定に `AvailableToReserve` をマップすることができます。
+1. **仮引当マッピング** タブで、物理的測定から計算メジャーへのマッピングを設定します。 前の例の場合、次の設定を使用して、以前に定義された `SoftReservPhysical` 物理測定に `AvailableToReserve` をマップすることができます。
 
     | 物理的測定データ ソース | 物理的測定 | 引当データ ソースで使用可能 | 引当計算メジャーで使用可能 |
     |---|---|---|---|
-    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+    | `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
     > [!NOTE]
     > **仮引当マッピング** タブで編集できない場合、**機能管理** タブの *OnHandReservation* 機能を有効にしなければならない場合があります。
 
-これで、`SoftReservOrdered` で引当を行うと、在庫の視覚化によって自動的に `AvailableToReserve` とその関連計算式が検出され、引当の検証が行われます。
+これで、`SoftReservPhysical` で引当を行うと、Inventory Visibility によって自動的に `AvailableToReserve` とその関連計算式が検出され、引当の検証が行われます。
 
-たとえば、在庫の視覚化に次の手持在庫があるとします。
+たとえば、Inventory Visibility に次の手持在庫があるとします。
 
 ```json
 {
-    "productId": "T-shirt",
+    "productId": "D0002",
     "dimensions": {
         "SiteId": "1",
         "LocationId": "11",
@@ -433,7 +444,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
     },
     "quantities": {
         "iv": {
-            "SoftReservOrdered": 90
+            "SoftReservPhysical": 90
         },
         "fno": {
             "availphysical": 70.0,
@@ -448,14 +459,14 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 この場合、次の計算が適用されます。
 
-`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservOrdered`  
+`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservPhysical`  
 =70+50–20–90  
 =10
 
-したがって、`iv.SoftReservOrdered` で引当を行う場合、数量が `AvailableToReserve` (10) 以下であれば引当を実行できます。
+したがって、`iv.SoftReservPhysical` で引当を行う場合、数量が `AvailableToReserve` (10) 以下であれば、仮引当要求に成功します。
 
 > [!NOTE]
-> 引当 API を呼び出す際に、要求本文のブール値 `ifCheckAvailForReserv` パラメーターを指定することで、引当の検証を制御できます。 `True` という値は検証が必要であることを意味するのに対し、`False` という値は検証が必要ないことを意味します。 既定値は [`True`] です。
+> 引当 API を呼び出す際に、要求本文のブール値 `ifCheckAvailForReserv` パラメーターを指定することで、引当の検証を制御できます。 `True` は検証が必要であることを表し、`False` は検証が必要でないことを表します (`AvailableToReserve` の結果数量がマイナスの場合でも、仮引当を実行できます)。 既定値は [`True`] です。
 
 ### <a name="soft-reservation-hierarchy"></a>仮引当階層
 
@@ -484,26 +495,29 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 ## <a name="available-to-promise-configuration-optional"></a>納期回答可能在庫の構成 (オプション)
 
-在庫可視性を設定すると、今後の手持在庫変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算できます。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 この計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。 この機能を使用するには、**機能管理** タブでこの機能を有効にして、**ATP 設定** タブで設定する必要があります。詳細については、[在庫可視性の手持在庫変更スケジュールおよび納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
+Inventory Visibility を設定すると、今後の手持在庫変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算できます。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 この計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。 この機能を使用するには、**機能管理** タブでこの機能を有効にして、**ATP 設定** タブで設定する必要があります。詳細については、[Inventory Visibility の手持在庫変更スケジュールおよび納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
 
 ## <a name="complete-and-update-the-configuration"></a>構成の完了と更新
 
-構成が完了した後、すべての変更を在庫視覚化にコミットする必要があります。 変更をコミットするには、Power Apps の **構成** ページの右上隅にある **構成の更新** を選択します。
+構成が完了した後、すべての変更を Inventory Visibility にコミットする必要があります。 これらの手順に従って変更します。
 
-**構成の更新** を初めて選択するとき、システムは資格情報を要求します。
+1. Power Apps の **構成** ページで、右上隅にある **構成の更新** を選択します。 
+1. システムは、サインイン資格情報を要求します。 次の値を入力します。
 
-- **クライアント ID** – 在庫視覚化のために作成した Azure アプリケーション ID。
-- **テナント ID** – Azure テナント ID。
-- **クライアント シークレット** – 在庫視覚化のために作成した Azure アプリケーション シークレット。
+    - **クライアント ID** – Inventory Visibility のために作成した Azure アプリケーション ID。
+    - **テナント ID** – Azure テナント ID。
+    - **クライアント シークレット** – Inventory Visibility のために作成した Azure アプリケーション シークレット。
 
-サインインした後、在庫視覚化サービスで構成が更新されます。
+    これらの資格情報の詳細については、[Inventory Visibility のインストールと設定](inventory-visibility-setup.md) を参照してください。
 
-> [!NOTE]
-> 在庫視覚化サービスの構成を更新する前に、データ ソースの名前、物理的測定、および分析コードのマッピングを検証してください。 **構成の更新** を選択した後は、これらの設定を変更することはできません。
+    > [!IMPORTANT]
+    > 構成を更新する前に、データ ソースの名前、物理的測定、および分析コードのマッピングを検証してください。 更新した後は、これらの設定を変更することはできません。
+
+1. サインイン後、**構成の更新** を再度選択します。 設定が適用され、変更された内容が表示されます。
 
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>既定の構成サンプル
 
-初期化の段階では、在庫視覚化が既定の構成を設定しますが、その詳細はこちらをごらんください。 必要に応じてこの構成を変更できます。
+初期化の段階では、Inventory Visibility が既定の構成を設定しますが、その詳細はこちらをごらんください。 必要に応じてこの構成を変更できます。
 
 ### <a name="data-source-configuration"></a>データ ソースの構成
 
@@ -694,13 +708,19 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 次の物理的測定は、`fno` データ ソース用に構成されています。
 
-- `Ordered`
 - `Arrived`
-- `AvailPhysical`
 - `PhysicalInvent`
 - `ReservPhysical`
+- `onorder`
+- `notspecified`
+- `availordered`
+- `availphysical`
+- `picked`
+- `postedqty`
+- `quotationreceipt`
+- `received`
+- `ordered`
 - `ReservOrdered`
-- `OnOrder`
 
 #### <a name="configuration-of-the-pos-data-source"></a>"pos" データ ソースの構成
 
@@ -766,7 +786,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 | 物理的測定データ ソース | 物理的測定 | 引当データ ソースで使用可能 | 引当計算メジャーで使用可能 |
 |---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+| `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
 #### <a name="reservation-hierarchy"></a>引当階層
 
@@ -778,35 +798,5 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | `LocationId` | 2 |
 | `ColorId` | 3 |
 | `SizeId` | 4 |
-| `StyleId` | 5 |
-| `BatchId` | 6 |
-| `SerialId` | 7 |
-| `StatusId` | 8 |
-| `LicensePlateId` | 9 |
-| `WMSLocationId` | 10 |
-| `WMSPalletId` | 11 |
-| `ConfigId` | 12 |
-| `VersionId` | 13 |
-| `CustomDimension1` | 14 |
-| `CustomDimension2` | 15 |
-| `CustomDimension3` | 16 |
-| `CustomDimension4` | 17 |
-| `CustomDimension5` | 18 |
-| `CustomDimension6` | 19 |
-| `CustomDimension7` | 20 |
-| `CustomDimension8` | 21 |
-| `CustomDimension9` | 22 |
-| `CustomDimension10` | 23 |
-| `CustomDimension11` | 24 |
-| `CustomDimension12` | 25 |
-| `ExtendedDimension1` | 26 |
-| `ExtendedDimension2` | 27 |
-| `ExtendedDimension3` | 28 |
-| `ExtendedDimension4` | 29 |
-| `ExtendedDimension5` | 30 |
-| `ExtendedDimension6` | 31 |
-| `ExtendedDimension7` | 32 |
-| `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262301"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785102"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォームの機能
 
@@ -51,7 +51,7 @@ ms.locfileid: "9262301"
 | サービス要求 | 無効 | 有効 | はい: [セルフサービス展開](../deployment/infrastructure-stack.md) |
 | SharePoint 統合 | 有効 | 有効 | 無効 |
 | 構成マネージャーおよびデータ マネージャー | 無効 | 有効 | 無効 |
-| プロセス データ パッケージ | 無効 | 有効 | はい: データのインポート/エクスポート フレームワーク (DIXF) |
+| プロセス データ パッケージ | 無効 | 有効 | はい: [データのインポート/エクスポート フレームワーク (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | 環境のアップグレード | 無効 | 有効 | はい : [1つのバージョン](../lifecycle-services/oneversion-overview.md) のサービス更新を利用できます。 |
 | インフラストラクチャ見積もりツール | 有効 | 無効 | 無効 |
 | ライセンス サイズ設定 | 有効 | 無効 | 無効 |
@@ -71,10 +71,10 @@ ms.locfileid: "9262301"
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 現在のセキュリティ プロトコルに準拠するため、以下の暗号スイートのリストを削除します。<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **別の機能で置き換えられているか?**   | 2022 年 11 月 30 日から、お客様が利用できるのは、私たちの [標準暗号スイート](/power-platform/admin/server-cipher-tls-requirements)のみです。 この変更は、当社のサーバーと通信するお客様のクライアントやサーバーに影響を与え、当社の標準暗号スイートを遵守していないお客様のサードパーティーの統合に影響を与える可能性があります。 |
+| **別の機能で置き換えられているか?**   | 2023 年 1 月 31 日から、お客様が利用できるのは、私たちの [標準暗号スイート](/power-platform/admin/server-cipher-tls-requirements)のみです。 この変更は、当社のサーバーと通信するお客様のクライアントやサーバーに影響を与え、当社の標準暗号スイートを遵守していないお客様のサードパーティーの統合に影響を与える可能性があります。 |
 | **影響を受ける製品領域**         | 財務と運用アプリ |
 | **配置オプション**              | クラウド展開 |
-| **状態**                         | 非推奨。 顧客は、2022 年 11 月 30 日以前にサーバーをアップグレードする必要があります。 TLS 暗号スイート オーダーの構成についての詳細は、 [トランスポート層セキュリティ (TLS)](/windows-server/security/tls/manage-tls)をご参照ください。  |
+| **状態**                         | 非推奨。 顧客は、2023 年 1 月 31 日以前にサーバーをアップグレードする必要があります。 TLS 暗号スイート オーダーの構成についての詳細は、 [トランスポート層セキュリティ (TLS)](/windows-server/security/tls/manage-tls)をご参照ください。  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>2022 年 6 月に廃止される機能
