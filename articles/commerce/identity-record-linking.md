@@ -2,7 +2,7 @@
 title: ID レコードの顧客 ID への自動リンクを有効にする
 description: この記事では、Microsoft Dynamics 365 Commerce で ID レコードと顧客 ID への自動リンクを有効にする方法について説明します。
 author: BrianShook
-ms.date: 07/21/2021
+ms.date: 11/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 7ebe4637e91475459d96e77e69f20a83111c10b9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8fac9717962a184fcbb6844f45628d6e56d3a8cd
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280287"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762883"
 ---
 # <a name="enable-automatic-linking-of-identity-records-to-customer-accounts"></a>ID レコードの顧客 ID への自動リンクを有効にする 
 
@@ -55,11 +55,13 @@ B2B サイトでは、自動リンクは次のチェックを実行します。
 
 - 法人内の 1 つの顧客レコードのみが一致条件を満たす場合、サインアップしたユーザーは自動的にそのレコードにリンクされます。
 - 法人内に一致条件を満たす顧客レコードがない場合、Commerce はエラー コード **Microsoft_Dynamics_CommerceIdentityNotFound** で **CommerceIdentityNotFound** エラーを生成します。
+    - **CommerceIdentityNotFound** エラーが発生した場合にユーザー向けメッセージを送信するには、Commerce サイト ビルダーでサイトのヘッダー モジュールのフラグメントをを開き、概要ビューでヘッダー モジュールを選択します。 右側のプロパティ ペインで、**顧客が見つからない場合に表示するエラー メッセージ** に、メッセージを入力します (例: 「サインアップに成功しましたが、ビジネス ユーザー レコードが未承認です。 後でもう一度サインインするか、アカウント承認の通知が来てからサインインしてください。」)。 次に、フラグメントを保存して公開します。
 - 法人内の複数の顧客レコードで一致する条件が見つかった場合、Commerce はエラー コード **Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress** で **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** エラーを生成します。
+    - **CommerceIdentityNotFound** エラーが発生した場合にユーザー向けメッセージを送信するには、Commerce サイト ビルダーでサイトのヘッダー モジュールのフラグメントをを開き、概要ビューでヘッダー モジュールを選択します。 右側のプロパティ ペインで、**複数の顧客が見つかった場合に表示するエラー メッセージ** に、メッセージを入力します (例: 「サインアップに成功しましたが、ビジネス ユーザー アカウントに関連した問題があります。 後でもう一度サインインしてください。」)。 次に、フラグメントを保存して公開します。
 
 ## <a name="automatic-linking-on-b2c-sites"></a>B2C サイトでの自動リンク
 
-B2C サイトは、チャネルの作成時に **顧客タイプ** プロパティが「B2B」に設定された、オンライン ストアに接続されている Commerce サイトです。 B2C サイトでは、自動リンク機能は、サインアップに使用された電子メール アドレスを持つ単一の顧客 ID が法人内に存在するかどうかを確認します。
+B2C サイトは、チャネルの作成時に **顧客タイプ** プロパティが「B2C」に設定された、オンライン ストアに接続されている Commerce サイトです。 B2C サイトでは、自動リンク機能は、サインアップに使用された電子メール アドレスを持つ単一の顧客 ID が法人内に存在するかどうかを確認します。
 
 ユーザーの Azure AD B2C ユーザー ID として使用される電子メール アドレスは、法人内のすべての B2C 顧客レコードで検索されます。 Commerce 自動リンク機能は、**個人** タイプの顧客レコードを確認します。
 
@@ -68,6 +70,7 @@ B2C サイトでは、自動リンクは次のチェックを実行します。
 - 法人内の 1 つの顧客レコードのみが一致条件を満たす場合、サインアップしたユーザーは自動的にそのレコードにリンクされます。
 - 法人内に一致条件を満たす顧客レコードがない場合、Commerce は ID プロバイダー レコードにリンクされた新しい顧客レコードを生成します。 
 - 法人内の複数の顧客レコードが一致条件を満たす場合、Commerce はエラー コード **Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress** で **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** エラーを生成します。
+    - **CommerceIdentityNotFound** エラーが発生した場合にユーザー向けメッセージを送信するには、Commerce サイト ビルダーでサイトのヘッダー モジュールのフラグメントをを開き、概要ビューでヘッダー モジュールを選択します。 右側のプロパティ ペインで、**複数の顧客が見つかった場合に表示するエラー メッセージ** に、メッセージを入力します (例: 「サインアップに成功しましたが、ビジネス ユーザー アカウントに関連した問題があります。 後でもう一度サインインしてください。」)。 次に、フラグメントを保存して公開します。
 
 > [!NOTE]
 > - Commerce 通知モジュールを拡張して、エラー条件が満たされた場合にユーザーにエラー メッセージを表示することができます。

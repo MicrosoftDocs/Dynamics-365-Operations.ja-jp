@@ -2,24 +2,19 @@
 title: 評価とレビューの概要
 description: この記事では、Microsoft Dynamics 365 Commerce の評価とレビューについて説明します。
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: ''
-ms.search.industry: ''
-ms.openlocfilehash: 612a3ca480049febac352ed9215ec9de83bbecf6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1f0d3ed5d95ad49cb09cf1f89d0f4c8c07620b92
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269003"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785146"
 ---
 # <a name="ratings-and-reviews-overview"></a>評価とレビューの概要
 
@@ -27,7 +22,7 @@ ms.locfileid: "9269003"
 
 この記事では、Microsoft Dynamics 365 Commerce の評価とレビューについて説明します。
 
-評価とレビューは、他の顧客が製品をどのように認識しているかを知りたい E コマースの顧客にとって非常に重要です。 また、消費者が購買決定を行うのに役立ちます。 Dynamics 365 Commerce において、評価とレビューのソリューションにより、小売業者は製品に対する顧客からのレビューと評価を把握できます。 小売業者は、E コマース Web サイト間での平均評価とレビュー情報を表示することができます。
+評価とレビューは、他の顧客が製品をどのように認識しているかを知りたい eコマースの顧客にとって非常に重要です。 また、消費者が購買決定を行うのに役立ちます。 Dynamics 365 Commerce において、評価とレビューのソリューションにより、小売業者は製品に対する顧客からのレビューと評価を把握できます。 小売業者は、eコマース Web サイト間での平均評価とレビュー情報を表示することができます。
 
 平均評価情報は、販売時点管理 (POS) およびコール センター チャネルで表示されます。 したがって、販売担当者はユーザーが決定するためにそれを使用することができます。 評価とレビューは、小売業者が製品の品質を向上させるために使用するフィードバック メカニズムとしても機能するので、売上が増加します。
 
@@ -42,6 +37,11 @@ Dynamics 365 Commerce の評価とレビュー ソリューションは、Azure 
 評価とレビュー ソリューションは、製品リスト、検索結果、製品の詳細ページ、およびその他の場所に評価の概要を表示するウィジェットを提供します。 ウィジェットは完全なレビュー リストを表示し、また並べ替えやフィルタ処理のオプションも提供します。
 
 また、評価とレビュー ソリューションは、評価とレビュにインサイトを与えるためのメトリックス セットを含む、ビジネス インテリジェンス (BI) テンプレートも提供します。 さらなる分析のために、評価とレビュー データをエクスポートすることができます。
+
+次のビデオでは、Dynamics 365 Commerce の評価とレビュー機能の概要を示します 。
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
 
 ## <a name="additional-resources"></a>追加リソース
 

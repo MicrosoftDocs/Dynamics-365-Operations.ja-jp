@@ -2,25 +2,25 @@
 title: 財務期間終了ワークスペース
 description: この記事は、財務期間終了ワークスペースおよび関連するコンフィギュレーションの概要を提供します。
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865715"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780045"
 ---
 # <a name="financial-period-close-workspace"></a>財務期間終了ワークスペース
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865715"
 
 この記事は、**財務期間終了** ワークスペースおよび関連する構成の概要を提供します。
 
-財務期間終了ワークスペース
+## <a name="financial-period-close-workspace"></a>財務期間終了ワークスペース
 
 **財務期間の終了** ワークスペースは、会社、エリア、人員に対する、自分の財務決算処理を追跡することができます。 **財務期間の終了** ワークスペースのビューに応じて、決算スケジュールに対するすべてのタスクおよび状態、または自分に割り当てられたタスクのみを表示することができます。 
 
@@ -101,7 +101,7 @@ ms.locfileid: "8865715"
 
 また、決算スケジュールと関連付けられる会社を定義する必要があります。 テンプレートのタスクが複数の会社に割り当てられている場合、別のタスクが決算スケジュールにありテンプレートのタスクに割り当てられている各会社に対して作成されます。 
 
-決算スケジュールが完了した後に、そのための **終了済** オプションを選択します。 タスクの履歴は、**すべての財務期間終了タスク** リスト ページで引き続き使用できますが、決算スケジュールは、ワークスペースから削除されます。 決算スケジュールが **終了済** とマークされた後には、それにタスクを追加したり、タスクを編集または削除したりすることはできません。
+決算スケジュールが完了した後に、**終了済** オプションを選択します。 タスクの履歴は、**すべての財務期間終了タスク** リスト ページで引き続き使用できますが、決算スケジュールは、ワークスペースから削除されます。 決算スケジュールが **終了済** とマークされた後には、それにタスクを追加したり、タスクを編集または削除したりすることはできません。
 
 
 

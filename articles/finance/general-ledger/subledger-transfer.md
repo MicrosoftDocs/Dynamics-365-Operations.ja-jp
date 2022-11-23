@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a53b7834271355aaf11c13c3f1886257a97b1da8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7ef93b81ce37128f7ff400eb4034ffea01756038
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068993"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779856"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>総勘定元帳への補助元帳の転送
 
@@ -35,7 +35,7 @@ ms.locfileid: "9068993"
 - **非同期** – 総勘定元帳への補助元帳勘定項目の転送が直ちにスケジュールされます。 総勘定元帳伝票は、リソースがサーバー上で要求を処理できるようになるとすぐに記録されます。
 - **スケジュール済バッチ** – 転送する必要がある補助元帳勘定仕訳が、総勘定元帳の処理キューに追加されます。 キュー内の仕訳は、受信した順序で処理されます。 リソースがサーバー上でバッチ ジョブを処理できる場合、各総勘定元帳伝票は予定時刻に勘定を更新します。
 
-バージョン 10.0.8 では、**非同期** オプションのパフォーマンスを向上させるための改良が加えられました。 この機能は、機能名 **総勘定元帳への補助元帳の転送パフォーマンスの最適化** で有効にできます。
+**非同期** オプションのパフォーマンスを向上させるための改良が加えられました。 この機能は、機能名 **総勘定元帳への補助元帳の転送パフォーマンスの最適化** で有効にできます。
 
 補助元帳バッチの非同期転送の機能により、補助元帳から総勘定元帳へのデータの転送が向上します。 一連の小さなトランザクションをグループ化し、グループ内でトランザクションを転送することで、トランザクションの処理効率が向上します。 トランザクションをグループ化すると、バッチ サーバーのリソースが効率的に使用できます。
 

@@ -2,7 +2,7 @@
 title: Adyen 向け Dynamics 365 Payment Connector の概要
 description: この記事では、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
-ms.date: 10/27/2022
+ms.date: 11/16/2022
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -12,13 +12,12 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 931fc69cda8daa2e06b6f1155fbf0369fd2bca55
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: 6c819e8cf9f5dcb7895ac2633decf0a925c08f2d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728261"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9784995"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Adyen 向け Dynamics 365 Payment Connector の概要
 
@@ -96,6 +95,11 @@ ms.locfileid: "9728261"
 
 ### <a name="supported-payment-terminals"></a>サポートされる支払端末
 Adyen 向け Dynamics 365 Payment Connector はデバイスに依存しない [Adyen 支払端末 API](https://www.adyen.com/blog/introducing-the-terminal-api) を活用します。 このアプリケーション プログラミング インターフェイス (API) がサポートするすべての支払端末をサポートします。 サポート対象の支払端末の完全な一覧については、[Adyen POS 端末](https://www.adyen.com/pos-payments/terminals)ページを参照してください。
+
+次のビデオでは、Adyen Castles SE1 Android 支払端末の機能について説明します。
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bKeM]
 
 ### <a name="supported-payment-instruments"></a>サポートされる支払機器
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: bfc1c2021387ed35e6ccb513167e896eddef2eaf
+ms.sourcegitcommit: ea79bf014bbf495ac8e28db29502c8bd85a75f32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752723"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9759603"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>電子申告を使用した詳細な口座調整インポートの設定
 
@@ -37,6 +37,9 @@ ms.locfileid: "9752723"
 5. コンフィギュレーション リストで、**詳細な口座調整明細書モデル \> ABR BAI2 形式** を見つけます。
 6. **BAI2** 形式を選択します。
 7. **バージョン** クイック タブで、最新のバージョンを選択して、**インポート** を選択します。
+
+>[!NOTE]
+>後日、**BAI2 の口座取引明細書モデル** は廃止される予定です。 
 
 ## <a name="set-up-the-bank-statement-format"></a>口座取引明細書の形式の設定
 

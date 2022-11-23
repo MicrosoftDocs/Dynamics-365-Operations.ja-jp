@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 76c45133091a86da773d7f63addd460abd92aae7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4525534f906322c7fe4c232f0f6da5b308829087
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868355"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775218"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>請求書および買掛金勘定の重要データの監査
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868355"
 
 発注書の商品またはサービスに対する請求書を仕入先から受け取ったときに、請求書の支払を承認する前に商品またはサービスをすでに受け取っていることが、業務プロセスで要求されている場合があります。 始める前に、[請求書照合] コンフィギュレーション キーが選択されていることを確認します。 
 
-**買掛金勘定パラメーター** のページで、[請求書照合の検証を有効にする] オプションがオンで、**相違のある請求書の転記** フィールドが **承認の要求** に設定され、 **明細行照合ポリシー** が **スリーウェイ マッチング** に設定されていることを確認してください。
+**買掛金勘定パラメーター** ページで、**請求書照合の検証を有効にする** オプションがオンで、**相違のある請求書の転記** フィールドが **承認の要求** に設定され、**明細行照合ポリシー** フィールドが **スリーウェイ マッチング** に設定されていることを確認してください。
 
 この手順では、USMF というデモ会社を使用します。 買掛金勘定マネージャーまたは会計マネージャーのロールでは、次の手順を実行します。
 

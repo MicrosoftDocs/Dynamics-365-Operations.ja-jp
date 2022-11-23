@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: debf8ca47666252633e67e2592acd5a4e4122403
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109921"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778686"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>仕入先請求書の受領記録および入庫済数量との照合
 
@@ -32,7 +32,7 @@ ms.locfileid: "8109921"
 
 
 ## <a name="create-a-purchase-order"></a>発注書の作成
-1. [すべての発注書] に移動します。
+1. **すべての発注書** に移動します。
 2. **新規** をクリックします。
 3. **仕入先** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 4. **仕入先口座** フィールドに値を入力します。

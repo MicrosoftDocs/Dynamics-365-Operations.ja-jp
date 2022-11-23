@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715500"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780518"
 ---
 # <a name="correct-a-free-text-invoice"></a>自由書式の請求書を訂正
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715500"
 
 この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。
 
-転記済みの自由書式の請求書を修正するには、転記された自由書式の請求書を開きます。 **請求書** ページで、**キャンセル** を選択してから、**請求書の修正** を選択します。 理由コードを選択し、コメントを追加して、および新しい訂正請求書の日付を選択します。 訂正請求書を変更して、転記できます。 
+すでに転記された自由書式の請求書を修正するには: 
+1. 転記済みの自由書式の請求書を開きます。 
+2. **請求書** ページで、**キャンセル** を選択してから、**請求書の修正** を選択します。 
+3. 理由コードを選択し、コメントを追加して、および新しい訂正請求書の日付を選択します。
+4. 訂正請求書を変更して、転記できます。 
 
 訂正請求書を転記すると、キャンセル請求書が元の請求金額と一致する貸方金額に対して作成されます。 したがって、元の請求書とキャンセル請求書の合計残高が 0 (ゼロ) になります。 キャンセル請求書が元の請求書に対して決済されます。 
 

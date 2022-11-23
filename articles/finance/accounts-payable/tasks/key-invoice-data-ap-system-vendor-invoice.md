@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ad75439bf3dfa1ed33e35fa9cfee153012e9f60
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4c441d197957674d68c4c92b454a9dca91d76ea0
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716806"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775191"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>仕入先請求書を使用した AP の主請求書データ
 
@@ -68,7 +68,10 @@ ms.locfileid: "8716806"
 17. **単価** フィールドに数値を入力します。 単価が一致したので、ステータスは「成功」に更新されます。 不一致を許容するポリシーの場合、または照合が警告だけの場合、請求書は転記できます。  
 18. ページを閉じます。
 19. **転記** をクリックします。
-20. フォームを閉じます。 発注書が受入済未請求として一覧に現れないことに注意してください。  
+20. ページを閉じます。 
+
+>[!Note] 
+>発注書は、受入済未請求として一覧に表示されなくなりました。  
 
 
 

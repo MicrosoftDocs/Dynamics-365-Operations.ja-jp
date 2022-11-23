@@ -2,7 +2,7 @@
 title: PDF ビューアを使用した PDF ドキュメントのプレビュー
 description: この記事では、ビジネス ドキュメントを表示するにあたり、埋め込み PDF プレビュー オプションを使用する方法について説明します。
 author: RichdiMSFT
-ms.date: 07/22/2020
+ms.date: 11/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1dcab1f32da69faca69f3a2d23c797b71618a3da
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 0d0094ec4960120901ad74cca4cbee97e9612a13
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205874"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762884"
 ---
 # <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用した PDF ドキュメントのプレビュー
 
@@ -45,6 +45,7 @@ PDF プレビュー エクスペリエンスは、既定では [セルフサー�
 - プリンターのドロップダウンメニューから、ローカル接続されている機器を選択することができます。 ここで表示されるリストには、サービスを通じて接続されるネットワークプリンターは含まれません。
 - ドキュメントは組み込みツールバーのアクションを使用してローカルデバイスにダウンロードされます。
 - PDF以外の形式のドキュメントを作成するには、 **印刷先** オプションを使用します。
+- **レポート PDF ファイルのユーザー補助機能を有効にする** 機能フラグを使用すると、PDF ファイルを利用できる/タグ付けされた PDF ファイルを表示できます。PDF ファイルのサイズは大きくなりますが、スクリーン リーダーや他の支援技術で読み取りも移動もしやすくなります。 既定はオフです。 
 
 ## <a name="feature-limitations"></a>機能の制限
 埋め込み PDF ビューアー エクスペリエンスでは、ドキュメントの印刷出力と完全に一致する終了済ドキュメントが提供されます。  受信者はこれらのドキュメントを変更できないため、業務運営に適した形式になります。  ただし、終了済形式のため、HTML プレゼンテーションと比較すると画面上のドキュメントの対話性がはるかに低くなります。  埋め込み PDF ビューアーを使用してドキュメントをプレビューする場合、次のエンド ユーザー機能はサポートされません。

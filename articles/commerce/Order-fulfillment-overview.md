@@ -1,35 +1,37 @@
 ---
 title: 店舗注文のフルフィルメント
-description: この記事では、店舗注文のフルフィルメントにおける概要を説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce での店舗注文のフルフィルメントにおける概要を説明します。
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854981"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785075"
 ---
 # <a name="store-order-fulfillment"></a>店舗注文のフルフィルメント
 
 [!include [banner](includes/banner.md)]
+
+この記事では、Microsoft Dynamics 365 Commerce での店舗注文のフルフィルメントにおける概要を説明します。
 
 多くの小売業者は、注文する店舗を有効化することで、注文のフルフィルメントを最適化したいと考えています。 店舗レベルでの注文のフルフィルメントは、特定の店舗の過剰在庫のシナリオを軽減するために役立ちます。また、店舗が余分な能力を持っているか、店舗が顧客とのより近い輸送距離内に位置する場合に、物流の視点から必要とされる場合があります。 これに対処するために、販売時点管理で統一された注文のフィルフィルメントの操作が利用できます。
 
 特定の店舗でのフィルフィルメントの注文には、注文のヘッダーまたは明細行に店舗の倉庫が指示されます。
 
 販売時点管理での注文フルフィルメントの操作によって、注文を処理するための販売時点管理に、1 つの作業領域が提供されます。 これには、注文の受付、出荷済にマーキング、または店舗での受け取り開始のすべてが含まれます。
+
+次のビデオには、Dynamics 365 Commerce の店舗フルフィルメント機能の概要とデモが含まれます。
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>販売時点管理の統一された注文フルフィルメントへのアクセス
 

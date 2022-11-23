@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713674"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775302"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>顧客の損金処理仕訳帳の作成
 
@@ -48,9 +48,9 @@ ms.locfileid: "8713674"
 7. **ナビゲーション ウィンドウ > モジュール > 総勘定元帳 > 仕訳入力 > 一般仕訳帳** の順に移動します。
 8. 損金処理を含む仕訳帳の仕訳帳バッチ番号を選択します。 1 つの明細行は、顧客残高を取り消すために作成されます。 1 つ以上の明細行は、損金処理勘定に損金処理を転記するために作成されます。  
 9. ページを閉じます。
-10. ページを閉じます。
 
-## <a name="write-off-transactions-from-the-collections-form"></a>回収フォームのトランザクションを損金処理します。
+
+## <a name="write-off-transactions-from-the-collections-page"></a>回収ページからトランザクションを損金処理する
 1. **与信および回収 > 回収 > 指定の期間に達している残高** の順に移動します。
 2. 損金処理するトランザクションがある顧客の名前を選択します。 たとえば、「Cave Wholesales (US-004)」を選択します。
 3. 最初のトランザクションの行をマークします。
@@ -63,7 +63,7 @@ ms.locfileid: "8713674"
 10. **総勘定元帳 > 仕訳入力 > 一般仕訳帳** の順に移動します。
 11. 損金処理を含む仕訳帳の仕訳帳バッチ番号を選択します。 1 つの明細行は、顧客残高を取り消すために作成されます。 1 つ以上の明細行は、損金処理勘定に損金処理を転記するために作成されます。  
 12. ページを閉じます。
-13. ページを閉じます。
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>[未処理の顧客請求書] ページの請求書の損金処理
 1. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 請求書 > 未処理の顧客請求書** の順に移動します。

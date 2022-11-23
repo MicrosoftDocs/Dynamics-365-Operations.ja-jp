@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Human Resources 10.0.31 (2023 年 1 月) の新機能および変更された機能
+title: Dynamics 365 Human Resources 10.0.31 の新機能および変更された機能 (2023 年 2 月)
 description: この記事では、Microsoft Dynamics 365 Human Resources バージョン 10.0.31 プレビュー リリースの新機能または変更された機能について説明します。
 author: twheeloc
 ms.date: 10/12/2022
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 414ac43665e4ad5bd8bbfd204899049ff2586dd7
-ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
+ms.openlocfilehash: afbe618539ff04e2f33e5af204dce6d6f6fd639b
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9711569"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775269"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-human-resources-10031-january-2023"></a>Dynamics 365 Human Resources 10.0.31 (2023 年 1 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-human-resources-10031-february-2023"></a>Dynamics 365 Human Resources 10.0.31 の新機能および変更された機能 (2023 年 2 月)
 
 [!include [banner](../../includes/preview-banner.md)]
 

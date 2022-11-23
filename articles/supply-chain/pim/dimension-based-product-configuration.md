@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8811d4a43dba05e63b270893600a622527834901
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ba11a561f320a7f4e787e4fe3f4e6f4fb88bbfb
+ms.sourcegitcommit: ca73177dedf40df16860eaf88b1c701c61992028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982930"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9754113"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>分析コード ベース製品コンフィギュレーションの概要
 
@@ -74,7 +74,7 @@ BOM は、分析コード ベースの製品コンフィギュレーションの
 
 分析コード ベースのコンフィギュレーション テクノロジは、限られた可変性の製品に使用されます。また、標準的な製品分析コード サイズ、色、スタイル、およびコンフィギュレーションの組み合わせは、特定の製品バリアントを識別するのに不適切です。 例として、フレームの高さ、ホイールのサイズ、ブレーキ タイプ、およびさまざまなギヤを含む自転車が考えられます。
 
-### <a name="next-step"></a>次のステップ 
+### <a name="next-step"></a><a name="sequence"></a>次のステップ
 
 以下の 8 つのタスク ガイドは、実行する必要のある順番で一覧表示されています。 
 

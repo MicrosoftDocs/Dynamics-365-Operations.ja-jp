@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733458"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760365"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources 顧客の移行
 
@@ -38,13 +38,12 @@ ms.locfileid: "9733458"
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Dataverse 環境のバックアップ (サンドボックス)
 
-1. 任意だが推奨: 人事部の本番環境のコピーを使用して、既存の人事部サンドボックス環境を更新します。
-2. Power Platform 管理センターを使用して [新規 Dataverse 環境を作成](/power-platform/admin/create-environment#create-an-environment-with-a-database)します。
+ - 任意だが推奨: 人事部の本番環境のコピーを使用して、既存の人事部サンドボックス環境を更新します。
+ - Power Platform 管理センターを使用して 新規 Dataverse 環境を作成します。
+ - スタンドアロンの Human Resources アプリにリンクされている既存の Dataverse 環境を、前の手順で作成した環境にコピーします。
 
-    > [!NOTE]
-    > データベースを追加する場合は、**Dynamics 365アプリ** を有効にするオプションが **はい** に設定してください。
-
-3. スタンドアロンの人事アプリにリンクされている既存の環境を、前の手順で[作成した Dataverse 環境にコピー](/power-platform/admin/copy-environment)します。
+> [!NOTE]
+> データベースを追加する場合は、**Dynamics 365アプリ** を有効にするオプションが **はい** に設定してください。 詳細については、[Power Platform 環境を準備する](hr-cust-migration.md#prepare-a-power-platform-environment) を参照してください
 
 ### <a name="dataverse-capacity"></a>Dataverse のキャパシティ
 
@@ -89,9 +88,9 @@ ms.locfileid: "9733458"
 #### <a name="prepare-a-power-platform-environment"></a>Power Platform 環境の準備
 
 > [!NOTE]
-> この手順は、移行前の環境でのみ使用できます。 運用環境を移行した場合、運用環境に付属する既存の Power Platform 管理センターの環境は引き継がれます。
+> この手順は、移行前の環境でのみ使用できます。 運用環境を移行した場合、運用環境に付属する既存の Power Platform 管理センターの環境は引き継がれます。 データベースを追加する際、**Dynamics 365 アプリを有効にする** ボタンが **はい** に設定されていることを確認します。 
 
-- Power platform の管理センターで、サンドボックスの移行に使用する [Power platform 環境](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center)を作成するか、既存の環境を選択します。
+- Power platform 管理センターで、サンドボックスの移行に使用する [データベースがある環境を作成](/power-platform/admin/create-environment#create-an-environment-with-a-database) するか、既存の環境を選択します。
 - [環境をコピー](/power-platform/admin/copy-environment) して、マッピングに使用する Power Platform 環境を更新します。
 
 #### <a name="migrate-the-sandbox-environment"></a>サンドボックス環境の移行

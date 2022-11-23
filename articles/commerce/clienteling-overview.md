@@ -2,28 +2,23 @@
 title: クライアンテリングの概要
 description: この記事では、店舗のアプリケーションで使用できる新しいクライアンテリングの機能の概要を提供します。
 author: bebeale
-ms.date: 02/01/2021
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "260624"
 - intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc7daeb27c25efa21fd34b0456af8892074056d5
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885614"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785048"
 ---
 # <a name="clienteling-overview"></a>クライアンテリングの概要
 
@@ -31,6 +26,11 @@ ms.locfileid: "8885614"
 
 
 多くの小売業者、特にハイエンドの専門小売業者は、店員に主な顧客との長期的な関係を形成させます。 店員は、顧客の好き嫌い、購買履歴、製品の好み、記念日や誕生日などの重要な日付について知っていることが期待されます。 店員はそのような情報をキャプチャし、必要なときに簡単に情報を見つけられる必要があります。 この情報が 1 つのビューで使用可能になると、店員は特定の条件に一致する顧客を簡単にターゲットにすることができます。 たとえば、ハンドバッグを購入したい顧客や、誕生日、記念日などの生活の重要なイベントが近づいている顧客などを探すことができます。
+
+次のビデオでは、Dynamics 365 Commerce でのクライアンテリングのシナリオ例について説明します。
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSP]
 
 ## <a name="client-book"></a>クライアント ブック
 

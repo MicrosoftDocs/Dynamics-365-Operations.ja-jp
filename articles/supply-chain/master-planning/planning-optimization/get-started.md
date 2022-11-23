@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
-ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
+ms.openlocfilehash: 4b986461e90b356580da8a136c1da95e7dc64696
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2022
-ms.locfileid: "9740332"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780412"
 ---
 # <a name="get-started-with-master-planning"></a>マスター プランを開始する
 
@@ -31,7 +31,7 @@ Supply Chain Management のマスタ プランは、Dynamics 365 Supply Chain Ma
 
 ## <a name="availability"></a>使用可能性
 
-計画の最適化は現在、次の Azure の地域で利用可能です: 米国、カナダ、ブラジル、ヨーロッパ、フランス、英国、オーストラリア、アジア太平洋、日本、およびインド。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。 Azure の地域および関連地域の詳細については、[Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) の地域 を参照してください。
+計画の最適化は現在、次の Azure の地域で利用可能です: 米国、カナダ、ブラジル、ヨーロッパ、フランス、英国、ノルウェー、スイス、オーストラリア、アジア太平洋、日本、およびインド。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。 Azure の地域および関連地域の詳細については、[Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) の地域 を参照してください。
 
 計画の最適化では、 Dynamics 365 Supply Chain Management の社内設置型の配置に対応していないことに注意してください。
 

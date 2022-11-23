@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
-ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9702198"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764242"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20370"></a>Version 2.0.37.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+- ユーザー設定を追加しました。ここでは、アプリで製品写真が表示される場所 (カードとステップ ヘッダーの両方、ステップ ヘッダーのみ、または全く表示されない) を選択できます。 
+- ステップ バナーおよび数量入力に関するデータ入力を、その他のコンテンツに対してより大きくする必要があるサイズに減らすことで、カードの詳細画面レイアウトを改善しました。 
+- Honeywell Thor デバイスで実行する際のユーザー インターフェイスを改善しました。 
+- 改良された全画面モード (ハードウェア キーボードを使用するデバイスにのみ適用されます)。 
+- 詳細カードおよびカスタム ページを優先順位またはサブ優先順位 (DataPriority または DisplaySubPriority) で並べ替えたときにの結果を改善しました。 
+- 他の言語のサポートを追加しました。 
+- 安定性が改善されました。 
+- 複数の画像とアイコンを改善しました。 
 
 ## <a name="version-20350"></a>Version 2.0.35.0
 

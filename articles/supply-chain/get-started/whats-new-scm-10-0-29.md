@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d12932f35b3b451577d38948f60bc3a73c10e2a0
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 8f6ba18096cffe907c339ad525c99535bc5ee568
+ms.sourcegitcommit: 7745c4bd3ab3aace4b4cb814eaf0cfdbae4a0cbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714836"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9784694"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10029-october-2022"></a>Dynamics 365 Supply Chain Management 10.0.29 (2022 年 10 月) の新機能や変更された機能
 
@@ -31,9 +31,9 @@ ms.locfileid: "9714836"
 
 次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに追加された機能を含めるために、この記事を更新することがあります。
 
-| 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
+| 機能領域 | フィーチャー | 詳細 | 次により有効化 |
 |---|---|---|---|
-| 在庫および物流 | [在庫可視化の WMS 品目の配賦と引当](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | 間もなく公開 | 既定で有効 |
+| 在庫および物流 | [Inventory Visibility の WMS 品目の配賦と引当](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | [WMS 品目に対応した Inventory Visibility](../inventory/inventory-visibility-whs-support.md) | 既定で有効 |
 | 在庫および物流 | [合理化された手持在庫リストの事前読み込み](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Inventory Visibility アプリを使用する](../inventory/inventory-visibility-power-platform.md) | サービス コンフィギュレーションによって有効 |
 | 受注生産供給の自動化 | [受注生産供給の自動化](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [受注生産供給の自動化](../master-planning/make-to-order-supply-automation.md) | 機能管理:<br>*受注生産供給の自動化* |
 | 計画 | [DDMRP の詳細な分析情報の表示と適用](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [需要主導型材料所要量計画の概要](../master-planning/planning-optimization/ddmrp-overview.md) | 機能管理:<br>*(プレビュー) 計画最適化のための DDMRP* |

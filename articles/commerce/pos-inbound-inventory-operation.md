@@ -2,26 +2,19 @@
 title: POS でのインバウンド在庫操作
 description: この記事では、販売時点管理 (POS) の入庫在庫操作の機能について説明します。
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/16/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.9
-ms.custom: ''
-ms.assetid: ''
-ms.search.industry: Retail
-ms.search.form: ''
-ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 7999c8409c71c7ccf9c1d44bd86ddca6f5e8f6ff
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288355"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785021"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>POS でのインバウンド在庫操作
 
@@ -31,6 +24,11 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 またはそれ以降で
 
 > [!NOTE]
 > Commerce バージョン 10.0.10 以降では、発注書および転送オーダーに対する店舗在庫の入荷に関連する POS アプリケーションの新しい機能が、**入庫操作** POS 操作に追加されます。 現在、POS でピッキングとおよび入荷の操作を使用している場合は、その操作から新しい入荷および出庫操作に移行するための戦略を開発することをお勧めします。 ピッキングと入荷の操作は製品から削除されませんが、機能上またはパフォーマンス上の観点から、バージョン 10.0.9 以降の投資は予定されていません。
+
+次のビデオには、Dynamics 365 Commerce での店舗の在庫業務処理と機能の概要とデモが含まれます。
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bMSx]
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>前提条件: 非同期ドキュメント フレームワークのコンフィギュレーション
 

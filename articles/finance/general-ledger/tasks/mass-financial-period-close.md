@@ -2,7 +2,7 @@
 title: 財務期間一括決算
 description: この記事では、保留中期間の設定方法、または期間の完全な終了方法、または複数の法人を一度に扱う方法を示します。
 author: aprilolson
-ms.date: 08/16/2019
+ms.date: 11/16/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8a85d512842b27f2d74507be16a8f2819f483e0d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872444"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779829"
 ---
 # <a name="mass-financial-period-close"></a>財務期間一括決算
 
@@ -26,7 +26,11 @@ ms.locfileid: "8872444"
 
 この記事では、保留中期間の設定方法、または期間の完全な終了方法、または複数の法人を一度に扱う方法を示します。 またこのタスクは、特定のモジュールに転記されたユーザー グループを制限する方法を示します。
 
-1. ナビゲーション ウィンドウで、**一般会計 > 決算期間 > 元帳カレンダー** の順に移動します。 表示された法人の一覧は、ページで選択した会計カレンダーに依存することに注意してください。 選択された会計カレンダーを使用する法人のみが表示されます。
+1. ナビゲーション ウィンドウで、**一般会計 > 決算期間 > 元帳カレンダー** の順に移動します。 
+
+>[!NOTE]
+> 表示された法人の一覧は、ページで選択した会計カレンダーに依存します。 選択された会計カレンダーを使用する法人のみが表示されます。
+
 2. **編集** を選択します。
 3. 状態を変更する期間を選択します。
 4. 状態を更新する法人を選択します。 グリッドの左上のチェック マークを選択することにより、すべての法人をすばやく選択できます。  

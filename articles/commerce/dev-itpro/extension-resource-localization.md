@@ -2,7 +2,7 @@
 title: Commerce 拡張リソースおよびラベル ファイルのローカライズ
 description: この記事では、POS UI ラベル、POS メッセージ、入庫ラベル、および Commerce Scale Unit または CRT のエラー メッセージを変更する方法について説明します。
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: josaw
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
 ms.search.industry: retail
-ms.openlocfilehash: b117e9d0bdf3298d8ce30dc17ffe04125b3f16c1
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 6c1c6e5f4dfe8557a6294edc04409e7a93ba8688
+ms.sourcegitcommit: 7745c4bd3ab3aace4b4cb814eaf0cfdbae4a0cbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9267570"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9784677"
 ---
 # <a name="localize-commerce-extension-resources-and-label-files"></a>Commerce 拡張リソースおよびラベル ファイルのローカライズ
 
@@ -51,7 +51,7 @@ ms.locfileid: "9267570"
 4. アクション ウィンドウで、**保存** を選択します。
 5. **Retail とコマース &gt; Retail とコマース IT &gt; 配送スケジュール** の順に移動します。
 6. **レジスター** (**1090**) ジョブを選択し、**今すぐ実行** を選択します。
-7. データをプッシュ後、クラウド POS または Modern POS でログインし、変更済のラベルを表示します。
+7. データをプッシュした後、ローカライズされた文字列のキャッシュが更新されるまで最大で 1 時間待つ必要があります。 文字列キャッシュの更新が完了したら、サインアウトして、クラウド POS、Modern POS、または Store Commerce に再度サインインして、変更したラベルを表示します。 Retail Server を再起動して、キャッシュの更新を強制することもできます。 
 
 ### <a name="get-the-text-id-for-pos-strings"></a>POS 文字列のテキスト ID を取得します
 

@@ -2,7 +2,7 @@
 title: 会計年度の決算
 description: この手順では、残高を新しい会計年度に振り替える年度末決算処理について説明します。
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb36cb856d191d64561060e7de4a1f9fd947882
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4d52e6789a96defaf1d0132fe97fc183a05af207
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717477"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779815"
 ---
 # <a name="close-the-fiscal-year"></a>会計年度の決算
 
@@ -40,7 +40,7 @@ ms.locfileid: "8717477"
 
 5. **会計年度の状態を完全に終了する** オプションで、**はい** または **いいえ** を選択します。
 
-**はい** と設定している場合、会計年度のステータスは完全に閉じるに設定されます。 完全に終了した年度は再度開くことができないため、このオプションを **いいえ** に設定することを推奨します。  
+**はい** に設定している場合、会計年度のステータスは **完全に終了** に設定されます。 完全に終了した年度は再度開くことができないため、このオプションを **いいえ** に設定することを推奨します。  
 
 6. **伝票番号を年度末決算時に転記する必要がある** オプションで、**はい** または **いいえ** を選択します。
 
