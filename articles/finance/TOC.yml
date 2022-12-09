@@ -1606,7 +1606,9 @@
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
                         - name: ポーランド用電子請求の使用を開始する
                           href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: サウジアラビア用電子請求の使用を開始する
+                        - name: サウジアラビア用電子請求の使用を開始する - フェーズ 1
+                          href: localizations/e-invoicing-sa-get-started-phase-one.md
+                        - name: サウジアラビア用電子請求の使用を開始する - フェーズ 2
                           href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
                         - name: サウジアラビアの電子請求のオンボード
                           href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance

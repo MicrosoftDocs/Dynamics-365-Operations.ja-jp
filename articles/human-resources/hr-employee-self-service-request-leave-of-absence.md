@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51c6cb7c5706bb4bd7080c7f7d679e49771443d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6c98246e94670dd5f882fcbbd1f269e57f66faf
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869839"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805290"
 ---
 # <a name="request-a-leave-of-absence"></a>休暇を申請する
 
@@ -51,6 +51,22 @@ ms.locfileid: "8869839"
 1. **従業員セルフサービス** ワークスペースで、**休暇残日数** タイルの **詳細** (...) を選択します。
 
 2. 休暇申請を表示するには、**休暇申請の表示** を選択します。
+
+## <a name="update-a-leave-of-absence-request"></a>休暇申請の更新
+
+1. **従業員セルフ サービス** ワークスペースで、**休暇** タイルの **詳細 (...)** を選択します。
+2. 更新する休暇申請を選択し、**休暇の更新** を選択します。
+3. **終了日** フィールドで、必要に応じて値を更新し、休暇を延長または短縮します。
+4. 終了日を確認した場合は、**終了日の確認** オプション を **はい** に設定します。
+5. **終了日の確認** オプションが **はい** に設定された後、職場復帰通知をアップロードできます。 次に、チェックボックスを選択して、職場復帰通知がアップロード済みであることを確認します。
+6. **送信** を選択して、休暇申請を更新します。
+
+## <a name="cancel-a-leave-of-absence-request"></a>休暇申請のキャンセル
+
+1. **従業員セルフ サービス** ワークスペースで、**休暇** タイルの **詳細 (...)** を選択します。
+2. キャンセルする休暇申請を選択し、**休暇の更新** を選択します。
+3. **休暇のキャンセル** オプションを **はい** に設定します。
+4. **送信** を選択して、休暇申請をキャンセルします。
 
 ## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>他のシステムまたは古いシステムからの休暇申請のインポート
 

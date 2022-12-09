@@ -2,7 +2,7 @@
 title: 顧客の前払
 description: この記事では、顧客の前払 (顧客預金とも呼ばれる) の設定および処理方法について説明します。
 author: twheeloc
-ms.date: 04/30/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88773067c472471fb75167712268d1076c1738a5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f085d45895530aaf0a16439f62dfc13b27da84b6
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861563"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799436"
 ---
 # <a name="customer-prepayments"></a>顧客の前払
 
@@ -32,7 +32,7 @@ ms.locfileid: "8861563"
 
 1. 前払の顧客転記プロファイルを作成します。
 2. **前払仕訳伝票パラメータを使用して転記** をパラメーター設定します。
-3. 顧客支払仕訳帳を作成し、各行の **前払仕訳帳伝票** チェック ボックスをオンにします。
+3. 顧客支払仕訳帳を作成し、各行の **前払仕訳帳伝票** チェックボックスをオンにします。
 4. 顧客支払仕訳帳を転記します。
 5. 請求書が生成された後、**オープントランザクションの決済** ページを使用して前払を決済します。
 
@@ -82,7 +82,7 @@ ms.locfileid: "8861563"
 1. **ホーム** ダッシュボード で 、**顧客支払** のサイズを選択します。
 2. **顧客トランザクション** セクションの **支払の決済** タブで、決済する支払を検索および選択します。
 3. **トランザクションの決済** を選択します。
-4. 請求書および決済される支払の **マーク** チェック ボックスをオンにします。
+4. 請求書および決済される支払の **マーク** チェックボックスをオンにします。
 5. **投稿** を選択します。
 
 オープン トランザクションの決済方法の詳細については、[決済の概要](/dynamics365/finance/cash-bank-management/settlement-overview) を参照してください。

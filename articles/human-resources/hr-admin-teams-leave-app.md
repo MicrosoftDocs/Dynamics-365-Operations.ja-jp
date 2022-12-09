@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a7ff576efbfeb0c5383a48756fdd7e79f1abdba2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d29802bdf3411c93f20d710e1f26e541e5022d57
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902259"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812189"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams の Human Resources アプリ
 
@@ -113,7 +113,7 @@ Teams の Dynamics 365 Human Resources アプリでは、次の言語がサポ�
 | nl-NL | オランダ語 (オランダ) |
 | pt-BR | ポルトガル語 (ブラジル) |
 | tr-TR | トルコ語 (トルコ) |
-| zh-CN | 中国語 (簡体) |
+| zh-CN | 簡体中国語 |
 
 ## <a name="notes"></a>摘要
 

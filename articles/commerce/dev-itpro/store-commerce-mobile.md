@@ -2,32 +2,33 @@
 title: モバイル プラットフォーム用 Store Commerce アプリ
 description: この記事では、Android および iOS 用の Microsoft Dynamics 365 Commerce Store Commerce アプリの使用を開始する方法について説明します。
 author: stuharg
-ms.date: 10/07/2022
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
-ms.openlocfilehash: 1f07a130629863ebd9d036378436cf360e90ac26
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: dc952698a2a3301aff312e8310c58cbbb9cfe290
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9642341"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815786"
 ---
 # <a name="store-commerce-app-for-mobile-platforms"></a>モバイル プラットフォーム用 Store Commerce アプリ
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 この記事では、Android および iOS 用の Microsoft Dynamics 365 Commerce Store Commerce アプリの使用を開始する方法について説明します。
 
-Android および iOS 用の Dynamics 365 Commerce モバイル アプリにより、小売環境にフル機能モバイル販売時点管理 (POS) デバイスを配置するプロセスがわかりやすく簡単になります。 Store Commerce モバイル アプリは、電話とタブレットのフォーム ファクターに [Windows 用 Store Commerce](store-commerce.md) のすべての機能と利点を提供します。 Store Commerce モバイル アプリは、Apple と Google Play アプリ ストアから直接インストールでき、配置したり更新するための新しいアプリケーション パッケージを開発者が作成する必要はありません。 
+Android および iOS 用の Dynamics 365 Commerce モバイル アプリにより、小売環境にフル機能モバイル販売時点管理 (POS) デバイスを配置するプロセスがわかりやすく簡単になります。 Store Commerce モバイル アプリは、[Windows 用 Store Commerce アプリ](store-commerce.md) のほぼすべての機能と利点を提供し、幅広い iOS および Android のスマートフォンとタブレットで優れたパフォーマンスを発揮します。 Store Commerce モバイル アプリは、Apple と Google Play アプリ ストアから直接インストールでき、配置したり更新するための新しいアプリケーション パッケージを開発者が作成する必要はありません。 
 
 Store Commerce モバイル アプリは、現在の Retail ハイブリッド アプリとのフル機能パリティがあります。 さらに、iOS 用の Store Commerce には、専用のハードウェア ステーションのサポートが含まれるため、iOS デバイスは、共有のハードウェア ステーションを配置せずに、ネットワーク接続された支払ターミナル、レシート プリンター、キャッシュ ドロワーと通信できます。 
 
 > [!IMPORTANT]
-> Windows、Android および iOS 用の Store Commerce アプリは、Dynamics 365 Commerce 用の次世代の POS アプリケーションです。 現在の Modern POS (MPOS) アプリケーションとモバイル用の [Retail ハイブリッド アプリ](hybridapp.md) は、2023 年 10 月に廃止される予定です。 新しいすべての POS の配置に、Store Commerce または Cloud POS (CPOS) を使用することをお勧めします。 既存の顧客は、Retail ハイブリッド アプリから Store Commerce への移行を計画する必要があります。 MPOS と Retail ハイブリッド アプリの廃止スケジュールの詳細については、[Dynamics 365 Commerce の店舗内テクノロジー スタックを最新化する](https://www.microsoft.com/download/details.aspx?id=103896)を参照してください。 
+> Windows、Android および iOS 用の Store Commerce アプリは、Dynamics 365 Commerce 用の次世代の POS アプリケーションです。 Store Commerce アプリでは、機能と性能の完全なパリティを維持しながら、従来のものより多くの改良を提供します。 Microsoft では、2023 年後半に MPOS および Android と iOS の Retail POS ハイブリッド アプリを廃止する予定であり、新しいすべての POS 配置には Store Commerce またはクラウド POS (CPOS) を使用することを推奨しています。 既存の顧客は、Retail ハイブリッド アプリから Store Commerce への移行を計画する必要があります。 詳細については、[Modern POS を Store Commerce に移行する](pos-extension/migrate-mpos-store-commerce.md) を参照してください。 
 
 ## <a name="app-architecture"></a>アプリ アーキテクチャ
 
@@ -51,7 +52,7 @@ Store Commerce モバイル アプリには Dynamics 365 Commerce が必要で�
 Store Commerce モバイル アプリは、Google Play ストアまたは Apple App Store から直接インストールできます。 
 
 - [Android 用 Store Commerce アプリ](https://aka.ms/storecommerceandroid)
-- iOS 用 Store Commerce アプリ (まもなく利用できます)
+- [iOS 用 Store Commerce アプリ](https://aka.ms/storecommerceios)
 
 Android アプリ (.apk) と Apple アプリ (.ipa) パッケージは、Store Commerce アプリは Microsoft Dynamics Lifecycle Services の共有資産ライブラリからダウンロードすることもできます。 
 

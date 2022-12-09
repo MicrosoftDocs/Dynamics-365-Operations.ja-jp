@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cdfd8db68647623e2b5f1b9eca93b57776e1bfe9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 84f1190301e67b49535530f85784561b2e51a2df
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067064"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812163"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -159,7 +159,7 @@ Teams の Dynamics 365 Human Resources アプリでは、次の言語がサポ�
 | nl-NL | オランダ語 (オランダ) |
 | pt-BR | ポルトガル語 (ブラジル) |
 | tr-TR | トルコ語 (トルコ) |
-| zh-CN | 中国語 (簡体) |
+| zh-CN | 簡体中国語 |
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

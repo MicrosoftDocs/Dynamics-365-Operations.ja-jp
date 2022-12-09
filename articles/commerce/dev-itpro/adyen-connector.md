@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.openlocfilehash: 6c819e8cf9f5dcb7895ac2633decf0a925c08f2d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 58d88e023b73ce19331bd6f54644a62d8f6f35af
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9784995"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812089"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Adyen 向け Dynamics 365 Payment Connector の概要
 
@@ -282,7 +282,7 @@ Adyen 向け Dynamics 365 Payment Connector を介してこれらの外部ギフ
 | タイ |
 | トルコ |
 | アラブ首長国連邦 (UAE) |
-| 英国 |
+| イギリス |
 | プエルトリコを含むアメリカ合衆国  |
 
 #### <a name="supported-dynamics-365-payment-features"></a>サポートされる Dynamics 365 支払フィーチャ

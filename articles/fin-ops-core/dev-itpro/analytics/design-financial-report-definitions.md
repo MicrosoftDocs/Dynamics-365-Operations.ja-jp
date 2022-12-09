@@ -2,7 +2,7 @@
 title: 財務諸表デザイナーでのレポート定義
 description: この記事では、レポート定義に関する情報を示します。
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.form: FinancialReports
-ms.openlocfilehash: e1095502e6dafbe217f51658ac65292c422a0002
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2ffef335c694af56486ccd7738818c4edda49b9e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291801"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802555"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>財務諸表デザイナーでのレポート定義
 
@@ -37,8 +37,8 @@ ms.locfileid: "9291801"
 ただし、Microsoft Dynamics ERP システムにデータを格納する方法によって、トランザクションの詳細がレポートで使用できない場合があります。
 
 ## <a name="create-a-report-definition"></a>レポート定義の作成
-1. [レポート デザイナー] の **ファイル** メニューで、**新規** をクリックし、**レポート定義** を選択します。
-2. **レポート**、**出荷および配送**、**ヘッダーおよびフッター**、**設定** タブで、適切な情報を指定します。
+1. Report Designer の **ファイル** メニューで、**新規** をクリックし、**レポート定義** を選択します。
+2. **レポート**、**出力と配分**、**ヘッダーおよびフッター**、**設定** タブで、適切な情報を指定します。
 
 ## <a name="contents-of-a-report-definition"></a>レポート定義の内容
 次の表は、レポート定義のタブと、情報の使用方法について説明します。
@@ -56,11 +56,11 @@ ms.locfileid: "9291801"
 <td>レポートを作成し、レポートをコンフィギュレーションし、既存のレポートを変更します。</td>
 </tr>
 <tr>
-<td>[出荷および配送]</td>
+<td>出力と配分</td>
 <td>レポートの出力のタイプと出力先を変更します。</td>
 </tr>
 <tr>
-<td>[ヘッダーとフッター]</td>
+<td>ヘッダーとフッター</td>
 <td>レポートのヘッダーおよびフッターを定義および書式設定します。 たとえば、ヘッダーまたはフッターにテキストや画像を追加できます。 財務諸表は、画像の .bmp、.jpg、.png ファイルをサポートします。 自動テキスト コードを追加して、会社名、レポート名、ページ番号などの他の情報を挿入できます。</td>
 </tr>
 <tr>

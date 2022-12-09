@@ -2,7 +2,7 @@
 title: 更新プロセス
 description: Microsoft Dynamics 365 Human Resources は、アプリケーションとプラットフォームの変更のための、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。
 author: twheeloc
-ms.date: 09/01/2022
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 197b3c5717494ab3c80a57cda337a9021293bf73
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520813"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819299"
 ---
 # <a name="update-process"></a>更新プロセス
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 人事管理の更新は、すべての環境に自動的に適用されます。 人事管理には次の 2 つの種類のリリースがあります:
 
-- **サービスの更新**: バグ修正および新機能を含む、隔週でリリースされる更新プログラム。 サービス更新には、リリースされた時に該当するプラットフォームの更新も含まれます。 プラットフォーム リリースの詳細については、[プラットフォーム更新プログラムの新機能および変更された機能](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md) を参照してください。 更新プログラムは、段階的にグローバルに展開されます。 更新プログラムに関する詳細については、[Dynamics 365 Human Resources の新機能および変更された機能](hr-admin-whats-new.md)を参照してください。
+- **サービスの更新**: サービスの更新には、リリースされた時に該当するプラットフォームの更新も含まれます。 例外ベースの更新に加えて、通常のサービス更新は、Dynamics 365 Finance プラットフォームの更新の一般提供 (GA) に続づいて行われます。 プラットフォーム リリースの詳細については、[プラットフォーム更新プログラムの新機能および変更された機能](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md) を参照してください。 更新プログラムは、段階的にグローバルに展開されます。 更新プログラムに関する詳細については、[Dynamics 365 Human Resources の新機能および変更された機能](hr-admin-whats-new.md)を参照してください。
 
 - **Dataverse ソリューションの更新**: これらの更新は、必要に応じて約 6 週間ごとに行われます。 この中には、新規エンティティと Dataverse の既存のエンティティに対する変更が含まれています。 これらの更新は、隔週の更新と同じ地域に対してリリースされ、すべてのデータ センターを通じてレプリケートされるまでに約 6 週間かかります。 ソリューションの更新は、隔週のサービス プログラムの更新と一致しない場合もあります。
 
@@ -56,16 +56,7 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 リリースは、内部環境で確認、テスト、および検証されます。 ビルドがサインオフされた後、その後、生産に配置されます。
 
-## <a name="release-cadence-exceptions-in-2021"></a>2021 年のリリース 間隔の例外
-
-休日を考慮した、2021 年 11 月と 12 月のリリース スケジュールは次のとおりです。
-
-- 11 月リリース: 11 月 1 日～11 月 14 日
-- 12 月リリース: 11 月 29 日～12 月 12 日
- 
-2 週間のリリース頻度は、2022 年 1 月 10 日に通常どおり再開します。
-
-## <a name="communications"></a>通信
+## <a name="communications"></a>コミュニケーション
 
 人事管理の作業の内容と、次の場所でリリースされた機能について検索できます:
 

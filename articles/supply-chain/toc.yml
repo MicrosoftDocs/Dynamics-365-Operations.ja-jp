@@ -1929,6 +1929,8 @@
                   href: master-planning/planning-optimization/ddmrp-planning.md
                 - name: ビジュアル実行と共同実行
                   href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+                - name: DDMRP に関するよくあるご質問
+                  href: master-planning/planning-optimization/ddmrp-faqs.md
             - name: 非推奨の計画エンジン
               items:
                 - name: 非推奨の計画エンジンの概要

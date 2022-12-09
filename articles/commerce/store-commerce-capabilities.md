@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-09-30
-ms.openlocfilehash: d713cc0e9537ae20ffddee6e77779a16e74bd779
-ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
+ms.openlocfilehash: 58f2ab1f913d3629de7971c8eeb2d1821161e44f
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9725638"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788516"
 ---
 # <a name="store-commerce-app-capabilities"></a>Store Commerce アプリの機能
 
@@ -41,7 +41,7 @@ Commerce Scale Unit (CSU) を備えた Store Commerce アプリは、オムニ�
 
 | 能力 | Description | ドキュメント | 追加コンテンツ |
 |---|---|---|---|
-| 複数のフォーム ファクター | Store Commerce アプリは、PC、タブレット、モバイル デバイスなどの複数のデバイス フォーム ファクターでサポートされています。 レスポンシブ ユーザー インターフェイス (UI) を使用すると、レイアウトのサイズを自動的に変更したり、画面サイズに調整することができます。 | [視覚化コンフィギュレーション](pos-screen-layouts.md) | |
+| 複数のフォーム ファクター | Store Commerce アプリは、PC、タブレット、モバイル デバイスなどの複数のデバイス フォーム ファクターでサポートされています。 レスポンシブ ユーザー インターフェイス (UI) を使用すると、レイアウトのサイズを自動的に変更したり、画面サイズに調整することができます。 | [視覚化コンフィギュレーション](pos-screen-layouts.md) |  |
 | クロスプラットフォーム | Store Commerce アプリは、Web、Windows、iOS、および Android プラットフォームでサポートされています。 | [プラットフォーム](dev-itpro/hybridapp.md) | |
 | ブランド | 画面デザイナーを使用すると、画面レイアウトをカスタマイズして業務要件を満たすことができます。 さらに、従業員の役割に基づいて、テーマ、レイアウト、色、画像を作成し、ユーザー間で共有してブランドの一貫性を保ち、使いやすくすることができます。 | [視覚化コンフィギュレーション](pos-screen-layouts.md) | [ビデオ](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | トポロジ | ネットワークの可用性に基づいて、店舗内の異なるトポロジがサポートされます。 | <p>[トポロジ](dev-itpro/retail-modern-pos-architecture.md)</p><p>[インフォグラフィック](dev-itpro/retail-in-store-topology.md)</p> | |
@@ -77,7 +77,7 @@ Commerce Scale Unit (CSU) を備えた Store Commerce アプリは、オムニ�
 | 製品検索 | 製品を名前で検索し、ブランド、価格、材料などの製品属性を使用して検索を絞り込みます。 この機能は、Azure Cognitive Search が提供します。 | [クラウドを利用した検索](cloud-powered-search-overview.md) | |
 | 製品の詳細ページ | 製品の豊富な詳細ページには、画像、説明、製品属性、おすすめ製品が含まれます。 おすすめ候補は、レコメンデーション サービスが提供します。 | | |
 | 製品の比較 | 複数の製品を比較すると、顧客は製品を選択してトランザクションに追加しやすくなります。 | | |
-| エンドレス アイル | 他の店舗の在庫を簡単に検索し、注文を作成します。 | [在庫検索](pos-inventory-lookup-operation.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| エンドレス アイル | 他の店舗の在庫を簡単に検索し、注文を作成します。 | [在庫検索](pos-inventory-lookup-operation.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 | レコメンデーション | レコメンデーション サービスを使用したアップセルおよびクロスセル製品 このサービスでは、特許を取得した技術を使用して、購入の傾向や、新着や類似品、ベストセラー商品などの特徴に基づいて、おすすめ品目を提案します。 これらのおすすめ候補は、製品の詳細ページ、**顧客の詳細** ページ、**トランザクション** ページで使用することができます。 | [おすすめ候補](product-recommendations.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## <a name="customer-relationship"></a>顧客リレーションシップ
@@ -88,8 +88,8 @@ Commerce Scale Unit (CSU) を備えた Store Commerce アプリは、オムニ�
 | 顧客の属性 | 顧客属性フレームワークを使用すると、業務要件に応じて他の顧客関連データを取得できます。 | [属性](dev-itpro/customer-attributes.md) | |
 | 顧客の詳細ページ | 顧客の豊富な詳細ページでは、すべてのチャネル全体で行なわれている顧客のやりとりをオムニチャンネル ビューで表示することができます。 これらのやりとりには、購入、ウィッシュ リスト、ロイヤルティ ポイントが含まれます。 | | |
 | クラウドを利用した顧客検索 | 顧客を名前、電話番号、メール アドレス、ロイヤルティ カード、住所などで検索します。 | [クラウドを利用した検索](pos-search-improvements.md#customer-search) | |
-| ロイヤルティと報酬 | 顧客はロイヤルティ プログラムに登録し、チャネル全体でロイヤルティ ポイントを獲得し引き換えることができます。 | [ロイヤルティ](set-up-customer-loyalty-program.md) | |
-| クライアンテリング | クライアント ブックを使用して主要顧客を管理し、顧客プロファイルに関する活動やメモを追跡します。 Dynamics 365 Customer Insights 統合を使用して、店舗の従業員に、各顧客の 2 番目に最適なアクションに関するヒントを与えます。 | [クライアンテリング](clienteling-overview.md#activities-and-notes) | |
+| ロイヤルティと報酬 | 顧客はロイヤルティ プログラムに登録し、チャネル全体でロイヤルティ ポイントを獲得し引き換えることができます。 | [ロイヤルティ](set-up-customer-loyalty-program.md) | [ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
+| クライアンテリング | クライアント ブックを使用して主要顧客を管理し、顧客プロファイルに関する活動やメモを追跡します。 Dynamics 365 Customer Insights 統合を使用して、店舗の従業員に、各顧客の 2 番目に最適なアクションに関するヒントを与えます。 | [クライアンテリング](clienteling-overview.md#activities-and-notes) | [ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
 ## <a name="pricing-and-discounts"></a>価格決定と割引
 
@@ -132,8 +132,8 @@ Commerce Scale Unit (CSU) を備えた Store Commerce アプリは、オムニ�
 | 注文属性 | 注文属性フレームワークを使用すると、業務要件に応じて他の注文関連情報を取得できます。 | [属性](dev-itpro/order-attributes.md) | |
 | 直納 | 仕入先が顧客の住所に直納する場合、品目をマークできます。 直納は、直送と呼ばれることもあります。 | [直納](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | 見積書 | 店舗の従業員は顧客の見積を作成し、特別価格、手動割引、見積の有効期間を指定できます。 | [見積書](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| フルフィルメント | 店舗は、注文をピック、梱包、出荷することができます。 梱包明細は、出荷準備ができているパッケージに追加できます。 | [フルフィルメント](order-fulfillment-overview.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021) |
-| 配分済み注文の管理 | Store Commerce アプリは、業務の性質、顧客のタイプ、注文元、注文の配送方法に基づいて業務戦略を構成できる、インテリジェント注文フルフィルメントの最適化をサポートしています。 | [DOM](dom.md) | |
+| フルフィルメント | 店舗は、注文をピック、梱包、出荷することができます。 梱包明細は、出荷準備ができているパッケージに追加できます。 | [フルフィルメント](order-fulfillment-overview.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021)</p> <p>[ビデオ](https://www.microsoft.com/videoplayer/embed/RE5bRXE)</p>|
+| 配分済み注文の管理 | Store Commerce アプリは、業務の性質、顧客のタイプ、注文元、注文の配送方法に基づいて業務戦略を構成できる、インテリジェント注文フルフィルメントの最適化をサポートしています。 | [DOM](dom.md) | [ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bRYl)|
 
 ## <a name="inventory-management"></a>在庫管理
 
@@ -141,12 +141,12 @@ Commerce Scale Unit (CSU) を備えた Store Commerce アプリは、オムニ�
 |---|---|---|---|
 | 集中的購買 | 物流センターから複数の店舗や倉庫への利用可能な在庫の配分を合理化します。 | [集中的購買](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | クロスドッキング | 受信する発注書で、複数の店舗や倉庫への在庫配分を合理化します。 | [クロスドッキング](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| 入庫在庫 | 発注書を使用して仕入先から在庫を入庫するか、移動オーダーを使用して別の倉庫から在庫を入庫します。 発注書または移動オーダーの要求を作成します。 | [着信](pos-inbound-inventory-operation.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| 出庫在庫 | 移動オーダーを使用して別の倉庫に在庫を出荷し、出庫移動オーダーの要求を作成します。 | [発信](pos-outbound-inventory-operation.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| 在庫検索 | 店舗や倉庫全体にわたる製品の手持在庫と、将来の日付の納期回答可能在庫 (ATP) 在庫を確認します。 | [在庫検索](pos-inventory-lookup-operation.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| 在庫調整 | 店舗倉庫に入庫/出庫される在庫を調整して、販売、受取、再カウントを使用せずに特定の業務要件を満たすことができます。 | [在庫調整](work-with-store-inventory.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| 在庫数 | 物理在庫をカウントし、システムの簿記在庫を調節して一致させます。 | [棚卸](work-with-store-inventory.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| 在庫移動 | 店舗内で在庫を移動します。 | [振替](work-with-store-inventory.md) | [技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| 入庫在庫 | 発注書を使用して仕入先から在庫を入庫するか、移動オーダーを使用して別の倉庫から在庫を入庫します。 発注書または移動オーダーの要求を作成します。 | [着信](pos-inbound-inventory-operation.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| 出庫在庫 | 移動オーダーを使用して別の倉庫に在庫を出荷し、出庫移動オーダーの要求を作成します。 | [発信](pos-outbound-inventory-operation.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| 在庫検索 | 店舗や倉庫全体にわたる製品の手持在庫と、将来の日付の納期回答可能在庫 (ATP) 在庫を確認します。 | [在庫検索](pos-inventory-lookup-operation.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| 在庫調整 | 店舗倉庫に入庫/出庫される在庫を調整して、販売、受取、再カウントを使用せずに特定の業務要件を満たすことができます。 | [在庫調整](work-with-store-inventory.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| 在庫数 | 物理在庫をカウントし、システムの簿記在庫を調節して一致させます。 | [棚卸](work-with-store-inventory.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)<p> |
+| 在庫移動 | 店舗内で在庫を移動します。 | [振替](work-with-store-inventory.md) | <p>[技術解説](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[ビデオ](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 
 ## <a name="financials"></a>財務
 

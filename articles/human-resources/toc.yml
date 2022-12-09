@@ -564,12 +564,14 @@
               href: hr-leave-and-absence-plans.md
             - name: 休暇計画への作業者の割り当て
               href: hr-leave-and-absence-enroll.md
-            - name: 休暇および欠勤計画の累計
+            - name: 休暇計画の見越計上
               href: hr-leave-and-absence-accrue.md
             - name: 休暇の中断
               href: hr-leave-and-absence-suspend-leave.md
-            - name: 休暇申請
+            - name: 長期休暇申請
               href: hr-employee-self-service-request-leave-of-absence.md
+            - name: 無期限の休暇の作成
+              href: hr-create-open-leave-absence.md
             - name: 従業員の休暇の管理
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: 休暇および欠勤の分析の表示

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e7172dd56113de23d841fe59ed9785471e90ed1f
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: a5ef9aa6b67eb630713dd1f15b2ae49c358edae9
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779612"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804185"
 ---
 # <a name="set-up-postdated-checks"></a>先日付小切手の設定
 
@@ -34,8 +34,8 @@ ms.locfileid: "9779612"
 ## <a name="set-up-postdated-checks"></a>先日付小切手の設定
 1. **現金および銀行管理 > 設定 > 現金および銀行管理パラメーター** の順に移動します。
 2. **先日付小切手** タブをクリックします。
-3. **先日付小切手の有効化** チェック ボックスをオンまたはオフにします。
-4. **先日付小切手用の仕訳入力の転記** チェック ボックスをオンまたはオフにします。
+3. **先日付小切手の有効化** チェックボックスをオンまたはオフにします。
+4. **先日付小切手用の仕訳入力の転記** チェックボックスをオンまたはオフにします。
 5. **発行済の小切手の清算勘定** フィールドで、任意の値を指定します。
 6. **受領済みの小切手の清算勘定** フィールドで、任意の値を指定します。
 7. **清算項目用の一般仕訳帳** フィールドに値を入力します。

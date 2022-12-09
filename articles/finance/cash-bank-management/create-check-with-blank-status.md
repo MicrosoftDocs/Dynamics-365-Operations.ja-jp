@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 151991b399a30087c484262706e414e4e294bf7f
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 86020d9088d8135c83716128a77090608536a78f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715428"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804021"
 ---
 # <a name="create-checks-that-have-blank-status"></a>状態が空白の小切手の作成
 
@@ -35,7 +35,7 @@ ms.locfileid: "9715428"
 
 **小切手** ページを開くには、**現金および銀行管理 \> 銀行口座 \> 銀行口座** に移動し、アクション ペイン、**支払の管理** タブ、**関連情報** グループで、**小切手** を選択します。 または、**現金および銀行管理 \> 照会およびレポート \> 小切手** に移動します。
 
-状態が **空白** の小切手を作成するには、アクション ペインで **空白の小切手の作成** を選択します。 システムが空白の小切手を作成している間、関連付けられている銀行口座が一時的に無効化されます。 この動作により、空白の小切手が作成されたときと同時に、支払が生成されるリスクが低下します。 処理が完了すると、関連付けられている銀行口座が再度有効化されます。
+状態が **空白** の小切手を作成するには、アクション ペインで **空白の小切手の作成** を選択します。 空白の小切手を作成している間、関連付けられている銀行口座が一時的に無効化されます。 この動作により、空白の小切手が作成されたときと同時に、支払が生成されるリスクが低下します。 処理が完了すると、関連付けられている銀行口座が再度有効化されます。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

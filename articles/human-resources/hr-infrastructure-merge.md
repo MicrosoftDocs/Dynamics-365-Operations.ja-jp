@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f79ef3ed5db7583eb44b99e49c010778ce8524d1
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: e68b28bfde35b51605aa0b653265da6261b69a90
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733475"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819245"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge"></a>Dynamics 365 Human Resources インフラストラクチャの統合 
 
@@ -85,11 +85,12 @@ Dynamics 365 Human Resources はスタンドアロンのアプリケーション
 
     - 構成
     - セキュリティ ロール (カスタム ロールを含む)
-    - ワークフロー
+    - ワークフロー (通知を含む)
     - パーソナライゼーションと保存されたビュー
     - トランザクション
     - カスタム フィールド
     - アタッチメント
+    - 警告
 
 - データ管理 – ご利用のデータベース (BYOD) を活用する。
 - 機能管理 - 機能の有効化/無効化。

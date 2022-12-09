@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-07-12
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 24aed03172446fd97865b719497c51281231cf69
-ms.sourcegitcommit: b37596f943f6469af6c1590d74211a66a2900ece
+ms.openlocfilehash: 54d1aa9e20470b55c8085b41b65804b948846b7a
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9138724"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806521"
 ---
 # <a name="supply-chain-management-troubleshooting-and-faqs"></a>Supply Chain Management のトラブルシューティングとよくある質問
 
@@ -46,6 +46,7 @@ ms.locfileid: "9138724"
 - [製品情報管理に関するよく寄せられる質問](pim/product-information-faq.md)
 - [販売注文に関するよくある質問](sales-marketing/sales-orders-faq.md)
 - [販売履歴データのクリーンアップをスケジュールする](sales-marketing/sales-update-history-cleanup-performance-improvements.md)
+- [DDMRP FAQ](master-planning/planning-optimization/ddmrp-faqs.md)
 
 次のよく寄せられる質問の記事では、Supply Chain Management を含むすべての財務と運用アプリで共有されるプラットフォームに関する問題について説明します。
 

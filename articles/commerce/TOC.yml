@@ -1011,7 +1011,23 @@
                 - name: URL リダイレクトの一括アップロード
                   href: upload-bulk-redirects.md
                 - name: Commerce での B2C テナントの設定
-                  href: set-up-B2C-tenant.md
+                  items:
+                    - name: B2C テナントの設定
+                      href: set-up-B2C-tenant.md
+                    - name: 作成または既存の Azure AD B2C テナントへのリンク
+                      href: create-link-aad-b2c-tenant.md
+                    - name: B2C アプリケーションの作成
+                      href: create-b2c-app.md
+                    - name: ユーザー フロー ポリシーの作成
+                      href: create-user-flow-policies.md
+                    - name: ソーシャル ID プロバイダーの追加
+                      href: add-social-identity-providers.md
+                    - name: Azure AD B2C 情報を使用した Commerce Headquarters の更新
+                      href: update-hq-aad-b2c-info.md
+                    - name: サイト ビルダーでの B2C テナントの構成
+                      href: config-b2c-tenant-site-builder.md
+                    - name: B2C の追加情報
+                      href: additional-b2c-info.md
                 - name: ユーザーのサインインに対するカスタム ページの設定
                   href: custom-pages-user-logins.md
                 - name: ID レコードと顧客 ID の自動リンクの有効化
@@ -1570,6 +1586,8 @@
               items:
                 - name: サウジアラビア向け QR コードの生成とレシートへの印刷
                   href: localizations/emea-sau-qr-code.md
+                - name: サウジアラビア用簡易電子請求書の生成および送信
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: スウェーデン
               items:
                 - name: キャッシュ レジスター機能
@@ -2984,17 +3002,17 @@
                   href: troubleshoot/store-commerce-extensions.md
             - name: 注文処理
               items:
-                - name: 支払タイプはクレジット カード エラーである必要があります
+                - name: 支払タイプがクレジット カードである必要があるエラー
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: オンライン注文の税金の計算が間違っている
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: 既定の支払サービスに関する注文の同期エラー
+                - name: 非同期注文の同期の問題
                   href: troubleshoot/synchronization-error.md
             - name: 支払処理
               items:
-                - name: 返品注文の払戻が拒否されます
+                - name: 返品依頼の払戻が拒否されている
                   href: troubleshoot/refund-declined.md
-                - name: 返金可能な請求金額が、返品した数量に基づいて誤って計算されます
+                - name: 返金可能な請求金額が、返品した数量に基づいて誤って計算される
                   href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Adyen 向け Dynamics 365 Payment Connector
                   items:

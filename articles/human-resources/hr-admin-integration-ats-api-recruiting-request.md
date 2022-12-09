@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872271"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806378"
 ---
 # <a name="recruiting-request"></a>採用要求
 
@@ -68,7 +68,7 @@ ms.locfileid: "8872271"
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ ms.locfileid: "8872271"
 | **状態**<br>mshr_status<br>*RecruitingRequestStatus* オプション セット | 読み取り/書き込み<br>必須<br> | 採用要求の状態を示します。 |
 | **説明**<br>mshr_description<br>*文字列* | 読み取り/書き込み<br>必須 | 要求を説明します。 |
 | **採用要求の場所 ID**<br>mshr_recruitingrequestlocationid<br>*文字列* | 読み取り/書き込み<br>オプション | ユーザーが読み取り可能な、この要求に関連付けられているジョブの場所の一意識別子です。 |
-| **採用要求の場所 ID 値**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | 読み取り専用<br>オプション<br>外部キー : mshr_hcmrecruitingrequestlocationentity entity の mshr_hcmrecruitingrequestlocationentityid | システムが生成する、要求で選択された採用要求の場所を識別する GUID 値です。 |
+| **採用要求の場所 ID 値**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | 読み取り専用<br>オプション<br>外部キー : mshr_hcmrecruitingrequestlocationentity entity の mshr_hcmrecruitingrequestlocationentityid | システムが生成する、要求で選択された採用要求の場所を識別する GUID 値です。 |
 | **備考**<br>mshr_comments<br>*文字列* | 読み取り/書き込み<br>オプション | マネージャーおよび採用担当者の採用要求に関するコメントです。 |
 | **ジョブ ID**<br>mshr_jobid<br>*文字列* | 1回書き込み<br>必須 |   ユーザーが読み取り可能な、この要求に関連するすべてのポジションで共有されている職務の一意識別子です。 |
 | **職務 ID の値**<br>_mshr_fk_job_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー : mshr_hcmjobentity entity の mshr_hcmjobentityid | システムが生成する、採用要求に関連するすべてのポジションで共有されている職務の一意識別子です。 |

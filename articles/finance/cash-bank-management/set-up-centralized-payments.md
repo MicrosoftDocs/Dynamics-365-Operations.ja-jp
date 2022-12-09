@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4843d9555b86c4ebe1edfe2da763f305357a7423
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 16548572cd70129efcc7dacf0236f3eb4b252d88
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715643"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804050"
 ---
 # <a name="set-up-centralized-payments"></a>集中支払の設定
 
@@ -34,7 +34,10 @@ ms.locfileid: "9715643"
 -   会社間勘定を設定します。
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>集中支払用の組織階層の設定
-集中支払用の組織階層を設定する必要があります。 同一の組織階層を使用して、集中仕入先支払と集中顧客支払を処理できます。 **注:** 集中支払では、階層の構造は重要ではありません。 階層内のすべての法人が、階層内のその他の任意の法人に代わって、支払を処理できます。 **組織階層** ページで、新しい組織階層を作成できます。 **目的** フィールドで、**集中支払** を選択する必要があります。 
+集中支払用の組織階層を設定する必要があります。 同一の組織階層を使用して、集中仕入先支払と集中顧客支払を処理できます。 
+
+>[!Note] 
+>集中支払では、階層の構造は重要ではありません。 階層内のすべての法人が、階層内のその他の任意の法人に代わって、支払を処理できます。 **組織階層** ページで、新しい組織階層を作成できます。 **目的** フィールドで、**集中支払** を選択する必要があります。 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>集中支払用の会社間勘定の設定
 現在の法人の支払トランザクションが別の法人の請求書に対して決済される場合は、適切な借トランザクションと貸トランザクションが法人ごとに作成されます。 現金割引、実現利益、または実現損失が転記される法人を指定する必要があります。 始める前に、仕入先と顧客支払の処理に使用する法人を決定します。 1 つの法人が仕入先支払を処理する場合に、別の法人が顧客支払を処理すると、それぞれの法人を切り替える必要があります。 **会社間会計** ページで、代わりに支払を処理する法人の会社間関係レコードを選択できます。 

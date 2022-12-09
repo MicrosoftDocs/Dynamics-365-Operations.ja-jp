@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 05ccd9794ffeba6a09d6fec0a57ffad2b59707ad
-ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
+ms.openlocfilehash: ed4325095163415d05a56128cb1f0334440fe0e5
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9709860"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787529"
 ---
 # <a name="preview-of-dynamics-365-commerce-10031-february-2023"></a>Dynamics 365 Commerce 10.0.31 (2023 年 2 月) のプレビュー
 
@@ -38,6 +38,7 @@ ms.locfileid: "9709860"
 | 支払 | [Adyen 向け Dynamics 365 Payment Connector で Apple Pay を有効にする](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | eコマース顧客は、サポートされているデバイスまたはブラウザを使用する際に、カートやチェックアウト ページで Apple Pay を使用できます。 | 開発者のオプトイン |
 | 支払  |  Commerce では、Commerce Headquarters ユーザー インターフェイス全体でユーザーが定期的な支払トークンをどう処理するのかを制限する機能が追加されました。 **コール センター販売注文** ページなどの支払フォームには、顧客が以前に使用した定期的な支払いのトークンが新しいトランザクション用に表示されなくなりました。 Commerce の **顧客支払** 画面で決定された "ファイルのカード" 入力のみ、または販売注文を通して支払い中に顧客が合意した場合のみ、新しいトランザクションの支払処理時にコール センターまたは Commerce Headquarters のユーザーに提示されます。 | [支払トークンの使用の制限](../dev-itpro/limit-token-usage.md)  |  機能管理<p>*支払トークンの使用を注文コンテキストに制限する*  |
 | POS | [POS から発注書を作成する](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  ユーザーが発注書要求を作成、編集、および確認できるよう、販売時点管理 (POS) でインバウンド在庫操作を改善しました。 |  機能管理<p>*POS で発注書要求を作成する機能*   |
+| その他の言語が利用可能になりました | 4 つの言語が追加されました | 優先言語リストでユーザーが選択できる言語が 4 つ追加されました: 韓国語、ポルトガル語 (ポルトガル)、ベトナム語、および中国語 (繁体字)。 このオプションを選択するには、**ユーザー オプション \> 基本設定 \> 国/地域の設定** に移動します。 | ローカライズされた基本設定 |  
 
 
 
