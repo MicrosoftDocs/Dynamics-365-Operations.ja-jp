@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-06-20
-ms.openlocfilehash: 0949b9d7a4b181605d43956932b4fc095940bd64
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 896847cee696e221b2114f7f28a0b56e73fc911b
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780371"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838232"
 ---
 # <a name="set-up-apple-pay-with-adyen-in-dynamics-365-commerce"></a>Dynamics 365 Commerce で Adyen を使用して Apple Pay を設定する
 
@@ -102,13 +102,6 @@ Apple Pay 用に Commerce オンライン ストアを構成するには、次�
 
 1. マーチャント情報を入力した後、**1070** チャネル コンフィギュレーション配送スケジュール ジョブを実行します。
 
-## <a name="configure-commerce-pos-for-apple-pay"></a>Apple Pay 向けの Commerce POS を構成する
-
-POS 構成には、Adyen 向け Dynamics 365 Payment Connector に対してハードウェア プロファイルの **EFT サービス** フィールドの構成を使用します。 [Dynamics 365 POS ハードウェア プロファイルの設定セクション](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile) で説明されているように、Commerce Headquarters で、Adyen 向け Dynamics 365 Payment Connector の EFT サービスを構成します。
-
-**サポートされている支払/入金タイプ** フィールドの支払/入金タイプのリストに **ApplePay** を追加してください。 セミコロン (;) を使用して、一覧で支払/入金タイプを区切ります。
-
-Adyen コネクタのプロセッサ マッピングは、Apple Pay が POS 端末で使用するウォレット カード タイプをキャプチャします。
 
 ### <a name="configure-content-security-policies-in-site-builder"></a>サイト ビルダーのコンテンツ セキュリティ ポリシーを構成する
 
@@ -138,6 +131,14 @@ Apple Pay を使用するフラグメントまたはページを構成する前�
 **Apple Pay** 決済ボタンは、サポートされている Apple Pay デバイス (iPhone、iPad、および Apple Pay をサポートする Safari ブラウザー) にのみ表示されます。 ユーザーがこれらのデバイスを使用していない場合は、**Apple Pay** の決済ボタンは表示されません。
 
 ユーザーが **Apple Pay** 決済ボタンを選択すると、**Apple Pay** ダイアログ ボックスが表示されます。 そこで、ユーザーは Apple Pay デバイスまたはブラウザーに対して認証を行うことができます。 **Apple Pay** ダイアログ ボックスには、注文金額と、ユーザーが Apple Wallet に対して構成した決済方法の概要が表示されます。 ユーザーは、これらの詳細を確認し、**支払** を選択して支払を完了できます。 支払が完了すると、完了したトランザクションの注文の詳細な概要を示す **注文の完了** サイト ページが表示されます。
+
+## <a name="configure-commerce-pos-for-apple-pay"></a>Apple Pay 向けの Commerce POS を構成する
+
+POS 構成には、Adyen 向け Dynamics 365 Payment Connector に対してハードウェア プロファイルの **EFT サービス** フィールドの構成を使用します。 [Dynamics 365 POS ハードウェア プロファイルの設定](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile) で説明されているように、Commerce Headquarters で、Adyen 向け Dynamics 365 Payment Connector の EFT サービスを構成します。
+
+**サポートされている支払/入金タイプ** フィールドの支払/入金タイプのリストに **ApplePay** を追加してください。 セミコロン (;) を使用して、一覧で支払/入金タイプを区切ります。
+
+Adyen コネクタのプロセッサ マッピングは、Apple Pay が POS 端末で使用するウォレット カード タイプをキャプチャします。
 
 ## <a name="additional-resources"></a>追加リソース
 

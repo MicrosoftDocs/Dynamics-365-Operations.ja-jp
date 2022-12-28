@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: fd9877365977694ca29f4d9116bcae45360306d5
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135460"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843629"
 ---
 # <a name="global-inventory-accounting-home-page"></a>グローバル在庫会計ホーム ページ
 
@@ -40,11 +40,17 @@ ms.locfileid: "9135460"
 
 グローバル在庫会計は、現在、次の地理上の Azure リージョンで使用可能です。
 
-- 米国
-- ヨーロッパ
-- 英国
 - オーストラリア
 - カナダ
+- 中国
+- ヨーロッパ
+- フランス
+- ノルウェー
+- 南アフリカ
+- スイス
+- アラブ首長国連邦
+- イギリス
+- 米国
 
 他の地域からのアドインをインストールしようとすると、Microsoft Dynamics Lifecycle Services (LCS) は、ユーザーの地理的な地域はサポートされていないというメッセージを表示します。 グローバル在庫会計は、Supply Chain Management のオンプレミス配置をサポートしていません。
 

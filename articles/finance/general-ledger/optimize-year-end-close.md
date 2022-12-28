@@ -2,7 +2,7 @@
 title: 年度末決算の最適化
 description: この記事では、一般会計の年度末決算処理で使用できる、年度末決算サービスの最適化アドインについて説明します。
 author: moaamer
-ms.date: 11/02/2022
+ms.date: 12/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2022-11-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 41d0c2975341cf3d612cc36be348326e24e94f1b
-ms.sourcegitcommit: 707957bb7bcd98faf2600eff1c98067901a0fb73
+ms.openlocfilehash: bc6ab7e36f37707442f8d5d5b6e0d5f5d42e2171
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2022
-ms.locfileid: "9750011"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831532"
 ---
-# <a name="optimize-year-end-close"></a>年度末決算の最適化
+# <a name="optimize-year-end-close"></a>年度末決算の最適化 
 
 Microsoft Dynamics 365 Finance の年度末決算サービスの最適化アドインを使用すると、年度末決算処理を Dynamics 365 Finance リソースの Application Object Server (AOS) インスタンスの外部で実行できます。 マイクロサービス技術を使用します。 年度末決算の最適化機能に関連する利点として、パフォーマンスの向上と、年度末決算処理中の SQL データベースへの影響の最小化が含まれます。
+
+>[!NOTE]
+> 最適化された年度末の終了は Microsoft Dynamics 365 Finance バージョン 10.0.31 で使用できます。 この機能は Dynamics Finance のバージョン 10.0.30 および 10.0.29 にバックポートされています。最新の品質更新プログラムを実行する必要があります。   
 
 年度末決算の最適化機能を使用するには、次のタスクを完了する必要があります:
 
@@ -32,7 +35,7 @@ Microsoft Dynamics 365 Finance の年度末決算サービスの最適化アド�
 2. 機能管理で **年度末決算の最適化** 機能を有効にします。
 
 > [!NOTE]
-> 機能管理の **年度末決算の最適化** 機能を無効にすることで、Finance リソースに対して現在の年度末決算機能を引き続き使用できます。
+> 機能管理の **年度末決算の最適化** 機能を無効にすることで、Finance に対して現在の年度末決算機能を引き続き使用できます。
 
 ## <a name="improved-performance"></a>パフォーマンスの向上
 
@@ -54,24 +57,26 @@ Microsoft Dynamics 365 Finance の年度末決算サービスの最適化アド�
 
 次の図は、**年度末決算** ページの **結果** および **ステータス** 列の例を示しています。 **結果** 列の **結果の表示** リンクを選択して、年度末決算の結果を開くことができます。 **ステータス** 列には、年度末決算処理の現在の状態が表示されます。 そのため、新しい列では、年度末決算処理の進捗状況を可視化できます。
 
-[![年度末決算ページの結果およびステータスの列。](./media/Yearendclose.jpg)](./media/Yearendclose.jpg)
+[![年度末決算ページの結果およびステータスの列。](./media/Optimize-year-end-close-Image3.png)](./media/Optimize-year-end-close-Image3.png)
 
 また、**年度末決算の最適化** 機能が有効になっていると、**年度末決算テンプレート** ページで **貸借対照表の財務分析コード** FastTab が使用できるようになります。 この FastTab を使用すると、年度末決算時に貸借対照表の財務分析コードを詳細に指定できます。 この機能は、損益勘定で既に使用可能な機能と並行しています。
 
+[![貸借対照表の財務分析コード クイックタブ](./media/Optimize-year-end-close-Image4.png)](./media/Optimize-year-end-close-Image4.png)
+
 ## <a name="architecture-and-data-flow"></a>アーキテクチャとデータ フロー
 
-**年度末決算の最適化** 機能を使用し、マイクロサービスで年度末決算を実行するには、Lifecycle Services から年度末決算サービスの最適化アドインをインストールし、機能管理で **年度末決算の最適化** 機能を有効にする必要があります。
+**年度末決算の最適化** 機能を使用し、マイクロサービスで年度末決算を実行するには、Lifecycle Services から **年度末決算サービスの最適化アドイン** をインストールし、機能管理で **年度末決算の最適化** 機能を有効にする必要があります。
 
 次の図に示すように、年度末決算処理によって、アドインがインストールされ、機能が有効になっていることが確認されます。 両方の前提条件が満たされている場合は、年度末決算がマイクロサービスで実行されます。
 
-[![データ フロー ダイアグラム。](./media/Lifecycle-services.jpg)](./media/Lifecycle-services.jpg)
+[![データ フロー ダイアグラム。](./media/Optimize-year-end-close-Image5.png)](./media/Optimize-year-end-close-Image5.png)
 
 ## <a name="high-level-flow-for-year-end-close-processing"></a>年度末決算処理の高レベル フロー
 
-1. 年度末決算処理は Finance で **一般会計 \> 決算期間 \> 年度末決算** から始まります。 プロセスでは、決算対象の法人の決算バッチ ジョブとタスクが作成されます。
+1. 年度末決算処理は Finance で **一般会計 \> 決算期間 \> 年度末決算** に移動します。 プロセスでは、決算対象の法人の決算バッチ ジョブとタスクが作成されます。
 2. 年度末決算は、年度末決算をマイクロサービスで実行するか、現在の決算ロジック上で実行するかを決定します。
 
-    - 年度末決算サービスの最適化アドインを Lifecycle Services にインストールし、機能管理で **年度末決算の最適化** 機能を有効にすると、年度末決算はマイクロサービスで実行されます。
+    - **年度末決算サービスの最適化アドイン** を Lifecycle Services にインストールし、機能管理で **年度末決算の最適化** 機能を有効にすると、年度末決算はマイクロサービスで実行されます。
 
         1. 年度末決算の最適化機能を使用すると、決算対象の各法人に対して年度末決算サービス ジョブを作成し、年度末決算ロジックを実行します。 マイクロサービスは年度末決算を実行します。
         2. Finance は、マイクロサービスの年度末決算をリッスンして、マイクロサービスがいつ終了したかを判断します。 次に、Finance の **年度末決算** ページで、年度末決算の結果が更新されます。

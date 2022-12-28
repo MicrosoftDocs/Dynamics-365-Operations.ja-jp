@@ -32,6 +32,8 @@
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Dynamics 365 Human Resources の新機能 (スタンドアロン)
                   items:
+                    - name: Dynamics 365 Human Resources の新機能 (スタンドアロン) 2022 年 12 月
+                      href: hr-whats-new-2022-12-12.md
                     - name: Dynamics 365 Human Resources の新機能 (スタンドアロン) の 2021 年アーカイブ
                       href: hr-admin-whats-new.md
                     - name: 2021 年 11 月 29 日
@@ -110,6 +112,8 @@
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: Human Resources 仮想テーブルに関するよくあるご質問
                   href: hr-admin-virtual-entity-faq.md
+                - name: Dataverse との統合のコンフィギュレーション
+                  href: hr-dataverse-integration.md
                 - name: Finance との統合のコンフィギュレーション
                   href: hr-admin-integration-finance.md
                 - name: Dayforce との統合のコンフィギュレーション

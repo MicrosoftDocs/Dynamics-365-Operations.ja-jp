@@ -2,7 +2,7 @@
 title: Dynamics 365 Human Resources での顧客の財務と運用インフラへの移行
 description: 財務と運用インフラにMicrosoft Dynamics 365 Human Resources を移行された顧客の事例をご紹介します。
 author: twheeloc
-ms.date: 10/25/2022
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
-ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
+ms.openlocfilehash: ab9680c2d1caa08c15aed325f4153aac6eae63c3
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2022
-ms.locfileid: "9760365"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831723"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources 顧客の移行
 
@@ -43,7 +43,7 @@ ms.locfileid: "9760365"
  - スタンドアロンの Human Resources アプリにリンクされている既存の Dataverse 環境を、前の手順で作成した環境にコピーします。
 
 > [!NOTE]
-> データベースを追加する場合は、**Dynamics 365アプリ** を有効にするオプションが **はい** に設定してください。 詳細については、[Power Platform 環境を準備する](hr-cust-migration.md#prepare-a-power-platform-environment) を参照してください
+> データベースを追加する場合は、**Dynamics 365アプリ** を有効にするオプションが **はい** に設定してください。 詳細については、[Power Platform 環境を準備する](hr-cust-migration.md#prepare-a-power-platform-environment) を参照してください。
 
 ### <a name="dataverse-capacity"></a>Dataverse のキャパシティ
 
@@ -54,7 +54,7 @@ ms.locfileid: "9760365"
 
 ### <a name="create-a-lifecycle-services-project-for-human-resources-migration"></a>人事移行のための Lifecycle Services プロジェクトの作成
 
-まず、Lifecycle Services で新しい財務と運用の導入プロジェクトを作成します。 この顧客には、既存の人事 Lifecycle Services プロジェクトが作成されます。 既存の人事環境は、新しい財務と運用プロジェクトに移行されます。
+まず、Lifecycle Services で新しい財務と運用の導入プロジェクトを作成します。 この顧客には、既存の人事 Lifecycle Services プロジェクトが作成されます。 既存の Human Resources 環境は、新しい財務と運用実装プロジェクトに移行されます。
 
 新しいプロジェクトを作成するには、次の手順を実行します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "9760365"
 7. チェック ボックスをオンにして、条件に同意します。
 8. **作成** を選択します。
 
-新しい Lifecycle Services プロジェクトを作成したら、以下の手順で設定と構成を行います。
+新しい Lifecycle Services プロジェクトを作成したら、以下の手順でプロジェクトの設定と構成を行います。
 
 1. **プロジェクトのオンボード** を選択して、プロジェクトのオンボードを完了します。 詳細については、[プロジェクトの研修](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md)を参照してください。
 
@@ -158,6 +158,7 @@ ms.locfileid: "9760365"
 
 - サブスクリプション エスティメーターが完成していること。
 - 本稼働の[準備評価](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md)を完了する必要があります。
+- Lifecycle Services で生産移行を開始するユーザーには、Power Platform のシステム管理者ロールが必要です。 
 
 #### <a name="migrate-the-production-environment"></a>運用環境の移行
 

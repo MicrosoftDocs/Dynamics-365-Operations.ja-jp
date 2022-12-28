@@ -2,19 +2,19 @@
 title: Commerce チャネルの会計統合の概要
 description: この記事では、Dynamics 365 Commerce で使用できる会計統合の機能の概要を提供します。
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
-ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
+ms.openlocfilehash: 3f1b555a016a56cc41ab397e3708f20482f25f09
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "9631243"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831862"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Commerce チャネルの会計統合の概要
 
@@ -172,19 +172,17 @@ Retail POS の会計登録プロセスは、1 つまたは複数のステップ�
 - [スウェーデン向け制御ユニットの統合サンプル](./emea-swe-fi-sample.md)
 - [ドイツ向け会計登録サービス統合サンプル](./emea-deu-fi-sample.md)
 - [ロシア向け会計プリンター統合サンプル](./rus-fpi-sample.md)
+- [ノルウェー向けデジタル署名サンプル](./emea-nor-cash-registers.md)
 
 会計統合フレームワークを使用して次の会計統合機能も実装されますが、この機能はそのまま使用でき、Commerce SDK には含まれていません。
 
 - [ブラジル向け会計登録](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [フランス向けデジタル署名](./emea-fra-cash-registers.md)
 
-次の会計統合機能は、Commerce SDK でも利用可能ですが、現在は会計統合フレームワークを利用していません。 この機能の会計統合フレームワークへの移行は、今後の更新で予定されています。
-
-- [ノルウェー向けデジタル署名](./emea-nor-cash-registers.md)
-
 Commerce SDK で使用可能な次のレガシ会計統合機能は、会計統合フレームワークを使用せず、それ以降の更新では非推奨になります。
 
 - [スウェーデン向け制御ユニットの統合サンプル (レガシ)](./retail-sdk-control-unit-sample.md)
 - [フランス向けデジタル署名 (レガシ)](./emea-fra-deployment.md)
+- [ノルウェー向けデジタル署名 (レガシ)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

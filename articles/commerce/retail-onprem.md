@@ -1,30 +1,26 @@
 ---
 title: オンプレミス配置で使用できるコマースの機能
-description: この記事では、オンプレミス配置で使用できる Commerce 機能を一覧表示します。
+description: この記事では、Microsoft Dynamics 365 Commerce のオンプレミス配置で使用できる機能を一覧表示します。
 author: ShalabhjainMSFT
-ms.date: 01/31/2022
+ms.date: 12/13/2022
 ms.topic: article
-ms.prod: dynamics-365
-ms.technology: ''
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain
-ms.search.validFrom: July 2017 update
-ms.dyn365.ops.version: 6/30/2017
-ms.service: ''
-ms.openlocfilehash: 2eb689a2395d001c9533f8d70c4e748a41df99c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: ea3f2803eb832faf34575a4a0a8e2650c45e3693
+ms.sourcegitcommit: fe1224a685d1e17d1d8f9a31cd0a06c58c7fc605
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288310"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9845750"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 
 [!include [banner](includes/banner.md)]
 
-この記事では、オンプレミス配置で使用できる Commerce 機能を一覧表示します。
+この記事では、Microsoft Dynamics 365 Commerce のオンプレミス配置で使用できる機能を一覧表示します。
 
 オンプレミス配置の詳細については、[オンプレミス配置のホーム ページ](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。
 
@@ -71,9 +67,9 @@ ms.locfileid: "9288310"
 | 売買契約                                      | 取得可能          |
 | チャネル ナビゲーション カテゴリ                           | 使用可能          |
 | 所属価格グループ                              | 使用可能          |
-| コマース チャネル価格グループ                         | 使用可能          |
-| 価格決定優先順位                                    | 使用可能          |
-| 価格シミュレーター                                       | 使用不可      |
+| コマース チャネル価格グループ                         | 利用可能          |
+| 価格決定優先順位                                    | 利用可能          |
+| 価格シミュレーター                                       | 利用可能          |
 
 ### <a name="customer"></a>顧客
 

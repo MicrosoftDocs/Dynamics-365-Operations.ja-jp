@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764242"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843683"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20390"></a>バージョン 2.0.39.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+- 安定性が向上しました。 
+- **カスタム** ページの フィールドの 並べ替えは、優先順位とサブ優先順位の設定に基づいて自動的に行われます。  
+- アプリケーションでは各フィールドの優先順位とサブ優先順位の設定を使用して、ページの基本フィールドが識別されます。 基本フィールドはステップ ヘッダーに表示されます。 
+- ソフト キーボードが Android で非表示にできない問題を修正しました。
+- 数量の調整で、*移動* フローの開始時に正しい値が間違っているという問題を修正しました。 
+- 読み取り専用の数量に対して金額が入り込む問題を修正しました。 
+- **概要** ページから Web ページが開かない問題を修正しました。 
+- *自動* 色テーマは、モバイル デバイスのオペレーティング システムに設定されているグローバル テーマに基づいて既定の外観 (明暗) が使用されます。
 
 ## <a name="version-20370"></a>Version 2.0.37.0
 

@@ -2,7 +2,7 @@
 title: 個人の審査
 description: この記事では、Dynamics 365 Human Resources の人物の選考エンティティについて説明します。
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9b2bbda8f8191f592462f4fbd1902e7274cf7f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3c316e0381f4d407ed7c4c39b5949717b71477bd
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907643"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831893"
 ---
 # <a name="person-screening"></a>個人の審査
 
@@ -44,6 +44,7 @@ ms.locfileid: "8907643"
     "mshr_status": Int,
     "mshr_partynumber": "String",
     "mshr_screeningtypeid": "String",
+    "_mshr_fk_screeningtype_id_value": "Guid",
     "mshr_primaryfield": "String",
     "_mshr_fk_person_id_value": "Guid",
     "mshr_hcmpersonscreeningentityid": "Guid",
@@ -53,17 +54,19 @@ ms.locfileid: "8907643"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ<br>**現物名**<br>**_種類_** | 使用 | 説明 |
+| プロパティ<br>**現物名**<br>**_種類_** | 使用 | Description |
 | --- | --- | --- |
-| **人物の選考エンティティ ID**<br>mshr_hcmpersonscreeningentityid<br>*GUID* | 読み取り専用<br>必須<br>システム生成 | 人物の選考レコードの一意の基本識別子です。 |
-| **関係者番号**<br>mshr_partynumber<br>*文字列* | 読み取り/書き込み<br>必須 | 候補者に関連付けられている関係者 (人物) 番号です。 |
-| **個人 ID の値**<br>_mshr_fk_person_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー : mshr_dirpersonentity の mshr_dirpersonentityid | システムが生成する、当事者 (個人) エンティティ レコードの識別子です。 |
+| **摘要**<br>mshr_note<br>*文字列* | 読み取り/書き込み<br>オプション | 採用担当者や採用マネージャーが使用するメモです。 |
+| **期日**<br>mshr_requiredby<br>*Datetime* | 読み取り/書き込み<br>オプション | 選考を完了する必要がある期日です。 |
+| **状態**<br>mshr_status<br>*mshr_hcmcompletionstatus オプション セット*|読み取り/書き込み<br>要求済み | 候補者の選考の状態を指定します。 |
+| **関係者番号**<br>mshr_partynumber<br>*文字列* | 読み取り/書き込み<br>要求済み | 候補者に関連付けられている関係者 (人物) 番号です。 |
 | **選考タイプ ID**<br>mshr_screeningtypeid<br>*文字列* | 読み取り/書き込み<br>必須<br>外部キー : 選考タイプ | Human Resources で定義されている選考タイプの ID です。 |
 | **選考タイプ ID 値**<br>_mshr_fk_screeningtype_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー : mshr_hcmscreeningtypeentity の mshr_hcmscreeningtypeentityid | 関連するエンティティの選考タイプ レコーに向けてシステムが生成して識別子です。 |
-| **期日**<br>mshr_requiredby<br>*Datetime* | 読み取り/書き込み<br>オプション | 選考を完了する必要がある期日です。 |
-| **状態**<br>mshr_status<br>*mshr_hcmcompletionstatus オプション セット*<br>読み取り/書き込み<br>必須 | 候補者の選考の状態を指定します。 |
+| **基本フィールド**<br>mshr_primaryfield<br>*文字列* |  読み取り専用<br>要求済み | エンティティ レコードの識別子として使用されるフィールドです。 |
+| **個人 ID の値**<br>_mshr_fk_person_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー : mshr_dirpersonentity の mshr_dirpersonentityid | システムが生成する、当事者 (個人) エンティティ レコードの識別子です。 |
+| **人物の選考エンティティ ID**<br>mshr_hcmpersonscreeningentityid<br>*GUID* | 読み取り専用<br>必須<br>システム生成| 人物の選考レコードの一意の基本識別子です。 |
 | **完了日**<br>mshr_completeddate<br>*Datetime* | 読み取り/書き込み<br>オプション | 選考が完了した日付です。 |
-| **摘要**<br>mshr_note<br>*文字列* | 読み取り/書き込み<br>オプション | 採用担当者や採用マネージャーが使用するメモです。 |
+
 
 ## <a name="see-also"></a>参照
 

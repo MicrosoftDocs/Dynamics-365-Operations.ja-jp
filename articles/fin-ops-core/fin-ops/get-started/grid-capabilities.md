@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405468"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852382"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
@@ -225,6 +225,7 @@ Excel と同様に、現在表示されているコンテンツに基づいて�
 ### <a name="open-issues"></a>未処理の問題
 - **新しいグリッドコントロール** 機能を有効にすると、ページによっては既存のグリッド コントロールを引き続き使用できる場合があります。 これは、以下のような場合に発生します :
  
+    - [解決済] イシュー 762533: カード リストの行を選択するときに予期しないクライアント エラーが発生。
     - [解決済み] 複数の列で表示されるページにカード リストが存在する。
         - このタイプのカード リストは、バージョン 10.0.30 以降の **新しいグリッド コントロール** でサポートされます。 この目的で forceLegacyGrid() を使用したものは削除できます。 
     - [解決済み] グループ化されたカードのリストがページに存在する。

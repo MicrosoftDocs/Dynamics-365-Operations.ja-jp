@@ -2,7 +2,7 @@
 title: 個人
 description: この記事では、Dynamics 365 Human Resources の人物エンティティについて説明します。
 author: jaredha
-ms.date: 02/05/2021
+ms.date: 12/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 49d9b5e1a1297c9528bfa82d0e8307bad3b2d1cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c8adb2f06d1fcdfef8a42a04c5ebddd246ffc2ae
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864115"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887347"
 ---
 # <a name="person"></a>個人
 
@@ -70,8 +70,8 @@ ms.locfileid: "8864115"
     "mshr_addresscounty": "String",
     "mshr_addressdistrictname": "String",
     "mshr_addresslatitude": Decimal,
-    "mshr_addresslocationid": "000003212",
-    "mshr_addresslocationroles": "Home",
+    "mshr_addresslocationid": "String",
+    "mshr_addresslocationroles": "String",
     "mshr_addresslongitude": Decimal,
     "mshr_addressstate": "String",
     "mshr_addressstreet": "String",
@@ -129,7 +129,7 @@ ms.locfileid: "8864115"
 | --- | --- | --- |
 | **人物のエンティティ ID**<br>mshr_dirpersonentityid<br>*GUID* | 読み取り専用<br>必須<br>システム生成 | システムが生成した、エンティティ レコードの一意識別子です。 |
 | **当事者番号**<br>mshr_partynumber<br>*文字列* | 読み取り専用<br>必須<br>システム生成 | ユーザーが可読な、当該人物のシステムが生成する一意識別子です。  |
-| **氏名**<br>mshr_name<br>*文字列* | 読み取り専用<br>必須 | このフィールド値は、**名前順序の表示方法** フィールドで定義された順序の、<姓、ミドルネーム、敬称、名>を連結したものです。 |
+| **氏名**<br>mshr_name<br>*文字列* | 読み取り専用<br>必須 | このフィールド値は、**名前順序の表示方法** フィールドで定義された順序の、姓、ミドルネーム、敬称、名を連結したものです。 |
 | **名前のエイリアス**<br>mshr_namealias<br>*文字列* | 読み取り/書き込み<br>オプション | 人物に指定できる名前のエイリアスです。 |
 | **呼称**<br>mshr_knownas<br>*文字列* | 読み取り/書き込み<br>オプション | 別の名前で認知されている場合に、使用される可能性があります。 |
 | **言語 ID**<br>mshr_languageid<br>*文字列* | 読み取り/書き込み<br>オプション | ISO 639-1 形式で定義された、人物の第一言語の言語 ID です。 |

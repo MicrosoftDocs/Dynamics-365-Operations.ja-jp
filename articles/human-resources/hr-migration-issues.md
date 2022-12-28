@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 3fe21df8be010ace3070ad08ed95f3d3efc7b01d
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752693"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838558"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Dynamics 365 Human Resources インフラストラクチャ統合の既存の問題
 
@@ -43,4 +43,8 @@ ms.locfileid: "9752693"
 ## <a name="teams-integration"></a>Teams 統合
 
 現在、Teams の既存の人事アプリは、Microsoft Power Platform ソリューションに移行しています。 詳細については、[Teams の Human Resources アプリ](hr-admin-teams-leave-app.md) を参照してください。
+
+## <a name="dual-write-integration"></a>二重書き込みの統合
+
+二重書き込み は、Customer Engagement アプリと財務と運用アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャです。 統合に二重書き込みを使用している場合、見つかったいくつかの問題が発生する可能性があります。 Dataverse テーブルおよび問題の詳細については、[Dataverse テーブル](hr-developer-entities.md) を参照してください。
 

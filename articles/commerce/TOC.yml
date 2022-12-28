@@ -1422,6 +1422,8 @@
               href: set-up-rfm-analysis.md
             - name: Dynamics 365 Commerce での Microsoft Clarity の設定
               href: set-up-clarity.md
+            - name: Operational Insights の設定
+              href: dev-itpro/operational-insights.md
         - name: Globalization Studio
           items:
             - name: Globalization Studio の概要
@@ -3054,8 +3056,14 @@
                   href: troubleshoot/email-not-sent-when-new-customer-created.md
             - name: SDK のトラブルシューティング
               items:
-                - name: eコマース開発環境をセットアップしてレベル 1 Retail Server 仮想マシンにデバッグを実行する
+                - name: eコマース開発環境をセットアップしてレベル 1 Retail Server VM にデバッグを実行する
                   href: troubleshoot/set-up-dev-environment-debugging.md
+            - name: 店舗財務
+              items:
+                - name: Z レポートのデータ調整に関する問題
+                  href: troubleshoot/z-report-issues.md
+                - name: 利用できない在庫または更新の競合による明細書転記エラー
+                  href: troubleshoot/inventory-errors-posting.md
     - name: 財務と運用アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

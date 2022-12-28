@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846860"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831836"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>財務連結および通貨換算の概要
 
@@ -64,7 +64,7 @@ ms.locfileid: "8846860"
 - 複数のレポート通貨が含まれる連結
 
 ## <a name="legal-entity-setup"></a>法人の設定
-連結を処理する前に、法人を設定する必要があります。 連結は何回でも実行でき、すべてのデータはソースの会社の会計通貨から連結会社に定義されている通貨に換算されます。 したがって、以下の組織構造の場合、すべての北米企業を最初に米ドル (USD)、次にユーロ (EUR)、親会社の通貨に換算する必要がある場合は、少なくとも 2 つの連結会社が必要です。
+連結を処理する前に、法人を設定する必要があります。 連結は何回でも実行でき、すべてのデータはソースの会社の会計通貨またはレポート通貨から連結会社に定義されている通貨に換算されます。 したがって、以下の組織構造の場合、すべての北米企業を最初に米ドル (USD)、次にユーロ (EUR)、親会社の通貨に換算する必要がある場合は、少なくとも 2 つの連結会社が必要です。
 
 ![組織構造。](./media/organizational-structure.png "組織構造")
 

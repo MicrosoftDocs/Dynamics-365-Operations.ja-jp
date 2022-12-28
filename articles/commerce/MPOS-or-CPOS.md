@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0e1092c0c5c49c6a99dd441c75f545fc831c0b03
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276457"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831560"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Store Commerce または Cloud POS を選択する
 
@@ -71,7 +71,7 @@ Store Commerce は、デバイスにインストールしてサービスを提�
 |----------------------------|---------------------|-------------------|-------------------|
 | Windows の Store Commerce | クラウドまたは RSSU       | 有効               | 有効               |
 | Android の Store Commerce | クラウドまたは RSSU       | 無効                | 有効               |
-| iOS の Store Commerce     | クラウドまたは RSSU       | 無効                | 無効                |
+| iOS の Store Commerce     | クラウドまたは RSSU       | 無効                | 有効               |
 | クラウド POS                  | クラウドまたは RSSU       | 無効                | 無効                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
@@ -90,7 +90,7 @@ Windows の Store Commerce はオフライン モードでサポートされて�
 |----------------------------|----------------|---------------------|--------------------|
 | Windows の Store Commerce | 有効            | 有効                 | 有効                |
 | Android の Store Commerce | 無効             | 有効                 | 有効                |
-| iOS の Store Commerce     | 無効             | 無効                  | 有効                |
+| iOS の Store Commerce     | 無効             | 有効                 | 有効                |
 | クラウド POS                  | 無効             | 無効                  | 有効                |
 
 ハードウェア ステーションの詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 25d13aa26565e5753b87c843b43cf46f8276b642
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643797"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854082"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは非推奨の機能
 
@@ -124,21 +124,20 @@ ms.locfileid: "9643797"
 | **配置オプション**              | すべて |
 | **状態**                         | 非推奨: 2022年12月1日までに、**VAT 申告モデル** では **VAT申告 (AT)** 電子申告  (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (AT**)、**VAT 申告 Excel (AT)** 形式は **税申告** モデル配下に導入されています。 |
 
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ドイツ向け ELSTER 申告 (レポート コードに基づくデザイン)
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format"></a>ドイツの ELSTER 申告 (レポート コードに基づくデザイン)、\"電子税申告ログ\" メニューの項目およびページ、\"電子税申告の設定\" メニューの項目とページ、ドイツのレポート レイアウト (TaxReport_DE) SSRS形式
 
 [VAT 明細書](../localizations/emea-de-vat-declaration.md)</br>
 [ドイツ向けの電子税申告の設定](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[VAT 申告電子送信 (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[ドイツの VAT 申告書](../localizations/emea-deu-vat-declaration-germany.md) |
 | **別の機能で置き換えられているか?**   | あり |
 | **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | すべて |
-| **状態**                         | 非推奨: 2022年12月1日までに、**Elster (DE)** と **Elster モデル** 電子申告 (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (DE**)、**VAT 申告 Excel (DE)** 形式は **税申告** モデル配下に導入されています。 |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨: 2022 年 12 月 1 日までに、**Elster (DE)** 電子申告 (ER) 形式と **Elster モデル** はサポートされなくなります。 新しい **VAT申告 XML (DE)**、**VAT 申告 Excel (DE)** ER 形式は **税申告** モデル配下に導入されています。 また、**税** \> **申告** \> **消費税** \> **電子税申告ログ** メニューの項目およびページ、**税** \> **設定** \> **消費税** \> **電子税申告の設定** メニューの項目とページ、**税** \> **設定** \> **消費税** \> **電子税証明書** メニューの項目とページ、およびドイツのレポート レイアウト (TaxReport\_DE) SQL Server Reporting Services (SSRS) 形式もサポートされません。 ドイツでの VAT 報告のプロセスは、[電子メッセージ](../general-ledger/electronic-messaging.md) 機能でサポートされています。 詳細については [VAT 申告 (ドイツ)](../localizations/emea-deu-vat-declaration-germany.md) を参照してください。 |
 
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>オランダ向け OB 申告 (レポート コードに基づくデザイン)
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes-electronic-ob-declaration-menu-item-and-page-dutch-report-layout-taxreport_nl-ssrs-format"></a>オランダの OB 申告 (レポート コードに基づくデザイン)、\"電子 OB申告\" メニューの項目とページ、オランダのレポート レイアウト (TaxReport_NL) SSRS 形式
 
 [OB 申告](../localizations/emea-nl-vat-declaration.md)
 
@@ -147,8 +146,8 @@ ms.locfileid: "9643797"
 | **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[オランダの VAT 申告書](../localizations/emea-nl-vat-declaration-netherlands.md) |
 | **別の機能で置き換えられているか?**   | あり |
 | **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | すべて |
-| **状態**                         | 非推奨: 2022年12月1日までに、**OB 申告 (NL)** と **OB 申告モデル** の電子申告 (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (NL**)、**VAT 申告 Excel (NL)** 形式は **税申告** モデル配下に導入されています。 |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨: 2022 年 12 月 1 日までに、**OB 申告 (NL)** と **OB 申告モデル** の電子レポート (ER) フォーマットはサポートされなくなります。 新しい **VAT 申告 XML (NL)**、**VAT 申告 Excel (NL)** ER 形式は **税申告** モデル配下に導入されています。 また、**税** \> **申告** \> **消費税** \> **電子 OB 申告** メニューの項目およびページ、およびオランダのレポート レイアウト (TaxReport_NL) SSRS 形式もサポートされなくなりました。 オランダでの VAT 報告のプロセスは、[電子メッセージ](../general-ledger/electronic-messaging.md) 機能でサポートされています。 詳細については [VAT 申告 (オランダ)](../localizations/emea-nl-vat-declaration-netherlands.md) を参照してください。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Finance 10.0.20 リリースの削除済みまたは非推奨の機能
 

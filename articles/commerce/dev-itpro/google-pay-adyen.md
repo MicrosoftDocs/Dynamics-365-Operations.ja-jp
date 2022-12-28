@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c3f049946c66fcd8560f7c08a4cb2beab0dcd5b2
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: cdf950fc7b3720543d93e108d4e3c3c2ab254e09
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9115031"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838394"
 ---
 # <a name="configure-google-pay-with-adyen"></a>Adyen を使用して Google Pay を構成する
 
@@ -90,11 +90,6 @@ Google Pay を使用するよう Commerce オンライン ストアを構成す�
 
 1. コネクタ プロパティの設定が完了したら、**1070 (チャネルのコンフィギュレーション**) 配布スケジュール ジョブを実行します。
 
-## <a name="configure-commerce-pos-for-google-pay"></a>Google Pay 向けの Commerce POS を構成する
-
-POS 構成は、Adyen 向け Dynamics 365 Payment Connector に対してハードウェア プロファイルの **EFT サービス** フィールドの設定を使用します。 Commerce Headquarters で Adyen 向け Dynamics 365 Payment Connector の電子決済 (EFT) サービスを構成する方法については、[Dynamics 365 POS ハードウェア プロファイルの設定セクション](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile)を参照してください。
-
-Adyen コネクタのプロセッサ マッピングは、Google Pay が POS 端末で使用するウォレット カード タイプをキャプチャします。
 
 ### <a name="use-the-payment-express-module-with-google-pay"></a>決済エクスプレス モジュールと Google Pay を使用する
 
@@ -223,6 +218,12 @@ Google Pay を使用する決済エクスプレス モジュールにより、Go
 チェックアウト モジュールでは、チェックアウト中に配送モードが表示される場合に、配送オプション モジュールも使用します。 詳細については、[配送オプション モジュール](../delivery-options-module.md) を参照してください。
 
 配送モードは、オンライン ストアの **配送モード** のリストに追加された場合に表示されます。
+
+## <a name="configure-commerce-pos-for-google-pay"></a>Google Pay 向けの Commerce POS を構成する
+
+POS 構成は、Adyen 向け Dynamics 365 Payment Connector に対してハードウェア プロファイルの **EFT サービス** フィールドの設定を使用します。 Commerce Headquarters で Adyen 向け Dynamics 365 Payment Connector の電子決済 (EFT) サービスを構成する方法については、[Dynamics 365 POS ハードウェア プロファイルの設定セクション](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile) を参照してください。
+
+Adyen コネクタのプロセッサ マッピングは、Google Pay が POS 端末で使用するウォレット カード タイプをキャプチャします。
 
 ## <a name="additional-resources"></a>追加リソース
 

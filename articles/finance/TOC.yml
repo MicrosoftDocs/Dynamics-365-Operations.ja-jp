@@ -1168,6 +1168,8 @@
                   href: general-ledger/general-ledger-statement-by-main-account.md
                 - name: 税の標準監査ファイル (SAF-T) の電子申告
                   href: general-ledger/standard-audit-file.md
+                - name: 元帳決済の照会
+                  href: general-ledger/ledger-settlement-inquiry.md
             - name: 期末決算
               items:
                 - name: 期末に一般会計を決算
@@ -1187,7 +1189,19 @@
                 - name: 元帳決済
                   href: general-ledger/ledger-settlements.md
                 - name: 元帳決済から年度末決算までの認識
-                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                  items:
+                    - name: 元帳決済から年度末決算までの認識
+                      href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                    - name: 年度末決算前の元帳決済間の認識の準備
+                      href: general-ledger/ledger-settle-yec.md
+                    - name: 年度末決算後の元帳決済間の認識の準備
+                      href: general-ledger/ledger-settle-yec-after.md
+                    - name: 元帳決済機能とレポート通貨との間の認識が一致しない
+                      href: general-ledger/reporting-currency-yec.md
+                    - name: 照会ウィンドウを使用した年度末決算前の元帳決済間の認識機能
+                      href: general-ledger/ledger-settlement-yec-inquiry-before.md
+                    - name: 照会ウィンドウを使用した年度末決算後の元帳決済間の認識機能
+                      href: general-ledger/ledger-settlement-yec-inquiry-after.md
                 - name: 元帳決済の自動化
                   href: general-ledger/auto-settle.md
                 - name: 一般会計の外貨再評価

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 2a368535c9644e174d1a2460ac0891c9dc1b1b3f
+ms.sourcegitcommit: 44f0b4ef8d74c86b5c5040be37981e32eb43e1a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9765710"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "9850026"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility の構成
 
@@ -32,15 +32,16 @@ Inventory Visibility の使用を開始する前に、この記事の説明に�
 - [パーティションの構成](#partition-configuration)
 - [製品インデックス階層の構成](#index-configuration)
 - [引当の構成 (オプション)](#reservation-configuration)
+- [クエリ プリロード構成 (オプション)](#query-preload-configuration)
 - [既定の構成サンプル](#default-configuration-sample)
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 開始する前に、[Inventory Visibility のインストールと設定](inventory-visibility-setup.md)で示されているように、Inventory Visibility アドインのインストールと設定を行います。
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Inventory Visibility アプリの構成ページ
 
-Power Apps で、[Inventory Visibility アプリ](inventory-visibility-power-platform.md) の **構成** ぺージで手持構成および仮引当構成の設定をサポートします。 アドインをインストールすると、既定の構成に Microsoft Dynamics 365 Supply Chain Management (`fno` データ ソース) からの値が含まれます。 既定の設定を確認できます。 また、業務要件や外部システムの在庫転記要件に基づき、複数のシステム間で在庫変更を転記、整理、およびクエリする方法を標準化するように構成を変更することができます。 この記事の残りのセクションでは、**構成** ページの各部分の使い方について説明します。
+Power Apps で、[Inventory Visibility アプリ](inventory-visibility-power-platform.md) の **構成** ぺージで手持構成および仮引当構成の設定をサポートします。 アドインをインストールすると、既定の構成に Microsoft Dynamics 365 Supply Chain Management (`fno` データ ソース) からの値が含まれます。 既定の設定を確認できます。 また、業務要件や外部システムの在庫転記要件に基づき、複数のシステム間で在庫変更を転記、整理、クエリする方法を標準化するように構成を変更することができます。 この記事の残りのセクションでは、**構成** ページの各部分の使い方について説明します。
 
 構成の完了後、必ずアプリ内の **構成の更新** を選択してください。
 
@@ -52,10 +53,13 @@ Inventory Visibility アドインは、Power Apps のインストールにいく
 |---|---|
 | *OnHandReservation* | この機能では、Inventory Visibility を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[Inventory Visibility 引当](inventory-visibility-reservations.md) を参照してください。 |
 | *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、Inventory Visibility から定期的に同期されます。 既定の同期頻度は 15 分に 1 回で、5 分ごとに高く設定できます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
-| *onHandIndexQueryPreloadBackgroundService* | この機能により、Inventory Visibility の手持在庫クエリを事前に読み込んで、事前選択した分析コードで手持在庫リストを作成できます。 既定の同期頻度は 15 分に 1 回です。 詳細については、[合理化された手持在庫クエリの事前読み込み](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)を参照してください。 |
+| *OnHandIndexQueryPreloadBackgroundService* | この機能は、コンフィギュレーション済の分析コードに基づいて、一連の在庫集計データを定期的にフェッチして格納します。 日常業務に関連し、倉庫管理プロセス (WMS) に対して有効な品目と互換性のある分析コードのみを含む在庫集計を提供します。 詳細については、[事前読み込みされたオンハンド クエリをオンにして構成する](#query-preload-configuration) と [ストリームラインされたオンライン クエリを事前読み込みする](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) を参照してください。 |
 | *OnhandChangeSchedule* | このオプション機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
 | *割り当て* | このオプション機能により、Inventory Visibility で在庫保護 (リング フェンシング) および過剰販売管理の機能を使用することができます。 詳細については、[Inventory Visibility の在庫配賦](inventory-visibility-allocation.md) を参照してください。 |
 | *Inventory Visibility で在庫品目を有効化* | このオプション機能によって、Inventory Visibility が有効になり、倉庫管理プロセス (WMS) が有効な品目がサポートされます。 詳細については、[WMS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |
+
+> [!IMPORTANT]
+> *OnHandIndexQueryPreloadBackserviceService* 機能または *OnHandMostSpecificBackgroundService* 機能両方ではなく、どちらかを使用することをお勧めします。 両方の機能を有効にすることで、パフォーマンスに影響を与えます。
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>サービス エンドポイントを検索する
 
@@ -178,6 +182,15 @@ Inventory Visibility は、Supply Chain Management (`fno` データ ソース) �
 1. Power Apps 環境にサインインし、**Inventory Visibility** を開きます。
 1. **構成** ページを開きます。
 1. **データ ソース** タブで、物理的測定を追加するデータ ソース (`ecommerce` データ ソースなど) を選択します。 次に、**物理的測定** セクションで **追加** を選択し、測定名 (たとえば、このデータ ソースの返品数量を Inventory Visibility に記録する場合は `Returned` など) を指定します。 変更を保存します。
+
+### <a name="extended-dimensions"></a>拡張された分析コード
+
+データ ソースで外部データ ソースを使用する顧客は、`InventOnHandChangeEventDimensionSet` クラスと `InventInventoryDataServiceBatchJobTask` クラスの [クラス拡張機能](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) を作成することで Dynamics 365 が提供する拡張機能の利点を利用できます。
+
+拡張機能を作成して、`InventSum` テーブルにカスタム フィールドを追加するために、データベースと同期してください。 この記事の 分析コード を参照して、カスタム分析コードを Inventory の `BaseDimensions` で在庫の 8 つの拡張分析コードにマップすることができます。
+
+> [!NOTE] 
+> 拡張機能の作成の詳細については、[拡張機能のホーム ページ](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) を参照してください。
 
 ### <a name="calculated-measures"></a>計算メジャー
 
@@ -496,6 +509,30 @@ Inventory Visibility は、クエリのパフォーマンスを向上させる�
 ## <a name="available-to-promise-configuration-optional"></a>納期回答可能在庫の構成 (オプション)
 
 Inventory Visibility を設定すると、今後の手持在庫変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算できます。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 この計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。 この機能を使用するには、**機能管理** タブでこの機能を有効にして、**ATP 設定** タブで設定する必要があります。詳細については、[Inventory Visibility の手持在庫変更スケジュールおよび納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
+
+## <a name="turn-on-and-configure-preloaded-on-hand-queries-optional"></a><a name="query-preload-configuration"></a>事前読み込みされたオンハンド クエリをオンにして構成する (オプション)
+
+在庫可視化は、事前構成済みの分析コードに基づいて、一連の在庫集計データを定期的にフェッチして格納します。 これには次のメリットがあります。
+
+- 日次業務に関連する分析コードのみを含む在庫集計を格納する項目ビュー。
+- 倉庫管理プロセス (WMS) に対して有効な品目と互換性のある在庫集計。
+
+設定後にこの機能を使用 する方法の詳細については、[合理化されたオンハンド クエリを事前に読み込む](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) を参照してください。
+
+> [!IMPORTANT]
+> *OnHandIndexQueryPreloadBackserviceService* 機能または *OnHandMostSpecificBackgroundService* 機能両方ではなく、どちらかを使用することをお勧めします。 両方の機能を有効にすることで、パフォーマンスに影響を与えます。
+
+これらの手順に従って、機能を設定します。
+
+1. 在庫可視化 Power App にサインインします。
+1. **構成 \> 機能管理と設定** の順に移動します。
+1. *OnHandIndexQueryPreloadBackqueryservice* 機能が既に有効になっている場合は、クリーンアップ プロセスの完了に非常に長い時間がかかる可能性があるから、この機能をオフにすることをお勧めします。 この手順の後半で、それをサイドオンにします。
+1. **事前読み込み設定** タブを開きます。
+1. **手順 1: 事前読み込みストレージのクリーンアップ** セクションで、**クリーンアップ** を選択してデータベースをクリーンアップし、新しいグループ化の設定を受け入れる準備をします。
+1. **手順 2: グループ結果のグループ化** セクションの **結果を以下でグループ化** フィールドに、クエリ結果をグループ化するフィールド名のコンマ区切り一覧を入力します。 事前読み込みストレージ データベースにデータが格納された後は、前の手順の説明に従ってデータベースをクリーンアップするまで、この設定を変更できません。
+1. **構成 \> 機能管理と設定** の順に移動します。
+1. *OnHandIndexQueryPreloadBackgroundService* 機能をオンにします。
+1. 変更をコミットするには、**構成** の右上隅にある **構成の更新** を選択します。
 
 ## <a name="complete-and-update-the-configuration"></a>構成の完了と更新
 

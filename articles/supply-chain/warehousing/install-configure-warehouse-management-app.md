@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
-ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
+ms.openlocfilehash: 1333881f80c735794784831d4042bfe7d070b796
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714765"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838475"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのインストールと接続
 
@@ -58,10 +58,10 @@ Warehouse Management mobile app を使用するには、ご利用のシステム
 
 アプリ ストアからインストールする代わりに、Microsoft アプリ センターからアプリをダウンロードすることもできます。 アプリ センターには、サイドロードできるインストール可能なパッケージが提供されています。 アプリ センターでは、現在のバージョンに加えて、以前のバージョンをダウンロードしたり、試せる今後の機能を備えたプレビュー バージョンが提供されている場合もあります。Microsoft アプリ センターから倉庫管理モバイル アプリの最新バージョン、以前のバージョン、またはプレビュー バージョンをダウンロードするには、次のいずれかのリンクを使用します。
 
-- **Windows (UWP):** [倉庫管理 (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [倉庫管理 (Windows)](https://aka.ms/wma-windows-official-release)  
     Windows デバイスにダウンロードしたパッケージをインストールし、必要な証明書を設定する方法の手順については、[アプリ センターからのビルドのインストール](/appcenter/distribution/installation)を参照してください。
 
-- **Android:** [倉庫管理 (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [倉庫管理 (Android)](https://aka.ms/wma-android-official-release)  
     プレビュー バージョンをダウンロードする場合、インストールするにはいくつかの追加手順が必要です。 詳細については、[Android アプリをテストする](/appcenter/distribution/testers/testing-android) を参照してください。
 
 App Center からダウンロードしたビルドのインストール方法については、[ビルドのインストール](/appcenter/distribution/installation) を参照してください。

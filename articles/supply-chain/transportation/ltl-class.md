@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 9ab05e1bc5d0ae2c8b5d98dda32660d2436676e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9c1c7233b637b84ec901d7f83ae00f8a04895edb
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857202"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838421"
 ---
 # <a name="less-than-truckload-ltl-classes"></a>トラック 1 台分未満 (LTL) のクラス
 
@@ -54,7 +54,7 @@ LTL クラスを作成するには、次の手順を実行します。
 
 次の例は、異なるタイプの製品で使用できる 2 つの異なる LTL クラスの設定方法を示します。
 
-1. **倉庫管理 \> 設定 \> 在庫 \> LTL クラス** の順に移動します。
+1. **Warehouse management \> 設定 \> インベントリ \> LTL クラス** または **輸送管理 \> 設定 \> 輸送基準 \> LTL クラス** に移動します。
 1. アクション ウィンドウで、**新規** を選択します。
 1. 新しい明細行で、次の値を設定します。
 
